@@ -1,3 +1,3 @@
-Server.bpo
+Server.pbo
 
 Add a location reset to players in debug and force it.
