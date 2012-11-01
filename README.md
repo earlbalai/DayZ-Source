@@ -26,6 +26,8 @@ FIX : 31st OCTOBER 2012
 		* [NEW]		BAF_Offroad_D Now Unbanned.
 		* [NEW]		Fully Removed Save button from action menu.
 		
+		* [REMOVED]	Damaged logging to .rpt.
+		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
 
 		* [Fixed]	Adding checks for female skin humanity/login.
