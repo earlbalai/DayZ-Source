@@ -35,6 +35,7 @@ FIX : 31st OCTOBER 2012
 		* [Fixed]	Fixed Parachute so jumping out of choppers wont kill you.
 		* [Fixed]	Event Handle for wrecked choppers.
 		* [Fixed]	Event Handle for Vehicles.
+		* [Fixed]	Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
 
 		
 
