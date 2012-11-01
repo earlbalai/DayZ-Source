@@ -11,27 +11,27 @@ FIX : 31st OCTOBER 2012
 
 	Affected addons:
 		* dayz_code		1.7.3.*
-	
-	Developer's Note: 
-		* 
-
-	Developer Changelog:
-		*
 
 	Community Notes: 
 		* Current Changelog not final Changelog
 
 	Community Changelog:
-	Client Side:
-		* [NEW]  class Mi17_Civilian Now Unbanned
-		* [NEW]  S1203_ambulance_EP1 Now Unbanned
-		* [NEW]  UH60_wreck_EP1 Now Unbanned
-		* [NEW]  An2_1_TK_CIV_EP1 Now Unbanned
-		* [NEW]  An2_2_TK_CIV_EP1 Now Unbanned
-		* [NEW]  An2_TK_EP1 Now Unbanned
-		* [NEW] BAF_Offroad_D Now Unbanned
+		Client:
+		* [NEW]		class Mi17_Civilian Now Unbanned.
+		* [NEW]		S1203_ambulance_EP1 Now Unbanned.
+		* [NEW]		UH60_wreck_EP1 Now Unbanned.
+		* [NEW]		An2_1_TK_CIV_EP1 Now Unbanned.
+		* [NEW]		An2_2_TK_CIV_EP1 Now Unbanned.
+		* [NEW]		An2_TK_EP1 Now Unbanned.
+		* [NEW]		BAF_Offroad_D Now Unbanned.
+		* [NEW]		Fully Removed Save button from action menu.
 		
+		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
 
+		* [Fixed]	Adding checks for female skin humanity/login.
+		* [Fixed]	Adding female skin to variables.
+		* [Fixed]	Fixed Parachute so jumping out of choppers wont kill you.
+		
 
 Prerequisites
 =============
