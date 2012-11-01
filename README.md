@@ -29,6 +29,7 @@ FIX : 31st OCTOBER 2012
 		* [REMOVED]	Damaged logging to .rpt.
 		
 		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
+		* [UPDATED]	Corrected legs and hands fractures they must be set with actual value.
 
 		* [Fixed]	Adding checks for female skin humanity/login.
 		* [Fixed]	Adding female skin to variables.
