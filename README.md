@@ -17,27 +17,49 @@ FIX : 31st OCTOBER 2012
 
 	Community Changelog:
 		Client:
-		* [NEW]		class Mi17_Civilian Now Unbanned.
-		* [NEW]		S1203_ambulance_EP1 Now Unbanned.
-		* [NEW]		UH60_wreck_EP1 Now Unbanned.
-		* [NEW]		An2_1_TK_CIV_EP1 Now Unbanned.
-		* [NEW]		An2_2_TK_CIV_EP1 Now Unbanned.
-		* [NEW]		An2_TK_EP1 Now Unbanned.
-		* [NEW]		BAF_Offroad_D Now Unbanned.
-		* [NEW]		Fully Removed Save button from action menu.
-		* [NEW]     New combat mode icon.
-		
-		* [REMOVED]	Damaged logging to .rpt.
-		
-		* [UPDATED]	Combat Loging Fired near checks are now limited to 15m radius.
-		* [UPDATED]	Corrected legs and hands fractures they must be set with actual value.
+		* [NEW]     class Mi17_Civilian Now Unbanned.
+		* [NEW]     S1203_ambulance_EP1 Now Unbanned.
+		* [NEW]     UH60_wreck_EP1 Now Unbanned.
+		* [NEW]     An2_1_TK_CIV_EP1 Now Unbanned.
+		* [NEW]     An2_2_TK_CIV_EP1 Now Unbanned.
+		* [NEW]     An2_TK_EP1 Now Unbanned.
+		* [NEW]     BAF_Offroad_D Now Unbanned.
+		* [NEW]     Fully Removed Save button from action menu.
+		* [NEW]     New combat mode icon (G17) thanks Alexander.
+		* [NEW]     Dogs are now added and can be controlled.
 
-		* [Fixed]	Adding checks for female skin humanity/login.
-		* [Fixed]	Adding female skin to variables.
-		* [Fixed]	Fixed Parachute so jumping out of choppers wont kill you.
-		* [Fixed]	Event Handle for wrecked choppers.
-		* [Fixed]	Event Handle for Vehicles.
-		* [Fixed]	Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
+		* [UPDATED] Combat Logging "Fired Near" checks are now limited to 15 metre radius.
+		* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
+
+		* [REMOVED] Damaged logging to .rpt.
+
+		* [Fixed]   Adding checks for female skin humanity/login.
+		* [Fixed]   Adding female skin to variables.
+		* [Fixed]   Fixed Parachute so jumping out of choppers won’t kill you.
+		* [Fixed]   Event Handle for wrecked choppers.
+		* [Fixed]   Event Handle for Vehicles.
+		* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
+		* [Fixed]   Debug menu options to no longer show.
+
+		Dogs:
+
+			Dogs can be found around the world roaming.
+			Dogs must be tamed using a peace of raw food.
+			Tamed dogs can be controlled (This is still limited for now).
+			Once tamed dogs will automatically follow unless told to do something else.
+
+			If your dog dies you can gut it.
+
+		Basic Controls:
+
+			Sit - Tells your dog to sit.
+			Lie - Tells your dog to lie down.
+			Stay - Tells your dog to stay in its current location. Dogs will get bored if left.
+			Track - Tells your dog to find the closest animal within 900m.
+			Call - Calls your dog back. (Cancels all current commands).
+			Attack - Will attempt to attack target on command.
+
+Dogs will be limited a great deal to start with as we need to see how they react in-game with you and the world.
 
 		
 
