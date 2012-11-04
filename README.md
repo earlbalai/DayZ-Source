@@ -10,36 +10,44 @@ This would not be possible without the work of Rocket and Guru Abdul. We also us
 FIX : 31st OCTOBER 2012
 
 	Affected addons:
-		* dayz_code		1.7.3.*
+		* dayz_code		1.7.4
 
 	Community Notes: 
 		* Current Changelog not final Changelog
 
-	Community Changelog:
+	Community Change log:
 		Client:
-		* [NEW]     class Mi17_Civilian Now Unbanned.
-		* [NEW]     S1203_ambulance_EP1 Now Unbanned.
-		* [NEW]     UH60_wreck_EP1 Now Unbanned.
-		* [NEW]     An2_1_TK_CIV_EP1 Now Unbanned.
-		* [NEW]     An2_2_TK_CIV_EP1 Now Unbanned.
-		* [NEW]     An2_TK_EP1 Now Unbanned.
-		* [NEW]     BAF_Offroad_D Now Unbanned.
-		* [NEW]     Fully Removed Save button from action menu.
-		* [NEW]     New combat mode icon (G17) thanks Alexander.
-		* [NEW]     Dogs are now added and can be controlled.
+			* [NEW]     class Mi17_Civilian Now Unbanned.
+			* [NEW]     S1203_ambulance_EP1 Now Unbanned.
+			* [NEW]     UH60_wreck_EP1 Now Unbanned.
+			* [NEW]     An2_1_TK_CIV_EP1 Now Unbanned.
+			* [NEW]     An2_2_TK_CIV_EP1 Now Unbanned.
+			* [NEW]     An2_TK_EP1 Now Unbanned.
+			* [NEW]     BAF_Offroad_D Now Unbanned.
+			* [NEW]     Fully Removed Save button from action menu.
+			* [NEW]     New combat mode icon (G17) thanks Alexander.
+			* [NEW]     Dogs are now added and can be controlled.
 
-		* [UPDATED] Combat Logging "Fired Near" checks are now limited to 15 metre radius.
-		* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
+			* [UPDATED] Combat Logging "Fired Near" checks are now limited to 15 metre radius.
+			* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
 
-		* [REMOVED] Damaged logging to .rpt.
+			* [REMOVED] Damaged logging to .rpt.
 
-		* [Fixed]   Adding checks for female skin humanity/login.
-		* [Fixed]   Adding female skin to variables.
-		* [Fixed]   Fixed Parachute so jumping out of choppers won’t kill you.
-		* [Fixed]   Event Handle for wrecked choppers.
-		* [Fixed]   Event Handle for Vehicles.
-		* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
-		* [Fixed]   Debug menu options to no longer show.
+			* [Fixed]   Adding checks for female skin humanity/login.
+			* [Fixed]   Adding female skin to variables.
+			* [Fixed]   Fixed Parachute so jumping out of choppers won?t kill you.
+			* [Fixed]   Event Handle for wrecked choppers.
+			* [Fixed]   Event Handle for Vehicles.
+			* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
+			* [Fixed]   Debug menu options to no longer show.
+
+		Upstream hive (public hive):
+			Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
+			Still requires a server restart for vehicles to show up in-game.
+			* [UPDATED] Destroyed low-end (boats, bicycles) vehicles now respawn after 3h.
+			* [UPDATED] Destroyed medium-end (normal cars, motorcycle, quads) vehicles respawn after 12h.
+			* [UPDATED] Destroyed high-end ( aircraft, all-terrain) vehicles respawn after 24h.
+			Note: Respawn rates are our recommended rule set, they may differ on some private hive servers.
 
 		Dogs:
 
