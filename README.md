@@ -59,7 +59,9 @@ FIX : 31st OCTOBER 2012
 			Dogs must be tamed using a peace of raw food.
 			Tamed dogs can be controlled (This is still limited for now).
 			Once tamed dogs will automatically follow unless told to do something else.
-
+			Dogs Need Food (rawsteak) new icon will apear.
+			Dogs Need Water (WaterBottle) new icon will apear.
+			
 			If your dog dies you can gut it.
 
 		Basic Controls:
@@ -69,7 +71,12 @@ FIX : 31st OCTOBER 2012
 			Stay - Tells your dog to stay in its current location. Dogs will get bored if left.
 			Track - Tells your dog to find the closest animal within 900m.
 			Call - Calls your dog back. (Cancels all current commands).
-			Attack - Will attempt to attack target on command.
+			
+		Dog Problems:
+
+			Sometimes get stuck going up/down steep slopes; very slow movement at best.
+			Sometimes "loses" player and dosent follow again till player approches dog; sometimes a "Call Dog" fixes the issue.
+			Sometimes repeating sit/lay down animations when in waiting mode beside player; often occurs with the Fin model. Always occurs with more than one dog.		
 
 Dogs will be limited a great deal to start with as we need to see how they react in-game with you and the world.
 
