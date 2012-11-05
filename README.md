@@ -23,6 +23,9 @@ FIX : 31st OCTOBER 2012
 			* [NEW]     An2_1_TK_CIV_EP1 Now Unbanned.
 			* [NEW]     An2_2_TK_CIV_EP1 Now Unbanned.
 			* [NEW]     An2_TK_EP1 Now Unbanned.
+			* [NEW]     UH60M_MEV_EP1 Now Unbanned.
+			* [NEW]     MV22 Now Unbanned.
+			* [NEW]     MH6J_EP1 Now Unbanned.
 			* [NEW]     BAF_Offroad_D Now Unbanned.
 			* [NEW]     Fully Removed Save button from action menu.
 			* [NEW]     New combat mode icon (G17) thanks Alexander.
@@ -40,6 +43,7 @@ FIX : 31st OCTOBER 2012
 			* [Fixed]   Event Handle for Vehicles.
 			* [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
 			* [Fixed]   Debug menu options to no longer show.
+			* [Fixed]   Locked Singleplayer Menu
 
 		Upstream hive (public hive):
 			Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
