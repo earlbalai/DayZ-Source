@@ -20,11 +20,8 @@ FIX : 31st OCTOBER 2012
 			* [NEW]     class Mi17_Civilian Now Unbanned.
 			* [NEW]     S1203_ambulance_EP1 Now Unbanned.
 			* [NEW]     UH60_wreck_EP1 Now Unbanned.
-			* [NEW]     An2_1_TK_CIV_EP1 Now Unbanned.
-			* [NEW]     An2_2_TK_CIV_EP1 Now Unbanned.
 			* [NEW]     An2_TK_EP1 Now Unbanned.
 			* [NEW]     UH60M_MEV_EP1 Now Unbanned.
-			* [NEW]     MV22 Now Unbanned.
 			* [NEW]     MH6J_EP1 Now Unbanned.
 			* [NEW]     BAF_Offroad_D Now Unbanned.
 			* [NEW]     Fully Removed Save button from action menu.
@@ -35,6 +32,9 @@ FIX : 31st OCTOBER 2012
 			* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
 
 			* [REMOVED] Damaged logging to .rpt.
+			* [REMOVED]     An2_1_TK_CIV_EP1 Now Unbanned.
+			* [REMOVED]     An2_2_TK_CIV_EP1 Now Unbanned.
+			* [REMOVED]     MV22 Now Unbanned.
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
