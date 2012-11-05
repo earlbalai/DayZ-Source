@@ -32,9 +32,9 @@ FIX : 31st OCTOBER 2012
 			* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
 
 			* [REMOVED] Damaged logging to .rpt.
-			* [REMOVED]     An2_1_TK_CIV_EP1 Now Unbanned.
-			* [REMOVED]     An2_2_TK_CIV_EP1 Now Unbanned.
-			* [REMOVED]     MV22 Now Unbanned.
+			* [REMOVED]     An2_1_TK_CIV_EP1 Now Banned.
+			* [REMOVED]     An2_2_TK_CIV_EP1 Now Banned.
+			* [REMOVED]     MV22 Now Banned.
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
