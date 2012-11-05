@@ -7,7 +7,7 @@ This would not be possible without the work of Rocket and Guru Abdul. We also us
 
 **NOTE**: No support is implied or offered for pirated copies of ArmA 2.
 
-FIX : 31st OCTOBER 2012
+FIX : NOVEMBER 2012
 
 	Affected addons:
 		* dayz_code		1.7.4
@@ -18,7 +18,7 @@ FIX : 31st OCTOBER 2012
 	Community Change log:
 		Client:
 			* [NEW]     class Mi17_Civilian Now Unbanned.
-			* [NEW]     S1203_ambulance_EP1 Now Unbanned.
+			* [NEW]     HMMWV_Ambulance_CZ_DES_EP1 Now Unbanned.
 			* [NEW]     UH60_wreck_EP1 Now Unbanned.
 			* [NEW]     An2_TK_EP1 Now Unbanned.
 			* [NEW]     UH60M_MEV_EP1 Now Unbanned.
@@ -26,15 +26,16 @@ FIX : 31st OCTOBER 2012
 			* [NEW]     BAF_Offroad_D Now Unbanned.
 			* [NEW]     Fully Removed Save button from action menu.
 			* [NEW]     New combat mode icon (G17) thanks Alexander.
-			* [NEW]     Dogs are now added and can be controlled.
+			* [NEW]     Dogs are now added and can be controlled Thanks Alby.
 
 			* [UPDATED] Combat Logging "Fired Near" checks are now limited to 15 metre radius.
 			* [UPDATED] Corrected legs and hands fractures they must be set with actual value.
 
-			* [REMOVED] Damaged logging to .rpt.
-			* [REMOVED]     An2_1_TK_CIV_EP1 Now Banned.
-			* [REMOVED]     An2_2_TK_CIV_EP1 Now Banned.
-			* [REMOVED]     MV22 Now Banned.
+			* [REMOVED] 	Damaged logging to .rpt.
+			* [REMOVED]     An2_1_TK_CIV_EP1 Now ReBanned.
+			* [REMOVED]     An2_2_TK_CIV_EP1 Now ReBanned.
+			* [REMOVED]     MV22 Now ReBanned.
+			* [REMOVED]		S1203_ambulance_EP1 Now ReBanned.
 
 			* [Fixed]   Adding checks for female skin humanity/login.
 			* [Fixed]   Adding female skin to variables.
