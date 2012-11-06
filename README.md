@@ -3,8 +3,6 @@ DayZ Community Project
 
 This is a Community Dayz project.
 
-This would not be possible without the work of Rocket and Guru Abdul. We also use the fantastic cPBO from Kegetys (www.kegetys.fi) and wget for Windows by the GnuWin32 team (gnuwin32.sourceforge.net).
-
 **NOTE**: No support is implied or offered for pirated copies of ArmA 2.
 
 FIX : NOVEMBER 2012
@@ -17,12 +15,12 @@ FIX : NOVEMBER 2012
 
 	Community Change log:
 		Client:
-			* [NEW]     class Mi17_Civilian Now Unbanned.
-			* [NEW]     HMMWV_Ambulance_CZ_DES_EP1 Now Unbanned.
-			* [NEW]     UH60_wreck_EP1 Now Unbanned.
-			* [NEW]     An2_TK_EP1 Now Unbanned.
-			* [NEW]     UH60M_MEV_EP1 Now Unbanned.
-			* [NEW]     MH6J_EP1 Now Unbanned.
+			* [NEW]     class Mi17_Civilian Now Unbanned. (Mi17_DZ)
+			* [NEW]     HMMWV_Ambulance_CZ_DES_EP1 Now Unbanned. (HMMWV_Ambulance_DZ)
+			* [NEW]     UH60_wreck_EP1 Now Unbanned. 
+			* [NEW]     An2_TK_EP1 Now Unbanned.(AN2_DZ)
+			* [NEW]     UH60M_MEV_EP1 Now Unbanned. (UH60M_DZ)
+			* [NEW]     AH6X Now Unbanned. (AH6X_DZ)
 			* [NEW]     BAF_Offroad_D Now Unbanned.
 			* [NEW]     Fully Removed Save button from action menu.
 			* [NEW]     New combat mode icon (G17) thanks Alexander.
