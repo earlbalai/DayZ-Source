@@ -28,6 +28,7 @@ Community Change log:
         * [REMOVED]     An2_2_TK_CIV_EP1 Now ReBanned.
         * [REMOVED]     MV22 Now ReBanned.
         * [REMOVED]     S1203_ambulance_EP1 Now ReBanned.
+		* [REMOVED]     BAF_L85A2_RIS_CWS
 
         * [Fixed]   Adding checks for female skin humanity/login.
         * [Fixed]   Adding female skin to variables.
