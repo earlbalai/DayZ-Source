@@ -10,6 +10,8 @@ Community Notes:
 Community Change log:
 
 	Client:
+		* [Prerequisites]     beta-patch 98866.
+		
 		* [NEW]     class Mi17_TK_EP1 Now Unbanned. (Mi17_DZ)
 		* [NEW]     An2_TK_EP1 Now Unbanned.(AN2_DZ)
 		* [NEW]     AH6X Now Unbanned. (AH6X_DZ)
