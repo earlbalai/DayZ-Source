@@ -243,17 +243,6 @@ class CfgVehicles {
 				minTurn = -185;
 				maxTurn = -45;
 				initTurn = -155;
-				class ViewOptics {
-					initAngleX = 0;
-					minAngleX = -30;
-					maxAngleX = 30;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.7;
-					minFov = 0.25;
-					maxFov = 1.1;
-				};
 				class Turrets: Turrets {};
 			};
 		};
