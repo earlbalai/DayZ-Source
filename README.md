@@ -21,6 +21,7 @@ Community Change log:
 		* [NEW]	Fully Removed Save button from action menu.
 		* [NEW]	New combat mode icon (G17) thanks Alexander.
 		* [NEW]	Gender section screen thanks F0rt.
+		* [NEW]	You can no longer place tents in ponds.
 
         * [UPDATED] Combat Logging "Fired Near" checks are now limited to 8 metre radius.
 		* [UPDATED] Combat Logging "Projectile Near" Have now been removed while we look for a less intensive way to track projectiles.
