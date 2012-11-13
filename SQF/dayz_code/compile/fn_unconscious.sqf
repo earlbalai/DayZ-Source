@@ -86,7 +86,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		};
 	};
 	4 cutRsc ["default", "PLAIN",1];
-	localize "CLIENT: Conscious...";
+	diag_log "CLIENT: Conscious...";
 	disableUserInput false;
 	//waitUntil{USEC_MotherInbox == ""};
 	//["MED001",0,"Conscious"] call fnc_usec_recordEventClient;
