@@ -6,6 +6,7 @@ class CfgVehicles {
 	};
 	class Helicopter : Air 
 	{
+		class HitPoints; 
 		class Turrets
         {
             class MainTurret: NewTurret
@@ -13,6 +14,7 @@ class CfgVehicles {
                 class Turrets;
             };
         };
+		class AnimationSources;
 	};
 	class Animal;
 	class Pastor;
@@ -264,6 +266,32 @@ class CfgVehicles {
 			class BackTurret : BackTurret {
 				weapons[] = {PKT_2};
 				magazines[] = {"100Rnd_762x54_PK"};
+			};
+		};
+		class AnimationSources : AnimationSources {
+			class ReloadAnim {
+				source = "reload";
+				weapon = PKT;
+			};
+			class ReloadMagazine {
+				source = "reloadmagazine";
+				weapon = PKT;
+			};
+			class Revolving {
+				source = "revolving";
+				weapon = PKT;
+			};
+			class ReloadAnim_2 {
+				source = "reload";
+				weapon = PKT_2;
+			};
+			class ReloadMagazine_2 {
+				source = "reloadmagazine";
+				weapon = PKT_2;
+			};
+			class Revolving_2 {
+				source = "revolving";
+				weapon = PKT_2;
 			};
 		};
 		gunnerHasFlares = false;
