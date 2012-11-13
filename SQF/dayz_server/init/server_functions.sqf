@@ -7,18 +7,12 @@ server_playerSetup =		compile preprocessFileLineNumbers "\z\addons\dayz_server\c
 server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_onPlayerDisconnect.sqf";
 server_updateObject =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateObject.sqf";
 server_playerDied =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
-
-
-
 server_publishObj = 		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";
 local_publishObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_publishObj.sqf";		//Creates the object in DB
 local_deleteObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_deleteObj.sqf";		//Creates the object in DB
 local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_createObj.sqf";		//Creates the object in DB
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
-
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
-player_combatLogged =         compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_combatLogged.sqf";
-
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 
 vehicle_handleInteract = {
@@ -28,17 +22,11 @@ vehicle_handleInteract = {
 };
 
 player_combatLogged = {
-private["_playerName","_center","_group"];
-_playerName = name player;
+	private["_playerName","_center","_group"];
+	_playerName = name player;
+	_timeout = _object getVariable["combattimeout",0];
 
-cutText [format["%1 has combat logged!",_playerName], "PLAIN DOWN"];
-
-_center = createCenter sideLogic;
-_group = createGroup _center;
-cl_gamelogic = _group createUnit ["LOGIC", [0, 0, 0], [], 0, "NONE"];
-cl_gamelogic sideChat format["(COMBAT LOG) %1",_playerName];
-deleteVehicle cl_gamelogic;
-diag_log ("player_combatLogged called");
+	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 };
 
 //event Handlers
