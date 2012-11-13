@@ -1,5 +1,6 @@
 private["_array","_source","_kills","_killsV","_humanity","_wait","_myKills"];
 if (deathHandled) exitWith {};
+disableUserInput true;
 deathHandled = true;
 //Death
 
@@ -20,14 +21,14 @@ sleep 0.5;
 player setDamage 1;
 0.1 fadeSound 0;
 
-player setVariable ["NORRN_unconscious", false, true];
-player setVariable ["unconsciousTime", 0, true];
-player setVariable ["USEC_isCardiac",false,true];
+//player setVariable ["NORRN_unconscious", false, true];
+//player setVariable ["unconsciousTime", 0, true];
+//player setVariable ["USEC_isCardiac",false,true];
 player setVariable ["medForceUpdate",true,true];
 //remove combat timer on death
 player setVariable ["startcombattimer", 0, true];
-r_player_unconscious = false;
-r_player_cardiac = false;
+//r_player_unconscious = false;
+/r_player_cardiac = false;
 
 _id = player spawn spawn_flies;
 
