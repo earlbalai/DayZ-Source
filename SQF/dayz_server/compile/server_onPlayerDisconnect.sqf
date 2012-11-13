@@ -14,7 +14,6 @@ _playerIDtoarray = toArray _playerID;
 if (59 in _playerIDtoarray) exitWith {};
 
 if ((_timeout - time) > 0) then {
-	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 	_playerName call player_combatLogged;
 };
 
