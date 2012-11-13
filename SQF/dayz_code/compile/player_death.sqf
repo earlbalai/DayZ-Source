@@ -1,6 +1,6 @@
 private["_array","_source","_kills","_killsV","_humanity","_wait","_myKills"];
 if (deathHandled) exitWith {};
-disableUserInput true;
+
 deathHandled = true;
 //Death
 
