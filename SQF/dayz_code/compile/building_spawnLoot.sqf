@@ -33,11 +33,12 @@ _itemChance =	 [] + getArray (_config >> "itemChance");
 				//diag_log ("LOOTSPAWN: _index:" + str(_index));
 				if (_index >= 0) then {
 					_iArray = +(_itemType select _index);
-					diag_log ("LOOTSPAWN: _iArray" + str(_iArray));
+				//diag_log ("LOOTSPAWN: _iArray" + str(_iArray));
 					_iArray set [2,_iPos2];
 					_iArray set [3,0];
 					_iArray call spawn_loot;
 					_iArray = [];
+				diag_log ("LOOTSPAWN");
 				};
 				_item setVariable ["created",(DateToNumber date),true];
 			};
