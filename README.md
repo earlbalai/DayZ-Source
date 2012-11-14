@@ -1,15 +1,11 @@
 DayZ Community Project
 =========================
 
-Affected addons:
- - dayz_code     [development version - subject to change at any time]
-
 Community Notes: 
  - Current Changelog not final Changelog
 
 Community Change log:
 
-	Client:
 		* [Prerequisites]	beta-patch 98866.
 		* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 		
@@ -22,6 +18,11 @@ Community Change log:
 		* [NEW]	New combat mode icon (G17) thanks Alexander.
 		* [NEW]	Gender section screen thanks F0rt.
 		* [NEW]	You can no longer place tents in ponds.
+		* [NEW]	Disabled greeting menu .
+		* [NEW]	Disabled radio messages to be heard and shown in the left lower corner of the screen.
+		* [NEW]	General speed up of the login process.
+		* [NEW]	Street Lights now active in towns.
+
 
         * [UPDATED] Combat Logging "Fired Near" checks are now limited to 8 metre radius.
 		* [UPDATED] Combat Logging "Projectile Near" Have now been removed while we look for a less intensive way to track projectiles.

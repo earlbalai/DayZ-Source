@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.4-D9";
+		version = "1.7.4-D10";
 		hiveVersion = 0.96; //0.93
 	};
 };
