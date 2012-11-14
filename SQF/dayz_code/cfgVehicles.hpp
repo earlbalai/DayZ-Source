@@ -3,6 +3,8 @@ class CfgVehicles {
 	class Air : AllVehicles 
 	{
 	class NewTurret;
+	class ViewPilot;
+	class AnimationSources;
 	};
 	class Helicopter : Air 
 	{
@@ -14,7 +16,6 @@ class CfgVehicles {
                 class Turrets;
             };
         };
-		class AnimationSources;
 	};
 	class Animal;
 	class Pastor;
