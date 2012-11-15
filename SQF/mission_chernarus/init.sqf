@@ -42,9 +42,6 @@ if ((!isServer) && (player != player)) then
 };
 
 if (isServer) then {
-    "dayzLogin" addPublicVariableEventHandler {(_this select 1) call server_playerLogin};
-	"dayzPlayerSave" addPublicVariableEventHandler {(_this select 1) call server_playerSync};
-	"dayzCharSave" addPublicVariableEventHandler {(_this select 1) call server_playerSync};
 	hiveInUse	=	true;
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
