@@ -11,14 +11,14 @@ _timeout = _object getVariable["combattimeout",0];
 _playerIDtoarray = [];
 _playerIDtoarray = toArray _playerID;
 
-if (59 in _playerIDtoarray) exitWith {};
+if (vehicle _object != _object) then {
+	_object action ["eject", vehicle _object];
+};
+
+if (59 in _playerIDtoarray) exitWith { 	diag_log ("Exited"); };
 
 if ((_timeout - time) > 0) then {
 	_playerName call player_combatLogged;
-};
-
-if (vehicle _object != _object) then {
-	_object action ["eject", vehicle _object];
 };
 
 diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerID,_object,_characterID];
