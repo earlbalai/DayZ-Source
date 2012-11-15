@@ -15,6 +15,7 @@ Communtiy Devs
 * Pwnoz0r
 
 Contributions By
+* fred41
 * Tansien
 * Killzone_kid
 * VRShiva
