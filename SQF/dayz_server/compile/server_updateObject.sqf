@@ -1,7 +1,7 @@
 /*
 [_object,_type] spawn server_updateObject;
 */
-private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage"];
+private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk"];
 
 _object = 	_this select 0;
 _type = 	_this select 1;
@@ -16,7 +16,6 @@ if ((typeName _objectID != "string") || (typeName _uid != "string")) then
     //force fail
     _objectID = "0";
     _uid = "0";
-	_isNotOk = true;
 };
 
 if (_objectID == "0" && _uid == "0") then
@@ -27,6 +26,7 @@ if (_objectID == "0" && _uid == "0") then
 		_object_position select 0,
 		_object_position select 1, 
 		_object_position select 2]);
+		_isNotOk = true;
 };
 
 if (_isNotOk) exitWith { deleteVehicle _object; };
