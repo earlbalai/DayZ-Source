@@ -34,6 +34,7 @@ Testers:
 * TheLaughingMan
 * Cammo
 * Max
+* DzAirmaX
 
 Contributing
 ------------
