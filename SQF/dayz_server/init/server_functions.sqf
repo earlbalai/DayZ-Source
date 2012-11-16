@@ -22,11 +22,7 @@ vehicle_handleInteract = {
 };
 
 player_combatLogged = {
-	private["_playerName","_center","_group"];
-	_playerName = name player;
-	_timeout = _object getVariable["combattimeout",0];
 
-	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 };
 
 //event Handlers
