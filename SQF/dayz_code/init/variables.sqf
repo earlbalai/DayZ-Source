@@ -213,10 +213,6 @@ if(!isDedicated) then {
 	dayz_bodyMonitor = [];
 	dayz_flyMonitor = [];		//used for monitor flies
 	
-	dayz_buildingMonitor = [];	//Buildings to check
-	dayz_bodyMonitor = [];
-	dayz_flyMonitor = [];		//used for monitor flies
-	
 	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 	
 	//temperature variables
