@@ -27,7 +27,11 @@ FIX : 09 NOVEMBER 2012
 		* [UPDATED] Combat Logging "Projectile Near" Have now been removed while we look for a less intensive way to track projectiles.
 		* [UPDATED] Combat Logging is now removed on death.
         * [UPDATED] Corrected legs and hands fractures they must be set with actual value.
-
+		* [UPDATED] (*.1 Hotfix)Updated hive .dlls to fix a reconnect issue with prepared statements.
+		* [UPDATED] (*.1 Hotfix)Increased m107 loot chance to 0.02. 
+		* [UPDATED] (*.1 Hotfix)Lowered As50 loot chance to 0.01
+		
+		
         * [REMOVED]	Damaged logging to .rpt removed all traces of dmg to a player.
         * [REMOVED]	An2_1_TK_CIV_EP1 Got removed during testing devs felt it lacked perpose in the game.
         * [REMOVED]	An2_2_TK_CIV_EP1 Got removed during testing devs felt it lacked perpose in the game.
@@ -47,6 +51,7 @@ FIX : 09 NOVEMBER 2012
         * [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
         * [Fixed]   Debug menu options are no longer editable.
         * [Fixed]   Locked Singleplayer Menu
+		* [Fixed]   (*.1 Hotfix) Players with high CharacterID weren't dying properly.
 
     Upstream hive (public hive):
         Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
