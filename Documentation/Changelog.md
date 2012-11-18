@@ -21,6 +21,7 @@ FIX : 09 NOVEMBER 2012
 		* [NEW]	Disabled radio messages to be heard and shown in the left lower corner of the screen.
 		* [NEW]	General speed up of the login process.
 		* [NEW]	Street Lights now active in towns.
+		* [NEW] (*.2 Hotfix)Added some Anti-cheat.
 
 
         * [UPDATED] Combat Logging "Fired Near" checks are now limited to 8 metre radius.
@@ -31,6 +32,16 @@ FIX : 09 NOVEMBER 2012
 		* [UPDATED] (*.1 Hotfix)Increased m107 loot chance to 0.02. 
 		* [UPDATED] (*.1 Hotfix)Lowered As50 loot chance to 0.01
 		
+		* [Fixed]	Adding checks for female skin humanity/login.
+        * [Fixed]   Adding female skin to variables.
+        * [Fixed]   Fixed Parachute so jumping out of choppers won?t kill you.
+        * [Fixed]   Event Handle for wrecked choppers this should allow the smoke on wrecks to work all the time.
+        * [Fixed]   Event Handle for Vehicles this fix's problems with local vehilce damage calls..
+        * [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
+        * [Fixed]   Debug menu options are no longer editable.
+        * [Fixed]   Locked Singleplayer Menu
+		* [Fixed]   (*.1 Hotfix) Players with high CharacterID weren't dying properly.
+		* [Fixed]   (*.2 Hotfix) Fixed 2nd Parachute removal issue.
 		
         * [REMOVED]	Damaged logging to .rpt removed all traces of dmg to a player.
         * [REMOVED]	An2_1_TK_CIV_EP1 Got removed during testing devs felt it lacked perpose in the game.
@@ -43,15 +54,6 @@ FIX : 09 NOVEMBER 2012
 		* [REMOVED] Dogs Removed while we rewrite the hud and correct a few other issues. (attak, Getin/out of vehicles)
 		* [REMOVED] UH60M_MEV_EP1 Removed due to its heal abilty.
 
-        * [Fixed]	Adding checks for female skin humanity/login.
-        * [Fixed]   Adding female skin to variables.
-        * [Fixed]   Fixed Parachute so jumping out of choppers won?t kill you.
-        * [Fixed]   Event Handle for wrecked choppers this should allow the smoke on wrecks to work all the time.
-        * [Fixed]   Event Handle for Vehicles this fix's problems with local vehilce damage calls..
-        * [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
-        * [Fixed]   Debug menu options are no longer editable.
-        * [Fixed]   Locked Singleplayer Menu
-		* [Fixed]   (*.1 Hotfix) Players with high CharacterID weren't dying properly.
 
     Upstream hive (public hive):
         Adjusted the respawn rates of vehicles. Previously all vehicles had pretty long respawn time making them a bit too rare.
