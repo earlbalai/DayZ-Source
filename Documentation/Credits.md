@@ -39,6 +39,6 @@ Testers:
 Contributing
 ------------
 Want to contribute? Or have we missed your name?
-Please contact R4Z0R49 on [http://dayzmod.com/forums/.](http://dayzmod.com/forums/)
+Please contact R4Z0R49 on [http://dayzmod.com/forums/.](http://dayzmod.com/forum/)
 
 
