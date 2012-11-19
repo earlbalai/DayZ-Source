@@ -7,6 +7,7 @@ FIX : 09 NOVEMBER 2012
 
 		* [Prerequisites]	beta-patch 98866.
 		* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
+		* [Prerequisites]	New Mission File Downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
 		
 		* [NEW]	class Mi17_TK_EP1 Now Unbanned. (Mi17_DZ)
 		* [NEW]	An2_TK_EP1 Now Unbanned.(AN2_DZ)
@@ -64,33 +65,6 @@ FIX : 09 NOVEMBER 2012
         * [UPDATED] Destroyed high-end ( aircraft, all-terrain) vehicles respawn after 24h.
         Note: Respawn rates are our recommended rule set, they may differ on some private hive servers.
 
-    Dogs:
-
-        Dogs can be found around the world roaming.
-        Dogs must be tamed using a peace of raw food.
-        Tamed dogs can be controlled (This is still limited for now).
-        Once tamed dogs will automatically follow unless told to do something else.
-        Dogs Need Food (rawsteak) new icon will apear.
-        Dogs Need Water (WaterBottle) new icon will apear.
-		Limited to 1 Dog per player.
-
-        If your dog dies you can gut it.
-
-    Basic Controls:
-
-        Sit - Tells your dog to sit.
-        Lie - Tells your dog to lie down.
-        Stay - Tells your dog to stay in its current location. Dogs will get bored if left.
-        Track - Tells your dog to find the closest animal within 900m.
-        Call - Calls your dog back. (Cancels all current commands).
-		Dogs will now get in and out of vehiles with you.
-
-    Dog Problems:
-
-        Sometimes get stuck going up/down steep slopes; very slow movement at best.
-        Sometimes "loses" player and dosent follow again till player approches dog; sometimes a "Call Dog" fixes the issue.
-        Sometimes repeating sit/lay down animations when in waiting mode beside player; often occurs with the Fin model. Always occurs with more than one dog.     
-		Sometimes get issue when the dog isnt close to Vehilce/player when entering vehilces make sure dogs are close before entering.
 ______________________
 
 ### UPDATE : 31th OCTOBER 2012
