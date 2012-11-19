@@ -1,7 +1,7 @@
 FIX : 09 NOVEMBER 2012
 
 	Community Notes: 
-		* V1.7.4.1
+		* V1.7.4.3
 
 	Community Change log:
 
