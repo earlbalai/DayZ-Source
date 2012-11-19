@@ -175,14 +175,13 @@ dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
 dayz_spawnPos = getPosATL player;
 
-if(isDedicated) then {
-	dayz_disco = [];
-};
 
 if(isServer) then {
+	dayz_disco = [];
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
+	botPlayers = [];
 };
 
 if(!isDedicated) then {

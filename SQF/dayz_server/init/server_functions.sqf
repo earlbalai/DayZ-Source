@@ -14,15 +14,14 @@ local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
+disco_playerMorph =     compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerMorph.sqf";	
+disco_damageHandler =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_damageHandler.sqf";
+disco_playerDeath  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerDeath.sqf";
 
 vehicle_handleInteract = {
 	private["_object"];
 	_object = _this select 0;
 	[_object, "all"] call server_updateObject;
-};
-
-player_combatLogged = {
-
 };
 
 //event Handlers
@@ -34,7 +33,21 @@ eh_localCleanup =			{
 			private["_type","_unit"];
 			_unit = _this select 0;
 			_type = typeOf _unit;
+			 _myGroupUnit = group _unit;
+ 			_unit removeAllMPEventHandlers "mpkilled";
+ 			_unit removeAllMPEventHandlers "mphit";
+ 			_unit removeAllMPEventHandlers "mprespawn";
+ 			_unit removeAllEventHandlers "FiredNear";
+			_unit removeAllEventHandlers "HandleDamage";
+			_unit removeAllEventHandlers "Killed";
+			_unit removeAllEventHandlers "Fired";
+			_unit removeAllEventHandlers "GetOut";
+			_unit removeAllEventHandlers "GetIn";
+			_unit removeAllEventHandlers "Local";
+			clearVehicleInit _unit;
 			deleteVehicle _unit;
+			deleteGroup _myGroupUnit;
+			_unit = nil;
 			diag_log ("CLEANUP: DELETED A " + str(_type) );
 		};
 	}];
