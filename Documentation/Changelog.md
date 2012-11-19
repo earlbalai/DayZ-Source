@@ -22,6 +22,7 @@ FIX : 09 NOVEMBER 2012
 		* [NEW]	General speed up of the login process.
 		* [NEW]	Street Lights now active in towns.
 		* [NEW] (*.2 Hotfix)Added some Anti-cheat.
+		* [NEW] (*.3 Hotfix)Added local copy of cert if it cant get one online, version checks.
 
 
         * [UPDATED] Combat Logging "Fired Near" checks are now limited to 8 metre radius.
