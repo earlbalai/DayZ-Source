@@ -12,8 +12,6 @@ _distance = round(_audible * 10 * _caliber);
 
 dayz_disAudial = _distance;
 dayz_firedCooldown = time;
-// Put everyone in range of the bullet into combat
-//_id = _this spawn player_projectileNear;
 // Color in the combat icon
 dayz_combat = 1;
 
@@ -42,7 +40,6 @@ if (_ammo isKindOf "SmokeShell") then {
 	} forEach _listTalk;
 } else {
 	_id = [_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
-	
 	//Check if need to place arrow
 	if (_ammo isKindOf "Bolt") then {
 		_id = _this spawn player_crossbowBolt;
