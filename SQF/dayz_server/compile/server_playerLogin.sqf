@@ -35,8 +35,12 @@ if (_playerID == "") then {
 if ((_playerID == "") or (isNil "_playerID")) exitWith {
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 };
+// wait until bot still on server 
+while {_playerID in botPlayers} do { sleep 1; };
+penaltyTimeout = false;
+(owner _playerObj) publicVariableClient "penaltyTimeout";
 
-endLoadingScreen;
+//??? endLoadingScreen;
 diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
 
 //Do Connection Attempt
@@ -117,8 +121,5 @@ if (_hiveVer >= dayz_hiveVersionNo) then {
 //Server publishes variable to clients and WAITS
 //_playerObj setVariable ["publish",[_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer],true];
 
-_clientID = owner _playerObj;
 dayzPlayerLogin = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer];
-_clientID publicVariableClient "dayzPlayerLogin";
-
-//_playerObj enableSimulation false;
+(owner _playerObj) publicVariableClient "dayzPlayerLogin";

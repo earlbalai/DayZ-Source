@@ -2,6 +2,8 @@ startLoadingScreen ["","DayZ_loadingScreen"];
 /*	
 	INITILIZATION
 */
+startLoadingScreen ["","RscDisplayLoadCustom"];
+cutText ["","BLACK OUT"];
 enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
@@ -49,7 +51,8 @@ if (isServer) then {
 if (!isDedicated) then {
 	//Conduct map operations
 	0 fadeSound 0;
-	0 cutText [(localize "STR_AUTHENTICATING"), "BLACK FADED",60];
+	waitUntil {!isNil "dayz_loadScreenMsg"};
+	dayz_loadScreenMsg = (localize "STR_AUTHENTICATING");
 	
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
