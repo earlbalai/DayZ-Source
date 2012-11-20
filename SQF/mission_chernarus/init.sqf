@@ -1,4 +1,3 @@
-startLoadingScreen ["","DayZ_loadingScreen"];
 /*	
 	INITILIZATION
 */
