@@ -653,7 +653,7 @@ class FSM
        "" \n
        "dayzPlayerLogin2 = [];" \n
        "dayzLogin2 = [_charID,player,_playerUID];" \n
-       "publicVariable ""dayzLogin2"";" \n
+       "publicVariableServer ""dayzLogin2"";" \n
        "// remove isServer from player space" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
