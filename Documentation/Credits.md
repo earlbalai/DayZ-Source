@@ -7,7 +7,7 @@ Communtiy Devs
 * Alby
 * Ander
 * Ayan4m1
-* f0rt (ashfor03)
+* f0rt
 * R4Z0R49
 * Rajko
 * Stapo
