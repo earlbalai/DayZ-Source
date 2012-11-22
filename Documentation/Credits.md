@@ -1,14 +1,16 @@
 DayZ Community Developers
 -------
-Designer
-* Dean 'Rocket' Hall
+Community Dev Project Sponsor
+* Rocket
+
+Community Dev Project Manager
+* R4Z0R49
 
 Communtiy Devs
 * Alby
 * Ander
 * Ayan4m1
 * f0rt
-* R4Z0R49
 * Rajko
 * Stapo
 * Venthos
@@ -40,5 +42,3 @@ Contributing
 ------------
 Want to contribute? Or have we missed your name?
 Please contact R4Z0R49 on [http://dayzmod.com/forums/.](http://dayzmod.com/forum/)
-
-
