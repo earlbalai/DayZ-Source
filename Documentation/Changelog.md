@@ -56,7 +56,6 @@ FIX : 21 NOVEMBER 2012
 		* [NEW]	Disabled greeting menu .
 		* [NEW]	Disabled radio messages to be heard and shown in the left lower corner of the screen.
 		* [NEW]	General speed up of the login process.
-		* [NEW]	Street Lights now active in towns.
 		* [NEW] (*.2 Hotfix)Added some Anti-cheat.
 		* [NEW] (*.3 Hotfix)Added local copy of cert if it cant get one online, version checks.
 
@@ -81,8 +80,8 @@ FIX : 21 NOVEMBER 2012
 		* [Fixed]   (*.2 Hotfix) Fixed 2nd Parachute removal issue.
 		
         * [REMOVED]	Damaged logging to .rpt removed all traces of dmg to a player.
-        * [REMOVED]	An2_1_TK_CIV_EP1 Got removed during testing devs felt it lacked perpose in the game.
-        * [REMOVED]	An2_2_TK_CIV_EP1 Got removed during testing devs felt it lacked perpose in the game.
+        * [REMOVED]	An2_1_TK_CIV_EP1 Got removed during testing devs felt it lacked purpose in the game.
+        * [REMOVED]	An2_2_TK_CIV_EP1 Got removed during testing devs felt it lacked purpose	in the game.
         * [REMOVED]	MV22 Got removed during testing devs felt it lacked perpose in the game.
         * [REMOVED]	S1203_ambulance_EP1 Got replaced during testing to a hmmv class vehicle.
 		* [REMOVED]	BAF_L85A2_RIS_CWS From Loot table.
@@ -90,6 +89,7 @@ FIX : 21 NOVEMBER 2012
 		* [REMOVED] HMMWV_Ambulance_CZ_DES_EP1 Removed due to its heal abilty.
 		* [REMOVED] Dogs Removed while we rewrite the hud and correct a few other issues. (attak, Getin/out of vehicles)
 		* [REMOVED] UH60M_MEV_EP1 Removed due to its heal abilty.
+		* [REMOVED]	(*.4 Hotfix) Street Lights Removed.
 
 
     Upstream hive (public hive):
