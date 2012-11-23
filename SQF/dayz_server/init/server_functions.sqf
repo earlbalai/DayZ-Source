@@ -24,6 +24,23 @@ vehicle_handleInteract = {
 	[_object, "all"] call server_updateObject;
 };
 
+check_publishobject = {
+        private["_allowed","_allowedObjects","_object"];
+       
+        _object = _this select 0;
+        _allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
+        _allowed = false;
+       
+        diag_log format ["DEBUG: Checking if Object: %1 is allowed", _object];
+       
+        if ((typeOf _object) in _allowedObjects) then {
+                diag_log format ["DEBUG: Object: %1 Safe",_object];
+                _allowed = true;
+        };
+       
+        _allowed;
+};
+
 //event Handlers
 eh_localCleanup =			{
 	private ["_object"];
