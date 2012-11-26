@@ -39,7 +39,7 @@ if (!_inVehicle) then {
 					//Register
 					_x setVariable ["looted",_dateNow,true];
 					//cleanup
-					_handle = [_x,_fastRun] spawn building_spawnLoot;
+					_handle = [_x,_fastRun] call building_spawnLoot;
 					waitUntil{scriptDone _handle};
 				};
 			};
@@ -56,7 +56,7 @@ if (!_inVehicle) then {
 							if (_zombiesNum == 0) then {
 								//Randomize Zombies
 								_x setVariable ["zombieSpawn",_dateNow,true];
-								_handle = [_x,_fastRun] spawn building_spawnZombies;
+								_handle = [_x,_fastRun] call building_spawnZombies;
 								waitUntil{scriptDone _handle};
 							//} else {
 								//_x setVariable ["zombieSpawn",_dateNow,true];
