@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "scriptedFSM.cfg, DayZ Server Cleanup">*/
+/*%FSM<COMPILE "D:\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Server Cleanup">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"init"};
@@ -45,8 +45,8 @@ link20[] = {15,16};
 link21[] = {16,1};
 link22[] = {17,9};
 link23[] = {18,17};
-globals[] = {25.000000,1,0,0,0,640,480,1,24,6316128,1,-396.580658,354.272186,463.204498,-386.553192,911,1031,1};
-window[] = {2,-1,-1,-1,-1,1020,322,1651,78,3,929};
+globals[] = {25.000000,1,0,0,0,640,480,1,24,6316128,1,-396.580658,354.272186,463.204498,-386.553192,433,593,1};
+window[] = {0,-1,-1,-1,-1,802,22,1351,22,1,450};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -414,7 +414,7 @@ class FSM
        "{" \n
        "//	_x setVariable [""needUpdate"",false,true];" \n
        "	needUpdate_objects = needUpdate_objects - [_x];" \n
-       "	[_x,""all""] spawn server_updateObject;" \n
+       "	[_x,""all""] call server_updateObject;" \n
        "" \n
        "} forEach needUpdate_objects;" \n
        ""/*%FSM</STATEINIT""">*/;
