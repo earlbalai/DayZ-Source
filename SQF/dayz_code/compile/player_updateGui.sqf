@@ -1,9 +1,9 @@
-private["_display","_ctrlBlood","_bloodVal","_ctrlFood","_ctrlThirst","_foodVal","_ctrlTemp","_tempVal","_array"];
+private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible"];
 disableSerialization;
 
 _foodVal = 		1 - (dayz_hunger / SleepFood);
 _thirstVal = 	1 - (dayz_thirst / SleepWater);
-_tempVal 	= 	(dayz_temperatur / dayz_temperaturnormal);	//TeeChange
+_tempVal 	= 	1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
 _combatVal =	1 - dayz_combat; // May change later to be a range of red/green to loosely indicate 'time left in combat'
 
 if (uiNamespace getVariable ['DZ_displayUI', 0] == 1) exitWith {
@@ -21,7 +21,7 @@ _ctrlThirst = 	_display displayCtrl 1302;
 _ctrlTemp 	= 	_display displayCtrl 1306;					//TeeChange
 _ctrlEar = 		_display displayCtrl 1304;
 _ctrlEye = 		_display displayCtrl 1305;
-_ctrlHumanity = _display displayCtrl 1207;
+//_ctrlHumanity = _display displayCtrl 1207;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
 
@@ -29,7 +29,7 @@ _ctrlFracture = 	_display displayCtrl 1203;
 _ctrlBlood ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_bloodVal))),(Dayz_GUI_G * _bloodVal),(Dayz_GUI_B * _bloodVal), 0.5];
 _ctrlFood ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * (1-_foodVal))),(Dayz_GUI_G * _foodVal),(Dayz_GUI_B * _foodVal), 0.5];
 _ctrlThirst ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 0.5];
-_ctrlTemp ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * _tempVal)),(Dayz_GUI_G * _tempVal),(Dayz_GUI_B + (0.25 * (1/_tempVal))), 0.5];	//TeeChange Coulor should change into red if value is higher as normale temp and into blue if coulor is lower as normal temp
+_ctrlTemp ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * (1 - _tempVal))), (Dayz_GUI_G * _tempVal), _tempVal, 0.5];	// Color ranges from iceblue (cold) to red (hot)
 _ctrlCombat ctrlSetTextColor		[(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G * _combatVal),(Dayz_GUI_B * _combatVal), 0.5];
 
 /*
@@ -77,7 +77,7 @@ if (_foodVal < 0.2) then {
 	_ctrlFood call player_guiControlFlash;
 };
 
-if (_tempVal < 0.833) then {	//TeeChange
+if (_tempVal > 0.8) then {	//TeeChange
 	_ctrlTemp call player_guiControlFlash;
 };
 
