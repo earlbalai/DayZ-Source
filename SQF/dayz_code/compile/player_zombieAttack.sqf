@@ -3,7 +3,7 @@ _unit = _this;
 _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
-if (!(_vehicle in _targets)) exitWith {};
+//if (!(_vehicle in _targets)) exitWith {};
 
 //Do the attack
 _move = "ZombieStandingAttack1";
@@ -27,14 +27,13 @@ if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;
 	_hp = 		_hpList call BIS_fnc_selectRandom;
 	_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-	_damage = 	random 0.03;
+	_damage = 	random 0.003;
 
 	[_unit,"hit",0,false] call dayz_zombieSpeak;
-
 	_strH = "hit_" + (_wound);
 	_dam = _vehicle getVariable [_strH,0];
 	_total = (_dam + _damage);
-	
+		
 	_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
 	dayzHitV =	[_vehicle,_wound,_total, _unit,"zombie"];
 	publicVariable "dayzHitV";
