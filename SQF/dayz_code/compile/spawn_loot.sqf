@@ -12,7 +12,7 @@ switch (_iClass) do {
 		_itemType = _arrayLootSpawn select 0;
 		_weights = _arrayLootSpawn call fnc_buildWeightedArray;
 		_qty = 0;
-		_max = ceil(random 4) + 1;
+		_max = ceil(random 2) + 1;
 		//diag_log ("LOOTSPAWN: QTY: " + str(_max) + " ARRAY: " + str(_arrayLootSpawn));
 		while {_qty < _max} do {
 			private["_tQty","_indexLootSpawn","_canType"];
@@ -36,7 +36,7 @@ switch (_iClass) do {
 		_item addWeaponCargoGlobal [_iItem,1];
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if (count _mags > 0) then {
-			_item addMagazineCargoGlobal [(_mags select 0),(round(random 3))];
+			_item addMagazineCargoGlobal [(_mags select 0),(round(random 1))];
 		};
 	};
 	case "magazine": {
