@@ -1239,65 +1239,38 @@ class CfgVehicles {
 };
 class CfgNonAIVehicles {
 	
-	access = ReadAndWrite;
-	
-	class StreetLamp {
-	    aggregatereflectors[] = {};
-	    animated = 0;
-	    armorlights = 1;
-	    armorstructural = 1;
-	    brightness = 0.15;
-	    colorambient[] = {0.02, 0.02, 0.02};
-	    colordiffuse[] = {0.9, 0.8, 0.6};
-	    destrtype = "DestructTree";
-	    model = "";
-	    simulation = "StreetLamp";
-	    class HitPoints {
-	        class HitBulb {
-	            armor = 1;
-	            material = 60;
-	            name = "lampa";
-	            passthrough = 1;
-	        };
-	    };
-	    class Reflectors {
-	        class LampLight {
-	            ambient[] = {0.1, 0.1, 0.1, 1};
-	            brightness = 0.2;
-	            color[] = {0.9, 0.8, 0.6, 1};
-	            direction = "";
-	            hitpoint = "lampa";
-	            position = "Light";
-	            selection = "";
-	            size = 0.5;
-	        };
-	    };
+	access = 0;
+	class StreetLamp
+	{
+		scope = 0;
+		model = "";
+		destrType = "DestructTree";
+		simulation = "thing";
 	};
-	
-	
-	class Land_lampa_sidl : StreetLamp {
-	    scope = protected;
-	    model = "\ca\buildings\Misc\lampa_sidl";
+	class Land_lampa_sidl: StreetLamp
+	{
+		scope = 1;
+		model = "\ca\buildings\Misc\lampa_sidl";
 	};
-	
-	class Land_lampa_sidl_2 : StreetLamp {
-	    scope = protected;
-	    model = "\ca\buildings\Misc\lampa_sidl_2";
+	class Land_lampa_sidl_2: StreetLamp
+	{
+		scope = 1;
+		model = "\ca\buildings\Misc\lampa_sidl_2";
 	};
-	
-	class Land_lampa_sidl_3 : StreetLamp {
-	    scope = protected;
-	    model = "\ca\buildings\Misc\lampa_sidl_3";
+	class Land_lampa_sidl_3: StreetLamp
+	{
+		scope = 1;
+		model = "\ca\buildings\Misc\lampa_sidl_3";
 	};
-	
-	class Land_lampa_ind : StreetLamp {
-	    scope = protected;
-	    model = "\ca\buildings\Misc\lampa_ind";
+	class Land_lampa_ind: StreetLamp
+	{
+		scope = 1;
+		model = "\ca\buildings\Misc\lampa_ind";
 	};
-	
-	class Land_lampa_ind_zebr : StreetLamp {
-	    scope = protected;
-	    model = "\ca\buildings\Misc\lampa_ind_zebr";
+	class Land_lampa_ind_zebr: StreetLamp
+	{
+		scope = 1;
+		model = "\ca\buildings\Misc\lampa_ind_zebr";
 	};
 
 };
