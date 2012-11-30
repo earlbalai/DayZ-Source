@@ -13,7 +13,7 @@ local_deleteObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 local_createObj = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_createObj.sqf";		//Creates the object in DB
 server_playerSync =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
-server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
+//server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 disco_playerMorph =     compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerMorph.sqf";	
 disco_damageHandler =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_damageHandler.sqf";
 disco_playerDeath  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerDeath.sqf";
@@ -29,12 +29,17 @@ check_publishobject = {
        
         _object = _this select 0;
         _allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
+		_noncombatitems = ["ThrownObjects", "RoadFlare", "ChemLight"];
         _allowed = false;
        
         diag_log format ["DEBUG: Checking if Object: %1 is allowed", _object];
        
         if ((typeOf _object) in _allowedObjects) then {
                 diag_log format ["DEBUG: Object: %1 Safe",_object];
+                _allowed = true;
+        };
+		if ((typeOf _object) in _noncombatitems) then {
+                diag_log format ["DEBUG: NONCombat: %1 Safe",_object];
                 _allowed = true;
         };
        
