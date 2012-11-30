@@ -9,10 +9,12 @@ _targets = _unit getVariable ["targets",[]];
 _move = "ZombieStandingAttack1";
 _rnd = 0;
 _wound = "";
-if (r_player_unconscious) then {
+if (r_player_unconscious && _vehicle == player) then {
+	_unit doMove (getPos player);
 	_rnd = round(random 4) + 1;
 	_move = "ZombieFeed" + str(_rnd);
 } else {
+	_unit doMove (getPos player);
 	_rnd = round(random 9) + 1;
 	_move = "ZombieStandingAttack" + str(_rnd);
 };
