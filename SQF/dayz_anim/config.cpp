@@ -265,7 +265,7 @@ class CfgAmmo {
 	class R_57mm_HE: FakeAmmo {};
 	class R_80mm_HE: FakeAmmo {};
 	class R_S8T_AT: FakeAmmo {};
-	class R_M136_AT: FakeAmmo {};
+	//class R_M136_AT: FakeAmmo {};
 	class R_RPG18_AT: FakeAmmo {};
 	class R_PG7V_AT: FakeAmmo {};
 	class R_PG7VL_AT: FakeAmmo {};
@@ -665,7 +665,7 @@ class CfgMagazines {
 	//class 5Rnd_127x99_as50: FakeMagazine {};
 	//class 5Rnd_86x70_L115A1: FakeMagazine {};
 	class NLAW: FakeMagazine {};
-	//class 200Rnd_556x45_L110A1: FakeMagazine {};
+	class 200Rnd_556x45_L110A1: FakeMagazine {};
 	//class 200Rnd_762x54_GPMG: FakeMagazine {};
 	class 32Rnd_40mm_GMG: FakeMagazine {};
 	class 12Rnd_CRV7: FakeMagazine {};
@@ -813,13 +813,10 @@ class CfgWeapons {
 	class Pecheneg: FakeWeapon {};
 	//class SVD: FakeWeapon {};
 	//class SVD_CAMO: FakeWeapon {};
-	class G36C: FakeWeapon {};
-	class G36_C_SD_eotech: FakeWeapon {};
-	class G36a: FakeWeapon {};
-	class G36K: FakeWeapon {};
-	class MG36: FakeWeapon {};
+
 	//class Launcher: FakeWeapon {};
-	//class M136: FakeWeapon {}
+	class ksvk: FakeWeapon {};
+	class M136: FakeWeapon {}
 	class Javelin: FakeWeapon {};
 	class Stinger: FakeWeapon {};
 	class RPG7V: FakeWeapon {};
@@ -829,7 +826,7 @@ class CfgWeapons {
 	//class Binocular: FakeWeapon {};
 	class Laserdesignator: FakeWeapon {};
 	class Laserdesignator_mounted: FakeWeapon {};
-	class NVGoggles: FakeWeapon {};
+	//class NVGoggles: FakeWeapon {};
 	//class Throw: FakeWeapon {};
 	//class HandGunBase: FakeWeapon {};
 	//class Put: FakeWeapon {};
@@ -975,7 +972,6 @@ class CfgWeapons {
 	//class bizon_silenced: FakeWeapon {};
 	//class Colt1911: FakeWeapon {};
 	//class DMR: FakeWeapon {};
-	class ksvk: FakeWeapon {};
 	//class M1014: FakeWeapon {};
 	class m107: FakeWeapon {};
 	class M252: FakeWeapon {};
@@ -1018,12 +1014,13 @@ class CfgWeapons {
 	class L85A2_base_BAF: FakeWeapon {};
 	class BAF_L85A2_RIS_Holo: FakeWeapon {};
 	class BAF_L85A2_UGL_Holo: FakeWeapon {};
-	class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
+	//class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
 	class BAF_L85A2_UGL_SUSAT: FakeWeapon {};
 	class BAF_L85A2_RIS_ACOG: FakeWeapon {};
 	class BAF_L85A2_UGL_ACOG: FakeWeapon {};
-	//class BAF_L85A2_RIS_CWS: FakeWeapon {};
+	class BAF_L85A2_RIS_CWS: FakeWeapon {};
 	class BAF_L86A2_ACOG: FakeWeapon {};
+	class BAF_L110A1: FakeWeapon {};
 	class BAF_L110A1_Aim: FakeWeapon {};
 	class BAF_L7A2_GPMG: FakeWeapon {};
 	class BAF_ied_v1: FakeWeapon {};
@@ -1057,23 +1054,29 @@ class CfgWeapons {
 	//class M24_des_EP1: FakeWeapon {};
 	//class SVD_des_EP1: FakeWeapon {};
 	//class SVD_NSPU_EP1: FakeWeapon {};
-	class Sa58P_EP1: FakeWeapon {};
-	class Sa58V_EP1: FakeWeapon {};
-	class Sa58V_RCO_EP1: FakeWeapon {};
-	class Sa58V_CCO_EP1: FakeWeapon {};
+	//class Sa58P_EP1: FakeWeapon {};
+	//class Sa58V_EP1: FakeWeapon {};
+	//class Sa58V_RCO_EP1: FakeWeapon {};
+	//class Sa58V_CCO_EP1: FakeWeapon {};
 	//class M4A3_CCO_EP1: FakeWeapon {};
 	//class M4A3_RCO_GL_EP1: FakeWeapon {};
 	//class Binocular_Vector: FakeWeapon {};
 	//class AK_74_GL_kobra: FakeWeapon {};
 	//class AKS_74: FakeWeapon {};
+	class MK_12: FakeWeapon {};
 	class AKS_74_NSPU: FakeWeapon {};
 	class AKS_74_GOSHAWK: FakeWeapon {};
 	//class FN_FAL: FakeWeapon {};
 	//class FN_FAL_ANPVS4: FakeWeapon {};
-	class G36C_camo: FakeWeapon {};
-	class G36_C_SD_camo: FakeWeapon {};
-	class G36A_camo: FakeWeapon {};
-	class G36K_camo: FakeWeapon {};
+	//class G36C_camo: FakeWeapon {};
+	//class G36_C_SD_camo: FakeWeapon {};
+	//class G36A_camo: FakeWeapon {};
+	//class G36K_camo: FakeWeapon {};
+	//class G36C: FakeWeapon {};
+	class G36_C_SD_eotech: FakeWeapon {};
+	//class G36a: FakeWeapon {};
+	class G36K: FakeWeapon {};
+	class MG36: FakeWeapon {};
 	class MG36_camo: FakeWeapon {};
 	class GrenadeLauncher_EP1: FakeWeapon {};
 	class M32_EP1: FakeWeapon {};
