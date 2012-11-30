@@ -7,9 +7,15 @@ FIX DUE : 7TH DECEMBER 2012
 		Client:
 			* [Prerequisites]
 			
-			* [NEW]
+			* [NEW]	Weapon - Sa58P_EP1 (Military)
+			* [NEW]	Weapon - Sa58V_EP1 (Military)
+			* [NEW]	Weapon - Sa58V_RCO_EP1 (Military)
+			* [NEW]	Weapon - Sa58V_CCO_EP1 (Military)
+			* [NEW]	Weapon - G36C (HeliCrash)
+			* [NEW]	Weapon - G36C_camo (HeliCrash)
+			* [NEW]	Weapon - G36A_camo (HeliCrash)
 
-			* [UPDATED]
+			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo (HeliCrash)
 
 			* [Fixed]
 
