@@ -34,7 +34,7 @@ dayz_inVehicle = _inVehicle;
         _dis = _x distance player;
 
 		if ((!_inVehicle) and (_canLoot)) then {    
-			diag_log("SPAWN LOOT: " + _type + " Building is lootable");
+			//diag_log("SPAWN LOOT: " + _type + " Building is lootable");
 			//dayz_serverSpawnLoot = [_dis, _x];
 			//publicVariableServer "dayz_serverSpawnLoot";
 			_keepAwayDist = ((sizeOf _type)+5);
