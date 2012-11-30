@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5";
+		version = "1.7.5.D1130";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -103,23 +103,23 @@ class CfgSurvival {
 	};
 	class Meat {
 		class Default {
-			yield = 2;
+			yield = 1;
 		};
 		class Cow: Default {
-			yield = 8;
+			yield = 6;
 		};
 		class Cow01: Cow {};
 		class Cow02: Cow {};
 		class Cow03: Cow {};
 		class Cow04: Cow {};
 		class Goat: Default {
-			yield = 3;
+			yield = 4;
 		};
 		class Sheep: Default {
-			yield = 5;
+			yield = 3;
 		};
 		class WildBoar: Default {
-			yield = 4;
+			yield = 2;
 		};
 	};
 };
@@ -357,6 +357,7 @@ class CfgBuildingLoot {
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
 			//{"BAF_L85A2_RIS_CWS","weapon"},
+			{"BAF_L85A2_RIS_Holo","weapon"},
 			{"DMR","weapon"},
 			{"","military"},
 			{"","medical"},
@@ -365,7 +366,12 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 			{"Skin_Camo1_DZ","magazine"},
-			{"Skin_Sniper1_DZ","magazine"}
+			{"Skin_Sniper1_DZ","magazine"},
+			{"G36C","weapon"},
+			{"G36C_camo","weapon"},
+			//{"G36_C_SD_camo","weapon"},
+			{"G36A_camo","weapon"},
+			//{"G36K_camo","weapon"}
 		};
 		itemChance[] =	{
 			0.02,		//{"FN_FAL","weapon"},
@@ -376,16 +382,21 @@ class CfgBuildingLoot {
 			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			//0.01,		//{"BAF_L85A2_RIS_CWS","weapon"},
-			0.10,		//{"DMR","weapon"},
+			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			0.06,		//{"DMR","weapon"},
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
 			0.01,		//{"NVGoggles","weapon"}
-			0.1,
-			0.1,
-			0.08,
-			0.05
+			0.1,	//AmmoBoxSmall_556
+			0.1,	//AmmoBoxSmall_762
+			0.08,	//Skin_Camo1_DZ
+			0.05,	//Skin_Sniper1_DZ
+			0.03,	//G36C"
+			0.02,	//G36C_camo
+			//0.01,	//G36_C_SD_camo
+			0.02,	//G36A_camo
+			//0.02	//G36K_camo
 		};
 	};
 	class Hospital: Default {
@@ -433,7 +444,6 @@ class CfgBuildingLoot {
 			{"MP5A5","weapon"},
 			{"MP5SD","weapon"},
 			{"M4A3_CCO_EP1","weapon"},
-
 			{"Binocular","weapon"},
 			{"ItemFlashlightRed","military"},
 			{"ItemKnife","military"},
@@ -449,7 +459,9 @@ class CfgBuildingLoot {
 			{"","military"},
 			//{"Body","object"},
 			{"ItemEtool","weapon"},
-			{"ItemSandbag","magazine"}
+			{"ItemSandbag","magazine"},
+			{"Sa58P_EP1","weapon"},
+			{"Sa58V_EP1","weapon"}
 		};
 		itemChance[] =	{
 			0.05,
@@ -485,7 +497,9 @@ class CfgBuildingLoot {
 			2.50,
 			//0.20,
 			0.05,
-			0.02
+			0.02,
+			0.03,
+			0.03
 		};
 	};
 	class MilitarySpecial: Default {
@@ -500,7 +514,7 @@ class CfgBuildingLoot {
 			{"M16A2GL","weapon"},
 			{"M249_DZ","weapon"},
 			{"M9SD","weapon"},
-			{"M136","weapon"},
+			//{"M136","weapon"},
 			{"AK_74","weapon"},
 			{"M4A1_Aim","weapon"},
 			{"AKS_74_kobra","weapon"},
@@ -542,14 +556,16 @@ class CfgBuildingLoot {
 			{"","generic"},
 			{"","military"},
 			//{"Body","object"},
-			{"PipeBomb","magazine"}
+			{"PipeBomb","magazine"},
+			{"Sa58V_RCO_EP1","weapon"},
+			{"Sa58V_CCO_EP1","weapon"}
 		};
 		itemChance[] =	{
 			0.10,
 			0.05,
 			0.01,
 			0.02,
-			0.01,
+			//0.01, //m136
 			0.10,
 			0.02,
 			0.10,
@@ -587,7 +603,9 @@ class CfgBuildingLoot {
 			1.00,
 			5.00,
 			//0.20,
-			0.01
+			0.01,
+			0.01, //Sa58V_RCO_EP1
+			0.01 //Sa58V_CCO_EP1
 		};
 	};
 	class Church: Residential {
@@ -934,6 +952,19 @@ class CfgBuildingLoot {
 		maxRoaming = 8;
 	}; // Qty: 3
 	class Land_Shed_W02: FarmRoaming {}; // Qty: 213
+	//allow 
+	class Grave: HouseRoaming {
+		maxRoaming = 3;
+	};
+	class GraveCross1: HouseRoaming {	
+		maxRoaming = 2;
+	};
+	class GraveCross2: HouseRoaming {	
+		maxRoaming = 2;
+	};
+	class GraveCrossHelmet: Military {	
+		maxRoaming = 4;
+	};
 };
 
 /*
