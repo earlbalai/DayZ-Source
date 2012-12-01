@@ -15,10 +15,9 @@ if (vehicle _object != _object) then {
 	_object action ["eject", vehicle _object];
 };
 
-if (59 in _playerIDtoarray) exitWith { 	diag_log ("Exited"); };
+if (59 in _playerIDtoarray) exitWith { };
 
 if ((_timeout - time) > 0) then {
-	//_playerName call player_combatLogged;
 	diag_log format["COMBAT LOGGED: %1 (%2)", _playerName,_timeout];
 };
 

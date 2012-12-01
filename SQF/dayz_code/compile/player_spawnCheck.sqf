@@ -96,7 +96,7 @@ dayz_inVehicle = _inVehicle;
 							_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 							_dateNow = (DateToNumber date);
 							_age = (_dateNow - _zombied) * 525948;
-							//diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
+							diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
 							if (_age > 1) then {
 								_bPos = getPosATL _x;
 								_zombiesNum = {alive _x} count (_bPos nearEntities ["zZambie_Base",(((sizeOf _type) * 2) + 10)]);
