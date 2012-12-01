@@ -1,5 +1,11 @@
 waituntil {!isnil "bis_fnc_init"};
 
+BIS_MPF_remoteExecutionServer = {
+	if ((_this select 1) select 2 == "JIPrequest") then {
+		[nil,(_this select 1) select 0,"loc",rJIPEXEC,[any,any,"per","execVM","ca\Modules\Functions\init.sqf"]] call RE;
+	};
+};
+
 BIS_Effects_Burn =			{};
 object_spawnDamVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_spawnDamVehicle.sqf";
 server_playerLogin =		compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
