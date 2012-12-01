@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.D1130";
+		version = "1.7.5.D1201";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -371,7 +371,7 @@ class CfgBuildingLoot {
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
 			{"G36A_camo","weapon"},
-			//{"G36K_camo","weapon"}
+			{"G36K_camo","weapon"}
 		};
 		itemChance[] =	{
 			0.02,		//{"FN_FAL","weapon"},
@@ -396,7 +396,7 @@ class CfgBuildingLoot {
 			0.02,	//G36C_camo
 			//0.01,	//G36_C_SD_camo
 			0.02,	//G36A_camo
-			//0.02	//G36K_camo
+			0.02	//G36K_camo
 		};
 	};
 	class Hospital: Default {
@@ -558,7 +558,8 @@ class CfgBuildingLoot {
 			//{"Body","object"},
 			{"PipeBomb","magazine"},
 			{"Sa58V_RCO_EP1","weapon"},
-			{"Sa58V_CCO_EP1","weapon"}
+			{"Sa58V_CCO_EP1","weapon"},
+			{"G36_C_SD_camo","weapon"},
 		};
 		itemChance[] =	{
 			0.10,
@@ -605,7 +606,8 @@ class CfgBuildingLoot {
 			//0.20,
 			0.01,
 			0.01, //Sa58V_RCO_EP1
-			0.01 //Sa58V_CCO_EP1
+			0.01, //Sa58V_CCO_EP1
+			0.01 //{"G36_C_SD_camo","weapon"},
 		};
 	};
 	class Church: Residential {
