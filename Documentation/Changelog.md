@@ -1,4 +1,4 @@
-FIX DUE : 7TH DECEMBER 2012
+FIX DUE : 2012
 
 	Community Notes: 
 		* V1.7.5
@@ -7,19 +7,34 @@ FIX DUE : 7TH DECEMBER 2012
 		Client:
 			* [Prerequisites]
 			
-			* [NEW]	Weapon - Sa58P_EP1 (Military)
-			* [NEW]	Weapon - Sa58V_EP1 (Military)
-			* [NEW]	Weapon - Sa58V_RCO_EP1 (Military)
-			* [NEW]	Weapon - Sa58V_CCO_EP1 (Military)
-			* [NEW]	Weapon - G36C (HeliCrash)
-			* [NEW]	Weapon - G36C_camo (HeliCrash)
-			* [NEW]	Weapon - G36A_camo (HeliCrash)
+			* [NEW]	Weapon - Sa58P_EP1. (Military)
+			* [NEW]	Weapon - Sa58V_EP1. (Military)
+			* [NEW]	Weapon - Sa58V_RCO_EP1. (MilitaryS)
+			* [NEW]	Weapon - Sa58V_CCO_EP1. (MilitaryS)
+			* [NEW]	Weapon - G36C. (HeliCrash)
+			* [NEW]	Weapon - G36C_camo. (HeliCrash)
+			* [NEW]	Weapon - G36A_camo. (HeliCrash)
+			* [NEW]	Weapon - G36K_camo. (HeliCrash)
+			* [NEW]	Weapon - G36_C_SD_camo (MilitaryS)
+			* [NEW] - Ability to flip ATV's.
+			* [NEW] - Zeds spawn while in vehicles.
+			* [NEW] - Zeds mow have the ability to damage vehicles This is limited to glass only once glass is destoryed players within will be damage.
+			* [NEW] - Zeds now have the ability to pull you from open vehicles.
+			* [NEW] - In combat bot added if your in combat and logoff your player will be replaced with a bot that can still be looted and killed.
+			* [NEW] - New Load screens added to show timeleft for combat logging.
 
-			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo (HeliCrash)
+			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
+			* [UPDATED] - Publish Object will now only publish items allowed. (tents, other deployables)
+			* [UPDATED] - Added a much faster login process.
+			* [UPDATED] - Limted amount of ammo found with weapons.
 
-			* [Fixed]
+			* [Fixed] - Zeds hearing should now be fixed.
+			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
+			* [Fixed] - German Tranlations updated.
+			* [Fixed] - mi17 gunner seat is now fixed (you no longer stand outside)
 
-			* [REMOVED]	
+			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
+			* [REMOVED]	- Banned m136
 			
 		Server:
 			* [Prerequisites]	beta-patch 98866.
