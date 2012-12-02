@@ -29,7 +29,7 @@ if (isServer) then {
 	"dayzPublishObj"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
 	"dayzUpdateVehicle" addPublicVariableEventHandler {(_this select 1) call server_updateObject};
 	"dayzDeleteObj"    addPublicVariableEventHandler {(_this select 1) call local_deleteObj};
-	"dayzLogin"      addPublicVariableEventHandler {(_this select 1) spawn server_playerLogin};
+	"dayzLogin"      addPublicVariableEventHandler {(_this select 1) call server_playerLogin};
 	"dayzLogin2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 //	"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 //	"dayzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_processUpdate};
