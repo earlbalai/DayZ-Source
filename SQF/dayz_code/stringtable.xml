@@ -633,6 +633,12 @@
 			<German>% speichern</German>
 			<Russian>Сохранить %1</Russian>
 		</Key>
+		<Key ID="str_actions_flipveh">
+			<Original>Turn Over %1</Original>
+			<English>Turn Over %1</English>
+			<German>Turn Over %1</German>
+			<Russian>Turn Over %1</Russian>
+		</Key>
 		<Key ID="STR_CHAR_2">
 			<Original>Bandit</Original>
 			<English>Bandit</English>

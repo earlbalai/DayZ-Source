@@ -66,6 +66,7 @@ dayz_resetSelfActions = {
 	s_build_Wire_cat1 =		-1;
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
+	s_player_flipveh = 		-1;
 };
 call dayz_resetSelfActions;
 
