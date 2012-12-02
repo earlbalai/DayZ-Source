@@ -18,7 +18,7 @@ FIX DUE : 2012
 			* [NEW]	Weapon - G36_C_SD_camo (MilitaryS)
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
-			* [NEW] - Zeds mow have the ability to damage vehicles This is limited to glass only once glass is destoryed players within will be damage.
+			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - In combat bot added if your in combat and logoff your player will be replaced with a bot that can still be looted and killed.
 			* [NEW] - New Load screens added to show timeleft for combat logging.
@@ -29,14 +29,16 @@ FIX DUE : 2012
 			* [UPDATED] - Added a much faster login process.
 			* [UPDATED] - Limted amount of ammo found with weapons.
 			* [UPDATED] - Gender selection images updated thanks Des			
-
+			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/50
+			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
 			* [Fixed] - German Tranlations updated.
 			* [Fixed] - mi17 gunner seat is now fixed (you no longer stand outside)
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
-			* [REMOVED]	- Banned m136
+			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
+			* [REMOVED]	- Removed server side gear syncs this should now be handled client side.
 			
 		Server:
 			* [Prerequisites]	beta-patch 98866.
@@ -46,7 +48,7 @@ FIX DUE : 2012
 
 			* [UPDATED] 
 
-			* [Fixed]
+			* [Fixed] - Crash issue on stale child calls
 
 			* [REMOVED]	
 
