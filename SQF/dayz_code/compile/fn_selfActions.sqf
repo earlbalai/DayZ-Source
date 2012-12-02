@@ -45,6 +45,7 @@ if (_canPickLight and !dayz_hasLight) then {
 if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4)) then {	//Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
+	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
 	_isMan = cursorTarget isKindOf "Man";
 	_ownerID = cursorTarget getVariable ["characterID","0"];
 	_isAnimal = cursorTarget isKindOf "Animal";
@@ -53,6 +54,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isFuel = false;
 	_isAlive = alive cursorTarget;
+	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
 	if (_hasFuelE) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_wagon_tanker");
@@ -80,6 +82,15 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_forceSave = -1;
 	};
 	*/
+	//flip vehicle
+	if ((_isVehicletype) and !_canmove and !_isAlive and (player distance cursorTarget >= 2)) then {
+		if (s_player_flipveh  < 0) then {
+			s_player_flipveh = player addAction [format[localize "str_actions_flipveh",_text], "\z\addons\dayz_code\actions\player_flipvehicle.sqf",cursorTarget, 1, true, true, "", ""];		
+		};	
+	} else {
+		player removeAction s_player_flipveh;
+		s_player_flipveh = -1;
+	};
 	
 	//Allow player to fill jerrycan
 	if(_hasFuelE and _isFuel and _canDo) then {
@@ -117,14 +128,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_fireout;
 		s_player_fireout = -1;
 	};
-	
-	//place tent
-	//if(_hasTent and _canDo) then {
-	//		s_player_placetent = player addAction [localize "Place Tent", "\z\addons\dayz_code\actions\tent_pitch.sqf",cursorTarget, 0, false, true, "", ""];
-	//} else {
-	//	player removeAction s_player_placetent;
-	//	s_player_placetent = -1;
-	//};
 	
 	//Packing my tent
 	if(cursorTarget isKindOf "TentStorage" and _canDo and _ownerID == dayz_characterID) then {
@@ -212,6 +215,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	//Others
 	player removeAction s_player_forceSave;
 	s_player_forceSave = -1;
+	player removeAction s_player_flipveh;
+	s_player_flipveh = -1;
 	player removeAction s_player_deleteBuild;
 	s_player_deleteBuild = -1;
 	player removeAction s_player_butcher;
