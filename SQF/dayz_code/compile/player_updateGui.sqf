@@ -50,6 +50,17 @@ if(_humanity != dayz_lastHumanity) then {
 };
 */
 
+_blood = "";
+_bloodLvl = round((r_player_blood / 2) / 1000);
+//diag_log format["DEBUG: bloodlvl: %1",_bloodLvl];
+
+if (_bloodLvl == 0) then { 
+	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";
+} else {
+	_blood = "\z\addons\dayz_code\gui\status_blood_inside_" + str(round(_bloodLvl)) + "_ca.paa";
+};
+
+_ctrlBlood ctrlSetText _blood;
 _visualtext = "";
 _visual = round((dayz_disVisual / 100) * 4) min 5;
 if (_visual > 0) then {_visualtext = "\z\addons\dayz_code\gui\val_" + str(_visual) + "_ca.paa"};
