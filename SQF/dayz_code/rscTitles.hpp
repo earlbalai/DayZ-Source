@@ -87,7 +87,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "DayZ 1.7.5.D1201";
+			text = "DayZ 1.7.5.D1202";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		class CA_TitleMainMenu;
@@ -1145,7 +1145,7 @@ class RscTitles
 			class RscPicture_1300: RscPictureGUI
 			{
 				idc = 1300;
-				text = "\z\addons\dayz_code\gui\status_blood_inside_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_blood_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.86 * safezoneH + safezoneY;
 				w = 0.06;
