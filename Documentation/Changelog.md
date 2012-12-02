@@ -22,11 +22,13 @@ FIX DUE : 2012
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - In combat bot added if your in combat and logoff your player will be replaced with a bot that can still be looted and killed.
 			* [NEW] - New Load screens added to show timeleft for combat logging.
+			* [NEW] - Revamped blood icon to now empty as you loose blood Thank Des
 
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Publish Object will now only publish items allowed. (tents, other deployables)
 			* [UPDATED] - Added a much faster login process.
 			* [UPDATED] - Limted amount of ammo found with weapons.
+			* [UPDATED] - Gender selection images updated thanks Des			
 
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)

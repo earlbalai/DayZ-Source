@@ -22,9 +22,11 @@ Contributions By
 * Killzone_kid
 * VRShiva
 * Inch
+* Des
 
 Art Work
 * Alexander (G17 incombat Icon)
+* Des (Gender images & Blood icon revamp)
 
 Testers:
 * AJ (Leadz)
