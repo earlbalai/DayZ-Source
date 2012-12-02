@@ -24,6 +24,13 @@ disco_playerMorph =     compile preprocessFileLineNumbers "\z\addons\dayz_server
 disco_damageHandler =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_damageHandler.sqf";
 disco_playerDeath  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\disco_playerDeath.sqf";
 
+server_waitForBotFinished = {
+	private ["_playerId"];
+	_playerID = _this select 0;
+	waituntil{sleep 1; !(_playerID in botPlayers)};
+	_this call server_playerLogin;	
+};
+
 vehicle_handleInteract = {
 	private["_object"];
 	_object = _this select 0;
