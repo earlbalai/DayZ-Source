@@ -2,8 +2,13 @@ _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _fastRun = _this select 0;
 _dateNow = (DateToNumber date);
-_maxZombies = dayz_maxLocalZombies;
-_maxZombiesvehicle = 15;
+
+if (_inVehicle) then {
+	_maxZombiesvehicle = 15;
+} else {
+	_maxZombies = dayz_maxLocalZombies;
+};
+
 _age = -1;
 
 // If they just got out of a vehicle, boost their per-player zombie limit by 5 in hopes of allowing insta-spawn zombies
@@ -14,7 +19,7 @@ if (dayz_inVehicle and !_inVehicle) then {
 
 dayz_inVehicle = _inVehicle;
 
-//if (((time - dayz_spawnWait) < dayz_spawnDelay) or ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {diag_log("Skipping Check since neither loot or zombies are ready");};
+if (((time - dayz_spawnWait) < dayz_spawnDelay) or ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {diag_log("Skipping Check since neither loot or zombies are ready");};
 //if (((time - dayz_spawnWait) < dayz_spawnDelay) and ((time - dayz_lootWait) < dayz_lootDelay)) exitWith {};
 
 //diag_log("SPAWN CHECKING: Starting");
@@ -24,7 +29,7 @@ dayz_inVehicle = _inVehicle;
     //waitUntil{_position nearObjectsReady 200};
     _nearby = _position nearObjects ["building",250]; //nearestObjects [player, ["building"], 200];
     _tooManyZs = {alive _x} count (_position nearEntities ["zZambie_Base",300]) > dayz_maxLocalZombies;
-    //diag_log(format["SPAWN CHECK: Building count is %1", count _nearby]);
+    diag_log(format["SPAWN CHECK: Building count is %1", count _nearby]);
     {
         //diag_log("SPAWN CHECK: Start of Loop");
         _type = typeOf _x;
@@ -88,59 +93,31 @@ dayz_inVehicle = _inVehicle;
 		};
 
         if (_canZombie) then {
-			if (_inVehicle) then {
-				if ((time - dayz_spawnWait) > dayz_spawnDelay and _dis < 200) then {
-					if (dayz_spawnZombies < _maxZombiesvehicle) then {
-						if (!_tooManyZs) then {
-							private["_zombied"];
-							_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-							_dateNow = (DateToNumber date);
-							_age = (_dateNow - _zombied) * 525948;
-							diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
-							if (_age > 1) then {
-								_bPos = getPosATL _x;
-								_zombiesNum = {alive _x} count (_bPos nearEntities ["zZambie_Base",(((sizeOf _type) * 2) + 10)]);
-								if (_zombiesNum == 0) then {
-									//Randomize Zombies
-									_x setVariable ["zombieSpawn",_dateNow,true];
-									_handle = [_x,_fastRun] spawn building_spawnZombies;
-									waitUntil{scriptDone _handle};
-								//} else {
-									//_x setVariable ["zombieSpawn",_dateNow,true];
-								};
+			if ((time - dayz_spawnWait) > dayz_spawnDelay and _dis < 200) then {
+				if (dayz_spawnZombies < _maxZombiesvehicle) then {
+					if (!_tooManyZs) then {
+						private["_zombied"];
+						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
+						_dateNow = (DateToNumber date);
+						_age = (_dateNow - _zombied) * 525948;
+						diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
+						if (_age > 1) then {
+							_bPos = getPosATL _x;
+							_zombiesNum = {alive _x} count (_bPos nearEntities ["zZambie_Base",(((sizeOf _type) * 2) + 10)]);
+						diag_log("Zombies Alive: " +str(_zombiesNum));	
+							if (_zombiesNum == 0) then {
+								//Randomize Zombies
+								_x setVariable ["zombieSpawn",_dateNow,true];
+								_handle = [_x,_fastRun] spawn building_spawnZombies;
+								waitUntil{scriptDone _handle};
+							//} else {
+								//_x setVariable ["zombieSpawn",_dateNow,true];
 							};
 						};
-					} else {
-						dayz_spawnWait = time;
-						//dayz_spawnZombies = 0;
 					};
-				};
-			} else {
-				if ((time - dayz_spawnWait) > dayz_spawnDelay and _dis < 200) then {
-					if (dayz_spawnZombies < _maxZombies) then {
-						if (!_tooManyZs) then {
-							private["_zombied"];
-							_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-							_dateNow = (DateToNumber date);
-							_age = (_dateNow - _zombied) * 525948;
-							//diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
-							if (_age > 1) then {
-								_bPos = getPosATL _x;
-								_zombiesNum = {alive _x} count (_bPos nearEntities ["zZambie_Base",(((sizeOf _type) * 2) + 10)]);
-								if (_zombiesNum == 0) then {
-									//Randomize Zombies
-									_x setVariable ["zombieSpawn",_dateNow,true];
-									_handle = [_x,_fastRun] spawn building_spawnZombies;
-									waitUntil{scriptDone _handle};
-								//} else {
-									//_x setVariable ["zombieSpawn",_dateNow,true];
-								};
-							};
-						};
-					} else {
-						dayz_spawnWait = time;
-						//dayz_spawnZombies = 0;
-					};
+				} else {
+					dayz_spawnWait = time;
+					//dayz_spawnZombies = 0;
 				};
 			};
 		};
