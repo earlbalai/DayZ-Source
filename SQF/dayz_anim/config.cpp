@@ -1076,7 +1076,7 @@ class CfgWeapons {
 	//class G36C: FakeWeapon {};
 	class G36_C_SD_eotech: FakeWeapon {};
 	//class G36a: FakeWeapon {};
-	class //G36K: FakeWeapon {};
+	//class G36K: FakeWeapon {};
 	class MG36: FakeWeapon {};
 	class MG36_camo: FakeWeapon {};
 	class GrenadeLauncher_EP1: FakeWeapon {};
