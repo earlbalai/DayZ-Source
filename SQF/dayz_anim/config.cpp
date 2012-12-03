@@ -471,7 +471,9 @@ class CfgMagazines {
 	class 30Rnd_556x45_G36: FakeMagazine {};
 	class 30Rnd_556x45_G36SD: FakeMagazine {};
 	class 200Rnd_556x45_M249: FakeMagazine {};
+	*/
 	class 100Rnd_556x45_BetaCMag: FakeMagazine {};
+	/*
 	class 5Rnd_762x51_M24: FakeMagazine {};
 	class 100Rnd_762x51_M240: FakeMagazine {};
 	class 10Rnd_762x54_SVD: FakeMagazine {};
@@ -779,7 +781,6 @@ class CfgWeapons {
 	};
 	//class MGun: FakeWeapon {};
 	//class Pistol: FakeWeapon {};
-
 	//class M9: FakeWeapon {};
 	//class M9SD: FakeWeapon {};
 	//class Makarov: FakeWeapon {};
@@ -1005,7 +1006,7 @@ class CfgWeapons {
 	class CRV7_HEPD: FakeWeapon {};
 	class CRV7_FAT: FakeWeapon {};
 	class M621: FakeWeapon {};
-	//class BAF_AS50_scoped: FakeWeapon {};
+	class BAF_AS50_scoped: FakeWeapon {};
 	class BAF_AS50_TWS: FakeWeapon {};
 	class BAF_LRR_scoped: FakeWeapon {};
 	class BAF_LRR_scoped_W: FakeWeapon {};
@@ -1075,7 +1076,7 @@ class CfgWeapons {
 	//class G36C: FakeWeapon {};
 	class G36_C_SD_eotech: FakeWeapon {};
 	//class G36a: FakeWeapon {};
-	class G36K: FakeWeapon {};
+	class //G36K: FakeWeapon {};
 	class MG36: FakeWeapon {};
 	class MG36_camo: FakeWeapon {};
 	class GrenadeLauncher_EP1: FakeWeapon {};
