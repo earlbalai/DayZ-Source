@@ -387,7 +387,7 @@ class CfgBuildingLoot {
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
-			0.01,		//{"NVGoggles","weapon"}
+			0.02,		//{"NVGoggles","weapon"}
 			0.1,	//AmmoBoxSmall_556
 			0.1,	//AmmoBoxSmall_762
 			0.08,	//Skin_Camo1_DZ
@@ -413,8 +413,8 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.2,
-			0.5,
-			0.5
+			1,
+			0.2
 		};
 	};
 	class Military: Default {
@@ -540,7 +540,7 @@ class CfgBuildingLoot {
 			{"AmmoBoxSmall_556","object"},
 			{"AmmoBoxSmall_762","object"},
 
-			{"NVGoggles","weapon"},
+			//{"NVGoggles","weapon"},
 			{"Binocular","weapon"},
 			{"ItemFlashlightRed","military"},
 			{"ItemKnife","military"},
@@ -560,6 +560,7 @@ class CfgBuildingLoot {
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
 			{"G36_C_SD_camo","weapon"},
+			{"M40A3","weapon"}
 		};
 		itemChance[] =	{
 			0.10,
@@ -590,11 +591,11 @@ class CfgBuildingLoot {
 			0.08,
 			0.04,
 			0.02,
-			0.01,
+			//0.01, //NVGoggles
 			0.10,
 			0.05,
 			0.15,
-			0.01,
+			0.01, //ItemGPS
 			0.03,
 			0.01,
 			0.02,
@@ -602,12 +603,13 @@ class CfgBuildingLoot {
 			0.02,
 			0.30,
 			1.00,
-			5.00,
+			5.00, //military
 			//0.20,
-			0.01,
+			0.01, //PipeBomb
 			0.01, //Sa58V_RCO_EP1
 			0.01, //Sa58V_CCO_EP1
-			0.01 //{"G36_C_SD_camo","weapon"},
+			0.01, //{"G36_C_SD_camo","weapon"},
+			0.02 // M40A3
 		};
 	};
 	class Church: Residential {
