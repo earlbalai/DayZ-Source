@@ -15,21 +15,23 @@ FIX DUE : 2012
 			* [NEW]	Weapon - G36C_camo. (HeliCrash)
 			* [NEW]	Weapon - G36A_camo. (HeliCrash)
 			* [NEW]	Weapon - G36K_camo. (HeliCrash)
-			* [NEW]	Weapon - G36_C_SD_camo (MilitaryS)
+			//* [NEW]	Weapon - G36_C_SD_camo (MilitaryS) -- Broke
+			* [NEW]	Weapon - M40A3 (MilitaryS)
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
 			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - In combat bot added if your in combat and logoff your player will be replaced with a bot that can still be looted and killed.
 			* [NEW] - New Load screens added to show timeleft for combat logging.
-			* [NEW] - Revamped blood icon to now empty as you loose blood Thank Des
+			* [NEW] - Revamped blood icon to now empty as you loose blood Thanks Des
 
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Publish Object will now only publish items allowed. (tents, other deployables)
 			* [UPDATED] - Added a much faster login process.
 			* [UPDATED] - Limted amount of ammo found with weapons.
-			* [UPDATED] - Gender selection images updated thanks Des			
-			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/50
+			* [UPDATED] - Gender selection images updated thanks Des.
+			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/50.
+			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
 			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
@@ -38,13 +40,12 @@ FIX DUE : 2012
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
-			* [REMOVED]	- Removed server side gear syncs this should now be handled client side.
 			
-		Server:
+		Hive:
 			* [Prerequisites]	beta-patch 98866.
 			* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 			
-			* [NEW]
+			* [NEW] - Added new constraint to block non Dayz items from being wrote to the db
 
 			* [UPDATED] 
 
