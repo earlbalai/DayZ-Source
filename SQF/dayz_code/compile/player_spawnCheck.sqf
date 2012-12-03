@@ -76,7 +76,7 @@ dayz_inVehicle = _inVehicle;
 					//diag_log(format["Date: %1 | ZombieSpawn: %2 | age: %3 | building: %4 (%5)", _dateNow, _zombied, _age, str(_x), _dis]);
 					if (_age > 1) then {
 						_bPos = getPosATL _x;
-						_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);	
+						_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);	
 						if (_zombiesNum == 0) then {
 							//Randomize Zombies
 							_x setVariable ["zombieSpawn",_dateNow,true];
