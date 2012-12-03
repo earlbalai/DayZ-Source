@@ -1,6 +1,7 @@
 private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 _refObj = vehicle player;
-_listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
+//_listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
+_listTalk = (position _refObj) nearEntities ["zZombie_Base",100];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 

@@ -57,7 +57,8 @@ if (!_doLoiter) then {
 	if (_nearByPlayer) then {
 		_attempt = 0;
 		while {_nearByPlayer} do {
-			_position = [_position,0,20,10,0,20,0] call BIS_fnc_findSafePos;
+			//_position = [_position,0,20,10,0,20,0] call BIS_fnc_findSafePos; Orignal
+			_position = [_position,0,20,20,0,20,0] call BIS_fnc_findSafePos;
 			_agent setPos _position;
 			_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
 			_attempt = _attempt + 1;
