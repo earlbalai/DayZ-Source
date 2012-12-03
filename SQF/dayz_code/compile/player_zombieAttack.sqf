@@ -55,8 +55,8 @@ if (_vehicle != player) then {
 			_damage = 0.1 + random (1.2);
 			//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-			dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-			publicVariable "dayzHit";
+			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
+			//publicVariable "dayzHit";
 			[_unit,"hit",0,false] call dayz_zombieSpeak;	
 		} else {				
 			_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
@@ -84,8 +84,8 @@ if (_vehicle != player) then {
 				_damage = 0.1 + random (1.2);
 				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-				dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-				publicVariable "dayzHit";
+				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
+				//publicVariable "dayzHit";
 				[_unit,"hit",0,false] call dayz_zombieSpeak;
 			} else {
 				/*
@@ -94,8 +94,8 @@ if (_vehicle != player) then {
 					_damage = 0.1 + random (1.2);
 					//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-					dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-					publicVariable "dayzHit";
+					//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
+					//publicVariable "dayzHit";
 					[_unit,"hit",0,false] call dayz_zombieSpeak;	
 				};
 				*/
