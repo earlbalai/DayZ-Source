@@ -1136,7 +1136,7 @@ class RscTitles
 			class RscPicture_1301: RscPictureGUI
 			{
 				idc = 1301;
-				text = "\z\addons\dayz_code\gui\status_food_inside_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_food_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.93 * safezoneH + safezoneY;
 				w = 0.06;
@@ -1154,7 +1154,7 @@ class RscTitles
 			class RscPicture_1302: RscPictureGUI
 			{
 				idc = 1302;
-				text = "\z\addons\dayz_code\gui\status_thirst_inside_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_thirst_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.79 * safezoneH + safezoneY;
 				w = 0.06;
@@ -1163,7 +1163,7 @@ class RscTitles
 			class RscPicture_1306: RscPictureGUI
 			{
 				idc = 1306;
-				text = "\z\addons\dayz_code\gui\status_temp_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_temp_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.72 * safezoneH + safezoneY;
 				w = 0.06;
@@ -1209,7 +1209,7 @@ class RscTitles
 
 			{
 				idc = 1701;
-				text = "\z\addons\dayz_code\gui\status_food_inside_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_food_inside_ca.paa";
 				x = 0.945313 * safezoneW + safezoneX;
 				y = 0.95 * safezoneH + safezoneY;
 				w = 0.04;
@@ -1218,7 +1218,7 @@ class RscTitles
 			class RscPicture_1702: RscPictureGUI
 			{
 				idc = 1702;
-				text = "\z\addons\dayz_code\gui\status_thirst_inside_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_thirst_inside_ca.paa";
 				x = 0.945313 * safezoneW + safezoneX;
 				y = 0.816666 * safezoneH + safezoneY;
 				w = 0.04;
