@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "F:\DayZ\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -34,9 +34,9 @@ item29[] = {"Load_In",2,250,-75.000000,850.000000,25.000000,900.000000,0.000000,
 item30[] = {"Bad_Version",4,218,50.000000,650.000000,150.000000,700.000000,0.000000,"Bad" \n "Version"};
 item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000,0.000000,"ERROR:" \n "Bad Version"};
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
-item33[] = {"Preload_Display",2,4346,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
+item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -114,8 +114,8 @@ link56[] = {49,50};
 link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
-globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-440.765930,455.171539,1392.221191,828.390381,955,601,1};
-window[] = {2,-1,-1,-1,-1,934,154,1125,154,3,972};
+globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-536.745972,551.148315,1344.204346,288.206512,955,927,1};
+window[] = {2,-1,-1,-32000,-32000,802,22,993,22,3,972};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1031,7 +1031,9 @@ class FSM
     class Initialize
     {
       name = "Initialize";
-      init = /*%FSM<STATEINIT""">*/"//Medical" \n
+      init = /*%FSM<STATEINIT""">*/"#define ods(arg1) ""armaperflib"" callextension arg1" \n
+       "" \n
+       "//Medical" \n
        "dayz_medicalH = 	[] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
        "[player] call fnc_usec_damageHandle;" \n
        "if (r_player_unconscious) then {" \n
@@ -1064,9 +1066,10 @@ class FSM
        "	private[""_distance""];" \n
        "	dayz_musicH = [] spawn player_music;" \n
        "	while {true} do {" \n
-       "		_array = 			player call world_surfaceNoise;" \n
+       "		_array = player call world_surfaceNoise;" \n
        "		dayz_surfaceNoise = _array select 1;" \n
        "		dayz_surfaceType = 	_array select 0;" \n
+       "" \n
        "		call player_checkStealth;" \n
        "		dayz_statusArray = [] call player_updateGui;" \n
        "		if (!isNull cursorTarget and !dayz_heartBeat) then {" \n
@@ -1103,10 +1106,13 @@ class FSM
        "	_charID = _this select 1;" \n
        "	_runOnce = false;" \n
        "	while {true} do {" \n
-       "		_handle = [false] spawn player_spawnCheck;" \n
-       "		waitUntil{scriptDone _handle};" \n
+       "" \n
+       "		ods(""dayz_lootCheck"");" \n
+       "" \n
+       "		call player_spawnCheck;		" \n
+       "" \n
        "		call stream_locationCheck;" \n
-       "		sleep 2;" \n
+       "		sleep 10;" \n
        "	};" \n
        "};" \n
        "// TODO: questionably" \n
