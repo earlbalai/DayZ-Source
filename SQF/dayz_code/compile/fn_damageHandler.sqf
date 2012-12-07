@@ -129,7 +129,7 @@ if (_damage > 0.4) then {	//0.25
 	_isHit = _unit getVariable[_wound,false];
 	if (_unit == player) then {	
 		_rndPain = 		(random 10);
-		_rndInfection = (random 50);
+		_rndInfection = (random 500);
 		_hitPain = 		(_rndPain < _damage);
 		if ((_isHeadHit) or (_damage > 1.2 and _hitPain)) then {
 			_hitPain = true;
