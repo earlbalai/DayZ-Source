@@ -182,7 +182,6 @@ if(isServer) then {
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
-	botPlayers = [];
 };
 
 if(!isDedicated) then {

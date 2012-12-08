@@ -36,12 +36,6 @@ if (_playerID == "") then {
 if ((_playerID == "") or (isNil "_playerID")) exitWith {
 	diag_log ("LOGIN FAILED: Player [" + _playerName + "] has no login ID");
 };
-// spawn a waituntil if bot still on server, then run server_playerLogin later again 
-_botActive = _playerID in botPlayers;
-if (_botActive) then { _this spawn server_waitForBotFinished;};
-if (_botActive) exitWith{};
-penaltyTimeout = false;
-(owner _playerObj) publicVariableClient "penaltyTimeout";
 
 //??? endLoadingScreen;
 diag_log ("LOGIN ATTEMPT: " + str(_playerID) + " " + _playerName);
