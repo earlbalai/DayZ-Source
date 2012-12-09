@@ -197,6 +197,8 @@ dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
 dayz_spawnPos = getPosATL player;
 
+//init global arrays for Loot Chances
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
 
 if(isServer) then {
 	dayz_players = [];

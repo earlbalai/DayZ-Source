@@ -54,7 +54,8 @@ switch (_nearbytype) do {
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
-
+	
+	_age = 0;
 	_tooManyZs = count (_position nearEntities ["zZombie_Base",200]) > _maxZombies;
 	//diag_log("Too Many Zeds: " +str(_tooManyZs));
     //diag_log(format["SPAWN CHECK: Building count is %1", count _nearby]);
@@ -73,30 +74,20 @@ if (_inVehicle) then {
 
 
 		if ((!_inVehicle) and (_canLoot)) then {    
-			//diag_log("SPAWN LOOT: " + _type + " Building is lootable");
-			//dayz_serverSpawnLoot = [_dis, _x];
-			//publicVariableServer "dayz_serverSpawnLoot";
-			_keepAwayDist = ((sizeOf _type)+5);
+			_keepAwayDist = ((sizeOf _type) + 5);
 			_isNoone =  {isPlayer _x} count (_x nearEntities ["CAManBase",_keepAwayDist]) == 0;
-			//diag_log(format["SPAWN LOOT: isNoone: %1 | keepAwayDist %2 | %3", str(_isNoone), _keepAwayDist, _type]);
 			if (_isNoone) then {
-				_looted = (_x getVariable ["looted",-0.1]);
+				_looted = (_x getVariable ["looted",0.0]);
 				_cleared = (_x getVariable ["cleared",true]);
 				_dateNow = (DateToNumber date);
 				_age = (_dateNow - _looted) * 525948;
-				//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 				if (_age > 8) then {
-					//diag_log("SPAWN LOOT: Spawning loot");
-					//Register
 					_x setVariable ["looted",_dateNow,true];
-					//cleanup
-					//_nearByObj = (getPosATL _x) nearObjects ["ReammoBox",((sizeOf _type)+5)];
-					//{deleteVehicle _x} forEach _nearByObj;
-					dayz_lootWait = time;
 					[_x] call building_spawnLoot;
 				};
 			};
 		};
+		
 		if (_canZombie) then {
 			if (dayz_spawnZombies < _maxZombies) then {
 				if (!_tooManyZs) then {

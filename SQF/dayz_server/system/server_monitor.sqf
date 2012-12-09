@@ -193,6 +193,5 @@ allowConnection = true;
 
 //Spawn crashed helos
 for "_x" from 1 to 5 do {
-	_id = [] spawn spawn_heliCrash;
-	//waitUntil{scriptDone _id};
+	[] call spawn_heliCrash;
 };
