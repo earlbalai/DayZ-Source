@@ -67,6 +67,16 @@ dayz_resetSelfActions = {
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
 	s_player_flipveh = 		-1;
+	s_player_movedog =		-1;
+	s_player_speeddog =		-1;
+	s_player_calldog = 		-1;
+	s_player_feeddog = 		-1;
+	s_player_waterdog = 	-1;
+	s_player_staydog = 		-1;
+	s_player_trackdog = 	-1;
+	s_player_barkdog = 		-1;
+	s_player_warndog = 		-1;
+	s_player_followdog = 	-1;
 };
 call dayz_resetSelfActions;
 
@@ -137,6 +147,17 @@ DAYZ_woundHit_ok = [
 		0.2
 	]
 ];
+DAYZ_woundHit_dog = [
+	[
+		"body",
+		"hands",
+		"legs"
+	],[
+		0.1,
+		0.45,
+		0.35
+	]
+];
 USEC_MinorWounds 	= [
 	"hands",
 	"legs"
@@ -178,7 +199,6 @@ dayz_spawnPos = getPosATL player;
 
 
 if(isServer) then {
-	dayz_disco = [];
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
