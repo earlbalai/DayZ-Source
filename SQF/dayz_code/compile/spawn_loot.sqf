@@ -1,4 +1,4 @@
-private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights"];
++private["_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow"];
 _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =	_this select 2;
@@ -46,6 +46,11 @@ switch (_iClass) do {
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 	};
 };
+
+// timestamp for later clearing
+_dateNow = (DateToNumber date);
+_item setVariable ["looted",_dateNow,true];
+
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };

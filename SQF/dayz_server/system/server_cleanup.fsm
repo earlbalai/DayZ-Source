@@ -7,7 +7,7 @@ item2[] = {"waiting",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,
 item3[] = {"time_dead",4,218,-300.000000,-25.000000,-200.000000,25.000000,4.000000,"time" \n "dead"};
 item4[] = {"cleanup_dead",2,250,-300.000000,50.000000,-200.000000,100.000000,0.000000,"cleanup" \n "dead"};
 item5[] = {"time_items",4,218,0.000000,-25.000000,100.000000,25.000000,2.000000,"time" \n "items"};
-item6[] = {"cleanup_items",2,4346,0.000000,50.000000,100.000000,100.000000,0.000000,"cleanup" \n "items"};
+item6[] = {"cleanup_items",2,250,0.000000,50.000000,100.000000,100.000000,0.000000,"cleanup" \n "items"};
 item7[] = {"time_sync",4,218,-150.000000,-25.000000,-50.000000,25.000000,3.000000,"time" \n "sync"};
 item8[] = {"sync_the_time",2,250,-150.000000,50.000000,-50.000000,100.000000,0.000000,"sync" \n "the time"};
 item9[] = {"true",8,218,-75.000000,125.000000,25.000000,175.000000,0.000000,"true"};
@@ -19,7 +19,7 @@ item14[] = {"prepare",2,250,-75.000000,-250.000000,25.000000,-200.000000,0.00000
 item15[] = {"update_objects",2,250,150.000000,50.000000,250.000000,100.000000,0.000000,"update objects"};
 item16[] = {"time_obj_update",4,218,150.000000,-25.000000,250.000000,25.000000,1.000000,"time" \n "obj update"};
 item17[] = {"anti_hack",4,218,150.000000,-100.000000,250.000000,-50.000000,0.000000,"anti hack"};
-item18[] = {"check_for_hacker",2,250,150.000000,-175.000000,250.000000,-125.000000,0.000000,"check for" \n "hackers"};
+item18[] = {"check_for_hacker",2,4346,150.000000,-175.000000,250.000000,-125.000000,0.000000,"check for" \n "hackers"};
 link0[] = {0,13};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -44,7 +44,7 @@ link20[] = {16,15};
 link21[] = {17,18};
 link22[] = {18,1};
 globals[] = {25.000000,1,0,0,0,640,480,1,33,6316128,1,-380.893097,315.695129,343.738464,-460.417511,803,927,1};
-window[] = {2,-1,-1,-1,-1,995,88,1202,88,3,820};
+window[] = {2,-1,-1,-1,-1,1039,132,1246,132,3,820};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -106,7 +106,7 @@ class FSM
           priority = 2.000000;
           to="cleanup_items";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _lastItemCheck) > 180"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _lastItemCheck) > 60"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_lastItemCheck = time;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -242,14 +242,10 @@ class FSM
        "//diag_log (""CLEANUP: PERFORMING ITEM CLEANUP: TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n
        "_delQty = 0;" \n
        "_qtyLoc = 0;" \n
-       "_dateNow = (DateToNumber date);" \n
-       "" \n
        "{" \n
        "	if (local _x) then {" \n
        "		_qtyLoc = _qtyLoc + 1; // debugging" \n
-       "		_looted = _x getVariable [""looted"",0.0];" \n
-       "		_age = (_dateNow - _looted) * 525948;" \n
-       "		_keep = ((_x getVariable [""permaLoot"",false])||(_age < 8));" \n
+       "		_keep = _x getVariable [""permaLoot"",false];" \n
        "            _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 100]);" \n
        "		if ( (!_keep) && (_nearby==0) ) then {" \n
        "			deleteVehicle _x;" \n
