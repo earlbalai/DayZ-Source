@@ -3,6 +3,7 @@ DayZ Community Developers
 Community Dev Project Sponsor
 * Rocket
 
+
 Community Dev Project Manager
 * R4Z0R49
 
@@ -21,12 +22,15 @@ Contributions By
 * Tansien
 * Killzone_kid
 * VRShiva
-* Inch
+* Alex Grosse (Inch)
 * Des
+
+* Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything diffrent :-).
+* Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
 
 Art Work
 * Alexander (G17 incombat Icon)
-* Des (Gender images & Blood icon revamp)
+* Des (Gender images & Gui icon's revamp)
 
 Testers:
 * AJ (Leadz)
@@ -37,7 +41,8 @@ Testers:
 * Sumrak
 * TheLaughingMan
 * Cammo
-* Max
+* Adam (Max)
+* Gaz Green
 * DzAirmaX
 
 Contributing
