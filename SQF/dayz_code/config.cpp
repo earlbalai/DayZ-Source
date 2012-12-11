@@ -371,7 +371,8 @@ class CfgBuildingLoot {
 			{"G36C_camo","weapon"},
 			//{"G36_C_SD_camo","weapon"},
 			{"G36A_camo","weapon"},
-			{"G36K_camo","weapon"}
+			{"G36K_camo","weapon"},
+			("100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] =	{
 			0.02,		//{"FN_FAL","weapon"},
@@ -397,6 +398,7 @@ class CfgBuildingLoot {
 			//0.01,	//G36_C_SD_camo
 			0.02,	//G36A_camo
 			0.02	//G36K_camo
+			0.01	//("100Rnd_762x54_PK","magazine"}
 		};
 	};
 	class Hospital: Default {
@@ -560,7 +562,8 @@ class CfgBuildingLoot {
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
 			{"G36_C_SD_camo","weapon"},
-			{"M40A3","weapon"}
+			{"M40A3","weapon"},
+			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] =	{
 			0.10,
@@ -610,6 +613,7 @@ class CfgBuildingLoot {
 			0.01, //Sa58V_CCO_EP1
 			0.01, //{"G36_C_SD_camo","weapon"},
 			0.02 // M40A3
+			0.01	//("100Rnd_762x54_PK","magazine"}
 		};
 	};
 	class Church: Residential {

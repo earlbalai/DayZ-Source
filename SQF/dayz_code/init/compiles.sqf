@@ -19,7 +19,8 @@ if (!isDedicated) then {
 	player_temp_calculation	=	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_temperatur.sqf";		//Temperatur System	//TeeChange
 	player_weaponFiredNear =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_weaponFiredNear.sqf";
 	player_animalCheck =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_animalCheck.sqf";
-	player_spawnCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_spawnCheck.sqf";
+	player_spawnLootCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_spawnlootCheck.sqf";
+	player_spawnZedCheck =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_spawnzedCheck.sqf";
 	building_spawnLoot =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";
 	player_taskHint =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_taskHint.sqf";
 	building_spawnZombies =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
@@ -221,7 +222,6 @@ if (!isDedicated) then {
 		_btnRespawn ctrlEnable false;
 	};
 	
-	
 	dayz_disableAbort = {
 		private["_display","_btnAbort","_combattimeout"];
 		_combattimeout = player getVariable["combattimeout",0];
@@ -234,7 +234,6 @@ if (!isDedicated) then {
 		_btnAbort = _display displayCtrl 104;
 		_btnAbort ctrlEnable false;
 	};
-	
 	
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];

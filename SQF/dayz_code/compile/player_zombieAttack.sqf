@@ -1,20 +1,16 @@
 private["_unit","_targets","_move","_damage","_wound","_sound","_local","_dir","_hpList","_hp","_strH","_dam","_total","_result","_vehicle","_tPos","_zPos","_cantSee","_inAngle"];
-_unit = _this;
+_unit = _this select 0;
+_type = _this select 1;
 _vehicle = (vehicle player);
 
 _targets = _unit getVariable ["targets",[]];
 //if (!(_vehicle in _targets)) exitWith {};
 
 //Do the attack
-_move = "ZombieStandingAttack1";
-_rnd = 0;
-_wound = "";
-if (r_player_unconscious && _vehicle == player) then {
-	_unit doMove (getPos player);
+if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
 	_rnd = round(random 4) + 1;
 	_move = "ZombieFeed" + str(_rnd);
 } else {
-	_unit doMove (getPos player);
 	if (_type == "zombie") then {
 		_rnd = round(random 9) + 1;
 		_move = "ZombieStandingAttack" + str(_rnd);
@@ -24,7 +20,7 @@ if (r_player_unconscious && _vehicle == player) then {
 };
 _dir = [_unit,player] call BIS_Fnc_dirTo;
 _unit setDir _dir;
-[objNull, _unit, rPlayMove,_move] call RE;
+[objNull, _unit, rPlayMove, _move] call RE;
 
 //Wait
 sleep 0.3;
@@ -41,9 +37,9 @@ if (_vehicle != player) then {
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
-		
+
 		//diag_log ("Hitpoints " +str(_wound) +str(_total));
-		
+
 		//_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
 		//dayzHitV =	[_vehicle,_wound,_total, _unit,"zombie"];
 		//publicVariable "dayzHitV";
@@ -91,12 +87,11 @@ if (_vehicle != player) then {
 					};
 					_damage = 0.1 + random (1.2);
 				};
-
 				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
-				if (_type == "dog") then { [_unit,"dog_growl",0,false] call dayz_zombieSpeak; } else { [_unit,"hit",0,false] call dayz_zombieSpeak; };
+				[_unit,"hit",0,false] call dayz_zombieSpeak;
 			} else {
 				/*
 				_isZombieInside = [_unit,_building] call fnc_isInsideBuilding;
