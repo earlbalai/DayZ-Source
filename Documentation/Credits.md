@@ -24,6 +24,8 @@ Contributions By
 * VRShiva
 * Alex Grosse (Inch)
 * Des
+* ziellos2k
+* SumrakDZN
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything diffrent :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
