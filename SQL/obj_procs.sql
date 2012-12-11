@@ -1,142 +1,96 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server version:               5.5.24-log - MySQL Community Server (GPL)
--- Server OS:                    Win32
+-- Server version:               5.5.22 - MySQL Community Server (GPL)
+-- Server OS:                    Win64
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2012-11-09 04:19:31
+-- Date/time:                    2012-12-11 12:21:58
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for function hivemind.fGetClassCount
+-- Dumping structure for procedure dayz.pCleanup
 DELIMITER //
-CREATE DEFINER=`root`@`` FUNCTION `fGetClassCount`(`clname` varchar(32)) RETURNS smallint(3)
-    READS SQL DATA
+CREATE DEFINER=`dayz`@`localhost` PROCEDURE `pCleanup`()
 BEGIN
 
-	DECLARE iClassCount SMALLINT(3) DEFAULT 0;
-
-	SELECT COUNT(*) 
-		INTO iClassCount 
-		FROM object_data 
-		WHERE Classname = clname;
-
-	RETURN iClassCount;
-END//
-DELIMITER ;
-
-
--- Dumping structure for function hivemind.fGetSpawnFromChance
-DELIMITER //
-CREATE DEFINER=`root`@`` FUNCTION `fGetSpawnFromChance`(`chance` double) RETURNS tinyint(1)
-    NO SQL
-BEGIN
-
-	DECLARE bspawn TINYINT(1) DEFAULT 0;
-
-	IF (RAND() <= chance) THEN
-		SET bspawn = 1;
-	END IF;
-
-	RETURN bspawn;
-
-END//
-DELIMITER ;
-
-
--- Dumping structure for function hivemind.fGetVehCount
-DELIMITER //
-CREATE DEFINER=`root`@`` FUNCTION `fGetVehCount`() RETURNS smallint(3)
-    READS SQL DATA
-BEGIN
-
-	DECLARE iVehCount	SMALLINT(3) DEFAULT 0;
-
-	SELECT COUNT(*) 
-		INTO iVehCount
-		FROM object_data 
-		WHERE Classname != 'dummy'
-			AND Classname != 'TentStorage'  
-			AND Classname != 'Hedgehog_DZ'	
-			AND Classname != 'Wire_cat1'		
-			AND Classname != 'Sandbag1_DZ'	
-			AND Classname != 'TrapBear';		
-
-	RETURN iVehCount;
-END//
-DELIMITER ;
-
-
--- Dumping structure for procedure hivemind.pCleanup
-DELIMITER //
-CREATE DEFINER=`root`@`` PROCEDURE `pCleanup`()
-BEGIN
-
+#starts outofbounds cleanup
 	CALL pCleanupOOB();
-
+	
+#remove dead players from data table
+	DELETE 
+		FROM character_data 
+		WHERE Alive=0;	
+	
+#remove vehicles with 100% damage
 	DELETE
 		FROM object_data 
 		WHERE Damage = '1';	
 
+#remove unused vehicles older then 14 days
 	DELETE
 		FROM object_data
-		WHERE DATE(Datestamp) < CURDATE() - INTERVAL 8 DAY
+		WHERE DATE(last_updated) < CURDATE() - INTERVAL 14 DAY
 			AND Classname != 'dummy'
-			AND Classname != 'TentStorage'
 			AND Classname != 'Hedgehog_DZ'
 			AND Classname != 'Wire_cat1'
 			AND Classname != 'Sandbag1_DZ'
 			AND Classname != 'TrapBear';
 
+#remove tents whose owner has been dead for four days
 	DELETE
 		FROM object_data
 		USING object_data, character_data
 		WHERE object_data.Classname = 'TentStorage'
 			AND object_data.CharacterID = character_data.CharacterID
 			AND character_data.Alive = 0
-			AND DATE(character_data.Datestamp) < CURDATE() - INTERVAL 4 DAY;
+			AND DATE(character_data.last_updated) < CURDATE() - INTERVAL 4 DAY;
 
+#remove empty tents older than seven days
 	DELETE
 		FROM object_data
 		WHERE Classname = 'TentStorage'
-			AND DATE(Datestamp) < CURDATE() - INTERVAL 8 DAY
-			AND Inventory = '[[[],[]],[[],[]],[[],[]]]';			
+			AND DATE(last_updated) < CURDATE() - INTERVAL 7 DAY
+			AND Inventory = '[[[],[]],[[],[]],[[],[]]]';
 	
 	DELETE
 		FROM object_data
 		WHERE Classname = 'TentStorage'
-			AND DATE(Datestamp) < CURDATE() - INTERVAL 8 DAY
+			AND DATE(last_updated) < CURDATE() - INTERVAL 7 DAY
 			AND Inventory = '[]';		
 
+#remove barbed wire older than two days
 	DELETE
 		FROM object_data
 		WHERE Classname = 'Wire_cat1'
-			AND DATE(Datestamp) < CURDATE() - INTERVAL 3 DAY;
-
+			AND DATE(last_updated) < CURDATE() - INTERVAL 2 DAY;
+			
+#remove Tank Traps older than fifteen days
 	DELETE
 		FROM object_data
 		WHERE Classname = 'Hedgehog_DZ'
-			AND DATE(Datestamp) < CURDATE() - INTERVAL 4 DAY;
+			AND DATE(last_updated) < CURDATE() - INTERVAL 15 DAY;
 
+#remove Sandbags older than twenty days
 	DELETE
 		FROM object_data
 		WHERE Classname = 'Sandbag1_DZ'
-			AND DATE(Datestamp) < CURDATE() - INTERVAL 8 DAY;
+			AND DATE(last_updated) < CURDATE() - INTERVAL 20 DAY;
 
+#remove Bear Traps older than five days
 	DELETE
 		FROM object_data
 		WHERE Classname = 'TrapBear'
-			AND DATE(Datestamp) < CURDATE() - INTERVAL 5 DAY;
+			AND DATE(last_updated) < CURDATE() - INTERVAL 5 DAY;
 
 END//
 DELIMITER ;
 
 
--- Dumping structure for procedure hivemind.pCleanupOOB
+-- Dumping structure for procedure dayz.pCleanupOOB
 DELIMITER //
-CREATE DEFINER=`root`@`` PROCEDURE `pCleanupOOB`()
+CREATE DEFINER=`dayz`@`localhost` PROCEDURE `pCleanupOOB`()
 BEGIN
 
 	DECLARE intLineCount	INT DEFAULT 0;
@@ -188,101 +142,111 @@ END//
 DELIMITER ;
 
 
--- Dumping structure for procedure hivemind.pFixMaxNum
+-- Dumping structure for procedure dayz.pMain
 DELIMITER //
-CREATE DEFINER=`root`@`` PROCEDURE `pFixMaxNum`()
+CREATE DEFINER=`dayz`@`localhost` PROCEDURE `pMain`()
+    MODIFIES SQL DATA
 BEGIN
 
-	DECLARE iCounter INT DEFAULT 0;
+# maximum number of INSTANCE id's USED.
+#-----------------------------------------------
+	DECLARE sInstance VARCHAR(8) DEFAULT '1';
+#-----------------------------------------------
+#maximum number of vehicles allowed !!! theoretical max. amount
+#-----------------------------------------------
+	DECLARE iVehSpawnMax INT DEFAULT 100;
+#-----------------------------------------------	
 
-	SELECT COUNT(*) INTO @iClassesCount FROM object_classes WHERE Classname<>'';
-	WHILE (iCounter < @iClassesCount) DO
-		SELECT Classname, MaxNum INTO @Classname, @MaxNum FROM object_classes LIMIT iCounter,1;
-		SELECT COUNT(*) INTO @iMaxClassSpawn FROM object_spawns WHERE Classname LIKE @Classname;
-		IF (@MaxNum > @iMaxClassSpawn) THEN
-			UPDATE object_classes SET MaxNum = @iMaxClassSpawn WHERE Classname = @Classname;
-		END IF;
-		SET iCounter = iCounter + 1;
-	END WHILE;
+# DECLARE iVehSpawnMin				INT DEFAULT 0;		#ToDo !!!
+	DECLARE iTimeoutMax 				INT DEFAULT 250;	#number of loops before timeout
+	DECLARE iTimeout 						INT DEFAULT 0;		#internal counter for loops done; used to prevent infinite loops - DO NOT CHANGE
+	DECLARE iNumVehExisting 		INT DEFAULT 0;		#internal counter for already existing vehicles - DO NOT CHANGE
+	DECLARE iNumClassExisting 	INT DEFAULT 0;		#internal counter for already existing class types - DO NOT CHANGE
+	DECLARE i INT DEFAULT 1; #internal counter for vehicles spawns - DO NOT CHANGE
 
+#Starts Cleanup
+	CALL pCleanup();
+	
+		SELECT COUNT(*) 				#retrieve the amount of already spawned vehicles...
+			INTO iNumVehExisting
+			FROM object_data 
+			WHERE Instance = sInstance
+			AND Classname != '-'						#exclude dummys
+			AND Classname != 'Hedgehog_DZ'			#exclude hedgehog
+			AND Classname != 'Wire_cat1'				#exclude wirecat
+			AND Classname != 'Sandbag1_DZ'			#exclude Sanbag
+			AND Classname != 'TrapBear'			#exclude trap
+			AND Classname != 'TentStorage';		#exclude TentStorage
+
+		WHILE (iNumVehExisting < iVehSpawnMax) DO		#loop until maximum amount of vehicles is reached
+
+			#select a random vehicle class
+			SELECT Classname, Chance, MaxNum, Damage
+				INTO @rsClassname, @rsChance, @rsMaxNum, @rsDamage
+				FROM object_classes ORDER BY RAND() LIMIT 1;
+
+			#count number of same class already spawned
+			SELECT COUNT(*) 
+				INTO iNumClassExisting 
+				FROM object_data 
+				WHERE Instance = sInstance
+				AND Classname = @rsClassname;
+
+			IF (iNumClassExisting < @rsMaxNum) THEN
+
+				IF (rndspawn(@rschance) = 1) THEN
+				
+					INSERT INTO object_data (ObjectUID, Instance, Classname, Damage, CharacterID, Worldspace, Inventory, Hitpoints, Fuel, Datestamp)
+						SELECT ObjectUID, sInstance, Classname, RAND(@rsDamage), '0', Worldspace, Inventory, Hitpoints, RAND(1), SYSDATE() 
+							FROM object_spawns 
+							WHERE Classname = @rsClassname 
+								AND NOT ObjectUID IN (select objectuid from object_data where instance = sInstance)
+							ORDER BY RAND()
+							LIMIT 0, 1;
+							
+					SELECT COUNT(*) 
+						INTO iNumVehExisting 
+						FROM object_data 
+						WHERE Instance = sInstance
+							AND Classname != '-'						#exclude dummys
+							AND Classname != 'Hedgehog_DZ'			#exclude hedgehog
+							AND Classname != 'Wire_cat1'				#exclude wirecat
+							AND Classname != 'Sandbag1_DZ'			#exclude Sanbag
+							AND Classname != 'TrapBear'			#exclude trap
+							AND Classname != 'TentStorage';		#exclude TentStorage
+		
+					#update number of same class already spawned
+					SELECT COUNT(*) 
+						INTO iNumClassExisting 
+						FROM object_data 
+						WHERE Instance = sInstance
+						AND Classname = @rsClassname;
+				
+				END IF;
+			END IF;	
+			
+			SET iTimeout = iTimeout + 1; #raise timeout counter
+			IF (iTimeout >= iTimeoutMax) THEN
+				SET iNumVehExisting = iVehSpawnMax;
+			END IF;
+		END WHILE;
+	SET i = i + 1;
 END//
 DELIMITER ;
 
 
--- Dumping structure for procedure hivemind.pMain
+-- Dumping structure for function dayz.rndspawn
 DELIMITER //
-CREATE DEFINER=`root`@`` PROCEDURE `pMain`()
+CREATE DEFINER=`dayz`@`localhost` FUNCTION `rndspawn`(`chance` double) RETURNS tinyint(1)
 BEGIN
 
-	DECLARE iSpawnNumVeh SMALLINT(3) DEFAULT 11;		
-	
-	CALL pCleanup();
-	CALL pFixMaxNum;
+	DECLARE bspawn tinyint(1) DEFAULT 0;
 
-	SELECT SUM(MaxNum) FROM object_classes INTO @iMaxNumTotal;
-	IF (iSpawnNumVeh > @iMaxNumTotal) THEN
-		SET iSpawnNumVeh = @iMaxNumTotal;
+	IF (RAND() <= chance) THEN
+		SET bspawn = 1;
 	END IF;
 
-	WHILE (fGetVehCount() < iSpawnNumVeh) DO
-		CALL pSpawn();
-	END WHILE;
-
-END//
-DELIMITER ;
-
-
--- Dumping structure for procedure hivemind.pSpawn
-DELIMITER //
-CREATE DEFINER=`root`@`` PROCEDURE `pSpawn`()
-BEGIN
-
-	DECLARE intOffset		INT DEFAULT 0;
-  DECLARE bDoSpawn		TINYINT(1) DEFAULT 0;
-	DECLARE bSpawned		TINYINT(1) DEFAULT 0;
-	DECLARE iLID				INT DEFAULT 0;
-
-
-	WHILE (bDoSpawn = 0) DO
-
-		SELECT FLOOR(RAND() * COUNT(*))
-			INTO intOffset
-			FROM object_classes;
-
-		SELECT Classname, Chance, MaxNum, MaxDamage, MaxFuel, Inventory, Hitpoints
-			INTO @rsClassname, @rsChance, @rsMaxNum, @rsDamage, @MaxFuel, @Inventory, @rsHitpoints
-			FROM object_classes
-			LIMIT intOffset, 1;
-
-		IF (fGetClassCount(@rsClassname) < @rsMaxNum) THEN
-			IF (fGetSpawnFromChance(@rschance) = 1) THEN
-				SET bDoSpawn = 1;
-			END IF;
-		END IF;
-
-	END WHILE;
-
-
-	WHILE (bSpawned = 0) DO
-
-		SELECT FLOOR(RAND() * COUNT(*))
-			INTO intOffset
-			FROM object_spawns
-			WHERE Classname = @rsClassname;
-
-		SET iLID = LAST_INSERT_ID();
-
-		INSERT INTO object_data (ObjectUID, Instance, Classname, Damage, CharacterID, Worldspace, Inventory, Hitpoints, Fuel, Datestamp)
-			SELECT ObjectUID, '1', Classname, @rsDamage, '0', Worldspace, @Inventory, @rsHitpoints, @MaxFuel, SYSDATE() 
-				FROM object_spawns
-				WHERE NOT ObjectUID IN (SELECT DISTINCT ObjectUID FROM object_data)
-				LIMIT intOffset, 1;
-
-		IF (LAST_INSERT_ID() <> iLID) THEN
-			SET bSpawned = 1;
-		END IF;
-
-	END WHILE;
+	RETURN bspawn;
 
 END//
 DELIMITER ;
