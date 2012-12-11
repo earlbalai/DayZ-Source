@@ -116,6 +116,22 @@ r_action_repair = 		false;
 r_action_targets = 		[];
 r_pitchWhine = 			false;
 r_isBandit =			false;
+
+//ammo routine
+r_player_actions2 = [];
+r_action2 = false;
+r_player_lastVehicle = objNull;
+r_player_lastSeat = [];
+r_player_removeActions2 = {
+	if (!isNull r_player_lastVehicle) then {
+		{
+			r_player_lastVehicle removeAction _x;
+		} forEach r_player_actions2;
+		r_player_actions2 = [];
+		r_action2 = false;
+	};
+};
+
 USEC_woundHit 	= [
 	"",
 	"body",
