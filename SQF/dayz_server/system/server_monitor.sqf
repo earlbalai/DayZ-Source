@@ -191,7 +191,5 @@ if (isDedicated) then {
 
 allowConnection = true;
 
-//Spawn crashed helos
-for "_x" from 1 to 5 do {
-	[] call spawn_heliCrash;
-};
+// [_crashModel, _lootTable, _guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
+nul = ['UH1Wreck_DZ', 'HeliCrash', 3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] call server_spawnCrashSite;

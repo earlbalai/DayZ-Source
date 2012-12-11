@@ -115,7 +115,7 @@ link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
 globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1245.283447,529.096497,955,601,1};
-window[] = {2,-1,-1,-1,-1,846,66,1037,66,3,972};
+window[] = {2,-1,-1,-32000,-32000,802,22,993,22,3,972};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1089,7 +1089,10 @@ class FSM
        "	_runOnce = false;" \n
        "	while {true} do {" \n
        "" \n
-       "		call player_spawnCheck;		" \n
+       "//loot" \n
+       "		call player_spawnLootCheck;" \n
+       "//zeds" \n
+       "		call player_spawnZedCheck;			" \n
        "" \n
        "		call stream_locationCheck;" \n
        "		sleep 2;" \n
@@ -1097,7 +1100,14 @@ class FSM
        "};" \n
        "// TODO: questionably" \n
        "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n
-       "{ nul = [_x,2,0,false,false] spawn BIS_Effects_Burn; } forEach allMissionObjects ""UH1Wreck_DZ"";" \n
+       "" \n
+       "private[""_fadeFire""];" \n
+       "{" \n
+       "	_fadeFire = _x getVariable['fadeFire', true];" \n
+       "	if (!_fadeFire) then {" \n
+       "		nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
+       "	};" \n
+       "} forEach allMissionObjects ""SpawnableWreck"";" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
