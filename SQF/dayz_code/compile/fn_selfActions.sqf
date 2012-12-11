@@ -208,8 +208,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	} else {
 		player removeAction s_player_studybody;
 		s_player_studybody = -1;
-	};	
-	
+	};
+
 	//Dog
 	if (_isDog and _isAlive and _hasRawMeat and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
 		if (s_player_tamedog < 0) then {

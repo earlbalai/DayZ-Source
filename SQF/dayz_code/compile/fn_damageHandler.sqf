@@ -45,17 +45,7 @@ if (_isPlayer) then {
 
 if (_unit == player) then {
 	if (_hit == "") then {
-		if ((_source != player) and _isPlayer) then {
-			//Dog defends player if within 50meters
-			_listTalk = _pos nearEntities [["DZ_Fin, DZ_Pastor"], 100];
-			{
-				if (_x getVariable ["characterID", "0"] == dayz_characterID) then {
-					_targets = _x getVariable ["targets",[]];
-					_targets set [count _targets, _source]; 
-					_x setVariable ["targets", _targets, true];
-				};
-			}foreach _listTalk;
-			
+		if ((_source != player) and _isPlayer) then {			
 			//Enable aggressor Actions
 			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];	
