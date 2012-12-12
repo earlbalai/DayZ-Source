@@ -1,8 +1,14 @@
+private["_isAir","_inVehicle","_dateNow","_maxZombies","_spawnDelay","_age","_radius","_locationstypes","_nearestCity","_position","_nearbytype","_tooManyZs","_nearbyplayer","_type","_config","_canZombie","_dis","_zombied","_bPos","_zombiesNum","_withinRange"];
+
 _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
+_running = 0;
 
+if (_running == 1) exitwith {};
+
+_running = 1;
 _age = -1;
 
 // If they just got out of a vehicle, boost their per-player zombie limit by 5 in hopes of allowing insta-spawn zombies
@@ -26,37 +32,32 @@ dayz_inVehicle = _inVehicle;
 	_nearbytype = type (_nearestCity select 0);
 	
 switch (_nearbytype) do {
-	case "Hill": {
-		_radius = 50; 
-		_maxZombies = 30;
-	};
 	case "NameLocal": {
 		_radius = 100; 
 		_maxZombies = 40;
 	};
 	case "NameVillage": {
 		_radius = 150; 
-		_maxZombies = 50;
+		_maxZombies = 60;
 	};
 	case "NameCity": {
 		_radius = 200; 
-		_maxZombies = 60;
+		_maxZombies = 80;
 	};
 	case "NameCityCapital": {
 		_radius = 300; 
-		_maxZombies = 80;
+		_maxZombies = 100;
 	};
 	default {
 		_radius = 100; 
-		_maxZombies = 40;
+		_maxZombies = 10;
 	};	
 };
-
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
 	
-	_tooManyZs = count (getPosATL player nearEntities ["zZombie_Base",_radius * 2]) > _maxZombies;
+	_tooManyZs = count (getPosATL player nearEntities ["zZombie_Base",100]) > _maxZombies;
 	_nearbyplayer = nearestObjects [player, ["Building"], _radius];
 	{
         _type = typeOf _x;
@@ -84,6 +85,10 @@ if (_inVehicle) then {
 						};
 					};
 				};
+			} else {
+				dayz_spawnWait = time;
+				dayz_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",_radius]);
 			};
 		};
 	} forEach _nearbyplayer;
+	_running = 0
