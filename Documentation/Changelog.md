@@ -21,7 +21,8 @@ FIX DUE : 2012
 			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - New Load screens added to show timeleft for combat logging.
-			* [NEW] - Revamped blood icon to now empty as you loose blood Thanks Des
+			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
+			* [NEW] - Chopper weapons can now be reloaded 
 
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process.
@@ -31,6 +32,8 @@ FIX DUE : 2012
 			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
 			* [UPDATED] - Combat Mode is now effected by everything you do and everything done to you (example any kind of damage).			
 			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 100, City's - 80, Village's - 60 (Old Local Zed count was 40 at any location that has buildings)).
+			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo 100 rounds.
+			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but thoughtout the game.
 			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
@@ -48,6 +51,7 @@ FIX DUE : 2012
 			* [NEW] - Added new constraint to block non Dayz items from being wrote to the db
 
 			* [UPDATED] - Publish Object will now only publish items allowed. (tents, other deployables)
+			* [UPDATED] - Updated Basic SQL Procs
 
 			* [Fixed] - Crash issue on stale child calls
 
