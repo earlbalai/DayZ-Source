@@ -38,19 +38,19 @@ switch (_nearbytype) do {
 	};
 	case "NameVillage": {
 		_radius = 150; 
-		_maxZombies = 60;
+		_maxZombies = 50;
 	};
 	case "NameCity": {
 		_radius = 200; 
-		_maxZombies = 80;
+		_maxZombies = 60;
 	};
 	case "NameCityCapital": {
 		_radius = 300; 
-		_maxZombies = 100;
+		_maxZombies = 70;
 	};
 	default {
 		_radius = 100; 
-		_maxZombies = 10;
+		_maxZombies = 40;
 	};	
 };
 if (_inVehicle) then {
@@ -87,7 +87,7 @@ if (_inVehicle) then {
 				};
 			} else {
 				dayz_spawnWait = time;
-				dayz_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",_radius]);
+				dayz_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",100]);
 			};
 		};
 	} forEach _nearbyplayer;

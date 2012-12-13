@@ -115,7 +115,7 @@ link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
 globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1245.283447,529.096497,955,601,1};
-window[] = {2,-1,-1,-1,-1,934,154,1125,154,3,972};
+window[] = {2,-1,-1,-1,-1,824,44,1015,44,3,972};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1094,7 +1094,7 @@ class FSM
        "		call player_spawnZedCheck;			" \n
        "" \n
        "		call stream_locationCheck;" \n
-       "		sleep 2;" \n
+       "		sleep 5;" \n
        "	};" \n
        "};" \n
        "// TODO: questionably" \n
