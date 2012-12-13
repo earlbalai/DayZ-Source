@@ -104,7 +104,41 @@ class CfgVehicles {
 			};
 		};
 	};
-	
+	class AH6X_EP1;
+	class AH6X_DZ: AH6X_EP1
+	{
+		displayName = "AH6X_DZ";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+	};
+
+	class MH6J_EP1;
+	class MH6J_DZ: MH6J_EP1
+	{
+		displayName = "MH6J_DZ";
+		scope = 2;
+		side = 2;
+		crew = "";
+		typicalCargo[] = {};
+		hiddenSelections[] = {};
+		class TransportMagazines{};
+		class TransportWeapons{};
+		weapons[] = {};
+		magazines[] = {};
+		commanderCanSee = 2+16+32;
+		gunnerCanSee = 2+16+32;
+		driverCanSee = 2+16+32;
+	};	
 	class Animal;
 	class Pastor;
 	class Fin;
@@ -317,6 +351,7 @@ class CfgVehicles {
 		driverCanSee = 2+16+32;
 	};
 	//AH6X_EP1
+	/*
 	class AH6X_EP1
 	{ 
 		scope = 0;
@@ -341,6 +376,7 @@ class CfgVehicles {
 		gunnerCanSee = 2+16+32;
 		driverCanSee = 2+16+32;
 	};
+	*/
 	class House {
 		class DestructionEffects;
 	};
