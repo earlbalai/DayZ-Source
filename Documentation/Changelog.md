@@ -5,7 +5,7 @@ FIX DUE : 2012
 
 	Community Change log:
 		Client:
-			* [Prerequisites]
+			* [Prerequisites]	beta-patch 99806.
 			
 			* [NEW]	Weapon - Sa58P_EP1. (Military)
 			* [NEW]	Weapon - Sa58V_EP1. (Military)
@@ -16,6 +16,8 @@ FIX DUE : 2012
 			* [NEW]	Weapon - G36A_camo. (HeliCrash)
 			* [NEW]	Weapon - G36K_camo. (HeliCrash)
 			* [NEW]	Weapon - M40A3 (MilitaryS)
+			* [NEW] Vehicle - HMMWV.
+			* [NEW] Vehicle - MH6J_DZ.
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
 			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
@@ -45,7 +47,7 @@ FIX DUE : 2012
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
 			
 		Hive:
-			* [Prerequisites]	beta-patch 98866.
+			* [Prerequisites]	beta-patch 99806.
 			* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 			
 			* [NEW] - Added new constraint to block non Dayz items from being wrote to the db
