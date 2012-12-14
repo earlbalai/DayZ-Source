@@ -1,7 +1,7 @@
 private ["_objects"];
 _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10];
 {
-	dayzUpdateVehicle = [_x,"all"];
+	dayzUpdateVehicle = [_x,"gear"];
 	publicVariableServer "dayzUpdateVehicle";
 } foreach _objects;
 
