@@ -114,8 +114,8 @@ link56[] = {49,50};
 link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
-globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1245.283447,529.096497,955,601,1};
-window[] = {2,-1,-1,-1,-1,824,44,1015,44,3,972};
+globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1244.091797,527.904846,955,601,1};
+window[] = {2,-1,-1,-1,-1,846,66,1037,66,3,972};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1083,17 +1083,28 @@ class FSM
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
        "" \n
        "dayz_lootCheck = [_playerUID,_charID] spawn {" \n
-       "	private[""_handle"",""_humanity"",""_playerUID"",""_oldModel"",""_runOnce""];" \n
-       "	_playerUID = _this select 0;" \n
-       "	_charID = _this select 1;" \n
-       "	_runOnce = false;" \n
        "	while {true} do {" \n
        "//loot" \n
        "		call player_spawnLootCheck;" \n
+       "		sleep 10;" \n
+       "	};" \n
+       "};" \n
+       "dayz_zedCheck = [_playerUID,_charID] spawn {" \n
+       "	while {true} do {" \n
        "//zeds" \n
        "		call player_spawnZedCheck;			" \n
-       "" \n
+       "		sleep 7;" \n
+       "	};" \n
+       "};" \n
+       "dayz_locationCheck = [_playerUID,_charID] spawn {" \n
+       "	while {true} do {" \n
        "		call stream_locationCheck;" \n
+       "		sleep 2;" \n
+       "	};" \n
+       "};" \n
+       "dayz_combatCheck = [_playerUID,_charID] spawn {" \n
+       "	while {true} do {" \n
+       "		call player_combatCheck;" \n
        "		sleep 5;" \n
        "	};" \n
        "};" \n
