@@ -1,3 +1,5 @@
+![DayZ Logo](http://i.imgur.com/V5FEm.png)
+
 Official DayZMod Community Project
 ==================================
 
