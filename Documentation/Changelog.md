@@ -5,7 +5,7 @@ FIX DUE : 2012
 
 	Community Change log:
 		Client:
-			* [Prerequisites]
+			* [Prerequisites]	beta-patch 99806.
 			
 			* [NEW]	Weapon - Sa58P_EP1. (Military)
 			* [NEW]	Weapon - Sa58V_EP1. (Military)
@@ -16,38 +16,55 @@ FIX DUE : 2012
 			* [NEW]	Weapon - G36A_camo. (HeliCrash)
 			* [NEW]	Weapon - G36K_camo. (HeliCrash)
 			* [NEW]	Weapon - M40A3 (MilitaryS)
+			* [NEW] Vehicle - HMMWV.
+			* [NEW] Vehicle - MH6J_DZ.
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
 			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
-			* [NEW] - New Load screens added to show timeleft for combat logging.
-			* [NEW] - Revamped blood icon to now empty as you loose blood Thanks Des
+			* [NEW] - New Load screens added.
+			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
+			* [NEW] - Chopper weapons can now be reloaded 
 
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
-			* [UPDATED] - Added a much faster login process.
+			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
 			* [UPDATED] - Limted amount of ammo found with weapons.
 			* [UPDATED] - Gender selection images updated thanks Des.
 			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/500.
 			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
 			* [UPDATED] - Combat Mode is now effected by everything you do and everything done to you (example any kind of damage).			
-			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 100, City's - 80, Village's - 60 (Old Local Zed count was 40 at any location that has buildings)).
+			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 70, City's - 60, Village's - 50 (Old Local Zed count was 40 at any location that has buildings)).
+			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo 100 rounds.
+			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but thoughtout the game.
+			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot cpu cycles)
+			* [UPDATED] - Loot chance reworked Result should now be instant spawn loot.
+			* [UPDATED] - Much faster fn_instring (Old peak execution time: >20ms, New peak execution time: <0.5ms).
+			* [UPDATED] - Cargo space redo.
+				MI17_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 50;, transportmaxbackpacks = 10; )
+				UH1H_DZ ( transportMaxWeapons = 5;, transportMaxMagazines = 25;, transportmaxbackpacks = 4; )
+				AH6_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 10;, transportmaxbackpacks = 2; )
+				Mh6J_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 20;, transportmaxbackpacks = 0; )
+				AN2_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 80;, transportmaxbackpacks = 15; )
+			
 			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
 			* [Fixed] - German Tranlations updated.
 			* [Fixed] - mi17 gunner seat is now fixed (you no longer stand outside)
+			* [Fixed] - Bloodbag glitch fixed.
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
 			
 		Hive:
-			* [Prerequisites]	beta-patch 98866.
+			* [Prerequisites]	beta-patch 99806.
 			* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 			
 			* [NEW] - Added new constraint to block non Dayz items from being wrote to the db
 
 			* [UPDATED] - Publish Object will now only publish items allowed. (tents, other deployables)
+			* [UPDATED] - Updated Basic SQL Procs.
 
 			* [Fixed] - Crash issue on stale child calls
 
