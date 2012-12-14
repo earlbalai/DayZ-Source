@@ -1070,7 +1070,7 @@ class CfgWeapons {
 	//class FN_FAL: FakeWeapon {};
 	//class FN_FAL_ANPVS4: FakeWeapon {};
 	//class G36C_camo: FakeWeapon {};
-	//class G36_C_SD_camo: FakeWeapon {};
+	class G36_C_SD_camo: FakeWeapon {};
 	//class G36A_camo: FakeWeapon {};
 	//class G36K_camo: FakeWeapon {};
 	//class G36C: FakeWeapon {};
@@ -1092,8 +1092,8 @@ class CfgWeapons {
 	class M47Launcher_EP1: FakeWeapon {};
 	class MAAWS: FakeWeapon {};
 	class SCAR_Base: FakeWeapon {};
-	class SCAR_L_Base: FakeWeapon {};
-	class SCAR_L_CQC: FakeWeapon {};
+	//class SCAR_L_Base: FakeWeapon {};
+	//class SCAR_L_CQC: FakeWeapon {};
 	class SCAR_L_CQC_Holo: FakeWeapon {};
 	class SCAR_L_STD_Mk4CQT: FakeWeapon {};
 	class SCAR_L_STD_EGLM_RCO: FakeWeapon {};
@@ -1923,8 +1923,8 @@ class CfgVehicles {
 	class Chukar_AllwaysEnemy_EP1: Banned {};
 	class AH64D_EP1: Banned {};
 	class AH6J_EP1: Banned {};
-	//class AH6X_EP1: Banned {};
-	//class MH6J_EP1: Banned {};
+	class AH6X_EP1: Banned {};
+	class MH6J_EP1: Banned {};
 	class An2_1_TK_CIV_EP1: Banned {};
 	class An2_2_TK_CIV_EP1: Banned {};
 	class An2_TK_EP1: Banned {};
@@ -2092,7 +2092,107 @@ class CfgSkeletons
 		skeletonInherit = "";
 		skeletonBones[] = {};
 	};
- 
+	
+	class AnimalSkeleton: Default
+	{
+		isDiscrete = 0;
+		skeletonInherit = "";
+		skeletonBones[] ={};
+	};
+	class DogSkeleton
+	{
+		isDiscrete = 0;
+		skeletonInherit = "";
+		skeletonBones[] =
+		{
+			"Hips","",
+			"spine","Hips",
+			"spine1","spine",
+			"spine2","spine1",
+			"neck","spine2",
+			"neck1","neck",
+			"head","neck1",
+			"Jaw","head",
+			"Tongue1","Jaw",
+			"Tongue2","Tongue1",
+			"leftArm","spine2",
+			"leftForeArm","leftArm",
+			"leftHand","leftForeArm",
+			"leftFinger","leftHand",
+			"rightArm","spine2",
+			"rightForeArm","rightArm",
+			"rightHand","rightForeArm",
+			"rightFinger","rightHand",
+			"tail1","Hips",
+			"tail2","tail1",
+			"tail3","tail2",
+			"leftUpLeg","spine",
+			"leftLeg","leftUpLeg",
+			"leftFoot","leftLeg",
+			"leftToe","leftFoot",
+			"rightUpLeg","spine",
+			"rightLeg","rightUpLeg",
+			"rightFoot","rightLeg",
+			"rightToe","rightFoot",
+			"leftEar","head",
+			"rightEar","head"
+		};
+		pivotsModel = "ca\Animals2\Dog_Skeleton.p3d";
+	};
+	class BirdSkeleton: AnimalSkeleton
+	{
+		skeletonInherit = "AnimalSkeleton";
+		skeletonBones[] =
+		{
+			"head","neck",
+			"Hips","spine",
+			"leftArm","leftShoulder",
+			"leftForeArm","leftArm",
+			"leftHand","leftForeArm",
+			"LeftFingerBase","leftHand",
+
+			"leftFoot","leftLeg",
+			"leftFootIndex1","leftFoot",
+			"leftFootMiddle1","leftFoot",
+			"leftFootRing1","leftFoot",
+			"leftFootThumb1","leftFoot",
+
+			"leftLeg","leftUpLeg",
+			"leftShoulder","spine",
+
+			"leftUpLeg","spine",
+			"neck","spine1",
+
+			"rightArm","rightShoulder",
+			"rightForeArm","rightArm",
+			"rightHand","rightForeArm",
+			"rightFingerBase","RightHand",
+
+			"rightFoot","rightLeg",
+			"rightFootIndex1","rightFoot",
+			"rightFootMiddle1","rightFoot",
+			"rightFootRing1","rightFoot",
+			"RightFootThumb1","rightFoot",
+
+			"rightLeg","rightUpLeg",
+			"rightShoulder","spine",
+			"rightUpLeg","spine",
+			"spine","",
+			"spine1","spine",
+			"tail","Hips",
+		};
+	};
+	class CfgMovesButterfly: Default
+	{
+		skeletonBones[] =
+		{
+			"body", "",
+			"LBwing", "",
+			"LTwing", "",
+			"RBwing", "",
+			"RTwing", ""
+		};
+	}; 
 	class OFP2_ManSkeleton
 	{
 		isDiscrete = 0;
@@ -2255,7 +2355,17 @@ class CfgModels
 		sections[] = {};
 		skeletonName = "";
 	};
- 
+ 	class Dog: Default
+	{
+		sections[] = {"trup"};
+		skeletonName = "DogSkeleton";
+		htMin = 60;	// Minimum half-cooling time (in seconds)
+		htMax = 1800;	// Maximum half-cooling time (in seconds)
+		afMax = 30;	// Maximum temperature in case the model is alive (in celsius)
+		mfMax = 0;	// Maximum temperature when the model is moving (in celsius)
+		mFact = 1;	// Metabolism factor - number from interval <0, 1> (0 - metabolism has no influence, 1 - metabolism has full influence (no other temperature source will be considered)).
+		tBody = 37; 	// Metabolism temperature of the model (in celsius)
+	};
 	class ArmaMan : Default
 	{
 		sections[] =
@@ -2390,4 +2500,15 @@ class CfgModels
 	//class zombie_sniffing_264-499 : ArmaMan {};
 	//class zombie_sniffing_573-809 : ArmaMan {};
 	//class zombie_sniffing_573-809 : ArmaMan {};
+	class dogBarkOnce: Dog {};
+	class dogDownIdle: Dog {};
+	class dogDownStand: Dog {};
+	class dogDownStill: Dog {};
+	class dogGestureHeadL: Dog {};
+	class dogGestureHeadR: Dog {};
+	class dogGestureIdle1: Dog {};
+	class dogGestureIdle2: Dog {};
+	class dogGestureSniff: Dog {};
+	class dogStandDown: Dog {};
+	class dogGestureGrowl: Dog {};
 };
