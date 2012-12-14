@@ -34,7 +34,7 @@ FIX DUE : 2012
 			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
 			* [UPDATED] - Combat Mode is now effected by everything you do and everything done to you (example any kind of damage).			
 			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 70, City's - 60, Village's - 50 (Old Local Zed count was 40 at any location that has buildings)).
-			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo 100 rounds.
+			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo Max 100 rounds per gun.
 			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but thoughtout the game.
 			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot cpu cycles)
 			* [UPDATED] - Loot chance reworked Result should now be instant spawn loot.
