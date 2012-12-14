@@ -16,16 +16,16 @@ Communtiy Devs
 * Stapo
 * Venthos
 * Pwnoz0r
+* VRShiva
 
 Contributions By
 * fred41
 * Tansien
 * Killzone_kid
-* VRShiva
 * Alex Grosse (Inch)
 * Des
 * ziellos2k
-* SumrakDZN
+* Sumrak
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything diffrent :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
@@ -40,7 +40,6 @@ Testers:
 * Facoptere
 * HumbleUk
 * IMF2000
-* Sumrak
 * TheLaughingMan
 * Cammo
 * Adam (Max)
