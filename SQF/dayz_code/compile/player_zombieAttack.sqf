@@ -1,4 +1,4 @@
-private["_unit","_targets","_move","_damage","_wound","_sound","_local","_dir","_hpList","_hp","_strH","_dam","_total","_result","_vehicle","_tPos","_zPos","_cantSee","_inAngle"];
+private["_unit","_targets","_move","_damage","_wound","_index","_cnt","_sound","_local","_dir","_hpList","_hp","_strH","_dam","_total","_result","_vehicle","_tPos","_zPos","_cantSee","_inAngle"];
 _unit = _this select 0;
 _type = _this select 1;
 _vehicle = (vehicle player);
@@ -48,9 +48,15 @@ if (_vehicle != player) then {
 				if ((_vehicle isKindOf "ATV_Base_EP1") or (_vehicle isKindOf "Motorcycle")) then { player action ["eject", _vehicle] };
 			};	
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
-					_wound = DAYZ_woundHit call BIS_fnc_selectRandomWeighted;
-				} else {
-					_wound = DAYZ_woundHit_ok call BIS_fnc_selectRandomWeighted;
+				_cnt = count (DAYZ_woundHit select 1);
+				_index = floor (random _cnt);
+				_index = (DAYZ_woundHit select 1) select _index;
+				_wound = (DAYZ_woundHit select 0) select _index; 
+			} else {
+				_cnt = count (DAYZ_woundHit_ok select 1);
+				_index = floor (random _cnt);
+				_index = (DAYZ_woundHit_ok select 1) select _index;
+				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
 			_damage = 0.1 + random (1.2);
 			//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
@@ -77,13 +83,22 @@ if (_vehicle != player) then {
 			_cantSee = [_unit,_vehicle] call dayz_losCheck;
 			if (!_cantSee) then {
 				if (_type == "dog") then {
-					_wound = DAYZ_woundHit_dog call BIS_fnc_selectRandomWeighted;
+					_cnt = count (DAYZ_woundHit_dog select 1);
+					_index = floor (random _cnt);
+					_index = (DAYZ_woundHit_dog select 1) select _index;
+					_wound = (DAYZ_woundHit_dog select 0) select _index; 
 					_damage = 0.3 + random (1.0);
 				} else {
 					if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
-						_wound = DAYZ_woundHit call BIS_fnc_selectRandomWeighted;
+						_cnt = count (DAYZ_woundHit select 1);
+						_index = floor (random _cnt);
+						_index = (DAYZ_woundHit select 1) select _index;
+						_wound = (DAYZ_woundHit select 0) select _index; 
 					} else {
-						_wound = DAYZ_woundHit_ok call BIS_fnc_selectRandomWeighted;
+						_cnt = count (DAYZ_woundHit_ok select 1);
+						_index = floor (random _cnt);
+						_index = (DAYZ_woundHit_ok select 1) select _index;
+						_wound = (DAYZ_woundHit_ok select 0) select _index; 
 					};
 					_damage = 0.1 + random (1.2);
 				};
