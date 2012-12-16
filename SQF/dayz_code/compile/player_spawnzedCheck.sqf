@@ -4,11 +4,6 @@ _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
-_running = 0;
-
-if (_running == 1) exitwith {};
-
-_running = 1;
 _age = -1;
 
 // If they just got out of a vehicle, boost their per-player zombie limit by 5 in hopes of allowing insta-spawn zombies
@@ -29,36 +24,38 @@ dayz_inVehicle = _inVehicle;
 		_position = position (_nearestCity select 0);  	
 	};
 	
+	
 	_nearbytype = type (_nearestCity select 0);
 	
 switch (_nearbytype) do {
 	case "NameLocal": {
-		_radius = 100; 
+		_radius = 200; 
 		_maxZombies = 40;
 	};
 	case "NameVillage": {
-		_radius = 150; 
+		_radius = 250; 
 		_maxZombies = 50;
 	};
 	case "NameCity": {
-		_radius = 200; 
+		_radius = 300; 
 		_maxZombies = 60;
 	};
 	case "NameCityCapital": {
-		_radius = 300; 
+		_radius = 400; 
 		_maxZombies = 70;
 	};
 	default {
-		_radius = 100; 
-		_maxZombies = 40;
+		_radius = 180; 
+		_maxZombies = 20;
 	};	
 };
 if (_inVehicle) then {
 	_maxZombies = _maxZombies / 2;
 };
 	
-	_tooManyZs = count (getPosATL player nearEntities ["zZombie_Base",100]) > _maxZombies;
-	_nearbyplayer = nearestObjects [player, ["Building"], _radius];
+	_tooManyZs = count (_position nearEntities ["zZombie_Base",_radius]) > _maxZombies;
+	_nearby = nearestObjects [player, ["Building"], _radius];
+	//_nearby = _position nearObjects ["building",_radius]; 
 	{
         _type = typeOf _x;
         _config =       configFile >> "CfgBuildingLoot" >> _type;
@@ -66,6 +63,7 @@ if (_inVehicle) then {
         _dis = _x distance player;	
 		
 		if (_canZombie) then {
+		//if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
 			if (dayz_spawnZombies < _maxZombies) then {
 				if (!_tooManyZs) then {
 					private["_zombied"];
@@ -76,9 +74,10 @@ if (_inVehicle) then {
 					if (_age > 1) then {
 						_bPos = getPosATL _x;
 						_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
-						_withinRange = _x distance player < 100;
+						_withinRange = _x distance player < _radius;
 						//diag_log ("ZombiesNum: " +str(_zombiesNum));
 						if ((_zombiesNum == 0) and _withinRange) then {
+						//if (_zombiesNum == 0) then {
 						//Randomize Zombies
 							_x setVariable ["zombieSpawn",_dateNow,true];
 							[_x] call building_spawnZombies;
@@ -87,8 +86,8 @@ if (_inVehicle) then {
 				};
 			} else {
 				dayz_spawnWait = time;
-				dayz_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",100]);
+				dayz_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius]);
 			};
 		};
-	} forEach _nearbyplayer;
+	} forEach _nearby;
 	_running = 0

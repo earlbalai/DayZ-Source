@@ -15,7 +15,7 @@ if (_canLoot) then {
 	//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
 		for "_i" from 1 to _num do
 		{
-			[_originalPos,true,_unitTypes] call zombie_generate;
+			[_originalPos,_unitTypes] call zombie_generate;
 		};
 	
 	//Add Internal Zombies
@@ -35,11 +35,10 @@ if (_canLoot) then {
 				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				
 				if (!_nearByPlayer and !_nearBy) then {
-					[_iPos,false,_unitTypes] call zombie_generate;
+					[_iPos,_unitTypes] call zombie_generate;
 				};
 			};
 		} forEach _positions;
 	};
-
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
