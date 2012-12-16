@@ -192,9 +192,9 @@ class CfgBuildingLoot {
 			2,
 			0.06,
 			0.04,
-			0.01,
+			0.04, //{"CZ_VestPouch_EP1","object"},
 			0.03,
-			0.03,
+			0.02,
 			0.01,
 			0.01,
 			0.03,
@@ -328,9 +328,9 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
-			0.01,
-			0.02,
+			0.04, //{"CZ_VestPouch_EP1","object"},
 			0.03,
+			0.02,
 			0.01,
 			0.01,
 			0.3,
@@ -896,6 +896,15 @@ class CfgBuildingLoot {
 	class MASH_EP1: MASH {};
 
 	class UH1Wreck_DZ: Military {
+		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+		zombieChance = 0;
+		lootChance = 0;
+		minRoaming = 4;
+		maxRoaming = 8;
+		lootPos[] = {};
+	};
+	
+	class UH60Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 		zombieChance = 0;
 		lootChance = 0;
