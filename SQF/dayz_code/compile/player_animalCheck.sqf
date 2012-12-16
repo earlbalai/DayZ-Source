@@ -3,8 +3,8 @@ _list = getposATL player nearEntities [["CAAnimalBase"],dayz_animalDistance];
 
 if (count _list < dayz_maxAnimals) then {
 	//Find where animal likes
-	//_animalssupported = ["hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit","DZ_Pastor"];
-	_animalssupported = ["DZ_Pastor"];
+	_animalssupported = ["hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit"];
+	//_animalssupported = ["DZ_Pastor"];
 	_type =  (_animalssupported select floor(random(count _animalssupported)));
 	if (_type == "Cow") then {
 		_animalssupported = ["Cow01","Cow02","Cow03","Cow04"];
