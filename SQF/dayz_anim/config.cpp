@@ -1825,7 +1825,7 @@ class CfgVehicles {
 	class UH1Y: Banned {};
 	class UH1Y_cutscene: Banned {};
 	class Su34: Banned {};
-	class UH60_wreck_EP1: Banned {};
+	//class UH60_wreck_EP1: Banned {};
 	class WarfareSalvageTruck_USMC: Banned {};
 	class WarfareSupplyTruck_USMC: Banned {};
 	class WarfareReammoTruck_USMC: Banned {};
