@@ -67,16 +67,6 @@ dayz_resetSelfActions = {
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
 	s_player_flipveh = 		-1;
-	s_player_movedog =		-1;
-	s_player_speeddog =		-1;
-	s_player_calldog = 		-1;
-	s_player_feeddog = 		-1;
-	s_player_waterdog = 	-1;
-	s_player_staydog = 		-1;
-	s_player_trackdog = 	-1;
-	s_player_barkdog = 		-1;
-	s_player_warndog = 		-1;
-	s_player_followdog = 	-1;
 };
 call dayz_resetSelfActions;
 
