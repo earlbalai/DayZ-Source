@@ -1,7 +1,7 @@
 private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
 _position = 	_this select 0;
-_doLoiter = 	_this select 1;
-_unitTypes = 	_this select 2;
+_unitTypes = 	_this select 1;
+_doLoiter = 	true;
 
 _isNoone = 	{isPlayer _x} count (_position nearEntities ["AllVehicles",30]) == 0;
 _loot = 	"";
@@ -33,14 +33,12 @@ if (_nearByPlayer) then {
 };
 _agent = createAgent [_type, _position, [], _radius, _method];
 
-/*
 if (_doLoiter) then {
 	//_agent setPosATL _position;
 	//_agent setVariable ["doLoiter",true,true];
-} else {
-	_agent setVariable ["doLoiter",false,true];
+	_agent setDir round(random 180);
 };
-*/
+
 
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
@@ -55,11 +53,11 @@ if (random 1 > 0.7) then {
 
 //diag_log ("CREATED: "  + str(_agent));
 
+/*
 //_agent setVariable["host",player,true];
 if (!_doLoiter) then {
 	_agent setDir round(random 180);
 	_agent setVariable ["doLoiter",false,true];
-	/*
 	if (_nearByPlayer) then {
 		while {_nearByPlayer} do {
 			_position = [_position,40,80,10,0,20,0] call BIS_fnc_findSafePos;
@@ -71,8 +69,8 @@ if (!_doLoiter) then {
 			_agent setPosATL _position;
 		};
 	};
-	*/
 };
+*/
 
 if (isNull _agent) exitWith {
 	dayz_spawnZombies = dayz_spawnZombies - 1;
