@@ -24,7 +24,8 @@ FIX DUE : 2012
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - New Load screens added.
 			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
-			* [NEW] - Chopper weapons can now be reloaded 
+			* [NEW] - Chopper weapons can now be reloaded.
+			* [NEW] - UH60Wreck added
 
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
@@ -45,13 +46,16 @@ FIX DUE : 2012
 				AH6_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 10;, transportmaxbackpacks = 2; )
 				Mh6J_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 20;, transportmaxbackpacks = 0; )
 				AN2_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 80;, transportmaxbackpacks = 15; )
-			
+			* [UPDATED] - CZ_VestPouch_EP1 to be more usefull 12 slots 0 weapon slots.
+			* [UPDATED] - Zeds will talk to other zeds within 100 meter.
+			* [UPDATED] - Combat now tags you when your within 30 meter range of zeds or players. (testing/designing other systems to fall inline with this) Idea by Daimyo
 			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
 			* [Fixed] - German Tranlations updated.
 			* [Fixed] - mi17 gunner seat is now fixed (you no longer stand outside)
 			* [Fixed] - Bloodbag glitch fixed.
+			* [Fixed] - UH1Y_DZ animation issues.
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
