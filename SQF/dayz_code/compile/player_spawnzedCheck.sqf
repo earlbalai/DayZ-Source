@@ -30,19 +30,19 @@ dayz_inVehicle = _inVehicle;
 switch (_nearbytype) do {
 	case "NameLocal": {
 		_radius = 200; 
-		_maxZombies = 40;
+		_maxZombies = 30;
 	};
 	case "NameVillage": {
 		_radius = 250; 
-		_maxZombies = 50;
+		_maxZombies = 40;
 	};
 	case "NameCity": {
 		_radius = 300; 
-		_maxZombies = 60;
+		_maxZombies = 45;
 	};
 	case "NameCityCapital": {
 		_radius = 400; 
-		_maxZombies = 70;
+		_maxZombies = 50;
 	};
 	default {
 		_radius = 180; 
