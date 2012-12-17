@@ -1,5 +1,8 @@
 /*
-Inital Idea by Daimyo
+Initial Idea by Daimyo
+
+System test to see how this would handle in the game. Other systems will be brought in to play along side this if full permission is givin.
+For now this is just a test system based on the idea.
 */
 
 private["_dialog","_dangerNear","_inCombat","_inVehicle"];
@@ -7,13 +10,6 @@ private["_dialog","_dangerNear","_inCombat","_inVehicle"];
 	_inCombat = player getVariable["startcombattimer",0];
 	_inVehicle = (vehicle player != player);
 	_dangerNear = (getPosATL player) nearEntities [["zZombie_Base","CAManBase"],30];
-
-/*
-if (player in _dangerNear) then {
-	_dangerNear set [0, player]; 
-	_dangerNear = _dangerNear - [player];
-};
-*/
 
 if (_inVehicle && (speed player != 0)) exitwith {};
 
