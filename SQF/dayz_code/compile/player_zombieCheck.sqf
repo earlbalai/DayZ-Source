@@ -1,12 +1,21 @@
 private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_continue","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 _refObj = vehicle player;
-_listTalk = (position _refObj) nearEntities [["zZombie_Base"],80];
+_listTalk = (position _refObj) nearEntities [["zZombie_Base","DZ_Pastor"],80];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 _multiplier = 1;
 
 {
 	_continue = true;
+	
+	if (typeOf _x == "DZ_Fin" || typeOf _x == "DZ_Pastor") then { _type = "dog"; } else { _type = "zombie"; };
+	//check if untamed dog;
+	if (_type == "dog") then { 
+		_multiplier = 2;
+		if ((_x getVariable ["characterID", "0"] == "0") || (_x getVariable ["state", "passive"] == "passive") || (_x getVariable ["characterID", "0"] == dayz_characterID)) then { 
+			_continue = false; 
+		};
+	};
 	
 	if (alive _x && _continue) then {
 		private["_dist"];
