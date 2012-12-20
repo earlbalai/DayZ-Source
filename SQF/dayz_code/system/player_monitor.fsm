@@ -115,7 +115,7 @@ link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
 globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1244.091797,527.904846,613,601,1};
-window[] = {2,-1,-1,-32000,-32000,890,110,1081,110,3,630};
+window[] = {2,-1,-1,-1,-1,802,22,993,22,3,630};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1098,12 +1098,6 @@ class FSM
        "	while {true} do {" \n
        "		call stream_locationCheck;" \n
        "		sleep 2;" \n
-       "	};" \n
-       "};" \n
-       "dayz_combatCheck = [] spawn {" \n
-       "	while {true} do {" \n
-       "		call player_combatCheck;" \n
-       "		sleep 5;" \n
        "	};" \n
        "};" \n
        "// TODO: questionably" \n
