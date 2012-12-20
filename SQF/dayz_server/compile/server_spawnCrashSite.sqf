@@ -14,7 +14,6 @@ _spawnRadius	= _this select 6;
 _spawnFire	= _this select 7;
 _fadeFire	= _this select 8;
 
-_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
 diag_log("CRASHSPAWNER: Starting spawn logic for Crash Spawner");
 
@@ -27,6 +26,7 @@ while {true} do {
 	//Adding some Random systems
 	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
 	_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
+	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
 	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
 
@@ -104,7 +104,5 @@ while {true} do {
 			} forEach _nearBy;
 		};
 
-	} else {
-		diag_log(format["CRASHSPAWNER: Roll chance to spawn '%1' with loot table '%2' failed", _crashName, _lootTable]);
 	};
 };
