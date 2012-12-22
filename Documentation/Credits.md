@@ -7,16 +7,16 @@ Community Dev Project Sponsor
 Community Dev Project Manager
 * R4Z0R49
 
-Communtiy Devs
+Community Collaborators 
 * Alby
 * Ander
 * Ayan4m1
-* f0rt
 * Rajko
 * Stapo
 * Venthos
-* Pwnoz0r
 * VRShiva
+* f0rt
+* Pwnoz0r
 
 Contributions By
 * fred41
