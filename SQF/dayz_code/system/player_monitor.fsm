@@ -1084,14 +1084,14 @@ class FSM
        "" \n
        "dayz_lootCheck = [] spawn {" \n
        "	while {true} do {" \n
-       "		call player_spawnLootCheck;" \n
+       "		[""Loot""] call player_spawnCheck;" \n
        "		sleep 10;" \n
        "	};" \n
        "};" \n
        "dayz_zedCheck = [] spawn {" \n
        "	while {true} do {" \n
-       "		call player_spawnZedCheck;			" \n
-       "		sleep 7;" \n
+       "		[""Zeds""] call player_spawnCheck;			" \n
+       "		sleep 20;" \n
        "	};" \n
        "};" \n
        "dayz_locationCheck = [] spawn {" \n
