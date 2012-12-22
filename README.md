@@ -29,4 +29,4 @@ Directories
 Bugs/Issues
 -----------
 
-- Please report any bugs/issues by submitting a Issue [here] (https://github.com/R4Z0R49/OpenDayzMod/issues).
+- Please report any bugs/issues by submitting a Issue [here] (https://github.com/R4Z0R49/DayZMod/issues).
