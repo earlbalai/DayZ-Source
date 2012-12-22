@@ -25,7 +25,14 @@ while {true} do {
 	
 	//Adding some Random systems
 	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
+	
+	//Crash loot just uncomment the one you wish to use by default with 50cals is enabled.
+	//Table including 50 cals
 	_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
+	//Table without 50 cals
+	//_lootTable = ["Military","HeliCrash_No50s","MilitarySpecial"] call BIS_fnc_selectRandom;
+	
+	
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
 	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
