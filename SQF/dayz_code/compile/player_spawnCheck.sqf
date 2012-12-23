@@ -68,13 +68,13 @@ switch (_type) do {
 	case "Zeds": {
 		_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",_radius]) < _maxZombies;
 		if (_spawnZombies) then {
-			_nearbyBuildings = nearObjects ["building",_radius]
+			_nearbyBuildings = _position nearObjects ["building",_radius];
 			//_nearbyBuildings = nearestObjects [getPosATL player, dayz_ZombieBuildings, _radius]; //Cant be used Not all zones are covered yet (wrecks, Buildings outside towns)
 			[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies, _nearbyBuildings] call player_spawnzedCheck;
 		};	
 	};
 	case "Loot": {
-		_nearbyBuildings = nearObjects ["building",_radius]
+		_nearbyBuildings = _position nearObjects ["building",_radius];
 		//_nearbyBuildings = nearestObjects [_position, dayz_LootBuildings, _radius]; //Cant be used Not all zones are covered yet (wrecks, Buildings outside towns)
 		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings] call player_spawnlootCheck;
 	};
