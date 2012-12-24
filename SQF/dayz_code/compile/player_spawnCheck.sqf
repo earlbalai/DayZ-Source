@@ -47,6 +47,7 @@ switch (_nearbytype) do {
 	};	
 };
 
+/*
 if ((count _nearestCity) > 0) then {
 	_markerstr = createMarker["markername_" +str (_townname), _position];
 	_markerstr setMarkerText _townname;
@@ -62,6 +63,7 @@ if ((count _nearestCity) > 0) then {
 	_markerstr setMarkerShape "ELLIPSE";
 	_markerstr setMarkerBrush "Border";
 	_markerstr setMarkerSize [_radius, _radius];
+*/
 
 
 switch (_type) do {
