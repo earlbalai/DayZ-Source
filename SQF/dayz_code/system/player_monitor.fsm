@@ -115,7 +115,7 @@ link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
 globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-561.815979,576.218079,1244.091797,527.904846,613,601,1};
-window[] = {2,-1,-1,-1,-1,802,22,993,22,3,630};
+window[] = {2,-1,-1,-1,-1,912,132,1103,132,3,630};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1091,7 +1091,7 @@ class FSM
        "dayz_zedCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		[""Zeds""] call player_spawnCheck;			" \n
-       "		sleep 20;" \n
+       "		sleep 8;" \n
        "	};" \n
        "};" \n
        "dayz_locationCheck = [] spawn {" \n
