@@ -15,7 +15,6 @@ Branches
 --------
 
 - **1.7.5** - Commits for DayZMod 1.7.5 (Not Final)
-- **1.7.4** - Commits for DayZMod 1.7.4.4
 - **Master** - Not Used
 
 Directories
