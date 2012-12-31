@@ -23,10 +23,14 @@ FIX DUE : 2012
 			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - New Load screens added.
-			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
 			* [NEW] - Chopper weapons can now be reloaded.
 			* [NEW] - UH60Wreck added
-
+			* [NEW] - Wreck locations are now marked on the map (1).
+			* [NEW] - New zed & loot spawn systems reworte Phase 1.
+			* [NEW] - Basic Anti teleport script.
+			* [NEW] - Basic Mission system Phase 1 (Server Admin Controlled).
+			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
+			
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
 			* [UPDATED] - Limted amount of ammo found with weapons.
@@ -34,7 +38,7 @@ FIX DUE : 2012
 			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/500.
 			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
 			* [UPDATED] - Combat Mode is now effected by everything you do and everything done to you (example any kind of damage).			
-			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 70, City's - 60, Village's - 50 (Old Local Zed count was 40 at any location that has buildings)).
+			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 50, City's - 40, Village's - 40 (Old Local Zed count was 40 at any location that has buildings)).
 			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo Max 100 rounds per gun.
 			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but thoughtout the game.
 			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot cpu cycles)
@@ -48,7 +52,7 @@ FIX DUE : 2012
 				AN2_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 80;, transportmaxbackpacks = 15; )
 			* [UPDATED] - CZ_VestPouch_EP1 to be more usefull 12 slots 0 weapon slots.
 			* [UPDATED] - Zeds will talk to other zeds within 100 meter.
-			* [UPDATED] - Combat now tags you when your within 30 meter range of zeds or players. (testing/designing other systems to fall inline with this) Idea by Daimyo
+			* [UPDATED] - Combat Logging is now active during Zombie chase.
 			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
