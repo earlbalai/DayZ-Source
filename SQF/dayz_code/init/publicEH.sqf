@@ -1,3 +1,5 @@
+"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) call local_sefFuel};
+
 if (isServer) then {
 	"dayzDeath"			addPublicVariableEventHandler {(_this select 1) call server_playerDied};
 	"dayzDiscoAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
@@ -11,16 +13,13 @@ if (isServer) then {
 	"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 	"dayzLoginRecord"	addPublicVariableEventHandler {(_this select 1) call dayz_recordLogin}; 
 	"dayzCharDisco"		addPublicVariableEventHandler {(_this select 1) call server_characterSync};
-	"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) call local_sefFuel};
 	"dayzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
 	"dayzGutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 
-	"usecMorphine"		addPublicVariableEventHandler {((_this select 1) select 0) setVariable["medForceUpdate",true];};
-	"usecBandage"		addPublicVariableEventHandler {((_this select 1) select 0) setVariable["medForceUpdate",true];};
-	"usecEpi"			addPublicVariableEventHandler {((_this select 1) select 0) setVariable["medForceUpdate",true];};
-	"usecTransfuse"		addPublicVariableEventHandler {((_this select 1) select 0) setVariable["medForceUpdate",true];};
-	"usecPainK"			addPublicVariableEventHandler {((_this select 1) select 0) setVariable["medForceUpdate",true];};
-
+	"usecMorphine"		addPublicVariableEventHandler {	
+						(_this select 1) select 0 setVariable["hit_legs",0];
+						(_this select 1) select 0 setVariable["hit_hands",0];
+					};
 };
 
 if (!isDedicated) then {
