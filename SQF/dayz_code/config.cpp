@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.D1222";
+		version = "1.7.5.D1231";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -85,7 +85,7 @@ class RscStructuredTextGUI: RscStructuredText
 		valign = "middle";
 	};
 };
-
+#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
 #include "cfgVehicles.hpp"
