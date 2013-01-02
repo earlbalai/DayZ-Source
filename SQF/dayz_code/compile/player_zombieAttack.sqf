@@ -33,7 +33,7 @@ if (_vehicle != player) then {
 	_chance =	round(random 12);
 
 	if ((_wound == "Glass1") or (_wound == "Glass2") or (_wound == "Glass3") or (_wound == "Glass4") or (_wound == "Glass5") or (_wound == "Glass6")) then {
-		[_unit,"hit",0,false] call dayz_zombieSpeak;
+		[_unit,"hit",2,true] call dayz_zombieSpeak;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
@@ -63,7 +63,7 @@ if (_vehicle != player) then {
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 			//publicVariable "dayzHit";
-			[_unit,"hit",0,false] call dayz_zombieSpeak;	
+			[_unit,"hit",2,true] call dayz_zombieSpeak;	
 		} else {				
 			_result = [_vehicle, _wound,_total, _unit,"zombie"] call fnc_usec_damageVehicle;
 			dayzHitV =	[_vehicle,_wound,_total, _unit,"zombie"];
@@ -106,7 +106,7 @@ if (_vehicle != player) then {
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
-				[_unit,"hit",0,false] call dayz_zombieSpeak;
+				[_unit,"hit",2,true] call dayz_zombieSpeak;
 			} else {
 				/*
 				_isZombieInside = [_unit,_building] call fnc_isInsideBuilding;
@@ -116,7 +116,7 @@ if (_vehicle != player) then {
 					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 					//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 					//publicVariable "dayzHit";
-					[_unit,"hit",0,false] call dayz_zombieSpeak;	
+					[_unit,"hit",2,true] call dayz_zombieSpeak;	
 				};
 				*/
 			};
