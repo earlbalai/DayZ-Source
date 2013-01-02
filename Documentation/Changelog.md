@@ -25,12 +25,14 @@ FIX DUE : 2012
 			* [NEW] - New Load screens added.
 			* [NEW] - Chopper weapons can now be reloaded.
 			* [NEW] - UH60Wreck added
-			* [NEW] - Wreck locations are now marked on the map (1).
 			* [NEW] - New zed & loot spawn systems reworte Phase 1.
 			* [NEW] - Basic Anti teleport script.
 			* [NEW] - Basic Mission system Phase 1 (Server Admin Controlled).
 			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
-			
+			* [NEW] - Added Markers for all towns (1)
+			* [NEW] - Added player marker (1)
+			* [NEW] - Wreck locations are now marked on the map (1).
+
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
 			* [UPDATED] - Limted amount of ammo found with weapons.
