@@ -20,7 +20,7 @@ FIX DUE : 2012
 			* [NEW] Vehicle - MH6J_DZ.
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
-			* [NEW] - Zeds mow have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
+			* [NEW] - Zeds now have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - New Load screens added.
 			* [NEW] - Chopper weapons can now be reloaded.
