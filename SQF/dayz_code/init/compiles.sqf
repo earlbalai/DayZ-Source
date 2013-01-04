@@ -226,17 +226,48 @@ if (!isDedicated) then {
 		_btnRespawn ctrlEnable false;
 	};
 	
+	abort_enable = 0 spawn {};
 	dayz_disableAbort = {
-		private["_display","_btnAbort","_combattimeout"];
+		private["_display","_btnAbort","_combattimeout","_zAround"];
 		_combattimeout = player getVariable["combattimeout",0];
-		if(_combattimeout < time) exitWith {};
-		disableSerialization;
-		waitUntil {
-			_display = findDisplay 49;
-			!isNull _display;
+		_zAround = (count (player nearEntities ["zZombie_Base",50]) > 0);
+		if (_zAround || _combattimeout > time) then {
+			disableSerialization;
+			waitUntil {
+				_display = findDisplay 49;
+				!isNull _display;
+			};
+			_btnAbort = _display displayCtrl 104;
+			_btnAbort ctrlEnable false;
+			if (_zAround && _combattimeout <= time) then {
+				if (!scriptDone abort_enable) then {
+					terminate abort_enable;
+					sleep 0.5;
+				};
+				abort_enable = [] spawn {
+					private["_timeOut","_timeMax","_display","_btnAbort"];
+					_timeOut = 0;
+					_timeMax = 30;
+					disableSerialization;
+					while {_timeOut <= _timeMax} do {
+						scopeName "loop";
+						_display = findDisplay 49;
+						if (!isNull _display) then {
+							if (_timeOut == _timeMax) then {
+								_btnAbort = _display displayCtrl 104;
+								_btnAbort ctrlEnable true;
+							};
+							cutText [format ["You can Abort in %1",(_timeMax - _timeOut)], "PLAIN DOWN"];
+						} else {
+							breakOut "loop";
+						};
+						_timeOut = _timeOut + 1;
+						sleep 1;
+					};
+					cutText ["", "PLAIN DOWN"];
+				};
+			};
 		};
-		_btnAbort = _display displayCtrl 104;
-		_btnAbort ctrlEnable false;
 	};
 	
 	dayz_spaceInterrupt = {
