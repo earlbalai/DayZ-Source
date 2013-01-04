@@ -29,6 +29,8 @@ FIX DUE : 2012
 			* [NEW] - Basic Anti teleport script.
 			* [NEW] - Basic Mission system Phase 1 (Server Admin Controlled).
 			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
+		
+	#Debug Only
 			* [NEW] - Added Markers for all towns (1)
 			* [NEW] - Added player marker (1)
 			* [NEW] - Wreck locations are now marked on the map (1).
