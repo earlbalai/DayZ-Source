@@ -20,15 +20,15 @@ FIX DUE : 2012
 			* [NEW] Vehicle - MH6J_DZ.
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
-			* [NEW] - Zeds now have the ability to damage vehicles. This is limited to glass only once glass is destoryed players within will be damage.
+			* [NEW] - Zeds now have the ability to damage vehicles. This is limited to glass only once glass is destroyed players within will be damaged.
 			* [NEW] - Zeds now have the ability to pull you from open vehicles.
 			* [NEW] - New Load screens added.
 			* [NEW] - Chopper weapons can now be reloaded.
 			* [NEW] - UH60Wreck added
-			* [NEW] - New zed & loot spawn systems reworte Phase 1.
+			* [NEW] - New zed & loot spawn systems rewrote Phase 1.
 			* [NEW] - Basic Anti teleport script.
 			* [NEW] - Basic Mission system Phase 1 (Server Admin Controlled).
-			* [NEW] - Revamped GUI icons to now empty as you loose the relevent item (blood,food,water) Thanks Des
+			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
 			* [NEW] - Added Markers for all towns (1)
 			* [NEW] - Added player marker (1)
 			* [NEW] - Wreck locations are now marked on the map (1).
@@ -39,12 +39,12 @@ FIX DUE : 2012
 			* [UPDATED] - Gender selection images updated thanks Des.
 			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/500.
 			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
-			* [UPDATED] - Combat Mode is now effected by everything you do and everything done to you (example any kind of damage).			
-			* [UPDATED] - Max local zeds updated based on the area your in (example CityCapitals - 50, City's - 40, Village's - 40 (Old Local Zed count was 40 at any location that has buildings)).
+			* [UPDATED] - Combat Mode is now affected by everything you do and everything done to you (example any kind of damage).			
+			* [UPDATED] - Max local zeds updated based on the area you're in (example CityCapitals - 50, City's - 40, Village's - 40 (Old Local Zed count was 40 at any location that has buildings)).
 			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo Max 100 rounds per gun.
-			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but thoughtout the game.
-			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot cpu cycles)
-			* [UPDATED] - Loot chance reworked Result should now be instant spawn loot.
+			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but throughout the game.
+			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot of cpu cycles)
+			* [UPDATED] - Loot chance reworked, Result should now be instant spawn loot.
 			* [UPDATED] - Much faster fn_instring (Old peak execution time: >20ms, New peak execution time: <0.5ms).
 			* [UPDATED] - Cargo space redo.
 				MI17_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 50;, transportmaxbackpacks = 10; )
@@ -52,7 +52,7 @@ FIX DUE : 2012
 				AH6_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 10;, transportmaxbackpacks = 2; )
 				Mh6J_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 20;, transportmaxbackpacks = 0; )
 				AN2_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 80;, transportmaxbackpacks = 15; )
-			* [UPDATED] - CZ_VestPouch_EP1 to be more usefull 12 slots 0 weapon slots.
+			* [UPDATED] - CZ_VestPouch_EP1 to be more useful 12 slots 0 weapon slots.
 			* [UPDATED] - Zeds will talk to other zeds within 100 meter.
 			* [UPDATED] - Combat Logging is now active during Zombie chase.
 			
