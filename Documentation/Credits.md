@@ -15,8 +15,6 @@ Community Collaborators
 * Stapo
 * Venthos
 * VRShiva
-* f0rt
-* Pwnoz0r
 
 Contributions By
 * fred41
@@ -26,6 +24,8 @@ Contributions By
 * Des
 * ziellos2k
 * Sumrak
+* f0rt
+* Pwnoz0r
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
