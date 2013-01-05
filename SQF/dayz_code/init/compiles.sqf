@@ -60,7 +60,6 @@ if (!isDedicated) then {
 	//Wild
 	//wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";
 	
-	player_spawnLocation = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_spawnLocation.sqf";
 	
 	//
 	dog_findTargetAgent =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
