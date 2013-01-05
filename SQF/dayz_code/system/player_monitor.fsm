@@ -115,7 +115,7 @@ link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
 globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-188.994797,71.350845,1296.207031,1040.957886,613,601,1};
-window[] = {2,-1,-1,-32000,-32000,824,44,1015,44,3,630};
+window[] = {2,-1,-1,-1,-1,802,22,993,22,3,630};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1070,8 +1070,7 @@ class FSM
        "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
        "_nearestCity = (nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000] select 0);" \n
        "_town = ""Wilderness"";" \n
-       "" \n
-       "if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};" \n
+       "if (!isNull _nearestCity) then {_town = text _nearestCity};" \n
        "" \n
        "_strTime = call curTimeStr;" \n
        "_strDate = date;" \n
