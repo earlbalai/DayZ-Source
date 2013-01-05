@@ -48,8 +48,12 @@ diag_log "HIVE: Starting";
 			_idKey = 	_x select 1;
 			_type =		_x select 2;
 			_ownerID = 	_x select 3;
-
 			_worldspace = _x select 4;
+			_intentory=	_x select 5;
+			_hitPoints=	_x select 6;
+			_fuel =		_x select 7;
+			_damage = 	_x select 8;
+
 			_dir = 0;
 			_pos = [0,0,0];
 			_wsDone = false;
@@ -67,11 +71,6 @@ diag_log "HIVE: Starting";
 				if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
 				diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 			};
-
-			_intentory=	_x select 5;
-			_hitPoints=	_x select 6;
-			_fuel =		_x select 7;
-			_damage = 	_x select 8;
 			
 			if (_damage < 1) then {
 				diag_log format["OBJ: %1 - %2", _idKey,_type];
@@ -88,6 +87,7 @@ diag_log "HIVE: Starting";
 				if (_object isKindOf "TentStorage") then {
 					_pos set [2,0];
 					_object setpos _pos;
+					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
 				_object setdir _dir;
 				_object setDamage _damage;
@@ -148,11 +148,7 @@ diag_log "HIVE: Starting";
 					} forEach _hitpoints;
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
-					if (getDammage _object == 1) then {
-						_position = ([(getPosATL _object),0,100,10,0,500,0] call BIS_fnc_findSafePos);
-						_object setPosATL _position;
-					};
-					_object call fnc_vehicleEventHandler;			
+					_object call fnc_vehicleEventHandler;
 				};
 
 				//Monitor the object
