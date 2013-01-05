@@ -70,6 +70,7 @@ dayz_resetSelfActions = {
 	s_player_deleteBuild =	-1;
 	s_player_forceSave = 	-1;
 	s_player_flipveh = 		-1;
+	s_player_sleep =		-1;
 	s_player_movedog =		-1;
 	s_player_speeddog =		-1;
 	s_player_calldog = 		-1;
