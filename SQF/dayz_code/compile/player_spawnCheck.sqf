@@ -49,14 +49,14 @@ if ((count _nearestCity) > 0) then {
 	_markerstr setMarkerBrush "Grid";
 	_markerstr setMarkerSize [_radius, _radius];
 };
-*/
+
 	deleteMarker "Player_Marker_Radius";
 	_markerstr = createMarker["Player_Marker_Radius", getPosATL player];
 	_markerstr setMarkerColor "ColorRed";
 	_markerstr setMarkerShape "ELLIPSE";
 	_markerstr setMarkerBrush "Border";
 	_markerstr setMarkerSize [_radius, _radius];
-
+*/
 
 switch (_type) do {
 	case "Zeds": {
