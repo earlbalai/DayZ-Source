@@ -54,6 +54,14 @@ class CfgAddons
 	};
 };
 
+class CfgInGameUI
+{
+    class PeripheralVision
+    {
+        cueColor[] = {0,0,0,0};
+    };
+};
+
 class RscPictureGUI
 {
 	access = 0;
@@ -89,6 +97,7 @@ class RscStructuredTextGUI: RscStructuredText
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
 #include "cfgVehicles.hpp"
+#include "CfgWeapons.hpp"
 #include "cfgLoot.hpp"
 
 class CfgSurvival {
