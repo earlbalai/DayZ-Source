@@ -38,30 +38,13 @@ switch (_nearbytype) do {
 	};
 };
 
-	_spawnZombies = count (getPosATL player nearEntities ["zZombie_Base",_radius]) < _maxZombies;
-
-/*
-if ((count _nearestCity) > 0) then {
-	_markerstr = createMarker["markername_" +str (_townname), _position];
-	_markerstr setMarkerText _townname;
-	_markerstr setMarkerColor "ColorGreen";
-	_markerstr setMarkerShape "ELLIPSE";
-	_markerstr setMarkerBrush "Grid";
-	_markerstr setMarkerSize [_radius, _radius];
-};
-
-	deleteMarker "Player_Marker_Radius";
-	_markerstr = createMarker["Player_Marker_Radius", getPosATL player];
-	_markerstr setMarkerColor "ColorRed";
-	_markerstr setMarkerShape "ELLIPSE";
-	_markerstr setMarkerBrush "Border";
-	_markerstr setMarkerSize [_radius, _radius];
-*/
+	_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius]) < _maxZombies;
 
 switch (_type) do {
 	case "Zeds": {
 		if (_spawnZombies) then {
-			_nearbyBuildings = nearestObjects [_position, ["building"], _radius];
+			//_nearbyBuildings = nearestObjects [_position, ["building"], _radius];
+			_nearbyBuildings = nearestObjects [_position, dayz_LootBuildings, _radius];
 			_nearbyCount = count _nearbyBuildings;
 			if (_nearbyCount > 0) then {
 				[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies, _nearbyBuildings] call player_spawnzedCheck;
@@ -72,7 +55,8 @@ switch (_type) do {
 		//[_position, _maxZombies] call wild_spawnZombies;
 	};
 	case "Loot": {
-		_nearbyBuildings = nearestObjects [_position, ["building"], _radius];
+		//_nearbyBuildings = nearestObjects [_position, ["building"], _radius];
+		_nearbyBuildings = nearestObjects [_position, dayz_ZombieBuildings, _radius];
 		_nearbyCount = count _nearbyBuildings;
 		if (_nearbyCount > 0) then {
 			[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings] call player_spawnlootCheck;
