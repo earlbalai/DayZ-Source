@@ -99,8 +99,8 @@ link51[] = {39,22};
 link52[] = {40,28};
 link53[] = {41,5};
 link54[] = {42,1};
-globals[] = {25.000000,1,0,0,0,640,480,1,101,6316128,1,-720.702026,412.200623,836.103943,-213.550354,626,580,1};
-window[] = {0,-1,-1,-1,-1,821,110,1318,110,1,643};
+globals[] = {25.000000,1,0,0,0,640,480,1,101,6316128,1,-671.713867,363.212036,624.148865,-248.208023,713,601,1};
+window[] = {2,-1,-1,-32000,-32000,821,110,1318,110,3,730};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -226,9 +226,6 @@ class FSM
            "if (!_hasMoved) then {" \n
            "	_agent setVariable[""doLoiter"",true,true];" \n
            "};" \n
-           "if (!moveToCompleted _agent) then {" \n
-           "    _agent moveTo (position _agent);" \n
-           "};" \n
            "" \n
            "//Enable combat timer." \n
            "_target setVariable[""startcombattimer"", 1, true];" \n
@@ -335,6 +332,7 @@ class FSM
     {
       name = "Chase";
       init = /*%FSM<STATEINIT""">*/"_timeN = time;" \n
+       "_vehicle = (getPosATL vehicle player);" \n
        "" \n
        "if (speed _agent < 0.1) then {_countr = _countr + 1} else {_countr = 0};" \n
        "_target = _agent call zombie_findTargetAgent;" \n
@@ -342,14 +340,22 @@ class FSM
        "_targetPos = getPosATL _target;" \n
        "" \n
        "//Move to target" \n
-       "_agent moveTo _targetPos;" \n
-       "_agent forceSpeed 6;" \n
+       "if (vehicle player == player) then {" \n
+       "diag_log (""Player"");" \n
+       "	_agent moveTo _targetPos;" \n
+       "	_agent forceSpeed 8;" \n
+       "} else {" \n
+       "diag_log (""Vehicle"");" \n
+       "	_agent moveTo _vehicle;" \n
+       "	//_agent doMove _vehicle;" \n
+       "	_agent forceSpeed 6;" \n
+       "};" \n
        "" \n
        "//Check if LOS" \n
-       "if (_losCheck == 2) then {" \n
-       "	_losCheck = 0;" \n
-       "	_cantSee = [_agent,_target] call dayz_losCheck;" \n
-       "};" \n
+       "//if (_losCheck == 2) then {" \n
+       "//	_losCheck = 0;" \n
+       "//_cantSee = [_agent,_target] call dayz_losCheck;" \n
+       "//};" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -411,10 +417,10 @@ class FSM
     class Cleanup_
     {
       name = "Cleanup_";
-      init = /*%FSM<STATEINIT""">*/"_waitStart = time;" \n
+      init = /*%FSM<STATEINIT""">*/"_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],400];" \n
+       "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
        "" \n
-       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],400];" \n
-       "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
+       "_waitStart = time;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -517,9 +523,6 @@ class FSM
            "};" \n
            "if (!_hasMoved) then {" \n
            "	_agent setVariable[""doLoiter"",true,true];" \n
-           "};" \n
-           "if (!moveToCompleted _agent) then {" \n
-           "    _agent moveTo (position _agent);" \n
            "};" \n
            "" \n
            "//Enable combat timer." \n
