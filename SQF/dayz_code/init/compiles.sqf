@@ -188,10 +188,10 @@ if (!isDedicated) then {
 			_zPos = eyePos _agent;	//(getPosASL _agent);
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
 				_cantSee = terrainIntersectASL [_tPos, _zPos];
-				diag_log ("terrainIntersectASL: " + str(_cantSee));
+				//diag_log ("terrainIntersectASL: " + str(_cantSee));
 				if (!_cantSee) then {
 					_cantSee = lineIntersects [_tPos, _zPos];
-					diag_log ("lineIntersects: " + str(_cantSee));
+					//diag_log ("lineIntersects: " + str(_cantSee));
 				};
 			};
 		};
