@@ -60,6 +60,9 @@ if (!isDedicated) then {
 	//Wild
 	//wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";
 	
+	//Maps
+	//fnc_MapEventHandler = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_MapEventHandler.sqf";
+	
 	
 	//
 	dog_findTargetAgent =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
@@ -184,11 +187,11 @@ if (!isDedicated) then {
 			_tPos = eyePos _target;	//(getPosASL _target);
 			_zPos = eyePos _agent;	//(getPosASL _agent);
 			if ((count _tPos > 0) and (count _zPos > 0)) then {
-				_cantSee = terrainIntersectASL [(eyePos _target), (eyePos _agent)];
-				//diag_log ("terrainIntersectASL: " + str(_cantSee));
+				_cantSee = terrainIntersectASL [_tPos, _zPos];
+				diag_log ("terrainIntersectASL: " + str(_cantSee));
 				if (!_cantSee) then {
-					_cantSee = lineIntersects [(eyePos _target), (eyePos _agent)];
-					//diag_log ("lineIntersects: " + str(_cantSee));
+					_cantSee = lineIntersects [_tPos, _zPos];
+					diag_log ("lineIntersects: " + str(_cantSee));
 				};
 			};
 		};
