@@ -93,11 +93,11 @@ class RscStructuredTextGUI: RscStructuredText
 		valign = "middle";
 	};
 };
-#include "CfgWorlds.hpp"
+//#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
 #include "cfgVehicles.hpp"
-#include "CfgWeapons.hpp"
+//#include "CfgWeapons.hpp"
 #include "cfgLoot.hpp"
 
 class CfgSurvival {
