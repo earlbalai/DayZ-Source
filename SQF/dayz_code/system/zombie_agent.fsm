@@ -100,7 +100,7 @@ link52[] = {40,28};
 link53[] = {41,5};
 link54[] = {42,1};
 globals[] = {25.000000,1,0,0,0,640,480,1,101,6316128,1,-671.713867,363.212036,624.148865,-248.208023,713,601,1};
-window[] = {2,-1,-1,-32000,-32000,821,110,1318,110,3,730};
+window[] = {2,-1,-1,-1,-1,733,22,1230,22,3,730};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -341,13 +341,10 @@ class FSM
        "" \n
        "//Move to target" \n
        "if (vehicle player == player) then {" \n
-       "diag_log (""Player"");" \n
        "	_agent moveTo _targetPos;" \n
-       "	_agent forceSpeed 8;" \n
+       "	_agent forceSpeed 6;" \n
        "} else {" \n
-       "diag_log (""Vehicle"");" \n
        "	_agent moveTo _vehicle;" \n
-       "	//_agent doMove _vehicle;" \n
        "	_agent forceSpeed 6;" \n
        "};" \n
        "" \n
