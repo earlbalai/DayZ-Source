@@ -173,9 +173,11 @@ class CfgBuildingLoot {
 			{"","generic"},
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
-			{"CZ_VestPouch_EP1","object"},
-			{"DZ_CivilBackpack_EP1","object"},
-			{"DZ_ALICE_Pack_EP1","object"},
+			
+			{"DZ_Patrol_Pack_EP1","object"}, //8
+			{"DZ_Assault_Pack_EP1","object"}, // 12
+			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			
 			{"Winchester1866","weapon"},
 			{"WeaponHolder_ItemTent","object"},
 			{"","military"},
@@ -201,9 +203,9 @@ class CfgBuildingLoot {
 			2,
 			0.06,
 			0.04,
-			0.04, //{"CZ_VestPouch_EP1","object"},
-			0.03,
-			0.02,
+			0.04, //8
+			0.01, //12
+			0.03, //12-0
 			0.01,
 			0.01,
 			0.03,
@@ -313,9 +315,11 @@ class CfgBuildingLoot {
 			{"","generic"},
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
-			{"CZ_VestPouch_EP1","object"},
-			{"DZ_CivilBackpack_EP1","object"},
-			{"DZ_ALICE_Pack_EP1","object"},
+					
+			{"DZ_Patrol_Pack_EP1","object"}, //8
+			{"DZ_Assault_Pack_EP1","object"}, // 12
+			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			
 			{"Winchester1866","weapon"},
 			{"WeaponHolder_ItemTent","object"},
 			{"","food"},
@@ -337,9 +341,9 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
-			0.04, //{"CZ_VestPouch_EP1","object"},
-			0.03,
-			0.02,
+			0.04, //8
+			0.01, //12
+			0.03, // 12-0
 			0.01,
 			0.01,
 			0.3,
@@ -520,10 +524,13 @@ class CfgBuildingLoot {
 			{"ItemKnife","military"},
 			{"ItemGPS","weapon"},
 			{"ItemMap","military"},
-
-			{"DZ_Assault_Pack_EP1","object"},
-			{"DZ_Patrol_Pack_EP1","object"},
-			{"DZ_Backpack_EP1","object"},			
+			
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			{"DZ_CivilBackpack_EP1","object"}, // 24
+			{"DZ_Backpack_EP1","object"}, // 24
+			
 			//Normal
 			{"","medical"},
 			{"","generic"},
@@ -560,10 +567,13 @@ class CfgBuildingLoot {
 			0.10,
 			0.01,
 			0.05,
-			0.06,
-			0.04,
-			0.02,
-			0.10,
+			//Bags
+			0.08, //16
+			0.08, //16
+			0.06, //18
+			0.01, //24
+			0.01, //DZ_Backpack_EP1 24
+			0.10, 
 			1.00,
 			2.50,
 			//0.20,
@@ -619,9 +629,11 @@ class CfgBuildingLoot {
 			{"ItemMap","military"},
 			{"Binocular_Vector","military"},
 
-			{"DZ_Assault_Pack_EP1","object"},
-			{"DZ_Patrol_Pack_EP1","object"},
-			{"DZ_Backpack_EP1","object"},			
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
+			{"DZ_CivilBackpack_EP1","object"}, // 24
+			{"DZ_Backpack_EP1","object"}, // 24		
 
 			{"","medical"},
 			{"","generic"},
@@ -670,9 +682,12 @@ class CfgBuildingLoot {
 			0.01, //ItemGPS
 			0.03,
 			0.01,
-			0.02,
-			0.03,
-			0.02,
+			//Bags
+			0.08, //16
+			0.08, //16
+			0.06, //18
+			0.01, //24
+			0.01, //DZ_Backpack_EP1 24
 			0.30,
 			1.00,
 			5.00, //military
