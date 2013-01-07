@@ -135,7 +135,7 @@ class CfgSurvival {
 
 class CfgBuildingLoot {
 	class Default {
-		zombieChance = 0;
+		zombieChance = 0.2;
 		minRoaming = 0;
 		maxRoaming = 2;
 		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"};
@@ -952,7 +952,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 	}; // Qty: 83
 	class Land_Misc_deerstand: Military {
-		zombieChance = ;
+		zombieChance = 0.3;
 		lootChance = 0.5;
 		maxRoaming = 3;
 		lootPos[] = {{-0.923828,-0.808594,1.08539},{0.419922,-0.237305,1.08539}};
@@ -1010,12 +1010,12 @@ class CfgBuildingLoot {
 	}; // Qty: 283
 	class HouseRoaming: Residential {
 		lootChance = 0.5;
-		zombieChance = 0;
+		zombieChance = 0.2;
 		maxRoaming = 2;
 	};
 	class FarmRoaming: Farm {
 		lootChance = 0.3;
-		zombieChance = 0;
+		zombieChance = 0.4;
 		maxRoaming = 2;
 	};
 	class Land_Shed_W03: HouseRoaming {}; // Qty: 206
