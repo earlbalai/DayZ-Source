@@ -28,8 +28,8 @@ sleep 0.3;
 if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;
 	_hp = 		_hpList call BIS_fnc_selectRandom;
-	_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");_
-	damage = 	random 0.08;
+	_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
+	_damage = 	random 0.08;
 	_chance =	round(random 12);
 
 	if ((_wound == "Glass1") or (_wound == "Glass2") or (_wound == "Glass3") or (_wound == "Glass4") or (_wound == "Glass5") or (_wound == "Glass6")) then {
