@@ -355,7 +355,7 @@ class CfgBuildingLoot {
 		};
 	};
 	class HeliCrash: Default {
-		zombieChance = 0;
+		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
 		lootChance = 0.5;
@@ -415,7 +415,7 @@ class CfgBuildingLoot {
 		};
 	};
 	class HeliCrash_No50s: Default {
-		zombieChance = 0;
+		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
 		lootChance = 0.5;
@@ -821,7 +821,7 @@ class CfgBuildingLoot {
 		lootPos[] = {{0.486084,4.95459,-4.96861},{1.08032,-0.406738,-4.96801},{-0.0354004,-10.8208,-4.96686},{-5.07788,-16.4624,-4.96759},{-6.30298,2.92969,-4.96838},{-6.26685,26.7349,-4.9772},{1.64697,23.4038,-4.97097},{7.14575,3.92529,-4.96972},{4.63599,-12.1621,-4.96971}};
 	};
 	class Land_A_MunicipalOffice: Residential {
-		zombieChance = 0;
+		zombieChance = 0.4;
 		minRoaming = 3;
 		maxRoaming = 9;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
@@ -893,7 +893,7 @@ class CfgBuildingLoot {
 		lootPos[] = {{-1.77002,-1.45166,1.95942}};
 	}; // Qty: 183
 	class Land_KBud: Residential {
-		zombieChance = 0;
+		zombieChance = 0.3;
 		maxRoaming = 0;
 		lootPos[] = {{-0.0170898,0.0114746,-0.66367}};
 	}; // Qty: 90
@@ -952,7 +952,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 	}; // Qty: 83
 	class Land_Misc_deerstand: Military {
-		zombieChance = 0;
+		zombieChance = ;
 		lootChance = 0.5;
 		maxRoaming = 3;
 		lootPos[] = {{-0.923828,-0.808594,1.08539},{0.419922,-0.237305,1.08539}};
@@ -981,8 +981,8 @@ class CfgBuildingLoot {
 
 	class UH1Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0;
-		lootChance = 0;
+		zombieChance = 0.3;
+		lootChance = 0.6;
 		minRoaming = 4;
 		maxRoaming = 8;
 		lootPos[] = {};
@@ -990,8 +990,8 @@ class CfgBuildingLoot {
 	
 	class UH60Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0;
-		lootChance = 0;
+		zombieChance = 0.3;
+		lootChance = 0.6;
 		minRoaming = 4;
 		maxRoaming = 8;
 		lootPos[] = {};
@@ -1005,16 +1005,16 @@ class CfgBuildingLoot {
 	}; // Qty: 1
 
 	class Land_Ind_Shed_02_main: Default {
-		zombieChance = 0;
+		zombieChance = 0.3;
 		maxRoaming = 3;
 	}; // Qty: 283
 	class HouseRoaming: Residential {
-		lootChance = 0;
+		lootChance = 0.5;
 		zombieChance = 0;
 		maxRoaming = 2;
 	};
 	class FarmRoaming: Farm {
-		lootChance = 0;
+		lootChance = 0.3;
 		zombieChance = 0;
 		maxRoaming = 2;
 	};
