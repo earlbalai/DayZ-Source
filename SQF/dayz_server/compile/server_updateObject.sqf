@@ -159,6 +159,6 @@ switch (_type) do {
 		call _object_killed;
 	};
 	case "repair": {
-		call _object_repair;
+		call _object_damage;
 	};
 };
