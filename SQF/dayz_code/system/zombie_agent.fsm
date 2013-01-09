@@ -100,7 +100,7 @@ link52[] = {40,28};
 link53[] = {41,5};
 link54[] = {42,1};
 globals[] = {25.000000,1,0,0,0,640,480,1,101,6316128,1,-671.713867,363.212036,746.075562,-126.281273,713,601,1};
-window[] = {2,-1,-1,-1,-1,799,88,1296,88,3,730};
+window[] = {2,-1,-1,-1,-1,777,66,1274,66,3,730};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -349,7 +349,7 @@ class FSM
        "};" \n
        "" \n
        "" \n
-       "if (_agent distance player > 50) then {" \n
+       "if (_agent distance player > 15) then {" \n
        "	_cantSee = [_agent,_target] call dayz_losCheck;" \n
        "};" \n
        "" \n
