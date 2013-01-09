@@ -91,7 +91,7 @@ if (_characterID != "0") then {
 		};
 		_character setVariable ["posForceUpdate",false,true];
 	};
-	if (_isNewGear or _force) then {
+	if (_isNewGear) then {
 		//diag_log ("gear..."); sleep 0.05;
 		_playerGear = [weapons _character,_magazines];
 		_backpack = unitBackpack _character;
