@@ -639,6 +639,12 @@
 			<German>Turn Over %1</German>
 			<Russian>Turn Over %1</Russian>
 		</Key>
+		<Key ID="str_actions_stats">
+			<Original>Enable Stats</Original>
+			<English>Enable Stats</English>
+			<German>Enable Stats</German>
+			<Russian>Enable Stats</Russian>
+		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
 			<English>Sleep</English>
