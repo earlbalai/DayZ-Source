@@ -17,6 +17,7 @@ if (_hasKnife and !_hasHarvested) then {
 	player playActionNow "Medic";
 	[player,"gut",0,false] call dayz_zombieSpeak;
 	_item setVariable["meatHarvested",true,true];
+	_item setVariable ["timerawmeatHarvested",time,false];
 	
 	_qty = 1;	
 	if (_isListed) then {
