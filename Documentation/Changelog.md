@@ -29,7 +29,13 @@ FIX DUE : 2012
 			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
 			* [NEW] - You can no longer consume food while your not hungry 
 			* [NEW] - You can no longer drink while your not thirtsy
+			* [NEW] - Food and Drink can no longer be consumed continuously.
+			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
+			* [NEW] - You can no longer to eat/drink within ten mins of eating/drinking.
+			* [NEW] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
 			* [NEW] - Blood from food is now random. Example(Cooked meat would have a max blood of 800 but lowest of 1 so blood gained would be from 1-800)
+			
+			
 			***** Not added to the dev builds *****
 			** [NEW] - Basic Anti teleport script.
 			** [NEW] - Basic Mission system Phase 1 (Server Admin Controlled).
