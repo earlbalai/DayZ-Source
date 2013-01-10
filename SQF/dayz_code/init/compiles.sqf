@@ -379,6 +379,18 @@ if (!isDedicated) then {
 		_vdir
 	};
 	
+	fnc_onKeyDown =
+	{
+	private["_key"];
+		_key = _this select 1;
+		if (_key == 88) then //f12
+		{
+		_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+		_shift = nil;
+		};
+		_return
+	};
+	
 	dayz_lowHumanity = {
 		private["_unit","_humanity","_delay"];
 		_unit = _this;
