@@ -34,7 +34,7 @@ FIX DUE : 2012
 			* [NEW] - You can no longer to eat/drink within ten mins of eating/drinking.
 			* [NEW] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
 			* [NEW] - Blood from food is now random. Example(Cooked meat would have a max blood of 800 but lowest of 1 so blood gained would be from 1-800)
-			
+			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity)
 			
 			***** Not added to the dev builds *****
 			** [NEW] - Basic Anti teleport script.
@@ -71,6 +71,7 @@ FIX DUE : 2012
 			* [Fixed] - mi17 gunner seat is now fixed (you no longer stand outside)
 			* [Fixed] - Bloodbag glitch fixed.
 			* [Fixed] - UH1Y_DZ animation issues.
+			* [Fixed] - Infection is now fixed loss of blood 3 per sec (will not drop below 3k blood)
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
