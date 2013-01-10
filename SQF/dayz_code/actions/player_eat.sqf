@@ -23,7 +23,7 @@ if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,"c
 if (_EatInfection) then {
    if (_item == "FoodSteakCooked" ) then {
     r_player_infected = true;
-    player setVariable["USEC_infected",true,true];
+    player setVariable["USEC_infected",true];
 	};
 };
 
