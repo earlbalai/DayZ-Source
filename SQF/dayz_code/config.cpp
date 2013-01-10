@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.M1D9";
+		version = "1.7.5.M1D10";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -96,9 +96,11 @@ class RscStructuredTextGUI: RscStructuredText
 //#include "CfgWorlds.hpp"
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
-#include "cfgVehicles.hpp"
-//#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons\config.hpp"
+#include "CfgMagazines\config.hpp"
 #include "cfgLoot.hpp"
+#include "CfgMarkers\config.hpp"
 
 class CfgSurvival {
 	class Inventory {
