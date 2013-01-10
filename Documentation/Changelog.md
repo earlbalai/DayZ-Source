@@ -33,7 +33,6 @@ FIX DUE : 2012
 			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
 			* [NEW] - You can no longer to eat/drink within ten mins of eating/drinking.
 			* [NEW] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
-			* [NEW] - Blood from food is now random. Example(Cooked meat would have a max blood of 800 but lowest of 1 so blood gained would be from 1-800)
 			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press f12 to use
 			
 			***** Not added to the dev builds *****
