@@ -30,7 +30,7 @@ if (_item == "ItemWaterbottle") then {
 	player addMagazine "ItemWaterbottleUnfilled";
 	if (_DrinkInfection) then {
 		r_player_infected = true;
-		player setVariable["USEC_infected",true,true];
+		player setVariable["USEC_infected",true];
 	};
 };
 
