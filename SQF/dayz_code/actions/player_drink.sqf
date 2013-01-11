@@ -6,7 +6,8 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not drink while in a vehicle", "PLAIN DOWN"]};
 
-if (dayz_lastDrink == 600) exitWith {cutText ["You may not drink, your not thirsty", "PLAIN DOWN"]};
+//Force players to wait 5 mins to drink again
+if (dayz_lastDrink == 300) exitWith {cutText ["You may not drink, your not thirsty", "PLAIN DOWN"]};
 
 _item = _this;
 _hasdrinkitem = _this in magazines player;

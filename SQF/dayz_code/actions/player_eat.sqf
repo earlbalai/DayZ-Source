@@ -5,8 +5,8 @@ _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animati
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
-
-if (dayz_lastMeal < 600) exitWith {cutText ["You may not eat, your already full", "PLAIN DOWN"]};
+//Force players to wait 5 mins to eat again
+if (dayz_lastMeal < 300) exitWith {cutText ["You may not eat, your already full", "PLAIN DOWN"]};
 
 _item = _this;
 _hasfooditem = _this in magazines player;
@@ -22,8 +22,8 @@ if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,"c
 
 if (_EatInfection) then {
    if (_item == "FoodSteakCooked" ) then {
-    r_player_infected = true;
-    player setVariable["USEC_infected",true];
+		r_player_infected = true;
+		player setVariable["USEC_infected",true];
 	};
 };
 
@@ -37,7 +37,6 @@ sleep 1;
 if (dayz_lastMeal < 3600) then { 
 	if (_item == "FoodSteakCooked") then {
 		//_regen = _regen * (10 - (10 max ((time - _Cookedtime) / 3600)));
-		_regen = 0;
 	};
 };
 
