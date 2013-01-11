@@ -24,21 +24,38 @@ diag_log ("Type: " +str(_type));
 	
 switch (_nearbytype) do {
 	case "NameVillage": {
-		_radius = 250; 
+		//_radius = 250; 
 		_maxZombies = 30;
 	};
 	case "NameCity": {
-		_radius = 300; 
+		//_radius = 300; 
 		_maxZombies = 40;
 	};
 	case "NameCityCapital": {
-		_radius = 400; 
+		//_radius = 400; 
 		_maxZombies = 50;
 	};
 };
 
-	_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius]) < _maxZombies;
+	_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
 
+if ("ItemMap_Debug" in items player) then {
+	deleteMarkerLocal "MaxZeds";
+	deleteMarkerLocal "Counter";
+	_markerstr = createMarkerLocal ["MaxZeds", _position];
+	_markerstr setMarkerColorLocal "ColorRed";
+	_markerstr setMarkerShapeLocal "ELLIPSE";
+	_markerstr setMarkerBrushLocal "Border";
+	_markerstr setMarkerSizeLocal [_radius, _radius];
+
+	_markerstr1 = createMarkerLocal ["Counter", _position];
+	_markerstr1 setMarkerColorLocal "ColorYellow";
+	_markerstr1 setMarkerShapeLocal "ELLIPSE";
+	_markerstr1 setMarkerBrushLocal "Border";
+	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];			
+};
+	
+	
 switch (_type) do {
 	case "Zeds": {
 		if (_spawnZombies) then {
