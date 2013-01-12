@@ -167,6 +167,12 @@
 			<German>Du hast eine(n) %1 gebaut</German>
 			<Russian>Вы построили %1.</Russian>
 		</Key>
+		<Key ID="str_build_failed_01">
+			<Original>You have failed to build %1.</Original>
+			<English>You have failed to build %1.</English>
+			<German>You have failed to build %1.</German>
+			<Russian>You have failed to build %1.</Russian>
+		</Key>
 		<Key ID="str_fireplace_02">
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
@@ -609,6 +615,12 @@
 			<German>%1 löschen</German>
 			<Russian>Погасить %1</Russian>
 		</Key>
+		<Key ID="str_actions_medical_18">
+			<Original>You cannot perform another blood transfusion so fast</Original>
+			<English>You cannot perform another blood transfusion so fast</English>
+			<German>You cannot perform another blood transfusion so fast</German>
+			<Russian>You cannot perform another blood transfusion so fast</Russian>
+		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>
 			<English>Study Body</English>
@@ -729,5 +741,43 @@
 			<German></German>
 			<Russian>Позвать собаку</Russian>
 		</Key>
+	</Package>
+	<Package name="equipment_code">
+		<Key ID="STR_EQUIP_CODE_NAME_3">						
+			<Original>Box of Wet Matches</Original>						
+			<English>Box of Wet Matches</English>						
+			<German>Box of Wet Matches</German>
+			<Russian>Box of Wet Matches</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_CODE_DESC_3">						
+			<Original>Box of wet matches.</Original>						
+			<English>Box of wet matches.</English>						
+			<German>Box of wet matches.</German>
+			<Russian>Box of wet matches.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_CODE_NAME_41">						
+			<Original>Blunt Hatchet</Original>						
+			<English>Blunt Hatchet</English>						
+			<German>Blunt Hatchet</German>
+			<Russian>Blunt Hatchet</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_CODE_DESC_41">						
+			<Original>Your Hatchet appears to be too bunt to be used.</Original>						
+			<English>Your Hatchet appears to be too bunt to be used.</English>						
+			<German>Your Hatchet appears to be too bunt to be used.</German>
+			<Russian>Your Hatchet appears to be too bunt to be used.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_CODE_NAME_4">						
+			<Original>Blunt Knife</Original>						
+			<English>Blunt Knife</English>						
+			<German>Blunt Knife</German>
+			<Russian>Blunt Knife</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_CODE_DESC_4">						
+			<Original>Your Knife appears to be too bunt.</Original>						
+			<English>Your Knife appears to be too bunt.</English>						
+			<German>Your Knife appears to be too bunt.</German>
+			<Russian>Your Knife appears to be too bunt.</Russian>
+		</Key>		
 	</Package>
 </Project>

@@ -3,6 +3,12 @@ _unit = (_this select 3) select 0;
 _lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
 _injured = 		_unit getVariable ["USEC_injured", false];
 _inPain = 		_unit getVariable ["USEC_inPain", false];
+_lastused = 	_unit getVariable ["LastTransfusion", time];
+
+_rndInfection = (random 15);
+_TransfusionInfection = (_rndInfection < 1);
+
+if (_lastused - time < 600) exitwith {cutText [format[(localize "str_actions_medical_18"),_text] , "PLAIN DOWN"]};
 
 call fnc_usec_medic_removeActions;
 r_action = false;
@@ -35,8 +41,13 @@ while {r_doLoop} do {
 r_doLoop = false;
 
 if (_finished) then {
+	_unit setVariable["LastTransfusion",time,true];
 	_unit setVariable["USEC_lowBlood",false,true];
 	player removeMagazine "ItemBloodbag";	
+	if (_TransfusionInfection) then {
+		r_player_infected = true;
+		player setVariable["USEC_infected",true];
+	};
 	usecTransfuse = [_unit,player];
 	publicVariable "usecTransfuse";
 	dayzHumanity = [player,250];
