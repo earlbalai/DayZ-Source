@@ -55,6 +55,7 @@ class CfgMagazines {
 			};
 		};
 	};
+	
 	class TrapBear : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -93,6 +94,36 @@ class CfgMagazines {
 		};
 	};
 	
+	class FoodmuttonRaw : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "FoodmuttonRaw";
+		model = "\z\addons\dayz_communityassets\models\boar_raw.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_raw_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_24;
+	};
+	
+	class FoodchickenRaw : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "FoodchickenRaw";
+		model = "\z\addons\dayz_communityassets\models\chicken_raw.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\icon_chicken_raw_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_24;
+	};
+	
+	class FoodbaconRaw : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = 256;
+		displayName = "FoodbaconRaw";
+		model = "\z\addons\dayz_communityassets\models\bacon_raw.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\i_bacon_raw.paa";
+		descriptionShort = $STR_EQUIP_DESC_24;
+	};
+	
 	class DayZ_Code_FoodEdible : CA_Magazine {
 		isFood = 1;
 		count = 1;
@@ -105,35 +136,17 @@ class CfgMagazines {
 		};
 	};
 	
-	class FoodboarRaw : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = "FoodboarRaw";
-		model = "\z\addons\dayz_communityassets\models\boar_raw.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_raw_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_24;
-	};
 	
-	class FoodboarCooked : DayZ_Code_FoodEdible {
+	class FoodmuttonCooked : DayZ_Code_FoodEdible {
 		scope = public;
 		count = 1;
-		displayName = "Cooked Haunch";
+		displayName = "FoodmuttonCooked";
 		model = "\z\addons\dayz_communityassets\models\boar_geo.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_cooked_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_25;
 		bloodRegen = 200;
 	};
 	
-	class FoodchickenRaw : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = "FoodchickenRaw";
-		model = "\z\addons\dayz_communityassets\models\chicken_raw.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\icon_chicken_raw_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_24;
-	};
 	
 	class FoodchickenCooked : DayZ_Code_FoodEdible {
 		scope = public;
@@ -148,10 +161,19 @@ class CfgMagazines {
 	class FoodBaconCooked : DayZ_Code_FoodEdible {
 		scope = public;
 		count = 1;
-		displayName = $STR_EQUIP_NAME_25;
-		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
-		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
+		displayName = "FoodBaconCooked";
+		model = "\z\addons\dayz_communityassets\models\bacon_cooked.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\i_bacon_cooked.paa";
 		descriptionShort = $STR_EQUIP_DESC_25;
 		bloodRegen = 800;
+	};
+	class AngelCookies : DayZ_Code_FoodEdible {
+		scope = public;
+		count = 1;
+		displayName = "AngelCookies";
+		model = "\z\addons\dayz_communityassets\models\buiscits_box.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\i_buiscit_cai_buiscit_ca.paa";
+		descriptionShort = "Angel Cookies to boost your moral up!";
+		bloodRegen = 100;
 	};
 };
