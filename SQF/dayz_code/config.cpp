@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.M1D11";
+		version = "1.7.5.M1D12";
 		hiveVersion = 0.96; //0.93
 	};
 };
@@ -97,10 +97,10 @@ class RscStructuredTextGUI: RscStructuredText
 #include "cfgMoves.hpp"
 #include "rscTitles.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgWeapons\config.hpp"
-#include "CfgMagazines\config.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
 #include "cfgLoot.hpp"
-#include "CfgMarkers\config.hpp"
+#include "CfgMarkers.hpp"
 
 class CfgSurvival {
 	class Inventory {
@@ -114,10 +114,10 @@ class CfgSurvival {
 	};
 	class Meat {
 		class Default {
-			yield = 1;
+			yield = 2;
 		};
 		class Cow: Default {
-			yield = 6;
+			yield = 8;
 		};
 		class Cow01: Cow {};
 		class Cow02: Cow {};
@@ -127,10 +127,10 @@ class CfgSurvival {
 			yield = 4;
 		};
 		class Sheep: Default {
-			yield = 3;
+			yield = 4;
 		};
 		class WildBoar: Default {
-			yield = 2;
+			yield = 4;
 		};
 	};
 };
