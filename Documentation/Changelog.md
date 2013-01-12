@@ -1,3 +1,25 @@
+
+M1D12 Changes
+	* [NEW] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
+	* [NEW] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
+	* [NEW] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
+	* [NEW] - Toolbox is now needed to build Wire,beartrap,tanktrap.
+	* [NEW] - Etool is now needed to build Sandbags.
+	* [NEW] - 4 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN").
+	* [NEW] - 3 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw")
+	* [NEW] - Bloodbags now have a random infection chance.
+	* [NEW] - You can now longer apply more then one bloodbag per 10 mins per player
+	* [NEW] - 6 New items added to loot tables.
+			
+	* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
+			
+	* [UPDATED] - You can no longer consume food while your not hungry (within 3 mins of eating)
+	* [UPDATED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
+	* [UPDATED] - Animal Meat reset. 2(Default),4(sheep),4(goat),4(boar),8(cow)
+	
+	* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
+	* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
+
 FIX DUE : 2012
 
 	Community Notes: 
@@ -27,13 +49,11 @@ FIX DUE : 2012
 			* [NEW] - UH60Wreck added
 			* [NEW] - New zed & loot spawn systems rewrote Phase 1.
 			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
-			* [NEW] - You can no longer consume food while your not hungry 
-			* [NEW] - You can no longer drink while your not thirtsy
-			* [NEW] - Food and Drink can no longer be consumed continuously.
+			
 			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
-			* [NEW] - You can no longer to eat/drink within ten mins of eating/drinking.
-			* [NEW] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
 			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press f12 to use
+			* [NEW] - Peripheral Dots removed fully.
+			
 			
 			***** Not added to the dev builds *****
 			** [NEW] - Basic Anti teleport script.
