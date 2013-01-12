@@ -5,12 +5,8 @@ s_player_stats = -1;
 //set stats enabled later use
 player setVariable ["StatsEnabled",true,false];
 
-//move to knee
-player playMove "amovpercmstpsraswrfldnon_amovpknlmstpslowwrfldnon";
-waitUntil { animationState player != "amovpercmstpsraswrfldnon_amovpknlmstpslowwrfldnon"};
-
 //Let Zeds know
-_id = [player,8,true,(getPosATL player)] spawn player_alertZombies;
+_id = [player,4,true,(getPosATL player)] spawn player_alertZombies;
 
 //display gui (temp hint)
 hintSilent parseText format ["
@@ -27,13 +23,6 @@ hintSilent parseText format ["
 	(player getVariable['banditKills', 0]),
 	(player getVariable['humanity', 0])
 ];
-
-//Sleep
-sleep 10;
-
-//move to standing
-player playMove "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon";
-waitUntil { animationState player != "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon"};
 
 //Remove variable
 player setVariable ["StatsEnabled",false,false];
