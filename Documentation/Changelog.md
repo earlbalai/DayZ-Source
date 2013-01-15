@@ -13,20 +13,20 @@ M1D15 Changes
 	* [NEW] - Added moving combat roll (KK's Volt).
 			
 	* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
-	* [REMOVED] - No longer need toold box to place bear traps.
+	* [REMOVED] - No longer need tool box to place bear traps.
 			
 	* [UPDATED] - You can no longer consume food while your not hungry (within 3 mins of eating)
 	* [UPDATED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
 	* [UPDATED] - Animal Meat reset. 2(Default),4(sheep),4(goat),4(boar),8(cow)
 	* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
+	* [UDDATED] - Massive cleanup remove all useless files.
+	* [UPDATED] - Redone all public EH's
 	
 	* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
 	* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
 	* [FIXED] - Variable spelling mistakes hsould be corrected now.
 	* [FIXED] - Moved all new foods to stringtable.
 	* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
-	
-	* [BROKE] - PublicEH's for medical.
 
 FIX DUE : 2012
 
