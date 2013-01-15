@@ -37,7 +37,7 @@ switch (_nearbytype) do {
 	};
 };
 
-	_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
+_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
 
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
@@ -67,8 +67,16 @@ switch (_type) do {
 			};
 		};	
 	};
-	case "Wild": {
+	case "both": {
 		//[_position, _maxZombies] call wild_spawnZombies;
+		_nearbyBuildings = nearestObjects [_position, dayz_ZombieBuildings, _radius];
+		_nearbyCount = count _nearbyBuildings;
+		if (_nearbyCount > 0) then {
+			[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings] call player_spawnlootCheck;
+			if (_spawnZombies) then {
+				[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies, _nearbyBuildings] call player_spawnzedCheck;
+			};
+		};
 	};
 	case "Loot": {
 		//_nearbyBuildings = nearestObjects [_position, ["building"], _radius];
