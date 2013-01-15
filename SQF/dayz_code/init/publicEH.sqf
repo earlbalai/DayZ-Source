@@ -1,4 +1,4 @@
-"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) call local_sefFuel};
+"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) call local_setFuel};
 
 if (isServer) then {
 	"dayzDeath"			addPublicVariableEventHandler {(_this select 1) call server_playerDied};
