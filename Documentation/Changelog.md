@@ -1,24 +1,32 @@
 
-M1D12 Changes
+M1D15 Changes
 	* [NEW] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
 	* [NEW] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
 	* [NEW] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
-	* [NEW] - Toolbox is now needed to build Wire,beartrap,tanktrap.
+	* [NEW] - Toolbox is now needed to build Wire,tanktrap.
 	* [NEW] - Etool is now needed to build Sandbags.
-	* [NEW] - 4 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN").
-	* [NEW] - 3 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw")
+	* [NEW] - 5 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
+	* [NEW] - 4 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
 	* [NEW] - Bloodbags now have a random infection chance.
 	* [NEW] - You can now longer apply more then one bloodbag per 10 mins per player
 	* [NEW] - 6 New items added to loot tables.
+	* [NEW] - Added moving combat roll (KK's Volt).
 			
 	* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
+	* [REMOVED] - No longer need toold box to place bear traps.
 			
 	* [UPDATED] - You can no longer consume food while your not hungry (within 3 mins of eating)
 	* [UPDATED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
 	* [UPDATED] - Animal Meat reset. 2(Default),4(sheep),4(goat),4(boar),8(cow)
+	* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
 	
 	* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
 	* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
+	* [FIXED] - Variable spelling mistakes hsould be corrected now.
+	* [FIXED] - Moved all new foods to stringtable.
+	* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
+	
+	* [BROKE] - PublicEH's for medical.
 
 FIX DUE : 2012
 
