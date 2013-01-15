@@ -393,10 +393,10 @@ if (!isDedicated) then {
 	{
 	private["_key"];
 		_key = _this select 1;
-		if (_key == 88) then //f12
+		if (_key == 70) then //SCROLL LOCK
 		{
-		_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-		_shift = nil;
+			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+			_shift = nil;
 		};
 		_return
 	};
