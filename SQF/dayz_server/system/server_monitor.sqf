@@ -49,7 +49,7 @@ diag_log "HIVE: Starting";
 			_type =		_x select 2;
 			_ownerID = 	_x select 3;
 			_worldspace = _x select 4;
-			_intentory=	_x select 5;
+			_inventory=	_x select 5;
 			_hitPoints=	_x select 6;
 			_fuel =		_x select 7;
 			_damage = 	_x select 8;
@@ -92,10 +92,10 @@ diag_log "HIVE: Starting";
 				_object setdir _dir;
 				_object setDamage _damage;
 				
-				if (count _intentory > 0) then {
+				if (count _inventory > 0) then {
 					//Add weapons
-					_objWpnTypes = (_intentory select 0) select 0;
-					_objWpnQty = (_intentory select 0) select 1;
+					_objWpnTypes = (_inventory select 0) select 0;
+					_objWpnQty = (_inventory select 0) select 1;
 					_countr = 0;					
 					{
 						_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
@@ -109,8 +109,8 @@ diag_log "HIVE: Starting";
 					} forEach _objWpnTypes; 
 					
 					//Add Magazines
-					_objWpnTypes = (_intentory select 1) select 0;
-					_objWpnQty = (_intentory select 1) select 1;
+					_objWpnTypes = (_inventory select 1) select 0;
+					_objWpnQty = (_inventory select 1) select 1;
 					_countr = 0;
 					{
 						_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
@@ -124,8 +124,8 @@ diag_log "HIVE: Starting";
 					} forEach _objWpnTypes;
 
 					//Add Backpacks
-					_objWpnTypes = (_intentory select 2) select 0;
-					_objWpnQty = (_intentory select 2) select 1;
+					_objWpnTypes = (_inventory select 2) select 0;
+					_objWpnQty = (_inventory select 2) select 1;
 					_countr = 0;
 					{
 						_isOK = 	isClass(configFile >> "CfgVehicles" >> _x);
