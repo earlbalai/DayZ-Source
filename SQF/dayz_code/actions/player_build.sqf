@@ -3,6 +3,7 @@ _location = player modeltoworld [0,1,0];
 _location set [2,0];
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater _location) or dayz_isSwimming;
+_bypass = false;
 
 call gear_ui_init;
 
@@ -18,8 +19,9 @@ _hasbuilditem = _this in magazines player;
 _hasrequireditem = _require in items player;
 
 if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
+if (_text == "TrapBear") then { _bypass = true; };
 
-if (_hasrequireditem) then {
+if (_hasrequireditem or _bypass) then {
 	_dir = getDir player;
 	player removeMagazine _item;
 
