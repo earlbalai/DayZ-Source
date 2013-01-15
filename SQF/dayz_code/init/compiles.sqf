@@ -279,8 +279,18 @@ if (!isDedicated) then {
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
-		_altState =	_this select 4;
 		_handled = false;
+		if (_dikCode in (actionKeys "GetOver")) then {
+			if (animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
+				null = [] spawn {
+					//[nil, player, rSWITCHMOVE,"ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
+					player switchmove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+					sleep 0.3; 
+					player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
+				};
+				_handled = true;
+			};
+		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
