@@ -6,9 +6,7 @@ cutText ["","BLACK OUT"];
 enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
-dayZ_hivePipe1 = 	"\\.\pipe\dayz";	//The named pipe
 dayZ_instance =	1337;					//The instance
-hiveInUse	=	true;
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
@@ -43,7 +41,6 @@ if ((!isServer) && (player != player)) then
 };
 
 if (isServer) then {
-	hiveInUse	=	true;
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 

@@ -34,9 +34,6 @@ SleepWater =			1440; //minutes (24 hours)
 SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the coldest Point at night (without other effects! night factor expected to be -1)			//TeeChange
 
 //Server Variables
-dayZ_hivePipe1 = 		"\\.\pipe\dayz";	//The named pipe
-dayZ_hivePipeAuth = 	"\\.\pipe\dayzAuth";	//The named pipe
-hiveInUse	=			false;
 allowConnection = 		false;
 isSinglePlayer =		false;
 dayz_serverObjectMonitor = [];

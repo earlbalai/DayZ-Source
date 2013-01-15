@@ -7,7 +7,7 @@ if ((count playableUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
 };
 
-waitUntil{initialized};
+waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
 
@@ -15,12 +15,11 @@ diag_log "HIVE: Starting";
 	/* STREAM OBJECTS */
 		//Send the key
 		_key = format["CHILD:302:%1:",dayZ_instance];
-		_data = "HiveEXT" callExtension _key;
+		_result = _key call server_hiveReadWrite;
 
 		diag_log "HIVE: Request sent";
 		
 		//Process result
-		_result = call compile format ["%1",_data];
 		_status = _result select 0;
 		
 		_myArray = [];
@@ -29,8 +28,7 @@ diag_log "HIVE: Starting";
 			//Stream Objects
 			diag_log ("HIVE: Commence Object Streaming...");
 			for "_i" from 1 to _val do {
-				_data = "HiveEXT" callExtension _key;
-				_result = call compile format ["%1",_data];
+				_result = _key call server_hiveReadWrite;
 
 				_status = _result select 0;
 				_myArray set [count _myArray,_result];
@@ -49,7 +47,7 @@ diag_log "HIVE: Starting";
 			_type =		_x select 2;
 			_ownerID = 	_x select 3;
 			_worldspace = _x select 4;
-			_inventory=	_x select 5;
+			_intentory=	_x select 5;
 			_hitPoints=	_x select 6;
 			_fuel =		_x select 7;
 			_damage = 	_x select 8;
@@ -92,10 +90,10 @@ diag_log "HIVE: Starting";
 				_object setdir _dir;
 				_object setDamage _damage;
 				
-				if (count _inventory > 0) then {
+				if (count _intentory > 0) then {
 					//Add weapons
-					_objWpnTypes = (_inventory select 0) select 0;
-					_objWpnQty = (_inventory select 0) select 1;
+					_objWpnTypes = (_intentory select 0) select 0;
+					_objWpnQty = (_intentory select 0) select 1;
 					_countr = 0;					
 					{
 						_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
@@ -109,8 +107,8 @@ diag_log "HIVE: Starting";
 					} forEach _objWpnTypes; 
 					
 					//Add Magazines
-					_objWpnTypes = (_inventory select 1) select 0;
-					_objWpnQty = (_inventory select 1) select 1;
+					_objWpnTypes = (_intentory select 1) select 0;
+					_objWpnQty = (_intentory select 1) select 1;
 					_countr = 0;
 					{
 						_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
@@ -124,8 +122,8 @@ diag_log "HIVE: Starting";
 					} forEach _objWpnTypes;
 
 					//Add Backpacks
-					_objWpnTypes = (_inventory select 2) select 0;
-					_objWpnQty = (_inventory select 2) select 1;
+					_objWpnTypes = (_intentory select 2) select 0;
+					_objWpnQty = (_intentory select 2) select 1;
 					_countr = 0;
 					{
 						_isOK = 	isClass(configFile >> "CfgVehicles" >> _x);
@@ -162,14 +160,12 @@ diag_log "HIVE: Starting";
 //Set the Time
 	//Send request
 	_key = "CHILD:307:";
-	_result = [_key] call server_hiveReadWrite;
+	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if(_outcome == "PASS") then {
 		_date = _result select 1; 
 		if(isDedicated) then {
-			setDate _date;
-			dayzSetDate = _date;
-			publicVariable "dayzSetDate";
+			["dayzSetDate",_date] call broadcastRpcCallAll;
 		};
 
 		diag_log ("HIVE: Local Time set to " + str(_date));
@@ -179,14 +175,12 @@ diag_log "HIVE: Starting";
 	if (isDedicated) then {
 		endLoadingScreen;
 	};	
-	hiveInUse = false;
-
+	
 if (isDedicated) then {
 	_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
 };
 
 allowConnection = true;
-
 
 // [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
 nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
