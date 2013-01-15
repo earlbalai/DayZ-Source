@@ -6,7 +6,7 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
 //Force players to wait 3 mins to eat again
-if (dayz_lastMeal < 180) exitWith {cutText ["You may not eat, your already full", "PLAIN DOWN"]};
+if (dayz_lastMeal < 180) exitWith {cutText ["You may not eat, you're already full", "PLAIN DOWN"]};
 
 _item = _this;
 _hasfooditem = _this in magazines player;
@@ -55,11 +55,7 @@ _update = player getVariable["updatePlayer",[false,false,false,false,false]];
 _update set [3,true];
 player setVariable["updatePlayer",_update,true];
 */
-dayzPlayerSave = player;
-publicVariableServer "dayzPlayerSave";
-if (isServer) then {
-	dayzPlayerSave call server_updatePlayer;
-};
+["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
 
 dayz_lastMeal =	time;
 dayz_hunger = 0;
