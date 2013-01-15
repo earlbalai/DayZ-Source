@@ -283,8 +283,8 @@ if (!isDedicated) then {
 		if (_dikCode in (actionKeys "GetOver")) then {
 			if (animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
 				null = [] spawn {
-					//[nil, player, rSWITCHMOVE,"ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
-					player switchmove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+				//Needed for sync with others
+					[nil, player, rSWITCHMOVE,"ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
 					sleep 0.3; 
 					player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
 				};
