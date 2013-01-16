@@ -1,12 +1,12 @@
 /*
-[_objectID,_objectUID] call local_deleteObj;
+[_objectID,_objectUID] call server_deleteObj;
 */
 private["_id","_uid","_key"];
 _id 	= _this select 0;
 _uid 	= _this select 1;
 
 if (isServer) then {
-//remove from database
+	//remove from database
 	if (parseNumber _id > 0) then {
 		//Send request
 		_key = format["CHILD:304:%1:",_id];
