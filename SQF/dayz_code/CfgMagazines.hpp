@@ -151,7 +151,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_1;
-		model = "\z\addons\dayz_communityassets\models\boar_geo.p3d";
+		model = "\z\addons\dayz_communityassets\models\boar_cooked.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\icon_boar_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
 		bloodRegen = 200;
