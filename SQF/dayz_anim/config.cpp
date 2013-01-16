@@ -817,7 +817,7 @@ class CfgWeapons {
 
 	//class Launcher: FakeWeapon {};
 	class ksvk: FakeWeapon {};
-	class M136: FakeWeapon {}
+	class M136: FakeWeapon {};
 	class Javelin: FakeWeapon {};
 	class Stinger: FakeWeapon {};
 	class RPG7V: FakeWeapon {};
