@@ -27,6 +27,7 @@ Contributions By
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
+* Special thanks to shinkicker who has listered to all the ideas and who has always been there to bounce ideas back and forth Thanks.
 
 Art Work
 * Alexander (G17 incombat Icon)
