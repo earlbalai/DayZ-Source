@@ -1,43 +1,11 @@
-M1D21 Changes
-
-	* [REMOVED] - MPTable now removed.
-	* [REMOVED] - Peripheral Vision.
-	* [REMOVED] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
-	* [REMOVED] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
-	* [REMOVED] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
-	* [REMOVED] - You can now longer apply more then one bloodbag per 10 mins per player
-	* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
-	* [REMOVED] - No longer need tool box to place bear traps.
-	
-	* [NEW] - Toolbox is now needed to build Wire,tanktrap.
-	* [NEW] - Etool is now needed to build Sandbags.
-	* [NEW] - 5 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
-	* [NEW] - 4 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
-	* [NEW] - Bloodbags now have a random infection chance.
-	* [NEW] - 6 New items added to loot tables.
-	* [NEW] - Added moving combat roll (KK's Volt).
-			
-	* [UPDATED] - You can no longer consume food while your not hungry (within 3 mins of eating)
-	* [UPDATED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
-	* [UPDATED] - Animal Meat reset. 2(Default),4(sheep),4(goat),4(boar),8(cow)
-	* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
-	* [UDDATED] - Massive cleanup remove all useless files.
-	* [UPDATED] - Redone all public EH's
-	
-	* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
-	* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
-	* [FIXED] - Variable spelling mistakes hsould be corrected now.
-	* [FIXED] - Moved all new foods to stringtable.
-	* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
-
-FIX DUE : 2012
+FIX DUE : 2013
 
 	Community Notes: 
-		* V1.7.5
+		* V1.7.*
 
 	Community Change log:
 		Client:
-			* [Prerequisites]	beta-patch 99806.
+			* [Prerequisites]	beta-patch ((Newest)).
 			
 			* [NEW]	Weapon - Sa58P_EP1. (Military)
 			* [NEW]	Weapon - Sa58V_EP1. (Military)
@@ -63,6 +31,14 @@ FIX DUE : 2012
 			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
 			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press f12 to use
 			* [NEW] - Peripheral Dots removed fully.
+			* [NEW] - Toolbox is now needed to build Wire,tanktrap.
+			* [NEW] - Etool is now needed to build Sandbags.
+			* [NEW] - 5 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
+			* [NEW] - 4 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
+			* [NEW] - Bloodbags now has an infection chance.
+			* [NEW] - 6 New items added to loot tables. (Inplace of item lockup or braking)
+			* [NEW] - Added moving combat roll (KK's Volt).
+			* [NEW] - Survived Dayz added to Epeen monitor
 			
 			
 			***** Not added to the dev builds *****
@@ -93,6 +69,11 @@ FIX DUE : 2012
 			* [UPDATED] - Zeds will talk to other zeds within 80 meter.
 			* [UPDATED] - Combat Logging is now active during Zombie chase.
 			* [UPDATED] - Backpacks updated. (https://github.com/R4Z0R49/DayZMod/wiki/Backpacks)
+			* [UPDATED] - Animal Meat reset. 2(Default),4(sheep),4(goat),4(boar),8(cow)
+			* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
+			* [UDDATED] - Massive cleanup remove all useless files.
+			* [UPDATED] - Redone all public EH's
+
 			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
@@ -101,10 +82,25 @@ FIX DUE : 2012
 			* [Fixed] - Bloodbag glitch fixed.
 			* [Fixed] - UH1Y_DZ animation issues.
 			* [Fixed] - Infection is now fixed loss of blood 3 per sec (will not drop below 3k blood)
+			* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
+			* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
+			* [FIXED] - Variable spelling mistakes hsould be corrected now.
+			* [FIXED] - Moved all new foods to stringtable.
+			* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
+			* [REMOVED] - MPTable now removed.
+			* [REMOVED] - Peripheral Vision.
+			* [REMOVED] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
+			* [REMOVED] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
+			* [REMOVED] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
+			* [REMOVED] - You can now longer apply more then one bloodbag per 10 mins per player
+			* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
+			* [REMOVED] - No longer need tool box to place bear traps.
+			* [REMOVED] - You can no longer consume food while your not hungry (within 3 mins of eating)
+			* [REMOVED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
 			
 		Hive:
 			* [Prerequisites]	beta-patch 99806.
