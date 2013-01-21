@@ -38,7 +38,7 @@ if (_canLoot) then {
 			
 		};
 	};
-
+/*
 	//Add Internal Zombies
 	_clean = {alive _x} count ((getPosATL _obj) nearEntities ["zZombie_Base",(sizeOf _type)]) == 0;
 	if (_clean) then {
@@ -60,6 +60,7 @@ if (_canLoot) then {
 			};
 		} forEach _positions;
 	};
+*/
 
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
