@@ -1,19 +1,21 @@
+M1D21 Changes
 
-M1D15 Changes
-	* [NEW] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
-	* [NEW] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
-	* [NEW] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
+	* [REMOVED] - MPTable now removed.
+	* [REMOVED] - Peripheral Vision.
+	* [REMOVED] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
+	* [REMOVED] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
+	* [REMOVED] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
+	* [REMOVED] - You can now longer apply more then one bloodbag per 10 mins per player
+	* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
+	* [REMOVED] - No longer need tool box to place bear traps.
+	
 	* [NEW] - Toolbox is now needed to build Wire,tanktrap.
 	* [NEW] - Etool is now needed to build Sandbags.
 	* [NEW] - 5 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
 	* [NEW] - 4 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
 	* [NEW] - Bloodbags now have a random infection chance.
-	* [NEW] - You can now longer apply more then one bloodbag per 10 mins per player
 	* [NEW] - 6 New items added to loot tables.
 	* [NEW] - Added moving combat roll (KK's Volt).
-			
-	* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
-	* [REMOVED] - No longer need tool box to place bear traps.
 			
 	* [UPDATED] - You can no longer consume food while your not hungry (within 3 mins of eating)
 	* [UPDATED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
