@@ -35,8 +35,7 @@
 			<Russian>Болезнь вызывает изменения протеинов головного мозга, заменяя их прионами, влияющими на основные функции</Russian>
 			<Spanish>La enfermedad provoca que las proteinas del cerebro sean reemplazadas con priones dejando de funcionar regularmente</Spanish>
 			<Dutch>De ziekte vervangt proteïnen in het brein met prions, waardoor het brein niet meer naar behoren functioneert</Dutch>
-			<French>La maladie entraîne le remplacement des protéines dans le cerveau \npar des prions, qui cessent alors leurs fonctions normales</French>
-			
+			<French>La maladie entraîne le remplacement des protéines dans le cerveau \npar des prions, qui cessent alors leurs fonctions normales</French>	
 		</Key>
 		<Key ID="STR_INTRO_5">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>Most people progress to dementia and then death as the brain is replaced with ineffective sludge</Original>
@@ -105,9 +104,10 @@
 			<Original>Scientific Consultant</Original>
 			<English>Scientific Consultant</English>
 			<German>Wissenschaftliche Beratung</German>
-			<Russian>Научный Консультант</Russi<Spanish>Consultor Cientifico</Spanish>
+			<Russian>Научный Консультант</Russian>
+			<Spanish>Consultor Cientifico</Spanish>
 			<Dutch>Wetenschappelijk Consultant</Dutch>
-			<French>Consultant scientifique</French>an>
+			<French>Consultant scientifique</French>
 			
 		</Key>
 		<Key ID="STR_INTRO_13">	
@@ -117,8 +117,7 @@
 			<Russian>Продюсер</Russian>
 			<Spanish>Productor</Spanish>
 			<Dutch>Producent</Dutch>
-			<French>Producteur</French>
-			
+			<French>Producteur</French>			
 		</Key>
 		<Key ID="STR_INTRO_14">	
 			<Original>Marketing</Original>
@@ -266,8 +265,7 @@
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aqui. El area debe ser plana y libre de otros objetos</Spanish>
 			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
-			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et libre de tout autre objet.</French>
-			
+			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et libre de tout autre objet.</French>	
 		</Key>
 		<Key ID="str_fireplace_removed">
 			<Original>Fireplace has been removed</Original>
@@ -411,8 +409,7 @@
 			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
 			<Spanish>Esperando que el personaje sea creado</Spanish>
 			<Dutch>Wachten tot het karakter is aangemaakt</Dutch>
-			<French>En attente de la création du personnage</French>
-			
+			<French>En attente de la création du personnage</French>	
 		</Key>
 		<Key ID="str_player_14">
 			<Original>Retrying to Authenticate</Original>
