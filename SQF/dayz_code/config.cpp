@@ -34,7 +34,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.M1D21";
+		version = "1.7.5.ReleaseData-1st-M1D25";
 		hiveVersion = 0.96; //0.93
 	};
 };
