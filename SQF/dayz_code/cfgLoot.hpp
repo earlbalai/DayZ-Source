@@ -4,21 +4,15 @@ class CfgLoot {
 			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
-			"ItemMatchboxEmpty",
-			"ItemMatchboxWet"
 		},
 		{
 			1,
 			0.1,
-			0.5,
-			0.2,
-			0.2
+			0.5
 		}
 	};
 	civilian[] = {
 		{
-			"ItemMatchboxEmpty",
-			"ItemMatchboxWet",
 			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
@@ -36,8 +30,6 @@ class CfgLoot {
 			"ItemPainkiller"
 		},
 		{
-			0.05,
-			0.05,
 			0.09,
 			0.09,
 			0.09,
@@ -83,10 +75,6 @@ class CfgLoot {
 	};
 	generic[] = {
 		{
-			"ItemMatchboxEmpty",
-			"ItemMatchboxWet",
-			"ItemKnifeBlunt",
-			"ItemBrokeHatchet",
 			"TrashTinCan",
 			"ItemSodaEmpty",
 			"ItemSodaCoke",
@@ -116,10 +104,6 @@ class CfgLoot {
 			"ItemHeatPack"
 		},
 		{
-			0.06,
-			0.06,
-			0.06,
-			0.06,
 			0.06,
 			0.06,
 			0.06,
