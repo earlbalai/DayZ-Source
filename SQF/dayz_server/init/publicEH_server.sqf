@@ -18,4 +18,3 @@ registerServerRpc = {
 //["dayzPlayerMorph",		{ (_this select 1) call server_playerMorph; }			] call registerServerRpc;
 ["dayzLoginRecord",		{ (_this select 1) call dayz_recordLogin; }				] call registerServerRpc;
 ["dayzCharDisco",		{ (_this select 1) call server_characterSync; }			] call registerServerRpc;
-["dayzGutBody",			{ (_this select 1) spawn server_gutObject; }			] call registerServerRpc;
