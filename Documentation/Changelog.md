@@ -1,7 +1,7 @@
 FIX DUE : 2013
 
 	Community Notes: 
-		* V1.7.*
+		* DayZ 1.7.5.ReleaseData-1st-M1D25
 
 	Community Change log:
 		Client:
@@ -33,19 +33,16 @@ FIX DUE : 2013
 			* [NEW] - Peripheral Dots removed fully.
 			* [NEW] - Toolbox is now needed to build Wire,tanktrap.
 			* [NEW] - Etool is now needed to build Sandbags.
-			* [NEW] - 5 New types of food models ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
-			* [NEW] - 4 New Raw food models. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
+			* [NEW] - 5 New types of food ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
+			* [NEW] - 4 New Raw food. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
 			* [NEW] - Bloodbags now has an infection chance.
-			* [NEW] - 6 New items added to loot tables. (Inplace of item lockup or braking)
 			* [NEW] - Added moving combat roll (KK's Volt).
 			* [NEW] - Survived Dayz added to Epeen monitor
 			
 			
 			***** Not added to the dev builds *****
 			** [NEW] - Basic Anti teleport script.
-			** [NEW] - Basic Mission system Phase 1 (Server Admin Controlled).
 		
-
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
 			* [UPDATED] - Limted amount of ammo found with weapons.
@@ -73,6 +70,8 @@ FIX DUE : 2013
 			* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
 			* [UDDATED] - Massive cleanup remove all useless files.
 			* [UPDATED] - Redone all public EH's
+			* [UPDTAED] - Combat/zombie logout + anti-duping overhall - (https://github.com/R4Z0R49/DayZMod/commit/44321a6856f5fd2d5544d1293c2450f9b2df6fbd)
+			* [UPDATED] - String tables to include = English, German, Russian, Spanish, Dutch, French
 
 			
 			* [Fixed] - Zeds hearing should now be fixed.
@@ -87,12 +86,13 @@ FIX DUE : 2013
 			* [FIXED] - Variable spelling mistakes hsould be corrected now.
 			* [FIXED] - Moved all new foods to stringtable.
 			* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
+			* [FIXED] - ALT F4 Sync issue now fixed
 
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
 			* [REMOVED] - MPTable now removed.
-			* [REMOVED] - Peripheral Vision.
+			* [REMOVED] - Peripheral Vision. (Peripheral Dots)
 			* [REMOVED] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
 			* [REMOVED] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
 			* [REMOVED] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
@@ -101,9 +101,11 @@ FIX DUE : 2013
 			* [REMOVED] - No longer need tool box to place bear traps.
 			* [REMOVED] - You can no longer consume food while your not hungry (within 3 mins of eating)
 			* [REMOVED] - You can no longer drink while your not thirsty (within 3 mins of drinking)
+			* [REMOVED] - 6 New items added to loot tables. (Inplace of item lockup or braking)
+			* [REMOVED] - Food models removed
 			
 		Hive:
-			* [Prerequisites]	beta-patch 99806.
+			* [Prerequisites]	beta-patch 99806 - Pending updated to newest version.
 			* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 			
 			* [NEW] - Added new constraint to block non Dayz items from being wrote to the db
