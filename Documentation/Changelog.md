@@ -29,7 +29,7 @@ FIX DUE : 2013
 			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
 			
 			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
-			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press f12 to use
+			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press Scroll Lock to use
 			* [NEW] - Peripheral Dots removed fully.
 			* [NEW] - Toolbox is now needed to build Wire,tanktrap.
 			* [NEW] - Etool is now needed to build Sandbags.
