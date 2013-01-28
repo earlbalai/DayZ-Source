@@ -219,6 +219,7 @@ if (!isDedicated) then {
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
 		_handled = false;
+		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
 		if (_dikCode in (actionKeys "GetOver")) then {
 			if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
 				canRoll = false;
