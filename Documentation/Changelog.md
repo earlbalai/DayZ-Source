@@ -38,7 +38,6 @@ FIX DUE : 2013
 			* [NEW] - Added moving combat roll (KK's Volt).
 			* [NEW] - Survived Dayz added to Epeen monitor
 			
-			
 			***** Not added to the dev builds *****
 			** [NEW] - Basic Anti teleport script.
 		
@@ -86,6 +85,8 @@ FIX DUE : 2013
 			* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
 			* [FIXED] - ALT F4 Sync issue now fixed
 
+			Removed from dev branch during devlopment.
+			
 			* [REMOVED]	- BAF_L85A2_RIS_CWS (Based on poll)
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
