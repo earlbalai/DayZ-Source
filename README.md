@@ -5,7 +5,7 @@ Official DayZMod Community Project
 
 Current Version
 ==================================
- - 1.7.5 (Development)
+ - 1.7.* (Development)
 
 Requirements
 ------------
@@ -18,8 +18,10 @@ Requirements
 Branches
 --------
 
-- **1.7.5** - Commits for DayZMod 1.7.5 (Not Final)
-- **Master** - Not Used
+- **Devlopment** - May not be stable. (https://github.com/R4Z0R49/DayZMod)
+- **Stable** -- Last stable Devlopment version. (https://github.com/R4Z0R49/DayZMod/tree/Stable)
+- **Release_1.7.5** Is the current release version. (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.5)
+- **Release_1.7.4.4** Is the last version released. (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.4.4)
 
 Directories
 -----------
