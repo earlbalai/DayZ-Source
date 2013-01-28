@@ -9,23 +9,20 @@ _timeOut = 0;
 _timeMax = 30;
 
 while {!isNull _display} do {
-  scopeName "loop";
 	switch true do {
 		case ({isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
 			_btnAbort ctrlEnable false;
 			cutText ["Cannot Abort near another player!", "PLAIN DOWN"];
-			breakTo "loop";
 		};
 		case (_timeOut < _timeMax && count (player nearEntities ["zZombie_Base", 50]) > 0) : {
 			_btnAbort ctrlEnable false;
 			cutText [format ["Can Abort in %1", (_timeMax - _timeOut)], "PLAIN DOWN"];
 			_timeOut = _timeOut + 1;
-			breakTo "loop";
+
 		};
 		case (player getVariable["combattimeout", 0] >= time) : {
 			_btnAbort ctrlEnable false;
 			cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];
-			breakTo "loop";
 		};
 		default {
 			_btnAbort ctrlEnable true;
