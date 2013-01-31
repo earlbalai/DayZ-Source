@@ -54,6 +54,19 @@ class CfgAddons
 	};
 };
 
+class CfgAISkill {
+	aimingaccuracy[] = {0, 0, 1, 1};
+	aimingshake[] = {0, 0, 1, 1};
+	aimingspeed[] = {0, 0, 1, 1};
+	commanding[] = {0, 0, 1, 1};
+	courage[] = {0, 0, 1, 1};
+	endurance[] = {0, 0, 1, 1};
+	general[] = {0, 0, 1, 1};
+	reloadspeed[] = {0, 0, 1, 1};
+	spotdistance[] = {0, 0, 1, 1};
+	spottime[] = {0, 0, 1, 1};
+};
+
 class CfgInGameUI
 {
 
@@ -74,19 +87,19 @@ class CfgInGameUI
 		colorCiv[] = {0,0,0,0}; //{0.8,0.8,0.8,1};
 		colorRes[] = {0,0,0,0}; //{0.7,0.7,0.95,1};
 		font = "EtelkaNarrowMediumPro";
-		size = "0"; //"( 21 / 408 )";
+		size = "( 21 / 408 )"; //"( 21 / 408 )";
 		class Columns
 		{
 			class Order
 			{
-				width = 0; //0.046;
-				colorBg[] = {0,0,0,0}; //{0.1,0.27,0.1,0.8};
+				width = 0.046; //0.046;
+				colorBg[] = {0.1,0.27,0.1,0.8}; //{0.1,0.27,0.1,0.8};
 				doubleLine = 0;
 			};
 			class Player
 			{
-				width = 0; //0.25;
-				colorBg[] = {0,0,0,0}; //{0.1,0.23,0.1,0.8};
+				width = 0.25; //0.25;
+				colorBg[] = {0.1,0.23,0.1,0.8}; //{0.1,0.23,0.1,0.8};
 				doubleLine = 0;
 			};
 			class KillsInfantry
@@ -126,10 +139,10 @@ class CfgInGameUI
 			};
 			class KillsTotal
 			{
-				width = 0; //0.1;
+				width = 0.1; //0.1;
 				doubleLine = 0;
-				colorBg[] = {0,0,0,0}; //{0.1,0.35,0.1,0.9};
-				picture = ""; //"\ca\ui\data\stats_total_ca.paa";
+				colorBg[] = {0.1,0.35,0.1,0.9}; //{0.1,0.35,0.1,0.9};
+				picture = "\ca\ui\data\stats_total_ca.paa"; //"\ca\ui\data\stats_total_ca.paa";
 			};
 		};
 	};
