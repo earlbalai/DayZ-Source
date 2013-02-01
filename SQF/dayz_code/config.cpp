@@ -152,7 +152,7 @@ class CfgSurvival {
 			rawfoodtype = "FoodbaconRaw";
 		};
 		class Hen: Default {
-			yield = 4;
+			yield = 2;
 			rawfoodtype = "FoodchickenRaw";
 		};
 		class Rabbit: Default {
