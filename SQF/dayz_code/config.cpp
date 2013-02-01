@@ -141,7 +141,7 @@ class CfgSurvival {
 		class Cow04: Cow {};
 		class Goat: Default {
 			yield = 4;
-			rawfoodtype = "FoodSteakRaw";
+			rawfoodtype = "FoodmuttonRaw";
 		};
 		class Sheep: Default {
 			yield = 4;
