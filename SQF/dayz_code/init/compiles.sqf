@@ -216,11 +216,7 @@ if (!isDedicated) then {
 		
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled"];
-		_DisplayOrDialogOrControl = _this select 0;
 		_dikCode = 	_this select 1;
-		_shiftState = _this select 2;
-		_ctrlState =  _this select 3;
-		_altState =   _this select 4;
 		_handled = false;
 		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
 		
