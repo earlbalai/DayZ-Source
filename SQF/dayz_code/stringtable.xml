@@ -1300,13 +1300,13 @@
 			<French>Bacon</French>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">						
-			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
-			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
-			<German>Bacon to be used for sustainment, must be cooked prior to eating.</German>
-			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
-			<Spanish>Bacon to be used for sustainment, must be cooked prior to eating.</Spanish>
-			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
-			<French>Bacon to be used for sustainment, must be cooked prior to eating.</French>
+			<Original>Bacon to be used for sustainment.</Original>						
+			<English>Bacon to be used for sustainment.</English>						
+			<German>Bacon to be used for sustainment.</German>
+			<Russian>Bacon to be used for sustainment.</Russian>
+			<Spanish>Bacon to be used for sustainment.</Spanish>
+			<Dutch>Bacon to be used for sustainment.</Dutch>
+			<French>Bacon to be used for sustainment.</French>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_5">						
 			<Original>Angel Cookies</Original>						
