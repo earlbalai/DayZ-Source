@@ -2,6 +2,8 @@ private["_onLadder","_item","_hasfoodmag","_config","_text","_regen","_update","
 disableserialization;
 call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_cookedfood = _item in ["FoodSteakCooked","FoodmuttonCooked","FoodchickenCooked","FoodRabbitCooked","FoodBaconCooked"];
+
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
@@ -20,11 +22,9 @@ _regen = 	getNumber (_config >> "bloodRegen");
 
 if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,"consume"] , "PLAIN DOWN"]};
 
-if (_EatInfection) then {
-   if (_item == "FoodSteakCooked" ) then {
-		r_player_infected = true;
-		player setVariable["USEC_infected",true];
-	};
+if (_EatInfection and _cookedfood) then {
+	r_player_infected = true;
+	player setVariable["USEC_infected",true];
 };
 
 //Rawtime = getVarable _item
