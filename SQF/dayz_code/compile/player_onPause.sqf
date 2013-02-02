@@ -11,11 +11,9 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_timeOut = 0;
 		_timeMax = 30;
 		_isDead = !alive player;
-		
-		if(_isDead) exitwith {_btnAbort ctrlEnable true;};
+
 		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true;};
-		
-		sleep 1;
+				
 		while {!isNull _display} do {
 			switch true do {
 				case ({isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
@@ -32,11 +30,11 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 				*/
 				case (player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;
-					cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];
+					cutText ["Cannot Abort while in combat!", "PLAIN DOWN"];				
 				};
 				default {
 					_btnAbort ctrlEnable true;
-					cutText ["", "PLAIN DOWN"];
+					cutText ["", "PLAIN DOWN"];				
 				};
 			};
 			sleep 3;
