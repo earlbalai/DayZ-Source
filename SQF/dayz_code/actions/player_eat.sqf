@@ -68,6 +68,7 @@ _control = 	_display displayCtrl 1301;
 _control ctrlShow true;
 
 _bloodVal =		r_player_blood / r_player_bloodTotal;
+_ctrlBlood = _display displayCtrl 1300;
 if (_bloodVal >= 0.2) then {
 	_ctrlBlood ctrlShow true;
 };
