@@ -957,7 +957,7 @@ class CfgWeapons {
 	//class AK_107_BASE: FakeWeapon	{};
 	//class AK_47_M: FakeWeapon {};
 	//class AK_47_S: FakeWeapon {};
-	//class AKS_GOLD: FakeWeapon {};
+	class AKS_GOLD: FakeWeapon {};
 	//class AK_74: FakeWeapon {};
 	//class AK_74_GL: FakeWeapon {};
 	//class AK_107_kobra: FakeWeapon {};
@@ -1045,7 +1045,7 @@ class CfgWeapons {
 	//class UZI_EP1: FakeWeapon {};
 	class UZI_SD_EP1: FakeWeapon {};
 	//class revolver_EP1: FakeWeapon {};
-	//class revolver_gold_EP1: FakeWeapon {};
+	class revolver_gold_EP1: FakeWeapon {};
 	//class glock17_EP1: FakeWeapon {};
 	//class M60A4_EP1: FakeWeapon {};
 	//class Mk_48_DES_EP1: FakeWeapon {};
