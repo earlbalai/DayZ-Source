@@ -1,7 +1,14 @@
 FIX DUE : 2013
 
 	Community Notes: 
-		* DayZ 1.7.5.ReleaseData-1st-M1D25
+		* DayZ 1.7.5
+		
+	Affected addons:
+		* dayz_code   
+		* dayz_anim
+		* dayz_server   (server admins only)
+		* mission (server admins only)
+		
 
 	Community Change log:
 		Client:
@@ -29,14 +36,14 @@ FIX DUE : 2013
 			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
 			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
 			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press Scroll Lock to use
-			* [NEW] - Peripheral Dots removed fully.
 			* [NEW] - Toolbox is now needed to build Wire,tanktrap.
 			* [NEW] - Etool is now needed to build Sandbags.
 			* [NEW] - 5 New types of food ("FoodmuttonCooked","FoodchickenCooked","FoodBaconCooked","HIDDEN","FooedRabbitCooked").
 			* [NEW] - 4 New Raw food. ("FoodbaconRaw","FoodchickenRaw","FoodmuttonRaw","foodrabbitRaw")
 			* [NEW] - Bloodbags can now give an infection.
 			* [NEW] - Added moving combat roll (KK's Volt).
-			* [NEW] - Survived Dayz added to Epeen monitor
+			* [NEW] - Survived Dayz added to Epeen monitor.
+			* [NEW] - Cutting down trees now attracts zeds.
 		
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
@@ -50,11 +57,11 @@ FIX DUE : 2013
 			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot of cpu cycles)
 			* [UPDATED] - Much faster fn_instring.
 			* [UPDATED] - Cargo space redo.
-				MI17_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 50;, transportmaxbackpacks = 10; )
-				UH1H_DZ ( transportMaxWeapons = 5;, transportMaxMagazines = 25;, transportmaxbackpacks = 4; )
-				AH6_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 10;, transportmaxbackpacks = 2; )
-				Mh6J_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 20;, transportmaxbackpacks = 0; )
-				AN2_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 80;, transportmaxbackpacks = 15; )
+							MI17_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 50;, transportmaxbackpacks = 10; )
+							UH1H_DZ ( transportMaxWeapons = 5;, transportMaxMagazines = 25;, transportmaxbackpacks = 4; )
+							AH6_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 10;, transportmaxbackpacks = 2; )
+							Mh6J_DZ ( transportMaxWeapons = 3;, transportMaxMagazines = 20;, transportmaxbackpacks = 0; )
+							AN2_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 80;, transportmaxbackpacks = 15; )
 			* [UPDATED] - CZ_VestPouch_EP1 to be more useful 12 slots 0 weapon slots.
 			* [UPDATED] - Zeds will talk to other zeds within 80 meter.
 			* [UPDATED] - Combat Logging is now active during Zombie chase.
@@ -67,7 +74,6 @@ FIX DUE : 2013
 			* [UPDATED] - String tables to include = English, German, Russian, Spanish, Dutch, French
 			* [UPDATED] - All base class's have been updated to match the dayz removal proc's (weapons)
 
-			
 			* [Fixed] - Zeds hearing should now be fixed.
 			* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
 			* [Fixed] - German Tranlations updated.
