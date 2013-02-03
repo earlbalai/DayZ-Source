@@ -19,6 +19,9 @@ _hasmuttonRaw = 	"FoodmuttonRaw" in magazines player;
 _haschickenRaw = 	"FoodchickenRaw" in magazines player;
 _hasrabbitRaw = 	"FoodrabbitRaw" in magazines player;
 _hasbaconRaw = 		"FoodbaconRaw" in magazines player;
+//boiled Water
+_hasbottleitem = "ItemWaterbottle" in magazines player;
+_hastinitem = ("TrashTinCan" in magazines player) or ("ItemSodaEmpty" in magazines player);
 //Define all Raw food
 _hasRawMeat = _hasSteakRaw or _hasmuttonRaw or _haschickenRaw or _hasrabbitRaw or _hasbaconRaw;
 
@@ -65,6 +68,15 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isAlive = alive cursorTarget;
 	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
+	
+	_rawmeat = meatraw;
+	_hasRawMeat = false;
+		{
+			if (_x in magazines player) then {
+				_hasRawMeat = true;
+			};
+		} forEach _rawmeat; 
+	
 	if (_hasFuelE) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_wagon_tanker");
 	};
@@ -121,7 +133,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Fireplace Actions check
-	if(inflamed cursorTarget and (_hasSteakRaw or _hasmuttonRaw or _haschickenRaw or _hasrabbitRaw or _hasbaconRaw) and _canDo) then {
+	if(inflamed _cursor and _hasRawMeat and _canDo) then {
 		if (s_player_cook < 0) then {
 			s_player_cook = player addAction [localize "str_actions_self_05", "\z\addons\dayz_code\actions\cook.sqf",cursorTarget, 3, true, true, "", ""];
 		};
@@ -129,6 +141,15 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_cook;
 		s_player_cook = -1;
 	};
+	if(inflamed _cursor and (_hasbottleitem and  _hastinitem) and _canDo) then {
+		if (s_player_boil < 0) then {
+			s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf",_cursor, 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_player_boil;
+		s_player_boil = -1;
+	};
+	
 	if(cursorTarget == dayz_hasFire and _canDo) then {
 		if ((s_player_fireout < 0) and !(inflamed cursorTarget) and (player distance cursorTarget < 3)) then {
 			s_player_fireout = player addAction [localize "str_actions_self_06", "\z\addons\dayz_code\actions\fire_pack.sqf",cursorTarget, 0, false, true, "",""];
@@ -298,6 +319,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_butcher = -1;
 	player removeAction s_player_cook;
 	s_player_cook = -1;
+	player removeAction s_player_boil;
+	s_player_boil = -1;
 	player removeAction s_player_fireout;
 	s_player_fireout = -1;
 	player removeAction s_player_packtent;

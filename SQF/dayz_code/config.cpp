@@ -200,11 +200,11 @@ class CfgSurvival {
 	class Meat {
 		class Default {
 			yield = 2;
-			rawfoodtype = "FoodSteakRaw";
+			rawfoodtype = "FoodmeatRaw";
 		};
 		class Cow: Default {
-			yield = 8;
-			rawfoodtype = "FoodSteakRaw";
+			yield = 6;
+			rawfoodtype = "FoodbeefRaw";
 		};
 		class Cow01: Cow {};
 		class Cow02: Cow {};
@@ -227,7 +227,7 @@ class CfgSurvival {
 			rawfoodtype = "FoodchickenRaw";
 		};
 		class Rabbit: Default {
-			yield = 4;
+			yield = 1;
 			rawfoodtype = "FoodrabbitRaw";
 		};
 	};
