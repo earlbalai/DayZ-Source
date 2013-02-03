@@ -6,13 +6,15 @@ FIX DUE : 2013
 	Affected addons:
 		* dayz_code   
 		* dayz_anim
-		* dayz_server   (server admins only)
+		* dayz_server (server admins only)
 		* mission (server admins only)
 		
 
 	Community Change log:
 		Client:
 			* [Prerequisites]	beta-patch ((Newest)).
+			* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
+			* [Prerequisites]	New Mission File Downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
 			
 			* [NEW]	Weapon - Sa58P_EP1. (Military)
 			* [NEW]	Weapon - Sa58V_EP1. (Military)
@@ -23,7 +25,7 @@ FIX DUE : 2013
 			* [NEW]	Weapon - G36A_camo. (HeliCrash)
 			* [NEW]	Weapon - G36K_camo. (HeliCrash)
 			* [NEW]	Weapon - M40A3 (MilitaryS)
-			* [NEW] Vehicle - HMMWV.
+			* [NEW] Vehicle - HMMWV_DZ.
 			* [NEW] Vehicle - MH6J_DZ.
 			* [NEW] - Ability to flip ATV's.
 			* [NEW] - Zeds spawn while in vehicles.
@@ -34,7 +36,7 @@ FIX DUE : 2013
 			* [NEW] - UH60Wreck added
 			* [NEW] - New zed & loot spawn systems rewrote Phase 1.
 			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
-			* [NEW] - Infection changes when eating cooked food and drinking water. (tin and canned items don't count)
+			* [NEW] - Infection changes when eating food and drinking water. (tin and canned items don't count)
 			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press Scroll Lock to use
 			* [NEW] - Toolbox is now needed to build Wire,tanktrap.
 			* [NEW] - Etool is now needed to build Sandbags.
@@ -43,7 +45,19 @@ FIX DUE : 2013
 			* [NEW] - Bloodbags can now give an infection.
 			* [NEW] - Added moving combat roll (KK's Volt).
 			* [NEW] - Survived Dayz added to Epeen monitor.
+			
 			* [NEW] - Cutting down trees now attracts zeds.
+			* [NEW] - After you have eatern a canned product you now get an empty tincan back.
+			* [NEW] - Added definition of arrays for meatraw / meatcooked
+			* [NEW] - You can now eat raw meat (low hp add + possible infection), and Coocked meat (high hp add w/o infection)
+			
+			* [NEW] - RawMeat blood values (beef-100,rabbit-400,bacon-150,chicken-100,mutton-100).
+			* [NEW] - Cookedmeat blood values (beef-600,rabbit-1600,bacon-400,chicken-400,mutton-400).
+			
+			* [NEW] - You can now boil water using a fire,TrashTinCan or ItemSodaEmpty and fullwaterbottle
+			* [NEW] - Water (possible infection), and Boiled Water (w/o infection)
+			
+
 		
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
@@ -66,7 +80,7 @@ FIX DUE : 2013
 			* [UPDATED] - Zeds will talk to other zeds within 80 meter.
 			* [UPDATED] - Combat Logging is now active during Zombie chase.
 			* [UPDATED] - Backpacks updated. (https://github.com/R4Z0R49/DayZMod/wiki/Backpacks)
-			* [UPDATED] - Animal Meat reset. 2(Default),4(sheep),4(goat),4(boar),8(cow)
+			* [UPDATED] - Animal Meat reset. 6(cow),4(goat),4(sheep),4(boar),2(Hen),1(Rabbit)
 			* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
 			* [UDDATED] - Massive cleanup remove all useless files.
 			* [UPDATED] - Redone all public EH's
@@ -94,6 +108,7 @@ FIX DUE : 2013
 			* [REMOVED]	- Banned m136 as it never really worked and served no real purpose.
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
 			* [REMOVED] - Peripheral Vision. (Peripheral Dots)
+			* [REMOVED] - MPTable Removed.
 Removed from dev branch during devlopment.
 			* [REMOVED] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
 			* [REMOVED] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
