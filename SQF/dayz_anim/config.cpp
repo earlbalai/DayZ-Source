@@ -1665,7 +1665,7 @@ class CfgVehicles {
 	class HMMWV_M2: Banned {};
 	class HMMWV_TOW: Banned {};
 	class HMMWV_MK19: Banned {};
-	//class HMMWV: Banned {};
+	class HMMWV: Banned {};
 	class UAZ_MG_CDF: Banned {};
 	class UAZ_AGS30_CDF: Banned {};
 	class UralOpen_CDF: Banned {};
