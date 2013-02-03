@@ -5,14 +5,11 @@ Official DayZMod Community Project
 
 Current Version
 ==================================
- - 1.7.5
+ - 1.7.6.Devlopment
  
 Files updated
 ------------
  - Dayz_code
- - Dayz_anim
- - Mission
- - Dayz_Server
 
 Requirements
 ------------
