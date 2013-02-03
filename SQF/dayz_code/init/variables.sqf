@@ -14,6 +14,10 @@ Rocket_DZ = 	"Rocket_DZ";
 AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
 AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
 
+//Cooking
+meatraw = ["FoodSteakRaw",	"FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
+meatcooked = ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
+
 dayz_combatLog = "";
 canRoll = true;
 
@@ -52,6 +56,7 @@ Dayz_GUI_B = 0.26; // -0.26
 dayz_resetSelfActions = {
 	s_player_fire =			-1;
 	s_player_cook =			-1;
+	s_player_boil =			-1;
 	s_player_fireout =		-1;
 	s_player_butcher =		-1;
 	s_player_packtent = 	-1;
