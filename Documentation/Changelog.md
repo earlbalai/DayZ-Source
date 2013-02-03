@@ -1,6 +1,21 @@
 FIX DUE : 2013
 
 	Community Notes: 
+		* DayZ 1.7.6*
+		
+	Affected addons:
+		* dayz_code   
+
+
+	Community Change log:
+	
+	* [UPDATED]	- STR_ITEMWATERBOTTLEBOILED_CODE_DESC - German (Eine Flasche mit abgekochten Wasser)
+	* [UPDATED]	- STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a été remplie d'eau bouillie qui peut être consommée.)
+	
+
+FIX DUE : 2013
+
+	Community Notes: 
 		* DayZ 1.7.5
 		
 	Affected addons:
