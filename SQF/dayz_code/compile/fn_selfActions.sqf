@@ -175,7 +175,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Repairing Vehicles
-	if ((dayz_myCursorTarget != cursorTarget) and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
+	if ((dayz_myCursorTarget != cursorTarget) and _isVehicle and !_isMan and _hasToolbox and (damage cursorTarget < 1)) then {
 		_vehicle = cursorTarget;
 		{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
 		dayz_myCursorTarget = _vehicle;
