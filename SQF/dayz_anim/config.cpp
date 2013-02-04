@@ -1006,7 +1006,7 @@ class CfgWeapons {
 	class CRV7_HEPD: FakeWeapon {};
 	class CRV7_FAT: FakeWeapon {};
 	class M621: FakeWeapon {};
-	class BAF_AS50_scoped: FakeWeapon {};
+	//class BAF_AS50_scoped: FakeWeapon {};
 	class BAF_AS50_TWS: FakeWeapon {};
 	class BAF_LRR_scoped: FakeWeapon {};
 	class BAF_LRR_scoped_W: FakeWeapon {};
