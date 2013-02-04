@@ -1,16 +1,23 @@
 FIX DUE : 2013
 
 	Community Notes: 
-		* DayZ 1.7.6*
+		* DayZ 1.7.5.1
 		
 	Affected addons:
-		* dayz_code   
+		* dayz_code  
+		* dayz_anim     
 
 
 	Community Change log:
-	
-	* [UPDATED]	- STR_ITEMWATERBOTTLEBOILED_CODE_DESC - German (Eine Flasche mit abgekochten Wasser)
-	* [UPDATED]	- STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a été remplie d'eau bouillie qui peut être consommée.)
+
+	* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - German (Eine Flasche mit abgekochten Wasser)
+	* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a été remplie d'eau bouillie qui peut être consommée.)
+	* [UPDATED] - HMMWV Cargo space. (transportMaxWeapons = 4;, transportMaxMagazines = 12;, transportmaxbackpacks = 4;)
+
+	* [FIXED] - HMMWV Should now be able to be repaired fully.
+	* [FIXED] - Gut object should be working without errors.
+	* [FIXED] - Repair option should now only work on vehicles.
+	* [FIXED] - AS50 was mistakenly banned now unbanned.
 	
 
 FIX DUE : 2013
