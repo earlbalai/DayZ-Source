@@ -1379,7 +1379,16 @@
 			<Spanish>Angel Cookies</Spanish>
 			<Dutch>Angel Cookies</Dutch>
 			<French>Angel Cookies</French>
-		</Key>						
+		</Key>
+		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_6">                      
+			<Original>Beefsteak</Original>                      
+			<English>Beefsteak</English>                        
+			<German>Beefsteak</German>
+			<Russian>Бифштекс</Russian>
+			<Spanish>Beefsteak</Spanish>
+			<Dutch>Beefsteak</Dutch>
+			<French>Beefsteak</French>
+		</Key>  		
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_5">						
 			<Original>Angel Cookies to boost your moral up!</Original>						
 			<English>Angel Cookies to boost your moral up!</English>						
@@ -1389,6 +1398,15 @@
 			<Dutch>Angel Cookies to boost your moral up!</Dutch>
 			<French>Angel Cookies to boost your moral up!</French>
 		</Key>
+		 <Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_6">                     
+			<Original>Beefsteak to be used for sustainment.</Original>                      
+			<English>Beefsteak to be used for sustainment.</English>                        
+			<German>Beefsteak to be used for sustainment.</German>
+			<Russian>Бифштекс, готовый к употреблению.</Russian>
+			<Spanish>Beefsteak to be used for sustainment.</Spanish>
+			<Dutch>Beefsteak to be used for sustainment.</Dutch>
+			<French>Beefsteak to be used for sustainment.</French>
+		</Key>  
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">						
 			<Original>Water Bottle (Boiled)</Original>						
 			<English>Water Bottle (Boiled)</English>						
