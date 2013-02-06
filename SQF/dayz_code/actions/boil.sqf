@@ -17,7 +17,7 @@ if (_hasbottleitem and _hastinitem) then {
 	_qty = {_x == "ItemWaterbottle"} count magazines player;
 	if ("ItemWaterbottle" in magazines player) then {
 		player playActionNow "Medic";
-		[player,"fillwater",0,false] call dayz_zombieSpeak;
+		[player,"cook",0,false] call dayz_zombieSpeak;
 		_id = [player,10,true,(getPosATL player)] spawn player_alertZombies;
 		sleep _qty;
 		for "_x" from 1 to _qty do {
