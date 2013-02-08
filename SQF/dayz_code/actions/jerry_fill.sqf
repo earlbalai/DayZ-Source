@@ -10,7 +10,7 @@ if ("ItemJerrycanEmpty" in magazines player) then {
 		player removeMagazine "ItemJerrycanEmpty";
 		player addMagazine "ItemJerrycan";
 	};
-	[player,"refuel",0,false] call dayz_zombieSpeak;
+	[player,"refuel",3,false] call dayz_zombieSpeak;
 	cutText [format[(localize  "str_player_09"),_qty], "PLAIN DOWN"];
 } else {
 	cutText [(localize "str_player_10") , "PLAIN DOWN"];
