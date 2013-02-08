@@ -1070,7 +1070,7 @@ class CfgWeapons {
 	//class FN_FAL: FakeWeapon {};
 	//class FN_FAL_ANPVS4: FakeWeapon {};
 	//class G36C_camo: FakeWeapon {};
-	class G36_C_SD_camo: FakeWeapon {};
+	//class G36_C_SD_camo: FakeWeapon {};
 	//class G36A_camo: FakeWeapon {};
 	//class G36K_camo: FakeWeapon {};
 	//class G36C: FakeWeapon {};
