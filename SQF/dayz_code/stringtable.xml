@@ -654,6 +654,33 @@
 			<Dutch>een onbekende oorzaak</Dutch>
 			<French>une cause inconnue</French>
 		</Key>
+		<Key ID="str_abort_playerclose">
+			<Original>Cannot Abort near another player!</Original>
+			<English>Cannot Abort near another player!</English>
+			<German>Cannot Abort near another player!</German>
+			<Russian>Cannot Abort near another player!</Russian>
+			<Spanish>Cannot Abort near another player!</Spanish>
+			<Dutch>Cannot Abort near another player!</Dutch>
+			<French>Cannot Abort near another player!</French>
+		</Key>
+		<Key ID="str_abort_zedsclose">
+			<Original>Can Abort in %1</Original>
+			<English>Can Abort in %1</English>
+			<German>Can Abort in %1</German>
+			<Russian>Can Abort in %1</Russian>
+			<Spanish>Can Abort in %1</Spanish>
+			<Dutch>Can Abort in %1</Dutch>
+			<French>Can Abort in %1</French>
+		</Key>
+		<Key ID="str_abort_playerincombat">
+			<Original>Cannot Abort while in combat!</Original>
+			<English>Cannot Abort while in combat!</English>
+			<German>Cannot Abort while in combat!</German>
+			<Russian>Cannot Abort while in combat!</Russian>
+			<Spanish>Cannot Abort while in combat!</Spanish>
+			<Dutch>Cannot Abort while in combat!</Dutch>
+			<French>Cannot Abort while in combat!</French>
+		</Key>
 	</Package>
   <Package name="ui">
     <Key ID="STR_UI_GENDER_TITLE">
