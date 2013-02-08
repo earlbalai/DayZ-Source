@@ -33,7 +33,7 @@ if (_vehicle != player) then {
 	_chance =	round(random 12);
 
 	if ((_wound == "Glass1") or (_wound == "Glass2") or (_wound == "Glass3") or (_wound == "Glass4") or (_wound == "Glass5") or (_wound == "Glass6")) then {
-		[_unit,"hit",2,true] call dayz_zombieSpeak;
+		[_unit,"hit",4,true] call dayz_zombieSpeak;
 		_strH = "hit_" + (_wound);
 		_dam = _vehicle getVariable [_strH,0];
 		_total = (_dam + _damage);
@@ -43,7 +43,7 @@ if (_vehicle != player) then {
 		//["dayzHitV",[_vehicle, _wound,_total, _unit,"zombie"]] call broadcastRpcCallAll;
 		if (_total >= 1) then {
 			if ((_chance % 4) == 0) then {
-				if ((_vehicle isKindOf "ATV_Base_EP1") or (_vehicle isKindOf "Motorcycle")) then { player action ["eject", _vehicle] };
+				if ((_vehicle isKindOf "ATV_Base_EP1") or (_vehicle isKindOf "Motorcycle") or (_vehicle isKindOf "Bicycle")) then { player action ["eject", _vehicle] };
 			};	
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
 				_cnt = count (DAYZ_woundHit select 1);
