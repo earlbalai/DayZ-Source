@@ -1703,7 +1703,7 @@ class CfgVehicles {
 		model="\dayz_weapons\models\bolt";
 		class eventHandlers
 		{
-			init="[(_this select 0),'cfgMagazines','Quiver'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			init="[(_this select 0),'cfgMagazines','BoltSteel'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 };

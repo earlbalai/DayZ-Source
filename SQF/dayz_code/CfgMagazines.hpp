@@ -94,6 +94,18 @@ class CfgMagazines {
 		};
 	};
 	
+	class Quiver : CA_Magazine
+	{
+		scope = public;
+		ammo = "BoltSteel";
+		count = 6;
+		descriptionshort = "Small Quiver used with the Crossbow, Max bolts 6";
+		displayname = "Small Quiver.";
+		initSpeed = 150;
+		model = "\dayz_weapons\models\bolt_gear";
+		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
+	};
+	
 	class FoodEdible;
 	class FoodmeatRaw : FoodEdible {
 		scope = public;
@@ -184,9 +196,4 @@ class CfgMagazines {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
-	class BoltSteel;
-	class Quiver : BoltSteel
-	{
-		count = 4;
-	};
 };
