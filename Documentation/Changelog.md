@@ -1,6 +1,60 @@
 FIX DUE : 2013
 
 	Community Notes: 
+		* DayZ 1.7.5.2
+		
+	Affected addons:
+		* dayz_code 
+		* dayz_sfx
+		* dayz_server
+		* Mission
+
+
+	Community Change log:
+	
+	* [NEW] - Added a 2 minite delay to new zeds spawning once MaxLocal zeds fall's below the acceptable level.
+	* [NEW] - Added new sfx for chopping wood.
+	* [NEW] - Started Update for Cherno intro. (map intro)
+	* [NEW] - Zed attraction this will draw zeds to lottier closer to players over time.
+	* [NEW] - BAF_L85A2_RIS_SUSAT - (Heilcrash - HeliCrash_No50s)
+	* [NEW] - Crowbow Quiver added - 4 arror mag size.
+	
+	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
+	* [UPDATED] - loot weighted array generation fixed.
+	* [UPDATED] - Updated logout system to check radius of zeds from 50 meters to 35 meters (30 sec count)
+	* [UPDATED] - Player range on logout to 6 meters. (30 Sec count)
+	* [UPDATED] - Max Range of targats 120 meters down from 300 meters. (this should help long range agro, This is zeds max target range).
+	* [UPDATED] - AI behavour updated to try making them zigzag less.
+	* [UPDATED] - Added push bikes to the zeds pull from vehilce list.
+	* [UPDATED] - Epeen key moved to Numpad Insert
+	* [UPDATED] - Zeds Targets array modified 
+	* [UPDATED] - Weapon fire sounds divided by 2 (This will help us settle zeds hearing a little more) (107_DZ Zed pull range 450 meters / 2 = 225 meters (capped 120 meters aboue for now))
+
+	* [FIXED] - Zeds talk, lowed to 120 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
+	* [FIXED] - CookedBeef StringTables now added.
+	* [FIXED] - Spanish, French StringTables updated.
+	* [FIXED] - logout timers updated from sleep 3 to sleep 1 this should now fix long logout timers.
+	* [FIXED] - Zeds should no longer walk though all objects. (Some objects can still be walked thought)
+	* [FIXED] - Updated refuel to attract zeds. (3-6 Meters)
+	* [FIXED] - EH's updated to work with bettleye filters.
+	* [FIXED] - Ammo counts now fixed on dc.
+	* [FIXED] - Zeds will no longer magically hit players just becuase there within 3 meters.
+	* [FIXED] - Fixed some base class's for vehicles reporting issues with crew
+	
+	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player)
+	
+	* [REMOVED] - Chase combat logging systems removed. (Removed while we make sure everything else is working, also removed due to ealry warning of agro)
+	* [REMOVED] - Debriefing window has started to be cleaned up. (blank box on dc)
+	* [REMOVED] - Original Dayz Chance based hearing (hear only based on the noise you make) 
+	* [REMOVED] - Original Dayz Chance based sight (sight only based on direction of zed)
+	* [REMOVED] - BearTrap Due to issues with the trap still staying active after removal.
+	
+	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
+	
+
+FIX DUE : 2013
+
+	Community Notes: 
 		* DayZ 1.7.5.1
 		
 	Affected addons:
