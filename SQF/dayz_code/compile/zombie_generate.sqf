@@ -18,27 +18,21 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 
 //Create the Group and populate it
 //diag_log ("Spawned: " + _type);
-_radius = 0;
-_method = "CAN_COLLIDE";
-if (_doLoiter) then {
-	_radius = 40;
-	_method = "NONE";
-};
+
+_radius = 40;
+_method = "FORM";
+
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
+_agent setPosATL _position;
 
-if (_doLoiter) then {
-	_agent setPosATL _position;
-	//_agent setVariable ["doLoiter",true,true];
-} else {
-	_agent setVariable ["doLoiter",false,true];
-};
+//Count zed spawned
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
 //diag_log ("CREATE INFECTED: " + str(_this));
 
 _position = getPosATL _agent;
-_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
+_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",5])) > 0;
 
 if (random 1 > 0.7) then {
 	_agent setUnitPos "Middle";
@@ -46,8 +40,11 @@ if (random 1 > 0.7) then {
 
 //diag_log ("CREATED: "  + str(_agent));
 
+if (_nearByPlayer) then {
+	deleteVehicle _agent;
+};
 
-
+/*
 //_agent setVariable["host",player,true];
 if (_doLoiter) then {
 	if (_nearByPlayer) then {
@@ -62,6 +59,7 @@ if (_doLoiter) then {
 		_agent setPos _position;
 	};
 };
+*/
 
 if (isNull _agent) exitWith {
 	dayz_spawnZombies = dayz_spawnZombies - 1;

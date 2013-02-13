@@ -681,6 +681,15 @@
 			<Dutch>Cannot Abort while in combat!</Dutch>
 			<French>Cannot Abort while in combat!</French>
 		</Key>
+		<Key ID="str_full_quiver">
+			<Original>You can only have 1 stack of bolts</Original>
+			<English>You can only have 1 stack of bolts</English>
+			<German>You can only have 1 stack of bolts</German>
+			<Russian>You can only have 1 stack of bolts</Russian>
+			<Spanish>You can only have 1 stack of bolts</Spanish>
+			<Dutch>You can only have 1 stack of bolts</Dutch>
+			<French>You can only have 1 stack of bolts</French>
+		</Key>
 	</Package>
   <Package name="ui">
     <Key ID="STR_UI_GENDER_TITLE">

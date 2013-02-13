@@ -1015,7 +1015,7 @@ class CfgWeapons {
 	//class L85A2_base_BAF: FakeWeapon {};
 	//class BAF_L85A2_RIS_Holo: FakeWeapon {};
 	class BAF_L85A2_UGL_Holo: FakeWeapon {};
-	class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
+	//class BAF_L85A2_RIS_SUSAT: FakeWeapon {};
 	class BAF_L85A2_UGL_SUSAT: FakeWeapon {};
 	class BAF_L85A2_RIS_ACOG: FakeWeapon {};
 	class BAF_L85A2_UGL_ACOG: FakeWeapon {};
@@ -1070,7 +1070,7 @@ class CfgWeapons {
 	//class FN_FAL: FakeWeapon {};
 	//class FN_FAL_ANPVS4: FakeWeapon {};
 	//class G36C_camo: FakeWeapon {};
-	//class G36_C_SD_camo: FakeWeapon {};
+	class G36_C_SD_camo: FakeWeapon {};
 	//class G36A_camo: FakeWeapon {};
 	//class G36K_camo: FakeWeapon {};
 	//class G36C: FakeWeapon {};

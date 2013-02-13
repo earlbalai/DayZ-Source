@@ -1695,6 +1695,17 @@ class CfgVehicles {
 			};
 		};
 	};
+	class WeaponHolderBase;
+	class BoltSteelF: WeaponHolderBase
+	{
+		scope=2;
+		displayName="$STR_MAG_NAME_3";
+		model="\dayz_weapons\models\bolt";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgMagazines','Quiver'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 };
 class CfgNonAIVehicles {
 	

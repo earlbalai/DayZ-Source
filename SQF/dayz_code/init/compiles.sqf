@@ -56,7 +56,7 @@ if (!isDedicated) then {
 	zombie_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_findTargetAgent.sqf";
 	zombie_loiter = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_loiter.sqf";			//Server compile, used for loiter behaviour
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_generate.sqf";			//Server compile, used for loiter behaviour
-	
+	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
 	
 	//
 	dog_findTargetAgent =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
@@ -238,16 +238,9 @@ if (!isDedicated) then {
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
-		if ("ItemMap_Debug" in items player) then {
-			if (_dikCode == 88) then //SCROLL LOCK
-			{
-				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-			};
-		} else {
-			if (_dikCode == 70) then //SCROLL LOCK
-			{
-				_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
-			};
+		if (_dikCode == 210) then //SCROLL LOCK
+		{
+			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};

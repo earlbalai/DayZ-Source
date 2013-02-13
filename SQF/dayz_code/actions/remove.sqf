@@ -13,5 +13,7 @@ sleep 1;
 _id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 sleep 5;
 	
-["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
+	dayzDeleteObj = [_objectID,_objectUID];
+	publicVariable "dayzDeleteObj";
 deleteVehicle _obj;

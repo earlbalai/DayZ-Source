@@ -22,6 +22,13 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {"dayz_equip","dayz_weapons","CAMisc3","CABuildingParts","CABuildingParts_Signs","CAStructuresHouse","CAStructuresLand_Ind_Stack_Big","CAStructures_Misc_Powerlines","CAStructures","CABuildings","CABuildings2","Ind_MalyKomin","CAStructures_A_CraneCon","CAStructures_Mil","CAStructures_Nav","CAStructures_Rail","A_Crane_02","A_TVTower","CAStructures_Railway","CAStructuresHouse","CAStructuresHouse_HouseBT"};
 	};
+	class DZ_DebriefingRemoved
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"CAUI"};
+	};
 };
 
 class CfgMods
@@ -34,9 +41,34 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.5.1";
+		version = "1.7.5.2-TestVersion5";
 		hiveVersion = 0.96; //0.93
 	};
+	class DZ_InitWorld
+	{
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"Chernarus"};
+	};
+};
+
+
+class CfgMissions
+{
+	 class Cutscenes
+	 {
+	  class ChernarusIntro1
+		  {
+			directory = "z\addons\dayz_code\cfgworlds\intro.Chernarus";
+		  };
+	 };
+};
+
+class CfgWorlds
+{
+        initWorld = "Chernarus";
+        demoWorld = "Chernarus";
 };
 
 class CfgAddons
@@ -59,11 +91,11 @@ class CfgAISkill {
 	aimingshake[] = {0, 0, 1, 1};
 	aimingspeed[] = {0, 0, 1, 1};
 	commanding[] = {0, 0, 1, 1};
-	courage[] = {0, 0, 1, 1};
+	courage[] = {0, 1, 1, 1};
 	endurance[] = {0, 0, 1, 1};
 	general[] = {0, 0, 1, 1};
 	reloadspeed[] = {0, 0, 1, 1};
-	spotdistance[] = {0, 0, 1, 1};
+	spotdistance[] = {0, 0, 1, 0.4};
 	spottime[] = {0, 0, 1, 1};
 };
 
@@ -74,6 +106,8 @@ class CfgInGameUI
         cueColor[] = {0,0,0,0};
     };
 	
+	delete MPTable;
+	/*
 	class MPTable
 	{
 		color[] = {0,0,0,0}; //{0.7,0.7,0.7,1};
@@ -144,6 +178,7 @@ class CfgInGameUI
 			};
 		};
 	};
+	*/
 };
 
 class RscPictureGUI
@@ -282,7 +317,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemTent","object"},
 			{"","military"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"Binocular","weapon"},
 			{"PartWoodPile","magazine"},
 			{"Skin_Camo1_DZ","magazine"},
@@ -377,11 +412,10 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"Winchester1866","weapon"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
-			{"MR43","weapon"},
-			{"TrapBear","magazine"}
+			{"MR43","weapon"}
 		};
 		itemChance[] =	{
 			0.06,
@@ -393,8 +427,7 @@ class CfgBuildingLoot {
 			0.03,
 			0.11,
 			0.17,
-			0.06,
-			0.01
+			0.06
 		};
 	};
 	class Supermarket: Default {
@@ -424,7 +457,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemTent","object"},
 			{"","food"},
 			{"","trash"},
-			{"Crossbow","weapon"},
+			{"Crossbow_DZ","weapon"},
 			{"Binocular","weapon"},
 			{"PartWoodPile","magazine"},
 			{"MR43","weapon"}
@@ -469,8 +502,7 @@ class CfgBuildingLoot {
 			{"BAF_AS50_scoped","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
-			//{"BAF_L85A2_RIS_CWS","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"BAF_L85A2_RIS_SUSAT","weapon"},
 			{"DMR","weapon"},
 			{"","military"},
 			{"","medical"},
@@ -496,7 +528,7 @@ class CfgBuildingLoot {
 			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
 			0.06,		//{"DMR","weapon"},
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
@@ -525,12 +557,9 @@ class CfgBuildingLoot {
 			{"bizon_silenced","weapon"},
 			{"M14_EP1","weapon"},
 			{"FN_FAL_ANPVS4","weapon"},
-//			{"M107_DZ","weapon"},
-//			{"BAF_AS50_scoped","weapon"},
 			{"Mk_48_DZ","weapon"},
 			{"M249_DZ","weapon"},
-			//{"BAF_L85A2_RIS_CWS","weapon"},
-			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"BAF_L85A2_RIS_SUSAT","weapon"},
 			{"DMR","weapon"},
 			{"","military"},
 			{"","medical"},
@@ -552,11 +581,9 @@ class CfgBuildingLoot {
 			0.05,		//{"bizon_silenced","weapon"},
 			0.05,		//{"M14_EP1","weapon"},
 			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-//			0.02,		//{"m107","weapon"},
-//			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
 			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
 			0.06,		//{"DMR","weapon"},
 			1,			//{"","military"},
 			0.5,		//{"","medical"},
@@ -639,7 +666,8 @@ class CfgBuildingLoot {
 			{"ItemEtool","weapon"},
 			{"ItemSandbag","magazine"},
 			{"Sa58P_EP1","weapon"},
-			{"Sa58V_EP1","weapon"}
+			{"Sa58V_EP1","weapon"},
+			{"BAF_L85A2_RIS_Holo","weapon"}
 		};
 		itemChance[] =	{
 			0.05,
@@ -680,7 +708,8 @@ class CfgBuildingLoot {
 			0.05,
 			0.02,
 			0.03,
-			0.03
+			0.03,
+			0.01
 		};
 	};
 	class MilitarySpecial: Default {
@@ -742,7 +771,7 @@ class CfgBuildingLoot {
 			{"PipeBomb","magazine"},
 			{"Sa58V_RCO_EP1","weapon"},
 			{"Sa58V_CCO_EP1","weapon"},
-			{"G36_C_SD_camo","weapon"},
+			//{"G36_C_SD_camo","weapon"},
 			{"M40A3","weapon"},
 			{"100Rnd_762x54_PK","magazine"}
 		};
@@ -795,7 +824,7 @@ class CfgBuildingLoot {
 			0.01, //PipeBomb
 			0.01, //Sa58V_RCO_EP1
 			0.01, //Sa58V_CCO_EP1
-			0.01, //{"G36_C_SD_camo","weapon"},
+			//0.01, //{"G36_C_SD_camo","weapon"},
 			0.02, // M40A3
 			0.01	//("100Rnd_762x54_PK","magazine"}
 		};

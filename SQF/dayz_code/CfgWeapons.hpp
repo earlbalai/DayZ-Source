@@ -9,5 +9,13 @@ class CfgWeapons {
 		class Library {
 			libtextdesc = "Debug Map - Admin use only";
 		};
-	};	
+	};
+	class Crossbow;
+	class Crossbow_DZ : Crossbow {
+		magazines[] =
+		{
+			"Quiver",
+			"BoltSteel"
+		};
+	};
 };

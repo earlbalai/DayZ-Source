@@ -43,6 +43,49 @@ class RscDisplayStart
 	};
 };
 
+class RscDisplayDebriefing: RscStandardDisplay
+{
+	class controls
+	{
+		delete Debriefing_MissionTitle;
+		delete CA_MissionTitle;
+		delete CA_TextVotingTimeLeft;
+		delete CA_MissionResult;
+		delete CA_DebriefingInfo;
+		delete CA_DebriefingTextGroup;
+		delete CA_DebriefingObjectivesGroup;
+		delete CA_DebriefingStatsGroup;
+		delete ButtonStatistics;
+		delete ButtonRetry;
+		//delete ButtonContinue;
+	};
+	class ControlsBackground
+	{
+		delete Mainback;
+	};
+};
+class RscDisplayMissionFail: RscStandardDisplay
+{
+	class controls
+	{
+		delete Debriefing_MissionTitle;
+		delete CA_MissionTitle;
+		delete CA_TextVotingTimeLeft;
+		delete CA_MissionResult;
+		delete CA_DebriefingInfo;
+		delete CA_DebriefingTextGroup;
+		delete CA_DebriefingObjectivesGroup;
+		delete CA_DebriefingStatsGroup;
+		delete BRetry;
+		//delete BAbort;
+	};
+	class ControlsBackground
+	{
+		delete Mainback;
+	};
+};
+
+
 class CA_TextLanguage;
 class RscXListBox;
 
@@ -87,7 +130,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "1.7.5.1";
+			text = "1.7.5.2-TestVersion5";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		class CA_TitleMainMenu;
@@ -171,7 +214,7 @@ class RscDisplayGear
 {
 	idd = 106;
 	enableDisplay = 1;
-	onUnload = "call player_gearSync;";
+	onUnload = "call player_gearSync; call dayz_forceSave;";
 	class controls
 	{
 		class CA_Filter_Icon: RscPicture

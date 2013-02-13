@@ -3,8 +3,9 @@ _agent = _this;
 _target = objNull;
 _targets = [];
 _targetDis = [];
-_range = 300;
+_range = 120;
 _manDis = 0;
+_refobj = vehicle player;
 
 _targets = _agent getVariable ["targets",[]];
 /*
@@ -28,26 +29,32 @@ if (count _targets == 0) then {
 	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],_range];
 	{
 		private["_dis"];
-		if (!(_x in _targets)) then {
-			_targets set [count _targets,_x];
+		if (!(_refobj in _targets)) then {
+			_targets set [count _targets, _refobj];
 			_targetDis set [count _targetDis,_dis];
 		};
 	} forEach _objects;
 };
 
 //Find best target
-if (count _targets > 0) then {
+if (count _targets > 0) then
+{
 	_man = _targets select 0;
 	_manDis = _man distance _agent;
-	//diag_log (str(_man) + str(_manDis));
 	{
 		private["_dis"];
 		_dis =  _x distance _agent;
-		if (_dis < _manDis) then {
+		if (_dis < _manDis) then
+		{
 			_man = _x;
 			_manDis = _dis;
 		};
-		if (_x isKindOf "SmokeShell") then {
+		if (_dis > _range) then
+		{
+			_targets = _targets - [_x];
+		};
+		if (_x isKindOf "SmokeShell") then
+		{
 			_man = _x;
 			_manDis = _dis;
 		};

@@ -4,17 +4,6 @@ dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _script = getText(missionConfigFile >> "onPauseScript");
 
-if (_script != "") then
-{
-	diag_log "MISSION: File Updated";
-} else {
-	while {true} do
-	{
-		diag_log "MISSION: File Needs Updating";
-		sleep 1;
-	};
-};
-
 if ((count playableUnits == 0) and !isDedicated) then {
 	isSinglePlayer = true;
 };
@@ -23,7 +12,10 @@ waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
 
-//Stream in objects
+if (_script != "") then
+{
+	diag_log "MISSION: File Updated";
+	//Stream in objects
 	/* STREAM OBJECTS */
 		//Send the key
 		_key = format["CHILD:302:%1:",dayZ_instance];
@@ -168,6 +160,13 @@ diag_log "HIVE: Starting";
 		} forEach _myArray;
 		
 	// # END OF STREAMING #
+} else {
+	while {true} do
+	{
+		diag_log "MISSION: File Needs Updating";
+		sleep 1;
+	};
+};
 
 //Set the Time
 	//Send request
@@ -177,7 +176,9 @@ diag_log "HIVE: Starting";
 	if(_outcome == "PASS") then {
 		_date = _result select 1; 
 		if(isDedicated) then {
-			["dayzSetDate",_date] call broadcastRpcCallAll;
+			//["dayzSetDate",_date] call broadcastRpcCallAll;
+			dayzSetDate = _date;
+			publicVariable "dayzSetDate";
 		};
 
 		diag_log ("HIVE: Local Time set to " + str(_date));

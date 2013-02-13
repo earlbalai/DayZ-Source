@@ -10,9 +10,15 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_btnAbort ctrlEnable false;
 		_timeOut = 0;
 		_timeMax = 30;
+		dayz_lastCheckBit = time;
 		
 		if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
 		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true;};
+		
+		//force gear save
+		if (time - dayz_lastCheckBit > 10) then {
+			call dayz_forceSave;
+		};			
 				
 		while {!isNull _display} do {
 			switch true do {
@@ -24,8 +30,6 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 					_btnAbort ctrlEnable false;
 					cutText [format ["Can Abort in %1", (_timeMax - _timeOut)], "PLAIN DOWN"];
 					//cutText [format[localize "str_abort_zedsclose",_text, "PLAIN DOWN"];
-					_timeOut = _timeOut + 1;
-
 				};
 				case (player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;
@@ -38,5 +42,6 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 				};
 			};
 			sleep 1;
+			_timeOut = _timeOut + 1;
 		};
 		cutText ["", "PLAIN DOWN"];
