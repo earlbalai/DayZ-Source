@@ -30,10 +30,8 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
 };
 
-if (_classname == "Quiver") then {
+if (_classname == "BoltSteel") then {
 	_curWeapon = currentWeapon player;
-
-
 	if ("Quiver" in magazines player) then
 	{
 		_ammo = player ammo "Crossbow_DZ";
@@ -44,21 +42,11 @@ if (_classname == "Quiver") then {
 			_ammo = player ammo "Crossbow_DZ";
 		} else {
 			_wasLoaded = true;
-
 		};
-
-
-
-
 		if (_ammo < getNumber (configFile >> "CfgMagazines" >> "Quiver" >> "count")) then {
 			player removeMagazines "Quiver";
 			player addMagazine ["Quiver", _ammo + 1];
-
-
 		} else {
-
-
-
 			_exit = true;
 		};
 	} else {
