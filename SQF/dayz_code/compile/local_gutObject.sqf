@@ -17,7 +17,9 @@ if (local _animalbody) then {
 		while {(count magazines _body >0) and (time - _timer < 300) } do { 
 			sleep 5;
 		}; 
-		["dayzHideBody",_body] call broadcastRpcCallAll;
+		//["dayzHideBody",_body] call broadcastRpcCallAll;
+		dayzHideBody = _item;
+		publicVariable "dayzHideBody";
 		sleep 5;
 		deleteVehicle _body;
 		true;

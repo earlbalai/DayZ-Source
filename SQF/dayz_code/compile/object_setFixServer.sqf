@@ -9,8 +9,12 @@ if (_selection != "" and local _unit) then {
 	//player sidechat str _damage;
 	_unit setVariable [_strH,_damage,true];
 	if (_damage == 0) then {
-		["dayzUpdateVehicle",[_unit,"repair"]] call callRpcProcedure;
+		//["dayzUpdateVehicle",[_unit,"repair"]] call callRpcProcedure;
+		dayzUpdateVehicle = [_unit,"repair"];
+		publicVariable "dayzUpdateVehicle";
 	} else {
-		["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
+		//["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
+		dayzUpdateVehicle = [_unit,"damage"];
+		publicVariable "dayzUpdateVehicle";
 	};
 };

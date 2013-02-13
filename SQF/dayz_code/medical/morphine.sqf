@@ -43,7 +43,9 @@ if (_finished) then {
 
 	player removeMagazine "ItemMorphine";
 
-	["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
+	//["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
+	usecMorphine = [_unit,player];
+	publicVariable "usecMorphine";
 } else {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;

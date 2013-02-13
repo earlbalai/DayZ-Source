@@ -1,4 +1,4 @@
-private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text"];
+private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_wasLoaded","_exit"];
 _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
@@ -8,6 +8,8 @@ _playerID = getPlayerUID player;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
 _holder setVariable["claimed",_playerID,true];
+
+if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
 player playActionNow "PutDown";
 if (_classname == "MeleeCrowbar") then {
@@ -28,8 +30,55 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
 };
 
-_config = (configFile >> _type >> _classname);
-_isOk = [player,_config] call BIS_fnc_invAdd;
+if (_classname == "Quiver") then {
+	_curWeapon = currentWeapon player;
+
+
+	if ("Quiver" in magazines player) then
+	{
+		_ammo = player ammo "Crossbow_DZ";
+
+		if (_ammo == 0) then {
+			player removeWeapon "Crossbow_DZ";
+			player addWeapon "Crossbow_DZ";
+			_ammo = player ammo "Crossbow_DZ";
+		} else {
+			_wasLoaded = true;
+
+		};
+
+
+
+
+		if (_ammo < getNumber (configFile >> "CfgMagazines" >> "Quiver" >> "count")) then {
+			player removeMagazines "Quiver";
+			player addMagazine ["Quiver", _ammo + 1];
+
+
+		} else {
+
+
+
+			_exit = true;
+		};
+	} else {
+		player addMagazine ["Quiver", 1];
+	};
+
+	if (_wasLoaded) then {
+		player removeWeapon "Crossbow_DZ";
+		player addWeapon "Crossbow_DZ";
+	};
+
+	player selectWeapon _curWeapon;	
+	_isOk = true;
+} else {
+	_config = (configFile >> _type >> _classname);
+	_isOk = [player,_config] call BIS_fnc_invAdd;
+};
+
+if (_exit) exitWith { cutText [localize "str_full_quiver", "PLAIN DOWN"] };
+
 if (_isOk) then {
 	deleteVehicle _holder;
 	if (_classname in ["MeleeHatchet","MeleeCrowbar"]) then {

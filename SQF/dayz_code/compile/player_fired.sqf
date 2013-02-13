@@ -52,13 +52,17 @@ if (_ammo isKindOf "SmokeShell") then {
 		if (_ammo isKindOf "RoadFlare") then {
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
-			["dayzRoadFlare",[_projectile,0]] call broadcastRpcCallAll;
+			//["dayzRoadFlare",[_projectile,0]] call broadcastRpcCallAll;
+			dayzRoadFlare = [_projectile,0];
+			publicVariable "dayzRoadFlare";
 
 			_id = _this spawn player_throwObject;
 		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
-			["dayzRoadFlare",[_projectile,1]] call broadcastRpcCallAll;
+			//["dayzRoadFlare",[_projectile,1]] call broadcastRpcCallAll;
+			dayzRoadFlare = [_projectile,1];
+			publicVariable "dayzRoadFlare";
 
 			_id = _this spawn player_throwObject;
 		};

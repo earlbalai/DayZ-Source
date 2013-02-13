@@ -9,6 +9,12 @@ _vUp = vectorUp _projectile;
 _endPos = getPosATL _projectile;
 _dir = 0;
 
+_ammo = player ammo "Crossbow_DZ";
+if (_ammo > 0) then {
+	player removeMagazines "Quiver";		
+	player addMagazine ["Quiver", _ammo];
+};
+
 while {alive _projectile} do {
 	_endPos = getPosATL _projectile;
 	_vUp = vectorUp _projectile;

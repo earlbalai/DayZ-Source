@@ -38,7 +38,9 @@ if (_hasrequireditem or _bypass) then {
 
 	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 
-	["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+	//["dayzPublishObj",[dayz_characterID,_object,[_dir,_location],_classname]] call callRpcProcedure;
+	dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
+	publicVariable "dayzPublishObj";
 
 	sleep 2;
 	player allowDamage true;

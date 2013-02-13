@@ -34,7 +34,9 @@ while {r_doLoop} do {
 r_doLoop = false;
 
 if (_finished) then {	
-	["usecBandage",[_unit,player]] call broadcastRpcCallAll;
+	//["usecBandage",[_unit,player]] call broadcastRpcCallAll;
+	usecBandage = [_unit,player];
+	publicVariable "usecBandage";
 		
 	if (_unit == player) then {
 		//Self Healing

@@ -179,9 +179,14 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
 	};
-class ItemWaterbottle;
+	class ItemWaterbottle;
 	class ItemWaterbottleBoiled : ItemWaterbottle {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
+	class BoltSteel;
+	class Quiver : BoltSteel
+	{
+		count = 4;
+	};
 };
