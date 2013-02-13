@@ -17,7 +17,7 @@ FIX DUE : 2013
 	* [NEW] - Started Update for Cherno intro. (map intro)
 	* [NEW] - Zed attraction this will draw zeds to lottier closer to players over time.
 	* [NEW] - BAF_L85A2_RIS_SUSAT - (Heilcrash - HeliCrash_No50s)
-	* [NEW] - Crowbow Quiver added - 4 arror mag size.
+	* [NEW] - Crossbow Quiver added - 4 arrow mag size.
 	
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
 	* [UPDATED] - loot weighted array generation fixed.
