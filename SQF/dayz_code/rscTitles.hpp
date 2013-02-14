@@ -199,26 +199,6 @@ class RscDisplayDiary {
 	};
 };
 
-class RscDisplayMPInterrupt : RscStandardDisplay {
-	movingEnable = 0;
-	enableSimulation = 1;	
-	class controlsBackground {
-		class Mainback : RscPicture {};
-	};
-	
-	class controls {
-		class Title {};
-		class B_Players {};
-		class B_Options {};
-		class B_Abort {};
-		class B_Retry {};
-		class B_Load {};
-		class B_Save {};
-		class B_Continue {};
-		class B_Diary {};
-	};
-};	
-
 class RscButtonActionMenu: RscButton
 {
 	SizeEx = 0.02674;
