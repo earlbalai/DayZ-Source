@@ -220,8 +220,12 @@ if (!isDedicated) then {
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
 			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
-				dayz_lastCheckBit = time;
-				call player_CombatRoll;
+				_inBuilding = [player] call fnc_isInsideBuilding;
+				_nearbyObjects = nearestObjects[getPosATL player, ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"], 5];
+				if (!_inBuilding and (count _nearbyObjects == 0)) then {
+					dayz_lastCheckBit = time;
+					call player_CombatRoll;
+				};
 			};
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
