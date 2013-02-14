@@ -1696,13 +1696,13 @@ class CfgVehicles {
 		};
 	};
 	class WeaponHolderBase;
-	class WoodernArrowF : WeaponHolderBase {
+	class WoodenArrowF : WeaponHolderBase {
 		scope = public;
-		displayName = "WoodernArrowF";
+		displayName = "WoodenArrowF";
 		model = "\dayz_weapons\models\bolt";
 		
 		class eventHandlers {
-			init = "[(_this select 0),'cfgMagazines','WoodernArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 };
