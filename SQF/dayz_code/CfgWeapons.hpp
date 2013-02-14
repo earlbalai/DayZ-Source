@@ -12,6 +12,7 @@ class CfgWeapons {
 	};
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
+		autoreload = 1;
 		magazines[] =
 		{
 			"Quiver",
