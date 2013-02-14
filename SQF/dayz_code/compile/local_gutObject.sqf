@@ -18,7 +18,7 @@ if (local _animalbody) then {
 			sleep 5;
 		}; 
 		//["dayzHideBody",_body] call broadcastRpcCallAll;
-		dayzHideBody = _item;
+		dayzHideBody = _body;
 		publicVariable "dayzHideBody";
 		sleep 5;
 		deleteVehicle _body;
