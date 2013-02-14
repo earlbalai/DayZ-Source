@@ -1,7 +1,7 @@
 FIX DUE : 2013
 
 	Community Notes: 
-		* DayZ 1.7.5.2
+		* DayZ 1.7.6
 		
 	Affected addons:
 		* dayz_code 
@@ -17,7 +17,7 @@ FIX DUE : 2013
 	* [NEW] - Started Update for Cherno intro. (map intro)
 	* [NEW] - Zed attraction this will draw zeds to lottier closer to players over time.
 	* [NEW] - BAF_L85A2_RIS_SUSAT - (Heilcrash - HeliCrash_No50s)
-	* [NEW] - Crossbow Quiver added - 4 arrow mag size.
+	* [NEW] - Crossbow Quiver added - 6 arrow mag size.
 	
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
 	* [UPDATED] - loot weighted array generation fixed.
@@ -26,7 +26,7 @@ FIX DUE : 2013
 	* [UPDATED] - Max Range of targats 120 meters down from 300 meters. (this should help long range agro, This is zeds max target range).
 	* [UPDATED] - AI behavour updated to try making them zigzag less.
 	* [UPDATED] - Added push bikes to the zeds pull from vehilce list.
-	* [UPDATED] - Epeen key moved to Numpad Insert
+	* [UPDATED] - Epeen key moved to Custom Controls - Use action key 20 (No default key needs setting up)
 	* [UPDATED] - Zeds Targets array modified 
 	* [UPDATED] - Weapon fire sounds divided by 2 (This will help us settle zeds hearing a little more) (107_DZ Zed pull range 450 meters / 2 = 225 meters (capped 120 meters aboue for now))
 
@@ -38,8 +38,14 @@ FIX DUE : 2013
 	* [FIXED] - Updated refuel to attract zeds. (3-6 Meters)
 	* [FIXED] - EH's updated to work with bettleye filters.
 	* [FIXED] - Ammo counts now fixed on dc.
-	* [FIXED] - Zeds will no longer magically hit players just becuase there within 3 meters.
+	* [FIXED] - Zeds will no longer magically hit players just becuase there within 3 meters. (	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player))
 	* [FIXED] - Fixed some base class's for vehicles reporting issues with crew
+	* [FIXED] - You can now logout with a broke leg.
+	
+	Combat Roll
+	* [Fixed] - No longer posiable to combat roll with broken leg
+	* [] - No longer possiable to combat roll over player created objects (tents, sandbags so on)
+	* [] - No longer combat roll in buildings.
 	
 	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player)
 	
