@@ -20,9 +20,9 @@
 			<French>UNE PRODUCTION USECFORCE</French>
 		</Key>
 		<Key ID="STR_INTRO_3">	<!-- use \n for linebreak (have them regularly!) -->
-			<Original>On 12 March 2013, a prion disease\nand spreads among the worlds population\ntriggering a global pandemic</Original>
-			<English>On 12 March 2013, a prion disease\nand spreads among the worlds population\ntriggering a global pandemic</English>
-			<German>Am 12. März 2013 breitet sich\neine Prionenkrankheit unter der Weltbevölkerung aus\nund löst eine globale Pandemie aus</German>
+			<Original>On 12 March 2013, a prion disease\n spreads among the worlds population\ntriggering a global pandemic</Original>
+			<English>On 12 March 2013, a prion disease\n spreads among the worlds population\ntriggering a global pandemic</English>
+			<German>Am 12. März 2013 breitet sich\neine Prionenkrankheit unter der Weltbevölkerung aus\nund verursacht eine globale Pandemie</German>
 			<Russian>12 марта 2013 г., прионное заболевание\nраспространяется среди населения всего земного шара,\nвызывая общую пандемию</Russian>
 			<Spanish>El 12 de Marzo de 2012, una enfermedad priónica\nse propaga entre la población mundial\ndesencadenando una pandemia global</Spanish>
 			<Dutch>Op 12 maart 2013 brak er een\nprionziekte uit onder de wereldbevolking\nmet als gevolg een\nwereldwijde pandemie</Dutch>
@@ -31,7 +31,7 @@
 		<Key ID="STR_INTRO_4">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>The disease causes proteins in the brain to be replaced with prions ceasing regular function</Original>
 			<English>The disease causes proteins in the brain to be replaced with prions ceasing regular function</English>
-			<German>Durch die Krankheit werden Proteine im Gehirn durch Prionen ersetzt, wodurch das Gehirn aussetzt</German>
+			<German>Durch die Krankheit werden Proteine im Gehirn durch Prionen ersetzt, normale Gehirnfunktionen werden ausgeschaltet</German>
 			<Russian>Болезнь вызывает изменения протеинов головного мозга, заменяя их прионами, влияющими на основные функции</Russian>
 			<Spanish>La enfermedad provoca que las proteinas del cerebro sean reemplazadas con priones dejando de funcionar regularmente</Spanish>
 			<Dutch>De ziekte vervangt proteïnen in het brein met prions, waardoor het brein niet meer naar behoren functioneert</Dutch>
@@ -58,7 +58,7 @@
 		<Key ID="STR_INTRO_7">	
 			<Original>Some survive with the disease in a chronic state.\nLacking regular brain function, they are scarely human. They are unable to communicate,\ndriven by insatiable desire for violence, and attracted to the scent of those uninfected</Original>
 			<English>Some survive with the disease in a chronic state.\nLacking regular brain function, they are scarely human. They are unable to communicate,\ndriven by insatiable desire for violence, and attracted to the scent of those uninfected</English>
-			<German>Einige überleben, mit der Krankheit in einem chronischen Zustand.\nOhne normale Gehirnaktivität sind sie kaum als Menschen zu bezeichnen. Sie können nicht kommunizieren.\nSie werden von einem unstillbaren Durst nach Gewalt getrieben und der Geruch der uninfizierten zieht sie an.</German>
+			<German>Einige überleben mit der Krankheit in einem chronischen Zustand.\nOhne normale Gehirnaktivität sind sie kaum als Menschen zu bezeichnen. Sie können nicht kommunizieren,\nwerden von einem unstillbaren Verlangen nach Gewalt getrieben und der Geruch der uninfizierten zieht sie an.</German>
 			<Russian>Некоторые выживают с заболеванием в хронической стадии.\nНо в виду отсутствия основных функций головного мозга, они вряд ли остались людьми. Они не в состоянии общаться,\nдвижимые ненасытной жаждой насилия, и влекомые запахом неинфицированных</Russian>
 			<Spanish>Algunos sobreviven a la enfermedad en un estado crónico.\nCarecen de una función cerebral normal, son humanos aterradores. No son capaces de comunicarse,\nimpulsados por un deseo insaciable de violencia y atraidos por el olor de los no infectados.</Spanish>
 			<Dutch>Enkelen overleven de ziekte in een chronische staat.\nZonder enige reguliere breinactiviteit zijn ze niet mens te noemen. Ze kunnen niet communiceren,\n en worden gedreven door een onlesbaar verlangen naar geweld, en aangetrokken door de geur van niet-geïnfecteerde overlevenden</Dutch>
@@ -67,7 +67,7 @@
 		<Key ID="STR_INTRO_8">	
 			<Original>Society crumbles as the pandemic spreads rapidly</Original>
 			<English>Society crumbles as the pandemic spreads rapidly</English>
-			<German>Die Gesellschaft bricht durch die Verbreitung der Pandemie zusammen</German>
+			<German>Die Gesellschaft bricht zusammen während die Krankheit sich rasch ausbreitet</German>
 			<Russian>Общество распадается с быстрым распространением пандемии.</Russian>
 			<Spanish>La sociedad se desmorona a la vez que la pandemia se propaga rápidamente.</Spanish>
 			<Dutch>De samenleving valt uit elkaar, en de pandemie verspreidt zich snel</Dutch>
@@ -76,7 +76,7 @@
 		<Key ID="STR_INTRO_9">	
 			<Original>You are one of the 2% who are not infected yet</Original>
 			<English>You are one of the 2% who are not infected yet</English>
-			<German>Du bist einer der 2% noch nicht infizierten Menschen</German>
+			<German>Sie sind einer der 2% noch nicht infizierten Menschen</German>
 			<Russian>Вы один из 2%, которые еще не инфицированы</Russian>
 			<Spanish>Eres parte del 2% que aún no esta infectado.</Spanish>
 			<Dutch>Jij bent één van de 2% die nog niet is geïnfecteerd</Dutch>
@@ -85,7 +85,7 @@
 		<Key ID="STR_INTRO_10">	
 			<Original>THIS IS YOUR STORY</Original>
 			<English>THIS IS YOUR STORY</English>
-			<German>DIES IST DEINE GESCHICHTE</German>
+			<German>DIES IST IHRE GESCHICHTE</German>
 			<Russian>ЭТО ВАША ИСТОРИЯ</Russian>
 			<Spanish>ESTA ES TU HISTORIA</Spanish>
 			<Dutch>DIT IS JOUW VERHAAL</Dutch>
@@ -151,7 +151,7 @@
 		<Key ID="STR_DAYZ_CODE_1">	
 			<Original>Take %1</Original>
 			<English>Take %1</English> 
-			<German>%1 nehmen</German>
+			<German>%1 aufnehmen</German>
 			<Russian>Взять %1</Russian>
 			<Spanish>Tomar %1</Spanish>
 			<Dutch>Neem %1</Dutch>
@@ -160,7 +160,7 @@
 		<Key ID="STR_DAYZ_CODE_2">	
 			<Original>You do not have enough room in your inventory</Original>
 			<English>You do not have enough room in your inventory</English>
-			<German>Du hast nicht genug Platz in deinem Inventar</German>
+			<German>Sie haben nicht genug Platz in Ihrem Inventar</German>
 			<Russian>У вас не хватает места в инвентаре.</Russian>
 			<Spanish>No tienes espacio suficiente en tu inventario.</Spanish>
 			<Dutch>Je hebt niet voldoende ruimte in je inventaris</Dutch>
@@ -180,7 +180,7 @@
 		<Key ID="str_success_cooked">
 			<Original>You have cooked %1 %2</Original>
 			<English>You have cooked %1 %2</English>
-			<German>Du hast %1 %2 gekocht</German>
+			<German>Sie haben %1 %2 gekocht</German>
 			<Russian>Вы приготовили: %1 %2</Russian>
 			<Spanish>Cocinaste %1 %2</Spanish>
 			<Dutch>Je hebt %1 %2 gekookt</Dutch>
@@ -189,7 +189,7 @@
 		<Key ID="str_success_tent_pack">
 			<Original>Your tent has been packed</Original>
 			<English>Your tent has been packed</English>
-			<German>Du hast dein Zelt eingepackt</German>
+			<German>Ihr Zelt wurde verpackt</German>
 			<Russian>Ваша палатка свернута.</Russian>
 			<Spanish>Su carpa se ha embalado</Spanish>
 			<Dutch>Je tent is ingepakt</Dutch>
@@ -198,7 +198,7 @@
 		<Key ID="str_fail_tent_pack">
 			<Original>You cannot pack this tent, it is not yours</Original>
 			<English>You cannot pack this tent, it is not yours</English>
-			<German>Du kannst dieses Zelt nicht einpacken, da es nicht deins ist</German>
+			<German>Sie können dieses Zelt nicht verpacken, da es nicht Ihnen gehört</German>
 			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
 			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
 			<Dutch>Je kunt deze tent niet inpakken, hij is niet van jou</Dutch>
@@ -207,7 +207,7 @@
 		<Key ID="str_success_tent_pitch">
 			<Original>You have pitched your tent</Original>
 			<English>You have pitched your tent</English>
-			<German>Du hast dein Zelt aufgebaut</German>
+			<German>Sie haben Ihr Zelt aufgebaut</German>
 			<Russian>Вы установили палатку.</Russian>
 			<Spanish>Asentaste tu carpa.</Spanish>
 			<Dutch>Je hebt je tent opgezet</Dutch>
@@ -216,7 +216,7 @@
 		<Key ID="str_fail_tent_pitch">
 			<Original>You cannot place a Tent here. The area must be flat, and free of other objects</Original>
 			<English>You cannot place a Tent here. The area must be flat, and free of other objects</English>
-			<German>Du kannst hier kein Zelt aufbauen. Der Untergrund muss flach und frei sein</German>
+			<German>Sie können hier kein Zelt aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
@@ -225,7 +225,7 @@
 		<Key ID="str_player_consumed">
 			<Original>You have consumed a %1</Original>
 			<English>You have consumed a %1</English>
-			<German>Du hast ein(e) %1 verbraucht</German>
+			<German>Sie haben ein(e) %1 verbraucht</German>
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
@@ -234,7 +234,7 @@
 		<Key ID="str_fireplace_01">
 			<Original>You have created a fireplace</Original>
 			<English>You have created a fireplace</English>
-			<German>Du hast ein Feuer gemacht</German>
+			<German>Sie haben eine Feuerstelle angelegt</German>
 			<Russian>Вы развели костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
 			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
@@ -243,7 +243,7 @@
 		<Key ID="str_build_01">
 			<Original>You have constructed a %1</Original>
 			<English>You have constructed a %1</English>
-			<German>Du hast eine(n) %1 gebaut</German>
+			<German>Sie haben eine(n) %1 aufgebaut</German>
 			<Russian>Вы построили %1.</Russian>
 			<Spanish>Construiste un %1</Spanish>
 			<Dutch>Je hebt een %1 opgebouwd</Dutch>
@@ -252,7 +252,7 @@
 		<Key ID="str_build_failed_01">
 			<Original>You have failed to build %1.</Original>
 			<English>You have failed to build %1.</English>
-			<German>You have failed to build %1.</German>
+			<German>Aufbau von %1 gescheitert.</German>
 			<Russian>You have failed to build %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
 			<Dutch>You have failed to build %1.</Dutch>
@@ -261,7 +261,7 @@
 		<Key ID="str_fireplace_02">
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
-			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei sein</German>
+			<German>Sie können hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
@@ -270,7 +270,7 @@
 		<Key ID="str_fireplace_removed">
 			<Original>Fireplace has been removed</Original>
 			<English>Fireplace has been removed</English>
-			<German>Die Feuerstelle wurde zerstört</German>
+			<German>Die Feuerstelle wurde entfernt</German>
 			<Russian>Костер убран.</Russian>
 			<Spanish>La fogata fue removida.</Spanish>
 			<Dutch>Het kampvuur is verwijderd</Dutch>
@@ -279,7 +279,7 @@
 		<Key ID="str_success_gutted_animal">
 			<Original>%1 has been gutted, %2 meat steaks now on the carcass</Original>
 			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
-			<German>Du hast %1 ausgenommen, %2 Stücke Fleisch sind im Kadaver</German>
+			<German>%1 wurde ausgeweidet, %2 Stücke Fleisch befinden sich nun im Kadaver</German>
 			<Russian>Вы разделали: %1. Доступно кусков мяса: %2</Russian>
 			<Spanish>Un %1 fue achurado, dejando %2 trozos de carne en el cuerpo.</Spanish>
 			<Dutch>Je hebt %1 opengesneden. Er bevinden zich %2 biefstukken op het karkas</Dutch>
@@ -288,7 +288,7 @@
 		<Key ID="str_medical_healing">
 			<Original>You are being healed</Original>
 			<English>You are being healed</English>
-			<German>Du wirst geheilt</German>
+			<German>Sie werden geheilt</German>
 			<Russian>Вас лечат.</Russian>
 			<Spanish>Fuiste curado.</Spanish>
 			<Dutch>Je wordt genezen</Dutch>
@@ -297,7 +297,7 @@
 		<Key ID="str_player_01">
 			<Original>You have filled %1 bottles with water</Original>
 			<English>You have filled %1 bottles with water</English>
-			<German>Du hast %1 Flasche(n) mit Wasser gefüllt</German>
+			<German>Sie haben %1 Flasche(n) mit Wasser gefüllt</German>
 			<Russian>Наполнено фляжек с водой: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
@@ -306,7 +306,7 @@
 		<Key ID="str_player_02">
 			<Original>You have no empty water bottles</Original>
 			<English>You have no empty water bottles</English>
-			<German>Du hast keine leeren Wasserflaschen</German>
+			<German>Sie haben keine leeren Wasserflaschen</German>
 			<Russian>У вас нет пустых фляжек.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
 			<Dutch>Je hebt geen lege waterflessen</Dutch>
@@ -315,7 +315,7 @@
 		<Key ID="str_player_03">
 			<Original>You need a %1 to repair this</Original>
 			<English>You need a %1 to repair this</English>
-			<German>Du brauchst ein(e) %1, um das zu reparieren</German>
+			<German>Sie benötigen ein(e) %1, um das zu reparieren</German>
 			<Russian>Чтобы это починить, вам нужно: %1</Russian>
 			<Spanish>Necesitas %1 para reparar esto.</Spanish>
 			<Dutch>Je hebt een %1 nodig om dit te repareren</Dutch>
@@ -324,7 +324,7 @@
 		<Key ID="str_player_04">
 			<Original>You have successfully attached the %1 on the %2</Original>
 			<English>You have successfully attached the %1 on the %2</English>
-			<German>Du hast erfolgreich ein(e) %1 an %2 angebracht</German>
+			<German>Sie haben erfolgreich ein(e) %1 an %2 angebracht</German>
 			<Russian>Вы успешно установили %1 на %2.</Russian>
 			<Spanish>Fijaste correctamente el %1 al %2</Spanish>
 			<Dutch>Je hebt met succes een %1 geplaatst op de %2</Dutch>
@@ -351,7 +351,7 @@
 		<Key ID="str_player_07">
 			<Original>You last ate %2 minutes, and drank %3 minutes ago</Original>
 			<English>You last ate %2 minutes, and drank %3 minutes ago</English>
-			<German>Du hast zuletzt vor %2 Minuten gegessen und vor %3 Minuten getrunken</German>
+			<German>Sie haben zuletzt vor %2 Minuten gegessen und vor %3 Minuten getrunken</German>
 			<Russian>Последний раз вы ели %2 мин. назад, пили - %3 мин. назад.</Russian>
 			<Spanish>Tu última comida fue hace %2 minutos y bebida hace %3 minutos</Spanish>
 			<Dutch>Je hebt %2 minuten geleden gegeten en %3 minuten geleden gedronken</Dutch>
@@ -360,7 +360,7 @@
 		<Key ID="str_player_08">
 			<Original>%1 Food and %2 water was used since your last login</Original>
 			<English>%1 Food and %2 water was used since your last login</English>
-			<German>Seit deinem letzten Login hast du %1 Einheiten Essen und %2 Flaschen Wasser verbraucht</German>
+			<German>Seit Ihrem letzten Login haben Sie %1 Einheiten Essen und %2 Flaschen Wasser verbraucht</German>
 			<Russian>С момента вашего последнего входа в игру вы съели еды: %1 и выпили воды: %2</Russian>
 			<Spanish>%1 Comidas y %2 Aguas fueron usadas desde tu ultimo ingreso</Spanish>
 			<Dutch>Sinds de laatste keer dat je hebt ingelogd heb je %1 voedsel en %2 water genuttigd</Dutch>
@@ -369,7 +369,7 @@
 		<Key ID="str_player_09">
 			<Original>You have filled %1 jerrycans with fuel</Original>
 			<English>You have filled %1 jerrycans with fuel</English>
-			<German>Du hast %1 Kanister mit Treibstoff gefüllt</German>
+			<German>Sie haben %1 Kanister mit Treibstoff gefüllt</German>
 			<Russian>Наполнено топливом канистр: %1</Russian>
 			<Spanish>Llenaste %2 bidones con combustible</Spanish>
 			<Dutch>Je hebt %1 jerrycans met brandstof gevuld</Dutch>
@@ -378,7 +378,7 @@
 		<Key ID="str_player_10">
 			<Original>You have no empty jerry cans</Original>
 			<English>You have no empty jerry cans</English>
-			<German>Du hast keine leeren Kanister</German>
+			<German>Sie haben keine leeren Kanister</German>
 			<Russian>У вас нет пустых канистр.</Russian>
 			<Spanish>No tienes bidones vacíos</Spanish>
 			<Dutch>Je hebt geen lege jerrycans</Dutch>
@@ -387,7 +387,7 @@
 		<Key ID="str_player_11">
 			<Original>You need to sit in the driver seat before you can repair this vehicle</Original>
 			<English>You need to sit in the driver seat before you can repair this vehicle</English>
-			<German>Sie müssen im Fahrersitz sitzen um dieses Fahrzeug reparieren zu können.</German>
+			<German>Sie müssen sich auf den Fahrersitz setzen bevor Sie dieses Fahrzeug reparieren können</German>
 			<Russian>Для ремонта требуется занять место водителя хотя бы раз.</Russian>
 			<Spanish>Necesitas sentarte en el asiento del conductor antes de arreglar este vehículo.</Spanish>
 			<Dutch>Je moet in de bestuurdersstoel zitten om dit voertuig te repareren</Dutch>
@@ -396,7 +396,7 @@
 		<Key ID="str_player_12">
 			<Original>Please go to Player Selection Screen to continue in game</Original>
 			<English>Please go to Player Selection Screen to continue in game</English>
-			<German>Bitte gehe in die Rollenverteilung um weiterspielen zu können</German>
+			<German>Bitte gehen Sie in die Spielerauswahl um weiterspielen zu können</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока, чтобы продолжить игру</Russian>
 			<Spanish>Por favor ve a la Pantalla de Selección de Jugador para continuar en el juego.</Spanish>
 			<Dutch>Ga alsjeblieft naar het rollenverdelingsscherm on verder te spelen</Dutch>
@@ -405,7 +405,7 @@
 		<Key ID="str_player_13">
 			<Original>Waiting for character to create</Original>
 			<English>Waiting for character to create</English>
-			<German>Warte darauf, einen neuen Charakter um zu erstellen</German>
+			<German>Warten auf Charaktererstellung</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
 			<Dutch>Wachten tot het karakter is aangemaakt</Dutch>
@@ -414,7 +414,7 @@
 		<Key ID="str_player_14">
 			<Original>Retrying to Authenticate</Original>
 			<English>Retrying to Authenticate</English>
-			<German>Versuche erneut zu Authentifizieren</German>
+			<German>Erneuter Authentifizierungsversuch</German>
 			<Russian>Попытка аутентификации</Russian>
 			<Spanish>Volviendo a Autentificar</Spanish>
 			<Dutch>Authenticatie opnieuw proberen</Dutch>
@@ -423,7 +423,7 @@
 		<Key ID="str_player_15">
 			<Original>Requesting Authentication</Original>
 			<English>Requesting Authentication</English>
-			<German>Empfange Authentifizierung</German>
+			<German>Authentifizierung beantragt</German>
 			<Russian>Запрос аутентификации</Russian>
 			<Spanish>Solicitando Autentificación</Spanish>
 			<Dutch>Authenticatie aan het aanvragen</Dutch>
@@ -441,7 +441,7 @@
 		<Key ID="str_player_17">
 			<Original>Server responded, creating character</Original>
 			<English>Server responded, creating character</English>
-			<German>Server antwortete, erstelle Charakter</German>
+			<German>Server antwortet, erstelle Charakter</German>
 			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
 			<Spanish>El servidor respondió, creando personaje</Spanish>
 			<Dutch>Server heeft geantwoord, karakter aan het maken</Dutch>
@@ -450,7 +450,7 @@
 		<Key ID="str_player_18">
 			<Original>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</Original>
 			<English>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</English>
-			<German>Du hast eine falsche Version von DAYZ_CODE, bitte lade dir die neuste Version von www.dayzmod.com/downloads runter </German>
+			<German>Sie haben eine falsche Version von DAYZ_CODE, bitte laden Sie sich neuste Version von www.dayzmod.com/downloads runter </German>
 			<Russian>Вы используете неверную версию DAYZ_CODE, пожалуйста, скачайте данный файл с dayzmod.com/downloads (Ваша версия %1, версия на сервере %2)</Russian>
 			<Spanish>Estas ejecutando una versión incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzmod.com/downloads (Estas ejecutando la versión %1 y el servidor %2)</Spanish>
 			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzmod.com/downloads (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
@@ -459,7 +459,7 @@
     <Key ID="str_player_20">
       <Original>You must be near a water-source such as a pond or well to refill your water bottles</Original>
       <English>You must be near a water-source such as a pond or well to refill your water bottles</English>
-      <German>Du musst in der nähe einer Wasserquelle wie z.B. einem Teich sein um deine Wasserflasche zu füllen</German>
+      <German>Sie müssen in der nähe einer Wasserquelle wie einem Teich oder Brunnen sein um Wasserflaschen zu füllen</German>
       <Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
       <Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
       <Dutch>Je moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
@@ -468,7 +468,7 @@
       <Key ID="str_player_21">
         <Original>You cannot do this while you are on a ladder</Original>
         <English>You cannot do this while you are on a ladder</English>
-        <German>Du kannst das nicht tun, während du an einer Leiter bist</German>
+        <German>Sie können dies nicht tun, während Sie an einer Leiter sind</German>
         <Russian>Вы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
         <Spanish>No puedes hacer esto mientras estás en una escalera</Spanish>
         <Dutch>Je kunt deze actie op een ladder niet uitvoeren</Dutch>
@@ -477,7 +477,7 @@
       <Key ID="str_player_22">
         <Original>You must have wood in your inventory in order to create a fireplace</Original>
         <English>You must have wood in your inventory in order to create a fireplace</English>
-        <German>Du brauchst Holz in deinem Inventar, um ein Feuer zu machen</German>
+        <German>Sie benötigen Holz im Inventar, um eine Feuerstelle anzulegen</German>
         <Russian>Для разведения костра у вас должны быть дрова.</Russian>
         <Spanish>Debes tener leña en tu inventario para poder crear una fogata.</Spanish>
         <Dutch>Je moet hout in je inventaris hebben om een kampvuur te maken</Dutch>
@@ -486,7 +486,7 @@
       <Key ID="str_player_23">
         <Original>You must be in a forest and close to a tree to harvest wood.</Original>
         <English>You must be in a forest and close to a tree to harvest wood.</English>
-        <German>Sie müssen in einem Wald und nah an einem Baum sein, um Holz zu hacken.</German>
+        <German>Sie müssen in einem Wald in der Nähe eines Baums sein, um Holz zu sammeln.</German>
         <Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
         <Spanish>Debes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
         <Dutch>Je moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>
@@ -513,7 +513,7 @@
       <Key ID="str_player_26">
         <Original>You cannot do this while you are in the water.</Original>
         <English>You cannot do this while you are in the water.</English>
-        <German>Sie können dies nicht tun, während Sie im Wasser sind.</German>
+        <German>Sie können dies nicht tun, während Sie sich im Wasser befinden..</German>
         <Russian>Это действие невозможно пока вы в воде.</Russian>
         <Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
         <Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
@@ -522,7 +522,7 @@
       <Key ID="str_player_27">
         <Original>You have applied a heatpack to your body successfully.</Original>
         <English>You have applied a heatpack to your body successfully.</English>
-        <German>Sie haben das Heatpack erfolgreich appliziert</German>
+        <German>Sie haben ein Wärmpflaster an Ihrem Körper angebracht.</German>
         <Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
         <Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
         <Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
@@ -531,7 +531,7 @@
       <Key ID="str_player_28">
         <Original>You cannot reload that combination, you need %1 %2 magazines.</Original>
         <English>You cannot reload that combination, you need %1 %2 magazines.</English>
-        <German>Sie können diese Munition nicht kombinieren, sie brauchen %1 %2 Magazine.</German>
+        <German>Sie können diese Kombination nicht nachladen, Sie benötigen %1 %2 Magazine.</German>
         <Russian>Вы не можете перезарядить эту комбинацию. Вам необходимо иметь магазины %1 %2.</Russian>
         <Spanish>No puedes recargar esa combinación, necesitas %1 cargadores de %2</Spanish>
         <Dutch>Je kan die combinatie niet herladen, je hebt %1 %2 magazijnen nodig.</Dutch>
@@ -540,7 +540,7 @@
       <Key ID="str_player_29">
         <Original>You have successfully reloaded %1 %2 magazines.</Original>
         <English>You have successfully reloaded %1 %2 magazines.</English>
-        <German>Sie haben erfolgreich %1 %2 Magazine hergestellt.</German>
+        <German>Sie haben erfolgreich %1 %2 Magazine nachgeladen.</German>
         <Russian>Магазины %1 %2 перезаряжены.</Russian>
         <Spanish>Recargaste correctamente %1 cargadores de %2.</Spanish>
         <Dutch>Je hebt met succes %1 %2 magazijnen herladen.</Dutch>
@@ -558,7 +558,7 @@
       <Key ID="str_player_31">
         <Original>%1 must be in your main inventory to %2 it.</Original>
         <English>%1 must be in your main inventory to %2 it.</English>
-        <German>%1 must be in your main inventory to %2 it.</German>
+        <German>%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
         <Russian>Предмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
         <Spanish>%1 debe estar en tu inventario principal para: %2</Spanish>
         <Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
@@ -567,7 +567,7 @@
       <Key ID="str_player_beinglooted">
         <Original>%1 is already being looted by someone else.</Original>
         <English>%1 is already being looted by someone else.</English>
-        <German>%1 wurde von einer anderen Person gelooted.</German>
+        <German>%1 wird bereits von jemand anderem geplündert.</German>
         <Russian>%1 уже кто-то обыскивает.</Russian>
         <Spanish>%1 ya fue saqueado por alguien más.</Spanish>
         <Dutch>%1 wordt al door iemand anders opgepakt.</Dutch>
@@ -576,7 +576,7 @@
       <Key ID="str_player_beingpacked">
         <Original>That tent is already being packed.</Original>
         <English>That tent is already being packed.</English>
-        <German>Dieses Zelt wurde bereits eingepackt.</German>
+        <German>Dieses Zelt wurde bereits vergepackt.</German>
         <Russian>Эту палатку уже упаковывают.</Russian>
         <Spanish>Esta carpa ya fue embalada.</Spanish>
         <Dutch>Die tent wordt al ingepakt.</Dutch>
@@ -585,7 +585,7 @@
 		<Key ID="str_player_studybody">
 			<Original>His name was %1, it appears he died from %2</Original>
 			<English>His name was %1, it appears he died from %2</English>
-			<German>Sein Name war %1, er ist durch %2 gestorben</German>
+			<German>Sein Name war %1, anscheinend starb er %2</German>
 			<Russian>Его звали %1, похоже что он умер от %2</Russian>
 			<Spanish>Su nombre era %1, y aparentemente murió por %2</Spanish>
 			<Dutch>Zijn naam was %1, het lijkt dat hij is gestorven aan %2</Dutch>
@@ -594,7 +594,7 @@
 		<Key ID="str_death_shothead">
 			<Original>a gunshot to the head</Original>
 			<English>a gunshot to the head</English>
-			<German>einen Schuss in den Kopf</German>
+			<German>durch einen Schuss in den Kopf</German>
 			<Russian>попадания пули в голову</Russian>
 			<Spanish>un disparo en la cabeza</Spanish>
 			<Dutch>een kogel in het hoofd</Dutch>
@@ -603,7 +603,7 @@
 		<Key ID="str_death_shotheavy">
 			<Original>a high calibre gunshot</Original>
 			<English>a high calibre gunshot</English>
-			<German>eine Großkalibrige Schrotflinte</German>
+			<German>an einer großkalibrigen Schusswunde</German>
 			<Russian>попадания пули большого калибра</Russian>
 			<Spanish>un disparo de alto calibre</Spanish>
 			<Dutch>een schot van hoog kaliber</Dutch>
@@ -612,7 +612,7 @@
 		<Key ID="str_death_bled">
 			<Original>blood loss</Original>
 			<English>blood loss</English>
-			<German>hohen Blutverlust</German>
+			<German>durch hohen Blutverlust</German>
 			<Russian>потери крови</Russian>
 			<Spanish>perdida de sangre</Spanish>
 			<Dutch>bloedverlies</Dutch>
@@ -621,7 +621,7 @@
 		<Key ID="str_death_dehyd">
 			<Original>dehydration</Original>
 			<English>dehydration</English>
-			<German>dehydration</German>
+			<German>an Dehydrierung</German>
 			<Russian>обезвоживания</Russian>
 			<Spanish>deshidratación</Spanish>
 			<Dutch>uitdroging</Dutch>
@@ -630,7 +630,7 @@
 		<Key ID="str_death_starve">
 			<Original>starvation</Original>
 			<English>starvation</English>
-			<German>verhungern</German>
+			<German>durch Verhungern</German>
 			<Russian>голода</Russian>
 			<Spanish>falta de comida</Spanish>
 			<Dutch>uithongering</Dutch>
@@ -639,7 +639,7 @@
 		<Key ID="str_death_combatlog">
 			<Original>combat logging</Original>
 			<English>combat logging</English>
-			<German>combat logging</German>
+			<German>weil er im Kampf ausgeloggt ist</German>
 			<Russian>выхода из игры в режиме боя</Russian>
 			<Spanish>huir de combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
@@ -648,7 +648,7 @@
 		<Key ID="str_death_unknown">
 			<Original>an unknown cause</Original>
 			<English>an unknown cause</English>
-			<German>einen unbekannten Grund</German>
+			<German>ohne erkennbare Ursache</German>
 			<Russian>неизвестной причины</Russian>
 			<Spanish>causas desconocidas</Spanish>
 			<Dutch>een onbekende oorzaak</Dutch>
@@ -657,7 +657,7 @@
 		<Key ID="str_abort_playerclose">
 			<Original>Cannot Abort near another player!</Original>
 			<English>Cannot Abort near another player!</English>
-			<German>Cannot Abort near another player!</German>
+			<German>Sie können nicht nahe eines anderen Spielers ausloggen!</German>
 			<Russian>Cannot Abort near another player!</Russian>
 			<Spanish>Cannot Abort near another player!</Spanish>
 			<Dutch>Cannot Abort near another player!</Dutch>
@@ -666,7 +666,7 @@
 		<Key ID="str_abort_zedsclose">
 			<Original>Can Abort in %1</Original>
 			<English>Can Abort in %1</English>
-			<German>Can Abort in %1</German>
+			<German>Logout in %1</German>
 			<Russian>Can Abort in %1</Russian>
 			<Spanish>Can Abort in %1</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
@@ -675,7 +675,7 @@
 		<Key ID="str_abort_playerincombat">
 			<Original>Cannot Abort while in combat!</Original>
 			<English>Cannot Abort while in combat!</English>
-			<German>Cannot Abort while in combat!</German>
+			<German>Sie können nicht im Kampf ausloggen!</German>
 			<Russian>Cannot Abort while in combat!</Russian>
 			<Spanish>Cannot Abort while in combat!</Spanish>
 			<Dutch>Cannot Abort while in combat!</Dutch>
@@ -684,7 +684,7 @@
 		<Key ID="str_full_quiver">
 			<Original>You can only have 1 stack of bolts</Original>
 			<English>You can only have 1 stack of bolts</English>
-			<German>You can only have 1 stack of bolts</German>
+			<German>Sie können nur 1 Stapel Bolzen haben.</German>
 			<Russian>You can only have 1 stack of bolts</Russian>
 			<Spanish>You can only have 1 stack of bolts</Spanish>
 			<Dutch>You can only have 1 stack of bolts</Dutch>
@@ -704,7 +704,7 @@
 	<Key ID="STR_UI_GENDER_DESC">
 	  <Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
 	  <English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
-	  <German>Bitte wählen Sie das Geschlecht aus, mit dem sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis sie sterben.</German>
+	  <German>Bitte wählen Sie das Geschlecht aus, mit dem Sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
 	  <Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
 	  <Spanish>Por favor selecciona el género con el que deseas jugar. Tu género se enlazará a tu personaje y solo podrá ser cambiado cuando mueras.</Spanish>
 	  <Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke karakter, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
@@ -769,7 +769,7 @@
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
 			<English>Remove fireplace</English>
-			<German>Feuerplatz zerstören</German>
+			<German>Feuerstelle entfernen</German>
 			<Russian>Убрать костер</Russian>
 			<Spanish>Remover fogata</Spanish>
 			<Dutch>Kampvuur verwijderen</Dutch>
@@ -778,7 +778,7 @@
 		<Key ID="str_actions_self_07">
 			<Original>Pack Tent</Original>
 			<English>Pack Tent</English>
-			<German>Zelt einpacken</German>
+			<German>Zelt verpacken</German>
 			<Russian>Упаковать палатку</Russian>
 			<Spanish>Embalar Carpa</Spanish>
 			<Dutch>Tent inpakken</Dutch>
@@ -796,7 +796,7 @@
 		<Key ID="str_actions_self_09">
 			<Original>Fill Water</Original>
 			<English>Fill Water</English>
-			<German>Wasser abfüllen</German>
+			<German>Wasser einfüllen</German>
 			<Russian>Наполнить фляжки</Russian>
 			<Spanish>Llenar con Agua</Spanish>
 			<Dutch>Water bijvullen</Dutch>
@@ -805,7 +805,7 @@
 		<Key ID="str_actions_self_10">
 			<Original>Fill Jerrycan</Original>
 			<English>Fill Jerrycan</English>
-			<German>Benzinkanister füllen</German>
+			<German>Benzinkanister auffüllen</German>
 			<Russian>Наполнить канистры</Russian>
 			<Spanish>Llenar Bidones</Spanish>
 			<Dutch>Jerrycan bijvullen</Dutch>
@@ -904,7 +904,7 @@
 		<Key ID="str_actions_medical_11">
 			<Original>Issue %1</Original>
 			<English>Issue %1</English>
-			<German>%1 ausrüsten</German>
+			<German>%1 einladen</German>
 			<Russian>Установить %1</Russian>
 			<Spanish>Problema %1</Spanish>
 			<Dutch>%1 uitrusten</Dutch>
@@ -913,7 +913,7 @@
 		<Key ID="str_actions_medical_12">
 			<Original>Packup %1</Original>
 			<English>Packup %1</English>
-			<German>%1 einpacken</German>
+			<German>%1 demontieren</German>
 			<Russian>Разобрать %1</Russian>
 			<Spanish>Empaquetar %1</Spanish>
 			<Dutch>%1 inpakken</Dutch>
@@ -967,7 +967,7 @@
 		<Key ID="str_actions_medical_18">
 			<Original>You cannot perform another blood transfusion so fast</Original>
 			<English>You cannot perform another blood transfusion so fast</English>
-			<German>You cannot perform another blood transfusion so fast</German>
+			<German>Sie können so schnell keine weitere Bluttransfusion durchführen</German>
 			<Russian>You cannot perform another blood transfusion so fast</Russian>
 			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
 			<Dutch>You cannot perform another blood transfusion so fast</Dutch>
@@ -1012,7 +1012,7 @@
 		<Key ID="str_actions_flipveh">
 			<Original>Turn Over %1</Original>
 			<English>Turn Over %1</English>
-			<German>Turn Over %1</German>
+			<German>%1 wenden</German>
 			<Russian>Turn Over %1</Russian>
 			<Spanish>Voltear %1</Spanish>
 			<Dutch>Turn Over %1</Dutch>
@@ -1021,7 +1021,7 @@
 		<Key ID="str_actions_stats">
 			<Original>Enable Stats</Original>
 			<English>Enable Stats</English>
-			<German>Enable Stats</German>
+			<German>Statistik aktiveren</German>
 			<Russian>Enable Stats</Russian>
 			<Spanish>Activar Estadísticas</Spanish>
 			<Dutch>Enable Stats</Dutch>
@@ -1030,7 +1030,7 @@
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
 			<English>Sleep</English>
-			<German>Sleep</German>
+			<German>Schlafen</German>
 			<Russian>Sleep</Russian>
 			<Spanish>Dormir</Spanish>
 			<Dutch>Sleep</Dutch>
@@ -1048,7 +1048,7 @@
 		<Key ID="str_actions_tamedog">
 			<Original>Tame Dog</Original>
 			<English>Tame Dog</English>
-			<German>zahmen Hund</German>
+			<German>Hund zähmen</German>
 			<Russian>Приручить собаку</Russian>
 			<Spanish>Domesticar Perro</Spanish>
 			<Dutch>Tame Dog</Dutch>
@@ -1057,7 +1057,7 @@
 		<Key ID="str_actions_movedog">
 			<Original>Move To</Original>
 			<English>Move To</English>
-			<German>Move To</German>
+			<German>Dorthin bewegen</German>
 			<Russian>Иди туда</Russian>
 			<Spanish>Mover a</Spanish>
 			<Dutch>Move To</Dutch>
@@ -1066,7 +1066,7 @@
 		<Key ID="str_actions_speeddog">
 			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
-			<German>Dog: %1</German>
+			<German>Hund: %1</German>
 			<Russian>Dog: %1</Russian>
 			<Spanish>Perro: %1</Spanish>
 			<Dutch>Dog: %1</Dutch>
@@ -1075,7 +1075,7 @@
 		<Key ID="str_actions_calldog">
 			<Original>Call Dog</Original>
 			<English>Call Dog</English>
-			<German>Call Dog</German>
+			<German>Hund herbeirufen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Llamar Perro</Spanish>
 			<Dutch>Call Dog</Dutch>
@@ -1084,7 +1084,7 @@
 		<Key ID="str_actions_feeddog">
 			<Original>Feed Dog</Original>
 			<English>Feed Dog</English>
-			<German>Feed Dog</German>
+			<German>Hund füttern</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Alimentar Perro</Spanish>
 			<Dutch>Feed Dog</Dutch>
@@ -1093,7 +1093,7 @@
 		<Key ID="str_actions_waterdog">
 			<Original>Water Dog</Original>
 			<English>Water Dog</English>
-			<German>Water Dog</German>
+			<German>Wasser anbieten</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Hidratar Perro</Spanish>
 			<Dutch>Water Dog</Dutch>
@@ -1102,7 +1102,7 @@
 		<Key ID="str_actions_sitdog">
 			<Original>Dog: Sit</Original>
 			<English>Dog: Sit</English>
-			<German>Dog: Sit</German>
+			<German>Hund: Sitz</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Perro: Sentado</Spanish>
 			<Dutch>Dog: Sit</Dutch>
@@ -1111,7 +1111,7 @@
 		<Key ID="str_actions_liedog">
 			<Original>Dog: Lie Down</Original>
 			<English>Dog: Lie Down</English>
-			<German>Dog: Lie Down</German>
+			<German>Hund: Hinlegen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Perro: Acostado</Spanish>
 			<Dutch>Dog: Lie Down</Dutch>
@@ -1120,7 +1120,7 @@
 		<Key ID="str_actions_trackdog">
 			<Original>Dog: Track</Original>
 			<English>Dog: Track</English>
-			<German>Dog: Track</German>
+			<German>Hund: Verfolgen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Perro: Rastrear</Spanish>
 			<Dutch>Dog: Track</Dutch>
@@ -1129,7 +1129,7 @@
 		<Key ID="str_actions_barkdog">
 			<Original>Dog: Bark</Original>
 			<English>Dog: Bark</English>
-			<German>Dog: Bark</German>
+			<German>Hund: Bellen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Perro: Ladrar</Spanish>
 			<Dutch>Dog: Bark</Dutch>
@@ -1138,7 +1138,7 @@
 		<Key ID="str_actions_warndog">
 			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
-			<German>Dog: %1</German>
+			<German>Hund: %1</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Perro: %1</Spanish>
 			<Dutch>Dog: %1</Dutch>
@@ -1147,7 +1147,7 @@
 		<Key ID="str_actions_followdog">
 			<Original>Dog: Follow</Original>
 			<English>Dog: Follow</English>
-			<German>Dog: Follow</German>
+			<German>Hund: Folgen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Perro: Seguir</Spanish>
 			<Dutch>Dog: Follow</Dutch>
@@ -1158,7 +1158,7 @@
 		<Key ID="STR_EQUIP_CODE_NAME_3">						
 			<Original>Box of Wet Matches</Original>						
 			<English>Box of Wet Matches</English>						
-			<German>Box of Wet Matches</German>
+			<German>Feuchte Streichholzschachtel</German>
 			<Russian>Box of Wet Matches</Russian>
 			<Spanish>Caja de Fósforos Mojada</Spanish>
 			<Dutch>Box of Wet Matches</Dutch>
@@ -1167,7 +1167,7 @@
 		<Key ID="STR_EQUIP_CODE_DESC_3">						
 			<Original>Box of wet matches.</Original>						
 			<English>Box of wet matches.</English>						
-			<German>Box of wet matches.</German>
+			<German>Feuchte Streichholzschachtel.</German>
 			<Russian>Box of wet matches.</Russian>
 			<Spanish>Caja de fósforos mojada.</Spanish>
 			<Dutch>Box of wet matches.</Dutch>
@@ -1176,43 +1176,43 @@
 		<Key ID="STR_EQUIP_CODE_NAME_41">						
 			<Original>Blunt Hatchet</Original>						
 			<English>Blunt Hatchet</English>						
-			<German>Blunt Hatchet</German>
+			<German>Stumpfe Axt</German>
 			<Russian>Blunt Hatchet</Russian>
 			<Spanish>Hacha Desafilada</Spanish>
 			<Dutch>Blunt Hatchet</Dutch>
 			<French>Hache émoussée</French>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_41">						
-			<Original>Your Hatchet appears to be too bunt to be used.</Original>						
-			<English>Your Hatchet appears to be too bunt to be used.</English>						
-			<German>Your Hatchet appears to be too bunt to be used.</German>
-			<Russian>Your Hatchet appears to be too bunt to be used.</Russian>
+			<Original>Your Hatchet appears to be too blunt to be used.</Original>						
+			<English>Your Hatchet appears to be too blunt to be used.</English>						
+			<German>Ihre Axt scheint zu stumpf zu sein, um sie zu verwenden.</German>
+			<Russian>Your Hatchet appears to be too blunt to be used.</Russian>
 			<Spanish>Tu hacha parece estar muy desafilada para ser usada.</Spanish>
-			<Dutch>Your Hatchet appears to be too bunt to be used.</Dutch>
+			<Dutch>Your Hatchet appears to be too blunt to be used.</Dutch>
 			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_4">						
 			<Original>Blunt Knife</Original>						
 			<English>Blunt Knife</English>						
-			<German>Blunt Knife</German>
+			<German>Stumpfes Messer</German>
 			<Russian>Blunt Knife</Russian>
 			<Spanish>Cuchillo Desafilado</Spanish>
 			<Dutch>Blunt Knife</Dutch>
 			<French>Couteau émoussé</French>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_4">						
-			<Original>Your Knife appears to be too bunt.</Original>						
-			<English>Your Knife appears to be too bunt.</English>						
-			<German>Your Knife appears to be too bunt.</German>
-			<Russian>Your Knife appears to be too bunt.</Russian>
+			<Original>Your Knife appears to be too blunt.</Original>						
+			<English>Your Knife appears to be too blunt.</English>						
+			<German>Ihr Messer scheint zu stumpf zu sein.</German>
+			<Russian>Your Knife appears to be too blunt.</Russian>
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
-			<Dutch>Your Knife appears to be too bunt.</Dutch>
+			<Dutch>Your Knife appears to be too blunt.</Dutch>
 			<French>Votre couteau semble trop émoussé</French>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_0">						
 			<Original>Raw Meat</Original>						
 			<English>Raw Meat</English>						
-			<German>Raw Meat</German>
+			<German>Rohes Fleisch</German>
 			<Russian>Ñûðîå ìÿñî</Russian>
 			<Spanish>Carne Cruda</Spanish>
 			<Dutch>Raw Meat</Dutch>
@@ -1221,7 +1221,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_0">						
 			<Original>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</German>
+			<German>Rohes Fleisch für den Verzehr, sollte sicherheitshalber vorher gekocht werden.</German>
 			<Russian>Ñûðîå ìÿñî. Áóäåò âêóñíåå è áåçîïàñíåå, åñëè åãî ïðèãîòîâèòü.</Russian>
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
@@ -1230,7 +1230,7 @@
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_1">						
 			<Original>Mutton Raw</Original>						
 			<English>Mutton Raw</English>						
-			<German>Mutton Raw</German>
+			<German>Rohes Hammelfleisch</German>
 			<Russian>Mutton Raw</Russian>
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>BMutton Raw</Dutch>
@@ -1239,7 +1239,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Goat Meat to be used for sustainment, must be cooked prior to eating.</English>						
-			<German>Goat Meat to be used for sustainment, must be cooked prior to eating.</German>
+			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Goat Meat to be used for sustainment, must be cooked prior to eating.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
@@ -1248,7 +1248,7 @@
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_2">						
 			<Original>Raw Chicken Leg</Original>						
 			<English>Raw Chicken Leg</English>						
-			<German>Raw Chicken Leg</German>
+			<German>Rohe Hühnchenkeule</German>
 			<Russian>Raw Chicken Leg</Russian>
 			<Spanish>Pata de Pollo Cruda</Spanish>
 			<Dutch>Raw Chicken Leg</Dutch>
@@ -1257,7 +1257,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Chicken Leg to be used for sustainment, must be cooked prior to eating.</English>						
-			<German>Chicken Leg to be used for sustainment, must be cooked prior to eating.</German>
+			<German>Hühnchenkeule für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Dutch>
@@ -1266,7 +1266,7 @@
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_3">						
 			<Original>Rabbit Raw</Original>						
 			<English>Rabbit Raw</English>						
-			<German>Rabbit Raw</German>
+			<German>Rohes Kaninchen</German>
 			<Russian>Rabbit Raw</Russian>
 			<Spanish>Conejo Crudo</Spanish>
 			<Dutch>Rabbit Raw</Dutch>
@@ -1275,7 +1275,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Rabbit to be used for sustainment, must be cooked prior to eating.</English>						
-			<German>Rabbit to be used for sustainment, must be cooked prior to eating.</German>
+			<German>Kaninchenfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Rabbit to be used for sustainment, must be cooked prior to eating.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Rabbit to be used for sustainment, must be cooked prior to eating.</Dutch>
@@ -1284,7 +1284,7 @@
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_4">						
 			<Original>Raw Bacon</Original>						
 			<English>Raw Bacon</English>						
-			<German>Raw Bacon</German>
+			<German>Roher Speck</German>
 			<Russian>Raw Bacon</Russian>
 			<Spanish>Costillar de Cerdo Crudo</Spanish>
 			<Dutch>Raw Bacon</Dutch>
@@ -1293,7 +1293,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
 			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
-			<German>Bacon to be used for sustainment, must be cooked prior to eating.</German>
+			<German>Speck für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
@@ -1302,7 +1302,7 @@
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_6">						
 			<Original>Raw Beef</Original>						
 			<English>Raw Beef</English>						
-			<German>Raw Beef</German>
+			<German>Rohes Rindfleisch</German>
 			<Russian>Ãîâÿäèíà</Russian>
 			<Spanish>Churrasco Crudo</Spanish>
 			<Dutch>Raw Beef</Dutch>
@@ -1311,7 +1311,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_6">						
 			<Original>Beef to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Beef to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Beef to be used for sustainment, should be cooked prior to safe eating.</German>
+			<German>Rindfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Ãîâÿäèíà. Áóäåò âêóñíåå è áåçîïàñíåå, åñëè åå ïðèãîòîâèòü.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
@@ -1320,7 +1320,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_0">						
 			<Original>Cooked Meat</Original>						
 			<English>Cooked Meat</English>						
-			<German>Cooked Meat</German>
+			<German>Gekochtes Fleisch</German>
 			<Russian>Æàðåíîå ìÿñî</Russian>
 			<Spanish>Carce Cocinada</Spanish>
 			<Dutch>Cooked Meat</Dutch>
@@ -1329,7 +1329,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_0">						
 			<Original>Cooked Meat to be used for sustainment.</Original>						
 			<English>Cooked Meat to be used for sustainment.</English>						
-			<German>Cooked Meat to be used for sustainment.</German>
+			<German>Gekochtes Fleisch, für den Verzehr geeignet.</German>
 			<Russian>Æàðåíîå ìÿñî, ãîòîâàÿ ê óïîòðåáëåíèþ.</Russian>
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Cooked Meat to be used for sustainment.</Dutch>
@@ -1338,7 +1338,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_1">						
 			<Original>Cooked Mutton</Original>						
 			<English>Cooked Mutton</English>						
-			<German>Cooked Mutton</German>
+			<German>Gekochtes Hammelfleisch</German>
 			<Russian>Cooked Mutton</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
 			<Dutch>Cooked Mutton</Dutch>
@@ -1347,7 +1347,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment.</Original>						
 			<English>Goat Meat to be used for sustainment.</English>						
-			<German>Goat Meat to be used for sustainment.</German>
+			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
 			<Russian>Goat Meat to be used for sustainment.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment.</Dutch>
@@ -1356,7 +1356,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_2">						
 			<Original>Chicken Leg</Original>						
 			<English>Chicken Leg</English>						
-			<German>Chicken Leg</German>
+			<German>Hühnchenkeule</German>
 			<Russian>Chicken Leg</Russian>
 			<Spanish>Pata de Pollo</Spanish>
 			<Dutch>Chicken Leg</Dutch>
@@ -1365,7 +1365,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment.</Original>						
 			<English>Chicken Leg to be used for sustainment.</English>						
-			<German>Chicken Leg to be used for sustainment.</German>
+			<German>Hühnchenkeule, für den Verzehr geeignet.</German>
 			<Russian>Chicken Leg to be used for sustainment.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment.</Dutch>
@@ -1374,7 +1374,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_3">						
 			<Original>Rabbit</Original>						
 			<English>Rabbit</English>						
-			<German>Rabbit</German>
+			<German>Kaninchen</German>
 			<Russian>Rabbit</Russian>
 			<Spanish>Conejo</Spanish>
 			<Dutch>Rabbit</Dutch>
@@ -1383,7 +1383,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainmen.</Original>						
 			<English>Rabbit to be used for sustainment.</English>						
-			<German>Rabbit to be used for sustainment.</German>
+			<German>Kaninchen, für den Verzehr geeignet.</German>
 			<Russian>Rabbit to be used for sustainment.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Rabbit to be used for sustainment.</Dutch>
@@ -1392,7 +1392,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_4">						
 			<Original>Bacon</Original>						
 			<English>Bacon</English>						
-			<German>Bacon</German>
+			<German>Speck</German>
 			<Russian>Bacon</Russian>
 			<Spanish>Costillar de Cerdo</Spanish>
 			<Dutch>Bacon</Dutch>
@@ -1401,7 +1401,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment.</Original>						
 			<English>Bacon to be used for sustainment.</English>						
-			<German>Bacon to be used for sustainment.</German>
+			<German>Speck, für den Verzehr geeignet.</German>
 			<Russian>Bacon to be used for sustainment.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Bacon to be used for sustainment.</Dutch>
@@ -1410,7 +1410,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_5">						
 			<Original>Angel Cookies</Original>						
 			<English>Angel Cookies</English>						
-			<German>Angel Cookies</German>
+			<German>Engelskekse</German>
 			<Russian>Angel Cookies</Russian>
 			<Spanish>Galletitas de Ángel</Spanish>
 			<Dutch>Angel Cookies</Dutch>
@@ -1419,7 +1419,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_6">                      
 			<Original>Beefsteak</Original>                      
 			<English>Beefsteak</English>                        
-			<German>Beefsteak</German>
+			<German>Rindersteak</German>
 			<Russian>Бифштекс</Russian>
 			<Spanish>Churrasco</Spanish>
 			<Dutch>Beefsteak</Dutch>
@@ -1428,7 +1428,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_5">						
 			<Original>Angel Cookies to boost your moral up!</Original>						
 			<English>Angel Cookies to boost your moral up!</English>						
-			<German>Angel Cookies to boost your moral up!</German>
+			<German>Engelskekse, um Ihre Moral zu heben!</German>
 			<Russian>Angel Cookies to boost your moral up!</Russian>
 			<Spanish>Galletitas de Ángel que levantan tu moral</Spanish>
 			<Dutch>Angel Cookies to boost your moral up!</Dutch>
@@ -1437,7 +1437,7 @@
 		 <Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_6">                     
 			<Original>Beefsteak to be used for sustainment.</Original>                      
 			<English>Beefsteak to be used for sustainment.</English>                        
-			<German>Beefsteak to be used for sustainment.</German>
+			<German>Rindersteak, für den Verzehr geeignet.</German>
 			<Russian>Бифштекс, готовый к употреблению.</Russian>
 			<Spanish>Churrasco que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Beefsteak to be used for sustainment.</Dutch>
@@ -1446,7 +1446,7 @@
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">						
 			<Original>Water Bottle (Boiled)</Original>						
 			<English>Water Bottle (Boiled)</English>						
-			<German>Water Bottle (Boiled)</German>
+			<German>Wasserflasche (Abgekocht)</German>
 			<Russian>Ôëÿæêà êèïÿ÷åíîé âîäû</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<Dutch>Water Bottle (Boiled)</Dutch>
@@ -1454,8 +1454,8 @@
 		</Key>						
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">						
 			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
-			<English>A bottle of boiledwater that has been filled and can be consumed.</English>	
-			<German>Eine Flasche mit abgekochten Wasser.</German>
+			<English>A bottle of boiled water that has been filled and can be consumed.</English>	
+			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
 			<Russian>Бутылка boiledwater, который был заполнен и можно употреблять.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
