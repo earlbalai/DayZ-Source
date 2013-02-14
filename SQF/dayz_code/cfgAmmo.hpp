@@ -260,4 +260,11 @@ class CfgAmmo {
 	delete G_30mm_HE_heli;
 	delete B_19mm_HE;
 	delete B_556x45_Ball_airLock;
+	
+	class Bolt;
+	class WoodernArrow : Bolt {
+		model = "\dayz_weapons\models\bolt";
+		hit = 8;
+		caliber = 0.33;
+	};
 };

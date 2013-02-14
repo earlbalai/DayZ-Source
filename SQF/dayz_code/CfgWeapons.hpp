@@ -16,7 +16,7 @@ class CfgWeapons {
 		magazines[] =
 		{
 			"Quiver",
-			"BoltSteel"
+			"WoodernArrow"
 		};
 	};
 };
