@@ -48,8 +48,8 @@ FIX DUE : 2013
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
 	* [Fixed] - Added 4 sec delay to multiple rolls.
-	* [] - No longer possiable to combat roll over player created objects (tents, sandbags so on)
-	* [] - No longer combat roll in buildings.
+	* [Fixed] - No longer possiable to combat roll over player created objects (tents, sandbags so on)
+	* [Fixed] - No longer combat roll in buildings.
 	
 	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player)
 	
