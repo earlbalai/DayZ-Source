@@ -1,4 +1,4 @@
-/*	
+ /*	
 	FUNCTION COMPILES
 */
 //Player only
@@ -219,21 +219,9 @@ if (!isDedicated) then {
 		_dikCode = 	_this select 1;
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
-			DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",500]) > 1);
-			if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
-				canRoll = false;
-				null = [] spawn {
-					if (DoRE) then {
-						[nil, player, rSWITCHMOVE, "ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
-					} else {
-						player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
-					};
-					sleep 0.3;
-					player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
-					sleep 1;
-					canRoll = true;
-				};
-				_handled = true;
+			if (!r_fracture_legs and (time - dayz_lastCheckBit > 4)) then {
+				dayz_lastCheckBit = time;
+				call player_CombatRoll;
 			};
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
@@ -263,8 +251,10 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			[player,15,false,(getPosATL player)] spawn player_alertZombies;
 		};
-		
-		
+		if (_dikCode in actionKeys "User20" and (time - dayz_lastCheckBit > 5)) then {
+			dayz_lastCheckBit = time;
+			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
+		};
 		if ((_dikCode == 0x38 or _dikCode == 0xB8) and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
@@ -275,6 +265,25 @@ if (!isDedicated) then {
 		};
 		*/
 		_handled
+	};
+	
+	player_CombatRoll = {
+		DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
+		if (canRoll && animationState player in ["amovpercmrunslowwrfldf","amovpercmrunsraswrfldf","amovpercmevaslowwrfldf","amovpercmevasraswrfldf"]) then {
+			canRoll = false;
+			null = [] spawn {
+				if (DoRE) then {
+					[nil, player, rSWITCHMOVE, "ActsPercMrunSlowWrflDf_FlipFlopPara"] call RE;
+				} else {
+					player switchMove "ActsPercMrunSlowWrflDf_FlipFlopPara";
+				};
+				sleep 0.3;
+				player setVelocity [(velocity player select 0) + 1.5 * sin direction player, (velocity player select 1) + 1.5 * cos direction player, (velocity player select 2) + 4];
+				sleep 1;
+				canRoll = true;
+			};
+			_handled = true;
+		};
 	};
 	
 	player_serverModelChange = {
