@@ -18,7 +18,10 @@ FIX DUE : 2013
 	* [NEW] - Zed attraction this will draw zeds to lottier closer to players over time.
 	* [NEW] - BAF_L85A2_RIS_SUSAT - (Heilcrash - HeliCrash_No50s)
 	* [NEW] - Crossbow Quiver added - 6 arrow mag size.
+	* [NEW] - WoodenArrow added 6 arrows can be turned into a quiver.
+	* [NEW] - WoodenArrow can be picked up after use.
 	
+	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
 	* [UPDATED] - loot weighted array generation fixed.
 	* [UPDATED] - Updated logout system to check radius of zeds from 50 meters to 35 meters (30 sec count)
@@ -44,6 +47,7 @@ FIX DUE : 2013
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
+	* [Fixed] - Added 4 sec delay to multiple rolls.
 	* [] - No longer possiable to combat roll over player created objects (tents, sandbags so on)
 	* [] - No longer combat roll in buildings.
 	
