@@ -106,22 +106,22 @@ class CfgMagazines {
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
 	};
 	
-	class WoodernArrow : CA_Magazine {
+	class WoodenArrow : CA_Magazine {
 		scope = public;
-		displayName = "WoodernArrow"; //$STR_MAG_NAME_3;
+		displayName = "WoodenArrow"; //$STR_MAG_NAME_3;
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
 		ammo = "WoodernArrow";
 		count = 1;
 		initSpeed = 150;
-		descriptionShort = "WoodernArrow"; //$STR_MAG_DESC_3;
-		displayNameShort = "WoodernArrow"; //$STR_MAG_ACTION_3;
+		descriptionShort = "WoodenArrow"; //$STR_MAG_DESC_3;
+		displayNameShort = "WoodenArrow"; //$STR_MAG_ACTION_3;
 		
 		class ItemActions {
 			class ReloadMag {
 				text = "Combine into Quiver";
 				script = "spawn player_reloadMag;";
-				use[] = {"WoodernArrow","WoodernArrow","WoodernArrow","WoodernArrow","WoodernArrow","WoodernArrow"};
+				use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
 				output[] = {"Quiver"};
 			};
 		};
