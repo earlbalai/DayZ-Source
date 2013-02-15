@@ -97,7 +97,7 @@ class CfgMagazines {
 	class Quiver : CA_Magazine
 	{
 		scope = public;
-		ammo = "BoltSteel";
+		ammo = "WoodenArrow";
 		count = 6;
 		descriptionshort = "Small Quiver used with the Crossbow, Max bolts 6";
 		displayname = "Small Quiver.";
