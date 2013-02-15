@@ -2,6 +2,7 @@ private["_unit","_ammo","_audible","_distance","_listTalk","_weapon","_projectil
 _unit = 		_this select 0;
 _weapon = 		_this select 1;
 _ammo = 		_this select 4;
+_magazine =		_this select 5;
 _projectile = 	_this select 6;
 
 _projectile = nearestObject [_unit, _ammo];
@@ -9,10 +10,12 @@ _vUp = vectorUp _projectile;
 _endPos = getPosATL _projectile;
 _dir = 0;
 
-_ammo = player ammo "Crossbow_DZ";
-if (_ammo > 0) then {
-	player removeMagazines "Quiver";		
-	player addMagazine ["Quiver", _ammo];
+if (_magazine == "Quiver") then {
+	_ammo = player ammo "Crossbow_DZ";
+	if (_ammo > 0) then {
+		player removeMagazines "Quiver";
+		player addMagazine ["Quiver", _ammo];
+	};
 };
 
 while {alive _projectile} do {
@@ -31,7 +34,7 @@ if (_height < 100) then {
 	_bolt setPosATL _endPos;
 	_bolt setDir (getDir _unit);
 	_bolt setVectorUp _vUp;
-	
+
 	_hitArray = _unit getVariable["firedHit",[]];
 	while {_doLoop} do {
 		_hitArray = _unit getVariable["firedHit",[]];
@@ -40,8 +43,7 @@ if (_height < 100) then {
 		_countr = _countr + 1;
 		sleep 0.1;
 	};
-		
-	
+
 	if (count _hitArray > 0) then {
 		_hitObject = _hitArray select 0;
 		_hitSelection = _hitArray select 1;
