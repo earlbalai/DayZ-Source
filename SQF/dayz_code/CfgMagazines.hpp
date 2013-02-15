@@ -111,7 +111,7 @@ class CfgMagazines {
 		displayName = "WoodenArrow"; //$STR_MAG_NAME_3;
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
-		ammo = "WoodernArrow";
+		ammo = "WoodenArrow";
 		count = 1;
 		initSpeed = 150;
 		descriptionShort = "WoodenArrow"; //$STR_MAG_DESC_3;
