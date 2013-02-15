@@ -219,6 +219,7 @@ class RscStructuredTextGUI: RscStructuredText
 #include "CfgMagazines.hpp"
 #include "cfgLoot.hpp"
 #include "CfgMarkers.hpp"
+#include "CfgAmmo.hpp"
 
 class CfgSurvival {
 	class Inventory {
