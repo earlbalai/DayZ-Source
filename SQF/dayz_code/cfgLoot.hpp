@@ -95,7 +95,7 @@ class CfgLoot {
 			"2Rnd_shotgun_74Pellets",
 			"8Rnd_9x18_Makarov",
 			"15Rnd_W1866_Slug",
-			"BoltSteel",
+			"WoodenArrow",
 			"HandRoadFlare",
 			"ItemPainkiller",
 			"HandChemGreen",
@@ -272,7 +272,7 @@ class CfgLoot {
 			"7Rnd_45ACP_1911",
 			"10x_303",
 			"ItemWaterbottleUnfilled",
-			"BoltSteel",
+			"WoodenArrow",
 			"ItemHeatPack"
 		},
 		{
