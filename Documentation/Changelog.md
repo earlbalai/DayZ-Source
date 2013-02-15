@@ -20,7 +20,7 @@ FIX DUE : 2013
 	* [NEW] - Crossbow Quiver added - 6 arrow mag size.
 	* [NEW] - WoodenArrow added 6 arrows can be turned into a quiver.
 	* [NEW] - WoodenArrow can be picked up after use.
-	* [NEW] - 25% of breaking WoodenArrow when firing it.
+	* [NEW] - 20% of breaking WoodenArrow when firing it.
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables

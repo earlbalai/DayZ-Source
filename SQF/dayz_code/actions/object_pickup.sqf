@@ -22,11 +22,11 @@ if (_classname == "MeleeCrowbar") then {
 
 _broken = false;
 if(_classname == "WoodenArrow") then {
-	if (25 > random 100) then {
+	if (20 > random 100) then {
 		_broken = true;
 	};
 };
-if (_broken) exitWith { cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
+if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
 sleep 0.25;
 

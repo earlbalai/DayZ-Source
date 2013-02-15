@@ -99,7 +99,7 @@ class CfgMagazines {
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
-		descriptionshort = "Small Quiver used with the Crossbow, Max bolts 6.";
+		descriptionshort = "Small Quiver used with the Crossbow, Max arrows 6.";
 		displayname = "Quiver";
 		initSpeed = 150;
 		model = "\dayz_weapons\models\bolt_gear";
