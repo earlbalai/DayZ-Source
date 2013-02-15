@@ -100,6 +100,7 @@ if (_script != "") then
 					_objWpnQty = (_intentory select 0) select 1;
 					_countr = 0;					
 					{
+						if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
 						_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
 						if (_isOK) then {
 							_block = 	getNumber(configFile >> "CfgWeapons" >> _x >> "stopThis") == 1;
@@ -115,6 +116,7 @@ if (_script != "") then
 					_objWpnQty = (_intentory select 1) select 1;
 					_countr = 0;
 					{
+						if (_x == "BoltSteel") then { _x = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
 						_isOK = 	isClass(configFile >> "CfgMagazines" >> _x);
 						if (_isOK) then {
 							_block = 	getNumber(configFile >> "CfgMagazines" >> _x >> "stopThis") == 1;
