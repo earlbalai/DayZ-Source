@@ -681,14 +681,14 @@
 			<Dutch>Cannot Abort while in combat!</Dutch>
 			<French>Cannot Abort while in combat!</French>
 		</Key>
-		<Key ID="str_full_quiver">
-			<Original>You can only have 1 stack of bolts</Original>
-			<English>You can only have 1 stack of bolts</English>
-			<German>Sie können nur 1 Stapel Bolzen haben.</German>
-			<Russian>You can only have 1 stack of bolts</Russian>
-			<Spanish>You can only have 1 stack of bolts</Spanish>
-			<Dutch>You can only have 1 stack of bolts</Dutch>
-			<French>You can only have 1 stack of bolts</French>
+		<Key ID="str_broken_arrow">
+			<Original>Arrow was broken and cannot be used again</Original>
+			<English>Arrow was broken and cannot be used again</English>
+			<German>Arrow was broken and cannot be used again</German>
+			<Russian>Arrow was broken and cannot be used again</Russian>
+			<Spanish>Arrow was broken and cannot be used again</Spanish>
+			<Dutch>Arrow was broken and cannot be used again</Dutch>
+			<French>Arrow was broken and cannot be used again</French>
 		</Key>
 	</Package>
   <Package name="ui">
