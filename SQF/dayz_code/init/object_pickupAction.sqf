@@ -6,75 +6,40 @@ _classname = _this select 2;
 _name = getText (configFile >> _type >> _classname >> "displayName");
 
 actionMonitor = {
-	private["_holder","_type","_classname","_name","_action","_run","_nearPlayers","_actionPlayers","_newActionPlayers"];
+	private["_holder","_type","_classname","_name","_action","_distance","_run","_timeout"];
 	_holder = _this select 0;
 	_type = _this select 1;
 	_classname = _this select 2;
 	_name = _this select 3;
 
+	_action = -1;
+	_distance = player distance _holder;
 	_run = true;
-	_nearPlayers = [];
-	_actionPlayers = [];
+	_timeout = 2;
 
-	diag_log format["actionMonitor: starting..."];
 	while { _run } do {
-		_tmr = diag_tickTime;
 		if (alive _holder) then {
-			_nearPlayers = getPosATL _holder nearEntities ["CAManBase", 1];
-
-			if ((count _nearPlayers > 0)) then {
-				// Create action for all players nearby
-				{
-					private["_playerAction"];
-					_playerAction = _x addAction [format[(localize "STR_DAYZ_CODE_1"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
-					_actionPlayers set [count _actionPlayers, [_x, _playerAction]];
-					_x reveal _holder;
-					diag_log format["actionMonitor: added action to %1", _x];
-				} forEach _nearPlayers;
-			} else {
-				// Remove action for all players in _actionPlayers because there's no one nearby anyway
-				{
-					private["_player","_playerAction"];
-					_player = _x select 0;
-					_playerAction = _x select 1;
-					_player removeAction _playerAction;
-					diag_log format["actionMonitor: removed action for %1 (reason: no players near)", _player];
-				} forEach _actionPlayers;
-				_actionPlayers = [];
+			_distance = player distance _holder;
+			if ((_distance < 1.75) and (_action == -1)) then {
+				_action = player addAction [format[(localize "STR_DAYZ_CODE_1"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
+				player reveal _holder;
+				_timeout = 0.3;
 			};
-
-			// Remove action for players that went out of range
-			_newActionPlayers = [];
-			{
-				private["_player","_playerAction"];
-				_player = _x select 0;
-				_playerAction = _x select 1;
-
-				if (_player distance _holder > 1) then {
-					_player removeAction _playerAction;
-					diag_log format["actionMonitor: removed action for %1 (reason: player went out of range)", _player];
-				} else {
-					_newActionPlayers set [count _newActionPlayers, [_player, _playerAction]];
-				};
-			} forEach _actionPlayers;
-			_actionPlayers = _newActionPlayers;
+			if ((_distance >= 1.75) and (_action != -1)) then {
+				player removeAction _action;
+				_action = -1;
+				_timeout = 2;
+			};
 		} else {
-			// Remove action for all players in _actionPlayers because _holder is dead (i.e. picked up or removed)
-			{
-				private["_player","_playerAction"];
-				_player = _x select 0;
-				_playerAction = _x select 1;
-				_player removeAction _playerAction;
-				diag_log format["actionMonitor: removed action for %1 (reason: WeaponHolder is dead)", _player];
-			} forEach _actionPlayers;
-			diag_log "actionMonitor: Arrow was picked up or removed, exiting";
+			if (_action != -1) then {
+				player removeAction _action;
+				_action = -1;
+			};
+			_timeout = 0;
 			_run = false;
 		};
-		diag_log format["actionMonitor: iteration took %1ms to complete", round ((time - _tmr) * 1000)]
-		sleep 2;
+		sleep _timeout;
 	};
-
-	diag_log "actionMonitor: stopped...";
 };
 
 if (_classname == "WoodenArrow") then {
