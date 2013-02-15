@@ -115,7 +115,6 @@ class CfgMagazines {
 		count = 1;
 		initSpeed = 150;
 		descriptionShort = "WoodenArrow"; //$STR_MAG_DESC_3;
-		displayNameShort = "WoodenArrow"; //$STR_MAG_ACTION_3;
 		
 		class ItemActions {
 			class ReloadMag {
