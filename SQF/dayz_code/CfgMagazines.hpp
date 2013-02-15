@@ -99,8 +99,8 @@ class CfgMagazines {
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
-		descriptionshort = "Small Quiver used with the Crossbow, Max bolts 6";
-		displayname = "Small Quiver.";
+		descriptionshort = "Small Quiver used with the Crossbow, Max bolts 6.";
+		displayname = "Quiver";
 		initSpeed = 150;
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
@@ -108,13 +108,13 @@ class CfgMagazines {
 	
 	class WoodenArrow : CA_Magazine {
 		scope = public;
-		displayName = "WoodenArrow"; //$STR_MAG_NAME_3;
+		displayName = "Arrow"; //$STR_MAG_NAME_3;
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
 		ammo = "WoodenArrow";
 		count = 1;
 		initSpeed = 150;
-		descriptionShort = "WoodenArrow"; //$STR_MAG_DESC_3;
+		descriptionShort = "Arrow made of wood."; //$STR_MAG_DESC_3;
 		
 		class ItemActions {
 			class ReloadMag {
