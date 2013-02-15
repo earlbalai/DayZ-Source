@@ -30,7 +30,11 @@ _doLoop = true;
 _countr = 0;
 
 if (_height < 100) then {
-	_bolt = createVehicle ["WoodenArrowF", _endPos, [], 0, "CAN_COLLIDE"];
+	if (25 > random 100) then {
+		_bolt = createVehicle ["BrokenArrowF", _endPos, [], 0, "CAN_COLLIDE"];
+	} else {
+		_bolt = createVehicle ["WoodenArrowF", _endPos, [], 0, "CAN_COLLIDE"];
+	};
 	_bolt setPosATL _endPos;
 	_bolt setDir (getDir _unit);
 	_bolt setVectorUp _vUp;

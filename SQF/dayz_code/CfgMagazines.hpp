@@ -114,7 +114,7 @@ class CfgMagazines {
 		ammo = "WoodenArrow";
 		count = 1;
 		initSpeed = 150;
-		descriptionShort = "Arrow made of wood."; //$STR_MAG_DESC_3;
+		descriptionShort = "Arrow made out of wood, used with the Crossbow."; //$STR_MAG_DESC_3;
 		
 		class ItemActions {
 			class ReloadMag {
@@ -124,6 +124,17 @@ class CfgMagazines {
 				output[] = {"Quiver"};
 			};
 		};
+	};
+	
+	class BrokenArrow : CA_Magazine {
+		scope = public;
+		displayName = "Broken Arrow"; //$STR_MAG_NAME_3;
+		model = "\dayz_weapons\models\bolt_gear";
+		picture = "\dayz_weapons\textures\equip_bolt_ca.paa";
+		ammo = "WoodenArrow";
+		count = 1;
+		initSpeed = 150;
+		descriptionShort = "Broken arrow, this item cannot be used."; //$STR_MAG_DESC_3;
 	};
 	
 	class FoodEdible;

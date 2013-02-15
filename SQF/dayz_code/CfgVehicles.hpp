@@ -1705,6 +1705,15 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	class BrokenArrowF : WeaponHolderBase {
+		scope = public;
+		displayName = "BrokenArrowF";
+		model = "\dayz_weapons\models\bolt";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','BrokenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
 };
 class CfgNonAIVehicles {
 	
