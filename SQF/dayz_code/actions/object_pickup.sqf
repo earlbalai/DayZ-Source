@@ -1,4 +1,4 @@
-private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver"];
+private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver","_broken"];
 _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
@@ -19,6 +19,14 @@ if (_classname == "MeleeCrowbar") then {
 		player addMagazine 'hatchet_swing';
 	};
 };
+
+_broken = false;
+if(_classname == "WoodenArrow") then {
+	if (25 > random 100) then {
+		_broken = true;
+	};
+};
+if (_broken) exitWith { cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
 sleep 0.25;
 
