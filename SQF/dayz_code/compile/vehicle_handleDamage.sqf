@@ -24,8 +24,12 @@ if (_dam < 1 ) then {
 		if ( !_needUpdate ) then {
 			_unit setVariable ["needUpdate",true,true];
 			//["dayzUpdateVehicle",[_unit,"damage"]] call callRpcProcedure;
-			dayzUpdateVehicle = [_unit,"damage"];
-			publicVariable "dayzUpdateVehicle";
+			if (isServer) then {
+				[_unit, "damage"] call server_updateObject;
+			} else {
+				dayzUpdateVehicle = [_unit,"damage"];
+				publicVariable "dayzUpdateVehicle";
+			};
 		};
 	};
 };
