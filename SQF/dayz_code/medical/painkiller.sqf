@@ -15,7 +15,7 @@ if (_unit == player) then {
 	//Self Healing
 	_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
 } else {
-	["dayzHumanity",[player,20]] call dayzHumanity_code;
+	["dayzHumanity",[player,20]] call player_humanityMorph;
 };
 
 player removeMagazine "ItemPainkiller";

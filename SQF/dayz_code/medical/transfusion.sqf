@@ -45,7 +45,7 @@ if (_finished) then {
 	usecTransfuse = [_unit,player];
 	publicVariable "usecTransfuse";
 
-	["dayzHumanity",[player,250]] call dayzHumanity_code;
+	["dayzHumanity",[player,250]] call player_humanityMorph;
 } else {
 	r_interrupt = false;
 	player switchMove "";
