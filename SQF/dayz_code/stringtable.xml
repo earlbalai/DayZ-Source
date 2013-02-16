@@ -9,6 +9,7 @@
 			<Spanish>DEAN HALL PRESENTA</Spanish>
 			<Dutch>DEAN HALL PRESENTEERT</Dutch>
 			<French>DEAN HALL VOUS PRESENTE</French>
+      			<Czech>DEAN HALL UVÁDÍ</Czech>
 		</Key>
 		<Key ID="STR_INTRO_2">	
 			<Original>A USECFORCE PRODUCTION</Original>
@@ -18,6 +19,7 @@
 			<Spanish>UNA PRODUCCIÓN DE USECFORCE</Spanish>
 			<Dutch>EEN USECFORCE PRODUCTIE</Dutch>
 			<French>UNE PRODUCTION USECFORCE</French>
+      			<Czech>V PRODUKCI S USECFORCE</Czech>
 		</Key>
 		<Key ID="STR_INTRO_3">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>On 12 March 2013, a prion disease\n spreads among the worlds population\ntriggering a global pandemic</Original>
@@ -27,6 +29,7 @@
 			<Spanish>El 12 de Marzo de 2012, una enfermedad priónica\nse propaga entre la población mundial\ndesencadenando una pandemia global</Spanish>
 			<Dutch>Op 12 maart 2013 brak er een\nprionziekte uit onder de wereldbevolking\nmet als gevolg een\nwereldwijde pandemie</Dutch>
 			<French>Le 12 Mars 2013, une maladie à prions\n se répand parmi la population mondiale\ndéclenchant une pandémie globale</French>
+      			<Czech>12. března roku 2013, prionové neštěstí\nse rozšířilo po celém světě\na vyvolalo celosvětovou pandemii</Czech>
 		</Key>
 		<Key ID="STR_INTRO_4">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>The disease causes proteins in the brain to be replaced with prions ceasing regular function</Original>
@@ -36,6 +39,7 @@
 			<Spanish>La enfermedad provoca que las proteinas del cerebro sean reemplazadas con priones dejando de funcionar regularmente</Spanish>
 			<Dutch>De ziekte vervangt proteïnen in het brein met prions, waardoor het brein niet meer naar behoren functioneert</Dutch>
 			<French>La maladie entraîne le remplacement des protéines dans le cerveau \npar des prions, qui cessent alors leurs fonctions normales</French>	
+      			<Czech>Onemocnění způsobí, že bílkoviny v mozku jsou nahrazeny priony a mozek přestává fungovat.</Czech>
 		</Key>
 		<Key ID="STR_INTRO_5">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>Most people progress to dementia and then death as the brain is replaced with ineffective sludge</Original>
@@ -45,6 +49,7 @@
 			<Spanish>La mayoría de la gente se volvía loca y luego moría como resultado de que su cerebro era reemplazado por algo ineficiente.</Spanish>
 			<Dutch>Het grootste deel van de bevolking begint hierdoor te leiden aan dementie, en zal spoedig daarna sterven, omdat het brein wordt vervangen met drab</Dutch>
 			<French>La plupart des gens deviennent déments puis meurent \nalors que leurs cellules nerveuses sont remplacées par une matière inefficace</French>
+      			<Czech>Většinu lidí postihne demence a následně i smrt, mozek je totiž nahrazen neefektivní hmotou.</Czech>
 		</Key>
 		<Key ID="STR_INTRO_6">	<!-- use \n for linebreak (have them regularly!) -->
 			<Original>86% of the worlds population die</Original>
@@ -54,6 +59,7 @@
 			<Spanish>El 86% de la población mundial muere.</Spanish>
 			<Dutch>86% van de wereldbevolking komt te overlijden</Dutch>
 			<French>86% de la population mondiale meurt</French>
+      			<Czech>86% světové populace umírá</Czech>
 		</Key>
 		<Key ID="STR_INTRO_7">	
 			<Original>Some survive with the disease in a chronic state.\nLacking regular brain function, they are scarely human. They are unable to communicate,\ndriven by insatiable desire for violence, and attracted to the scent of those uninfected</Original>
@@ -63,6 +69,7 @@
 			<Spanish>Algunos sobreviven a la enfermedad en un estado crónico.\nCarecen de una función cerebral normal, son humanos aterradores. No son capaces de comunicarse,\nimpulsados por un deseo insaciable de violencia y atraidos por el olor de los no infectados.</Spanish>
 			<Dutch>Enkelen overleven de ziekte in een chronische staat.\nZonder enige reguliere breinactiviteit zijn ze niet mens te noemen. Ze kunnen niet communiceren,\n en worden gedreven door een onlesbaar verlangen naar geweld, en aangetrokken door de geur van niet-geïnfecteerde overlevenden</Dutch>
 			<French>Quelques uns survivent dans un état chronique de la maladie.\nManquants de fonctions cérébrales normales, ils sont à peine humains.\nIls sont inaptes à communiquer, conduits par un désir insatiable \nde violence et attirés par l'odeur de ceux qui ne sont pas infectés.</French>
+      			<Czech>Někteří přežijí, ale jsou v chronickém stavu.\nChybějí jim základní mozkové funkce, ztěží jsou to lidé. Jsou neschopni komunikovat,\nřízeni násilím a touhou po těch, kteří nejsou infikovani.</Czech>
 		</Key>
 		<Key ID="STR_INTRO_8">	
 			<Original>Society crumbles as the pandemic spreads rapidly</Original>
@@ -72,6 +79,7 @@
 			<Spanish>La sociedad se desmorona a la vez que la pandemia se propaga rápidamente.</Spanish>
 			<Dutch>De samenleving valt uit elkaar, en de pandemie verspreidt zich snel</Dutch>
 			<French>La société s'écroule alors que la pandémie s'étend rapidement</French>
+      			<Czech>Jak se pandemie šíří, společnost se rozpadá.</Czech>
 		</Key>
 		<Key ID="STR_INTRO_9">	
 			<Original>You are one of the 2% who are not infected yet</Original>
@@ -81,6 +89,7 @@
 			<Spanish>Eres parte del 2% que aún no esta infectado.</Spanish>
 			<Dutch>Jij bent één van de 2% die nog niet is geïnfecteerd</Dutch>
 			<French>Vous êtes l'un des 2% qui ne sont pas encore infectés</French>
+     			<Czech>Jsi jeden z těch 2% lidí, kteří se ještě nenakazili.</Czech>
 		</Key>
 		<Key ID="STR_INTRO_10">	
 			<Original>THIS IS YOUR STORY</Original>
@@ -90,6 +99,7 @@
 			<Spanish>ESTA ES TU HISTORIA</Spanish>
 			<Dutch>DIT IS JOUW VERHAAL</Dutch>
 			<French>CECI EST VOTRE HISTOIRE</French>
+      			<Czech>TOHLE JE TVŮJ PŘÍBĚH</Czech>
 		</Key>
 		<Key ID="STR_INTRO_11">	
 			<Original>Directed by</Original>
@@ -99,6 +109,7 @@
 			<Spanish>Dirigida por</Spanish>
 			<Dutch>Geregisseerd door</Dutch>
 			<French>Dirigé par</French>
+      			<Czech>Režie</Czech>
 		</Key>
 		<Key ID="STR_INTRO_12">	
 			<Original>Scientific Consultant</Original>
@@ -108,6 +119,7 @@
 			<Spanish>Consultor Científico</Spanish>
 			<Dutch>Wetenschappelijk Consultant</Dutch>
 			<French>Consultant scientifique</French>
+      			<Czech>Vědecký konzulant</Czech>
 			
 		</Key>
 		<Key ID="STR_INTRO_13">	
@@ -117,7 +129,8 @@
 			<Russian>Продюсер</Russian>
 			<Spanish>Productor</Spanish>
 			<Dutch>Producent</Dutch>
-			<French>Producteur</French>			
+			<French>Producteur</French>
+      			<Czech>Producent</Czech>			
 		</Key>
 		<Key ID="STR_INTRO_14">	
 			<Original>Marketing</Original>
@@ -127,6 +140,7 @@
 			<Spanish>Marketing</Spanish>
 			<Dutch>Marketing</Dutch>
 			<French>Marketing</French>
+      			<Czech>Marketing</Czech>
 		</Key>
 		<Key ID="STR_INTRO_15">	
 			<Original>Music</Original>
@@ -136,6 +150,7 @@
 			<Spanish>Música</Spanish>
 			<Dutch>Muziek</Dutch>
 			<French>Musique</French>
+      			<Czech>Hudba</Czech>
 		</Key>
 		<Key ID="STR_INTRO_16">	
 			<Original>Animation</Original>
@@ -145,6 +160,7 @@
 			<Spanish>Animación</Spanish>
 			<Dutch>Animaties</Dutch>
 			<French>Animation</French>
+      			<Czech>Animace</Czech>
 		</Key>
 	</package>
     <Package name="code">
@@ -156,6 +172,7 @@
 			<Spanish>Tomar %1</Spanish>
 			<Dutch>Neem %1</Dutch>
 			<French>Prendre %1</French>			<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
+      			<Czech>Vezmi %1</Czech>
 		</Key>
 		<Key ID="STR_DAYZ_CODE_2">	
 			<Original>You do not have enough room in your inventory</Original>
@@ -165,6 +182,7 @@
 			<Spanish>No tienes espacio suficiente en tu inventario.</Spanish>
 			<Dutch>Je hebt niet voldoende ruimte in je inventaris</Dutch>
 			<French>Vous n'avez pas assez de place dans votre inventaire.</French>
+      			<Czech>Ve vašem inventáři není dostatek místa.</Czech>
 		</Key>
 		<Key ID="STR_AUTHENTICATING">
 			<Original>Loading Character Data. Please wait.</Original>
@@ -174,6 +192,7 @@
 			<Spanish>Cargando datos del personaje. Por favor espere.</Spanish>
 			<Dutch>Karakterdata aan het laden. Even geduld.</Dutch>
 			<French>Chargement des données du personnage. Veuillez patienter.</French>
+      			<Czech>Načítám data postavy. Prosím čekejte.</Czech>
 		</Key>
 	</package>
     <Package name="feedback">
@@ -185,6 +204,7 @@
 			<Spanish>Cocinaste %1 %2</Spanish>
 			<Dutch>Je hebt %1 %2 gekookt</Dutch>
 			<French>Vous avez cuit %1 %2</French>			<!-- As in "you have successfully cooked 5 raw steak" -->
+      			<Czech>Upekl jsi %1 %2</Czech>
 		</Key>
 		<Key ID="str_success_tent_pack">
 			<Original>Your tent has been packed</Original>
@@ -194,6 +214,7 @@
 			<Spanish>Su carpa se ha embalado</Spanish>
 			<Dutch>Je tent is ingepakt</Dutch>
 			<French>Votre tente a été repliée.</French>
+      			<Czech>Tvůj stan byl zabalen.</Czech>
 		</Key>
 		<Key ID="str_fail_tent_pack">
 			<Original>You cannot pack this tent, it is not yours</Original>
@@ -203,6 +224,7 @@
 			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
 			<Dutch>Je kunt deze tent niet inpakken, hij is niet van jou</Dutch>
 			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
+      			<Czech>Tento stan nemůžeš zabalit, jelikož není tvůj.</Czech>
 		</Key>
 		<Key ID="str_success_tent_pitch">
 			<Original>You have pitched your tent</Original>
@@ -212,6 +234,7 @@
 			<Spanish>Asentaste tu carpa.</Spanish>
 			<Dutch>Je hebt je tent opgezet</Dutch>
 			<French>Vous avez installé votre tente.</French>
+      			<Czech>Postavil jsi stan.</Czech>
 		</Key>
 		<Key ID="str_fail_tent_pitch">
 			<Original>You cannot place a Tent here. The area must be flat, and free of other objects</Original>
@@ -221,6 +244,7 @@
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
 			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et libre de tout autre objet.</French>
+      			<Czech>Stan zde nelze postavit. Plocha musí být rovná a být dostatečně velká.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
 			<Original>You have consumed a %1</Original>
@@ -230,6 +254,7 @@
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
 			<French>Vous avez consommé un(e) %1</French>
+      			<Czech>Snědl jsi %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
 			<Original>You have created a fireplace</Original>
@@ -239,6 +264,7 @@
 			<Spanish>Creaste una fogata</Spanish>
 			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
 			<French>Vous avez créé un feu de camp.</French>
+      			<Czech>Vytvořil jsi ohniště.</Czech>
 		</Key>
 		<Key ID="str_build_01">
 			<Original>You have constructed a %1</Original>
@@ -248,6 +274,7 @@
 			<Spanish>Construiste un %1</Spanish>
 			<Dutch>Je hebt een %1 opgebouwd</Dutch>
 			<French>Vous avez construit un(e) %1</French>
+      			<Czech>Postavil jsi %1</Czech>
 		</Key>
 		<Key ID="str_build_failed_01">
 			<Original>You have failed to build %1.</Original>
@@ -257,6 +284,7 @@
 			<Spanish>Fallaste al contruir un %1.</Spanish>
 			<Dutch>You have failed to build %1.</Dutch>
 			<French>Vous n'avez pas réussi à contruire %1.</French>
+      			<Czech>Při stavbě %1 došlo k chybě.</Czech>
 		</Key>
 		<Key ID="str_fireplace_02">
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
@@ -265,7 +293,8 @@
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
-			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et libre de tout autre objet.</French>	
+			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et libre de tout autre objet.</French>
+      			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně velká.</Czech>	
 		</Key>
 		<Key ID="str_fireplace_removed">
 			<Original>Fireplace has been removed</Original>
@@ -275,6 +304,7 @@
 			<Spanish>La fogata fue removida.</Spanish>
 			<Dutch>Het kampvuur is verwijderd</Dutch>
 			<French>Le feu de camp a été retiré.</French>
+      			<Czech>Ohniště bylo odstraněno.</Czech>
 		</Key>
 		<Key ID="str_success_gutted_animal">
 			<Original>%1 has been gutted, %2 meat steaks now on the carcass</Original>
@@ -284,6 +314,7 @@
 			<Spanish>Un %1 fue achurado, dejando %2 trozos de carne en el cuerpo.</Spanish>
 			<Dutch>Je hebt %1 opengesneden. Er bevinden zich %2 biefstukken op het karkas</Dutch>
 			<French>%1 a été découpé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
+      			<Czech>%1 bylo vykucháno, %2 syrových steaků lze najít v mrtvole.</Czech>
 		</Key>
 		<Key ID="str_medical_healing">
 			<Original>You are being healed</Original>
@@ -293,6 +324,7 @@
 			<Spanish>Fuiste curado.</Spanish>
 			<Dutch>Je wordt genezen</Dutch>
 			<French>Vous recevez des soins</French>
+      			<Czech>Jste uzdravováni.</Czech>
 		</Key>
 		<Key ID="str_player_01">
 			<Original>You have filled %1 bottles with water</Original>
@@ -302,6 +334,7 @@
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
 			<French>Vous avez rempli %1 bouteille(s) avec de l'eau.</French>
+      			<Czech>Naplnil jsi %1 lahví vodou.</Czech>
 		</Key>
 		<Key ID="str_player_02">
 			<Original>You have no empty water bottles</Original>
@@ -311,6 +344,7 @@
 			<Spanish>No tienes cantimploras vacías</Spanish>
 			<Dutch>Je hebt geen lege waterflessen</Dutch>
 			<French>Vous n'avez aucune bouteille vide.</French>
+      			<Czech>Nemáš žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
 			<Original>You need a %1 to repair this</Original>
@@ -320,6 +354,7 @@
 			<Spanish>Necesitas %1 para reparar esto.</Spanish>
 			<Dutch>Je hebt een %1 nodig om dit te repareren</Dutch>
 			<French>Vous avez besoin d'un(e) %1 pour réparer ceci.</French>
+      			<Czech>Potřebuješ %1 abys tohle opravil.</Czech>
 		</Key>
 		<Key ID="str_player_04">
 			<Original>You have successfully attached the %1 on the %2</Original>
@@ -329,6 +364,7 @@
 			<Spanish>Fijaste correctamente el %1 al %2</Spanish>
 			<Dutch>Je hebt met succes een %1 geplaatst op de %2</Dutch>
 			<French>Vous avez réussi à placer le %1 sur le %2</French>
+      			<Czech>Úspěšně jsi připevnil %1 k %2</Czech>
 		</Key>
 		<Key ID="str_player_05">
 			<Original>%1 has been filled with %2 litres of Fuel</Original>
@@ -338,6 +374,7 @@
 			<Spanish>El %1 fue cargado con %2 litros de combustible.</Spanish>
 			<Dutch>%1 is bijgetankt met %2 liter benzine</Dutch>
 			<French>%1 a été rempli avec %2 litres de carburant.</French>
+      			<Czech>%1 bylo doplněno %2 litrů paliva.</Czech>
 		</Key>
 		<Key ID="str_player_06">
 			<Original>Day</Original>
@@ -347,6 +384,7 @@
 			<Spanish>Día</Spanish>
 			<Dutch>Dag</Dutch>
 			<French>Jour</French>			<!-- As in "Day 1" or "Day 10", how many days since character started -->
+      			<Czech>Den</Czech>
 		</Key>
 		<Key ID="str_player_07">
 			<Original>You last ate %2 minutes, and drank %3 minutes ago</Original>
@@ -356,6 +394,7 @@
 			<Spanish>Tu última comida fue hace %2 minutos y bebida hace %3 minutos</Spanish>
 			<Dutch>Je hebt %2 minuten geleden gegeten en %3 minuten geleden gedronken</Dutch>
 			<French>Vous avez mangé il y a %2 minutes et bu il y a %3 minutes.</French>
+      			<Czech>Naposledy jsi jedl před %2 minutami a pil před %3 minutami.</Czech>
 		</Key>
 		<Key ID="str_player_08">
 			<Original>%1 Food and %2 water was used since your last login</Original>
@@ -365,6 +404,7 @@
 			<Spanish>%1 Comidas y %2 Aguas fueron usadas desde tu ultimo ingreso</Spanish>
 			<Dutch>Sinds de laatste keer dat je hebt ingelogd heb je %1 voedsel en %2 water genuttigd</Dutch>
 			<French>%1 Nourriture(s) et %2 boisson(s) ont été utilisés depuis votre dernière connection.</French>
+     			<Czech>%1 jídla a %2 vody bylo spotřebováno od vašeho posledního přihlášení.</Czech>
 		</Key>
 		<Key ID="str_player_09">
 			<Original>You have filled %1 jerrycans with fuel</Original>
@@ -374,6 +414,7 @@
 			<Spanish>Llenaste %2 bidones con combustible</Spanish>
 			<Dutch>Je hebt %1 jerrycans met brandstof gevuld</Dutch>
 			<French>Vous avez rempli %1 jerrican(s) avec du carburant.</French>
+      			<Czech> Naplnil jsi palivem %1 kanystrů</Czech>
 		</Key>
 		<Key ID="str_player_10">
 			<Original>You have no empty jerry cans</Original>
@@ -383,6 +424,7 @@
 			<Spanish>No tienes bidones vacíos</Spanish>
 			<Dutch>Je hebt geen lege jerrycans</Dutch>
 			<French>Vous n'avez pas de jerrican vide.</French>
+      			<Czech>Nemáš žádné prázdné kanystry.</Czech>
 		</Key>
 		<Key ID="str_player_11">
 			<Original>You need to sit in the driver seat before you can repair this vehicle</Original>
@@ -392,6 +434,7 @@
 			<Spanish>Necesitas sentarte en el asiento del conductor antes de arreglar este vehículo.</Spanish>
 			<Dutch>Je moet in de bestuurdersstoel zitten om dit voertuig te repareren</Dutch>
 			<French>Vous devez vous asseoir à la place du conducteur avant de pouvoir réparer ce véhicule.</French>
+      			<Czech>Je nutné si nejdříve sednout na místo řidiče abys mohl opravit toto vozidlo.</Czech>
 		</Key>
 		<Key ID="str_player_12">
 			<Original>Please go to Player Selection Screen to continue in game</Original>
@@ -401,6 +444,7 @@
 			<Spanish>Por favor ve a la Pantalla de Selección de Jugador para continuar en el juego.</Spanish>
 			<Dutch>Ga alsjeblieft naar het rollenverdelingsscherm on verder te spelen</Dutch>
 			<French>Veuillez aller à l'Ecran de Sélection de Joueur pour continuer à jouer</French>
+      			<Czech>Pokud chcete pokračovat ve hře, prosím vraťe se na obrazovku s výběrem rolí.</Czech>
 		</Key>
 		<Key ID="str_player_13">
 			<Original>Waiting for character to create</Original>
@@ -409,7 +453,8 @@
 			<Russian>Пожалуйста, выйдите в окно выбора игрока чтобы продолжить игру</Russian>
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
 			<Dutch>Wachten tot het karakter is aangemaakt</Dutch>
-			<French>En attente de la création du personnage</French>	
+			<French>En attente de la création du personnage</French>
+      			<Czech>Čekám na vytvoření postavy.</Czech>	
 		</Key>
 		<Key ID="str_player_14">
 			<Original>Retrying to Authenticate</Original>
@@ -419,6 +464,7 @@
 			<Spanish>Volviendo a Autentificar</Spanish>
 			<Dutch>Authenticatie opnieuw proberen</Dutch>
 			<French>Nouvelle tentative d'Authentification</French>
+      			<Czech>Opakuji ověřování</Czech>
 		</Key>
 		<Key ID="str_player_15">
 			<Original>Requesting Authentication</Original>
@@ -428,6 +474,7 @@
 			<Spanish>Solicitando Autentificación</Spanish>
 			<Dutch>Authenticatie aan het aanvragen</Dutch>
 			<French>Demande d'Authentification</French>
+      			<Czech>Odesílám požadevek pro ověření</Czech>
 		</Key>
 		<Key ID="str_player_16">
 			<Original>Waiting for server response</Original>
@@ -437,6 +484,7 @@
 			<Spanish>Esperando la respuesta del servidor</Spanish>
 			<Dutch>Wachten op serverantwoord</Dutch>
 			<French>Attente de la réponse du serveur</French>
+      			<Czech>Čekám na odpověď serveru</Czech>
 		</Key>
 		<Key ID="str_player_17">
 			<Original>Server responded, creating character</Original>
@@ -446,6 +494,7 @@
 			<Spanish>El servidor respondió, creando personaje</Spanish>
 			<Dutch>Server heeft geantwoord, karakter aan het maken</Dutch>
 			<French>Réponse du serveur, création du personnage</French>
+      			<Czech>Spojení navázáno, vytvářím postavu</Czech>
 		</Key>
 		<Key ID="str_player_18">
 			<Original>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</Original>
@@ -455,6 +504,7 @@
 			<Spanish>Estas ejecutando una versión incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzmod.com/downloads (Estas ejecutando la versión %1 y el servidor %2)</Spanish>
 			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzmod.com/downloads (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
 			<French>Vous utilisez une version incorrecte de DAYZ_CODE, veuillez télécharger ce fichier depuis dayzmod.com/downloads (Vous utilisez la version %1 et le serveur utilise la version %2)</French>
+      			<Czech>Máte nesprávnou verzi DAYZ_CODE, stáhněte si prosím aktuální soubor z dayzmod.com/downloads (Vaše verze je %1 a na serveru běží verze %2)</Czech>
 		</Key>
     <Key ID="str_player_20">
       <Original>You must be near a water-source such as a pond or well to refill your water bottles</Original>
@@ -464,6 +514,7 @@
       <Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
       <Dutch>Je moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
       <French>Vous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos bouteilles d'eau.</French>
+      <Czech>Pro plnění láhve na vodu je nutné být poblíž studny nebo rybníka.</Czech>
     </Key>
       <Key ID="str_player_21">
         <Original>You cannot do this while you are on a ladder</Original>
@@ -473,6 +524,7 @@
         <Spanish>No puedes hacer esto mientras estás en una escalera</Spanish>
         <Dutch>Je kunt deze actie op een ladder niet uitvoeren</Dutch>
         <French>Vous ne pouvez pas faire cela en étant sur une échelle.</French>
+        <Czech>Akci nelze provést, jelikož jste na žebříku.</Czech>
       </Key>
       <Key ID="str_player_22">
         <Original>You must have wood in your inventory in order to create a fireplace</Original>
@@ -482,6 +534,7 @@
         <Spanish>Debes tener leña en tu inventario para poder crear una fogata.</Spanish>
         <Dutch>Je moet hout in je inventaris hebben om een kampvuur te maken</Dutch>
         <French>Vous devez avoir du bois dans votre inventaire pour pouvoir faire un feu de camp.</French>
+        <Czech>Pro vytvoření ohniště je nutné mít v inventáři dřevo.</Czech>
       </Key>     
       <Key ID="str_player_23">
         <Original>You must be in a forest and close to a tree to harvest wood.</Original>
@@ -491,6 +544,7 @@
         <Spanish>Debes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
         <Dutch>Je moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>
         <French>Vous devez être en forêt et proche d'un arbre pour couper du bois.</French>
+        <Czech>Pro získání dřeva musíš být v lese blízko stromu.</Czech>
       </Key>
       <Key ID="str_player_24">
         <Original>You do not have enough room in your inventory to do that.</Original>
@@ -499,7 +553,8 @@
         <Russian>У вас недостаточно места в инвентаре.</Russian>
         <Spanish>No tienes espacio suficiente en tu inventario para hacer eso.</Spanish>
         <Dutch>Je hebt onvoldoende ruimte in je inventaris om die actie uit te voeren</Dutch>
-        <French>Vous n'avez pas assez de place dans votre inventaire pour faire cela.</French>        
+        <French>Vous n'avez pas assez de place dans votre inventaire pour faire cela.</French>
+        <Czech>Pro tuto akci nemáš dostatek místa v inventáři.</Czech>        
       </Key>
       <Key ID="str_player_25">
         <Original>A pile of wood has been successfully added to your inventory.</Original>
@@ -509,6 +564,7 @@
         <Spanish>Una pila de leña se agregó correctamente a tu inventario.</Spanish>
         <Dutch>Er is brandhout toegevoegd aan je inventaris.</Dutch>
         <French>Une pile de bois a été ajoutée à votre inventaire avec succès.</French>
+        <Czech>Hromádka dřeva byla úspěšně přidána do tvého inventáře.</Czech>
       </Key>
       <Key ID="str_player_26">
         <Original>You cannot do this while you are in the water.</Original>
@@ -518,6 +574,7 @@
         <Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
         <Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
         <French>Vous ne pouvez pas faire cela lorsque vous êtes dans l'eau.</French>
+        <Czech>Tuto akci nelze provést pokud jste ve vodě.</Czech>
       </Key>
       <Key ID="str_player_27">
         <Original>You have applied a heatpack to your body successfully.</Original>
@@ -527,6 +584,7 @@
         <Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
         <Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
         <French>Vous avez utilisé un heatpack avec succès.</French>
+        <Czech>Aplikace heatpacku proběhla úspěšně.</Czech>
       </Key>
       <Key ID="str_player_28">
         <Original>You cannot reload that combination, you need %1 %2 magazines.</Original>
@@ -536,6 +594,7 @@
         <Spanish>No puedes recargar esa combinación, necesitas %1 cargadores de %2</Spanish>
         <Dutch>Je kan die combinatie niet herladen, je hebt %1 %2 magazijnen nodig.</Dutch>
         <French>Vous ne pouvez pas recharger cette combinaison, vous avez besoin de %1 %2 chargeur(s).</French>
+        <Czech>Tuto kombinaci nelze provést, potřebujete zásobníky %1 %2.</Czech>
       </Key>
       <Key ID="str_player_29">
         <Original>You have successfully reloaded %1 %2 magazines.</Original>
@@ -545,6 +604,7 @@
         <Spanish>Recargaste correctamente %1 cargadores de %2.</Spanish>
         <Dutch>Je hebt met succes %1 %2 magazijnen herladen.</Dutch>
         <French>Vous avez rechargé %1 %2 chargeur(s) avec succès.</French>
+        <Czech>Úspěšně jsi nabil zásobníky %1 %2. </Czech>
       </Key>
      <Key ID="str_player_30">
         <Original>%1 must be on your person to move it to/from your toolbelt.</Original>
@@ -554,6 +614,7 @@
         <Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
         <Dutch>Je moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
         <French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
+        <Czech>TO DECIDE</Czech>
       </Key>
       <Key ID="str_player_31">
         <Original>%1 must be in your main inventory to %2 it.</Original>
@@ -563,6 +624,7 @@
         <Spanish>%1 debe estar en tu inventario principal para: %2</Spanish>
         <Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
         <French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
+        <Czech>%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
       </Key>
       <Key ID="str_player_beinglooted">
         <Original>%1 is already being looted by someone else.</Original>
@@ -572,6 +634,7 @@
         <Spanish>%1 ya fue saqueado por alguien más.</Spanish>
         <Dutch>%1 wordt al door iemand anders opgepakt.</Dutch>
         <French>%1 est déjà en train d'être pillé par quelqu'un d'autre.</French>
+        <Czech>%1 už je loupeno někým jiným.</Czech>
       </Key>
       <Key ID="str_player_beingpacked">
         <Original>That tent is already being packed.</Original>
@@ -581,6 +644,7 @@
         <Spanish>Esta carpa ya fue embalada.</Spanish>
         <Dutch>Die tent wordt al ingepakt.</Dutch>
         <French>Cette tente est déjà en train d'être repliée.</French>
+        <Czech>Stan už byl zabalen.</Czech>
       </Key>
 		<Key ID="str_player_studybody">
 			<Original>His name was %1, it appears he died from %2</Original>
@@ -590,6 +654,7 @@
 			<Spanish>Su nombre era %1, y aparentemente murió por %2</Spanish>
 			<Dutch>Zijn naam was %1, het lijkt dat hij is gestorven aan %2</Dutch>
 			<French>Son nom était %1, il semble qu'il soit mort d' %2</French>
+      			<Czech>Jeho jméno bylo %1, vypadá to, že je mrtvý od %2</Czech>
 		</Key>
 		<Key ID="str_death_shothead">
 			<Original>a gunshot to the head</Original>
@@ -599,6 +664,7 @@
 			<Spanish>un disparo en la cabeza</Spanish>
 			<Dutch>een kogel in het hoofd</Dutch>
 			<French>une balle dans la tête</French>
+      			<Czech>střela do hlavy</Czech>
 		</Key>
 		<Key ID="str_death_shotheavy">
 			<Original>a high calibre gunshot</Original>
@@ -608,6 +674,7 @@
 			<Spanish>un disparo de alto calibre</Spanish>
 			<Dutch>een schot van hoog kaliber</Dutch>
 			<French>un tir de gros calibre</French>
+      			<Czech>vysoko rážní střelba</Czech>
 		</Key>
 		<Key ID="str_death_bled">
 			<Original>blood loss</Original>
@@ -617,6 +684,7 @@
 			<Spanish>perdida de sangre</Spanish>
 			<Dutch>bloedverlies</Dutch>
 			<French>une hémorragie</French>
+      			<Czech>krev ztracena</Czech>
 		</Key>
 		<Key ID="str_death_dehyd">
 			<Original>dehydration</Original>
@@ -626,6 +694,7 @@
 			<Spanish>deshidratación</Spanish>
 			<Dutch>uitdroging</Dutch>
 			<French>une déshydratation</French>
+      			<Czech>dehydratace</Czech>
 		</Key>
 		<Key ID="str_death_starve">
 			<Original>starvation</Original>
@@ -635,6 +704,7 @@
 			<Spanish>falta de comida</Spanish>
 			<Dutch>uithongering</Dutch>
 			<French>inanition</French>
+      			<Czech>vyhladovění</Czech>
 		</Key>
 		<Key ID="str_death_combatlog">
 			<Original>combat logging</Original>
@@ -644,6 +714,7 @@
 			<Spanish>huir de combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
 			<French>une déco en combat</French>
+      			<Czech>odhlášen z boje</Czech>
 		</Key>
 		<Key ID="str_death_unknown">
 			<Original>an unknown cause</Original>
@@ -653,6 +724,7 @@
 			<Spanish>causas desconocidas</Spanish>
 			<Dutch>een onbekende oorzaak</Dutch>
 			<French>une cause inconnue</French>
+      			<Czech>neznámá příčina</Czech>
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<Original>Cannot Abort near another player!</Original>
@@ -662,6 +734,7 @@
 			<Spanish>Cannot Abort near another player!</Spanish>
 			<Dutch>Cannot Abort near another player!</Dutch>
 			<French>Cannot Abort near another player!</French>
+      			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
 		</Key>
 		<Key ID="str_abort_zedsclose">
 			<Original>Can Abort in %1</Original>
@@ -671,6 +744,7 @@
 			<Spanish>Can Abort in %1</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
 			<French>Can Abort in %1</French>
+      			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
 		<Key ID="str_abort_playerincombat">
 			<Original>Cannot Abort while in combat!</Original>
@@ -680,6 +754,7 @@
 			<Spanish>Cannot Abort while in combat!</Spanish>
 			<Dutch>Cannot Abort while in combat!</Dutch>
 			<French>Cannot Abort while in combat!</French>
+      			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
 		<Key ID="str_broken_arrow">
 			<Original>Arrow was broken and cannot be used again</Original>
@@ -689,6 +764,7 @@
 			<Spanish>Arrow was broken and cannot be used again</Spanish>
 			<Dutch>Arrow was broken and cannot be used again</Dutch>
 			<French>Arrow was broken and cannot be used again</French>
+      			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
 		</Key>
 	</Package>
   <Package name="ui">
@@ -700,6 +776,7 @@
       <Spanish>SELECCIONE SU GÉNERO</Spanish>
       <Dutch>KIES JE GESLACHT</Dutch>
       <French>SELECTIONNEZ VOTRE GENRE</French>
+      <Czech>VYBER SI POHLAVÍ</Czech>
     </Key>
 	<Key ID="STR_UI_GENDER_DESC">
 	  <Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
@@ -709,6 +786,7 @@
 	  <Spanish>Por favor selecciona el género con el que deseas jugar. Tu género se enlazará a tu personaje y solo podrá ser cambiado cuando mueras.</Spanish>
 	  <Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke karakter, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
 	  <French>Veuillez sélectionner le genre que vous voulez jouer. Votre genre sera lié à ce personnage unique et sera définitif jusqu'à la mort de ce dernier.</French>
+    	  <Czech>Vyberte si prosím pohlaví, za které si přejete hrát. Vaše pohlaví bude přiřazeno k unikátní postavě a dokud neumřete, nelze pohlaví změnit.</Czech>
 	</Key>
     <Key ID="STR_UI_GENDER_MALE">
       <Original>MALE</Original>
@@ -717,7 +795,8 @@
       <Russian>Мужчина</Russian>
       <Spanish>MASCULINO</Spanish>
       <Dutch>MAN</Dutch>
-      <French>HOMME</French>      
+      <French>HOMME</French>
+      <Czech>MUŽ</Czech>      
     </Key>
     <Key ID="STR_UI_GENDER_FEMALE">
       <Original>FEMALE</Original>
@@ -726,7 +805,8 @@
       <Russian>Женщина</Russian>
       <Spanish>FEMENINO</Spanish>
       <Dutch>VROUW</Dutch>
-      <French>FEMME</French>      
+      <French>FEMME</French>
+      <Czech>ŽENA</Czech>      
     </Key>
   </Package>
 	<Package name="actions">
@@ -738,6 +818,7 @@
 			<Spanish>Tomar Antibióticos</Spanish>
 			<Dutch>Antibiotica innemen</Dutch>
 			<French>Prendre des Antibiotiques</French>
+      			<Czech>Vzít si Antibiotika</Czech>
 		</Key>
 		<Key ID="str_actions_self_04">
 			<Original>Gut Animal</Original>
@@ -747,6 +828,7 @@
 			<Spanish>Achurar Animal</Spanish>
 			<Dutch>Dier opensnijden</Dutch>
 			<French>Découper l'Animal</French>
+      			<Czech>Vykuchat zvíře</Czech>
 		</Key>
 		<Key ID="str_actions_self_05">
 			<Original>Cook Meat</Original>
@@ -756,6 +838,7 @@
 			<Spanish>Cocinar la Carne</Spanish>
 			<Dutch>Biefstuk koken</Dutch>
 			<French>Cuire la Viande</French>
+      			<Czech>Upéct maso</Czech>
 		</Key>
 		<Key ID="str_actions_boilwater">
 			<Original>Boil Water</Original>
@@ -765,6 +848,7 @@
 			<Spanish>Hervir el Agua</Spanish>
 			<Dutch>koge vand</Dutch>
 			<French>faire bouillir l'eau</French>
+      			<Czech>Převařit vodu</Czech>
 		</Key>
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
@@ -774,6 +858,7 @@
 			<Spanish>Remover fogata</Spanish>
 			<Dutch>Kampvuur verwijderen</Dutch>
 			<French>Retirer le Feu de camp</French>
+      			<Czech>Odstranit ohniště</Czech>
 		</Key>
 		<Key ID="str_actions_self_07">
 			<Original>Pack Tent</Original>
@@ -783,6 +868,7 @@
 			<Spanish>Embalar Carpa</Spanish>
 			<Dutch>Tent inpakken</Dutch>
 			<French>Replier la Tente</French>
+      			<Czech>Zabalit stan</Czech>
 		</Key>
 		<Key ID="str_actions_self_08">
 			<Original>Drink Water</Original>
@@ -792,6 +878,7 @@
 			<Spanish>Tomar Agua</Spanish>
 			<Dutch>Water drinken</Dutch>
 			<French>Boire de l'Eau</French>
+      			<Czech>Vypít vodu</Czech>
 		</Key>
 		<Key ID="str_actions_self_09">
 			<Original>Fill Water</Original>
@@ -800,7 +887,8 @@
 			<Russian>Наполнить фляжки</Russian>
 			<Spanish>Llenar con Agua</Spanish>
 			<Dutch>Water bijvullen</Dutch>
-			<French>Remplir d'Eau</French>			
+			<French>Remplir d'Eau</French>
+      			<Czech>Doplnit vodu</Czech>			
 		</Key>
 		<Key ID="str_actions_self_10">
 			<Original>Fill Jerrycan</Original>
@@ -810,6 +898,7 @@
 			<Spanish>Llenar Bidones</Spanish>
 			<Dutch>Jerrycan bijvullen</Dutch>
 			<French>Remplir le(s) Jerrican(s)</French>
+      			<Czech>Naplnit kanystr</Czech>
 		</Key>
 		<Key ID="str_actions_medical_01">
 			<Original>Drag Body</Original>
@@ -819,6 +908,7 @@
 			<Spanish>Arrastrar Cuerpo</Spanish>
 			<Dutch>Lichaam slepen</Dutch>
 			<French>Traîner le Corps</French>
+      			<Czech>Táhnout tělo</Czech>
 		</Key>
 		<Key ID="str_actions_medical_02">
 			<Original>Check Pulse</Original>
@@ -828,6 +918,7 @@
 			<Spanish>Tomar Pulso</Spanish>
 			<Dutch>Hartslag controleren</Dutch>
 			<French>Contrôler le Pouls</French>
+      			<Czech>Zkontrolovat puls</Czech>
 		</Key>
 		<Key ID="str_actions_medical_03">
 			<Original>Load patient into %1</Original>
@@ -837,6 +928,7 @@
 			<Spanish>Colocar paciente en %1</Spanish>
 			<Dutch>Patient in %1 laden</Dutch>
 			<French>Charger le patient dans %1</French>
+      			<Czech>Naložit pacienta do %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_04">
 			<Original>Bandage Wounds</Original>
@@ -846,6 +938,7 @@
 			<Spanish>Vendar Heridas</Spanish>
 			<Dutch>Wonden verbinden</Dutch>
 			<French>Bander les Blessures</French>
+      			<Czech>Obvázat zranění</Czech>
 		</Key>
 		<Key ID="str_actions_medical_05">
 			<Original>Give Epinephrine</Original>
@@ -855,6 +948,7 @@
 			<Spanish>Dar Epinefrina</Spanish>
 			<Dutch>Adrenaline injecteren</Dutch>
 			<French>Donner de l'Epinéphrine</French>
+      			<Czech>Dát Epinefrin</Czech>
 		</Key>
 		<Key ID="str_actions_medical_06">
 			<Original>Give Morphine</Original>
@@ -863,7 +957,8 @@
 			<Russian>Сделать укол морфия</Russian>
 			<Spanish>Dar Morfina</Spanish>
 			<Dutch>Morfine injecteren</Dutch>
-			<French>Donner de la Morphine</French>			
+			<French>Donner de la Morphine</French>
+      			<Czech>Dát Morfium</Czech>			
 		</Key>
 		<Key ID="str_actions_medical_07">
 			<Original>Give Painkillers</Original>
@@ -873,6 +968,7 @@
 			<Spanish>Dar Analgésicos</Spanish>
 			<Dutch>Pijnstillers geven</Dutch>
 			<French>Donner des Antidouleurs</French>
+      			<Czech>Dát Prášky proti bolesti</Czech>
 		</Key>
 		<Key ID="str_actions_medical_08">
 			<Original>Give Blood Transfusion</Original>
@@ -882,6 +978,7 @@
 			<Spanish>Dar Transfusión de Sangre</Spanish>
 			<Dutch>Bloedtransfusie geven</Dutch>
 			<French>Donner une Transfusion de Sang</French>
+      			<Czech>Dát Krevní transfúzi</Czech>
 		</Key>
 		<Key ID="str_actions_medical_09">
 			<Original>&lt;t %2&gt;Repair %1&lt;/t&gt;</Original>
@@ -891,6 +988,7 @@
 			<Spanish>&lt;t %2&gt;Reparar %1&lt;/t&gt;</Spanish>
 			<Dutch>&lt;t %2&gt;Repareren %1&lt;/t&gt;</Dutch>
 			<French>&lt;t %2&gt;Réparer %1&lt;/t&gt;</French>
+      			<Czech>&lt;t %2&gt;Opravit %1&lt;/t&gt;</Czech>
 		</Key>
 		<Key ID="str_actions_medical_10">
 			<Original>Refuel %1</Original>
@@ -900,6 +998,7 @@
 			<Spanish>Reabastecer %1</Spanish>
 			<Dutch>Brandstof bijvullen %1</Dutch>
 			<French>Remettre du carburant dans %1</French>
+      			<Czech>Doplnit palivo %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_11">
 			<Original>Issue %1</Original>
@@ -909,6 +1008,7 @@
 			<Spanish>Problema %1</Spanish>
 			<Dutch>%1 uitrusten</Dutch>
 			<French>Problème %1</French>
+      			<Czech>Problém %1<Czech>
 		</Key>
 		<Key ID="str_actions_medical_12">
 			<Original>Packup %1</Original>
@@ -918,6 +1018,7 @@
 			<Spanish>Empaquetar %1</Spanish>
 			<Dutch>%1 inpakken</Dutch>
 			<French>Empaqueter %1</French>
+      			<Czech>Zabalit %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_13">
 			<Original>Upgrade %1</Original>
@@ -927,6 +1028,7 @@
 			<Spanish>Mejorar %1</Spanish>
 			<Dutch>%1 upgraden</Dutch>
 			<French>Améliorer %1</French>
+      			<Czech>Vylepšit %1<8Czech>
 		</Key>
 		<Key ID="str_actions_medical_14">
 			<Original>Unload patients from %1</Original>
@@ -936,6 +1038,7 @@
 			<Spanish>Descargar pacientes del %1</Spanish>
 			<Dutch>Patiënten uit %1 laden</Dutch>
 			<French>Décharger le(s) patient(s) de %1</French>
+      			<Czech>Vyložit pacienty z %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_15">
 			<Original>Pickup %1</Original>
@@ -945,6 +1048,7 @@
 			<Spanish>Tomar %1</Spanish>
 			<Dutch>%1 oppakken</Dutch>
 			<French>Ramasser %1</French>
+      			<Czech>Zvednout %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_16">
 			<Original>Drop %1</Original>
@@ -954,6 +1058,7 @@
 			<Spanish>Dejar %1</Spanish>
 			<Dutch>%1 laten vallen</Dutch>
 			<French>Lâcher %1</French>
+      			<Czech>Odhodit %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_17">
 			<Original>Extinguish %1</Original>
@@ -963,6 +1068,7 @@
 			<Spanish>Extinguir %1</Spanish>
 			<Dutch>%1 blussen</Dutch>
 			<French>Eteindre %1</French>
+      			<Czech>Uhasit %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_18">
 			<Original>You cannot perform another blood transfusion so fast</Original>
@@ -972,6 +1078,7 @@
 			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
 			<Dutch>You cannot perform another blood transfusion so fast</Dutch>
 			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
+      			<Czech>Nelze znovu provést krevní transfúzi tak rychle po sobě.</Czech>
 		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>
@@ -981,6 +1088,7 @@
 			<Spanish>Estudiar Cuerpo</Spanish>
 			<Dutch>Lichaam bestuderen</Dutch>
 			<French>Examiner le corps</French>
+      			<Czech>Prozkoumat tělo</Czech>
 		</Key>
 		<Key ID="str_actions_build">
 			<Original>Build %1</Original>
@@ -990,6 +1098,7 @@
 			<Spanish>Construir %1</Spanish>
 			<Dutch>%1 opbouwen</Dutch>
 			<French>Construire %1</French>
+      			<Czech>Postavit %1</Czech>
 		</Key>
 		<Key ID="str_actions_delete">
 			<Original>Remove %1</Original>
@@ -999,6 +1108,7 @@
 			<Spanish>Remover %1</Spanish>
 			<Dutch>%1 verwijderen</Dutch>
 			<French>Enlever %1</French>
+      			<Czech>Odstranit %1</Czech>
 		</Key>
 		<Key ID="str_actions_save">
 			<Original>Save %1</Original>
@@ -1008,6 +1118,7 @@
 			<Spanish>Guardar %1</Spanish>
 			<Dutch>%1 opslaan</Dutch>
 			<French>Sauvegarder %1</French>
+      			<Czech>Uložit %1</Czech>
 		</Key>
 		<Key ID="str_actions_flipveh">
 			<Original>Turn Over %1</Original>
@@ -1017,6 +1128,7 @@
 			<Spanish>Voltear %1</Spanish>
 			<Dutch>Turn Over %1</Dutch>
 			<French>Retourner %1</French>
+      			<Czech>Otočit %1</Czech>
 		</Key>
 		<Key ID="str_actions_stats">
 			<Original>Enable Stats</Original>
@@ -1026,6 +1138,7 @@
 			<Spanish>Activar Estadísticas</Spanish>
 			<Dutch>Enable Stats</Dutch>
 			<French>Activer les Stats</French>
+      			<Czech>Zapnout statistiky</Czech>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
@@ -1035,6 +1148,7 @@
 			<Spanish>Dormir</Spanish>
 			<Dutch>Sleep</Dutch>
 			<French>Dormir</French>
+      			<Czech>Spát</Czech>
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<Original>Bandit</Original>
@@ -1044,6 +1158,7 @@
 			<Spanish>Bandido</Spanish>
 			<Dutch>Bandiet</Dutch>
 			<French>Bandit</French>
+      			<Czech>Bandita</Czech>
 		</Key>
 		<Key ID="str_actions_tamedog">
 			<Original>Tame Dog</Original>
@@ -1053,6 +1168,7 @@
 			<Spanish>Domesticar Perro</Spanish>
 			<Dutch>Tame Dog</Dutch>
 			<French>Apprivoiser le Chien</French>
+      			<Czech>Ochočit psa</Czech>
 		</Key>
 		<Key ID="str_actions_movedog">
 			<Original>Move To</Original>
@@ -1062,6 +1178,7 @@
 			<Spanish>Mover a</Spanish>
 			<Dutch>Move To</Dutch>
 			<French>Aller à</French>
+      			<Czech>Přesunout do</Czech>
 		</Key>
 		<Key ID="str_actions_speeddog">
 			<Original>Dog: %1</Original>
@@ -1071,6 +1188,7 @@
 			<Spanish>Perro: %1</Spanish>
 			<Dutch>Dog: %1</Dutch>
 			<French>Chien: %1</French>
+      			<Czech>Pes: %1</Czech>
 		</Key>
 		<Key ID="str_actions_calldog">
 			<Original>Call Dog</Original>
@@ -1080,6 +1198,7 @@
 			<Spanish>Llamar Perro</Spanish>
 			<Dutch>Call Dog</Dutch>
 			<French>Appeler le Chien</French>
+      			<Czech>Zavolat psa</Czech>
 		</Key>
 		<Key ID="str_actions_feeddog">
 			<Original>Feed Dog</Original>
@@ -1089,6 +1208,7 @@
 			<Spanish>Alimentar Perro</Spanish>
 			<Dutch>Feed Dog</Dutch>
 			<French>Nourrir le Chien</French>
+      			<Czech>Nakrmit psa</Czech>
 		</Key>
 		<Key ID="str_actions_waterdog">
 			<Original>Water Dog</Original>
@@ -1098,6 +1218,7 @@
 			<Spanish>Hidratar Perro</Spanish>
 			<Dutch>Water Dog</Dutch>
 			<French>Donner à boire au Chien</French>
+      			<Czech>Dát psovi napít</Czech>
 		</Key>
 		<Key ID="str_actions_sitdog">
 			<Original>Dog: Sit</Original>
@@ -1107,6 +1228,7 @@
 			<Spanish>Perro: Sentado</Spanish>
 			<Dutch>Dog: Sit</Dutch>
 			<French>Chien: S'asseoir</French>
+      			<Czech>Psí příkaz: Sednout</Czech>
 		</Key>
 		<Key ID="str_actions_liedog">
 			<Original>Dog: Lie Down</Original>
@@ -1116,6 +1238,7 @@
 			<Spanish>Perro: Acostado</Spanish>
 			<Dutch>Dog: Lie Down</Dutch>
 			<French>Chien : Couché</French>
+      			<Czech>Psí příkaz: Lehnout</Czech>
 		</Key>
 		<Key ID="str_actions_trackdog">
 			<Original>Dog: Track</Original>
@@ -1125,6 +1248,7 @@
 			<Spanish>Perro: Rastrear</Spanish>
 			<Dutch>Dog: Track</Dutch>
 			<French>Chien: Pister</French>
+      			<Czech>Psí příkaz: stopuj</Czech>
 		</Key>
 		<Key ID="str_actions_barkdog">
 			<Original>Dog: Bark</Original>
@@ -1134,6 +1258,7 @@
 			<Spanish>Perro: Ladrar</Spanish>
 			<Dutch>Dog: Bark</Dutch>
 			<French>Chien: Aboyer</French>
+      			<Czech>Psí příkaz: Stěkej</Czech>
 		</Key>
 		<Key ID="str_actions_warndog">
 			<Original>Dog: %1</Original>
@@ -1143,6 +1268,7 @@
 			<Spanish>Perro: %1</Spanish>
 			<Dutch>Dog: %1</Dutch>
 			<French>Chien: %1</French>
+      			<Czech>Psí příkaz: %1</Czech>
 		</Key>
 		<Key ID="str_actions_followdog">
 			<Original>Dog: Follow</Original>
@@ -1152,6 +1278,7 @@
 			<Spanish>Perro: Seguir</Spanish>
 			<Dutch>Dog: Follow</Dutch>
 			<French>Chien: Suivre</French>
+      			<Czech>Psí příkaz: Sleduj</Czech>
 		</Key>
 	</Package>
 	<Package name="equipment_code">
@@ -1163,6 +1290,7 @@
 			<Spanish>Caja de Fósforos Mojada</Spanish>
 			<Dutch>Box of Wet Matches</Dutch>
 			<French>Boîte d'Allumettes mouillées</French>
+      			<Czech>Krabička mokrých zápalek</Czech>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_3">						
 			<Original>Box of wet matches.</Original>						
@@ -1172,6 +1300,7 @@
 			<Spanish>Caja de fósforos mojada.</Spanish>
 			<Dutch>Box of wet matches.</Dutch>
 			<French>Boîte d'Allumettes mouillées.</French>
+      			<Czech>Krabička plná mokrých zápalek.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_41">						
 			<Original>Blunt Hatchet</Original>						
@@ -1181,6 +1310,7 @@
 			<Spanish>Hacha Desafilada</Spanish>
 			<Dutch>Blunt Hatchet</Dutch>
 			<French>Hache émoussée</French>
+      			<Czech>Tupá sekera</Czech>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_41">						
 			<Original>Your Hatchet appears to be too blunt to be used.</Original>						
@@ -1190,6 +1320,7 @@
 			<Spanish>Tu hacha parece estar muy desafilada para ser usada.</Spanish>
 			<Dutch>Your Hatchet appears to be too blunt to be used.</Dutch>
 			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
+      			<Czech>Vypadá to, že tvá sekera je příliž tupá na to, aby se dala použít.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_4">						
 			<Original>Blunt Knife</Original>						
@@ -1199,6 +1330,7 @@
 			<Spanish>Cuchillo Desafilado</Spanish>
 			<Dutch>Blunt Knife</Dutch>
 			<French>Couteau émoussé</French>
+      			<Czech>Tupý nůž</Czech>
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_4">						
 			<Original>Your Knife appears to be too blunt.</Original>						
@@ -1208,6 +1340,7 @@
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
 			<Dutch>Your Knife appears to be too blunt.</Dutch>
 			<French>Votre couteau semble trop émoussé</French>
+      			<Czech>Vypadá to, že tvůj nůž je příliš tupý.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_0">						
 			<Original>Raw Meat</Original>						
@@ -1217,6 +1350,7 @@
 			<Spanish>Carne Cruda</Spanish>
 			<Dutch>Raw Meat</Dutch>
 			<French>Viande Crue</French>
+      			<Czech>Syrové maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_0">						
 			<Original>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
@@ -1226,6 +1360,7 @@
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>La viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
+      			<Czech>Kvůli bezpečnosti by mělo být syrové maso nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_1">						
 			<Original>Mutton Raw</Original>						
@@ -1235,6 +1370,7 @@
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>BMutton Raw</Dutch>
 			<French>Mouton Cru</French>
+      			<Czech>Jehněčí maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment, must be cooked prior to eating.</Original>						
@@ -1244,6 +1380,7 @@
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>La Viande de Chèvre peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
+      			<Czech>Kvůli bezpečnosti by mělo být maso z kozy nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_2">						
 			<Original>Raw Chicken Leg</Original>						
@@ -1253,6 +1390,7 @@
 			<Spanish>Pata de Pollo Cruda</Spanish>
 			<Dutch>Raw Chicken Leg</Dutch>
 			<French>Cuisse de Poulet crue</French>
+      			<Czech>Syrová kuřecí noha</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Original>						
@@ -1262,6 +1400,7 @@
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>La Cuisse de Poulet crue peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
+     			<Czech>Kvůli bezpečnosti by měla být kuřecí nožka nejdříve upečena.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_3">						
 			<Original>Rabbit Raw</Original>						
@@ -1271,6 +1410,7 @@
 			<Spanish>Conejo Crudo</Spanish>
 			<Dutch>Rabbit Raw</Dutch>
 			<French>Lapin cru</French>
+      			<Czech>Králičí maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainment, must be cooked prior to eating.</Original>						
@@ -1280,6 +1420,7 @@
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Rabbit to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>Le Lapin cru peut être consommé mais doit être cuit avant de le manger.</French>
+      			<Czech>Kvůli bezpečnosti by mělo být králičí maso nejdříve upečeno.</Czech>
 		</Key>	
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_4">						
 			<Original>Raw Bacon</Original>						
@@ -1289,6 +1430,7 @@
 			<Spanish>Costillar de Cerdo Crudo</Spanish>
 			<Dutch>Raw Bacon</Dutch>
 			<French>Bacon cru</French>
+      			<Czech>Syrová slanina</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
@@ -1298,6 +1440,7 @@
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>Le Bacon cru peut être consommé mais doit être cuit avant de le manger.</French>
+      			<Czech>Kvůli bezpečnosti by měla být slanina nejdříve upečena.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_6">						
 			<Original>Raw Beef</Original>						
@@ -1307,6 +1450,7 @@
 			<Spanish>Churrasco Crudo</Spanish>
 			<Dutch>Raw Beef</Dutch>
 			<French>Boeuf Cru</French>
+      			<Czech>Syrové hovězí maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_6">						
 			<Original>Beef to be used for sustainment, should be cooked prior to safe eating.</Original>						
@@ -1316,6 +1460,7 @@
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>Le Boeuf Cru peut être consommé mais doit être cuit avant de le manger.</French>
+      			<Czech>Kvůli bezpečnosti by mělo být syrové hovězí maso nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_0">						
 			<Original>Cooked Meat</Original>						
@@ -1325,6 +1470,7 @@
 			<Spanish>Carce Cocinada</Spanish>
 			<Dutch>Cooked Meat</Dutch>
 			<French>Viande Cuite</French>
+      			<Czech>Upečené maso</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_0">						
 			<Original>Cooked Meat to be used for sustainment.</Original>						
@@ -1334,6 +1480,7 @@
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Cooked Meat to be used for sustainment.</Dutch>
 			<French>La Viande Cuite peut être consommée.</French>
+      			<Czech>Upečené maso může být snězeno abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_1">						
 			<Original>Cooked Mutton</Original>						
@@ -1343,6 +1490,7 @@
 			<Spanish>Cordero Cocinado</Spanish>
 			<Dutch>Cooked Mutton</Dutch>
 			<French>Mouton Cuit</French>
+      			<Czech>Upečené jehněčí</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">						
 			<Original>Goat Meat to be used for sustainment.</Original>						
@@ -1352,6 +1500,7 @@
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment.</Dutch>
 			<French>La Viande de Chèvre peut être consommée.</French>
+      			<Czech>Upečené jehněčí může být snězeno abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_2">						
 			<Original>Chicken Leg</Original>						
@@ -1361,6 +1510,7 @@
 			<Spanish>Pata de Pollo</Spanish>
 			<Dutch>Chicken Leg</Dutch>
 			<French>Cuisse de Poulet</French>
+      			<Czech>Kuřecí nožka</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment.</Original>						
@@ -1370,6 +1520,7 @@
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment.</Dutch>
 			<French>La cuisse de poulet peut être consommée.</French>
+     			<Czech>Kuřecí noha může být snězena abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_3">						
 			<Original>Rabbit</Original>						
@@ -1379,6 +1530,7 @@
 			<Spanish>Conejo</Spanish>
 			<Dutch>Rabbit</Dutch>
 			<French>Lapin</French>
+      			<Czech>Králík</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainmen.</Original>						
@@ -1388,6 +1540,7 @@
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Rabbit to be used for sustainment.</Dutch>
 			<French>Le Lapin peut être consommé.</French>
+      			<Czech>Králík může být snězen abyste přežili.</Czech>
 		</Key>	
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_4">						
 			<Original>Bacon</Original>						
@@ -1397,6 +1550,7 @@
 			<Spanish>Costillar de Cerdo</Spanish>
 			<Dutch>Bacon</Dutch>
 			<French>Bacon</French>
+      			<Czech>Slanina</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment.</Original>						
@@ -1406,6 +1560,7 @@
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Bacon to be used for sustainment.</Dutch>
 			<French>Le Bacon peut être consommé.</French>
+      			<Czech>Slanina může býst snězena abyste přežili.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_5">						
 			<Original>Angel Cookies</Original>						
@@ -1415,6 +1570,7 @@
 			<Spanish>Galletitas de Ángel</Spanish>
 			<Dutch>Angel Cookies</Dutch>
 			<French>Cookies d'Ange</French>
+      			<Czech>Sušenky Angel</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_6">                      
 			<Original>Beefsteak</Original>                      
@@ -1424,6 +1580,7 @@
 			<Spanish>Churrasco</Spanish>
 			<Dutch>Beefsteak</Dutch>
 			<French>Bifteck</French>
+      			<Czech>Hovězí maso</Czech>
 		</Key>  		
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_5">						
 			<Original>Angel Cookies to boost your moral up!</Original>						
@@ -1433,6 +1590,7 @@
 			<Spanish>Galletitas de Ángel que levantan tu moral</Spanish>
 			<Dutch>Angel Cookies to boost your moral up!</Dutch>
 			<French>Cookies d'Ange pour remonter votre moral!</French>
+      			<Czech>Sušenky Angle vylepší vaší morálku!</Czech>
 		</Key>
 		 <Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_6">                     
 			<Original>Beefsteak to be used for sustainment.</Original>                      
@@ -1442,6 +1600,7 @@
 			<Spanish>Churrasco que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Beefsteak to be used for sustainment.</Dutch>
 			<French>Le Bifteck peut être consommé.</French>
+      			<Czech>Biftek může být snězen abyste přežili.</Czech>
 		</Key>  
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">						
 			<Original>Water Bottle (Boiled)</Original>						
@@ -1451,6 +1610,7 @@
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<Dutch>Water Bottle (Boiled)</Dutch>
 			<French>Bouteille d'eau (Bouillie)</French>
+	     		<Czech>Láhev vody (převařená)</Czech>
 		</Key>						
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">						
 			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
@@ -1460,6 +1620,7 @@
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
+      			<Czech>Plná láhev převažené vody, které může být vypita.</Czech>
 		</Key>
 	</Package>
 </Project>
