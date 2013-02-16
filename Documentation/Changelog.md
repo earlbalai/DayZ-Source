@@ -48,6 +48,7 @@ FIX DUE : 2013
 	* [FIXED] - Fixed some base class's for vehicles reporting issues with crew
 	* [FIXED] - You can now logout with a broke leg.
 	* [FIXED] - Temperature icon should not disappear anymore.
+	* [FIXED] - Humanity should now work increase again.
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
@@ -57,7 +58,7 @@ FIX DUE : 2013
 	
 	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player)
 	
-	* [REMOVED] - Chase combat logging systems removed. (Removed while we make sure everything else is working, also removed due to ealry warning of agro)
+	* [REMOVED] - Chase combat logging systems removed. (Removed due to ealry warning of agro)
 	* [REMOVED] - Debriefing window has started to be cleaned up. (blank box on dc)
 	* [REMOVED] - Original Dayz Chance based hearing (hear only based on the noise you make) 
 	* [REMOVED] - Original Dayz Chance based sight (sight only based on direction of zed)
