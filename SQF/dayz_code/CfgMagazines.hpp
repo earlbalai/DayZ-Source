@@ -102,7 +102,7 @@ class CfgMagazines {
 		descriptionshort = "Small Quiver used with the Crossbow, Max arrows 6.";
 		displayname = "Quiver";
 		initSpeed = 150;
-		model = "\dayz_weapons\models\bolt_gear";
+		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\textures\equip_quiver_ca.paa";
 	};
 	
