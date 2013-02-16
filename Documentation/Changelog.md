@@ -21,6 +21,8 @@ FIX DUE : 2013
 	* [NEW] - WoodenArrow added 6 arrows can be turned into a quiver.
 	* [NEW] - WoodenArrow can be picked up after use.
 	* [NEW] - 20% of breaking WoodenArrow when firing it.
+	* [NEW] - Model and textures for Quiver.
+	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
@@ -45,11 +47,12 @@ FIX DUE : 2013
 	* [FIXED] - Zeds will no longer magically hit players just becuase there within 3 meters. (	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player))
 	* [FIXED] - Fixed some base class's for vehicles reporting issues with crew
 	* [FIXED] - You can now logout with a broke leg.
+	* [FIXED] - Temperature icon should not disappear anymore.
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
 	* [Fixed] - Added 4 sec delay to multiple rolls.
-	* [Fixed] - No longer possiable to combat roll over player created objects (tents, sandbags so on)
+	* [Fixed] - No longer possible to combat roll over player created objects (tents, sandbags so on)
 	* [Fixed] - No longer combat roll in buildings.
 	
 	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player)
