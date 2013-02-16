@@ -103,14 +103,14 @@ class CfgMagazines {
 		displayname = "Quiver";
 		initSpeed = 150;
 		model = "\z\addons\dayz_communityassets\models\quiver";
-		picture = "\z\addons\dayz_communityassets\textures\equip_quiver_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
 	};
 	
 	class WoodenArrow : CA_Magazine {
 		scope = public;
 		displayName = "Arrow"; //$STR_MAG_NAME_3;
 		model = "\dayz_weapons\models\bolt_gear";
-		picture = "\z\addons\dayz_communityassets\textures\equip_warrow_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_warrow_ca.paa";
 		ammo = "WoodenArrow";
 		count = 1;
 		initSpeed = 150;
@@ -157,6 +157,8 @@ class CfgMagazines {
 	
 	class FoodbaconRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
+		model = "\z\addons\dayz_communityassets\models\bacon_raw";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_raw_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_4;
 		bloodRegen = 150;
 	};
@@ -189,6 +191,8 @@ class CfgMagazines {
 	
 	class FoodbaconCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
+		model = "\z\addons\dayz_communityassets\models\bacon_fried";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_fried_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 		bloodRegen = 400;
 	};

@@ -8,6 +8,6 @@ PixelShaderID="Normal";
 VertexShaderID="Basic";
 class Stage0
 {
-	texture="dayz_communityassets\textures\bacon_fried_CO.paa";
+	texture="z\addons\dayz_communityassets\textures\bacon_fried_CO.paa";
 	uvSource="tex";
 };
