@@ -24,6 +24,7 @@ FIX DUE : 2013
 	* [NEW] - Model and textures for Quiver.
 	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	* [NEW] - Crowbar now attaches to toolbelt.
+	* [NEW] - Added Anti teleport script. Reported to server's RPT log
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
