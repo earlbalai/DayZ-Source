@@ -10,6 +10,8 @@ if ("ItemJerrycanEmpty" in magazines player) then {
 		player removeMagazine "ItemJerrycanEmpty";
 		player addMagazine "ItemJerrycan";
 	};
+	player playActionNow "Medic";
+	_id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
 	if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
 	{
 		[player,"refuel",0,false] call dayz_zombieSpeak;
