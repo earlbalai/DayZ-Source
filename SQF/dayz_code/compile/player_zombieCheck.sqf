@@ -38,18 +38,31 @@ _multiplier = 1;
 		};
 			
 		//Noise Activation
+		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
 				if (DAYZ_disAudial > 80) then {
 					if (!(_refObj in _targets)) then {
 						_targets set [count _targets, driver _refObj];
 						_group setVariable ["targets",_targets,true];
-					};					
+					};			
 				} else {
-					if (_dist < (DAYZ_disAudial / 2)) then {
-						if (!(_refObj in _targets)) then {
-							_targets set [count _targets, driver _refObj];
-							_group setVariable ["targets",_targets,true];
+					_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
+					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
+					if ((random 1) < _chance) then {
+						_cantSee = [_x,_refObj] call dayz_losCheck;
+						if (!_cantSee) then {
+							if (!(_refObj in _targets)) then {
+								_targets set [count _targets, driver _refObj];
+								_group setVariable ["targets",_targets,true];
+							};
+						} else {
+							if (_dist < (DAYZ_disAudial / 2)) then {
+								if (!(_refObj in _targets)) then {
+									_targets set [count _targets, driver _refObj];
+									_group setVariable ["targets",_targets,true];
+								};
+							};
 						};
 					};
 				};
@@ -58,15 +71,15 @@ _multiplier = 1;
 		//Sight Activation
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disVisual) then {
-				//_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
+				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
 				//diag_log ("Visual Detection: m" + str([_x,_dist]) + " " + str(_chance));
-				//if ((random 1) < _chance) then {
+				if ((random 1) < _chance) then {
 					//diag_log ("Chance Detection");
 					_tPos = (getPosASL _refObj);
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,90,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//LOS check
 						_cantSee = [_x,_refObj] call dayz_losCheck;
@@ -79,7 +92,7 @@ _multiplier = 1;
 							};
 						};
 					};
-				//};
+				};
 			};
 		};
 	};
