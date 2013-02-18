@@ -179,6 +179,7 @@ if (_script != "") then
 		_date = _result select 1; 
 		if(isDedicated) then {
 			//["dayzSetDate",_date] call broadcastRpcCallAll;
+			setDate _date;
 			dayzSetDate = _date;
 			publicVariable "dayzSetDate";
 		};
