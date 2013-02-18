@@ -10,7 +10,14 @@ if ("ItemJerrycanEmpty" in magazines player) then {
 		player removeMagazine "ItemJerrycanEmpty";
 		player addMagazine "ItemJerrycan";
 	};
-	[player,"refuel",3,false] call dayz_zombieSpeak;
+	if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
+	{
+		[player,"refuel",0,false] call dayz_zombieSpeak;
+	}
+	else
+	{
+		[player,"refuel",0,true] call dayz_zombieSpeak;
+	};
 	cutText [format[(localize  "str_player_09"),_qty], "PLAIN DOWN"];
 } else {
 	cutText [(localize "str_player_10") , "PLAIN DOWN"];

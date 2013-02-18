@@ -15,7 +15,14 @@ player removeMagazine "ItemJerrycan";
 player addMagazine "ItemJerrycanEmpty";
 
 player playActionNow "Medic";
-[player,"refuel",0,false] call dayz_zombieSpeak;
+if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
+{
+	[player,"refuel",0,false] call dayz_zombieSpeak;
+}
+else
+{
+	[player,"refuel",0,true] call dayz_zombieSpeak;
+};
 
 _id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
 
