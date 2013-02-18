@@ -21,7 +21,14 @@ if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"
 player playActionNow "PutDown";
 player removeMagazine _item;
 sleep 1;
-[player,_sfx,0,false] call dayz_zombieSpeak;
+if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
+{
+	[player,_sfx,0,false] call dayz_zombieSpeak;
+}
+else
+{
+	[player,_sfx,0,true] call dayz_zombieSpeak;
+};
 
 if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 	player addMagazine "ItemWaterbottleUnfilled";

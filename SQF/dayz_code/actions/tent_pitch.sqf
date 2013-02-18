@@ -41,7 +41,14 @@ if (!_isOk) then {
 	//wait a bit
 	player playActionNow "Medic";
 	sleep 1;
+	if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
+	{
 	[player,"tentunpack",0,false] call dayz_zombieSpeak;
+	}
+	else
+	{
+	[player,"tentunpack",0,true] call dayz_zombieSpeak;
+	};
 	
 	_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
 	

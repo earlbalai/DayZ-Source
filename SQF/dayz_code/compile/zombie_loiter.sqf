@@ -2,7 +2,7 @@ private["_unit","_originalPos","_pos"];
 _unit = 		_this select 0;
 _originalPos = 	_this select 1;
 _pos = 			getPosATL _unit;
-_playerpos = 	getPosATL player;
+_playerpos = 	getPos player;
 
 if (count _this > 2) then {
 	_pos = _this select 2;
@@ -12,6 +12,8 @@ if (count _this > 2) then {
 	
 	_chance =	round(random 12);
 	if ((_chance % 4) == 0) then {
+		//_Offset = [0,0,0];
+		//_playerworldPos = _playerpos modelToWorld _Offset;
 		_pos = [_playerpos,30,120,4,0,5,0] call BIS_fnc_findSafePos;
 	} else {
 		_pos = [_originalPos,10,90,4,0,5,0] call BIS_fnc_findSafePos;

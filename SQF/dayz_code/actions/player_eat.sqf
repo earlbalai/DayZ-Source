@@ -38,7 +38,14 @@ if ( _rawfood and (random 15 < 1)) then {
 	player setVariable["USEC_infected",true];
 };
 
-[player,"eat",0,false] call dayz_zombieSpeak;
+if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
+{
+	[player,"eat",0,false] call dayz_zombieSpeak;
+}
+else
+{
+	[player,"eat",0,true] call dayz_zombieSpeak;
+};
 
 if (!_rawfood and !_cookedfood) then{
 	player addMagazine "TrashTinCan";
