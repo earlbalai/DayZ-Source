@@ -209,11 +209,7 @@ DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
-//used to count global zeds around players
-dayz_CurrentZombies = 0;
 dayz_maxGlobalZombies = 30;
-//Used to limit overall zed counts
-dayz_maxCurrentZeds = 0;
 dayz_maxZeds = 500;
 dayz_spawnPos = getPosATL player;
 
