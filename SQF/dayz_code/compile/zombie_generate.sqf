@@ -3,6 +3,8 @@ _position = 	_this select 0;
 _unitTypes = 	_this select 1;
 _doLoiter = 	true;
 
+if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
+
 _isNoone = 	{isPlayer _x} count (_position nearEntities ["CAManBase",30]) == 0;
 _loot = 	"";
 _array = 	[];
