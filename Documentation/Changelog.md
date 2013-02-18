@@ -35,7 +35,8 @@ FIX DUE : 2013
 	* [UPDATED] - Epeen key moved to Custom Controls - Use action key 20 (No default key needs setting up)
 	* [UPDATED] - Zeds Targets array modified 
 	* [UPDATED] - Weapon fire sounds divided by 2 (This will help us settle zeds hearing a little more) (107_DZ Zed pull range 450 meters / 2 = 225 meters (capped 120 meters aboue for now))
-
+	* [UPDATED] - Max local zeds per client now fixed at 40 zeds
+	
 	* [FIXED] - Zeds talk, lowed to 120 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.
 	* [FIXED] - Spanish, French StringTables updated.
@@ -49,6 +50,8 @@ FIX DUE : 2013
 	* [FIXED] - You can now logout with a broke leg.
 	* [FIXED] - Temperature icon should not disappear anymore.
 	* [FIXED] - Humanity should now work increase again.
+	* [FIXED] - Chemlights and flares now work again.
+	* [FIXED] - time is now set on startup.
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
@@ -56,12 +59,8 @@ FIX DUE : 2013
 	* [Fixed] - No longer possible to combat roll over player created objects (tents, sandbags so on)
 	* [Fixed] - No longer combat roll in buildings.
 	
-	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player)
-	
 	* [REMOVED] - Chase combat logging systems removed. (Removed due to ealry warning of agro)
 	* [REMOVED] - Debriefing window has started to be cleaned up. (blank box on dc)
-	* [REMOVED] - Original Dayz Chance based hearing (hear only based on the noise you make) 
-	* [REMOVED] - Original Dayz Chance based sight (sight only based on direction of zed)
 	* [REMOVED] - BearTrap Due to issues with the trap still staying active after removal.
 	
 	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
