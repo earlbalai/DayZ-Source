@@ -321,7 +321,7 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine"},
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
-			{"WeaponHolder_MeleeCrowbar","object"},
+			{"WeaponHolder_ItemCrowbar","object"},
 			{"MR43","weapon"}
 		};
 		itemChance[] =	{
