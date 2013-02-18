@@ -1704,6 +1704,16 @@ class CfgVehicles {
 		class eventHandlers {
 			init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
+	};	
+	class WeaponHolder_ItemCrowbar: WeaponHolderBase
+	{
+		scope=2;
+		displayName="Crowbar";
+		model="\dayz_equip\models\crowbar.p3d";
+		class eventHandlers
+		{
+			init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
 	};
 };
 class CfgNonAIVehicles {
