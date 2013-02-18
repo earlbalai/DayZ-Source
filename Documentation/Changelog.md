@@ -23,6 +23,7 @@ FIX DUE : 2013
 	* [NEW] - 20% of breaking WoodenArrow when firing it.
 	* [NEW] - Model and textures for Quiver.
 	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
+	* [NEW] - Crowbar now attaches to toolbelt.
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
@@ -53,6 +54,7 @@ FIX DUE : 2013
 	* [FIXED] - Chemlights and flares now work again.
 	* [FIXED] - time is now set on startup.
 	* [FIXED] - Hatchet and crowbar don't require reload anymore.
+	* [FIXED] - Hatchet and crowbar no longer overwrite each other.
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
