@@ -35,7 +35,7 @@ FIX DUE : 2013
 	* [UPDATED] - Epeen key moved to Custom Controls - Use action key 20 (No default key needs setting up)
 	* [UPDATED] - Zeds Targets array modified 
 	* [UPDATED] - Weapon fire sounds divided by 2 (This will help us settle zeds hearing a little more) (107_DZ Zed pull range 450 meters / 2 = 225 meters (capped 120 meters aboue for now))
-	* [UPDATED] - Max local zeds per client now fixed at 40 zeds
+	* [UPDATED] - Max local zeds per client now fixed at 40 zeds, Global at 40 +10 foreach player within 400 meters and total 500 zeds max.
 	
 	* [FIXED] - Zeds talk, lowed to 120 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.
