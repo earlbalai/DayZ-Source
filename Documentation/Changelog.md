@@ -52,6 +52,7 @@ FIX DUE : 2013
 	* [FIXED] - Humanity should now work increase again.
 	* [FIXED] - Chemlights and flares now work again.
 	* [FIXED] - time is now set on startup.
+	* [FIXED] - Hatchet and crowbar don't require reload anymore.
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
