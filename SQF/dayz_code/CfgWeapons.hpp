@@ -18,7 +18,6 @@ class CfgWeapons {
 			"WoodenArrow"
 		};
 	};
-
 	class MeleeWeapon;
 	class MeleeHatchet: MeleeWeapon
 	{
@@ -72,8 +71,7 @@ class CfgWeapons {
 			libTextDesc="$STR_EQUIP_DESC_41";
 		};
 		descriptionShort="$STR_EQUIP_DESC_41";
-	};
-	
+	};	
 	class MeleeCrowbar: MeleeHatchet
 	{
 		scope=2;
@@ -88,6 +86,19 @@ class CfgWeapons {
 		};
 		class ItemActions
 		{
+			class Toolbelt
+			{
+				text="Add to Toolbelt";
+				script="spawn player_addToolbelt;";
+				use[]=
+				{
+					"MeleeCrowbar"
+				};
+				output[]=
+				{
+					"ItemCrowbar"
+				};
+			};
 			class Drop
 			{
 				text="Drop Crowbar";
@@ -103,5 +114,29 @@ class CfgWeapons {
 			libTextDesc="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
 		};
 		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+	};	
+	class ItemCrowbar: ItemCore
+	{
+		scope=2;
+		displayName="Crowbar";
+		model="\dayz_equip\models\crowbar.p3d";
+		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
+		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+		class ItemActions
+		{
+			class Toolbelt
+			{
+				text="Remove from Toolbelt";
+				script="spawn player_addToolbelt;";
+				use[]=
+				{
+					"ItemCrowbar"
+				};
+				output[]=
+				{
+					"MeleeCrowbar"
+				};
+			};
+		};
 	};
 };

@@ -24,7 +24,16 @@ if (_item in ["MeleeHatchet","MeleeCrowbar"]) then {
 	};
 };
 
+if (_item in ["ItemHatchet","ItemCrowbar"]) then {
+	switch (primaryWeapon player) do
+	{
+		case "MeleeHatchet": { "MeleeHatchet" call player_addToolbelt };
+		case "MeleeCrowbar": { "MeleeCrowbar" call player_addToolbelt };
+	};
+};
+
 _isOk = [player,_config2] call BIS_fnc_invAdd;
+
 if (_isOk) then {
 	//Remove item
 	player removeWeapon _item;
