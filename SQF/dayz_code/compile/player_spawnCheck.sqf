@@ -91,7 +91,7 @@ if ("ItemMap_Debug" in items player) then {
 diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
 diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
-diag_log ("dayz_maxCurrentZeds: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxZeds));
+diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
 };
 	
 _nearby = _position nearObjects ["building",_radius];
