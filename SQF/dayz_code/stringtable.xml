@@ -1008,7 +1008,7 @@
 			<Spanish>Problema %1</Spanish>
 			<Dutch>%1 uitrusten</Dutch>
 			<French>Problème %1</French>
-      			<Czech>Problém %1<Czech>
+      		<Czech>Problém %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_12">
 			<Original>Packup %1</Original>
@@ -1028,7 +1028,7 @@
 			<Spanish>Mejorar %1</Spanish>
 			<Dutch>%1 upgraden</Dutch>
 			<French>Améliorer %1</French>
-      			<Czech>Vylepšit %1<8Czech>
+      			<Czech>Vylepšit %1</Czech>
 		</Key>
 		<Key ID="str_actions_medical_14">
 			<Original>Unload patients from %1</Original>
