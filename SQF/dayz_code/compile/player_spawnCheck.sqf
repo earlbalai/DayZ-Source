@@ -9,7 +9,7 @@ _maxWildZombies = 3;
 _age = -1;
 
 _nearbyBuildings = [];
-_radius = 300; 
+_radius = 200; 
 _position = getPosATL player;
 //_maxZombies = 10;
 	
@@ -38,7 +38,17 @@ switch (_nearbytype) do {
 };
 */
 
-_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]) < _maxZombies;
+//dayz_spawnZombies = count (_position nearEntities ["zZombie_Base",_radius+100]);
+_spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
+dayz_spawnZombies = 0;
+{
+	if (local _x) then 
+	{
+		//diag_log ("Local");
+		dayz_spawnZombies = dayz_spawnZombies + 1;
+	};
+
+} foreach _spawnZombies;
 
 if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "MaxZeds";
@@ -96,6 +106,9 @@ if (_nearbyCount < 1) exitwith
 	};
 };
 
+//diag_log ("spawnWait: " +str(time - dayz_spawnWait));
+//diag_log ("spawnZombies: " +str(dayz_spawnZombies));
+
 {
 	_type = typeOf _x;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
@@ -106,7 +119,6 @@ if (_nearbyCount < 1) exitwith
 	};
 	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
 		if (dayz_spawnZombies < dayz_maxLocalZombies) then {
-			if (_spawnZombies) then {
 				//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 				_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 				_dateNow = (DateToNumber date);
@@ -115,10 +127,9 @@ if (_nearbyCount < 1) exitwith
 					_x setVariable ["zombieSpawn",_dateNow,true];
 					[_x] call building_spawnZombies;
 				};
-			};
 		} else {
 			dayz_spawnWait = time;
-			dayz_spawnZombies = 0;
+			//dayz_spawnZombies = 0;
 		};
 	};
 } forEach _nearby;

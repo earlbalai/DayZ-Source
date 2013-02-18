@@ -4,6 +4,8 @@ _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _canLoot = 		isClass (_config);
 
+if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
+
 if (_canLoot) then {
 //Get zombie class
 	_unitTypes = 	getArray (_config >> "zombieClass");
