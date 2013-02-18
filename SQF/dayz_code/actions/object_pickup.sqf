@@ -9,8 +9,6 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 
 _holder setVariable["claimed",_playerID,true];
 
-if (
-
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
 player playActionNow "PutDown";
