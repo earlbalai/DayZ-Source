@@ -76,8 +76,8 @@ if (_vehicle != player) then {
 	};
 } else {
 	//Did he hit?
-	_currentAnim = animationState _unit;
-	diag_log ("Animation state: " +(_currentAnim));
+	//_currentAnim = animationState _unit;
+	//diag_log ("Animation state: " +(_currentAnim));
 	//"amovpercmstpsnonwnondnon",
 	_attackanimations = ["zombiestandingattack1","zombiestandingattack2","zombiestandingattack3","zombiestandingattack4","zombiestandingattack5","zombiestandingattack6","zombiestandingattack7","zombiestandingattack8","zombiestandingattack9","zombiestandingattack10","zombiefeed1","zombiefeed2","zombiefeed3","zombiefeed4","zombiefeed5"];
 	if (((_unit distance player) <= 3) and ((animationState _unit) in _attackanimations)) then {
