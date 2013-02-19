@@ -38,7 +38,13 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 	};
 	//_id = [player,5,true,(getPosATL player)] spawn player_alertZombies;
 } else {
-	player addMagazine "ItemSodaEmpty";
+	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
+	if (count _nearByPile ==0) then { 
+		_item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
+	} else {
+		_item = _nearByPile select 0;
+	};
+	_item addMagazineCargoGlobal ["ItemSodaEmpty",1];
 	_id = [player,10,true,(getPosATL player)] spawn player_alertZombies;
 };
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];

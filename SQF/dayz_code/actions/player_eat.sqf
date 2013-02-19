@@ -48,7 +48,13 @@ else
 };
 
 if (!_rawfood and !_cookedfood) then{
-	player addMagazine "TrashTinCan";
+	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
+	if (count _nearByPile ==0) then { 
+		_item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
+	} else {
+		_item = _nearByPile select 0;
+	};
+	_item addMagazineCargoGlobal ["TrashTinCan",1];
 };
 
 r_player_blood = r_player_blood + _regen;
