@@ -18,6 +18,10 @@ if (count _this > 2) then {
 	} else {
 		_pos = [_originalPos,10,90,4,0,5,0] call BIS_fnc_findSafePos;
 	};
+	
+	if (_unit distance player > 250) then {
+		_pos = [_playerpos,120,200,4,0,5,0] call BIS_fnc_findSafePos;
+	};
 };
 
 if(isNull group _unit) then {
