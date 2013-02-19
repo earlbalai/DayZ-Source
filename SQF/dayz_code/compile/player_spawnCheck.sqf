@@ -63,6 +63,7 @@ if ("ItemMap_Debug" in items player) then {
 	deleteMarkerLocal "Counter";
 	deleteMarkerLocal "Loot30";
 	deleteMarkerLocal "Loot120";
+	deleteMarkerLocal "Agro80";
 	
 	_markerstr = createMarkerLocal ["MaxZeds", _position];
 	_markerstr setMarkerColorLocal "ColorYellow";
@@ -75,6 +76,12 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr1 setMarkerShapeLocal "ELLIPSE";
 	_markerstr1 setMarkerBrushLocal "Border";
 	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
+	
+	_markerstr2 = createMarkerLocal ["Agro80", _position];
+	_markerstr2 setMarkerColorLocal "ColorRed";
+	_markerstr2 setMarkerShapeLocal "ELLIPSE";
+	_markerstr2 setMarkerBrushLocal "Border";
+	_markerstr2 setMarkerSizeLocal [80, 80];
 
 	_markerstr2 = createMarkerLocal ["Loot30", _position];
 	_markerstr2 setMarkerColorLocal "ColorRed";
