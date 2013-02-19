@@ -38,7 +38,8 @@ if (_finished) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
 	} else {
-		["dayzHumanity",[player,50]] call player_humanityMorph;
+		//dayzHumanity = [player,50];
+		[player,50] call player_humanityChange;
 	};
 
 	player removeMagazine "ItemMorphine";
