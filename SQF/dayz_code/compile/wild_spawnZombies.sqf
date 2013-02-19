@@ -14,7 +14,7 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 _radius = 40;
 _method = "NONE";
 
-_position = [_player,250,300,10,0,0,0] call BIS_fnc_findSafePos;
+_position = [_player,120,200,10,0,0,0] call BIS_fnc_findSafePos;
 
 _agent = createAgent [_type, _position, [], _radius, _method];
 
