@@ -40,7 +40,7 @@ FIX DUE : 2013
 	* [UPDATED] - Max local zeds per client now fixed at 40 zeds, Global at 40 +10 foreach player within 400 meters and total 500 zeds max.
 	* [UPDATED] - Added some czech language
 	
-	* [FIXED] - Zeds talk, lowed to 120 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
+	* [FIXED] - Zeds talk, lowed to 80 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.
 	* [FIXED] - Spanish, French StringTables updated.
 	* [FIXED] - logout timers updated from sleep 3 to sleep 1 this should now fix long logout timers.
