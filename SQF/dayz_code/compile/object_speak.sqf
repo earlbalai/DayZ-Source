@@ -49,5 +49,5 @@ if ((round(random _chance) == _chance) or (_chance == 0)) then {
 		[nil,_unit,rSAY,[_sound, _dis]] call RE;
 	};
 	//Tell other zeds in range about this action
-	[player,_dis,false,(getPosATL player)] spawn player_alertZombies; 
+	//[_unit,_dis,false,(getPosATL _unit)] spawn player_alertZombies; 
 };
