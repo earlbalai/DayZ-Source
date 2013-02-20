@@ -5,96 +5,85 @@ _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 //_multiplier = 1;
 
-//_list = list dayz_playerTrigger;
 {
-	if (alive _x) then {
+	_continue = true;
+	_type = "zombie";
+	_targets = _group getVariable ["targets",[]];
+
+	if (alive _x && _continue) then {
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
-		/*
-		_group = group _x;
-		_chance = (count units _group);	
-		if (isNull group _x) then {
-			_group = _x;
-			_chance = 1;
-		};
-		*/
+
 		_chance = 1;
-		//if ((_x in _list) and !(animationState _x == "ZombieFeed")) then {
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
-			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
+			if (_type == "zombie") then { [_x,"attack",(_chance),true] call dayz_zombieSpeak; };
 			//perform an attack
 			_last = _x getVariable["lastAttack",0];
 			_entHeight = (getPosATL _x) select 2;
 			_delta = _pHeight - _entHeight;
 			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				//_isZInside = [_x,_building] call fnc_isInsideBuilding;
-				//if ((_isPlayerInside and _isZInside) or (!_isPlayerInside and !_isZInside)) then {
-					_x spawn player_zombieAttack;
-					_x setVariable["lastAttack",time];
-				//};
+				zedattack = [_x, _type] spawn player_zombieAttack;
+				_x setVariable["lastAttack",time];
 			};
 			_attacked = true;
 		} else {
-			if (speed _x < 4) then {
-				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
-			} else {
-				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
+			if (_type == "zombie") then {
+				if (speed _x < 4) then {
+					[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
+				} else {
+					[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
+				};
 			};
 		};
+
 		//Noise Activation
-		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
 				if (DAYZ_disAudial > 80) then {
-					_targets set [count _targets, driver _refObj];
-					_group setVariable ["targets",_targets,true];				
+					if (!(_refObj in _targets)) then {
+						_targets set [count _targets, driver _refObj];
+						_group setVariable ["targets",_targets,true];
+					};					
 				} else {
-					_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
-					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
-					if ((random 1) < _chance) then {
-						_cantSee = [_x,_refObj] call dayz_losCheck;
-						if (!_cantSee) then {
+					if (_dist < (DAYZ_disAudial / 2)) then {
+						if (!(_refObj in _targets)) then {
 							_targets set [count _targets, driver _refObj];
 							_group setVariable ["targets",_targets,true];
-						} else {
-							if (_dist < (DAYZ_disAudial / 2)) then {
-								_targets set [count _targets, driver _refObj];
-								_group setVariable ["targets",_targets,true];
-							};
 						};
 					};
 				};
 			};
 		};
 		//Sight Activation
-		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disVisual) then {
-				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
-				//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
-				if ((random 1) < _chance) then {
+				//_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
+				//diag_log ("Visual Detection: m" + str([_x,_dist]) + " " + str(_chance));
+				//if ((random 1) < _chance) then {
 					//diag_log ("Chance Detection");
 					_tPos = (getPosASL _refObj);
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,90,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
-						//diag_log ("In Angle");
 						//LOS check
 						_cantSee = [_x,_refObj] call dayz_losCheck;
 						//diag_log ("LOS Check: " + str(_cantSee));
 						if (!_cantSee) then {
 							//diag_log ("Within LOS! Target");
-							_targets set [count _targets, driver _refObj];
-							_group setVariable ["targets",_targets,true];
+							if (!(_refObj in _targets)) then {
+								_targets set [count _targets, driver _refObj];
+								_group setVariable ["targets",_targets,true];
+							};
 						};
 					};
-				};
+				//};
 			};
 		};
 	};
+	//diag_log ("Targets Array: " +str(_targets));
 } forEach _listTalk;
 
 /* New Systems
