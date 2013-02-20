@@ -11,15 +11,10 @@ if ("ItemJerrycanEmpty" in magazines player) then {
 		player addMagazine "ItemJerrycan";
 	};
 	player playActionNow "Medic";
-	_id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
-	if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
-	{
-		[player,"refuel",0,false] call dayz_zombieSpeak;
-	}
-	else
-	{
-		[player,"refuel",0,true] call dayz_zombieSpeak;
-	};
+	
+	[player,20,false,(getPosATL player)] spawn player_alertZombies;
+	[player,"refuel",0,true] call dayz_zombieSpeak;
+
 	cutText [format[(localize  "str_player_09"),_qty], "PLAIN DOWN"];
 } else {
 	cutText [(localize "str_player_10") , "PLAIN DOWN"];

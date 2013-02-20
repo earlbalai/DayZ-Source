@@ -3,6 +3,7 @@ _unit = _this select 0;
 _type = _this select 1;
 _chance = _this select 2;
 _local = _this select 3;
+
 _dis = 40;
 
 _num = switch (_type) do {
@@ -32,6 +33,12 @@ if (_isWoman and (_type in ["scream","panic"])) then {
 	_type = _type + "_w";
 };
 
+//Check if calls are local or global
+if ({isPlayer _x} count (_unit nearEntities ["CAManBase",_dis]) > 1) then
+{
+	_local = false;
+};
+
 
 if ((round(random _chance) == _chance) or (_chance == 0)) then {
 	_rnd =(round(random _num));
@@ -41,4 +48,6 @@ if ((round(random _chance) == _chance) or (_chance == 0)) then {
 	} else {
 		[nil,_unit,rSAY,[_sound, _dis]] call RE;
 	};
+	//Tell other zeds in range about this action
+	[player,_dis,false,(getPosATL player)] spawn player_alertZombies; 
 };

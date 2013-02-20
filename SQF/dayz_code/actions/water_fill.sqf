@@ -54,15 +54,10 @@ if (_canFill) then {
 			player removeMagazine "ItemWaterbottleUnfilled";
 			player addMagazine "ItemWaterbottle";
 		};
-		if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
-		{
-			[player,"fillwater",0,false] call dayz_zombieSpeak;
-		}
-		else
-		{
-			[player,"fillwater",0,true] call dayz_zombieSpeak;
-		};
-		_id = [player,10,true,(getPosATL player)] spawn player_alertZombies;
+
+		[player,"fillwater",0,true] call dayz_zombieSpeak;
+		[player,5,true,(getPosATL player)] spawn player_alertZombies;
+		
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
 	} else {
 		cutText [(localize "str_player_02") , "PLAIN DOWN"];
