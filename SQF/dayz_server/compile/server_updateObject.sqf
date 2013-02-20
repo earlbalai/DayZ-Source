@@ -145,26 +145,19 @@ switch (_type) do {
 	};
 	case "position": {
 		if (!(_object in needUpdate_objects)) then {
-			//diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
+			diag_log format["DEBUG Position: Added to NeedUpdate=%1",_object];
 			needUpdate_objects set [count needUpdate_objects, _object];
 		};
 	};
 	case "gear": {
-		if ( (time - _lastUpdate) > 5) then {
-			call _object_inventory;
-		} else {
-			if (!(_object in needUpdate_objects)) then {
-				//diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
-				needUpdate_objects set [count needUpdate_objects, _object];
-			};
-		};
+		call _object_inventory;
 	};
 	case "damage": {
 		if ( (time - _lastUpdate) > 5) then {
 			call _object_damage;
 		} else {
 			if (!(_object in needUpdate_objects)) then {
-				//diag_log format["DEBUG: Added to NeedUpdate=%1",_object];
+				diag_log format["DEBUG Damage: Added to NeedUpdate=%1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
 			};
 		};
