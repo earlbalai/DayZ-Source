@@ -105,15 +105,5 @@ while {true} do {
 				_x setVariable ["permaLoot",true];
 			} forEach _nearBy;
 		};
-		
-		if ("ItemMap_Debug" in items player) then {
-			_markerstr = createMarker ["markername_" +str (_crashModel), _position];
-			_markerstr setMarkerText _crashModel;
-			_markerstr setMarkerColor "ColorGreen";
-			_markerstr setMarkerShape "ELLIPSE";
-			_markerstr setMarkerBrush "Grid";
-			_markerstr setMarkerSize [50, 50];	
-		};
-
 	};
 };
