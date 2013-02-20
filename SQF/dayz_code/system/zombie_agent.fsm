@@ -39,7 +39,7 @@ item34[] = {"someone_here",4,218,-150.000000,-50.000000,-50.000000,0.000000,0.00
 item35[] = {"too_long",4,218,-425.000000,600.000000,-325.000000,650.000000,0.000000,"too long"};
 item36[] = {"",7,210,-229.000000,621.000000,-221.000000,629.000000,0.000000,""};
 item37[] = {"",7,210,-529.000000,621.000000,-521.000000,629.000000,0.000000,""};
-item38[] = {"Reset_Targeting",2,250,-575.000000,325.000000,-475.000000,375.000000,0.000000,"Reset" \n "Targeting"};
+item38[] = {"Reset_Targeting",2,4346,-575.000000,325.000000,-475.000000,375.000000,0.000000,"Reset" \n "Targeting"};
 item39[] = {"No_target",4,218,-575.000000,225.000000,-475.000000,275.000000,0.000000,"No target"};
 item40[] = {"",7,210,-104.000000,471.000000,-95.999992,479.000000,0.000000,""};
 item41[] = {"player_check",4,218,-425.000000,0.000000,-325.000000,50.000000,0.000000,"player" \n "check"};
@@ -101,8 +101,8 @@ link52[] = {40,28};
 link53[] = {41,5};
 link54[] = {42,1};
 link55[] = {43,25};
-globals[] = {25.000000,1,0,0,0,640,480,1,111,6316128,1,-925.864441,550.864014,736.020203,-203.147827,945,601,1};
-window[] = {2,-1,-1,-1,-1,821,110,1318,110,3,962};
+globals[] = {25.000000,1,0,0,0,640,480,1,111,6316128,1,-647.205811,59.108749,574.628662,-196.031677,944,1030,1};
+window[] = {2,-1,-1,-1,-1,763,52,1260,52,3,962};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -180,7 +180,7 @@ class FSM
        "if (!isNil ""_newDest"") then {" \n
        "	if (_newDest distance _myDest > 0) then {" \n
        "		_myDest = _newDest;" \n
-       "		_agent moveTo _myDest;" \n
+       "		_agent doMove _myDest;" \n
        "//		_agent forceSpeed 2;" \n
        "	};" \n
        "};" \n
@@ -192,7 +192,6 @@ class FSM
        "if (_secondHand) then {" \n
        "	diag_log (""Zombie "" + str(_agent) + "" Loiter "" + "" distance: "" + str(_newDest distance _myDest));" \n
        "	_agent doMove (getPosATL player);" \n
-       "	_agent moveTo (getPosATL player);" \n
        "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -351,7 +350,7 @@ class FSM
        "_agent setBehaviour ""CARELESS"";" \n
        "//_agent setCombatMode ""RED"";" \n
        "_agent forceSpeed 10;" \n
-       "_agent moveTo _targetPos;" \n
+       "_agent doMove _targetPos;" \n
        "" \n
        "" \n
        "//if (_agent distance player > 15) then {" \n
@@ -519,7 +518,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"if (!isNull _target) then {" \n
        "	_targetPos = getPosATL _target;" \n
        "	_agent setVariable [""myDest"",_targetPos];" \n
-       "	_agent moveTo _targetPos;" \n
+       "	_agent doMove _targetPos;" \n
        "};" \n
        "" \n
        "_agent setVariable [""targets"",[],true];" \n
