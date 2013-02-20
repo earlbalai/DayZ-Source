@@ -38,14 +38,7 @@ if ( _rawfood and (random 15 < 1)) then {
 	player setVariable["USEC_infected",true];
 };
 
-if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
-{
-	[player,"eat",0,false] call dayz_zombieSpeak;
-}
-else
-{
-	[player,"eat",0,true] call dayz_zombieSpeak;
-};
+[player,"eat",0,true] call dayz_zombieSpeak;
 
 if (!_rawfood and !_cookedfood) then{
 	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
@@ -73,7 +66,7 @@ player setVariable["medForceUpdate",true];
 dayz_lastMeal =	time;
 dayz_hunger = 0;
 
-_id = [player,5,true,(getPosATL player)] spawn player_alertZombies;
+[player,5,true,(getPosATL player)] spawn player_alertZombies;
 
 //Ensure Control is visible
 _display = uiNamespace getVariable 'DAYZ_GUI_display';

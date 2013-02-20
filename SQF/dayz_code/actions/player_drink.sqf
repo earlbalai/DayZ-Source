@@ -21,14 +21,8 @@ if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"
 player playActionNow "PutDown";
 player removeMagazine _item;
 sleep 1;
-if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
-{
-	[player,_sfx,0,false] call dayz_zombieSpeak;
-}
-else
-{
-	[player,_sfx,0,true] call dayz_zombieSpeak;
-};
+[player,_sfx,0,true] call dayz_zombieSpeak;
+
 
 if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 	player addMagazine "ItemWaterbottleUnfilled";
@@ -45,7 +39,7 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 		_item = _nearByPile select 0;
 	};
 	_item addMagazineCargoGlobal ["ItemSodaEmpty",1];
-	_id = [player,10,true,(getPosATL player)] spawn player_alertZombies;
+	[player,5,true,(getPosATL player)] spawn player_alertZombies;
 };
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 

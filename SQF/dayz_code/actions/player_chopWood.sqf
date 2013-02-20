@@ -11,7 +11,7 @@ if (["forest",dayz_surfaceType] call fnc_inString) then {
 		} else {
 			cutText [localize "str_player_24", "PLAIN DOWN"];
 		};
-		_id = [player,20,true,(getPosATL player)] spawn player_alertZombies;
+		[player,20,false,(getPosATL player)] spawn player_alertZombies;
 		player playActionNow "Medic";
 		sleep 3;
 } else {

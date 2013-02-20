@@ -9,15 +9,8 @@ _objectUID	= _obj getVariable ["ObjectUID","0"];
 
 player playActionNow "Medic";
 sleep 1;
-if ({isPlayer _x} count (_pos nearEntities ["CAManBase",100]) > 1) then
-{
-	[player,"repair",0,false] call dayz_zombieSpeak;
-}
-else
-{
-	[player,"repair",0,true] call dayz_zombieSpeak;
-};
-_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+[player,"repair",0,true] call dayz_zombieSpeak;
+[player,20,true,(getPosATL player)] spawn player_alertZombies;
 sleep 5;
 	
 //["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
