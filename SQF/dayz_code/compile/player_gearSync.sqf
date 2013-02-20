@@ -22,6 +22,7 @@ for "_i" from 109 to 120 do
 	_val =		gearSlotAmmoCount _control;
 	_max = 		getNumber (configFile >> "CfgMagazines" >> _item >> "count");
 	if (_item != "") then {
+		if (_item == "BoltSteel") then { _item = "WoodenArrow" };
 		if (_val != _max) then {
 			_magazineArray set [count _magazineArray,[_item,_val]];
 		} else {
