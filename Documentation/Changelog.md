@@ -25,6 +25,20 @@ FIX DUE : 2013
 	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	* [NEW] - Crowbar now attaches to toolbelt.
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
+	* [NEW] - 13 new sodas, Our thanks to alot of the ppl who have helped along Day'z Path.
+			- (Soda)  Clay's Long Island Iced Tea
+			- (Soda)  Dr. Wasteland
+			- (Soda)  Franka
+			- (Soda)  Mikhail Made Lemonade
+			- (Soda)  Lirikacola
+			- (Soda)  LVG Root Beer
+			- (Soda)  Moutain Green
+			- (Soda)  mZLY yZLY
+			- (Soda)  Peppsy
+			- (Soda)  R4Z0R soda
+			- (Soda)  Sacrite
+			- (Soda)  Smasht
+			- (Beer)  Rabbitman
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
