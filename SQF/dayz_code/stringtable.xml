@@ -1194,7 +1194,6 @@
 			<Original>Dog: %1</Original>
 			<English>Dog: %1</English>
 			<German>Hund: %1</German>
-			<Russian>Dog: %1</Russian>
 			<Spanish>Perro: %1</Spanish>
 			<Dutch>Dog: %1</Dutch>
 			<French>Chien: %1</French>
@@ -1297,7 +1296,6 @@
 			<Original>Box of Wet Matches</Original>						
 			<English>Box of Wet Matches</English>						
 			<German>Feuchte Streichholzschachtel</German>
-			<Russian>Box of Wet Matches</Russian>
 			<Spanish>Caja de Fósforos Mojada</Spanish>
 			<Dutch>Box of Wet Matches</Dutch>
 			<French>Boîte d'Allumettes mouillées</French>
@@ -1308,7 +1306,6 @@
 			<Original>Box of wet matches.</Original>						
 			<English>Box of wet matches.</English>						
 			<German>Feuchte Streichholzschachtel.</German>
-			<Russian>Box of wet matches.</Russian>
 			<Spanish>Caja de fósforos mojada.</Spanish>
 			<Dutch>Box of wet matches.</Dutch>
 			<French>Boîte d'Allumettes mouillées.</French>
@@ -1319,7 +1316,6 @@
 			<Original>Blunt Hatchet</Original>						
 			<English>Blunt Hatchet</English>						
 			<German>Stumpfe Axt</German>
-			<Russian>Blunt Hatchet</Russian>
 			<Spanish>Hacha Desafilada</Spanish>
 			<Dutch>Blunt Hatchet</Dutch>
 			<French>Hache émoussée</French>
@@ -1330,18 +1326,16 @@
 			<Original>Your Hatchet appears to be too blunt to be used.</Original>						
 			<English>Your Hatchet appears to be too blunt to be used.</English>						
 			<German>Ihre Axt scheint zu stumpf zu sein, um sie zu verwenden.</German>
-			<Russian>Your Hatchet appears to be too blunt to be used.</Russian>
 			<Spanish>Tu hacha parece estar muy desafilada para ser usada.</Spanish>
 			<Dutch>Your Hatchet appears to be too blunt to be used.</Dutch>
 			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
-      			<Czech>Vypadá to, že tvá sekera je příliž tupá na to, aby se dala použít.</Czech>
+      		<Czech>Vypadá to, že tvá sekera je příliž tupá na to, aby se dala použít.</Czech>
 			<Russian>Ваш топор слишком туп, чтобы его использовать.</Russian>	
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_4">						
 			<Original>Blunt Knife</Original>						
 			<English>Blunt Knife</English>						
 			<German>Stumpfes Messer</German>
-			<Russian>Blunt Knife</Russian>
 			<Spanish>Cuchillo Desafilado</Spanish>
 			<Dutch>Blunt Knife</Dutch>
 			<French>Couteau émoussé</French>
@@ -1352,7 +1346,6 @@
 			<Original>Your Knife appears to be too blunt.</Original>						
 			<English>Your Knife appears to be too blunt.</English>						
 			<German>Ihr Messer scheint zu stumpf zu sein.</German>
-			<Russian>Your Knife appears to be too blunt.</Russian>
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
 			<Dutch>Your Knife appears to be too blunt.</Dutch>
 			<French>Votre couteau semble trop émoussé</French>
@@ -1363,7 +1356,6 @@
 			<Original>Raw Meat</Original>						
 			<English>Raw Meat</English>						
 			<German>Rohes Fleisch</German>
-			<Russian>Ñûðîå ìÿñî</Russian>
 			<Spanish>Carne Cruda</Spanish>
 			<Dutch>Raw Meat</Dutch>
 			<French>Viande Crue</French>
@@ -1374,7 +1366,6 @@
 			<Original>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Rohes Fleisch für den Verzehr, sollte sicherheitshalber vorher gekocht werden.</German>
-			<Russian>Ñûðîå ìÿñî. Áóäåò âêóñíåå è áåçîïàñíåå, åñëè åãî ïðèãîòîâèòü.</Russian>
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>La viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
@@ -1385,7 +1376,6 @@
 			<Original>Mutton Raw</Original>						
 			<English>Mutton Raw</English>						
 			<German>Rohes Hammelfleisch</German>
-			<Russian>Mutton Raw</Russian>
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>BMutton Raw</Dutch>
 			<French>Mouton Cru</French>
