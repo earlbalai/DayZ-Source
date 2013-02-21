@@ -379,4 +379,11 @@ class CfgMagazines {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
+	 
+	 class Machete_Swing : Hatchet_Swing {
+		displayName = "Machete";
+		displayNameMagazine = "Machete";
+		shortNameMagazine = "Machete";
+		ammo = "Machete_Swing_Ammo";
+	};
 };
