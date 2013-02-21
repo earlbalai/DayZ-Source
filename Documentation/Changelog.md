@@ -41,6 +41,8 @@ FIX DUE : 2013
 	* [UPDATED] - Added some czech language
 	* [UPDATED] - Updated zed attraction to dead players from 50 meters to 20 meters.
 	* [UPDATED] - Players will now drop empty cans after consumption to nearest lootpile or creates new one.
+	* [UPDATED] - Updated Infection to cought,sake camera and loose blood.
+	* [UPDATED] - Updated russian string tables.
 	
 	* [FIXED] - Zeds talk, lowed to 80 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.
