@@ -1,4 +1,4 @@
-private["_onLadder","_item","_hasdrinkitem","_config","_text","_sfx","_id","_display"];
+private["_onLadder","_item","_hasdrinkitem","_config","_text","_sfx","_id","_display","_itemorignal"];
 disableserialization;
 call gear_ui_init;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -10,11 +10,8 @@ if (vehicle player != player) exitWith {cutText ["You may not drink while in a v
 //if (dayz_lastDrink < 180) exitWith {cutText ["You may not drink, your not thirsty", "PLAIN DOWN"]};
 
 _item = _this;
+_itemorignal = _this;
 _hasdrinkitem = _item in magazines player;
-
-if ("ItemMap_Debug" in items player) then {
-	diag_log ("Drink: " +str(_item));
-};
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
@@ -38,6 +35,7 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 		player setVariable["USEC_infected",true,true];
 	};
 } else {
+
 	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
 	if (count _nearByPile ==0) then { 
 		_item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
@@ -45,7 +43,10 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 		_item = _nearByPile select 0;
 	};
 	
-	switch (_item) do
+	if ("ItemMap_Debug" in items player) then {
+		diag_log ("Drink: " +str(_itemorignal));
+	};
+	switch (_itemorignal) do
 	{
 		case "ItemSodaMtngreen" : {_item addMagazineCargoGlobal ["ItemSodaMtngreenEmpty",1]};
 		case "ItemSodaLirik" : {_item addMagazineCargoGlobal ["ItemSodaLirikEmpty",1]};
