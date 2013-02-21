@@ -14,11 +14,14 @@ if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 player playActionNow "PutDown";
 if (_classname == "MeleeCrowbar") then {
 	player addMagazine 'crowbar_swing';
-} else {
-	if (_classname == "MeleeHatchet") then {
-		player addMagazine 'hatchet_swing';
-	};
 };
+if (_classname == "MeleeHatchet") then {
+		player addMagazine 'hatchet_swing';
+};
+if (_classname == "MeleeMachete") then {
+		player addMagazine 'Machete_swing';
+};
+
 
 _broken = false;
 if(_classname == "WoodenArrow") then {
@@ -42,7 +45,7 @@ _config = (configFile >> _type >> _classname);
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
-	if (_classname in ["MeleeHatchet","MeleeCrowbar"]) then {
+	if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
 
 		if (_type == "cfgWeapons") then {
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
@@ -59,10 +62,12 @@ if (_isOk) then {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 	if (_classname == "MeleeCrowbar") then {
 		player removeMagazine 'crowbar_swing';
-	} else {
-		if (_classname == "MeleeHatchet") then {
+	};
+	if (_classname == "MeleeHatchet") then {
 			player removeMagazine 'hatchet_swing';
-		};
+	};
+	if (_classname == "MeleeMachete") then {
+			player removeMagazine 'Machete_swing';
 	};
 };
 
