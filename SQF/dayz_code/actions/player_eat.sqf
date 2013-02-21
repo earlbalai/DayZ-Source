@@ -35,7 +35,7 @@ if (dayz_lastMeal < 3600) then {
 
 if ( _rawfood and (random 15 < 1)) then {
 	r_player_infected = true;
-	player setVariable["USEC_infected",true];
+	player setVariable["USEC_infected",true,true];
 };
 
 [player,"eat",0,true] call dayz_zombieSpeak;

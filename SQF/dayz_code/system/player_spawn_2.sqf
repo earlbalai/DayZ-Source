@@ -103,9 +103,9 @@ while {true} do {
 	};
 	
 	//Has infection?
-	if (r_player_infected) then {
-		[player,"cough",8,false] call dayz_zombieSpeak;
-	};
+	//if (r_player_infected) then {
+	//	[player,"cough",8,false] call dayz_zombieSpeak;
+	//};
 
 	//Record Check
 	_lastUpdate = 	time - dayZ_lastPlayerUpdate;
@@ -154,7 +154,7 @@ while {true} do {
 						_rnd = random 1;
 						if (_rnd > 0.7) then {
 							r_player_infected = true;
-							player setVariable["USEC_infected",true];
+							//player setVariable["USEC_infected",true];
 						};
 					};
 				};
@@ -165,19 +165,33 @@ while {true} do {
 					_rnd = random 1;
 					if (_rnd > 0.95) then {
 						r_player_infected = true;
-						player setVariable["USEC_infected",true];
+						//player setVariable["USEC_infected",true];
 					};
 				};
 			};
 		};
 	};
 	
-	//If has infection reduce blood
+	//If has infection reduce blood cough and add shake
 	if (r_player_infected) then {
+		if !(player getVariable["USEC_infected",false]) then { 
+			player setVariable["USEC_infected",true,true];  
+		};
+		_rnd = ceil (random 8);
+		[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
+		if (_rnd < 3) then {
+			addCamShake [2, 1, 25];
+		};
 		if (r_player_blood > 3000) then {
 			r_player_blood = r_player_blood - 3;
 			player setVariable["USEC_BloodQty",r_player_blood];
 		};
+	};
+	
+	//Pain Shake Effects
+	if (r_player_inpain and !r_player_unconscious) then {
+		playSound "breath_1";
+		addCamShake [2, 1, 25];
 	};
 	
 	//Hunger Effect
