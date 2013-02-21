@@ -139,4 +139,71 @@ class CfgWeapons {
 			};
 		};
 	};
+	class MeleeMachete: MeleeHatchet
+	{
+		scope=2;
+		autoreload=1;
+		magazineReloadTime=0;
+		model="\dayz_weapons\models\crowbar_weaponized";
+		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
+		displayName="Machete";
+		magazines[]=
+		{
+			"Machete_Swing"
+		};
+		class ItemActions
+		{
+			class Toolbelt
+			{
+				text="Add to Toolbelt";
+				script="spawn player_addToolbelt;";
+				use[]=
+				{
+					"MeleeMachete"
+				};
+				output[]=
+				{
+					"ItemMachete"
+				};
+			};
+			class Drop
+			{
+				text="Drop Machete";
+				script="spawn player_dropWeapon;";
+				use[]=
+				{
+					"Machete_Swing"
+				};
+			};
+		};
+		class Library
+		{
+			libTextDesc="";
+		};
+		descriptionShort="";
+	};	
+	class ItemMachete: ItemCore
+	{
+		scope=2;
+		displayName="Machete";
+		model="\dayz_equip\models\crowbar.p3d";
+		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
+		descriptionShort="";
+		class ItemActions
+		{
+			class Toolbelt
+			{
+				text="Remove from Toolbelt";
+				script="spawn player_addToolbelt;";
+				use[]=
+				{
+					"ItemMacheter"
+				};
+				output[]=
+				{
+					"MeleeMachete"
+				};
+			};
+		};
+	};
 };
