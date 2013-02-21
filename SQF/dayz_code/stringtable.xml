@@ -1620,7 +1620,7 @@
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
-			<Czech>Plná láhev převažené vody, které může být vypita.</Czech>
+			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">						
 			<Original>Soda (Mtn. Green)</Original>
@@ -1630,6 +1630,7 @@
 			<Spanish>Soda (Mtn. Green)</Spanish>
 			<Dutch>Soda (Mtn. Green)</Dutch>
 			<French>Soda (Mtn. Green)</French>
+			<Czech>Soda (Mtn. Green)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_0">						
 			<Original>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Original>
@@ -1639,6 +1640,7 @@
 			<Spanish>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Spanish>
 			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
 			<French>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</French>
+			<Czech>Čistá a ještě neotevřená plechovka Mountain Green. Dobrá volba na dlouhou cestu.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1">						
 			<Original>Soda (R4Z0R)</Original>
@@ -1648,6 +1650,7 @@
 			<Spanish>Soda (R4Z0R)</Spanish>
 			<Dutch>Soda (R4Z0R)</Dutch>
 			<French>Soda (R4Z0R)</French>
+			<Czech>Soda (R4Z0R)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_1">						
 			<Original>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Original>
@@ -1657,6 +1660,7 @@
 			<Spanish>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Spanish>
 			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
 			<French>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</French>
+			<Czech>Čistá a ještě neotevřená plechovka sodovky R4Z0R. Před mnoho lety ji přestali prodávat!</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">						
 			<Original>Soda (Iced Tea)</Original>
@@ -1666,6 +1670,7 @@
 			<Spanish>Soda (Iced Tea)</Spanish>
 			<Dutch>Soda (Iced Tea)</Dutch>
 			<French>Soda (Iced Tea)</French>
+			<Czech>Soda (Iced Tea)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">						
 			<Original>A clean, unopened can of Long's island iced tea.</Original>
@@ -1675,6 +1680,7 @@
 			<Spanish>A clean, unopened can of Long's island iced tea.</Spanish>
 			<Dutch>A clean, unopened can of Long's island iced tea.</Dutch>
 			<French>A clean, unopened can of Long's island iced tea.</French>
+			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's island.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">						
 			<Original>Soda (Smasht)</Original>
@@ -1684,6 +1690,7 @@
 			<Spanish>Soda (Smasht)</Spanish>
 			<Dutch>Soda (Smasht)</Dutch>
 			<French>Soda (Smasht)</French>
+			<Czech>Soda (Smasht)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3">						
 			<Original>A clean, unopened can of Smasht grape soda.</Original>
@@ -1693,6 +1700,7 @@
 			<Spanish>A clean, unopened can of Smasht grape soda.</Spanish>
 			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
 			<French>A clean, unopened can of Smasht grape soda.</French>
+			<Czech>Čistá a ještě neotevřená plechovka grepové sody Smasht.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">						
 			<Original>Soda (Dr. Wasteland)</Original>
@@ -1702,6 +1710,7 @@
 			<Spanish>Soda (Dr. Wasteland)</Spanish>
 			<Dutch>Soda (Dr. Wasteland)</Dutch>
 			<French>Soda (Dr. Wasteland)</French>
+			<Czech>Soda (Dr. Wasteland)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_4">						
 			<Original>A clean, unopened can of Dr. Wasteland soda.</Original>
@@ -1711,6 +1720,7 @@
 			<Spanish>A clean, unopened can of Dr. Wasteland soda.</Spanish>
 			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
 			<French>A clean, unopened can of Dr. Wasteland soda.</French>
+			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wateland.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">						
 			<Original>Soda (Franka)</Original>
@@ -1720,6 +1730,7 @@
 			<Spanish>Soda (Franka)</Spanish>
 			<Dutch>Soda (Franka)</Dutch>
 			<French>Soda (Franka)</French>
+			<Czech>Soda (Franka)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">						
 			<Original>A clean, unopened can of Franka orange soda.</Original>
@@ -1729,6 +1740,7 @@
 			<Spanish>A clean, unopened can of Franka orange soda.</Spanish>
 			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
 			<French>A clean, unopened can of Franka orange soda.</French>
+			<Czech>Čistá a ještě neotevřená plechovka sodovky Franka orange.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">						
 			<Original>Soda (Lemonade)</Original>
@@ -1738,6 +1750,7 @@
 			<Spanish>Soda (Lemonade)</Spanish>
 			<Dutch>Soda (Lemonade)</Dutch>
 			<French>Soda (Lemonade)</French>
+			<Czech>Soda (Limonáda)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">						
 			<Original>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Original>
@@ -1747,6 +1760,7 @@
 			<Spanish>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Spanish>
 			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
 			<French>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</French>
+			<Czech>Čistá a ještě neotevřená plechovka Mikhail Made limonády. Vytvořeno Mikhailem.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">						
 			<Original>Soda (Lirikola)</Original>
@@ -1756,6 +1770,7 @@
 			<Spanish>Soda (Lirikola)</Spanish>
 			<Dutch>Soda (Lirikola)</Dutch>
 			<French>Soda (Lirikola)</French>
+			<Czech>Soda (Lirikola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7">						
 			<Original>A clean, unopened can of Lirikola. An o7 brand.</Original>
@@ -1765,6 +1780,7 @@
 			<Spanish>A clean, unopened can of Lirikola. An o7 brand.</Spanish>
 			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
 			<French>A clean, unopened can of Lirikola. An o7 brand.</French>
+			<Czech>Čistá a ještě neotevřená plechovka Lirikoly. o7 série.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">						
 			<Original>Soda (Root Beer)</Original>
@@ -1774,6 +1790,7 @@
 			<Spanish>Soda (Root Beer)</Spanish>
 			<Dutch>Soda (Root Beer)</Dutch>
 			<French>Soda (Root Beer)</French>
+			<Czech>Pivo (LVG Root)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">						
 			<Original>A clean, unopened can of LVG root beer.</Original>
@@ -1783,6 +1800,7 @@
 			<Spanish>A clean, unopened can of LVG root beer.</Spanish>
 			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
 			<French>A clean, unopened can of LVG root beer.</French>
+			<Czech>Čistá a ještě neotevřená plechovka piva LVG root.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">						
 			<Original>Soda (mZLY yZLY)</Original>
@@ -1792,6 +1810,7 @@
 			<Spanish>Soda (mZLY yZLY)</Spanish>
 			<Dutch>Soda (mZLY yZLY)</Dutch>
 			<French>Soda (mZLY yZLY)</French>
+			<Czech>Soda (mZLY yZLY)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_9">						
 			<Original>A clean, unopened can of mZLY yZLY soda.</Original>
@@ -1801,6 +1820,7 @@
 			<Spanish>A clean, unopened can of mZLY yZLY soda.</Spanish>
 			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
 			<French>A clean, unopened can of mZLY yZLY soda.</French>
+			<Czech>Čistá a ještě neotevřená plechovka mZLY yZLY sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">						
 			<Original>Soda (Peppsy)</Original>
@@ -1810,6 +1830,7 @@
 			<Spanish>Soda (Peppsy)</Spanish>
 			<Dutch>Soda (Peppsy)</Dutch>
 			<French>Soda (Peppsy)</French>
+			<Czech>Soda (Peppsy)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">						
 			<Original>A clean, unopened can of Peppsy soda.</Original>
@@ -1819,6 +1840,7 @@
 			<Spanish>A clean, unopened can of Peppsy soda.</Spanish>
 			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
 			<French>A clean, unopened can of Peppsy soda.</French>
+			<Czech>Čistá a ještě neotevřená plechovka Peppsy sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">						
 			<Original>Beer (Rabbitman)</Original>
@@ -1828,6 +1850,7 @@
 			<Spanish>Beer (Rabbitman)</Spanish>
 			<Dutch>Beer (Rabbitman)</Dutch>
 			<French>Beer (Rabbitman)</French>
+			<Czech>Pivo (Rabbitman)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11">						
 			<Original>A clean, unopened can of Rabbitman beer.</Original>
@@ -1837,6 +1860,7 @@
 			<Spanish>A clean, unopened can of Rabbitman beer.</Spanish>
 			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
 			<French>A clean, unopened can of Rabbitman beer.</French>
+			<Czech>Čistá a ještě neotevřená plechovka piva Rabbitman.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12">						
 			<Original>Soda (Sacrite)</Original>
@@ -1846,6 +1870,7 @@
 			<Spanish>Soda (Sacrite)</Spanish>
 			<Dutch>Soda (Sacrite)</Dutch>
 			<French>Soda (Sacrite)</French>
+			<Czech>Soda (Sacrite)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12">						
 			<Original>A clean, unopened can of Sacrite soda.</Original>
@@ -1855,6 +1880,7 @@
 			<Spanish>A clean, unopened can of Sacrite soda.</Spanish>
 			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
 			<French>A clean, unopened can of Sacrite soda.</French>
+			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
 	</Package>
 </Project>
