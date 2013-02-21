@@ -7,7 +7,7 @@ if (dayz_maxCurrentZeds > dayz_maxZeds) exitwith {};
 if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
 
-_isNoone = 	{isPlayer _x} count (_position nearEntities ["CAManBase",30]) == 0;
+_isNoone = 	{isPlayer _x} count (_position nearEntities ["AllVehicles",30]) == 0;
 _loot = 	"";
 _array = 	[];
 _agent = 	objNull;

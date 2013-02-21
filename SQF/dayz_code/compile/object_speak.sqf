@@ -34,7 +34,7 @@ if (_isWoman and (_type in ["scream","panic"])) then {
 };
 
 //Check if calls are local or global
-if ({isPlayer _x} count (_unit nearEntities ["CAManBase",_dis]) > 1) then
+if ({isPlayer _x} count (_unit nearEntities ["AllVehicles",_dis]) > 1) then
 {
 	_local = false;
 };
