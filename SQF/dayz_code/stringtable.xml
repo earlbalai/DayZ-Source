@@ -264,7 +264,8 @@
 			<Spanish>Creaste una fogata</Spanish>
 			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
 			<French>Vous avez créé un feu de camp.</French>
-      			<Czech>Vytvořil jsi ohniště.</Czech>
+      		<Czech>Vytvořil jsi ohniště.</Czech>
+			<Russian>Вы подготовили костер.</Russian>
 		</Key>
 		<Key ID="str_build_01">
 			<Original>You have constructed a %1</Original>
@@ -504,7 +505,8 @@
 			<Spanish>Estas ejecutando una versión incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzmod.com/downloads (Estas ejecutando la versión %1 y el servidor %2)</Spanish>
 			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzmod.com/downloads (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
 			<French>Vous utilisez une version incorrecte de DAYZ_CODE, veuillez télécharger ce fichier depuis dayzmod.com/downloads (Vous utilisez la version %1 et le serveur utilise la version %2)</French>
-      			<Czech>Máte nesprávnou verzi DAYZ_CODE, stáhněte si prosím aktuální soubor z dayzmod.com/downloads (Vaše verze je %1 a na serveru běží verze %2)</Czech>
+      		<Czech>Máte nesprávnou verzi DAYZ_CODE, stáhněte si prosím aktuální soubor z dayzmod.com/downloads (Vaše verze je %1 a na serveru běží verze %2)</Czech>
+			<Russian>Вы используете неверную версию DAYZ_CODE. Пожалуйста, скачайте нужный файл с dayzmod.com/downloads (Ваша версия %1, версия на сервере %2)</Russian>
 		</Key>
     <Key ID="str_player_20">
       <Original>You must be near a water-source such as a pond or well to refill your water bottles</Original>
@@ -734,7 +736,8 @@
 			<Spanish>Cannot Abort near another player!</Spanish>
 			<Dutch>Cannot Abort near another player!</Dutch>
 			<French>Cannot Abort near another player!</French>
-      			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
+      		<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
+			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>	
 		</Key>
 		<Key ID="str_abort_zedsclose">
 			<Original>Can Abort in %1</Original>
@@ -744,7 +747,8 @@
 			<Spanish>Can Abort in %1</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
 			<French>Can Abort in %1</French>
-      			<Czech>Hru lze opustit za %1</Czech>
+      		<Czech>Hru lze opustit za %1</Czech>
+			<Russian>Выход будет доступен через %1</Russian>
 		</Key>
 		<Key ID="str_abort_playerincombat">
 			<Original>Cannot Abort while in combat!</Original>
@@ -754,7 +758,8 @@
 			<Spanish>Cannot Abort while in combat!</Spanish>
 			<Dutch>Cannot Abort while in combat!</Dutch>
 			<French>Cannot Abort while in combat!</French>
-      			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
+      		<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
+			<Russian>Нельзя выходить в бою!</Russian>
 		</Key>
 		<Key ID="str_broken_arrow">
 			<Original>Arrow was broken and cannot be used again</Original>
@@ -848,7 +853,8 @@
 			<Spanish>Hervir el Agua</Spanish>
 			<Dutch>koge vand</Dutch>
 			<French>faire bouillir l'eau</French>
-      			<Czech>Převařit vodu</Czech>
+      		<Czech>Převařit vodu</Czech>
+			<Russian>Прокипятить воду</Russian>
 		</Key>
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
@@ -1078,7 +1084,8 @@
 			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
 			<Dutch>You cannot perform another blood transfusion so fast</Dutch>
 			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
-      			<Czech>Nelze znovu provést krevní transfúzi tak rychle po sobě.</Czech>
+      		<Czech>Nelze znovu provést krevní transfúzi tak rychle po sobě.</Czech>
+			<Russian>Нельзя так часто переливать кровь!</Russian>	
 		</Key>
 		<Key ID="str_action_studybody">
 			<Original>Study Body</Original>
@@ -1128,7 +1135,8 @@
 			<Spanish>Voltear %1</Spanish>
 			<Dutch>Turn Over %1</Dutch>
 			<French>Retourner %1</French>
-      			<Czech>Otočit %1</Czech>
+      		<Czech>Otočit %1</Czech>
+			<Russian>Перевернуть %1</Russian>	
 		</Key>
 		<Key ID="str_actions_stats">
 			<Original>Enable Stats</Original>
@@ -1138,7 +1146,8 @@
 			<Spanish>Activar Estadísticas</Spanish>
 			<Dutch>Enable Stats</Dutch>
 			<French>Activer les Stats</French>
-      			<Czech>Zapnout statistiky</Czech>
+      		<Czech>Zapnout statistiky</Czech>
+			<Russian>Показать статистику</Russian>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
@@ -1148,7 +1157,8 @@
 			<Spanish>Dormir</Spanish>
 			<Dutch>Sleep</Dutch>
 			<French>Dormir</French>
-      			<Czech>Spát</Czech>
+      		<Czech>Spát</Czech>
+			<Russian>Поспать</Russian>	
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<Original>Bandit</Original>
@@ -1188,7 +1198,8 @@
 			<Spanish>Perro: %1</Spanish>
 			<Dutch>Dog: %1</Dutch>
 			<French>Chien: %1</French>
-      			<Czech>Pes: %1</Czech>
+      		<Czech>Pes: %1</Czech>
+			<Russian>Собака: %1</Russian>
 		</Key>
 		<Key ID="str_actions_calldog">
 			<Original>Call Dog</Original>
@@ -1291,6 +1302,7 @@
 			<Dutch>Box of Wet Matches</Dutch>
 			<French>Boîte d'Allumettes mouillées</French>
       			<Czech>Krabička mokrých zápalek</Czech>
+			<Russian>Коробка промокших спичек</Russian>	
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_3">						
 			<Original>Box of wet matches.</Original>						
@@ -1301,6 +1313,7 @@
 			<Dutch>Box of wet matches.</Dutch>
 			<French>Boîte d'Allumettes mouillées.</French>
       			<Czech>Krabička plná mokrých zápalek.</Czech>
+			<Russian>Коробка промокших спичек.</Russian>	
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_41">						
 			<Original>Blunt Hatchet</Original>						
@@ -1311,6 +1324,7 @@
 			<Dutch>Blunt Hatchet</Dutch>
 			<French>Hache émoussée</French>
       			<Czech>Tupá sekera</Czech>
+			<Russian>Затупившийся топор</Russian>	
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_41">						
 			<Original>Your Hatchet appears to be too blunt to be used.</Original>						
@@ -1321,6 +1335,7 @@
 			<Dutch>Your Hatchet appears to be too blunt to be used.</Dutch>
 			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
       			<Czech>Vypadá to, že tvá sekera je příliž tupá na to, aby se dala použít.</Czech>
+			<Russian>Ваш топор слишком туп, чтобы его использовать.</Russian>	
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_4">						
 			<Original>Blunt Knife</Original>						
@@ -1331,6 +1346,7 @@
 			<Dutch>Blunt Knife</Dutch>
 			<French>Couteau émoussé</French>
       			<Czech>Tupý nůž</Czech>
+			<Russian>Затупившийся нож</Russian>	
 		</Key>						
 		<Key ID="STR_EQUIP_CODE_DESC_4">						
 			<Original>Your Knife appears to be too blunt.</Original>						
@@ -1340,7 +1356,8 @@
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
 			<Dutch>Your Knife appears to be too blunt.</Dutch>
 			<French>Votre couteau semble trop émoussé</French>
-      			<Czech>Vypadá to, že tvůj nůž je příliš tupý.</Czech>
+      		<Czech>Vypadá to, že tvůj nůž je příliš tupý.</Czech>
+			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>	
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_0">						
 			<Original>Raw Meat</Original>						
@@ -1350,7 +1367,8 @@
 			<Spanish>Carne Cruda</Spanish>
 			<Dutch>Raw Meat</Dutch>
 			<French>Viande Crue</French>
-      			<Czech>Syrové maso</Czech>
+      		<Czech>Syrové maso</Czech>
+			<Russian>Сырое мясо</Russian>	
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_0">						
 			<Original>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
@@ -1360,7 +1378,8 @@
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>La viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
-      			<Czech>Kvůli bezpečnosti by mělo být syrové maso nejdříve upečeno.</Czech>
+      		<Czech>Kvůli bezpečnosti by mělo být syrové maso nejdříve upečeno.</Czech>
+			<Russian>Сырое мясо. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_1">						
 			<Original>Mutton Raw</Original>						
@@ -1370,73 +1389,74 @@
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>BMutton Raw</Dutch>
 			<French>Mouton Cru</French>
-      			<Czech>Jehněčí maso</Czech>
+      		<Czech>Jehněčí maso</Czech>
+			<Russian>Ягнятина</Russian>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
-			<Original>Goat Meat to be used for sustainment, must be cooked prior to eating.</Original>						
-			<English>Goat Meat to be used for sustainment, must be cooked prior to eating.</English>						
+			<Original>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
+			<English>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Goat Meat to be used for sustainment, must be cooked prior to eating.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>La Viande de Chèvre peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
-      			<Czech>Kvůli bezpečnosti by mělo být maso z kozy nejdříve upečeno.</Czech>
+      		<Czech>Kvůli bezpečnosti by mělo být maso z kozy nejdříve upečeno.</Czech>
+			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_2">						
 			<Original>Raw Chicken Leg</Original>						
 			<English>Raw Chicken Leg</English>						
 			<German>Rohe Hühnchenkeule</German>
-			<Russian>Raw Chicken Leg</Russian>
 			<Spanish>Pata de Pollo Cruda</Spanish>
 			<Dutch>Raw Chicken Leg</Dutch>
 			<French>Cuisse de Poulet crue</French>
-      			<Czech>Syrová kuřecí noha</Czech>
+      		<Czech>Syrová kuřecí noha</Czech>
+			<Russian>Куриный окорочек</Russian>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">						
-			<Original>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Original>						
-			<English>Chicken Leg to be used for sustainment, must be cooked prior to eating.</English>						
+			<Original>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Original>						
+			<English>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Hühnchenkeule für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Chicken Leg to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<Dutch>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>La Cuisse de Poulet crue peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
-     			<Czech>Kvůli bezpečnosti by měla být kuřecí nožka nejdříve upečena.</Czech>
+     		<Czech>Kvůli bezpečnosti by měla být kuřecí nožka nejdříve upečena.</Czech>
+			<Russian>Сырой куриный окорочек. Будет вкуснее и безопаснее, если его приготовить.</Russian>	
 		</Key>
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_3">						
 			<Original>Rabbit Raw</Original>						
 			<English>Rabbit Raw</English>						
 			<German>Rohes Kaninchen</German>
-			<Russian>Rabbit Raw</Russian>
+			<Russian>Кролик</Russian>
 			<Spanish>Conejo Crudo</Spanish>
 			<Dutch>Rabbit Raw</Dutch>
 			<French>Lapin cru</French>
       			<Czech>Králičí maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">						
-			<Original>Rabbit to be used for sustainment, must be cooked prior to eating.</Original>						
-			<English>Rabbit to be used for sustainment, must be cooked prior to eating.</English>						
+			<Original>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Original>						
+			<English>Rabbit to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Kaninchenfleisch für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Rabbit to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Rabbit to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<Dutch>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>Le Lapin cru peut être consommé mais doit être cuit avant de le manger.</French>
-      			<Czech>Kvůli bezpečnosti by mělo být králičí maso nejdříve upečeno.</Czech>
+      		<Czech>Kvůli bezpečnosti by mělo být králičí maso nejdříve upečeno.</Czech>
 		</Key>	
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_4">						
 			<Original>Raw Bacon</Original>						
 			<English>Raw Bacon</English>						
 			<German>Roher Speck</German>
-			<Russian>Raw Bacon</Russian>
+			<Russian>Бекон</Russian>
 			<Spanish>Costillar de Cerdo Crudo</Spanish>
 			<Dutch>Raw Bacon</Dutch>
 			<French>Bacon cru</French>
       			<Czech>Syrová slanina</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">						
-			<Original>Bacon to be used for sustainment, must be cooked prior to eating.</Original>						
-			<English>Bacon to be used for sustainment, must be cooked prior to eating.</English>						
+			<Original>Bacon to be used for sustainment, should be cooked prior to safe eating.</Original>						
+			<English>Bacon to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Speck für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Bacon to be used for sustainment, must be cooked prior to eating.</Russian>
+			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>Le Bacon cru peut être consommé mais doit être cuit avant de le manger.</French>
@@ -1446,7 +1466,7 @@
 			<Original>Raw Beef</Original>						
 			<English>Raw Beef</English>						
 			<German>Rohes Rindfleisch</German>
-			<Russian>Ãîâÿäèíà</Russian>
+			<Russian>Говядина</Russian>
 			<Spanish>Churrasco Crudo</Spanish>
 			<Dutch>Raw Beef</Dutch>
 			<French>Boeuf Cru</French>
@@ -1456,7 +1476,7 @@
 			<Original>Beef to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Beef to be used for sustainment, should be cooked prior to safe eating.</English>						
 			<German>Rindfleisch für den Verzehr, muss vorher gekocht werden.</German>
-			<Russian>Ãîâÿäèíà. Áóäåò âêóñíåå è áåçîïàñíåå, åñëè åå ïðèãîòîâèòü.</Russian>
+			<Russian>Говядина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>Le Boeuf Cru peut être consommé mais doit être cuit avant de le manger.</French>
@@ -1466,7 +1486,7 @@
 			<Original>Cooked Meat</Original>						
 			<English>Cooked Meat</English>						
 			<German>Gekochtes Fleisch</German>
-			<Russian>Æàðåíîå ìÿñî</Russian>
+			<Russian>Жареное мясо</Russian>
 			<Spanish>Carce Cocinada</Spanish>
 			<Dutch>Cooked Meat</Dutch>
 			<French>Viande Cuite</French>
@@ -1476,7 +1496,7 @@
 			<Original>Cooked Meat to be used for sustainment.</Original>						
 			<English>Cooked Meat to be used for sustainment.</English>						
 			<German>Gekochtes Fleisch, für den Verzehr geeignet.</German>
-			<Russian>Æàðåíîå ìÿñî, ãîòîâàÿ ê óïîòðåáëåíèþ.</Russian>
+			<Russian>Жареное мясо, готовая к употреблению.</Russian>
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Cooked Meat to be used for sustainment.</Dutch>
 			<French>La Viande Cuite peut être consommée.</French>
@@ -1486,7 +1506,7 @@
 			<Original>Cooked Mutton</Original>						
 			<English>Cooked Mutton</English>						
 			<German>Gekochtes Hammelfleisch</German>
-			<Russian>Cooked Mutton</Russian>
+			<Russian>Жареная ягнятина</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
 			<Dutch>Cooked Mutton</Dutch>
 			<French>Mouton Cuit</French>
@@ -1496,7 +1516,7 @@
 			<Original>Goat Meat to be used for sustainment.</Original>						
 			<English>Goat Meat to be used for sustainment.</English>						
 			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
-			<Russian>Goat Meat to be used for sustainment.</Russian>
+			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment.</Dutch>
 			<French>La Viande de Chèvre peut être consommée.</French>
@@ -1506,7 +1526,7 @@
 			<Original>Chicken Leg</Original>						
 			<English>Chicken Leg</English>						
 			<German>Hühnchenkeule</German>
-			<Russian>Chicken Leg</Russian>
+			<Russian>Жареный куриный окрочек</Russian>
 			<Spanish>Pata de Pollo</Spanish>
 			<Dutch>Chicken Leg</Dutch>
 			<French>Cuisse de Poulet</French>
@@ -1516,7 +1536,7 @@
 			<Original>Chicken Leg to be used for sustainment.</Original>						
 			<English>Chicken Leg to be used for sustainment.</English>						
 			<German>Hühnchenkeule, für den Verzehr geeignet.</German>
-			<Russian>Chicken Leg to be used for sustainment.</Russian>
+			<Russian>Жареный куриный окрочек, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment.</Dutch>
 			<French>La cuisse de poulet peut être consommée.</French>
@@ -1526,7 +1546,7 @@
 			<Original>Rabbit</Original>						
 			<English>Rabbit</English>						
 			<German>Kaninchen</German>
-			<Russian>Rabbit</Russian>
+			<Russian>Жареный кролик</Russian>
 			<Spanish>Conejo</Spanish>
 			<Dutch>Rabbit</Dutch>
 			<French>Lapin</French>
@@ -1536,7 +1556,7 @@
 			<Original>Rabbit to be used for sustainmen.</Original>						
 			<English>Rabbit to be used for sustainment.</English>						
 			<German>Kaninchen, für den Verzehr geeignet.</German>
-			<Russian>Rabbit to be used for sustainment.</Russian>
+			<Russian>Жареный кролик, готовый к употреблению.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Rabbit to be used for sustainment.</Dutch>
 			<French>Le Lapin peut être consommé.</French>
@@ -1546,7 +1566,7 @@
 			<Original>Bacon</Original>						
 			<English>Bacon</English>						
 			<German>Speck</German>
-			<Russian>Bacon</Russian>
+			<Russian>Готовый бекон</Russian>
 			<Spanish>Costillar de Cerdo</Spanish>
 			<Dutch>Bacon</Dutch>
 			<French>Bacon</French>
@@ -1556,7 +1576,7 @@
 			<Original>Bacon to be used for sustainment.</Original>						
 			<English>Bacon to be used for sustainment.</English>						
 			<German>Speck, für den Verzehr geeignet.</German>
-			<Russian>Bacon to be used for sustainment.</Russian>
+			<Russian>Бекон, готовый к употреблению.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Bacon to be used for sustainment.</Dutch>
 			<French>Le Bacon peut être consommé.</French>
@@ -1566,7 +1586,7 @@
 			<Original>Angel Cookies</Original>						
 			<English>Angel Cookies</English>						
 			<German>Engelskekse</German>
-			<Russian>Angel Cookies</Russian>
+			<Russian>Печеньки!</Russian>
 			<Spanish>Galletitas de Ángel</Spanish>
 			<Dutch>Angel Cookies</Dutch>
 			<French>Cookies d'Ange</French>
@@ -1576,7 +1596,7 @@
 			<Original>Beefsteak</Original>                      
 			<English>Beefsteak</English>                        
 			<German>Rindersteak</German>
-			<Russian>Бифштекс</Russian>
+			<Russian>Печенюшки для поднятия настроения!</Russian>
 			<Spanish>Churrasco</Spanish>
 			<Dutch>Beefsteak</Dutch>
 			<French>Bifteck</French>
@@ -1606,7 +1626,7 @@
 			<Original>Water Bottle (Boiled)</Original>						
 			<English>Water Bottle (Boiled)</English>						
 			<German>Wasserflasche (Abgekocht)</German>
-			<Russian>Ôëÿæêà êèïÿ÷åíîé âîäû</Russian>
+			<Russian>Фляжка кипяченой воды</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<Dutch>Water Bottle (Boiled)</Dutch>
 			<French>Bouteille d'eau (Bouillie)</French>
@@ -1616,7 +1636,7 @@
 			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
 			<English>A bottle of boiled water that has been filled and can be consumed.</English>	
 			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
-			<Russian>Бутылка boiledwater, который был заполнен и можно употреблять.</Russian>
+			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
