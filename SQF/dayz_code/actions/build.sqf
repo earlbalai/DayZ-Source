@@ -22,8 +22,12 @@ player removeMagazine _item;
 
 player playActionNow "Medic";
 sleep 1;
-[player,"repair",0,false] call dayz_zombieSpeak;
-_id = [player,50,true,(getPosATL player)] spawn player_alertZombies;
+
+_dis=20;
+_sfx = "repair";
+[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	
 sleep 5;
 	
 player allowDamage false;

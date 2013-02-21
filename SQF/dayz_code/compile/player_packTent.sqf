@@ -20,7 +20,12 @@ if(_ownerID == dayz_characterID) then {
 
 	_dir = direction _obj;
 	_pos = getposATL _obj;
-	[player,"tentpack",0,false] call dayz_zombieSpeak;
+	
+	_dis=20;
+	_sfx = "tentpack";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	
 	sleep 3;
 
 	//place tent (local)

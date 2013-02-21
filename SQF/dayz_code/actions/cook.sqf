@@ -15,8 +15,10 @@ _cookedmeat = meatcooked;
 		_qty = {_x == _meat} count magazines player;
 		player playActionNow "Medic";
 		
-		[player,"cook",0,true] call dayz_zombieSpeak;
-		[player,10,false,(getPosATL player)] spawn player_alertZombies;
+		_dis=6;
+		_sfx = "cook";
+		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 		
 		sleep _qty;
 		for "_x" from 1 to _qty do {

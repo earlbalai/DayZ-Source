@@ -38,7 +38,10 @@ if ( _rawfood and (random 15 < 1)) then {
 	player setVariable["USEC_infected",true,true];
 };
 
-[player,"eat",0,true] call dayz_zombieSpeak;
+_dis=6;
+_sfx = "eat";
+[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
 if (!_rawfood and !_cookedfood) then{
 	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
