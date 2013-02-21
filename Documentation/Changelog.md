@@ -26,7 +26,7 @@ FIX DUE : 2013
 	* [NEW] - Crowbar now attaches to toolbelt.
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
 	* [NEW] - 13 new sodas (Models by JoeysLucky22), Our thanks to alot of the ppl who have helped along Day'z Path.
-			- (Soda)  Clay's Long Island Iced Tea (Clayton, moderator)
+			- (Soda)  Long's Island Iced Tea (Clayton, moderator)
 			- (Soda)  Dr. Wasteland (Dr. wasteland, legend)
 			- (Soda)  Franka (Frankie, streamer)
 			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail, moderator)
