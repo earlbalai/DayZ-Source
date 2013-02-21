@@ -47,7 +47,7 @@ class CfgLoot {
 			0.06
 		}
 	};
-	food[] = {
+food[] = {
 		{
 			"TrashTinCan",
 			"TrashJackDaniels",
@@ -58,19 +58,47 @@ class CfgLoot {
 			"FoodCanSardines",
 			"FoodCanFrankBeans",
 			"FoodCanPasta",
-			"ItemBandage"
+			"ItemSodaMtngreen",
+			"ItemSodaR4z0r",
+			"ItemSodaClays",
+			"ItemSodaSmasht",
+			"ItemSodaDrwaste",
+			"ItemSodaFranka",
+			"ItemSodaLemonade",
+			"ItemSodaLirik",
+			"ItemSodaLvg",
+			"ItemSodaMzly",
+			"ItemSodaPeppsy",
+			"ItemSodaRabbit",
+			"ItemSodaSacrite"
 		},
 		{
+			//trash
 			0.13,
 			0.13,
 			0.13,
+			//coke pepsi
+			0.01,
+			0.01,
+			//food cans
 			0.09,
-			0.13,
+			0.09,
+			0.09,
+			0.09,
+			0.04,
+			0.04,
+			//Others
 			0.09,
 			0.09,
 			0.09,
 			0.09,
-			0.04
+			0.09,
+			0.09,
+			0.09,
+			0.09,
+			0.09,
+			0.09,
+			0.09
 		}
 	};
 	generic[] = {
