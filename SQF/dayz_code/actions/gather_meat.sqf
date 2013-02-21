@@ -16,9 +16,11 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 	
 	player playActionNow "Medic";
-
-	[player,"gut",0,true] call dayz_zombieSpeak;
-	[player,15,false,(getPosATL player)] spawn player_alertZombies;
+	
+	_dis=10;
+	_sfx = "gut";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
 	_item setVariable ["meatHarvested",true,true];
 	

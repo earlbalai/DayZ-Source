@@ -55,8 +55,10 @@ if (_canFill) then {
 			player addMagazine "ItemWaterbottle";
 		};
 
-		[player,"fillwater",0,true] call dayz_zombieSpeak;
-		[player,5,true,(getPosATL player)] spawn player_alertZombies;
+		_dis=5;
+		_sfx = "fillwater";
+		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 		
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
 	} else {

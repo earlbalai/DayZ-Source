@@ -41,8 +41,11 @@ if (!_isOk) then {
 	//wait a bit
 	player playActionNow "Medic";
 	sleep 1;
-	[player,"tentunpack",0,true] call dayz_zombieSpeak;
-	[player,20,true,(getPosATL player)] spawn player_alertZombies;
+	
+	_dis=20;
+	_sfx = "tentunpack";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
 	sleep 5;
 	//place tent (local)

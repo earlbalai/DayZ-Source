@@ -21,8 +21,11 @@ if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"
 player playActionNow "PutDown";
 player removeMagazine _item;
 sleep 1;
-[player,_sfx,0,true] call dayz_zombieSpeak;
 
+_dis=6;
+_sfx = "drink";
+[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
 if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 	player addMagazine "ItemWaterbottleUnfilled";
@@ -30,7 +33,6 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 		r_player_infected = true;
 		player setVariable["USEC_infected",true,true];
 	};
-	//_id = [player,5,true,(getPosATL player)] spawn player_alertZombies;
 } else {
 	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
 	if (count _nearByPile ==0) then { 
@@ -39,7 +41,6 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 		_item = _nearByPile select 0;
 	};
 	_item addMagazineCargoGlobal ["ItemSodaEmpty",1];
-	[player,5,true,(getPosATL player)] spawn player_alertZombies;
 };
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 
