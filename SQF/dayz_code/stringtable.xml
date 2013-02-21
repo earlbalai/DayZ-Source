@@ -1622,5 +1622,239 @@
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
 			<Czech>Plná láhev převažené vody, které může být vypita.</Czech>
 		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">						
+			<Original>Soda (Mtn. Green)</Original>
+			<English>Soda (Mtn. Green)</English>	
+			<German>Soda (Mtn. Green)</German>
+			<Russian>Soda (Mtn. Green)</Russian>
+			<Spanish>Soda (Mtn. Green)</Spanish>
+			<Dutch>Soda (Mtn. Green)</Dutch>
+			<French>Soda (Mtn. Green)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_0">						
+			<Original>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Original>
+			<English>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</English>	
+			<German>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</German>
+			<Russian>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Russian>
+			<Spanish>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Spanish>
+			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
+			<French>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1">						
+			<Original>Soda (R4Z0R)</Original>
+			<English>Soda (R4Z0R)</English>	
+			<German>Soda (R4Z0R)</German>
+			<Russian>Soda (R4Z0R)</Russian>
+			<Spanish>Soda (R4Z0R)</Spanish>
+			<Dutch>Soda (R4Z0R)</Dutch>
+			<French>Soda (R4Z0R)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_1">						
+			<Original>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Original>
+			<English>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</English>	
+			<German>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</German>
+			<Russian>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Russian>
+			<Spanish>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Spanish>
+			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
+			<French>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">						
+			<Original>Soda (Iced Tea)</Original>
+			<English>Soda (Iced Tea)</English>	
+			<German>Soda (Iced Tea)</German>
+			<Russian>Soda (Iced Tea)</Russian>
+			<Spanish>Soda (Iced Tea)</Spanish>
+			<Dutch>Soda (Iced Tea)</Dutch>
+			<French>Soda (Iced Tea)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">						
+			<Original>A clean, unopened can of clay's island iced tea.</Original>
+			<English>A clean, unopened can of clay's island iced tea.</English>	
+			<German>A clean, unopened can of clay's island iced tea.</German>
+			<Russian>A clean, unopened can of clay's island iced tea.</Russian>
+			<Spanish>A clean, unopened can of clay's island iced tea.</Spanish>
+			<Dutch>A clean, unopened can of clay's island iced tea.</Dutch>
+			<French>A clean, unopened can of clay's island iced tea.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">						
+			<Original>Soda (Smasht)</Original>
+			<English>Soda (Smasht)</English>	
+			<German>Soda (Smasht)</German>
+			<Russian>Soda (Smasht)</Russian>
+			<Spanish>Soda (Smasht)</Spanish>
+			<Dutch>Soda (Smasht)</Dutch>
+			<French>Soda (Smasht)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3">						
+			<Original>A clean, unopened can of Smasht grape soda.</Original>
+			<English>A clean, unopened can of Smasht grape soda.</English>	
+			<German>A clean, unopened can of Smasht grape soda.</German>
+			<Russian>A clean, unopened can of Smasht grape soda.</Russian>
+			<Spanish>A clean, unopened can of Smasht grape soda.</Spanish>
+			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
+			<French>A clean, unopened can of Smasht grape soda.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">						
+			<Original>Soda (Dr. Wasteland)</Original>
+			<English>Soda (Dr. Wasteland)</English>	
+			<German>Soda (Dr. Wasteland)</German>
+			<Russian>Soda (Dr. Wasteland)</Russian>
+			<Spanish>Soda (Dr. Wasteland)</Spanish>
+			<Dutch>Soda (Dr. Wasteland)</Dutch>
+			<French>Soda (Dr. Wasteland)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_4">						
+			<Original>A clean, unopened can of Dr. Wasteland soda.</Original>
+			<English>A clean, unopened can of Dr. Wasteland soda.</English>	
+			<German>A clean, unopened can of Dr. Wasteland soda.</German>
+			<Russian>A clean, unopened can of Dr. Wasteland soda.</Russian>
+			<Spanish>A clean, unopened can of Dr. Wasteland soda.</Spanish>
+			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
+			<French>A clean, unopened can of Dr. Wasteland soda.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">						
+			<Original>Soda (Franka)</Original>
+			<English>Soda (Franka)</English>	
+			<German>Soda (Franka)</German>
+			<Russian>Soda (Franka)</Russian>
+			<Spanish>Soda (Franka)</Spanish>
+			<Dutch>Soda (Franka)</Dutch>
+			<French>Soda (Franka)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">						
+			<Original>A clean, unopened can of Franka orange soda.</Original>
+			<English>A clean, unopened can of Franka orange soda.</English>	
+			<German>A clean, unopened can of Franka orange soda.</German>
+			<Russian>A clean, unopened can of Franka orange soda.</Russian>
+			<Spanish>A clean, unopened can of Franka orange soda.</Spanish>
+			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
+			<French>A clean, unopened can of Franka orange soda.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">						
+			<Original>Soda (Lemonade)</Original>
+			<English>Soda (Lemonade)</English>	
+			<German>Soda (Lemonade)</German>
+			<Russian>Soda (Lemonade)</Russian>
+			<Spanish>Soda (Lemonade)</Spanish>
+			<Dutch>Soda (Lemonade)</Dutch>
+			<French>Soda (Lemonade)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">						
+			<Original>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Original>
+			<English>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</English>	
+			<German>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</German>
+			<Russian>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Russian>
+			<Spanish>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Spanish>
+			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
+			<French>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">						
+			<Original>Soda (Lirikola)</Original>
+			<English>Soda (Lirikola)</English>	
+			<German>Soda (Lirikola)</German>
+			<Russian>Soda (Lirikola)</Russian>
+			<Spanish>Soda (Lirikola)</Spanish>
+			<Dutch>Soda (Lirikola)</Dutch>
+			<French>Soda (Lirikola)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7">						
+			<Original>A clean, unopened can of Lirikola. An o7 brand.</Original>
+			<English>A clean, unopened can of Lirikola. An o7 brand.</English>	
+			<German>A clean, unopened can of Lirikola. An o7 brand.</German>
+			<Russian>A clean, unopened can of Lirikola. An o7 brand.</Russian>
+			<Spanish>A clean, unopened can of Lirikola. An o7 brand.</Spanish>
+			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
+			<French>A clean, unopened can of Lirikola. An o7 brand.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">						
+			<Original>Soda (Root Beer)</Original>
+			<English>Soda (Root Beer)</English>	
+			<German>Soda (Root Beer)</German>
+			<Russian>Soda (Root Beer)</Russian>
+			<Spanish>Soda (Root Beer)</Spanish>
+			<Dutch>Soda (Root Beer)</Dutch>
+			<French>Soda (Root Beer)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">						
+			<Original>A clean, unopened can of LVG root beer.</Original>
+			<English>A clean, unopened can of LVG root beer.</English>	
+			<German>A clean, unopened can of LVG root beer.</German>
+			<Russian>A clean, unopened can of LVG root beer.</Russian>
+			<Spanish>A clean, unopened can of LVG root beer.</Spanish>
+			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
+			<French>A clean, unopened can of LVG root beer.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">						
+			<Original>Soda (mZLY yZLY)</Original>
+			<English>Soda (mZLY yZLY)</English>	
+			<German>Soda (mZLY yZLY)</German>
+			<Russian>Soda (mZLY yZLY)</Russian>
+			<Spanish>Soda (mZLY yZLY)</Spanish>
+			<Dutch>Soda (mZLY yZLY)</Dutch>
+			<French>Soda (mZLY yZLY)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_9">						
+			<Original>A clean, unopened can of mZLY yZLY soda.</Original>
+			<English>A clean, unopened can of mZLY yZLY soda.</English>	
+			<German>A clean, unopened can of mZLY yZLY soda.</German>
+			<Russian>A clean, unopened can of mZLY yZLY soda.</Russian>
+			<Spanish>A clean, unopened can of mZLY yZLY soda.</Spanish>
+			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
+			<French>A clean, unopened can of mZLY yZLY soda.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">						
+			<Original>Soda (Peppsy)</Original>
+			<English>Soda (Peppsy)</English>	
+			<German>Soda (Peppsy)</German>
+			<Russian>Soda (Peppsy)</Russian>
+			<Spanish>Soda (Peppsy)</Spanish>
+			<Dutch>Soda (Peppsy)</Dutch>
+			<French>Soda (Peppsy)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">						
+			<Original>A clean, unopened can of Peppsy soda.</Original>
+			<English>A clean, unopened can of Peppsy soda.</English>	
+			<German>A clean, unopened can of Peppsy soda.</German>
+			<Russian>A clean, unopened can of Peppsy soda.</Russian>
+			<Spanish>A clean, unopened can of Peppsy soda.</Spanish>
+			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
+			<French>A clean, unopened can of Peppsy soda.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">						
+			<Original>Beer (Rabbitman)</Original>
+			<English>Beer (Rabbitman)</English>	
+			<German>Beer (Rabbitman)</German>
+			<Russian>Beer (Rabbitman)</Russian>
+			<Spanish>Beer (Rabbitman)</Spanish>
+			<Dutch>Beer (Rabbitman)</Dutch>
+			<French>Beer (Rabbitman)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11">						
+			<Original>A clean, unopened can of Rabbitman beer.</Original>
+			<English>A clean, unopened can of Rabbitman beer.</English>	
+			<German>A clean, unopened can of Rabbitman beer.</German>
+			<Russian>A clean, unopened can of Rabbitman beer.</Russian>
+			<Spanish>A clean, unopened can of Rabbitman beer.</Spanish>
+			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
+			<French>A clean, unopened can of Rabbitman beer.</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12">						
+			<Original>Soda (Sacrite)</Original>
+			<English>Soda (Sacrite)</English>	
+			<German>Soda (Sacrite)</German>
+			<Russian>Soda (Sacrite)</Russian>
+			<Spanish>Soda (Sacrite)</Spanish>
+			<Dutch>Soda (Sacrite)</Dutch>
+			<French>Soda (Sacrite)</French>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12">						
+			<Original>A clean, unopened can of Sacrite soda.</Original>
+			<English>A clean, unopened can of Sacrite soda.</English>	
+			<German>A clean, unopened can of Sacrite soda.</German>
+			<Russian>A clean, unopened can of Sacrite soda.</Russian>
+			<Spanish>A clean, unopened can of Sacrite soda.</Spanish>
+			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
+			<French>A clean, unopened can of Sacrite soda.</French>
+		</Key>
 	</Package>
 </Project>

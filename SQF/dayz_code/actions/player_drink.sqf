@@ -12,6 +12,10 @@ if (vehicle player != player) exitWith {cutText ["You may not drink while in a v
 _item = _this;
 _hasdrinkitem = _item in magazines player;
 
+if ("ItemMap_Debug" in items player) then {
+	diag_log ("Drink: " +str(_item));
+};
+
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 _sfx = 	getText (_config >> "sfx");
@@ -40,7 +44,24 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 	} else {
 		_item = _nearByPile select 0;
 	};
-	_item addMagazineCargoGlobal ["ItemSodaEmpty",1];
+	
+	switch (_item) do
+	{
+		case "ItemSodaMtngreen" : {_item addMagazineCargoGlobal ["ItemSodaMtngreenEmpty",1]};
+		case "ItemSodaLirik" : {_item addMagazineCargoGlobal ["ItemSodaLirikEmpty",1]};
+		case "ItemSodaSmasht" : {_item addMagazineCargoGlobal ["ItemSodaSmashtEmpty",1]};
+		case "ItemSodaPeppsy" : {_item addMagazineCargoGlobal ["ItemSodaPeppsyEmpty",1]};
+		case "ItemSodaR4z0r" : {_item addMagazineCargoGlobal ["ItemSodaR4z0rEmpty",1]};
+		case "ItemSodaDrwaste" : {_item addMagazineCargoGlobal ["ItemSodaDrwasteEmpty",1]};
+		case "ItemSodaClays" : {_item addMagazineCargoGlobal ["ItemSodaClaysEmpty",1]};
+		case "ItemSodaLvg" : {_item addMagazineCargoGlobal ["ItemSodaLvgEmpty",1]};
+		case "ItemSodaFranka" : {_item addMagazineCargoGlobal ["ItemSodaFrankaEmpty",1]};
+		case "ItemSodaLemonade" : {_item addMagazineCargoGlobal ["ItemSodaLemonadeEmpty",1]};
+		case "ItemSodaRabbit" : {_item addMagazineCargoGlobal ["ItemSodaRabbitEmpty",1]};
+		case "ItemSodaSacrite" : {_item addMagazineCargoGlobal ["ItemSodaSacriteEmpty",1]};
+		case "ItemSodaMzly" : {_item addMagazineCargoGlobal ["ItemSodaMzlyEmpty",1]};
+		default {_item addMagazineCargoGlobal ["ItemSodaEmpty",1]};
+	};
 };
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 
