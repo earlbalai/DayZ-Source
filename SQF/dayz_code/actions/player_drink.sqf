@@ -28,7 +28,7 @@ if (_item == "ItemWaterbottle" or  _item == "ItemWaterbottleBoiled") then {
 	player addMagazine "ItemWaterbottleUnfilled";
 	if ((random 15 < 1) and (_item == "ItemWaterbottle")) then {
 		r_player_infected = true;
-		player setVariable["USEC_infected",true];
+		player setVariable["USEC_infected",true,true];
 	};
 	//_id = [player,5,true,(getPosATL player)] spawn player_alertZombies;
 } else {
