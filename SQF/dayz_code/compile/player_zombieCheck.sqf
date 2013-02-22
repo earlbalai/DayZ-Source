@@ -66,7 +66,7 @@ _attacked = false;
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,90,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//LOS check
 						_cantSee = [_x,_refObj] call dayz_losCheck;
