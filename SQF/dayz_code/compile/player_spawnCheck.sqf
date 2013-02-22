@@ -48,7 +48,7 @@ dayz_maxGlobalZombies = 30;
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 dayz_spawnZombies = 0;
 {
-	if (local _x) then 
+	if ((local _x) and !_inVehicle) then 
 	{
 		//diag_log ("Local");
 		dayz_spawnZombies = dayz_spawnZombies + 1;
