@@ -386,4 +386,44 @@ class CfgMagazines {
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
 	};
+	class 20Rnd_762x51_DMR {	
+		class ItemActions {
+			class ReloadMag {
+				text = "Convert to M24 Ammo";
+				script = "spawn player_reloadMag;";
+				use[] = {"20Rnd_762x51_DMR"};
+				output[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
+			};
+		};
+	};
+	class 5Rnd_762x51_M24 {
+		class ItemActions {
+			class ReloadMag {
+				text = "Convert to DMR Ammo";
+				script = "spawn player_reloadMag;";
+				use[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
+				output[] = {"20Rnd_762x51_DMR"};
+			};
+		};
+	};
+	class 6Rnd_45ACP {
+		class ItemActions {
+			class ReloadMag {
+				text = "Convert to M1911 Ammo";
+				script = "spawn player_reloadMag;";
+				use[] = {"6Rnd_45ACP"};
+				output[] = {"7Rnd_45ACP_1911"};
+			};
+		};
+	};
+	class 7Rnd_45ACP_1911 {		
+		class ItemActions {
+			class ReloadMag {
+				text = "Convert to Revolver Ammo";
+				script = "spawn player_reloadMag;";
+				use[] = {"7Rnd_45ACP_1911"};
+				output[] = {"6Rnd_45ACP"};
+			};
+		};
+	};
 };

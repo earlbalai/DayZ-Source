@@ -308,9 +308,11 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
 			
-			{"DZ_Patrol_Pack_EP1","object"}, //8
 			{"DZ_Assault_Pack_EP1","object"}, // 12
 			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
 			
 			{"Winchester1866","weapon"},
 			{"WeaponHolder_ItemTent","object"},
@@ -337,9 +339,11 @@ class CfgBuildingLoot {
 			2,
 			0.06,
 			0.04,
-			0.04, //8
-			0.01, //12
-			0.03, //12-0
+			0.05, //12
+			0.04, // 12-0
+			0.02, //16
+			0.02, //16
+			0.01, //18
 			0.01,
 			0.01,
 			0.03,
@@ -448,9 +452,11 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon"},
 			{"revolver_EP1","weapon"},
 					
-			{"DZ_Patrol_Pack_EP1","object"}, //8
 			{"DZ_Assault_Pack_EP1","object"}, // 12
 			{"DZ_Czech_Vest_Puch","object"}, // 12-0
+			{"DZ_ALICE_Pack_EP1","object"}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object"}, // 16
+			{"DZ_British_ACU","object"}, // 18
 			
 			{"Winchester1866","weapon"},
 			{"WeaponHolder_ItemTent","object"},
@@ -473,9 +479,11 @@ class CfgBuildingLoot {
 			0.05,
 			0.01,
 			0.01,
-			0.04, //8
-			0.01, //12
-			0.03, // 12-0
+			0.05, //12
+			0.04, // 12-0
+			0.02, //16
+			0.02, //16
+			0.01, //18
 			0.01,
 			0.01,
 			0.3,
