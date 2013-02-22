@@ -25,20 +25,20 @@ FIX DUE : 2013
 	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	* [NEW] - Crowbar now attaches to toolbelt.
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
-	* [NEW] - 13 new sodas, Our thanks to alot of the ppl who have helped along Day'z Path.
-			- (Soda)  Clay's Long Island Iced Tea
-			- (Soda)  Dr. Wasteland
-			- (Soda)  Franka
-			- (Soda)  Mikhail Made Lemonade
-			- (Soda)  Lirikacola
-			- (Soda)  LVG Root Beer
-			- (Soda)  Moutain Green
-			- (Soda)  mZLY yZLY
-			- (Soda)  Peppsy
-			- (Soda)  R4Z0R soda
-			- (Soda)  Sacrite
-			- (Soda)  Smasht
-			- (Beer)  Rabbitman
+	* [NEW] - 13 new sodas (Models by JoeysLucky22), Our thanks to alot of the ppl who have helped along Day'z Path.
+			- (Soda)  Long's Island Iced Tea (Clayton, moderator)
+			- (Soda)  Dr. Wasteland (Dr. wasteland, legend)
+			- (Soda)  Franka (Frankie, streamer)
+			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail, moderator)
+			- (Soda)  Lirikola (Lirik, streamer)
+			- (Soda)  LVG Root Beer (LVG, moderator)
+			- (Soda)  Mountain Green
+			- (Soda)  mZLY yZLY (mZLY, moderator)
+			- (Soda)  Peppsy (PsiSyndicate, streamer)
+			- (Soda)  R4Z0R soda (R4Z0R, moderator)
+			- (Soda)  Sacrite (Sacriel, streamer)
+			- (Soda)  Smasht (Smasht, moderator)
+			- (Beer)  Rabbitman (Rabbitman, moderator)
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
@@ -102,7 +102,7 @@ FIX DUE : 2013
 	Community Change log:
 
 	* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - German (Eine Flasche mit abgekochten Wasser)
-	* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a été remplie d'eau bouillie qui peut être consommée.)
+	* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a ï¿½tï¿½ remplie d'eau bouillie qui peut ï¿½tre consommï¿½e.)
 	* [UPDATED] - HMMWV Cargo space. (transportMaxWeapons = 4;, transportMaxMagazines = 12;, transportmaxbackpacks = 4;)
 
 	* [FIXED] - HMMWV Should now be able to be repaired fully.
