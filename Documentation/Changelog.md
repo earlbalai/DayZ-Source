@@ -75,6 +75,7 @@ FIX DUE : 2013
 	* [FIXED] - time is now set on startup.
 	* [FIXED] - Hatchet and crowbar don't require reload anymore.
 	* [FIXED] - Hatchet and crowbar no longer overwrite each other.
+	* [FIXED] - Explot when converting Mags into other mags (Example - DMR to M24 then back)
 	
 	Combat Roll
 	* [Fixed] - No longer posiable to combat roll with broken leg
