@@ -316,8 +316,8 @@ class CfgMagazines {
 	
 	class FoodbaconRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
-		model = "\z\addons\dayz_communityassets\models\bacon_raw";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_raw_ca.paa";
+		model = "\dayz_equip\models\food_steak_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_4;
 		bloodRegen = 150;
 	};
@@ -350,8 +350,8 @@ class CfgMagazines {
 	
 	class FoodbaconCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
-		model = "\z\addons\dayz_communityassets\models\bacon_fried";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_fried_ca.paa";
+		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 		bloodRegen = 400;
 	};
@@ -385,45 +385,5 @@ class CfgMagazines {
 		displayNameMagazine = "Machete";
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
-	};
-	class 20Rnd_762x51_DMR {	
-		class ItemActions {
-			class ReloadMag {
-				text = "Convert to M24 Ammo";
-				script = "spawn player_reloadMag;";
-				use[] = {"20Rnd_762x51_DMR"};
-				output[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
-			};
-		};
-	};
-	class 5Rnd_762x51_M24 {
-		class ItemActions {
-			class ReloadMag {
-				text = "Convert to DMR Ammo";
-				script = "spawn player_reloadMag;";
-				use[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
-				output[] = {"20Rnd_762x51_DMR"};
-			};
-		};
-	};
-	class 6Rnd_45ACP {
-		class ItemActions {
-			class ReloadMag {
-				text = "Convert to M1911 Ammo";
-				script = "spawn player_reloadMag;";
-				use[] = {"6Rnd_45ACP"};
-				output[] = {"7Rnd_45ACP_1911"};
-			};
-		};
-	};
-	class 7Rnd_45ACP_1911 {		
-		class ItemActions {
-			class ReloadMag {
-				text = "Convert to Revolver Ammo";
-				script = "spawn player_reloadMag;";
-				use[] = {"7Rnd_45ACP_1911"};
-				output[] = {"6Rnd_45ACP"};
-			};
-		};
 	};
 };
