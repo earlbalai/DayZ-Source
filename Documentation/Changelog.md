@@ -25,18 +25,14 @@ FIX DUE : 2013
 	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	* [NEW] - Crowbar now attaches to toolbelt.
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
-	* [NEW] - 13 new sodas (Models by JoeysLucky22), Our thanks to alot of the ppl who have helped along Day'z Path.
+	* [NEW] - 9 new sodas (Models by JoeysLucky22), Our thanks to alot of the ppl who have helped along Day'z Path.
 			- (Soda)  Long's Island Iced Tea (Clayton, moderator)
 			- (Soda)  Dr. Wasteland (Dr. wasteland, legend)
-			- (Soda)  Franka (Frankie, streamer)
 			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail, moderator)
-			- (Soda)  Lirikola (Lirik, streamer)
 			- (Soda)  LVG Root Beer (LVG, moderator)
 			- (Soda)  Mountain Green
 			- (Soda)  mZLY yZLY (mZLY, moderator)
-			- (Soda)  Peppsy (PsiSyndicate, streamer)
 			- (Soda)  R4Z0R soda (R4Z0R, moderator)
-			- (Soda)  Sacrite (Sacriel, streamer)
 			- (Soda)  Smasht (Smasht, moderator)
 			- (Beer)  Rabbitman (Rabbitman, moderator)
 	
@@ -57,6 +53,7 @@ FIX DUE : 2013
 	* [UPDATED] - Players will now drop empty cans after consumption to nearest lootpile or creates new one.
 	* [UPDATED] - Updated Infection to cought,sake camera and loose blood.
 	* [UPDATED] - Updated russian string tables.
+	* [UPDATED] - Backpack Spawns should now see higher grade backpacks more.
 	
 	* [FIXED] - Zeds talk, lowed to 80 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.
@@ -86,6 +83,7 @@ FIX DUE : 2013
 	* [REMOVED] - Chase combat logging systems removed. (Removed due to ealry warning of agro)
 	* [REMOVED] - Debriefing window has started to be cleaned up. (blank box on dc)
 	* [REMOVED] - BearTrap Due to issues with the trap still staying active after removal.
+	* [REMOVED] - Removed DZ_Patrol_Pack_EP1 Due to us no longer planing to remove backpacks from new spawns.
 	
 	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
 	
