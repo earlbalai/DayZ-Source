@@ -853,7 +853,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{"","military"},
 			{"WeaponHolder_ItemMachete", "object"},
-			{"huntingrifle","weapon"}
+			{"huntingrifle","weapon"},
+			{"","hunter"}
 		};
 		itemChance[] =	{
 			0.08,
@@ -863,7 +864,8 @@ class CfgBuildingLoot {
 			0.03,
 			2.00,
 			0.03,
-			0.02
+			0.04,
+			3.00
 		};
 	};	
 	class Church: Residential {
