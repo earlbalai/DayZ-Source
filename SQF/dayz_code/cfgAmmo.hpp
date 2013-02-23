@@ -7,7 +7,7 @@ class CfgAmmo {
 	};
 	class Melee;
 	class Machete_Swing_Ammo : Melee {
-		hit = 5;
+		hit = 9;
 		simulation = "shotBullet";
 	};
 };
