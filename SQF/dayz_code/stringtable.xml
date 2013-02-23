@@ -1892,5 +1892,85 @@
 			<French>A clean, unopened can of Sacrite soda.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_MRE">						
+			<Original>MRE</Original>
+			<English>MRE</English>	
+			<German>Feldration</German>
+			<Russian>MRE</Russian>
+			<Spanish>MRE</Spanish>
+			<Dutch>MRE</Dutch>
+			<French>MRE</French>
+			<Czech>MRE</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_MRE">						
+			<Original>Meal Ready-to-Eat</Original>
+			<English>Meal Ready-to-Eat</English>	
+			<German>MRE Feldration</German>
+			<Russian>Meal Ready-to-Eat</Russian>
+			<Spanish>Meal Ready-to-Eat</Spanish>
+			<Dutch>Meal Ready-to-Eat</Dutch>
+			<French>Meal Ready-to-Eat</French>
+			<Czech>Meal Ready-to-Eat</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_PISTACHIO">						
+			<Original>Pistachios</Original>
+			<English>Pistachios</English>	
+			<German>Pistazien</German>
+			<Russian>Pistachios</Russian>
+			<Spanish>Pistachios</Spanish>
+			<Dutch>Pistachios</Dutch>
+			<French>Pistachios</French>
+			<Czech>Pistachios</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_PISTACHIO">						
+			<Original>A pack of pistachios, roasted and salted.</Original>
+			<English>A pack of pistachios, roasted and salted.</English>	
+			<German>Eine Packung Pistazien, geröstet und gesalzen.</German>
+			<Russian>A pack of pistachios, roasted and salted.</Russian>
+			<Spanish>A pack of pistachios, roasted and salted.</Spanish>
+			<Dutch>A pack of pistachios, roasted and salted.</Dutch>
+			<French>A pack of pistachios, roasted and salted.</French>
+			<Czech>A pack of pistachios, roasted and salted.</Czech>
+		</Key>
+		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
+			<Original>Toilet paper</Original>
+			<English>Toilet paper</English>	
+			<German>Toilettenpapier</German>
+			<Russian>Toilet paper</Russian>
+			<Spanish>Toilet paper</Spanish>
+			<Dutch>Toilet paper</Dutch>
+			<French>Toilet paper</French>
+			<Czech>Toilet paper</Czech>
+		</Key>
+		<Key ID="STR_JUNK_DESC_TOILETPAPER">						
+			<Original>A roll of toilet paper.</Original>
+			<English>A roll of toilet paper.</English>	
+			<German>Eine Rolle Toilettenpapier.</German>
+			<Russian>A roll of toilet paper.</Russian>
+			<Spanish>A roll of toilet paper.</Spanish>
+			<Dutch>A roll of toilet paper.</Dutch>
+			<French>A roll of toilet paper.</French>
+			<Czech>A roll of toilet paper.</Czech>
+		</Key>
+		<Key ID="STR_JUNK_NAME_RAZOR">
+			<Original>Razor</Original>
+			<English>Razor</English>	
+			<German>Rasiermesser</German>
+			<Russian>Razor</Russian>
+			<Spanish>Razor</Spanish>
+			<Dutch>Razor</Dutch>
+			<French>Razor</French>
+			<Czech>Razor</Czech>
+		</Key>
+		<Key ID="STR_JUNK_DESC_RAZOR">						
+			<Original>An old-fashioned cut-throat razor with a rounded French point.</Original>
+			<English>An old-fashioned cut-throat razor with a rounded French point.</English>	
+			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
+			<Russian>An old-fashioned cut-throat razor with a rounded French point.</Russian>
+			<Spanish>An old-fashioned cut-throat razor with a rounded French point.</Spanish>
+			<Dutch>An old-fashioned cut-throat razor with a rounded French point.</Dutch>
+			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
+			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
+		</Key>
 	</Package>
 </Project>

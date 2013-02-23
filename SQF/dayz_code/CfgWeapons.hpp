@@ -10,6 +10,11 @@ class CfgWeapons {
 			libtextdesc = "Debug Map - Admin use only";
 		};
 	};
+	
+	class ItemCompass: ItemCore {
+		model="z\addons\dayz_communityassets\models\compass.p3d";
+	};
+	
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
 		magazines[] =
@@ -144,8 +149,8 @@ class CfgWeapons {
 		scope=2;
 		autoreload=1;
 		magazineReloadTime=0;
-		model="\dayz_weapons\models\crowbar_weaponized";
-		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
+		model="\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
+		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 		displayName="Machete";
 		magazines[]=
 		{
@@ -186,8 +191,8 @@ class CfgWeapons {
 	{
 		scope=2;
 		displayName="Machete";
-		model="\dayz_equip\models\crowbar.p3d";
-		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
+		model="z\addons\dayz_communityassets\models\machete.p3d";
+		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 		descriptionShort="";
 		class ItemActions
 		{
