@@ -418,7 +418,8 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon"},
 			{"PartWoodPile","magazine"},
 			{"WeaponHolder_ItemHatchet","object"},
-			{"MR43","weapon"}
+			{"MR43","weapon"},
+			{"WeaponHolder_ItemMachete"}
 		};
 		itemChance[] =	{
 			0.06,
@@ -430,7 +431,8 @@ class CfgBuildingLoot {
 			0.03,
 			0.11,
 			0.17,
-			0.06
+			0.06,
+			0.03
 		};
 	};
 	class Supermarket: Default {
@@ -836,6 +838,34 @@ class CfgBuildingLoot {
 			0.01	//("100Rnd_762x54_PK","magazine"}
 		};
 	};
+	class Hunting: Default {
+		zombieChance = 0.4;
+		minRoaming = 1;
+		maxRoaming = 3;
+		zombieClass[] = {"z_hunter","z_hunter","z_hunter"};
+		lootChance = 1;
+		lootPos[] = {};
+		itemType[] =	{
+			{"ItemMap","weapon"},
+			{"ItemFlashlight","generic"},
+			{"ItemKnife","generic"},
+			{"ItemMatchbox","generic"},
+			{"Crossbow_DZ","weapon"},
+			{"","military"},
+			{"WeaponHolder_ItemMachete", "object"},
+			{"huntingrifle","weapon"}
+		};
+		itemChance[] =	{
+			0.08,
+			0.05,
+			0.04,
+			0.06,
+			0.03,
+			2.00,
+			0.03,
+			0.02
+		};
+	};	
 	class Church: Residential {
 		minRoaming = 1;
 		maxRoaming = 3;
@@ -1087,7 +1117,7 @@ class CfgBuildingLoot {
 		maxRoaming = 3;
 		lootPos[] = {};
 	}; // Qty: 83
-	class Land_Misc_deerstand: Military {
+	class Land_Misc_deerstand: Hunting {
 		zombieChance = 0.3;
 		lootChance = 0.5;
 		maxRoaming = 3;

@@ -35,6 +35,7 @@ FIX DUE : 2013
 			- (Soda)  R4Z0R soda (R4Z0R, moderator)
 			- (Soda)  Smasht (Smasht, moderator)
 			- (Beer)  Rabbitman (Rabbitman, moderator)
+	* [NEW] - New melee weapon: Machete - (Farm - Hunting)
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
@@ -54,6 +55,7 @@ FIX DUE : 2013
 	* [UPDATED] - Updated Infection to cought,sake camera and loose blood.
 	* [UPDATED] - Updated russian string tables.
 	* [UPDATED] - Backpack Spawns should now see higher grade backpacks more.
+	* [UPDATED] - Deer stands has it's own loot table (Hunting).
 	
 	* [FIXED] - Zeds talk, lowed to 80 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.
