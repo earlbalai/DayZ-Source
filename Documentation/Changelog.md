@@ -25,7 +25,7 @@ FIX DUE : 2013
 	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	* [NEW] - Crowbar now attaches to toolbelt.
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
-	* [NEW] - 9 new sodas (Models by JoeysLucky22), Our thanks to alot of the ppl who have helped along Day'z Path.
+	* [NEW] - 9 new sodas (Models by JoeysLucky22).
 			- (Soda)  Long's Island Iced Tea (Clayton, moderator)
 			- (Soda)  Dr. Wasteland (Dr. wasteland, legend)
 			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail, moderator)
@@ -84,6 +84,7 @@ FIX DUE : 2013
 	* [REMOVED] - Debriefing window has started to be cleaned up. (blank box on dc)
 	* [REMOVED] - BearTrap Due to issues with the trap still staying active after removal.
 	* [REMOVED] - Removed DZ_Patrol_Pack_EP1 Due to us no longer planing to remove backpacks from new spawns.
+	* [REMOVED] - Rmoved all chance based systems for sight and sound from zeds they will now only agro if in view or your makeing noise. Should allow more freedom to move.
 	
 	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
 	

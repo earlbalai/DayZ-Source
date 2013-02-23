@@ -3,13 +3,13 @@ _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
 
-_isNoone = 	{isPlayer _x} count (_position nearEntities ["CAManBase",30]) == 0;
+_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],30]) == 0;
 _loot = 	"";
 _array = 	[];
 _agent = 	objNull;
 
 //Exit if a player is nearby
-if (!isNoone) exitWith {};
+if (!_isNoone) exitWith {};
 
 if (count _unitTypes == 0) then {
 	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
@@ -38,7 +38,7 @@ dayz_spawnZombies = dayz_spawnZombies + 1;
 //diag_log ("CREATE INFECTED: " + str(_this));
 
 _position = getPosATL _agent;
-_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30])) > 0;
+_nearByPlayer = ({isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],30]) == 0;
 
 if (random 1 > 0.7) then {
 	_agent setUnitPos "Middle";
