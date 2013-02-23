@@ -379,6 +379,7 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 		bloodRegen = 600;
 	};
+	
 	class AngelCookies : FoodEdible {
 		scope = public;
 		count = 1;
@@ -406,6 +407,27 @@ class CfgMagazines {
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	};
+	
+	class FoodCanGriff : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_GRIFF;
+		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF;
+		model = "z\addons\dayz_communityassets\models\can_griff_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
+	};
+	
+	class TrashTinCan;
+	class FoodCanGriffEmpty :  {
+		scope = public;
+		count = 1;
+		model = "z\addons\dayz_communityassets\models\can_griff_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
+		displayName = $STR_FOOD_NAME_CAN_GRIFF_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF_EMPTY;
+		ammo = "TinCan";
 	};
 	
 	class ItemWaterbottle;
