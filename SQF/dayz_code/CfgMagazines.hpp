@@ -132,15 +132,15 @@ class CfgMagazines {
 	class ItemSodaCokeEmpty : ItemSodaEmpty{
 		model = "\dayz_equip\models\soda_coke_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-	}
+	};
 	class ItemSodaPepsiEmpty : ItemSodaEmpty{
 		model = "\dayz_equip\models\soda_pepsi_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-	}
+	};
 	class ItemSodaMdewEmpty : ItemSodaEmpty{
 		model = "\dayz_equip\models\soda_mdew_e.p3d";
 		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-	}
+	};
 
 	class ItemSodaMtngreen : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0;
@@ -152,7 +152,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_mtngreen_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mtngreen_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 
 	class ItemSodaR4z0r : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1;
@@ -164,7 +164,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_r4z0r_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_r4z0r_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 
 	class ItemSodaClays : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2;
@@ -176,7 +176,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_clays_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_clays_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 
 	class ItemSodaSmasht : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3;
@@ -188,7 +188,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_smasht_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_smasht_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 
 	class ItemSodaDrwaste : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4;
@@ -200,7 +200,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_drwaste_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_drwaste_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 /*
 	class ItemSodaFranka : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5;
@@ -212,7 +212,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_franka_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_franka_clean_empty_ca";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 */
 	class ItemSodaLemonade : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6;
@@ -224,7 +224,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_lemonade_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lemonade_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 /*
 	class ItemSodaLirik : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7;
@@ -236,7 +236,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_lirik_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lirik_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 */
 	class ItemSodaLvg : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8;
@@ -248,7 +248,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_lvg_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lvg_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 
 	class ItemSodaMzly : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9;
@@ -260,7 +260,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_mzly_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mzly_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 /*
 	class ItemSodaPeppsy : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10;
@@ -272,7 +272,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_peppsy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_peppsy_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 */
 	class ItemSodaRabbit : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11;
@@ -284,7 +284,8 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_rabbit_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+
+	};
 /*
 	class ItemSodaSacrite : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12;
@@ -296,7 +297,7 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\soda_sacrite_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
-	}
+	};
 */
 	class FoodEdible;
 	class FoodmeatRaw : FoodEdible {

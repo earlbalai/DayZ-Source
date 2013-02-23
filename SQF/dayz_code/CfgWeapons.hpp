@@ -211,4 +211,29 @@ class CfgWeapons {
 			};
 		};
 	};
+	
+	class GrenadeLauncher;  // External class reference
+	class Flare : GrenadeLauncher {
+		class ThrowMuzzle;
+		class MolotovCocktailMuzzle : ThrowMuzzle {
+			displayName = "$STR_ACTION_THROW";
+			magazines[] = {
+				"TrashJackDaniels", 
+				"ItemSodaEmpty", 
+				"TrashTinCan",
+				"ItemSodaCokeEmpty",
+				"ItemSodaPepsiEmpty",
+				"ItemSodaMdewEmpty",
+				"ItemSodaMtngreenEmpty",
+				"ItemSodaR4z0rEmpty",
+				"ItemSodaClaysEmpty",
+				"ItemSodaSmashtEmpty", 
+				"ItemSodaDrwasteEmpty", 
+				"ItemSodaLemonadeEmpty", 
+				"ItemSodaLvgEmpty", 
+				"ItemSodaMzlyEmpty", 
+				"ItemSodaRabbitEmpty", 
+			};          
+		};
+	}; 
 };
