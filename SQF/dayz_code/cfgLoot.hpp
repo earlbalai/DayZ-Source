@@ -63,14 +63,10 @@ food[] = {
 			"ItemSodaClays",
 			"ItemSodaSmasht",
 			"ItemSodaDrwaste",
-			"ItemSodaFranka",
 			"ItemSodaLemonade",
-			"ItemSodaLirik",
 			"ItemSodaLvg",
 			"ItemSodaMzly",
-			"ItemSodaPeppsy",
 			"ItemSodaRabbit",
-			"ItemSodaSacrite"
 		},
 		{
 			//trash
@@ -88,10 +84,6 @@ food[] = {
 			0.04,
 			0.04,
 			//Others
-			0.09,
-			0.09,
-			0.09,
-			0.09,
 			0.09,
 			0.09,
 			0.09,

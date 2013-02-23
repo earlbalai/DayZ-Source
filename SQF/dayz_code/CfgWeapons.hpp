@@ -224,14 +224,10 @@ class CfgWeapons {
 				"ItemSodaClaysEmpty",
 				"ItemSodaSmashtEmpty", 
 				"ItemSodaDrwasteEmpty", 
-				"ItemSodaFrankaEmpty", 
 				"ItemSodaLemonadeEmpty", 
-				"ItemSodaLirikEmpty", 
 				"ItemSodaLvgEmpty", 
 				"ItemSodaMzlyEmpty", 
-				"ItemSodaPeppsyEmpty", 
 				"ItemSodaRabbitEmpty", 
-				"ItemSodaSacriteEmpty"
 			};          
 		};
 	}; 
