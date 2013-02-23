@@ -202,7 +202,7 @@ class CfgWeapons {
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
-					"ItemMacheter"
+					"ItemMachete"
 				};
 				output[]=
 				{
