@@ -850,6 +850,16 @@
 			<French>faire bouillir l'eau</French>
 			<Czech>Převařit vodu</Czech>
 		</Key>
+		<Key ID="STR_ACTION_THROW">                     
+			<Original>Throw</Original>                      
+			<English>Throw</English> 
+			<German>Throw</German>			
+			<Russian>Бросить</Russian>
+			<Spanish>Throw</Spanish>
+			<Dutch>Throw</Dutch>
+			<French>Throw</French>
+			<Czech>Throw</Czech>
+		</Key>  
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
 			<English>Remove fireplace</English>
