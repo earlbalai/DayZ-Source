@@ -4,11 +4,15 @@ class CfgLoot {
 			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
+			"ItemTrashToiletpaper",
+			"ItemTrashRazor"
 		},
 		{
 			1,
 			0.1,
-			0.5
+			0.5,
+			0.4,
+			0.2
 		}
 	};
 	civilian[] = {
@@ -67,6 +71,8 @@ food[] = {
 			"ItemSodaLvg",
 			"ItemSodaMzly",
 			"ItemSodaRabbit",
+			"FoodPistachio",
+			"FoodCanGriff"
 		},
 		{
 			//trash
@@ -90,7 +96,9 @@ food[] = {
 			0.09,
 			0.09,
 			0.09,
-			0.09
+			0.09,
+			0.06,
+			0.06
 		}
 	};
 	generic[] = {
@@ -226,7 +234,8 @@ food[] = {
 			"HandChemGreen",
 			"HandChemBlue",
 			"HandChemRed",
-			"ItemHeatPack"
+			"ItemHeatPack",
+			"FoodMRE"
 		},
 		{
 			0.18,
@@ -264,7 +273,8 @@ food[] = {
 			0.02,
 			0.02,
 			0.02,
-			0.04
+			0.04,
+			0.03
 		}
 	};
 	policeman[] = {
@@ -293,7 +303,8 @@ food[] = {
 			"10x_303",
 			"ItemWaterbottleUnfilled",
 			"WoodenArrow",
-			"ItemHeatPack"
+			"ItemHeatPack",
+			"FoodMRE"
 		},
 		{
 			1,
@@ -302,7 +313,8 @@ food[] = {
 			0.5,
 			0.2,
 			1,
-			0.2
+			0.2,
+			0.04
 		}
 	};
 };
