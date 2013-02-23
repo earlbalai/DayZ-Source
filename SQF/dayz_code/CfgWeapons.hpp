@@ -221,6 +221,7 @@ class CfgWeapons {
 				"TrashJackDaniels", 
 				"ItemSodaEmpty", 
 				"TrashTinCan",
+				"FoodCanGriffEmpty",
 				"ItemSodaCokeEmpty",
 				"ItemSodaPepsiEmpty",
 				"ItemSodaMdewEmpty",
