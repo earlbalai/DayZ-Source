@@ -1932,5 +1932,45 @@
 			<French>A pack of pistachios, roasted and salted.</French>
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
+		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
+			<Original>Toilet paper</Original>
+			<English>Toilet paper</English>	
+			<German>Toilettenpapier</German>
+			<Russian>Toilet paper</Russian>
+			<Spanish>Toilet paper</Spanish>
+			<Dutch>Toilet paper</Dutch>
+			<French>Toilet paper</French>
+			<Czech>Toilet paper</Czech>
+		</Key>
+		<Key ID="STR_JUNK_DESC_TOILETPAPER">						
+			<Original>A roll of toilet paper.</Original>
+			<English>A roll of toilet paper.</English>	
+			<German>Eine Rolle Toilettenpapier.</German>
+			<Russian>A roll of toilet paper.</Russian>
+			<Spanish>A roll of toilet paper.</Spanish>
+			<Dutch>A roll of toilet paper.</Dutch>
+			<French>A roll of toilet paper.</French>
+			<Czech>A roll of toilet paper.</Czech>
+		</Key>
+		<Key ID="STR_JUNK_NAME_RAZOR">
+			<Original>Razor</Original>
+			<English>Razor</English>	
+			<German>Rasiermesser</German>
+			<Russian>Razor</Russian>
+			<Spanish>Razor</Spanish>
+			<Dutch>Razor</Dutch>
+			<French>Razor</French>
+			<Czech>Razor</Czech>
+		</Key>
+		<Key ID="STR_JUNK_DESC_RAZOR">						
+			<Original>An old-fashioned cut-throat razor with a rounded French point.</Original>
+			<English>An old-fashioned cut-throat razor with a rounded French point.</English>	
+			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
+			<Russian>An old-fashioned cut-throat razor with a rounded French point.</Russian>
+			<Spanish>An old-fashioned cut-throat razor with a rounded French point.</Spanish>
+			<Dutch>An old-fashioned cut-throat razor with a rounded French point.</Dutch>
+			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
+			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
+		</Key>
 	</Package>
 </Project>
