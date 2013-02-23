@@ -128,6 +128,19 @@ class CfgMagazines {
 	
 	class ItemSodaEmpty;//External class reference
 	class ItemSodaCoke; //External class reference
+	
+	class ItemSodaCokeEmpty : ItemSodaEmpty{
+		model = "\dayz_equip\models\soda_coke_e.p3d";
+		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
+	}
+	class ItemSodaPepsiEmpty : ItemSodaEmpty{
+		model = "\dayz_equip\models\soda_pepsi_e.p3d";
+		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
+	}
+	class ItemSodaMdewEmpty : ItemSodaEmpty{
+		model = "\dayz_equip\models\soda_mdew_e.p3d";
+		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
+	}
 
 	class ItemSodaMtngreen : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0;
@@ -188,7 +201,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_drwaste_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-
+/*
 	class ItemSodaFranka : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5;
@@ -200,7 +213,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_franka_clean_empty_ca";
 		//ammo = "SodaCanMtngreen";
 	}
-
+*/
 	class ItemSodaLemonade : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6;
@@ -212,7 +225,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lemonade_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-
+/*
 	class ItemSodaLirik : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7;
@@ -224,7 +237,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lirik_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-
+*/
 	class ItemSodaLvg : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8;
@@ -248,7 +261,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_mzly_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-
+/*
 	class ItemSodaPeppsy : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10;
@@ -260,7 +273,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_peppsy_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-
+*/
 	class ItemSodaRabbit : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11;
@@ -272,7 +285,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rabbit_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-
+/*
 	class ItemSodaSacrite : ItemSodaCoke {
 		displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12;
 		descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12;
@@ -284,7 +297,7 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_empty_ca.paa";
 		//ammo = "SodaCanMtngreen";
 	}
-	
+*/
 	class FoodEdible;
 	class FoodmeatRaw : FoodEdible {
 		scope = public;
@@ -316,8 +329,8 @@ class CfgMagazines {
 	
 	class FoodbaconRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
-		model = "\dayz_equip\models\food_steak_gear.p3d";
-		picture = "\dayz_equip\textures\equip_steak_ca.paa";
+		model = "z\addons\dayz_communityassets\models\bacon_raw.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_raw_CA.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_4;
 		bloodRegen = 150;
 	};
@@ -350,8 +363,8 @@ class CfgMagazines {
 	
 	class FoodbaconCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
-		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
-		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
+		model = "z\addons\dayz_communityassets\models\bacon_fried.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_fried_CA.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 		bloodRegen = 400;
 	};
@@ -369,11 +382,29 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
-		model = "\z\addons\dayz_communityassets\models\buiscits_box.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\i_buiscit_ca.paa";
+		model = "z\addons\dayz_communityassets\models\buiscits_box.p3d";
+		picture = "z\addons\dayz_communityassets\pictures\i_buiscit_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
 		bloodRegen = 100;
 	};
+	class FoodMRE : FoodEdible {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_MRE;
+		descriptionShort = $STR_FOOD_DESC_MRE;
+		model = "z\addons\dayz_communityassets\models\mre.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
+	};
+	
+	class FoodPistachio : FoodEdible {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_PISTACHIO;
+		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
+		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	};
+	
 	class ItemWaterbottle;
 	class ItemWaterbottleBoiled : ItemWaterbottle {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
