@@ -185,7 +185,7 @@ class CfgWeapons {
 		{
 			libTextDesc="";
 		};
-		descriptionShort="";
+		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
 	};	
 	class ItemMachete: ItemCore
 	{
@@ -193,7 +193,7 @@ class CfgWeapons {
 		displayName="Machete";
 		model="\z\addons\dayz_communityassets\models\machete.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
-		descriptionShort="";
+		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
 		class ItemActions
 		{
 			class Toolbelt
