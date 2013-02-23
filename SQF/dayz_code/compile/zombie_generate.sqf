@@ -3,10 +3,6 @@ _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
 
-if (dayz_maxCurrentZeds > dayz_maxZeds) exitwith {};
-if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
-if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
-
 _isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],30]) == 0;
 _loot = 	"";
 _array = 	[];
@@ -49,10 +45,7 @@ if (random 1 > 0.7) then {
 };
 
 //diag_log ("CREATED: "  + str(_agent));
-if (_nearByPlayer) then {
-	deleteVehicle _agent;
-};
-/*
+
 //_agent setVariable["host",player,true];
 if (!_doLoiter) then {
 	_agent setPosATL _position;
@@ -73,7 +66,7 @@ if (!_doLoiter) then {
 		_agent setPos _position;
 	};
 };
-*/
+
 if (isNull _agent) exitWith {
 	dayz_spawnZombies = dayz_spawnZombies - 1;
 };
