@@ -13,7 +13,6 @@ _radius = 200;
 _position = getPosATL player;
 //_maxZombies = 10;
 
-	
 //diag_log ("Type: " +str(_type));
 
 
@@ -48,7 +47,7 @@ dayz_maxGlobalZombies = 30;
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 dayz_spawnZombies = 0;
 {
-	if ((local _x) and !_inVehicle) then 
+	if (local _x) then 
 	{
 		//diag_log ("Local");
 		dayz_spawnZombies = dayz_spawnZombies + 1;
@@ -105,7 +104,7 @@ _nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
-	if (dayz_spawnZombies < _maxWildZombies) then {
+	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
 		[_position] call wild_spawnZombies;
 	};
 };
@@ -115,9 +114,29 @@ if (_nearbyCount < 1) exitwith
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 	_canLoot = 		isClass (_config);
 	_dis = _x distance player;
+	
+	//Loot
 	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle) then {
-		[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity] call player_spawnlootCheck;
+		_looted = (_x getVariable ["looted",-0.1]);
+		_cleared = (_x getVariable ["cleared",tsrue]);
+		_dateNow = (DateToNumber date);
+		_age = (_dateNow - _looted) * 525948;
+		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
+		if ((_age > 10) and (!_cleared)) then {
+			_nearByObj = nearestObjects [(getPosATL _x), ["WeaponHolder","WeaponHolderBase"],((sizeOf _type)+5)];
+			{deleteVehicle _x} forEach _nearByObj;
+			_x setVariable ["cleared",true,true];
+			_x setVariable ["looted",_dateNow,true];
+		};
+		if ((_age > 10) and (_cleared)) then {
+			//Register
+			_x setVariable ["looted",_dateNow,true];
+			//cleanup
+			_handle = [_x] spawn building_spawnLoot;
+			waitUntil{scriptDone _handle};
+		};
 	};
+	//Zeds
 	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
 		if (dayz_maxCurrentZeds < dayz_maxZeds) then {
 			if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
