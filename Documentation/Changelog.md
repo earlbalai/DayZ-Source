@@ -7,6 +7,7 @@ FIX DUE : 2013
 		* dayz_code 
 		* dayz_sfx
 		* dayz_server
+		* dayz_communityassets
 		* Mission
 
 
@@ -15,17 +16,16 @@ FIX DUE : 2013
 	* [NEW] - Added a 2 minite delay to new zeds spawning once MaxLocal zeds fall's below the acceptable level.
 	* [NEW] - Added new sfx for chopping wood.
 	* [NEW] - Started Update for Cherno intro. (map intro)
-	* [NEW] - Zed attraction this will draw zeds to lottier closer to players over time.
+	* [NEW] - Zed attraction, this will draw zeds to loiter closer to players over time.
 	* [NEW] - BAF_L85A2_RIS_SUSAT - (Heilcrash - HeliCrash_No50s)
 	* [NEW] - Crossbow Quiver added - 6 arrow mag size.
 	* [NEW] - WoodenArrow added 6 arrows can be turned into a quiver.
 	* [NEW] - WoodenArrow can be picked up after use.
 	* [NEW] - 20% of breaking WoodenArrow when firing it.
-	* [NEW] - Model and textures for Quiver.
-	* [NEW] - New models and textures for FoodBaconRaw and FoodBaconCooked.
 	* [NEW] - Crowbar now attaches to toolbelt.
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
-	* [NEW] - 9 new sodas (Models by JoeysLucky22).
+	
+	* [NEW] - New models by JoeysLucky22:
 			- (Soda)  Long's Island Iced Tea (Clayton, moderator)
 			- (Soda)  Dr. Wasteland (Dr. wasteland, legend)
 			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail, moderator)
@@ -35,7 +35,16 @@ FIX DUE : 2013
 			- (Soda)  R4Z0R soda (R4Z0R, moderator)
 			- (Soda)  Smasht (Smasht, moderator)
 			- (Beer)  Rabbitman (Rabbitman, moderator)
-	* [NEW] - New melee weapon: Machete - (Farm - Hunting)
+			
+	* [NEW] - New models by Elvaron:
+			- New melee weapon: Machete - (Farm - Hunting)
+			- New Food: Pack of pistachios
+			- New Food: MRE military rations (Military Loot)
+			- New junk loot
+			- Model for Compass instead of green pouch in loot pile
+			- 2rnd shells for shotgun ammunition (no more 8 bullets shown on ground when it's actually 2 bullets)
+			- New models and textures for FoodBaconRaw and FoodBaconCooked.
+			- Model and textures for Quiver.
 	
 	* [UPDATED] - BoltsSteel replaced with WoodenArrows.
 	* [UPDATED] - BAF_L85A2_RIS_Holo Removed from crash site's added to Military tables
@@ -52,7 +61,7 @@ FIX DUE : 2013
 	* [UPDATED] - Added some czech language
 	* [UPDATED] - Updated zed attraction to dead players from 50 meters to 20 meters.
 	* [UPDATED] - Players will now drop empty cans after consumption to nearest lootpile or creates new one.
-	* [UPDATED] - Updated Infection to cought,sake camera and loose blood.
+	* [UPDATED] - Updated Infection to cough, shake camera and loose blood.
 	* [UPDATED] - Updated russian string tables.
 	* [UPDATED] - Backpack Spawns should now see higher grade backpacks more.
 	* [UPDATED] - Deer stands has it's own loot table (Hunting).
