@@ -191,7 +191,7 @@ class CfgWeapons {
 	{
 		scope=2;
 		displayName="Machete";
-		model="z\addons\dayz_communityassets\models\machete.p3d";
+		model="\z\addons\dayz_communityassets\models\machete.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 		descriptionShort="";
 		class ItemActions
