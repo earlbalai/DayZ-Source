@@ -391,6 +391,7 @@ class CfgMagazines {
 	class FoodMRE : FoodEdible {
 		scope = public;
 		count = 1;
+		bloodRegen = 800;
 		displayName = $STR_FOOD_NAME_MRE;
 		descriptionShort = $STR_FOOD_DESC_MRE;
 		model = "z\addons\dayz_communityassets\models\mre.p3d";
@@ -400,6 +401,7 @@ class CfgMagazines {
 	class FoodPistachio : FoodEdible {
 		scope = public;
 		count = 1;
+		bloodRegen = 100;
 		displayName = $STR_FOOD_NAME_PISTACHIO;
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
