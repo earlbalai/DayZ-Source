@@ -15,8 +15,89 @@ AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_D
 AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
 
 //Cooking
-meatraw = ["FoodSteakRaw",	"FoodmeatRaw","FoodbeefRaw","FoodmuttonRaw","FoodchickenRaw","FoodrabbitRaw","FoodbaconRaw"];
-meatcooked = ["FoodSteakCooked","FoodmeatCooked","FoodbeefCooked","FoodmuttonCooked","FoodchickenCooked","FoodrabbitCooked","FoodbaconCooked"];
+meatraw = [
+    "FoodSteakRaw",
+    "FoodmeatRaw",
+    "FoodbeefRaw",
+    "FoodmuttonRaw",
+    "FoodchickenRaw",
+    "FoodrabbitRaw",
+    "FoodbaconRaw"
+];
+meatcooked = [
+    "FoodSteakCooked",
+    "FoodmeatCooked",
+    "FoodbeefCooked",
+    "FoodmuttonCooked",
+    "FoodchickenCooked",
+    "FoodrabbitCooked",
+    "FoodbaconCooked"
+];
+//Eating
+no_output_food = ["FoodMRE", "FoodPistachio"]+meatcooked+meatraw;
+food_with_output=[
+    "FoodCanBakedBeans",
+    "FoodCanSardines",
+    "FoodCanFrankBeans",
+    "FoodCanPasta",
+	"FoodCanGriff"
+];
+food_output = [
+    "TrashTinCan",
+    "TrashTinCan",
+    "TrashTinCan",
+    "TrashTinCan",
+	"TrashTinCan"
+];
+//Drinking
+no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
+drink_with_output = [
+    "ItemSoda",  //just to define item for ItemSodaEmpty
+    "ItemSodaCoke",
+    "ItemSodaPepsi",
+    "ItemSodaMdew",
+    "ItemSodaMtngreen",
+    "ItemSodaR4z0r",
+    "ItemSodaClays",
+    "ItemSodaSmasht", 
+    "ItemSodaDrwaste", 
+    "ItemSodaLemonade", 
+    "ItemSodaLvg", 
+    "ItemSodaMzly", 
+    "ItemSodaRabbit"
+];
+drink_output = [
+    "ItemSodaEmpty", 
+    "ItemSodaCokeEmpty",
+    "ItemSodaPepsiEmpty",
+    "ItemSodaMdewEmpty",
+    "ItemSodaMtngreenEmpty",
+    "ItemSodaR4z0rEmpty",
+    "ItemSodaClaysEmpty",
+    "ItemSodaSmashtEmpty", 
+    "ItemSodaDrwasteEmpty", 
+    "ItemSodaLemonadeEmpty", 
+    "ItemSodaLvgEmpty", 
+    "ItemSodaMzlyEmpty", 
+    "ItemSodaRabbitEmpty"
+];
+boil_tin_cans = [
+    "TrashTinCan",
+	"FoodCanGriffEmpty",
+    "ItemSodaEmpty", 
+    "ItemSodaCokeEmpty",
+    "ItemSodaPepsiEmpty",
+    "ItemSodaMdewEmpty",
+    "ItemSodaMtngreenEmpty",
+    "ItemSodaR4z0rEmpty",
+    "ItemSodaClaysEmpty",
+    "ItemSodaSmashtEmpty", 
+    "ItemSodaDrwasteEmpty", 
+    "ItemSodaLemonadeEmpty", 
+    "ItemSodaLvgEmpty", 
+    "ItemSodaMzlyEmpty", 
+    "ItemSodaRabbitEmpty"
+];
 
 dayz_combatLog = "";
 canRoll = true;
