@@ -42,6 +42,7 @@ food_with_output=[
     "FoodCanPasta",
 	"FoodCanGriff",
 	"FoodCanBadguy",
+	"FoodCanBoneboy",
 	"FoodCanCorn",
 	"FoodCanCurgon",
 	"FoodCanDemon",
@@ -49,9 +50,10 @@ food_with_output=[
 	"FoodCanHerpy",
 	"FoodCanOrlok",
 	"FoodCanPowell",
-	"FoodCanTyler",
+	"FoodCanTylers",
 	"FoodCanUnlabeled"
 ];
+
 food_output = [
     "TrashTinCan",
     "TrashTinCan",
@@ -59,6 +61,7 @@ food_output = [
     "TrashTinCan",
 	"FoodCanGriffEmpty",
 	"FoodCanBadguyEmpty",
+	"FoodCanBoneboyEmpty",
 	"FoodCanCornEmpty",
 	"FoodCanCurgonEmpty",
 	"FoodCanDemonEmpty",
@@ -66,7 +69,7 @@ food_output = [
 	"FoodCanHerpyEmpty",
 	"FoodCanOrlokEmpty",
 	"FoodCanPowellEmpty",
-	"FoodCanTylerEmpty",
+	"FoodCanTylersEmpty",
 	"FoodCanUnlabeledEmpty"
 ];
 //Drinking
@@ -105,6 +108,7 @@ boil_tin_cans = [
     "TrashTinCan",
 	"FoodCanGriffEmpty",
 	"FoodCanBadguyEmpty",
+	"FoodCanBoneboyEmpty",
 	"FoodCanCornEmpty",
 	"FoodCanCurgonEmpty",
 	"FoodCanDemonEmpty",

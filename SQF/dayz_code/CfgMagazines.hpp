@@ -416,7 +416,7 @@ class CfgMagazines {
 		displayName = $STR_FOOD_NAME_CAN_GRIFF;
 		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF;
 		model = "z\addons\dayz_communityassets\models\can_griff_clean_full.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_full_ca.paa";
 	};
 	class FoodCanBadguy : FoodEdible {
 		scope = public;
@@ -490,6 +490,15 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\can_orlok_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_full_ca.paa";
 	};
+	class FoodCanPowell : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_POWELL;
+		descriptionShort = $STR_FOOD_DESC_CAN_POWELL;
+		model = "z\addons\dayz_communityassets\models\can_powell_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_full_ca.paa";
+	};
 	class FoodCanTylers : FoodEdible {
 		scope = public;
 		count = 1;
@@ -504,7 +513,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_UNLABELED;
-		descriptionShort = $STR_FOOD_DESC_UNLABELED;
+		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED;
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	};
@@ -591,6 +600,15 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
+	class FoodCanPowellEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_POWELL_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_POWELL_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_powell_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
 	class FoodCanTylersEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
@@ -604,7 +622,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_UNLABELED_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_UNLABELED_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
 		ammo = "TinCan";
