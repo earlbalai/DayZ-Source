@@ -26,15 +26,15 @@ FIX DUE : 2013
 	* [NEW] - Added Anti teleport script. Reported to server's RPT log
 	
 	* [NEW] - New models by JoeysLucky22:
-			- (Soda)  Long's Island Iced Tea (Clayton, moderator)
-			- (Soda)  Dr. Wasteland (Dr. wasteland, legend)
-			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail, moderator)
-			- (Soda)  LVG Root Beer (LVG, moderator)
+			- (Soda)  Long's Island Iced Tea (Clayton)
+			- (Soda)  Dr. Wasteland (Dr. wasteland)
+			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail)
+			- (Soda)  LVG Root Beer (LVG)
 			- (Soda)  Mountain Green
-			- (Soda)  mZLY yZLY (mZLY, moderator)
-			- (Soda)  R4Z0R soda (R4Z0R, moderator)
-			- (Soda)  Smasht (Smasht, moderator)
-			- (Beer)  Rabbitman (Rabbitman, moderator)
+			- (Soda)  mZLY yZLY (mZLY)
+			- (Soda)  R4Z0R soda (R4Z0R)
+			- (Soda)  Smasht (Smasht)
+			- (Beer)  Rabbitman (Rabbitman)
 			- (Can) Bad Guy's Ubiquitous Peaches (UbiquitousBadGuy)
 			- (Can) Chef Boneboy Ravioli (Boneboys)
 			- (Can) Curgon's Chicken Noodle Soup (Curgon)
