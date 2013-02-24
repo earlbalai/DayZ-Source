@@ -88,7 +88,7 @@ food[] = {
 			"FoodCanHerpy",
 			"FoodCanOrlok",
 			"FoodCanPowell",
-			"FoodCanTyler",
+			"FoodCanTylers",
 			"FoodCanUnlabeled",
 			//Bags
 			"FoodPistachio"
