@@ -420,7 +420,7 @@ class CfgMagazines {
 	};
 	
 	class TrashTinCan;
-	class FoodCanGriffEmpty :  {
+	class FoodCanGriffEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
 		model = "z\addons\dayz_communityassets\models\can_griff_clean_empty.p3d";
