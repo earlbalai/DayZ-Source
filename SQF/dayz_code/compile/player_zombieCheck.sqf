@@ -5,6 +5,8 @@ _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 //_multiplier = 1;
 
+//Old System
+/* 
 {
 	_continue = true;
 	_type = "zombie";
@@ -85,8 +87,9 @@ _attacked = false;
 	};
 	//diag_log ("Targets Array: " +str(_targets));
 } forEach _listTalk;
+*/
 
-/* New Systems
+// New Systems
 
 {
 	_continue = true;
@@ -142,10 +145,9 @@ if (alive _x and _continue) then
 					}
 					else
 					{
-						_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
+					//	_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
 						//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
-						if ((random 1) < _chance) then
-						{
+					//	if ((random 1) < _chance) then	{
 							_cantSee = [_x,_refObj] call dayz_losCheck;
 							if (!_cantSee) then
 							{
@@ -160,7 +162,7 @@ if (alive _x and _continue) then
 									_x setVariable ["target",_target];
 								};
 							};
-						};
+						//};
 					};
 				};
 			};
@@ -172,8 +174,7 @@ if (alive _x and _continue) then
 				{
 					_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
-					if ((random 1) < _chance) then
-					{
+					//if ((random 1) < _chance) then {
 						//diag_log ("Chance Detection");
 						_tPos = (getPosASL _refObj);
 						_zPos = (getPosASL _x);
@@ -192,7 +193,7 @@ if (alive _x and _continue) then
 								_x setVariable ["target",_target];
 							};
 						};
-					};
+					//};
 				};
 			};
 		}
@@ -243,10 +244,9 @@ if (alive _x and _continue) then
 					}
 					else
 					{
-						_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
+						//_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
 						//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
-						if ((random 1) < _chance) then
-						{
+						//if ((random 1) < _chance) then {
 							_cantSee = [_x,_refObj] call dayz_losCheck;
 							if (!_cantSee) then
 							{
@@ -261,7 +261,7 @@ if (alive _x and _continue) then
 									_x setVariable ["targets",_targets,true];
 								};
 							};
-						};
+						//};
 					};
 				};
 			};
@@ -271,10 +271,9 @@ if (alive _x and _continue) then
 			{
 				if (_dist < DAYZ_disVisual) then
 				{
-					_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
+					//_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
-					if ((random 1) < _chance) then
-					{
+					//if ((random 1) < _chance) then {
 						//diag_log ("Chance Detection");
 						_tPos = (getPosASL _refObj);
 						_zPos = (getPosASL _x);
@@ -294,13 +293,13 @@ if (alive _x and _continue) then
 								_x setVariable ["targets",_targets,true];
 							};
 						};
-					};
+					//};
 				};
 			};
 		};
 	};
 } forEach _listTalk;
-*/
+
 
 if (_attacked) then {
 	if (r_player_unconscious) then {
