@@ -17,7 +17,8 @@ if (local _animalbody) then {
 		}; 
 		//["dayzHideBody",_body] call broadcastRpcCallAll;
 		dayzHideBody = _body;
-		publicVariable "dayzHideBody";
+		hideBody _body; // local player
+		publicVariable "dayzHideBody"; // remote player
 		sleep 5;
 		deleteVehicle _body;
 		true;
