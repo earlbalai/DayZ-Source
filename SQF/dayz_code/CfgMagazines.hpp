@@ -460,5 +460,59 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\razor.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
-	};	
+	};
+	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
+	{
+		displayName="2Rnd. Slug";
+		count=2;
+		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 <br/>Used in: M1014";
+		model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text="Combine to 8 rounds";
+				script="spawn player_reloadMag;";
+				use[]=
+				{
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug"
+				};
+				output[]=
+				{
+					"8Rnd_B_Beneli_74Slug"
+				};
+			};
+		};
+	};
+	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets
+	{
+		displayName="2Rnd. Pellets";
+		count=2;
+		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 Pellets<br/>Used in: M1014";
+		model = "\z\addons\dayz_communityassets\models\2shells_pelletshot.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pelletshot_CA.paa";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text="Combine to 8 rounds";
+				script="spawn player_reloadMag;";
+				use[]=
+				{
+					"2Rnd_shotgun_74Pellets",
+					"2Rnd_shotgun_74Pellets",
+					"2Rnd_shotgun_74Pellets",
+					"2Rnd_shotgun_74Pellets"
+				};
+				output[]=
+				{
+					"8Rnd_B_Beneli_Pellets"
+				};
+			};
+		};
+	};
 };
