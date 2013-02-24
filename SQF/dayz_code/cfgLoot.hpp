@@ -53,15 +53,13 @@ class CfgLoot {
 	};
 food[] = {
 		{
+			//trash
 			"TrashTinCan",
 			"TrashJackDaniels",
 			"ItemSodaEmpty",
+			//sodas
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
 			"ItemSodaMtngreen",
 			"ItemSodaR4z0r",
 			"ItemSodaClays",
@@ -71,34 +69,68 @@ food[] = {
 			"ItemSodaLvg",
 			"ItemSodaMzly",
 			"ItemSodaRabbit",
-			"FoodPistachio",
-			"FoodCanGriff"
+			//"ItemSodaFranka",
+			//"ItemSodaLirikola",
+			//"ItemSodaSacrite",
+			//"ItemSodaPeppsy",
+			//food cans
+			"FoodCanBakedBeans",
+			"FoodCanSardines",
+			"FoodCanFrankBeans",
+			"FoodCanPasta",
+			"FoodCanGriff",
+			"FoodCanBadguy",
+			"FoodCanCorn",
+			"FoodCanCurgon",
+			"FoodCanDemon",
+			"FoodCanFraggleos",
+			"FoodCanHerpy",
+			"FoodCanOrlok",
+			"FoodCanPowell",
+			"FoodCanTyler",
+			"FoodCanUnlabeled",
+			//Bags
+			"FoodPistachio"
 		},
 		{
 			//trash
 			0.13,
 			0.13,
 			0.13,
-			//coke pepsi
+			//sodas
 			0.01,
 			0.01,
-			//food cans
-			0.09,
-			0.09,
-			0.09,
-			0.09,
-			0.04,
-			0.04,
-			//Others
-			0.09,
-			0.09,
-			0.09,
-			0.09,
-			0.09,
-			0.09,
-			0.09,
 			0.06,
-			0.06
+			0.04,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.05,
+			//0.06,
+			//0.06,
+			//0.06,
+			//0.06,
+			//food cans
+			0.04,
+			0.04,
+			0.04,
+			0.04,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			0.06,
+			//Bags
+			0.05
 		}
 	};
 	generic[] = {

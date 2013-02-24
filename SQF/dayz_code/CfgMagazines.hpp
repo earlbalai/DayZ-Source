@@ -418,6 +418,96 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\can_griff_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
 	};
+	class FoodCanBadguy : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_BADGUY;
+		descriptionShort = $STR_FOOD_DESC_CAN_BADGUY;
+		model = "z\addons\dayz_communityassets\models\can_badguy_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_full_ca.paa";
+	};
+	class FoodCanBoneboy : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_BONEBOY;
+		descriptionShort = $STR_FOOD_DESC_CAN_BONEBOY;
+		model = "z\addons\dayz_communityassets\models\can_boneboy_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_full_ca.paa";
+	};
+	class FoodCanCorn : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_CORN;
+		descriptionShort = $STR_FOOD_DESC_CAN_CORN;
+		model = "z\addons\dayz_communityassets\models\can_corn_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_full_ca.paa";
+	};
+	class FoodCanCurgon : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_CURGON;
+		descriptionShort = $STR_FOOD_DESC_CAN_CURGON;
+		model = "z\addons\dayz_communityassets\models\can_curgon_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_full_ca.paa";
+	};
+	class FoodCanDemon : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_DEMON;
+		descriptionShort = $STR_FOOD_DESC_CAN_DEMON;
+		model = "z\addons\dayz_communityassets\models\can_demon_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_full_ca.paa";
+	};
+	class FoodCanFraggleos : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_FRAGGLEOS;
+		descriptionShort = $STR_FOOD_DESC_CAN_FRAGGLEOS;
+		model = "z\addons\dayz_communityassets\models\can_fraggleos_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_full_ca.paa";
+	};
+	class FoodCanHerpy : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_HERPY;
+		descriptionShort = $STR_FOOD_DESC_CAN_HERPY;
+		model = "z\addons\dayz_communityassets\models\can_herpy_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_full_ca.paa";
+	};
+	class FoodCanOrlok : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_ORLOK;
+		descriptionShort = $STR_FOOD_DESC_CAN_ORLOK;
+		model = "z\addons\dayz_communityassets\models\can_orlok_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_full_ca.paa";
+	};
+	class FoodCanTylers : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_TYLERS;
+		descriptionShort = $STR_FOOD_DESC_CAN_TYLERS;
+		model = "z\addons\dayz_communityassets\models\can_tylers_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_full_ca.paa";
+	};
+	class FoodCanUnlabeled : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_UNLABELED;
+		descriptionShort = $STR_FOOD_DESC_UNLABELED;
+		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
+	};
 	
 	class TrashTinCan;
 	class FoodCanGriffEmpty : TrashTinCan {
@@ -427,6 +517,96 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
 		displayName = $STR_FOOD_NAME_CAN_GRIFF_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF_EMPTY;
+		ammo = "TinCan";
+	};
+	class FoodCanBadguyEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_BADGUY_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_BADGUY_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_badguy_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanBoneboyEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_BONEBOY_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_BONEBOY_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_boneboy_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanCornEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_CORN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_CORN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_corn_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanCurgonEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_CURGON_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_CURGON_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_curgon_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanDemonEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_DEMON_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_DEMON_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_demon_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanFraggleosEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_fraggleos_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanHerpyEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_HERPY_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_HERPY_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_herpy_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanOrlokEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_ORLOK_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_ORLOK_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_orlok_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanTylersEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_TYLERS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_TYLERS_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_tylers_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanUnlabeledEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_UNLABELED_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_UNLABELED_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
 	
