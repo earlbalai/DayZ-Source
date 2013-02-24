@@ -94,7 +94,7 @@
 		<Key ID="STR_INTRO_10">	
 			<Original>THIS IS YOUR STORY</Original>
 			<English>THIS IS YOUR STORY</English>
-			<German>DIES IST IHRE GESCHICHTE</German>
+			<German>DAS IST DEINE GESCHICHTE</German>
 			<Russian>ЭТО ВАША ИСТОРИЯ</Russian>
 			<Spanish>ESTA ES TU HISTORIA</Spanish>
 			<Dutch>DIT IS JOUW VERHAAL</Dutch>
@@ -209,7 +209,7 @@
 		<Key ID="str_success_tent_pack">
 			<Original>Your tent has been packed</Original>
 			<English>Your tent has been packed</English>
-			<German>Ihr Zelt wurde verpackt</German>
+			<German>Dein Zelt wurde verpackt</German>
 			<Russian>Ваша палатка свернута.</Russian>
 			<Spanish>Su carpa se ha embalado</Spanish>
 			<Dutch>Je tent is ingepakt</Dutch>
@@ -229,7 +229,7 @@
 		<Key ID="str_success_tent_pitch">
 			<Original>You have pitched your tent</Original>
 			<English>You have pitched your tent</English>
-			<German>Sie haben Ihr Zelt aufgebaut</German>
+			<German>Du hast dein Zelt aufgebaut</German>
 			<Russian>Вы установили палатку.</Russian>
 			<Spanish>Asentaste tu carpa.</Spanish>
 			<Dutch>Je hebt je tent opgezet</Dutch>
@@ -239,7 +239,7 @@
 		<Key ID="str_fail_tent_pitch">
 			<Original>You cannot place a Tent here. The area must be flat, and free of other objects</Original>
 			<English>You cannot place a Tent here. The area must be flat, and free of other objects</English>
-			<German>Sie können hier kein Zelt aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
+			<German>Du kannst hier kein Zelt aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
@@ -249,7 +249,7 @@
 		<Key ID="str_player_consumed">
 			<Original>You have consumed a %1</Original>
 			<English>You have consumed a %1</English>
-			<German>Sie haben ein(e) %1 verbraucht</German>
+			<German>Du hast ein(e) %1 verbraucht</German>
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
@@ -259,7 +259,7 @@
 		<Key ID="str_fireplace_01">
 			<Original>You have created a fireplace</Original>
 			<English>You have created a fireplace</English>
-			<German>Sie haben eine Feuerstelle angelegt</German>
+			<German>Du hast eine Feuerstelle angelegt</German>
 			<Russian>Вы подготовили костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
 			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
@@ -269,7 +269,7 @@
 		<Key ID="str_build_01">
 			<Original>You have constructed a %1</Original>
 			<English>You have constructed a %1</English>
-			<German>Sie haben eine(n) %1 aufgebaut</German>
+			<German>Du hast eine(n) %1 aufgebaut</German>
 			<Russian>Вы построили %1.</Russian>
 			<Spanish>Construiste un %1</Spanish>
 			<Dutch>Je hebt een %1 opgebouwd</Dutch>
@@ -289,7 +289,7 @@
 		<Key ID="str_fireplace_02">
 			<Original>You cannot make a fireplace here. The area must be flat, and free of other objects</Original>
 			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
-			<German>Sie können hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein</German>
+			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
@@ -319,7 +319,7 @@
 		<Key ID="str_medical_healing">
 			<Original>You are being healed</Original>
 			<English>You are being healed</English>
-			<German>Sie werden geheilt</German>
+			<German>Du wirst geheilt</German>
 			<Russian>Вас лечат.</Russian>
 			<Spanish>Fuiste curado.</Spanish>
 			<Dutch>Je wordt genezen</Dutch>
@@ -329,7 +329,7 @@
 		<Key ID="str_player_01">
 			<Original>You have filled %1 bottles with water</Original>
 			<English>You have filled %1 bottles with water</English>
-			<German>Sie haben %1 Flasche(n) mit Wasser gefüllt</German>
+			<German>Du hast %1 Flasche(n) mit Wasser gefüllt</German>
 			<Russian>Наполнено фляжек с водой: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
@@ -339,7 +339,7 @@
 		<Key ID="str_player_02">
 			<Original>You have no empty water bottles</Original>
 			<English>You have no empty water bottles</English>
-			<German>Sie haben keine leeren Wasserflaschen</German>
+			<German>Du hast keine leeren Wasserflaschen</German>
 			<Russian>У вас нет пустых фляжек.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
 			<Dutch>Je hebt geen lege waterflessen</Dutch>
@@ -349,7 +349,7 @@
 		<Key ID="str_player_03">
 			<Original>You need a %1 to repair this</Original>
 			<English>You need a %1 to repair this</English>
-			<German>Sie benötigen ein(e) %1, um das zu reparieren</German>
+			<German>Du benötigst ein(e) %1 um das zu reparieren</German>
 			<Russian>Чтобы это починить, вам нужно: %1</Russian>
 			<Spanish>Necesitas %1 para reparar esto.</Spanish>
 			<Dutch>Je hebt een %1 nodig om dit te repareren</Dutch>
@@ -359,7 +359,7 @@
 		<Key ID="str_player_04">
 			<Original>You have successfully attached the %1 on the %2</Original>
 			<English>You have successfully attached the %1 on the %2</English>
-			<German>Sie haben erfolgreich ein(e) %1 an %2 angebracht</German>
+			<German>Du hast erfolgreich ein(e) %1 an %2 angebracht</German>
 			<Russian>Вы успешно установили %1 на %2.</Russian>
 			<Spanish>Fijaste correctamente el %1 al %2</Spanish>
 			<Dutch>Je hebt met succes een %1 geplaatst op de %2</Dutch>
@@ -389,7 +389,7 @@
 		<Key ID="str_player_07">
 			<Original>You last ate %2 minutes, and drank %3 minutes ago</Original>
 			<English>You last ate %2 minutes, and drank %3 minutes ago</English>
-			<German>Sie haben zuletzt vor %2 Minuten gegessen und vor %3 Minuten getrunken</German>
+			<German>Du hast zuletzt vor %2 Minuten gegessen und vor %3 Minuten getrunken</German>
 			<Russian>Последний раз вы ели %2 мин. назад, пили - %3 мин. назад.</Russian>
 			<Spanish>Tu última comida fue hace %2 minutos y bebida hace %3 minutos</Spanish>
 			<Dutch>Je hebt %2 minuten geleden gegeten en %3 minuten geleden gedronken</Dutch>
@@ -399,7 +399,7 @@
 		<Key ID="str_player_08">
 			<Original>%1 Food and %2 water was used since your last login</Original>
 			<English>%1 Food and %2 water was used since your last login</English>
-			<German>Seit Ihrem letzten Login haben Sie %1 Einheiten Essen und %2 Flaschen Wasser verbraucht</German>
+			<German>Seit dem letzten Login haben Sie %1 Einheiten Essen und %2 Flaschen Wasser verbraucht</German>
 			<Russian>С момента вашего последнего входа в игру вы съели еды: %1 и выпили воды: %2</Russian>
 			<Spanish>%1 Comidas y %2 Aguas fueron usadas desde tu ultimo ingreso</Spanish>
 			<Dutch>Sinds de laatste keer dat je hebt ingelogd heb je %1 voedsel en %2 water genuttigd</Dutch>
@@ -409,7 +409,7 @@
 		<Key ID="str_player_09">
 			<Original>You have filled %1 jerrycans with fuel</Original>
 			<English>You have filled %1 jerrycans with fuel</English>
-			<German>Sie haben %1 Kanister mit Treibstoff gefüllt</German>
+			<German>Du hast %1 Kanister mit Treibstoff gefüllt</German>
 			<Russian>Наполнено топливом канистр: %1</Russian>
 			<Spanish>Llenaste %2 bidones con combustible</Spanish>
 			<Dutch>Je hebt %1 jerrycans met brandstof gevuld</Dutch>
@@ -419,7 +419,7 @@
 		<Key ID="str_player_10">
 			<Original>You have no empty jerry cans</Original>
 			<English>You have no empty jerry cans</English>
-			<German>Sie haben keine leeren Kanister</German>
+			<German>Du hast keine leeren Kanister</German>
 			<Russian>У вас нет пустых канистр.</Russian>
 			<Spanish>No tienes bidones vacíos</Spanish>
 			<Dutch>Je hebt geen lege jerrycans</Dutch>
@@ -429,7 +429,7 @@
 		<Key ID="str_player_11">
 			<Original>You need to sit in the driver seat before you can repair this vehicle</Original>
 			<English>You need to sit in the driver seat before you can repair this vehicle</English>
-			<German>Sie müssen sich auf den Fahrersitz setzen bevor Sie dieses Fahrzeug reparieren können</German>
+			<German>Du musst dich auf den Fahrersitz setzen bevor Sie dieses Fahrzeug reparieren können</German>
 			<Russian>Для ремонта требуется занять место водителя хотя бы раз.</Russian>
 			<Spanish>Necesitas sentarte en el asiento del conductor antes de arreglar este vehículo.</Spanish>
 			<Dutch>Je moet in de bestuurdersstoel zitten om dit voertuig te repareren</Dutch>
@@ -439,7 +439,7 @@
 		<Key ID="str_player_12">
 			<Original>Please go to Player Selection Screen to continue in game</Original>
 			<English>Please go to Player Selection Screen to continue in game</English>
-			<German>Bitte gehen Sie in die Spielerauswahl um weiterspielen zu können</German>
+			<German>Bitte gehen zurück in die Lobby um weiterspielen zu können</German>
 			<Russian>Пожалуйста, выйдите в окно выбора игрока, чтобы продолжить игру</Russian>
 			<Spanish>Por favor ve a la Pantalla de Selección de Jugador para continuar en el juego.</Spanish>
 			<Dutch>Ga alsjeblieft naar het rollenverdelingsscherm on verder te spelen</Dutch>
@@ -499,7 +499,7 @@
 		<Key ID="str_player_18">
 			<Original>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</Original>
 			<English>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</English>
-			<German>Sie haben eine falsche Version von DAYZ_CODE, bitte laden Sie sich neuste Version von www.dayzmod.com/downloads runter </German>
+			<German>Du hast eine falsche Version von DAYZ_CODE, bitte laden Sie sich neuste Version von www.dayzmod.com/downloads runter </German>
 			<Russian>Вы используете неверную версию DAYZ_CODE. Пожалуйста, скачайте нужный файл с dayzmod.com/downloads (Ваша версия %1, версия на сервере %2)</Russian>
 			<Spanish>Estas ejecutando una versión incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzmod.com/downloads (Estas ejecutando la versión %1 y el servidor %2)</Spanish>
 			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzmod.com/downloads (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
@@ -509,7 +509,7 @@
 		<Key ID="str_player_20">
 			<Original>You must be near a water-source such as a pond or well to refill your water bottles</Original>
 			<English>You must be near a water-source such as a pond or well to refill your water bottles</English>
-			<German>Sie müssen in der nähe einer Wasserquelle wie einem Teich oder Brunnen sein um Wasserflaschen zu füllen</German>
+			<German>Du musst in der nähe einer Wasserquelle wie einem Teich oder Brunnen sein um Wasserflaschen zu füllen</German>
 			<Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
 			<Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
 			<Dutch>Je moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
@@ -519,7 +519,7 @@
 		<Key ID="str_player_21">
 			<Original>You cannot do this while you are on a ladder</Original>
 			<English>You cannot do this while you are on a ladder</English>
-			<German>Sie können dies nicht tun, während Sie an einer Leiter sind</German>
+			<German>Du kannst das nicht tun, während du an einer Leiter sind</German>
 			<Russian>Вы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
 			<Spanish>No puedes hacer esto mientras estás en una escalera</Spanish>
 			<Dutch>Je kunt deze actie op een ladder niet uitvoeren</Dutch>
@@ -529,7 +529,7 @@
 		<Key ID="str_player_22">
 			<Original>You must have wood in your inventory in order to create a fireplace</Original>
 			<English>You must have wood in your inventory in order to create a fireplace</English>
-			<German>Sie benötigen Holz im Inventar, um eine Feuerstelle anzulegen</German>
+			<German>Du benötigen Holz im Inventar um eine Feuerstelle anzulegen</German>
 			<Russian>Для разведения костра у вас должны быть дрова.</Russian>
 			<Spanish>Debes tener leña en tu inventario para poder crear una fogata.</Spanish>
 			<Dutch>Je moet hout in je inventaris hebben om een kampvuur te maken</Dutch>
@@ -539,7 +539,7 @@
 		<Key ID="str_player_23">
 			<Original>You must be in a forest and close to a tree to harvest wood.</Original>
 			<English>You must be in a forest and close to a tree to harvest wood.</English>
-			<German>Sie müssen in einem Wald in der Nähe eines Baums sein, um Holz zu sammeln.</German>
+			<German>Du musst in der nähe eines Baumes sein um Holz zu sammeln.</German>
 			<Russian>Вы должны находится в лесу и подойти к дереву, чтобы нарубить дров.</Russian>
 			<Spanish>Debes estar en el bosque y cerca de un árbol para recoger leña.</Spanish>
 			<Dutch>Je moet in een bos en in de buurt van een boom zijn om hout te hakken.</Dutch>
@@ -549,7 +549,7 @@
 		<Key ID="str_player_24">
 			<Original>You do not have enough room in your inventory to do that.</Original>
 			<English>You do not have enough room in your inventory to do that.</English>
-			<German>Sie haben nicht genug Platz in Ihrem Inventar um das zu tun.</German>
+			<German>Du hast nicht genug Platz in deinem Inventar um das zu tun.</German>
 			<Russian>У вас недостаточно места в инвентаре.</Russian>
 			<Spanish>No tienes espacio suficiente en tu inventario para hacer eso.</Spanish>
 			<Dutch>Je hebt onvoldoende ruimte in je inventaris om die actie uit te voeren</Dutch>
@@ -559,7 +559,7 @@
 		<Key ID="str_player_25">
 			<Original>A pile of wood has been successfully added to your inventory.</Original>
 			<English>A pile of wood has been successfully added to your inventory.</English>
-			<German>Ein Holzstoß wurde erfolgreich Ihrem Inventar hinzugefügt.</German>
+			<German>Feuerholz wurde erfolgreich zu deinem Inventar hinzugefügt.</German>
 			<Russian>Дрова добавлены в ваш инвентарь.</Russian>
 			<Spanish>Una pila de leña se agregó correctamente a tu inventario.</Spanish>
 			<Dutch>Er is brandhout toegevoegd aan je inventaris.</Dutch>
@@ -569,7 +569,7 @@
 		<Key ID="str_player_26">
 			<Original>You cannot do this while you are in the water.</Original>
 			<English>You cannot do this while you are in the water.</English>
-			<German>Sie können dies nicht tun, während Sie sich im Wasser befinden..</German>
+			<German>Du kannst das nicht tun, während du dich im Wasser befindest.</German>
 			<Russian>Это действие невозможно пока вы в воде.</Russian>
 			<Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
 			<Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
@@ -579,7 +579,7 @@
 		<Key ID="str_player_27">
 			<Original>You have applied a heatpack to your body successfully.</Original>
 			<English>You have applied a heatpack to your body successfully.</English>
-			<German>Sie haben ein Wärmpflaster an Ihrem Körper angebracht.</German>
+			<German>Du hast ein Wärmpflaster an deinem Körper angebracht.</German>
 			<Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
 			<Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
 			<Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
@@ -589,7 +589,7 @@
 		<Key ID="str_player_28">
 			<Original>You cannot reload that combination, you need %1 %2 magazines.</Original>
 			<English>You cannot reload that combination, you need %1 %2 magazines.</English>
-			<German>Sie können diese Kombination nicht nachladen, Sie benötigen %1 %2 Magazine.</German>
+			<German>Du kannst diese Kombination nicht nachladen, du benötigen %1 %2 Magazine.</German>
 			<Russian>Вы не можете перезарядить эту комбинацию. Вам необходимо иметь магазины %1 %2.</Russian>
 			<Spanish>No puedes recargar esa combinación, necesitas %1 cargadores de %2</Spanish>
 			<Dutch>Je kan die combinatie niet herladen, je hebt %1 %2 magazijnen nodig.</Dutch>
@@ -599,7 +599,7 @@
 		<Key ID="str_player_29">
 			<Original>You have successfully reloaded %1 %2 magazines.</Original>
 			<English>You have successfully reloaded %1 %2 magazines.</English>
-			<German>Sie haben erfolgreich %1 %2 Magazine nachgeladen.</German>
+			<German>Du hast erfolgreich %1 %2 Magazine nachgeladen.</German>
 			<Russian>Магазины %1 %2 перезаряжены.</Russian>
 			<Spanish>Recargaste correctamente %1 cargadores de %2.</Spanish>
 			<Dutch>Je hebt met succes %1 %2 magazijnen herladen.</Dutch>
@@ -709,7 +709,7 @@
 		<Key ID="str_death_combatlog">
 			<Original>combat logging</Original>
 			<English>combat logging</English>
-			<German>weil er im Kampf ausgeloggt ist</German>
+			<German>weil er sich im Kampf ausgeloggt hat</German>
 			<Russian>выхода из игры в режиме боя</Russian>
 			<Spanish>huir de combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
@@ -729,11 +729,11 @@
 		<Key ID="str_abort_playerclose">
 			<Original>Cannot Abort near another player!</Original>
 			<English>Cannot Abort near another player!</English>
-			<German>Sie können nicht nahe eines anderen Spielers ausloggen!</German>
+			<German>Du kannst dich nicht in der nähe von einen anderen Spieler ausloggen!</German>
 			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>
 			<Spanish>Cannot Abort near another player!</Spanish>
 			<Dutch>Cannot Abort near another player!</Dutch>
-			<French>Cannot Abort near another player!</French>
+			<French>Vous ne pouvez pas vous déconnecter a proximité d'autres joueurs</French>
 			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
 		</Key>
 		<Key ID="str_abort_zedsclose">
@@ -743,7 +743,7 @@
 			<Russian>Выход будет доступен через %1</Russian>
 			<Spanish>Can Abort in %1</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
-			<French>Can Abort in %1</French>
+			<French>Vous pourrez vous déconnecter dans #1</French>
 			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
 		<Key ID="str_abort_playerincombat">
@@ -753,7 +753,7 @@
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>Cannot Abort while in combat!</Spanish>
 			<Dutch>Cannot Abort while in combat!</Dutch>
-			<French>Cannot Abort while in combat!</French>
+			<French>Vous ne pouvez pas vous déconnecter en combat !</French>
 			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
 		<Key ID="str_broken_arrow">
@@ -763,7 +763,7 @@
 			<Russian>Arrow was broken and cannot be used again</Russian>
 			<Spanish>Arrow was broken and cannot be used again</Spanish>
 			<Dutch>Arrow was broken and cannot be used again</Dutch>
-			<French>Arrow was broken and cannot be used again</French>
+			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
 			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
 		</Key>
 	</Package>
@@ -771,7 +771,7 @@
 		<Key ID="STR_UI_GENDER_TITLE">
 			<Original>SELECT YOUR GENDER</Original>
 			<English>SELECT YOUR GENDER</English>
-			<German>Wählen Sie Ihr Geschlecht</German>
+			<German>Wähle dein Geschlecht</German>
 			<Russian>Выберите свой пол</Russian>
 			<Spanish>SELECCIONE SU GÉNERO</Spanish>
 			<Dutch>KIES JE GESLACHT</Dutch>
@@ -781,7 +781,7 @@
 		<Key ID="STR_UI_GENDER_DESC">
 			<Original>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</Original>
 			<English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
-			<German>Bitte wählen Sie das Geschlecht aus, mit dem Sie Spielen wollen. Ihr Geschlecht wird an diesen einzigartigen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
+			<German>Bitte wählen Sie das Geschlecht aus, mit dem Sie Spielen wollen. Ihr Geschlecht wird an diesen Charakter gebunden und kann nicht geändert werden, bis Sie sterben.</German>
 			<Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
 			<Spanish>Por favor selecciona el género con el que deseas jugar. Tu género se enlazará a tu personaje y solo podrá ser cambiado cuando mueras.</Spanish>
 			<Dutch>Kies alsjeblieft het geslacht waarmee je wilt spelen. Je geslacht zal gebonden zijn aan dit unieke karakter, en kan niet gewijzigd worden tot je komt te overlijden.</Dutch>
@@ -853,7 +853,7 @@
 		<Key ID="STR_ACTION_THROW">                     
 			<Original>Throw</Original>                      
 			<English>Throw</English> 
-			<German>Throw</German>			
+			<German>Werfen</German>			
 			<Russian>Бросить</Russian>
 			<Spanish>Throw</Spanish>
 			<Dutch>Throw</Dutch>
@@ -1203,7 +1203,7 @@
 		<Key ID="str_actions_calldog">
 			<Original>Call Dog</Original>
 			<English>Call Dog</English>
-			<German>Hund herbeirufen</German>
+			<German>Hund rufen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Llamar Perro</Spanish>
 			<Dutch>Call Dog</Dutch>
@@ -1375,7 +1375,7 @@
 		<Key ID="STR_FOOD_EQIP_CODE_NAME_1">						
 			<Original>Mutton Raw</Original>						
 			<English>Mutton Raw</English>						
-			<German>Rohes Hammelfleisch</German>
+			<German>Rohes Ziegenfleisch</German>
 			<Russian>Ягнятина</Russian>
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>BMutton Raw</Dutch>
@@ -1405,7 +1405,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">						
 			<Original>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Hühnchenkeule für den Verzehr, muss vorher gekocht werden.</German>
+			<German>Hühnchenkeule muss für den Verzehr vorher gekocht werden.</German>
 			<Russian>Сырой куриный окорочек. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Dutch>
@@ -1425,7 +1425,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">						
 			<Original>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Rabbit to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Kaninchenfleisch für den Verzehr, muss vorher gekocht werden.</German>
+			<German>Kaninchenfleisch muss für den Verzehr vorher gekocht werden.</German>
 			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Dutch>
@@ -1445,7 +1445,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">						
 			<Original>Bacon to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Bacon to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Speck für den Verzehr, muss vorher gekocht werden.</German>
+			<German>Speck muss für den Verzehr vorher gekocht werden.</German>
 			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
@@ -1465,7 +1465,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_6">						
 			<Original>Beef to be used for sustainment, should be cooked prior to safe eating.</Original>						
 			<English>Beef to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Rindfleisch für den Verzehr, muss vorher gekocht werden.</German>
+			<German>Rindfleisch muss für den Verzehr vorher gekocht werden.</German>
 			<Russian>Говядина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
@@ -1625,7 +1625,7 @@
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">						
 			<Original>A bottle of boiled water that has been filled and can be consumed.</Original>
 			<English>A bottle of boiled water that has been filled and can be consumed.</English>	
-			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
+			<German>Eine Flasche mit abgekochtes Wasser aufgefüllt und für den Verzehr geeignet.</German>
 			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
@@ -1649,7 +1649,7 @@
 			<Russian>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Russian>
 			<Spanish>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Spanish>
 			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
-			<French>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</French>
+			<French>Une canette intacte de Mountain Green. Le soda préféré des amateurs de simulateur de course longue distance.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mountain Green. Dobrá volba na dlouhou cestu.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1">						
@@ -1669,7 +1669,7 @@
 			<Russian>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Russian>
 			<Spanish>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Spanish>
 			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
-			<French>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</French>
+			<French>Une canette intacte de soda R4Z0R. Ils ont arrêté de les vendre il y a des années !</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky R4Z0R. Před mnoho lety ji přestali prodávat!</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">						
@@ -1689,7 +1689,7 @@
 			<Russian>A clean, unopened can of Long's island iced tea.</Russian>
 			<Spanish>A clean, unopened can of Long's island iced tea.</Spanish>
 			<Dutch>A clean, unopened can of Long's island iced tea.</Dutch>
-			<French>A clean, unopened can of Long's island iced tea.</French>
+			<French>Une canette intacte d'iced tea de l'île de Long.</French>
 			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's island.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">						
@@ -1709,7 +1709,7 @@
 			<Russian>A clean, unopened can of Smasht grape soda.</Russian>
 			<Spanish>A clean, unopened can of Smasht grape soda.</Spanish>
 			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
-			<French>A clean, unopened can of Smasht grape soda.</French>
+			<French>Une canette intacte de soda au raisin Smasht.</French>
 			<Czech>Čistá a ještě neotevřená plechovka grepové sody Smasht.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">						
@@ -1729,7 +1729,7 @@
 			<Russian>A clean, unopened can of Dr. Wasteland soda.</Russian>
 			<Spanish>A clean, unopened can of Dr. Wasteland soda.</Spanish>
 			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
-			<French>A clean, unopened can of Dr. Wasteland soda.</French>
+			<French>Une canette intacte de soda Dr. Wasteland.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wateland.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">						
@@ -1749,7 +1749,7 @@
 			<Russian>A clean, unopened can of Franka orange soda.</Russian>
 			<Spanish>A clean, unopened can of Franka orange soda.</Spanish>
 			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
-			<French>A clean, unopened can of Franka orange soda.</French>
+			<French>Une canette intacte de soda à l'orange Franka.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Franka orange.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">						
@@ -1759,7 +1759,7 @@
 			<Russian>Soda (Lemonade)</Russian>
 			<Spanish>Soda (Lemonade)</Spanish>
 			<Dutch>Soda (Lemonade)</Dutch>
-			<French>Soda (Lemonade)</French>
+			<French>Soda (Limonade)</French>
 			<Czech>Soda (Limonáda)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">						
@@ -1769,7 +1769,7 @@
 			<Russian>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Russian>
 			<Spanish>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Spanish>
 			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
-			<French>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</French>
+			<French>Une canette intacte de limonade à la Mikhail. Fabriqué par Mikhail.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mikhail Made limonády. Vytvořeno Mikhailem.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">						
@@ -1789,7 +1789,7 @@
 			<Russian>A clean, unopened can of Lirikola. An o7 brand.</Russian>
 			<Spanish>A clean, unopened can of Lirikola. An o7 brand.</Spanish>
 			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
-			<French>A clean, unopened can of Lirikola. An o7 brand.</French>
+			<French>Une canette intacte de Lirikola. 7 ans d'âge.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Lirikoly. o7 série.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">						
@@ -1799,7 +1799,7 @@
 			<Russian>Soda (Root Beer)</Russian>
 			<Spanish>Soda (Root Beer)</Spanish>
 			<Dutch>Soda (Root Beer)</Dutch>
-			<French>Soda (Root Beer)</French>
+			<French>Bière (LVG Root)</French>
 			<Czech>Pivo (LVG Root)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">						
@@ -1809,7 +1809,7 @@
 			<Russian>A clean, unopened can of LVG root beer.</Russian>
 			<Spanish>A clean, unopened can of LVG root beer.</Spanish>
 			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
-			<French>A clean, unopened can of LVG root beer.</French>
+			<French>Une canette intacte de bière LVG root.</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva LVG root.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">						
@@ -1829,7 +1829,7 @@
 			<Russian>A clean, unopened can of mZLY yZLY soda.</Russian>
 			<Spanish>A clean, unopened can of mZLY yZLY soda.</Spanish>
 			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
-			<French>A clean, unopened can of mZLY yZLY soda.</French>
+			<French>Une canette intacte de soda mZLY yZLY.</French>
 			<Czech>Čistá a ještě neotevřená plechovka mZLY yZLY sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">						
@@ -1849,7 +1849,7 @@
 			<Russian>A clean, unopened can of Peppsy soda.</Russian>
 			<Spanish>A clean, unopened can of Peppsy soda.</Spanish>
 			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
-			<French>A clean, unopened can of Peppsy soda.</French>
+			<French>Une canette intacte de soda Peppsy.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Peppsy sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">						
@@ -1859,7 +1859,7 @@
 			<Russian>Beer (Rabbitman)</Russian>
 			<Spanish>Beer (Rabbitman)</Spanish>
 			<Dutch>Beer (Rabbitman)</Dutch>
-			<French>Beer (Rabbitman)</French>
+			<French>Bière (Rabbitman)</French>
 			<Czech>Pivo (Rabbitman)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11">						
@@ -1869,7 +1869,7 @@
 			<Russian>A clean, unopened can of Rabbitman beer.</Russian>
 			<Spanish>A clean, unopened can of Rabbitman beer.</Spanish>
 			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
-			<French>A clean, unopened can of Rabbitman beer.</French>
+			<French>Une canette intacte de bière Rabbitman.</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva Rabbitman.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12">						
@@ -1889,7 +1889,7 @@
 			<Russian>A clean, unopened can of Sacrite soda.</Russian>
 			<Spanish>A clean, unopened can of Sacrite soda.</Spanish>
 			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
-			<French>A clean, unopened can of Sacrite soda.</French>
+			<French>Une canette intacte de soda Sacrite.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">						
@@ -1909,7 +1909,7 @@
 			<Russian>Meal Ready-to-Eat</Russian>
 			<Spanish>Meal Ready-to-Eat</Spanish>
 			<Dutch>Meal Ready-to-Eat</Dutch>
-			<French>Meal Ready-to-Eat</French>
+			<French>Repas prêt à manger</French>
 			<Czech>Meal Ready-to-Eat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">						
@@ -1919,7 +1919,7 @@
 			<Russian>Pistachios</Russian>
 			<Spanish>Pistachios</Spanish>
 			<Dutch>Pistachios</Dutch>
-			<French>Pistachios</French>
+			<French>Pistaches</French>
 			<Czech>Pistachios</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_PISTACHIO">						
@@ -1929,7 +1929,7 @@
 			<Russian>A pack of pistachios, roasted and salted.</Russian>
 			<Spanish>A pack of pistachios, roasted and salted.</Spanish>
 			<Dutch>A pack of pistachios, roasted and salted.</Dutch>
-			<French>A pack of pistachios, roasted and salted.</French>
+			<French>Un paquet de pistaches, grillées et salées.</French>
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
@@ -1939,7 +1939,7 @@
 			<Russian>Can (Beans)</Russian>
 			<Spanish>Can (Beans)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
-			<French>Can (Beans)</French>
+			<French>Boîte (Haricots)</French>
 			<Czech>Can (Beans)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF">						
@@ -1949,7 +1949,7 @@
 			<Russian>A clean, unopened can of Griff's black beans.</Russian>
 			<Spanish>A clean, unopened can of Griff's black beans.</Spanish>
 			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
-			<French>A clean, unopened can of Griff's black beans.</French>
+			<French>Une boîte intacte d'haricots noirs de Griff.</French>
 			<Czech>A clean, unopened can of Griff's black beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF_EMPTY">						
@@ -1959,7 +1959,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF_EMPTY">						
@@ -1969,7 +1969,7 @@
 			<Russian>An empty can of Griff's black beans.</Russian>
 			<Spanish>An empty can of Griff's black beans.</Spanish>
 			<Dutch>An empty can of Griff's black beans.</Dutch>
-			<French>An empty can of Griff's black beans.</French>
+			<French>Une boîte vide d'haricots noirs de Griff.</French>
 			<Czech>An empty can of Griff's black beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY">						
@@ -1979,7 +1979,7 @@
 			<Russian>Can (Peaches)</Russian>
 			<Spanish>Can (Peaches)</Spanish>
 			<Dutch>Can (Peaches)</Dutch>
-			<French>Can (Peaches)</French>
+			<French>Boîte (Pêches)</French>
 			<Czech>Can (Peaches)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY">						
@@ -1989,7 +1989,7 @@
 			<Russian>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Russian>
 			<Spanish>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Spanish>
 			<Dutch>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Dutch>
-			<French>A clean, unopened can of Bad Guy's ubiquitous peach slices.</French>
+			<French>Une boîte intacte de pêches en morceaux de Bad Guy.</French>
 			<Czech>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY_EMPTY">						
@@ -1999,7 +1999,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY_EMPTY">						
@@ -2009,7 +2009,7 @@
 			<Russian>An empty can of Bad Guy's ubiquitous peach slices.</Russian>
 			<Spanish>An empty can of Bad Guy's ubiquitous peach slices.</Spanish>
 			<Dutch>An empty can of Bad Guy's ubiquitous peach slices.</Dutch>
-			<French>An empty can of Bad Guy's ubiquitous peach slices.</French>
+			<French>Une boîte vide de pêches en morceaux de Bad Guy.</French>
 			<Czech>An empty can of Bad Guy's ubiquitous peach slices.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">						
@@ -2019,7 +2019,7 @@
 			<Russian>Can (Ravioli)</Russian>
 			<Spanish>Can (Ravioli)</Spanish>
 			<Dutch>Can (Ravioli)</Dutch>
-			<French>Can (Ravioli)</French>
+			<French>Boîte (Raviolis)</French>
 			<Czech>Can (Ravioli)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY">						
@@ -2029,7 +2029,7 @@
 			<Russian>A clean, unopened can of Chef Boneboy ravioli.</Russian>
 			<Spanish>A clean, unopened can of Chef Boneboy ravioli.</Spanish>
 			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
-			<French>A clean, unopened can of Chef Boneboy ravioli.</French>
+			<French>Une boîte intacte de raviolis Chef Boneboy.</French>
 			<Czech>A clean, unopened can of Chef Boneboy ravioli.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY_EMPTY">						
@@ -2039,7 +2039,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY_EMPTY">						
@@ -2049,7 +2049,7 @@
 			<Russian>An empty can of Chef Boneboy ravioli.</Russian>
 			<Spanish>An empty can of Chef Boneboy ravioli.</Spanish>
 			<Dutch>An empty can of Chef Boneboy ravioli.</Dutch>
-			<French>An empty can of Chef Boneboy ravioli.</French>
+			<French>Une boîte vide de raviolis Chef Boneboy.</French>
 			<Czech>An empty can of Chef Boneboy ravioli.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN">						
@@ -2059,7 +2059,7 @@
 			<Russian>Can (Corn)</Russian>
 			<Spanish>Can (Corn)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
-			<French>Can (Corn)</French>
+			<French>Boîte (Maïs)</French>
 			<Czech>Can (Corn)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN">						
@@ -2069,7 +2069,7 @@
 			<Russian>A clean, unopened can of Conrad's whole kernel corn.</Russian>
 			<Spanish>A clean, unopened can of Conrad's whole kernel corn.</Spanish>
 			<Dutch>A clean, unopened can of Conrad's whole kernel corn.</Dutch>
-			<French>A clean, unopened can of Conrad's whole kernel corn.</French>
+			<French>Une boîte intacte de maïs en grains Conrad.</French>
 			<Czech>A clean, unopened can of Conrad's whole kernel corn.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN_EMPTY">						
@@ -2079,7 +2079,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN_EMPTY">						
@@ -2089,7 +2089,7 @@
 			<Russian>An empty can of Conrad's whole kernel corn.</Russian>
 			<Spanish>An empty can of Conrad's whole kernel corn.</Spanish>
 			<Dutch>An empty can of Conrad's whole kernel corn.</Dutch>
-			<French>An empty can of Conrad's whole kernel corn.</French>
+			<French>Une boîte vide de maïs en grains Conrad.</French>
 			<Czech>An empty can of Conrad's whole kernel corn.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON">						
@@ -2099,7 +2099,7 @@
 			<Russian>Can (Soup)</Russian>
 			<Spanish>Can (Soup)</Spanish>
 			<Dutch>Can (Soup)</Dutch>
-			<French>Can (Soup)</French>
+			<French>Boîte (Soupe)</French>
 			<Czech>Can (Soup)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON">						
@@ -2109,7 +2109,7 @@
 			<Russian>A clean, unopened can of Curgon's chicken noodle soup.</Russian>
 			<Spanish>A clean, unopened can of Curgon's chicken noodle soup.</Spanish>
 			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
-			<French>A clean, unopened can of Curgon's chicken noodle soup.</French>
+			<French>Une boîte intacte de soupe de nouilles au poulet Curgon.</French>
 			<Czech>A clean, unopened can of Curgon's chicken noodle soup.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON_EMPTY">						
@@ -2119,7 +2119,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON_EMPTY">						
@@ -2129,7 +2129,7 @@
 			<Russian>An empty can of Curgon's chicken noodle soup.</Russian>
 			<Spanish>An empty can of Curgon's chicken noodle soup.</Spanish>
 			<Dutch>An empty can of Curgon's chicken noodle soup.</Dutch>
-			<French>An empty can of Curgon's chicken noodle soup.</French>
+			<French>Une boîte vide de soupe de nouilles au poulet Curgon.</French>
 			<Czech>An empty can of Curgon's chicken noodle soup.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">						
@@ -2139,7 +2139,7 @@
 			<Russian>Can (Beans)</Russian>
 			<Spanish>Can (Beans)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
-			<French>Can (Beans)</French>
+			<French>Boîte (Haricots)</French>
 			<Czech>Can (Beans)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON">						
@@ -2149,7 +2149,7 @@
 			<Russian>A clean, unopened can of Demon Groves green beans.</Russian>
 			<Spanish>A clean, unopened can of Demon Groves green beans.</Spanish>
 			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
-			<French>A clean, unopened can of Demon Groves green beans.</French>
+			<French>Une boîte intacte d'haricots verts Demon Groves.</French>
 			<Czech>A clean, unopened can of Demon Groves green beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON_EMPTY">						
@@ -2159,7 +2159,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON_EMPTY">						
@@ -2169,7 +2169,7 @@
 			<Russian>An empty can of Demon Groves green beans.</Russian>
 			<Spanish>An empty can of Demon Groves green beans.</Spanish>
 			<Dutch>An empty can of Demon Groves green beans.</Dutch>
-			<French>An empty can of Demon Groves green beans.</French>
+			<French>Une boîte vide d'haricots verts Demon Groves.</French>
 			<Czech>An empty can of Demon Groves green beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">						
@@ -2179,7 +2179,7 @@
 			<Russian>Can (Spaghetti)</Russian>
 			<Spanish>Can (Spaghetti)</Spanish>
 			<Dutch>Can (Spaghetti)</Dutch>
-			<French>Can (Spaghetti)</French>
+			<French>Boîte (Spaghettis)</French>
 			<Czech>Can (Spaghetti)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS">						
@@ -2189,7 +2189,7 @@
 			<Russian>A clean, unopened can of FraggleOs spaghetti.</Russian>
 			<Spanish>A clean, unopened can of FraggleOs spaghetti.</Spanish>
 			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
-			<French>A clean, unopened can of FraggleOs spaghetti.</French>
+			<French>Une boîte intacte de spaghettis FraggleOs.</French>
 			<Czech>A clean, unopened can of FraggleOs spaghetti.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY">						
@@ -2199,7 +2199,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY">						
@@ -2209,7 +2209,7 @@
 			<Russian>An empty can of FraggleOs spaghetti.</Russian>
 			<Spanish>An empty can of FraggleOs spaghetti.</Spanish>
 			<Dutch>An empty can of FraggleOs spaghetti.</Dutch>
-			<French>An empty can of FraggleOs spaghetti.</French>
+			<French>Une boîte vide de spaghettis FraggleOs.</French>
 			<Czech>An empty can of FraggleOs spaghetti.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY">						
@@ -2219,7 +2219,7 @@
 			<Russian>Can (Muffins)</Russian>
 			<Spanish>Can (Muffins)</Spanish>
 			<Dutch>Can (Muffins)</Dutch>
-			<French>Can (Muffins)</French>
+			<French>Boîte (Muffins)</French>
 			<Czech>Can (Muffins)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY">						
@@ -2229,7 +2229,7 @@
 			<Russian>A clean, unopened can of Herpy Dooves canned muffins.</Russian>
 			<Spanish>A clean, unopened can of Herpy Dooves canned muffins.</Spanish>
 			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
-			<French>A clean, unopened can of Herpy Dooves canned muffins.</French>
+			<French>Une boîte intacte de muffins en conserve Herpy Dooves.</French>
 			<Czech>A clean, unopened can of Herpy Dooves canned muffins.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY_EMPTY">						
@@ -2239,7 +2239,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY_EMPTY">						
@@ -2249,7 +2249,7 @@
 			<Russian>An empty can of Herpy Dooves canned muffins.</Russian>
 			<Spanish>An empty can of Herpy Dooves canned muffins.</Spanish>
 			<Dutch>An empty can of Herpy Dooves canned muffins.</Dutch>
-			<French>An empty can of Herpy Dooves canned muffins.</French>
+			<French>Une boîte vide de muffins en conserve Herpy Dooves.</French>
 			<Czech>An empty can of Herpy Dooves canned muffins.</Czech>
 		</Key>		
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">						
@@ -2259,7 +2259,7 @@
 			<Russian>Can (Fruit)</Russian>
 			<Spanish>Can (Fruit)</Spanish>
 			<Dutch>Can (Fruit)</Dutch>
-			<French>Can (Fruit)</French>
+			<French>Boîte (Fruits)</French>
 			<Czech>Can (Fruit)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK">						
@@ -2269,7 +2269,7 @@
 			<Russian>A clean, unopened can of Orlok mixed fruit.</Russian>
 			<Spanish>A clean, unopened can of Orlok mixed fruit.</Spanish>
 			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
-			<French>A clean, unopened can of Orlok mixed fruit.</French>
+			<French>Une boîte intacte de fruits mixés Orlok.</French>
 			<Czech>A clean, unopened can of Orlok mixed fruit.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK_EMPTY">						
@@ -2279,7 +2279,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK_EMPTY">						
@@ -2289,7 +2289,7 @@
 			<Russian>An empty can of Orlok mixed fruit.</Russian>
 			<Spanish>An empty can of Orlok mixed fruit.</Spanish>
 			<Dutch>An empty can of Orlok mixed fruit.</Dutch>
-			<French>An empty can of Orlok mixed fruit.</French>
+			<French>Une boîte vide de fruits mixés Orlok.</French>
 			<Czech>An empty can of Orlok mixed fruit.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL">						
@@ -2299,7 +2299,7 @@
 			<Russian>Can (Chowder)</Russian>
 			<Spanish>Can (Chowder)</Spanish>
 			<Dutch>Can (Chowder)</Dutch>
-			<French>Can (Chowder)</French>
+			<French>Boîte (Soupe de palourdes)</French>
 			<Czech>Can (Chowder)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL">						
@@ -2309,7 +2309,7 @@
 			<Russian>A clean, unopened can of Powell's New England clam chowder.</Russian>
 			<Spanish>A clean, unopened can of Powell's New England clam chowder.</Spanish>
 			<Dutch>A clean, unopened can of Powell's New England clam chowder.</Dutch>
-			<French>A clean, unopened can of Powell's New England clam chowder.</French>
+			<French>Une boîte intacte de soupe de palourdes de Nouvelle Angleterre Powell.</French>
 			<Czech>A clean, unopened can of Powell's New England clam chowder.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL_EMPTY">						
@@ -2319,7 +2319,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL_EMPTY">						
@@ -2329,7 +2329,7 @@
 			<Russian>An empty can of Powell's New England clam chowder.</Russian>
 			<Spanish>An empty can of Powell's New England clam chowder.</Spanish>
 			<Dutch>An empty can of Powell's New England clam chowder.</Dutch>
-			<French>An empty can of Powell's New England clam chowder.</French>
+			<French>Une boîte vide de soupe de palourde de Nouvelle Angleterre Powell.</French>
 			<Czech>An empty can of Powell's New England clam chowder.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS">						
@@ -2339,7 +2339,7 @@
 			<Russian>Can (Beans)</Russian>
 			<Spanish>Can (Beans)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
-			<French>Can (Beans)</French>
+			<French>Boîte (Haricots)</French>
 			<Czech>Can (Beans)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS">						
@@ -2349,7 +2349,7 @@
 			<Russian>A clean, unopened can of Tyler's delicious kidney beans.</Russian>
 			<Spanish>A clean, unopened can of Tyler's delicious kidney beans.</Spanish>
 			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
-			<French>A clean, unopened can of Tyler's delicious kidney beans.</French>
+			<French>Une boîte intacte de délicieux haricots nains Tyler.</French>
 			<Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS_EMPTY">						
@@ -2359,7 +2359,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS_EMPTY">						
@@ -2369,7 +2369,7 @@
 			<Russian>An empty can of Tyler's delicious kidney beans.</Russian>
 			<Spanish>An empty can of Tyler's delicious kidney beans.</Spanish>
 			<Dutch>An empty can of Tyler's delicious kidney beans.</Dutch>
-			<French>An empty can of Tyler's delicious kidney beans.</French>
+			<French>Une boîte vide de délicieux haricots nains Tyler.</French>
 			<Czech>An empty can of Tyler's delicious kidney beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED">						
@@ -2379,7 +2379,7 @@
 			<Russian>Can (Unknown)</Russian>
 			<Spanish>Can (Unknown)</Spanish>
 			<Dutch>Can (Unknown)</Dutch>
-			<French>Can (Unknown)</French>
+			<French>Boîte (Inconnu)</French>
 			<Czech>Can (Unknown)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">						
@@ -2389,7 +2389,7 @@
 			<Russian>A clean, unopened tin can. The label is missing.</Russian>
 			<Spanish>A clean, unopened tin can. The label is missing.</Spanish>
 			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
-			<French>A clean, unopened tin can. The label is missing.</French>
+			<French>Une boîte intacte. L'étiquette est manquante.</French>
 			<Czech>A clean, unopened tin can. The label is missing.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED_EMPTY">						
@@ -2399,7 +2399,7 @@
 			<Russian>Tin Can</Russian>
 			<Spanish>Tin Can</Spanish>
 			<Dutch>Tin Can</Dutch>
-			<French>Tin Can</French>
+			<French>Boîte en fer-blanc</French>
 			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED_EMPTY">						
@@ -2409,7 +2409,7 @@
 			<Russian>An empty tin can.</Russian>
 			<Spanish>An empty tin can.</Spanish>
 			<Dutch>An empty tin can.</Dutch>
-			<French>An empty tin can.</French>
+			<French>Boîte en fer blanc vide.</French>
 			<Czech>An empty tin can.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
@@ -2419,7 +2419,7 @@
 			<Russian>Toilet paper</Russian>
 			<Spanish>Toilet paper</Spanish>
 			<Dutch>Toilet paper</Dutch>
-			<French>Toilet paper</French>
+			<French>Papier toilette</French>
 			<Czech>Toilet paper</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_TOILETPAPER">						
@@ -2429,7 +2429,7 @@
 			<Russian>A roll of toilet paper.</Russian>
 			<Spanish>A roll of toilet paper.</Spanish>
 			<Dutch>A roll of toilet paper.</Dutch>
-			<French>A roll of toilet paper.</French>
+			<French>Un rouleau de papier toilette.</French>
 			<Czech>A roll of toilet paper.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_RAZOR">
