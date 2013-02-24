@@ -35,6 +35,18 @@ FIX DUE : 2013
 			- (Soda)  R4Z0R soda (R4Z0R, moderator)
 			- (Soda)  Smasht (Smasht, moderator)
 			- (Beer)  Rabbitman (Rabbitman, moderator)
+			- (Can) Bad Guy's Ubiquitous Peaches (UbiquitousBadGuy)
+			- (Can) Chef Boneboy Ravioli (Boneboys)
+			- (Can) Curgon's Chicken Noodle Soup (Curgon)
+			- (Can) Demon Groves Green Beans (DemonGroover)
+			- (Can) FraggleOs (Fraggle)
+			- (Can) Griff Black Beans (Griff)
+			- (Can) Herpy Dooves Canned Muffins (DerpyHooves)
+			- (Can) Orlok Mixed Fruit (orlok)
+			- (Can) Powell's New England Clam Chowder (Powell)
+			- (Can) Unlabeled Can
+			- (Can) Tyler's Kidney Beans
+			- (Can) Conrad's Whole Kernel Corn
 			
 	* [NEW] - New models by Elvaron:
 			- New melee weapon: Machete - (Farm - Hunting)
