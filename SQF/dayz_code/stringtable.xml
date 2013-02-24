@@ -733,7 +733,7 @@
 			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>
 			<Spanish>Cannot Abort near another player!</Spanish>
 			<Dutch>Cannot Abort near another player!</Dutch>
-			<French>Cannot Abort near another player!</French>
+			<French>Vous ne pouvez pas vous déconnecter a proximité d'autres joueurs</French>
 			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
 		</Key>
 		<Key ID="str_abort_zedsclose">
@@ -743,7 +743,7 @@
 			<Russian>Выход будет доступен через %1</Russian>
 			<Spanish>Can Abort in %1</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
-			<French>Can Abort in %1</French>
+			<French>Vous pourrez vous déconnecter dans #1</French>
 			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
 		<Key ID="str_abort_playerincombat">
@@ -753,7 +753,7 @@
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>Cannot Abort while in combat!</Spanish>
 			<Dutch>Cannot Abort while in combat!</Dutch>
-			<French>Cannot Abort while in combat!</French>
+			<French>Vous ne pouvez pas vous déconnecter en combat !</French>
 			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
 		<Key ID="str_broken_arrow">
@@ -763,7 +763,7 @@
 			<Russian>Arrow was broken and cannot be used again</Russian>
 			<Spanish>Arrow was broken and cannot be used again</Spanish>
 			<Dutch>Arrow was broken and cannot be used again</Dutch>
-			<French>Arrow was broken and cannot be used again</French>
+			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
 			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
 		</Key>
 	</Package>
@@ -1649,7 +1649,7 @@
 			<Russian>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Russian>
 			<Spanish>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Spanish>
 			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
-			<French>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</French>
+			<French>Une canette intacte de Mountain Green. Le soda préféré des amateurs de simulateur de course longue distance.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mountain Green. Dobrá volba na dlouhou cestu.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1">						
@@ -1669,7 +1669,7 @@
 			<Russian>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Russian>
 			<Spanish>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Spanish>
 			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
-			<French>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</French>
+			<French>Une canette intacte de soda R4Z0R. Ils ont arrêté de les vendre il y a des années !</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky R4Z0R. Před mnoho lety ji přestali prodávat!</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">						
@@ -1689,7 +1689,7 @@
 			<Russian>A clean, unopened can of Long's island iced tea.</Russian>
 			<Spanish>A clean, unopened can of Long's island iced tea.</Spanish>
 			<Dutch>A clean, unopened can of Long's island iced tea.</Dutch>
-			<French>A clean, unopened can of Long's island iced tea.</French>
+			<French>Une canette intacte d'iced tea de l'île de Long.</French>
 			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's island.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">						
@@ -1709,7 +1709,7 @@
 			<Russian>A clean, unopened can of Smasht grape soda.</Russian>
 			<Spanish>A clean, unopened can of Smasht grape soda.</Spanish>
 			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
-			<French>A clean, unopened can of Smasht grape soda.</French>
+			<French>Une canette intacte de soda au raisin Smasht.</French>
 			<Czech>Čistá a ještě neotevřená plechovka grepové sody Smasht.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">						
@@ -1729,7 +1729,7 @@
 			<Russian>A clean, unopened can of Dr. Wasteland soda.</Russian>
 			<Spanish>A clean, unopened can of Dr. Wasteland soda.</Spanish>
 			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
-			<French>A clean, unopened can of Dr. Wasteland soda.</French>
+			<French>Une canette intacte de soda Dr. Wasteland.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wateland.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">						
@@ -1749,7 +1749,7 @@
 			<Russian>A clean, unopened can of Franka orange soda.</Russian>
 			<Spanish>A clean, unopened can of Franka orange soda.</Spanish>
 			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
-			<French>A clean, unopened can of Franka orange soda.</French>
+			<French>Une canette intacte de soda à l'orange Franka.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Franka orange.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">						
@@ -1759,7 +1759,7 @@
 			<Russian>Soda (Lemonade)</Russian>
 			<Spanish>Soda (Lemonade)</Spanish>
 			<Dutch>Soda (Lemonade)</Dutch>
-			<French>Soda (Lemonade)</French>
+			<French>Soda (Limonade)</French>
 			<Czech>Soda (Limonáda)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">						
@@ -1769,7 +1769,7 @@
 			<Russian>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Russian>
 			<Spanish>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Spanish>
 			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
-			<French>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</French>
+			<French>Une canette intacte de limonade à la Mikhail. Fabriqué par Mikhail.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mikhail Made limonády. Vytvořeno Mikhailem.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">						
@@ -1789,7 +1789,7 @@
 			<Russian>A clean, unopened can of Lirikola. An o7 brand.</Russian>
 			<Spanish>A clean, unopened can of Lirikola. An o7 brand.</Spanish>
 			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
-			<French>A clean, unopened can of Lirikola. An o7 brand.</French>
+			<French>Une canette intacte de Lirikola. 7 ans d'âge.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Lirikoly. o7 série.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">						
@@ -1799,7 +1799,7 @@
 			<Russian>Soda (Root Beer)</Russian>
 			<Spanish>Soda (Root Beer)</Spanish>
 			<Dutch>Soda (Root Beer)</Dutch>
-			<French>Soda (Root Beer)</French>
+			<French>Bière (LVG Root)</French>
 			<Czech>Pivo (LVG Root)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">						
@@ -1809,7 +1809,7 @@
 			<Russian>A clean, unopened can of LVG root beer.</Russian>
 			<Spanish>A clean, unopened can of LVG root beer.</Spanish>
 			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
-			<French>A clean, unopened can of LVG root beer.</French>
+			<French>Une canette intacte de bière LVG root.</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva LVG root.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">						
@@ -1829,7 +1829,7 @@
 			<Russian>A clean, unopened can of mZLY yZLY soda.</Russian>
 			<Spanish>A clean, unopened can of mZLY yZLY soda.</Spanish>
 			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
-			<French>A clean, unopened can of mZLY yZLY soda.</French>
+			<French>Une canette intacte de soda mZLY yZLY.</French>
 			<Czech>Čistá a ještě neotevřená plechovka mZLY yZLY sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">						
@@ -1849,7 +1849,7 @@
 			<Russian>A clean, unopened can of Peppsy soda.</Russian>
 			<Spanish>A clean, unopened can of Peppsy soda.</Spanish>
 			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
-			<French>A clean, unopened can of Peppsy soda.</French>
+			<French>Une canette intacte de soda Peppsy.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Peppsy sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">						
@@ -1859,7 +1859,7 @@
 			<Russian>Beer (Rabbitman)</Russian>
 			<Spanish>Beer (Rabbitman)</Spanish>
 			<Dutch>Beer (Rabbitman)</Dutch>
-			<French>Beer (Rabbitman)</French>
+			<French>Bière (Rabbitman)</French>
 			<Czech>Pivo (Rabbitman)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11">						
@@ -1869,7 +1869,7 @@
 			<Russian>A clean, unopened can of Rabbitman beer.</Russian>
 			<Spanish>A clean, unopened can of Rabbitman beer.</Spanish>
 			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
-			<French>A clean, unopened can of Rabbitman beer.</French>
+			<French>Une canette intacte de bière Rabbitman.</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva Rabbitman.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12">						
@@ -1889,7 +1889,7 @@
 			<Russian>A clean, unopened can of Sacrite soda.</Russian>
 			<Spanish>A clean, unopened can of Sacrite soda.</Spanish>
 			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
-			<French>A clean, unopened can of Sacrite soda.</French>
+			<French>Une canette intacte de soda Sacrite.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">						
@@ -1909,7 +1909,7 @@
 			<Russian>Meal Ready-to-Eat</Russian>
 			<Spanish>Meal Ready-to-Eat</Spanish>
 			<Dutch>Meal Ready-to-Eat</Dutch>
-			<French>Meal Ready-to-Eat</French>
+			<French>Repas prêt à manger</French>
 			<Czech>Meal Ready-to-Eat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">						
@@ -1919,7 +1919,7 @@
 			<Russian>Pistachios</Russian>
 			<Spanish>Pistachios</Spanish>
 			<Dutch>Pistachios</Dutch>
-			<French>Pistachios</French>
+			<French>Pistaches</French>
 			<Czech>Pistachios</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_PISTACHIO">						
@@ -1929,7 +1929,7 @@
 			<Russian>A pack of pistachios, roasted and salted.</Russian>
 			<Spanish>A pack of pistachios, roasted and salted.</Spanish>
 			<Dutch>A pack of pistachios, roasted and salted.</Dutch>
-			<French>A pack of pistachios, roasted and salted.</French>
+			<French>Un paquet de pistaches, grillées et salées.</French>
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
