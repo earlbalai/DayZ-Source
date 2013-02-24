@@ -408,6 +408,15 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 	};
+	class FoodNutmix : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = $STR_FOOD_NAME_NUTMIX;
+		descriptionShort = $STR_FOOD_DESC_NUTMIX;
+		model = "z\addons\dayz_communityassets\models\nutmix.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_nutmix_CA.paa";
+	};
 	
 	class FoodCanGriff : FoodEdible {
 		scope = public;
