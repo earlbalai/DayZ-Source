@@ -29,6 +29,7 @@ Contributions By
 * Sharkiller  (Spanish Tranlations)
 * Markolie	(Dutch Translations)
 * LordGoF (French Translations)
+* Skaronator (German Translations)
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
