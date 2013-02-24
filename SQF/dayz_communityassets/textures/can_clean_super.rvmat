@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\addons\dayz_communityassets\textures\mat_can_clean_smdi.paa";
+	texture="z\addons\dayz_communityassets\textures\can_mat_clean_smdi.paa";
 	uvSource = "tex";
 	
 	class uvTransform {
