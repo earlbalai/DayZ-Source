@@ -1933,44 +1933,484 @@
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
-			<Original>Black Beans</Original>
-			<English>Black Beans</English>	
-			<German>Black Beans</German>
-			<Russian>Black Beans</Russian>
-			<Spanish>Black Beans</Spanish>
-			<Dutch>Black Beans</Dutch>
-			<French>Black Beans</French>
-			<Czech>Black Beans</Czech>
+			<Original>Can (Beans)</Original>
+			<English>Can (Beans)</English>	
+			<German>Can (Beans)</German>
+			<Russian>Can (Beans)</Russian>
+			<Spanish>Can (Beans)</Spanish>
+			<Dutch>Can (Beans)</Dutch>
+			<French>Can (Beans)</French>
+			<Czech>Can (Beans)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF">						
-			<Original>Can of Griff's black beans.</Original>
-			<English>Can of Griff's black beans.</English>	
-			<German>Can of Griff's black beans.</German>
-			<Russian>Can of Griff's black beans.</Russian>
-			<Spanish>Can of Griff's black beans.</Spanish>
-			<Dutch>Can of Griff's black beans.</Dutch>
-			<French>Can of Griff's black beans.</French>
-			<Czech>Can of Griff's black beans.</Czech>
+			<Original>A clean, unopened can of Griff's black beans.</Original>
+			<English>A clean, unopened can of Griff's black beans.</English>	
+			<German>A clean, unopened can of Griff's black beans.</German>
+			<Russian>A clean, unopened can of Griff's black beans.</Russian>
+			<Spanish>A clean, unopened can of Griff's black beans.</Spanish>
+			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
+			<French>A clean, unopened can of Griff's black beans.</French>
+			<Czech>A clean, unopened can of Griff's black beans.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF_EMPTY">						
-			<Original>Tin Can (Black Beans)</Original>
-			<English>Tin Can (Black Beans)</English>	
-			<German>Tin Can (Black Beans)</German>
-			<Russian>Tin Can (Black Beans)</Russian>
-			<Spanish>Tin Can (Black Beans)</Spanish>
-			<Dutch>Tin Can (Black Beans)</Dutch>
-			<French>Tin Can (Black Beans)</French>
-			<Czech>Tin Can (Black Beans)</Czech>
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF_EMPTY">						
-			<Original>Empty can of Griff's black beans.</Original>
-			<English>Empty can of Griff's black beans.</English>	
-			<German>Empty can of Griff's black beans.</German>
-			<Russian>Empty can of Griff's black beans.</Russian>
-			<Spanish>Empty can of Griff's black beans.</Spanish>
-			<Dutch>Empty can of Griff's black beans.</Dutch>
-			<French>Empty can of Griff's black beans.</French>
-			<Czech>Empty can of Griff's black beans.</Czech>
+			<Original>An empty can of Griff's black beans.</Original>
+			<English>An empty can of Griff's black beans.</English>	
+			<German>An empty can of Griff's black beans.</German>
+			<Russian>An empty can of Griff's black beans.</Russian>
+			<Spanish>An empty can of Griff's black beans.</Spanish>
+			<Dutch>An empty can of Griff's black beans.</Dutch>
+			<French>An empty can of Griff's black beans.</French>
+			<Czech>An empty can of Griff's black beans.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_BADGUY">						
+			<Original>Can (Peaches)</Original>
+			<English>Can (Peaches)</English>	
+			<German>Can (Peaches)</German>
+			<Russian>Can (Peaches)</Russian>
+			<Spanish>Can (Peaches)</Spanish>
+			<Dutch>Can (Peaches)</Dutch>
+			<French>Can (Peaches)</French>
+			<Czech>Can (Peaches)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_BADGUY">						
+			<Original>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Original>
+			<English>A clean, unopened can of Bad Guy's ubiquitous peach slices.</English>	
+			<German>A clean, unopened can of Bad Guy's ubiquitous peach slices.</German>
+			<Russian>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Russian>
+			<Spanish>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Spanish>
+			<Dutch>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Dutch>
+			<French>A clean, unopened can of Bad Guy's ubiquitous peach slices.</French>
+			<Czech>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_BADGUY_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_BADGUY_EMPTY">						
+			<Original>An empty can of Bad Guy's ubiquitous peach slices.</Original>
+			<English>An empty can of Bad Guy's ubiquitous peach slices.</English>	
+			<German>An empty can of Bad Guy's ubiquitous peach slices.</German>
+			<Russian>An empty can of Bad Guy's ubiquitous peach slices.</Russian>
+			<Spanish>An empty can of Bad Guy's ubiquitous peach slices.</Spanish>
+			<Dutch>An empty can of Bad Guy's ubiquitous peach slices.</Dutch>
+			<French>An empty can of Bad Guy's ubiquitous peach slices.</French>
+			<Czech>An empty can of Bad Guy's ubiquitous peach slices.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">						
+			<Original>Can (Ravioli)</Original>
+			<English>Can (Ravioli)</English>	
+			<German>Can (Ravioli)</German>
+			<Russian>Can (Ravioli)</Russian>
+			<Spanish>Can (Ravioli)</Spanish>
+			<Dutch>Can (Ravioli)</Dutch>
+			<French>Can (Ravioli)</French>
+			<Czech>Can (Ravioli)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_BONEBOY">						
+			<Original>A clean, unopened can of Chef Boneboy ravioli.</Original>
+			<English>A clean, unopened can of Chef Boneboy ravioli.</English>	
+			<German>A clean, unopened can of Chef Boneboy ravioli.</German>
+			<Russian>A clean, unopened can of Chef Boneboy ravioli.</Russian>
+			<Spanish>A clean, unopened can of Chef Boneboy ravioli.</Spanish>
+			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
+			<French>A clean, unopened can of Chef Boneboy ravioli.</French>
+			<Czech>A clean, unopened can of Chef Boneboy ravioli.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_BONEBOY_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_BONEBOY_EMPTY">						
+			<Original>An empty can of Chef Boneboy ravioli.</Original>
+			<English>An empty can of Chef Boneboy ravioli.</English>	
+			<German>An empty can of Chef Boneboy ravioli.</German>
+			<Russian>An empty can of Chef Boneboy ravioli.</Russian>
+			<Spanish>An empty can of Chef Boneboy ravioli.</Spanish>
+			<Dutch>An empty can of Chef Boneboy ravioli.</Dutch>
+			<French>An empty can of Chef Boneboy ravioli.</French>
+			<Czech>An empty can of Chef Boneboy ravioli.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_CORN">						
+			<Original>Can (Corn)</Original>
+			<English>Can (Corn)</English>	
+			<German>Can (Corn)</German>
+			<Russian>Can (Corn)</Russian>
+			<Spanish>Can (Corn)</Spanish>
+			<Dutch>Can (Corn)</Dutch>
+			<French>Can (Corn)</French>
+			<Czech>Can (Corn)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_CORN">						
+			<Original>A clean, unopened can of Conrad's whole kernel corn.</Original>
+			<English>A clean, unopened can of Conrad's whole kernel corn.</English>	
+			<German>A clean, unopened can of Conrad's whole kernel corn.</German>
+			<Russian>A clean, unopened can of Conrad's whole kernel corn.</Russian>
+			<Spanish>A clean, unopened can of Conrad's whole kernel corn.</Spanish>
+			<Dutch>A clean, unopened can of Conrad's whole kernel corn.</Dutch>
+			<French>A clean, unopened can of Conrad's whole kernel corn.</French>
+			<Czech>A clean, unopened can of Conrad's whole kernel corn.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_CORN_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_CORN_EMPTY">						
+			<Original>An empty can of Conrad's whole kernel corn.</Original>
+			<English>An empty can of Conrad's whole kernel corn.</English>	
+			<German>An empty can of Conrad's whole kernel corn.</German>
+			<Russian>An empty can of Conrad's whole kernel corn.</Russian>
+			<Spanish>An empty can of Conrad's whole kernel corn.</Spanish>
+			<Dutch>An empty can of Conrad's whole kernel corn.</Dutch>
+			<French>An empty can of Conrad's whole kernel corn.</French>
+			<Czech>An empty can of Conrad's whole kernel corn.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_CURGON">						
+			<Original>Can (Soup)</Original>
+			<English>Can (Soup)</English>	
+			<German>Can (Soup)</German>
+			<Russian>Can (Soup)</Russian>
+			<Spanish>Can (Soup)</Spanish>
+			<Dutch>Can (Soup)</Dutch>
+			<French>Can (Soup)</French>
+			<Czech>Can (Soup)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_CURGON">						
+			<Original>A clean, unopened can of Curgon's chicken noodle soup.</Original>
+			<English>A clean, unopened can of Curgon's chicken noodle soup.</English>	
+			<German>A clean, unopened can of Curgon's chicken noodle soup.</German>
+			<Russian>A clean, unopened can of Curgon's chicken noodle soup.</Russian>
+			<Spanish>A clean, unopened can of Curgon's chicken noodle soup.</Spanish>
+			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
+			<French>A clean, unopened can of Curgon's chicken noodle soup.</French>
+			<Czech>A clean, unopened can of Curgon's chicken noodle soup.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_CURGON_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_CURGON_EMPTY">						
+			<Original>An empty can of Curgon's chicken noodle soup.</Original>
+			<English>An empty can of Curgon's chicken noodle soup.</English>	
+			<German>An empty can of Curgon's chicken noodle soup.</German>
+			<Russian>An empty can of Curgon's chicken noodle soup.</Russian>
+			<Spanish>An empty can of Curgon's chicken noodle soup.</Spanish>
+			<Dutch>An empty can of Curgon's chicken noodle soup.</Dutch>
+			<French>An empty can of Curgon's chicken noodle soup.</French>
+			<Czech>An empty can of Curgon's chicken noodle soup.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_DEMON">						
+			<Original>Can (Beans)</Original>
+			<English>Can (Beans)</English>	
+			<German>Can (Beans)</German>
+			<Russian>Can (Beans)</Russian>
+			<Spanish>Can (Beans)</Spanish>
+			<Dutch>Can (Beans)</Dutch>
+			<French>Can (Beans)</French>
+			<Czech>Can (Beans)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_DEMON">						
+			<Original>A clean, unopened can of Demon Groves green beans.</Original>
+			<English>A clean, unopened can of Demon Groves green beans.</English>	
+			<German>A clean, unopened can of Demon Groves green beans.</German>
+			<Russian>A clean, unopened can of Demon Groves green beans.</Russian>
+			<Spanish>A clean, unopened can of Demon Groves green beans.</Spanish>
+			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
+			<French>A clean, unopened can of Demon Groves green beans.</French>
+			<Czech>A clean, unopened can of Demon Groves green beans.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_DEMON_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_DEMON_EMPTY">						
+			<Original>An empty can of Demon Groves green beans.</Original>
+			<English>An empty can of Demon Groves green beans.</English>	
+			<German>An empty can of Demon Groves green beans.</German>
+			<Russian>An empty can of Demon Groves green beans.</Russian>
+			<Spanish>An empty can of Demon Groves green beans.</Spanish>
+			<Dutch>An empty can of Demon Groves green beans.</Dutch>
+			<French>An empty can of Demon Groves green beans.</French>
+			<Czech>An empty can of Demon Groves green beans.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">						
+			<Original>Can (Spaghetti)</Original>
+			<English>Can (Spaghetti)</English>	
+			<German>Can (Spaghetti)</German>
+			<Russian>Can (Spaghetti)</Russian>
+			<Spanish>Can (Spaghetti)</Spanish>
+			<Dutch>Can (Spaghetti)</Dutch>
+			<French>Can (Spaghetti)</French>
+			<Czech>Can (Spaghetti)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS">						
+			<Original>A clean, unopened can of FraggleOs spaghetti.</Original>
+			<English>A clean, unopened can of FraggleOs spaghetti.</English>	
+			<German>A clean, unopened can of FraggleOs spaghetti.</German>
+			<Russian>A clean, unopened can of FraggleOs spaghetti.</Russian>
+			<Spanish>A clean, unopened can of FraggleOs spaghetti.</Spanish>
+			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
+			<French>A clean, unopened can of FraggleOs spaghetti.</French>
+			<Czech>A clean, unopened can of FraggleOs spaghetti.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY">						
+			<Original>An empty can of FraggleOs spaghetti.</Original>
+			<English>An empty can of FraggleOs spaghetti.</English>	
+			<German>An empty can of FraggleOs spaghetti.</German>
+			<Russian>An empty can of FraggleOs spaghetti.</Russian>
+			<Spanish>An empty can of FraggleOs spaghetti.</Spanish>
+			<Dutch>An empty can of FraggleOs spaghetti.</Dutch>
+			<French>An empty can of FraggleOs spaghetti.</French>
+			<Czech>An empty can of FraggleOs spaghetti.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_HERPY">						
+			<Original>Can (Muffins)</Original>
+			<English>Can (Muffins)</English>	
+			<German>Can (Muffins)</German>
+			<Russian>Can (Muffins)</Russian>
+			<Spanish>Can (Muffins)</Spanish>
+			<Dutch>Can (Muffins)</Dutch>
+			<French>Can (Muffins)</French>
+			<Czech>Can (Muffins)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_HERPY">						
+			<Original>A clean, unopened can of Herpy Dooves canned muffins.</Original>
+			<English>A clean, unopened can of Herpy Dooves canned muffins.</English>	
+			<German>A clean, unopened can of Herpy Dooves canned muffins.</German>
+			<Russian>A clean, unopened can of Herpy Dooves canned muffins.</Russian>
+			<Spanish>A clean, unopened can of Herpy Dooves canned muffins.</Spanish>
+			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
+			<French>A clean, unopened can of Herpy Dooves canned muffins.</French>
+			<Czech>A clean, unopened can of Herpy Dooves canned muffins.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_HERPY_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_HERPY_EMPTY">						
+			<Original>An empty can of Herpy Dooves canned muffins.</Original>
+			<English>An empty can of Herpy Dooves canned muffins.</English>	
+			<German>An empty can of Herpy Dooves canned muffins.</German>
+			<Russian>An empty can of Herpy Dooves canned muffins.</Russian>
+			<Spanish>An empty can of Herpy Dooves canned muffins.</Spanish>
+			<Dutch>An empty can of Herpy Dooves canned muffins.</Dutch>
+			<French>An empty can of Herpy Dooves canned muffins.</French>
+			<Czech>An empty can of Herpy Dooves canned muffins.</Czech>
+		</Key>		
+		<Key ID="STR_FOOD_NAME_CAN_ORLOK">						
+			<Original>Can (Fruit)</Original>
+			<English>Can (Fruit)</English>	
+			<German>Can (Fruit)</German>
+			<Russian>Can (Fruit)</Russian>
+			<Spanish>Can (Fruit)</Spanish>
+			<Dutch>Can (Fruit)</Dutch>
+			<French>Can (Fruit)</French>
+			<Czech>Can (Fruit)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_ORLOK">						
+			<Original>A clean, unopened can of Orlok mixed fruit.</Original>
+			<English>A clean, unopened can of Orlok mixed fruit.</English>	
+			<German>A clean, unopened can of Orlok mixed fruit.</German>
+			<Russian>A clean, unopened can of Orlok mixed fruit.</Russian>
+			<Spanish>A clean, unopened can of Orlok mixed fruit.</Spanish>
+			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
+			<French>A clean, unopened can of Orlok mixed fruit.</French>
+			<Czech>A clean, unopened can of Orlok mixed fruit.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_ORLOK_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_ORLOK_EMPTY">						
+			<Original>An empty can of Orlok mixed fruit.</Original>
+			<English>An empty can of Orlok mixed fruit.</English>	
+			<German>An empty can of Orlok mixed fruit.</German>
+			<Russian>An empty can of Orlok mixed fruit.</Russian>
+			<Spanish>An empty can of Orlok mixed fruit.</Spanish>
+			<Dutch>An empty can of Orlok mixed fruit.</Dutch>
+			<French>An empty can of Orlok mixed fruit.</French>
+			<Czech>An empty can of Orlok mixed fruit.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_POWELL">						
+			<Original>Can (Chowder)</Original>
+			<English>Can (Chowder)</English>	
+			<German>Can (Chowder)</German>
+			<Russian>Can (Chowder)</Russian>
+			<Spanish>Can (Chowder)</Spanish>
+			<Dutch>Can (Chowder)</Dutch>
+			<French>Can (Chowder)</French>
+			<Czech>Can (Chowder)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_POWELL">						
+			<Original>A clean, unopened can of Powell's New England clam chowder.</Original>
+			<English>A clean, unopened can of Powell's New England clam chowder.</English>	
+			<German>A clean, unopened can of Powell's New England clam chowder.</German>
+			<Russian>A clean, unopened can of Powell's New England clam chowder.</Russian>
+			<Spanish>A clean, unopened can of Powell's New England clam chowder.</Spanish>
+			<Dutch>A clean, unopened can of Powell's New England clam chowder.</Dutch>
+			<French>A clean, unopened can of Powell's New England clam chowder.</French>
+			<Czech>A clean, unopened can of Powell's New England clam chowder.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_POWELL_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_POWELL_EMPTY">						
+			<Original>An empty can of Powell's New England clam chowder.</Original>
+			<English>An empty can of Powell's New England clam chowder.</English>	
+			<German>An empty can of Powell's New England clam chowder.</German>
+			<Russian>An empty can of Powell's New England clam chowder.</Russian>
+			<Spanish>An empty can of Powell's New England clam chowder.</Spanish>
+			<Dutch>An empty can of Powell's New England clam chowder.</Dutch>
+			<French>An empty can of Powell's New England clam chowder.</French>
+			<Czech>An empty can of Powell's New England clam chowder.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_TYLERS">						
+			<Original>Can (Beans)</Original>
+			<English>Can (Beans)</English>	
+			<German>Can (Beans)</German>
+			<Russian>Can (Beans)</Russian>
+			<Spanish>Can (Beans)</Spanish>
+			<Dutch>Can (Beans)</Dutch>
+			<French>Can (Beans)</French>
+			<Czech>Can (Beans)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_TYLERS">						
+			<Original>A clean, unopened can of Tyler's delicious kidney beans.</Original>
+			<English>A clean, unopened can of Tyler's delicious kidney beans.</English>	
+			<German>A clean, unopened can of Tyler's delicious kidney beans.</German>
+			<Russian>A clean, unopened can of Tyler's delicious kidney beans.</Russian>
+			<Spanish>A clean, unopened can of Tyler's delicious kidney beans.</Spanish>
+			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
+			<French>A clean, unopened can of Tyler's delicious kidney beans.</French>
+			<Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_TYLERS_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_TYLERS_EMPTY">						
+			<Original>An empty can of Tyler's delicious kidney beans.</Original>
+			<English>An empty can of Tyler's delicious kidney beans.</English>	
+			<German>An empty can of Tyler's delicious kidney beans.</German>
+			<Russian>An empty can of Tyler's delicious kidney beans.</Russian>
+			<Spanish>An empty can of Tyler's delicious kidney beans.</Spanish>
+			<Dutch>An empty can of Tyler's delicious kidney beans.</Dutch>
+			<French>An empty can of Tyler's delicious kidney beans.</French>
+			<Czech>An empty can of Tyler's delicious kidney beans.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_UNLABELED">						
+			<Original>Can (Unknown)</Original>
+			<English>Can (Unknown)</English>	
+			<German>Can (Unknown)</German>
+			<Russian>Can (Unknown)</Russian>
+			<Spanish>Can (Unknown)</Spanish>
+			<Dutch>Can (Unknown)</Dutch>
+			<French>Can (Unknown)</French>
+			<Czech>Can (Unknown)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">						
+			<Original>A clean, unopened tin can. The label is missing.</Original>
+			<English>A clean, unopened tin can. The label is missing.</English>	
+			<German>A clean, unopened tin can. The label is missing.</German>
+			<Russian>A clean, unopened tin can. The label is missing.</Russian>
+			<Spanish>A clean, unopened tin can. The label is missing.</Spanish>
+			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
+			<French>A clean, unopened tin can. The label is missing.</French>
+			<Czech>A clean, unopened tin can. The label is missing.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_UNLABELED_EMPTY">						
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Tin Can</Russian>
+			<Spanish>Tin Can</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Tin Can</French>
+			<Czech>Tin Can</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_UNLABELED_EMPTY">						
+			<Original>An empty tin can.</Original>
+			<English>An empty tin can.</English>	
+			<German>An empty tin can.</German>
+			<Russian>An empty tin can.</Russian>
+			<Spanish>An empty tin can.</Spanish>
+			<Dutch>An empty tin can.</Dutch>
+			<French>An empty tin can.</French>
+			<Czech>An empty tin can.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
 			<Original>Toilet paper</Original>
