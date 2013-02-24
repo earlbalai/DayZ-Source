@@ -13,9 +13,15 @@ _classbag = typeOf _bag;
 _isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
 _hasAntiB = 	"ItemAntibiotic" in magazines player;
 _hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
-	//boiled Water
-	_hasbottleitem = "ItemWaterbottle" in magazines player;
-	_hastinitem = ("TrashTinCan" in magazines player) or ("ItemSodaEmpty" in magazines player);
+//boiled Water
+_hasbottleitem = "ItemWaterbottle" in magazines player;
+_hastinitem = false;
+{
+    if (_x in magazines player) then {
+        _hastinitem = true;
+    };
+
+} forEach boil_tin_cans;
 
 
 _hasKnife = 	"ItemKnife" in items player;
