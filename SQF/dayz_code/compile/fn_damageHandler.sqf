@@ -169,7 +169,8 @@ if (_damage > 0.4) then {	//0.25
 		_unit setVariable[_wound,true,true];
 		//["usecBleed",[_unit,_wound,_hit]] call broadcastRpcCallAll;
 		usecBleed = [_unit,_wound,_hit];
-		publicVariable "usecBleed";
+		usecBleed call fnc_usec_damageBleed; // local player
+		publicVariable "usecBleed"; // remote players
 
 		//Set Injured if not already
 		_isInjured = _unit getVariable["USEC_injured",false];

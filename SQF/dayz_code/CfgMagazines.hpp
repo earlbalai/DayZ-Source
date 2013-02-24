@@ -379,6 +379,7 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 		bloodRegen = 600;
 	};
+	
 	class AngelCookies : FoodEdible {
 		scope = public;
 		count = 1;
@@ -391,6 +392,7 @@ class CfgMagazines {
 	class FoodMRE : FoodEdible {
 		scope = public;
 		count = 1;
+		bloodRegen = 800;
 		displayName = $STR_FOOD_NAME_MRE;
 		descriptionShort = $STR_FOOD_DESC_MRE;
 		model = "z\addons\dayz_communityassets\models\mre.p3d";
@@ -400,10 +402,32 @@ class CfgMagazines {
 	class FoodPistachio : FoodEdible {
 		scope = public;
 		count = 1;
+		bloodRegen = 100;
 		displayName = $STR_FOOD_NAME_PISTACHIO;
 		descriptionShort = $STR_FOOD_DESC_PISTACHIO;
 		model = "z\addons\dayz_communityassets\models\pistachio.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	};
+	
+	class FoodCanGriff : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_GRIFF;
+		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF;
+		model = "z\addons\dayz_communityassets\models\can_griff_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
+	};
+	
+	class TrashTinCan;
+	class FoodCanGriffEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		model = "z\addons\dayz_communityassets\models\can_griff_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
+		displayName = $STR_FOOD_NAME_CAN_GRIFF_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF_EMPTY;
+		ammo = "TinCan";
 	};
 	
 	class ItemWaterbottle;
@@ -436,5 +460,63 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\razor.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
-	};	
+	};
+	
+	class 8Rnd_B_Beneli_74Slug;
+	class 8Rnd_B_Beneli_Pellets;
+	
+	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
+	{
+		displayName="2Rnd. Slug";
+		count=2;
+		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 <br/>Used in: M1014";
+		model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_slugshot_CA.paa";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text="Combine to 8 rounds";
+				script="spawn player_reloadMag;";
+				use[]=
+				{
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug",
+					"2Rnd_shotgun_74Slug"
+				};
+				output[]=
+				{
+					"8Rnd_B_Beneli_74Slug"
+				};
+			};
+		};
+	};
+	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets
+	{
+		displayName="2Rnd. Pellets";
+		count=2;
+		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 Pellets<br/>Used in: M1014";
+		model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";
+		class ItemActions
+		{
+			class ReloadMag
+			{
+				text="Combine to 8 rounds";
+				script="spawn player_reloadMag;";
+				use[]=
+				{
+					"2Rnd_shotgun_74Pellets",
+					"2Rnd_shotgun_74Pellets",
+					"2Rnd_shotgun_74Pellets",
+					"2Rnd_shotgun_74Pellets"
+				};
+				output[]=
+				{
+					"8Rnd_B_Beneli_Pellets"
+				};
+			};
+		};
+	};
 };

@@ -1,4 +1,4 @@
-private["_onLadder","_item","_itemorignal","_hasdrinkitem","_config","_text","_sfx","_dis","_id","_itemtodrop","_nearByPile","_display"];
+private["_onLadder","_itemorignal","_hasdrinkitem","_hasoutput","_config","_text","_sfx","_dis","_id","_itemtodrop","_nearByPile","_item","_display"];
 
 disableserialization;
 call gear_ui_init;
@@ -11,9 +11,9 @@ if (vehicle player != player) exitWith {cutText ["You may not drink while in a v
 //Force players to wait 3 mins to drink again
 //if (dayz_lastDrink < 180) exitWith {cutText ["You may not drink, your not thirsty", "PLAIN DOWN"]};
 
-_item = _this;
 _itemorignal = _this;
 _hasdrinkitem = _itemorignal in magazines player;
+_hasoutput = _itemorignal in drink_with_output;
 
 _config = configFile >> "CfgMagazines" >> _itemorignal;
 _text = getText (_config >> "displayName");
@@ -39,12 +39,13 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     _dis=10;
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
     _id = [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+};  
+
+if (_hasoutput) then{
+    // Selecting output
+    _itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
     sleep 3;
-
-    //drop empty can
-    _itemtodrop= format["%1Empty",_itemorignal];
-
     _nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
     if (count _nearByPile ==0) then { 
         _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
@@ -53,6 +54,10 @@ if (["ItemSoda",_itemorignal] call fnc_inString) then {
     };
     _item addMagazineCargoGlobal [_itemtodrop,1];
 };
+
+
+
+
 
 //add infection chance for "ItemWaterbottle", 
 if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
