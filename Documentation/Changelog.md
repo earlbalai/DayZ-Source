@@ -77,6 +77,7 @@ FIX DUE : 2013
 	* [UPDATED] - Updated russian string tables.
 	* [UPDATED] - Backpack Spawns should now see higher grade backpacks more.
 	* [UPDATED] - Deer stands has it's own loot table (Hunting).
+	* [UPDATED] - Reduced Zed Running Speed.
 	
 	* [FIXED] - Zeds talk, lowed to 80 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
 	* [FIXED] - CookedBeef StringTables now added.

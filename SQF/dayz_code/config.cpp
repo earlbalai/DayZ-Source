@@ -95,7 +95,7 @@ class CfgAISkill {
 	endurance[] = {0, 0, 1, 1};
 	general[] = {0, 0, 1, 1};
 	reloadspeed[] = {0, 0, 1, 1};
-	spotdistance[] = {0, 0, 1, 0.3};
+	spotdistance[] = {0, 0, 1, 0.6};
 	spottime[] = {0, 0, 1, 1};
 };
 
