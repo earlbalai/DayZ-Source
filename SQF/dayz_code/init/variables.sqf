@@ -47,7 +47,7 @@ food_output = [
     "TrashTinCan",
     "TrashTinCan",
     "TrashTinCan",
-	"TrashTinCan"
+	"FoodCanGriffEmpty"
 ];
 //Drinking
 no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
