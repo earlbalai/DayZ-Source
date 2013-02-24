@@ -42,7 +42,7 @@ FIX DUE : 2013
 			- New Food: MRE military rations (Military Loot)
 			- New junk loot
 			- Model for Compass instead of green pouch in loot pile
-			- 2rnd shells for shotgun ammunition (no more 8 bullets shown on ground when it's actually 2 bullets)
+			- 2rnd shells for pellet and slugshot shotgun ammunition (no more 8 bullets shown on ground when it's actually 2 bullets)
 			- New models and textures for FoodBaconRaw and FoodBaconCooked.
 			- Model and textures for Quiver.
 	

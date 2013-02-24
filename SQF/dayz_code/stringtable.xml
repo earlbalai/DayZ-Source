@@ -1932,6 +1932,46 @@
 			<French>A pack of pistachios, roasted and salted.</French>
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
+			<Original>Black Beans</Original>
+			<English>Black Beans</English>	
+			<German>Black Beans</German>
+			<Russian>Black Beans</Russian>
+			<Spanish>Black Beans</Spanish>
+			<Dutch>Black Beans</Dutch>
+			<French>Black Beans</French>
+			<Czech>Black Beans</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_GRIFF">						
+			<Original>Can of Griff's black beans.</Original>
+			<English>Can of Griff's black beans.</English>	
+			<German>Can of Griff's black beans.</German>
+			<Russian>Can of Griff's black beans.</Russian>
+			<Spanish>Can of Griff's black beans.</Spanish>
+			<Dutch>Can of Griff's black beans.</Dutch>
+			<French>Can of Griff's black beans.</French>
+			<Czech>Can of Griff's black beans.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_GRIFF_EMPTY">						
+			<Original>Tin Can (Black Beans)</Original>
+			<English>Tin Can (Black Beans)</English>	
+			<German>Tin Can (Black Beans)</German>
+			<Russian>Tin Can (Black Beans)</Russian>
+			<Spanish>Tin Can (Black Beans)</Spanish>
+			<Dutch>Tin Can (Black Beans)</Dutch>
+			<French>Tin Can (Black Beans)</French>
+			<Czech>Tin Can (Black Beans)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_GRIFF_EMPTY">						
+			<Original>Empty can of Griff's black beans.</Original>
+			<English>Empty can of Griff's black beans.</English>	
+			<German>Empty can of Griff's black beans.</German>
+			<Russian>Empty can of Griff's black beans.</Russian>
+			<Spanish>Empty can of Griff's black beans.</Spanish>
+			<Dutch>Empty can of Griff's black beans.</Dutch>
+			<French>Empty can of Griff's black beans.</French>
+			<Czech>Empty can of Griff's black beans.</Czech>
+		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">						
 			<Original>Toilet paper</Original>
 			<English>Toilet paper</English>	
