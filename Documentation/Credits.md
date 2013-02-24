@@ -24,6 +24,8 @@ Contributions By
 * Venthos
 * VRShiva
 * AlexAFlorov
+* Elvaron
+* JoeysLucky22
 * Sharkiller  (Spanish Tranlations)
 * Markolie	(Dutch Translations)
 * LordGoF (French Translations)
@@ -35,6 +37,8 @@ Contributions By
 Art Work
 * Alexander (G17 incombat Icon)
 * Des (Gender images & Gui icon's revamp)
+* JoeysLucky22
+* Elvaron
 
 Testers:
 * AJ (Leadz)
