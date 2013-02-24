@@ -40,14 +40,34 @@ food_with_output=[
     "FoodCanSardines",
     "FoodCanFrankBeans",
     "FoodCanPasta",
-	"FoodCanGriff"
+	"FoodCanGriff",
+	"FoodCanBadguy",
+	"FoodCanCorn",
+	"FoodCanCurgon",
+	"FoodCanDemon",
+	"FoodCanFraggleos",
+	"FoodCanHerpy",
+	"FoodCanOrlok",
+	"FoodCanPowell",
+	"FoodCanTyler",
+	"FoodCanUnlabeled"
 ];
 food_output = [
     "TrashTinCan",
     "TrashTinCan",
     "TrashTinCan",
     "TrashTinCan",
-	"FoodCanGriffEmpty"
+	"FoodCanGriffEmpty",
+	"FoodCanBadguyEmpty",
+	"FoodCanCornEmpty",
+	"FoodCanCurgonEmpty",
+	"FoodCanDemonEmpty",
+	"FoodCanFraggleosEmpty",
+	"FoodCanHerpyEmpty",
+	"FoodCanOrlokEmpty",
+	"FoodCanPowellEmpty",
+	"FoodCanTylerEmpty",
+	"FoodCanUnlabeledEmpty"
 ];
 //Drinking
 no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
@@ -84,6 +104,16 @@ drink_output = [
 boil_tin_cans = [
     "TrashTinCan",
 	"FoodCanGriffEmpty",
+	"FoodCanBadguyEmpty",
+	"FoodCanCornEmpty",
+	"FoodCanCurgonEmpty",
+	"FoodCanDemonEmpty",
+	"FoodCanFraggleosEmpty",
+	"FoodCanHerpyEmpty",
+	"FoodCanOrlokEmpty",
+	"FoodCanPowellEmpty",
+	"FoodCanTylerEmpty",
+	"FoodCanUnlabeledEmpty",
     "ItemSodaEmpty", 
     "ItemSodaCokeEmpty",
     "ItemSodaPepsiEmpty",
