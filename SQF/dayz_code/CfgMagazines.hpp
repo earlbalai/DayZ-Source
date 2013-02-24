@@ -461,6 +461,10 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
+	
+	class 8Rnd_B_Beneli_74Slug;
+	class 8Rnd_B_Beneli_Pellets;
+	
 	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
 	{
 		displayName="2Rnd. Slug";
@@ -493,8 +497,8 @@ class CfgMagazines {
 		displayName="2Rnd. Pellets";
 		count=2;
 		descriptionShort="Caliber: 12 gauge <br/>Rounds: 2 Pellets<br/>Used in: M1014";
-		model = "\z\addons\dayz_communityassets\models\2shells_pelletshot.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pelletshot_CA.paa";
+		model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_CA.paa";
 		class ItemActions
 		{
 			class ReloadMag
