@@ -1,14 +1,17 @@
 private["_agent","_target","_targets","_targetDis","_c","_man","_manDis","_targets","_agent","_agentheight","_nearEnts","_rnd","_assigned","_range","_objects"];
 _agent = _this;
 _target = objNull;
+/*
 _local = [];
 _remote = [];
+*/
 _targets = [];
 _targetDis = [];
 _range = 120;
 _manDis = 0;
 _refobj = vehicle player;
 
+/*
 _local =	_agent getVariable ["target",[]];
 //diag_log ("Local is: " + str(_local));
 _remote =	_agent getVariable ["targets",[]];
@@ -24,6 +27,9 @@ else
 	_targets = _local + _remote;
 	//diag_log ("Local + Remote targets is: " + str(_targets));
 };
+*/
+
+_targets = _agent getVariable ["targets",[]];
 
 if (isNil "_targets") exitWith {};
 //Search for objects
