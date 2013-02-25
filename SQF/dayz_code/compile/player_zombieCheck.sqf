@@ -6,7 +6,7 @@ _attacked = false;
 //_multiplier = 1;
 
 //Old System
-/* 
+
 {
 	_continue = true;
 	_type = "zombie";
@@ -87,10 +87,10 @@ _attacked = false;
 	};
 	//diag_log ("Targets Array: " +str(_targets));
 } forEach _listTalk;
-*/
+
 
 // New Systems
-
+/*
 {
 	_continue = true;
 	_type = "zombie";
@@ -299,7 +299,7 @@ if (alive _x and _continue) then
 		};
 	};
 } forEach _listTalk;
-
+*/
 
 if (_attacked) then {
 	if (r_player_unconscious) then {
