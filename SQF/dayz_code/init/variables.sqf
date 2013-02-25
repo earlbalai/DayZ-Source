@@ -34,7 +34,7 @@ meatcooked = [
     "FoodbaconCooked"
 ];
 //Eating
-no_output_food = ["FoodMRE", "FoodPistachio"]+meatcooked+meatraw;
+no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix"]+meatcooked+meatraw;
 food_with_output=[
     "FoodCanBakedBeans",
     "FoodCanSardines",

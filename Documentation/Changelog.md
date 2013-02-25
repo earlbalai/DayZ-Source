@@ -51,6 +51,7 @@ FIX DUE : 2013
 	* [NEW] - New models by Elvaron:
 			- New melee weapon: Machete - (Farm - Hunting)
 			- New Food: Pack of pistachios
+			- New Food: Pack of trail mix
 			- New Food: MRE military rations (Military Loot)
 			- New junk loot
 			- Model for Compass instead of green pouch in loot pile
