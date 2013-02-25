@@ -91,7 +91,8 @@ food[] = {
 			"FoodCanTylers",
 			"FoodCanUnlabeled",
 			//Bags
-			"FoodPistachio"
+			"FoodPistachio",
+			"FoodNutmix"
 		},
 		{
 			//trash
@@ -132,7 +133,8 @@ food[] = {
 			0.06,
 			0.06,
 			//Bags
-			0.05
+			0.05,
+			0.04
 		}
 	};
 	generic[] = {
@@ -338,7 +340,8 @@ food[] = {
 			"ItemWaterbottleUnfilled",
 			"WoodenArrow",
 			"ItemHeatPack",
-			"FoodMRE"
+			"FoodMRE",
+			"FoodNutmix"
 		},
 		{
 			1,
@@ -348,7 +351,8 @@ food[] = {
 			0.2,
 			1,
 			0.2,
-			0.04
+			0.04,
+			0.1
 		}
 	};
 };

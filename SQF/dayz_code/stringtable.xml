@@ -1932,6 +1932,26 @@
 			<French>A pack of pistachios, roasted and salted.</French>
 			<Czech>A pack of pistachios, roasted and salted.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_NUTMIX">						
+			<Original>Trail Mix</Original>
+			<English>Trail Mix</English>	
+			<German>Studentenfutter</German>
+			<Russian>Trail Mix</Russian>
+			<Spanish>Trail Mix</Spanish>
+			<Dutch>Trail Mix</Dutch>
+			<French>Trail Mix</French>
+			<Czech>Trail Mix</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_NUTMIX">						
+			<Original>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Original>
+			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>	
+			<German>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</German>
+			<Russian>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Russian>
+			<Spanish>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Spanish>
+			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
+			<French>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</French>
+			<Czech>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">						
 			<Original>Can (Beans)</Original>
 			<English>Can (Beans)</English>	
