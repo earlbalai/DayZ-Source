@@ -23,7 +23,7 @@ _num = switch (_type) do {
 
 if (count _this > 4) then {
 	_dis = _this select 4;
-	_local = ({isPlayer _x} count (_unit nearEntities ["AllVehicles",_dis]) > 1);
+	_local = ({isPlayer _x} count (_unit nearEntities ["AllVehicles",_dis]) < 2);
 } else {
 	_local = _this select 3;
 	
