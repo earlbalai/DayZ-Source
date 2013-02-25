@@ -116,7 +116,7 @@ boil_tin_cans = [
 	"FoodCanHerpyEmpty",
 	"FoodCanOrlokEmpty",
 	"FoodCanPowellEmpty",
-	"FoodCanTylerEmpty",
+	"FoodCanTylersEmpty",
 	"FoodCanUnlabeledEmpty",
     "ItemSodaEmpty", 
     "ItemSodaCokeEmpty",
