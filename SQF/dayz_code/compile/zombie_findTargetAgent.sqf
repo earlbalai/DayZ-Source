@@ -53,6 +53,10 @@ if (count _targets > 0) then
 			_man = _x;
 			_manDis = _dis;
 		};
+		if (_dis > _range) then
+		{
+			_targets = _targets - [_x];
+		};
 		if (_x isKindOf "SmokeShell") then
 		{
 			_man = _x;
