@@ -13,8 +13,12 @@ _radius = 200;
 _position = getPosATL player;
 
 if (_inVehicle) then {
-	_maxZombies = 10
+	_maxZombies = _maxZombies / 2;
 };
+if (_isAir) then {
+	_maxZombies = 5
+};
+
 
 //diag_log ("Type: " +str(_type));
 
@@ -41,7 +45,7 @@ switch (_nearbytype) do {
 };
 */
 
-_players = _position nearEntities [["AllPlayers"],_radius+200];
+_players = _position nearEntities ["AllPlayers",_radius+200];
 dayz_maxGlobalZombies = 30;
 {
 	dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
