@@ -46,7 +46,7 @@ switch (_nearbytype) do {
 */
 
 _players = _position nearEntities ["AllPlayers",_radius+200];
-dayz_maxGlobalZombies = 30;
+dayz_maxGlobalZombies = 40;
 {
 	dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
 } foreach _players;
