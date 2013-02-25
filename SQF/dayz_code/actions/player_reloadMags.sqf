@@ -1,4 +1,4 @@
-private["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_i","_mag","_avaliable_slots","_qty_create_slots_rld","_qty_consume_slots_rld","_free_slots_rld","_can_take_ammo","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
+private["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_i","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest","_avaliable_slots"];
 
 disableSerialization;
 call gear_ui_init;
@@ -62,11 +62,6 @@ for "_i" from _slotstart to _slotend do {
     };
 };
 
-_avaliable_slots = 0;
-_qty_create_slots_rld = 0;
-_qty_consume_slots_rld = 0;
-_free_slots_rld = 0;
-_can_take_ammo = 0;
 _qtynew_create_ammo = 0;
 _qtynew_consume_ammo = 0;
 _qtynew_create_mags = 0;
@@ -79,12 +74,6 @@ _qtynew_create_ammo_rest = 0;
 
 
 if ( _consume_magsize > _create_magsize) then {
-    _avaliable_slots = _qty_create_mags + _qty_consume_mags + _qty_free_slots;
-    _qty_create_slots_rld = ceil(_qty_create_ammo/_create_magsize);
-    _qty_consume_slots_rld = ceil(_qty_consume_ammo/_consume_magsize);
-    _free_slots_rld = _avaliable_slots - (_qty_consume_slots_rld + _qty_create_slots_rld);
-    _can_take_ammo = (_free_slots_rld*_create_magsize) - _qty_create_ammo;
-
     _qtynew_create_ammo = _qty_create_ammo + _item_ammo;
     _qtynew_consume_ammo = _qty_consume_ammo - _item_ammo;
     _qtynew_create_mags = ceil(_qtynew_create_ammo/_create_magsize);
