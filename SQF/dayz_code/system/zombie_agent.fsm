@@ -134,8 +134,8 @@ link71[] = {54,32};
 link72[] = {55,7};
 link73[] = {56,3};
 link74[] = {57,1};
-globals[] = {25.000000,1,0,0,0,640,480,1,97,6316128,1,-816.896851,494.402466,581.022888,-219.882507,984,601,1};
-window[] = {2,-1,-1,-1,-1,890,110,1318,110,3,1001};
+globals[] = {25.000000,1,0,0,0,640,480,1,98,6316128,1,-816.896851,494.402466,582.355469,-218.549896,984,601,1};
+window[] = {2,-1,-1,-32000,-32000,912,132,1340,132,3,1001};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -472,10 +472,9 @@ class FSM
        "" \n
        "//Move to target" \n
        "_agent moveTo _targetPos;" \n
-       "_agent forceSpeed 6;" \n
+       "_agent forceSpeed 10;" \n
        "" \n
-       "//Check if LOS" \n
-       "if (_losCheck == 3) then {" \n
+       "if (_losCheck == 2) then {" \n
        "	_losCheck = 0;" \n
        "	_cantSee = [_agent,_target] call dayz_losCheck;" \n
        "};" \n

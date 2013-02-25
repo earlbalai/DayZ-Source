@@ -41,7 +41,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.6-PreRelease4";
+		version = "1.7.6-Finalising";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -95,7 +95,7 @@ class CfgAISkill {
 	endurance[] = {0, 0, 1, 1};
 	general[] = {0, 0, 1, 1};
 	reloadspeed[] = {0, 0, 1, 1};
-	spotdistance[] = {0, 0, 1, 0.3};
+	spotdistance[] = {0, 0, 1, 0.6};
 	spottime[] = {0, 0, 1, 1};
 };
 

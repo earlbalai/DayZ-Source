@@ -11,7 +11,14 @@ _age = -1;
 _nearbyBuildings = [];
 _radius = 200; 
 _position = getPosATL player;
-//_maxZombies = 10;
+
+if (_inVehicle) then {
+	_maxZombies = _maxZombies / 2;
+};
+if (_isAir) then {
+	_maxZombies = 5
+};
+
 
 //diag_log ("Type: " +str(_type));
 
@@ -38,7 +45,7 @@ switch (_nearbytype) do {
 };
 */
 
-_players = _position nearEntities [AllPlayers,_radius+200];
+_players = _position nearEntities ["AllPlayers",_radius+200];
 dayz_maxGlobalZombies = 30;
 {
 	dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
@@ -52,7 +59,6 @@ dayz_spawnZombies = 0;
 		//diag_log ("Local");
 		dayz_spawnZombies = dayz_spawnZombies + 1;
 	};
-
 } foreach _spawnZombies;
 
 dayz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
@@ -95,9 +101,10 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr3 setMarkerSizeLocal [120, 120];
 
 diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
-diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombies));
+diag_log ("LocalZombies: " +str(_maxZombies) + "/" +str(dayz_maxLocalZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
 diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
+
 };
 	
 _nearby = _position nearObjects ["building",_radius];
@@ -140,12 +147,12 @@ if (_nearbyCount < 1) exitwith
 	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
 		if (dayz_maxCurrentZeds < dayz_maxZeds) then {
 			if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
-				if (dayz_spawnZombies < dayz_maxLocalZombies) then {
+				if (dayz_spawnZombies < _maxZombies) then {
 						//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 						_dateNow = (DateToNumber date);
 						_age = (_dateNow - _zombied) * 525948;
-						if (_age > 1) then {
+						if (_age > 3) then {
 							_x setVariable ["zombieSpawn",_dateNow,true];
 							[_x] call building_spawnZombies;
 						};
