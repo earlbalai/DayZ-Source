@@ -863,7 +863,12 @@
 		<Key ID="STR_MAG_COMBINE">
 			<Original>Re-combine</Original>
 			<English>Re-combine</English>
+			<German>Re-combine</German>
 			<Russian>Переснарядить</Russian>
+			<Spanish>Re-combine</Spanish>
+			<Dutch>Re-combine</Dutch>
+			<French>Re-combine</French>
+			<Czech>Re-combine</Czech>
 		</Key>
 		<Key ID="str_actions_self_06">
 			<Original>Remove fireplace</Original>
