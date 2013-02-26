@@ -1,6 +1,37 @@
 FIX DUE : 2013
 
 	Community Notes: 
+		* DayZ 1.7.6.1
+	
+	Community Change log:	
+		* [REMOVED] - New models by JoeysLucky22:
+			- (Soda)  Long's Island Iced Tea (Clayton)
+			- (Soda)  Dr. Wasteland (Dr. wasteland)
+			- (Soda)  Mikhail Made Lemonade (-=PA=-Mikhail)
+			- (Soda)  LVG Root Beer (LVG)
+			- (Soda)  Mountain Green
+			- (Soda)  mZLY yZLY (mZLY)
+			- (Soda)  R4Z0R soda (R4Z0R)
+			- (Soda)  Smasht (Smasht)
+			- (Beer)  Rabbitman (Rabbitman)
+			- (Can) Bad Guy's Ubiquitous Peaches (UbiquitousBadGuy)
+			- (Can) Chef Boneboy Ravioli (Boneboys)
+			- (Can) Curgon's Chicken Noodle Soup (Curgon)
+			- (Can) Demon Groves Green Beans (DemonGroover)
+			- (Can) FraggleOs (Fraggle)
+			- (Can) Griff Black Beans (Griff)
+			- (Can) Herpy Dooves Canned Muffins (DerpyHooves)
+			- (Can) Orlok Mixed Fruit (orlok)
+			- (Can) Powell's New England Clam Chowder (Powell)
+			- (Can) Unlabeled Can
+			- (Can) Tyler's Kidney Beans
+			- (Can) Conrad's Whole Kernel Corn
+			
+			
+______________________
+FIX DUE : 2013
+
+	Community Notes: 
 		* DayZ 1.7.6
 		
 	Affected addons:
@@ -115,7 +146,7 @@ FIX DUE : 2013
 	
 	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
 	
-
+______________________
 FIX DUE : 2013
 
 	Community Notes: 
@@ -137,7 +168,7 @@ FIX DUE : 2013
 	* [FIXED] - Repair option should now only work on vehicles.
 	* [FIXED] - AS50 was mistakenly banned now unbanned.
 	
-
+______________________
 FIX DUE : 2013
 
 	Community Notes: 
