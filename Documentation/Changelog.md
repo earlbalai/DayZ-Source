@@ -5,6 +5,8 @@ FIX DUE : 2013
 	
 	Community Change log:
 		* [UPDATED] - Fixed version issues.
+		* [UPDATED] - Updated Spanish StringTables
+		* [UPDATED] - Force save updated.
 	
 		* [REMOVED] - New models by JoeysLucky22:
 			- (Soda)  Long's Island Iced Tea (Clayton)
