@@ -100,7 +100,7 @@ if (_hit in USEC_MinorWounds) then {
 		} else {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
-	} else {;
+	} else {
 		[_unit,_hit,(_damage / 2)] call object_processHit;
 	};
 	if (_ammo == "") then {
