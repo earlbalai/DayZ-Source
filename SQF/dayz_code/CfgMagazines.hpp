@@ -697,6 +697,10 @@ class CfgMagazines {
 					"8Rnd_B_Beneli_74Slug"
 				};
 			};
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
 		};
 	};
 	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets
@@ -724,6 +728,140 @@ class CfgMagazines {
 					"8Rnd_B_Beneli_Pellets"
 				};
 			};
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
 		};
 	};
+
+	//Re-combine options
+	class 8Rnd_9x18_Makarov : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 15Rnd_9x19_M9 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 17Rnd_9x19_glock17 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};	
+	class 30Rnd_9x19_UZI : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_9x19_MP5 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 20Rnd_556x45_Stanag; 
+	class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_545x39_AK : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_762x39_AK47 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_762x39_SA58 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 20Rnd_762x51_FNFAL : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+
+	class HandGrenade;	// External class reference
+	class HandRoadFlare : HandGrenade {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	
+	class ChemLightMag : HandGrenade {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	
+	class HandChemBlue : ChemLightMag {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	
+	class HandChemGreen : ChemLightMag {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	
+	class HandChemRed : ChemLightMag {
+		class ItemActions {
+			class CombineMag {
+				text = "$STR_MAG_COMBINE";
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	//add here any magazines types you want to be re-combined like shown before
 };
