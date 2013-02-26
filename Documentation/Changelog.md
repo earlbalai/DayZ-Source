@@ -3,7 +3,9 @@ FIX DUE : 2013
 	Community Notes: 
 		* DayZ 1.7.6.1
 	
-	Community Change log:	
+	Community Change log:
+		* [UPDATED] - Fixed version issues.
+	
 		* [REMOVED] - New models by JoeysLucky22:
 			- (Soda)  Long's Island Iced Tea (Clayton)
 			- (Soda)  Dr. Wasteland (Dr. wasteland)
