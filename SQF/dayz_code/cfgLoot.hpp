@@ -67,6 +67,7 @@ food[] = {
 			//Bags
 			"FoodPistachio",
 			"FoodNutmix"
+		},
 		{
 			//trash
 			0.13,
