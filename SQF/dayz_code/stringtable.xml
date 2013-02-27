@@ -865,6 +865,26 @@
 		</Key>
 	</Package>
 	<Package name="actions">
+		<Key ID="STR_ACTIONS_2TB">
+			<Original>Add to Toolbelt</Original>
+			<English>Add to Toolbelt</English>
+			<Russian>Повесить на пояс</Russian>
+		</Key>
+		<Key ID="STR_ACTIONS_DROP">
+			<Original>Drop</Original>
+			<English>Drop</English>
+			<Russian>Выбросить</Russian>
+		</Key>
+		<Key ID="STR_ACTIONS_RFROMTB">
+			<Original>Remove from Toolbelt</Original>
+			<English>Remove from Toolbelt</English>
+			<Russian>Снять с пояса</Russian>
+		</Key>
+		<Key ID="STR_ACTION_CREATEQUIVER">						
+			<Original>Create quiver</Original>						
+			<English>Create quiver</English>						
+			<Russian>Собрать колчан</Russian>
+		</Key>	
 		<Key ID="str_actions_self_antibio">
 			<Original>Take Antibiotics</Original>
 			<English>Take Antibiotics</English>
@@ -1357,6 +1377,92 @@
 		</Key>
 	</Package>
 	<Package name="equipment_code">
+		<Key ID="STR_EQUIP_NAME_HATCHET">
+			<Original>Hatchet</Original>
+			<English>Hatchet</English>
+			<Russian>Топор</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_HATCHET">
+			<Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
+			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
+			<Russian>Топор отлично подойдет для рубки дров.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CROWBAR">
+			<Original>Crowbar</Original>
+			<English>Crowbar</English>
+			<Russian>Ломик</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CROWBAR">
+			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
+			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
+			<Russian>Ручной ударный и рычажный инструмент, изготовленный из прочного металлического стержня.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_MACHETE">						
+			<Original>Machete</Original>						
+			<English>Machete</English>						
+			<Russian>Мачете</Russian>
+		</Key>						
+		<Key ID="STR_EQUIP_DESC_MACHETE">						
+			<Original>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</Original>
+			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>	
+			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой поседневный, как топор, но весьма мощный.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CLOSES">
+			<Original>Clothes</Original>
+			<English>Clothes</English>
+			<Russian>Одежда</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CLOSES">
+			<Original>Clothes Parcel.</Original>
+			<English>Clothes Parcel.</English>
+			<Russian>Упакованная одежда.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_TEXT_CLOSES">
+			<Original>Wear</Original>
+			<English>Wear</English>
+			<Russian>Надеть</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_GHILLIE">
+			<Original>Ghillie Suit</Original>
+			<English>Ghillie Suit</English>
+			<German>Ghillie-Anzug</German>
+			<Russian>Маскхалат</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_GHILLIE">
+			<Original>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Original>
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
+			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CAMO">
+			<Original>Camo Clothing</Original>
+			<English>Camo Clothing</English>
+			<Russian>Камуфляж</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CAMO">
+			<Original>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Original>
+			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
+			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CIV">
+			<Original>Civilian Clothing</Original>
+			<English>Civilian Clothing</English>
+			<Russian>Гражданская одежда</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CIV">
+			<Original>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Original>
+			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
+			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_SOLDIER">
+			<Original>Soldier Clothing</Original>
+			<English>Soldier Clothing</English>
+			<Russian>Солдатская форма</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SOLDIER">
+			<Original>A British Army Soldiers uniform. Can be unpacked and worn.</Original>
+			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
+			<Russian>Форма солдата британской армии. Можно распаковать и надеть.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">						
 			<Original>Box of Wet Matches</Original>						
 			<English>Box of Wet Matches</English>						
@@ -1696,6 +1802,26 @@
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
 			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
+		</Key>
+		<Key ID="STR_ITEMWOODENARROW_CODE_NAME">						
+			<Original>Wooden Arrow</Original>						
+			<English>Wooden Arrow</English>						
+			<Russian>Деревянная стрела</Russian>
+		</Key>						
+		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">						
+			<Original>Arrow made out of wood, used with the Crossbow.</Original>
+			<English>Arrow made out of wood, used with the Crossbow.</English>	
+			<Russian>Стрела, сделанная из дерева. Используется арбалетом.</Russian>
+		</Key>
+		<Key ID="STR_ITEMQUIVER_CODE_NAME">						
+			<Original>Quiver</Original>						
+			<English>Quiver</English>						
+			<Russian>Колчан</Russian>
+		</Key>						
+		<Key ID="STR_ITEMQUIVER_CODE_DESC">						
+			<Original>Small Quiver used with the Crossbow, Max arrows 6.</Original>
+			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>	
+			<Russian>Небольшой колчан для стрел арбалета. Может содержать до 6 стрел.</Russian>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">						
 			<Original>Soda</Original>
