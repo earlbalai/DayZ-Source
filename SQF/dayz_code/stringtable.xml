@@ -164,14 +164,14 @@
 		</Key>
 	</package>
 	<Package name="code">
-		<Key ID="STR_DAYZ_CODE_1">	
+		<Key ID="STR_DAYZ_CODE_1">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 			<Original>Take %1</Original>
 			<English>Take %1</English> 
 			<German>%1 aufnehmen</German>
 			<Russian>Взять %1</Russian>
 			<Spanish>Tomar %1</Spanish>
 			<Dutch>Neem %1</Dutch>
-			<French>Prendre %1</French>			<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
+			<French>Prendre %1</French>
 			<Czech>Vezmi %1</Czech>
 		</Key>
 		<Key ID="STR_DAYZ_CODE_2">	
@@ -196,14 +196,14 @@
 		</Key>
 	</package>
 	<Package name="feedback">
-		<Key ID="str_success_cooked">
+		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<Original>You have cooked %1 %2</Original>
 			<English>You have cooked %1 %2</English>
 			<German>Sie haben %1 %2 gekocht</German>
 			<Russian>Вы приготовили: %1 %2</Russian>
 			<Spanish>Cocinaste %1 %2</Spanish>
 			<Dutch>Je hebt %1 %2 gekookt</Dutch>
-			<French>Vous avez cuit %1 %2</French>			<!-- As in "you have successfully cooked 5 raw steak" -->
+			<French>Vous avez cuit %1 %2</French>
 			<Czech>Upekl jsi %1 %2</Czech>
 		</Key>
 		<Key ID="str_success_tent_pack">
@@ -376,14 +376,14 @@
 			<French>%1 a été rempli avec %2 litres de carburant.</French>
 			<Czech>%1 bylo doplněno %2 litrů paliva.</Czech>
 		</Key>
-		<Key ID="str_player_06">
+		<Key ID="str_player_06">	<!-- As in "Day 1" or "Day 10", how many days since character started -->
 			<Original>Day</Original>
 			<English>Day</English>
 			<German>Tag</German>
 			<Russian>День</Russian>
 			<Spanish>Día</Spanish>
 			<Dutch>Dag</Dutch>
-			<French>Jour</French>			<!-- As in "Day 1" or "Day 10", how many days since character started -->
+			<French>Jour</French>
 			<Czech>Den</Czech>
 		</Key>
 		<Key ID="str_player_07">
@@ -772,56 +772,67 @@
 			<Original>Gear</Original>
 			<English>Gear</English>
 			<Russian>Снаряжение</Russian>
+			<Spanish>Equipo</Spanish>
 		</Key>
 		<Key ID="STR_UI_FILTER">
 			<Original>Filter</Original>
 			<English>Filter</English>
 			<Russian>Фильтр</Russian>
+			<Spanish>Filtro</Spanish>
 		</Key>
 		<Key ID="STR_UI_REARM">
 			<Original>Rearm</Original>
 			<English>Rearm</English>
 			<Russian>Перевооруж.</Russian>
+			<Spanish>Rearmar</Spanish>
 		</Key>
 		<Key ID="STR_UI_OBAG">
 			<Original>Open bag</Original>
 			<English>Open bag</English>
 			<Russian>Рюкзак</Russian>
+			<Spanish>Abrir Mochila</Spanish>
 		</Key>
 		<Key ID="STR_UI_CBAG">
 			<Original>Close bag</Original>
 			<English>Close bag</English>
 			<Russian>Инвентарь</Russian>
+			<Spanish>Cerrar Mochila</Spanish>
 		</Key>
 		<Key ID="STR_UI_CLOSE">
 			<Original>Close</Original>
 			<English>Close</English>
 			<Russian>Закрыть</Russian>
+			<Spanish>Cerrar</Spanish>
 		</Key>
 		<Key ID="STR_UI_ALL">
 			<Original>All</Original>
 			<English>All</English>
 			<Russian>Все</Russian>
+			<Spanish>Todo</Spanish>
 		</Key>
 		<Key ID="STR_UI_PRIMARY">
 			<Original>Primary</Original>
 			<English>Primary</English>
 			<Russian>Основное</Russian>
+			<Spanish>Primaria</Spanish>
 		</Key>
 		<Key ID="STR_UI_SECONDARY">
 			<Original>Secondary</Original>
 			<English>Secondary</English>
 			<Russian>Дополнительное</Russian>
+			<Spanish>Secundaria</Spanish>
 		</Key>
 		<Key ID="STR_UI_HANDGUN">
 			<Original>HandGun</Original>
 			<English>HandGun</English>
 			<Russian>Пистолеты</Russian>
+			<Spanish>Pistola</Spanish>
 		</Key>
 		<Key ID="STR_UI_ITEMS">
 			<Original>Items</Original>
 			<English>Items</English>
 			<Russian>Предметы</Russian>
+			<Spanish>Objetos</Spanish>
 		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<Original>SELECT YOUR GENDER</Original>
@@ -869,21 +880,25 @@
 			<Original>Add to Toolbelt</Original>
 			<English>Add to Toolbelt</English>
 			<Russian>Повесить на пояс</Russian>
+			<Spanish>Agregar al Cinturón</Spanish>
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<Original>Drop</Original>
 			<English>Drop</English>
 			<Russian>Выбросить</Russian>
+			<Spanish>Tirar</Spanish>
 		</Key>
 		<Key ID="STR_ACTIONS_RFROMTB">
 			<Original>Remove from Toolbelt</Original>
 			<English>Remove from Toolbelt</English>
 			<Russian>Снять с пояса</Russian>
+			<Spanish>Sacar del Cinturón</Spanish>
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">						
 			<Original>Create quiver</Original>						
 			<English>Create quiver</English>						
 			<Russian>Собрать колчан</Russian>
+			<Spanish>Crear Carcaj</Spanish>
 		</Key>	
 		<Key ID="str_actions_self_antibio">
 			<Original>Take Antibiotics</Original>
@@ -1381,87 +1396,104 @@
 			<Original>Hatchet</Original>
 			<English>Hatchet</English>
 			<Russian>Топор</Russian>
+			<Spanish>Hacha</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
 			<Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
 			<Russian>Топор отлично подойдет для рубки дров.</Russian>
+			<Spanish>Una herramienta con una hoja afilada para golpear y cortar madera.</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<Original>Crowbar</Original>
 			<English>Crowbar</English>
 			<Russian>Ломик</Russian>
+			<Spanish>Palanca</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CROWBAR">
 			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
 			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
 			<Russian>Ручной ударный и рычажный инструмент, изготовленный из прочного металлического стержня.</Russian>
+			<Spanish>Una herramienta que consiste en una barra de metal con un final curvado y chato.</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_MACHETE">						
 			<Original>Machete</Original>						
 			<English>Machete</English>						
 			<Russian>Мачете</Russian>
+			<Spanish>Machete</Spanish>
 		</Key>						
 		<Key ID="STR_EQUIP_DESC_MACHETE">						
 			<Original>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</Original>
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>	
 			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой поседневный, как топор, но весьма мощный.</Russian>
+			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fuerza.</Spanish>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_CLOSES">
+		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<Original>Clothes</Original>
 			<English>Clothes</English>
 			<Russian>Одежда</Russian>
+			<Spanish>Ropa</Spanish>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_CLOSES">
+		<Key ID="STR_EQUIP_DESC_CLOTHES">
 			<Original>Clothes Parcel.</Original>
 			<English>Clothes Parcel.</English>
 			<Russian>Упакованная одежда.</Russian>
+			<Spanish>Paquete de ropa.</Spanish>
 		</Key>
-		<Key ID="STR_EQUIP_TEXT_CLOSES">
+		<Key ID="STR_EQUIP_TEXT_CLOTHES">
 			<Original>Wear</Original>
 			<English>Wear</English>
 			<Russian>Надеть</Russian>
+			<Spanish>Vestir</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GHILLIE">
 			<Original>Ghillie Suit</Original>
 			<English>Ghillie Suit</English>
 			<German>Ghillie-Anzug</German>
 			<Russian>Маскхалат</Russian>
+			<Spanish>Traje Camuflado "Guillie"</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
 			<Original>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Original>
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
 			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<Original>Camo Clothing</Original>
 			<English>Camo Clothing</English>
 			<Russian>Камуфляж</Russian>
+			<Spanish>Ropa Camuflada</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CAMO">
 			<Original>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Original>
 			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
 			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
+			<Spanish>Una mezcla de pantalones camuflados con una camisa marrón y sin gorra. Puede ser desembalado y usado.</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CIV">
 			<Original>Civilian Clothing</Original>
 			<English>Civilian Clothing</English>
 			<Russian>Гражданская одежда</Russian>
+			<Spanish>Ropa de Civil</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CIV">
 			<Original>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Original>
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
 			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
+			<Spanish>Una mezcla de ropa civil con un chaleco ligero y gorra. Puede ser desembalado y usado.</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SOLDIER">
 			<Original>Soldier Clothing</Original>
 			<English>Soldier Clothing</English>
 			<Russian>Солдатская форма</Russian>
+			<Spanish>Ropa Militar</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SOLDIER">
 			<Original>A British Army Soldiers uniform. Can be unpacked and worn.</Original>
 			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
 			<Russian>Форма солдата британской армии. Можно распаковать и надеть.</Russian>
+			<Spanish>Un uniforme de los Soldados de la Armada Británica. Puede ser desembalado y usado.</Spanish>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">						
 			<Original>Box of Wet Matches</Original>						
@@ -1807,21 +1839,25 @@
 			<Original>Wooden Arrow</Original>						
 			<English>Wooden Arrow</English>						
 			<Russian>Деревянная стрела</Russian>
+			<Spanish>Flecha de Madera</Spanish>
 		</Key>						
 		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">						
 			<Original>Arrow made out of wood, used with the Crossbow.</Original>
 			<English>Arrow made out of wood, used with the Crossbow.</English>	
 			<Russian>Стрела, сделанная из дерева. Используется арбалетом.</Russian>
+			<Spanish>Flecha hecha de madera para usarse en la Ballesta.</Spanish>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_NAME">						
 			<Original>Quiver</Original>						
 			<English>Quiver</English>						
 			<Russian>Колчан</Russian>
+			<Spanish>Carcaj</Spanish>
 		</Key>						
 		<Key ID="STR_ITEMQUIVER_CODE_DESC">						
 			<Original>Small Quiver used with the Crossbow, Max arrows 6.</Original>
 			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>	
 			<Russian>Небольшой колчан для стрел арбалета. Может содержать до 6 стрел.</Russian>
+			<Spanish>Carcaj Pequeño usado con la Ballesta. Máximo: 6 flechas.</Spanish>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">						
 			<Original>Soda</Original>
