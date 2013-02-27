@@ -95,11 +95,11 @@ class CfgMagazines {
 	};
 	//skins translations
 	class SkinBase : CA_Magazine {
-		displayName = "$STR_EQUIP_NAME_CLOSES";
-		descriptionShort = "$STR_EQUIP_DESC_CLOSES";
+		displayName = "$STR_EQUIP_NAME_CLOTHES";
+		descriptionShort = "$STR_EQUIP_DESC_CLOTHES";
 		class ItemActions {
 			class Use {
-				text = "$STR_EQUIP_TEXT_CLOSES";
+				text = "$STR_EQUIP_TEXT_CLOTHES";
 			};
 		};
 	};
