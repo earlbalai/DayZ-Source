@@ -31,7 +31,7 @@ class CfgWeapons {
 		magazineReloadTime=0;
 		model="\dayz_weapons\models\Hatchet_weaponized";
 		picture="\dayz_equip\textures\equip_hatchet_CA.paa";
-		displayName="$STR_EQUIP_NAME_41";
+		displayName=$STR_EQUIP_NAME_HATCHET;
 		magazines[]=
 		{
 			"Hatchet_Swing"
@@ -50,7 +50,7 @@ class CfgWeapons {
 			};
 			class Toolbelt
 			{
-				text="Add to Toolbelt";
+				text=$STR_ACTIONS_2TB;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -63,7 +63,7 @@ class CfgWeapons {
 			};
 			class Drop
 			{
-				text="Drop Hatchet";
+				text=$STR_ACTIONS_DROP;
 				script="spawn player_dropWeapon;";
 				use[]=
 				{
@@ -73,10 +73,20 @@ class CfgWeapons {
 		};
 		class Library
 		{
-			libTextDesc="$STR_EQUIP_DESC_41";
+			libTextDesc=$STR_EQUIP_DESC_HATCHET;
 		};
-		descriptionShort="$STR_EQUIP_DESC_41";
+		descriptionShort=$STR_EQUIP_DESC_HATCHET;
 	};	
+	class ItemHatchet : ItemCore {
+		displayName = $STR_EQUIP_NAME_HATCHET;
+		descriptionShort = $STR_EQUIP_DESC_HATCHET;
+	
+		class ItemActions {
+			class Toolbelt {
+				text = $STR_ACTIONS_RFROMTB;
+			};
+		};
+	};
 	class MeleeCrowbar: MeleeHatchet
 	{
 		scope=2;
@@ -84,7 +94,7 @@ class CfgWeapons {
 		magazineReloadTime=0;
 		model="\dayz_weapons\models\crowbar_weaponized";
 		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
-		displayName="Crowbar";
+		displayName=$STR_EQUIP_NAME_CROWBAR;
 		magazines[]=
 		{
 			"Crowbar_Swing"
@@ -93,7 +103,7 @@ class CfgWeapons {
 		{
 			class Toolbelt
 			{
-				text="Add to Toolbelt";
+				text=$STR_ACTIONS_2TB;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -106,7 +116,7 @@ class CfgWeapons {
 			};
 			class Drop
 			{
-				text="Drop Crowbar";
+				text=$STR_ACTIONS_DROP;
 				script="spawn player_dropWeapon;";
 				use[]=
 				{
@@ -116,22 +126,22 @@ class CfgWeapons {
 		};
 		class Library
 		{
-			libTextDesc="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+			libTextDesc=$STR_EQUIP_DESC_CROWBAR;
 		};
-		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+		descriptionShort=$STR_EQUIP_DESC_CROWBAR; 
 	};	
 	class ItemCrowbar: ItemCore
 	{
 		scope=2;
-		displayName="Crowbar";
+		displayName=$STR_EQUIP_NAME_CROWBAR;
 		model="\dayz_equip\models\crowbar.p3d";
 		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
-		descriptionShort="A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.";
+		descriptionShort=$STR_EQUIP_DESC_CROWBAR;
 		class ItemActions
 		{
 			class Toolbelt
 			{
-				text="Remove from Toolbelt";
+				text=$STR_ACTIONS_RFROMTB;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -151,7 +161,7 @@ class CfgWeapons {
 		magazineReloadTime=0;
 		model="\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
-		displayName="Machete";
+		displayName="$STR_EQUIP_NAME_MACHETE";
 		magazines[]=
 		{
 			"Machete_Swing"
@@ -160,7 +170,7 @@ class CfgWeapons {
 		{
 			class Toolbelt
 			{
-				text="Add to Toolbelt";
+				text=$STR_ACTIONS_2TB;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -173,7 +183,7 @@ class CfgWeapons {
 			};
 			class Drop
 			{
-				text="Drop Machete";
+				text=$STR_ACTIONS_DROP;
 				script="spawn player_dropWeapon;";
 				use[]=
 				{
@@ -183,22 +193,22 @@ class CfgWeapons {
 		};
 		class Library
 		{
-			libTextDesc="";
+			libTextDesc="$STR_EQUIP_DESC_MACHETE";
 		};
-		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
+		descriptionShort="$STR_EQUIP_DESC_MACHETE";
 	};	
 	class ItemMachete: ItemCore
 	{
 		scope=2;
-		displayName="Machete";
+		displayName="$STR_EQUIP_NAME_MACHETE";
 		model="\z\addons\dayz_communityassets\models\machete.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
-		descriptionShort="An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.";
+		descriptionShort="$STR_EQUIP_DESC_MACHETE";
 		class ItemActions
 		{
 			class Toolbelt
 			{
-				text="Remove from Toolbelt";
+				text=$STR_ACTIONS_RFROMTB;
 				script="spawn player_addToolbelt;";
 				use[]=
 				{
@@ -212,6 +222,40 @@ class CfgWeapons {
 		};
 	};
 	
+	class PistolCore;	// External class reference
+	class Pistol;	// External class reference
+	class MeleeFlashlight : Pistol {
+		class ItemActions {
+			class Toolbelt {
+				text = $STR_ACTIONS_2TB;
+			};
+		};
+	};
+	
+	class ItemFlashlight : ItemCore {
+		class ItemActions {
+			class Toolbelt {
+				text = $STR_ACTIONS_RFROMTB;
+			};
+		};
+	}; 
+
+	class MeleeFlashlightRed : MeleeFlashlight {
+		class ItemActions {
+			class Toolbelt {
+				text = $STR_ACTIONS_2TB;
+			};
+		};
+	};
+
+	class ItemFlashlightRed : ItemCore {
+		class ItemActions {
+			class Toolbelt {
+				text = $STR_ACTIONS_RFROMTB;
+			};
+		};
+	};
+
 	class GrenadeLauncher;  // External class reference
 	class Flare : GrenadeLauncher {
 		class ThrowMuzzle;

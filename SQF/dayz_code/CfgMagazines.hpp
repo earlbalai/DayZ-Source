@@ -93,14 +93,43 @@ class CfgMagazines {
 			};
 		};
 	};
+	//skins translations
+	class SkinBase : CA_Magazine {
+		displayName = "$STR_EQUIP_NAME_CLOSES";
+		descriptionShort = "$STR_EQUIP_DESC_CLOSES";
+		class ItemActions {
+			class Use {
+				text = "$STR_EQUIP_TEXT_CLOSES";
+			};
+		};
+	};
+	class Skin_Sniper1_DZ : SkinBase {
+		displayName = "$STR_EQUIP_NAME_GHILLIE";
+		descriptionShort = "$STR_EQUIP_DESC_GHILLIE";
+	};
+	
+	class Skin_Camo1_DZ : SkinBase {
+		displayName = "$STR_EQUIP_NAME_CAMO";
+		descriptionShort = "$STR_EQUIP_DESC_CAMO";
+	};
+	
+	class Skin_Survivor2_DZ : SkinBase {
+		displayName = "$STR_EQUIP_NAME_CIV";
+		descriptionShort = "$STR_EQUIP_DESC_CIV";
+	};
+	
+	class Skin_Soldier1_DZ : SkinBase {
+		displayName = "$STR_EQUIP_NAME_SOLDIER";
+		descriptionShort = "$STR_EQUIP_DESC_SOLDIER";
+	}; 
 	
 	class Quiver : CA_Magazine
 	{
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
-		descriptionshort = "Small Quiver used with the Crossbow, Max arrows 6.";
-		displayname = "Quiver";
+		descriptionShort = "$STR_ITEMQUIVER_CODE_DESC";
+		displayName = "$STR_ITEMQUIVER_CODE_NAME";
 		initSpeed = 150;
 		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
@@ -108,17 +137,17 @@ class CfgMagazines {
 	
 	class WoodenArrow : CA_Magazine {
 		scope = public;
-		displayName = "Arrow"; //$STR_MAG_NAME_3;
+		displayName = "$STR_ITEMWOODENARROW_CODE_NAME";
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_warrow_ca.paa";
 		ammo = "WoodenArrow";
 		count = 1;
 		initSpeed = 150;
-		descriptionShort = "Arrow made out of wood, used with the Crossbow."; //$STR_MAG_DESC_3;
+		descriptionShort = "$STR_ITEMWOODENARROW_CODE_DESC";
 		
 		class ItemActions {
 			class ReloadMag {
-				text = "Combine into Quiver";
+				text = "$STR_ACTION_CREATEQUIVER";
 				script = "spawn player_reloadMag;";
 				use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
 				output[] = {"Quiver"};
