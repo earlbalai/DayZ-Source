@@ -768,6 +768,61 @@
 		</Key>
 	</Package>
 	<Package name="ui">
+		<Key ID="STR_UI_GEAR">
+			<Original>Gear</Original>
+			<English>Gear</English>
+			<Russian>Снаряжение</Russian>
+		</Key>
+		<Key ID="STR_UI_FILTER">
+			<Original>Filter</Original>
+			<English>Filter</English>
+			<Russian>Фильтр</Russian>
+		</Key>
+		<Key ID="STR_UI_REARM">
+			<Original>Rearm</Original>
+			<English>Rearm</English>
+			<Russian>Перевооруж.</Russian>
+		</Key>
+		<Key ID="STR_UI_OBAG">
+			<Original>Open bag</Original>
+			<English>Open bag</English>
+			<Russian>Рюкзак</Russian>
+		</Key>
+		<Key ID="STR_UI_CBAG">
+			<Original>Close bag</Original>
+			<English>Close bag</English>
+			<Russian>Инвентарь</Russian>
+		</Key>
+		<Key ID="STR_UI_CLOSE">
+			<Original>Close</Original>
+			<English>Close</English>
+			<Russian>Закрыть</Russian>
+		</Key>
+		<Key ID="STR_UI_ALL">
+			<Original>All</Original>
+			<English>All</English>
+			<Russian>Все</Russian>
+		</Key>
+		<Key ID="STR_UI_PRIMARY">
+			<Original>Primary</Original>
+			<English>Primary</English>
+			<Russian>Основное</Russian>
+		</Key>
+		<Key ID="STR_UI_SECONDARY">
+			<Original>Secondary</Original>
+			<English>Secondary</English>
+			<Russian>Дополнительное</Russian>
+		</Key>
+		<Key ID="STR_UI_HANDGUN">
+			<Original>HandGun</Original>
+			<English>HandGun</English>
+			<Russian>Пистолеты</Russian>
+		</Key>
+		<Key ID="STR_UI_ITEMS">
+			<Original>Items</Original>
+			<English>Items</English>
+			<Russian>Предметы</Russian>
+		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<Original>SELECT YOUR GENDER</Original>
 			<English>SELECT YOUR GENDER</English>
