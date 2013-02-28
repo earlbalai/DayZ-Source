@@ -47,11 +47,11 @@ if (_section and _hasToolbox) then {
 		_vehicle setvelocity [0,0,1];
 
 		//Success!
-		cutText [format["You have successfully attached %1 to the %2",_namePart,_nameType], "PLAIN DOWN"];
+		cutText [format[localize "str_player_04",_namePart,_nameType], "PLAIN DOWN"];
 	};
 			
 } else {
-	cutText [format["You need %1 to repair this",_namePart], "PLAIN DOWN"];
+	cutText [format[localize "str_player_03",_namePart], "PLAIN DOWN"];
 };
 
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
