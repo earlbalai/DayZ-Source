@@ -619,7 +619,7 @@
 			<Original>%1 must be in your main inventory to %2 it.</Original>
 			<English>%1 must be in your main inventory to %2 it.</English>
 			<German>%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
-			<Russian>Предмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
+			<Russian>Чтобы %2 , (%1) должен находиться в основном инвентаре.</Russian>
 			<Spanish>Debes tener un %1 en tu inventario principal para %2.</Spanish>
 			<Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
 			<French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
@@ -628,46 +628,55 @@
 		<Key ID="str_player_31_build">
 			<Original>build</Original>
 			<English>build</English>
+			<Russian>построить</Russian>
 			<Spanish>construirlo</Spanish>
 		</Key>
 		<Key ID="str_player_31_consume">
 			<Original>consume</Original>
 			<English>consume</English>
+			<Russian>употребить</Russian>
 			<Spanish>consumirlo</Spanish>
 		</Key>
 		<Key ID="str_player_31_cook">
 			<Original>cook</Original>
 			<English>cook</English>
+			<Russian>приготовить</Russian>
 			<Spanish>cocinarlo</Spanish>
 		</Key>
 		<Key ID="str_player_31_drink">
 			<Original>drink</Original>
 			<English>drink</English>
+			<Russian>выпить</Russian>
 			<Spanish>beberlo</Spanish>
 		</Key>
 		<Key ID="str_player_31_fill">
 			<Original>fill</Original>
 			<English>fill</English>
+			<Russian>наполнить</Russian>
 			<Spanish>llenarla</Spanish>
 		</Key>
 		<Key ID="str_player_31_pitch">
 			<Original>pitch</Original>
 			<English>pitch</English>
+			<Russian>установить</Russian>
 			<Spanish>armarla</Spanish>
 		</Key>
 		<Key ID="str_player_31_place">
 			<Original>place</Original>
 			<English>place</English>
+			<Russian>установить</Russian>
 			<Spanish>colocarlo</Spanish>
 		</Key>
 		<Key ID="str_player_31_use">
 			<Original>use</Original>
 			<English>use</English>
+			<Russian>использовать</Russian>
 			<Spanish>usarlo</Spanish>
 		</Key>
 		<Key ID="str_player_31_wear">
 			<Original>wear</Original>
 			<English>wear</English>
+			<Russian>одеть</Russian>
 			<Spanish>vestirte</Spanish>
 		</Key>
 		<Key ID="str_player_beinglooted">
@@ -1148,7 +1157,7 @@
 			<Original>%1 Status: %2%</Original>
 			<English>%1 Status: %2%</English>
 			<German>%1 Schaden: %2%</German>
-			<Russian>%1 Status: %2%</Russian>
+			<Russian>%1 состояние: %2%</Russian>
 			<Spanish>%1 Estado: %2%</Spanish>
 			<Dutch>%1 Status: %2%</Dutch>
 			<French>%1 Status: %2%</French>
@@ -1307,31 +1316,37 @@
 		<Key ID="str_actions_stats_sd">
 			<Original>Survived %1 Days</Original>
 			<English>Survived %1 Days</English>
+			<Russian>Прожито %1 дней</Russian>
 			<Spanish>%1 Días Sobrevividos</Spanish>
 		</Key>
 		<Key ID="str_actions_stats_zk">
 			<Original>Zombies Killed</Original>
 			<English>Zombies Killed</English>
+			<Russian>Убито зомбей</Russian>
 			<Spanish>Zombies Matados</Spanish>
 		</Key>
 		<Key ID="str_actions_stats_hs">
 			<Original>Headshots</Original>
 			<English>Headshots</English>
+			<Russian>Выстрелов в голову</Russian>
 			<Spanish>Headshots</Spanish>
 		</Key>
 		<Key ID="str_actions_stats_hk">
 			<Original>Murders</Original>
 			<English>Murders</English>
+			<Russian>Убийств</Russian>
 			<Spanish>Asesinatos</Spanish>
 		</Key>
 		<Key ID="str_actions_stats_bk">
 			<Original>Bandits Killed</Original>
 			<English>Bandits Killed</English>
+			<Russian>Убито бандитов</Russian>
 			<Spanish>Bandidos Asesinados</Spanish>
 		</Key>
 		<Key ID="str_actions_stats_hm">
 			<Original>Humanity</Original>
 			<English>Humanity</English>
+			<Russian>Гуманность</Russian>
 			<Spanish>Humanidad</Spanish>
 		</Key>
 		<Key ID="str_actions_self_sleep">
