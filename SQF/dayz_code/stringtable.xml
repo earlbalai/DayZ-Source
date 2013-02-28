@@ -1145,15 +1145,15 @@
 			<Czech>&lt;t %2&gt;Opravit %1&lt;/t&gt;</Czech>
 		</Key>
 		<Key ID="str_actions_medical_09_status">
-          		<Original>%1 Status: %2%</Original>
-         		<English>%1 Status: %2%</English>
-         		<German>%1 Schaden: %2%</German>
+			<Original>%1 Status: %2%</Original>
+			<English>%1 Status: %2%</English>
+			<German>%1 Schaden: %2%</German>
 			<Russian>%1 Status: %2%</Russian>
-          		<Spanish>%1 Estado: %2%</Spanish>
-          		<Dutch>%1 Status: %2%</Dutch>
+			<Spanish>%1 Estado: %2%</Spanish>
+			<Dutch>%1 Status: %2%</Dutch>
 			<French>%1 Status: %2%</French>
 			<Czech>%1 Status: %2%</Czech>
-   		 </Key>
+		</Key>
 		<Key ID="str_actions_medical_10">
 			<Original>Refuel %1</Original>
 			<English>Refuel %1</English>
@@ -1303,6 +1303,36 @@
 			<Dutch>Enable Stats</Dutch>
 			<French>Activer les Stats</French>
 			<Czech>Zapnout statistiky</Czech>
+		</Key>
+		<Key ID="str_actions_stats_sd">
+			<Original>Survived %1 Days</Original>
+			<English>Survived %1 Days</English>
+			<Spanish>%1 Días Sobrevividos</Spanish>
+		</Key>
+		<Key ID="str_actions_stats_zk">
+			<Original>Zombies Killed</Original>
+			<English>Zombies Killed</English>
+			<Spanish>Zombies Matados</Spanish>
+		</Key>
+		<Key ID="str_actions_stats_hs">
+			<Original>Headshots</Original>
+			<English>Headshots</English>
+			<Spanish>Headshots</Spanish>
+		</Key>
+		<Key ID="str_actions_stats_hk">
+			<Original>Murders</Original>
+			<English>Murders</English>
+			<Spanish>Asesinatos</Spanish>
+		</Key>
+		<Key ID="str_actions_stats_bk">
+			<Original>Bandits Killed</Original>
+			<English>Bandits Killed</English>
+			<Spanish>Bandidos Asesinados</Spanish>
+		</Key>
+		<Key ID="str_actions_stats_hm">
+			<Original>Humanity</Original>
+			<English>Humanity</English>
+			<Spanish>Humanidad</Spanish>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
