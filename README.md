@@ -11,6 +11,7 @@ Files updated
 ------------
  - Dayz_code
  - Dayz_communityassets
+ - Dayz_sfx
 
 Requirements
 ------------
