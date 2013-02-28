@@ -222,12 +222,14 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			};
 
 			// get every damaged part no matter how tiny damage is!
+			_damagePercent = round((1 - _damage) * 100);
 			if (_damage > 0) then {
 				
 				_allFixed = false;
 				_color = "color='#ffff00'"; //yellow
 				if (_damage >= 0.5) then {_color = "color='#ff8800'";}; //orange
 				if (_damage >= 0.9) then {_color = "color='#ff0000'";}; //red
+				_cmpt = _cmpt + " Status: " + str(_damagePercent) + "%";
 
 				_string = format["<t %2>Repair%1</t>",_cmpt,_color]; //Repair - Part
 				_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\repair.sqf",[_vehicle,_part,_x], 0, false, true, "",""];
