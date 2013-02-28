@@ -31,7 +31,7 @@ while {alive player} do
 	//[-18697.58,379.53012,25815.256]
 	if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual  || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
 		createMarkerLocal ["respawn_west", _debug];
-		setMarkerType "EMPTY";
+		"respawn_west" setMarkerType "EMPTY";
 	};
 	
 	_curpos = getPosATL (vehicle player);
@@ -60,7 +60,7 @@ while {alive player} do
 
 	if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 		(vehicle player) setpos _lastpos;
-		atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6" name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
+		atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6", name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
 		publicVariableServer "atp";
 	} else {
 		_lastpos = _curpos;
