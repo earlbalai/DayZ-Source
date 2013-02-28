@@ -161,7 +161,7 @@
 			<French>Animation</French>
 			<Czech>Animace</Czech>
 		</Key>
-	</package>
+	</Package>
 	<Package name="code">
 		<Key ID="STR_DAYZ_CODE_1">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 			<Original>Take %1</Original>
@@ -193,7 +193,7 @@
 			<French>Chargement des données du personnage. Veuillez patienter.</French>
 			<Czech>Načítám data postavy. Prosím čekejte.</Czech>
 		</Key>
-	</package>
+	</Package>
 	<Package name="feedback">
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<Original>You have cooked %1 %2</Original>
@@ -785,7 +785,7 @@
 			<English>Can Abort in %1</English>
 			<German>Logout in %1</German>
 			<Russian>Выход будет доступен через %1</Russian>
-			<Spanish>Puedes abortar en %1</Spanish>
+			<Spanish>Puedes abortar en %1 segundos</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
 			<French>Vous pourrez vous déconnecter dans #1</French>
 			<Czech>Hru lze opustit za %1</Czech>
