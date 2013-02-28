@@ -13,7 +13,7 @@ _consume = 	([] + getArray (_config >> "magazines")) select 0;
 
 _hastrapitem = _this in magazines player;
 
-if (!_hastrapitem) exitWith {cutText [format[(localize "str_player_31"),_text,"place"] , "PLAIN DOWN"]};
+if (!_hastrapitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_place")] , "PLAIN DOWN"]};
 
 player removeMagazine _item;
 _location = getPosATL player;

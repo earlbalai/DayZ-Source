@@ -17,7 +17,7 @@ _hasbottleitem = _this in magazines player;
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_text,"fill"] , "PLAIN DOWN"]};
+if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
 
 if (!dayz_isSwimming) then {
 	player playActionNow "PutDown";

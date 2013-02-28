@@ -120,7 +120,6 @@
 			<Dutch>Wetenschappelijk Consultant</Dutch>
 			<French>Consultant scientifique</French>
 			<Czech>Vědecký konzulant</Czech>
-			
 		</Key>
 		<Key ID="STR_INTRO_13">	
 			<Original>Producer</Original>
@@ -616,15 +615,60 @@
 			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
 			<Czech>TO DECIDE</Czech>
 		</Key>
-		<Key ID="str_player_31">
+		<Key ID="str_player_31">	<!-- %1=ITEM %2=build/consumed/cook/drink/fill/pitch/place/use/wear -->
 			<Original>%1 must be in your main inventory to %2 it.</Original>
 			<English>%1 must be in your main inventory to %2 it.</English>
 			<German>%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
 			<Russian>Предмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
-			<Spanish>%1 debe estar en tu inventario principal para: %2</Spanish>
+			<Spanish>Debes tener un %1 en tu inventario principal para %2.</Spanish>
 			<Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
 			<French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
 			<Czech>%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
+		</Key>
+		<Key ID="str_player_31_build">
+			<Original>build</Original>
+			<English>build</English>
+			<Spanish>construirlo</Spanish>
+		</Key>
+		<Key ID="str_player_31_consume">
+			<Original>consume</Original>
+			<English>consume</English>
+			<Spanish>consumirlo</Spanish>
+		</Key>
+		<Key ID="str_player_31_cook">
+			<Original>cook</Original>
+			<English>cook</English>
+			<Spanish>cocinarlo</Spanish>
+		</Key>
+		<Key ID="str_player_31_drink">
+			<Original>drink</Original>
+			<English>drink</English>
+			<Spanish>beberlo</Spanish>
+		</Key>
+		<Key ID="str_player_31_fill">
+			<Original>fill</Original>
+			<English>fill</English>
+			<Spanish>llenarla</Spanish>
+		</Key>
+		<Key ID="str_player_31_pitch">
+			<Original>pitch</Original>
+			<English>pitch</English>
+			<Spanish>armarla</Spanish>
+		</Key>
+		<Key ID="str_player_31_place">
+			<Original>place</Original>
+			<English>place</English>
+			<Spanish>colocarlo</Spanish>
+		</Key>
+		<Key ID="str_player_31_use">
+			<Original>use</Original>
+			<English>use</English>
+			<Spanish>usarlo</Spanish>
+		</Key>
+		<Key ID="str_player_31_wear">
+			<Original>wear</Original>
+			<English>wear</English>
+			<Spanish>vestirte</Spanish>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<Original>%1 is already being looted by someone else.</Original>
@@ -651,7 +695,7 @@
 			<English>His name was %1, it appears he died from %2</English>
 			<German>Sein Name war %1, anscheinend starb er %2</German>
 			<Russian>Его звали %1, похоже что он умер от %2</Russian>
-			<Spanish>Su nombre era %1, y aparentemente murió por %2</Spanish>
+			<Spanish>Su nombre era %1, y aparentemente murió %2</Spanish>
 			<Dutch>Zijn naam was %1, het lijkt dat hij is gestorven aan %2</Dutch>
 			<French>Son nom était %1, il semble qu'il soit mort d' %2</French>
 			<Czech>Jeho jméno bylo %1, vypadá to, že je mrtvý od %2</Czech>
@@ -661,7 +705,7 @@
 			<English>a gunshot to the head</English>
 			<German>durch einen Schuss in den Kopf</German>
 			<Russian>попадания пули в голову</Russian>
-			<Spanish>un disparo en la cabeza</Spanish>
+			<Spanish>por un disparo en la cabeza</Spanish>
 			<Dutch>een kogel in het hoofd</Dutch>
 			<French>une balle dans la tête</French>
 			<Czech>střela do hlavy</Czech>
@@ -671,7 +715,7 @@
 			<English>a high calibre gunshot</English>
 			<German>an einer großkalibrigen Schusswunde</German>
 			<Russian>попадания пули большого калибра</Russian>
-			<Spanish>un disparo de alto calibre</Spanish>
+			<Spanish>por un disparo de alto calibre</Spanish>
 			<Dutch>een schot van hoog kaliber</Dutch>
 			<French>un tir de gros calibre</French>
 			<Czech>vysoko rážní střelba</Czech>
@@ -681,7 +725,7 @@
 			<English>blood loss</English>
 			<German>durch hohen Blutverlust</German>
 			<Russian>потери крови</Russian>
-			<Spanish>perdida de sangre</Spanish>
+			<Spanish>desangrado</Spanish>
 			<Dutch>bloedverlies</Dutch>
 			<French>une hémorragie</French>
 			<Czech>krev ztracena</Czech>
@@ -691,7 +735,7 @@
 			<English>dehydration</English>
 			<German>an Dehydrierung</German>
 			<Russian>обезвоживания</Russian>
-			<Spanish>deshidratación</Spanish>
+			<Spanish>deshidratado</Spanish>
 			<Dutch>uitdroging</Dutch>
 			<French>une déshydratation</French>
 			<Czech>dehydratace</Czech>
@@ -701,7 +745,7 @@
 			<English>starvation</English>
 			<German>durch Verhungern</German>
 			<Russian>голода</Russian>
-			<Spanish>falta de comida</Spanish>
+			<Spanish>de hambre</Spanish>
 			<Dutch>uithongering</Dutch>
 			<French>inanition</French>
 			<Czech>vyhladovění</Czech>
@@ -711,7 +755,7 @@
 			<English>combat logging</English>
 			<German>weil er im Kampf ausgeloggt ist</German>
 			<Russian>выхода из игры в режиме боя</Russian>
-			<Spanish>huir de combate</Spanish>
+			<Spanish>por huir en combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
 			<French>une déco en combat</French>
 			<Czech>odhlášen z boje</Czech>
@@ -721,7 +765,7 @@
 			<English>an unknown cause</English>
 			<German>ohne erkennbare Ursache</German>
 			<Russian>неизвестной причины</Russian>
-			<Spanish>causas desconocidas</Spanish>
+			<Spanish>por causas desconocidas</Spanish>
 			<Dutch>een onbekende oorzaak</Dutch>
 			<French>une cause inconnue</French>
 			<Czech>neznámá příčina</Czech>
