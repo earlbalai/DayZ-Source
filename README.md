@@ -9,8 +9,10 @@ Current Version
  
 Files updated
 ------------
+ - Dayz_anim
  - Dayz_code
  - Dayz_communityassets
+ - Dayz_server
  - Dayz_sfx
 
 Requirements
