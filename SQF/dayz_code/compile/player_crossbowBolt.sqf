@@ -1,11 +1,11 @@
-private["_unit","_ammo","_mags","_audible","_distance","_listTalk","_weapon","_projectile","_vUp","_endPos","_dir","_height","_bolt","_hitArray","_hitObject","_hitSelection","_config","_hitMemoryPt","_variation","_val","_doLoop","_countr"];
+private["_unit","_ammo","_magazine","_mags","_distance","_weapon","_projectile","_vUp","_endPos","_dir","_height","_bolt","_hitArray","_hitObject","_hitSelection","_config","_hitMemoryPt","_variation","_val","_doLoop","_countr"];
 _unit = 		_this select 0;
 _weapon = 		_this select 1;
 _ammo = 		_this select 4;
 _magazine =		_this select 5;
 _projectile = 	_this select 6;
 
-_projectile = nearestObject [_unit, _ammo];
+_projectile = nearestObject [_unit,_ammo];
 _vUp = vectorUp _projectile;
 _endPos = getPosATL _projectile;
 _dir = 0;
