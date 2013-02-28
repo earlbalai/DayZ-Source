@@ -11,7 +11,7 @@ _endPos = getPosATL _projectile;
 _dir = 0;
 
 if (_magazine == "Quiver") then {
-	_mags = {_x == "Quiver} count magazines player;
+	_mags = {_x == "Quiver"} count magazines player;
 	_ammo = player ammo "Crossbow_DZ";
 	if (_ammo > 0) then {
 		player removeMagazines "Quiver";
