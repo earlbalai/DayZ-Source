@@ -26,9 +26,9 @@ Requirements
 Branches
 --------
 
-- **Release_1.7.6.1** Is the current release version. (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.6)
-- **Release_1.7.5.1 Is the last version released. (https://github.com/R4Z0R49/DayZMod/tree/HOTFIX-1.7.5.1)
-- **Release_1.7.4.4 Is the last version released. (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.4.4)
+- **Release_1.7.6.1** Released: 26/Feb/13 **Latest Version** (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.6)
+- **Release_1.7.5.1** Released: 04/Feb/13 (https://github.com/R4Z0R49/DayZMod/tree/HOTFIX-1.7.5.1)
+- **Release_1.7.4.4** Released: 21/Nov/12 (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.4.4)
 
 Directories
 -----------
