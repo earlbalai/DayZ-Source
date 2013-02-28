@@ -16,8 +16,8 @@ _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "dis
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
 _tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
 _tintext = format["%1 / %2",_tin1text,_tin2text];
-if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_bottletext,"fill"] , "PLAIN DOWN"]};
-if (!_hastinitem) exitWith {cutText [format[(localize "str_player_31"),_tintext,"fill"] , "PLAIN DOWN"]};
+if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_bottletext,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
+if (!_hastinitem) exitWith {cutText [format[(localize "str_player_31"),_tintext,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
 
 if (_hasbottleitem and _hastinitem) then {
     _qty = {_x == "ItemWaterbottle"} count magazines player;

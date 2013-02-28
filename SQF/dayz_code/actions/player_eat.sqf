@@ -20,7 +20,7 @@ _config =   configFile >> "CfgMagazines" >> _itemorignal;
 _text =     getText (_config >> "displayName");
 _regen =    getNumber (_config >> "bloodRegen");
 
-if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,"consume"] , "PLAIN DOWN"]};
+if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_consume")] , "PLAIN DOWN"]};
 
 player playActionNow "PutDown";
 player removeMagazine _itemorignal;
