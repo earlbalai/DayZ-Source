@@ -1144,6 +1144,16 @@
 			<French>&lt;t %2&gt;Réparer %1&lt;/t&gt;</French>
 			<Czech>&lt;t %2&gt;Opravit %1&lt;/t&gt;</Czech>
 		</Key>
+		<Key ID="str_actions_medical_09_status">
+          		<Original>%1 Status: %2%</Original>
+         		<English>%1 Status: %2%</English>
+         		<German>%1 Status: %2%</German>
+			<Russian>%1 Status: %2%</Russian>
+          		<Spanish>%1 Estado: %2%</Spanish>
+          		<Dutch>%1 Status: %2%</Dutch>
+			<French>%1 Status: %2%</French>
+			<Czech>%1 Status: %2%</Czech>
+   		 </Key>
 		<Key ID="str_actions_medical_10">
 			<Original>Refuel %1</Original>
 			<English>Refuel %1</English>
