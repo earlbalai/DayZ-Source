@@ -14,7 +14,7 @@ waitUntil {vehicle player == player};
 	_playerUID = getPlayerUID player;
 	while {true} do {
 		if (typeName player != "OBJECT") then {
-			atp = format["WARNING! TYPENAME ERROR ON %1 (%2)" _playerName, _playerUID];
+			atp = format["WARNING! TYPENAME ERROR ON %1 (%2)", _playerName, _playerUID];
 			publicVariableServer "atp";
 			sleep 10; //Bypass spam
 		};
