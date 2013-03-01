@@ -1,4 +1,4 @@
-private["_playerPos","_item","_hastentitem","_location","_building","_isOk","_isok","_config","_text","_objectsPond","_isPond","_pondPos","_dir","_dis","_sfx","_tent"];
+private["_playerPos","_item","_hastentitem","_location","_building","_isOk","_config","_text","_objectsPond","_isPond","_pondPos","_dir","_dis","_sfx","_tent"];
 
 //check if can pitch here
 call gear_ui_init;
@@ -11,7 +11,7 @@ _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
 //_isOk = true;
 
-//diag_log ("Pitch Tent: " + str(_isok) );
+//diag_log ("Pitch Tent: " + str(_isOk) );
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
@@ -32,7 +32,7 @@ _objectsPond = 		nearestObjects [_playerPos, [], 10];
 		};
 	} forEach _objectsPond;
 
-//diag_log ("Pitch Tent: " + str(_isok) );
+//diag_log ("Pitch Tent: " + str(_isOk) );
 
 if (!_isOk) then {
 	//remove tentbag

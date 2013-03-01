@@ -20,7 +20,6 @@ if (vehicle player != player) exitWith {cutText ["You may not change clothes whi
 _isFemale = ((typeOf player == "SurvivorW2_DZ")||(typeOf player == "BanditW1_DZ"));
 if (_isFemale) exitWith {cutText ["Currently Female Characters cannot change to this skin. This will change in a future update.", "PLAIN DOWN"]};
 
-private["_itemNew","_myModel","_humanity","_isBandit","_isHero"];
 _myModel = (typeOf player);
 _humanity = player getVariable ["humanity",0];
 _isBandit = _humanity < -2000;

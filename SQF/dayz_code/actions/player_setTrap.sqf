@@ -23,7 +23,7 @@ player playActionNow "PutDown";
 sleep 1;
 
 _object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
-_object setDir _dir;
+_object setDir _dir; // TODO: _dir Used but not initialized
 player reveal _object;
 
 cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];

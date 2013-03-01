@@ -31,7 +31,7 @@ if (_consume_type == 256) then {
     _slotstart = 109;
     _slotend = 120;
 }; 
-if ( _consume_type == 16) then {    
+if (_consume_type == 16) then {    
     _slotstart = 122;
     _slotend = 129;
 };
@@ -73,7 +73,7 @@ _qtynew_consume_ammo_rest = 0;
 _qtynew_create_ammo_rest = 0;
 
 
-if ( _consume_magsize > _create_magsize) then {
+if (_consume_magsize > _create_magsize) then {
     _qtynew_create_ammo = _qty_create_ammo + _item_ammo;
     _qtynew_consume_ammo = _qty_consume_ammo - _item_ammo;
     _qtynew_create_mags = ceil(_qtynew_create_ammo/_create_magsize);
@@ -83,7 +83,7 @@ if ( _consume_magsize > _create_magsize) then {
     _qtynew_consume_ammo = 0;
 };
 
-if ((_qtynew_create_mags + _qtynew_consume_mags) > _avaliable_slots) exitWith {
+if ((_qtynew_create_mags + _qtynew_consume_mags) > _avaliable_slots) exitWith { // TODO: _avaliable_slots used but not initialized
     cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
 };
 _qtynew_consume_mags_full = floor(_qtynew_consume_ammo/_consume_magsize);
