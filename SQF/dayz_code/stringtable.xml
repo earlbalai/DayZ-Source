@@ -805,7 +805,7 @@
 			<Russian>Выход будет доступен через %1</Russian>
 			<Spanish>Puedes abortar en %1 segundos</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
-			<French>Vous pourrez vous déconnecter dans #1</French>
+			<French>Vous pourrez vous déconnecter dans %1</French>
 			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
 		<Key ID="str_abort_playerincombat">
@@ -1342,7 +1342,7 @@
 			<English>Survived %1 Days</English>
 			<Russian>Прожито %1 дней</Russian>
 			<Spanish>%1 Días Sobrevividos</Spanish>
-			<French>Survie #1 Jours</French>
+			<French>Survie %1 Jours</French>
 		</Key>
 		<Key ID="str_actions_stats_zk">
 			<Original>Zombies Killed</Original>
