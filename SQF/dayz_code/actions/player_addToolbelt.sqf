@@ -1,4 +1,4 @@
-private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_magType","_meleeNum","_isOk","_type","_muzzles","_wtype"];
+private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_magType","_meleeNum","_isOk","_type","_muzzles","_wtype","_i"];
 
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
@@ -51,7 +51,7 @@ if (_isOk) then {
 		if (_create == "MeleeMachete") then {
 			player addMagazine 'Machete_swing';
 		};
-		if (_type == "cfgWeapons") then {
+		if (_type == "cfgWeapons") then { // TODO: Used but not initialized
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
 			_wtype = ((weapons player) select 0);
 			if (count _muzzles > 1) then {

@@ -1,4 +1,5 @@
-private["_vehicle","_part","_hitpoint","_type","_selection","_array"];
+private["_id","_array","_vehicle","_part","_hitpoint","_type","_hasToolbox","_section","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed"];
+
 _id = _this select 2;
 _array = 	_this select 3;
 _vehicle = 	_array select 0;

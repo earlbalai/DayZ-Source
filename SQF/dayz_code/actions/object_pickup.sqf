@@ -1,4 +1,4 @@
-private["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_muzzles","_wtype"];
+private["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_muzzles"];
 
 _array = _this select 3;
 _type = _array select 0;
