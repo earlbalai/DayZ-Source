@@ -1,4 +1,5 @@
-private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key"];
+private["_playerPos","_item","_hastentitem","_location","_building","_isOk","_isok","_config","_text","_objectsPond","_isPond","_pondPos","_dir","_dis","_sfx","_tent"];
+
 //check if can pitch here
 call gear_ui_init;
 _playerPos = 	getPosATL player;
@@ -67,4 +68,3 @@ if (!_isOk) then {
 } else {
 	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
 };
-

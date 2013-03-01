@@ -1,4 +1,5 @@
-private["_array","_type","_classname","_holder","_config","_isOk","_muzzles","_playerID","_claimedBy","_text","_control","_dialog","_item","_val","_max","_bolts","_quivers","_quiver","_broken"];
+private["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_muzzles","_wtype"];
+
 _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
@@ -70,4 +71,3 @@ if (_isOk) then {
 			player removeMagazine 'Machete_swing';
 	};
 };
-

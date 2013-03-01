@@ -1,4 +1,5 @@
-private["_item","_config","_onLadder","_create","_isOk","_config2","_consume"];
+private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_magType","_meleeNum","_isOk","_type","_muzzles","_wtype"];
+
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
 
@@ -45,10 +46,10 @@ if (_isOk) then {
 			player addMagazine 'crowbar_swing';
 		};
 		if (_create == "MeleeHatchet") then {
-				player addMagazine 'hatchet_swing';
+			player addMagazine 'hatchet_swing';
 		};
 		if (_create == "MeleeMachete") then {
-				player addMagazine 'Machete_swing';
+			player addMagazine 'Machete_swing';
 		};
 		if (_type == "cfgWeapons") then {
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
@@ -69,10 +70,10 @@ if (_isOk) then {
 			player addMagazine 'crowbar_swing';
 		};
 		if (_item == "MeleeHatchet") then {
-				player addMagazine 'hatchet_swing';
+			player addMagazine 'hatchet_swing';
 		};
 		if (_item == "MeleeMachete") then {
-				player addMagazine 'Machete_swing';
+			player addMagazine 'Machete_swing';
 		};
 	};	
 };
