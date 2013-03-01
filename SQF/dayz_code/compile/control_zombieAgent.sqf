@@ -1,5 +1,5 @@
-private["_position","_unitTypes","_group","_unit","_target","_bodies","_targetPos","_codeSpawns","_unitSpawn","_lead","_isAlive","_units"];
-//Definitions
+private["_agent","_id","_list","_isSomeone","_isAlive","_target","_targetPos","_myDest","_position"];
+
 _agent = _this select 0;
 
 //Add handlers
@@ -8,7 +8,7 @@ _agent = _this select 0;
 //Loop behaviour
 _list = (getposATL _agent) nearEntities ["Man",200];
 _isSomeone = ({isPlayer _x} count _list) > 0;
-while {_isAlive and _isSomeone} do {
+while {_isAlive and _isSomeone} do { // TODO: _isAlive not initialized
 //NO TARGET
 	_agent disableAI "FSM";
 	_target = objNull;
@@ -24,7 +24,7 @@ while {_isAlive and _isSomeone} do {
 		_isSomeone = ({isPlayer _x} count _list) > 0;
 		_target = _agent call zombie_findTargetAgent;
 		if (_isAlive and (_agent distance _myDest < 5)) then {
-			[_agent,_position] call zombie_loiter;
+			[_agent,_position] call zombie_loiter; // TODO: _position not initialized
 		};
 		_agent forceSpeed 2;
 		sleep 1;
