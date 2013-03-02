@@ -5,8 +5,6 @@ _messTimer = 0;
 _lastSave = 0;
 _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
-_isBandit = typeOf player == "Survivor3_DZ";
-_isHero = typeOf player == "Bandit1_DZ" || typeOf player == "BanditW1_DZ";
 
 player setVariable ["temperature",dayz_temperatur,true];
 
@@ -22,6 +20,8 @@ while {true} do {
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 	_saveTime = (playersNumber west * 2) + 10;
+	_isBandit = typeOf player == "Survivor3_DZ";
+	_isHero = typeOf player == "Bandit1_DZ" || typeOf player == "BanditW1_DZ";
 		
 	//reset position
 	_randomSpot = true;
@@ -73,9 +73,8 @@ while {true} do {
 	};
 	
 	if (_humanity < -2000 and !_isBandit) then {
-		_isBandit = true;
 		_model = typeOf player;
-		if (_model == "Survivor2_DZ") then {
+		if (_model == "Survivor2_DZ" || _model == "Survivor3_DZ") then {
 			[dayz_playerUID,dayz_characterID,"Bandit1_DZ"] spawn player_humanityMorph;
 		};
 		if (_model == "SurvivorW2_DZ") then {
@@ -84,8 +83,6 @@ while {true} do {
 	};
 	
 	if (_humanity > 0 and (_isBandit || ( _humanity < 5000 and _isHero))) then {
-		_isBandit = false;
-		_isHero = false;
 		_model = typeOf player;
 		if (_model == "Bandit1_DZ" || _model == "Survivor3_DZ") then {
 			[dayz_playerUID,dayz_characterID,"Survivor2_DZ"] spawn player_humanityMorph;
@@ -96,9 +93,8 @@ while {true} do {
 	};
 	
 	if (_humanity > 5000 and !_isHero) then {
-		_isBandit = false;
 		_model = typeOf player;
-		if (_model == "Survivor2_DZ") then {
+		if (_model == "Survivor2_DZ" || _model == "Bandit1_DZ") then {
 			[dayz_playerUID,dayz_characterID,"Survivor3_DZ"] spawn player_humanityMorph;
 		};
 	};
