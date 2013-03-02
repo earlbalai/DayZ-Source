@@ -112,17 +112,12 @@ deleteGroup _myGroup;
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];
 
-if (count _array > 0) then {
-	_body setVariable ["deathType",_method,true];
-};
-
 _body setVariable["combattimeout", 0, true];
 
 //["dayzFlies",player] call broadcastRpcCallAll;
 sleep 2;
 
 1 cutRsc ["DeathScreen","BLACK OUT",3];
-
 
 playMusic "dayz_track_death_1";
 
