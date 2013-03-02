@@ -5,8 +5,8 @@ _messTimer = 0;
 _lastSave = 0;
 _lastTemp = dayz_temperatur;
 _debug = getMarkerpos "respawn_west";
-_isBandit = false;
-_isHero = false;
+_isBandit = typeOf player == "Survivor3_DZ";
+_isHero = typeOf player == "Bandit1_DZ" || typeOf player == "BanditW1_DZ";
 
 player setVariable ["temperature",dayz_temperatur,true];
 

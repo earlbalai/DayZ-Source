@@ -70,7 +70,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	diag_log (str(_backpackMag));
 
 //Secure Player for Transformation
-	player setPosATL dayz_spawnPos;
+	//player setPosATL dayz_spawnPos;
 
 //BackUp Player Object
 	_oldUnit = player;
@@ -82,7 +82,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 //Create New Character
 	//[player] joinSilent grpNull;
 	_group 		= createGroup west;
-	_newUnit 	= _group createUnit [_class,dayz_spawnPos,[],0,"NONE"];
+	_newUnit 	= _group createUnit [_class,_position,[],0,"NONE"];
 
 	_newUnit 	setPosATL _position;
 	_newUnit 	setDir _dir;

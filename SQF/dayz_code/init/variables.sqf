@@ -1,4 +1,5 @@
 disableSerialization;
+disableSerialization;
 
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
@@ -328,7 +329,7 @@ dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
 dayz_maxGlobalZombies = 30;
 dayz_maxZeds = 500;
-dayz_spawnPos = getPosATL player;
+//dayz_spawnPos = getPosATL player;
 
 //init global arrays for Loot Chances
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
