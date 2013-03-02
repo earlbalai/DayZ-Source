@@ -1,4 +1,4 @@
-private["_agent","_id","_list","_isSomeone","_isAlive","_target","_targetPos","_myDest","_position"];
+private["_agent","_id","_list","_isSomeone","_isAlive","_target","_targetPos","_myDest"];
 
 _agent = _this select 0;
 
@@ -25,7 +25,7 @@ while {_isAlive and _isSomeone} do {
 		_isSomeone = ({isPlayer _x} count _list) > 0;
 		_target = _agent call zombie_findTargetAgent;
 		if (_isAlive and (_agent distance _myDest < 5)) then {
-			[_agent,_position] call zombie_loiter; // TODO: _position not initialized
+			[_agent,_myDest] call zombie_loiter;
 		};
 		_agent forceSpeed 2;
 		sleep 1;
