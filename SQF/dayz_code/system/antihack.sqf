@@ -16,6 +16,8 @@ waitUntil {vehicle player == player};
 		if (typeName player != "OBJECT") then {
 			atp = format["WARNING! TYPENAME ERROR ON %1 (%2)", _playerName, _playerUID];
 			publicVariableServer "atp";
+			//forceEnd;
+			endMission "CONTINUE";
 			sleep 10; //Bypass spam
 		};
 	};
