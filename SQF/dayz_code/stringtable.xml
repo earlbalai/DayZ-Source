@@ -1032,7 +1032,7 @@
 		</Key>
 		<Key ID="str_actions_medical_09_status">
 			<English>%1 Status: %2%</English>
-			<German>%1 Schaden: %2%</German>
+			<German>%1 Status: %2%</German>
 			<Russian>%1 состояние: %2%</Russian>
 			<Spanish>%1 Estado: %2%</Spanish>
 			<Dutch>%1 Status: %2%</Dutch>
