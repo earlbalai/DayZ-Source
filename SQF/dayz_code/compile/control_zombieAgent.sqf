@@ -8,7 +8,8 @@ _agent = _this select 0;
 //Loop behaviour
 _list = (getposATL _agent) nearEntities ["Man",200];
 _isSomeone = ({isPlayer _x} count _list) > 0;
-while {_isAlive and _isSomeone} do { // TODO: _isAlive not initialized
+_isAlive = alive _agent;
+while {_isAlive and _isSomeone} do {
 //NO TARGET
 	_agent disableAI "FSM";
 	_target = objNull;
