@@ -1,7 +1,7 @@
 private["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_dis","_sfx"];
 
 call gear_ui_init;
-
+_item = 		_this;
 _playerPos = 	getPosATL player;
 _canFill = 		count nearestObjects [_playerPos, ["Land_pumpa","Land_water_tank"], 4] > 0;
 _isPond = 		false;
@@ -14,7 +14,7 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasbottleitem = _this in magazines player;
 
-_config = configFile >> "CfgMagazines" >> _item; // TODO: _item Used but not initialized
+_config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
 if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
