@@ -6,7 +6,7 @@ _target = objNull;
 _local = [];
 _remote = [];
 _targets = [];
-_range = 300;
+_range = 120;
 _manDis = 0;
 
 _local =	_agent getVariable ["target",[]];

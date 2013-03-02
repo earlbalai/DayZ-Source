@@ -3,7 +3,7 @@ private["_vehicle","_unit","_listTalk","_pHeight","_attacked","_multiplier","_co
 
 _vehicle = vehicle player;
 _unit = (driver _vehicle);
-_listTalk = (getPos _unit) nearEntities ["zZombie_Base",200];
+_listTalk = (getPos _unit) nearEntities ["zZombie_Base",80];
 _pHeight = (getPosATL _unit) select 2;
 _attacked = false;
 _multiplier = 1;
