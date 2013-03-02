@@ -1,4 +1,4 @@
-private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_magType","_meleeNum","_isOk","_type","_wtype","_i"];
+private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_magType","_meleeNum","_isOk","_type","_muzzles","_wtype","_i"];
 
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
@@ -6,7 +6,7 @@ _config =	configFile >> "cfgWeapons" >> _item;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
-_hastoolweapon = _item in weapons player;
+_hastoolweapon = _this in weapons player;
 _text = getText (_config >> "displayName");
 if (!_hastoolweapon) exitWith {cutText [format[(localize "str_player_30"),_text] , "PLAIN DOWN"]};
 
@@ -51,7 +51,7 @@ if (_isOk) then {
 		if (_create == "MeleeMachete") then {
 			player addMagazine 'Machete_swing';
 		};
-		/*if (_type == "cfgWeapons") then {
+		if (_type == "cfgWeapons") then { // TODO: Used but not initialized
 			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
 			_wtype = ((weapons player) select 0);
 			if (count _muzzles > 1) then {
@@ -59,7 +59,7 @@ if (_isOk) then {
 			} else {
 				player selectWeapon _wtype;
 			};
-		};*/
+		};
 	};		
 } else {
 	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
