@@ -2318,6 +2318,16 @@
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
 			<Czech>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
+			<Original>Tin Can</Original>
+			<English>Tin Can</English>	
+			<German>Tin Can</German>
+			<Russian>Жестянка</Russian>
+			<Spanish>Lata</Spanish>
+			<Dutch>Tin Can</Dutch>
+			<French>Boîte en fer-blanc</French>
+			<Czech>Tin Can</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<Original>Can (Beans)</Original>
 			<English>Can (Beans)</English>	
@@ -2337,16 +2347,6 @@
 			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
 			<Czech>A clean, unopened can of Griff's black beans.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_GRIFF_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF_EMPTY">
 			<Original>An empty can of Griff's black beans.</Original>
@@ -2378,16 +2378,6 @@
 			<French>Une boîte intacte de pêches en morceaux de "Bad Guy".</French>
 			<Czech>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_BADGUY_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
-		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY_EMPTY">
 			<Original>An empty can of Bad Guy's ubiquitous peach slices.</Original>
 			<English>An empty can of Bad Guy's ubiquitous peach slices.</English>	
@@ -2417,16 +2407,6 @@
 			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
 			<French>Une boîte intacte de raviolis "Chef Boneboy".</French>
 			<Czech>A clean, unopened can of Chef Boneboy ravioli.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_BONEBOY_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY_EMPTY">
 			<Original>An empty can of Chef Boneboy ravioli.</Original>
@@ -2458,16 +2438,6 @@
 			<French>Une boîte intacte de maïs en grains "Conrad".</French>
 			<Czech>A clean, unopened can of Conrad's whole kernel corn.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_CORN_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
-		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN_EMPTY">
 			<Original>An empty can of Conrad's whole kernel corn.</Original>
 			<English>An empty can of Conrad's whole kernel corn.</English>	
@@ -2497,16 +2467,6 @@
 			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
 			<French>Une boîte intacte de soupe de nouilles au poulet "Curgon".</French>
 			<Czech>A clean, unopened can of Curgon's chicken noodle soup.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_CURGON_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON_EMPTY">
 			<Original>An empty can of Curgon's chicken noodle soup.</Original>
@@ -2538,16 +2498,6 @@
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
 			<Czech>A clean, unopened can of Demon Groves green beans.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_DEMON_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
-		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON_EMPTY">
 			<Original>An empty can of Demon Groves green beans.</Original>
 			<English>An empty can of Demon Groves green beans.</English>	
@@ -2577,16 +2527,6 @@
 			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
 			<French>Une boîte intacte de spaghettis "FraggleOs".</French>
 			<Czech>A clean, unopened can of FraggleOs spaghetti.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY">
 			<Original>An empty can of FraggleOs spaghetti.</Original>
@@ -2618,16 +2558,6 @@
 			<French>Une boîte intacte de muffins en conserve "Herpy Dooves".</French>
 			<Czech>A clean, unopened can of Herpy Dooves canned muffins.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_HERPY_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
-		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY_EMPTY">
 			<Original>An empty can of Herpy Dooves canned muffins.</Original>
 			<English>An empty can of Herpy Dooves canned muffins.</English>	
@@ -2657,16 +2587,6 @@
 			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
 			<French>Une boîte intacte de fruits mixés "Orlok".</French>
 			<Czech>A clean, unopened can of Orlok mixed fruit.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_ORLOK_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK_EMPTY">
 			<Original>An empty can of Orlok mixed fruit.</Original>
@@ -2698,16 +2618,6 @@
 			<French>Une boîte intacte de soupe de palourdes de "Powell's New England".</French>
 			<Czech>A clean, unopened can of Powell's New England clam chowder.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_POWELL_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
-		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL_EMPTY">
 			<Original>An empty can of Powell's New England clam chowder.</Original>
 			<English>An empty can of Powell's New England clam chowder.</English>	
@@ -2738,16 +2648,6 @@
 			<French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
 			<Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_TYLERS_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
-		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS_EMPTY">
 			<Original>An empty can of Tyler's delicious kidney beans.</Original>
 			<English>An empty can of Tyler's delicious kidney beans.</English>	
@@ -2777,16 +2677,6 @@
 			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
 			<French>Une boîte intacte. L'étiquette est manquante.</French>
 			<Czech>A clean, unopened tin can. The label is missing.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_UNLABELED_EMPTY">
-			<Original>Tin Can</Original>
-			<English>Tin Can</English>	
-			<German>Tin Can</German>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<Dutch>Tin Can</Dutch>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Tin Can</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED_EMPTY">
 			<Original>An empty tin can.</Original>
