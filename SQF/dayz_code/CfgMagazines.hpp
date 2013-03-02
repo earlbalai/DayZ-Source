@@ -576,14 +576,14 @@ class CfgMagazines {
 		count = 1;
 		model = "z\addons\dayz_communityassets\models\can_griff_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
-		displayName = $STR_FOOD_NAME_CAN_GRIFF_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF_EMPTY;
 		ammo = "TinCan";
 	};
 	class FoodCanBadguyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_BADGUY_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_BADGUY_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_badguy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_empty_ca.paa";
@@ -592,7 +592,7 @@ class CfgMagazines {
 	class FoodCanBoneboyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_BONEBOY_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_BONEBOY_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_boneboy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_empty_ca.paa";
@@ -601,7 +601,7 @@ class CfgMagazines {
 	class FoodCanCornEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_CORN_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_CORN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_corn_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_empty_ca.paa";
@@ -610,7 +610,7 @@ class CfgMagazines {
 	class FoodCanCurgonEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_CURGON_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_CURGON_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_curgon_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_empty_ca.paa";
@@ -619,7 +619,7 @@ class CfgMagazines {
 	class FoodCanDemonEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_DEMON_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_DEMON_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_demon_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_empty_ca.paa";
@@ -628,7 +628,7 @@ class CfgMagazines {
 	class FoodCanFraggleosEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_FRAGGLEOS_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_fraggleos_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_empty_ca.paa";
@@ -637,7 +637,7 @@ class CfgMagazines {
 	class FoodCanHerpyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_HERPY_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_HERPY_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_herpy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_empty_ca.paa";
@@ -646,7 +646,7 @@ class CfgMagazines {
 	class FoodCanOrlokEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_ORLOK_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_ORLOK_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_orlok_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_empty_ca.paa";
@@ -655,7 +655,7 @@ class CfgMagazines {
 	class FoodCanPowellEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_POWELL_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_POWELL_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_powell_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_empty_ca.paa";
@@ -664,7 +664,7 @@ class CfgMagazines {
 	class FoodCanTylersEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_TYLERS_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_TYLERS_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_tylers_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_empty_ca.paa";
@@ -673,7 +673,7 @@ class CfgMagazines {
 	class FoodCanUnlabeledEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOOD_NAME_CAN_UNLABELED_EMPTY;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
