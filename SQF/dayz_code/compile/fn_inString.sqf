@@ -1,8 +1,7 @@
 //Kilzone_Kid's megafast inString function
 //caseinsensitive
-//params [needle,haystack];
-private["_needle","_haystack","_haystackArr","_haystackLen","_needleLen","_found","_hayArr","_i"];
-
+//params [needle,haystack]
+private["_needle","_haystack","_found","_haystackArr","_haystackLen","_needleLen","_hayArr"];
 scopeName "main";
 _needle = _this select 0;
 _haystack = _this select 1;

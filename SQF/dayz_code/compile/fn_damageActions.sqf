@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- Function
 	- [] call fnc_usec_damageActions;
 ************************************************************/
-private["_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_bag","_classbag","_assignedRole","_turret","_weapons","_weaponName","_action","_unit","_vehClose","_hasVehicle","_unconscious","_lowBlood","_injured","_inPain","_legsBroke","_armsBroke","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_hasToolbox","_hasJerry","_hasEtool","_hasWire","_hasPainkillers","_action1","_action2","_vehType","_type","_typeVeh","_weapon","_magTypes","_ammoSerial","_ammoQty","_displayName","_isEngineer","_index","_inventory","_unitTo","_crew","_unconscious_crew","_patients","_y"];
+private["_menClose","_unit","_unconscious","_lowBlood","_injured","_inPain","_hasBandage","_hasEpi","_hasMorphine","_hasBlood","_action1","_action2","_action","_vehClose","_hasVehicle","_vehicle","_inVehicle","_crew","_unconscious_crew","_patients"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -69,13 +69,13 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	};
 	//Load Vehicle
 	if (_hasVehicle and _unconscious) then {
-		_y = 0;
+		_x = 0;
 		r_action = true;
 		_unit = _unit;
-		_vehicle = (_vehClose select _y);
-		while{((!alive _vehicle) and (_y < (count _vehClose)))} do {
-			_y = _y + 1;
-			_vehicle = (_vehClose select _y);
+		_vehicle = (_vehClose select _x);
+		while{((!alive _vehicle) and (_x < (count _vehClose)))} do {
+			_x = _x + 1;
+			_vehicle = (_vehClose select _x);
 		};
 		_vehType = typeOf _vehicle;
 		_action = _unit addAction [format[localize "str_actions_medical_03",_vehType], "\z\addons\dayz_code\medical\load\load_act.sqf",[player,_vehicle,_unit], 0, true, true];

@@ -1,10 +1,8 @@
-private["_unit","_selection","_damage","_strH","_dam","_total","_break","_display","_ctrlFracture","_id"];
-
+private["_unit","_hp","_selection","_strH","_dam","_display"];
 disableSerialization;
 _unit =			_this select 0;
 _selection =	_this select 1;
 _damage =		_this select 2;
-
 _strH = "hit_" + (_selection);
 
 if (local _unit) then {

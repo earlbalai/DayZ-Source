@@ -3,14 +3,14 @@
 -- Server version:               5.6.10 - MySQL Community Server (GPL)
 -- Server OS:                    Win64
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2013-03-01 22:49:11
+-- Date/time:                    2013-02-26 20:33:04
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.character_data
+-- Dumping structure for table hivemind.character_data
 CREATE TABLE IF NOT EXISTS `character_data` (
   `CharacterID` int(11) NOT NULL AUTO_INCREMENT,
   `PlayerID` int(11) NOT NULL DEFAULT '0',
@@ -43,8 +43,6 @@ CREATE TABLE IF NOT EXISTS `character_data` (
   KEY `Alive_PlayerUID` (`Alive`,`LastLogin`,`PlayerUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table test.character_data: ~0 rows (approximately)
-/*!40000 ALTER TABLE `character_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `character_data` ENABLE KEYS */;
+-- Data exporting was unselected.
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

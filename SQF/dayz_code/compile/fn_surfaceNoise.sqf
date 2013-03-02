@@ -1,5 +1,5 @@
-private["_unit","_pos","_type","_typeA","_test","_soundType","_soundVal","_array"];
-
+//Assess Terrain
+private["_unit","_pos","_type","_typeA","_soundType","_soundVal","_array","_test"];
 _unit = 	_this;
 _pos = 		getPosATL _unit;
 _type = 	surfaceType _pos;
