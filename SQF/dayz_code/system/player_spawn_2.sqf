@@ -83,10 +83,11 @@ while {true} do {
 		};
 	};
 	
-	if (_humanity > 0 and _isBandit) then {
+	if (_humanity > 0 and (_isBandit || ( _humanity < 5000 and _isHero))) then {
 		_isBandit = false;
+		_isHero = false;
 		_model = typeOf player;
-		if (_model == "Bandit1_DZ") then {
+		if (_model == "Bandit1_DZ" || _model == "Survivor3_DZ") then {
 			[dayz_playerUID,dayz_characterID,"Survivor2_DZ"] spawn player_humanityMorph;
 		};
 		if (_model == "BanditW1_DZ") then {
