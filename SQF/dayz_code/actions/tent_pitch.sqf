@@ -1,4 +1,5 @@
-private["_position","_tent","_location","_isOk","_backpack","_tentType","_trg","_key"];
+private["_playerPos","_item","_hastentitem","_location","_building","_isOk","_config","_text","_objectsPond","_isPond","_pondPos","_dir","_dis","_sfx","_tent"];
+
 //check if can pitch here
 call gear_ui_init;
 _playerPos = 	getPosATL player;
@@ -10,12 +11,12 @@ _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
 //_isOk = true;
 
-//diag_log ("Pitch Tent: " + str(_isok) );
+//diag_log ("Pitch Tent: " + str(_isOk) );
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 
-if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,"pitch"] , "PLAIN DOWN"]};
+if (!_hastentitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_pitch")] , "PLAIN DOWN"]};
 
 //blocked
 if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
@@ -31,7 +32,7 @@ _objectsPond = 		nearestObjects [_playerPos, [], 10];
 		};
 	} forEach _objectsPond;
 
-//diag_log ("Pitch Tent: " + str(_isok) );
+//diag_log ("Pitch Tent: " + str(_isOk) );
 
 if (!_isOk) then {
 	//remove tentbag
@@ -67,4 +68,3 @@ if (!_isOk) then {
 } else {
 	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
 };
-

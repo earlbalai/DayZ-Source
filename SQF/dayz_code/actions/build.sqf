@@ -1,4 +1,4 @@
-private["_location","_isOk","_dir","_classname","_item"];
+private["_location","_dir","_classname","_item","_onLadder","_isWater","_text","_hasbuilditem","_dis","_sfx","_object"];
 _location = player modeltoworld [0,1,0];
 _location set [2,0];
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -15,7 +15,7 @@ _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
 _hasbuilditem = _this in magazines player;
 
-if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
+if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_build")] , "PLAIN DOWN"]};
 
 _dir = getDir player;
 player removeMagazine _item;

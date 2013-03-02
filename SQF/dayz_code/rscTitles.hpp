@@ -356,7 +356,7 @@ class RscDisplayGear
 			idc = 1001;
 			x = 0.047634;
 			y = -0.00102941;
-			text = "Gear";
+			text = "$STR_UI_GEAR";
 		};
 		class Unit_Title: RscText
 		{
@@ -908,7 +908,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 3"};
 			x = 0.333336;
 			y = 0.897067;
-			text = "Filter";
+			text = "$STR_UI_FILTER";
 		};
 		class ButtonRearm: RscIGUIShortcutButton
 		{
@@ -916,7 +916,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 2"};
 			x = 0.554743;
 			y = 0.897067;
-			text = "Rearm";
+			text = "$STR_UI_REARM";
 		};
 		class ButtonOpenBag: RscIGUIShortcutButton
 		{
@@ -924,7 +924,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 2"};
 			x = 0.554743;
 			y = 0.897067;
-			text = "Open bag";
+			text = "$STR_UI_OBAG";
 		};
 		class ButtonCloseBag: RscIGUIShortcutButton
 		{
@@ -932,7 +932,7 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 2"};
 			x = 0.554743;
 			y = 0.897067;
-			text = "Close bag";
+			text = "$STR_UI_CBAG";
 		};
 		class ButtonContinue: RscIGUIShortcutButton
 		{
@@ -948,38 +948,38 @@ class RscDisplayGear
 			shortcuts[] = {"0x00050000 + 1"};
 			x = 0.0392216;
 			y = 0.897066;
-			text = "Close";
+			text = "$STR_UI_CLOSE";
 		};
 	};
 	class Filters
 	{
 		class All
 		{
-			name = "All";
+			name = "$STR_UI_ALL";
 			mask = -1;
 			image = "\ca\ui\data\igui_gear_filter_1_ca.paa";
 		};
 		class Primary
 		{
-			name = "Primary";
+			name = "$STR_UI_PRIMARY";
 			mask = 769;
 			image = "\ca\ui\data\igui_gear_filter_2_ca.paa";
 		};
 		class Secondary
 		{
-			name = "Secondary";
+			name = "$STR_UI_SECONDARY";
 			mask = 516;
 			image = "\ca\ui\data\igui_gear_filter_3_ca.paa";
 		};
 		class HandGun
 		{
-			name = "HandGun";
+			name = "$STR_UI_HANDGUN";
 			mask = 18;
 			image = "\ca\ui\data\igui_gear_filter_4_ca.paa";
 		};
 		class Items
 		{
-			name = "Items";
+			name = "$STR_UI_ITEMS";
 			mask = 135168;
 			image = "\ca\ui\data\igui_gear_filter_5_ca.paa";
 		};

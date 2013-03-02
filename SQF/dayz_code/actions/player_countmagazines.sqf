@@ -3,7 +3,7 @@ count player magazines with ammo count
 value = call player_countmagazines;
 return all player magazines with ammo count
 */
-private ["_dialog","_control","_magazineArray","_item","_val","_max","_created"];
+private["_dialog","_created","_magazineArray","_control","_i","_item","_val","_max"];
 disableSerialization;
 disableUserInput true;
 _dialog = findDisplay 106;

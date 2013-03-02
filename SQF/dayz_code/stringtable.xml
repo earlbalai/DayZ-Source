@@ -120,7 +120,6 @@
 			<Dutch>Wetenschappelijk Consultant</Dutch>
 			<French>Consultant scientifique</French>
 			<Czech>Vědecký konzulant</Czech>
-			
 		</Key>
 		<Key ID="STR_INTRO_13">	
 			<Original>Producer</Original>
@@ -162,16 +161,16 @@
 			<French>Animation</French>
 			<Czech>Animace</Czech>
 		</Key>
-	</package>
+	</Package>
 	<Package name="code">
-		<Key ID="STR_DAYZ_CODE_1">	
+		<Key ID="STR_DAYZ_CODE_1">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 			<Original>Take %1</Original>
 			<English>Take %1</English> 
 			<German>%1 aufnehmen</German>
 			<Russian>Взять %1</Russian>
 			<Spanish>Tomar %1</Spanish>
 			<Dutch>Neem %1</Dutch>
-			<French>Prendre %1</French>			<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
+			<French>Prendre %1</French>
 			<Czech>Vezmi %1</Czech>
 		</Key>
 		<Key ID="STR_DAYZ_CODE_2">	
@@ -194,16 +193,16 @@
 			<French>Chargement des données du personnage. Veuillez patienter.</French>
 			<Czech>Načítám data postavy. Prosím čekejte.</Czech>
 		</Key>
-	</package>
+	</Package>
 	<Package name="feedback">
-		<Key ID="str_success_cooked">
+		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<Original>You have cooked %1 %2</Original>
 			<English>You have cooked %1 %2</English>
 			<German>Sie haben %1 %2 gekocht</German>
 			<Russian>Вы приготовили: %1 %2</Russian>
 			<Spanish>Cocinaste %1 %2</Spanish>
 			<Dutch>Je hebt %1 %2 gekookt</Dutch>
-			<French>Vous avez cuit %1 %2</French>			<!-- As in "you have successfully cooked 5 raw steak" -->
+			<French>Vous avez cuit %1 %2</French>
 			<Czech>Upekl jsi %1 %2</Czech>
 		</Key>
 		<Key ID="str_success_tent_pack">
@@ -376,14 +375,14 @@
 			<French>%1 a été rempli avec %2 litres de carburant.</French>
 			<Czech>%1 bylo doplněno %2 litrů paliva.</Czech>
 		</Key>
-		<Key ID="str_player_06">
+		<Key ID="str_player_06">	<!-- As in "Day 1" or "Day 10", how many days since character started -->
 			<Original>Day</Original>
 			<English>Day</English>
 			<German>Tag</German>
 			<Russian>День</Russian>
 			<Spanish>Día</Spanish>
 			<Dutch>Dag</Dutch>
-			<French>Jour</French>			<!-- As in "Day 1" or "Day 10", how many days since character started -->
+			<French>Jour</French>
 			<Czech>Den</Czech>
 		</Key>
 		<Key ID="str_player_07">
@@ -616,15 +615,78 @@
 			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
 			<Czech>TO DECIDE</Czech>
 		</Key>
-		<Key ID="str_player_31">
+		<Key ID="str_player_31">	<!-- %1=ITEM %2=build/consumed/cook/drink/fill/pitch/place/use/wear -->
 			<Original>%1 must be in your main inventory to %2 it.</Original>
 			<English>%1 must be in your main inventory to %2 it.</English>
 			<German>%1 muss sich in Ihrem Inventar befinden um es zu %2.</German>
-			<Russian>Предмет %1 должен находиться в основном инвентаре чтобы %2 его.</Russian>
-			<Spanish>%1 debe estar en tu inventario principal para: %2</Spanish>
+			<Russian>Чтобы %2 , (%1) должен находиться в основном инвентаре.</Russian>
+			<Spanish>Debes tener un %1 en tu inventario principal para %2.</Spanish>
 			<Dutch>%1 moet zich in je hoofdinventaris bevinden om het te %2.</Dutch>
 			<French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
 			<Czech>%1 musí být ve tvém hlavním inventáři pro %2.</Czech>
+		</Key>
+		<Key ID="str_player_31_build">
+			<Original>build</Original>
+			<English>build</English>
+			<Russian>построить</Russian>
+			<Spanish>construirlo</Spanish>
+			<French>construire</French>
+		</Key>
+		<Key ID="str_player_31_consume">
+			<Original>consume</Original>
+			<English>consume</English>
+			<Russian>употребить</Russian>
+			<Spanish>consumirlo</Spanish>
+			<French>consommer</French>
+		</Key>
+		<Key ID="str_player_31_cook">
+			<Original>cook</Original>
+			<English>cook</English>
+			<Russian>приготовить</Russian>
+			<Spanish>cocinarlo</Spanish>
+			<French>cuire</French>
+		</Key>
+		<Key ID="str_player_31_drink">
+			<Original>drink</Original>
+			<English>drink</English>
+			<Russian>выпить</Russian>
+			<Spanish>beberlo</Spanish>
+			<French>boire</French>
+		</Key>
+		<Key ID="str_player_31_fill">
+			<Original>fill</Original>
+			<English>fill</English>
+			<Russian>наполнить</Russian>
+			<Spanish>llenarla</Spanish>
+			<French>remplir</French>
+		</Key>
+		<Key ID="str_player_31_pitch">
+			<Original>pitch</Original>
+			<English>pitch</English>
+			<Russian>установить</Russian>
+			<Spanish>armarla</Spanish>
+			<French>placer</French>
+		</Key>
+		<Key ID="str_player_31_place">
+			<Original>place</Original>
+			<English>place</English>
+			<Russian>установить</Russian>
+			<Spanish>colocarlo</Spanish>
+			<French>placer</French>
+		</Key>
+		<Key ID="str_player_31_use">
+			<Original>use</Original>
+			<English>use</English>
+			<Russian>использовать</Russian>
+			<Spanish>usarlo</Spanish>
+			<French>utiliser</French>
+		</Key>
+		<Key ID="str_player_31_wear">
+			<Original>wear</Original>
+			<English>wear</English>
+			<Russian>одеть</Russian>
+			<Spanish>vestirte</Spanish>
+			<French>porter</French>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<Original>%1 is already being looted by someone else.</Original>
@@ -651,7 +713,7 @@
 			<English>His name was %1, it appears he died from %2</English>
 			<German>Sein Name war %1, anscheinend starb er %2</German>
 			<Russian>Его звали %1, похоже что он умер от %2</Russian>
-			<Spanish>Su nombre era %1, y aparentemente murió por %2</Spanish>
+			<Spanish>Su nombre era %1, y aparentemente murió %2</Spanish>
 			<Dutch>Zijn naam was %1, het lijkt dat hij is gestorven aan %2</Dutch>
 			<French>Son nom était %1, il semble qu'il soit mort d' %2</French>
 			<Czech>Jeho jméno bylo %1, vypadá to, že je mrtvý od %2</Czech>
@@ -661,7 +723,7 @@
 			<English>a gunshot to the head</English>
 			<German>durch einen Schuss in den Kopf</German>
 			<Russian>попадания пули в голову</Russian>
-			<Spanish>un disparo en la cabeza</Spanish>
+			<Spanish>por un disparo en la cabeza</Spanish>
 			<Dutch>een kogel in het hoofd</Dutch>
 			<French>une balle dans la tête</French>
 			<Czech>střela do hlavy</Czech>
@@ -671,7 +733,7 @@
 			<English>a high calibre gunshot</English>
 			<German>an einer großkalibrigen Schusswunde</German>
 			<Russian>попадания пули большого калибра</Russian>
-			<Spanish>un disparo de alto calibre</Spanish>
+			<Spanish>por un disparo de alto calibre</Spanish>
 			<Dutch>een schot van hoog kaliber</Dutch>
 			<French>un tir de gros calibre</French>
 			<Czech>vysoko rážní střelba</Czech>
@@ -681,7 +743,7 @@
 			<English>blood loss</English>
 			<German>durch hohen Blutverlust</German>
 			<Russian>потери крови</Russian>
-			<Spanish>perdida de sangre</Spanish>
+			<Spanish>desangrado</Spanish>
 			<Dutch>bloedverlies</Dutch>
 			<French>une hémorragie</French>
 			<Czech>krev ztracena</Czech>
@@ -691,7 +753,7 @@
 			<English>dehydration</English>
 			<German>an Dehydrierung</German>
 			<Russian>обезвоживания</Russian>
-			<Spanish>deshidratación</Spanish>
+			<Spanish>deshidratado</Spanish>
 			<Dutch>uitdroging</Dutch>
 			<French>une déshydratation</French>
 			<Czech>dehydratace</Czech>
@@ -701,7 +763,7 @@
 			<English>starvation</English>
 			<German>durch Verhungern</German>
 			<Russian>голода</Russian>
-			<Spanish>falta de comida</Spanish>
+			<Spanish>de hambre</Spanish>
 			<Dutch>uithongering</Dutch>
 			<French>inanition</French>
 			<Czech>vyhladovění</Czech>
@@ -711,7 +773,7 @@
 			<English>combat logging</English>
 			<German>weil er im Kampf ausgeloggt ist</German>
 			<Russian>выхода из игры в режиме боя</Russian>
-			<Spanish>huir de combate</Spanish>
+			<Spanish>por huir en combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
 			<French>une déco en combat</French>
 			<Czech>odhlášen z boje</Czech>
@@ -721,7 +783,7 @@
 			<English>an unknown cause</English>
 			<German>ohne erkennbare Ursache</German>
 			<Russian>неизвестной причины</Russian>
-			<Spanish>causas desconocidas</Spanish>
+			<Spanish>por causas desconocidas</Spanish>
 			<Dutch>een onbekende oorzaak</Dutch>
 			<French>une cause inconnue</French>
 			<Czech>neznámá příčina</Czech>
@@ -741,9 +803,9 @@
 			<English>Can Abort in %1</English>
 			<German>Logout in %1</German>
 			<Russian>Выход будет доступен через %1</Russian>
-			<Spanish>Puedes abortar en %1</Spanish>
+			<Spanish>Puedes abortar en %1 segundos</Spanish>
 			<Dutch>Can Abort in %1</Dutch>
-			<French>Vous pourrez vous déconnecter dans #1</French>
+			<French>Vous pourrez vous déconnecter dans %1</French>
 			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
 		<Key ID="str_abort_playerincombat">
@@ -768,6 +830,83 @@
 		</Key>
 	</Package>
 	<Package name="ui">
+		<Key ID="STR_UI_GEAR">
+			<Original>Gear</Original>
+			<English>Gear</English>
+			<Russian>Снаряжение</Russian>
+			<Spanish>Equipo</Spanish>
+			<French>Equipement</French>
+		</Key>
+		<Key ID="STR_UI_FILTER">
+			<Original>Filter</Original>
+			<English>Filter</English>
+			<Russian>Фильтр</Russian>
+			<Spanish>Filtro</Spanish>
+			<French>Filtrer</French>
+		</Key>
+		<Key ID="STR_UI_REARM">
+			<Original>Rearm</Original>
+			<English>Rearm</English>
+			<Russian>Перевооруж.</Russian>
+			<Spanish>Rearmar</Spanish>
+			<French>Réarmer</French>
+		</Key>
+		<Key ID="STR_UI_OBAG">
+			<Original>Open bag</Original>
+			<English>Open bag</English>
+			<Russian>Рюкзак</Russian>
+			<Spanish>Abrir Mochila</Spanish>
+			<French>Ouvrir le sac</French>
+		</Key>
+		<Key ID="STR_UI_CBAG">
+			<Original>Close bag</Original>
+			<English>Close bag</English>
+			<Russian>Инвентарь</Russian>
+			<Spanish>Cerrar Mochila</Spanish>
+			<French>Fermer le sac</French>
+		</Key>
+		<Key ID="STR_UI_CLOSE">
+			<Original>Close</Original>
+			<English>Close</English>
+			<Russian>Закрыть</Russian>
+			<Spanish>Cerrar</Spanish>
+			<French>Fermer</French>
+		</Key>
+		<Key ID="STR_UI_ALL">
+			<Original>All</Original>
+			<English>All</English>
+			<Russian>Все</Russian>
+			<Spanish>Todo</Spanish>
+			<French>Tout</French>
+		</Key>
+		<Key ID="STR_UI_PRIMARY">
+			<Original>Primary</Original>
+			<English>Primary</English>
+			<Russian>Основное</Russian>
+			<Spanish>Primaria</Spanish>
+			<French>Primaire</French>
+		</Key>
+		<Key ID="STR_UI_SECONDARY">
+			<Original>Secondary</Original>
+			<English>Secondary</English>
+			<Russian>Дополнительное</Russian>
+			<Spanish>Secundaria</Spanish>
+			<French>Secondaire</French>
+		</Key>
+		<Key ID="STR_UI_HANDGUN">
+			<Original>HandGun</Original>
+			<English>HandGun</English>
+			<Russian>Пистолеты</Russian>
+			<Spanish>Pistola</Spanish>
+			<French>Arme de poing</French>
+		</Key>
+		<Key ID="STR_UI_ITEMS">
+			<Original>Items</Original>
+			<English>Items</English>
+			<Russian>Предметы</Russian>
+			<Spanish>Objetos</Spanish>
+			<French>Objets</French>
+		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<Original>SELECT YOUR GENDER</Original>
 			<English>SELECT YOUR GENDER</English>
@@ -810,6 +949,34 @@
 		</Key>
 	</Package>
 	<Package name="actions">
+		<Key ID="STR_ACTIONS_2TB">
+			<Original>Add to Toolbelt</Original>
+			<English>Add to Toolbelt</English>
+			<Russian>Повесить на пояс</Russian>
+			<Spanish>Agregar al Cinturón</Spanish>
+			<French>Ajouter à la ceinture à outils</French>
+		</Key>
+		<Key ID="STR_ACTIONS_DROP">
+			<Original>Drop</Original>
+			<English>Drop</English>
+			<Russian>Выбросить</Russian>
+			<Spanish>Tirar</Spanish>
+			<French>Lâcher</French>
+		</Key>
+		<Key ID="STR_ACTIONS_RFROMTB">
+			<Original>Remove from Toolbelt</Original>
+			<English>Remove from Toolbelt</English>
+			<Russian>Снять с пояса</Russian>
+			<Spanish>Sacar del Cinturón</Spanish>
+			<French>Retirer de la ceinture à outils</French>
+		</Key>
+		<Key ID="STR_ACTION_CREATEQUIVER">						
+			<Original>Create quiver</Original>						
+			<English>Create quiver</English>						
+			<Russian>Собрать колчан</Russian>
+			<Spanish>Crear Carcaj</Spanish>
+			<French>Créer un carquois</French>
+		</Key>	
 		<Key ID="str_actions_self_antibio">
 			<Original>Take Antibiotics</Original>
 			<English>Take Antibiotics</English>
@@ -1010,6 +1177,16 @@
 			<French>&lt;t %2&gt;Réparer %1&lt;/t&gt;</French>
 			<Czech>&lt;t %2&gt;Opravit %1&lt;/t&gt;</Czech>
 		</Key>
+		<Key ID="str_actions_medical_09_status">
+			<Original>%1 Status: %2%</Original>
+			<English>%1 Status: %2%</English>
+			<German>%1 Schaden: %2%</German>
+			<Russian>%1 состояние: %2%</Russian>
+			<Spanish>%1 Estado: %2%</Spanish>
+			<Dutch>%1 Status: %2%</Dutch>
+			<French>%1 Status: %2%</French>
+			<Czech>%1 Status: %2%</Czech>
+		</Key>
 		<Key ID="str_actions_medical_10">
 			<Original>Refuel %1</Original>
 			<English>Refuel %1</English>
@@ -1160,6 +1337,48 @@
 			<French>Activer les Stats</French>
 			<Czech>Zapnout statistiky</Czech>
 		</Key>
+		<Key ID="str_actions_stats_sd">
+			<Original>Survived %1 Days</Original>
+			<English>Survived %1 Days</English>
+			<Russian>Прожито %1 дней</Russian>
+			<Spanish>%1 Días Sobrevividos</Spanish>
+			<French>Survie %1 Jours</French>
+		</Key>
+		<Key ID="str_actions_stats_zk">
+			<Original>Zombies Killed</Original>
+			<English>Zombies Killed</English>
+			<Russian>Убито зомбей</Russian>
+			<Spanish>Zombies Matados</Spanish>
+			<French>Zombies Tués</French>
+		</Key>
+		<Key ID="str_actions_stats_hs">
+			<Original>Headshots</Original>
+			<English>Headshots</English>
+			<Russian>Выстрелов в голову</Russian>
+			<Spanish>Headshots</Spanish>
+			<French>Tirs à la tête</French>
+		</Key>
+		<Key ID="str_actions_stats_hk">
+			<Original>Murders</Original>
+			<English>Murders</English>
+			<Russian>Убийств</Russian>
+			<Spanish>Asesinatos</Spanish>
+			<French>Meurtres</French>
+		</Key>
+		<Key ID="str_actions_stats_bk">
+			<Original>Bandits Killed</Original>
+			<English>Bandits Killed</English>
+			<Russian>Убито бандитов</Russian>
+			<Spanish>Bandidos Asesinados</Spanish>
+			<French>Bandits Tués</French>
+		</Key>
+		<Key ID="str_actions_stats_hm">
+			<Original>Humanity</Original>
+			<English>Humanity</English>
+			<Russian>Гуманность</Russian>
+			<Spanish>Humanidad</Spanish>
+			<French>Humanité</French>
+		</Key>
 		<Key ID="str_actions_self_sleep">
 			<Original>Sleep</Original>
 			<English>Sleep</English>
@@ -1302,6 +1521,126 @@
 		</Key>
 	</Package>
 	<Package name="equipment_code">
+		<Key ID="STR_EQUIP_NAME_HATCHET">
+			<Original>Hatchet</Original>
+			<English>Hatchet</English>
+			<Russian>Топор</Russian>
+			<Spanish>Hacha</Spanish>
+			<French>Hachette</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_HATCHET">
+			<Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
+			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
+			<Russian>Топор отлично подойдет для рубки дров.</Russian>
+			<Spanish>Una herramienta con una hoja afilada para golpear y cortar madera.</Spanish>
+			<French>Un outil à une main avec une lame tranchante idéale pour couper du bois.</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CROWBAR">
+			<Original>Crowbar</Original>
+			<English>Crowbar</English>
+			<Russian>Ломик</Russian>
+			<Spanish>Palanca</Spanish>
+			<French>Pied-de-biche</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CROWBAR">
+			<Original>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</Original>
+			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
+			<Russian>Ручной ударный и рычажный инструмент, изготовленный из прочного металлического стержня.</Russian>
+			<Spanish>Una herramienta que consiste en una barra de metal con un final curvado y chato.</Spanish>
+			<French>Un outil composé d'une barre de métal avec une partie arrondie et plate, souvent munie d'une petite fente pour retirer les clous.</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_MACHETE">						
+			<Original>Machete</Original>						
+			<English>Machete</English>						
+			<Russian>Мачете</Russian>
+			<Spanish>Machete</Spanish>
+			<French>Machette</French>
+		</Key>						
+		<Key ID="STR_EQUIP_DESC_MACHETE">						
+			<Original>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</Original>
+			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>	
+			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой поседневный, как топор, но весьма мощный.</Russian>
+			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fuerza.</Spanish>
+			<French>Un outil agricole utilisé comme arme, la machette est moins polyvalente que la hachette mais plus dangereuse</French> 
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CLOTHES">
+			<Original>Clothes</Original>
+			<English>Clothes</English>
+			<Russian>Одежда</Russian>
+			<Spanish>Ropa</Spanish>
+			<French>Vêtements</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CLOTHES">
+			<Original>Clothes Parcel.</Original>
+			<English>Clothes Parcel.</English>
+			<Russian>Упакованная одежда.</Russian>
+			<Spanish>Paquete de ropa.</Spanish>
+			<French>Paquet de vêtements.</French>
+		</Key>
+		<Key ID="STR_EQUIP_TEXT_CLOTHES">
+			<Original>Wear</Original>
+			<English>Wear</English>
+			<Russian>Надеть</Russian>
+			<Spanish>Vestir</Spanish>
+			<French>Porter</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_GHILLIE">
+			<Original>Ghillie Suit</Original>
+			<English>Ghillie Suit</English>
+			<German>Ghillie-Anzug</German>
+			<Russian>Маскхалат</Russian>
+			<Spanish>Traje Camuflado "Guillie"</Spanish>
+			<French>Costume de Camouflage</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_GHILLIE">
+			<Original>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Original>
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
+			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
+			<french>Un type de vêtement camouflage étudié pour se fondre dans la végétation. Peut être déballé et porté.</french>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CAMO">
+			<Original>Camo Clothing</Original>
+			<English>Camo Clothing</English>
+			<Russian>Камуфляж</Russian>
+			<Spanish>Ropa Camuflada</Spanish>
+			<French>Vêtement Camo</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CAMO">
+			<Original>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Original>
+			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
+			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
+			<Spanish>Una mezcla de pantalones camuflados con una camisa marrón y sin gorra. Puede ser desembalado y usado.</Spanish>
+			<French>Comprend un pantalon camo et d'un t-shirt brun. Peut être déballé et porté.</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CIV">
+			<Original>Civilian Clothing</Original>
+			<English>Civilian Clothing</English>
+			<Russian>Гражданская одежда</Russian>
+			<Spanish>Ropa de Civil</Spanish>
+			<French>Vêtements Civils</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CIV">
+			<Original>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Original>
+			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
+			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
+			<Spanish>Una mezcla de ropa civil con un chaleco ligero y gorra. Puede ser desembalado y usado.</Spanish>
+			<French>Des vêtements civils normaux, plutôt légers, avec une casquette. Peut être déballé et porté.</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_SOLDIER">
+			<Original>Soldier Clothing</Original>
+			<English>Soldier Clothing</English>
+			<Russian>Солдатская форма</Russian>
+			<Spanish>Ropa Militar</Spanish>
+			<French>Vêtements Militaires</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SOLDIER">
+			<Original>A British Army Soldiers uniform. Can be unpacked and worn.</Original>
+			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
+			<Russian>Форма солдата британской армии. Можно распаковать и надеть.</Russian>
+			<Spanish>Un uniforme de los Soldados de la Armada Británica. Puede ser desembalado y usado.</Spanish>
+			<French>Un uniforme de soldat de l'armée Britanique. Peut être déballé et porté.</French>
+		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">						
 			<Original>Box of Wet Matches</Original>						
 			<English>Box of Wet Matches</English>						
@@ -1641,6 +1980,34 @@
 			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
 			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
+		</Key>
+		<Key ID="STR_ITEMWOODENARROW_CODE_NAME">						
+			<Original>Wooden Arrow</Original>						
+			<English>Wooden Arrow</English>						
+			<Russian>Деревянная стрела</Russian>
+			<Spanish>Flecha de Madera</Spanish>
+			<French>Flèche en bois</French>
+		</Key>						
+		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">						
+			<Original>Arrow made out of wood, used with the Crossbow.</Original>
+			<English>Arrow made out of wood, used with the Crossbow.</English>	
+			<Russian>Стрела, сделанная из дерева. Используется арбалетом.</Russian>
+			<Spanish>Flecha hecha de madera para usarse en la Ballesta.</Spanish>
+			<French>Une flèche en bois, à utiliser avec l'arbalète.</French>
+		</Key>
+		<Key ID="STR_ITEMQUIVER_CODE_NAME">						
+			<Original>Quiver</Original>						
+			<English>Quiver</English>						
+			<Russian>Колчан</Russian>
+			<Spanish>Carcaj</Spanish>
+			<French>Carquois</French>
+		</Key>						
+		<Key ID="STR_ITEMQUIVER_CODE_DESC">						
+			<Original>Small Quiver used with the Crossbow, Max arrows 6.</Original>
+			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>	
+			<Russian>Небольшой колчан для стрел арбалета. Может содержать до 6 стрел.</Russian>
+			<Spanish>Carcaj Pequeño usado con la Ballesta. Máximo: 6 flechas.</Spanish>
+			<French>Un petit carquois utilisé avec l'arbalète. Maximum 6 flèches.</French>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">						
 			<Original>Soda</Original>

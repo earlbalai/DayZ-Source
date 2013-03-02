@@ -1,4 +1,6 @@
-private["_unit","_ammo","_audible","_distance","_listTalk","_weapon"];
+
+private["_unit","_weapon","_ammo","_projectile","_audible","_caliber","_distance","_listTalk","_target","_targets"];
+
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 _unit = 		_this select 0;
 _weapon = 		_this select 1;
@@ -15,54 +17,75 @@ dayz_firedCooldown = time;
 // Color in the combat icon
 dayz_combat = 1;
 
-if (_ammo isKindOf "Melee") exitWith {
+if (_ammo isKindOf "Melee") exitWith
+{
 	_unit playActionNow "GestureSwing";
 };
 
 //Smoke Grenade
-if (_ammo isKindOf "SmokeShell") then {
+if (_ammo isKindOf "SmokeShell") then
+{
 	//Alert Zed's to smoke
-	_i = 0;
 	_projectile = nearestObject [_unit, _ammo];
 	_listTalk = (getPosATL _projectile) nearEntities ["zZombie_Base",50];
+
 	{
-		_group = group _x;
-		if (isNull group _x) then {
-			_group = _x;
+	private["_target","_targets"];
+
+		if (local _x) then
+		{
+			_x reveal [_projectile,4];
+			_target = _x getVariable ["target",[]];
+			if (!(_projectile in _target)) then
+			{
+				_target set [count _target,_projectile];
+				_x setVariable ["target",_target,true];
+			};
+		}
+		else
+		{
+			_x reveal [_projectile,4];
+			_targets = _x getVariable ["targets",[]];
+			if (!(_projectile in _targets)) then
+			{
+				_targets set [count _targets,_projectile];
+				_x setVariable ["targets",_targets,true];
+			};
 		};
-		_x reveal [_projectile,4];
-		_targets = _group getVariable ["targets",[]];
-		if (!(_projectile in _targets)) then {
-			_targets set [count _targets,_projectile];
-			_group setVariable ["targets",_targets,true];
-		};
-		_i = _i + 1;
 	} forEach _listTalk;
-} else {
-	_id = [_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
+}
+else
+{
+	[_unit,_distance,true,(getPosATL player)] spawn player_alertZombies;
+
 	//Check if need to place arrow
-	if (_ammo isKindOf "Bolt") then {
-		_id = _this spawn player_crossbowBolt;
+	if (_ammo isKindOf "Bolt") then
+	{
+		[_this] spawn player_crossbowBolt;
 	};
-	if (_ammo isKindOf "GrenadeHand") then {
+	if (_ammo isKindOf "GrenadeHand") then
+	{
 		
-		if (_ammo isKindOf "ThrownObjects") then {
-			_id = _this spawn player_throwObject;
+		if (_ammo isKindOf "ThrownObjects") then
+		{
+			[_this] spawn player_throwObject;
 		};
-		if (_ammo isKindOf "RoadFlare") then {
+		if (_ammo isKindOf "RoadFlare") then
+		{
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
-			_id = [_projectile,0] spawn object_roadFlare;
+			[_projectile,0] spawn object_roadFlare;
 			dayzRoadFlare = [_projectile,0];
 			publicVariable "dayzRoadFlare";
-			_id = _this spawn player_throwObject;
+			[_this] spawn player_throwObject;
 		};
-		if (_ammo isKindOf "ChemLight") then {
+		if (_ammo isKindOf "ChemLight") then
+		{
 			_projectile = nearestObject [_unit, "ChemLight"];
-			_id = [_projectile,1] spawn object_roadFlare;
+			[_projectile,1] spawn object_roadFlare;
 			dayzRoadFlare = [_projectile,1];
 			publicVariable "dayzRoadFlare";
-			_id = _this spawn player_throwObject;
+			[_this] spawn player_throwObject;
 		};
 	};	
 };

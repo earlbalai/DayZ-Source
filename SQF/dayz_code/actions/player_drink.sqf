@@ -21,7 +21,7 @@ _text = getText (_config >> "displayName");
 //getting type of sfx (now just drink od soda open and drink)
 _sfx =  getText (_config >> "sfx");
 
-if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,"drink"] , "PLAIN DOWN"]};
+if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_drink")] , "PLAIN DOWN"]};
 
 player playActionNow "PutDown";
 player removeMagazine _itemorignal;

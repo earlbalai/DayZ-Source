@@ -1,4 +1,5 @@
-private["_vehicle","_curFuel","_newFuel","_timeLeft"];
+private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx"];
+
 _vehicle = 		cursorTarget;
 
 _canSize = 		getNumber(configFile >> "cfgMagazines" >> "ItemJerrycan" >> "fuelQuantity");

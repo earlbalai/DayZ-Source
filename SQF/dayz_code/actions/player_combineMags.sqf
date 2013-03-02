@@ -18,7 +18,7 @@ if (_type == 256) then {
 	_slotstart = 109;
 	_slotend = 120;
 }; 
-if ( _type == 16) then {	
+if (_type == 16) then {	
 	_slotstart = 122;
 	_slotend = 129;
 };
@@ -27,7 +27,7 @@ _dialog = findDisplay 106;
 
 _qty_total_ammo = 0;
 for "_i" from _slotstart to _slotend do {
-	_control =_dialog displayCtrl _i;
+	_control = _dialog displayCtrl _i;
 	_mag = gearSlotData _control;
 	if (_mag == _create) then {
 		_qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;

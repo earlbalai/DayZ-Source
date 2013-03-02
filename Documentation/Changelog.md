@@ -7,6 +7,7 @@ FIX DUE : 2013
 		* [UPDATED] - Fixed version issues.
 		* [UPDATED] - Updated Spanish StringTables
 		* [UPDATED] - Force save updated.
+		* [NEW] - See the Vehicle Damage in percent (with a Toolbox)
 	
 		* [REMOVED] - New models by JoeysLucky22:
 			- (Soda)  Long's Island Iced Tea (Clayton)
