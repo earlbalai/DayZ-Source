@@ -1,4 +1,5 @@
-private["_location","_isOk","_dir","_classname","_item"];
+private["_location","_onLadder","_isWater","_bypass","_item","_classname","_require","_text","_hasbuilditem","_hasrequireditem","_dir","_dis","_sfx","_object"];
+
 _location = player modeltoworld [0,1,0];
 _location set [2,0];
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -18,7 +19,7 @@ _text = 		getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _hasbuilditem = _this in magazines player;
 _hasrequireditem = _require in items player;
 
-if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,"build"] , "PLAIN DOWN"]};
+if (!_hasbuilditem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_build")] , "PLAIN DOWN"]};
 if (_text == "TrapBear") then { _bypass = true; };
 
 if (_hasrequireditem or _bypass) then {

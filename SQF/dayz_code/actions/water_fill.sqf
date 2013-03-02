@@ -1,4 +1,4 @@
-private["_hasFood","_item","_text","_qty"];
+private["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_dis","_sfx"];
 
 call gear_ui_init;
 
@@ -14,10 +14,10 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasbottleitem = _this in magazines player;
 
-_config = configFile >> "CfgMagazines" >> _item;
+_config = configFile >> "CfgMagazines" >> _item; // TODO: _item Used but not initialized
 _text = getText (_config >> "displayName");
 
-if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_text,"fill"] , "PLAIN DOWN"]};
+if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
 
 if (!dayz_isSwimming) then {
 	player playActionNow "PutDown";

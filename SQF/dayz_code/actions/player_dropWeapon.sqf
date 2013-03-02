@@ -1,4 +1,5 @@
-private["_item"];
+private["_item","_config","_onLadder","_consume","_meleeNum","_bag","_i"];
+
 _item = 	_this;
 _config =	configFile >> "CfgWeapons" >> _item;
 

@@ -114,8 +114,8 @@ link56[] = {49,50};
 link57[] = {50,49};
 link58[] = {51,52};
 link59[] = {52,29};
-globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-190.908371,174.873718,1294.537354,842.201965,486,601,1};
-window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,503};
+globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-182.094559,176.408432,1398.404175,637.048218,485,1030,1};
+window[] = {2,-1,-1,-1,-1,988,208,1580,208,3,503};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1084,9 +1084,9 @@ class FSM
        "" \n
        "if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};" \n
        "" \n
-       "_strTime = call curTimeStr;" \n
-       "_strDate = date;" \n
-       "" \n
+       "if (!isNil ""dayzSetDate"") then {" \n
+       "	setDate dayzSetDate;" \n
+       "};" \n
        "_first = [_world,_town,localize (""str_player_06"") + "" "" + str(_days)] spawn BIS_fnc_infoText;" \n
        "" \n
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
