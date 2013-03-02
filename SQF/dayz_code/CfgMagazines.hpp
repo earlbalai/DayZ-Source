@@ -342,6 +342,8 @@ class CfgMagazines {
 	class FoodmuttonRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQIP_CODE_NAME_1;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_1;
+		model = "z\addons\dayz_communityassets\models\mutton_raw.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_mutton_raw_CA.paa";
 		bloodRegen = 100;
 	};
 	
@@ -369,6 +371,11 @@ class CfgMagazines {
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_6;
 		bloodRegen = 100;
 	};
+	class FoodgoatRaw : FoodmeatRaw {
+		displayName = $STR_FOOD_NAME_GOAT_RAW;
+		descriptionShort = $STR_FOOD_EQUIP_GOAT_RAW;
+		bloodRegen = 100;
+	};
 	
 	class FoodmeatCooked : FoodEdible {
 		scope = public;
@@ -379,6 +386,13 @@ class CfgMagazines {
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_0;
 		bloodRegen = 800;
 	};
+	
+	class FoodgoatCooked : FoodmeatCooked {
+		displayName = $STR_FOOD_NAME_GOAT_COOKED;
+		descriptionShort = $STR_FOOD_EQUIP_GOAT_COOKED;
+		bloodRegen = 400;
+	};
+	
 	class FoodmuttonCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_1;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;

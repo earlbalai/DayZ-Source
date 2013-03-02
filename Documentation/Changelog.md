@@ -1,3 +1,8 @@
+	Changes since:
+		* [NEW] Models and textures for mutton
+		* [NEW] Seperate goat meat for goats, same blood regen as mutton
+
+
 FIX DUE : 2013
 
 	Community Notes: 

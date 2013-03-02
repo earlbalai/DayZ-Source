@@ -1682,15 +1682,15 @@
 			<Spanish>Cordero Crudo</Spanish>
 			<Dutch>BMutton Raw</Dutch>
 			<French>Mouton Cru</French>
-      			<Czech>Jehněčí maso</Czech>
+      		<Czech>Jehněčí maso</Czech>
 		</Key>						
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">						
-			<Original>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
-			<English>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</English>						
-			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden.</German>
+			<Original>Lamb Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
+			<English>Lamb Meat to be used for sustainment, should be cooked prior to safe eating.</English>						
+			<German>Lammfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Goat Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
+			<Dutch>Lamb Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>La Viande de Chèvre peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být maso z kozy nejdříve upečeno.</Czech>
 		</Key>
@@ -1774,6 +1774,26 @@
 			<French>Le Boeuf Cru peut être consommé mais doit être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové hovězí maso nejdříve upečeno.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_GOAT_RAW">						
+			<Original>Raw Goat</Original>						
+			<English>Raw Goat</English>						
+			<German>Rohes Ziegenfleisch</German>
+			<Russian>Ягнятина</Russian>
+			<Spanish>Raw Goat</Spanish>
+			<Dutch>Raw Goat</Dutch>
+			<French>Raw Goat</French>
+			<Czech>Raw Goat</Czech>
+		</Key>
+		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">						
+			<Original>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Original>						
+			<English>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</English>						
+			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden</German>
+			<Russian>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Russian>
+			<Spanish>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Spanish>
+			<Dutch>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
+			<French>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</French>
+			<Czech>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Czech>
+		</Key>
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_0">						
 			<Original>Cooked Meat</Original>						
 			<English>Cooked Meat</English>						
@@ -1797,7 +1817,7 @@
 		<Key ID="STR_FOODCOOKED_EQIP_CODE_NAME_1">						
 			<Original>Cooked Mutton</Original>						
 			<English>Cooked Mutton</English>						
-			<German>Gekochtes Hammelfleisch</German>
+			<German>Gekochtes Lammfleisch</German>
 			<Russian>Жареная ягнятина</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
 			<Dutch>Cooked Mutton</Dutch>
@@ -1805,12 +1825,12 @@
 			<Czech>Upečené jehněčí</Czech>
 		</Key>						
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">						
-			<Original>Goat Meat to be used for sustainment.</Original>						
-			<English>Goat Meat to be used for sustainment.</English>						
-			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
+			<Original>Lamb Meat to be used for sustainment.</Original>						
+			<English>Lamb Meat to be used for sustainment.</English>						
+			<German>Lammfleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Goat Meat to be used for sustainment.</Dutch>
+			<Dutch>Lamb Meat to be used for sustainment.</Dutch>
 			<French>La Viande de Chèvre peut être consommée.</French>
 			<Czech>Upečené jehněčí může být snězeno abyste přežili.</Czech>
 		</Key>
@@ -1913,6 +1933,26 @@
 			<Dutch>Beefsteak to be used for sustainment.</Dutch>
 			<French>Le Bifteck peut être consommé.</French>
 			<Czech>Biftek může být snězen abyste přežili.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_GOAT_COOKED">						
+			<Original>Grilled Goat</Original>						
+			<English>Grilled Goat</English>						
+			<German>Gegrilltes Ziegenfleisch</German>
+			<Russian>Grilled Goat</Russian>
+			<Spanish>Grilled Goat</Spanish>
+			<Dutch>Grilled Goat</Dutch>
+			<French>Grilled Goat</French>
+			<Czech>Grilled Goat</Czech>
+		</Key>
+		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">						
+			<Original>Goat Meat to be used for sustainment.</Original>						
+			<English>Goat Meat to be used for sustainment.</English>						
+			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
+			<Russian>Goat Meat to be used for sustainment.</Russian>
+			<Spanish>Goat Meat to be used for sustainment.</Spanish>
+			<Dutch>Goat Meat to be used for sustainment.</Dutch>
+			<French>Goat Meat to be used for sustainment.</French>
+			<Czech>Goat Meat to be used for sustainment.</Czech>
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">						
 			<Original>Water Bottle (Boiled)</Original>						
