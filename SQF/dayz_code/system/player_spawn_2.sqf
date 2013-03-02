@@ -20,8 +20,8 @@ while {true} do {
 	_vel = 		velocity player;
 	_speed = 	round((_vel distance [0,0,0]) * 3.5);
 	_saveTime = (playersNumber west * 2) + 10;
-	_isBandit = typeOf player == "Survivor3_DZ";
-	_isHero = typeOf player == "Bandit1_DZ" || typeOf player == "BanditW1_DZ";
+	_isBandit = typeOf player == "Bandit1_DZ" || typeOf player == "BanditW1_DZ"; 
+	_isHero = typeOf player == "Survivor3_DZ";
 		
 	//reset position
 	_randomSpot = true;
