@@ -20,9 +20,7 @@ which should be issued before using this function, if required.
 The pitch/bank can be leveled out (set to 0) by using the
 setdir command.
 ************************************************************/
-
-//extract parameters
-private ["_obj","_pitch","_bank","_yaw","_vdir","_vup","_sign","_rotate"];
+private["_obj","_pitch","_bank","_yaw","_rotate","_sign","_vdir","_vup"];
 
 _obj = _this select 0;
 _pitch = _this select 1;
@@ -40,22 +38,22 @@ _yaw = 360-(getdir _obj);
 
 _rotate =
 {
-private ["_v","_d","_x","_y"];
+	private ["_v","_d","_x","_y"];
 
-//extract parameters
-_v = +(_this select 0); //we don't want to modify the originally passed vector
-_d = _this select 1;
+	//extract parameters
+	_v = +(_this select 0); //we don't want to modify the originally passed vector
+	_d = _this select 1;
 
-//extract old x/y values
-_x = _v select 0;
-_y = _v select 1;
+	//extract old x/y values
+	_xpos = _v select 0;
+	_ypos = _v select 1;
 
-//if vector is 3d, we don't want to mess up the last element
-_v set [0, (cos _d)*_x - (sin _d)*_y];
-_v set [1, (sin _d)*_x + (cos _d)*_y];
+	//if vector is 3d, we don't want to mess up the last element
+	_v set [0, (cos _d) * _xpos - (sin _d) * _ypos];
+	_v set [1, (sin _d) * _xpos + (cos _d) * _ypos];
 
-//return new vector
-_v
+	//return new vector
+	_v
 };
 
 
