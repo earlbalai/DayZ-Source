@@ -1,8 +1,25 @@
+FIX DUE : 2013
+
+	Affected addons:
+		* dayz_code 
+		* Mission
+		
+	Community Notes: 
+		* DayZ 1.7.*
+		
 	Changes since:
-		* [NEW] Models and textures for mutton
-		* [NEW] Seperate goat meat for goats, same blood regen as mutton
+		* [NEW] - Models and textures for mutton
+		* [NEW] - Seperate goat meat for goats, same blood regen as mutton
+		* [NEW] - Can now combine Magazines (still missing one or two mags)
+		
+		* [FIXED] - Zed & Loot Spawns should now spawn just aboue the floors
+		
+		* [UPDATED] - Reset Action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max target 120 still set, Max sight 80 meters still set)
+		* [UPDATED] - Updated Rabbit to drop 2 Raw food items lowered hp gain to 200 each / Cooked - 800 each.
+		* [UPDATED] - Added toilet roll to throw list.
+		* [UPDATED] - Moved anti teleport system to mission Server admins can choose to enable/disable
 
-
+______________________		
 FIX DUE : 2013
 
 	Community Notes: 
