@@ -38,7 +38,6 @@ if (isServer) then {
 	"dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
 	"dayzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
 	"dayzDeleteObj"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
-	"atp"				addPublicVariableEventHandler { diag_log format["%1", _this select 1];};
 };
 
 //Client only
