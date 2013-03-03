@@ -62,7 +62,7 @@ if (_isOk) then {
 		};*/
 	};		
 } else {
-	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+	cutText [localize "str_player_24", "PLAIN DOWN"];
 	
 	//Add magazines back
 	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
