@@ -29,7 +29,7 @@ class CfgMagazines {
 		
 		class ItemActions {
 			class Build {
-				text = "Build me";
+				text = $STR_ACTION_BUILD;
 				script = "spawn player_build;";
 				require = "ItemEtool";
 				create = "Sandbag1_DZ";
@@ -48,7 +48,7 @@ class CfgMagazines {
 		
 		class ItemActions {
 			class Build {
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTION_BUILD;
 				script = "spawn player_build;";
 				require = "ItemToolbox";
 				create = "Hedgehog_DZ";
@@ -67,7 +67,7 @@ class CfgMagazines {
 		
 		class ItemActions {
 			class Build {
-				text = "Place Trap";
+				text = $STR_ACTION_BUILD;
 				script = "spawn player_setTrap;";
 				require = "ItemToolbox";
 				create = "BearTrap_DZ";
@@ -86,7 +86,7 @@ class CfgMagazines {
 		
 		class ItemActions {
 			class Build {
-				text = $STR_ACTIONS_BUILD;
+				text = $STR_ACTION_BUILD;
 				script = "spawn player_build;";
 				require = "ItemToolbox";
 				create = "Wire_cat1";
@@ -95,32 +95,32 @@ class CfgMagazines {
 	};
 	//skins translations
 	class SkinBase : CA_Magazine {
-		displayName = "$STR_EQUIP_NAME_CLOTHES";
-		descriptionShort = "$STR_EQUIP_DESC_CLOTHES";
+		displayName = $STR_EQUIP_NAME_CLOTHES;
+		descriptionShort = $STR_EQUIP_DESC_CLOTHES;
 		class ItemActions {
 			class Use {
-				text = "$STR_EQUIP_TEXT_CLOTHES";
+				text = $STR_EQUIP_TEXT_CLOTHES;
 			};
 		};
 	};
 	class Skin_Sniper1_DZ : SkinBase {
-		displayName = "$STR_EQUIP_NAME_GHILLIE";
-		descriptionShort = "$STR_EQUIP_DESC_GHILLIE";
+		displayName = $STR_EQUIP_NAME_GHILLIE;
+		descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 	};
 	
 	class Skin_Camo1_DZ : SkinBase {
-		displayName = "$STR_EQUIP_NAME_CAMO";
-		descriptionShort = "$STR_EQUIP_DESC_CAMO";
+		displayName = $STR_EQUIP_NAME_CAMO;
+		descriptionShort = $STR_EQUIP_DESC_CAMO;
 	};
 	
 	class Skin_Survivor2_DZ : SkinBase {
-		displayName = "$STR_EQUIP_NAME_CIV";
-		descriptionShort = "$STR_EQUIP_DESC_CIV";
+		displayName = $STR_EQUIP_NAME_CIV;
+		descriptionShort = $STR_EQUIP_DESC_CIV;
 	};
 	
 	class Skin_Soldier1_DZ : SkinBase {
-		displayName = "$STR_EQUIP_NAME_SOLDIER";
-		descriptionShort = "$STR_EQUIP_DESC_SOLDIER";
+		displayName = $STR_EQUIP_NAME_SOLDIER;
+		descriptionShort = $STR_EQUIP_DESC_SOLDIER;
 	}; 
 	
 	class Quiver : CA_Magazine
@@ -128,8 +128,8 @@ class CfgMagazines {
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
-		descriptionShort = "$STR_ITEMQUIVER_CODE_DESC";
-		displayName = "$STR_ITEMQUIVER_CODE_NAME";
+		descriptionShort = $STR_ITEMQUIVER_CODE_DESC;
+		displayName = $STR_ITEMQUIVER_CODE_NAME;
 		initSpeed = 150;
 		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
@@ -137,17 +137,17 @@ class CfgMagazines {
 	
 	class WoodenArrow : CA_Magazine {
 		scope = public;
-		displayName = "$STR_ITEMWOODENARROW_CODE_NAME";
+		displayName = $STR_ITEMWOODENARROW_CODE_NAME;
 		model = "\dayz_weapons\models\bolt_gear";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_warrow_ca.paa";
 		ammo = "WoodenArrow";
 		count = 1;
 		initSpeed = 150;
-		descriptionShort = "$STR_ITEMWOODENARROW_CODE_DESC";
+		descriptionShort = $STR_ITEMWOODENARROW_CODE_DESC;
 		
 		class ItemActions {
 			class ReloadMag {
-				text = "$STR_ACTION_CREATEQUIVER";
+				text = $STR_ACTION_CREATEQUIVER;
 				script = "spawn player_reloadMag;";
 				use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
 				output[] = {"Quiver"};
@@ -333,14 +333,14 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = $STR_FOOD_EQIP_CODE_NAME_0;
+		displayName = $STR_FOOD_EQUIP_CODE_NAME_0;
 		model = "\dayz_equip\models\food_steak_gear.p3d";
 		picture = "\dayz_equip\textures\equip_steak_ca.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_0;
 		bloodRegen = 100;
 	};
 	class FoodmuttonRaw : FoodmeatRaw {
-		displayName = $STR_FOOD_EQIP_CODE_NAME_1;
+		displayName = $STR_FOOD_EQUIP_CODE_NAME_1;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_1;
 		model = "z\addons\dayz_communityassets\models\mutton_raw.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_mutton_raw_CA.paa";
@@ -348,26 +348,26 @@ class CfgMagazines {
 	};
 	
 	class FoodchickenRaw : FoodmeatRaw {
-		displayName = $STR_FOOD_EQIP_CODE_NAME_2;
+		displayName = $STR_FOOD_EQUIP_CODE_NAME_2;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_2;
 		bloodRegen = 100;
 	};
 	
 	class FoodrabbitRaw : FoodmeatRaw {
-		displayName = $STR_FOOD_EQIP_CODE_NAME_3;
+		displayName = $STR_FOOD_EQUIP_CODE_NAME_3;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_3;
 		bloodRegen = 400;
 	};
 	
 	class FoodbaconRaw : FoodmeatRaw {
-		displayName = $STR_FOOD_EQIP_CODE_NAME_4;
+		displayName = $STR_FOOD_EQUIP_CODE_NAME_4;
 		model = "z\addons\dayz_communityassets\models\bacon_raw.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_raw_CA.paa";
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_4;
 		bloodRegen = 150;
 	};
 	class FoodbeefRaw : FoodmeatRaw {
-		displayName = $STR_FOOD_EQIP_CODE_NAME_6;
+		displayName = $STR_FOOD_EQUIP_CODE_NAME_6;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_6;
 		bloodRegen = 100;
 	};
@@ -380,7 +380,7 @@ class CfgMagazines {
 	class FoodmeatCooked : FoodEdible {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_0;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_0;
 		model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 		picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_0;
@@ -394,31 +394,31 @@ class CfgMagazines {
 	};
 	
 	class FoodmuttonCooked : FoodmeatCooked {
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_1;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_1;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
 		bloodRegen = 400;
 	};
 	
 	class FoodchickenCooked : FoodmeatCooked {
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_2;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_2;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
 		bloodRegen = 400;
 	};
 	
 	class FoodbaconCooked : FoodmeatCooked {
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_4;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_4;
 		model = "z\addons\dayz_communityassets\models\bacon_fried.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_fried_CA.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 		bloodRegen = 400;
 	};
 	class FoodrabbitCooked : FoodmeatCooked {
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_3;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_3;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
 		bloodRegen = 1600;
 	};
 	class FoodbeefCooked : FoodmeatCooked {
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_6;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_6;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 		bloodRegen = 600;
 	};
@@ -426,7 +426,7 @@ class CfgMagazines {
 	class AngelCookies : FoodEdible {
 		scope = public;
 		count = 1;
-		displayName = $STR_FOODCOOKED_EQIP_CODE_NAME_5;
+		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_5;
 		model = "z\addons\dayz_communityassets\models\buiscits_box.p3d";
 		picture = "z\addons\dayz_communityassets\pictures\i_buiscit_ca.paa";
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_5;
@@ -577,14 +577,14 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\can_griff_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_griff_clean_empty_ca.paa";
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_GRIFF_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		ammo = "TinCan";
 	};
 	class FoodCanBadguyEmpty : TrashTinCan {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_BADGUY_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_badguy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_badguy_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -593,7 +593,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_BONEBOY_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_boneboy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_boneboy_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -602,7 +602,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_CORN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_corn_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_corn_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -611,7 +611,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_CURGON_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_curgon_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_curgon_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -620,7 +620,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_DEMON_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_demon_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_demon_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -629,7 +629,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_FRAGGLEOS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_fraggleos_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_fraggleos_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -638,7 +638,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_HERPY_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_herpy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -647,7 +647,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_ORLOK_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_orlok_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_orlok_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -656,7 +656,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_POWELL_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_powell_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_powell_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -665,7 +665,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_TYLERS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_tylers_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_tylers_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -674,7 +674,7 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		displayName = $STR_FOOD_NAME_CAN_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_empty_ca.paa";
 		ammo = "TinCan";
@@ -741,7 +741,7 @@ class CfgMagazines {
 				};
 			};
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -772,7 +772,7 @@ class CfgMagazines {
 				};
 			};
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -782,7 +782,7 @@ class CfgMagazines {
 	class 8Rnd_9x18_Makarov : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -790,7 +790,7 @@ class CfgMagazines {
 	class 15Rnd_9x19_M9 : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -798,7 +798,7 @@ class CfgMagazines {
 	class 17Rnd_9x19_glock17 : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -806,7 +806,7 @@ class CfgMagazines {
 	class 30Rnd_9x19_UZI : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -814,7 +814,7 @@ class CfgMagazines {
 	class 30Rnd_9x19_MP5 : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -823,7 +823,7 @@ class CfgMagazines {
 	class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -831,7 +831,7 @@ class CfgMagazines {
 	class 30Rnd_545x39_AK : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -839,7 +839,7 @@ class CfgMagazines {
 	class 30Rnd_762x39_AK47 : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -847,7 +847,7 @@ class CfgMagazines {
 	class 30Rnd_762x39_SA58 : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -855,7 +855,7 @@ class CfgMagazines {
 	class 20Rnd_762x51_FNFAL : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -865,7 +865,7 @@ class CfgMagazines {
 	class HandRoadFlare : HandGrenade {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -874,7 +874,7 @@ class CfgMagazines {
 	class ChemLightMag : HandGrenade {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -883,7 +883,7 @@ class CfgMagazines {
 	class HandChemBlue : ChemLightMag {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -892,7 +892,7 @@ class CfgMagazines {
 	class HandChemGreen : ChemLightMag {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
@@ -901,7 +901,7 @@ class CfgMagazines {
 	class HandChemRed : ChemLightMag {
 		class ItemActions {
 			class CombineMag {
-				text = "$STR_MAG_COMBINE";
+				text = $STR_MAG_COMBINE;
 				script = "spawn player_combineMag;";
 			};
 		};
