@@ -16,7 +16,6 @@ FIX DUE : 2013
 		
 		* [UPDATED] - Reset Action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max target 120 still set, Max sight 80 meters still set)
 		* [UPDATED] - Updated Rabbit to drop 2 Raw food items lowered hp gain to 200 each / Cooked - 800 each.
-		* [UPDATED] - Added toilet roll to throw list.
 		* [UPDATED] - Moved anti teleport system to mission Server admins can choose to enable/disable
 
 ______________________		
