@@ -146,7 +146,7 @@ class RscDisplayMain : RscStandardDisplay
 			idc = 109;
 			style = 256;
 			colorbackground[] = {0.1, 0.1, 0.1, 0};
-			x = "SafeZoneX + 0.15";
+			x = "SafeZoneX + 0.05";
 			y = "SafeZoneY + 0.06";
 			w = 0.5;
 			h = 0.05;
