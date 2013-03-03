@@ -60,10 +60,10 @@ class CfgMagazines {
 		scope = public;
 		count = 1;
 		type = 256;
-		displayName = "Bear Trap";
+		displayName = $STR_EQUIP_NAME_BEARTRAP;
 		model = "\dayz_equip\models\bear_trap_gear.p3d";
 		picture = "\dayz_equip\textures\equip_bear_trap_ca.paa";
-		descriptionShort = "Place to add a bear trap";
+		descriptionShort = $STR_EQUIP_DESC_BEARTRAP;
 		
 		class ItemActions {
 			class Build {

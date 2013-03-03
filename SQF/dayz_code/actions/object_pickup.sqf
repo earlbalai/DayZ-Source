@@ -60,7 +60,7 @@ if (_isOk) then {
 	};
 } else {
 	_holder setVariable["claimed",0,true];
-	cutText [localize "STR_DAYZ_CODE_2", "PLAIN DOWN"];
+	cutText [localize "str_player_24", "PLAIN DOWN"];
 	if (_classname == "MeleeCrowbar") then {
 		player removeMagazine 'crowbar_swing';
 	};
