@@ -52,6 +52,11 @@ if (random 1 > 0.7) then {
 if (_nearByPlayer) then {
 	deleteVehicle _agent;
 };
+
+_positionz = _position select 2;
+if( _positionZ < 0 ) then { _position = [_position select 0,_position select 1,0]; };
+_agent setPosATL _position;
+
 /*
 //_agent setVariable["host",player,true];
 if (!_doLoiter) then {
