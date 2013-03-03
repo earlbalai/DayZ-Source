@@ -396,6 +396,8 @@ class CfgMagazines {
 	class FoodmuttonCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_1;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
+		model = "z\addons\dayz_communityassets\models\mutton_cooked.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_mutton_cooked_CA.paa";
 		bloodRegen = 400;
 	};
 	
