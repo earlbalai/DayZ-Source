@@ -356,7 +356,7 @@ class CfgMagazines {
 	class FoodrabbitRaw : FoodmeatRaw {
 		displayName = $STR_FOOD_EQUIP_CODE_NAME_3;
 		descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_3;
-		bloodRegen = 400;
+		bloodRegen = 200;
 	};
 	
 	class FoodbaconRaw : FoodmeatRaw {
@@ -417,7 +417,7 @@ class CfgMagazines {
 	class FoodrabbitCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_3;
 		descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
-		bloodRegen = 1600;
+		bloodRegen = 800;
 	};
 	class FoodbeefCooked : FoodmeatCooked {
 		displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_6;
