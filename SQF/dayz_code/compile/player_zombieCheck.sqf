@@ -88,7 +88,7 @@ private["_target","_targets"];
 					_tPos = (getPosASL _unit);
 					_zPos = (getPosASL _x);
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,60,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then
 					{
 						_cantSee = [_x,_unit] call dayz_losCheck;
@@ -174,7 +174,7 @@ private["_target","_targets"];
 					_tPos = (getPosASL _unit);
 					_zPos = (getPosASL _x);
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,45,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then
 					{
 						_cantSee = [_x,_unit] call dayz_losCheck;
