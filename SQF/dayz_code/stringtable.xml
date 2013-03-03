@@ -23,7 +23,10 @@
 		</Key>
 		<Key ID="STR_ACTION_BUILD">
 			<English>Build</English>
+			<Russian>Установить %1</Russian>
 			<Spanish>Contruir</Spanish>
+			<French>Construire</French>
+			<Czech>Postavit</Czech>
 		</Key>
 		<Key ID="STR_ACTION_THROW">
 			<English>Throw</English>
@@ -1201,9 +1204,11 @@
 			<English>Tin Can</English>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
+			<French>Boîte en fer-blanc</French>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
 			<English>An empty can.</English>
+			<Russian>Пустая банка от чего-то.</Russian>
 			<Spanish>Una lata vacia.</Spanish>
 			<French>Une boîte vide.</French>
 		</Key>
