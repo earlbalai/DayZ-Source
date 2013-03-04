@@ -13,17 +13,17 @@ FIX DUE : 2013
 		
 	Changes since:
 		* [NEW] - Models and textures for mutton
-		* [NEW] - Seperate goat meat for goats, same blood regen as mutton
-		* [NEW] - Can now combine Magazines (still missing one or two mags)
+		* [NEW] - Seperate meat for goats, same blood regen as mutton
+		* [NEW] - Can now combine magazines (still missing one or two mags)
 		
-		* [FIXED] - Zed & Loot Spawns should now spawn just aboue the floors
+		* [FIXED] - Zed & loot spawns should now spawn just above the floors
 		* [FIXED] - M107 & AS50 Lock on system removed.
 		
-		* [UPDATED] - Reset Action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight 80 meters still set)
-		* [UPDATED] - Updated Rabbit to drop 2 Raw food items lowered hp gain to 200 each / Cooked - 800 each.
-		* [UPDATED] - Moved anti teleport system to mission Server admins can choose to enable/disable.
-		* [UPDATED] - M107 Lowered chance in loot tables.
-		* [UPDATED] - AS50 Lowered chance in loot tables.
+		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight 80 meters still set)
+		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
+		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable.
+		* [UPDATED] - M107 lowered chance in loot tables.
+		* [UPDATED] - AS50 lowered chance in loot tables.
 
 ______________________		
 FIX DUE : 2013
