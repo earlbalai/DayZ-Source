@@ -7,6 +7,9 @@ _part =		_array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle;
 
+{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
+dayz_myCursorTarget = objNull;
+
 //
 _hasToolbox = 	"ItemToolbox" in items player;
 _section = _part in magazines player;
@@ -28,7 +31,6 @@ if (_section and _hasToolbox) then {
 		//Fix the part
 		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
 		//vehicle is owned by whoever is in it, so we have to have each client try and fix it
-		//["dayzSetFix",[_vehicle,_selection,0],_vehicle] call broadcastRpcCallIfLocal;
 	
 		dayzSetFix = [_vehicle,_selection,0];
 		publicVariable "dayzSetFix";
@@ -43,7 +45,8 @@ if (_section and _hasToolbox) then {
 		_sfx = "repair";
 		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-		
+	
+	
 		sleep 5;
 		_vehicle setvelocity [0,0,1];
 
@@ -55,8 +58,6 @@ if (_section and _hasToolbox) then {
 	cutText [format[localize "str_player_03",_namePart], "PLAIN DOWN"];
 };
 
-{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
-dayz_myCursorTarget = objNull;
 
 //check if repaired fully
 _hitpoints = _vehicle call vehicle_getHitpoints;
