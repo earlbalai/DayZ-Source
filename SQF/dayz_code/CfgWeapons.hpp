@@ -15,6 +15,10 @@ class CfgWeapons {
 		model="z\addons\dayz_communityassets\models\compass.p3d";
 	};
 	
+	class ItemWatch: ItemCore {
+		model="z\addons\dayz_communityassets\models\watch.p3d";
+	};
+	
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
 		magazines[] =
@@ -300,8 +304,8 @@ class CfgWeapons {
 		cursor = "RifleCursor";
 		cursoraim = "Foresight";
 	};
-	class BAF_AS50_scoped;	// External class reference
-	class BAF_AS50_scoped : BAF_AS50_scoped {
+	class Rifle;	// External class reference
+	class BAF_AS50_scoped : Rifle {
 		displayname = "AS50_DZ";
 		type = "1";
 		canlock = 0;
