@@ -53,7 +53,6 @@ class CfgMods
 	};
 };
 
-
 class CfgMissions
 {
 	 class Cutscenes
@@ -261,7 +260,7 @@ class CfgSurvival {
 			rawfoodtype = "FoodchickenRaw";
 		};
 		class Rabbit: Default {
-			yield = 1;
+			yield = 2;
 			rawfoodtype = "FoodrabbitRaw";
 		};
 	};
@@ -336,7 +335,7 @@ class CfgBuildingLoot {
 			0.03,
 			0.08,
 			0.06,
-			2,
+			0.2,
 			0.06,
 			0.04,
 			0.05, //12
@@ -529,18 +528,18 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] =	{
-			0.02,		//{"FN_FAL","weapon"},
+			0.04,		//{"FN_FAL","weapon"},
 			0.05,		//{"bizon_silenced","weapon"},
 			0.05,		//{"M14_EP1","weapon"},
-			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-			0.02,		//{"m107","weapon"},
+			0.03,		//{"FN_FAL_ANPVS4","weapon"},
+			0.01,		//{"m107","weapon"},
 			0.01,		//{"BAF_AS50_scoped","weapon"},
 			0.03,		//{"Mk_48_DZ","weapon"},
-			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
+			0.04,		//{"M249_DZ","weapon"},
+			0.03,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
 			0.06,		//{"DMR","weapon"},
-			1,			//{"","military"},
-			0.5,		//{"","medical"},
+			0.1,			//{"","military"},
+			0.1,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
 			0.02,		//{"NVGoggles","weapon"}
 			0.1,	//AmmoBoxSmall_556
@@ -548,11 +547,11 @@ class CfgBuildingLoot {
 			0.08,	//Skin_Camo1_DZ
 			0.05,	//Skin_Sniper1_DZ
 			0.03,	//G36C"
-			0.02,	//G36C_camo
+			0.03,	//G36C_camo
 			//0.01,	//G36_C_SD_camo
-			0.02,	//G36A_camo
-			0.02,	//G36K_camo
-			0.01	//("100Rnd_762x54_PK","magazine"}
+			0.03,	//G36A_camo
+			0.03,	//G36K_camo
+			0.05	//("100Rnd_762x54_PK","magazine"}
 		};
 	};
 	class HeliCrash_No50s: Default {
@@ -709,7 +708,7 @@ class CfgBuildingLoot {
 			0.08, //16
 			0.06, //18
 			0.01, //24
-			0.01, //DZ_Backpack_EP1 24
+			0.01, //24
 			0.10, 
 			1.00,
 			2.50,
@@ -742,7 +741,7 @@ class CfgBuildingLoot {
 			{"M24","weapon"},
 			{"SVD_CAMO","weapon"},
 			{"M1014","weapon"},
-			{"M107_DZ","weapon"},
+			//{"M107_DZ","weapon"},
 			{"DMR","weapon"},
 			{"M4A1","weapon"},
 			{"M14_EP1","weapon"},
@@ -798,7 +797,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.20,
-			0.01,
+			//0.01, //m107
 			0.02,
 			0.10,
 			0.03,
