@@ -3,26 +3,12 @@ _agent = _this;
 _target = objNull;
 _targets = [];
 _targetDis = [];
-_range = 300;
+_range = 200;
 _manDis = 0;
 _refobj = vehicle player;
 
 _targets = _agent getVariable ["targets",[]];
-/*
-//Search for fires
-if (count _targets == 0) then {
-	_fires = nearestObjects [_agent,["Land_Fire"],_range];
-	{
-		private["_dis"];
-		_dis = _x distance _agent;
-		_rnd = random 1;
-		if ((_dis < _range) and (inflamed _x) and !(_x in _targets) and (_rnd < 0.5)) then {
-			_targets set [count _targets,_x];
-			_targetDis set [count _targetDis,_dis];
-		};
-	} forEach _fires;
-};
-*/
+
 if (isNil "_targets") exitWith {};
 //Search for objects
 if (count _targets == 0) then {

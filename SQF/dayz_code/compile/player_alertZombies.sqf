@@ -5,6 +5,7 @@ _unit = 	_this select 0;
 _distance = _this select 1;
 _doRun = 	_this select 2;
 _pos = 		_this select 3;
+_multiplier = 1;
 _listTalk = _pos nearEntities ["zZombie_Base",_distance];
 
 if ("ItemMap_Debug" in items player) then {
@@ -18,38 +19,14 @@ if ("ItemMap_Debug" in items player) then {
 //hint str(_listTalk);
 
 {
-private["_target","_targets"];
-
-	if (local _x) then
-	{
-		if (_doRun) then
-		{
-			_target = _x getVariable ["target",[]];
-			if (!(_unit in _target)) then
-			{
-				_target set [count _target,_unit];
-				_x setVariable ["target",_target];
-			};
-		}
-		else
-		{
-			_x setVariable ["myDest",_pos];
+	_zombie = _x;
+	if (_doRun) then {
+		_targets = _zombie getVariable ["targets",[]];
+		if (!(_unit in _targets)) then {
+			_targets set [count _targets,_unit];
+			_zombie setVariable ["targets",_targets,true];
 		};
-	}
-	else
-	{
-		if (_doRun) then
-		{
-			_targets = _x getVariable ["targets",[]];
-			if (!(_unit in _targets)) then
-			{
-				_targets set [count _targets,_unit];
-				_x setVariable ["targets",_targets,true];
-			};
-		}
-		else
-		{
-			_x setVariable ["myDest",_pos,true];
-		};
+	} else {
+		_zombie setVariable ["myDest",_pos,true];
 	};
 } forEach _listTalk;
