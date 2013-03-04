@@ -713,6 +713,15 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
 		type = 256;
 	};
+	class ItemBookBible : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = $STR_BOOK_NAME_BIBLE;
+		descriptionShort = $STR_BOOK_DESC_BIBLE;
+		model = "z\addons\dayz_communityassets\models\bible.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bible_CA.paa";
+		type = 256;
+	};
 	
 	class 8Rnd_B_Beneli_74Slug;
 	class 8Rnd_B_Beneli_Pellets;
