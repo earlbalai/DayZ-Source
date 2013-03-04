@@ -1,8 +1,12 @@
 FIX DUE : 2013
 
 	Affected addons:
+		* dayz_anim
 		* dayz_code 
-		* Mission
+		* dayz_communityassets
+		* dayz_sfx
+		* dayz_server (server admins only)
+		* Mission (server admins only)
 		
 	Community Notes: 
 		* DayZ 1.7.*
