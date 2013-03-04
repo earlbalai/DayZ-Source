@@ -15,6 +15,10 @@ class CfgWeapons {
 		model="z\addons\dayz_communityassets\models\compass.p3d";
 	};
 	
+	class ItemWatch: ItemCore {
+		model="z\addons\dayz_communityassets\models\watch.p3d";
+	};
+	
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
 		magazines[] =
