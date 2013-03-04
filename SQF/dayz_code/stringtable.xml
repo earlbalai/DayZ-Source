@@ -1464,6 +1464,24 @@
 			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
 			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
 		</Key>
+		<Key ID="STR_BOOK_NAME_BIBLE">
+			<English>Bible</English>
+			<German>Bibel</German>
+			<Russian>Библия</Russian>
+			<Spanish>Biblia</Spanish>
+			<Dutch>Bijbel</Dutch>
+			<French>Bible</French>
+			<Czech>Bible</Czech>
+		</Key>
+		<Key ID="STR_BOOK_DESC_BIBLE">
+			<English>The bible.</English>
+			<German>The bible.</German>
+			<Russian>The bible.</Russian>
+			<Spanish>The bible.</Spanish>
+			<Dutch>The bible.</Dutch>
+			<French>The bible.</French>
+			<Czech>The bible.</Czech>
+		</Key>		
 	</Package>
 	<Package name="feedback">
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
