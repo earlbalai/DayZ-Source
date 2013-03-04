@@ -17,10 +17,13 @@ FIX DUE : 2013
 		* [NEW] - Can now combine Magazines (still missing one or two mags)
 		
 		* [FIXED] - Zed & Loot Spawns should now spawn just aboue the floors
+		* [FIXED] - M107 & AS50 Lock on system removed.
 		
-		* [UPDATED] - Reset Action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max target 120 still set, Max sight 80 meters still set)
+		* [UPDATED] - Reset Action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight 80 meters still set)
 		* [UPDATED] - Updated Rabbit to drop 2 Raw food items lowered hp gain to 200 each / Cooked - 800 each.
-		* [UPDATED] - Moved anti teleport system to mission Server admins can choose to enable/disable
+		* [UPDATED] - Moved anti teleport system to mission Server admins can choose to enable/disable.
+		* [UPDATED] - M107 Lowered chance in loot tables.
+		* [UPDATED] - AS50 Lowered chance in loot tables.
 
 ______________________		
 FIX DUE : 2013
