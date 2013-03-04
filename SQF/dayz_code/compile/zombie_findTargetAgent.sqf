@@ -58,20 +58,17 @@ if (count _targets > 0) then
 		{
 			if (isPlayer _x) then
 			{
-			_man = _x;
-			_manDis = _dis;
-			}
-			else
-		{
+				_man = _x;
+				_manDis = _dis;
+			} else {
 				if (!isPlayer _man) then
-		{
-			_man = _x;
-			_manDis = _dis;
-		};
+				{
+					_man = _x;
+					_manDis = _dis;
+				};
 			};
-		};
+		};	
 	} forEach _targets;
-
 	_target = _man;
 };
 
