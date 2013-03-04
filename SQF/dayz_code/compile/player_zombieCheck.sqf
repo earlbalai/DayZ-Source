@@ -1,4 +1,4 @@
-private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_continue","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
+private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 _refObj = vehicle player;
 _listTalk = (position _refObj) nearEntities ["zZombie_Base",80];
 _pHeight = (getPosATL _refObj) select 2;
@@ -6,11 +6,10 @@ _attacked = false;
 _multiplier = 1;
 
 {
-	_continue = true;
 	_type = "zombie";
 	_targets = _group getVariable ["targets",[]];
 
-	if (alive _x && _continue) then {
+	if (alive _x) then {
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
@@ -36,21 +35,16 @@ _multiplier = 1;
 				};
 			};
 		};
-
 		//Noise Activation
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
-				if (DAYZ_disAudial > 80) then {
-					if (!(_refObj in _targets)) then {
-						_targets set [count _targets, driver _refObj];
-						_group setVariable ["targets",_targets,true];
-					};					
+				if (DAYZ_disAudial > 10) then {
+					_targets set [count _targets, driver _refObj];
+					_group setVariable ["targets",_targets,true];				
 				} else {
 					if (_dist < (DAYZ_disAudial / 2)) then {
-						if (!(_refObj in _targets)) then {
-							_targets set [count _targets, driver _refObj];
-							_group setVariable ["targets",_targets,true];
-						};
+						_targets set [count _targets, driver _refObj];
+						_group setVariable ["targets",_targets,true];
 					};
 				};
 			};
@@ -66,24 +60,22 @@ _multiplier = 1;
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,90,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,45,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//LOS check
 						_cantSee = [_x,_refObj] call dayz_losCheck;
 						//diag_log ("LOS Check: " + str(_cantSee));
 						if (!_cantSee) then {
 							//diag_log ("Within LOS! Target");
-							if (!(_refObj in _targets)) then {
-								_targets set [count _targets, driver _refObj];
-								_group setVariable ["targets",_targets,true];
-							};
+							_targets set [count _targets, driver _refObj];
+							_group setVariable ["targets",_targets,true];
 						};
 					};
 				//};
 			};
 		};
 	};
-	//diag_log ("Targets Array: " +str(_targets));
+	diag_log ("Targets Array: " +str(_targets));
 } forEach _listTalk;
 
 if (_attacked) then {

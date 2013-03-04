@@ -2,7 +2,7 @@ private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent
 _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
-
+_doLoiter = true;
 if (dayz_maxCurrentZeds > dayz_maxZeds) exitwith {};
 if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 

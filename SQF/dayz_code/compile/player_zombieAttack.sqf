@@ -46,7 +46,7 @@ if (_vehicle != player) then {
 			};
 		} forEach _openVehicles;
 	};
-
+diag_log ("Vehilce Dmg: " +str(_wound));
 	if ((_wound == "Glass1") or (_wound == "Glass2") or (_wound == "Glass3") or (_wound == "Glass4") or (_wound == "Glass5") or (_wound == "Glass6")) then {
 		[_unit,"hit",4,false] call dayz_zombieSpeak;
 		_strH = "hit_" + (_wound);
@@ -114,18 +114,6 @@ if (_vehicle != player) then {
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
 				[_unit,"hit",2,false] call dayz_zombieSpeak;
-			} else {
-				/*
-				_isZombieInside = [_unit,_building] call fnc_isInsideBuilding;
-				if (_isPlayerInside) then {
-					_damage = 0.1 + random (1.2);
-					//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
-					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
-					//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
-					//publicVariable "dayzHit";
-					[_unit,"hit",2,false] call dayz_zombieSpeak;	
-				};
-				*/
 			};
 		};
 	};

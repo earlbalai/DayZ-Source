@@ -13,10 +13,10 @@ _radius = 200;
 _position = getPosATL player;
 
 if (_inVehicle) then {
-	_maxZombies = _maxZombies / 2;
+	_maxZombies = 5;
 };
 if (_isAir) then {
-	_maxZombies = 5
+	_maxZombies = 0;
 };
 
 
@@ -101,9 +101,11 @@ if ("ItemMap_Debug" in items player) then {
 	_markerstr3 setMarkerSizeLocal [120, 120];
 
 diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
-diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(dayz_maxLocalZombies));
+diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(_maxZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
 diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
+
+diag_log ("Audial Noise: " +str(DAYZ_disAudial));
 
 };
 	
@@ -144,10 +146,10 @@ if (_nearbyCount < 1) exitwith
 		};
 	};
 	//Zeds
-	if ((time - dayz_spawnWait) > dayz_spawnDelay) then {
+	if (((time - dayz_spawnWait) > dayz_spawnDelay) and !_inVehicle) then {
 		if (dayz_maxCurrentZeds < dayz_maxZeds) then {
 			if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
-				if (dayz_spawnZombies < dayz_maxLocalZombies) then {
+				if (dayz_spawnZombies < _maxZombies) then {
 						//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 						_dateNow = (DateToNumber date);
