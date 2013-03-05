@@ -18,8 +18,8 @@ FIX DUE : 2013
 		* [NEW] - 1 new Trash Item.
 		* [NEW] - Added new loot table for Church
 		
-		* [FIXED] - Vehicle Repair should now allways worrk correct.
-		* [FIXED] - Zed & loot spawns should now spawn just above the floors
+		* [FIXED] - Vehicle Repair should now allways work correct.
+		* [FIXED] - Zed & loot spawns should now spawn just above the floors.
 		* [FIXED] - M107 & AS50 Lock on system removed.
 		* [FIXED] - Humanity Skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and the other way)
 		
