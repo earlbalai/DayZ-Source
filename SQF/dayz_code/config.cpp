@@ -346,7 +346,7 @@ class CfgBuildingLoot {
 			{"Skin_Sniper1_DZ","magazine"},
 			{"WeaponHolder_ItemCrowbar","object"},
 			{"MR43","weapon"},
-			{"ItemBookBible","generic"}
+			{"ItemBookBible","magazine"}
 		};
 		itemChance[] =	{
 			0.01,
