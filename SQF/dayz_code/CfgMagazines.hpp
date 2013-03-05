@@ -729,6 +729,25 @@ class CfgMagazines {
 		type = 256;
 	};
 	
+	class ItemFuelcan : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = $STR_ITEM_NAME_FUELCAN;
+		descriptionShort = $STR_ITEM_DESC_FUELCAN;
+		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_CA.paa";
+		type = 256;
+	};
+	class ItemFuelcanEmpty : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
+		descriptionShort = $STR_ITEM_DESC_FUELCAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_empty_CA.paa";
+		type = 256;
+	};
+	
 	class 2Rnd_shotgun_74Slug: CA_Magazine
 	{
 		displayName="2Rnd. Slug";

@@ -1520,7 +1520,43 @@
 			<Dutch>The bible.</Dutch>
 			<French>The bible.</French>
 			<Czech>Svatá bible.</Czech>
-		</Key>		
+		</Key>
+		<Key ID="STR_ITEM_NAME_FUELCAN">
+			<English>Fuelcan</English>
+			<German>Benzinkanister</German>
+			<Russian>канистры</Russian>
+			<Spanish>Bidones</Spanish>
+			<Dutch>Fuelcan</Dutch>
+			<French>Fuelcan</French>
+			<Czech>Kanystr</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_FUELCAN">
+			<English>A small can for gasoline.</English>
+			<German>Ein kleiner Benzinkanister.</German>
+			<Russian>A small can for gasoline.</Russian>
+			<Spanish>A small can for gasoline.</Spanish>
+			<Dutch>A small can for gasoline.</Dutch>
+			<French>A small can for gasoline.</French>
+			<Czech>A small can for gasoline.</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
+			<English>Fuelcan (Empty)</English>
+			<German>Benzinkanister (Leer)</German>
+			<Russian>канистры (Empty)</Russian>
+			<Spanish>Bidones (Empty)</Spanish>
+			<Dutch>Fuelcan (Empty)</Dutch>
+			<French>Fuelcan (Empty)</French>
+			<Czech>Kanystr (Empty)</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
+			<English>A small can for gasoline.</English>
+			<German>Ein kleiner Benzinkanister.</German>
+			<Russian>A small can for gasoline.</Russian>
+			<Spanish>A small can for gasoline.</Spanish>
+			<Dutch>A small can for gasoline.</Dutch>
+			<French>A small can for gasoline.</French>
+			<Czech>A small can for gasoline.</Czech>
+		</Key>
 	</Package>
 	<Package name="feedback">
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
