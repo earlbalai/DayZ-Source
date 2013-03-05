@@ -812,6 +812,30 @@ class CfgMagazines {
 			};
 		};
 	};
+	class 15Rnd_9x19_M9SD: 15Rnd_9x19_M9 {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 7Rnd_45ACP_1911: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 6Rnd_45ACP: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
 	class 17Rnd_9x19_glock17 : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
@@ -828,7 +852,39 @@ class CfgMagazines {
 			};
 		};
 	};
+	class 30Rnd_9x19_UZI_SD : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
 	class 30Rnd_9x19_MP5 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_9x19_MP5SD : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 64Rnd_9x19_Bizon : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 64Rnd_9x19_SD_Bizon : CA_Magazine {
 		class ItemActions {
 			class CombineMag {
 				text = $STR_MAG_COMBINE;
@@ -838,6 +894,30 @@ class CfgMagazines {
 	};
 	class 20Rnd_556x45_Stanag; 
 	class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_556x45_StanagSD : 30Rnd_556x45_Stanag {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_556x45_G36 : 30Rnd_556x45_Stanag {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36 {
 		class ItemActions {
 			class CombineMag {
 				text = $STR_MAG_COMBINE;
@@ -877,7 +957,102 @@ class CfgMagazines {
 			};
 		};
 	};
-
+	class 5Rnd_762x51_M24 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 10Rnd_762x54_SVD : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 10Rnd_127x99_m107 : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 20Rnd_762x51_DMR : CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 5x_22_LR_17_HMR: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 5Rnd_127x99_as50: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};	
+	class 10x_303: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 15Rnd_W1866_Slug: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 8Rnd_B_Beneli_Pellets: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 8Rnd_B_Beneli_74Slug: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 8Rnd_B_Saiga12_Pellets: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 8Rnd_B_Saiga12_74Slug: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
 	class HandGrenade;	// External class reference
 	class HandRoadFlare : HandGrenade {
 		class ItemActions {
