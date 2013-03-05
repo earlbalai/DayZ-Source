@@ -6,12 +6,15 @@ FIX DUE : 2013
 		* dayz_communityassets
 		* dayz_sfx
 		* dayz_server (server admins only)
-		* Mission (server admins only)
+		* Mission (server admins only) (Prerequisites)
 		
 	Community Notes: 
 		* DayZ 1.7.6.2
 		
-	Changes since:
+	Changes:
+		* [Prerequisites]	New Mission File Downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
+		* [Prerequisites]	Battleye Filters must be updated manually by server admins.
+	
 		* [NEW] - Models and textures for mutton
 		* [NEW] - Seperate meat for goats, same blood regen as mutton
 		* [NEW] - Can now combine magazines (still missing one or two mags)
@@ -25,7 +28,7 @@ FIX DUE : 2013
 		
 		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
-		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable.
+		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See Prerequisites)
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
