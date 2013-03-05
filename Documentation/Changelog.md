@@ -32,7 +32,7 @@ FIX DUE : 2013
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
-		* [UPDATED] - Updated czech stringtable
+		* [UPDATED] - Updated czech, Spanish, French and russia stringtable
 
 ______________________		
 FIX DUE : 2013
