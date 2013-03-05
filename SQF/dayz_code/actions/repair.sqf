@@ -72,10 +72,12 @@ _allFixed = true;
 //update if repaired
 if (_allFixed) then {
 	_vehicle setDamage 0;
-	//["dayzUpdateVehicle",[_vehicle,"repair"]] call callRpcProcedure;
-	dayzSetFix = [_vehicle,_selection,0];
-	publicVariable "dayzSetFix";
-	if (local _vehicle) then {
-		dayzSetFix call object_setFixServer;
+	dayzUpdateVehicle = [_vehicle,"repair"];
+	if (isServer) then {
+		if (allowConnection) then {
+			dayzUpdateVehicle call server_updateObject;
+		};
+	} else {
+		publicVariable "dayzUpdateVehicle";
 	};
 };
