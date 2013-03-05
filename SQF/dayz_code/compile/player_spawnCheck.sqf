@@ -113,9 +113,9 @@ _nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
-	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
-		[_position] call wild_spawnZombies;
-	};
+//	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
+//		[_position] call wild_spawnZombies;
+//	};
 };
 
 {
