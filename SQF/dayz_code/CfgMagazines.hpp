@@ -133,6 +133,12 @@ class CfgMagazines {
 		initSpeed = 150;
 		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
 	};
 	
 	class WoodenArrow : CA_Magazine {
