@@ -3,7 +3,7 @@ _agent = _this;
 _target = objNull;
 _targets = [];
 _targetDis = [];
-_range = 200;
+_range = 300;
 _manDis = 0;
 _refobj = vehicle player;
 
@@ -12,11 +12,11 @@ _targets = _agent getVariable ["targets",[]];
 if (isNil "_targets") exitWith {};
 //Search for objects
 if (count _targets == 0) then {
-	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],_range];
+	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],50];
 	{
 		private["_dis"];
-		if (!(_refobj in _targets)) then {
-			_targets set [count _targets, _refobj];
+		if (!(_x in _targets)) then {
+			_targets set [count _targets, _x];
 			_targetDis set [count _targetDis,_dis];
 		};
 	} forEach _objects;
