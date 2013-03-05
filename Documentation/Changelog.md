@@ -12,27 +12,27 @@ FIX DUE : 2013
 		* DayZ 1.7.6.2
 		
 	Changes:
-		* [Prerequisites]	New Mission File Downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
-		* [Prerequisites]	Battleye Filters must be updated manually by server admins.
+		* [Prerequisites]	New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
+		* [Prerequisites]	Battleye filters must be updated manually by server admins.
 	
-		* [NEW] - Models and textures for mutton
-		* [NEW] - Seperate meat for goats, same blood regen as mutton
-		* [NEW] - Can now combine magazines (still missing one or two mags)
-		* [NEW] - 1 new Trash Item.
-		* [NEW] - Added new loot table for Church
+		* [NEW] - Models and textures for mutton.
+		* [NEW] - Seperate meat for goats, same blood regen as mutton.
+		* [NEW] - Can now combine magazines. (still missing one or two mags)
+		* [NEW] - 1 new trash item.
+		* [NEW] - Added new loot table for church.
 		
-		* [FIXED] - Vehicle Repair should now allways work correct.
+		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - Zed & loot spawns should now spawn just above the floors.
 		* [FIXED] - M107 & AS50 Lock on system removed.
-		* [FIXED] - Humanity Skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and the other way)
+		* [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
 		
 		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
-		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See Prerequisites)
+		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
-		* [UPDATED] - Updated czech, spanish, french and russian stringtable
+		* [UPDATED] - Updated czech, spanish, french and russian stringtable.
 
 ______________________		
 FIX DUE : 2013
