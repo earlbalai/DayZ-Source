@@ -287,6 +287,28 @@ class CfgBuildingLoot {
 			"Stinger"
 		};
 	};
+	class Church: Default {
+		zombieChance = 0.3;
+		minRoaming = 1;
+		maxRoaming = 3;
+		zombieClass[] = {"z_priest","z_priest","z_priest"};
+		lootChance = 0.4;
+		lootPos[] = {};
+		itemType[]= {
+			{"ItemBookBible","magazine"},
+			{"","generic"},
+			{"","Residential"},
+			{"","military"},
+			{"","trash"}
+		};
+		itemChance[] =	{
+			0.02,
+			0.03,
+			0.03,
+			0.01,
+			0.02
+		};
+	}
 	class Residential: Default {
 		zombieChance = 0.3;
 		maxRoaming = 2;
@@ -323,7 +345,8 @@ class CfgBuildingLoot {
 			{"Skin_Camo1_DZ","magazine"},
 			{"Skin_Sniper1_DZ","magazine"},
 			{"WeaponHolder_ItemCrowbar","object"},
-			{"MR43","weapon"}
+			{"MR43","weapon"},
+			{"ItemBookBible","generic"}
 		};
 		itemChance[] =	{
 			0.01,
@@ -353,7 +376,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.08,
-			0.03
+			0.03,
+			0.02
 		};		
 	};
 	class Office: Residential {
@@ -867,11 +891,7 @@ class CfgBuildingLoot {
 			3.00
 		};
 	};	
-	class Church: Residential {
-		minRoaming = 1;
-		maxRoaming = 3;
-		zombieClass[] = {"z_priest","z_priest","z_priest"};
-	};
+
 	class Land_HouseV_1I4: Residential {
 		lootPos[] = {{-0.400146,-3.87695,-2.76879},{-3.67749,-2.52002,-2.76551},{-0.472168,3.19702,-2.72021}};
 	};

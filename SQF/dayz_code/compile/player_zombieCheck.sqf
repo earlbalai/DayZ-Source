@@ -75,7 +75,7 @@ _multiplier = 1;
 			};
 		};
 	};
-	diag_log ("Targets Array: " +str(_targets));
+	//diag_log ("Targets Array: " +str(_targets));
 } forEach _listTalk;
 
 if (_attacked) then {
