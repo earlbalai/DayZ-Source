@@ -297,13 +297,11 @@ class CfgBuildingLoot {
 		itemType[]= {
 			{"ItemBookBible","magazine"},
 			{"","generic"},
-			{"","Residential"},
 			{"","military"},
 			{"","trash"}
 		};
 		itemChance[] =	{
 			0.02,
-			0.03,
 			0.03,
 			0.01,
 			0.02

@@ -729,10 +729,7 @@ class CfgMagazines {
 		type = 256;
 	};
 	
-	class 8Rnd_B_Beneli_74Slug;
-	class 8Rnd_B_Beneli_Pellets;
-	
-	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
+	class 2Rnd_shotgun_74Slug: CA_Magazine
 	{
 		displayName="2Rnd. Slug";
 		count=2;
@@ -763,7 +760,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets
+	class 2Rnd_shotgun_74Pellets: CA_Magazine
 	{
 		displayName="2Rnd. Pellets";
 		count=2;
