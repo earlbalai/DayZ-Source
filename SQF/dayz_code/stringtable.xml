@@ -5,16 +5,19 @@
 			<English>Add to Toolbelt</English>
 			<Russian>Повесить на пояс</Russian>
 			<Spanish>Agregar al Cinturón</Spanish>
+			<Czech>Přidat do nástrojů</Czech>
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
 			<Russian>Выбросить</Russian>
 			<Spanish>Tirar</Spanish>
+			<Czech>Odložit</Czech>
 		</Key>
 		<Key ID="STR_ACTIONS_RFROMTB">
 			<English>Remove from Toolbelt</English>
 			<Russian>Снять с пояса</Russian>
 			<Spanish>Sacar del Cinturón</Spanish>
+			<Czech>Odstranit z nástrojů</Czech>
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">
 			<English>Create quiver</English>
@@ -35,13 +38,14 @@
 			<Spanish>Arrojar</Spanish>
 			<Dutch>Throw</Dutch>
 			<French>Jeter</French>
-			<Czech>Throw</Czech>
+			<Czech>Hodit</Czech>
 		</Key>
 		<Key ID="STR_PITCH_TENT">
 			<English>Pitch Tent</English>
 			<German>Zelt aufbauen</German>
 			<Russian>Поставить палатку</Russian>
 			<Spanish>Asentar Carpa</Spanish>
+			<Czech>Postavit stan</Czech>
 		</Key>
 		<Key ID="STR_MAG_COMBINE">
 			<English>Re-combine</English>
@@ -50,7 +54,7 @@
 			<Spanish>Volver a combinar</Spanish>
 			<Dutch>Re-combine</Dutch>
 			<French>Re-combine</French>
-			<Czech>Re-combine</Czech>
+			<Czech>Zkombinovat</Czech>
 		</Key>
 		<Key ID="str_init_take">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 			<English>Take %1</English>
@@ -362,31 +366,37 @@
 			<English>Survived %1 Days</English>
 			<Russian>Прожито %1 дней</Russian>
 			<Spanish>%1 Días Sobrevividos</Spanish>
+			<Czech>Přežito %1 dnů</Czech>
 		</Key>
 		<Key ID="str_actions_stats_zk">
 			<English>Zombies Killed</English>
 			<Russian>Убито зомбей</Russian>
 			<Spanish>Zombies Matados</Spanish>
+			<Czech>Zombie zabito</Czech>
 		</Key>
 		<Key ID="str_actions_stats_hs">
 			<English>Headshots</English>
 			<Russian>Выстрелов в голову</Russian>
 			<Spanish>Headshots</Spanish>
+			<Czech>Střel do hlavy</Czech>
 		</Key>
 		<Key ID="str_actions_stats_hk">
 			<English>Murders</English>
 			<Russian>Убийств</Russian>
 			<Spanish>Asesinatos</Spanish>
+			<Czech>Vražď</Czech>
 		</Key>
 		<Key ID="str_actions_stats_bk">
 			<English>Bandits Killed</English>
 			<Russian>Убито бандитов</Russian>
 			<Spanish>Bandidos Asesinados</Spanish>
+			<Czech>Zabito banditů</Czech>
 		</Key>
 		<Key ID="str_actions_stats_hm">
 			<English>Humanity</English>
 			<Russian>Гуманность</Russian>
 			<Spanish>Humanidad</Spanish>
+			<Czech>Humanita</Czech>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<English>Sleep</English>
@@ -413,142 +423,169 @@
 			<German>Zelt</German>
 			<Russian>Палатка</Russian>
 			<Spanish>Carpa</Spanish>
+			<Czech>Stan</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_20">
 			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
 			<German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
 			<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
 			<Spanish>Una carpa que puede ser asentada permitiendo almacenar objetos.</Spanish>
+			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21">
 			<English>Sandbags</English>
 			<German>Sandsäcke</German>
 			<Russian>Мешки с песком</Russian>
 			<Spanish>Bolsas de Arena</Spanish>
+			<Czech>Pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
 			<German>Jutesäcke, die mit Sand oder Erde gefüllt zum Errichten von Befestigungen verwendet werden können.</German>
 			<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
+			<Czech>Pytle naplěné pískem a solí, které mohou být použity pro postavení vojenské pevnosti.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_22">
 			<English>Tank Trap Kit</English>
 			<German>Panzersperrensatz</German>
 			<Russian>Сборочный противотанковый ёж</Russian>
 			<Spanish>Kit de Trampa Antitanque</Spanish>
+			<Czech>Tankový zátaras</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_22">
 			<English>Metal materials that can be used by an engineer to construct a Tank Trap.</English>
 			<German>Metallteile, die von einem Pionier zum Errichten einer Panzersperre verwendet werden können.</German>
 			<Russian>Металлические детали, из которых собирается противотанковый ёж.</Russian>
 			<Spanish>Materiales metálicos que pueden ser usados para crear una trampa antitanque.</Spanish>
+			<Czech>Kovový materiál, který může být použit pro postavení zátarasu </Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_23">
 			<English>Wire Fencing Kit</English>
 			<German>Stacheldraht</German>
 			<Russian>Колючая проволока</Russian>
 			<Spanish>Kit de Alambre de Púas</Spanish>
+			<Czech>Drátěný plot</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_23">
 			<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>
 			<German>Gewickelter Stacheldraht, der akkordeonartig ausgeklappt und mit Stahlpgosten befestigt zum Errichten von Stacheldrahthindernissen verwendet werden kann.</German>
 			<Russian>Катушка острой колючей проволоки для сооружения заграждений.</Russian>
 			<Spanish>Una bobina de alambre de púas muy afilado que puede ser expandir como un acordeón para formar obstáculos militares.</Spanish>
+			Czech>Ostnatý drát, který může být použit pro vojenský drátěný plot z ostnatých drátů.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BEARTRAP">
 			<English>Bear Trap</English>
 			<Spanish>Trampa de Osos</Spanish>
+			<Czech>Past na medvědy</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BEARTRAP">
 			<English>A device to remotely catch an animal or injure a human.</English>
 			<Spanish>Un dispositivo para atrapar remotamente un animal o herir a un humano.</Spanish>
+			<Czech>Věc na chytání zvířat nebo zranění lidí.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HATCHET">
 			<English>Hatchet</English>
 			<Russian>Топор</Russian>
 			<Spanish>Hacha</Spanish>
+			<Czech>Sekera</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
 			<Russian>Топор отлично подойдет для рубки дров.</Russian>
 			<Spanish>Una herramienta con una hoja afilada para golpear y cortar madera.</Spanish>
+			<Czech>Jednoruční sekera pro sekání dřeva nebo i proti zombie.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<English>Crowbar</English>
 			<Russian>Ломик</Russian>
 			<Spanish>Palanca</Spanish>
+			<Czech>Páčidlo</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CROWBAR">
 			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
 			<Russian>Ручной ударный и рычажный инструмент, изготовленный из прочного металлического стержня.</Russian>
 			<Spanish>Una herramienta que consiste en una barra de metal con un final curvado y chato.</Spanish>
+			<Czech>Kovová zbraň s točivým zakončením. Často s prasklinou na jedné či obou stranách. </Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_MACHETE">
 			<English>Machete</English>
 			<Russian>Мачете</Russian>
 			<Spanish>Machete</Spanish>
+			<Czech>Mačeta</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
 			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой поседневный, как топор, но весьма мощный.</Russian>
 			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fuerza.</Spanish>
+			<Czech>Původně zbraň pro zahradničení. Nyní silná zbraň proti zombie i když výskyt není tak častý.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
 			<Russian>Одежда</Russian>
 			<Spanish>Ropa</Spanish>
+			<Czech>Oblečení</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CLOTHES">
 			<English>Clothes Parcel.</English>
 			<Russian>Упакованная одежда.</Russian>
 			<Spanish>Paquete de ropa.</Spanish>
+			<Czech>Balík oblečení</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_TEXT_CLOTHES">
 			<English>Wear</English>
 			<Russian>Надеть</Russian>
 			<Spanish>Vestir</Spanish>
+			<Czech>Nosit</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GHILLIE">
 			<English>Ghillie Suit</English>
 			<German>Ghillie-Anzug</German>
 			<Russian>Маскхалат</Russian>
 			<Spanish>Traje Camuflado "Guillie"</Spanish>
+			<Czech>Hejkal</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
 			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
 			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
+			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Může být rozbaleno a nošeno.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<English>Camo Clothing</English>
 			<Russian>Камуфляж</Russian>
 			<Spanish>Ropa Camuflada</Spanish>
+			<Czech>Kamuflážní oblečení</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CAMO">
 			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
 			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
 			<Spanish>Una mezcla de pantalones camuflados con una camisa marrón y sin gorra. Puede ser desembalado y usado.</Spanish>
+			<Czech>Mix maskovacích kalhot a hnědého trička bez čepice. Může být rozbaleno a nošeno.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CIV">
 			<English>Civilian Clothing</English>
 			<Russian>Гражданская одежда</Russian>
 			<Spanish>Ropa de Civil</Spanish>
+			<Czech>Civilní oblečení</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CIV">
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
 			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
 			<Spanish>Una mezcla de ropa civil con un chaleco ligero y gorra. Puede ser desembalado y usado.</Spanish>
+			<Czech>Klasické civilní oblečení s lehkou vestou a čepicí. Může být rozbaleno a nošeno.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SOLDIER">
 			<English>Soldier Clothing</English>
 			<Russian>Солдатская форма</Russian>
 			<Spanish>Ropa Militar</Spanish>
+			<Czech>Vojenské oblečení</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SOLDIER">
 			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
 			<Russian>Форма солдата британской армии. Можно распаковать и надеть.</Russian>
 			<Spanish>Un uniforme de los Soldados de la Armada Británica. Puede ser desembalado y usado.</Spanish>
+			<Czech>Britská vojenská uniforma. Může být rozbalena a nošena.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">
 			<English>Box of Wet Matches</English>
@@ -1171,7 +1208,7 @@
 			<Spanish>Pistachos</Spanish>
 			<Dutch>Pistachios</Dutch>
 			<French>Pistaches</French>
-			<Czech>Pistachios</Czech>
+			<Czech>Pistácie</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_PISTACHIO">
 			<English>A pack of pistachios, roasted and salted.</English>
@@ -1180,7 +1217,7 @@
 			<Spanish>Una caja de pistachos, tostados y salados.</Spanish>
 			<Dutch>A pack of pistachios, roasted and salted.</Dutch>
 			<French>Un paquet de pistaches, grillées et salées.</French>
-			<Czech>A pack of pistachios, roasted and salted.</Czech>
+			<Czech>Balíček pistácií, pražené a solené.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_NUTMIX">
 			<English>Trail Mix</English>
@@ -1189,7 +1226,7 @@
 			<Spanish>CerealMix</Spanish>
 			<Dutch>Trail Mix</Dutch>
 			<French>Assortiment de fruits secs</French>
-			<Czech>Trail Mix</Czech>
+			<Czech>Mix</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">
 			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>
@@ -1198,19 +1235,21 @@
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
 			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
-			<Czech>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Czech>
+			<Czech>Balíček ovoce značky Papa, 12 různých ovocí a oříšků.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
 			<English>Tin Can</English>
 			<Russian>Жестянка</Russian>
 			<Spanish>Lata</Spanish>
 			<French>Boîte en fer-blanc</French>
+			<Czech>Plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
 			<English>An empty can.</English>
 			<Russian>Пустая банка от чего-то.</Russian>
 			<Spanish>Una lata vacia.</Spanish>
 			<French>Une boîte vide.</French>
+			<Czech>Prázdná plechovka</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
@@ -1219,7 +1258,7 @@
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
-			<Czech>Can (Beans)</Czech>
+			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF">
 			<English>A clean, unopened can of Griff's black beans.</English>
@@ -1228,7 +1267,7 @@
 			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
 			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
-			<Czech>A clean, unopened can of Griff's black beans.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka černých fazolí značky Griff.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY">
 			<English>Can (Peaches)</English>
@@ -1237,7 +1276,7 @@
 			<Spanish>Lata de Duraznos</Spanish>
 			<Dutch>Can (Peaches)</Dutch>
 			<French>Boîte (Pêches)</French>
-			<Czech>Can (Peaches)</Czech>
+			<Czech>Plechovka (Broskve)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY">
 			<English>A clean, unopened can of Bad Guy's ubiquitous peach slices.</English>
@@ -1246,7 +1285,7 @@
 			<Spanish>Una limpia y cerrada lata de duraznos en rodajas "Bad Guy".</Spanish>
 			<Dutch>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Dutch>
 			<French>Une boîte intacte de pêches en morceaux de "Bad Guy".</French>
-			<Czech>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka fazolí značky Bad Guy.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">
 			<English>Can (Ravioli)</English>
@@ -1255,7 +1294,7 @@
 			<Spanish>Lata de Ravioles</Spanish>
 			<Dutch>Can (Ravioli)</Dutch>
 			<French>Boîte (Raviolis)</French>
-			<Czech>Can (Ravioli)</Czech>
+			<Czech>Plechovka (Ravioli)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY">
 			<English>A clean, unopened can of Chef Boneboy ravioli.</English>
@@ -1264,7 +1303,7 @@
 			<Spanish>Una limpia y cerrada lata de ravioles "Chef Boneboy".</Spanish>
 			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
 			<French>Une boîte intacte de raviolis "Chef Boneboy".</French>
-			<Czech>A clean, unopened can of Chef Boneboy ravioli.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka Chef Boneboy ravioli.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN">
 			<English>Can (Corn)</English>
@@ -1273,7 +1312,7 @@
 			<Spanish>Lata de Maíz</Spanish>
 			<Dutch>Can (Corn)</Dutch>
 			<French>Boîte (Maïs)</French>
-			<Czech>Can (Corn)</Czech>
+			<Czech>Plechovka (Kukuřice)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN">
 			<English>A clean, unopened can of Conrad's whole kernel corn.</English>
@@ -1282,7 +1321,7 @@
 			<Spanish>Una limpia y cerrada lata de granos de maíz enteros "Conrad".</Spanish>
 			<Dutch>A clean, unopened can of Conrad's whole kernel corn.</Dutch>
 			<French>Une boîte intacte de maïs en grains "Conrad".</French>
-			<Czech>A clean, unopened can of Conrad's whole kernel corn.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka pražené kukuřice značky Conrad.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON">
 			<English>Can (Soup)</English>
@@ -1291,7 +1330,7 @@
 			<Spanish>Lata de Sopa</Spanish>
 			<Dutch>Can (Soup)</Dutch>
 			<French>Boîte (Soupe)</French>
-			<Czech>Can (Soup)</Czech>
+			<Czech>Plechovka (Polévka)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON">
 			<English>A clean, unopened can of Curgon's chicken noodle soup.</English>
@@ -1300,7 +1339,7 @@
 			<Spanish>Una limpia y cerrada lata de sopa de pollo con fideos "Curgon".</Spanish>
 			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
 			<French>Une boîte intacte de soupe de nouilles au poulet "Curgon".</French>
-			<Czech>A clean, unopened can of Curgon's chicken noodle soup.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka kuřecí nudlové polévky značky Curgon.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">
 			<English>Can (Beans)</English>
@@ -1309,7 +1348,7 @@
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
-			<Czech>Can (Beans)</Czech>
+			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON">
 			<English>A clean, unopened can of Demon Groves green beans.</English>
@@ -1318,7 +1357,7 @@
 			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
 			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
-			<Czech>A clean, unopened can of Demon Groves green beans.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka zelených fazolí značky Deamon Groves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">
 			<English>Can (Spaghetti)</English>
@@ -1327,7 +1366,7 @@
 			<Spanish>Lata de Spaghetti</Spanish>
 			<Dutch>Can (Spaghetti)</Dutch>
 			<French>Boîte (Spaghettis)</French>
-			<Czech>Can (Spaghetti)</Czech>
+			<Czech>Plechovka (Špagety)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS">
 			<English>A clean, unopened can of FraggleOs spaghetti.</English>
@@ -1336,7 +1375,7 @@
 			<Spanish>Una limpia y cerrada lata de spaghetti "FraggleOs".</Spanish>
 			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
 			<French>Une boîte intacte de spaghettis "FraggleOs".</French>
-			<Czech>A clean, unopened can of FraggleOs spaghetti.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka špaget značky FraggleOs.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY">
 			<English>Can (Muffins)</English>
@@ -1345,7 +1384,7 @@
 			<Spanish>Lata de Magdalenas</Spanish>
 			<Dutch>Can (Muffins)</Dutch>
 			<French>Boîte (Muffins)</French>
-			<Czech>Can (Muffins)</Czech>
+			<Czech>Plechovka (Muffins)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY">
 			<English>A clean, unopened can of Herpy Dooves canned muffins.</English>
@@ -1354,7 +1393,7 @@
 			<Spanish>Una limpia y cerrada lata de magdalenas "Herpy Dooves".</Spanish>
 			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
 			<French>Une boîte intacte de muffins en conserve "Herpy Dooves".</French>
-			<Czech>A clean, unopened can of Herpy Dooves canned muffins.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka mufinů Herpy Dooves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>
@@ -1363,7 +1402,7 @@
 			<Spanish>Ensalada de Frutas</Spanish>
 			<Dutch>Can (Fruit)</Dutch>
 			<French>Boîte (Fruits)</French>
-			<Czech>Can (Fruit)</Czech>
+			<Czech>Plechovka (Ovoce)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK">
 			<English>A clean, unopened can of Orlok mixed fruit.</English>
@@ -1372,7 +1411,7 @@
 			<Spanish>Una limpia y cerrada lata de ensaladas de frutas "Orlok".</Spanish>
 			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
 			<French>Une boîte intacte de fruits mixés "Orlok".</French>
-			<Czech>A clean, unopened can of Orlok mixed fruit.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka směsi ovoce značky Orlok.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL">
 			<English>Can (Chowder)</English>
@@ -1381,7 +1420,7 @@
 			<Spanish>Sopa de Pescado</Spanish>
 			<Dutch>Can (Chowder)</Dutch>
 			<French>Boîte (Soupe de palourdes)</French>
-			<Czech>Can (Chowder)</Czech>
+			<Czech>Plechovka (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL">
 			<English>A clean, unopened can of Powell's New England clam chowder.</English>
@@ -1390,7 +1429,7 @@
 			<Spanish>Una limpia y cerrada lata de sopa de pescados "Powell's New England".</Spanish>
 			<Dutch>A clean, unopened can of Powell's New England clam chowder.</Dutch>
 			<French>Une boîte intacte de soupe de palourdes de "Powell's New England".</French>
-			<Czech>A clean, unopened can of Powell's New England clam chowder.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka dušeného masa značky Powell New England.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS">
 			<English>Can (Beans)</English>
@@ -1399,7 +1438,7 @@
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
-			<Czech>Can (Beans)</Czech>
+			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS">
 			<English>A clean, unopened can of Tyler's delicious kidney beans.</English>
@@ -1408,7 +1447,7 @@
 			<Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
 			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
 			<French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
-			<Czech>A clean, unopened can of Tyler's delicious kidney beans.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka fazolí značky Tyler.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED">
 			<English>Can (Unknown)</English>
@@ -1417,7 +1456,7 @@
 			<Spanish>Lata Desconocida</Spanish>
 			<Dutch>Can (Unknown)</Dutch>
 			<French>Boîte (Inconnu)</French>
-			<Czech>Can (Unknown)</Czech>
+			<Czech>Plechovka (Neznámé)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">
 			<English>A clean, unopened tin can. The label is missing.</English>
@@ -1426,7 +1465,7 @@
 			<Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
 			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
 			<French>Une boîte intacte. L'étiquette est manquante.</French>
-			<Czech>A clean, unopened tin can. The label is missing.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka nečeho, údaje nejsou čitelné.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">
 			<English>Toilet paper</English>
@@ -1435,7 +1474,7 @@
 			<Spanish>Papel Higiénico</Spanish>
 			<Dutch>Toilet paper</Dutch>
 			<French>Papier toilette</French>
-			<Czech>Toilet paper</Czech>
+			<Czech>Toaletní papír</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_TOILETPAPER">
 			<English>A roll of toilet paper.</English>
@@ -1444,7 +1483,7 @@
 			<Spanish>Un rollo de papel higiénico.</Spanish>
 			<Dutch>A roll of toilet paper.</Dutch>
 			<French>Un rouleau de papier toilette.</French>
-			<Czech>A roll of toilet paper.</Czech>
+			<Czech>Role toeletního papíru.</Czech>
 		</Key>
 		<Key ID="STR_JUNK_NAME_RAZOR">
 			<English>Razor</English>
@@ -1453,7 +1492,7 @@
 			<Spanish>Navaja</Spanish>
 			<Dutch>Razor</Dutch>
 			<French>Razor</French>
-			<Czech>Razor</Czech>
+			<Czech>Břitva</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">
 			<English>An old-fashioned cut-throat razor with a rounded French point.</English>
@@ -1462,7 +1501,7 @@
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
 			<Dutch>An old-fashioned cut-throat razor with a rounded French point.</Dutch>
 			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
-			<Czech>An old-fashioned cut-throat razor with a rounded French point.</Czech>
+			<Czech>Stará břitva na holení.</Czech>
 		</Key>
 		<Key ID="STR_BOOK_NAME_BIBLE">
 			<English>Bible</English>
@@ -1480,7 +1519,7 @@
 			<Spanish>The bible.</Spanish>
 			<Dutch>The bible.</Dutch>
 			<French>The bible.</French>
-			<Czech>The bible.</Czech>
+			<Czech>Svatá bible.</Czech>
 		</Key>		
 	</Package>
 	<Package name="feedback">
@@ -1884,46 +1923,55 @@
 			<English>build</English>
 			<Russian>построить</Russian>
 			<Spanish>construirlo</Spanish>
+			<Czech>postavit</Czech>
 		</Key>
 		<Key ID="str_player_31_consume">
 			<English>consume</English>
 			<Russian>употребить</Russian>
 			<Spanish>consumirlo</Spanish>
+			<Czech>sníst</Czech>
 		</Key>
 		<Key ID="str_player_31_cook">
 			<English>cook</English>
 			<Russian>приготовить</Russian>
 			<Spanish>cocinarlo</Spanish>
+			<Czech>upéct</Czech>
 		</Key>
 		<Key ID="str_player_31_drink">
 			<English>drink</English>
 			<Russian>выпить</Russian>
 			<Spanish>beberlo</Spanish>
+			<Czech>vypít</Czech>
 		</Key>
 		<Key ID="str_player_31_fill">
 			<English>fill</English>
 			<Russian>наполнить</Russian>
 			<Spanish>llenarla</Spanish>
+			<Czech>naplnit</Czech>
 		</Key>
 		<Key ID="str_player_31_pitch">
 			<English>pitch</English>
 			<Russian>установить</Russian>
 			<Spanish>armarla</Spanish>
+			<Czech>postavit</Czech>
 		</Key>
 		<Key ID="str_player_31_place">
 			<English>place</English>
 			<Russian>установить</Russian>
 			<Spanish>colocarlo</Spanish>
+			<Czech>umístit</Czech>
 		</Key>
 		<Key ID="str_player_31_use">
 			<English>use</English>
 			<Russian>использовать</Russian>
 			<Spanish>usarlo</Spanish>
+			<Czech>použít</Czech>
 		</Key>
 		<Key ID="str_player_31_wear">
 			<English>wear</English>
 			<Russian>одеть</Russian>
 			<Spanish>vestirte</Spanish>
+			<Czech>nosit</Czech>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<English>%1 is already being looted by someone else.</English>
@@ -2203,56 +2251,67 @@
 			<English>Gear</English>
 			<Russian>Снаряжение</Russian>
 			<Spanish>Equipo</Spanish>
+			<Czech>Vybavení</Czech>
 		</Key>
 		<Key ID="STR_UI_FILTER">
 			<English>Filter</English>
 			<Russian>Фильтр</Russian>
 			<Spanish>Filtro</Spanish>
+			<Czech>Filtr</Czech>
 		</Key>
 		<Key ID="STR_UI_REARM">
 			<English>Rearm</English>
 			<Russian>Перевооруж.</Russian>
 			<Spanish>Rearmar</Spanish>
+			<Czech>Přezbrojit</Czech>
 		</Key>
 		<Key ID="STR_UI_OBAG">
 			<English>Open bag</English>
 			<Russian>Рюкзак</Russian>
 			<Spanish>Abrir Mochila</Spanish>
+			<Czech>Otevřít batoh</Czech>
 		</Key>
 		<Key ID="STR_UI_CBAG">
 			<English>Close bag</English>
 			<Russian>Инвентарь</Russian>
 			<Spanish>Cerrar Mochila</Spanish>
+			<Czech>Zavřít batoh</Czech>
 		</Key>
 		<Key ID="STR_UI_CLOSE">
 			<English>Close</English>
 			<Russian>Закрыть</Russian>
 			<Spanish>Cerrar</Spanish>
+			<Czech>Zavřít</Czech>
 		</Key>
 		<Key ID="STR_UI_ALL">
 			<English>All</English>
 			<Russian>Все</Russian>
 			<Spanish>Todo</Spanish>
+			<Czech>Vše</Czech>
 		</Key>
 		<Key ID="STR_UI_PRIMARY">
 			<English>Primary</English>
 			<Russian>Основное</Russian>
 			<Spanish>Primaria</Spanish>
+			<Czech>Hlavní</Czech>
 		</Key>
 		<Key ID="STR_UI_SECONDARY">
 			<English>Secondary</English>
 			<Russian>Дополнительное</Russian>
 			<Spanish>Secundaria</Spanish>
+			<Czech>Vedlejší</Czech>
 		</Key>
 		<Key ID="STR_UI_HANDGUN">
 			<English>HandGun</English>
 			<Russian>Пистолеты</Russian>
 			<Spanish>Pistola</Spanish>
+			<Czech>Pistole</Czech>
 		</Key>
 		<Key ID="STR_UI_ITEMS">
 			<English>Items</English>
 			<Russian>Предметы</Russian>
 			<Spanish>Objetos</Spanish>
+			<Czech>Věci</Czech>
 		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<English>SELECT YOUR GENDER</English>
