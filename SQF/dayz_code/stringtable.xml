@@ -6,23 +6,27 @@
 			<Russian>Повесить на пояс</Russian>
 			<Spanish>Agregar al Cinturón</Spanish>
 			<Czech>Přidat do nástrojů</Czech>
+			<French>Ajouter à la Ceinture à outils</French>
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
 			<Russian>Выбросить</Russian>
 			<Spanish>Tirar</Spanish>
 			<Czech>Odložit</Czech>
+			<French>Lâcher</French>
 		</Key>
 		<Key ID="STR_ACTIONS_RFROMTB">
 			<English>Remove from Toolbelt</English>
 			<Russian>Снять с пояса</Russian>
 			<Spanish>Sacar del Cinturón</Spanish>
 			<Czech>Odstranit z nástrojů</Czech>
+			<French>Retirer de la Ceinture à outils</French>
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">
 			<English>Create quiver</English>
 			<Russian>Собрать колчан</Russian>
 			<Spanish>Crear Carcaj</Spanish>
+			<French>Créer un carquois</French>
 		</Key>
 		<Key ID="STR_ACTION_BUILD">
 			<English>Build</English>
@@ -30,6 +34,7 @@
 			<Spanish>Contruir</Spanish>
 			<French>Construire</French>
 			<Czech>Postavit</Czech>
+			<French>Construire</French>
 		</Key>
 		<Key ID="STR_ACTION_THROW">
 			<English>Throw</English>
@@ -46,6 +51,7 @@
 			<Russian>Поставить палатку</Russian>
 			<Spanish>Asentar Carpa</Spanish>
 			<Czech>Postavit stan</Czech>
+			<French>Monter la Tente</French>
 		</Key>
 		<Key ID="STR_MAG_COMBINE">
 			<English>Re-combine</English>
@@ -53,7 +59,7 @@
 			<Russian>Переснарядить</Russian>
 			<Spanish>Volver a combinar</Spanish>
 			<Dutch>Re-combine</Dutch>
-			<French>Re-combine</French>
+			<French>Re-combiner</French>
 			<Czech>Zkombinovat</Czech>
 		</Key>
 		<Key ID="str_init_take">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
@@ -367,36 +373,42 @@
 			<Russian>Прожито %1 дней</Russian>
 			<Spanish>%1 Días Sobrevividos</Spanish>
 			<Czech>Přežito %1 dnů</Czech>
+			<French>Survécu %1 jours</French>
 		</Key>
 		<Key ID="str_actions_stats_zk">
 			<English>Zombies Killed</English>
 			<Russian>Убито зомбей</Russian>
 			<Spanish>Zombies Matados</Spanish>
 			<Czech>Zombie zabito</Czech>
+			<French>Zombies Tués</French>
 		</Key>
 		<Key ID="str_actions_stats_hs">
 			<English>Headshots</English>
 			<Russian>Выстрелов в голову</Russian>
 			<Spanish>Headshots</Spanish>
 			<Czech>Střel do hlavy</Czech>
+			<French>Tirs à la tête</French>
 		</Key>
 		<Key ID="str_actions_stats_hk">
 			<English>Murders</English>
 			<Russian>Убийств</Russian>
 			<Spanish>Asesinatos</Spanish>
 			<Czech>Vražď</Czech>
+			<French>Meurtres</French>
 		</Key>
 		<Key ID="str_actions_stats_bk">
 			<English>Bandits Killed</English>
 			<Russian>Убито бандитов</Russian>
 			<Spanish>Bandidos Asesinados</Spanish>
 			<Czech>Zabito banditů</Czech>
+			<French>Bandits tués</French>
 		</Key>
 		<Key ID="str_actions_stats_hm">
 			<English>Humanity</English>
 			<Russian>Гуманность</Russian>
 			<Spanish>Humanidad</Spanish>
 			<Czech>Humanita</Czech>
+			<French>Humanité</French>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<English>Sleep</English>
@@ -424,6 +436,7 @@
 			<Russian>Палатка</Russian>
 			<Spanish>Carpa</Spanish>
 			<Czech>Stan</Czech>
+			<French>Tente de camping</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_20">
 			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
@@ -431,6 +444,7 @@
 			<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
 			<Spanish>Una carpa que puede ser asentada permitiendo almacenar objetos.</Spanish>
 			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
+			<French>Une tente de camping qui peut être montée, permettant un espace de stockage étendu à l'abri des autres.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21">
 			<English>Sandbags</English>
@@ -438,6 +452,7 @@
 			<Russian>Мешки с песком</Russian>
 			<Spanish>Bolsas de Arena</Spanish>
 			<Czech>Pytle s pískem</Czech>
+			<French>Sacs de sable</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
@@ -445,6 +460,7 @@
 			<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Pytle naplěné pískem a solí, které mohou být použity pro postavení vojenské pevnosti.</Czech>
+			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_22">
 			<English>Tank Trap Kit</English>
@@ -452,6 +468,7 @@
 			<Russian>Сборочный противотанковый ёж</Russian>
 			<Spanish>Kit de Trampa Antitanque</Spanish>
 			<Czech>Tankový zátaras</Czech>
+			<French>Obstacle anti Tank</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_22">
 			<English>Metal materials that can be used by an engineer to construct a Tank Trap.</English>
@@ -459,6 +476,7 @@
 			<Russian>Металлические детали, из которых собирается противотанковый ёж.</Russian>
 			<Spanish>Materiales metálicos que pueden ser usados para crear una trampa antitanque.</Spanish>
 			<Czech>Kovový materiál, který může být použit pro postavení zátarasu </Czech>
+			<French>Du matériel métallique qui peut être utilisé par un ingénieur pour construire a obstacle anti tank.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_23">
 			<English>Wire Fencing Kit</English>
@@ -466,23 +484,27 @@
 			<Russian>Колючая проволока</Russian>
 			<Spanish>Kit de Alambre de Púas</Spanish>
 			<Czech>Drátěný plot</Czech>
+			<French>Kit de barbelés</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_23">
 			<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>
 			<German>Gewickelter Stacheldraht, der akkordeonartig ausgeklappt und mit Stahlpgosten befestigt zum Errichten von Stacheldrahthindernissen verwendet werden kann.</German>
 			<Russian>Катушка острой колючей проволоки для сооружения заграждений.</Russian>
 			<Spanish>Una bobina de alambre de púas muy afilado que puede ser expandir como un acordeón para formar obstáculos militares.</Spanish>
-			Czech>Ostnatý drát, který může být použit pro vojenský drátěný plot z ostnatých drátů.</Czech>
+			<Czech>Ostnatý drát, který může být použit pro vojenský drátěný plot z ostnatých drátů.</Czech>
+			<French>Du fil de fer tranchant comme un rasoir et bardé de pointes métalliques, utilisé comme obstacle barbelé militaire.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BEARTRAP">
 			<English>Bear Trap</English>
 			<Spanish>Trampa de Osos</Spanish>
 			<Czech>Past na medvědy</Czech>
+			<French>Piège à ours</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BEARTRAP">
 			<English>A device to remotely catch an animal or injure a human.</English>
 			<Spanish>Un dispositivo para atrapar remotamente un animal o herir a un humano.</Spanish>
 			<Czech>Věc na chytání zvířat nebo zranění lidí.</Czech>
+			<French>Un dispositif utilisé pour attraper un animal a distance ou pour blesser un humain.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HATCHET">
 			<English>Hatchet</English>
