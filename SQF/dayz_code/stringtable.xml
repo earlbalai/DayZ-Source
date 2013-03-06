@@ -511,54 +511,63 @@
 			<Russian>Топор</Russian>
 			<Spanish>Hacha</Spanish>
 			<Czech>Sekera</Czech>
+			<French>Hache</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
 			<Russian>Топор отлично подойдет для рубки дров.</Russian>
 			<Spanish>Una herramienta con una hoja afilada para golpear y cortar madera.</Spanish>
 			<Czech>Jednoruční sekera pro sekání dřeva nebo i proti zombie.</Czech>
+			<French>Un outil à une main à lame éffilée utilisé pour couper du bois.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<English>Crowbar</English>
 			<Russian>Ломик</Russian>
 			<Spanish>Palanca</Spanish>
 			<Czech>Páčidlo</Czech>
+			<French>Pied-de-biche</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CROWBAR">
 			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
 			<Russian>Ручной ударный и рычажный инструмент, изготовленный из прочного металлического стержня.</Russian>
 			<Spanish>Una herramienta que consiste en una barra de metal con un final curvado y chato.</Spanish>
 			<Czech>Kovová zbraň s točivým zakončením. Často s prasklinou na jedné či obou stranách. </Czech>
+			<French>Un outil composé d'une barre métallique avec une extrémité incurvée et plate, souvent munie d'une fente pour arracher les clous.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_MACHETE">
 			<English>Machete</English>
 			<Russian>Мачете</Russian>
 			<Spanish>Machete</Spanish>
 			<Czech>Mačeta</Czech>
+			<French>Machette</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
 			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой поседневный, как топор, но весьма мощный.</Russian>
 			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fuerza.</Spanish>
 			<Czech>Původně zbraň pro zahradničení. Nyní silná zbraň proti zombie i když výskyt není tak častý.</Czech>
+			<French>Un outil agricole qui peut être utilisé comme une arme. La machette est moins versatile que la hache mais plus tranchante.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
 			<Russian>Одежда</Russian>
 			<Spanish>Ropa</Spanish>
 			<Czech>Oblečení</Czech>
+			<French>Vêtements</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CLOTHES">
 			<English>Clothes Parcel.</English>
 			<Russian>Упакованная одежда.</Russian>
 			<Spanish>Paquete de ropa.</Spanish>
 			<Czech>Balík oblečení</Czech>
+			<French>Paquet de Vêtements</French>
 		</Key>
 		<Key ID="STR_EQUIP_TEXT_CLOTHES">
 			<English>Wear</English>
 			<Russian>Надеть</Russian>
 			<Spanish>Vestir</Spanish>
 			<Czech>Nosit</Czech>
+			<French>Porter</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GHILLIE">
 			<English>Ghillie Suit</English>
@@ -566,48 +575,56 @@
 			<Russian>Маскхалат</Russian>
 			<Spanish>Traje Camuflado "Guillie"</Spanish>
 			<Czech>Hejkal</Czech>
+			<French>Tenue de camouflage "Ghillie"</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
 			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
 			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Může být rozbaleno a nošeno.</Czech>
+			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<English>Camo Clothing</English>
 			<Russian>Камуфляж</Russian>
 			<Spanish>Ropa Camuflada</Spanish>
 			<Czech>Kamuflážní oblečení</Czech>
+			<French>Tenue de camouflage</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CAMO">
 			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
 			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
 			<Spanish>Una mezcla de pantalones camuflados con una camisa marrón y sin gorra. Puede ser desembalado y usado.</Spanish>
 			<Czech>Mix maskovacích kalhot a hnědého trička bez čepice. Může být rozbaleno a nošeno.</Czech>
+			<French>Assemblage d'un pantalon camo urbain avec un t-shirt brun. Peut être porté.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CIV">
 			<English>Civilian Clothing</English>
 			<Russian>Гражданская одежда</Russian>
 			<Spanish>Ropa de Civil</Spanish>
 			<Czech>Civilní oblečení</Czech>
+			<French>Vêtements Civils</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CIV">
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
 			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
 			<Spanish>Una mezcla de ropa civil con un chaleco ligero y gorra. Puede ser desembalado y usado.</Spanish>
 			<Czech>Klasické civilní oblečení s lehkou vestou a čepicí. Může být rozbaleno a nošeno.</Czech>
+			<French>Assemblage de vêtements civils avec une veste légère et une casquette. Peut être porté.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SOLDIER">
 			<English>Soldier Clothing</English>
 			<Russian>Солдатская форма</Russian>
 			<Spanish>Ropa Militar</Spanish>
 			<Czech>Vojenské oblečení</Czech>
+			<French>Uniforme de Soldat</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SOLDIER">
 			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
 			<Russian>Форма солдата британской армии. Можно распаковать и надеть.</Russian>
 			<Spanish>Un uniforme de los Soldados de la Armada Británica. Puede ser desembalado y usado.</Spanish>
 			<Czech>Britská vojenská uniforma. Může být rozbalena a nošena.</Czech>
+			<French>Un uniforme de soldat de l'Armée Britannique. Peut être porté.</French>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">
 			<English>Box of Wet Matches</English>
@@ -678,7 +695,7 @@
 			<Russian>Сырое мясо. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-			<French>La viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
+			<French>La Viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové maso nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_CODE_NAME_1">
@@ -714,7 +731,7 @@
 			<Russian>Сырой куриный окорочек. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-			<French>La Cuisse de Poulet crue peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
+			<French>La Cuisse de Poulet crue peut être consommée mais devrait être cuite avant de pouvoir la manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být kuřecí nožka nejdříve upečena.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_CODE_NAME_3">
@@ -732,7 +749,7 @@
 			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-			<French>Le Lapin cru peut être consommé mais doit être cuit avant de le manger.</French>
+			<French>Le Lapin cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být králičí maso nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_CODE_NAME_4">
@@ -750,7 +767,7 @@
 			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
-			<French>Le Bacon cru peut être consommé mais doit être cuit avant de le manger.</French>
+			<French>Le Bacon cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být slanina nejdříve upečena.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_CODE_NAME_6">
@@ -768,7 +785,7 @@
 			<Russian>Говядина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-			<French>Le Boeuf Cru peut être consommé mais doit être cuit avant de le manger.</French>
+			<French>Le Boeuf Cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové hovězí maso nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_GOAT_RAW">
@@ -777,7 +794,7 @@
 			<Russian>Ягнятина</Russian>
 			<Spanish>Cabra Cruda</Spanish>
 			<Dutch>Raw Goat</Dutch>
-			<French>Raw Goat</French>
+			<French>Viande de chèvre crue</French>
 			<Czech>Raw Goat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">
@@ -786,7 +803,7 @@
 			<Russian>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Russian>
 			<Spanish>Carne de Cabra Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-			<French>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</French>
+			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
 			<Czech>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_0">
@@ -921,7 +938,7 @@
 			<Russian>Grilled Goat</Russian>
 			<Spanish>Grilled Goat</Spanish>
 			<Dutch>Grilled Goat</Dutch>
-			<French>Grilled Goat</French>
+			<French>Chèvre grillée</French>
 			<Czech>Grilled Goat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">
@@ -930,7 +947,7 @@
 			<Russian>Goat Meat to be used for sustainment.</Russian>
 			<Spanish>Goat Meat to be used for sustainment.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment.</Dutch>
-			<French>Goat Meat to be used for sustainment.</French>
+			<French>La chèvre grillée peut être consommée.</French>
 			<Czech>Goat Meat to be used for sustainment.</Czech>
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">
@@ -955,21 +972,25 @@
 			<English>Wooden Arrow</English>
 			<Russian>Деревянная стрела</Russian>
 			<Spanish>Flecha de Madera</Spanish>
+			<French>Flèche en bois</French>
 		</Key>
 		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">
 			<English>Arrow made out of wood, used with the Crossbow.</English>
 			<Russian>Стрела, сделанная из дерева. Используется арбалетом.</Russian>
 			<Spanish>Flecha hecha de madera para usarse en la Ballesta.</Spanish>
+			<French>Une Flèche faite de bois, à utiliser avec l'arbalète</French>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_NAME">
 			<English>Quiver</English>
 			<Russian>Колчан</Russian>
 			<Spanish>Carcaj</Spanish>
+			<French>Carquois</French>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_DESC">
 			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>
 			<Russian>Небольшой колчан для стрел арбалета. Может содержать до 6 стрел.</Russian>
 			<Spanish>Carcaj Pequeño usado con la Ballesta. Máximo: 6 flechas.</Spanish>
+			<French>Un petit Carquois à utiliser avec l'arbalète. Max 6 flèches.</French>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">
 			<English>Soda</English>
