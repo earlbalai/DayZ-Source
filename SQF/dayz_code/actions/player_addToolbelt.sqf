@@ -16,64 +16,36 @@ call gear_ui_init;
 _create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
 _config2 = 	configFile >> "cfgWeapons" >> _create;
 
-//Remove magazines if needed
-if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
-	_magType = 	([] + getArray (configFile >> "cfgWeapons" >> _item >> "magazines")) select 0;
-	_meleeNum = ({_x == _magType} count magazines player);
-	for "_i" from 1 to _meleeNum do {
-		player removeMagazine _magType;
-	};
-};
+//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
+{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing"];
 
+//removing current melee weapon if new melee selected
+_melee2tb = "";
 if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete"]) then {
-	switch (primaryWeapon player) do
-	{
-		case "MeleeHatchet": { "MeleeHatchet" call player_addToolbelt };
-		case "MeleeCrowbar": { "MeleeCrowbar" call player_addToolbelt };
-		case "MeleeMachete": { "MeleeMachete" call player_addToolbelt };
+	//free primary slot for new melee (remember item to add after)
+	switch (primaryWeapon player) do {
+		case "MeleeHatchet": {player removeWeapon "MeleeHatchet"; _melee2tb = "ItemHatchet";};
+		case "MeleeCrowbar": {player removeWeapon "MeleeCrowbar"; _melee2tb = "ItemCrowbar";};
+		case "MeleeMachete": {player removeWeapon "MeleeMachete"; _melee2tb = "ItemMachete";};
 	};
 };
 
 _isOk = [player,_config2] call BIS_fnc_invAdd;
-
 if (_isOk) then {
-	//Remove item
 	player removeWeapon _item;
-	
-	//Add magazines if needed
-	if (_create in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
-		if (_create == "MeleeCrowbar") then {
-			player addMagazine 'crowbar_swing';
+	//adding old melee converted to Item on place of removed _item
+	if (_melee2tb != "") then {
+		//we know there is place to add item but to prevent BE spam using _config2
+		_config2 = _melee2tb;
+		_isOk = [player,_config2] call BIS_fnc_invAdd;
 		};
-		if (_create == "MeleeHatchet") then {
-			player addMagazine 'hatchet_swing';
-		};
-		if (_create == "MeleeMachete") then {
-			player addMagazine 'Machete_swing';
-		};
-		/*if (_type == "cfgWeapons") then {
-			_muzzles = getArray(configFile >> "cfgWeapons" >> _create >> "muzzles");
-			_wtype = ((weapons player) select 0);
-			if (count _muzzles > 1) then {
-				player selectWeapon (_muzzles select 0);
-			} else {
-				player selectWeapon _wtype;
-			};
-		};*/
-	};		
 } else {
 	cutText [localize "str_player_24", "PLAIN DOWN"];
+};
 	
-	//Add magazines back
-	if (_item in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
-		if (_item == "MeleeCrowbar") then {
-			player addMagazine 'crowbar_swing';
-		};
-		if (_item == "MeleeHatchet") then {
-			player addMagazine 'hatchet_swing';
-		};
-		if (_item == "MeleeMachete") then {
-			player addMagazine 'Machete_swing';
-		};
-	};	
+//adding melee mags back if needed
+switch (primaryWeapon player) do {
+	case "MeleeHatchet": {player addMagazine 'hatchet_swing';};
+	case "MeleeCrowbar": {player addMagazine 'crowbar_swing';};
+	case "MeleeMachete": {player addMagazine 'Machete_swing';};
 };

@@ -13,17 +13,8 @@ _holder setVariable["claimed",_playerID,true];
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
 player playActionNow "PutDown";
-if (_classname == "MeleeCrowbar") then {
-	player addMagazine 'crowbar_swing';
-};
-if (_classname == "MeleeHatchet") then {
-		player addMagazine 'hatchet_swing';
-};
-if (_classname == "MeleeMachete") then {
-		player addMagazine 'Machete_swing';
-};
 
-
+//Adding random chance of arrow is re-usable on pickup
 _broken = false;
 if(_classname == "WoodenArrow") then {
 	if (20 > random 100) then {
@@ -42,32 +33,21 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
 };
 
+//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
+{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing"];
+
 _config = (configFile >> _type >> _classname);
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
-	if (_classname in ["MeleeHatchet","MeleeCrowbar","MeleeMachete"]) then {
-
-		if (_type == "cfgWeapons") then {
-			_muzzles = getArray(configFile >> "cfgWeapons" >> _classname >> "muzzles");
-			//_wtype = ((weapons player) select 0);
-			if (count _muzzles > 1) then {
-				player selectWeapon (_muzzles select 0);
-			} else {
-				player selectWeapon _classname;
-			};
-		};
-	};
 } else {
 	_holder setVariable["claimed",0,true];
 	cutText [localize "str_player_24", "PLAIN DOWN"];
-	if (_classname == "MeleeCrowbar") then {
-		player removeMagazine 'crowbar_swing';
-	};
-	if (_classname == "MeleeHatchet") then {
-			player removeMagazine 'hatchet_swing';
-	};
-	if (_classname == "MeleeMachete") then {
-			player removeMagazine 'Machete_swing';
-	};
+};
+
+//adding melee mags back if needed
+switch (primaryWeapon player) do {
+	case "MeleeHatchet": {player addMagazine 'hatchet_swing';};
+	case "MeleeCrowbar": {player addMagazine 'crowbar_swing';};
+	case "MeleeMachete": {player addMagazine 'Machete_swing';};
 };

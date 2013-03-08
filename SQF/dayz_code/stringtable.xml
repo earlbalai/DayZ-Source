@@ -2174,7 +2174,7 @@
 		<Key ID="str_broken_arrow">
 			<English>Arrow was broken and cannot be used again</English>
 			<German>Arrow was broken and cannot be used again</German>
-			<Russian>Arrow was broken and cannot be used again</Russian>
+			<Russian>Стрела сломалась. Ее нельзя использовать повторно.</Russian>
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
 			<Dutch>Arrow was broken and cannot be used again</Dutch>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
