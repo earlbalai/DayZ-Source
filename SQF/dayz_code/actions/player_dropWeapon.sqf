@@ -9,11 +9,7 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 call gear_ui_init;
 
 _consume = 	([] + getArray (_config >> "magazines")) select 0;
-
-_meleeNum = ({_x == _consume} count magazines player);
-for "_i" from 1 to _meleeNum do {
-	player removeMagazine _consume;
-};
+player removeMagazines _consume;
 
 player removeWeapon _item;
 if (_item == "MeleeHatchet") then {_item = "ItemHatchet";};
