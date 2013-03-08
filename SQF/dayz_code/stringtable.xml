@@ -1247,7 +1247,7 @@
 			<Czech>Meal Ready-to-Eat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
-			<English>Pistachios</English>
+			<English>Snack (Pistachios)</English>
 			<German>Pistazien</German>
 			<Russian>Фисташки</Russian>
 			<Spanish>Pistachos</Spanish>
@@ -1265,7 +1265,7 @@
 			<Czech>Balíček pistácií, pražené a solené.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_NUTMIX">
-			<English>Trail Mix</English>
+			<English>Snack (Trail Mix)</English>
 			<German>Studentenfutter</German>
 			<Russian>Фруктово-ореховый микс</Russian>
 			<Spanish>CerealMix</Spanish>
@@ -1295,6 +1295,42 @@
 			<Spanish>Una lata vacia.</Spanish>
 			<French>Une boîte vide.</French>
 			<Czech>Prázdná plechovka</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS">
+			<English>Snack (Chips)</English>
+			<German>Snack (Chips)</German>
+			<Russian>Snack (Chips)</Russian>
+			<Spanish>Snack (Chips)</Spanish>
+			<Dutch>Snack (Chips)</Dutch>
+			<French>Snack (Chips)</French>
+			<Czech>Snack (Chips)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS">
+			<English>A clean, unopened bag of crunchy Sulahoops.</English>
+			<German>A clean, unopened bag of crunchy Sulahoops.</German>
+			<Russian>A clean, unopened bag of crunchy Sulahoops.</Russian>
+			<Spanish>A clean, unopened bag of crunchy Sulahoops.</Spanish>
+			<Dutch>A clean, unopened bag of crunchy Sulahoops.</Dutch>
+			<French>A clean, unopened bag of crunchy Sulahoops.</French>
+			<Czech>A clean, unopened bag of crunchy Sulahoops.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY">
+			<English>Empty Snack Bag</English>
+			<German>Empty Snack Bag</German>
+			<Russian>Empty Snack Bag</Russian>
+			<Spanish>Empty Snack Bag</Spanish>
+			<Dutch>Empty Snack Bag</Dutch>
+			<French>Empty Snack Bag</French>
+			<Czech>Empty Snack Bag</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY">
+			<English>An empty bag of Sulahoops.</English>
+			<German>An empty bag of Sulahoops.</German>
+			<Russian>An empty bag of Sulahoops.</Russian>
+			<Spanish>An empty bag of Sulahoops.</Spanish>
+			<Dutch>An empty bag of Sulahoops.</Dutch>
+			<French>An empty bag of Sulahoops.</French>
+			<Czech>An empty bag of Sulahoops.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
