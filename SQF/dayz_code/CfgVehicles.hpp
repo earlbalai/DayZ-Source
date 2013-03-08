@@ -732,7 +732,7 @@ class CfgVehicles {
 		scope = 2;
 		displayName = "British Assault Pack";
 		mapSize = 2;
-		model = "\ca\weapons_baf\Backpack_Small_BAF";\
+		model = "\ca\weapons_baf\Backpack_Small_BAF";
 		picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
 		icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 		transportMaxWeapons = 3;

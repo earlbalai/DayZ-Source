@@ -1,4 +1,4 @@
-private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_magType","_meleeNum","_isOk","_type","_wtype","_i"];
+private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_melee2tb","_isOk"];
 
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
