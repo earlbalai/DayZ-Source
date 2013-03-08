@@ -497,12 +497,14 @@
 		<Key ID="STR_EQUIP_NAME_BEARTRAP">
 			<English>Bear Trap</English>
 			<Spanish>Trampa de Osos</Spanish>
+			<Russian>Капкан</Russian>
 			<Czech>Past na medvědy</Czech>
 			<French>Piège à ours</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BEARTRAP">
 			<English>A device to remotely catch an animal or injure a human.</English>
 			<Spanish>Un dispositivo para atrapar remotamente un animal o herir a un humano.</Spanish>
+			<Russian>Устройство для ловли животных. Может повредить и человека.</Russian>
 			<Czech>Věc na chytání zvířat nebo zranění lidí.</Czech>
 			<French>Un dispositif utilisé pour attraper un animal a distance ou pour blesser un humain.</French>
 		</Key>
@@ -800,7 +802,7 @@
 		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">
 			<English>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</English>
 			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden</German>
-			<Russian>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Russian>
+			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Carne de Cabra Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
@@ -935,7 +937,7 @@
 		<Key ID="STR_FOOD_NAME_GOAT_COOKED">
 			<English>Grilled Goat</English>
 			<German>Gegrilltes Ziegenfleisch</German>
-			<Russian>Grilled Goat</Russian>
+			<Russian>Жареная ягнятина</Russian>
 			<Spanish>Grilled Goat</Spanish>
 			<Dutch>Grilled Goat</Dutch>
 			<French>Chèvre grillée</French>
@@ -944,7 +946,7 @@
 		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">
 			<English>Goat Meat to be used for sustainment.</English>
 			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
-			<Russian>Goat Meat to be used for sustainment.</Russian>
+			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
 			<Spanish>Goat Meat to be used for sustainment.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment.</Dutch>
 			<French>La chèvre grillée peut être consommée.</French>
@@ -1558,7 +1560,7 @@
 		<Key ID="STR_BOOK_DESC_BIBLE">
 			<English>The bible.</English>
 			<German>The bible.</German>
-			<Russian>The bible.</Russian>
+			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
 			<Spanish>La Biblia</Spanish>
 			<Dutch>The bible.</Dutch>
 			<French>The bible.</French>
@@ -1567,7 +1569,7 @@
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan</English>
 			<German>Benzinkanister</German>
-			<Russian>канистры</Russian>
+			<Russian>Канистра</Russian>
 			<Spanish>Bidón Chico</Spanish>
 			<Dutch>Fuelcan</Dutch>
 			<French>Fuelcan</French>
@@ -1576,7 +1578,7 @@
 		<Key ID="STR_ITEM_DESC_FUELCAN">
 			<English>A small can for gasoline.</English>
 			<German>Ein kleiner Benzinkanister.</German>
-			<Russian>A small can for gasoline.</Russian>
+			<Russian>Небольшая емкость для топлива.</Russian>
 			<Spanish>Un envase pequeño para combustible lleno.</Spanish>
 			<Dutch>A small can for gasoline.</Dutch>
 			<French>A small can for gasoline.</French>
@@ -1585,7 +1587,7 @@
 		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
 			<English>Fuelcan (Empty)</English>
 			<German>Benzinkanister (Leer)</German>
-			<Russian>канистры (Empty)</Russian>
+			<Russian>Канистра (пустая)</Russian>
 			<Spanish>Bidón Chico (Vacío)</Spanish>
 			<Dutch>Fuelcan (Empty)</Dutch>
 			<French>Fuelcan (Empty)</French>
@@ -1594,7 +1596,7 @@
 		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
 			<English>A small can for gasoline.</English>
 			<German>Ein kleiner Benzinkanister.</German>
-			<Russian>A small can for gasoline.</Russian>
+			<Russian>Пустая емкость для топлива.</Russian>
 			<Spanish>Un envase pequeño para combustible lleno vacío.</Spanish>
 			<Dutch>A small can for gasoline.</Dutch>
 			<French>A small can for gasoline.</French>
