@@ -688,6 +688,26 @@ class CfgMagazines {
 		ammo = "TinCan";
 	};
 	
+	class FoodChipsSulahoops : FoodEdible {
+		scope = public;
+		count = 1;
+		sfx = "eat_chips";
+		bloodRegen = 120;
+		displayName = $STR_FOOD_NAME_CHIPS_SULAHOOPS;
+		descriptionShort = $STR_FOOD_DESC_CHIPS_SULAHOOPS;
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_full_ca.paa";
+	};
+	class FoodChipsSulahoopsEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_opened.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_opened_ca.paa";
+		displayName = $STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY;
+		ammo = "TinCan";
+	};
+	
 	class ItemWaterbottle;
 	class ItemWaterbottleBoiled : ItemWaterbottle {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;

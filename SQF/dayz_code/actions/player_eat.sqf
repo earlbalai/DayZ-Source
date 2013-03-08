@@ -27,7 +27,11 @@ player removeMagazine _itemorignal;
 sleep 1;
 
 _dis=6;
-_sfx = "eat";
+_sfx = getText (_config >> "sfx");
+
+//set _sfx to eat if nothing is defined
+if (_sfx == "") then {_sfx = "eat"};
+
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 

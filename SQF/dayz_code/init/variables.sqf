@@ -53,7 +53,8 @@ food_with_output=[
 	"FoodCanOrlok",
 	"FoodCanPowell",
 	"FoodCanTylers",
-	"FoodCanUnlabeled"
+	"FoodCanUnlabeled",
+	"FoodChipsSulahoops"
 ];
 
 food_output = [
@@ -72,7 +73,8 @@ food_output = [
 	"FoodCanOrlokEmpty",
 	"FoodCanPowellEmpty",
 	"FoodCanTylersEmpty",
-	"FoodCanUnlabeledEmpty"
+	"FoodCanUnlabeledEmpty",
+	"FoodChipsSulahoopsEmpty"
 ];
 //Drinking
 no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
