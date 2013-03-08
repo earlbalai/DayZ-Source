@@ -1,5 +1,4 @@
 disableSerialization;
-disableSerialization;
 
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";

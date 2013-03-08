@@ -155,7 +155,7 @@ class CfgMagazines {
 			class ReloadMag {
 				text = $STR_ACTION_CREATEQUIVER;
 				script = "spawn player_reloadMag;";
-				use[] = {"WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow","WoodenArrow"};
+				use[] = {"WoodenArrow"};
 				output[] = {"Quiver"};
 			};
 		};
@@ -747,8 +747,23 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_empty_CA.paa";
 		type = 256;
 	};
-	
-	class 2Rnd_shotgun_74Slug: CA_Magazine
+	class 8Rnd_B_Beneli_Pellets: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 8Rnd_B_Beneli_74Slug: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 2Rnd_shotgun_74Slug: 8Rnd_B_Beneli_74Slug
 	{
 		displayName="2Rnd. Slug";
 		count=2;
@@ -779,7 +794,7 @@ class CfgMagazines {
 			};
 		};
 	};
-	class 2Rnd_shotgun_74Pellets: CA_Magazine
+	class 2Rnd_shotgun_74Pellets: 8Rnd_B_Beneli_Pellets
 	{
 		displayName="2Rnd. Pellets";
 		count=2;
@@ -1030,22 +1045,6 @@ class CfgMagazines {
 		};
 	};
 	class 15Rnd_W1866_Slug: CA_Magazine {
-		class ItemActions {
-			class CombineMag {
-				text = $STR_MAG_COMBINE;
-				script = "spawn player_combineMag;";
-			};
-		};
-	};
-	class 8Rnd_B_Beneli_Pellets: CA_Magazine {
-		class ItemActions {
-			class CombineMag {
-				text = $STR_MAG_COMBINE;
-				script = "spawn player_combineMag;";
-			};
-		};
-	};
-	class 8Rnd_B_Beneli_74Slug: CA_Magazine {
 		class ItemActions {
 			class CombineMag {
 				text = $STR_MAG_COMBINE;
