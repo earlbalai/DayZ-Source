@@ -1299,7 +1299,7 @@
 		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS">
 			<English>Snack (Chips)</English>
 			<German>Snack (Chips)</German>
-			<Russian>Snack (Chips)</Russian>
+			<Russian>Закуска (Чипсы)</Russian>
 			<Spanish>Snack (Chips)</Spanish>
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
@@ -1308,7 +1308,7 @@
 		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS">
 			<English>A clean, unopened bag of crunchy Sulahoops.</English>
 			<German>A clean, unopened bag of crunchy Sulahoops.</German>
-			<Russian>A clean, unopened bag of crunchy Sulahoops.</Russian>
+			<Russian>Чистая, закрытая упаковка "Sulahoops".</Russian>
 			<Spanish>A clean, unopened bag of crunchy Sulahoops.</Spanish>
 			<Dutch>A clean, unopened bag of crunchy Sulahoops.</Dutch>
 			<French>A clean, unopened bag of crunchy Sulahoops.</French>
@@ -1317,7 +1317,7 @@
 		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY">
 			<English>Empty Snack Bag</English>
 			<German>Empty Snack Bag</German>
-			<Russian>Empty Snack Bag</Russian>
+			<Russian>Пустая упаковка</Russian>
 			<Spanish>Empty Snack Bag</Spanish>
 			<Dutch>Empty Snack Bag</Dutch>
 			<French>Empty Snack Bag</French>
@@ -1326,7 +1326,7 @@
 		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY">
 			<English>An empty bag of Sulahoops.</English>
 			<German>An empty bag of Sulahoops.</German>
-			<Russian>An empty bag of Sulahoops.</Russian>
+			<Russian>Пустая упаковка "Sulahoops".</Russian>
 			<Spanish>An empty bag of Sulahoops.</Spanish>
 			<Dutch>An empty bag of Sulahoops.</Dutch>
 			<French>An empty bag of Sulahoops.</French>
@@ -1640,6 +1640,21 @@
 		</Key>
 	</Package>
 	<Package name="feedback">
+		<Key ID="str_pulse_extremely_weak">
+			<Original>No pulse. Man is dead...</Original>
+			<English>No pulse. Man is dead...</English>
+			<Russian>Пульс отсутствует. Человек мертв...</Russian>
+		</Key>
+		<Key ID="str_pulse_weak">
+			<Original>Pulse is weak</Original>
+			<English>Pulse is weak</English>
+			<Russian>Слабый пульс</Russian>
+		</Key>
+		<Key ID="str_pulse_strong">
+			<Original>Pulse is strong</Original>
+			<English>Pulse is strong</English>
+			<Russian>Уверенный пульс</Russian>
+		</Key>
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<English>You have cooked %1 %2</English>
 			<German>Sie haben %1 %2 gekocht</German>

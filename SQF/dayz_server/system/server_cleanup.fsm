@@ -236,7 +236,7 @@ class FSM
     class cleanup_objects
     {
       name = "cleanup_objects";
-      init = /*%FSM<STATEINIT""">*/"_missionObjs = allMissionObjects ""WeaponHolder"";" \n
+      init = /*%FSM<STATEINIT""">*/"_missionObjs = allMissionObjects ""WeaponHolder"" + allMissionObjects ""WeaponHolderBase"";" \n
        "_qty = count _missionObjs;" \n
        "" \n
        "//diag_log (""CLEANUP: PERFORMING ITEM CLEANUP: TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n

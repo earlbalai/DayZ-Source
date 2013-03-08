@@ -44,18 +44,13 @@ while {true} do {
 	};
 	
 	//Handle player bleeding
-	if ((r_player_injured) and (!r_player_handler)) then {
+	if ((r_player_injured or r_player_infected) and (!r_player_handler)) then {
 		r_player_handler = true;
 		sleep 1;
 		//localize "CLIENT: Start Player Bleeding";
-		[] spawn fnc_usec_playerBleed;	//publicizes the blood value at regular intervals
-		[] spawn fnc_med_publicBlood;
-	};
-	
-	//Handle player infection
-	if ((r_player_infected) and (!r_player_handler)) then {
-		r_player_handler = true;
-		sleep 1;
+		if (r_player_injured) then {
+			[] spawn fnc_usec_playerBleed;	//publicizes the blood value at regular intervals
+		};
 		[] spawn fnc_med_publicBlood;
 	};
 
