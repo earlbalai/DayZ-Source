@@ -7,6 +7,7 @@
 			<Spanish>Agregar al Cinturón</Spanish>
 			<Czech>Přidat do nástrojů</Czech>
 			<French>Ajouter à la Ceinture à outils</French>
+			<German>Zum Toolbelt hinzufügen</German>
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
@@ -14,6 +15,7 @@
 			<Spanish>Tirar</Spanish>
 			<Czech>Odložit</Czech>
 			<French>Lâcher</French>
+			<German>Fallen lassen</German>
 		</Key>
 		<Key ID="STR_ACTIONS_RFROMTB">
 			<English>Remove from Toolbelt</English>
@@ -21,12 +23,14 @@
 			<Spanish>Sacar del Cinturón</Spanish>
 			<Czech>Odstranit z nástrojů</Czech>
 			<French>Retirer de la Ceinture à outils</French>
+			<German>Vom Toolbelt entfernen</German>
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">
 			<English>Create quiver</English>
 			<Russian>Собрать колчан</Russian>
 			<Spanish>Crear Carcaj</Spanish>
 			<French>Créer un carquois</French>
+			<German>Erstelle Köcher</German>
 		</Key>
 		<Key ID="STR_ACTION_BUILD">
 			<English>Build</English>
@@ -35,10 +39,11 @@
 			<French>Construire</French>
 			<Czech>Postavit</Czech>
 			<French>Construire</French>
+			<German>Baue</German>
 		</Key>
 		<Key ID="STR_ACTION_THROW">
 			<English>Throw</English>
-			<German>Throw</German>
+			<German>Werfen</German>
 			<Russian>Бросить</Russian>
 			<Spanish>Arrojar</Spanish>
 			<Dutch>Throw</Dutch>
@@ -55,7 +60,7 @@
 		</Key>
 		<Key ID="STR_MAG_COMBINE">
 			<English>Re-combine</English>
-			<German>Re-combine</German>
+			<German>Neu kombinieren</German>
 			<Russian>Переснарядить</Russian>
 			<Spanish>Volver a combinar</Spanish>
 			<Dutch>Re-combine</Dutch>
@@ -374,6 +379,7 @@
 			<Spanish>%1 Días Sobrevividos</Spanish>
 			<Czech>Přežito %1 dnů</Czech>
 			<French>Survécu %1 jours</French>
+			<German>%1 Tage überlebt</German>
 		</Key>
 		<Key ID="str_actions_stats_zk">
 			<English>Zombies Killed</English>
@@ -381,6 +387,7 @@
 			<Spanish>Zombies Matados</Spanish>
 			<Czech>Zombie zabito</Czech>
 			<French>Zombies Tués</French>
+			<German>Zombies getötet</German>
 		</Key>
 		<Key ID="str_actions_stats_hs">
 			<English>Headshots</English>
@@ -388,6 +395,7 @@
 			<Spanish>Headshots</Spanish>
 			<Czech>Střel do hlavy</Czech>
 			<French>Tirs à la tête</French>
+			<German>Kopfschüsse</German>
 		</Key>
 		<Key ID="str_actions_stats_hk">
 			<English>Murders</English>
@@ -395,6 +403,7 @@
 			<Spanish>Asesinatos</Spanish>
 			<Czech>Vražď</Czech>
 			<French>Meurtres</French>
+			<German>Mörder</German>
 		</Key>
 		<Key ID="str_actions_stats_bk">
 			<English>Bandits Killed</English>
@@ -402,6 +411,7 @@
 			<Spanish>Bandidos Asesinados</Spanish>
 			<Czech>Zabito banditů</Czech>
 			<French>Bandits tués</French>
+			<German>Getötete Banditen</German>
 		</Key>
 		<Key ID="str_actions_stats_hm">
 			<English>Humanity</English>
@@ -409,6 +419,7 @@
 			<Spanish>Humanidad</Spanish>
 			<Czech>Humanita</Czech>
 			<French>Humanité</French>
+			<German>Menschlichkeit</German>
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<English>Sleep</English>
@@ -500,6 +511,7 @@
 			<Russian>Капкан</Russian>
 			<Czech>Past na medvědy</Czech>
 			<French>Piège à ours</French>
+			<German>Bärenfalle</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BEARTRAP">
 			<English>A device to remotely catch an animal or injure a human.</English>
@@ -507,6 +519,7 @@
 			<Russian>Устройство для ловли животных. Может повредить и человека.</Russian>
 			<Czech>Věc na chytání zvířat nebo zranění lidí.</Czech>
 			<French>Un dispositif utilisé pour attraper un animal a distance ou pour blesser un humain.</French>
+			<German>Ein Objekt um Tiere aus der Ferne zu fangen oder Menschen zu verletzen</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HATCHET">
 			<English>Hatchet</English>
@@ -514,6 +527,7 @@
 			<Spanish>Hacha</Spanish>
 			<Czech>Sekera</Czech>
 			<French>Hache</French>
+			<German>Beil</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
@@ -521,6 +535,7 @@
 			<Spanish>Una herramienta con una hoja afilada para golpear y cortar madera.</Spanish>
 			<Czech>Jednoruční sekera pro sekání dřeva nebo i proti zombie.</Czech>
 			<French>Un outil à une main à lame éffilée utilisé pour couper du bois.</French>
+			<German>Ein einhändiges benutzbares Schlagwerkzeug mit einer scharfen Klinge zum schneiden und spalten von Holz</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<English>Crowbar</English>
@@ -528,6 +543,7 @@
 			<Spanish>Palanca</Spanish>
 			<Czech>Páčidlo</Czech>
 			<French>Pied-de-biche</French>
+			<German>Brechstange</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CROWBAR">
 			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
@@ -535,6 +551,7 @@
 			<Spanish>Una herramienta que consiste en una barra de metal con un final curvado y chato.</Spanish>
 			<Czech>Kovová zbraň s točivým zakončením. Často s prasklinou na jedné či obou stranách. </Czech>
 			<French>Un outil composé d'une barre métallique avec une extrémité incurvée et plate, souvent munie d'une fente pour arracher les clous.</French>
+			<German>Ein Werkzeug, welches aus einem Metallstab mit einem gekrümmten Ende um Objekte aufzuhebeln oder Nägen zu entfernen</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_MACHETE">
 			<English>Machete</English>
@@ -542,6 +559,7 @@
 			<Spanish>Machete</Spanish>
 			<Czech>Mačeta</Czech>
 			<French>Machette</French>
+			<German>Machete</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
@@ -549,6 +567,7 @@
 			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fuerza.</Spanish>
 			<Czech>Původně zbraň pro zahradničení. Nyní silná zbraň proti zombie i když výskyt není tak častý.</Czech>
 			<French>Un outil agricole qui peut être utilisé comme une arme. La machette est moins versatile que la hache mais plus tranchante.</French>
+			<German>Ein Werkzeug, welches in der Landwirtschaft vorkommt, aber auch als Waffe verwendet werden kann. Es ist vielseitiger als das Beil.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
@@ -556,6 +575,7 @@
 			<Spanish>Ropa</Spanish>
 			<Czech>Oblečení</Czech>
 			<French>Vêtements</French>
+			<German>Kleidung</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CLOTHES">
 			<English>Clothes Parcel.</English>
@@ -563,6 +583,7 @@
 			<Spanish>Paquete de ropa.</Spanish>
 			<Czech>Balík oblečení</Czech>
 			<French>Paquet de Vêtements</French>
+			<German>Kleidung zerteilen</German>
 		</Key>
 		<Key ID="STR_EQUIP_TEXT_CLOTHES">
 			<English>Wear</English>
@@ -570,6 +591,7 @@
 			<Spanish>Vestir</Spanish>
 			<Czech>Nosit</Czech>
 			<French>Porter</French>
+			<German>Tragen</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GHILLIE">
 			<English>Ghillie Suit</English>
@@ -585,6 +607,7 @@
 			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Může být rozbaleno a nošeno.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
+			<German>Eine Sorte der Camouflage Kleidung, welches dem Blattwerk ähneln soll. Kann ausgepackt und getragen werden.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<English>Camo Clothing</English>
@@ -592,6 +615,7 @@
 			<Spanish>Ropa Camuflada</Spanish>
 			<Czech>Kamuflážní oblečení</Czech>
 			<French>Tenue de camouflage</French>
+			<German>Camouflage Kleidung</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CAMO">
 			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
@@ -599,6 +623,7 @@
 			<Spanish>Una mezcla de pantalones camuflados con una camisa marrón y sin gorra. Puede ser desembalado y usado.</Spanish>
 			<Czech>Mix maskovacích kalhot a hnědého trička bez čepice. Může být rozbaleno a nošeno.</Czech>
 			<French>Assemblage d'un pantalon camo urbain avec un t-shirt brun. Peut être porté.</French>
+			<German>Eine Kleidung, bestehend aus einer Camouflage Hose und einem braunen T-Shirt, aber ohne eine Kopfbedeckung. Kann ausgepackt werden und getragen werden.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CIV">
 			<English>Civilian Clothing</English>
@@ -606,6 +631,7 @@
 			<Spanish>Ropa de Civil</Spanish>
 			<Czech>Civilní oblečení</Czech>
 			<French>Vêtements Civils</French>
+			<German>Zivilisten Kleidung</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CIV">
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
@@ -613,6 +639,7 @@
 			<Spanish>Una mezcla de ropa civil con un chaleco ligero y gorra. Puede ser desembalado y usado.</Spanish>
 			<Czech>Klasické civilní oblečení s lehkou vestou a čepicí. Může být rozbaleno a nošeno.</Czech>
 			<French>Assemblage de vêtements civils avec une veste légère et une casquette. Peut être porté.</French>
+			<German>Eine normale Kleidung von Zivilisten, bestehend aus einer leichten Weste und einem Hut. Kann ausgepackt werden und getragen werden.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SOLDIER">
 			<English>Soldier Clothing</English>
@@ -620,6 +647,7 @@
 			<Spanish>Ropa Militar</Spanish>
 			<Czech>Vojenské oblečení</Czech>
 			<French>Uniforme de Soldat</French>
+			<German>Soldaten Kleidung</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SOLDIER">
 			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
@@ -627,6 +655,7 @@
 			<Spanish>Un uniforme de los Soldados de la Armada Británica. Puede ser desembalado y usado.</Spanish>
 			<Czech>Britská vojenská uniforma. Může být rozbalena a nošena.</Czech>
 			<French>Un uniforme de soldat de l'Armée Britannique. Peut être porté.</French>
+			<German>Eine Uniform des Britischen Militärs. Kann ausgepackt werden und getragen werden.</German>
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">
 			<English>Box of Wet Matches</English>
@@ -975,24 +1004,28 @@
 			<Russian>Деревянная стрела</Russian>
 			<Spanish>Flecha de Madera</Spanish>
 			<French>Flèche en bois</French>
+			<German>Hölzener Pfeil</German>
 		</Key>
 		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">
 			<English>Arrow made out of wood, used with the Crossbow.</English>
 			<Russian>Стрела, сделанная из дерева. Используется арбалетом.</Russian>
 			<Spanish>Flecha hecha de madera para usarse en la Ballesta.</Spanish>
 			<French>Une Flèche faite de bois, à utiliser avec l'arbalète</French>
+			<German>Ein aus Holz hergestellter Pfeil, welcher in der Armbrust benutzt werden kann</German>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_NAME">
 			<English>Quiver</English>
 			<Russian>Колчан</Russian>
 			<Spanish>Carcaj</Spanish>
 			<French>Carquois</French>
+			<German>Köcher</German>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_DESC">
 			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>
 			<Russian>Небольшой колчан для стрел арбалета. Может содержать до 6 стрел.</Russian>
 			<Spanish>Carcaj Pequeño usado con la Ballesta. Máximo: 6 flechas.</Spanish>
 			<French>Un petit Carquois à utiliser avec l'arbalète. Max 6 flèches.</French>
+			<German>Ein kleiner Köcher welche mit der Armbrust verwendet werden kann. Maximale Anzahl an Pfeilen: 6.</German>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">
 			<English>Soda</English>
@@ -1005,7 +1038,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_0">
 			<English>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</English>
-			<German>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</German>
+			<German>Eine saubere, ungeöffnete Dose Mountain Green. Die erste Wahl des enthusiatischen Langstrecken Läufers</German>
 			<Russian>Чистая, закрытая банка "Mountain Green". Выбор марафонцев.</Russian>
 			<Spanish>Una limpia y cerrada lata de Mountain Green. Gaseosa elejida por el simulador entusiasta de correr grandes distancias.</Spanish>
 			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
@@ -1023,7 +1056,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_1">
 			<English>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</English>
-			<German>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</German>
+			<German>Eine saubere, ungeöffnete Dose R4ZOR. Man hat den Verkauf vor Jahren gestoppt!</German>
 			<Russian>Чистая, закрытая банка "R4Z0R". Уже давно исчезли перестали продаваться!</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa R4Z0R. Dejaron de venderlas hace años.</Spanish>
 			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
@@ -1041,7 +1074,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">
 			<English>A clean, unopened can of Long's island iced tea.</English>
-			<German>A clean, unopened can of Long's island iced tea.</German>
+			<German>Eine saubere, ungeöffnete Dose Long's Island Eistee.</German>
 			<Russian>Чистая, закрытая банка холодного чая.</Russian>
 			<Spanish>Una limpia y cerrada lata de té helado Long's island.</Spanish>
 			<Dutch>A clean, unopened can of Long's island iced tea.</Dutch>
@@ -1059,7 +1092,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3">
 			<English>A clean, unopened can of Smasht grape soda.</English>
-			<German>A clean, unopened can of Smasht grape soda.</German>
+			<German>Eine saubere, ungeöffnete Dose Smasht Trauben Soda</German>
 			<Russian>Чистая, закрытая банка гейпфруктового "Smasht".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de uva Smasht.</Spanish>
 			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
@@ -1077,7 +1110,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_4">
 			<English>A clean, unopened can of Dr. Wasteland soda.</English>
-			<German>A clean, unopened can of Dr. Wasteland soda.</German>
+			<German>Eine saubere, ungeöffnete Dose Dr. Wasteland Soda</German>
 			<Russian>Чистая, закрытая банка "Dr. Wasteland".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Dr. Wasteland.</Spanish>
 			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
@@ -1095,7 +1128,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">
 			<English>A clean, unopened can of Franka orange soda.</English>
-			<German>A clean, unopened can of Franka orange soda.</German>
+			<German>Eine saubere, ungeöffnete Dose Franka Orangelimonade</German>
 			<Russian>Чистая, закрытая банка апельсиновой "Franka".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de naranja Franka.</Spanish>
 			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
@@ -1113,7 +1146,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">
 			<English>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</English>
-			<German>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</German>
+			<German>Eine saubere, ungeöffnete Dose Mikhail Made Lemonade. Hergestellt bei Mikhail.</German>
 			<Russian>Чистая, закрытая банка лимонада. Производства "Mikhail".</Russian>
 			<Spanish>Una limpia y cerrada lata de limonada Mikhail.</Spanish>
 			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
@@ -1131,7 +1164,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7">
 			<English>A clean, unopened can of Lirikola. An o7 brand.</English>
-			<German>A clean, unopened can of Lirikola. An o7 brand.</German>
+			<German>Eine saubere, ungeöffnete Dose Lirikola. Eine o7 Marke.</German>
 			<Russian>Чистая, закрытая банка "Lirikola". Бренд "o7".</Russian>
 			<Spanish>Una limpia y cerrada botella de Fernet "Lirikola" y CocaCola.</Spanish>
 			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
@@ -1140,7 +1173,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">
 			<English>Soda (Root Beer)</English>
-			<German>Soda (Root Beer)</German>
+			<German>Soda (Wurzel Beere)</German>
 			<Russian>Пиво (Root Beer)</Russian>
 			<Spanish>Cerveza de Raíz</Spanish>
 			<Dutch>Soda (Root Beer)</Dutch>
@@ -1149,7 +1182,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">
 			<English>A clean, unopened can of LVG root beer.</English>
-			<German>A clean, unopened can of LVG root beer.</German>
+			<German>Eine saubere, ungeöffnete Dose LVG Wurzel Beere</German>
 			<Russian>Чистая, закрытая банка пива "LVG root".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza de raíz LVG.</Spanish>
 			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
@@ -1167,7 +1200,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_9">
 			<English>A clean, unopened can of mZLY yZLY soda.</English>
-			<German>A clean, unopened can of mZLY yZLY soda.</German>
+			<German>Eine saubere, ungeöffnete Dose mZLY yZLY Soda.</German>
 			<Russian>Чистая, закрытая банка "mZLY yZLY".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa mZLY yZLY.</Spanish>
 			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
@@ -1185,7 +1218,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">
 			<English>A clean, unopened can of Peppsy soda.</English>
-			<German>A clean, unopened can of Peppsy soda.</German>
+			<German><German>Eine saubere, ungeöffnete Dose Peppsy Soda.</German></German>
 			<Russian>Чистая, закрытая банка "Peppsy".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Peppsy.</Spanish>
 			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
@@ -1203,7 +1236,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_11">
 			<English>A clean, unopened can of Rabbitman beer.</English>
-			<German>A clean, unopened can of Rabbitman beer.</German>
+			<German>Eine saubere, ungeöffnete Dose Rabbitman Bier.</German>
 			<Russian>Чистая, закрытая банка пива "Rabbitman".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza Rabbitman.</Spanish>
 			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
@@ -1221,7 +1254,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12">
 			<English>A clean, unopened can of Sacrite soda.</English>
-			<German>A clean, unopened can of Sacrite soda.</German>
+			<German>Eine saubere, ungeöffnete Dose Sacrite Soda.</German>
 			<Russian>Чистая, закрытая банка "Sacrite".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Sacrite.</Spanish>
 			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
@@ -1247,7 +1280,7 @@
 			<Czech>Meal Ready-to-Eat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
-			<English>Snack (Pistachios)</English>
+			<English>Pistachios</English>
 			<German>Pistazien</German>
 			<Russian>Фисташки</Russian>
 			<Spanish>Pistachos</Spanish>
@@ -1275,7 +1308,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">
 			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>
-			<German>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</German>
+			<German>Eine Packung Papa's Original Studentenfutter mit 12 verschiedenen Früchen und Nüssen</German>
 			<Russian>Упаковка сушеных фруктов и орешков "Papa", 12 разных видов.</Russian>
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
 			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
@@ -1288,6 +1321,7 @@
 			<Spanish>Lata</Spanish>
 			<French>Boîte en fer-blanc</French>
 			<Czech>Plechovka</Czech>
+			<German>Blechdose</German>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
 			<English>An empty can.</English>
@@ -1295,6 +1329,7 @@
 			<Spanish>Una lata vacia.</Spanish>
 			<French>Une boîte vide.</French>
 			<Czech>Prázdná plechovka</Czech>
+			<German>Eine leere Blechdose</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS">
 			<English>Snack (Chips)</English>
@@ -1334,7 +1369,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
-			<German>Can (Beans)</German>
+			<German>Dose (Bohnen)</German>
 			<Russian>Банка черных бобов</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Can (Beans)</Dutch>
@@ -1343,7 +1378,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF">
 			<English>A clean, unopened can of Griff's black beans.</English>
-			<German>A clean, unopened can of Griff's black beans.</German>
+			<German>Eine saubere ungeöffnete Dose Griff's schwarze Bohnen.</German>
 			<Russian>Чистая, закрытая банка черных бобов "Griff".</Russian>
 			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
 			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
@@ -1352,7 +1387,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY">
 			<English>Can (Peaches)</English>
-			<German>Can (Peaches)</German>
+			<German>Dose (Pfirsiche)</German>
 			<Russian>Банка персиков</Russian>
 			<Spanish>Lata de Duraznos</Spanish>
 			<Dutch>Can (Peaches)</Dutch>
@@ -1361,7 +1396,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY">
 			<English>A clean, unopened can of Bad Guy's ubiquitous peach slices.</English>
-			<German>A clean, unopened can of Bad Guy's ubiquitous peach slices.</German>
+			<German>Eine saubere ungeöffnete Dose Guy's allgegenwärtige Pfirsichscheiben.</German>
 			<Russian>Чистая, закрытая банка нарезанных персиков "Bad Guy".</Russian>
 			<Spanish>Una limpia y cerrada lata de duraznos en rodajas "Bad Guy".</Spanish>
 			<Dutch>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Dutch>
@@ -1370,7 +1405,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">
 			<English>Can (Ravioli)</English>
-			<German>Can (Ravioli)</German>
+			<German>Dose (Ravioli)</German>
 			<Russian>Банка равиоли</Russian>
 			<Spanish>Lata de Ravioles</Spanish>
 			<Dutch>Can (Ravioli)</Dutch>
@@ -1379,7 +1414,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY">
 			<English>A clean, unopened can of Chef Boneboy ravioli.</English>
-			<German>A clean, unopened can of Chef Boneboy ravioli.</German>
+			<German>Eine saubere ungeöffnete Dose Chef Boneboy Ravioli.</German>
 			<Russian>Чистая, закрытая банка равиоли "Chef Boneboy".</Russian>
 			<Spanish>Una limpia y cerrada lata de ravioles "Chef Boneboy".</Spanish>
 			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
@@ -1388,7 +1423,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN">
 			<English>Can (Corn)</English>
-			<German>Can (Corn)</German>
+			<German>Dose (Mais)</German>
 			<Russian>Банка кукурузы</Russian>
 			<Spanish>Lata de Maíz</Spanish>
 			<Dutch>Can (Corn)</Dutch>
@@ -1397,7 +1432,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN">
 			<English>A clean, unopened can of Conrad's whole kernel corn.</English>
-			<German>A clean, unopened can of Conrad's whole kernel corn.</German>
+			<German>Eine saubere ungeöffnete Dose Conrad's Mais.</German>
 			<Russian>Чистая, закрытая банка кукурузы "Conrad".</Russian>
 			<Spanish>Una limpia y cerrada lata de granos de maíz enteros "Conrad".</Spanish>
 			<Dutch>A clean, unopened can of Conrad's whole kernel corn.</Dutch>
@@ -1406,7 +1441,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON">
 			<English>Can (Soup)</English>
-			<German>Can (Soup)</German>
+			<German>Dose (Suppe)</German>
 			<Russian>Банка супа</Russian>
 			<Spanish>Lata de Sopa</Spanish>
 			<Dutch>Can (Soup)</Dutch>
@@ -1415,7 +1450,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON">
 			<English>A clean, unopened can of Curgon's chicken noodle soup.</English>
-			<German>A clean, unopened can of Curgon's chicken noodle soup.</German>
+			<German>Eine saubere ungeöffnete Dose Curgon's Hühnersuppe.</German>
 			<Russian>Чистая, закрытая банка куринного супа "Curgon".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pollo con fideos "Curgon".</Spanish>
 			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
@@ -1424,7 +1459,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">
 			<English>Can (Beans)</English>
-			<German>Can (Beans)</German>
+			<German>Dose (Bohnen)</German>
 			<Russian>Банка зеленого горошка</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Can (Beans)</Dutch>
@@ -1433,7 +1468,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON">
 			<English>A clean, unopened can of Demon Groves green beans.</English>
-			<German>A clean, unopened can of Demon Groves green beans.</German>
+			<German>Eine saubere ungeöffnete Dose Demon Groves grüne Bohnen.</German>
 			<Russian>Чистая, закрытая банка зеленого горошка "Demon Groves".</Russian>
 			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
 			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
@@ -1442,7 +1477,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">
 			<English>Can (Spaghetti)</English>
-			<German>Can (Spaghetti)</German>
+			<German>Dose (Spaghetti)</German>
 			<Russian>Банка спагетти</Russian>
 			<Spanish>Lata de Spaghetti</Spanish>
 			<Dutch>Can (Spaghetti)</Dutch>
@@ -1451,7 +1486,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS">
 			<English>A clean, unopened can of FraggleOs spaghetti.</English>
-			<German>A clean, unopened can of FraggleOs spaghetti.</German>
+			<German>Eine saubere ungeöffnete Dose FraggleOs Spaghetti.</German>
 			<Russian>Чистая, закрытая банка спагетти "FraggleOs".</Russian>
 			<Spanish>Una limpia y cerrada lata de spaghetti "FraggleOs".</Spanish>
 			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
@@ -1460,7 +1495,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY">
 			<English>Can (Muffins)</English>
-			<German>Can (Muffins)</German>
+			<German>Dose (Muffins)</German>
 			<Russian>Банка кексиков</Russian>
 			<Spanish>Lata de Magdalenas</Spanish>
 			<Dutch>Can (Muffins)</Dutch>
@@ -1469,7 +1504,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY">
 			<English>A clean, unopened can of Herpy Dooves canned muffins.</English>
-			<German>A clean, unopened can of Herpy Dooves canned muffins.</German>
+			<German>Eine saubere ungeöffnete Dose Herpy Dooves Muffins.</German>
 			<Russian>Чистая, закрытая банка кексиков "Herpy Dooves".</Russian>
 			<Spanish>Una limpia y cerrada lata de magdalenas "Herpy Dooves".</Spanish>
 			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
@@ -1478,7 +1513,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>
-			<German>Can (Fruit)</German>
+			<German>Can (Früchte)</German>
 			<Russian>Банка компота</Russian>
 			<Spanish>Ensalada de Frutas</Spanish>
 			<Dutch>Can (Fruit)</Dutch>
@@ -1487,7 +1522,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK">
 			<English>A clean, unopened can of Orlok mixed fruit.</English>
-			<German>A clean, unopened can of Orlok mixed fruit.</German>
+			<German>Eine saubere ungeöffnete Dose Orlik Früchtemix.</German>
 			<Russian>Чистая, закрытая банка фруктового компота "Orlok".</Russian>
 			<Spanish>Una limpia y cerrada lata de ensaladas de frutas "Orlok".</Spanish>
 			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
@@ -1496,7 +1531,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL">
 			<English>Can (Chowder)</English>
-			<German>Can (Chowder)</German>
+			<German>Dose (Fischsuppe)</German>
 			<Russian>Банка похлебки</Russian>
 			<Spanish>Sopa de Pescado</Spanish>
 			<Dutch>Can (Chowder)</Dutch>
@@ -1505,7 +1540,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL">
 			<English>A clean, unopened can of Powell's New England clam chowder.</English>
-			<German>A clean, unopened can of Powell's New England clam chowder.</German>
+			<German>Eine saubere ungeöffnete Dose Powell's New England Fischsuppe.</German>
 			<Russian>Чистая, закрытая банка похлебки из моллюсков "Powell's New England".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pescados "Powell's New England".</Spanish>
 			<Dutch>A clean, unopened can of Powell's New England clam chowder.</Dutch>
@@ -1514,7 +1549,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS">
 			<English>Can (Beans)</English>
-			<German>Can (Beans)</German>
+			<German>Dose (Bohnen)</German>
 			<Russian>Банка фасоли</Russian>
 			<Spanish>Lata de Frijoles</Spanish>
 			<Dutch>Can (Beans)</Dutch>
@@ -1523,7 +1558,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS">
 			<English>A clean, unopened can of Tyler's delicious kidney beans.</English>
-			<German>A clean, unopened can of Tyler's delicious kidney beans.</German>
+			<German>Eine saubere ungeöffnete Dose Tyler's leckere Bohnen.</German>
 			<Russian>Чистая, закрытая банка деликатесной фасоли "Tyler".</Russian>
 			<Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
 			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
@@ -1532,7 +1567,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_UNLABELED">
 			<English>Can (Unknown)</English>
-			<German>Can (Unknown)</German>
+			<German>Dose (Unbekannt)</German>
 			<Russian>Банка с чем-то</Russian>
 			<Spanish>Lata Desconocida</Spanish>
 			<Dutch>Can (Unknown)</Dutch>
@@ -1541,7 +1576,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">
 			<English>A clean, unopened tin can. The label is missing.</English>
-			<German>A clean, unopened tin can. The label is missing.</German>
+			<German>Eine saubere ungeöffnete Dose. Die Marke ist unbekannt.</German>
 			<Russian>Чистая, закрытая банка непонятно с чем. Наклейка утеряна.</Russian>
 			<Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
 			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
@@ -1595,7 +1630,7 @@
 		</Key>
 		<Key ID="STR_BOOK_DESC_BIBLE">
 			<English>The bible.</English>
-			<German>The bible.</German>
+			<German>Die Bibel.</German>
 			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
 			<Spanish>La Biblia</Spanish>
 			<Dutch>The bible.</Dutch>
@@ -1631,7 +1666,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
 			<English>A small can for gasoline.</English>
-			<German>Ein kleiner Benzinkanister.</German>
+			<German>Ein kleiner leerer Benzinkanister.</German>
 			<Russian>Пустая емкость для топлива.</Russian>
 			<Spanish>Un envase pequeño para combustible lleno vacío.</Spanish>
 			<Dutch>A small can for gasoline.</Dutch>
@@ -2056,54 +2091,63 @@
 			<Russian>построить</Russian>
 			<Spanish>construirlo</Spanish>
 			<Czech>postavit</Czech>
+			<German>baue</German>
 		</Key>
 		<Key ID="str_player_31_consume">
 			<English>consume</English>
 			<Russian>употребить</Russian>
 			<Spanish>consumirlo</Spanish>
 			<Czech>sníst</Czech>
+			<German>konsumiere</German>
 		</Key>
 		<Key ID="str_player_31_cook">
 			<English>cook</English>
 			<Russian>приготовить</Russian>
 			<Spanish>cocinarlo</Spanish>
 			<Czech>upéct</Czech>
+			<German>koche</German>
 		</Key>
 		<Key ID="str_player_31_drink">
 			<English>drink</English>
 			<Russian>выпить</Russian>
 			<Spanish>beberlo</Spanish>
 			<Czech>vypít</Czech>
+			<German>trinke</German>
 		</Key>
 		<Key ID="str_player_31_fill">
 			<English>fill</English>
 			<Russian>наполнить</Russian>
 			<Spanish>llenarla</Spanish>
 			<Czech>naplnit</Czech>
+			<German>fülle</German>
 		</Key>
 		<Key ID="str_player_31_pitch">
 			<English>pitch</English>
 			<Russian>установить</Russian>
 			<Spanish>armarla</Spanish>
 			<Czech>postavit</Czech>
+			<German>montiere</German>
 		</Key>
 		<Key ID="str_player_31_place">
 			<English>place</English>
 			<Russian>установить</Russian>
 			<Spanish>colocarlo</Spanish>
 			<Czech>umístit</Czech>
+			<German>platziere</German>
 		</Key>
 		<Key ID="str_player_31_use">
 			<English>use</English>
 			<Russian>использовать</Russian>
 			<Spanish>usarlo</Spanish>
 			<Czech>použít</Czech>
+			<German>benutze</German>
 		</Key>
 		<Key ID="str_player_31_wear">
 			<English>wear</English>
 			<Russian>одеть</Russian>
 			<Spanish>vestirte</Spanish>
 			<Czech>nosit</Czech>
+			<German>trage</German>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<English>%1 is already being looted by someone else.</English>
@@ -2224,7 +2268,7 @@
 		</Key>
 		<Key ID="str_broken_arrow">
 			<English>Arrow was broken and cannot be used again</English>
-			<German>Arrow was broken and cannot be used again</German>
+			<German>Der Pfeil ist gebrochen und kann nicht wieder verwendet werden</German>
 			<Russian>Стрела сломалась. Ее нельзя использовать повторно.</Russian>
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
 			<Dutch>Arrow was broken and cannot be used again</Dutch>
@@ -2384,66 +2428,77 @@
 			<Russian>Снаряжение</Russian>
 			<Spanish>Equipo</Spanish>
 			<Czech>Vybavení</Czech>
+			<German>Ausrüstung</German>
 		</Key>
 		<Key ID="STR_UI_FILTER">
 			<English>Filter</English>
 			<Russian>Фильтр</Russian>
 			<Spanish>Filtro</Spanish>
 			<Czech>Filtr</Czech>
+			<German>Filter</German>
 		</Key>
 		<Key ID="STR_UI_REARM">
 			<English>Rearm</English>
 			<Russian>Перевооруж.</Russian>
 			<Spanish>Rearmar</Spanish>
 			<Czech>Přezbrojit</Czech>
+			<German>Aufmunitionieren</German>
 		</Key>
 		<Key ID="STR_UI_OBAG">
 			<English>Open bag</English>
 			<Russian>Рюкзак</Russian>
 			<Spanish>Abrir Mochila</Spanish>
 			<Czech>Otevřít batoh</Czech>
+			<German>öffne Rucksack</German>
 		</Key>
 		<Key ID="STR_UI_CBAG">
 			<English>Close bag</English>
 			<Russian>Инвентарь</Russian>
 			<Spanish>Cerrar Mochila</Spanish>
 			<Czech>Zavřít batoh</Czech>
+			<German>Schließe Rucksack</German>
 		</Key>
 		<Key ID="STR_UI_CLOSE">
 			<English>Close</English>
 			<Russian>Закрыть</Russian>
 			<Spanish>Cerrar</Spanish>
 			<Czech>Zavřít</Czech>
+			<German>Schließe</German>
 		</Key>
 		<Key ID="STR_UI_ALL">
 			<English>All</English>
 			<Russian>Все</Russian>
 			<Spanish>Todo</Spanish>
 			<Czech>Vše</Czech>
+			<German>Alle</German>
 		</Key>
 		<Key ID="STR_UI_PRIMARY">
 			<English>Primary</English>
 			<Russian>Основное</Russian>
 			<Spanish>Primaria</Spanish>
 			<Czech>Hlavní</Czech>
+			<German>Primäre</German>
 		</Key>
 		<Key ID="STR_UI_SECONDARY">
 			<English>Secondary</English>
 			<Russian>Дополнительное</Russian>
 			<Spanish>Secundaria</Spanish>
 			<Czech>Vedlejší</Czech>
+			<German>Sekundäre</German>
 		</Key>
 		<Key ID="STR_UI_HANDGUN">
 			<English>HandGun</English>
 			<Russian>Пистолеты</Russian>
 			<Spanish>Pistola</Spanish>
 			<Czech>Pistole</Czech>
+			<German>Pistole</German>
 		</Key>
 		<Key ID="STR_UI_ITEMS">
 			<English>Items</English>
 			<Russian>Предметы</Russian>
 			<Spanish>Objetos</Spanish>
 			<Czech>Věci</Czech>
+			<German>Objekte</German>
 		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<English>SELECT YOUR GENDER</English>
