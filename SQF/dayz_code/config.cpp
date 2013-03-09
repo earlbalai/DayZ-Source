@@ -631,6 +631,91 @@ class CfgBuildingLoot {
 			0.01	//("100Rnd_762x54_PK","magazine"}
 		};
 	};
+	//do not forget to edit this for current DAYZ reality
+	class HeliCrashWEST: Default {
+		zombieChance = 0.4;
+		maxRoaming = 2;
+		zombieClass[] = {"z_soldier_pilot"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		itemType[] =	{		
+			{"FN_FAL","weapon"},
+			{"M14_EP1","weapon"},
+			{"FN_FAL_ANPVS4","weapon"},
+			{"M107_DZ","weapon"},
+			{"BAF_AS50_scoped","weapon"},
+			{"Mk_48_DZ","weapon"},
+			{"M249_DZ","weapon"},
+			{"BAF_L85A2_RIS_Holo","weapon"},
+			{"","militaryWEST"},
+			{"","medical"},
+			{"MedBoxDP","object"},
+			{"NVGoggles","weapon"},
+			{"AmmoBoxSmall_556","object"},
+			{"Skin_Camo1_DZ","magazine"},
+			{"Skin_Sniper1_DZ","magazine"},
+			{"G36C","weapon"},
+			{"G36C_camo","weapon"},
+			{"G36A_camo","weapon"},
+			{"G36K_camo","weapon"},
+			{"100Rnd_762x54_PK","magazine"}
+		};
+		itemChance[] =	{
+			0.02,		//{"FN_FAL","weapon"},
+			0.05,		//{"M14_EP1","weapon"},
+			0.02,		//{"FN_FAL_ANPVS4","weapon"},
+			0.02,		//{"m107","weapon"},
+			0.01,		//{"BAF_AS50_scoped","weapon"},
+			0.03,		//{"Mk_48_DZ","weapon"},
+			0.05,		//{"M249_DZ","weapon"},
+			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
+			1.00,		//{"","military"},
+			0.50,		//{"","medical"},
+			0.10,		//{"MedBoxDP","object"},
+			0.02,		//{"NVGoggles","weapon"}
+			0.10,		//AmmoBoxSmall_556
+			0.08,		//Skin_Camo1_DZ
+			0.05,		//Skin_Sniper1_DZ
+			0.03,		//G36C"
+			0.02,		//G36C_camo
+			0.02,		//G36A_camo
+			0.02,		//G36K_camo
+			0.01			//("100Rnd_762x54_PK","magazine"}
+		};
+	};
+	class HeliCrashEAST: Default {
+		zombieChance = 0.5;
+		maxRoaming = 8;
+		zombieClass[] = {"z_soldier_pilot"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		itemType[] = { 
+			{"AK_47_M", "weapon"}, 
+			{"AKS_74_U", "weapon"}, 
+			{"bizon_silenced","weapon"},
+			{"DMR","weapon"},
+			//{"RPK_74", "weapon"}, 
+			{"Binocular","weapon"},
+			{"ItemKnife", "militaryEAST"},
+			{"", "militaryEAST"}, 
+			{"ItemCompass", "militaryEAST"},
+			{"AmmoBoxSmall_762","object"},
+			{"WeaponHolder_PartVRotor", "object"}
+		};
+		itemChance[] = {
+			0.05,	//AK_47_M		
+			0.08,	//AKS_74_U 
+			0.05,	//bizon_silenced
+			0.06,	//DMR
+			//0.01,	//RPK_74	
+			0.05,	//Binocular	
+			0.05,	//ItemKnife
+			1.00,	//militaryEAST
+			0.05,	//ItemCompass	
+			0.10,		//AmmoBoxSmall_762
+			0.05		//WeaponHolder_PartVRotor	
+		};
+	};
 	class Hospital: Default {
 		zombieChance = 0.4;
 		minRoaming = 2;

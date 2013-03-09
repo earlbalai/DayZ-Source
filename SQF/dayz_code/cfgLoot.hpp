@@ -263,6 +263,93 @@ food[] = {
 			0.03
 		}
 	};
+	//do not forget to edit EAST/WEST for current DAYZ reality
+	militaryWEST[] = {
+		{
+			"ItemBandage",
+			"ItemAntibiotic",
+			"ItemPainkiller",
+			"ItemMorphine",
+			"ItemWaterbottleUnfilled",
+			"30Rnd_556x45_Stanag",
+			"17Rnd_9x19_glock17",
+			"7Rnd_45ACP_1911",
+			"15Rnd_9x19_M9",
+			"8Rnd_B_Beneli_74Slug",
+			"1Rnd_HE_M203",
+			"FlareWhite_M203",
+			"FlareGreen_M203",
+			"1Rnd_Smoke_M203",	
+			"HandGrenade_west",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellGreen",
+			"30Rnd_9x19_MP5",
+			"HandChemGreen",
+			"HandChemBlue",
+			"HandChemRed",
+			"FoodMRE",
+			"ItemHeatPack"
+		},
+		{
+			0.06, 	//ItemBandage,
+			0.01, 	//ItemAntibiotic
+			0.06, 	//ItemPainkiller,
+			0.02, 	//ItemMorphine,
+			0.02, 	//ItemWaterbottleUnfilled,
+			0.04, 	//30Rnd_556x45_Stanag,
+			0.05, 	//17Rnd_9x19_glock17,
+			0.05, 	//7Rnd_45ACP_1911
+			0.02, 	//15Rnd_9x19_M9,
+			0.04, 	//8Rnd_B_Beneli_74Slug,
+			0.01, 	//1Rnd_HE_M203,
+			0.01, 	//FlareWhite_M203,
+			0.01, 	//FlareGreen_M203,
+			0.01, 	//1Rnd_Smoke_M203,
+			0.01, 	//HandGrenade_west,
+			0.04, 	//SmokeShell,
+			0.02, 	//SmokeShellRed,
+			0.02, 	//SmokeShellGreen,
+			0.02, 	//30Rnd_9x19_MP5,
+			0.02, 	//HandChemGreen,
+			0.02, 	//HandChemBlue,
+			0.02, 	//HandChemRed,
+			0.01,	//"FoodMRE",
+			0.02		//ItemHeatPack
+		};
+	};
+	militaryEAST[] = {
+		{
+			"ItemBandage",
+			"ItemAntibiotic",
+			"ItemPainkiller",
+			"ItemMorphine",
+			"HandGrenade_east",
+			"30Rnd_762x39_AK47",
+			"30Rnd_545x39_AK",
+			"8Rnd_B_Beneli_74Slug",
+			"ItemHeatPack",
+			"30Rnd_9x19_UZI",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellGreen"
+		},
+		{
+			0.06,	//ItemBandage,
+			0.01, 	//ItemAntibiotic
+			0.06, 	//ItemPainkiller,
+			0.02, 	//ItemMorphine,
+			0.01, 	//HandGrenade_east,
+			0.04, 	//30Rnd_762x39_AK47,
+			0.04, 	//30Rnd_545x39_AK,
+			0.08, 	//8Rnd_B_Beneli_74Slug,
+			0.02,	//ItemHeatPack
+			0.02, 	//30Rnd_9x19_UZI
+			0.02, 	//SmokeShell,
+			0.02, 	//SmokeShellRed,
+			0.02 	//SmokeShellGreen,
+		};
+	};
 	policeman[] = {
 		{
 			"ItemBandage",
