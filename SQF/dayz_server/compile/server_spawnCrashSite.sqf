@@ -21,14 +21,17 @@ while {true} do {
 	_timeAdjust = round(random(_variance * 2) - _variance);
 	_timeToSpawn = time + _frequency + _timeAdjust;
 	
-	//Adding some Random systems
-	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ"] call BIS_fnc_selectRandom;
+	//Selecting random crash type
+	_crashModel = ["UH60Wreck_DZ","UH1Wreck_DZ","Mi8Wreck_DZ"] call BIS_fnc_selectRandom;
 	
-	//Crash loot just uncomment the one you wish to use by default with 50cals is enabled.
-	//Table including 50 cals
-	_lootTable = ["Military","HeliCrash","MilitarySpecial"] call BIS_fnc_selectRandom;
-	//Table without 50 cals
-	//_lootTable = ["Military","HeliCrash_No50s","MilitarySpecial"] call BIS_fnc_selectRandom;
+	//selecting loottable
+	//Random lootables?
+	//if (_crashModel == "Mi8Wreck_DZ") then {_lootTable = ["MilitaryEAST","HeliCrashEAST"] call BIS_fnc_selectRandom;}
+	//else	{_lootTable = ["MilitaryWEST","HeliCrashWEST"] call BIS_fnc_selectRandom;};
+
+	//or just helicrash loottable
+	if (_crashModel == "Mi8Wreck_DZ") then {_lootTable = "HeliCrashEAST";}
+	else	{_lootTable = "HeliCrashWEST";};
 	
 	_crashName	= getText (configFile >> "CfgVehicles" >> _crashModel >> "displayName");
 
@@ -36,17 +39,13 @@ while {true} do {
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
 	while {time < _timeToSpawn} do {
-		sleep 5;
+		sleep 10;
 	};
 
-	_spawnRoll = random 1;
-
 	// Percentage roll
-	if (_spawnRoll <= _spawnChance) then {
-
+	if (random 1 <= _spawnChance) then {
 		_position = [getMarkerPos _spawnMarker,0,_spawnRadius,10,0,2000,0] call BIS_fnc_findSafePos;
-
-		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4", _crashName, _lootTable, time, str(_position)]);
+		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4 - (%5)", _crashName, _lootTable, time, str(_position),mapGridPosition _position]);
 
 		_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
 		// Randomize the direction the wreck is facing
@@ -57,21 +56,16 @@ while {true} do {
 		// the CfgVehicles class you've created for the custom wreck to define how high above the ground it should
 		// spawn.  This is optional.
 		_config = configFile >> "CfgVehicles" >> _crashModel >> "heightAdjustment";
-		_hasAdjustment =  isNumber(_config);
 		_newHeight = 0;
-		if (_hasAdjustment) then {
+		if ( isNumber(_config)) then {
 			_newHeight = getNumber(_config);
-			//diag_log(format["DIAG: ADJUSTMENT FOUND FOR %1, IT IS: %2", _crashName, _newHeight]);
 		};
 
 		// Must setPos after a setDir otherwise the wreck won't level itself with the terrain
-		_adjustedPos = [(_position select 0), (_position select 1), _newHeight];
-		//diag_log(format["DIAG: Designated Position: %1", str(_adjustedPos)]);
-		_crash setPos _adjustedPos;
+		_crash setPos  [(_position select 0), (_position select 1), _newHeight];
 
 		// I don't think this is needed (you can't get "in" a crash), but it was in the original DayZ Crash logic
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_crash];
-
 		_crash setVariable ["ObjectID",1,true];
 
 		if (_spawnFire) then {
@@ -80,24 +74,19 @@ while {true} do {
 			publicVariable "dayzFire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
-
-		_num		= round(random _randomizedLoot) + _guaranteedLoot;
-		
-		_config = 		configFile >> "CfgBuildingLoot" >> _lootTable;
-		_itemTypes =	[] + getArray (_config >> "itemType");
-		_index =        dayz_CBLBase  find "HeliCrash";
+		_itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "itemType");
+		_index = dayz_CBLBase  find _lootTable;
 		_weights =		dayz_CBLChances select _index;
 		_cntWeights = count _weights;
 
-
-		for "_x" from 1 to _num do {
+		for "_x" from 1 to (round(random _randomizedLoot) + _guaranteedLoot) do {
 			//create loot
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
 			_itemType = _itemTypes select _index;
 			[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
 
-			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2'", _crashName, _lootTable]); 
+			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2 - %3'", _crashName, str(_itemType)]); 
 
 			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
 			_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
@@ -105,5 +94,8 @@ while {true} do {
 				_x setVariable ["permaLoot",true];
 			} forEach _nearBy;
 		};
+
+	} else {
+		diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5 FAILED (chance)", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);	
 	};
 };
