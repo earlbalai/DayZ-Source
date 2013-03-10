@@ -20,7 +20,7 @@ FIX DUE : 2013
 		* [NEW] - Can now combine magazines. (still missing one or two mags)
 		* [NEW] - 1 new trash item (bible).
 		* [NEW] - Added new loot table for church.
-		* [NEW] - Added 23 new food items (only found in supermarkets).
+		* [NEW] - Added 23 new food and drink items (only found in supermarkets).
 		* [NEW] - Added model for a dropped map and watch.
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
