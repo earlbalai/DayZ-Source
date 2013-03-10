@@ -7,29 +7,29 @@ Community Dev Project Manager
 * R4Z0R49
 
 Contributions By
-* fred41
-* Tansien
-* Killzone_kid
-* Alex Grosse (Inch)
+* fred41                                            https://github.com/fred41
+* Tansien                                           https://github.com/Tansien
+* Killzone_kid                                      https://github.com/Killzonekid
+* Alex Grosse (Inch)                                http://opendayz.net/index.php?members/inch.1011/ [OpenDayZ.net]
 * Des
-* ziellos2k
-* Sumrak
-* f0rt
-* Pwnoz0r
+* ziellos2k                                         https://github.com/ziellos2k
+* Sumrak                                            http://www.nightstalkers.cz/en_index_nc.php [Homepage]
+* f0rt                                              https://github.com/ashfor03
+* Pwnoz0r                                           https://github.com/Pwnoz0r
 * Alby
-* Ander
-* Ayan4m1
+* Ander                                             
+* Ayan4m1                                           https://github.com/Ayan4m1
 * Rajko
-* Stapo
-* Venthos
-* VRShiva
-* AlexAFlorov
-* Elvaron
-* JoeysLucky22
-* Skaronator
-* Sharkiller  (Spanish Tranlations)
-* Markolie	(Dutch Translations)
-* LordGoF (French Translations)
+* Stapo                                             https://github.com/Stapo
+* Venthos                                           https://github.com/Venthos
+* VRShiva                                           https://github.com/VRShiva
+* AlexAFlorov                                       https://github.com/AlexAFlorov
+* Elvaron                                           https://github.com/Elvaron
+* JoeysLucky22                                      https://github.com/JoeysLucky22
+* Skaronator                                        https://github.com/Skaronator
+* Sharkiller  (Spanish Tranlations)                 https://github.com/Sharkiller
+* Markolie	(Dutch Translations)                    https://github.com/Markolie
+* LordGoF (French Translations)                     https://github.com/LordGoF
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
