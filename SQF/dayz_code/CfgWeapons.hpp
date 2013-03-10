@@ -19,6 +19,10 @@ class CfgWeapons {
 		model="z\addons\dayz_communityassets\models\watch.p3d";
 	};
 	
+	class ItemMap: ItemCore {
+		model="z\addons\dayz_communityassets\models\map.p3d";
+	};
+	
 	class Crossbow;
 	class Crossbow_DZ : Crossbow {
 		magazines[] =
@@ -277,6 +281,7 @@ class CfgWeapons {
 				"FoodCanDemonEmpty",
 				"FoodCanFraggleosEmpty",
 				"FoodCanHerpyEmpty",
+				"FoodCanDerpyEmpty",
 				"FoodCanOrlokEmpty",
 				"FoodCanPowellEmpty",
 				"FoodCanTylersEmpty",
