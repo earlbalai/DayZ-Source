@@ -16,10 +16,10 @@ Contributions By
 * Sumrak                                            http://www.nightstalkers.cz/en_index_nc.php [Homepage]
 * f0rt                                              https://github.com/ashfor03
 * Pwnoz0r                                           https://github.com/Pwnoz0r
-* Alby
+* Alby                                              https://github.com/AlbyBDPK
 * Ander                                             
 * Ayan4m1                                           https://github.com/Ayan4m1
-* Rajko
+* Rajko                                             https://github.com/rajkosto
 * Stapo                                             https://github.com/Stapo
 * Venthos                                           https://github.com/Venthos
 * VRShiva                                           https://github.com/VRShiva
@@ -28,7 +28,7 @@ Contributions By
 * JoeysLucky22                                      https://github.com/JoeysLucky22
 * Skaronator                                        https://github.com/Skaronator
 * Sharkiller  (Spanish Tranlations)                 https://github.com/Sharkiller
-* Markolie	(Dutch Translations)                    https://github.com/Markolie
+* Markolie  (Dutch Translations)                    https://github.com/Markolie
 * LordGoF (French Translations)                     https://github.com/LordGoF
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
