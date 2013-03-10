@@ -168,17 +168,17 @@ class CfgSounds {
 	};
 	class z_eat_chips_0 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\action_eat_chips_0.ogg",0.1,1,20};
+		sound[] = {"\dayz_sfx\effects\action_eat_chips_0.ogg",0.3,1,40};
 		titles[] = {};
 	};
 	class z_eat_chips_1 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\action_eat_chips_1.ogg",0.1,1,20};
+		sound[] = {"\dayz_sfx\effects\action_eat_chips_1.ogg",0.3,1,40};
 		titles[] = {};
 	};
 	class z_eat_chips_2 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\action_eat_chips_2.ogg",0.1,1,20};
+		sound[] = {"\dayz_sfx\effects\action_eat_chips_2.ogg",0.3,1,40};
 		titles[] = {};
 	};
 	class z_eat_0 {

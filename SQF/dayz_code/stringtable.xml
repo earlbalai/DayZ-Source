@@ -1316,12 +1316,12 @@
 			<Czech>Balíček ovoce značky Papa, 12 různých ovocí a oříšků.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
-			<English>Tin Can</English>
-			<Russian>Жестянка</Russian>
-			<Spanish>Lata</Spanish>
-			<French>Boîte en fer-blanc</French>
-			<Czech>Plechovka</Czech>
-			<German>Blechdose</German>
+			<English>Empty Tin Can</English>
+			<Russian>Empty Tin Can</Russian>
+			<Spanish>Empty Tin Can</Spanish>
+			<French>Empty Tin Can</French>
+			<Czech>Empty Tin Can</Czech>
+			<German>Empty Tin Can</German>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
 			<English>An empty can.</English>
@@ -1510,6 +1510,24 @@
 			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
 			<French>Une boîte intacte de muffins en conserve "Herpy Dooves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka mufinů Herpy Dooves.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_DERPY">
+			<English>Can (Stew)</English>
+			<German>Can (Stew)</German>
+			<Russian>Can (Stew)</Russian>
+			<Spanish>Can (Stew)</Spanish>
+			<Dutch>Can (Stew)</Dutch>
+			<French>Can (Stew)</French>
+			<Czech>Can (Stew)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_DERPY">
+			<English>A clean, unopened can of Donty Hooves beef stew.</English>
+			<German>A clean, unopened can of Donty Hooves beef stew.</German>
+			<Russian>A clean, unopened can of Donty Hooves beef stew.</Russian>
+			<Spanish>A clean, unopened can of Donty Hooves beef stew.</Spanish>
+			<Dutch>A clean, unopened can of Donty Hooves beef stew.</Dutch>
+			<French>A clean, unopened can of Donty Hooves beef stew.</French>
+			<Czech>A clean, unopened can of Donty Hooves beef stew.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>

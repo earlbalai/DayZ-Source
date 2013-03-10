@@ -541,6 +541,15 @@ class CfgMagazines {
 		model = "z\addons\dayz_communityassets\models\can_herpy_clean_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_full_ca.paa";
 	};
+	class FoodCanDerpy : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_DERPY;
+		descriptionShort = $STR_FOOD_DESC_CAN_DERPY;
+		model = "z\addons\dayz_communityassets\models\can_derpy_clean_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_derpy_clean_full_ca.paa";
+	};
 	class FoodCanOrlok : FoodEdible {
 		scope = public;
 		count = 1;
@@ -649,6 +658,15 @@ class CfgMagazines {
 		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\can_herpy_clean_empty.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_herpy_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanDerpyEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_derpy_clean_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_derpy_clean_empty_ca.paa";
 		ammo = "TinCan";
 	};
 	class FoodCanOrlokEmpty : TrashTinCan {
