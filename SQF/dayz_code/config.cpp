@@ -430,17 +430,17 @@ class CfgBuildingLoot {
 		lootChance = 0.5;
 		lootPos[] = {};
 		lootType[] =	{
-			{"WeaponHolder_ItemJerrycan", 0.06},
-			{"generic", 0.28},
-			{"huntingrifle", 0.01},
-			{"LeeEnfield", 0.04},
+			{"WeaponHolder_ItemJerrycan","object", 0.06},
+			{"","generic", 0.28},
+			{"huntingrifle","weapon", 0.01},
+			{"LeeEnfield","weapon", 0.04},
 			{"Winchester1866", 0.03},
-			{"trash", 0.22},
-			{"Crossbow_DZ", 0.03},
-			{"PartWoodPile", 0.11},
-			{"WeaponHolder_ItemHatchet", 0.17},
-			{"MR43", 0.06},
-			{"WeaponHolder_ItemMachete", 0.03} 
+			{"","trash", 0.22},
+			{"Crossbow_DZ","weapon", 0.03},
+			{"PartWoodPile","magazine", 0.11},
+			{"WeaponHolder_ItemHatchet","object", 0.17},
+			{"MR43","weapon", 0.06},
+			{"WeaponHolder_ItemMachete","object", 0.03} 
 		};
 		/*	
 		itemType[] =	{
