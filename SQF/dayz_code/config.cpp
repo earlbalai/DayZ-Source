@@ -429,6 +429,20 @@ class CfgBuildingLoot {
 		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3"};
 		lootChance = 0.5;
 		lootPos[] = {};
+		lootType[] =	{
+			{"WeaponHolder_ItemJerrycan", 0.06},
+			{"generic", 0.28},
+			{"huntingrifle", 0.01},
+			{"LeeEnfield", 0.04},
+			{"Winchester1866", 0.03},
+			{"trash", 0.22},
+			{"Crossbow_DZ"", 0.03},
+			{"PartWoodPile", 0.11},
+			{"WeaponHolder_ItemHatchet", 0.17},
+			{"MR43", 0.06},
+			{"WeaponHolder_ItemMachete", 0.03} 
+		};
+		/*	
 		itemType[] =	{
 			{"WeaponHolder_ItemJerrycan","object"},
 			{"","generic"},
@@ -455,6 +469,7 @@ class CfgBuildingLoot {
 			0.06,
 			0.03
 		};
+		*/
 	};
 	class Supermarket: Default {
 		lootChance = 0.6;
