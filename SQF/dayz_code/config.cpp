@@ -436,7 +436,7 @@ class CfgBuildingLoot {
 			{"LeeEnfield", 0.04},
 			{"Winchester1866", 0.03},
 			{"trash", 0.22},
-			{"Crossbow_DZ"", 0.03},
+			{"Crossbow_DZ, 0.03},
 			{"PartWoodPile", 0.11},
 			{"WeaponHolder_ItemHatchet", 0.17},
 			{"MR43", 0.06},
