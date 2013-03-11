@@ -36,7 +36,7 @@ meatcooked = [
 	"FoodgoatCooked"
 ];
 //Eating
-no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix"]+meatcooked+meatraw;
+no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix","FoodCandyAnders","FoodCandyLegacys","FoodCandyMintception"]+meatcooked+meatraw;
 food_with_output=[
     "FoodCanBakedBeans",
     "FoodCanSardines",
@@ -55,7 +55,14 @@ food_with_output=[
 	"FoodCanPowell",
 	"FoodCanTylers",
 	"FoodCanUnlabeled",
-	"FoodChipsSulahoops"
+	"FoodCanRusUnlabeled",
+	"FoodCanRusPork",
+	"FoodCanRusPeas",
+	"FoodCanRusMilk",
+	"FoodCanRusCorn",
+	"FoodCanRusStew",
+	"FoodChipsSulahoops",
+	"FoodChipsMysticales"
 ];
 
 food_output = [
@@ -76,7 +83,14 @@ food_output = [
 	"FoodCanPowellEmpty",
 	"FoodCanTylersEmpty",
 	"FoodCanUnlabeledEmpty",
-	"FoodChipsSulahoopsEmpty"
+	"FoodCanRusUnlabeledEmpty",
+	"FoodCanRusPorkEmpty",
+	"FoodCanRusPeasEmpty",
+	"FoodCanRusMilkEmpty",
+	"FoodCanRusCornEmpty",
+	"FoodCanRusStewEmpty",
+	"FoodChipsSulahoopsEmpty",
+	"FoodChipsMysticalesEmpty"
 ];
 //Drinking
 no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
@@ -120,10 +134,17 @@ boil_tin_cans = [
 	"FoodCanDemonEmpty",
 	"FoodCanFraggleosEmpty",
 	"FoodCanHerpyEmpty",
+	"FoodCanDerpyEmpty",
 	"FoodCanOrlokEmpty",
 	"FoodCanPowellEmpty",
 	"FoodCanTylersEmpty",
 	"FoodCanUnlabeledEmpty",
+	"FoodCanRusUnlabeledEmpty",
+	"FoodCanRusStewEmpty",
+	"FoodCanRusPorkEmpty",
+	"FoodCanRusPeasEmpty",
+	"FoodCanRusMilkEmpty",
+	"FoodCanRusCornEmpty",
     "ItemSodaEmpty", 
     "ItemSodaCokeEmpty",
     "ItemSodaPepsiEmpty",

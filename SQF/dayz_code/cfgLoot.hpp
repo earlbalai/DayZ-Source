@@ -85,7 +85,17 @@ food[] = {
 			"FoodCanUnlabeled",
 			"FoodPistachio",
 			"FoodNutmix",
-			"FoodChipsSulahoops"
+			"FoodChipsSulahoops",
+			"FoodChipsMysticales",
+			"FoodCandyAnders",
+			"FoodCandyLegacys",
+			"FoodCandyMintception",
+			"FoodCanRusUnlabeled",
+			"FoodCanRusStew",
+			"FoodCanRusPork",
+			"FoodCanRusPeas",
+			"FoodCanRusMilk",
+			"FoodCanRusCorn"
 		},
 		{
 			0.13, //TrashTinCan
@@ -120,7 +130,17 @@ food[] = {
 			0.04, //FoodCanUnlabeled
 			0.03, //FoodPistachio
 			0.02, //FoodNutmix
-			0.01 //FoodChipsSulahoops
+			0.01, //FoodChipsSulahoops
+			0.01, //FoodChipsMysticales
+			0.01, //FoodCandyAnders
+			0.01, //FoodCandyLegacys
+			0.01, //FoodCandyMintception
+			0.05, //FoodCanRusUnlabeled
+			0.13, //FoodCanRusStew
+			0.13, //"FoodCanRusPork"
+			0.13, //"FoodCanRusPeas"
+			0.13, //"FoodCanRusMilk"
+			0.13 //"FoodCanRusCorn"
 		}
 	};
 	generic[] = {

@@ -1280,13 +1280,13 @@
 			<Czech>Meal Ready-to-Eat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
-			<English>Pistachios</English>
-			<German>Pistazien</German>
-			<Russian>Фисташки</Russian>
-			<Spanish>Pistachos</Spanish>
-			<Dutch>Pistachios</Dutch>
-			<French>Pistaches</French>
-			<Czech>Pistácie</Czech>
+			<English>Snack (Pistachios)</English>
+			<German>Snack (Pistazien)</German>
+			<Russian>Snack (Фисташки)</Russian>
+			<Spanish>Snack (Pistachos)</Spanish>
+			<Dutch>Snack (Pistachios)</Dutch>
+			<French>Snack (Pistaches)</French>
+			<Czech>Snack (Pistácie)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_PISTACHIO">
 			<English>A pack of pistachios, roasted and salted.</English>
@@ -1331,6 +1331,25 @@
 			<Czech>Prázdná plechovka</Czech>
 			<German>Eine leere Blechdose</German>
 		</Key>
+		
+		<Key ID="STR_FOOD_NAME_CHIPS_EMPTY">
+			<English>Empty Snack Bag</English>
+			<German>Empty Snack Bag</German>
+			<Russian>Пустая упаковка</Russian>
+			<Spanish>Empty Snack Bag</Spanish>
+			<Dutch>Empty Snack Bag</Dutch>
+			<French>Empty Snack Bag</French>
+			<Czech>Empty Snack Bag</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CHIPS_EMPTY">
+			<English>An empty bag of chips.</English>
+			<German>An empty bag of chips.</German>
+			<Russian>An empty bag of chips.</Russian>
+			<Spanish>An empty bag of chips.</Spanish>
+			<Dutch>An empty bag of chips.</Dutch>
+			<French>An empty bag of chips.</French>
+			<Czech>An empty bag of chips.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS">
 			<English>Snack (Chips)</English>
 			<German>Snack (Chips)</German>
@@ -1349,24 +1368,80 @@
 			<French>A clean, unopened bag of crunchy Sulahoops.</French>
 			<Czech>A clean, unopened bag of crunchy Sulahoops.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY">
-			<English>Empty Snack Bag</English>
-			<German>Empty Snack Bag</German>
-			<Russian>Пустая упаковка</Russian>
-			<Spanish>Empty Snack Bag</Spanish>
-			<Dutch>Empty Snack Bag</Dutch>
-			<French>Empty Snack Bag</French>
-			<Czech>Empty Snack Bag</Czech>
+		<Key ID="STR_FOOD_NAME_CHIPS_MYSTICALES">
+			<English>Snack (Chips)</English>
+			<German>Snack (Chips)</German>
+			<Russian>Закуска (Чипсы)</Russian>
+			<Spanish>Snack (Chips)</Spanish>
+			<Dutch>Snack (Chips)</Dutch>
+			<French>Snack (Chips)</French>
+			<Czech>Snack (Chips)</Czech>
 		</Key>
-		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY">
-			<English>An empty bag of Sulahoops.</English>
-			<German>An empty bag of Sulahoops.</German>
-			<Russian>Пустая упаковка "Sulahoops".</Russian>
-			<Spanish>An empty bag of Sulahoops.</Spanish>
-			<Dutch>An empty bag of Sulahoops.</Dutch>
-			<French>An empty bag of Sulahoops.</French>
-			<Czech>An empty bag of Sulahoops.</Czech>
+		<Key ID="STR_FOOD_DESC_CHIPS_MYSTICALES">
+			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
+			<German>A clean, unopened bag of Miss Mysticales jalapeño chips.</German>
+			<Russian>A clean, unopened bag of Miss Mysticales jalapeño chips.</Russian>
+			<Spanish>A clean, unopened bag of Miss Mysticales jalapeño chips.</Spanish>
+			<Dutch>A clean, unopened bag of Miss Mysticales jalapeño chips.</Dutch>
+			<French>A clean, unopened bag of Miss Mysticales jalapeño chips.</French>
+			<Czech>A clean, unopened bag of Miss Mysticales jalapeño chips.</Czech>
 		</Key>
+		
+		<Key ID="STR_FOOD_NAME_CANDY_ANDERS">
+			<English>Snack (Chocolate)</English>
+			<German>Snack (Chocolate)</German>
+			<Russian>Snack (Chocolate)</Russian>
+			<Spanish>Snack (Chocolate)</Spanish>
+			<Dutch>Snack (Chocolate)</Dutch>
+			<French>Snack (Chocolate)</French>
+			<Czech>Snack (Chocolate)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CANDY_ANDERS">
+			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
+			<German>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</German>
+			<Russian>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Russian>
+			<Spanish>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Spanish>
+			<Dutch>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Dutch>
+			<French>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</French>
+			<Czech>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CANDY_LEGACYS">
+			<English>Snack (Chocolate)</English>
+			<German>Snack (Chocolate)</German>
+			<Russian>Snack (Chocolate)</Russian>
+			<Spanish>Snack (Chocolate)</Spanish>
+			<Dutch>Snack (Chocolate)</Dutch>
+			<French>Snack (Chocolate)</French>
+			<Czech>Snack (Chocolate)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CANDY_LEGACYS">
+			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
+			<German>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</German>
+			<Russian>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Russian>
+			<Spanish>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Spanish>
+			<Dutch>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Dutch>
+			<French>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</French>
+			<Czech>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CANDY_MINTCEPTION">
+			<English>Snack (Chocolate)</English>
+			<German>Snack (Chocolate)</German>
+			<Russian>Snack (Chocolate)</Russian>
+			<Spanish>Snack (Chocolate)</Spanish>
+			<Dutch>Snack (Chocolate)</Dutch>
+			<French>Snack (Chocolate)</French>
+			<Czech>Snack (Chocolate)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CANDY_MINTCEPTION">
+			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
+			<German>A clean, unopened Mintception mint chocolate candy bar.</German>
+			<Russian>A clean, unopened Mintception mint chocolate candy bar.</Russian>
+			<Spanish>A clean, unopened Mintception mint chocolate candy bar.</Spanish>
+			<Dutch>A clean, unopened Mintception mint chocolate candy bar.</Dutch>
+			<French>A clean, unopened Mintception mint chocolate candy bar.</French>
+			<Czech>A clean, unopened Mintception mint chocolate candy bar.</Czech>
+		</Key>
+		
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
@@ -1601,6 +1676,97 @@
 			<French>Une boîte intacte. L'étiquette est manquante.</French>
 			<Czech>Čistá a ještě neotevřená plechovka nečeho, údaje nejsou čitelné.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_RUS_STEW">
+			<English>Can (Stew)</English>
+			<German>Can (Stew)</German>
+			<Russian>Can (Stew)</Russian>
+			<Spanish>Can (Stew)</Spanish>
+			<Dutch>Can (Stew)</Dutch>
+			<French>Can (Stew)</French>
+			<Czech>Can (Stew)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_RUS_STEW">
+			<English>A clean, unopened tin can of beef stew.</English>
+			<German>A clean, unopened tin can of beef stew.</German>
+			<Russian>A clean, unopened tin can of beef stew.</Russian>
+			<Spanish>A clean, unopened tin can of beef stew.</Spanish>
+			<Dutch>A clean, unopened tin can of beef stew.</Dutch>
+			<French>A clean, unopened tin can of beef stew.</French>
+			<Czech>A clean, unopened tin can of beef stew.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_RUS_PORK">
+			<English>Can (Pork)</English>
+			<German>Can (Pork)</German>
+			<Russian>Can (Pork)</Russian>
+			<Spanish>Can (Pork)</Spanish>
+			<Dutch>Can (Pork)</Dutch>
+			<French>Can (Pork)</French>
+			<Czech>Can (Pork)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_RUS_PORK">
+			<English>A clean, unopened tin can of pork.</English>
+			<German>A clean, unopened tin can of pork.</German>
+			<Russian>A clean, unopened tin can of pork.</Russian>
+			<Spanish>A clean, unopened tin can of pork.</Spanish>
+			<Dutch>A clean, unopened tin can of pork.</Dutch>
+			<French>A clean, unopened tin can of pork.</French>
+			<Czech>A clean, unopened tin can of pork.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_RUS_PEAS">
+			<English>Can (Peas)</English>
+			<German>Can (Peas)</German>
+			<Russian>Can (Peas)</Russian>
+			<Spanish>Can (Peas)</Spanish>
+			<Dutch>Can (Peas)</Dutch>
+			<French>Can (Peas)</French>
+			<Czech>Can (Peas)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_RUS_PEAS">
+			<English>A clean, unopened tin can of peas.</English>
+			<German>A clean, unopened tin can of peas.</German>
+			<Russian>A clean, unopened tin can of peas.</Russian>
+			<Spanish>A clean, unopened tin can of peas.</Spanish>
+			<Dutch>A clean, unopened tin can of peas.</Dutch>
+			<French>A clean, unopened tin can of peas.</French>
+			<Czech>A clean, unopened tin can of peas.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_RUS_MILK">
+			<English>Can (Milk)</English>
+			<German>Can (Milk)</German>
+			<Russian>Can (Milk)</Russian>
+			<Spanish>Can (Milk)</Spanish>
+			<Dutch>Can (Milk)</Dutch>
+			<French>Can (Milk)</French>
+			<Czech>Can (Milk)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_RUS_MILK">
+			<English>A clean, unopened tin can of condensed milk.</English>
+			<German>A clean, unopened tin can of condensed milk.</German>
+			<Russian>A clean, unopened tin can of condensed milk.</Russian>
+			<Spanish>A clean, unopened tin can of condensed milk.</Spanish>
+			<Dutch>A clean, unopened tin can of condensed milk.</Dutch>
+			<French>A clean, unopened tin can of condensed milk.</French>
+			<Czech>A clean, unopened tin can of condensed milk.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_RUS_CORN">
+			<English>Can (Corn)</English>
+			<German>Can (Corn)</German>
+			<Russian>Can (Corn)</Russian>
+			<Spanish>Can (Corn)</Spanish>
+			<Dutch>Can (Corn)</Dutch>
+			<French>Can (Corn)</French>
+			<Czech>Can (Corn)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_RUS_CORN">
+			<English>A clean, unopened tin can of corn.</English>
+			<German>A clean, unopened tin can of corn.</German>
+			<Russian>A clean, unopened tin can of corn.</Russian>
+			<Spanish>A clean, unopened tin can of corn.</Spanish>
+			<Dutch>A clean, unopened tin can of corn.</Dutch>
+			<French>A clean, unopened tin can of corn.</French>
+			<Czech>A clean, unopened tin can of corn.</Czech>
+		</Key>
+		
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">
 			<English>Toilet paper</English>
 			<German>Toilettenpapier</German>

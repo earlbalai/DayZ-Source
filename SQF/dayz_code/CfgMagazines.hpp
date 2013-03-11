@@ -706,6 +706,115 @@ class CfgMagazines {
 		ammo = "TinCan";
 	};
 	
+	class FoodCanRusUnlabeled : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_UNLABELED;
+		descriptionShort = $STR_FOOD_DESC_UNLABELED;
+		model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	};
+	class FoodCanRusUnlabeledEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_small_unlabeled_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanRusStew : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_STEW;
+		descriptionShort = $STR_FOOD_DESC_RUS_STEW;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_stew_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_stew_clean_full_ca.paa";
+	};
+	class FoodCanRusStewEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_stew_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_stew_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanRusPork : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_PORK;
+		descriptionShort = $STR_FOOD_DESC_RUS_PORK;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_pork_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_pork_clean_full_ca.paa";
+	};
+	class FoodCanRusPorkEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_pork_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_pork_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanRusPeas : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_PEAS;
+		descriptionShort = $STR_FOOD_DESC_RUS_PEAS;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_peas_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_peas_clean_full_ca.paa";
+	};
+	class FoodCanRusPeasEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_peas_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_peas_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanRusMilk : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 100;
+		displayName = $STR_FOOD_NAME_CAN_RUS_MILK;
+		descriptionShort = $STR_FOOD_DESC_RUS_MILK;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_milk_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_milk_clean_full_ca.paa";
+	};
+	class FoodCanRusMilkEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_milk_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_milk_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	class FoodCanRusCorn : FoodEdible {
+		scope = public;
+		count = 1;
+		bloodRegen = 200;
+		displayName = $STR_FOOD_NAME_CAN_RUS_CORN;
+		descriptionShort = $STR_FOOD_DESC_RUS_CORN;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_corn_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_corn_clean_full_ca.paa";
+	};
+	class FoodCanRusCornEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		displayName = $STR_FOOD_NAME_CAN_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+		model = "z\addons\dayz_communityassets\models\can_small_rus_corn_empty.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_corn_clean_empty_ca.paa";
+		ammo = "TinCan";
+	};
+	
 	class FoodChipsSulahoops : FoodEdible {
 		scope = public;
 		count = 1;
@@ -724,6 +833,56 @@ class CfgMagazines {
 		displayName = $STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY;
 		descriptionShort = $STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY;
 		ammo = "TinCan";
+	};
+	class FoodChipsMysticales : FoodEdible {
+		scope = public;
+		count = 1;
+		sfx = "eat_chips";
+		bloodRegen = 120;
+		displayName = $STR_FOOD_NAME_CHIPS_MYSTICALES;
+		descriptionShort = $STR_FOOD_DESC_CHIPS_MYSTICALES;
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_mysticales_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_mysticales_full_ca.paa";
+	};
+	class FoodChipsMysticalesEmpty : TrashTinCan {
+		scope = public;
+		count = 1;
+		model = "z\addons\dayz_communityassets\models\bag_chips_small_mysticales_opened.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_mysticales_opened_ca.paa";
+		displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
+		ammo = "TinCan";
+	};
+	
+	class FoodCandyAnders : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = $STR_FOOD_NAME_CANDY_ANDERS;
+		descriptionShort = $STR_FOOD_DESC_CANDY_ANDERS;
+		model = "z\addons\dayz_communityassets\models\candybar_anders_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_anders_ca.paa";
+	};
+	class FoodCandyLegacys : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = $STR_FOOD_NAME_CANDY_LEGACYS;
+		descriptionShort = $STR_FOOD_DESC_CANDY_LEGACYS;
+		model = "z\addons\dayz_communityassets\models\candybar_legacys_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_legacys_ca.paa";
+	};
+	class FoodCandyMintception : FoodEdible {
+		scope = public;
+		count = 1;
+		//sfx = "eat_chips";
+		bloodRegen = 80;
+		displayName = $STR_FOOD_NAME_CANDY_MINTCEPTION;
+		descriptionShort = $STR_FOOD_DESC_CANDY_MINTCEPTION;
+		model = "z\addons\dayz_communityassets\models\candybar_mintception_full.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_mintception_ca.paa";
 	};
 	
 	class ItemWaterbottle;
