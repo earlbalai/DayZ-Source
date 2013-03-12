@@ -388,6 +388,24 @@ class CfgBuildingLoot {
 		maxRoaming = 2;
 		lootChance = 0.3;
 		lootPos[] = {};
+		lootType[] = {
+			{"","generic",0.18},
+			{"","trash",0.29},
+			{"","military",0.04},
+			{"WeaponHolder_PartGeneric","object",0.04},
+			{"WeaponHolder_PartWheel","object",0.05},
+			{"WeaponHolder_PartFueltank","object",0.02},
+			{"WeaponHolder_PartEngine","object",0.02},
+			{"WeaponHolder_PartGlass","object",0.04},
+			{"WeaponHolder_PartVRotor","object",0.01},
+			{"WeaponHolder_ItemJerrycan","object",0.04},
+			{"WeaponHolder_ItemHatchet","object",0.11},
+			{"ItemKnife","military"0.07},
+			{"ItemToolbox","weapon",0.06},
+			{"ItemWire","magazine",0.01},
+			{"ItemTankTrap","magazine",0.04}
+		};
+		/*
 		itemType[] =	{
 			{"","generic"},
 			{"","trash"},
@@ -405,6 +423,7 @@ class CfgBuildingLoot {
 			{"ItemWire","magazine"},
 			{"ItemTankTrap","magazine"}
 		};
+		
 		itemChance[] =	{
 			0.18,
 			0.29,
@@ -412,7 +431,7 @@ class CfgBuildingLoot {
 			0.04,
 			0.05,
 			0.02,
-			0.02,
+			0.02, //WeaponHolder_PartEngine
 			0.04,
 			0.01,
 			0.04,
@@ -422,6 +441,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.04
 		};
+		*/
 	};
 	class Farm: Default {
 		zombieChance = 0.3;
