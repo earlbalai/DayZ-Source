@@ -1,5 +1,12 @@
 class CfgLoot {
 	trash[] = {
+			{"TrashTinCan",0.02},
+			{"TrashJackDaniels",0.02},
+			{"ItemSodaEmpty",0.02},
+			{"ItemTrashToiletpaper",0.01},
+			{"ItemTrashRazor",0.01}
+		};
+	/*
 		{
 			"TrashTinCan",
 			"TrashJackDaniels",
@@ -14,7 +21,7 @@ class CfgLoot {
 			0.01,
 			0.01
 		}
-	};
+		*/
 	civilian[] = {
 		{
 			"TrashTinCan",
