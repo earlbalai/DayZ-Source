@@ -6,245 +6,116 @@ class CfgLoot {
 			{"ItemTrashToiletpaper",0.01},
 			{"ItemTrashRazor",0.01}
 		};
-	/*
-		{
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-			"ItemTrashToiletpaper",
-			"ItemTrashRazor"
-		},
-		{
-			0.02,
-			0.02,
-			0.02,
-			0.01,
-			0.01
-		}
-		*/
+		
 	civilian[] = {
-		{
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
-			"8Rnd_9x18_Makarov",
-			"7Rnd_45ACP_1911",
-			"2Rnd_shotgun_74Slug",
-			"2Rnd_shotgun_74Pellets",
-			"ItemBandage",
-			"ItemPainkiller"
-		},
-		{
-			0.09,
-			0.09,
-			0.09,
-			0.12,
-			0.09,
-			0.05,
-			0.05,
-			0.05,
-			0.05,
-			0.07,
-			0.05,
-			0.05,
-			0.05,
-			0.06,
-			0.06
-		}
-	};
-food[] = {
-		{
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"ItemSodaMtngreen",
-			"ItemSodaR4z0r",
-			"ItemSodaClays",
-			"ItemSodaSmasht", 
-			"ItemSodaDrwaste", 
-			"ItemSodaLemonade", 
-			"ItemSodaLvg", 
-			"ItemSodaMzly", 
-			"ItemSodaRabbit",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
-			"FoodCanBadguy",
-			"FoodCanBoneboy",
-			"FoodCanCorn",
-			"FoodCanCurgon",
-			"FoodCanDemon",
-			"FoodCanFraggleos",
-			"FoodCanHerpy",
-			"FoodCanDerpy",
-			"FoodCanOrlok",
-			"FoodCanPowell",
-			"FoodCanTylers",
-			"FoodCanUnlabeled",
-			"FoodPistachio",
-			"FoodNutmix",
-			"FoodChipsSulahoops",
-			"FoodChipsMysticales",
-			"FoodCandyAnders",
-			"FoodCandyLegacys",
-			"FoodCandyMintception",
-			"FoodCanRusUnlabeled",
-			"FoodCanRusStew",
-			"FoodCanRusPork",
-			"FoodCanRusPeas",
-			"FoodCanRusMilk",
-			"FoodCanRusCorn"
-		},
-		{
-			0.13, //TrashTinCan
-			0.13, //TrashJackDaniels
-			0.13, //ItemSodaEmpty
-			0.13, //ItemSodaCoke
-			0.13, //ItemSodaPepsi
-			0.01, //"ItemSodaMtngreen"
-			0.01, //"ItemSodaR4z0r"
-			0.01, //"ItemSodaClays"
-			0.01, //"ItemSodaSmasht"
-			0.01, //"ItemSodaDrwaste"
-			0.01, //"ItemSodaLemonade"
-			0.01, //"ItemSodaLvg"
-			0.01, //"ItemSodaMzly"
-			0.01, //"ItemSodaRabbit"
-			0.10, //FoodCanBakedBeans
-			0.10, //FoodCanSardines
-			0.10, //FoodCanFrankBeans
-			0.10, //FoodCanPasta
-			0.01, //"FoodCanBadguy"
-			0.01, //"FoodCanBoneboy"
-			0.01, //"FoodCanCorn"
-			0.01, //"FoodCanCurgon"
-			0.01, //"FoodCanDemon"
-			0.01, //"FoodCanFraggleos"
-			0.01, //"FoodCanHerpy"
-			0.01, //"FoodCanDerpy"
-			0.01, //"FoodCanOrlok"
-			0.01, //"FoodCanPowell"
-			0.01, //"FoodCanTylers"
-			0.04, //FoodCanUnlabeled
-			0.03, //FoodPistachio
-			0.02, //FoodNutmix
-			0.01, //FoodChipsSulahoops
-			0.01, //FoodChipsMysticales
-			0.01, //FoodCandyAnders
-			0.01, //FoodCandyLegacys
-			0.01, //FoodCandyMintception
-			0.05, //FoodCanRusUnlabeled
-			0.13, //FoodCanRusStew
-			0.13, //"FoodCanRusPork"
-			0.13, //"FoodCanRusPeas"
-			0.13, //"FoodCanRusMilk"
-			0.13 //"FoodCanRusCorn"
-		}
-	};
+			{"TrashTinCan",0.09},
+			{"TrashJackDaniels",0.09},
+			{"ItemSodaEmpty",0.09},
+			{"ItemSodaCoke",0.12},
+			{"ItemSodaPepsi",0.09},
+			{"FoodCanBakedBeans",0.05},
+			{"FoodCanSardines",0.05},
+			{"FoodCanFrankBeans",0.05},
+			{"FoodCanPasta",0.05},
+			{"8Rnd_9x18_Makarov",0.07},
+			{"7Rnd_45ACP_1911",0.05},
+			{"2Rnd_shotgun_74Slug",0.05},
+			{"2Rnd_shotgun_74Pellets",0.05},
+			{"ItemBandage",0.06},
+			{"ItemPainkiller",0.06}
+		};
+		
+	food[] = {
+			{"TrashTinCan",0.13},
+			{"TrashJackDaniels",0.13},
+			{"ItemSodaEmpty",0.13},
+			{"ItemSodaCoke",0.13},
+			{"ItemSodaPepsi",0.13},
+			{"ItemSodaMtngreen",0.01},
+			{"ItemSodaR4z0r",0.01},
+			{"ItemSodaClays",0.01},
+			{"ItemSodaSmasht",0.01}, 
+			{"ItemSodaDrwaste",0.01}, 
+			{"ItemSodaLemonade",0.01}, 
+			{"ItemSodaLvg",0.01}, 
+			{"ItemSodaMzly",0.01}, 
+			{"ItemSodaRabbit",0.01},
+			{"FoodCanBakedBeans",0.1},
+			{"FoodCanSardines",0.1},
+			{"FoodCanFrankBeans",0.1},
+			{"FoodCanPasta",0.10},
+			{"FoodCanBadguy",0.01},
+			{"FoodCanBoneboy",0.01},
+			{"FoodCanCorn",0.01},
+			{"FoodCanCurgon",0.01},
+			{"FoodCanDemon",0.01},
+			{"FoodCanFraggleos",0.01},
+			{"FoodCanHerpy",0.01},
+			{"FoodCanDerpy",0.01},
+			{"FoodCanOrlok",0.01},
+			{"FoodCanPowell",0.01},
+			{"FoodCanTylers",0.01},
+			{"FoodCanUnlabeled",0.04},
+			{"FoodPistachio",0.03},
+			{"FoodNutmix",0.02},
+			{"FoodChipsSulahoops",0.01},
+			{"FoodChipsMysticales",0.01},
+			{"FoodCandyAnders",0.01},
+			{"FoodCandyLegacys",0.01},
+			{"FoodCandyMintception",0.01},
+			{"FoodCanRusUnlabeled",0.05},
+			{"FoodCanRusStew",0.13},
+			{"FoodCanRusPork",0.13},
+			{"FoodCanRusPeas",0.13},
+			{"FoodCanRusMilk",0.13},
+			{"FoodCanRusCorn",0.13}
+		};
+
 	generic[] = {
-		{
-			"TrashTinCan",
-			"ItemSodaEmpty",
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"TrashJackDaniels",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
-			"ItemWaterbottleUnfilled",
-			"ItemWaterbottle",
-			"ItemBandage",
-			"7Rnd_45ACP_1911",
-			"5x_22_LR_17_HMR",
-			"10x_303",
-			"6Rnd_45ACP",
-			"2Rnd_shotgun_74Slug",
-			"2Rnd_shotgun_74Pellets",
-			"8Rnd_9x18_Makarov",
-			"15Rnd_W1866_Slug",
-			"WoodenArrow",
-			"HandRoadFlare",
-			"ItemPainkiller",
-			"HandChemGreen",
-			"HandChemBlue",
-			"HandChemRed",
-			"ItemHeatPack"
-		},
-		{
-			0.06,
-			0.06,
-			0.06,
-			0.04,
-			0.04,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.11,
-			0.03,
-			0.01,
-			0.04,
-			0.04,
-			0.05,
-			0.05,
-			0.09,
-			0.02,
-			0.04,
-			0.07,
-			0.02,
-			0.01,
-			0.03,
-			0.03,
-			0.04
-		}
-	};
+			{"TrashTinCan",0.06},
+			{"ItemSodaEmpty",0.06},
+			{"ItemSodaCoke",0.06},
+			{"ItemSodaPepsi",0.04},
+			{"TrashJackDaniels",0.04},
+			{"FoodCanBakedBeans",0.03},
+			{"FoodCanSardines",0.03},
+			{"FoodCanFrankBeans",0.03},
+			{"FoodCanPasta",0.03},
+			{"ItemWaterbottleUnfilled",0.03},
+			{"ItemWaterbottle",0.03},
+			{"ItemBandage",0.11},
+			{"7Rnd_45ACP_1911",0.03},
+			{"5x_22_LR_17_HMR",0.01},
+			{"10x_303",0.04},
+			{"6Rnd_45ACP",0.04},
+			{"2Rnd_shotgun_74Slug",0.05},
+			{"2Rnd_shotgun_74Pellets",0.05},
+			{"8Rnd_9x18_Makarov",0.09},
+			{"15Rnd_W1866_Slug",0.02},
+			{"WoodenArrow",0.04},
+			{"HandRoadFlare",0.07},
+			{"ItemPainkiller",0.02},
+			{"HandChemGreen",0.01},
+			{"HandChemBlue",0.03},
+			{"HandChemRed",0.03},
+			{"ItemHeatPack",0.04}
+		};
+
 	medical[] = {
-		{
-			"ItemBandage",
-			"ItemPainkiller",
-			"ItemMorphine",
-			"ItemEpinephrine",
-			"ItemAntibiotic",
-			"ItemHeatPack"
-		},
-		{
-			0.8,
-			0.5,
-			0.5,
-			0.3,
-			0.2,
-			0.3
-		}
+			{"ItemBandage",0.8},
+			{"ItemPainkiller",0.5},
+			{"ItemMorphine",0.5},
+			{"ItemEpinephrine",0.3},
+			{"ItemAntibiotic",0.2},
+			{"ItemHeatPack",0.3}
 	};
 	hospital[] = {
-		{
-			"ItemBandage",
-			"ItemPainkiller",
-			"ItemMorphine",
-			"ItemEpinephrine",
-			"ItemBloodbag",
-			"ItemAntibiotic"
-		},
-		{
-			0.06,
-			0.04,
-			0.04,
-			0.03,
-			0.03,
-			0.02
-		}
+			{"ItemBandage",0.06},
+			{"ItemPainkiller",0.04},
+			{"ItemMorphine",0.04},
+			{"ItemEpinephrine",0.03},
+			{"ItemBloodbag",0.03},
+			{"ItemAntibiotic",0.02}
 	};
 	military[] = {
 		{
@@ -414,45 +285,22 @@ food[] = {
 		};
 	};
 	policeman[] = {
-		{
-			"ItemBandage",
-			"7Rnd_45ACP_1911",
-			"6Rnd_45ACP",
-			"15Rnd_W1866_Slug",
-			"8Rnd_B_Beneli_74Slug",
-			"HandRoadFlare"
-		},
-		{
-			0.10,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.05
-		}
+			{"ItemBandage",0.1},
+			{"7Rnd_45ACP_1911",0.03},
+			{"6Rnd_45ACP",0.03},
+			{"15Rnd_W1866_Slug",0.03},
+			{"8Rnd_B_Beneli_74Slug",0.03},
+			{"HandRoadFlare",0.05}
 	};
 	hunter[] = {
-		{
-			"ItemBandage",
-			"5x_22_LR_17_HMR",
-			"7Rnd_45ACP_1911",
-			"10x_303",
-			"ItemWaterbottleUnfilled",
-			"WoodenArrow",
-			"ItemHeatPack",
-			"FoodMRE",
-			"FoodNutmix"
-		},
-		{
-			0.1,
-			0.05,
-			0.02,
-			0.05,
-			0.02,
-			0.1,
-			0.02,
-			0.03,
-			0.03
-		}
-	};
+			{"ItemBandage",0.1},
+			{"5x_22_LR_17_HMR",0.05},
+			{"7Rnd_45ACP_1911",0.02},
+			{"10x_303",0.05},
+			{"ItemWaterbottleUnfilled",0.02},
+			{"WoodenArrow",0.1},
+			{"ItemHeatPack",0.02},
+			{"FoodMRE",0.03},
+			{"FoodNutmix",0.03}
+		};
 };
