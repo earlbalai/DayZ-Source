@@ -9,7 +9,7 @@ FIX DUE : 2013
 		* Mission (server admins only) (Prerequisites)
 		
 	Community Notes: 
-		* DayZ 1.7.6.2
+		* DayZ 1.7.7
 		
 	Changes:
 		* [Prerequisites]	New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
