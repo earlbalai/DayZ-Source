@@ -116,7 +116,7 @@
 			<English>Remove fireplace</English>
 			<German>Feuerstelle entfernen</German>
 			<Russian>Убрать костер</Russian>
-			<Spanish>Remover fogata</Spanish>
+			<Spanish>Remover Fogata</Spanish>
 			<Dutch>Kampvuur verwijderen</Dutch>
 			<French>Retirer le Feu de camp</French>
 			<Czech>Odstranit ohniště</Czech>
@@ -787,7 +787,7 @@
 			<English>Raw Bacon</English>
 			<German>Roher Speck</German>
 			<Russian>Бекон</Russian>
-			<Spanish>Costillar de Cerdo Crudo</Spanish>
+			<Spanish>Panceta Cruda</Spanish>
 			<Dutch>Raw Bacon</Dutch>
 			<French>Bacon cru</French>
 			<Czech>Syrová slanina</Czech>
@@ -796,7 +796,7 @@
 			<English>Bacon to be used for sustainment, should be cooked prior to safe eating.</English>
 			<German>Speck für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
+			<Spanish>Panceta que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
 			<French>Le Bacon cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být slanina nejdříve upečena.</Czech>
@@ -913,7 +913,7 @@
 			<English>Bacon</English>
 			<German>Speck</German>
 			<Russian>Готовый бекон</Russian>
-			<Spanish>Costillar de Cerdo</Spanish>
+			<Spanish>Panceta</Spanish>
 			<Dutch>Bacon</Dutch>
 			<French>Bacon</French>
 			<Czech>Slanina</Czech>
@@ -922,7 +922,7 @@
 			<English>Bacon to be used for sustainment.</English>
 			<German>Speck, für den Verzehr geeignet.</German>
 			<Russian>Бекон, готовый к употреблению.</Russian>
-			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
+			<Spanish>Panceta que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Bacon to be used for sustainment.</Dutch>
 			<French>Le Bacon peut être consommé.</French>
 			<Czech>Slanina může býst snězena abyste přežili.</Czech>
@@ -967,7 +967,7 @@
 			<English>Grilled Goat</English>
 			<German>Gegrilltes Ziegenfleisch</German>
 			<Russian>Жареная ягнятина</Russian>
-			<Spanish>Grilled Goat</Spanish>
+			<Spanish>Cabra a la Parrilla</Spanish>
 			<Dutch>Grilled Goat</Dutch>
 			<French>Chèvre grillée</French>
 			<Czech>Grilled Goat</Czech>
@@ -976,7 +976,7 @@
 			<English>Goat Meat to be used for sustainment.</English>
 			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
-			<Spanish>Goat Meat to be used for sustainment.</Spanish>
+			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment.</Dutch>
 			<French>La Chèvre grillée peut être consommée.</French>
 			<Czech>Goat Meat to be used for sustainment.</Czech>
@@ -1089,7 +1089,7 @@
 			<English>Soda (Grape)</English>
 			<German>Soda (Grape)</German>
 			<Russian>Газировка (Grape)</Russian>
-			<Spanish>Gaseosa (Grape)</Spanish>
+			<Spanish>Gaseosa (Uva)</Spanish>
 			<Dutch>Soda (Grape)</Dutch>
 			<French>Soda (Raisin)</French>
 			<Czech>Soda (Hroznové víno)</Czech>
@@ -1125,7 +1125,7 @@
 			<English>Soda (Orange)</English>
 			<German>Soda (Orange)</German>
 			<Russian>Газировка (Orange)</Russian>
-			<Spanish>Gaseosa (Orange)</Spanish>
+			<Spanish>Gaseosa (Naranja)</Spanish>
 			<Dutch>Soda (Orange)</Dutch>
 			<French>Soda (Orange)</French>
 			<Czech>Soda (Pomeranč)</Czech>
@@ -1170,7 +1170,7 @@
 			<English>A clean, unopened can of Lirikola. An o7 brand.</English>
 			<German>Eine saubere, ungeöffnete Dose Lirikola. Eine o7 Marke.</German>
 			<Russian>Чистая, закрытая банка "Lirikola". Бренд "o7".</Russian>
-			<Spanish>Una limpia y cerrada botella de Fernet "Lirikola" y CocaCola.</Spanish>
+			<Spanish>Una limpia y cerrada botella de Fernet "Lirikola" y Coca-Cola.</Spanish>
 			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
 			<French>Une canette intacte de "Lirikola". 7 ans d'âge.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Lirikoly. o7 série.</Czech>
@@ -1287,7 +1287,7 @@
 			<English>Snack (Pistachios)</English>
 			<German>Snack (Pistazien)</German>
 			<Russian>Snack (Фисташки)</Russian>
-			<Spanish>Snack (Pistachos)</Spanish>
+			<Spanish>Golosina (Pistachos)</Spanish>
 			<Dutch>Snack (Pistachios)</Dutch>
 			<French>Snack (Pistaches)</French>
 			<Czech>Snack (Pistácie)</Czech>
@@ -1322,7 +1322,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
 			<English>Empty Tin Can</English>
 			<Russian>Empty Tin Can</Russian>
-			<Spanish>Empty Tin Can</Spanish>
+			<Spanish>Lata Vacía</Spanish>
 			<French>Boîte vide en fer-blanc</French>
 			<Czech>Prázdná cínová plechovka</Czech>
 			<German>Empty Tin Can</German>
@@ -1340,7 +1340,7 @@
 			<English>Empty Snack Bag</English>
 			<German>Empty Snack Bag</German>
 			<Russian>Пустая упаковка</Russian>
-			<Spanish>Empty Snack Bag</Spanish>
+			<Spanish>Bolsa Vacía</Spanish>
 			<Dutch>Empty Snack Bag</Dutch>
 			<French>Paquet vide</French>
 			<Czech>Prázdný balíček na jídlo</Czech>
@@ -1349,7 +1349,7 @@
 			<English>An empty bag of chips.</English>
 			<German>An empty bag of chips.</German>
 			<Russian>An empty bag of chips.</Russian>
-			<Spanish>An empty bag of chips.</Spanish>
+			<Spanish>Una bolsa vacía de papitas.</Spanish>
 			<Dutch>An empty bag of chips.</Dutch>
 			<French>Un paquet de chips vide.</French>
 			<Czech>Prázdný balíček čipsů.</Czech>
@@ -1358,7 +1358,7 @@
 			<English>Snack (Chips)</English>
 			<German>Snack (Chips)</German>
 			<Russian>Закуска (Чипсы)</Russian>
-			<Spanish>Snack (Chips)</Spanish>
+			<Spanish>Golosina (Papitas)</Spanish>
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
 			<Czech>Snack (Chips)</Czech>
@@ -1367,7 +1367,7 @@
 			<English>A clean, unopened bag of crunchy Sulahoops.</English>
 			<German>A clean, unopened bag of crunchy Sulahoops.</German>
 			<Russian>Чистая, закрытая упаковка "Sulahoops".</Russian>
-			<Spanish>A clean, unopened bag of crunchy Sulahoops.</Spanish>
+			<Spanish>Una limpia y cerrada bolsa de papitas Sulahoops.</Spanish>
 			<Dutch>A clean, unopened bag of crunchy Sulahoops.</Dutch>
 			<French>Un paquet intact de chips "Sulahoops".</French>
 			<Czech>Čistý a ještě neotevřený balíček čipsů "Sulahoops".</Czech>
@@ -1376,7 +1376,7 @@
 			<English>Snack (Chips)</English>
 			<German>Snack (Chips)</German>
 			<Russian>Закуска (Чипсы)</Russian>
-			<Spanish>Snack (Chips)</Spanish>
+			<Spanish>Golosina (Papitas)</Spanish>
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
 			<Czech>Snack (Chips)</Czech>
@@ -1385,7 +1385,7 @@
 			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
 			<German>A clean, unopened bag of Miss Mysticales jalapeño chips.</German>
 			<Russian>A clean, unopened bag of Miss Mysticales jalapeño chips.</Russian>
-			<Spanish>A clean, unopened bag of Miss Mysticales jalapeño chips.</Spanish>
+			<Spanish>Una limpia y cerrada bolsa de papitas picantes Miss Mysticales.</Spanish>
 			<Dutch>A clean, unopened bag of Miss Mysticales jalapeño chips.</Dutch>
 			<French>Un paquet intact de chips "Miss Mysticales jalapeño".</French>
 			<Czech>Čistý a ještě neotevřený balíček čipsů značky Miss Mysticales jalapeño.</Czech>
@@ -1395,7 +1395,7 @@
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
 			<Russian>Snack (Chocolate)</Russian>
-			<Spanish>Snack (Chocolate)</Spanish>
+			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
 			<Czech>Snack (Čokoláda)</Czech>
@@ -1404,7 +1404,7 @@
 			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
 			<German>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</German>
 			<Russian>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Russian>
-			<Spanish>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Spanish>
+			<Spanish>Una limpia y cerrada barra de chocolate con almendras Ander's Joy.</Spanish>
 			<Dutch>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées à la noix de coco "Ander's Joy".</French>
 			<Czech>Čistý a ještě neotevřený balíček čokoláday značky Ander's Joy.</Czech>
@@ -1413,7 +1413,7 @@
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
 			<Russian>Snack (Chocolate)</Russian>
-			<Spanish>Snack (Chocolate)</Spanish>
+			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
 			<Czech>Snack (Čokoláda)</Czech>
@@ -1422,7 +1422,7 @@
 			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
 			<German>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</German>
 			<Russian>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Russian>
-			<Spanish>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Spanish>
+			<Spanish>Una limpia y cerrada barra de chocolate Legacys con caramelo y maní.</Spanish>
 			<Dutch>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Legacys" avec du caramel et des cacahuètes.</French>
 			<Czech>Čistý a ještě neotevřený balíček čokolády s arašídy a karamelem značky Legacys.</Czech>
@@ -1431,7 +1431,7 @@
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
 			<Russian>Snack (Chocolate)</Russian>
-			<Spanish>Snack (Chocolate)</Spanish>
+			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
 			<Czech>Snack (Čokoláda)</Czech>
@@ -1440,7 +1440,7 @@
 			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
 			<German>A clean, unopened Mintception mint chocolate candy bar.</German>
 			<Russian>A clean, unopened Mintception mint chocolate candy bar.</Russian>
-			<Spanish>A clean, unopened Mintception mint chocolate candy bar.</Spanish>
+			<Spanish>Una limpia y cerrada barra de chocolate con menta Mintception.</Spanish>
 			<Dutch>A clean, unopened Mintception mint chocolate candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Mintception" à la menthe.</French>
 			<Czech>Čistý a ještě neotevřený balíček Mintception mint.</Czech>
@@ -1450,7 +1450,7 @@
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
 			<Russian>Банка черных бобов</Russian>
-			<Spanish>Lata de Frijoles</Spanish>
+			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
@@ -1459,7 +1459,7 @@
 			<English>A clean, unopened can of Griff's black beans.</English>
 			<German>Eine saubere ungeöffnete Dose Griff's schwarze Bohnen.</German>
 			<Russian>Чистая, закрытая банка черных бобов "Griff".</Russian>
-			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
+			<Spanish>Una limpia y cerrada lata de porotos negros "Griff".</Spanish>
 			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
 			<Czech>Čistá a ještě neotevřená plechovka černých fazolí značky Griff.</Czech>
@@ -1468,7 +1468,7 @@
 			<English>Can (Peaches)</English>
 			<German>Dose (Pfirsiche)</German>
 			<Russian>Банка персиков</Russian>
-			<Spanish>Lata de Duraznos</Spanish>
+			<Spanish>Lata (Duraznos)</Spanish>
 			<Dutch>Can (Peaches)</Dutch>
 			<French>Boîte (Pêches)</French>
 			<Czech>Plechovka (Broskve)</Czech>
@@ -1486,7 +1486,7 @@
 			<English>Can (Ravioli)</English>
 			<German>Dose (Ravioli)</German>
 			<Russian>Банка равиоли</Russian>
-			<Spanish>Lata de Ravioles</Spanish>
+			<Spanish>Lata (Ravioles)</Spanish>
 			<Dutch>Can (Ravioli)</Dutch>
 			<French>Boîte (Raviolis)</French>
 			<Czech>Plechovka (Ravioli)</Czech>
@@ -1504,7 +1504,7 @@
 			<English>Can (Corn)</English>
 			<German>Dose (Mais)</German>
 			<Russian>Банка кукурузы</Russian>
-			<Spanish>Lata de Maíz</Spanish>
+			<Spanish>Lata (Granos de Maíz)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
 			<French>Boîte (Maïs)</French>
 			<Czech>Plechovka (Kukuřice)</Czech>
@@ -1522,7 +1522,7 @@
 			<English>Can (Soup)</English>
 			<German>Dose (Suppe)</German>
 			<Russian>Банка супа</Russian>
-			<Spanish>Lata de Sopa</Spanish>
+			<Spanish>Lata (Sopa)</Spanish>
 			<Dutch>Can (Soup)</Dutch>
 			<French>Boîte (Soupe)</French>
 			<Czech>Plechovka (Polévka)</Czech>
@@ -1540,7 +1540,7 @@
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
 			<Russian>Банка зеленого горошка</Russian>
-			<Spanish>Lata de Frijoles</Spanish>
+			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
@@ -1549,7 +1549,7 @@
 			<English>A clean, unopened can of Demon Groves green beans.</English>
 			<German>Eine saubere ungeöffnete Dose Demon Groves grüne Bohnen.</German>
 			<Russian>Чистая, закрытая банка зеленого горошка "Demon Groves".</Russian>
-			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
+			<Spanish>Una limpia y cerrada lata de porotos verdes "Demon Groves".</Spanish>
 			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka zelených fazolí značky Deamon Groves.</Czech>
@@ -1558,7 +1558,7 @@
 			<English>Can (Spaghetti)</English>
 			<German>Dose (Spaghetti)</German>
 			<Russian>Банка спагетти</Russian>
-			<Spanish>Lata de Spaghetti</Spanish>
+			<Spanish>Lata (Spaghetti)</Spanish>
 			<Dutch>Can (Spaghetti)</Dutch>
 			<French>Boîte (Spaghettis)</French>
 			<Czech>Plechovka (Špagety)</Czech>
@@ -1576,7 +1576,7 @@
 			<English>Can (Muffins)</English>
 			<German>Dose (Muffins)</German>
 			<Russian>Банка кексиков</Russian>
-			<Spanish>Lata de Magdalenas</Spanish>
+			<Spanish>Lata (Magdalenas)</Spanish>
 			<Dutch>Can (Muffins)</Dutch>
 			<French>Boîte (Muffins)</French>
 			<Czech>Plechovka (Muffins)</Czech>
@@ -1594,7 +1594,7 @@
 			<English>Can (Stew)</English>
 			<German>Can (Stew)</German>
 			<Russian>Can (Stew)</Russian>
-			<Spanish>Can (Stew)</Spanish>
+			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
 			<French>Boîte (Ragoût)</French>
 			<Czech>Can (Dušené maso)</Czech>
@@ -1603,7 +1603,7 @@
 			<English>A clean, unopened can of Donty Hooves beef stew.</English>
 			<German>A clean, unopened can of Donty Hooves beef stew.</German>
 			<Russian>A clean, unopened can of Donty Hooves beef stew.</Russian>
-			<Spanish>A clean, unopened can of Donty Hooves beef stew.</Spanish>
+			<Spanish>Una limpia y cerrada lata de guiso Donty Hooves.</Spanish>
 			<Dutch>A clean, unopened can of Donty Hooves beef stew.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf "Donty Hooves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka dušeného maso značky Donty Hooves.</Czech>
@@ -1612,7 +1612,7 @@
 			<English>Can (Fruit)</English>
 			<German>Can (Früchte)</German>
 			<Russian>Банка компота</Russian>
-			<Spanish>Ensalada de Frutas</Spanish>
+			<Spanish>Lata (Ensalada de Frutas)</Spanish>
 			<Dutch>Can (Fruit)</Dutch>
 			<French>Boîte (Fruits)</French>
 			<Czech>Plechovka (Ovoce)</Czech>
@@ -1630,7 +1630,7 @@
 			<English>Can (Chowder)</English>
 			<German>Dose (Fischsuppe)</German>
 			<Russian>Банка похлебки</Russian>
-			<Spanish>Sopa de Pescado</Spanish>
+			<Spanish>Lata (Sopa de Pescado)</Spanish>
 			<Dutch>Can (Chowder)</Dutch>
 			<French>Boîte (Soupe de palourdes)</French>
 			<Czech>Plechovka (Dušené maso)</Czech>
@@ -1648,7 +1648,7 @@
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
 			<Russian>Банка фасоли</Russian>
-			<Spanish>Lata de Frijoles</Spanish>
+			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
@@ -1657,7 +1657,7 @@
 			<English>A clean, unopened can of Tyler's delicious kidney beans.</English>
 			<German>Eine saubere ungeöffnete Dose Tyler's leckere Bohnen.</German>
 			<Russian>Чистая, закрытая банка деликатесной фасоли "Tyler".</Russian>
-			<Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
+			<Spanish>Una limpia y cerrada lata de deliciosos porotos rojos "Tyler".</Spanish>
 			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
 			<French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
 			<Czech>Čistá a ještě neotevřená plechovka fazolí značky Tyler.</Czech>
@@ -1684,7 +1684,7 @@
 			<English>Can (Stew)</English>
 			<German>Can (Stew)</German>
 			<Russian>Can (Stew)</Russian>
-			<Spanish>Can (Stew)</Spanish>
+			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
 			<French>Boîte (Ragoût)</French>
 			<Czech>Plechovka (Dušené maso)</Czech>
@@ -1693,7 +1693,7 @@
 			<English>A clean, unopened tin can of beef stew.</English>
 			<German>A clean, unopened tin can of beef stew.</German>
 			<Russian>A clean, unopened tin can of beef stew.</Russian>
-			<Spanish>A clean, unopened tin can of beef stew.</Spanish>
+			<Spanish>Una limpia y cerrada lata de guiso.</Spanish>
 			<Dutch>A clean, unopened tin can of beef stew.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf.</French>
 			<Czech>Čistá a ještě neotevřená tenká plechovka dušeného masa.</Czech>
@@ -1702,7 +1702,7 @@
 			<English>Can (Pork)</English>
 			<German>Can (Pork)</German>
 			<Russian>Can (Pork)</Russian>
-			<Spanish>Can (Pork)</Spanish>
+			<Spanish>Lata (Cerdo)</Spanish>
 			<Dutch>Can (Pork)</Dutch>
 			<French>Boîte (Porc)</French>
 			<Czech>Plechovka (Vepřové maso)</Czech>
@@ -1711,7 +1711,7 @@
 			<English>A clean, unopened tin can of pork.</English>
 			<German>A clean, unopened tin can of pork.</German>
 			<Russian>A clean, unopened tin can of pork.</Russian>
-			<Spanish>A clean, unopened tin can of pork.</Spanish>
+			<Spanish>Una limpia y cerrada lata de cerdo en su jugo.</Spanish>
 			<Dutch>A clean, unopened tin can of pork.</Dutch>
 			<French>Une boîte intacte de viande de porc.</French>
 			<Czech>Čistá a ještě neotevřená tenká plechovka vepřového masa.</Czech>
@@ -1720,7 +1720,7 @@
 			<English>Can (Peas)</English>
 			<German>Can (Peas)</German>
 			<Russian>Can (Peas)</Russian>
-			<Spanish>Can (Peas)</Spanish>
+			<Spanish>Lata (Arvejas)</Spanish>
 			<Dutch>Can (Peas)</Dutch>
 			<French>Boîte (Petits Pois)</French>
 			<Czech>Plechovka (Hrášek)</Czech>
@@ -1729,7 +1729,7 @@
 			<English>A clean, unopened tin can of peas.</English>
 			<German>A clean, unopened tin can of peas.</German>
 			<Russian>A clean, unopened tin can of peas.</Russian>
-			<Spanish>A clean, unopened tin can of peas.</Spanish>
+			<Spanish>Una limpia y cerrada lata de arvejas.</Spanish>
 			<Dutch>A clean, unopened tin can of peas.</Dutch>
 			<French>Une boîte intacte de petits pois.</French>
 			<Czech>Čistá a ještě neotevřená malá plechovka plná hrášku.</Czech>
@@ -1738,7 +1738,7 @@
 			<English>Can (Milk)</English>
 			<German>Can (Milk)</German>
 			<Russian>Can (Milk)</Russian>
-			<Spanish>Can (Milk)</Spanish>
+			<Spanish>Lata (Leche)</Spanish>
 			<Dutch>Can (Milk)</Dutch>
 			<French>Boîte (Lait)</French>
 			<Czech>Plechovka (Mléko)</Czech>
@@ -1747,7 +1747,7 @@
 			<English>A clean, unopened tin can of condensed milk.</English>
 			<German>A clean, unopened tin can of condensed milk.</German>
 			<Russian>A clean, unopened tin can of condensed milk.</Russian>
-			<Spanish>A clean, unopened tin can of condensed milk.</Spanish>
+			<Spanish>Una limpia y cerrada lata de leche condensada.</Spanish>
 			<Dutch>A clean, unopened tin can of condensed milk.</Dutch>
 			<French>Une boîte intacte de lait concentré.</French>
 			<Czech>Čistá a ještě neotevřená plechovka zahuštěného mléka.</Czech>
@@ -1756,7 +1756,7 @@
 			<English>Can (Corn)</English>
 			<German>Can (Corn)</German>
 			<Russian>Can (Corn)</Russian>
-			<Spanish>Can (Corn)</Spanish>
+			<Spanish>Lata (Maíz)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
 			<French>Boîte (Maïs)</French>
 			<Czech>Plechovka (Kukuřice)</Czech>
@@ -1765,7 +1765,7 @@
 			<English>A clean, unopened tin can of corn.</English>
 			<German>A clean, unopened tin can of corn.</German>
 			<Russian>A clean, unopened tin can of corn.</Russian>
-			<Spanish>A clean, unopened tin can of corn.</Spanish>
+			<Spanish>Una limpia y cerrada lata de maíz.</Spanish>
 			<Dutch>A clean, unopened tin can of corn.</Dutch>
 			<French>Une boîte intacte de maïs.</French>
 			<Czech>Čistá a ještě neotevřená plechovka kukuřice.</Czech>
@@ -1820,7 +1820,7 @@
 			<English>The bible.</English>
 			<German>Die Bibel.</German>
 			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
-			<Spanish>La Biblia</Spanish>
+			<Spanish>La Biblia.</Spanish>
 			<Dutch>The bible.</Dutch>
 			<French>La bible.</French>
 			<Czech>Svatá bible.</Czech>
@@ -1856,7 +1856,7 @@
 			<English>A small can for gasoline.</English>
 			<German>Ein kleiner leerer Benzinkanister.</German>
 			<Russian>Пустая емкость для топлива.</Russian>
-			<Spanish>Un envase pequeño para combustible lleno vacío.</Spanish>
+			<Spanish>Un envase pequeño para combustible vacío.</Spanish>
 			<Dutch>A small can for gasoline.</Dutch>
 			<French>Un petit bidon pour le carburant.</French>
 			<Czech>Menší kanystr pro palivo.</Czech>
@@ -1867,6 +1867,7 @@
 			<Original>No pulse. Man is dead...</Original>
 			<English>No pulse. Man is dead...</English>
 			<Russian>Пульс отсутствует. Человек мертв...</Russian>
+			<Spanish>Sin pulso. Está muerto...</Spanish>
 			<French>Pas de pouls. Il est mort...</French>
 			<Czech>Žádý puls. Tento člověk je mrtvý...</Czech>
 		</Key>
@@ -1874,6 +1875,7 @@
 			<Original>Pulse is weak</Original>
 			<English>Pulse is weak</English>
 			<Russian>Слабый пульс</Russian>
+			<Spanish>El pulso es debil</Spanish>
 			<French>Le pouls est faible</French>
 			<Czech>Puls je slabý</Czech>
 		</Key>
@@ -1881,6 +1883,7 @@
 			<Original>Pulse is strong</Original>
 			<English>Pulse is strong</English>
 			<Russian>Уверенный пульс</Russian>
+			<Spanish>El pulso es fuerte</Spanish>
 			<French>Le pouls est fort</French>
 			<Czech>Puls je silný</Czech>
 		</Key>
