@@ -300,7 +300,7 @@ class CfgBuildingLoot {
 			{"","military",0.01},
 			{"","trash",0.02}
 		};
-	}
+	};
 	class Residential: Default {
 		zombieChance = 0.3;
 		maxRoaming = 2;
