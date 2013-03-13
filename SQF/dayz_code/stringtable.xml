@@ -826,7 +826,7 @@
 			<Spanish>Cabra Cruda</Spanish>
 			<Dutch>Raw Goat</Dutch>
 			<French>Viande de chèvre crue</French>
-			<Czech>Raw Goat</Czech>
+			<Czech>Syrové kozí maso</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">
 			<English>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</English>
@@ -835,7 +835,7 @@
 			<Spanish>Carne de Cabra Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
 			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
-			<Czech>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Czech>
+			<Czech>Kvůli bezpečnosti by mělo být syrové kozí maso nejdříve upečeno.</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_0">
 			<English>Cooked Meat</English>
@@ -1005,6 +1005,7 @@
 			<Spanish>Flecha de Madera</Spanish>
 			<French>Flèche en bois</French>
 			<German>Hölzener Pfeil</German>
+			<Czech>Dřevěný šíp</Czech>
 		</Key>
 		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">
 			<English>Arrow made out of wood, used with the Crossbow.</English>
@@ -1012,6 +1013,7 @@
 			<Spanish>Flecha hecha de madera para usarse en la Ballesta.</Spanish>
 			<French>Une Flèche faite de bois, à utiliser avec l'arbalète</French>
 			<German>Ein aus Holz hergestellter Pfeil, welcher in der Armbrust benutzt werden kann</German>
+			<Czech>Šíp vyrobený z dřeva pro použití s kuší.</Czech>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_NAME">
 			<English>Quiver</English>
@@ -1019,6 +1021,7 @@
 			<Spanish>Carcaj</Spanish>
 			<French>Carquois</French>
 			<German>Köcher</German>
+			<Czech>Toulec</Czech>
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_DESC">
 			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>
@@ -1026,6 +1029,7 @@
 			<Spanish>Carcaj Pequeño usado con la Ballesta. Máximo: 6 flechas.</Spanish>
 			<French>Un petit Carquois à utiliser avec l'arbalète. Max 6 flèches.</French>
 			<German>Ein kleiner Köcher welche mit der Armbrust verwendet werden kann. Maximale Anzahl an Pfeilen: 6.</German>
+			<Czech>Malý toulec pro šípy do kuše. Max. šípů je šest.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">
 			<English>Soda</English>
@@ -1070,7 +1074,7 @@
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Dutch>Soda (Iced Tea)</Dutch>
 			<French>Soda (Iced Tea)</French>
-			<Czech>Soda (Iced Tea)</Czech>
+			<Czech>Soda (Ledový čaj)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">
 			<English>A clean, unopened can of Long's island iced tea.</English>
@@ -1088,7 +1092,7 @@
 			<Spanish>Gaseosa (Grape)</Spanish>
 			<Dutch>Soda (Grape)</Dutch>
 			<French>Soda (Raisin)</French>
-			<Czech>Soda (Grape)</Czech>
+			<Czech>Soda (Hroznové víno)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3">
 			<English>A clean, unopened can of Smasht grape soda.</English>
@@ -1097,7 +1101,7 @@
 			<Spanish>Una limpia y cerrada lata de gaseosa de uva Smasht.</Spanish>
 			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
 			<French>Une canette intacte de soda au raisin "Smasht".</French>
-			<Czech>Čistá a ještě neotevřená plechovka grepové sody Smasht.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka hroznové sody Smasht.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">
 			<English>Soda (Cola)</English>
@@ -1124,7 +1128,7 @@
 			<Spanish>Gaseosa (Orange)</Spanish>
 			<Dutch>Soda (Orange)</Dutch>
 			<French>Soda (Orange)</French>
-			<Czech>Soda (Orange)</Czech>
+			<Czech>Soda (Pomeranč)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">
 			<English>A clean, unopened can of Franka orange soda.</English>
@@ -1133,7 +1137,7 @@
 			<Spanish>Una limpia y cerrada lata de gaseosa de naranja Franka.</Spanish>
 			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
 			<French>Une canette intacte de soda à l'orange "Franka".</French>
-			<Czech>Čistá a ještě neotevřená plechovka sodovky Franka orange.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka pomerančvé sodovky Franka orange.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">
 			<English>Soda (Lemonade)</English>
@@ -1277,7 +1281,7 @@
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Meal Ready-to-Eat</Dutch>
 			<French>Repas prêt à manger</French>
-			<Czech>Meal Ready-to-Eat</Czech>
+			<Czech>Rychlo jídlo.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
 			<English>Snack (Pistachios)</English>
@@ -1320,7 +1324,7 @@
 			<Russian>Empty Tin Can</Russian>
 			<Spanish>Empty Tin Can</Spanish>
 			<French>Boîte vide en fer-blanc</French>
-			<Czech>Empty Tin Can</Czech>
+			<Czech>Prázdná cínová plechovka</Czech>
 			<German>Empty Tin Can</German>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
@@ -1339,7 +1343,7 @@
 			<Spanish>Empty Snack Bag</Spanish>
 			<Dutch>Empty Snack Bag</Dutch>
 			<French>Paquet vide</French>
-			<Czech>Empty Snack Bag</Czech>
+			<Czech>Prázdný balíček na jídlo</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_EMPTY">
 			<English>An empty bag of chips.</English>
@@ -1348,7 +1352,7 @@
 			<Spanish>An empty bag of chips.</Spanish>
 			<Dutch>An empty bag of chips.</Dutch>
 			<French>Un paquet de chips vide.</French>
-			<Czech>An empty bag of chips.</Czech>
+			<Czech>Prázdný balíček čipsů.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS">
 			<English>Snack (Chips)</English>
@@ -1366,7 +1370,7 @@
 			<Spanish>A clean, unopened bag of crunchy Sulahoops.</Spanish>
 			<Dutch>A clean, unopened bag of crunchy Sulahoops.</Dutch>
 			<French>Un paquet intact de chips "Sulahoops".</French>
-			<Czech>A clean, unopened bag of crunchy Sulahoops.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček čipsů "Sulahoops".</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_MYSTICALES">
 			<English>Snack (Chips)</English>
@@ -1384,7 +1388,7 @@
 			<Spanish>A clean, unopened bag of Miss Mysticales jalapeño chips.</Spanish>
 			<Dutch>A clean, unopened bag of Miss Mysticales jalapeño chips.</Dutch>
 			<French>Un paquet intact de chips "Miss Mysticales jalapeño".</French>
-			<Czech>A clean, unopened bag of Miss Mysticales jalapeño chips.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček čipsů značky Miss Mysticales jalapeño.</Czech>
 		</Key>
 		
 		<Key ID="STR_FOOD_NAME_CANDY_ANDERS">
@@ -1394,7 +1398,7 @@
 			<Spanish>Snack (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
-			<Czech>Snack (Chocolate)</Czech>
+			<Czech>Snack (Čokoláda)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_ANDERS">
 			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
@@ -1403,7 +1407,7 @@
 			<Spanish>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Spanish>
 			<Dutch>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées à la noix de coco "Ander's Joy".</French>
-			<Czech>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček čokoláday značky Ander's Joy.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CANDY_LEGACYS">
 			<English>Snack (Chocolate)</English>
@@ -1412,7 +1416,7 @@
 			<Spanish>Snack (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
-			<Czech>Snack (Chocolate)</Czech>
+			<Czech>Snack (Čokoláda)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_LEGACYS">
 			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
@@ -1421,7 +1425,7 @@
 			<Spanish>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Spanish>
 			<Dutch>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Legacys" avec du caramel et des cacahuètes.</French>
-			<Czech>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček čokolády s arašídy a karamelem značky Legacys.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CANDY_MINTCEPTION">
 			<English>Snack (Chocolate)</English>
@@ -1430,7 +1434,7 @@
 			<Spanish>Snack (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
-			<Czech>Snack (Chocolate)</Czech>
+			<Czech>Snack (Čokoláda)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_MINTCEPTION">
 			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
@@ -1439,7 +1443,7 @@
 			<Spanish>A clean, unopened Mintception mint chocolate candy bar.</Spanish>
 			<Dutch>A clean, unopened Mintception mint chocolate candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Mintception" à la menthe.</French>
-			<Czech>A clean, unopened Mintception mint chocolate candy bar.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček Mintception mint.</Czech>
 		</Key>
 		
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
@@ -1593,7 +1597,7 @@
 			<Spanish>Can (Stew)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
 			<French>Boîte (Ragoût)</French>
-			<Czech>Can (Stew)</Czech>
+			<Czech>Can (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DERPY">
 			<English>A clean, unopened can of Donty Hooves beef stew.</English>
@@ -1602,7 +1606,7 @@
 			<Spanish>A clean, unopened can of Donty Hooves beef stew.</Spanish>
 			<Dutch>A clean, unopened can of Donty Hooves beef stew.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf "Donty Hooves".</French>
-			<Czech>A clean, unopened can of Donty Hooves beef stew.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka dušeného maso značky Donty Hooves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>
@@ -1683,7 +1687,7 @@
 			<Spanish>Can (Stew)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
 			<French>Boîte (Ragoût)</French>
-			<Czech>Can (Stew)</Czech>
+			<Czech>Plechovka (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_STEW">
 			<English>A clean, unopened tin can of beef stew.</English>
@@ -1692,7 +1696,7 @@
 			<Spanish>A clean, unopened tin can of beef stew.</Spanish>
 			<Dutch>A clean, unopened tin can of beef stew.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf.</French>
-			<Czech>A clean, unopened tin can of beef stew.</Czech>
+			<Czech>Čistá a ještě neotevřená tenká plechovka dušeného masa.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_PORK">
 			<English>Can (Pork)</English>
@@ -1701,7 +1705,7 @@
 			<Spanish>Can (Pork)</Spanish>
 			<Dutch>Can (Pork)</Dutch>
 			<French>Boîte (Porc)</French>
-			<Czech>Can (Pork)</Czech>
+			<Czech>Plechovka (Vepřové maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PORK">
 			<English>A clean, unopened tin can of pork.</English>
@@ -1710,7 +1714,7 @@
 			<Spanish>A clean, unopened tin can of pork.</Spanish>
 			<Dutch>A clean, unopened tin can of pork.</Dutch>
 			<French>Une boîte intacte de viande de porc.</French>
-			<Czech>A clean, unopened tin can of pork.</Czech>
+			<Czech>Čistá a ještě neotevřená tenká plechovka vepřového masa.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_PEAS">
 			<English>Can (Peas)</English>
@@ -1719,7 +1723,7 @@
 			<Spanish>Can (Peas)</Spanish>
 			<Dutch>Can (Peas)</Dutch>
 			<French>Boîte (Petits Pois)</French>
-			<Czech>Can (Peas)</Czech>
+			<Czech>Plechovka (Hrášek)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PEAS">
 			<English>A clean, unopened tin can of peas.</English>
@@ -1728,7 +1732,7 @@
 			<Spanish>A clean, unopened tin can of peas.</Spanish>
 			<Dutch>A clean, unopened tin can of peas.</Dutch>
 			<French>Une boîte intacte de petits pois.</French>
-			<Czech>A clean, unopened tin can of peas.</Czech>
+			<Czech>Čistá a ještě neotevřená malá plechovka plná hrášku.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_MILK">
 			<English>Can (Milk)</English>
@@ -1737,7 +1741,7 @@
 			<Spanish>Can (Milk)</Spanish>
 			<Dutch>Can (Milk)</Dutch>
 			<French>Boîte (Lait)</French>
-			<Czech>Can (Milk)</Czech>
+			<Czech>Plechovka (Mléko)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_MILK">
 			<English>A clean, unopened tin can of condensed milk.</English>
@@ -1746,7 +1750,7 @@
 			<Spanish>A clean, unopened tin can of condensed milk.</Spanish>
 			<Dutch>A clean, unopened tin can of condensed milk.</Dutch>
 			<French>Une boîte intacte de lait concentré.</French>
-			<Czech>A clean, unopened tin can of condensed milk.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka zahuštěného mléka.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_CORN">
 			<English>Can (Corn)</English>
@@ -1755,7 +1759,7 @@
 			<Spanish>Can (Corn)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
 			<French>Boîte (Maïs)</French>
-			<Czech>Can (Corn)</Czech>
+			<Czech>Plechovka (Kukuřice)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_CORN">
 			<English>A clean, unopened tin can of corn.</English>
@@ -1764,7 +1768,7 @@
 			<Spanish>A clean, unopened tin can of corn.</Spanish>
 			<Dutch>A clean, unopened tin can of corn.</Dutch>
 			<French>Une boîte intacte de maïs.</French>
-			<Czech>A clean, unopened tin can of corn.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka kukuřice.</Czech>
 		</Key>
 		
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">
@@ -1837,7 +1841,7 @@
 			<Spanish>Un envase pequeño para combustible lleno.</Spanish>
 			<Dutch>A small can for gasoline.</Dutch>
 			<French>Un petit bidon de carburant.</French>
-			<Czech>A small can for gasoline.</Czech>
+			<Czech>Menší kanystr s palivem.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
 			<English>Fuelcan (Empty)</English>
@@ -1846,7 +1850,7 @@
 			<Spanish>Bidón Chico (Vacío)</Spanish>
 			<Dutch>Fuelcan (Empty)</Dutch>
 			<French>Bidon (Vide)</French>
-			<Czech>Kanystr (Empty)</Czech>
+			<Czech>Kanystr (Prázdný)</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
 			<English>A small can for gasoline.</English>
@@ -1855,7 +1859,7 @@
 			<Spanish>Un envase pequeño para combustible lleno vacío.</Spanish>
 			<Dutch>A small can for gasoline.</Dutch>
 			<French>Un petit bidon pour le carburant.</French>
-			<Czech>A small can for gasoline.</Czech>
+			<Czech>Menší kanystr pro palivo.</Czech>
 		</Key>
 	</Package>
 	<Package name="feedback">
@@ -1864,18 +1868,21 @@
 			<English>No pulse. Man is dead...</English>
 			<Russian>Пульс отсутствует. Человек мертв...</Russian>
 			<French>Pas de pouls. Il est mort...</French>
+			<Czech>Žádý puls. Tento člověk je mrtvý...</Czech>
 		</Key>
 		<Key ID="str_pulse_weak">
 			<Original>Pulse is weak</Original>
 			<English>Pulse is weak</English>
 			<Russian>Слабый пульс</Russian>
 			<French>Le pouls est faible</French>
+			<Czech>Puls je slabý</Czech>
 		</Key>
 		<Key ID="str_pulse_strong">
 			<Original>Pulse is strong</Original>
 			<English>Pulse is strong</English>
 			<Russian>Уверенный пульс</Russian>
 			<French>Le pouls est fort</French>
+			<Czech>Puls je silný</Czech>
 		</Key>
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<English>You have cooked %1 %2</English>
@@ -2262,7 +2269,7 @@
 			<Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
 			<Dutch>Je moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
 			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
-			<Czech>TO DECIDE</Czech>
+			<Czech>%1 musí být v invetáři aby se mohl přesunout z/do panelu nástrojů</Czech>
 		</Key>
 		<Key ID="str_player_31">	<!-- %1=ITEM %2=build/consumed/cook/drink/fill/pitch/place/use/wear -->
 			<English>%1 must be in your main inventory to %2 it.</English>
