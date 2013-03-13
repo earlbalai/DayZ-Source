@@ -324,7 +324,7 @@ class CfgBuildingLoot {
 			{"DZ_Assault_Pack_EP1","object",0.06}, // 12
 			{"DZ_Czech_Vest_Puch","object",0.04}, // 12-0
 			{"DZ_ALICE_Pack_EP1","object",0.02}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object"0.02}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"DZ_British_ACU","object",0.01}, // 18
 			
 			{"Winchester1866","weapon",0.01},
@@ -364,7 +364,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_PartVRotor","object",0.01},
 			{"WeaponHolder_ItemJerrycan","object",0.04},
 			{"WeaponHolder_ItemHatchet","object",0.11},
-			{"ItemKnife","military"0.07},
+			{"ItemKnife","military",0.07},
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
 			{"ItemTankTrap","magazine",0.04}
