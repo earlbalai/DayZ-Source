@@ -1222,7 +1222,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">
 			<English>A clean, unopened can of Peppsy soda.</English>
-			<German><German>Eine saubere, ungeöffnete Dose Peppsy Soda.</German></German>
+			<German>Eine saubere, ungeöffnete Dose Peppsy Soda.</German>
 			<Russian>Чистая, закрытая банка "Peppsy".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Peppsy.</Spanish>
 			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
@@ -1682,7 +1682,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_STEW">
 			<English>Can (Stew)</English>
-			<German>Can (Stew)</German>
+			<German>Dose (Fleischeintopf)</German>
 			<Russian>Can (Stew)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
@@ -1691,7 +1691,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_STEW">
 			<English>A clean, unopened tin can of beef stew.</English>
-			<German>A clean, unopened tin can of beef stew.</German>
+			<German>Eine saubere ungeöffnete Dose Fleischeintopf.</German>
 			<Russian>A clean, unopened tin can of beef stew.</Russian>
 			<Spanish>Una limpia y cerrada lata de guiso.</Spanish>
 			<Dutch>A clean, unopened tin can of beef stew.</Dutch>
@@ -1700,7 +1700,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_PORK">
 			<English>Can (Pork)</English>
-			<German>Can (Pork)</German>
+			<German>Dose (Schweinefleisch)</German>
 			<Russian>Can (Pork)</Russian>
 			<Spanish>Lata (Cerdo)</Spanish>
 			<Dutch>Can (Pork)</Dutch>
@@ -1709,7 +1709,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PORK">
 			<English>A clean, unopened tin can of pork.</English>
-			<German>A clean, unopened tin can of pork.</German>
+			<German>Eine saubere ungeöffnete Dose Schweinefleisch.</German>
 			<Russian>A clean, unopened tin can of pork.</Russian>
 			<Spanish>Una limpia y cerrada lata de cerdo en su jugo.</Spanish>
 			<Dutch>A clean, unopened tin can of pork.</Dutch>
@@ -1718,7 +1718,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_PEAS">
 			<English>Can (Peas)</English>
-			<German>Can (Peas)</German>
+			<German>Dose (Erbsen)</German>
 			<Russian>Can (Peas)</Russian>
 			<Spanish>Lata (Arvejas)</Spanish>
 			<Dutch>Can (Peas)</Dutch>
@@ -1727,7 +1727,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PEAS">
 			<English>A clean, unopened tin can of peas.</English>
-			<German>A clean, unopened tin can of peas.</German>
+			<German>Eine saubere ungeöffnete Dose Erbsen.</German>
 			<Russian>A clean, unopened tin can of peas.</Russian>
 			<Spanish>Una limpia y cerrada lata de arvejas.</Spanish>
 			<Dutch>A clean, unopened tin can of peas.</Dutch>
@@ -1736,7 +1736,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_MILK">
 			<English>Can (Milk)</English>
-			<German>Can (Milk)</German>
+			<German>Kanne (Milch)</German>
 			<Russian>Can (Milk)</Russian>
 			<Spanish>Lata (Leche)</Spanish>
 			<Dutch>Can (Milk)</Dutch>
@@ -1745,7 +1745,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_MILK">
 			<English>A clean, unopened tin can of condensed milk.</English>
-			<German>A clean, unopened tin can of condensed milk.</German>
+			<German>Eine saubere ungeöffnete Kanne Milch.</German>
 			<Russian>A clean, unopened tin can of condensed milk.</Russian>
 			<Spanish>Una limpia y cerrada lata de leche condensada.</Spanish>
 			<Dutch>A clean, unopened tin can of condensed milk.</Dutch>
@@ -1754,7 +1754,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_CORN">
 			<English>Can (Corn)</English>
-			<German>Can (Corn)</German>
+			<German>Dose (Mais)</German>
 			<Russian>Can (Corn)</Russian>
 			<Spanish>Lata (Maíz)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
@@ -1763,7 +1763,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_CORN">
 			<English>A clean, unopened tin can of corn.</English>
-			<German>A clean, unopened tin can of corn.</German>
+			<German>Eine saubere ungeöffnete Dose Mais.</German>
 			<Russian>A clean, unopened tin can of corn.</Russian>
 			<Spanish>Una limpia y cerrada lata de maíz.</Spanish>
 			<Dutch>A clean, unopened tin can of corn.</Dutch>
@@ -1809,7 +1809,7 @@
 		</Key>
 		<Key ID="STR_BOOK_NAME_BIBLE">
 			<English>Holy Book</English>
-			<German>Holy Book</German>
+			<German>Heiliges Buch</German>
 			<Russian>Holy Book</Russian>
 			<Spanish>Holy Book</Spanish>
 			<Dutch>Holy Book</Dutch>
@@ -1818,7 +1818,7 @@
 		</Key>
 		<Key ID="STR_BOOK_DESC_BIBLE">
 			<English>A collection of texts considered to be sacred.</English>
-			<German>A collection of texts considered to be sacred.</German>
+			<German>Eine Sammlung von heiligen Texten.</German>
 			<Russian>A collection of texts considered to be sacred.</Russian>
 			<Spanish>A collection of texts considered to be sacred.</Spanish>
 			<Dutch>A collection of texts considered to be sacred.</Dutch>
@@ -1870,6 +1870,7 @@
 			<Spanish>Sin pulso. Está muerto...</Spanish>
 			<French>Pas de pouls. Il est mort...</French>
 			<Czech>Žádý puls. Tento člověk je mrtvý...</Czech>
+			<German>Kein Puls. Der Mann ist tot...</German>
 		</Key>
 		<Key ID="str_pulse_weak">
 			<Original>Pulse is weak</Original>
@@ -1878,6 +1879,7 @@
 			<Spanish>El pulso es debil</Spanish>
 			<French>Le pouls est faible</French>
 			<Czech>Puls je slabý</Czech>
+			<German>Der Puls ist schwach</German>
 		</Key>
 		<Key ID="str_pulse_strong">
 			<Original>Pulse is strong</Original>
@@ -1886,6 +1888,7 @@
 			<Spanish>El pulso es fuerte</Spanish>
 			<French>Le pouls est fort</French>
 			<Czech>Puls je silný</Czech>
+			<German>Der Puls ist stabil</German>
 		</Key>
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<English>You have cooked %1 %2</English>
@@ -2222,7 +2225,7 @@
 		</Key>
 		<Key ID="str_player_25">
 			<English>A pile of wood has been successfully added to your inventory.</English>
-			<German>Ein Holzstoß wurde erfolgreich Ihrem Inventar hinzugefügt.</German>
+			<German>Ein Holzstapel wurde erfolgreich Ihrem Inventar hinzugefügt.</German>
 			<Russian>Дрова добавлены в ваш инвентарь.</Russian>
 			<Spanish>Una pila de leña se agregó correctamente a tu inventario.</Spanish>
 			<Dutch>Er is brandhout toegevoegd aan je inventaris.</Dutch>
@@ -2231,7 +2234,7 @@
 		</Key>
 		<Key ID="str_player_26">
 			<English>You cannot do this while you are in the water.</English>
-			<German>Sie können dies nicht tun, während Sie sich im Wasser befinden..</German>
+			<German>Sie können dies nicht tun, während Sie sich im Wasser befinden.</German>
 			<Russian>Это действие невозможно пока вы в воде.</Russian>
 			<Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
 			<Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
