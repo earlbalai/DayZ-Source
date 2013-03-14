@@ -1814,7 +1814,7 @@
 			<Spanish>Libro Sagrado</Spanish>
 			<Dutch>Holy Book</Dutch>
 			<French>Livre Saint</French>
-			<Czech>Holy Book</Czech>
+			<Czech>Svatá Kniha</Czech>
 		</Key>
 		<Key ID="STR_BOOK_DESC_BIBLE">
 			<English>A collection of texts considered to be sacred.</English>
@@ -1823,7 +1823,7 @@
 			<Spanish>Una colección de textos considerados como sagrados.</Spanish>
 			<Dutch>A collection of texts considered to be sacred.</Dutch>
 			<French>Un recueil  de textes condidérés comme sacrés.</French>
-			<Czech>A collection of texts considered to be sacred.</Czech>
+			<Czech>Kniha plná posvátných textů.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan</English>
