@@ -18,7 +18,7 @@ FIX DUE : 2013
 		* [NEW] - Models and textures for mutton.
 		* [NEW] - Seperate meat for goats, same blood regen as mutton.
 		* [NEW] - Can now combine magazines. (still missing one or two mags)
-		* [NEW] - New loot item (bible).
+		* [NEW] - New loot item (Holy Book).
 		* [NEW] - Added new loot table for church.
 		* [NEW] - Added new food and drink items (only found in supermarkets).
 		* [NEW] - Added model for a dropped map and watch.
