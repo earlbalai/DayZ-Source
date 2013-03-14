@@ -82,9 +82,8 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 //Create New Character
 	//[player] joinSilent grpNull;
 	_group 		= createGroup west;
-	_newUnit 	= _group createUnit [_class,_position,[],0,"NONE"];
+	_newUnit 	= _group createUnit [_class,getMarkerPos "respawn_west",[],0,"NONE"];
 
-	_newUnit 	setPosATL _position;
 	_newUnit 	setDir _dir;
 
 //Clear New Character
@@ -167,17 +166,17 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	diag_log str(getMagazineCargo unitBackpack _newUnit);
 
 //Make New Unit Playable
+	//_oldUnit setPosATL [_position select 0 + cos(_dir) * 2, _position select 1 + sin(_dir) * 2, _position select 2];
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
+	_newUnit setPosATL _position;
 
 //Clear and delete old Unit
+	_oldUnit setPosATL (getMarkerPos "respawn_west");
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} forEach  magazines _oldUnit;
-		
 	deleteVehicle _oldUnit;
-
-//Move player inside
 
 //	player switchCamera = _currentCamera;
 	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
