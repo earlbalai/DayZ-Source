@@ -122,7 +122,7 @@ food[] = {
 			0.01, //"FoodCanCurgon"
 			0.01, //"FoodCanDemon"
 			0.01, //"FoodCanFraggleos"
-			0.01, //"FoodCanHerpy"
+			0.001, //"FoodCanHerpy"
 			0.01, //"FoodCanDerpy"
 			0.01, //"FoodCanOrlok"
 			0.01, //"FoodCanPowell"
@@ -139,7 +139,7 @@ food[] = {
 			0.13, //FoodCanRusStew
 			0.13, //"FoodCanRusPork"
 			0.13, //"FoodCanRusPeas"
-			0.13, //"FoodCanRusMilk"
+			0.07, //"FoodCanRusMilk"
 			0.13 //"FoodCanRusCorn"
 		}
 	};

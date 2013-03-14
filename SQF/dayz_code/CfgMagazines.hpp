@@ -729,7 +729,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_STEW;
-		descriptionShort = $STR_FOOD_DESC_RUS_STEW;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_STEW;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_stew_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_stew_clean_full_ca.paa";
 	};
@@ -747,7 +747,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_PORK;
-		descriptionShort = $STR_FOOD_DESC_RUS_PORK;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_PORK;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_pork_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_pork_clean_full_ca.paa";
 	};
@@ -765,7 +765,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_PEAS;
-		descriptionShort = $STR_FOOD_DESC_RUS_PEAS;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_PEAS;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_peas_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_peas_clean_full_ca.paa";
 	};
@@ -783,7 +783,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 100;
 		displayName = $STR_FOOD_NAME_CAN_RUS_MILK;
-		descriptionShort = $STR_FOOD_DESC_RUS_MILK;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_MILK;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_milk_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_milk_clean_full_ca.paa";
 	};
@@ -801,7 +801,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_CORN;
-		descriptionShort = $STR_FOOD_DESC_RUS_CORN;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_CORN;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_corn_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_corn_clean_full_ca.paa";
 	};
@@ -830,8 +830,8 @@ class CfgMagazines {
 		count = 1;
 		model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_opened.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_opened_ca.paa";
-		displayName = $STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY;
+		displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
 		ammo = "TinCan";
 	};
 	class FoodChipsMysticales : FoodEdible {
