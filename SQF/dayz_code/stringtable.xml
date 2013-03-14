@@ -1808,22 +1808,22 @@
 			<Czech>Stará břitva na holení.</Czech>
 		</Key>
 		<Key ID="STR_BOOK_NAME_BIBLE">
-			<English>Bible</English>
-			<German>Bibel</German>
-			<Russian>Библия</Russian>
-			<Spanish>Biblia</Spanish>
-			<Dutch>Bijbel</Dutch>
-			<French>Bible</French>
-			<Czech>Bible</Czech>
+			<English>Holy Book</English>
+			<German>Holy Book</German>
+			<Russian>Holy Book</Russian>
+			<Spanish>Holy Book</Spanish>
+			<Dutch>Holy Book</Dutch>
+			<French>Holy Book</French>
+			<Czech>Holy Book</Czech>
 		</Key>
 		<Key ID="STR_BOOK_DESC_BIBLE">
-			<English>The bible.</English>
-			<German>Die Bibel.</German>
-			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
-			<Spanish>La Biblia.</Spanish>
-			<Dutch>The bible.</Dutch>
-			<French>La bible.</French>
-			<Czech>Svatá bible.</Czech>
+			<English>A collection of texts considered to be sacred.</English>
+			<German>A collection of texts considered to be sacred.</German>
+			<Russian>A collection of texts considered to be sacred.</Russian>
+			<Spanish>A collection of texts considered to be sacred.</Spanish>
+			<Dutch>A collection of texts considered to be sacred.</Dutch>
+			<French>A collection of texts considered to be sacred.</French>
+			<Czech>A collection of texts considered to be sacred.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan</English>
