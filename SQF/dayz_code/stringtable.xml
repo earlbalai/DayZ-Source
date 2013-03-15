@@ -1321,7 +1321,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
 			<English>Empty Tin Can</English>
-			<Russian>Empty Tin Can</Russian>
+			<Russian>Пустая жестянка</Russian>
 			<Spanish>Lata Vacía</Spanish>
 			<French>Boîte vide en fer-blanc</French>
 			<Czech>Prázdná cínová plechovka</Czech>
@@ -1810,7 +1810,7 @@
 		<Key ID="STR_BOOK_NAME_BIBLE">
 			<English>Holy Book</English>
 			<German>Heiliges Buch</German>
-			<Russian>Holy Book</Russian>
+			<Russian>Библия</Russian>
 			<Spanish>Libro Sagrado</Spanish>
 			<Dutch>Holy Book</Dutch>
 			<French>Livre Saint</French>
@@ -1819,7 +1819,7 @@
 		<Key ID="STR_BOOK_DESC_BIBLE">
 			<English>A collection of texts considered to be sacred.</English>
 			<German>Eine Sammlung von heiligen Texten.</German>
-			<Russian>A collection of texts considered to be sacred.</Russian>
+			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
 			<Spanish>Una colección de textos considerados como sagrados.</Spanish>
 			<Dutch>A collection of texts considered to be sacred.</Dutch>
 			<French>Un recueil  de textes condidérés comme sacrés.</French>
