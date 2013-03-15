@@ -784,7 +784,7 @@ class CfgWeapons {
 	//class M9: FakeWeapon {};
 	//class M9SD: FakeWeapon {};
 	//class Makarov: FakeWeapon {};
-	class MakarovSD: FakeWeapon {};
+	//class MakarovSD: FakeWeapon {};
 	//class GrenadeLauncher: FakeWeapon {};
 	//class Rifle: FakeWeapon {};
 	//class M16_base: FakeWeapon {};
