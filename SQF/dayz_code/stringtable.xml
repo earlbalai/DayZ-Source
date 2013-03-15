@@ -1070,7 +1070,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">
 			<English>Soda (Iced Tea)</English>
 			<German>Soda (Iced Tea)</German>
-			<Russian>Напиток (Iced Tea)</Russian>
+			<Russian>Напиток (Холодный чай)</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Dutch>Soda (Iced Tea)</Dutch>
 			<French>Soda (Iced Tea)</French>
@@ -1088,7 +1088,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">
 			<English>Soda (Grape)</English>
 			<German>Soda (Grape)</German>
-			<Russian>Газировка (Grape)</Russian>
+			<Russian>Газировка (Грейпфрукт)</Russian>
 			<Spanish>Gaseosa (Uva)</Spanish>
 			<Dutch>Soda (Grape)</Dutch>
 			<French>Soda (Raisin)</French>
@@ -1106,7 +1106,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">
 			<English>Soda (Cola)</English>
 			<German>Soda (Cola)</German>
-			<Russian>Газировка (Cola)</Russian>
+			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Dutch>Soda (Cola)</Dutch>
 			<French>Soda (Cola)</French>
@@ -1124,7 +1124,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">
 			<English>Soda (Orange)</English>
 			<German>Soda (Orange)</German>
-			<Russian>Газировка (Orange)</Russian>
+			<Russian>Газировка (Апельсин)</Russian>
 			<Spanish>Gaseosa (Naranja)</Spanish>
 			<Dutch>Soda (Orange)</Dutch>
 			<French>Soda (Orange)</French>
@@ -1142,7 +1142,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">
 			<English>Soda (Lemonade)</English>
 			<German>Soda (Lemonade)</German>
-			<Russian>Газировка (Lemonade)</Russian>
+			<Russian>Газировка (Лимонад)</Russian>
 			<Spanish>Gaseosa (Limonada)</Spanish>
 			<Dutch>Soda (Lemonade)</Dutch>
 			<French>Soda (Limonade)</French>
@@ -1160,7 +1160,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">
 			<English>Soda (Cola)</English>
 			<German>Soda (Cola)</German>
-			<Russian>Газировка (Cola)</Russian>
+			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Fernet con Coca</Spanish>
 			<Dutch>Soda (Cola)</Dutch>
 			<French>Soda (Cola)</French>
@@ -1178,7 +1178,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">
 			<English>Soda (Root Beer)</English>
 			<German>Soda (Wurzel Beere)</German>
-			<Russian>Пиво (Root Beer)</Russian>
+			<Russian>Пиво (Корневое пиво)</Russian>
 			<Spanish>Cerveza de Raíz</Spanish>
 			<Dutch>Soda (Root Beer)</Dutch>
 			<French>Bière (Root Beer)</French>
@@ -1214,7 +1214,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">
 			<English>Soda (Cola)</English>
 			<German>Soda (Cola)</German>
-			<Russian>Газировка (Cola)</Russian>
+			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Dutch>Soda (Cola)</Dutch>
 			<French>Soda (Cola)</French>
@@ -1277,7 +1277,7 @@
 		<Key ID="STR_FOOD_DESC_MRE">
 			<English>Meal Ready-to-Eat</English>
 			<German>MRE Feldration</German>
-			<Russian>упаковка сухого пайка.</Russian>
+			<Russian>Упаковка сухого пайка.</Russian>
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Meal Ready-to-Eat</Dutch>
 			<French>Repas prêt à manger</French>
@@ -1286,7 +1286,7 @@
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
 			<English>Snack (Pistachios)</English>
 			<German>Snack (Pistazien)</German>
-			<Russian>Snack (Фисташки)</Russian>
+			<Russian>Закуска (Фисташки)</Russian>
 			<Spanish>Golosina (Pistachos)</Spanish>
 			<Dutch>Snack (Pistachios)</Dutch>
 			<French>Snack (Pistaches)</French>
@@ -1304,7 +1304,7 @@
 		<Key ID="STR_FOOD_NAME_NUTMIX">
 			<English>Snack (Trail Mix)</English>
 			<German>Studentenfutter</German>
-			<Russian>Фруктово-ореховый микс</Russian>
+			<Russian>Закуска (Сухофрукты)</Russian>
 			<Spanish>CerealMix</Spanish>
 			<Dutch>Trail Mix</Dutch>
 			<French>Assortiment de fruits secs</French>
@@ -1348,7 +1348,7 @@
 		<Key ID="STR_FOOD_DESC_CHIPS_EMPTY">
 			<English>An empty bag of chips.</English>
 			<German>An empty bag of chips.</German>
-			<Russian>An empty bag of chips.</Russian>
+			<Russian>Пустая упаковка от чипсов.</Russian>
 			<Spanish>Una bolsa vacía de papitas.</Spanish>
 			<Dutch>An empty bag of chips.</Dutch>
 			<French>Un paquet de chips vide.</French>
@@ -1384,7 +1384,7 @@
 		<Key ID="STR_FOOD_DESC_CHIPS_MYSTICALES">
 			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
 			<German>A clean, unopened bag of Miss Mysticales jalapeño chips.</German>
-			<Russian>A clean, unopened bag of Miss Mysticales jalapeño chips.</Russian>
+			<Russian>Чистая, закрытая упаковка "Miss Mysticales jalapeño".</Russian>
 			<Spanish>Una limpia y cerrada bolsa de papitas picantes Miss Mysticales.</Spanish>
 			<Dutch>A clean, unopened bag of Miss Mysticales jalapeño chips.</Dutch>
 			<French>Un paquet intact de chips "Miss Mysticales jalapeño".</French>
@@ -1394,7 +1394,7 @@
 		<Key ID="STR_FOOD_NAME_CANDY_ANDERS">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
-			<Russian>Snack (Chocolate)</Russian>
+			<Russian>Закуска (Шоколад)</Russian>
 			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
@@ -1403,7 +1403,7 @@
 		<Key ID="STR_FOOD_DESC_CANDY_ANDERS">
 			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
 			<German>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</German>
-			<Russian>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Russian>
+			<Russian>Чистый, закрытый батончик кокосово-миндального "Ander's Joy".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate con almendras Ander's Joy.</Spanish>
 			<Dutch>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées à la noix de coco "Ander's Joy".</French>
@@ -1412,7 +1412,7 @@
 		<Key ID="STR_FOOD_NAME_CANDY_LEGACYS">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
-			<Russian>Snack (Chocolate)</Russian>
+			<Russian>Закуска (Шоколад)</Russian>
 			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
@@ -1421,7 +1421,7 @@
 		<Key ID="STR_FOOD_DESC_CANDY_LEGACYS">
 			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
 			<German>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</German>
-			<Russian>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Russian>
+			<Russian>Чистый, закрытый батончик карамельно-орехового "Legacys ".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate Legacys con caramelo y maní.</Spanish>
 			<Dutch>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Legacys" avec du caramel et des cacahuètes.</French>
@@ -1430,7 +1430,7 @@
 		<Key ID="STR_FOOD_NAME_CANDY_MINTCEPTION">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
-			<Russian>Snack (Chocolate)</Russian>
+			<Russian>Закуска (Шоколад)</Russian>
 			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolate)</Dutch>
 			<French>Snack (Chocolat)</French>
@@ -1439,7 +1439,7 @@
 		<Key ID="STR_FOOD_DESC_CANDY_MINTCEPTION">
 			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
 			<German>A clean, unopened Mintception mint chocolate candy bar.</German>
-			<Russian>A clean, unopened Mintception mint chocolate candy bar.</Russian>
+			<Russian>Чистый, закрытый батончик мятного "Mintception".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate con menta Mintception.</Spanish>
 			<Dutch>A clean, unopened Mintception mint chocolate candy bar.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Mintception" à la menthe.</French>
@@ -1449,7 +1449,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-			<Russian>Банка черных бобов</Russian>
+			<Russian>Банка (Черные бобы)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
@@ -1467,7 +1467,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY">
 			<English>Can (Peaches)</English>
 			<German>Dose (Pfirsiche)</German>
-			<Russian>Банка персиков</Russian>
+			<Russian>Банка (Персики)</Russian>
 			<Spanish>Lata (Duraznos)</Spanish>
 			<Dutch>Can (Peaches)</Dutch>
 			<French>Boîte (Pêches)</French>
@@ -1485,7 +1485,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">
 			<English>Can (Ravioli)</English>
 			<German>Dose (Ravioli)</German>
-			<Russian>Банка равиоли</Russian>
+			<Russian>Банка (Равиоли)</Russian>
 			<Spanish>Lata (Ravioles)</Spanish>
 			<Dutch>Can (Ravioli)</Dutch>
 			<French>Boîte (Raviolis)</French>
@@ -1503,7 +1503,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_CORN">
 			<English>Can (Corn)</English>
 			<German>Dose (Mais)</German>
-			<Russian>Банка кукурузы</Russian>
+			<Russian>Банка (Кукуруза)</Russian>
 			<Spanish>Lata (Granos de Maíz)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
 			<French>Boîte (Maïs)</French>
@@ -1521,7 +1521,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_CURGON">
 			<English>Can (Soup)</English>
 			<German>Dose (Suppe)</German>
-			<Russian>Банка супа</Russian>
+			<Russian>Банка (Суп)</Russian>
 			<Spanish>Lata (Sopa)</Spanish>
 			<Dutch>Can (Soup)</Dutch>
 			<French>Boîte (Soupe)</French>
@@ -1539,7 +1539,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-			<Russian>Банка зеленого горошка</Russian>
+			<Russian>Банка (Зеленый горошек)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
@@ -1557,7 +1557,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">
 			<English>Can (Spaghetti)</English>
 			<German>Dose (Spaghetti)</German>
-			<Russian>Банка спагетти</Russian>
+			<Russian>Банка (Спагетти)</Russian>
 			<Spanish>Lata (Spaghetti)</Spanish>
 			<Dutch>Can (Spaghetti)</Dutch>
 			<French>Boîte (Spaghettis)</French>
@@ -1575,7 +1575,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_HERPY">
 			<English>Can (Muffins)</English>
 			<German>Dose (Muffins)</German>
-			<Russian>Банка кексиков</Russian>
+			<Russian>Банка (Кексики)</Russian>
 			<Spanish>Lata (Magdalenas)</Spanish>
 			<Dutch>Can (Muffins)</Dutch>
 			<French>Boîte (Muffins)</French>
@@ -1593,7 +1593,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_DERPY">
 			<English>Can (Stew)</English>
 			<German>Can (Stew)</German>
-			<Russian>Can (Stew)</Russian>
+			<Russian>Банка (Тушенка)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
 			<French>Boîte (Ragoût)</French>
@@ -1602,7 +1602,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_DERPY">
 			<English>A clean, unopened can of Donty Hooves beef stew.</English>
 			<German>A clean, unopened can of Donty Hooves beef stew.</German>
-			<Russian>A clean, unopened can of Donty Hooves beef stew.</Russian>
+			<Russian>Чистая, закрытая банка тушеной говядины "Donty Hooves".</Russian>
 			<Spanish>Una limpia y cerrada lata de guiso Donty Hooves.</Spanish>
 			<Dutch>A clean, unopened can of Donty Hooves beef stew.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf "Donty Hooves".</French>
@@ -1611,7 +1611,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>
 			<German>Can (Früchte)</German>
-			<Russian>Банка компота</Russian>
+			<Russian>Банка (Компот)</Russian>
 			<Spanish>Lata (Ensalada de Frutas)</Spanish>
 			<Dutch>Can (Fruit)</Dutch>
 			<French>Boîte (Fruits)</French>
@@ -1629,7 +1629,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_POWELL">
 			<English>Can (Chowder)</English>
 			<German>Dose (Fischsuppe)</German>
-			<Russian>Банка похлебки</Russian>
+			<Russian>Банка (Похлебка)</Russian>
 			<Spanish>Lata (Sopa de Pescado)</Spanish>
 			<Dutch>Can (Chowder)</Dutch>
 			<French>Boîte (Soupe de palourdes)</French>
@@ -1647,7 +1647,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-			<Russian>Банка фасоли</Russian>
+			<Russian>Банка (Фасоль)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Can (Beans)</Dutch>
 			<French>Boîte (Haricots)</French>
@@ -1683,7 +1683,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_RUS_STEW">
 			<English>Can (Stew)</English>
 			<German>Dose (Fleischeintopf)</German>
-			<Russian>Can (Stew)</Russian>
+			<Russian>Банка (Тушенка)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Can (Stew)</Dutch>
 			<French>Boîte (Ragoût)</French>
@@ -1692,7 +1692,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_RUS_STEW">
 			<English>A clean, unopened tin can of beef stew.</English>
 			<German>Eine saubere ungeöffnete Dose Fleischeintopf.</German>
-			<Russian>A clean, unopened tin can of beef stew.</Russian>
+			<Russian>Чистая, закрытая банка тушеной говядины.</Russian>
 			<Spanish>Una limpia y cerrada lata de guiso.</Spanish>
 			<Dutch>A clean, unopened tin can of beef stew.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf.</French>
@@ -1701,7 +1701,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_RUS_PORK">
 			<English>Can (Pork)</English>
 			<German>Dose (Schweinefleisch)</German>
-			<Russian>Can (Pork)</Russian>
+			<Russian>Банка (Свинина)</Russian>
 			<Spanish>Lata (Cerdo)</Spanish>
 			<Dutch>Can (Pork)</Dutch>
 			<French>Boîte (Porc)</French>
@@ -1710,7 +1710,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PORK">
 			<English>A clean, unopened tin can of pork.</English>
 			<German>Eine saubere ungeöffnete Dose Schweinefleisch.</German>
-			<Russian>A clean, unopened tin can of pork.</Russian>
+			<Russian>Чистая, закрытая банка тушеной свинины.</Russian>
 			<Spanish>Una limpia y cerrada lata de cerdo en su jugo.</Spanish>
 			<Dutch>A clean, unopened tin can of pork.</Dutch>
 			<French>Une boîte intacte de viande de porc.</French>
@@ -1719,7 +1719,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_RUS_PEAS">
 			<English>Can (Peas)</English>
 			<German>Dose (Erbsen)</German>
-			<Russian>Can (Peas)</Russian>
+			<Russian>Банка (Горошек)</Russian>
 			<Spanish>Lata (Arvejas)</Spanish>
 			<Dutch>Can (Peas)</Dutch>
 			<French>Boîte (Petits Pois)</French>
@@ -1728,7 +1728,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PEAS">
 			<English>A clean, unopened tin can of peas.</English>
 			<German>Eine saubere ungeöffnete Dose Erbsen.</German>
-			<Russian>A clean, unopened tin can of peas.</Russian>
+			<Russian>Чистая, закрытая банка зеленого горошка.</Russian>
 			<Spanish>Una limpia y cerrada lata de arvejas.</Spanish>
 			<Dutch>A clean, unopened tin can of peas.</Dutch>
 			<French>Une boîte intacte de petits pois.</French>
@@ -1737,7 +1737,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_RUS_MILK">
 			<English>Can (Milk)</English>
 			<German>Kanne (Milch)</German>
-			<Russian>Can (Milk)</Russian>
+			<Russian>Банка (Сгущенка)</Russian>
 			<Spanish>Lata (Leche)</Spanish>
 			<Dutch>Can (Milk)</Dutch>
 			<French>Boîte (Lait)</French>
@@ -1746,7 +1746,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_RUS_MILK">
 			<English>A clean, unopened tin can of condensed milk.</English>
 			<German>Eine saubere ungeöffnete Kanne Milch.</German>
-			<Russian>A clean, unopened tin can of condensed milk.</Russian>
+			<Russian>Чистая, закрытая банка сгущеного молока.</Russian>
 			<Spanish>Una limpia y cerrada lata de leche condensada.</Spanish>
 			<Dutch>A clean, unopened tin can of condensed milk.</Dutch>
 			<French>Une boîte intacte de lait concentré.</French>
@@ -1755,7 +1755,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_RUS_CORN">
 			<English>Can (Corn)</English>
 			<German>Dose (Mais)</German>
-			<Russian>Can (Corn)</Russian>
+			<Russian>Банка (Кукуруза)</Russian>
 			<Spanish>Lata (Maíz)</Spanish>
 			<Dutch>Can (Corn)</Dutch>
 			<French>Boîte (Maïs)</French>
@@ -1764,7 +1764,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_RUS_CORN">
 			<English>A clean, unopened tin can of corn.</English>
 			<German>Eine saubere ungeöffnete Dose Mais.</German>
-			<Russian>A clean, unopened tin can of corn.</Russian>
+			<Russian>Чистая, закрытая банка кукурузы.</Russian>
 			<Spanish>Una limpia y cerrada lata de maíz.</Spanish>
 			<Dutch>A clean, unopened tin can of corn.</Dutch>
 			<French>Une boîte intacte de maïs.</French>
@@ -1965,7 +1965,7 @@
 		<Key ID="str_build_failed_01">
 			<English>You have failed to build %1.</English>
 			<German>Aufbau von %1 gescheitert.</German>
-			<Russian>You have failed to build %1.</Russian>
+			<Russian>Вам не удалость построить %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
 			<Dutch>You have failed to build %1.</Dutch>
 			<French>Vous n'avez pas réussi à contruire %1.</French>
