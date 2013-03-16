@@ -1357,14 +1357,14 @@
 			<Czech>Mix</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">
-			<English>A pack of Papa's Originele Studentenhaver, with 12 different fruits and nuts.</English>
+			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>
 			<German>Eine Packung Papa's Original Studentenfutter mit 12 verschiedenen Früchen und Nüssen</German>
 			<Russian>Упаковка сушеных фруктов и орешков "Papa", 12 разных видов.</Russian>
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
 			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
 			<Czech>Balíček ovoce značky Papa, 12 různých ovocí a oříšků.</Czech>
-			<Dutch>Een pak Papa's Original Trail Mix, met 12 verschillende fruiten en noten.</Dutch>
+			<Dutch>Een pak Papa's Originele Studentenhaver, met 12 verschillende fruiten en noten.</Dutch>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
 			<English>Empty Tin Can</English>
@@ -1913,7 +1913,6 @@
 	</Package>
 	<Package name="feedback">
 		<Key ID="str_pulse_extremely_weak">
-			<Original>No pulse. Man is dead...</Original>
 			<English>No pulse. Man is dead...</English>
 			<Russian>Пульс отсутствует. Человек мертв...</Russian>
 			<Spanish>Sin pulso. Está muerto...</Spanish>
@@ -1923,7 +1922,6 @@
 			<Dutch>Geen hartslag. Persoon is overleden...</Dutch>
 		</Key>
 		<Key ID="str_pulse_weak">
-			<Original>Pulse is weak</Original>
 			<English>Pulse is weak</English>
 			<Russian>Слабый пульс</Russian>
 			<Spanish>El pulso es debil</Spanish>
@@ -1933,7 +1931,6 @@
 			<Dutch>Hartslag is zwak</Dutch>
 		</Key>
 		<Key ID="str_pulse_strong">
-			<Original>Pulse is strong</Original>
 			<English>Pulse is strong</English>
 			<Russian>Уверенный пульс</Russian>
 			<Spanish>El pulso es fuerte</Spanish>
