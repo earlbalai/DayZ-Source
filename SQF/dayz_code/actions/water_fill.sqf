@@ -49,17 +49,22 @@ if (!_canFill) then {
 if (_canFill) then {
 	_qty = {_x == "ItemWaterbottleUnfilled"} count magazines player;
 
+	player playActionNow "PutDown";
+
+
 	if ("ItemWaterbottleUnfilled" in magazines player) then {
 		for "_x" from 1 to _qty do {
-			player removeMagazine "ItemWaterbottleUnfilled";
-			player addMagazine "ItemWaterbottle";
-		};
+			sleep 1;
 
 		_dis=5;
 		_sfx = "fillwater";
 		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 		
+			player removeMagazine "ItemWaterbottleUnfilled";
+			player addMagazine "ItemWaterbottle";
+		};
+
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
 	} else {
 		cutText [(localize "str_player_02") , "PLAIN DOWN"];
