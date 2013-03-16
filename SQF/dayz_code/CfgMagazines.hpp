@@ -711,7 +711,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_UNLABELED;
-		descriptionShort = $STR_FOOD_DESC_UNLABELED;
+		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED;
 		model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
 	};
