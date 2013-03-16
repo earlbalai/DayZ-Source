@@ -722,11 +722,13 @@ class FSM
        "		};" \n
        "	} forEach _wpns;" \n
        "	" \n
+       "	if (_bcpk != """") then {" \n
        "	player addBackpack _bcpk; " \n
        "	dayz_myBackpack =	unitBackpack player;" \n
        "" \n
        "	if (_bcpkWpn != """") then {" \n
        "		dayz_myBackpack addWeaponCargoGlobal [_bcpkWpn,1];" \n
+       "	};" \n
        "	};" \n
        "};" \n
        "" \n
