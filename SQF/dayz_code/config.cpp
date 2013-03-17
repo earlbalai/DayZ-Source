@@ -498,7 +498,6 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] = {
 			{"FN_FAL","weapon",0.02},
-			{"M14_EP1","weapon",0.05},
 			{"FN_FAL_ANPVS4","weapon",0.02},
 			{"M107_DZ","weapon",0.02},
 			{"BAF_AS50_scoped","weapon",0.01},
@@ -515,8 +514,7 @@ class CfgBuildingLoot {
 			{"G36C","weapon",0.03},
 			{"G36C_camo","weapon",0.02},
 			{"G36A_camo","weapon",0.02},
-			{"G36K_camo","weapon",0.02},
-			{"100Rnd_762x54_PK","magazine",0.01}
+			{"G36K_camo","weapon",0.02}
 		};
 	};
 	class HeliCrashEAST: Default {
@@ -530,13 +528,14 @@ class CfgBuildingLoot {
 			{"AKS_74_U", "weapon",0.08}, 
 			{"bizon_silenced","weapon",0.05},
 			{"DMR","weapon",0.06},
-			//{"RPK_74", "weapon",0.01}, 
+			{"RPK_74", "weapon",0.01}, 
 			{"Binocular","weapon",0.05},
 			{"ItemKnife", "militaryEAST",0.05},
 			{"", "militaryEAST",1}, 
 			{"ItemCompass", "militaryEAST",0.05},
 			{"AmmoBoxSmall_762","object",0.1},
-			{"WeaponHolder_PartVRotor", "object",0.05}
+			{"WeaponHolder_PartVRotor", "object",0.05},
+			{"100Rnd_762x54_PK","magazine",0.01}
 		};
 	};
 	class Hospital: Default {
