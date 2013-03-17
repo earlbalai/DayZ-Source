@@ -968,7 +968,7 @@ class CfgWeapons {
 	//class AKS_74_pso: FakeWeapon {};
 	//class AKS_74_U: FakeWeapon {};
 	class AKS_74_UN_kobra: FakeWeapon {};
-	class RPK_74: FakeWeapon {};
+	//class RPK_74: FakeWeapon {};
 	//class bizon: FakeWeapon {};
 	//class bizon_silenced: FakeWeapon {};
 	//class Colt1911: FakeWeapon {};
