@@ -550,22 +550,22 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] =	{
-			0.04,		//{"FN_FAL","weapon"},
-			0.05,		//{"bizon_silenced","weapon"},
-			0.05,		//{"M14_EP1","weapon"},
-			0.03,		//{"FN_FAL_ANPVS4","weapon"},
-			0.01,		//{"m107","weapon"},
-			0.01,		//{"BAF_AS50_scoped_DZ","weapon"},
-			0.03,		//{"Mk_48_DZ","weapon"},
-			0.04,		//{"M249_DZ","weapon"},
-			0.03,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
-			0.06,		//{"DMR","weapon"},
-			0.1,			//{"","military"},
+			0.04,	//{"FN_FAL","weapon"},
+			0.05,	//{"bizon_silenced","weapon"},
+			0.05,	//{"M14_EP1","weapon"},
+			0.03,	//{"FN_FAL_ANPVS4","weapon"},
+			0.01,	//{"m107","weapon"},
+			0.01,	//{"BAF_AS50_scoped_DZ","weapon"},
+			0.03,	//{"Mk_48_DZ","weapon"},
+			0.04,	//{"M249_DZ","weapon"},
+			0.03,	//{"BAF_L85A2_RIS_SUSAT","weapon"},
+			0.06,	//{"DMR","weapon"},
+			0.1,		//{"","military"},
 			0.1,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
-			0.02,		//{"NVGoggles","weapon"}
-			0.1,	//AmmoBoxSmall_556
-			0.1,	//AmmoBoxSmall_762
+			0.02,	//{"NVGoggles","weapon"}
+			0.1,		//AmmoBoxSmall_556
+			0.1,		//AmmoBoxSmall_762
 			0.08,	//Skin_Camo1_DZ
 			0.05,	//Skin_Sniper1_DZ
 			0.03,	//G36C"
@@ -573,7 +573,7 @@ class CfgBuildingLoot {
 			//0.01,	//G36_C_SD_camo
 			0.03,	//G36A_camo
 			0.03,	//G36K_camo
-			0.05	//("100Rnd_762x54_PK","magazine"}
+			0.05		//("100Rnd_762x54_PK","magazine"}
 		};
 	};
 	class HeliCrash_No50s: Default {
@@ -607,20 +607,20 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] =	{
-			0.02,		//{"FN_FAL","weapon"},
-			0.05,		//{"bizon_silenced","weapon"},
-			0.05,		//{"M14_EP1","weapon"},
-			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-			0.03,		//{"Mk_48_DZ","weapon"},
-			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_SUSAT","weapon"},
-			0.06,		//{"DMR","weapon"},
-			1,			//{"","military"},
+			0.02,	//{"FN_FAL","weapon"},
+			0.05,	//{"bizon_silenced","weapon"},
+			0.05,	//{"M14_EP1","weapon"},
+			0.02,	//{"FN_FAL_ANPVS4","weapon"},
+			0.03,	//{"Mk_48_DZ","weapon"},
+			0.05,	//{"M249_DZ","weapon"},
+			0.01,	//{"BAF_L85A2_RIS_SUSAT","weapon"},
+			0.06,	//{"DMR","weapon"},
+			1,		//{"","military"},
 			0.5,		//{"","medical"},
 			0.1,		//{"MedBox0","object"},
-			0.02,		//{"NVGoggles","weapon"}
-			0.1,	//AmmoBoxSmall_556
-			0.1,	//AmmoBoxSmall_762
+			0.02,	//{"NVGoggles","weapon"}
+			0.1,		//AmmoBoxSmall_556
+			0.1,		//AmmoBoxSmall_762
 			0.08,	//Skin_Camo1_DZ
 			0.05,	//Skin_Sniper1_DZ
 			0.03,	//G36C"
@@ -628,7 +628,7 @@ class CfgBuildingLoot {
 			//0.01,	//G36_C_SD_camo
 			0.02,	//G36A_camo
 			0.02,	//G36K_camo
-			0.01	//("100Rnd_762x54_PK","magazine"}
+			0.01		//("100Rnd_762x54_PK","magazine"}
 		};
 	};
 	//do not forget to edit this for current DAYZ reality
@@ -640,7 +640,6 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		itemType[] =	{		
 			{"FN_FAL","weapon"},
-			{"M14_EP1","weapon"},
 			{"FN_FAL_ANPVS4","weapon"},
 			{"M107_DZ","weapon"},
 			{"BAF_AS50_scoped","weapon"},
@@ -657,30 +656,27 @@ class CfgBuildingLoot {
 			{"G36C","weapon"},
 			{"G36C_camo","weapon"},
 			{"G36A_camo","weapon"},
-			{"G36K_camo","weapon"},
-			{"100Rnd_762x54_PK","magazine"}
+			{"G36K_camo","weapon"}
 		};
 		itemChance[] =	{
-			0.02,		//{"FN_FAL","weapon"},
-			0.05,		//{"M14_EP1","weapon"},
-			0.02,		//{"FN_FAL_ANPVS4","weapon"},
-			0.02,		//{"m107","weapon"},
-			0.01,		//{"BAF_AS50_scoped","weapon"},
-			0.03,		//{"Mk_48_DZ","weapon"},
-			0.05,		//{"M249_DZ","weapon"},
-			0.01,		//{"BAF_L85A2_RIS_CWS","weapon"}, BAF_L85A2_RIS_Holo
-			1.00,		//{"","military"},
-			0.50,		//{"","medical"},
-			0.10,		//{"MedBoxDP","object"},
-			0.02,		//{"NVGoggles","weapon"}
-			0.10,		//AmmoBoxSmall_556
-			0.08,		//Skin_Camo1_DZ
-			0.05,		//Skin_Sniper1_DZ
-			0.03,		//G36C"
-			0.02,		//G36C_camo
-			0.02,		//G36A_camo
-			0.02,		//G36K_camo
-			0.01			//("100Rnd_762x54_PK","magazine"}
+			0.02,	//FN_FAL
+			0.02,	//FN_FAL_ANPVS4
+			0.02,	//m107
+			0.01,	//BAF_AS50_scoped
+			0.03,	//Mk_48_DZ
+			0.05,	//M249_DZ
+			0.01,	//BAF_L85A2_RIS_CWS
+			1.00,	//militaryWEST
+			0.50,	//medical
+			0.10,	//MedBoxDP
+			0.02,	//NVGoggles
+			0.10,	//AmmoBoxSmall_556
+			0.08,	//Skin_Camo1_DZ
+			0.05,	//Skin_Sniper1_DZ
+			0.03,	//G36C"
+			0.02,	//G36C_camo
+			0.02,	//G36A_camo
+			0.02		//G36K_camo
 		};
 	};
 	class HeliCrashEAST: Default {
@@ -692,28 +688,32 @@ class CfgBuildingLoot {
 		itemType[] = { 
 			{"AK_47_M", "weapon"}, 
 			{"AKS_74_U", "weapon"}, 
+			{"M14_EP1","weapon"},
 			{"bizon_silenced","weapon"},
 			{"DMR","weapon"},
-			//{"RPK_74", "weapon"}, 
+			{"RPK_74", "weapon"}, 
 			{"Binocular","weapon"},
 			{"ItemKnife", "militaryEAST"},
 			{"", "militaryEAST"}, 
 			{"ItemCompass", "militaryEAST"},
 			{"AmmoBoxSmall_762","object"},
-			{"WeaponHolder_PartVRotor", "object"}
+			{"WeaponHolder_PartVRotor", "object"},
+			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] = {
 			0.05,	//AK_47_M		
 			0.08,	//AKS_74_U 
+			0.05,	//M14_EP1
 			0.05,	//bizon_silenced
 			0.06,	//DMR
-			//0.01,	//RPK_74	
+			0.01,	//RPK_74	
 			0.05,	//Binocular	
 			0.05,	//ItemKnife
 			1.00,	//militaryEAST
 			0.05,	//ItemCompass	
-			0.10,		//AmmoBoxSmall_762
-			0.05		//WeaponHolder_PartVRotor	
+			0.10,	//AmmoBoxSmall_762
+			0.05,	//WeaponHolder_PartVRotor	
+			0.01		//100Rnd_762x54_PK
 		};
 	};
 	class Hospital: Default {
