@@ -5,7 +5,7 @@ _iPos =	_this select 2;
 _radius =	_this select 3;
 
 _iPosL = _iPos select 2;
-if( _iPosL < 0 ) then  _iPos = [_iPos select 0,_iPos select 1,0]; };
+if( _iPosL < 0 ) then  { _iPos = [_iPos select 0,_iPos select 1,0]; };
 
 switch (_iClass) do {
 	default {
