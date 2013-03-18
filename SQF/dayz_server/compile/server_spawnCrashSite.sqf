@@ -84,7 +84,7 @@ while {true} do {
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
 			_itemType = _itemTypes select _index;
-			[_itemType select 0, _itemType select 1, _position, 5] call spawn_loot;
+			[_itemType select 0, _itemType select 1, _position, (sizeOf _crashModel)] call spawn_loot;
 
 			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2 - %3'", _crashName, str(_itemType)]); 
 

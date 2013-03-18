@@ -631,7 +631,6 @@ class CfgBuildingLoot {
 			0.01		//("100Rnd_762x54_PK","magazine"}
 		};
 	};
-	//do not forget to edit this for current DAYZ reality
 	class HeliCrashWEST: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
