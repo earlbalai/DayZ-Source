@@ -24,6 +24,7 @@ FIX DUE : 2013
 		* [NEW] - Added model for a dropped map and watch.
 		* [NEW] - Weapon MakarovSD (Military, Military Special)
 		* [NEW] - Weapon RPK_74 (Mi8 Helicrash)
+		* [NEW] - Vehicle Damage in Percent (With a Toolbox)
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - Zed & loot spawns should now spawn just above the floors.
