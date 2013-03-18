@@ -170,10 +170,12 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
+	
+//Switch the units
+	_oldUnit setPosATL ([(getMarkerPos "respawn_west"), 0, 100, 0, 1, 20, 0] call BIS_fnc_findSafePos);
 	_newUnit setPosATL _position;
 
 //Clear and delete old Unit
-	_oldUnit setPosATL (getMarkerPos "respawn_west");
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} forEach  magazines _oldUnit;
 	deleteVehicle _oldUnit;
