@@ -319,7 +319,6 @@ food[] = {
 			0.03
 		}
 	};
-	//do not forget to edit EAST/WEST for current DAYZ reality
 	militaryWEST[] = {
 		{
 			"ItemBandage",
