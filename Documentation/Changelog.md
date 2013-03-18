@@ -17,7 +17,7 @@ FIX DUE : 2013
 	
 		* [NEW] - Models and textures for mutton.
 		* [NEW] - Seperate meat for goats, same blood regen as mutton.
-		* [NEW] - Can now combine magazines. (still missing one or two mags)
+		* [NEW] - Can now combine magazines.
 		* [NEW] - New loot item (Holy Book).
 		* [NEW] - Added new loot table for church.
 		* [NEW] - Added new food and drink items (only found in supermarkets).
@@ -30,6 +30,7 @@ FIX DUE : 2013
 		* [FIXED] - M107 & AS50 Lock on system removed.
 		* [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
 		* [FIXED] - StudyBody should now work
+		* [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
 		
 		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -38,6 +39,7 @@ FIX DUE : 2013
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
+		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 
 ______________________		
 FIX DUE : 2013
