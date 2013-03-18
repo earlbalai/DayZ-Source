@@ -465,16 +465,16 @@ class CfgBuildingLoot {
 		lootChance = 0.5;
 		lootPos[] = {};
 		lootType[] = {
-			{"FN_FAL","weapon",0.02},
+			{"FN_FAL","weapon",0.04},
 			{"bizon_silenced","weapon",0.05},
 			{"M14_EP1","weapon",0.05},
-			{"FN_FAL_ANPVS4","weapon",0.02},
+			{"FN_FAL_ANPVS4","weapon",0.03},
 			{"Mk_48_DZ","weapon",0.03},
-			{"M249_DZ","weapon",0.05},
-			{"BAF_L85A2_RIS_SUSAT","weapon",0.01},
+			{"M249_DZ","weapon",0.04},
+			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
 			{"DMR","weapon",0.06},
-			{"","military",1},
-			{"","medical",0.5},
+			{"","military",0.1},
+			{"","medical",0.1},
 			{"MedBox0","object",0.1},
 			{"NVGoggles","weapon",0.02},
 			{"AmmoBoxSmall_556","object",0.1},
@@ -482,11 +482,11 @@ class CfgBuildingLoot {
 			{"Skin_Camo1_DZ","magazine",0.08},
 			{"Skin_Sniper1_DZ","magazine",0.05},
 			{"G36C","weapon",0.03},
-			{"G36C_camo","weapon",0.02},
+			{"G36C_camo","weapon",0.03},
 			//{"G36_C_SD_camo","weapon",0.01},
-			{"G36A_camo","weapon",0.02},
-			{"G36K_camo","weapon",0.02},
-			{"100Rnd_762x54_PK","magazine",0.01}
+			{"G36A_camo","weapon",0.03},
+			{"G36K_camo","weapon",0.03},
+			{"100Rnd_762x54_PK","magazine",0.05}
 		};
 	};
 	//do not forget to edit this for current DAYZ reality
@@ -497,24 +497,25 @@ class CfgBuildingLoot {
 		lootChance = 0.5;
 		lootPos[] = {};
 		lootType[] = {
-			{"FN_FAL","weapon",0.02},
-			{"FN_FAL_ANPVS4","weapon",0.02},
-			{"M107_DZ","weapon",0.02},
-			{"BAF_AS50_scoped","weapon",0.01},
+			{"FN_FAL","weapon",0.04},
+			{"FN_FAL_ANPVS4","weapon",0.03},
+			{"M107_DZ","weapon",0.01},
+			{"BAF_AS50_scoped_DZ","weapon",0.01},
 			{"Mk_48_DZ","weapon",0.03},
-			{"M249_DZ","weapon",0.05},
-			{"BAF_L85A2_RIS_Holo","weapon",0.01},
-			{"","militaryWEST",1.0},
-			{"","medical",0.5},
-			{"MedBoxDP","object",0.1},
+			{"M249_DZ","weapon",0.04},
+			{"BAF_L85A2_RIS_Holo","weapon",0.03},
+			{"","militaryWEST",0.1},
+			{"","medical",0.1},
+			{"MedBox0","object",0.1},
 			{"NVGoggles","weapon",0.02},
 			{"AmmoBoxSmall_556","object",0.1},
 			{"Skin_Camo1_DZ","magazine",0.08},
 			{"Skin_Sniper1_DZ","magazine",0.05},
 			{"G36C","weapon",0.03},
-			{"G36C_camo","weapon",0.02},
-			{"G36A_camo","weapon",0.02},
-			{"G36K_camo","weapon",0.02}
+			{"G36C_camo","weapon",0.03},
+			//{"G36_C_SD_camo","weapon",0.01},
+			{"G36K_camo","weapon",0.03},
+			{"G36K_camo","weapon",0.03}
 		};
 	};
 	class HeliCrashEAST: Default {
