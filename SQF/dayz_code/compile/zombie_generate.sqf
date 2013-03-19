@@ -3,7 +3,7 @@ _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
 _doLoiter = true;
-if (dayz_maxCurrentZeds > dayz_maxZeds) exitwith {};
+
 if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
 
@@ -53,7 +53,6 @@ if (_nearByPlayer) then {
 	deleteVehicle _agent;
 };
 
-_position = [_position select 0,_position select 1,2];
 _agent setPosATL _position;
 
 /*
