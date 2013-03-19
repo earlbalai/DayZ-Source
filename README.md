@@ -37,6 +37,7 @@ Directories
 
  - **SQF** - Source Code for DayZMod
  - **SQL** - Database Layout & Vehicle SQL
+ - **Legacy** - Legacy Code of DayZMod
  - **Binaries** - Hive dlls
  - **Documentation** - Changelog & Credits and Suggestions
 
