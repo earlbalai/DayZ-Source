@@ -40,6 +40,7 @@ FIX DUE : 2013
 		* [UPDTAED] - ALL loot table weights have been updated.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
+		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 
 ______________________		
 FIX DUE : 2013
