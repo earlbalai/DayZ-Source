@@ -103,7 +103,6 @@ if ("ItemMap_Debug" in items player) then {
 diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
 diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(_maxZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
-diag_log ("dayz_maxCurrentZeds: " +str(dayz_maxCurrentZeds) + "/" +str(dayz_maxZeds));
 
 diag_log ("Audial Noise: " +str(DAYZ_disAudial));
 
@@ -143,20 +142,18 @@ if (_nearbyCount < 1) exitwith
 	};
 	//Zeds
 	if (((time - dayz_spawnWait) > dayz_spawnDelay) and !_inVehicle) then {
-		if (dayz_maxCurrentZeds < dayz_maxZeds) then {
-			if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
-				if (dayz_spawnZombies < _maxZombies) then {
-						//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
-						_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-						_dateNow = (DateToNumber date);
-						_age = (_dateNow - _zombied) * 525948;
-						if (_age > 3) then {
-							_x setVariable ["zombieSpawn",_dateNow,true];
-							[_x] call building_spawnZombies;
-						};
-				} else {
-					dayz_spawnWait = time;
-				};
+		if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
+			if (dayz_spawnZombies < _maxZombies) then {
+					//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
+					_zombied = (_x getVariable ["zombieSpawn",-0.1]);
+					_dateNow = (DateToNumber date);
+					_age = (_dateNow - _zombied) * 525948;
+					if (_age > 3) then {
+						_x setVariable ["zombieSpawn",_dateNow,true];
+						[_x] call building_spawnZombies;
+					};
+			} else {
+				dayz_spawnWait = time;
 			};
 		};
 	};
