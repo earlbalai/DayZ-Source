@@ -37,15 +37,15 @@ _multiplier = 1;
 		};
 		//Noise Activation
 		if (!(_refObj in _targets)) then {
-			if (_dist < DAYZ_disAudial) then {
+			if (_dist < (DAYZ_disAudial * 2)) then {
 				if (DAYZ_disAudial > 10) then {
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
-				} else {
-					if (_dist < (DAYZ_disAudial / 2)) then {
-						_targets set [count _targets, driver _refObj];
-						_group setVariable ["targets",_targets,true];
-					};
+				//} else {
+				//	if (_dist < (DAYZ_disAudial / 2)) then {
+				//		_targets set [count _targets, driver _refObj];
+				//		_group setVariable ["targets",_targets,true];
+				//	};
 				};
 			};
 		};
