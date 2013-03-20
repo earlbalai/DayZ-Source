@@ -25,6 +25,7 @@ FIX DUE : 2013
 		* [NEW] - Weapon MakarovSD (Military, Military Special)
 		* [NEW] - Weapon RPK_74 (Mi8 Helicrash)
 		* [NEW] - Vehicle Damage in Percent (With a Toolbox)
+		* [NEW] - 5l Fuel can takes 1 inv slot.
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - Zed & loot spawns should now spawn just above the floors.
@@ -33,6 +34,7 @@ FIX DUE : 2013
 		* [FIXED] - StudyBody should now work
 		* [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
 		* [FIXED] - Hero Skin teleport issue.
+		* [FIXED] - BAF Bags so they dont set on fire. :-) (no moaning it was a bug)
 		
 		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -43,6 +45,7 @@ FIX DUE : 2013
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
+		* [UPDATED] - Readded Save option to tent and vehilces this is a fail save option. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tent vehilces) 
 
 ______________________		
 FIX DUE : 2013
