@@ -1269,6 +1269,39 @@ class CfgMagazines {
 			};
 		};
 	};
+	class 200Rnd_556x45_M249: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 100Rnd_762x51_M240: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 200Rnd_762x51_M240: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 75Rnd_545x39_RPK: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+
 	class HandGrenade;	// External class reference
 	class HandRoadFlare : HandGrenade {
 		class ItemActions {

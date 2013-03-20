@@ -2542,6 +2542,10 @@
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
 			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
 		</Key>
+		<Key ID="str_must_have_weapon">
+			<English>Weapon, converting ammo for, must be in hands!</English>
+			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
+		</Key>
 	</Package>
 	<Package name="intro">
 		<Key ID="STR_INTRO_1">
