@@ -1,4 +1,5 @@
 class CfgLoot {
+	//0.10
 	trash[] = {
 		{
 			"TrashTinCan",
@@ -15,6 +16,7 @@ class CfgLoot {
 			0.01
 		}
 	};
+	//Zed only Spawn
 	civilian[] = {
 		{
 			"TrashTinCan",
@@ -34,23 +36,24 @@ class CfgLoot {
 			"ItemPainkiller"
 		},
 		{
-			0.09,
-			0.09,
-			0.09,
-			0.12,
-			0.09,
-			0.05,
-			0.05,
-			0.05,
-			0.05,
-			0.07,
 			0.05,
 			0.05,
 			0.05,
 			0.06,
-			0.06
+			0.06,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.04,
+			0.04,
+			0.04,
+			0.04,
+			0.03,
+			0.03
 		}
 	};
+	//0.05
 food[] = {
 		{
 			"TrashTinCan",
@@ -98,11 +101,11 @@ food[] = {
 			"FoodCanRusCorn"
 		},
 		{
-			0.13, //TrashTinCan
-			0.13, //TrashJackDaniels
-			0.13, //ItemSodaEmpty
-			0.13, //ItemSodaCoke
-			0.13, //ItemSodaPepsi
+			0.05, //TrashTinCan
+			0.05, //TrashJackDaniels
+			0.05, //ItemSodaEmpty
+			0.05, //ItemSodaCoke
+			0.05, //ItemSodaPepsi
 			0.01, //"ItemSodaMtngreen"
 			0.01, //"ItemSodaR4z0r"
 			0.01, //"ItemSodaClays"
@@ -112,17 +115,17 @@ food[] = {
 			0.01, //"ItemSodaLvg"
 			0.01, //"ItemSodaMzly"
 			0.01, //"ItemSodaRabbit"
-			0.10, //FoodCanBakedBeans
-			0.10, //FoodCanSardines
-			0.10, //FoodCanFrankBeans
-			0.10, //FoodCanPasta
+			0.05, //FoodCanBakedBeans
+			0.05, //FoodCanSardines
+			0.05, //FoodCanFrankBeans
+			0.05, //FoodCanPasta
 			0.01, //"FoodCanBadguy"
 			0.01, //"FoodCanBoneboy"
 			0.01, //"FoodCanCorn"
 			0.01, //"FoodCanCurgon"
 			0.01, //"FoodCanDemon"
 			0.01, //"FoodCanFraggleos"
-			0.001, //"FoodCanHerpy"
+			0.01, //"FoodCanHerpy"
 			0.01, //"FoodCanDerpy"
 			0.01, //"FoodCanOrlok"
 			0.01, //"FoodCanPowell"
@@ -136,13 +139,14 @@ food[] = {
 			0.01, //FoodCandyLegacys
 			0.01, //FoodCandyMintception
 			0.05, //FoodCanRusUnlabeled
-			0.13, //FoodCanRusStew
-			0.13, //"FoodCanRusPork"
-			0.13, //"FoodCanRusPeas"
-			0.07, //"FoodCanRusMilk"
-			0.13 //"FoodCanRusCorn"
+			0.05, //FoodCanRusStew
+			0.05, //"FoodCanRusPork"
+			0.05, //"FoodCanRusPeas"
+			0.04, //"FoodCanRusMilk"
+			0.05 //"FoodCanRusCorn"
 		}
 	};
+	//0.08
 	generic[] = {
 		{
 			"TrashTinCan",
@@ -185,7 +189,7 @@ food[] = {
 			0.03,
 			0.03,
 			0.03,
-			0.11,
+			0.10,
 			0.03,
 			0.01,
 			0.04,

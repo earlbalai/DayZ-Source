@@ -302,9 +302,9 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.02,
-			0.03,
-			0.01,
-			0.02
+			0.04,
+			0.02,
+			0.03
 		};
 	}
 	class Residential: Default {
@@ -348,15 +348,15 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.01,
-			0.15,
+			0.05,
 			0.05,
 			0.03,
-			0.13,
+			0.06, //Makarov
 			0.05,
 			0.03,
 			0.08,
 			0.06,
-			0.2,
+			0.10,
 			0.06,
 			0.04,
 			0.05, //12
@@ -367,7 +367,7 @@ class CfgBuildingLoot {
 			0.01,
 			0.01,
 			0.03,
-			0.5,
+			0.10,
 			0.01,
 			0.06,
 			0.06,
@@ -407,8 +407,8 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.18,
-			0.29,
-			0.04,
+			0.19,
+			0.10,
 			0.04,
 			0.05,
 			0.02,
@@ -443,17 +443,17 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemMachete","object"}
 		};
 		itemChance[] =	{
-			0.06,
-			0.28,
-			0.01,
+			0.03,
+			0.10,
+			0.02,
 			0.04,
 			0.03,
-			0.22,
+			0.10,
 			0.03,
-			0.11,
-			0.17,
-			0.06,
-			0.03
+			0.08,
+			0.05,
+			0.01,
+			0.04
 		};
 	};
 	class Supermarket: Default {
@@ -499,7 +499,7 @@ class CfgBuildingLoot {
 			0.05,
 			0.02,
 			0.05,
-			0.05,
+			0.05,//generic
 			0.01,
 			0.01,
 			0.03, //12
@@ -509,8 +509,8 @@ class CfgBuildingLoot {
 			0.01, //18
 			0.01,
 			0.01,
-			0.3, //food
-			0.3, //trash
+			0.1, //food
+			0.1, //trash
 			0.01,
 			0.03,
 			0.04,
@@ -702,18 +702,18 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine"}
 		};
 		itemChance[] = {
-			0.05,	//AK_47_M		
-			0.08,	//AKS_74_U 
-			0.05,	//M14_EP1
-			0.05,	//bizon_silenced
-			0.06,	//DMR
+			0.03,	//AK_47_M		
+			0.03,	//AKS_74_U 
+			0.02,	//M14_EP1
+			0.04,	//bizon_silenced
+			0.02,	//DMR
 			0.01,	//RPK_74	
-			0.05,	//Binocular	
-			0.05,	//ItemKnife
-			1.00,	//militaryEAST
-			0.05,	//ItemCompass	
-			0.10,	//AmmoBoxSmall_762
-			0.05,	//WeaponHolder_PartVRotor	
+			0.03,	//Binocular	
+			0.04,	//ItemKnife
+			0.10,	//militaryEAST
+			0.04,	//ItemCompass	
+			0.03,	//AmmoBoxSmall_762
+			0.02,	//WeaponHolder_PartVRotor	
 			0.01	//100Rnd_762x54_PK
 		};
 	};
@@ -730,9 +730,9 @@ class CfgBuildingLoot {
 			{"MedBox0","object"}
 		};
 		itemChance[] =	{
-			0.2,
-			1,
-			0.2
+			0.05,
+			0.1,
+			0.02
 		};
 	};
 	class Military: Default {
