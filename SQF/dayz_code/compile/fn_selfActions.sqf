@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasbottleitem","_hastinitem","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_rawmeat","_hasRawMeat","_allFixed","_hitpoints","_damage","_part","_cmpt","_damagePercent","_color","_string","_handle","_dogHandle","_lieDown","_warn","_dog","_speed"];
+private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasFuel5","_hasbottleitem","_hastinitem","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_rawmeat","_hasRawMeat","_allFixed","_hitpoints","_damage","_part","_cmpt","_damagePercent","_color","_string","_handle","_dogHandle","_lieDown","_warn","_dog","_speed"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -13,6 +13,7 @@ _classbag = typeOf _bag;
 _isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
 _hasAntiB = 	"ItemAntibiotic" in magazines player;
 _hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
+_hasFuel5 = 	"ItemFuelcanEmpty" in magazines player;
 //boiled Water
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hastinitem = false;
@@ -78,7 +79,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		} forEach _rawmeat; 
 	
 	
-	if (_hasFuelE) then {
+	if (_hasFuelE or _hasFuel5) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_wagon_tanker");
 	};
 	//diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
@@ -93,7 +94,6 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_deleteBuild = -1;
 	};
 	
-	/*
 	//Allow player to force save
 	if((_isVehicle or _isTent) and _canDo and !_isMan) then {
 		if (s_player_forceSave < 0) then {
@@ -103,7 +103,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_forceSave;
 		s_player_forceSave = -1;
 	};
-	*/
+
 	//flip vehicle
 	if ((_isVehicletype) and !_canmove and _isAlive and (player distance cursorTarget >= 2) and (count (crew cursorTarget))== 0 and ((vectorUp cursorTarget) select 2) < 0.5) then {
 		if (s_player_flipveh  < 0) then {
@@ -114,8 +114,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		s_player_flipveh = -1;
 	};
 	
-	//Allow player to fill jerrycan
-	if(_hasFuelE and _isFuel and _canDo) then {
+	//Allow player to fill Fuel can
+	if((_hasFuelE or _hasFuel5) and _isFuel and _canDo) then {
 		if (s_player_fillfuel < 0) then {
 			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
 		};
@@ -123,7 +123,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_fillfuel;
 		s_player_fillfuel = -1;
 	};
-	
+	//Harvested
 	if (!alive cursorTarget and _isAnimal and _hasKnife and !_isHarvested and _canDo) then {
 		if (s_player_butcher < 0) then {
 			s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",cursorTarget, 3, true, true, "", ""];
