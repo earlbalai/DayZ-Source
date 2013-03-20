@@ -14,7 +14,7 @@ _type = getNumber(configFile >> "CfgMagazines" >> _create >> "type");
 //primary/secondary mags?
 _slotstart = 0;
 _slotend = 0;
-if (_type == 256) then {
+if ((_type == 256) or (_type == 256*2)) then {
 	_slotstart = 109;
 	_slotend = 120;
 }; 
