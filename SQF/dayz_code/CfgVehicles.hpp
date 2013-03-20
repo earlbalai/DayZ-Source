@@ -715,7 +715,7 @@ class CfgVehicles {
 		transportMaxMagazines = 16;
 	};
 
-	class DZ_TK_Assault_Pack_EP1 : Bag_Base_BAF
+	class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 	{
 		scope = 2;
 		displayName = "Survival ACU";
@@ -727,7 +727,7 @@ class CfgVehicles {
 		transportMaxMagazines = 16;
 	};
 
-	class DZ_British_ACU : Bag_Base_BAF
+	class DZ_British_ACU : Bag_Base_EP1
 	{
 		scope = 2;
 		displayName = "British Assault Pack";
@@ -799,6 +799,7 @@ class CfgVehicles {
 		mapSize = 15;
 		displayName = "Crashed UH-1Y";
 		vehicleClass = "Wrecks";
+		class Turrets {};
 	};
 	class UH60Wreck_DZ: SpawnableWreck
 	{
@@ -807,6 +808,7 @@ class CfgVehicles {
 		mapSize = 15;
 		displayName = "UH-60 Wreck";
 		vehicleClass = "Wrecks";
+		class Turrets {};
 	};
 	class Mi8Wreck_DZ: SpawnableWreck
 	{
@@ -816,6 +818,7 @@ class CfgVehicles {
 		displayName = "Mi-8 Wreck";
 		vehicleClass = "Wrecks";
 		heightAdjustment = 1;
+		class Turrets {};
 	};
 	class HouseDZ: House {
 		class MarkerLights
