@@ -134,7 +134,7 @@ if (_nearbyCount < 1) exitwith
 			_x setVariable ["cleared",true,true];
 			_x setVariable ["looted",_dateNow,true];
 		};
-		if ((_age > 10) and (_cleared)) then {
+		if ((_age > 5) and (_cleared)) then {
 			_x setVariable ["looted",_dateNow,true];
 			_handle = [_x] spawn building_spawnLoot;
 			waitUntil{scriptDone _handle};
