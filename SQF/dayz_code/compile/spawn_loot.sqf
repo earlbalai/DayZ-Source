@@ -4,9 +4,6 @@ _iClass = 	_this select 1;
 _iPos =	_this select 2;
 _radius =	_this select 3;
 
-_iPosL = _iPos select 2;
-if( _iPosL < 0 ) then  { _iPos = [_iPos select 0,_iPos select 1,0]; };
-
 switch (_iClass) do {
 	default {
 		//Item is food, add random quantity of cans along with an item (if exists)
@@ -55,6 +52,10 @@ switch (_iClass) do {
 // timestamp for later clearing
 _dateNow = (DateToNumber date);
 _item setVariable ["looted",_dateNow,true];
+
+
+_iPosL = _iPos select 2;
+if( _iPosL < 0 ) then  { _iPos = [_iPos select 0,_iPos select 1,1]; };
 */
 
 if ((count _iPos) > 2) then {
