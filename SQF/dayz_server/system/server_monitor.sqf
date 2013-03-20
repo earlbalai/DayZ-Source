@@ -63,7 +63,7 @@ if (_script != "") then
 			_hitPoints=	_x select 6;
 			_fuel =		_x select 7;
 			_damage = 	_x select 8;
-
+/*
 			_dir = 0;
 			_pos = [0,0,0];
 			_wsDone = false;
@@ -77,11 +77,11 @@ if (_script != "") then
 			};			
 			if (!_wsDone) then {
 				if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
-				_pos = [getMarkerPos "center",0,4000,10,0,2000,0] call BIS_fnc_findSafePos;
+				_pos = [getMarkerPos "center",0,50,10,0,2000,0] call BIS_fnc_findSafePos;
 				if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
 				diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 			};
-			
+*/			
 			if (_damage < 1) then {
 				diag_log format["OBJ: %1 - %2", _idKey,_type];
 				
