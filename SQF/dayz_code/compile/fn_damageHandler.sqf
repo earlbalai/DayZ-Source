@@ -1,11 +1,13 @@
 scriptName "Functions\misc\fn_damageHandler.sqf";
 /***********************************************************
+
+	Modifyed by Alby
+
 	PROCESS DAMAGE TO A UNIT
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_unit","_hit","_damage","_unconscious","_source","_ammo","_type","_isMinor","_isHeadHit","_evType","_recordable","_isPlayer","_humanityHit","_myKills","_unitIsPlayer","_display","_control","_canHitFree","_isBandit","_scale","_wound","_isHit","_rndPain","_rndInfection","_hitPain","_hitInfection","_id","_isInjured","_lowBlood","_isCardiac"];
-
+private["_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -20,34 +22,18 @@ _recordable = false;
 _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
-_unitIsPlayer = _unit == player;
+
+_sourceZombie = _source isKindOf "zZombie_base";
+_bloodPercentage = (r_player_blood / r_player_bloodTotal);
 
 //Publish Damage
 	//player sidechat format["Processed damage for %1",_unit];
 	//USEC_SystemMessage = format["CLIENT: %1 damaged for %2 (in vehicle: %5)",_unit,_damage,_isMinor,_isHeadHit,_inVehicle];
 	//PublicVariable "USEC_SystemMessage";
 
-/*
-if (_isPlayer) then {
-	if (_damage > 0.1) then {
-		dayz_canDisconnect = false;
-		//["dayzDiscoAdd",getPlayerUID player] call callRpcProcedure;
-		dayzDiscoAdd = getPlayerUID player;
-		publicVariable "dayzDiscoAdd";
-				
-		dayz_damageCounter = time;
-		
-		//Ensure Control is visible
-		_display = uiNamespace getVariable 'DAYZ_GUI_display';
-		_control = 	_display displayCtrl 1204;
-		_control ctrlShow true;
-	};
-};
-*/
-
-if (_unitIsPlayer) then {
+if (_unit == player) then {
 	if (_hit == "") then {
-		if ((_source != player) and _isPlayer) then {			
+		if ((_source != player) and _isPlayer) then {
 			//Enable aggressor Actions
 			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];	
@@ -58,19 +44,22 @@ if (_unitIsPlayer) then {
 				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
 				_humanityHit = -(_myKills * _damage);
-				//["dayzHumanity",[_source,_humanityHit,30]] call broadcastRpcCallAll;
-				dayzHumanity = [_this select 0,_this select 1,30];
-				publicVariable "dayzHumanity";
+				
+					dayzHumanity = [_this select 0,_this select 1,30];
+					publicVariable "dayzHumanity";
 			};
 		};
 	};
 };
 
-//PVP Damage
+//Pure blood damage
 _scale = 200;
 if (_damage > 0.4) then {
 	if (_ammo != "zombie") then {
 		_scale = _scale + 50;
+	};
+	if (_ammo == "zombie") then {
+		_scale = _scale + 500;
 	};
 	if (_isHeadHit) then {
 		_scale = _scale + 500;
@@ -85,11 +74,15 @@ if (_damage > 0.4) then {
 		case 1: {_scale = _scale + 200};
 		case 2: {_scale = _scale + 200};
 	};
-	if (_unitIsPlayer) then {
-		//Cause blood loss
-		//Log Damage
+	if (_unit == player) then {
 		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
 		r_player_blood = r_player_blood - (_damage * _scale);
+	};
+};
+
+if ((_damage > 0.7) and (_ammo == "zombie")) then {
+	if ((direction _unit - direction _zombie < 10) and (direction _unit - direction _zombie > -10)) then {
+		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver
 	};
 };
 
@@ -109,15 +102,13 @@ if (_hit in USEC_MinorWounds) then {
 	};
 };
 
-
-if (_unitIsPlayer) then {
+if (_unit == player) then {
 //incombat
 	_unit setVariable["startcombattimer", 1, false];	
 };
-
+//Shake the cam, frighten them!
 if (_damage > 0.1) then {
-	if (_unitIsPlayer) then {
-		//shake the cam, frighten them!
+	if (_unit == player) then {
 		//player sidechat format["Processed bullet hit for %1 (should only be for me!)",_unit];
 		1 call fnc_usec_bulletHit;
 	};
@@ -125,46 +116,35 @@ if (_damage > 0.1) then {
 		_unit setVariable["medForceUpdate",true,true];
 	};
 };
+
 if (_damage > 0.4) then {	//0.25
-	/*
-		BLEEDING
-	*/		
-	_wound = _hit call fnc_usec_damageGetWound;
-	_isHit = _unit getVariable[_wound,false];
-	if (_unitIsPlayer) then {	
-		_rndPain = 		(random 10);
-		_rndInfection = (random 500);
-		_hitPain = 		(_rndPain < _damage);
-		if ((_isHeadHit) or (_damage > 1.2 and _hitPain)) then {
-			_hitPain = true;
-		};
-		_hitInfection = (_rndInfection < 1);
-		//player sidechat format["HitPain: %1, HitInfection %2 (Damage: %3)",_rndPain,_rndInfection,_damage]; //r_player_infected
-		if (_isHit) then {
-			//Make hit worse
-			if (_unitIsPlayer) then {
-				r_player_blood = r_player_blood - 50;
-			};
-		};
-		if (_hitInfection) then {
-			//Set Infection if not already
-			if (_unitIsPlayer) then {
+	//Pain and Infection
+	if (_unit == player) then {
+		_hitPain = (((_damage * _damage) min 0.75) > _bloodPercentage);
+		
+		//Infection from zombies
+		if (_ammo == "zombie") then {
+			_rndInfection = random (_damage - _bloodPercentage);
+			_hitInfection = ((exp _rndInfection) > 1.6);
+			if (_hitInfection) then {
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
-			
 		};
+		
 		if (_hitPain) then {
-			//Set Pain if not already
-			if (_unitIsPlayer) then {
-				r_player_inpain = true;
-				player setVariable["USEC_inPain",true,true];
-			};
+			r_player_inpain = true;
+			player setVariable["USEC_inPain",true,true];
 		};
 		if ((_damage > 1.5) and _isHeadHit) then {
 			_id = [_source,"shothead"] spawn player_death;
 		};
 	};
+	
+	//Create wound and cause bleed
+	_wound = _hit call fnc_usec_damageGetWound;
+	_isHit = _unit getVariable[_wound,false];
+	
 	if(!_isHit) then {
 		//Create Wound
 		_unit setVariable[_wound,true,true];
@@ -176,7 +156,7 @@ if (_damage > 0.4) then {	//0.25
 		_isInjured = _unit getVariable["USEC_injured",false];
 		if (!_isInjured) then {
 			_unit setVariable["USEC_injured",true,true];
-			if ((_unitIsPlayer) and (_ammo != "zombie")) then {
+			if ((_unit == player) and (_ammo != "zombie")) then {
 				dayz_sourceBleeding = _source;
 			};
 		};
@@ -185,7 +165,7 @@ if (_damage > 0.4) then {	//0.25
 		if (!_lowBlood) then {
 			_unit setVariable["USEC_lowBlood",true,true];
 		};
-		if (_unitIsPlayer) then {
+		if (_unit == player) then {
 			r_player_injured = true;
 		};
 	};
@@ -194,13 +174,13 @@ if (_type == 1) then {
 	/*
 		BALISTIC DAMAGE		
 	*/		
-	if ((_damage > 0.01) and (_unitIsPlayer)) then {
+	if ((_damage > 0.01) and (_unit == player)) then {
 		//affect the player
 		[20,45] call fnc_usec_pitchWhine; //Visual , Sound
 	};
 	if (_damage > 4) then {
 		//serious ballistic damage
-		if (_unitIsPlayer) then {
+		if (_unit == player) then {
 			_id = [_source,"explosion"] spawn player_death;
 		};
 	} else {
@@ -233,7 +213,15 @@ if (_type == 2) then {
 	};
 };
 
-if (!_unconscious and !_isMinor and ((_damage > 2) or ((_damage > 0.5) and _isHeadHit))) then {
-	//set unconsious
-	[_unit,_damage] call fnc_usec_damageUnconscious;
+if (!_unconscious and !_isMinor and _isHeadHit) then {
+	if (_ammo != "zombie" and _damage > 0.5) then { 
+		[_unit,_damage] call fnc_usec_damageUnconscious;
+	};
+	if (_ammo == "zombie" and _damage > (_bloodPercentage + 0.1)) then {
+		if ((_damage - _bloodPercentage) > 0.2) then {
+			[_unit,(_damage - _bloodPercentage)] call fnc_usec_damageUnconscious;
+		};
+	};
+	
+	
 };

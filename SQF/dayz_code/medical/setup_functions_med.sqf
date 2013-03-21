@@ -28,15 +28,14 @@ fnc_usec_pitchWhine = {
 	};
 };
 
+//Modifyed by Alby
 fnc_usec_damageUnconscious = {
 	private["_unit","_damage"];
 	_unit = _this select 0;
 	_damage = _this select 1;
 	_inVehicle = (vehicle _unit != _unit);
 	if (_unit == player) then {
-		r_player_timeout = round(((random 2) * _damage) * 40);
-		if (_type == 1) then {r_player_timeout = r_player_timeout + 90};
-		if (_type == 2) then {r_player_timeout = r_player_timeout + 60};
+		r_player_timeout = round((((random 2) max 0.1) * _damage) * 20);
 		r_player_unconscious = true;
 		player setVariable["medForceUpdate",true,true];
 		player setVariable ["unconsciousTime", r_player_timeout, true];
