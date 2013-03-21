@@ -31,18 +31,18 @@ dayz_CLChances = [];
 dayz_CLBase = [];
 _config = configFile >> "cfgLoot";
 for "_i" from 0 to ((count (_config)) - 1) do {
-	_itemChances = (getArray (_config select _i)) select 1;
+	_itemChances = getArray (_config select _i);
 	_weighted = [];
 	_j = 0;
 	for "_l" from 0 to ((count _itemChances) - 1) do {
-		_weight = round ((_itemChances select _l) * 100);
+		_weight = round (((_itemChances select _l) select 1) * 100);
 		for "_k" from 0 to _weight - 1 do {
 			_weighted set [_j + _k, _l];
 		};
 		_j = _j + _weight;
 	};
 	dayz_CLBase set [count dayz_CLBase, configName (_config select _i)];
-	dayz_CLChances set [count dayz_CLChances, _weighted];		
+	dayz_CLChances set [count dayz_CLChances, _weighted];
 };
 
 private["_i","_type","_config","_canZombie","_canLoot"];
