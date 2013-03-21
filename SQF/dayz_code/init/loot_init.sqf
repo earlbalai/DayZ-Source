@@ -5,14 +5,14 @@ dayz_CBLBase = [];
 _config = configFile >> "CfgBuildingLoot";
 for "_i" from 0 to ((count _config) - 1) do {
 	_classname = configName (_config select _i);
-	_itemChances = [] + getArray (_config >> _classname >> "ItemChance");
+	_itemChances = getArray (_config >> _classname >> "lootType");
 	_itemCount = count _itemChances;
 	if (_itemCount > 0) then {
 		if (dayz_CBLBase find _classname < 0) then {
 			_weighted = [];
 			_j = 0;
 			for "_l" from 0 to ((count _itemChances) - 1) do {
-			_weight = round ((_itemChances select _l) * 100);
+			_weight = round (((_itemChances select _l) select 2) * 100);
 				for "_k" from 0 to _weight - 1 do {
 					_weighted set [_j + _k, _l];
 				};

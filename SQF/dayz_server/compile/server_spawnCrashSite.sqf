@@ -74,7 +74,7 @@ while {true} do {
 			publicVariable "dayzFire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
-		_itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "itemType");
+		_itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
 		_index = dayz_CBLBase  find _lootTable;
 		_weights =		dayz_CBLChances select _index;
 		_cntWeights = count _weights;

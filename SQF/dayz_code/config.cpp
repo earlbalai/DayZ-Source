@@ -274,8 +274,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"zZombie_Base","z_hunter","z_teacher","z_suit1","z_suit2","z_worker1","z_worker2","z_worker3","z_villager1","z_villager2","z_villager3"};
 		lootChance = 0;
 		lootPos[] = {};
-		itemType[] = {};
-		itemChance[] = {};
+		lootType[] = {};
 		hangPos[] = {};
 		vehPos[] = {};
 	};
