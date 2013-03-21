@@ -931,7 +931,7 @@ class CfgMagazines {
 		count = 1;
 		fuelQuantity = 5;
 		emptycan = "ItemFuelcanEmpty";
-		type = (256 * 3);
+		type = (256);
 		displayName = $STR_ITEM_NAME_FUELCAN;
 		descriptionShort = $STR_ITEM_DESC_FUELCAN;
 		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
@@ -942,7 +942,7 @@ class CfgMagazines {
 		count = 1;
 		fuelQuantity = 0;
 		fullcan = "ItemFuelcan";
-		type = (256 * 3);
+		type = (256);
 		displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
 		descriptionShort = $STR_ITEM_DESC_FUELCAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";

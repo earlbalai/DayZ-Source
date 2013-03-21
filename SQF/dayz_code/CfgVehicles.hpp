@@ -799,7 +799,7 @@ class CfgVehicles {
 		mapSize = 15;
 		displayName = "Crashed UH-1Y";
 		vehicleClass = "Wrecks";
-		class Turrets {};
+		class AnimationSources {};
 	};
 	class UH60Wreck_DZ: SpawnableWreck
 	{
@@ -808,7 +808,7 @@ class CfgVehicles {
 		mapSize = 15;
 		displayName = "UH-60 Wreck";
 		vehicleClass = "Wrecks";
-		class Turrets {};
+		class AnimationSources {};
 	};
 	class Mi8Wreck_DZ: SpawnableWreck
 	{
@@ -818,7 +818,7 @@ class CfgVehicles {
 		displayName = "Mi-8 Wreck";
 		vehicleClass = "Wrecks";
 		heightAdjustment = 1;
-		class Turrets {};
+		class AnimationSources {};
 	};
 	class HouseDZ: House {
 		class MarkerLights
@@ -1735,6 +1735,24 @@ class CfgVehicles {
 		class eventHandlers
 		{
 			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemFuelcanEmpty : WeaponHolderBase {
+		scope = public;
+		displayName = "5L Fuelcan Empty";
+		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','ItemFuelcanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemFuelcan : WeaponHolderBase {
+		scope = public;
+		displayName = "5L Fuelcan Full";
+		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','ItemFuelcan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 };
