@@ -7,6 +7,7 @@ _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
 _maxWildZombies = 3;
 _age = -1;
+_force = false;
 
 _nearbyBuildings = [];
 _radius = 200; 
@@ -45,11 +46,15 @@ switch (_nearbytype) do {
 };
 */
 
-_players = _position nearEntities ["AllPlayers",_radius+200];
+_players = _position nearEntities ["CAManBase",_radius+200];
+
 dayz_maxGlobalZombies = 40;
 {
-	dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
+	if (isPlayer _x) then {
+		dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
+	};
 } foreach _players;
+
 
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 dayz_spawnZombies = 0;
@@ -104,7 +109,7 @@ diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
 diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(_maxZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
 
-diag_log ("Audial Noise: " +str(DAYZ_disAudial));
+diag_log ("Audial Noise: " +str(DAYZ_disAudial * 2));
 
 };
 	
@@ -117,14 +122,20 @@ if (_nearbyCount < 1) exitwith
 //	};
 };
 
+//Make sure zeds always spawn no matter the timeout
+if (dayz_spawnZombies == 0) then {
+	_force = true;
+};
+
 {
 	_type = typeOf _x;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 	_canLoot = 		isClass (_config);
 	_dis = _x distance player;
+	_checkLoot = ((count (getArray (_config >> "lootPos"))) > 0);
 	
 	//Loot
-	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle) then {
+	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle and _checkLoot) then {
 		_looted = (_x getVariable ["looted",-0.1]);
 		_cleared = (_x getVariable ["cleared",true]);
 		_dateNow = (DateToNumber date);
@@ -141,7 +152,7 @@ if (_nearbyCount < 1) exitwith
 		};
 	};
 	//Zeds
-	if (((time - dayz_spawnWait) > dayz_spawnDelay) and !_inVehicle) then {
+	if ((((time - dayz_spawnWait) > dayz_spawnDelay) or _force) and !_inVehicle) then {
 		if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
 			if (dayz_spawnZombies < _maxZombies) then {
 					//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
