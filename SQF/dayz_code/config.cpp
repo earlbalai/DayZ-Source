@@ -337,7 +337,8 @@ class CfgBuildingLoot {
 			{"Skin_Sniper1_DZ","magazine",0.01},
 			{"WeaponHolder_ItemCrowbar","object",0.08},
 			{"MR43","weapon",0.03},
-			{"ItemBookBible","magazine",0.02}
+			{"ItemBookBible","magazine",0.02},
+			{"WeaponHolder_ItemFuelcan","object",0.03}
 		
 		};
 	};
@@ -366,7 +367,8 @@ class CfgBuildingLoot {
 			{"ItemKnife","military",0.07},
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
-			{"ItemTankTrap","magazine",0.04}
+			{"ItemTankTrap","magazine",0.04},
+			{"WeaponHolder_ItemFuelcan","object",0.03}
 		};
 	};
 	class Farm: Default {
