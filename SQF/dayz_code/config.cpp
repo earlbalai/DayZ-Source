@@ -29,6 +29,12 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {"CAUI"};
 	};
+	class compass {
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 1.0;
+		requiredAddons[] = {"CAData", CAUI};
+	};
 };
 
 class CfgMods
@@ -186,19 +192,6 @@ class CfgInGameUI
 				colorBg[] = {0,0,0,0}; //{0.1,0.35,0.1,0.9};
 				picture = ""; //"\ca\ui\data\stats_total_ca.paa";
 			};
-		};
-	};
-};
-class RscObject;
-
-class RscCompass : RscObject {
-	scale = 0.64;
-};
-
-class RscDisplayMainMap {
-	class objects {
-		class Compass : RscObject {
-			scale = 0.5;
 		};
 	};
 };
