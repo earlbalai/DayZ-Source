@@ -49,6 +49,7 @@ FIX DUE : 2013
 		* [UPDATED] - Zed generate system to make sure spawn locations are picked before being created this should stop zeds apearing in front of players then being moved
 		* [UPDATED] - Zed attacks updated to make them less random. (ie frist hit from full hp will no longer put you unconcious)
 		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possiable dmg if headshot = 1700 blood, Max body dmg = 700 blood)
+		* [UPDATED] - Bleed from zed attacks will now only happen if the initaial dmg is aboue 0.8 or the zed gives a head shot. (should reduce the amount of banages needed)
 		
 ______________________		
 FIX DUE : 2013
