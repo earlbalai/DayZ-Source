@@ -34,7 +34,7 @@ switch (_iClass) do {
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if ((count _mags) > 0) then {
 			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
-			_item addMagazineCargoGlobal [(_mags select 0), (round(random 3))];
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 3) + 1)];
 		};
 	};
 	case "magazine": {
