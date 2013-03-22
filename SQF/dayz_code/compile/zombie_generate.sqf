@@ -25,13 +25,13 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 _radius = 40;
 _method = "NONE";
 
-_nearByPlayer = ({isPlayer _x} count (_position nearEntities [["CAManBase"],30]) > 0);
+_nearByPlayer = ({isPlayer _x} count (_position nearEntities [["CAManBase"],45]) > 0);
 
 if (_nearByPlayer) then {
 	_attempt = 0;
 	while {_nearByPlayer} do {
-		_position = [_position,0,45,10,0,20,0] call BIS_fnc_findSafePos;
-		_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",30]) > 0);
+		_position = [_position,45,90,10,0,20,0] call BIS_fnc_findSafePos;
+		_nearByPlayer = ({isPlayer _x} count (_position nearEntities ["CAManBase",45]) > 0);
 		_attempt = _attempt + 1;
 		if (_attempt > 10) exitWith {};
 	};
