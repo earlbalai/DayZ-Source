@@ -75,7 +75,8 @@ if (_damage > 0.4) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unit == player) then {
-		//diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		//player sidechat format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled %5", typeOf _source, _hit, _ammo, _damage, _damage * _scale];
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };
@@ -106,6 +107,7 @@ if (_unit == player) then {
 //incombat
 	_unit setVariable["startcombattimer", 1, false];	
 };
+
 //Shake the cam, frighten them!
 if (_damage > 0.1) then {
 	if (_unit == player) then {
@@ -131,7 +133,6 @@ if (_damage > 0.4) then {	//0.25
 				player setVariable["USEC_infected",true,true];
 			};
 		};
-		
 		if (_hitPain) then {
 			r_player_inpain = true;
 			player setVariable["USEC_inPain",true,true];
@@ -145,28 +146,55 @@ if (_damage > 0.4) then {	//0.25
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable[_wound,false];
 	
-	if(!_isHit) then {
-		//Create Wound
-		_unit setVariable[_wound,true,true];
-		[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-		usecBleed = [_unit,_wound,_hit];
-		publicVariable "usecBleed";
+	if (_ammo == "zombie") then {
+		if(!_isHit and ((_damage > 0.8) or _isHeadHit)) then {
+			//Create Wound
+			_unit setVariable[_wound,true,true];
+			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
+			usecBleed = [_unit,_wound,_hit];
+			publicVariable "usecBleed";
 
-		//Set Injured if not already
-		_isInjured = _unit getVariable["USEC_injured",false];
-		if (!_isInjured) then {
-			_unit setVariable["USEC_injured",true,true];
-			if ((_unit == player) and (_ammo != "zombie")) then {
-				dayz_sourceBleeding = _source;
+			//Set Injured if not already
+			_isInjured = _unit getVariable["USEC_injured",false];
+			if (!_isInjured) then {
+				_unit setVariable["USEC_injured",true,true];
+				if ((_unit == player) and (_ammo != "zombie")) then {
+					dayz_sourceBleeding = _source;
+				};
+			};
+			//Set ability to give blood
+			_lowBlood = _unit getVariable["USEC_lowBlood",false];
+			if (!_lowBlood) then {
+				_unit setVariable["USEC_lowBlood",true,true];
+			};
+			if (_unit == player) then {
+				r_player_injured = true;
 			};
 		};
-		//Set ability to give blood
-		_lowBlood = _unit getVariable["USEC_lowBlood",false];
-		if (!_lowBlood) then {
-			_unit setVariable["USEC_lowBlood",true,true];
-		};
-		if (_unit == player) then {
-			r_player_injured = true;
+	} else {
+		if(!_isHit) then {
+			//Create Wound
+			_unit setVariable[_wound,true,true];
+			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
+			usecBleed = [_unit,_wound,_hit];
+			publicVariable "usecBleed";
+
+			//Set Injured if not already
+			_isInjured = _unit getVariable["USEC_injured",false];
+			if (!_isInjured) then {
+				_unit setVariable["USEC_injured",true,true];
+				if ((_unit == player) and (_ammo != "zombie")) then {
+					dayz_sourceBleeding = _source;
+				};
+			};
+			//Set ability to give blood
+			_lowBlood = _unit getVariable["USEC_lowBlood",false];
+			if (!_lowBlood) then {
+				_unit setVariable["USEC_lowBlood",true,true];
+			};
+			if (_unit == player) then {
+				r_player_injured = true;
+			};
 		};
 	};
 };
