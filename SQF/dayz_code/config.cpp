@@ -593,7 +593,7 @@ class CfgBuildingLoot {
 			{"","medical",0.1},
 			{"","generic",1.0},
 			{"","military",2.5},
-			//{"Body","object",0.0},
+			//{"Body","object",0.2},
 			{"ItemEtool","weapon",0.5},
 			{"ItemSandbag","magazine",0.2},
 			{"Sa58P_EP1","weapon",0.3},
