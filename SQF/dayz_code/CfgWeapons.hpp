@@ -315,8 +315,8 @@ class CfgWeapons {
 		cursor = "RifleCursor";
 		cursoraim = "Foresight";
 	};
-	class Rifle;	// External class reference
-	class BAF_AS50_scoped : Rifle {
+	class BAF_AS50_scoped;	// External class reference
+	class BAF_AS50_scoped_DZ : BAF_AS50_scoped {
 		displayname = "AS50_DZ";
 		type = "1";
 		canlock = 0;
