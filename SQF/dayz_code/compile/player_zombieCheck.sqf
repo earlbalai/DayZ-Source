@@ -8,12 +8,11 @@ _multiplier = 1;
 
 {
 	_type = "zombie";
-	_targets = _group getVariable ["targets",[]];
-
 	if (alive _x) then {
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
+		_targets = _group getVariable ["targets",[]];
 
 		_chance = 1;
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
@@ -36,10 +35,11 @@ _multiplier = 1;
 				};
 			};
 		};
+		
 		//Noise Activation
 		if (!(_refObj in _targets)) then {
 			if (_dist < (DAYZ_disAudial * 2)) then {
-				if (DAYZ_disAudial > 10) then {
+				if (DAYZ_disAudial > 20) then {
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
 				//} else {
