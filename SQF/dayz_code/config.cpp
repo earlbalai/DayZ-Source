@@ -98,6 +98,18 @@ class CfgAISkill {
 	spottime[] = {0, 0, 1, 1};
 };
 
+class RscObject;
+class RscCompass : RscObject {
+	scale = 0.64;
+};
+
+class RscDisplayMainMap {
+	class objects {
+		class Compass : RscObject {
+			scale = 0.5;
+		};
+	};
+};
 class CfgInGameUI
 {
     class PeripheralVision
@@ -177,7 +189,19 @@ class CfgInGameUI
 		};
 	};
 };
+class RscObject;
 
+class RscCompass : RscObject {
+	scale = 0.64;
+};
+
+class RscDisplayMainMap {
+	class objects {
+		class Compass : RscObject {
+			scale = 0.5;
+		};
+	};
+};
 class RscPictureGUI
 {
 	access = 0;
