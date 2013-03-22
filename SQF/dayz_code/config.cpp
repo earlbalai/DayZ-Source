@@ -583,22 +583,22 @@ class CfgBuildingLoot {
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.05},
 			
-			{"DZ_ALICE_Pack_EP1","object",0.0}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object",0.0}, // 16
-			{"DZ_British_ACU","object",0.0}, // 18
-			{"DZ_CivilBackpack_EP1","object",0.0}, // 24
-			{"DZ_Backpack_EP1","object",0.0}, // 24
+			{"DZ_ALICE_Pack_EP1","object",0.08}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object",0.08}, // 16
+			{"DZ_British_ACU","object",0.06}, // 18
+			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
+			{"DZ_Backpack_EP1","object",0.01}, // 24
 			
 			//Normal
-			{"","medical",0.0},
-			{"","generic",0.0},
-			{"","military",0.0},
+			{"","medical",0.1},
+			{"","generic",1.0},
+			{"","military",2.5},
 			//{"Body","object",0.0},
-			{"ItemEtool","weapon",0.0},
-			{"ItemSandbag","magazine",0.0},
-			{"Sa58P_EP1","weapon",0.0},
-			{"Sa58V_EP1","weapon",0.0},
-			{"BAF_L85A2_RIS_Holo","weapon",0.0}
+			{"ItemEtool","weapon",0.5},
+			{"ItemSandbag","magazine",0.2},
+			{"Sa58P_EP1","weapon",0.3},
+			{"Sa58V_EP1","weapon",0.3},
+			{"BAF_L85A2_RIS_Holo","weapon",0.1}
 		};
 	};
 	class MilitarySpecial: Default {
