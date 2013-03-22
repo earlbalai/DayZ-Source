@@ -48,7 +48,7 @@ switch (_nearbytype) do {
 
 _players = _position nearEntities ["CAManBase",_radius+200];
 
-dayz_maxGlobalZombies = 40;
+dayz_maxGlobalZombies = 30;
 {
 	if (isPlayer _x) then {
 		dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
