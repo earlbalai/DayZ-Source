@@ -926,12 +926,23 @@ class CfgMagazines {
 		type = 256;
 	};
 	
+	class ItemJerrycan : CA_Magazine {
+		emptycan = "ItemJerrycanEmpty";
+		displayName = $STR_ITEM_NAME_JERRYCAN;
+		descriptionShort = $STR_ITEM_DESC_JERRYCAN;
+	}; 
+
+	class ItemJerrycanEmpty : ItemJerrycan {
+		fullcan = "ItemJerrycan";
+		displayName = $STR_ITEM_NAME_JERRYCAN_EMPTY;
+		descriptionShort = $STR_ITEM_DESC_JERRYCAN_EMPTY;
+	};
 	class ItemFuelcan : CA_Magazine {
 		scope = public;
 		count = 1;
 		fuelQuantity = 5;
 		emptycan = "ItemFuelcanEmpty";
-		type = (256);
+		type = 256;
 		displayName = $STR_ITEM_NAME_FUELCAN;
 		descriptionShort = $STR_ITEM_DESC_FUELCAN;
 		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
@@ -942,7 +953,7 @@ class CfgMagazines {
 		count = 1;
 		fuelQuantity = 0;
 		fullcan = "ItemFuelcan";
-		type = (256);
+		type = 256;
 		displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
 		descriptionShort = $STR_ITEM_DESC_FUELCAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";

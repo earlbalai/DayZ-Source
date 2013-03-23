@@ -1875,31 +1875,31 @@
 			<Czech>Kniha plná posvátných textů.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
-			<English>Fuelcan</English>
-			<German>Benzinkanister</German>
-			<Russian>Канистра</Russian>
-			<Spanish>Bidón Chico</Spanish>
-			<Dutch>Jerrycan</Dutch>
-			<French>Bidon de carburant</French>
-			<Czech>Kanystr</Czech>
+			<English>Fuelcan (5L)</English>
+			<German>Benzinkanister (5L)</German>
+			<Russian>Канистра (5л)</Russian>
+			<Spanish>Bidón Chico (5L)</Spanish>
+			<Dutch>Jerrycan (5L)</Dutch>
+			<French>Bidon de carburant (5L)</French>
+			<Czech>Kanystr (5L)</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN">
-			<English>A small can for gasoline.</English>
+			<English>A small 5-liter can for gasoline.</English>
 			<German>Ein kleiner Benzinkanister.</German>
-			<Russian>Небольшая емкость для топлива.</Russian>
+			<Russian>Небольшая пятилитровая емкость для топлива.</Russian>
 			<Spanish>Un envase pequeño para combustible lleno.</Spanish>
 			<Dutch>Een kleine kan voor benzine.</Dutch>
 			<French>Un petit bidon de carburant.</French>
 			<Czech>Menší kanystr s palivem.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
-			<English>Fuelcan (Empty)</English>
-			<German>Benzinkanister (Leer)</German>
-			<Russian>Канистра (пустая)</Russian>
-			<Spanish>Bidón Chico (Vacío)</Spanish>
-			<Dutch>Jerrycan (Empty)</Dutch>
-			<French>Bidon (Vide)</French>
-			<Czech>Kanystr (Prázdný)</Czech>
+			<English>Empty Fuelcan (5L)</English>
+			<German>Benzinkanister (5L) (Leer)</German>
+			<Russian>Пустая канистра (5л)</Russian>
+			<Spanish>Bidón Chico (5L) (Vacío)</Spanish>
+			<Dutch>Jerrycan (5L) (Empty)</Dutch>
+			<French>Bidon (5L) (Vide)</French>
+			<Czech>Kanystr (5L) (Prázdný)</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
 			<English>A small can for gasoline.</English>
@@ -1909,6 +1909,30 @@
 			<Dutch>Een kleine kan voor benzine.</Dutch>
 			<French>Un petit bidon pour le carburant.</French>
 			<Czech>Menší kanystr pro palivo.</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_JERRYCAN">	
+			<Original>Jerry Can (20L)</Original>
+			<English>Jerry Can (20L)</English>
+			<German>Kanister (20L)</German>
+			<Russian>Канистра (20л)</Russian>
+		</Key>						
+		<Key ID="STR_ITEM_DESC_JERRYCAN">						
+			<Original>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Original>	
+			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
+			<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
+			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
+			<Original>Empty Jerry Can (20L)</Original>
+			<English>Empty Jerry Can (20L)</English>
+			<German>Leerer Kanister (20L)</German>
+			<Russian>Пустая канистра (20л)</Russian>
+		</Key>
+		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
+			<Original>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Original>	
+			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>	
+			<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
+			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
 		</Key>
 	</Package>
 	<Package name="feedback">
