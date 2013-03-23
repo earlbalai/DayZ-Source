@@ -47,10 +47,9 @@ FIX DUE : 2013
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded Save option to tent and vehilces this is a fail save option. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
 		* [UPDATED] - Zed generate system to make sure spawn locations are picked before being created this should stop zeds apearing in front of players then being moved
-		* [UPDATED] - Zed attacks updated to make them less random. (ie frist hit from full hp will no longer put you unconcious)
-		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possiable dmg if headshot = 1700 blood, Max body dmg = 700 blood)
-		* [UPDATED] - Bleed from zed attacks will now only happen if the initaial dmg is aboue 0.8 or the zed gives a head shot. (should reduce the amount of banages needed)
-		
+		* [UPDATED] - Zed attacks updated to make them less random. (ie first hit from full hp will no longer put you unconscious)
+		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg if headshot = 1700 blood, Max body dmg = 700 blood)
+		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.8 or the zed gives a head shot. (should reduce the amount of bandages needed)
 ______________________		
 FIX DUE : 2013
 
