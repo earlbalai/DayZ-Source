@@ -940,8 +940,8 @@ class CfgBuildingLoot {
 			0.01, //24
 			0.01, //DZ_Backpack_EP1 24
 			0.30,
-			1.00,
-			5.00, //military
+			0.10,
+			0.10, //military
 			//0.20,
 			0.01, //PipeBomb
 			0.01, //Sa58V_RCO_EP1
@@ -975,10 +975,10 @@ class CfgBuildingLoot {
 			0.04,
 			0.06,
 			0.03,
-			2.00,
+			0.10,
 			0.03,
 			0.04,
-			3.00
+			0.10
 		};
 	};	
 
