@@ -76,7 +76,6 @@ if (_damage > 0.4) then {
 	};
 	if (_unit == player) then {
 		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
-		//player sidechat format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled %5", typeOf _source, _hit, _ammo, _damage, _damage * _scale];
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };
