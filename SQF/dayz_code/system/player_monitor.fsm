@@ -16,7 +16,7 @@ item11[] = {"Make_PlayerID",2,250,-200.000000,175.000000,-100.000000,225.000000,
 item12[] = {"Has_PlayerID",4,218,-75.000000,175.000000,25.000000,225.000000,1.000000,"Has PlayerID"};
 item13[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000000,"no PlayerID"};
 item14[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
-item15[] = {"Request",2,250,-75.000000,250.000000,25.000000,300.000000,0.000000,"Request"};
+item15[] = {"Request",2,4346,-75.000000,250.000000,25.000000,300.000000,0.000000,"Request"};
 item16[] = {"Response",4,218,-175.000000,300.000000,-75.000000,350.000000,0.000000,"Response"};
 item17[] = {"Parse_Login",2,250,-75.000000,350.000000,25.000000,400.000000,0.000000,"Parse Login"};
 item18[] = {"Hive_Bad",4,218,50.000000,350.000000,150.000000,400.000000,10.000000,"Hive" \n "Bad"};
@@ -36,7 +36,7 @@ item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
 item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -54,6 +54,7 @@ item49[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000
 item50[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
 item51[] = {"Stream",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Stream"};
 item52[] = {"Preloaded",4,218,-175.000000,800.000000,-75.000000,850.000000,0.000000,"Preloaded"};
+item53[] = {"____FAKE____",9,2120,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -64,58 +65,57 @@ link6[] = {5,4};
 link7[] = {6,7};
 link8[] = {7,8};
 link9[] = {8,9};
-link10[] = {9,10};
-link11[] = {9,12};
-link12[] = {9,13};
-link13[] = {10,11};
-link14[] = {11,12};
-link15[] = {12,15};
-link16[] = {13,14};
-link17[] = {14,38};
-link18[] = {15,16};
-link19[] = {16,17};
-link20[] = {17,18};
-link21[] = {17,20};
-link22[] = {17,44};
-link23[] = {18,19};
-link24[] = {19,39};
-link25[] = {20,21};
-link26[] = {21,22};
-link27[] = {22,23};
-link28[] = {23,24};
-link29[] = {23,26};
-link30[] = {24,25};
-link31[] = {25,40};
-link32[] = {26,27};
-link33[] = {27,28};
-link34[] = {27,30};
-link35[] = {28,51};
-link36[] = {29,32};
-link37[] = {30,31};
-link38[] = {31,41};
-link39[] = {32,33};
-link40[] = {33,34};
-link41[] = {34,35};
-link42[] = {35,37};
-link43[] = {37,36};
-link44[] = {38,14};
-link45[] = {39,19};
-link46[] = {40,25};
-link47[] = {41,31};
-link48[] = {42,6};
-link49[] = {42,48};
-link50[] = {43,42};
-link51[] = {44,45};
-link52[] = {45,46};
-link53[] = {46,47};
-link54[] = {47,20};
-link55[] = {48,49};
-link56[] = {49,50};
-link57[] = {50,49};
-link58[] = {51,52};
-link59[] = {52,29};
-globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-120.449966,114.763817,1218.285400,545.801941,227,649,1};
-window[] = {0,-1,-1,-1,-1,802,22,1394,22,1,244};
+link10[] = {9,12};
+link11[] = {9,13};
+link12[] = {10,11};
+link13[] = {12,15};
+link14[] = {13,14};
+link15[] = {14,38};
+link16[] = {15,16};
+link17[] = {16,17};
+link18[] = {17,18};
+link19[] = {17,20};
+link20[] = {17,44};
+link21[] = {18,19};
+link22[] = {19,39};
+link23[] = {20,21};
+link24[] = {21,22};
+link25[] = {22,23};
+link26[] = {23,24};
+link27[] = {23,26};
+link28[] = {24,25};
+link29[] = {25,40};
+link30[] = {26,27};
+link31[] = {27,28};
+link32[] = {27,30};
+link33[] = {28,51};
+link34[] = {29,32};
+link35[] = {30,31};
+link36[] = {31,41};
+link37[] = {32,33};
+link38[] = {33,34};
+link39[] = {34,35};
+link40[] = {35,37};
+link41[] = {37,36};
+link42[] = {38,14};
+link43[] = {39,19};
+link44[] = {40,25};
+link45[] = {41,31};
+link46[] = {42,6};
+link47[] = {42,48};
+link48[] = {43,42};
+link49[] = {44,45};
+link50[] = {45,46};
+link51[] = {46,47};
+link52[] = {47,20};
+link53[] = {48,49};
+link54[] = {49,50};
+link55[] = {50,49};
+link56[] = {51,52};
+link57[] = {52,29};
+link58[] = {53,10};
+globals[] = {25.000000,1,0,0,0,640,480,1,81,6316128,1,-228.558609,222.872025,581.315918,-357.976563,285,593,1};
+window[] = {2,-1,-1,-32000,-32000,846,66,1438,66,1,302};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -131,9 +131,11 @@ class FSM
        "" \n
        "0 fadeSound 0;" \n
        "//player setPosATL [-2148,6655,0];" \n
+       "" \n
        "progressLoadingScreen 0.1;" \n
+       "" \n
        "_timeStart = time;" \n
-       "player enableSimulation false;" \n
+       "//player enableSimulation false;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -190,6 +192,7 @@ class FSM
        "diag_log (""PLOGIN: Initating"");" \n
        "" \n
        "dayz_loadScreenMsg = (localize ""str_player_13""); " \n
+       "" \n
        "progressLoadingScreen 0.2;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -324,22 +327,13 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Player Ready"");" \n
        "" \n
        "dayz_loadScreenMsg = (localize ""str_player_13""); " \n
+       "" \n
        "progressLoadingScreen 0.3;" \n
        "" \n
        "_playerUID = getPlayerUID player;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "Single_Player">*/
-        class Single_Player
-        {
-          priority = 3.000000;
-          to="Make_PlayerID";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"count playableUnits == 0 and isServer"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "no_PlayerID">*/
         class no_PlayerID
         {
@@ -374,16 +368,6 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "Has_PlayerID">*/
-        class Has_PlayerID
-        {
-          priority = 1.000000;
-          to="Request";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(isNil ""_playerUID"")"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
@@ -419,11 +403,10 @@ class FSM
        "" \n
        "diag_log (""PLOGIN: Requesting Authentication... ("" + _playerUID + "")"");" \n
        "dayz_loadScreenMsg = (localize ""str_player_15"");" \n
+       "" \n
        "progressLoadingScreen 0.5;" \n
        "" \n
        "_msg = [];" \n
-       "" \n
-       "//[""dayzLogin"",[_playerUID,player]] call callRpcProcedure;" \n
        "" \n
        "dayzLogin = [_playerUID,player];" \n
        "publicVariable ""dayzLogin"";" \n
@@ -1163,8 +1146,11 @@ class FSM
     class Enable_Sim
     {
       name = "Enable_Sim";
-      init = /*%FSM<STATEINIT""">*/"_myAnim = getNumber(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""isUpdated"");" \n
-       ""/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"diag_log (""PLOGIN: Enable Sim"");" \n
+       "" \n
+       "_myAnim = getNumber(configFile >> ""CfgPatches"" >> ""dayz_anim"" >> ""isUpdated"");" \n
+       "" \n
+       "player enableSimulation true;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1281,6 +1267,27 @@ class FSM
           to="Load_In";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"preloadCamera _setPos"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "____FAKE____">*/
+    class ____FAKE____
+    {
+      name = "____FAKE____";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Single_Player">*/
+        class Single_Player
+        {
+          priority = 3.000000;
+          to="Make_PlayerID";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count playableUnits == 0 and isServer"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
