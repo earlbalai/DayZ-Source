@@ -26,6 +26,7 @@ FIX DUE : 2013
 		* [NEW] - Vehicle Damage in Percent (With a Toolbox)
 		* [NEW] - 5L Fuel can takes 1 inv slot.
 		* [NEW] - Zeds can now push players to the ground when attacked from behind.
+		* [NEW] - Bigger Compass (You can see the number of degrees)
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
