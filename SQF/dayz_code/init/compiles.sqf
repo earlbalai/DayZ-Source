@@ -132,7 +132,7 @@ if (!isDedicated) then {
 
 			diag_log "DEBUG: loadscreen guard ended with timeout.";
 			disableUserInput false;
-			1 cutText ["Something went wrong! disconnect and try again!", "PLAIN"];
+			1 cutText ["Queued! You can continue to hold or disconnect and try again!", "PLAIN"];
 			player enableSimulation false;
 		} else { diag_log "DEBUG: loadscreen guard ended."; };
 	};
