@@ -21,12 +21,13 @@ FIX DUE : 2013
 		* [NEW] - Added new loot & table for church.
 		* [NEW] - Added new food and drink items (only found in supermarkets).
 		* [NEW] - Added model for a dropped map and watch.
-		* [NEW] - Weapon MakarovSD (Military, Military Special)
-		* [NEW] - Weapon RPK_74 (Mi8 Helicrash)
-		* [NEW] - Vehicle Damage in Percent (With a Toolbox)
+		* [NEW] - Weapon MakarovSD (Military, Military Special).
+		* [NEW] - Weapon RPK_74 (Mi8 Helicrash).
+		* [NEW] - Vehicle Damage in Percent (With a Toolbox).
 		* [NEW] - 5L Fuel can takes 1 inv slot.
 		* [NEW] - Zeds can now push players to the ground when attacked from behind.
-		* [NEW] - Bigger Compass (You can see the number of degrees)
+		* [NEW] - Bigger Compass (You can see the number of degrees).
+		* [NEW] - Added auth retry system to make sure clients are authed before they spawn (should stop seagull issue).
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
