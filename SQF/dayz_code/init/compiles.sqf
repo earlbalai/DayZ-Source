@@ -2,6 +2,7 @@
 	FUNCTION COMPILES
 */
 //Player only
+
 if (!isDedicated) then {
 	_config = 	configFile >> "CfgLoot";
 	_config1 = 	configFile >> "CfgMagazines" >> "FoodEdible";
@@ -97,10 +98,10 @@ if (!isDedicated) then {
 	player_spawn_2 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_2.sqf";
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
-	
-	
+
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
+	
 	[] spawn {
 		private["_timeOut","_display","_control1","_control2"];
 		disableSerialization;
@@ -128,11 +129,10 @@ if (!isDedicated) then {
 			sleep 0.1;
 		};
 		endLoadingScreen;
-		if ( !dayz_clientPreload ) then {
-
+		if ( !dayz_clientPreload && !dayz_authed ) then {
 			diag_log "DEBUG: loadscreen guard ended with timeout.";
 			disableUserInput false;
-			1 cutText ["Queued! You can continue to hold or disconnect and try again!", "PLAIN"];
+			1 cutText ["Disconnected!", "PLAIN"];
 			player enableSimulation false;
 		} else { diag_log "DEBUG: loadscreen guard ended."; };
 	};
