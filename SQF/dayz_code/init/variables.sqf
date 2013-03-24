@@ -438,6 +438,7 @@ if(!isDedicated) then {
 	dayz_playerName =		"Unknown";
 	dayz_sourceBleeding =	objNull;
 	dayz_clientPreload = 	false;
+	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
 	dayz_areaAffect =		2;
 	dayz_heartBeat = 		false;
