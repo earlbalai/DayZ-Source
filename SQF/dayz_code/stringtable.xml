@@ -2443,7 +2443,7 @@
 		<Key ID="str_player_32">
 			<English>Authentication Failed, Disconnect and try again</English>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Error de Autentificación. Desconectese y pruebe de nuevo.</Spanish>
 			<Czech></Czech>
 			<German></German>
 			<French></French>
