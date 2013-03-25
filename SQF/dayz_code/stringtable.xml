@@ -1896,7 +1896,7 @@
 			<English>Empty Fuelcan (5L)</English>
 			<German>Benzinkanister (5L) (Leer)</German>
 			<Russian>Пустая канистра (5л)</Russian>
-			<Spanish>Bidón Chico (5L) (Vacío)</Spanish>
+			<Spanish>Bidón Chico Vacío (5L)</Spanish>
 			<Dutch>Jerrycan (5L) (Empty)</Dutch>
 			<French>Bidon (5L) (Vide)</French>
 			<Czech>Kanystr (5L) (Prázdný)</Czech>
@@ -1910,30 +1910,30 @@
 			<French>Un petit bidon pour le carburant.</French>
 			<Czech>Menší kanystr pro palivo.</Czech>
 		</Key>
-		<Key ID="STR_ITEM_NAME_JERRYCAN">	
-			<Original>Jerry Can (20L)</Original>
+		<Key ID="STR_ITEM_NAME_JERRYCAN">
 			<English>Jerry Can (20L)</English>
+			<Spanish>Bidón (20L)</Spanish>
 			<German>Kanister (20L)</German>
 			<Russian>Канистра (20л)</Russian>
 			<French>Jerrican (20L)</French>
 		</Key>						
-		<Key ID="STR_ITEM_DESC_JERRYCAN">						
-			<Original>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Original>	
+		<Key ID="STR_ITEM_DESC_JERRYCAN">
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
+			<Spanish>Un bidón de combustible de 20 litros para recargar vehículos y generadores.</Spanish>
 			<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
 			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
-			<Original>Empty Jerry Can (20L)</Original>
 			<English>Empty Jerry Can (20L)</English>
+			<Spanish>Bidón Vacío (20L)</Spanish>
 			<German>Leerer Kanister (20L)</German>
 			<Russian>Пустая канистра (20л)</Russian>
 			<French>Jerrican vide (20L)</French>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
-			<Original>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Original>	
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>	
+			<Spanish>Un bidón de combustible vacío de 20 litros que puede ser recargado estaciones de servicio.</Spanish>
 			<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
 			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
 			<French>Un jerrican vide de 20L qui peut être rempli à partir de véhicules ou de staions servives.</French>
@@ -2581,6 +2581,7 @@
 		</Key>
 		<Key ID="str_must_have_weapon">
 			<English>Weapon, converting ammo for, must be in hands!</English>
+			<Spanish>¡El arma a la que se quiere convertir la munición debe estar en tus manos!</Spanish>
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
 			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
 		</Key>
