@@ -35,6 +35,7 @@
 			<French>Créer un carquois</French>
 			<German>Erstelle Köcher</German>
 			<Dutch>Pijlkoker maken</Dutch>
+			<Czech>Vytvořit toulec</Czech>
 		</Key>
 		<Key ID="STR_ACTION_BUILD">
 			<English>Build</English>
@@ -1012,7 +1013,7 @@
 			<Spanish>Cabra a la Parrilla</Spanish>
 			<Dutch>Gegrilde Geit</Dutch>
 			<French>Chèvre grillée</French>
-			<Czech>Grilled Goat</Czech>
+			<Czech>Grilovaná koza</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">
 			<English>Goat Meat to be used for sustainment.</English>
@@ -1021,7 +1022,7 @@
 			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Geitenvlees dat gebruikt wordt om te overleven.</Dutch>
 			<French>La Chèvre grillée peut être consommée.</French>
-			<Czech>Goat Meat to be used for sustainment.</Czech>
+			<Czech>Kozí maso, které lze sníst aby jste přežili.</Czech>
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">
 			<English>Water Bottle (Boiled)</English>
@@ -1327,7 +1328,7 @@
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Kant-en-Klaar Maaltijd</Dutch>
 			<French>Repas prêt à manger</French>
-			<Czech>Rychlo jídlo.</Czech>
+			<Czech>Vojenská potravinová dávka typu MRE.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
 			<English>Snack (Pistachios)</English>
@@ -1917,6 +1918,7 @@
 			<Russian>Канистра (20л)</Russian>
 			<French>Jerrican (20L)</French>
 			<Dutch>Jerrycan (20L)</Dutch>
+			<Czech>Kanystr (20L)</Czech>
 		</Key>						
 		<Key ID="STR_ITEM_DESC_JERRYCAN">
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
@@ -1925,6 +1927,7 @@
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
 			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
 			<Dutch>Een jerrycan van 20 liter die gebruikt kan worden om vehicles te bijtanken en generatoren van stroom te voorzien.</Dutch>
+			<Czech>20 litrový kanistr, který se dá použít k tankování vozidel a pro běh generátorů.</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<English>Empty Jerry Can (20L)</English>
@@ -1933,6 +1936,7 @@
 			<Russian>Пустая канистра (20л)</Russian>
 			<French>Jerrican vide (20L)</French>
 			<Dutch>Lege jerrycan (20L)</Dutch>
+			<Czech>Prázdný kanystr (20l)</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>	
@@ -1941,6 +1945,7 @@
 			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
 			<French>Un jerrican vide de 20L qui peut être rempli à partir de véhicules ou de staions servives.</French>
 			<Dutch>Een lege jerrycan van 20 liter die gevuld kan worden bij voertuigen of benzinestations.</Dutch>
+			<Czech>Prázdný 20 litrový kanystr, který může být naplněn u benzínek nebo odstavených aut.</Czech>
 		</Key>
 	</Package>
 	<Package name="feedback">
@@ -2452,7 +2457,7 @@
 			<English>Authentication Failed, Disconnect and try again.</English>
 			<Russian>Неудачная аутентификация. Отключитесь и попробуйте снова.</Russian>
 			<Spanish>Error de Autentificación. Desconectese y pruebe de nuevo.</Spanish>
-			<Czech>Authentication Failed, Disconnect and try again.</Czech>
+			<Czech>Autentizace selhala. Odpojte se a zkuste to znovu.</Czech>
 			<German>Authentication Failed, Disconnect and try again.</German>
 			<French>Erreur d'authentification, déconnectez vous et éssayez encore.</French>
 			<Dutch>Authenticatie mislukt, verbreek de verbinding en probeer het opnieuw.</Dutch>
@@ -2589,6 +2594,7 @@
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
 			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
 			<Dutch>Om munitie in een wapen te converteren, moet je het wapen in je handen hebben!</Dutch>
+			<Czech>Zbraň, pro kterou měníte munici musí být v rukách.</Czech>
 		</Key>
 	</Package>
 	<Package name="intro">
