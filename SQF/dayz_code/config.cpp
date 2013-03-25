@@ -743,7 +743,7 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_doctor","z_doctor","z_doctor"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		itemType[] =	{
 			{"","trash"},
@@ -752,7 +752,7 @@ class CfgBuildingLoot {
 		};
 		itemChance[] =	{
 			0.05,
-			0.1,
+			0.10,
 			0.02
 		};
 	};
@@ -834,11 +834,11 @@ class CfgBuildingLoot {
 			0.08,  //{"ItemKnife","military"},
 			0.01,  //{"ItemGPS","weapon"},
 			0.03,  //{"ItemMap","military"},
-			0.06,  //{"DZ_ALICE_Pack_EP1","object"} 16
-			0.05,  //{"DZ_TK_Assault_Pack_EP1","object"}, 16
-			0.04,  //{"DZ_British_ACU","object"} 18
-			0.03,  //{"DZ_CivilBackpack_EP1","object"} 24
-			0.02,  //{"DZ_Backpack_EP1","object"} 24
+			0.03,  //{"DZ_ALICE_Pack_EP1","object"} 16
+			0.03,  //{"DZ_TK_Assault_Pack_EP1","object"}, 16
+			0.02,  //{"DZ_British_ACU","object"} 18
+			0.01,  //{"DZ_CivilBackpack_EP1","object"} 24
+			0.01,  //{"DZ_Backpack_EP1","object"} 24
 			0.10,  //{"","medical"},
 			0.10,  //{"","generic"},
 			0.10,  //{"","military"},
