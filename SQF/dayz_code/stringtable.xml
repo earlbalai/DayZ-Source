@@ -35,7 +35,6 @@
 			<French>Créer un carquois</French>
 			<German>Erstelle Köcher</German>
 			<Dutch>Pijlkoker maken</Dutch>
-			<Czech>Vytvořit toulec</Czech>
 		</Key>
 		<Key ID="STR_ACTION_BUILD">
 			<English>Build</English>
@@ -73,7 +72,7 @@
 			<Dutch>Re-combine</Dutch>
 			<French>Re-combiner</French>
 			<Czech>Zkombinovat</Czech>
-			<Dutch>Recombineren</Dutch>
+			<Dutch>Opnieuw combineren</Dutch>
 		</Key>
 		<Key ID="str_init_take">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 			<English>Take %1</English>
@@ -368,7 +367,7 @@
 			<German>%1 wenden</German>
 			<Russian>Перевернуть %1</Russian>
 			<Spanish>Voltear %1</Spanish>
-			<Dutch>Turn Over %1</Dutch>
+			<Dutch>%1 omdraaien</Dutch>
 			<French>Retourner %1</French>
 			<Czech>Otočit %1</Czech>
 			<Dutch>%1 omkantelen</Dutch>
@@ -1013,7 +1012,7 @@
 			<Spanish>Cabra a la Parrilla</Spanish>
 			<Dutch>Gegrilde Geit</Dutch>
 			<French>Chèvre grillée</French>
-			<Czech>Grilovaná koza</Czech>
+			<Czech>Grilled Goat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">
 			<English>Goat Meat to be used for sustainment.</English>
@@ -1022,7 +1021,7 @@
 			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Geitenvlees dat gebruikt wordt om te overleven.</Dutch>
 			<French>La Chèvre grillée peut être consommée.</French>
-			<Czech>Kozí maso, které lze sníst aby jste přežili.</Czech>
+			<Czech>Goat Meat to be used for sustainment.</Czech>
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">
 			<English>Water Bottle (Boiled)</English>
@@ -1328,7 +1327,7 @@
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Kant-en-Klaar Maaltijd</Dutch>
 			<French>Repas prêt à manger</French>
-			<Czech>Vojenská potravinová dávka typu MRE.</Czech>
+			<Czech>Rychlo jídlo.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
 			<English>Snack (Pistachios)</English>
@@ -1917,7 +1916,7 @@
 			<German>Kanister (20L)</German>
 			<Russian>Канистра (20л)</Russian>
 			<French>Jerrican (20L)</French>
-			<Czech>Kanystr (20l)</Czech>
+			<Dutch>Jerrycan (20L)</Dutch>
 		</Key>						
 		<Key ID="STR_ITEM_DESC_JERRYCAN">
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
@@ -1925,7 +1924,7 @@
 			<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
 			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
-			<Czech>20 litrový kanistr, který se dá použít k tankování vozidel a pro běh generátorů.</Czech>
+			<Dutch>Een jerrycan van 20 liter die gebruikt kan worden om vehicles te bijtanken en generatoren van stroom te voorzien.</Dutch>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<English>Empty Jerry Can (20L)</English>
@@ -1933,7 +1932,7 @@
 			<German>Leerer Kanister (20L)</German>
 			<Russian>Пустая канистра (20л)</Russian>
 			<French>Jerrican vide (20L)</French>
-			<Czech>Prázdný kanystr (20l)</Czech>
+			<Dutch>Lege jerrycan (20L)</Dutch>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>	
@@ -1941,7 +1940,7 @@
 			<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
 			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
 			<French>Un jerrican vide de 20L qui peut être rempli à partir de véhicules ou de staions servives.</French>
-			<Czech>Prázdný 20 litrový kanystr, který může být naplněn u benzínek nebo odstavených aut.</Czech>
+			<Dutch>Een lege jerrycan van 20 liter die gevuld kan worden bij voertuigen of benzinestations.</Dutch>
 		</Key>
 	</Package>
 	<Package name="feedback">
@@ -2049,7 +2048,7 @@
 			<German>Aufbau von %1 gescheitert.</German>
 			<Russian>Вам не удалость построить %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
-			<Dutch>You have failed to build %1.</Dutch>
+			<Dutch>Het bouwen van %1 is niet gelukt.</Dutch>
 			<French>Vous n'avez pas réussi à contruire %1.</French>
 			<Czech>Při stavbě %1 došlo k chybě.</Czech>
 		</Key>
@@ -2453,10 +2452,10 @@
 			<English>Authentication Failed, Disconnect and try again.</English>
 			<Russian>Неудачная аутентификация. Отключитесь и попробуйте снова.</Russian>
 			<Spanish>Error de Autentificación. Desconectese y pruebe de nuevo.</Spanish>
-			<Czech>Autentizace selhala. Odpojte se a zkuste to znovu.</Czech>
+			<Czech>Authentication Failed, Disconnect and try again.</Czech>
 			<German>Authentication Failed, Disconnect and try again.</German>
 			<French>Erreur d'authentification, déconnectez vous et éssayez encore.</French>
-			<Dutch>Authentication Failed, Disconnect and try again.</Dutch>
+			<Dutch>Authenticatie mislukt, verbreek de verbinding en probeer het opnieuw.</Dutch>
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<English>%1 is already being looted by someone else.</English>
@@ -2589,7 +2588,7 @@
 			<Spanish>¡El arma a la que se quiere convertir la munición debe estar en tus manos!</Spanish>
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
 			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
-			<Czech>Zbraň, pro kterou měníte munici musí být v rukách.</Czech>
+			<Dutch>Om munitie in een wapen te converteren, moet je het wapen in je handen hebben!</Dutch>
 		</Key>
 	</Package>
 	<Package name="intro">
@@ -2917,7 +2916,7 @@
 			<German>Hund füttern</German>
 			<Russian>Накормить собаку</Russian>
 			<Spanish>Alimentar Perro</Spanish>
-			<Dutch>Feed Dog</Dutch>
+			<Dutch>Hond voeren</Dutch>
 			<French>Nourrir le Chien</French>
 			<Czech>Nakrmit psa</Czech>
 		</Key>
