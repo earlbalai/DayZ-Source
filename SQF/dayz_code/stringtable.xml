@@ -1915,24 +1915,28 @@
 			<English>Jerry Can (20L)</English>
 			<German>Kanister (20L)</German>
 			<Russian>Канистра (20л)</Russian>
+			<French>Jerrican (20L)</French>
 		</Key>						
 		<Key ID="STR_ITEM_DESC_JERRYCAN">						
 			<Original>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Original>	
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
 			<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
+			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<Original>Empty Jerry Can (20L)</Original>
 			<English>Empty Jerry Can (20L)</English>
 			<German>Leerer Kanister (20L)</German>
 			<Russian>Пустая канистра (20л)</Russian>
+			<French>Jerrican vide (20L)</French>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
 			<Original>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Original>	
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>	
 			<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
 			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
+			<French>Un jerrican vide de 20L qui peut être rempli à partir de véhicules ou de staions servives.</French>
 		</Key>
 	</Package>
 	<Package name="feedback">
@@ -2446,7 +2450,7 @@
 			<Spanish>Error de Autentificación. Desconectese y pruebe de nuevo.</Spanish>
 			<Czech>Authentication Failed, Disconnect and try again.</Czech>
 			<German>Authentication Failed, Disconnect and try again.</German>
-			<French>Authentication Failed, Disconnect and try again.</French>
+			<French>Erreur d'authentification, déconnectez vous et éssayez encore.</French>
 			<Dutch>Authentication Failed, Disconnect and try again.</Dutch>
 		</Key>
 		<Key ID="str_player_beinglooted">
@@ -2578,6 +2582,7 @@
 		<Key ID="str_must_have_weapon">
 			<English>Weapon, converting ammo for, must be in hands!</English>
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
+			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
 		</Key>
 	</Package>
 	<Package name="intro">
@@ -2906,7 +2911,7 @@
 			<Russian>Накормить собаку</Russian>
 			<Spanish>Alimentar Perro</Spanish>
 			<Dutch>Feed Dog</Dutch>
-			<French>Hond voeden</French>
+			<French>Nourrir le Chien</French>
 			<Czech>Nakrmit psa</Czech>
 		</Key>
 		<Key ID="str_actions_waterdog">
