@@ -28,6 +28,7 @@ FIX DUE : 2013
 		* [NEW] - Zeds can now push players to the ground when attacked from behind.
 		* [NEW] - Bigger Compass (You can see the number of degrees).
 		* [NEW] - Added auth retry system to make sure clients are authed before they spawn (should stop seagull issue).
+		* [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timout later).
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
@@ -48,10 +49,10 @@ FIX DUE : 2013
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded Save option to tent and vehilces this is a fail save option. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
-		* [UPDATED] - Zed generate system to make sure spawn locations are picked before being created this should stop zeds apearing in front of players then being moved
+		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being moved/deleted
 		* [UPDATED] - Zed attacks updated to make them less random. (ie first hit from full hp will no longer put you unconscious)
-		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg if headshot = 1700 blood, Max body dmg = 700 blood)
-		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.8 or the zed gives a head shot. (should reduce the amount of bandages needed)
+		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg if headshot = 1200 blood, Max body dmg = 700 blood)
+		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.8 or the zed gives a head shot. (should reduce the amount of bandages needed)	
 ______________________		
 FIX DUE : 2013
 
