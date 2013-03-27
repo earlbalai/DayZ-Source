@@ -361,8 +361,8 @@ class CfgBuildingLoot {
 			{"Skin_Sniper1_DZ","magazine"},
 			{"WeaponHolder_ItemCrowbar","object"},
 			{"MR43","weapon"},
-			{"ItemBookBible","magazine"},
-			{"WeaponHolder_ItemFuelcan","object"}
+			{"ItemBookBible","magazine"}
+			//{"WeaponHolder_ItemFuelcan","object"}
 		};
 		itemChance[] =	{
 			0.01,
@@ -393,8 +393,8 @@ class CfgBuildingLoot {
 			0.01,
 			0.08,
 			0.03,
-			0.02,
-			0.03
+			0.02
+			//0.03 //"WeaponHolder_ItemFuelcan"
 		};		
 	};
 	class Office: Residential {
@@ -422,8 +422,8 @@ class CfgBuildingLoot {
 			{"ItemKnife","military"},
 			{"ItemToolbox","weapon"},
 			{"ItemWire","magazine"},
-			{"ItemTankTrap","magazine"},
-			{"WeaponHolder_ItemFuelcan","object"}
+			{"ItemTankTrap","magazine"}
+			//{"WeaponHolder_ItemFuelcan","object"}
 		};
 		itemChance[] =	{
 			0.18,
@@ -440,8 +440,8 @@ class CfgBuildingLoot {
 			0.07,
 			0.06,
 			0.01,
-			0.04,
-			0.03
+			0.04
+			//0.03 //"WeaponHolder_ItemFuelcan"
 		};
 	};
 	class Farm: Default {
