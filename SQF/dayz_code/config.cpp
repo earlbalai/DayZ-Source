@@ -91,6 +91,13 @@ class CfgAddons
 	};
 };
 
+class CfgActions {
+	class None; // External class reference
+
+	class Rearm : None {
+		show = 0;
+	};
+};
 class CfgAISkill {
 	aimingaccuracy[] = {0, 0, 1, 1};
 	aimingshake[] = {0, 0, 1, 1};
