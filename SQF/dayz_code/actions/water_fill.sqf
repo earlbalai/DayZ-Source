@@ -53,6 +53,7 @@ if (_canFill) then {
 
 
 	if ("ItemWaterbottleUnfilled" in magazines player) then {
+		player removeMagazines "ItemWaterbottleUnfilled";
 		for "_x" from 1 to _qty do {
 			sleep 1;
 
