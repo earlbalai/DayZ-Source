@@ -15,6 +15,7 @@ FIX DUE : 2013
 		* [Prerequisites]	New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
 		* [Prerequisites]	Battleye filters must be updated manually by server admins.
 	
+		* [NEW] - Added Clear ground to crash sites (http://i.imgur.com/uVDfGym.jpg) 
 		* [NEW] - Models and textures for mutton.
 		* [NEW] - Seperate meat for goats, same blood regen as mutton.
 		* [NEW] - Can now combine magazines.
