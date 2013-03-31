@@ -1,4 +1,4 @@
-private["_position","_num","_config","_itemType","_itemChance","_weights","_index","_iArray","_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_permanentFire","_crashName"];
+private ["_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_fadeFire","_timeAdjust","_timeToSpawn","_crashName","_position","_crash","_clutter","_config","_newHeight","_itemTypes","_index","_weights","_cntWeights","_itemType","_nearby","_nearBy"];
 
 //_crashModel	= _this select 0;
 //_lootTable	= _this select 1;
@@ -48,6 +48,8 @@ while {true} do {
 		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4 - (%5)", _crashName, _lootTable, time, str(_position),mapGridPosition _position]);
 
 		_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
+  		_clutter = createVehicle ["ClutterCutter_EP1", _position, [], 0, "CAN_COLLIDE"];
+		_clutter setPos _position;
 		// Randomize the direction the wreck is facing
 		_crash setDir round(random 360);
 
@@ -84,7 +86,7 @@ while {true} do {
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
 			_itemType = _itemTypes select _index;
-			[_itemType select 0, _itemType select 1, _position, (sizeOf _crashModel)] call spawn_loot;
+			[_itemType select 0, _itemType select 1, _position, (sizeOf _crashModel)/2] call spawn_loot;
 
 			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2 - %3'", _crashName, str(_itemType)]); 
 
