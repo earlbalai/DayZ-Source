@@ -14,7 +14,7 @@ _multiplier = 1;
 		_group = _x;
 		_targets = _group getVariable ["targets",[]];
 
-		_chance = 1;
+		_chance = 0.8;
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 			if (_type == "zombie") then { [_x,"attack",(_chance),true] call dayz_zombieSpeak; };
 			//perform an attack
@@ -38,23 +38,32 @@ _multiplier = 1;
 		
 		//Noise Activation
 		if (!(_refObj in _targets)) then {
-			if (_dist < (DAYZ_disAudial * 2)) then {
-				if (DAYZ_disAudial > 20) then {
+			if (_dist < DAYZ_disAudial) then {
+				if (DAYZ_disAudial > 85) then {
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
-				//} else {
-				//	if (_dist < (DAYZ_disAudial / 2)) then {
-				//		_targets set [count _targets, driver _refObj];
-				//		_group setVariable ["targets",_targets,true];
-				//	};
+				} else {
+					_chance = [_x,_dist,DAYZ_disAudial] call dayz_losChance;
+					//diag_log ("Visual Detection: " + str([_x,_dist]) + " " + str(_chance));
+					if ((random 1) < _chance) then {
+						_cantSee = [_x,_refObj] call dayz_losCheck;
+						if (!_cantSee) then {
+							_targets set [count _targets, driver _refObj];
+							_group setVariable ["targets",_targets,true];
+						} else {
+							if (_dist < (DAYZ_disAudial / 2)) then {
+								_targets set [count _targets, driver _refObj];
+								_group setVariable ["targets",_targets,true];
+							};
+						};
+					};
 				};
 			};
-			
 		//Sight Activation
-			if (_dist < DAYZ_disVisual) then {
-				//_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
+			if (_dist < (DAYZ_disVisual / 2)) then {
+				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
 				//diag_log ("Visual Detection: m" + str([_x,_dist]) + " " + str(_chance));
-				//if ((random 1) < _chance) then {
+				if ((random 1) < _chance) then {
 					//diag_log ("Chance Detection");
 					_tPos = (getPosASL _refObj);
 					_zPos = (getPosASL _x);
@@ -71,7 +80,7 @@ _multiplier = 1;
 							_group setVariable ["targets",_targets,true];
 						};
 					};
-				//};
+				};
 			};
 		};
 	};

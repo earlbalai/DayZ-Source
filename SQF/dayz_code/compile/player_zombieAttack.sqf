@@ -35,7 +35,7 @@ if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;
 	_hp = 		_hpList call BIS_fnc_selectRandom;
 	_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-	_damage = 	random 0.09;
+	_damage = 	random 0.02;
 	_chance =	round(random 12);
 	
 	if ((_chance % 4) == 0) then {
@@ -68,7 +68,7 @@ if (_vehicle != player) then {
 				_index = (DAYZ_woundHit_ok select 1) select _index;
 				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
-			_damage = 0.4 + random (0.6);
+			_damage = 0.1 + random (0.9);
 			//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
@@ -107,8 +107,8 @@ if (_vehicle != player) then {
 					_index = (DAYZ_woundHit_ok select 1) select _index;
 					_wound = (DAYZ_woundHit_ok select 0) select _index; 
 				};
-				_damage = 0.4 + random (0.6);
-					
+				_damage = 0.1 + random (0.9);
+				
 				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
