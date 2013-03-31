@@ -54,16 +54,24 @@ if (_unit == player) then {
 
 //Pure blood damage
 _scale = 200;
-if (_damage > 0.4) then {
+if (_damage > 0.1) then {
 	if (_ammo != "zombie") then {
 		_scale = _scale + 50;
 	};
-	if (_ammo == "zombie") then {
-		_scale = _scale + 500;
+	//Start body part scale
+	if (_ammo == "zombie" and _hit == "body") then {
+		_scale = _scale * 3;
+	};
+	if (_ammo == "zombie" and _hit == "legs") then {
+		_scale = _scale / 2;
+	};
+	if (_ammo == "zombie" and _hit == "hands") then {
+		_scale = _scale / 4;
 	};
 	if (_isHeadHit) then {
-		_scale = _scale + 500;
+		_scale = _scale * 6;
 	};
+	//End body part scale
 	if ((isPlayer _source) and !(player == _source)) then {
 		_scale = _scale + 800;
 		if (_isHeadHit) then {
@@ -75,12 +83,15 @@ if (_damage > 0.4) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unit == player) then {
-		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale));
+		if (_unconscious) then {
+			_scale = 50;
+		};
+		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale) + " Conscious " + str (!_unconscious));
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };
 
-if ((_damage > 0.7) and (_ammo == "zombie")) then {
+if ((_damage > 0.5) and (_ammo == "zombie")) then {
 	if ((direction _unit - direction _zombie < 10) and (direction _unit - direction _zombie > -10)) then {
 		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver
 	};
@@ -146,7 +157,7 @@ if (_damage > 0.4) then {	//0.25
 	_isHit = _unit getVariable[_wound,false];
 	
 	if (_ammo == "zombie") then {
-		if(!_isHit and ((_damage > 0.8) or _isHeadHit)) then {
+		if(!_isHit and ((_damage > 0.7) or _isHeadHit)) then {
 			//Create Wound
 			_unit setVariable[_wound,true,true];
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
@@ -240,15 +251,23 @@ if (_type == 2) then {
 	};
 };
 
-if (!_unconscious and !_isMinor and _isHeadHit) then {
-	if (_ammo != "zombie" and _damage > 0.5) then { 
+if (_ammo == "zombie") then {
+	if (!_unconscious and !_isMinor and _isHeadHit) then {
+		_chance = random 1;
+		if ((_damage > 0.8) and (_chance < 0.5)) then { 
+			[_unit,_damage] call fnc_usec_damageUnconscious;
+		};
+		/*
+		if (_ammo == "zombie" and _damage > (_bloodPercentage + 0.1)) then {
+			if ((_damage - _bloodPercentage) > 0.2) then {
+				[_unit,(_damage - _bloodPercentage)] call fnc_usec_damageUnconscious;
+			};
+		};
+		*/
+	};
+} else {
+	if (!_unconscious and !_isMinor and ((_damage > 2) or ((_damage > 0.5) and _isHeadHit))) then {
+		//set unconsious
 		[_unit,_damage] call fnc_usec_damageUnconscious;
 	};
-	if (_ammo == "zombie" and _damage > (_bloodPercentage + 0.1)) then {
-		if ((_damage - _bloodPercentage) > 0.2) then {
-			[_unit,(_damage - _bloodPercentage)] call fnc_usec_damageUnconscious;
-		};
-	};
-	
-	
 };
