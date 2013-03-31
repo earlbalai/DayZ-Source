@@ -53,6 +53,7 @@ if (_canFill) then {
 
 
 	if ("ItemWaterbottleUnfilled" in magazines player) then {
+		player removeMagazines "ItemWaterbottleUnfilled";
 		for "_x" from 1 to _qty do {
 			sleep 1;
 
@@ -61,8 +62,7 @@ if (_canFill) then {
 		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 		
-			player removeMagazine "ItemWaterbottleUnfilled";
-			player addMagazine "ItemWaterbottle";
+		player addMagazine "ItemWaterbottle";
 		};
 
 		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
