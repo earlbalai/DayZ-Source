@@ -1359,7 +1359,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">
 			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>
-			<German>Eine Packung Papa's Original Studentenfutter mit 12 verschiedenen Früchen und Nüssen</German>
+			<German>Eine Packung Papa's Originales Studentenfutter mit 12 verschiedenen Früchen und Nüssen</German>
 			<Russian>Упаковка сушеных фруктов и орешков "Papa", 12 разных видов.</Russian>
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
 			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
@@ -1373,7 +1373,7 @@
 			<Spanish>Lata Vacía</Spanish>
 			<French>Boîte vide en fer-blanc</French>
 			<Czech>Prázdná cínová plechovka</Czech>
-			<German>Empty Tin Can</German>
+			<German>Leere Blechdose</German>
 			<Dutch>Leeg Blik</Dutch>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
@@ -1388,7 +1388,7 @@
 		
 		<Key ID="STR_FOOD_NAME_CHIPS_EMPTY">
 			<English>Empty Snack Bag</English>
-			<German>Empty Snack Bag</German>
+			<German>Leeres Paket von Lebensmitteln</German>
 			<Russian>Пустая упаковка</Russian>
 			<Spanish>Bolsa Vacía</Spanish>
 			<Dutch>Lege Snackzak</Dutch>
@@ -1397,7 +1397,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_EMPTY">
 			<English>An empty bag of chips.</English>
-			<German>An empty bag of chips.</German>
+			<German>Eine leere Chips Tüte.</German>
 			<Russian>Пустая упаковка от чипсов.</Russian>
 			<Spanish>Una bolsa vacía de papitas.</Spanish>
 			<Dutch>Een lege zak chips.</Dutch>
@@ -1415,7 +1415,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS">
 			<English>A clean, unopened bag of crunchy Sulahoops.</English>
-			<German>A clean, unopened bag of crunchy Sulahoops.</German>
+			<German>Eine saubere, ungeöffnete Tüte knackigen Sulahoops.</German>
 			<Russian>Чистая, закрытая упаковка "Sulahoops".</Russian>
 			<Spanish>Una limpia y cerrada bolsa de papitas Sulahoops.</Spanish>
 			<Dutch>Een schone, ongeopende zak knapperige Sulahoops.</Dutch>
@@ -1433,7 +1433,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_MYSTICALES">
 			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
-			<German>A clean, unopened bag of Miss Mysticales jalapeño chips.</German>
+			<German>Eine saubere, ungeöffneten Beutel von Miss Mysticales jalapeño Chips.</German>
 			<Russian>Чистая, закрытая упаковка "Miss Mysticales jalapeño".</Russian>
 			<Spanish>Una limpia y cerrada bolsa de papitas picantes Miss Mysticales.</Spanish>
 			<Dutch>Een schone, ongeopende zak Miss Mysticales jalapeño chips.</Dutch>
@@ -1452,7 +1452,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_ANDERS">
 			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
-			<German>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</German>
+			<German>Eine saubere, ungeöffnet Ander's Joy Schokoladen-Kokosnuss und Mandel-Schokoriegel.</German>
 			<Russian>Чистый, закрытый батончик кокосово-миндального "Ander's Joy".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate con almendras Ander's Joy.</Spanish>
 			<Dutch>Een schoon, ongeopend Ander's Joy chocolade cocosnoot en amandel snoepreep.</Dutch>
@@ -1470,7 +1470,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_LEGACYS">
 			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
-			<German>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</German>
+			<German>Eine saubere, ungeöffnet Vermächtnis der Schokolade, Karamell und Erdnuss-Schokoriegel.</German>
 			<Russian>Чистый, закрытый батончик карамельно-орехового "Legacys ".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate Legacys con caramelo y maní.</Spanish>
 			<Dutch>Een schoon, ongeopend Legacys chocoladeA clean, caramel en noot snoepreep.</Dutch>
@@ -1488,7 +1488,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_MINTCEPTION">
 			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
-			<German>A clean, unopened Mintception mint chocolate candy bar.</German>
+			<German>Eine saubere, ungeöffnet Mintception Minze Schokolade Schokoriegel.</German>
 			<Russian>Чистый, закрытый батончик мятного "Mintception".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate con menta Mintception.</Spanish>
 			<Dutch>Een schoon, ongeopend Mintception muntchocolade snoepreep.</Dutch>
@@ -2458,7 +2458,7 @@
 			<Russian>Неудачная аутентификация. Отключитесь и попробуйте снова.</Russian>
 			<Spanish>Error de Autentificación. Desconectese y pruebe de nuevo.</Spanish>
 			<Czech>Autentizace selhala. Odpojte se a zkuste to znovu.</Czech>
-			<German>Authentication Failed, Disconnect and try again.</German>
+			<German>Authentifizierung fehlgeschlagen, Disconnecte und versuche es erneut.</German>
 			<French>Erreur d'authentification, déconnectez vous et éssayez encore.</French>
 			<Dutch>Authenticatie mislukt, verbreek de verbinding en probeer het opnieuw.</Dutch>
 		</Key>
@@ -2590,6 +2590,7 @@
 		</Key>
 		<Key ID="str_must_have_weapon">
 			<English>Weapon, converting ammo for, must be in hands!</English>
+			<German>Um Munition für eine Waffe umwandeln zu können, muss die Waffe angelegt sein.</German>
 			<Spanish>¡El arma a la que se quiere convertir la munición debe estar en tus manos!</Spanish>
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
 			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
