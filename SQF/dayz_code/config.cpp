@@ -91,6 +91,13 @@ class CfgAddons
 	};
 };
 
+class CfgActions {
+	class None; // External class reference
+
+	class Rearm : None {
+		show = 0;
+	};
+};
 class CfgAISkill {
 	aimingaccuracy[] = {0, 0, 1, 1};
 	aimingshake[] = {0, 0, 1, 1};
@@ -355,8 +362,8 @@ class CfgBuildingLoot {
 			{"Skin_Sniper1_DZ","magazine",0.01},
 			{"WeaponHolder_ItemCrowbar","object",0.08},
 			{"MR43","weapon",0.03},
-			{"ItemBookBible","magazine",0.02},
-			{"WeaponHolder_ItemFuelcan","object",0.03}
+			{"ItemBookBible","magazine",0.02}
+			//{"WeaponHolder_ItemFuelcan","object",0.03}
 		
 		};
 	};
@@ -385,8 +392,8 @@ class CfgBuildingLoot {
 			{"ItemKnife","military",0.07},
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
-			{"ItemTankTrap","magazine",0.04},
-			{"WeaponHolder_ItemFuelcan","object",0.03}
+			{"ItemTankTrap","magazine",0.04}
+			//{"WeaponHolder_ItemFuelcan","object",0.03}
 		};
 	};
 	class Farm: Default {
@@ -562,11 +569,11 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_doctor","z_doctor","z_doctor"};
-		lootChance = 1;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{"","trash",0.2},
-			{"","hospital",1},
+			{"","hospital",0.10},
 			{"MedBox0","object",0.2}
 		};
 	};
@@ -603,9 +610,9 @@ class CfgBuildingLoot {
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.05},
 			
-			{"DZ_ALICE_Pack_EP1","object",0.08}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object",0.08}, // 16
-			{"DZ_British_ACU","object",0.06}, // 18
+			{"DZ_ALICE_Pack_EP1","object",0.03}, // 16
+			{"DZ_TK_Assault_Pack_EP1","object",0.03}, // 16
+			{"DZ_British_ACU","object",0.02}, // 18			
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24
 			
