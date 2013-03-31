@@ -5,7 +5,7 @@ _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
 _maxZombies = dayz_maxLocalZombies;
-_maxWildZombies = 3;
+_maxWildZombies = DAYZ_maxWildZombies;
 _age = -1;
 _force = false;
 
@@ -54,7 +54,6 @@ dayz_maxGlobalZombies = 30;
 		dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
 	};
 } foreach _players;
-
 
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 dayz_spawnZombies = 0;
@@ -109,8 +108,8 @@ diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
 diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(_maxZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
 
-diag_log ("Audial Noise: " +str(DAYZ_disAudial * 2));
-
+diag_log ("Audial Noise: " +str(DAYZ_disAudial));
+diag_log ("Visual Sight: " +str(DAYZ_disVisual));
 };
 	
 _nearby = _position nearObjects ["building",_radius];
@@ -152,7 +151,7 @@ if (dayz_spawnZombies == 0) then {
 		};
 	};
 	//Zeds
-	if ((((time - dayz_spawnWait) > dayz_spawnDelay) or _force) and !_inVehicle) then {
+	if ((((time - dayz_spawnWait) > dayz_spawnDelay) or _force)) then {
 		if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
 			if (dayz_spawnZombies < _maxZombies) then {
 					//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
@@ -161,7 +160,8 @@ if (dayz_spawnZombies == 0) then {
 					_age = (_dateNow - _zombied) * 525948;
 					if (_age > 3) then {
 						_x setVariable ["zombieSpawn",_dateNow,true];
-						[_x] call building_spawnZombies;
+						_handle = [_x] spawn building_spawnZombies;
+						waitUntil{scriptDone _handle};
 					};
 			} else {
 				dayz_spawnWait = time;
