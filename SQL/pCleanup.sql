@@ -12,7 +12,7 @@
 
 -- Dumping structure for procedure test.pCleanup
 DELIMITER //
-CREATE DEFINER=`dayz`@`zombie.local` PROCEDURE `pCleanup`()
+CREATE DEFINER=`dayz`@`localhost` PROCEDURE `pCleanup`()
 BEGIN
 
 #starts outofbounds cleanup
