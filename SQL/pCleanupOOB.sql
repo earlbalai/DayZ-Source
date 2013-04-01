@@ -12,7 +12,7 @@
 
 -- Dumping structure for procedure test.pCleanupOOB
 DELIMITER //
-CREATE DEFINER=`dayz`@`zombie.local` PROCEDURE `pCleanupOOB`()
+CREATE DEFINER=`dayz`@`localhost` PROCEDURE `pCleanupOOB`()
 BEGIN
 
 	DECLARE intLineCount	INT DEFAULT 0;
