@@ -12,7 +12,7 @@
 
 -- Dumping structure for function test.rndspawn
 DELIMITER //
-CREATE DEFINER=`dayz`@`zombie.local` FUNCTION `rndspawn`(`chance` double) RETURNS tinyint(1) DETERMINISTIC
+CREATE DEFINER=`dayz`@`localhost` FUNCTION `rndspawn`(`chance` double) RETURNS tinyint(1) DETERMINISTIC
 BEGIN
 
 	DECLARE bspawn tinyint(1) DEFAULT 0;
