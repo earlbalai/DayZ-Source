@@ -12,7 +12,7 @@
 
 -- Dumping structure for procedure test.pMain
 DELIMITER //
-CREATE DEFINER=`dayz`@`zombie.local` PROCEDURE `pMain`()
+CREATE DEFINER=`dayz`@`localhost` PROCEDURE `pMain`()
     MODIFIES SQL DATA
 BEGIN
 
