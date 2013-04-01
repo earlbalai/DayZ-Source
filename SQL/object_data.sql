@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.object_data
-CREATE TABLE IF NOT EXISTS `object_data` (
+-- Dumping structure for table test.Object_DATA
+CREATE TABLE IF NOT EXISTS `Object_DATA` (
   `ObjectID` int(11) NOT NULL AUTO_INCREMENT,
   `ObjectUID` bigint(20) NOT NULL DEFAULT '0',
   `Instance` int(11) NOT NULL,
@@ -30,8 +30,8 @@ CREATE TABLE IF NOT EXISTS `object_data` (
   KEY `Instance` (`Damage`,`Instance`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Dumping data for table test.object_data: ~0 rows (approximately)
-/*!40000 ALTER TABLE `object_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `object_data` ENABLE KEYS */;
+-- Dumping data for table test.Object_DATA: ~0 rows (approximately)
+/*!40000 ALTER TABLE `Object_DATA` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Object_DATA` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
