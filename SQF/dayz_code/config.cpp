@@ -817,28 +817,28 @@ class CfgBuildingLoot {
 		itemChance[] =	{
 			0.05,  //{"M9","weapon"},
 			0.05,  //{"M16A2","weapon"},
-			0.03,  //{"M16A2GL","weapon"},
+			0.02,  //{"M16A2GL","weapon"},
 			0.01,  //{"M9SD","weapon"},
 			0.01,  //{"MakarovSD","weapon"},
-			0.08,  //{"AK_74","weapon"},
+			0.06,  //{"AK_74","weapon"},
 			0.03,  //{"M4A1_Aim","weapon"},
-			0.08,  //{"AKS_74_kobra","weapon"},
-			0.05,  //{"AKS_74_U","weapon"},
-			0.05,  //{"AK_47_M","weapon"},
+			0.06,  //{"AKS_74_kobra","weapon"},
+			0.04,  //{"AKS_74_U","weapon"},
+			0.04,  //{"AK_47_M","weapon"},
 			0.03,  //{"M24","weapon"},
-			0.08,  //{"M1014","weapon"},
+			0.06,  //{"M1014","weapon"},
 			0.03,  //{"DMR","weapon"},
-			0.05,  //{"M4A1","weapon"},
+			0.04,  //{"M4A1","weapon"},
 			0.03,  //{"M14_EP1","weapon"},
-			0.06,  //{"UZI_EP1","weapon"},
-			0.06,  //{"Remington870_lamp","weapon"},
-			0.10,  //{"glock17_EP1","weapon"},
+			0.05,  //{"UZI_EP1","weapon"},
+			0.05,  //{"Remington870_lamp","weapon"},
+			0.08,  //{"glock17_EP1","weapon"},
 			0.04,  //{"MP5A5","weapon"},
 			0.01,  //{"MP5SD","weapon"},
 			0.03,  //{"M4A3_CCO_EP1","weapon"},
-			0.06,  //{"Binocular","weapon"},
-			0.07,  //{"ItemFlashlightRed","military"},
-			0.08,  //{"ItemKnife","military"},
+			0.05,  //{"Binocular","weapon"},
+			0.06,  //{"ItemFlashlightRed","military"},
+			0.06,  //{"ItemKnife","military"},
 			0.01,  //{"ItemGPS","weapon"},
 			0.03,  //{"ItemMap","military"},
 			0.03,  //{"DZ_ALICE_Pack_EP1","object"} 16
@@ -847,7 +847,7 @@ class CfgBuildingLoot {
 			0.01,  //{"DZ_CivilBackpack_EP1","object"} 24
 			0.01,  //{"DZ_Backpack_EP1","object"} 24
 			0.10,  //{"","medical"},
-			0.10,  //{"","generic"},
+			0.30,  //{"","generic"},
 			0.10,  //{"","military"},
 			0.03,  //{"ItemEtool","weapon"},
 			0.04,  //{"ItemSandbag","magazine"},
@@ -991,18 +991,20 @@ class CfgBuildingLoot {
 			{"","military"},
 			{"WeaponHolder_ItemMachete", "object"},
 			{"huntingrifle","weapon"},
+			{"M14_EP1","weapon"},
 			{"","hunter"}
 		};
 		itemChance[] =	{
-			0.08,
+			0.06,
 			0.05,
 			0.04,
 			0.06,
 			0.03,
-			0.10,
+			0.06,
 			0.03,
 			0.04,
-			0.10
+			0.03,  //{"M14_EP1","weapon"},
+			0.06
 		};
 	};	
 
