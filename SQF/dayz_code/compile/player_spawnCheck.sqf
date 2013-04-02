@@ -109,7 +109,7 @@ diag_log ("LocalZombies: " +str(dayz_spawnZombies) + "/" +str(_maxZombies));
 diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZombies));
 
 diag_log ("Audial Noise: " +str(DAYZ_disAudial));
-diag_log ("Visual Sight: " +str(DAYZ_disVisual));
+diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 };
 	
 _nearby = _position nearObjects ["building",_radius];

@@ -12,8 +12,8 @@ class CfgVehicles {
 		isMan = false;
 		weapons[] = {};
 		magazines[] = {};
-		sensitivity = 4;	// sensor sensitivity
-		sensitivityEar = 2;
+		sensitivity = 2;	// sensor sensitivity
+		sensitivityEar = 4;
 		identityTypes[] = {"zombie1", "zombie2"};
 		class TalkTopics {};
 		languages[] = {};
