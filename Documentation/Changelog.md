@@ -41,7 +41,7 @@ FIX DUE : 2013
 		* [FIXED] - BAF Bags so they dont set on fire. :-) (no moaning it was a bug)
 		* [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end system to keep up. (Something went wrong, please disconnect and try again!)
 		
-		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 (Max sight/hearing from movement forced to 80 meters)
+		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
 		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
 		* [UPDATED] - M107 lowered chance in loot tables.
@@ -51,10 +51,21 @@ FIX DUE : 2013
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded Save option to tent and vehilces this is a fail save option. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
-		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being moved/deleted
-		* [UPDATED] - Zed attacks updated to make them less random. (ie first hit from full hp will no longer put you unconscious)
-		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg if headshot = 1200 blood, Max body dmg = 700 blood)
-		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.8 or the zed gives a head shot. (should reduce the amount of bandages needed)	
+		* [UPDATED] - Loot tables rebalanced
+		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being deleted
+		
+		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg = body 600, Legs 100, Hands 50, Head 1200)
+		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
+		* [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multipier is aboue > 0.8
+		* [UPDATED] - When unconscious all dmg is lowed to 50 blood for each hit zeds do no matter the part they hit. (Should allow some surviabilty)
+		* [UPDATED] - Zeds sight and sound chance has been readded so there is a chance they can ignore you.
+		* [UPDATED] - Sight and sound rebalanced to make them a little more even from movement.
+		* [UPDATED] - Call extension calls for vehilce dmg
+		* [UPDATED] - Zeds will no longer spawn for air vehilces.
+		* [UPDATED] - Hunters loot table adjested with more weapons.
+		
+		* [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
+		
 ______________________		
 FIX DUE : 2013
 
