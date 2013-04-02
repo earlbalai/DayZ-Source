@@ -35,9 +35,9 @@ FIX DUE : 2013
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
 		* [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
-		* [FIXED] - StudyBody should now work
+		* [FIXED] - StudyBody should now work.
 		* [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
-		* [FIXED] - Hero Skin teleport issue fixed.
+		* [FIXED] - Hero Skin teleport issue.
 		* [FIXED] - BAF Bags so they dont set on fire. :-) (no moaning it was a bug)
 		* [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
 		
