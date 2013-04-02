@@ -90,12 +90,14 @@ if (_damage > 0.1) then {
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };
-
+/*
+//Zombie facing players back, Knock player down
 if ((_damage > 0.5) and (_ammo == "zombie")) then {
 	if ((direction _unit - direction _zombie < 10) and (direction _unit - direction _zombie > -10)) then {
 		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver
 	};
 };
+*/
 
 //Record Damage to Minor parts (legs, arms)
 if (_hit in USEC_MinorWounds) then {
