@@ -31,10 +31,11 @@ FIX DUE : 2013
 		* [NEW] - Bigger Compass (You can see the number of degrees).
 		* [NEW] - Added auth retry system to make sure clients are authed before they spawn (should stop seagull issue).
 		* [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timout later).
+		* [NEW] - Mi8 Crash site model.
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
-		* [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
+		* [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
 		* [FIXED] - StudyBody should now work
 		* [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
 		* [FIXED] - Hero Skin teleport issue.
@@ -46,14 +47,12 @@ FIX DUE : 2013
 		* [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
-		* [UPDTAED] - ALL loot table weights have been updated.
+		* [UPDTAED] - ALL loot table weights have been updated/rebalanced.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded Save option to tent and vehilces this is a fail save option. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
-		* [UPDATED] - Loot tables rebalanced
 		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being deleted
-		
 		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg = body 600, Legs 100, Hands 50, Head 1200)
 		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
 		* [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multipier is aboue > 0.8
