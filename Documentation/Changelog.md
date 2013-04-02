@@ -63,6 +63,7 @@ FIX DUE : 2013
 		* [UPDATED] - Call extension calls for vehilce dmg
 		* [UPDATED] - Zeds will no longer spawn for air vehilces.
 		* [UPDATED] - Hunters loot table adjested with more weapons.
+		* [UPDATED] - SQL files working on linux
 		
 		* [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 		
