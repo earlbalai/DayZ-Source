@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.object_classes
-CREATE TABLE IF NOT EXISTS `object_classes` (
+-- Dumping structure for table test.Object_CLASSES
+CREATE TABLE IF NOT EXISTS `Object_CLASSES` (
   `Classname` varchar(32) NOT NULL DEFAULT '',
   `Chance` varchar(4) NOT NULL DEFAULT '0',
   `MaxNum` tinyint(1) unsigned NOT NULL DEFAULT '0',
@@ -20,9 +20,9 @@ CREATE TABLE IF NOT EXISTS `object_classes` (
   PRIMARY KEY (`Classname`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table test.object_classes: 54 rows
-/*!40000 ALTER TABLE `object_classes` DISABLE KEYS */;
-INSERT IGNORE INTO `object_classes` (`Classname`, `Chance`, `MaxNum`, `Damage`, `Type`) VALUES
+-- Dumping data for table test.Object_CLASSES: 54 rows
+/*!40000 ALTER TABLE `Object_CLASSES` DISABLE KEYS */;
+INSERT IGNORE INTO `Object_CLASSES` (`Classname`, `Chance`, `MaxNum`, `Damage`, `Type`) VALUES
 	('ATV_CZ_EP1', '0.70', 6, '0.05000', 'atv'),
 	('car_hatchback', '0.73', 3, '0.05000', 'car'),
 	('datsun1_civil_3_open', '0.75', 3, '0.05000', 'car'),
@@ -79,6 +79,6 @@ INSERT IGNORE INTO `object_classes` (`Classname`, `Chance`, `MaxNum`, `Damage`, 
 	('LandRover_CZ_EP1', '0.59', 3, '0', 'car'),
 	('HMMWV', '0.21', 2, '0', 'car'),
 	('MH6J_DZ', '0.48', 1, '0.05000', 'helicopter');
-/*!40000 ALTER TABLE `object_classes` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Object_CLASSES` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

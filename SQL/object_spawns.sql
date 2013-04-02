@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.object_spawns
-CREATE TABLE IF NOT EXISTS `object_spawns` (
+-- Dumping structure for table test.Object_SPAWNS
+CREATE TABLE IF NOT EXISTS `Object_SPAWNS` (
   `ObjectUID` bigint(20) NOT NULL DEFAULT '0',
   `Classname` varchar(32) DEFAULT NULL,
   `Worldspace` varchar(64) DEFAULT NULL,
@@ -22,9 +22,9 @@ CREATE TABLE IF NOT EXISTS `object_spawns` (
   PRIMARY KEY (`ObjectUID`,`MapID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table test.object_spawns: 119 rows
-/*!40000 ALTER TABLE `object_spawns` DISABLE KEYS */;
-INSERT IGNORE INTO `object_spawns` (`ObjectUID`, `Classname`, `Worldspace`, `Inventory`, `Hitpoints`, `MapID`, `Last_changed`) VALUES
+-- Dumping data for table test.Object_SPAWNS: 119 rows
+/*!40000 ALTER TABLE `Object_SPAWNS` DISABLE KEYS */;
+INSERT IGNORE INTO `Object_SPAWNS` (`ObjectUID`, `Classname`, `Worldspace`, `Inventory`, `Hitpoints`, `MapID`, `Last_changed`) VALUES
 	(771011, 'Tractor', '[0,[13159.146,13083.029,0]]', '[[[],[]],[["5Rnd_762x51_M24"],[]],[[],[]]]', '[]', '117', NULL),
 	(221002, 'PBX', '[0,[13869.803,13508.12,-0.33730567]]', '[[["M24"],[]],[["PartFueltank", "ItemSodaPepsi", "30Rnd_762x39_AK47", "ItemHeatPack", "30Rnd_556x45_StanagSD", "5x_22_LR_17_HMR"],[]],[[],[]]]', '[]', '118', NULL),
 	(331040, 'HMMWV', '[0,[13441.056,12003.912,4.5776367e-005]]', '[[[],[]],[[],[]],[["DZ_CivilBackpack_EP1"],[]]]', '[]', '116', NULL),
@@ -144,6 +144,6 @@ INSERT IGNORE INTO `object_spawns` (`ObjectUID`, `Classname`, `Worldspace`, `Inv
 	(881001, 'UH1H_DZ', '[27,[9686.9316,3604.3081,0]]', '[[[],[]],[["20Rnd_762x51_DMR", "ItemMorphine", "PartVRotor", "15Rnd_W1866_Slug"],[]],[["DZ_Assault_Pack_EP1"],[]]]', '[]', '0', NULL),
 	(331001, 'Volha_2_TK_CIV_EP1', '[124,[9676.3398,8880.75,0]]', '[[["DMR"],[]],[["HandGrenade_west", "ItemMorphine", "1Rnd_Smoke_M203", "10Rnd_127x99_m107", "Skin_Camo1_DZ"],[]],[[],[]]]', '[]', '1', NULL),
 	(111001, 'ATV_US_EP1', '[84,[8837.4805,2844.75,0]]', '[[["MP5A5"],[]],[[],[]],[[],[]]]', '[]', '2', NULL);
-/*!40000 ALTER TABLE `object_spawns` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Object_SPAWNS` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
