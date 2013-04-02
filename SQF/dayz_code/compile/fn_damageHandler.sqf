@@ -7,13 +7,16 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_forceHit","_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _source = _this select 3;
 _ammo = _this select 4;
+if (count _this > 5) then {
+	_forceHit = _this select 5;
+};
 _type = [_damage,_ammo] call fnc_usec_damageType;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
@@ -22,6 +25,7 @@ _recordable = false;
 _isPlayer = (isPlayer _source);
 _humanityHit = 0;
 _myKills = 0;
+_currentAnim = animationState _unit;
 
 _sourceZombie = _source isKindOf "zZombie_base";
 _bloodPercentage = (r_player_blood / r_player_bloodTotal);
@@ -94,10 +98,16 @@ if (_damage > 0.1) then {
 //Zombie facing players back, Knock player down
 if ((_damage > 0.5) and (_ammo == "zombie")) then {
 	if ((direction _unit - direction _zombie < 10) and (direction _unit - direction _zombie > -10)) then {
-		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver
+		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver;
 	};
 };
 */
+
+if ((_damage > 0.5) and (_ammo == "zombie") and (_forceHit == "legs")) then {
+//	_unit switchmove AcinPknlMwlkSlowWrflDb_death;
+diag_log ("falldown");
+	_unit playMove ActsPercMrunSlowWrflDf_TumbleOver;
+};
 
 //Record Damage to Minor parts (legs, arms)
 if (_hit in USEC_MinorWounds) then {
