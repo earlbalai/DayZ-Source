@@ -992,6 +992,10 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemMachete", "object"},
 			{"huntingrifle","weapon"},
 			{"M14_EP1","weapon"},
+			{"M16A2","weapon"},
+			{"AK_74","weapon"},
+			{"M24","weapon"},
+			{"M1014","weapon"},
 			{"","hunter"}
 		};
 		itemChance[] =	{
@@ -1004,6 +1008,11 @@ class CfgBuildingLoot {
 			0.03,
 			0.04,
 			0.03,  //{"M14_EP1","weapon"},
+			0.02,	//{"M16A2","weapon"},
+			0.02,	//{"AK_74","weapon"},
+			0.02,	//{"M24","weapon"},
+			0.02,	//{"M1014","weapon"},
+			0.02,	//{"M14_EP1","weapon"},
 			0.06
 		};
 	};	
