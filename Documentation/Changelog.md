@@ -17,9 +17,11 @@ FIX DUE : 2013
 		
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
 		* [UPDATED] - Updated zed speed to default.
+		* [UPDATED] - melee systems updated
 		
 		* [FIXED] - Zeds spawning underground
 		* [FIXED] - loot spawning undergroung
+		* [FIXED] - melee weapons having no ammo on login
 
 ______________________	
 FIX DUE : 2013
