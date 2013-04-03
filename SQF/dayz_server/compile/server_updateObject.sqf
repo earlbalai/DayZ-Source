@@ -12,8 +12,12 @@ if (count _this > 2) then {
 _parachuteWest = typeOf _object == "ParachuteWest";
 _isNotOk = false;
 
-_objectID =	_object getVariable ["ObjectID","0"];
-_uid = 		_object getVariable ["ObjectUID","0"];
+_objectID = "0";
+_uid = "0";
+if (!((isNil "_object") OR {(isNull _object)})) then {
+	_objectID = _object getVariable ["ObjectID","0"];
+	_uid = _object getVariable ["ObjectUID","0"];
+};
 
 if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 { 
