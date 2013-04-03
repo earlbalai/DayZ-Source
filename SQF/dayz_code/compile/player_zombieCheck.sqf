@@ -1,7 +1,7 @@
 private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
 
 _refObj = vehicle player;
-_listTalk = (position _refObj) nearEntities ["zZombie_Base",80];
+_listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
 _pHeight = (getPosATL _refObj) select 2;
 _attacked = false;
 _multiplier = 1;
@@ -12,11 +12,9 @@ _multiplier = 1;
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
-		_targets = _group getVariable ["targets",[]];
-
 		_chance = 0.8;
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
-			if (_type == "zombie") then { [_x,"attack",(_chance),true] call dayz_zombieSpeak; };
+			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
 			//perform an attack
 			_last = _x getVariable["lastAttack",0];
 			_entHeight = (getPosATL _x) select 2;
@@ -27,19 +25,18 @@ _multiplier = 1;
 			};
 			_attacked = true;
 		} else {
-			if (_type == "zombie") then {
-				if (speed _x < 4) then {
-					[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
-				} else {
-					[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
-				};
+			if (speed _x < 4) then {
+				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
+			} else {
+				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
 			};
 		};
 		
 		//Noise Activation
+		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
-				if (DAYZ_disAudial > 85) then {
+				if (DAYZ_disAudial > 65) then {
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
 				} else {
@@ -59,7 +56,10 @@ _multiplier = 1;
 					};
 				};
 			};
+		};
 		//Sight Activation
+		_targets = _group getVariable ["targets",[]];
+		if (!(_refObj in _targets)) then {
 			if (_dist < (DAYZ_disVisual / 2)) then {
 				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
 				//diag_log ("Visual Detection: m" + str([_x,_dist]) + " " + str(_chance));
@@ -84,7 +84,6 @@ _multiplier = 1;
 			};
 		};
 	};
-	//diag_log ("Targets Array: " +str(_targets));
 } forEach _listTalk;
 
 if (_attacked) then {
