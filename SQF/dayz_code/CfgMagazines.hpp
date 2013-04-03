@@ -9,36 +9,55 @@ class CfgMagazines {
 		flash = "";
 		flashSize = 0;
 		initSpeed = 100;
-		maxLeadSpeed = 20;	// max estimated speed km/h
-		dexterity = 20;
+		maxLeadSpeed = 15; //20
+		dexterity = 2; //20
 		picture = "\dayz_weapons\textures\equip_shells_ca.paa";
-		displayName = "2h2";
-		displayNameMagazine = "h2h";
-		shortNameMagazine = "h2h";
+		displayName = "crt";
+		displayNameMagazine = "crt";
+		shortNameMagazine = "crt";
 		optics = false;
 		distanceZoomMin = 0;
 		distanceZoomMax = 0;
-		count = 1;
 		reloadTime = 0.1;
 		magazineReloadTime = 0.01;
 		drySound[] = {"", 0, 1};
 		reloadMagazineSound[] = {"", 0, 1};
 		modes[] = {"Single"};
-		ammo = "Hatchet_Swing_Ammo";
 		sound[] = {"Weapons\grenade_launch", 0.0031623, 1};
 		reloadSound[] = {"", 0.0003162, 1};
 		showEmpty = 0;
 		autoReload = true;
+		count = 100000;
 		canLock = LockNo;
+		//
+		burst = 1;
+		multiplier = 1;
+		ffMagnitude = 0.1;
+		ffFrequency = 1;
+		ffCount = 1;
+		recoil = "Empty";
+		dispersion = 0.2;
 	};
 	
 	class Machete_Swing : Melee_Swing {
+		displayName = "Machete";
+		displayNameMagazine = "Machete";
+		shortNameMagazine = "Machete";
+		ammo = "Machete_Swing_Ammo";
+	};
+	class crowbar_swing : Melee_Swing {
+		displayName = "Crowbar";
+		displayNameMagazine = "Crowbar";
+		shortNameMagazine = "Crowbar";
+		ammo = "Crowbar_Swing_Ammo";
+	};
+	class Hatchet_Swing : Melee_Swing {
 		displayName = "Hatchet";
 		displayNameMagazine = "Hatchet";
 		shortNameMagazine = "Hatchet";
-		ammo = "Machete_Swing_Ammo";
-		count = 100000;
+		ammo = "Hatchet_Swing_Ammo";
 	};
+	
 	class ItemTent : CA_Magazine {
 		scope = public;
 		count = 1;
