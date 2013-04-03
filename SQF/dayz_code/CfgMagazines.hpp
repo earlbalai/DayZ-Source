@@ -1,6 +1,44 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
-
+	
+	class Melee_Swing : CA_Magazine {
+		scopeWeapon = protected;
+		scopeMagazine = protected;
+		magazineType = WeaponNoSlot;
+		type = VSoft;
+		flash = "";
+		flashSize = 0;
+		initSpeed = 100;
+		maxLeadSpeed = 20;	// max estimated speed km/h
+		dexterity = 20;
+		picture = "\dayz_weapons\textures\equip_shells_ca.paa";
+		displayName = "2h2";
+		displayNameMagazine = "h2h";
+		shortNameMagazine = "h2h";
+		optics = false;
+		distanceZoomMin = 0;
+		distanceZoomMax = 0;
+		count = 1;
+		reloadTime = 0.1;
+		magazineReloadTime = 0.01;
+		drySound[] = {"", 0, 1};
+		reloadMagazineSound[] = {"", 0, 1};
+		modes[] = {"Single"};
+		ammo = "Hatchet_Swing_Ammo";
+		sound[] = {"Weapons\grenade_launch", 0.0031623, 1};
+		reloadSound[] = {"", 0.0003162, 1};
+		showEmpty = 0;
+		autoReload = true;
+		canLock = LockNo;
+	};
+	
+	class Machete_Swing : Melee_Swing {
+		displayName = "Hatchet";
+		displayNameMagazine = "Hatchet";
+		shortNameMagazine = "Hatchet";
+		ammo = "Machete_Swing_Ammo";
+		count = 100000;
+	};
 	class ItemTent : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -890,6 +928,7 @@ class CfgMagazines {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
+	 /*
 	 class Hatchet_Swing;
 	 class Machete_Swing : Hatchet_Swing {
 		displayName = "Machete";
@@ -897,6 +936,7 @@ class CfgMagazines {
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
 	};
+	*/
 	
 	class ItemTrashToiletpaper : CA_Magazine {
 		scope = public;

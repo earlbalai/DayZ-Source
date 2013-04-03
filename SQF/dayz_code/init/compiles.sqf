@@ -371,22 +371,22 @@ if (!isDedicated) then {
 			dayz_heartBeat = false;
 		};
 	};
-	/*
+	
 	dayz_meleeMagazineCheck = {
 		private["_meleeNum","_magType","_wpnType"];
-		_wpnType = _this;
-		_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
-		_meleeNum = ({_x == _magType} count magazines player);
-		if (_meleeNum > 1) then {
-			if (player hasWeapon _wpnType) then {
-				_meleeNum = _meleeNum - 1;
-			};
-			for "_i" from 1 to _meleeNum do {
-				player removeMagazine _magType;
+	diag_log ("Debug: MeleeMagazineCheck");
+		_wpnType = primaryWeapon player;
+	diag_log ("Debug: wpnType: " +str(_wpnType));
+		_ismelee = 	(gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+	diag_log ("Debug: Weapon isMelee: " +str(_ismelee));	
+		if (_ismelee == "true") then {
+			_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
+			_meleeNum = ({_x == _magType} count magazines player);
+			if (_meleeNum < 1) then {
+				player addMagazine _magType;
 			};
 		};
 	};
-	*/
 	dayz_originalPlayer =		player;
 };
 
