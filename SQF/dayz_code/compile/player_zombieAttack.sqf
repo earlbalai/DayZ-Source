@@ -113,8 +113,8 @@ if (_vehicle != player) then {
 					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 				};
 				if ((animationState _unit) in _CrawlingAttackAnimations) then {
-						//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
-						[player, _wound, _damage, _unit,"zombie","legs"] call fnc_usec_damageHandler;
+					//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
+					[player, _wound, _damage, _unit,"zombie","legs"] call fnc_usec_damageHandler;
 				};
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
