@@ -9,6 +9,30 @@ FIX DUE : 2013
 		* Mission (server admins only) (Prerequisites)
 		
 	Community Notes: 
+		* DayZ 1.7.8.*
+		
+	Changes:
+
+		* [NEW]
+		
+		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
+		* [UPDATED] - Updated zed speed to default.
+		
+		* [FIXED] - Zeds spawning underground
+		* [FIXED] - loot spawning undergroung
+
+______________________	
+FIX DUE : 2013
+
+	Affected addons:
+		* dayz_anim
+		* dayz_code 
+		* dayz_communityassets
+		* dayz_sfx
+		* dayz_server (server admins only)
+		* Mission (server admins only) (Prerequisites)
+		
+	Community Notes: 
 		* DayZ 1.7.7
 		
 	Changes:
@@ -48,13 +72,13 @@ FIX DUE : 2013
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
+		* [UPDTAED] - ALL loot table weights have been reblanced.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded the "save" option to tents and vehilces. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
 		* [UPDATED] - Loot tables rebalanced.
 		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being deleted.
-		
 		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg = body 600, Legs 100, Hands 50, Head 1200)
 		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
 		* [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multipier is above > 0.8
