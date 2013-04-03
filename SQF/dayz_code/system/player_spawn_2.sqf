@@ -330,8 +330,11 @@ while {true} do {
 		};
 	};
 	
-	//Hatchet ammo fix	
-	//"MeleeHatchet" call dayz_meleeMagazineCheck;
+	//Melee Weapons ammo fix
+	if(isNil {login_ammochecked}) then {
+		login_ammochecked = true;
+		call dayz_meleeMagazineCheck;
+	};
 	
 	//Crowbar ammo fix	
 	//"MeleeCrowbar" call dayz_meleeMagazineCheck;
