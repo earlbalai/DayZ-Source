@@ -18,8 +18,6 @@ _lootChance =	getNumber (_config >> "lootChance");
 			_index = _weights select _index;
 			_itemType = _itemTypes select _index;
 			[_itemType select 0, _itemType select 1 , _iPos, 0.0]  call spawn_loot;
-			_item setVariable ["created",(DateToNumber date),true];
-			_item setVariable ["looted", (DateToNumber date),true];
 		};
 	};
 } forEach _positions;
