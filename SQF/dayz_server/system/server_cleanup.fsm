@@ -46,7 +46,7 @@ link21[] = {16,1};
 link22[] = {17,9};
 link23[] = {18,17};
 globals[] = {25.000000,1,0,0,0,640,480,1,24,6316128,1,-396.580658,354.272186,319.367249,-231.881027,670,649,1};
-window[] = {0,-1,-1,-32000,-32000,802,22,1351,22,1,687};
+window[] = {0,-1,-1,-1,-1,802,22,1351,22,1,687};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -248,9 +248,14 @@ class FSM
        "	 _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 130]);" \n
        "" \n
        "	_created = (_x getVariable [""created"",-0.1]);" \n
+       "" \n
+       "	if (_created == -0.1) then {" \n
+       "		_x setVariable [""created"",(DateToNumber date),true];" \n
+       "	};" \n
+       "" \n
        "	_age = ((DateToNumber date) - _created) * 525948;" \n
        "	" \n
-       "	if ( (!_keep) && (_nearby==0) && (_age > 600) ) then {" \n
+       "	if ( (!_keep) && (_nearby==0) && (_age > 10) ) then {" \n
        "		deleteVehicle _x;" \n
        "		_delQty = _delQty + 1;" \n
        "	};" \n
