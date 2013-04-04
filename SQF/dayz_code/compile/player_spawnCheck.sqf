@@ -132,22 +132,23 @@ if (dayz_spawnZombies == 0) then {
 	_canLoot = 		isClass (_config);
 	_dis = _x distance player;
 	_checkLoot = ((count (getArray (_config >> "lootPos"))) > 0);
+	_x setVariable ["cleared",false,true];
 	
 	//Loot
 	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle and _checkLoot) then {
 		_looted = (_x getVariable ["looted",-0.1]);
-		_cleared = (_x getVariable ["cleared",true]);
+		_cleared = (_x getVariable ["cleared",false]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _looted) * 525948;
-		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
+		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" ); 
 		if ((_age > 10) and (!_cleared)) then {
 			_x setVariable ["cleared",true,true];
 			_x setVariable ["looted",_dateNow,true];
 		};
-		if ((_age > 5) and (_cleared)) then {
-			_x setVariable ["looted",_dateNow,true];
-			_handle = [_x] spawn building_spawnLoot;
-			waitUntil{scriptDone _handle};
+		_cleared = (_x getVariable ["cleared",false]);
+		if ((_cleared))  then {
+			//_x setVariable ["looted",_dateNow,true];
+			[_x] spawn building_spawnLoot;
 		};
 	};
 	//Zeds
@@ -160,8 +161,7 @@ if (dayz_spawnZombies == 0) then {
 					_age = (_dateNow - _zombied) * 525948;
 					if (_age > 3) then {
 						_x setVariable ["zombieSpawn",_dateNow,true];
-						_handle = [_x] spawn building_spawnZombies;
-						waitUntil{scriptDone _handle};
+						[_x] spawn building_spawnZombies;
 					};
 			} else {
 				dayz_spawnWait = time;

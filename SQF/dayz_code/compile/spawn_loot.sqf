@@ -48,16 +48,6 @@ switch (_iClass) do {
 	};
 };
 
-/*
-// timestamp for later clearing
-_dateNow = (DateToNumber date);
-_item setVariable ["looted",_dateNow,true];
-
-
-_iPosL = _iPos select 2;
-if( _iPosL < 0 ) then  { _iPos = [_iPos select 0,_iPos select 1,0]; };
-*/
-
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };
