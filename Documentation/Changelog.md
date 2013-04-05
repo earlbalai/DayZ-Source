@@ -13,6 +13,7 @@ FIX DUE : 2013
 		
 	Changes:
 
+		* [NEW] - Sleeping now changes thirst and hunger
 		* [NEW]
 		
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
