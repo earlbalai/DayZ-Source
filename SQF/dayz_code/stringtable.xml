@@ -8,10 +8,7 @@
 			<Czech>Přidat do nástrojů</Czech>
 			<French>Ajouter à la Ceinture à outils</French>
 			<German>Zum Toolbelt hinzufügen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Aan gereedschapsriem toevoegen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
@@ -20,10 +17,7 @@
 			<Czech>Odložit</Czech>
 			<French>Lâcher</French>
 			<German>Fallen lassen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Laten vallen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ACTIONS_RFROMTB">
 			<English>Remove from Toolbelt</English>
@@ -32,10 +26,7 @@
 			<Czech>Odstranit z nástrojů</Czech>
 			<French>Retirer de la Ceinture à outils</French>
 			<German>Vom Toolbelt entfernen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Van gereedschapsriem afhalen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">
 			<English>Create quiver</English>
@@ -43,11 +34,8 @@
 			<Spanish>Crear Carcaj</Spanish>
 			<French>Créer un carquois</French>
 			<German>Erstelle Köcher</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Pijlkoker maken</Dutch>
 			<Czech>Vytvořit toulec</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ACTION_BUILD">
 			<English>Build</English>
@@ -57,21 +45,14 @@
 			<Czech>Postavit</Czech>
 			<French>Construire</French>
 			<German>Baue</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Bouwen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ACTION_THROW">
 			<English>Throw</English>
 			<German>Werfen</German>
 			<Russian>Бросить</Russian>
 			<Spanish>Arrojar</Spanish>
-<<<<<<< HEAD
-			<Dutch>Throw</Dutch>
-=======
 			<Dutch>Gooien</Dutch>
->>>>>>> Development
 			<French>Jeter</French>
 			<Czech>Hodit</Czech>
 		</Key>
@@ -82,10 +63,7 @@
 			<Spanish>Asentar Carpa</Spanish>
 			<Czech>Postavit stan</Czech>
 			<French>Monter la Tente</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Tent opzetten</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_MAG_COMBINE">
 			<English>Re-combine</English>
@@ -95,10 +73,7 @@
 			<Dutch>Re-combine</Dutch>
 			<French>Re-combiner</French>
 			<Czech>Zkombinovat</Czech>
-<<<<<<< HEAD
-=======
 			<Dutch>Opnieuw combineren</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_init_take">	<!-- Will be used for action menu collecting item such as "Take Water Bottle" or "Take Colt 1911" -->
 			<English>Take %1</English>
@@ -124,11 +99,7 @@
 			<Russian>Прокипятить воду</Russian>
 			<Spanish>Hervir Agua</Spanish>
 			<Dutch>koge vand</Dutch>
-<<<<<<< HEAD
-			<French>faire bouillir l'eau</French>
-=======
 			<French>Faire bouillir l'eau</French>
->>>>>>> Development
 			<Czech>Převařit vodu</Czech>
 		</Key>
 		<Key ID="str_actions_self_04">
@@ -153,11 +124,7 @@
 			<English>Remove fireplace</English>
 			<German>Feuerstelle entfernen</German>
 			<Russian>Убрать костер</Russian>
-<<<<<<< HEAD
-			<Spanish>Remover fogata</Spanish>
-=======
 			<Spanish>Remover Fogata</Spanish>
->>>>>>> Development
 			<Dutch>Kampvuur verwijderen</Dutch>
 			<French>Retirer le Feu de camp</French>
 			<Czech>Odstranit ohniště</Czech>
@@ -327,11 +294,7 @@
 		<Key ID="str_actions_medical_14">
 			<English>Unload patients from %1</English>
 			<German>Patienten aus %1 ausladen</German>
-<<<<<<< HEAD
-			<Russian>Вытащить раненных из %1</Russian>
-=======
 			<Russian>Вытащить раненых из %1</Russian>
->>>>>>> Development
 			<Spanish>Descargar pacientes del %1</Spanish>
 			<Dutch>Patiënten uit %1 laden</Dutch>
 			<French>Décharger le(s) patient(s) de %1</French>
@@ -369,11 +332,7 @@
 			<German>Sie können so schnell keine weitere Bluttransfusion durchführen</German>
 			<Russian>Нельзя так часто переливать кровь!</Russian>
 			<Spanish>No puedes realizar otra transfución de sangre tan rápido.</Spanish>
-<<<<<<< HEAD
-			<Dutch>You cannot perform another blood transfusion so fast</Dutch>
-=======
 			<Dutch>Je kan niet zo snel nog een bloedtransfusie uitvoeren.</Dutch>
->>>>>>> Development
 			<French>Vous ne pouvez pas faire d'autre transfusion de sang aussi rapidement</French>
 			<Czech>Nelze znovu provést krevní transfúzi tak rychle po sobě.</Czech>
 		</Key>
@@ -409,16 +368,10 @@
 			<German>%1 wenden</German>
 			<Russian>Перевернуть %1</Russian>
 			<Spanish>Voltear %1</Spanish>
-<<<<<<< HEAD
-			<Dutch>Turn Over %1</Dutch>
-			<French>Retourner %1</French>
-			<Czech>Otočit %1</Czech>
-=======
 			<Dutch>%1 omdraaien</Dutch>
 			<French>Retourner %1</French>
 			<Czech>Otočit %1</Czech>
 			<Dutch>%1 omkantelen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>
@@ -428,10 +381,7 @@
 			<Dutch>Enable Stats</Dutch>
 			<French>Activer les Stats</French>
 			<Czech>Zapnout statistiky</Czech>
-<<<<<<< HEAD
-=======
 			<Dutch>Statistieken inschakelen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats_sd">
 			<English>Survived %1 Days</English>
@@ -440,10 +390,7 @@
 			<Czech>Přežito %1 dnů</Czech>
 			<French>Survécu %1 jours</French>
 			<German>%1 Tage überlebt</German>
-<<<<<<< HEAD
-=======
 			<Dutch>%1 dagen overleefd</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats_zk">
 			<English>Zombies Killed</English>
@@ -452,10 +399,7 @@
 			<Czech>Zombie zabito</Czech>
 			<French>Zombies Tués</French>
 			<German>Zombies getötet</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Zombies gedood</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats_hs">
 			<English>Headshots</English>
@@ -464,10 +408,7 @@
 			<Czech>Střel do hlavy</Czech>
 			<French>Tirs à la tête</French>
 			<German>Kopfschüsse</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Hoofdschoten</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats_hk">
 			<English>Murders</English>
@@ -476,10 +417,7 @@
 			<Czech>Vražď</Czech>
 			<French>Meurtres</French>
 			<German>Mörder</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Moorden</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats_bk">
 			<English>Bandits Killed</English>
@@ -488,10 +426,7 @@
 			<Czech>Zabito banditů</Czech>
 			<French>Bandits tués</French>
 			<German>Getötete Banditen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Bandieten gedood</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_stats_hm">
 			<English>Humanity</English>
@@ -500,21 +435,14 @@
 			<Czech>Humanita</Czech>
 			<French>Humanité</French>
 			<German>Menschlichkeit</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Menselijkheid</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_actions_self_sleep">
 			<English>Sleep</English>
 			<German>Schlafen</German>
 			<Russian>Поспать</Russian>
 			<Spanish>Dormir</Spanish>
-<<<<<<< HEAD
-			<Dutch>Sleep</Dutch>
-=======
 			<Dutch>Slapen</Dutch>
->>>>>>> Development
 			<French>Dormir</French>
 			<Czech>Spát</Czech>
 		</Key>
@@ -536,10 +464,7 @@
 			<Spanish>Carpa</Spanish>
 			<Czech>Stan</Czech>
 			<French>Tente de camping</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Kampeertent</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_20">
 			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
@@ -548,10 +473,7 @@
 			<Spanish>Una carpa que puede ser asentada permitiendo almacenar objetos.</Spanish>
 			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
 			<French>Une tente de camping qui peut être montée, permettant un espace de stockage étendu à l'abri des autres.</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Een kampeertent die opgezet kan worden, waarin je meerdere voorwerpen kan opslaan, veilig weg van anderen.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21">
 			<English>Sandbags</English>
@@ -560,10 +482,7 @@
 			<Spanish>Bolsas de Arena</Spanish>
 			<Czech>Pytle s pískem</Czech>
 			<French>Sacs de sable</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Zandzakken</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
@@ -572,10 +491,7 @@
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Pytle naplěné pískem a solí, které mohou být použity pro postavení vojenské pevnosti.</Czech>
 			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Zakken gemaakt van zakkengoed dat gevuld kan worden met zand of grond en dat gebruikt wordt om militaire versterkingen te bouwen.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_22">
 			<English>Tank Trap Kit</English>
@@ -584,10 +500,7 @@
 			<Spanish>Kit de Trampa Antitanque</Spanish>
 			<Czech>Tankový zátaras</Czech>
 			<French>Obstacle anti Tank</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Tankvalstrik</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_22">
 			<English>Metal materials that can be used by an engineer to construct a Tank Trap.</English>
@@ -595,12 +508,8 @@
 			<Russian>Металлические детали, из которых собирается противотанковый ёж.</Russian>
 			<Spanish>Materiales metálicos que pueden ser usados para crear una trampa antitanque.</Spanish>
 			<Czech>Kovový materiál, který může být použit pro postavení zátarasu </Czech>
-<<<<<<< HEAD
-			<French>Du matériel métallique qui peut être utilisé par un ingénieur pour construire a obstacle anti tank.</French>
-=======
 			<French>Du matériel métallique qui peut être utilisé par un ingénieur pour construire un obstacle anti tank.</French>
 			<Dutch>Metale materialen die gebruikt worden door een genist om een tankvalstrik te bouwen.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_23">
 			<English>Wire Fencing Kit</English>
@@ -609,10 +518,7 @@
 			<Spanish>Kit de Alambre de Púas</Spanish>
 			<Czech>Drátěný plot</Czech>
 			<French>Kit de barbelés</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Prikkeldraadkit</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_23">
 			<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>
@@ -621,10 +527,7 @@
 			<Spanish>Una bobina de alambre de púas muy afilado que puede ser expandir como un acordeón para formar obstáculos militares.</Spanish>
 			<Czech>Ostnatý drát, který může být použit pro vojenský drátěný plot z ostnatých drátů.</Czech>
 			<French>Du fil de fer tranchant comme un rasoir et bardé de pointes métalliques, utilisé comme obstacle barbelé militaire.</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Scheermesdraad in grote spoelen die uitgebreid kunnen worden als een soort harmonica met stalen piketten dat gebruikt wordt om militaire draadobstacles te vormen.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BEARTRAP">
 			<English>Bear Trap</English>
@@ -633,24 +536,16 @@
 			<Czech>Past na medvědy</Czech>
 			<French>Piège à ours</French>
 			<German>Bärenfalle</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Berenval</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BEARTRAP">
 			<English>A device to remotely catch an animal or injure a human.</English>
 			<Spanish>Un dispositivo para atrapar remotamente un animal o herir a un humano.</Spanish>
 			<Russian>Устройство для ловли животных. Может повредить и человека.</Russian>
 			<Czech>Věc na chytání zvířat nebo zranění lidí.</Czech>
-<<<<<<< HEAD
-			<French>Un dispositif utilisé pour attraper un animal a distance ou pour blesser un humain.</French>
-			<German>Ein Objekt um Tiere aus der Ferne zu fangen oder Menschen zu verletzen</German>
-=======
 			<French>Un dispositif utilisé pour attraper un animal à distance ou pour blesser un humain.</French>
 			<German>Ein Objekt um Tiere aus der Ferne zu fangen oder Menschen zu verletzen</German>
 			<Dutch>Een apparaat dat gebruikt wordt om een dier te vangen of mens te verwonden.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HATCHET">
 			<English>Hatchet</English>
@@ -659,10 +554,7 @@
 			<Czech>Sekera</Czech>
 			<French>Hache</French>
 			<German>Beil</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Bijl</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
@@ -671,10 +563,7 @@
 			<Czech>Jednoruční sekera pro sekání dřeva nebo i proti zombie.</Czech>
 			<French>Un outil à une main à lame éffilée utilisé pour couper du bois.</French>
 			<German>Ein einhändiges benutzbares Schlagwerkzeug mit einer scharfen Klinge zum schneiden und spalten von Holz</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een scherp gereedschap te gebruiken met een hand, dat gebruikt om hout te kappen en splitsen.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<English>Crowbar</English>
@@ -683,10 +572,7 @@
 			<Czech>Páčidlo</Czech>
 			<French>Pied-de-biche</French>
 			<German>Brechstange</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Koevoet</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CROWBAR">
 			<English>A tool consisting of a metal bar with a single curved end and flattened points, often with a small fissure on one or both ends for removing nails.</English>
@@ -695,10 +581,7 @@
 			<Czech>Kovová zbraň s točivým zakončením. Často s prasklinou na jedné či obou stranách. </Czech>
 			<French>Un outil composé d'une barre métallique avec une extrémité incurvée et plate, souvent munie d'une fente pour arracher les clous.</French>
 			<German>Ein Werkzeug, welches aus einem Metallstab mit einem gekrümmten Ende um Objekte aufzuhebeln oder Nägen zu entfernen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een gereedschap bestaande uit een metalen staaf met een enkel geboen uiteinde en afgeplatte punten, vaak met een kleine kloof aan een of beide uiteinden voor het verwijderen van spijkers.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_MACHETE">
 			<English>Machete</English>
@@ -707,10 +590,7 @@
 			<Czech>Mačeta</Czech>
 			<French>Machette</French>
 			<German>Machete</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Kapmes</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
@@ -719,10 +599,7 @@
 			<Czech>Původně zbraň pro zahradničení. Nyní silná zbraň proti zombie i když výskyt není tak častý.</Czech>
 			<French>Un outil agricole qui peut être utilisé comme une arme. La machette est moins versatile que la hache mais plus tranchante.</French>
 			<German>Ein Werkzeug, welches in der Landwirtschaft vorkommt, aber auch als Waffe verwendet werden kann. Es ist vielseitiger als das Beil.</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een agricultureel gereedschap veranderd in een wapen. Het kapmes is wellicht minder veelzijdag dan de normale bijl, maar het kan toch veel schade aanrichten.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
@@ -731,10 +608,7 @@
 			<Czech>Oblečení</Czech>
 			<French>Vêtements</French>
 			<German>Kleidung</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Kleding</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CLOTHES">
 			<English>Clothes Parcel.</English>
@@ -743,10 +617,7 @@
 			<Czech>Balík oblečení</Czech>
 			<French>Paquet de Vêtements</French>
 			<German>Kleidung zerteilen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Kledingsperceel</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_TEXT_CLOTHES">
 			<English>Wear</English>
@@ -755,10 +626,7 @@
 			<Czech>Nosit</Czech>
 			<French>Porter</French>
 			<German>Tragen</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Dragen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GHILLIE">
 			<English>Ghillie Suit</English>
@@ -767,10 +635,7 @@
 			<Spanish>Traje Camuflado "Guillie"</Spanish>
 			<Czech>Hejkal</Czech>
 			<French>Tenue de camouflage "Ghillie"</French>
-<<<<<<< HEAD
-=======
 			<Dutch>Ghilliepak</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
@@ -779,10 +644,7 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Může být rozbaleno a nošeno.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Eine Sorte der Camouflage Kleidung, welches dem Blattwerk ähneln soll. Kann ausgepackt und getragen werden.</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een soort camouflagekleding, ontworpen om te lijken op dicht gebladerte. Kan uitgepakt en gedragen worden.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<English>Camo Clothing</English>
@@ -791,10 +653,7 @@
 			<Czech>Kamuflážní oblečení</Czech>
 			<French>Tenue de camouflage</French>
 			<German>Camouflage Kleidung</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Camouflagekleding</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CAMO">
 			<English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
@@ -803,10 +662,7 @@
 			<Czech>Mix maskovacích kalhot a hnědého trička bez čepice. Může být rozbaleno a nošeno.</Czech>
 			<French>Assemblage d'un pantalon camo urbain avec un t-shirt brun. Peut être porté.</French>
 			<German>Eine Kleidung, bestehend aus einer Camouflage Hose und einem braunen T-Shirt, aber ohne eine Kopfbedeckung. Kann ausgepackt werden und getragen werden.</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een mix van camoflagebroek met een bruin t-shirt en geen hoed. Kan uitgepakt en gedragen worden.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CIV">
 			<English>Civilian Clothing</English>
@@ -815,10 +671,7 @@
 			<Czech>Civilní oblečení</Czech>
 			<French>Vêtements Civils</French>
 			<German>Zivilisten Kleidung</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Burgerkleding</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CIV">
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
@@ -827,10 +680,7 @@
 			<Czech>Klasické civilní oblečení s lehkou vestou a čepicí. Může být rozbaleno a nošeno.</Czech>
 			<French>Assemblage de vêtements civils avec une veste légère et une casquette. Peut être porté.</French>
 			<German>Eine normale Kleidung von Zivilisten, bestehend aus einer leichten Weste und einem Hut. Kann ausgepackt werden und getragen werden.</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een normale mix van burgerkleding en lichtgewicht vest en hoed. Kan uitgepakt en gedragen worden.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SOLDIER">
 			<English>Soldier Clothing</English>
@@ -839,10 +689,7 @@
 			<Czech>Vojenské oblečení</Czech>
 			<French>Uniforme de Soldat</French>
 			<German>Soldaten Kleidung</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Soldatenkleding</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SOLDIER">
 			<English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
@@ -851,21 +698,14 @@
 			<Czech>Britská vojenská uniforma. Může být rozbalena a nošena.</Czech>
 			<French>Un uniforme de soldat de l'Armée Britannique. Peut être porté.</French>
 			<German>Eine Uniform des Britischen Militärs. Kann ausgepackt werden und getragen werden.</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een Brits legeruniform. Kan uitgepakt en gedragen worden.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_EQUIP_CODE_NAME_3">
 			<English>Box of Wet Matches</English>
 			<German>Feuchte Streichholzschachtel</German>
 			<Russian>Коробка промокших спичек</Russian>
 			<Spanish>Caja de Fósforos Mojada</Spanish>
-<<<<<<< HEAD
-			<Dutch>Box of Wet Matches</Dutch>
-=======
 			<Dutch>Doos Natte Lucifers</Dutch>
->>>>>>> Development
 			<French>Boîte d'Allumettes mouillées</French>
 			<Czech>Krabička mokrých zápalek</Czech>
 		</Key>
@@ -874,11 +714,7 @@
 			<German>Feuchte Streichholzschachtel.</German>
 			<Russian>Коробка промокших спичек.</Russian>
 			<Spanish>Caja de fósforos mojada.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Box of wet matches.</Dutch>
-=======
 			<Dutch>Doos natte lucifers.</Dutch>
->>>>>>> Development
 			<French>Boîte d'Allumettes mouillées.</French>
 			<Czech>Krabička plná mokrých zápalek.</Czech>
 		</Key>
@@ -887,11 +723,7 @@
 			<German>Stumpfe Axt</German>
 			<Russian>Затупившийся топор</Russian>
 			<Spanish>Hacha Desafilada</Spanish>
-<<<<<<< HEAD
-			<Dutch>Blunt Hatchet</Dutch>
-=======
 			<Dutch>Botte Bijl</Dutch>
->>>>>>> Development
 			<French>Hache émoussée</French>
 			<Czech>Tupá sekera</Czech>
 		</Key>
@@ -900,11 +732,7 @@
 			<German>Ihre Axt scheint zu stumpf zu sein, um sie zu verwenden.</German>
 			<Russian>Ваш топор слишком туп, чтобы его использовать.</Russian>
 			<Spanish>Tu hacha parece estar muy desafilada para ser usada.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Your Hatchet appears to be too blunt to be used.</Dutch>
-=======
 			<Dutch>Je bijl lijkt te bot te zijn om te gebruiken.</Dutch>
->>>>>>> Development
 			<French>Votre Hache semble être trop émoussée pour l'utiliser</French>
 			<Czech>Vypadá to, že tvá sekera je příliž tupá na to, aby se dala použít.</Czech>
 		</Key>
@@ -913,11 +741,7 @@
 			<German>Stumpfes Messer</German>
 			<Russian>Затупившийся нож</Russian>
 			<Spanish>Cuchillo Desafilado</Spanish>
-<<<<<<< HEAD
-			<Dutch>Blunt Knife</Dutch>
-=======
 			<Dutch>Bot Mes</Dutch>
->>>>>>> Development
 			<French>Couteau émoussé</French>
 			<Czech>Tupý nůž</Czech>
 		</Key>
@@ -926,11 +750,7 @@
 			<German>Ihr Messer scheint zu stumpf zu sein.</German>
 			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Your Knife appears to be too blunt.</Dutch>
-=======
 			<Dutch>Je mes lijkt te bot te zijn.</Dutch>
->>>>>>> Development
 			<French>Votre couteau semble trop émoussé</French>
 			<Czech>Vypadá to, že tvůj nůž je příliš tupý.</Czech>
 		</Key>
@@ -939,11 +759,7 @@
 			<German>Rohes Fleisch</German>
 			<Russian>Сырое мясо</Russian>
 			<Spanish>Carne Cruda</Spanish>
-<<<<<<< HEAD
-			<Dutch>Raw Meat</Dutch>
-=======
 			<Dutch>Rauw Vlees</Dutch>
->>>>>>> Development
 			<French>Viande Crue</French>
 			<Czech>Syrové maso</Czech>
 		</Key>
@@ -952,11 +768,7 @@
 			<German>Rohes Fleisch für den Verzehr, sollte sicherheitshalber vorher gekocht werden.</German>
 			<Russian>Сырое мясо. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Raw Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-=======
 			<Dutch>Rauw vlees dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten.</Dutch>
->>>>>>> Development
 			<French>La Viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové maso nejdříve upečeno.</Czech>
 		</Key>
@@ -965,11 +777,7 @@
 			<German>Rohes Hammelfleisch</German>
 			<Russian>Ягнятина</Russian>
 			<Spanish>Cordero Crudo</Spanish>
-<<<<<<< HEAD
-			<Dutch>BMutton Raw</Dutch>
-=======
 			<Dutch>Schapevlees</Dutch>
->>>>>>> Development
 			<French>Mouton Cru</French>
 			<Czech>Jehněčí maso</Czech>
 		</Key>
@@ -978,11 +786,7 @@
 			<German>Lammfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Lamb Meat to be used for sustainment, must be cooked prior to eating.</Dutch>
-=======
 			<Dutch>Schapevlees dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten.</Dutch>
->>>>>>> Development
 			<French>La Viande de Chèvre peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být maso z kozy nejdříve upečeno.</Czech>
 		</Key>
@@ -991,11 +795,7 @@
 			<German>Rohe Hühnchenkeule</German>
 			<Russian>Куриный окорочек</Russian>
 			<Spanish>Pata de Pollo Cruda</Spanish>
-<<<<<<< HEAD
-			<Dutch>Raw Chicken Leg</Dutch>
-=======
 			<Dutch>Kippenpoot</Dutch>
->>>>>>> Development
 			<French>Cuisse de Poulet crue</French>
 			<Czech>Syrová kuřecí noha</Czech>
 		</Key>
@@ -1004,11 +804,7 @@
 			<German>Hühnchenkeule für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Сырой куриный окорочек. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Chicken Leg to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-=======
 			<Dutch>Kippenpoot dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten..</Dutch>
->>>>>>> Development
 			<French>La Cuisse de Poulet crue peut être consommée mais devrait être cuite avant de pouvoir la manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být kuřecí nožka nejdříve upečena.</Czech>
 		</Key>
@@ -1017,11 +813,7 @@
 			<German>Rohes Kaninchen</German>
 			<Russian>Кролик</Russian>
 			<Spanish>Conejo Crudo</Spanish>
-<<<<<<< HEAD
-			<Dutch>Rabbit Raw</Dutch>
-=======
 			<Dutch>Rauw Konijn</Dutch>
->>>>>>> Development
 			<French>Lapin cru</French>
 			<Czech>Králičí maso</Czech>
 		</Key>
@@ -1030,11 +822,7 @@
 			<German>Kaninchenfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Rabbit to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-=======
 			<Dutch>Konijn dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten..</Dutch>
->>>>>>> Development
 			<French>Le Lapin cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být králičí maso nejdříve upečeno.</Czech>
 		</Key>
@@ -1042,13 +830,8 @@
 			<English>Raw Bacon</English>
 			<German>Roher Speck</German>
 			<Russian>Бекон</Russian>
-<<<<<<< HEAD
-			<Spanish>Costillar de Cerdo Crudo</Spanish>
-			<Dutch>Raw Bacon</Dutch>
-=======
 			<Spanish>Panceta Cruda</Spanish>
 			<Dutch>Rauw Bacon</Dutch>
->>>>>>> Development
 			<French>Bacon cru</French>
 			<Czech>Syrová slanina</Czech>
 		</Key>
@@ -1056,13 +839,8 @@
 			<English>Bacon to be used for sustainment, should be cooked prior to safe eating.</English>
 			<German>Speck für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-<<<<<<< HEAD
-			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<Dutch>Bacon to be used for sustainment, must be cooked prior to eating.</Dutch>
-=======
 			<Spanish>Panceta que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<Dutch>Bacon dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten..</Dutch>
->>>>>>> Development
 			<French>Le Bacon cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by měla být slanina nejdříve upečena.</Czech>
 		</Key>
@@ -1071,11 +849,7 @@
 			<German>Rohes Rindfleisch</German>
 			<Russian>Говядина</Russian>
 			<Spanish>Churrasco Crudo</Spanish>
-<<<<<<< HEAD
-			<Dutch>Raw Beef</Dutch>
-=======
 			<Dutch>Rauw Biefstuk</Dutch>
->>>>>>> Development
 			<French>Boeuf Cru</French>
 			<Czech>Syrové hovězí maso</Czech>
 		</Key>
@@ -1084,11 +858,7 @@
 			<German>Rindfleisch für den Verzehr, muss vorher gekocht werden.</German>
 			<Russian>Говядина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Beef to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-=======
 			<Dutch>Biefstuk dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten..</Dutch>
->>>>>>> Development
 			<French>Le Boeuf Cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové hovězí maso nejdříve upečeno.</Czech>
 		</Key>
@@ -1097,41 +867,25 @@
 			<German>Rohes Ziegenfleisch</German>
 			<Russian>Ягнятина</Russian>
 			<Spanish>Cabra Cruda</Spanish>
-<<<<<<< HEAD
-			<Dutch>Raw Goat</Dutch>
-			<French>Viande de chèvre crue</French>
-			<Czech>Raw Goat</Czech>
-=======
 			<Dutch>Rauw Geitenvlees</Dutch>
 			<French>Viande de chèvre crue</French>
 			<Czech>Syrové kozí maso</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">
 			<English>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</English>
 			<German>Ziegenfleisch für den Verzehr, muss vorher gekocht werden</German>
 			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
 			<Spanish>Carne de Cabra Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Dutch>
-			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
-			<Czech>Goat Meat to be used for sustainment, should be cooked prior to safe eating.</Czech>
-=======
 			<Dutch>Geitenvlees dat gebruikt wordt om te overleven, moet gekookt worden om het veilig te eten.</Dutch>
 			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
 			<Czech>Kvůli bezpečnosti by mělo být syrové kozí maso nejdříve upečeno.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_0">
 			<English>Cooked Meat</English>
 			<German>Gekochtes Fleisch</German>
 			<Russian>Жареное мясо</Russian>
 			<Spanish>Carne Cocinada</Spanish>
-<<<<<<< HEAD
-			<Dutch>Cooked Meat</Dutch>
-=======
 			<Dutch>Gekookt Vlees</Dutch>
->>>>>>> Development
 			<French>Viande Cuite</French>
 			<Czech>Upečené maso</Czech>
 		</Key>
@@ -1140,11 +894,7 @@
 			<German>Gekochtes Fleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареное мясо, готовая к употреблению.</Russian>
 			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Cooked Meat to be used for sustainment.</Dutch>
-=======
 			<Dutch>Gekoookt vlees dat gebruikt wordt om te overleven.</Dutch>
->>>>>>> Development
 			<French>La Viande Cuite peut être consommée.</French>
 			<Czech>Upečené maso může být snězeno abyste přežili.</Czech>
 		</Key>
@@ -1153,11 +903,7 @@
 			<German>Gekochtes Lammfleisch</German>
 			<Russian>Жареная ягнятина</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
-<<<<<<< HEAD
-			<Dutch>Cooked Mutton</Dutch>
-=======
 			<Dutch>Gekookt Schapevlees</Dutch>
->>>>>>> Development
 			<French>Mouton Cuit</French>
 			<Czech>Upečené jehněčí</Czech>
 		</Key>
@@ -1166,11 +912,7 @@
 			<German>Lammfleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Lamb Meat to be used for sustainment.</Dutch>
-=======
 			<Dutch>Schapevlees dat gebruikt wordt om te overleven.</Dutch>
->>>>>>> Development
 			<French>La Viande de Chèvre peut être consommée.</French>
 			<Czech>Upečené jehněčí může být snězeno abyste přežili.</Czech>
 		</Key>
@@ -1179,11 +921,7 @@
 			<German>Hühnchenkeule</German>
 			<Russian>Жареный куриный окрочек</Russian>
 			<Spanish>Pata de Pollo</Spanish>
-<<<<<<< HEAD
-			<Dutch>Chicken Leg</Dutch>
-=======
 			<Dutch>Kippenpoot</Dutch>
->>>>>>> Development
 			<French>Cuisse de Poulet</French>
 			<Czech>Kuřecí nožka</Czech>
 		</Key>
@@ -1192,11 +930,7 @@
 			<German>Hühnchenkeule, für den Verzehr geeignet.</German>
 			<Russian>Жареный куриный окрочек, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Chicken Leg to be used for sustainment.</Dutch>
-=======
 			<Dutch>Kippenpoot dat gebruikt wordt om te overleven.</Dutch>
->>>>>>> Development
 			<French>La cuisse de poulet peut être consommée.</French>
 			<Czech>Kuřecí noha může být snězena abyste přežili.</Czech>
 		</Key>
@@ -1205,11 +939,7 @@
 			<German>Kaninchen</German>
 			<Russian>Жареный кролик</Russian>
 			<Spanish>Conejo</Spanish>
-<<<<<<< HEAD
-			<Dutch>Rabbit</Dutch>
-=======
 			<Dutch>Konijn</Dutch>
->>>>>>> Development
 			<French>Lapin</French>
 			<Czech>Králík</Czech>
 		</Key>
@@ -1218,11 +948,7 @@
 			<German>Kaninchen, für den Verzehr geeignet.</German>
 			<Russian>Жареный кролик, готовый к употреблению.</Russian>
 			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Rabbit to be used for sustainment.</Dutch>
-=======
 			<Dutch>Konijn dat gebruikt wordt om te overleven.</Dutch>
->>>>>>> Development
 			<French>Le Lapin peut être consommé.</French>
 			<Czech>Králík může být snězen abyste přežili.</Czech>
 		</Key>
@@ -1230,11 +956,7 @@
 			<English>Bacon</English>
 			<German>Speck</German>
 			<Russian>Готовый бекон</Russian>
-<<<<<<< HEAD
-			<Spanish>Costillar de Cerdo</Spanish>
-=======
 			<Spanish>Panceta</Spanish>
->>>>>>> Development
 			<Dutch>Bacon</Dutch>
 			<French>Bacon</French>
 			<Czech>Slanina</Czech>
@@ -1243,13 +965,8 @@
 			<English>Bacon to be used for sustainment.</English>
 			<German>Speck, für den Verzehr geeignet.</German>
 			<Russian>Бекон, готовый к употреблению.</Russian>
-<<<<<<< HEAD
-			<Spanish>Costillar de Cerdo que se utilizará para sobrevivir.</Spanish>
-			<Dutch>Bacon to be used for sustainment.</Dutch>
-=======
 			<Spanish>Panceta que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Bacon dat gebruikt wordt om te overleven.</Dutch>
->>>>>>> Development
 			<French>Le Bacon peut être consommé.</French>
 			<Czech>Slanina může býst snězena abyste přežili.</Czech>
 		</Key>
@@ -1258,11 +975,7 @@
 			<German>Engelskekse</German>
 			<Russian>Печеньки!</Russian>
 			<Spanish>Galletitas de Ángel</Spanish>
-<<<<<<< HEAD
-			<Dutch>Angel Cookies</Dutch>
-=======
 			<Dutch>Engelenkoekjes</Dutch>
->>>>>>> Development
 			<French>Cookies d'Ange</French>
 			<Czech>Sušenky Angel</Czech>
 		</Key>
@@ -1271,11 +984,7 @@
 			<German>Engelskekse, um Ihre Moral zu heben!</German>
 			<Russian>Печенюшки для поднятия настроения!</Russian>
 			<Spanish>Galletitas de Ángel que levantan tu moral</Spanish>
-<<<<<<< HEAD
-			<Dutch>Angel Cookies to boost your moral up!</Dutch>
-=======
 			<Dutch>Engelenkoekjes om je moraal een zetje te geven!</Dutch>
->>>>>>> Development
 			<French>Cookies d'Ange pour remonter votre moral!</French>
 			<Czech>Sušenky Angle vylepší vaší morálku!</Czech>
 		</Key>
@@ -1284,11 +993,7 @@
 			<German>Rindersteak</German>
 			<Russian>Бифштекс</Russian>
 			<Spanish>Churrasco</Spanish>
-<<<<<<< HEAD
-			<Dutch>Beefsteak</Dutch>
-=======
 			<Dutch>Biefstuk</Dutch>
->>>>>>> Development
 			<French>Bifteck</French>
 			<Czech>Hovězí maso</Czech>
 		</Key>
@@ -1297,11 +1002,7 @@
 			<German>Rindersteak, für den Verzehr geeignet.</German>
 			<Russian>Бифштекс, готовый к употреблению.</Russian>
 			<Spanish>Churrasco que se utilizará para sobrevivir.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Beefsteak to be used for sustainment.</Dutch>
-=======
 			<Dutch>Biefstuk dat gebruikt wordt om te overleven.</Dutch>
->>>>>>> Development
 			<French>Le Bifteck peut être consommé.</French>
 			<Czech>Biftek může být snězen abyste přežili.</Czech>
 		</Key>
@@ -1309,44 +1010,26 @@
 			<English>Grilled Goat</English>
 			<German>Gegrilltes Ziegenfleisch</German>
 			<Russian>Жареная ягнятина</Russian>
-<<<<<<< HEAD
-			<Spanish>Grilled Goat</Spanish>
-			<Dutch>Grilled Goat</Dutch>
-			<French>Chèvre grillée</French>
-			<Czech>Grilled Goat</Czech>
-=======
 			<Spanish>Cabra a la Parrilla</Spanish>
 			<Dutch>Gegrilde Geit</Dutch>
 			<French>Chèvre grillée</French>
 			<Czech>Grilovaná koza</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">
 			<English>Goat Meat to be used for sustainment.</English>
 			<German>Ziegenfleisch, für den Verzehr geeignet.</German>
 			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
-<<<<<<< HEAD
-			<Spanish>Goat Meat to be used for sustainment.</Spanish>
-			<Dutch>Goat Meat to be used for sustainment.</Dutch>
-			<French>La chèvre grillée peut être consommée.</French>
-			<Czech>Goat Meat to be used for sustainment.</Czech>
-=======
 			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
 			<Dutch>Geitenvlees dat gebruikt wordt om te overleven.</Dutch>
 			<French>La Chèvre grillée peut être consommée.</French>
 			<Czech>Kozí maso, které lze sníst aby jste přežili.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">
 			<English>Water Bottle (Boiled)</English>
 			<German>Wasserflasche (Abgekocht)</German>
 			<Russian>Фляжка кипяченой воды</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
-<<<<<<< HEAD
-			<Dutch>Water Bottle (Boiled)</Dutch>
-=======
 			<Dutch>Waterfles (Gekookt)</Dutch>
->>>>>>> Development
 			<French>Bouteille d'eau (Bouillie)</French>
 			<Czech>Láhev vody (převařená)</Czech>
 		</Key>
@@ -1355,11 +1038,7 @@
 			<German>Eine Flasche abgekochtes Wasser, abgefüllt und für den Verzehr geeignet.</German>
 			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
-<<<<<<< HEAD
-			<Dutch>Een fles boiledwater dat is gevuld en kan worden geconsumeerd.</Dutch>
-=======
 			<Dutch>Een fles gekookt water dat is gevuld en dat kan worden geconsumeerd.</Dutch>
->>>>>>> Development
 			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
 			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
 		</Key>
@@ -1369,11 +1048,8 @@
 			<Spanish>Flecha de Madera</Spanish>
 			<French>Flèche en bois</French>
 			<German>Hölzener Pfeil</German>
-<<<<<<< HEAD
-=======
 			<Czech>Dřevěný šíp</Czech>
 			<Dutch>Houten Pijl</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMWOODENARROW_CODE_DESC">
 			<English>Arrow made out of wood, used with the Crossbow.</English>
@@ -1381,11 +1057,8 @@
 			<Spanish>Flecha hecha de madera para usarse en la Ballesta.</Spanish>
 			<French>Une Flèche faite de bois, à utiliser avec l'arbalète</French>
 			<German>Ein aus Holz hergestellter Pfeil, welcher in der Armbrust benutzt werden kann</German>
-<<<<<<< HEAD
-=======
 			<Czech>Šíp vyrobený z dřeva pro použití s kuší.</Czech>
 			<Dutch>Pijl gemaakt van hout, gebruikt voor de kruisboog.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_NAME">
 			<English>Quiver</English>
@@ -1393,11 +1066,8 @@
 			<Spanish>Carcaj</Spanish>
 			<French>Carquois</French>
 			<German>Köcher</German>
-<<<<<<< HEAD
-=======
 			<Czech>Toulec</Czech>
 			<Dutch>Pijlkoker</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMQUIVER_CODE_DESC">
 			<English>Small Quiver used with the Crossbow, Max arrows 6.</English>
@@ -1405,22 +1075,15 @@
 			<Spanish>Carcaj Pequeño usado con la Ballesta. Máximo: 6 flechas.</Spanish>
 			<French>Un petit Carquois à utiliser avec l'arbalète. Max 6 flèches.</French>
 			<German>Ein kleiner Köcher welche mit der Armbrust verwendet werden kann. Maximale Anzahl an Pfeilen: 6.</German>
-<<<<<<< HEAD
-=======
 			<Czech>Malý toulec pro šípy do kuše. Max. šípů je šest.</Czech>
 			<Dutch>Kleine pijlkoker gebruikt voor de kruisboog. Maximaal 6 pijlen.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">
 			<English>Soda</English>
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-<<<<<<< HEAD
-			<Dutch>Soda</Dutch>
-=======
 			<Dutch>Frisdrank</Dutch>
->>>>>>> Development
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1429,11 +1092,7 @@
 			<German>Eine saubere, ungeöffnete Dose Mountain Green. Die erste Wahl des enthusiatischen Langstrecken Läufers</German>
 			<Russian>Чистая, закрытая банка "Mountain Green". Выбор марафонцев.</Russian>
 			<Spanish>Una limpia y cerrada lata de Mountain Green. Gaseosa elejida por el simulador entusiasta de correr grandes distancias.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Mountain Green. The long distance running simulator enthusiast's soda of choice.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Mountain Green. De langeafstandsrennerssimulator enthousiasts favoriete frisdrank.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de "Mountain Green". Le soda préféré des amateurs de simulateur de course longue distance.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mountain Green. Dobrá volba na dlouhou cestu.</Czech>
 		</Key>
@@ -1442,11 +1101,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-<<<<<<< HEAD
-			<Dutch>Soda</Dutch>
-=======
 			<Dutch>Frisdrank</Dutch>
->>>>>>> Development
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1455,90 +1110,52 @@
 			<German>Eine saubere, ungeöffnete Dose R4ZOR. Man hat den Verkauf vor Jahren gestoppt!</German>
 			<Russian>Чистая, закрытая банка "R4Z0R". Уже давно исчезли перестали продаваться!</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa R4Z0R. Dejaron de venderlas hace años.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of R4Z0R soda. They stopped selling these years ago!</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik R4Z0R frisdrank. Ze verkopen deze al jaren niet meer!</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de soda "R4Z0R". Ils ont arrêté de les vendre il y a des années !.</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky R4Z0R. Před mnoho lety ji přestali prodávat!</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">
 			<English>Soda (Iced Tea)</English>
 			<German>Soda (Iced Tea)</German>
-<<<<<<< HEAD
-			<Russian>Напиток (Iced Tea)</Russian>
-			<Spanish>Gaseosa (Té Helado)</Spanish>
-			<Dutch>Soda (Iced Tea)</Dutch>
-			<French>Soda (Iced Tea)</French>
-			<Czech>Soda (Iced Tea)</Czech>
-=======
 			<Russian>Напиток (Холодный чай)</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Dutch>Frisdrank (IJsthee)</Dutch>
 			<French>Soda (Iced Tea)</French>
 			<Czech>Soda (Ledový čaj)</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">
 			<English>A clean, unopened can of Long's island iced tea.</English>
 			<German>Eine saubere, ungeöffnete Dose Long's Island Eistee.</German>
 			<Russian>Чистая, закрытая банка холодного чая.</Russian>
 			<Spanish>Una limpia y cerrada lata de té helado Long's island.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Long's island iced tea.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Long's island ijsthee.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte d'iced tea de Long's Island.</French>
 			<Czech>Čistá a ještě neotevřená plechovka ledového čaje Long's island.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">
 			<English>Soda (Grape)</English>
 			<German>Soda (Grape)</German>
-<<<<<<< HEAD
-			<Russian>Газировка (Grape)</Russian>
-			<Spanish>Gaseosa (Grape)</Spanish>
-			<Dutch>Soda (Grape)</Dutch>
-			<French>Soda (Grape)</French>
-			<Czech>Soda (Grape)</Czech>
-=======
 			<Russian>Газировка (Грейпфрут)</Russian>
 			<Spanish>Gaseosa (Uva)</Spanish>
 			<Dutch>Frisdrank (Druif)</Dutch>
 			<French>Soda (Raisin)</French>
 			<Czech>Soda (Hroznové víno)</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_3">
 			<English>A clean, unopened can of Smasht grape soda.</English>
 			<German>Eine saubere, ungeöffnete Dose Smasht Trauben Soda</German>
-<<<<<<< HEAD
-			<Russian>Чистая, закрытая банка гейпфруктового "Smasht".</Russian>
-			<Spanish>Una limpia y cerrada lata de gaseosa de uva Smasht.</Spanish>
-			<Dutch>A clean, unopened can of Smasht grape soda.</Dutch>
-			<French>Une canette intacte de soda au raisin "Smasht".</French>
-			<Czech>Čistá a ještě neotevřená plechovka grepové sody Smasht.</Czech>
-=======
 			<Russian>Чистая, закрытая банка гейпфрутового "Smasht".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de uva Smasht.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Smasht druivenfrisdrank.</Dutch>
 			<French>Une canette intacte de soda au raisin "Smasht".</French>
 			<Czech>Čistá a ještě neotevřená plechovka hroznové sody Smasht.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">
 			<English>Soda (Cola)</English>
 			<German>Soda (Cola)</German>
-<<<<<<< HEAD
-			<Russian>Газировка (Cola)</Russian>
-			<Spanish>Gaseosa (Cola)</Spanish>
-			<Dutch>Soda (Cola)</Dutch>
-=======
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Dutch>Frisdrank (Cola)</Dutch>
->>>>>>> Development
 			<French>Soda (Cola)</French>
 			<Czech>Soda (Cola)</Czech>
 		</Key>
@@ -1547,58 +1164,34 @@
 			<German>Eine saubere, ungeöffnete Dose Dr. Wasteland Soda</German>
 			<Russian>Чистая, закрытая банка "Dr. Wasteland".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Dr. Wasteland.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Dr. Wasteland soda.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Dr. Wasteland frisdrank.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de soda "Dr. Wasteland".</French>
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Dr. Wateland.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">
 			<English>Soda (Orange)</English>
 			<German>Soda (Orange)</German>
-<<<<<<< HEAD
-			<Russian>Газировка (Orange)</Russian>
-			<Spanish>Gaseosa (Orange)</Spanish>
-			<Dutch>Soda (Orange)</Dutch>
-			<French>Soda (Orange)</French>
-			<Czech>Soda (Orange)</Czech>
-=======
 			<Russian>Газировка (Апельсин)</Russian>
 			<Spanish>Gaseosa (Naranja)</Spanish>
 			<Dutch>Frisdrank (Sinas)</Dutch>
 			<French>Soda (Orange)</French>
 			<Czech>Soda (Pomeranč)</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">
 			<English>A clean, unopened can of Franka orange soda.</English>
 			<German>Eine saubere, ungeöffnete Dose Franka Orangelimonade</German>
 			<Russian>Чистая, закрытая банка апельсиновой "Franka".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa de naranja Franka.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Franka orange soda.</Dutch>
-			<French>Une canette intacte de soda à l'orange "Franka".</French>
-			<Czech>Čistá a ještě neotevřená plechovka sodovky Franka orange.</Czech>
-=======
 			<Dutch>Een schoon, ongeopend blik Franka sinas.</Dutch>
 			<French>Une canette intacte de soda à l'orange "Franka".</French>
 			<Czech>Čistá a ještě neotevřená plechovka pomerančvé sodovky Franka orange.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">
 			<English>Soda (Lemonade)</English>
 			<German>Soda (Lemonade)</German>
-<<<<<<< HEAD
-			<Russian>Газировка (Lemonade)</Russian>
-			<Spanish>Gaseosa (Limonada)</Spanish>
-			<Dutch>Soda (Lemonade)</Dutch>
-=======
 			<Russian>Газировка (Лимонад)</Russian>
 			<Spanish>Gaseosa (Limonada)</Spanish>
 			<Dutch>Frisdrank (Limonade)</Dutch>
->>>>>>> Development
 			<French>Soda (Limonade)</French>
 			<Czech>Soda (Limonáda)</Czech>
 		</Key>
@@ -1607,26 +1200,16 @@
 			<German>Eine saubere, ungeöffnete Dose Mikhail Made Lemonade. Hergestellt bei Mikhail.</German>
 			<Russian>Чистая, закрытая банка лимонада. Производства "Mikhail".</Russian>
 			<Spanish>Una limpia y cerrada lata de limonada Mikhail.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Mikhail Made Limonade. Gemaakt door Mikhail.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de limonade à la Mikhail. Fabriqué par Mikhail.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Mikhail Made limonády. Vytvořeno Mikhailem.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">
 			<English>Soda (Cola)</English>
 			<German>Soda (Cola)</German>
-<<<<<<< HEAD
-			<Russian>Газировка (Cola)</Russian>
-			<Spanish>Fernet con Coca</Spanish>
-			<Dutch>Soda (Cola)</Dutch>
-=======
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Fernet con Coca</Spanish>
 			<Dutch>Frisdrank (Cola)</Dutch>
->>>>>>> Development
 			<French>Soda (Cola)</French>
 			<Czech>Soda (Cola)</Czech>
 		</Key>
@@ -1634,28 +1217,17 @@
 			<English>A clean, unopened can of Lirikola. An o7 brand.</English>
 			<German>Eine saubere, ungeöffnete Dose Lirikola. Eine o7 Marke.</German>
 			<Russian>Чистая, закрытая банка "Lirikola". Бренд "o7".</Russian>
-<<<<<<< HEAD
-			<Spanish>Una limpia y cerrada botella de Fernet "Lirikola" y CocaCola.</Spanish>
-			<Dutch>A clean, unopened can of Lirikola. An o7 brand.</Dutch>
-=======
 			<Spanish>Una limpia y cerrada botella de Fernet "Lirikola" y Coca-Cola.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Lirikola. Een o7 merk.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de "Lirikola". 7 ans d'âge.</French>
 			<Czech>Čistá a ještě neotevřená plechovka Lirikoly. o7 série.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">
 			<English>Soda (Root Beer)</English>
 			<German>Soda (Wurzel Beere)</German>
-<<<<<<< HEAD
-			<Russian>Пиво (Root Beer)</Russian>
-			<Spanish>Cerveza de Raíz</Spanish>
-			<Dutch>Soda (Root Beer)</Dutch>
-=======
 			<Russian>Пиво (Корневое пиво)</Russian>
 			<Spanish>Cerveza de Raíz</Spanish>
 			<Dutch>Frisdrank (Root beer)</Dutch>
->>>>>>> Development
 			<French>Bière (Root Beer)</French>
 			<Czech>Pivo (Root Beer)</Czech>
 		</Key>
@@ -1664,11 +1236,7 @@
 			<German>Eine saubere, ungeöffnete Dose LVG Wurzel Beere</German>
 			<Russian>Чистая, закрытая банка пива "LVG root".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza de raíz LVG.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of LVG root beer.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik LVG root beer.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de bière "LVG root".</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva LVG root.</Czech>
 		</Key>
@@ -1677,11 +1245,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-<<<<<<< HEAD
-			<Dutch>Soda</Dutch>
-=======
 			<Dutch>Frisdrank</Dutch>
->>>>>>> Development
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1690,42 +1254,25 @@
 			<German>Eine saubere, ungeöffnete Dose mZLY yZLY Soda.</German>
 			<Russian>Чистая, закрытая банка "mZLY yZLY".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa mZLY yZLY.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of mZLY yZLY soda.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik mZLY yZLY frisdrank.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de soda "mZLY yZLY".</French>
 			<Czech>Čistá a ještě neotevřená plechovka mZLY yZLY sody.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">
 			<English>Soda (Cola)</English>
 			<German>Soda (Cola)</German>
-<<<<<<< HEAD
-			<Russian>Газировка (Cola)</Russian>
-			<Spanish>Gaseosa (Cola)</Spanish>
-			<Dutch>Soda (Cola)</Dutch>
-=======
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Dutch>Frisdrank (Cola)</Dutch>
->>>>>>> Development
 			<French>Soda (Cola)</French>
 			<Czech>Soda (Cola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">
 			<English>A clean, unopened can of Peppsy soda.</English>
-<<<<<<< HEAD
-			<German><German>Eine saubere, ungeöffnete Dose Peppsy Soda.</German></German>
-			<Russian>Чистая, закрытая банка "Peppsy".</Russian>
-			<Spanish>Una limpia y cerrada lata de gaseosa Peppsy.</Spanish>
-			<Dutch>A clean, unopened can of Peppsy soda.</Dutch>
-=======
 			<German>Eine saubere, ungeöffnete Dose Peppsy Soda.</German>
 			<Russian>Чистая, закрытая банка "Peppsy".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Peppsy.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Pepsy frisdrank.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de soda "Peppsy".</French>
 			<Czech>Čistá a ještě neotevřená plechovka Peppsy sody.</Czech>
 		</Key>
@@ -1734,11 +1281,7 @@
 			<German>Beer</German>
 			<Russian>Пиво</Russian>
 			<Spanish>Cerveza</Spanish>
-<<<<<<< HEAD
-			<Dutch>Beer</Dutch>
-=======
 			<Dutch>Bier</Dutch>
->>>>>>> Development
 			<French>Bière</French>
 			<Czech>Pivo</Czech>
 		</Key>
@@ -1747,11 +1290,7 @@
 			<German>Eine saubere, ungeöffnete Dose Rabbitman Bier.</German>
 			<Russian>Чистая, закрытая банка пива "Rabbitman".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza Rabbitman.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Rabbitman beer.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Rabbitman bier.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de bière "Rabbitman".</French>
 			<Czech>Čistá a ještě neotevřená plechovka piva Rabbitman.</Czech>
 		</Key>
@@ -1760,11 +1299,7 @@
 			<German>Soda</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-<<<<<<< HEAD
-			<Dutch>Soda</Dutch>
-=======
 			<Dutch>Frisdrank</Dutch>
->>>>>>> Development
 			<French>Soda</French>
 			<Czech>Soda</Czech>
 		</Key>
@@ -1773,11 +1308,7 @@
 			<German>Eine saubere, ungeöffnete Dose Sacrite Soda.</German>
 			<Russian>Чистая, закрытая банка "Sacrite".</Russian>
 			<Spanish>Una limpia y cerrada lata de gaseosa Sacrite.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Sacrite soda.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Sacrite frisdrank.</Dutch>
->>>>>>> Development
 			<French>Une canette intacte de soda "Sacrite".</French>
 			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
@@ -1793,30 +1324,17 @@
 		<Key ID="STR_FOOD_DESC_MRE">
 			<English>Meal Ready-to-Eat</English>
 			<German>MRE Feldration</German>
-<<<<<<< HEAD
-			<Russian>упаковка сухого пайка.</Russian>
-			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
-			<Dutch>Meal Ready-to-Eat</Dutch>
-			<French>Repas prêt à manger</French>
-			<Czech>Meal Ready-to-Eat</Czech>
-=======
 			<Russian>Упаковка сухого пайка.</Russian>
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Kant-en-Klaar Maaltijd</Dutch>
 			<French>Repas prêt à manger</French>
 			<Czech>Vojenská potravinová dávka typu MRE.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
 			<English>Snack (Pistachios)</English>
 			<German>Snack (Pistazien)</German>
-<<<<<<< HEAD
-			<Russian>Snack (Фисташки)</Russian>
-			<Spanish>Snack (Pistachos)</Spanish>
-=======
 			<Russian>Закуска (Фисташки)</Russian>
 			<Spanish>Golosina (Pistachos)</Spanish>
->>>>>>> Development
 			<Dutch>Snack (Pistachios)</Dutch>
 			<French>Snack (Pistaches)</French>
 			<Czech>Snack (Pistácie)</Czech>
@@ -1826,51 +1344,27 @@
 			<German>Eine Packung Pistazien, geröstet und gesalzen.</German>
 			<Russian>Пакет соленых, обжареных фисташек.</Russian>
 			<Spanish>Una caja de pistachos, tostados y salados.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A pack of pistachios, roasted and salted.</Dutch>
-=======
 			<Dutch>Een pak pistachios, geroosterd en gezout.</Dutch>
->>>>>>> Development
 			<French>Un paquet de pistaches, grillées et salées.</French>
 			<Czech>Balíček pistácií, pražené a solené.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_NUTMIX">
 			<English>Snack (Trail Mix)</English>
 			<German>Studentenfutter</German>
-<<<<<<< HEAD
-			<Russian>Фруктово-ореховый микс</Russian>
-			<Spanish>CerealMix</Spanish>
-			<Dutch>Trail Mix</Dutch>
-=======
 			<Russian>Закуска (Сухофрукты)</Russian>
 			<Spanish>CerealMix</Spanish>
 			<Dutch>Studentenhaver</Dutch>
->>>>>>> Development
 			<French>Assortiment de fruits secs</French>
 			<Czech>Mix</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">
 			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>
-<<<<<<< HEAD
-			<German>Eine Packung Papa's Original Studentenfutter mit 12 verschiedenen Früchen und Nüssen</German>
-=======
 			<German>Eine Packung Papa's Originales Studentenfutter mit 12 verschiedenen Früchen und Nüssen</German>
->>>>>>> Development
 			<Russian>Упаковка сушеных фруктов и орешков "Papa", 12 разных видов.</Russian>
 			<Spanish>Una cada de CerealMix Original con 12 frutas y anillos diferentes.</Spanish>
 			<Dutch>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</Dutch>
 			<French>Un paquet d'assortiment de fruits secs "Papa", avec 12 fruits et noix différents.</French>
 			<Czech>Balíček ovoce značky Papa, 12 různých ovocí a oříšků.</Czech>
-<<<<<<< HEAD
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
-			<English>Empty Tin Can</English>
-			<Russian>Empty Tin Can</Russian>
-			<Spanish>Empty Tin Can</Spanish>
-			<French>Empty Tin Can</French>
-			<Czech>Empty Tin Can</Czech>
-			<German>Empty Tin Can</German>
-=======
 			<Dutch>Een pak Papa's Originele Studentenhaver, met 12 verschillende fruiten en noten.</Dutch>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_EMPTY">
@@ -1881,7 +1375,6 @@
 			<Czech>Prázdná cínová plechovka</Czech>
 			<German>Leere Blechdose</German>
 			<Dutch>Leeg Blik</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_EMPTY">
 			<English>An empty can.</English>
@@ -1890,31 +1383,11 @@
 			<French>Une boîte vide.</French>
 			<Czech>Prázdná plechovka</Czech>
 			<German>Eine leere Blechdose</German>
-<<<<<<< HEAD
-=======
 			<Dutch>Een leeg blik.</Dutch>
->>>>>>> Development
 		</Key>
 		
 		<Key ID="STR_FOOD_NAME_CHIPS_EMPTY">
 			<English>Empty Snack Bag</English>
-<<<<<<< HEAD
-			<German>Empty Snack Bag</German>
-			<Russian>Пустая упаковка</Russian>
-			<Spanish>Empty Snack Bag</Spanish>
-			<Dutch>Empty Snack Bag</Dutch>
-			<French>Empty Snack Bag</French>
-			<Czech>Empty Snack Bag</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CHIPS_EMPTY">
-			<English>An empty bag of chips.</English>
-			<German>An empty bag of chips.</German>
-			<Russian>An empty bag of chips.</Russian>
-			<Spanish>An empty bag of chips.</Spanish>
-			<Dutch>An empty bag of chips.</Dutch>
-			<French>An empty bag of chips.</French>
-			<Czech>An empty bag of chips.</Czech>
-=======
 			<German>Leeres Paket von Lebensmitteln</German>
 			<Russian>Пустая упаковка</Russian>
 			<Spanish>Bolsa Vacía</Spanish>
@@ -1930,90 +1403,47 @@
 			<Dutch>Een lege zak chips.</Dutch>
 			<French>Un paquet de chips vide.</French>
 			<Czech>Prázdný balíček čipsů.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_SULAHOOPS">
 			<English>Snack (Chips)</English>
 			<German>Snack (Chips)</German>
 			<Russian>Закуска (Чипсы)</Russian>
-<<<<<<< HEAD
-			<Spanish>Snack (Chips)</Spanish>
-=======
 			<Spanish>Golosina (Papitas)</Spanish>
->>>>>>> Development
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
 			<Czech>Snack (Chips)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS">
 			<English>A clean, unopened bag of crunchy Sulahoops.</English>
-<<<<<<< HEAD
-			<German>A clean, unopened bag of crunchy Sulahoops.</German>
-			<Russian>Чистая, закрытая упаковка "Sulahoops".</Russian>
-			<Spanish>A clean, unopened bag of crunchy Sulahoops.</Spanish>
-			<Dutch>A clean, unopened bag of crunchy Sulahoops.</Dutch>
-			<French>A clean, unopened bag of crunchy Sulahoops.</French>
-			<Czech>A clean, unopened bag of crunchy Sulahoops.</Czech>
-=======
 			<German>Eine saubere, ungeöffnete Tüte knackigen Sulahoops.</German>
 			<Russian>Чистая, закрытая упаковка "Sulahoops".</Russian>
 			<Spanish>Una limpia y cerrada bolsa de papitas Sulahoops.</Spanish>
 			<Dutch>Een schone, ongeopende zak knapperige Sulahoops.</Dutch>
 			<French>Un paquet intact de chips "Sulahoops".</French>
 			<Czech>Čistý a ještě neotevřený balíček čipsů "Sulahoops".</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_NAME_CHIPS_MYSTICALES">
 			<English>Snack (Chips)</English>
 			<German>Snack (Chips)</German>
 			<Russian>Закуска (Чипсы)</Russian>
-<<<<<<< HEAD
-			<Spanish>Snack (Chips)</Spanish>
-=======
 			<Spanish>Golosina (Papitas)</Spanish>
->>>>>>> Development
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
 			<Czech>Snack (Chips)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_MYSTICALES">
 			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
-<<<<<<< HEAD
-			<German>A clean, unopened bag of Miss Mysticales jalapeño chips.</German>
-			<Russian>A clean, unopened bag of Miss Mysticales jalapeño chips.</Russian>
-			<Spanish>A clean, unopened bag of Miss Mysticales jalapeño chips.</Spanish>
-			<Dutch>A clean, unopened bag of Miss Mysticales jalapeño chips.</Dutch>
-			<French>A clean, unopened bag of Miss Mysticales jalapeño chips.</French>
-			<Czech>A clean, unopened bag of Miss Mysticales jalapeño chips.</Czech>
-=======
 			<German>Eine saubere, ungeöffneten Beutel von Miss Mysticales jalapeño Chips.</German>
 			<Russian>Чистая, закрытая упаковка "Miss Mysticales jalapeño".</Russian>
 			<Spanish>Una limpia y cerrada bolsa de papitas picantes Miss Mysticales.</Spanish>
 			<Dutch>Een schone, ongeopende zak Miss Mysticales jalapeño chips.</Dutch>
 			<French>Un paquet intact de chips "Miss Mysticales jalapeño".</French>
 			<Czech>Čistý a ještě neotevřený balíček čipsů značky Miss Mysticales jalapeño.</Czech>
->>>>>>> Development
 		</Key>
 		
 		<Key ID="STR_FOOD_NAME_CANDY_ANDERS">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
-<<<<<<< HEAD
-			<Russian>Snack (Chocolate)</Russian>
-			<Spanish>Snack (Chocolate)</Spanish>
-			<Dutch>Snack (Chocolate)</Dutch>
-			<French>Snack (Chocolate)</French>
-			<Czech>Snack (Chocolate)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CANDY_ANDERS">
-			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
-			<German>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</German>
-			<Russian>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Russian>
-			<Spanish>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Spanish>
-			<Dutch>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Dutch>
-			<French>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</French>
-			<Czech>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</Czech>
-=======
 			<Russian>Закуска (Шоколад)</Russian>
 			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolade)</Dutch>
@@ -2028,27 +1458,10 @@
 			<Dutch>Een schoon, ongeopend Ander's Joy chocolade cocosnoot en amandel snoepreep.</Dutch>
 			<French>Un paquet intact de barres chocolatées à la noix de coco "Ander's Joy".</French>
 			<Czech>Čistý a ještě neotevřený balíček čokoláday značky Ander's Joy.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_NAME_CANDY_LEGACYS">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
-<<<<<<< HEAD
-			<Russian>Snack (Chocolate)</Russian>
-			<Spanish>Snack (Chocolate)</Spanish>
-			<Dutch>Snack (Chocolate)</Dutch>
-			<French>Snack (Chocolate)</French>
-			<Czech>Snack (Chocolate)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CANDY_LEGACYS">
-			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
-			<German>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</German>
-			<Russian>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Russian>
-			<Spanish>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Spanish>
-			<Dutch>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Dutch>
-			<French>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</French>
-			<Czech>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</Czech>
-=======
 			<Russian>Закуска (Шоколад)</Russian>
 			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolade)</Dutch>
@@ -2063,27 +1476,10 @@
 			<Dutch>Een schoon, ongeopend Legacys chocoladeA clean, caramel en noot snoepreep.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Legacys" avec du caramel et des cacahuètes.</French>
 			<Czech>Čistý a ještě neotevřený balíček čokolády s arašídy a karamelem značky Legacys.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_NAME_CANDY_MINTCEPTION">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
-<<<<<<< HEAD
-			<Russian>Snack (Chocolate)</Russian>
-			<Spanish>Snack (Chocolate)</Spanish>
-			<Dutch>Snack (Chocolate)</Dutch>
-			<French>Snack (Chocolate)</French>
-			<Czech>Snack (Chocolate)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CANDY_MINTCEPTION">
-			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
-			<German>A clean, unopened Mintception mint chocolate candy bar.</German>
-			<Russian>A clean, unopened Mintception mint chocolate candy bar.</Russian>
-			<Spanish>A clean, unopened Mintception mint chocolate candy bar.</Spanish>
-			<Dutch>A clean, unopened Mintception mint chocolate candy bar.</Dutch>
-			<French>A clean, unopened Mintception mint chocolate candy bar.</French>
-			<Czech>A clean, unopened Mintception mint chocolate candy bar.</Czech>
-=======
 			<Russian>Закуска (Шоколад)</Russian>
 			<Spanish>Golosina (Chocolate)</Spanish>
 			<Dutch>Snack (Chocolade)</Dutch>
@@ -2098,21 +1494,14 @@
 			<Dutch>Een schoon, ongeopend Mintception muntchocolade snoepreep.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Mintception" à la menthe.</French>
 			<Czech>Čistý a ještě neotevřený balíček Mintception mint.</Czech>
->>>>>>> Development
 		</Key>
 		
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-<<<<<<< HEAD
-			<Russian>Банка черных бобов</Russian>
-			<Spanish>Lata de Frijoles</Spanish>
-			<Dutch>Can (Beans)</Dutch>
-=======
 			<Russian>Банка (Черные бобы)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
->>>>>>> Development
 			<French>Boîte (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
@@ -2120,28 +1509,17 @@
 			<English>A clean, unopened can of Griff's black beans.</English>
 			<German>Eine saubere ungeöffnete Dose Griff's schwarze Bohnen.</German>
 			<Russian>Чистая, закрытая банка черных бобов "Griff".</Russian>
-<<<<<<< HEAD
-			<Spanish>Una limpia y cerrada lata de frijoles negros "Griff".</Spanish>
-			<Dutch>A clean, unopened can of Griff's black beans.</Dutch>
-=======
 			<Spanish>Una limpia y cerrada lata de porotos negros "Griff".</Spanish>
 			<Dutch>Een schoon, ongeopend blik Griff's zwarte bonen.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte d'haricots noirs "Griff".</French>
 			<Czech>Čistá a ještě neotevřená plechovka černých fazolí značky Griff.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BADGUY">
 			<English>Can (Peaches)</English>
 			<German>Dose (Pfirsiche)</German>
-<<<<<<< HEAD
-			<Russian>Банка персиков</Russian>
-			<Spanish>Lata de Duraznos</Spanish>
-			<Dutch>Can (Peaches)</Dutch>
-=======
 			<Russian>Банка (Персики)</Russian>
 			<Spanish>Lata (Duraznos)</Spanish>
 			<Dutch>Blik (Perziken)</Dutch>
->>>>>>> Development
 			<French>Boîte (Pêches)</French>
 			<Czech>Plechovka (Broskve)</Czech>
 		</Key>
@@ -2150,26 +1528,16 @@
 			<German>Eine saubere ungeöffnete Dose Guy's allgegenwärtige Pfirsichscheiben.</German>
 			<Russian>Чистая, закрытая банка нарезанных персиков "Bad Guy".</Russian>
 			<Spanish>Una limpia y cerrada lata de duraznos en rodajas "Bad Guy".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Bad Guy's ubiquitous peach slices.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Bad Guy's alomtegenwoordige perzik schijfjes.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de pêches en morceaux de "Bad Guy".</French>
 			<Czech>Čistá a ještě neotevřená plechovka fazolí značky Bad Guy.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BONEBOY">
 			<English>Can (Ravioli)</English>
 			<German>Dose (Ravioli)</German>
-<<<<<<< HEAD
-			<Russian>Банка равиоли</Russian>
-			<Spanish>Lata de Ravioles</Spanish>
-			<Dutch>Can (Ravioli)</Dutch>
-=======
 			<Russian>Банка (Равиоли)</Russian>
 			<Spanish>Lata (Ravioles)</Spanish>
 			<Dutch>Blik (Ravioli)</Dutch>
->>>>>>> Development
 			<French>Boîte (Raviolis)</French>
 			<Czech>Plechovka (Ravioli)</Czech>
 		</Key>
@@ -2178,26 +1546,16 @@
 			<German>Eine saubere ungeöffnete Dose Chef Boneboy Ravioli.</German>
 			<Russian>Чистая, закрытая банка равиоли "Chef Boneboy".</Russian>
 			<Spanish>Una limpia y cerrada lata de ravioles "Chef Boneboy".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Chef Boneboy ravioli.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Chef Boneboy ravioli.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de raviolis "Chef Boneboy".</French>
 			<Czech>Čistá a ještě neotevřená plechovka Chef Boneboy ravioli.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CORN">
 			<English>Can (Corn)</English>
 			<German>Dose (Mais)</German>
-<<<<<<< HEAD
-			<Russian>Банка кукурузы</Russian>
-			<Spanish>Lata de Maíz</Spanish>
-			<Dutch>Can (Corn)</Dutch>
-=======
 			<Russian>Банка (Кукуруза)</Russian>
 			<Spanish>Lata (Granos de Maíz)</Spanish>
 			<Dutch>Blik (Maïs)</Dutch>
->>>>>>> Development
 			<French>Boîte (Maïs)</French>
 			<Czech>Plechovka (Kukuřice)</Czech>
 		</Key>
@@ -2206,26 +1564,16 @@
 			<German>Eine saubere ungeöffnete Dose Conrad's Mais.</German>
 			<Russian>Чистая, закрытая банка кукурузы "Conrad".</Russian>
 			<Spanish>Una limpia y cerrada lata de granos de maíz enteros "Conrad".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Conrad's whole kernel corn.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Conrad's hele kernelmaïs.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de maïs en grains "Conrad".</French>
 			<Czech>Čistá a ještě neotevřená plechovka pražené kukuřice značky Conrad.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_CURGON">
 			<English>Can (Soup)</English>
 			<German>Dose (Suppe)</German>
-<<<<<<< HEAD
-			<Russian>Банка супа</Russian>
-			<Spanish>Lata de Sopa</Spanish>
-			<Dutch>Can (Soup)</Dutch>
-=======
 			<Russian>Банка (Суп)</Russian>
 			<Spanish>Lata (Sopa)</Spanish>
 			<Dutch>Blik (Soep)</Dutch>
->>>>>>> Development
 			<French>Boîte (Soupe)</French>
 			<Czech>Plechovka (Polévka)</Czech>
 		</Key>
@@ -2234,26 +1582,16 @@
 			<German>Eine saubere ungeöffnete Dose Curgon's Hühnersuppe.</German>
 			<Russian>Чистая, закрытая банка куринного супа "Curgon".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pollo con fideos "Curgon".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Curgon's chicken noodle soup.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Curgon's kippennoedelsoep.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de soupe de nouilles au poulet "Curgon".</French>
 			<Czech>Čistá a ještě neotevřená plechovka kuřecí nudlové polévky značky Curgon.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-<<<<<<< HEAD
-			<Russian>Банка зеленого горошка</Russian>
-			<Spanish>Lata de Frijoles</Spanish>
-			<Dutch>Can (Beans)</Dutch>
-=======
 			<Russian>Банка (Зеленый горошек)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
->>>>>>> Development
 			<French>Boîte (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
@@ -2261,28 +1599,17 @@
 			<English>A clean, unopened can of Demon Groves green beans.</English>
 			<German>Eine saubere ungeöffnete Dose Demon Groves grüne Bohnen.</German>
 			<Russian>Чистая, закрытая банка зеленого горошка "Demon Groves".</Russian>
-<<<<<<< HEAD
-			<Spanish>Una limpia y cerrada lata de frijoles verdes "Demon Groves".</Spanish>
-			<Dutch>A clean, unopened can of Demon Groves green beans.</Dutch>
-=======
 			<Spanish>Una limpia y cerrada lata de porotos verdes "Demon Groves".</Spanish>
 			<Dutch>Een schoon, ongeopend blik Demon Grooves groene bonen.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte d'haricots verts "Demon Groves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka zelených fazolí značky Deamon Groves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FRAGGLEOS">
 			<English>Can (Spaghetti)</English>
 			<German>Dose (Spaghetti)</German>
-<<<<<<< HEAD
-			<Russian>Банка спагетти</Russian>
-			<Spanish>Lata de Spaghetti</Spanish>
-			<Dutch>Can (Spaghetti)</Dutch>
-=======
 			<Russian>Банка (Спагетти)</Russian>
 			<Spanish>Lata (Spaghetti)</Spanish>
 			<Dutch>Blik (Spaghetti)</Dutch>
->>>>>>> Development
 			<French>Boîte (Spaghettis)</French>
 			<Czech>Plechovka (Špagety)</Czech>
 		</Key>
@@ -2291,26 +1618,16 @@
 			<German>Eine saubere ungeöffnete Dose FraggleOs Spaghetti.</German>
 			<Russian>Чистая, закрытая банка спагетти "FraggleOs".</Russian>
 			<Spanish>Una limpia y cerrada lata de spaghetti "FraggleOs".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of FraggleOs spaghetti.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik FaggleOs spaghetti.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de spaghettis "FraggleOs".</French>
 			<Czech>Čistá a ještě neotevřená plechovka špaget značky FraggleOs.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_HERPY">
 			<English>Can (Muffins)</English>
 			<German>Dose (Muffins)</German>
-<<<<<<< HEAD
-			<Russian>Банка кексиков</Russian>
-			<Spanish>Lata de Magdalenas</Spanish>
-			<Dutch>Can (Muffins)</Dutch>
-=======
 			<Russian>Банка (Кексики)</Russian>
 			<Spanish>Lata (Magdalenas)</Spanish>
 			<Dutch>Blik (Muffins)</Dutch>
->>>>>>> Development
 			<French>Boîte (Muffins)</French>
 			<Czech>Plechovka (Muffins)</Czech>
 		</Key>
@@ -2319,60 +1636,34 @@
 			<German>Eine saubere ungeöffnete Dose Herpy Dooves Muffins.</German>
 			<Russian>Чистая, закрытая банка кексиков "Herpy Dooves".</Russian>
 			<Spanish>Una limpia y cerrada lata de magdalenas "Herpy Dooves".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Herpy Dooves canned muffins.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Herpy Dooves ingeblikte muffins.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de muffins en conserve "Herpy Dooves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka mufinů Herpy Dooves.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_DERPY">
 			<English>Can (Stew)</English>
 			<German>Can (Stew)</German>
-<<<<<<< HEAD
-			<Russian>Can (Stew)</Russian>
-			<Spanish>Can (Stew)</Spanish>
-			<Dutch>Can (Stew)</Dutch>
-			<French>Can (Stew)</French>
-			<Czech>Can (Stew)</Czech>
-=======
 			<Russian>Банка (Тушенка)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Blik (Rundvleesstoofpot)</Dutch>
 			<French>Boîte (Ragoût)</French>
 			<Czech>Can (Dušené maso)</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DERPY">
 			<English>A clean, unopened can of Donty Hooves beef stew.</English>
 			<German>A clean, unopened can of Donty Hooves beef stew.</German>
-<<<<<<< HEAD
-			<Russian>A clean, unopened can of Donty Hooves beef stew.</Russian>
-			<Spanish>A clean, unopened can of Donty Hooves beef stew.</Spanish>
-			<Dutch>A clean, unopened can of Donty Hooves beef stew.</Dutch>
-			<French>A clean, unopened can of Donty Hooves beef stew.</French>
-			<Czech>A clean, unopened can of Donty Hooves beef stew.</Czech>
-=======
 			<Russian>Чистая, закрытая банка тушеной говядины "Donty Hooves".</Russian>
 			<Spanish>Una limpia y cerrada lata de guiso Donty Hooves.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Donty Hooves rundvleesstoofpot.</Dutch>
 			<French>Une boîte intacte de ragoût au boeuf "Donty Hooves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka dušeného maso značky Donty Hooves.</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_ORLOK">
 			<English>Can (Fruit)</English>
 			<German>Can (Früchte)</German>
-<<<<<<< HEAD
-			<Russian>Банка компота</Russian>
-			<Spanish>Ensalada de Frutas</Spanish>
-			<Dutch>Can (Fruit)</Dutch>
-=======
 			<Russian>Банка (Компот)</Russian>
 			<Spanish>Lata (Ensalada de Frutas)</Spanish>
 			<Dutch>Blik (Gemengd Fruit)</Dutch>
->>>>>>> Development
 			<French>Boîte (Fruits)</French>
 			<Czech>Plechovka (Ovoce)</Czech>
 		</Key>
@@ -2381,26 +1672,16 @@
 			<German>Eine saubere ungeöffnete Dose Orlik Früchtemix.</German>
 			<Russian>Чистая, закрытая банка фруктового компота "Orlok".</Russian>
 			<Spanish>Una limpia y cerrada lata de ensaladas de frutas "Orlok".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Orlok mixed fruit.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Orlok gemengd fruit.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de fruits mixés "Orlok".</French>
 			<Czech>Čistá a ještě neotevřená plechovka směsi ovoce značky Orlok.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POWELL">
 			<English>Can (Chowder)</English>
 			<German>Dose (Fischsuppe)</German>
-<<<<<<< HEAD
-			<Russian>Банка похлебки</Russian>
-			<Spanish>Sopa de Pescado</Spanish>
-			<Dutch>Can (Chowder)</Dutch>
-=======
 			<Russian>Банка (Похлебка)</Russian>
 			<Spanish>Lata (Sopa de Pescado)</Spanish>
 			<Dutch>Blik (Mosselsoep)</Dutch>
->>>>>>> Development
 			<French>Boîte (Soupe de palourdes)</French>
 			<Czech>Plechovka (Dušené maso)</Czech>
 		</Key>
@@ -2409,26 +1690,16 @@
 			<German>Eine saubere ungeöffnete Dose Powell's New England Fischsuppe.</German>
 			<Russian>Чистая, закрытая банка похлебки из моллюсков "Powell's New England".</Russian>
 			<Spanish>Una limpia y cerrada lata de sopa de pescados "Powell's New England".</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened can of Powell's New England clam chowder.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik Powell's New England gebonden mosselsoep.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de soupe de palourdes de "Powell's New England".</French>
 			<Czech>Čistá a ještě neotevřená plechovka dušeného masa značky Powell New England.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_TYLERS">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-<<<<<<< HEAD
-			<Russian>Банка фасоли</Russian>
-			<Spanish>Lata de Frijoles</Spanish>
-			<Dutch>Can (Beans)</Dutch>
-=======
 			<Russian>Банка (Фасоль)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
->>>>>>> Development
 			<French>Boîte (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
@@ -2436,13 +1707,8 @@
 			<English>A clean, unopened can of Tyler's delicious kidney beans.</English>
 			<German>Eine saubere ungeöffnete Dose Tyler's leckere Bohnen.</German>
 			<Russian>Чистая, закрытая банка деликатесной фасоли "Tyler".</Russian>
-<<<<<<< HEAD
-			<Spanish>Una limpia y cerrada lata de deliciosos frijoles rojos "Tyler".</Spanish>
-			<Dutch>A clean, unopened can of Tyler's delicious kidney beans.</Dutch>
-=======
 			<Spanish>Una limpia y cerrada lata de deliciosos porotos rojos "Tyler".</Spanish>
 			<Dutch>Een schoon, ongeopend blik Tyler's heerlijke bruine bonen.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte de délicieux haricots nains "Tyler".</French>
 			<Czech>Čistá a ještě neotevřená plechovka fazolí značky Tyler.</Czech>
 		</Key>
@@ -2451,11 +1717,7 @@
 			<German>Dose (Unbekannt)</German>
 			<Russian>Банка с чем-то</Russian>
 			<Spanish>Lata Desconocida</Spanish>
-<<<<<<< HEAD
-			<Dutch>Can (Unknown)</Dutch>
-=======
 			<Dutch>Blik (Onbekend)</Dutch>
->>>>>>> Development
 			<French>Boîte (Inconnu)</French>
 			<Czech>Plechovka (Neznámé)</Czech>
 		</Key>
@@ -2464,105 +1726,12 @@
 			<German>Eine saubere ungeöffnete Dose. Die Marke ist unbekannt.</German>
 			<Russian>Чистая, закрытая банка непонятно с чем. Наклейка утеряна.</Russian>
 			<Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A clean, unopened tin can. The label is missing.</Dutch>
-=======
 			<Dutch>Een schoon, ongeopend blik. Het label mist.</Dutch>
->>>>>>> Development
 			<French>Une boîte intacte. L'étiquette est manquante.</French>
 			<Czech>Čistá a ještě neotevřená plechovka nečeho, údaje nejsou čitelné.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_STEW">
 			<English>Can (Stew)</English>
-<<<<<<< HEAD
-			<German>Can (Stew)</German>
-			<Russian>Can (Stew)</Russian>
-			<Spanish>Can (Stew)</Spanish>
-			<Dutch>Can (Stew)</Dutch>
-			<French>Can (Stew)</French>
-			<Czech>Can (Stew)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CAN_RUS_STEW">
-			<English>A clean, unopened tin can of beef stew.</English>
-			<German>A clean, unopened tin can of beef stew.</German>
-			<Russian>A clean, unopened tin can of beef stew.</Russian>
-			<Spanish>A clean, unopened tin can of beef stew.</Spanish>
-			<Dutch>A clean, unopened tin can of beef stew.</Dutch>
-			<French>A clean, unopened tin can of beef stew.</French>
-			<Czech>A clean, unopened tin can of beef stew.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_RUS_PORK">
-			<English>Can (Pork)</English>
-			<German>Can (Pork)</German>
-			<Russian>Can (Pork)</Russian>
-			<Spanish>Can (Pork)</Spanish>
-			<Dutch>Can (Pork)</Dutch>
-			<French>Can (Pork)</French>
-			<Czech>Can (Pork)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CAN_RUS_PORK">
-			<English>A clean, unopened tin can of pork.</English>
-			<German>A clean, unopened tin can of pork.</German>
-			<Russian>A clean, unopened tin can of pork.</Russian>
-			<Spanish>A clean, unopened tin can of pork.</Spanish>
-			<Dutch>A clean, unopened tin can of pork.</Dutch>
-			<French>A clean, unopened tin can of pork.</French>
-			<Czech>A clean, unopened tin can of pork.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_RUS_PEAS">
-			<English>Can (Peas)</English>
-			<German>Can (Peas)</German>
-			<Russian>Can (Peas)</Russian>
-			<Spanish>Can (Peas)</Spanish>
-			<Dutch>Can (Peas)</Dutch>
-			<French>Can (Peas)</French>
-			<Czech>Can (Peas)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CAN_RUS_PEAS">
-			<English>A clean, unopened tin can of peas.</English>
-			<German>A clean, unopened tin can of peas.</German>
-			<Russian>A clean, unopened tin can of peas.</Russian>
-			<Spanish>A clean, unopened tin can of peas.</Spanish>
-			<Dutch>A clean, unopened tin can of peas.</Dutch>
-			<French>A clean, unopened tin can of peas.</French>
-			<Czech>A clean, unopened tin can of peas.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_RUS_MILK">
-			<English>Can (Milk)</English>
-			<German>Can (Milk)</German>
-			<Russian>Can (Milk)</Russian>
-			<Spanish>Can (Milk)</Spanish>
-			<Dutch>Can (Milk)</Dutch>
-			<French>Can (Milk)</French>
-			<Czech>Can (Milk)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CAN_RUS_MILK">
-			<English>A clean, unopened tin can of condensed milk.</English>
-			<German>A clean, unopened tin can of condensed milk.</German>
-			<Russian>A clean, unopened tin can of condensed milk.</Russian>
-			<Spanish>A clean, unopened tin can of condensed milk.</Spanish>
-			<Dutch>A clean, unopened tin can of condensed milk.</Dutch>
-			<French>A clean, unopened tin can of condensed milk.</French>
-			<Czech>A clean, unopened tin can of condensed milk.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_CAN_RUS_CORN">
-			<English>Can (Corn)</English>
-			<German>Can (Corn)</German>
-			<Russian>Can (Corn)</Russian>
-			<Spanish>Can (Corn)</Spanish>
-			<Dutch>Can (Corn)</Dutch>
-			<French>Can (Corn)</French>
-			<Czech>Can (Corn)</Czech>
-		</Key>
-		<Key ID="STR_FOOD_DESC_CAN_RUS_CORN">
-			<English>A clean, unopened tin can of corn.</English>
-			<German>A clean, unopened tin can of corn.</German>
-			<Russian>A clean, unopened tin can of corn.</Russian>
-			<Spanish>A clean, unopened tin can of corn.</Spanish>
-			<Dutch>A clean, unopened tin can of corn.</Dutch>
-			<French>A clean, unopened tin can of corn.</French>
-			<Czech>A clean, unopened tin can of corn.</Czech>
-=======
 			<German>Dose (Fleischeintopf)</German>
 			<Russian>Банка (Тушенка)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
@@ -2650,7 +1819,6 @@
 			<Dutch>Een schoon, ongeopend blik maïs.</Dutch>
 			<French>Une boîte intacte de maïs.</French>
 			<Czech>Čistá a ještě neotevřená plechovka kukuřice.</Czech>
->>>>>>> Development
 		</Key>
 		
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">
@@ -2658,11 +1826,7 @@
 			<German>Toilettenpapier</German>
 			<Russian>Туалетная бумага</Russian>
 			<Spanish>Papel Higiénico</Spanish>
-<<<<<<< HEAD
-			<Dutch>Toilet paper</Dutch>
-=======
 			<Dutch>Toiletpapier</Dutch>
->>>>>>> Development
 			<French>Papier toilette</French>
 			<Czech>Toaletní papír</Czech>
 		</Key>
@@ -2671,11 +1835,7 @@
 			<German>Eine Rolle Toilettenpapier.</German>
 			<Russian>Рулон туалетной бумаги. Может быть весьма полезным в определенных ситуациях.</Russian>
 			<Spanish>Un rollo de papel higiénico.</Spanish>
-<<<<<<< HEAD
-			<Dutch>A roll of toilet paper.</Dutch>
-=======
 			<Dutch>Een rol toiletpapier.</Dutch>
->>>>>>> Development
 			<French>Un rouleau de papier toilette.</French>
 			<Czech>Role toeletního papíru.</Czech>
 		</Key>
@@ -2684,13 +1844,8 @@
 			<German>Rasiermesser</German>
 			<Russian>Опасная бритва</Russian>
 			<Spanish>Navaja</Spanish>
-<<<<<<< HEAD
-			<Dutch>Razor</Dutch>
-			<French>Razor</French>
-=======
 			<Dutch>Scheermes</Dutch>
 			<French>Rasoir</French>
->>>>>>> Development
 			<Czech>Břitva</Czech>
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">
@@ -2698,56 +1853,6 @@
 			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
 			<Russian>Старомодная опасная бритва.</Russian>
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
-<<<<<<< HEAD
-			<Dutch>An old-fashioned cut-throat razor with a rounded French point.</Dutch>
-			<French>An old-fashioned cut-throat razor with a rounded French point.</French>
-			<Czech>Stará břitva na holení.</Czech>
-		</Key>
-		<Key ID="STR_BOOK_NAME_BIBLE">
-			<English>Bible</English>
-			<German>Bibel</German>
-			<Russian>Библия</Russian>
-			<Spanish>Biblia</Spanish>
-			<Dutch>Bijbel</Dutch>
-			<French>Bible</French>
-			<Czech>Bible</Czech>
-		</Key>
-		<Key ID="STR_BOOK_DESC_BIBLE">
-			<English>The bible.</English>
-			<German>Die Bibel.</German>
-			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
-			<Spanish>La Biblia</Spanish>
-			<Dutch>The bible.</Dutch>
-			<French>The bible.</French>
-			<Czech>Svatá bible.</Czech>
-		</Key>
-		<Key ID="STR_ITEM_NAME_FUELCAN">
-			<English>Fuelcan</English>
-			<German>Benzinkanister</German>
-			<Russian>Канистра</Russian>
-			<Spanish>Bidón Chico</Spanish>
-			<Dutch>Fuelcan</Dutch>
-			<French>Fuelcan</French>
-			<Czech>Kanystr</Czech>
-		</Key>
-		<Key ID="STR_ITEM_DESC_FUELCAN">
-			<English>A small can for gasoline.</English>
-			<German>Ein kleiner Benzinkanister.</German>
-			<Russian>Небольшая емкость для топлива.</Russian>
-			<Spanish>Un envase pequeño para combustible lleno.</Spanish>
-			<Dutch>A small can for gasoline.</Dutch>
-			<French>A small can for gasoline.</French>
-			<Czech>A small can for gasoline.</Czech>
-		</Key>
-		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
-			<English>Fuelcan (Empty)</English>
-			<German>Benzinkanister (Leer)</German>
-			<Russian>Канистра (пустая)</Russian>
-			<Spanish>Bidón Chico (Vacío)</Spanish>
-			<Dutch>Fuelcan (Empty)</Dutch>
-			<French>Fuelcan (Empty)</French>
-			<Czech>Kanystr (Empty)</Czech>
-=======
 			<Dutch>Een ouderwets scheermes met een afgeronde Franse kop.</Dutch>
 			<French>Un rasoir à main démodé et obsolète.</French>
 			<Czech>Stará břitva na holení.</Czech>
@@ -2796,18 +1901,11 @@
 			<Dutch>Jerrycan (5L) (Empty)</Dutch>
 			<French>Bidon (5L) (Vide)</French>
 			<Czech>Kanystr (5L) (Prázdný)</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
 			<English>A small can for gasoline.</English>
 			<German>Ein kleiner leerer Benzinkanister.</German>
 			<Russian>Пустая емкость для топлива.</Russian>
-<<<<<<< HEAD
-			<Spanish>Un envase pequeño para combustible lleno vacío.</Spanish>
-			<Dutch>A small can for gasoline.</Dutch>
-			<French>A small can for gasoline.</French>
-			<Czech>A small can for gasoline.</Czech>
-=======
 			<Spanish>Un envase pequeño para combustible vacío.</Spanish>
 			<Dutch>Een kleine kan voor benzine.</Dutch>
 			<French>Un petit bidon pour le carburant.</French>
@@ -2848,26 +1946,10 @@
 			<French>Un jerrican vide de 20L qui peut être rempli à partir de véhicules ou de staions servives.</French>
 			<Dutch>Een lege jerrycan van 20 liter die gevuld kan worden bij voertuigen of benzinestations.</Dutch>
 			<Czech>Prázdný 20 litrový kanystr, který může být naplněn u benzínek nebo odstavených aut.</Czech>
->>>>>>> Development
 		</Key>
 	</Package>
 	<Package name="feedback">
 		<Key ID="str_pulse_extremely_weak">
-<<<<<<< HEAD
-			<Original>No pulse. Man is dead...</Original>
-			<English>No pulse. Man is dead...</English>
-			<Russian>Пульс отсутствует. Человек мертв...</Russian>
-		</Key>
-		<Key ID="str_pulse_weak">
-			<Original>Pulse is weak</Original>
-			<English>Pulse is weak</English>
-			<Russian>Слабый пульс</Russian>
-		</Key>
-		<Key ID="str_pulse_strong">
-			<Original>Pulse is strong</Original>
-			<English>Pulse is strong</English>
-			<Russian>Уверенный пульс</Russian>
-=======
 			<English>No pulse. Man is dead...</English>
 			<Russian>Пульс отсутствует. Человек мертв...</Russian>
 			<Spanish>Sin pulso. Está muerto...</Spanish>
@@ -2893,7 +1975,6 @@
 			<Czech>Puls je silný</Czech>
 			<German>Der Puls ist stabil</German>
 			<Dutch>Hartslag is sterk</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_success_cooked">	<!-- As in "you have successfully cooked 5 raw steak" -->
 			<English>You have cooked %1 %2</English>
@@ -2970,15 +2051,9 @@
 		<Key ID="str_build_failed_01">
 			<English>You have failed to build %1.</English>
 			<German>Aufbau von %1 gescheitert.</German>
-<<<<<<< HEAD
-			<Russian>You have failed to build %1.</Russian>
-			<Spanish>Fallaste al contruir un %1.</Spanish>
-			<Dutch>You have failed to build %1.</Dutch>
-=======
 			<Russian>Вам не удалость построить %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
 			<Dutch>Het bouwen van %1 is niet gelukt.</Dutch>
->>>>>>> Development
 			<French>Vous n'avez pas réussi à contruire %1.</French>
 			<Czech>Při stavbě %1 došlo k chybě.</Czech>
 		</Key>
@@ -3145,11 +2220,7 @@
 			<Czech>Čekám na vytvoření postavy.</Czech>
 		</Key>
 		<Key ID="str_player_14">
-<<<<<<< HEAD
-			<English>Retrying to Authenticate</English>
-=======
 			<English>Retrying Authentication</English>
->>>>>>> Development
 			<German>Erneuter Authentifizierungsversuch</German>
 			<Russian>Попытка аутентификации</Russian>
 			<Spanish>Volviendo a Autentificar</Spanish>
@@ -3240,11 +2311,7 @@
 		</Key>
 		<Key ID="str_player_25">
 			<English>A pile of wood has been successfully added to your inventory.</English>
-<<<<<<< HEAD
-			<German>Ein Holzstoß wurde erfolgreich Ihrem Inventar hinzugefügt.</German>
-=======
 			<German>Ein Holzstapel wurde erfolgreich Ihrem Inventar hinzugefügt.</German>
->>>>>>> Development
 			<Russian>Дрова добавлены в ваш инвентарь.</Russian>
 			<Spanish>Una pila de leña se agregó correctamente a tu inventario.</Spanish>
 			<Dutch>Er is brandhout toegevoegd aan je inventaris.</Dutch>
@@ -3253,11 +2320,7 @@
 		</Key>
 		<Key ID="str_player_26">
 			<English>You cannot do this while you are in the water.</English>
-<<<<<<< HEAD
-			<German>Sie können dies nicht tun, während Sie sich im Wasser befinden..</German>
-=======
 			<German>Sie können dies nicht tun, während Sie sich im Wasser befinden.</German>
->>>>>>> Development
 			<Russian>Это действие невозможно пока вы в воде.</Russian>
 			<Spanish>No puedes hacer esto mientras estás en el agua.</Spanish>
 			<Dutch>Je kunt deze actie niet in het water uitvoeren</Dutch>
@@ -3298,11 +2361,7 @@
 			<Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
 			<Dutch>Je moet %1 op je persoon hebben om het van/naar je gereedschapsriem te verplaatsen</Dutch>
 			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
-<<<<<<< HEAD
-			<Czech>TO DECIDE</Czech>
-=======
 			<Czech>%1 musí být v invetáři aby se mohl přesunout z/do panelu nástrojů</Czech>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31">	<!-- %1=ITEM %2=build/consumed/cook/drink/fill/pitch/place/use/wear -->
 			<English>%1 must be in your main inventory to %2 it.</English>
@@ -3319,11 +2378,8 @@
 			<Spanish>construirlo</Spanish>
 			<Czech>postavit</Czech>
 			<German>bauen</German>
-<<<<<<< HEAD
-=======
 			<French>construire</French>
 			<Dutch>Bouwen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_consume">
 			<English>consume</English>
@@ -3331,11 +2387,8 @@
 			<Spanish>consumirlo</Spanish>
 			<Czech>sníst</Czech>
 			<German>konsumieren</German>
-<<<<<<< HEAD
-=======
 			<French>consommer</French>
 			<Dutch>Consumeren</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_cook">
 			<English>cook</English>
@@ -3343,11 +2396,8 @@
 			<Spanish>cocinarlo</Spanish>
 			<Czech>upéct</Czech>
 			<German>kochen</German>
-<<<<<<< HEAD
-=======
 			<French>cuire</French>
 			<Dutch>Koken</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_drink">
 			<English>drink</English>
@@ -3355,11 +2405,8 @@
 			<Spanish>beberlo</Spanish>
 			<Czech>vypít</Czech>
 			<German>trinken</German>
-<<<<<<< HEAD
-=======
 			<French>boire</French>
 			<Dutch>Drinken</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_fill">
 			<English>fill</English>
@@ -3367,11 +2414,8 @@
 			<Spanish>llenarla</Spanish>
 			<Czech>naplnit</Czech>
 			<German>füllen</German>
-<<<<<<< HEAD
-=======
 			<French>remplir</French>
 			<Dutch>Vullen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_pitch">
 			<English>pitch</English>
@@ -3379,11 +2423,8 @@
 			<Spanish>armarla</Spanish>
 			<Czech>postavit</Czech>
 			<German>montieren</German>
-<<<<<<< HEAD
-=======
 			<French>installer</French>
 			<Dutch>Opzetten</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_place">
 			<English>place</English>
@@ -3391,11 +2432,8 @@
 			<Spanish>colocarlo</Spanish>
 			<Czech>umístit</Czech>
 			<German>platziere</German>
-<<<<<<< HEAD
-=======
 			<French>placer</French>
 			<Dutch>Plaatsen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_use">
 			<English>use</English>
@@ -3403,11 +2441,8 @@
 			<Spanish>usarlo</Spanish>
 			<Czech>použít</Czech>
 			<German>benutzen</German>
-<<<<<<< HEAD
-=======
 			<French>utiliser</French>
 			<Dutch>Gebruiken</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_31_wear">
 			<English>wear</English>
@@ -3415,8 +2450,6 @@
 			<Spanish>vestirte</Spanish>
 			<Czech>nosit</Czech>
 			<German>tragen</German>
-<<<<<<< HEAD
-=======
 			<French>porter</French>
 			<Dutch>Dragen</Dutch>
 		</Key>
@@ -3428,7 +2461,6 @@
 			<German>Authentifizierung fehlgeschlagen, Disconnecte und versuche es erneut.</German>
 			<French>Erreur d'authentification, déconnectez vous et éssayez encore.</French>
 			<Dutch>Authenticatie mislukt, verbreek de verbinding en probeer het opnieuw.</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="str_player_beinglooted">
 			<English>%1 is already being looted by someone else.</English>
@@ -3525,11 +2557,7 @@
 			<German>Sie können nicht nahe eines anderen Spielers ausloggen!</German>
 			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>
 			<Spanish>¡No puedes abortar cerca de otros jugadores!</Spanish>
-<<<<<<< HEAD
-			<Dutch>Cannot Abort near another player!</Dutch>
-=======
 			<Dutch>Kan niet afbreken in de buurt van een andere speler!</Dutch>
->>>>>>> Development
 			<French>Vous ne pouvez pas vous déconnecter a proximité d'autres joueurs</French>
 			<Czech>Hru nelze opustit pokud jste blízko jiného hráče!</Czech>
 		</Key>
@@ -3538,11 +2566,7 @@
 			<German>Logout in %1</German>
 			<Russian>Выход будет доступен через %1</Russian>
 			<Spanish>Puedes abortar en %1 segundos</Spanish>
-<<<<<<< HEAD
-			<Dutch>Can Abort in %1</Dutch>
-=======
 			<Dutch>Kan afbreken over %1</Dutch>
->>>>>>> Development
 			<French>Vous pourrez vous déconnecter dans #1</French>
 			<Czech>Hru lze opustit za %1</Czech>
 		</Key>
@@ -3551,11 +2575,7 @@
 			<German>Sie können nicht im Kampf ausloggen!</German>
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>¡No puedes abortar en combate!</Spanish>
-<<<<<<< HEAD
-			<Dutch>Cannot Abort while in combat!</Dutch>
-=======
 			<Dutch>Kan niet afbreken tijdens een gevecht!</Dutch>
->>>>>>> Development
 			<French>Vous ne pouvez pas vous déconnecter en combat!</French>
 			<Czech>Hru nelze opustit, pokud jste v boji!</Czech>
 		</Key>
@@ -3564,12 +2584,6 @@
 			<German>Der Pfeil ist gebrochen und kann nicht wieder verwendet werden</German>
 			<Russian>Стрела сломалась. Ее нельзя использовать повторно.</Russian>
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
-<<<<<<< HEAD
-			<Dutch>Arrow was broken and cannot be used again</Dutch>
-			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
-			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
-		</Key>
-=======
 			<Dutch>Pijl is gebroken en kan niet opnieuw gebruikt worden</Dutch>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
 			<Czech>Šipka byla zlomena a nemůže být použita znovu</Czech>
@@ -3583,7 +2597,6 @@
 			<Dutch>Om munitie in een wapen te converteren, moet je het wapen in je handen hebben!</Dutch>
 			<Czech>Zbraň, pro kterou měníte munici musí být v rukách.</Czech>
 		</Key>
->>>>>>> Development
 	</Package>
 	<Package name="intro">
 		<Key ID="STR_INTRO_1">
@@ -3738,11 +2751,8 @@
 			<Spanish>Equipo</Spanish>
 			<Czech>Vybavení</Czech>
 			<German>Ausrüstung</German>
-<<<<<<< HEAD
-=======
 			<French>Equipement</French>
 			<Dutch>Uitrusting</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_FILTER">
 			<English>Filter</English>
@@ -3750,11 +2760,8 @@
 			<Spanish>Filtro</Spanish>
 			<Czech>Filtr</Czech>
 			<German>Filter</German>
-<<<<<<< HEAD
-=======
 			<French>Filtrer</French>
 			<Dutch>Filteren</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_REARM">
 			<English>Rearm</English>
@@ -3762,11 +2769,8 @@
 			<Spanish>Rearmar</Spanish>
 			<Czech>Přezbrojit</Czech>
 			<German>Aufmunitionieren</German>
-<<<<<<< HEAD
-=======
 			<French>Réarmer</French>
 			<Dutch>Herbewapenen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_OBAG">
 			<English>Open bag</English>
@@ -3774,11 +2778,8 @@
 			<Spanish>Abrir Mochila</Spanish>
 			<Czech>Otevřít batoh</Czech>
 			<German>Rucksack öffnen</German>
-<<<<<<< HEAD
-=======
 			<French>Ouvrir le sac</French>
 			<Dutch>Rugzak openen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_CBAG">
 			<English>Close bag</English>
@@ -3786,11 +2787,8 @@
 			<Spanish>Cerrar Mochila</Spanish>
 			<Czech>Zavřít batoh</Czech>
 			<German>Rucksack schließen</German>
-<<<<<<< HEAD
-=======
 			<French>Fermer le sac</French>
 			<Dutch>Rugzak sluiten</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_CLOSE">
 			<English>Close</English>
@@ -3798,11 +2796,8 @@
 			<Spanish>Cerrar</Spanish>
 			<Czech>Zavřít</Czech>
 			<German>Schließe</German>
-<<<<<<< HEAD
-=======
 			<French>Fermer</French>
 			<Dutch>Sluiten</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_ALL">
 			<English>All</English>
@@ -3810,11 +2805,8 @@
 			<Spanish>Todo</Spanish>
 			<Czech>Vše</Czech>
 			<German>Alle</German>
-<<<<<<< HEAD
-=======
 			<French>Tout</French>
 			<Dutch>Alle</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_PRIMARY">
 			<English>Primary</English>
@@ -3822,11 +2814,8 @@
 			<Spanish>Primaria</Spanish>
 			<Czech>Hlavní</Czech>
 			<German>Primäre</German>
-<<<<<<< HEAD
-=======
 			<French>Primaire</French>
 			<Dutch>Primair</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_SECONDARY">
 			<English>Secondary</English>
@@ -3834,11 +2823,8 @@
 			<Spanish>Secundaria</Spanish>
 			<Czech>Vedlejší</Czech>
 			<German>Sekundäre</German>
-<<<<<<< HEAD
-=======
 			<French>Secondaire</French>
 			<Dutch>Secundair</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_HANDGUN">
 			<English>HandGun</English>
@@ -3846,11 +2832,8 @@
 			<Spanish>Pistola</Spanish>
 			<Czech>Pistole</Czech>
 			<German>Pistole</German>
-<<<<<<< HEAD
-=======
 			<French>Arme de point</French>
 			<Dutch>Handgeweer</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_ITEMS">
 			<English>Items</English>
@@ -3858,11 +2841,8 @@
 			<Spanish>Objetos</Spanish>
 			<Czech>Věci</Czech>
 			<German>Objekte</German>
-<<<<<<< HEAD
-=======
 			<French>Objets</French>
 			<Dutch>Voorwerpen</Dutch>
->>>>>>> Development
 		</Key>
 		<Key ID="STR_UI_GENDER_TITLE">
 			<English>SELECT YOUR GENDER</English>
@@ -3907,11 +2887,7 @@
 			<German>Hund zähmen</German>
 			<Russian>Приручить собаку</Russian>
 			<Spanish>Domesticar Perro</Spanish>
-<<<<<<< HEAD
-			<Dutch>Tame Dog</Dutch>
-=======
 			<Dutch>Hond temmen</Dutch>
->>>>>>> Development
 			<French>Apprivoiser le Chien</French>
 			<Czech>Ochočit psa</Czech>
 		</Key>
@@ -3920,11 +2896,7 @@
 			<German>Dorthin bewegen</German>
 			<Russian>Иди туда</Russian>
 			<Spanish>Mover a</Spanish>
-<<<<<<< HEAD
-			<Dutch>Move To</Dutch>
-=======
 			<Dutch>Ganaar</Dutch>
->>>>>>> Development
 			<French>Aller à</French>
 			<Czech>Přesunout do</Czech>
 		</Key>
@@ -3933,11 +2905,7 @@
 			<German>Hund: %1</German>
 			<Russian>Собака: %1</Russian>
 			<Spanish>Perro: %1</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: %1</Dutch>
-=======
 			<Dutch>Hond: %1</Dutch>
->>>>>>> Development
 			<French>Chien: %1</French>
 			<Czech>Pes: %1</Czech>
 		</Key>
@@ -3946,11 +2914,7 @@
 			<German>Hund herbeirufen</German>
 			<Russian>Позвать собаку</Russian>
 			<Spanish>Llamar Perro</Spanish>
-<<<<<<< HEAD
-			<Dutch>Call Dog</Dutch>
-=======
 			<Dutch>Hond roepen</Dutch>
->>>>>>> Development
 			<French>Appeler le Chien</French>
 			<Czech>Zavolat psa</Czech>
 		</Key>
@@ -3959,11 +2923,7 @@
 			<German>Hund füttern</German>
 			<Russian>Накормить собаку</Russian>
 			<Spanish>Alimentar Perro</Spanish>
-<<<<<<< HEAD
-			<Dutch>Feed Dog</Dutch>
-=======
 			<Dutch>Hond voeren</Dutch>
->>>>>>> Development
 			<French>Nourrir le Chien</French>
 			<Czech>Nakrmit psa</Czech>
 		</Key>
@@ -3972,11 +2932,7 @@
 			<German>Wasser anbieten</German>
 			<Russian>Напоить собаку</Russian>
 			<Spanish>Hidratar Perro</Spanish>
-<<<<<<< HEAD
-			<Dutch>Water Dog</Dutch>
-=======
 			<Dutch>Hond water geven</Dutch>
->>>>>>> Development
 			<French>Donner à boire au Chien</French>
 			<Czech>Dát psovi napít</Czech>
 		</Key>
@@ -3985,11 +2941,7 @@
 			<German>Hund: Sitz</German>
 			<Russian>Собака: Сидеть!</Russian>
 			<Spanish>Perro: Sentado</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: Sit</Dutch>
-=======
 			<Dutch>Hond: Zitten</Dutch>
->>>>>>> Development
 			<French>Chien: S'asseoir</French>
 			<Czech>Psí příkaz: Sednout</Czech>
 		</Key>
@@ -3998,13 +2950,8 @@
 			<German>Hund: Hinlegen</German>
 			<Russian>Собака: Лежать!</Russian>
 			<Spanish>Perro: Acostado</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: Lie Down</Dutch>
-			<French>Chien : Couché</French>
-=======
 			<Dutch>Hond: Liggen</Dutch>
 			<French>Chien: Couché</French>
->>>>>>> Development
 			<Czech>Psí příkaz: Lehnout</Czech>
 		</Key>
 		<Key ID="str_actions_trackdog">
@@ -4012,11 +2959,7 @@
 			<German>Hund: Verfolgen</German>
 			<Russian>Собака: Искать!</Russian>
 			<Spanish>Perro: Rastrear</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: Track</Dutch>
-=======
 			<Dutch>Hond: Opsporen</Dutch>
->>>>>>> Development
 			<French>Chien: Pister</French>
 			<Czech>Psí příkaz: stopuj</Czech>
 		</Key>
@@ -4025,11 +2968,7 @@
 			<German>Hund: Bellen</German>
 			<Russian>Собака: Голос!</Russian>
 			<Spanish>Perro: Ladrar</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: Bark</Dutch>
-=======
 			<Dutch>Hond: Blaffen</Dutch>
->>>>>>> Development
 			<French>Chien: Aboyer</French>
 			<Czech>Psí příkaz: Stěkej</Czech>
 		</Key>
@@ -4038,11 +2977,7 @@
 			<German>Hund: %1</German>
 			<Russian>Собака: %1</Russian>
 			<Spanish>Perro: %1</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: %1</Dutch>
-=======
 			<Dutch>Hond: %1</Dutch>
->>>>>>> Development
 			<French>Chien: %1</French>
 			<Czech>Psí příkaz: %1</Czech>
 		</Key>
@@ -4051,17 +2986,9 @@
 			<German>Hund: Folgen</German>
 			<Russian>Собака: Ко мне!</Russian>
 			<Spanish>Perro: Seguir</Spanish>
-<<<<<<< HEAD
-			<Dutch>Dog: Follow</Dutch>
-=======
 			<Dutch>Hond: Volgen</Dutch>
->>>>>>> Development
 			<French>Chien: Suivre</French>
 			<Czech>Psí příkaz: Sleduj</Czech>
 		</Key>
 	</Package>
-<<<<<<< HEAD
 </Project>
-=======
-</Project>
->>>>>>> Development
