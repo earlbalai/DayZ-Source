@@ -1,8 +1,10 @@
 private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx"];
 
 _vehicle = 		cursorTarget;
-
-_canSize = 		getNumber(configFile >> "cfgMagazines" >> "ItemJerrycan" >> "fuelQuantity");
+_array = _this select 3;
+_cantype = _array select 0;
+_canSize = 		getNumber(configFile >> "cfgMagazines" >> _cantype >> "fuelQuantity");
+_emptycan = 	getText(configFile >> "cfgMagazines" >> _cantype >> "emptycan");
 _configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameType = 	getText(_configVeh >> "displayName");
@@ -12,8 +14,8 @@ _newFuel = 		(_curFuel + _canSize);
 if (_newFuel > _capacity) then {_newFuel = _capacity};
 _newFuel = (_newFuel / _capacity);
 
-player removeMagazine "ItemJerrycan";
-player addMagazine "ItemJerrycanEmpty";
+player removeMagazine _cantype;
+player addMagazine _emptycan;
 
 player playActionNow "Medic";
 _dis=10;

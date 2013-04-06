@@ -5,7 +5,6 @@ _type = 		typeOf _obj;
 _config = 		configFile >> "CfgBuildingLoot" >> _type;
 _canLoot = 		isClass (_config);
 
-if (dayz_maxCurrentZeds > dayz_maxZeds) exitwith {};
 if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
 
@@ -15,7 +14,7 @@ if (_canLoot) then {
 	_min = 			getNumber (_config >> "minRoaming");
 	_max = 			getNumber (_config >> "maxRoaming");
 //Walking Zombies
-	//_num = round(random _max) min _min;
+	//_num = round(random _max) max _min;
 	_num = round(random _max) max _min;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 //Get zombie class

@@ -35,6 +35,7 @@ class CfgWeapons {
 	class MeleeHatchet: MeleeWeapon
 	{
 		scope=2;
+		melee= "true";
 		autoreload=1;
 		magazineReloadTime=0;
 		model="\dayz_weapons\models\Hatchet_weaponized";
@@ -98,6 +99,7 @@ class CfgWeapons {
 	class MeleeCrowbar: MeleeHatchet
 	{
 		scope=2;
+		melee= "true";
 		autoreload=1;
 		magazineReloadTime=0;
 		model="\dayz_weapons\models\crowbar_weaponized";
@@ -165,6 +167,7 @@ class CfgWeapons {
 	class MeleeMachete: MeleeHatchet
 	{
 		scope=2;
+		melee= "true";
 		autoreload=1;
 		magazineReloadTime=0;
 		model="\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
@@ -229,7 +232,6 @@ class CfgWeapons {
 			};
 		};
 	};
-	
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class MeleeFlashlight : Pistol {
@@ -315,8 +317,8 @@ class CfgWeapons {
 		cursor = "RifleCursor";
 		cursoraim = "Foresight";
 	};
-	class Rifle;	// External class reference
-	class BAF_AS50_scoped : Rifle {
+	class BAF_AS50_scoped;	// External class reference
+	class BAF_AS50_scoped_DZ : BAF_AS50_scoped {
 		displayname = "AS50_DZ";
 		type = "1";
 		canlock = 0;

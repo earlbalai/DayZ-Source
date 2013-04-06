@@ -1,4 +1,4 @@
-private["_obj","_unit","_ammo","_magazine","_mags","_distance","_weapon","_projectile","_vUp","_endPos","_dir","_height","_bolt","_hitArray","_hitObject","_hitSelection","_config","_hitMemoryPt","_variation","_val","_doLoop","_countr"];
+private["_obj","_unit","_ammo","_magazine","_mags","_newmags","_distance","_weapon","_projectile","_vUp","_endPos","_dir","_height","_bolt","_hitArray","_hitObject","_hitSelection","_config","_hitMemoryPt","_variation","_val","_doLoop","_countr"];
 _obj = _this select 0;
 _unit = 		_obj select 0;
 _weapon = 		_obj select 1;
@@ -12,12 +12,27 @@ _endPos = getPosATL _projectile;
 _dir = 0;
 
 if (_magazine == "Quiver") then {
-	_mags = {_x == "Quiver"} count magazines player;
-	_ammo = player ammo "Crossbow_DZ";
-	if (_ammo > 0) then {
+	_newmags = [];
+	_mags = call player_countmagazines;
+	for "_i" from 0 to (count _mags - 1) do {
+		if (typeName (_mags select _i) == "ARRAY") then {
+			if ((_mags select _i) select 0 == "Quiver") then {
+				diag_log "Quiver == ARRAY";
+				_newmags set [count _newmags, _mags select _i];
+			};
+		} else {
+			if (_mags select _i == "Quiver") then {
+				diag_log "Quiver != ARRAY";
+				_newmags set [count _newmags, _mags select _i];
+			};
+		};
+	};	
+	if (count _newmags > 0) then {
 		player removeMagazines "Quiver";
-		player addMagazine ["Quiver", _ammo];
-		for "_i" from 0 to (_mags - 2) do { player addMagazine "Quiver" };
+		for "_i" from 0 to (count _newmags -1) do {
+			diag_log "Adding quiver array";
+			player addMagazine (_newmags select _i);
+		};
 	};
 };
 

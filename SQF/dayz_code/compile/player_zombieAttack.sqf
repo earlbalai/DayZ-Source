@@ -11,8 +11,6 @@ if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
 	if (_type == "zombie") then {
 		_rnd = round(random 9) + 1;
 		_move = "ZombieStandingAttack" + str(_rnd);
-	} else {
-		_move = "Dog_Attack";
 	};
 };
 
@@ -35,7 +33,7 @@ if (_vehicle != player) then {
 	_hpList = 	_vehicle call vehicle_getHitpoints;
 	_hp = 		_hpList call BIS_fnc_selectRandom;
 	_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-	_damage = 	random 0.08;
+	_damage = 	random 0.02;
 	_chance =	round(random 12);
 	
 	if ((_chance % 4) == 0) then {
@@ -46,7 +44,7 @@ if (_vehicle != player) then {
 			};
 		} forEach _openVehicles;
 	};
-diag_log ("Vehilce Dmg: " +str(_wound));
+//diag_log ("Vehilce Dmg: " +str(_wound));
 	if ((_wound == "Glass1") or (_wound == "Glass2") or (_wound == "Glass3") or (_wound == "Glass4") or (_wound == "Glass5") or (_wound == "Glass6")) then {
 		[_unit,"hit",4,false] call dayz_zombieSpeak;
 		_strH = "hit_" + (_wound);
@@ -68,7 +66,7 @@ diag_log ("Vehilce Dmg: " +str(_wound));
 				_index = (DAYZ_woundHit_ok select 1) select _index;
 				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
-			_damage = 0.1 + random (1.2);
+			_damage = 0.1 + random (0.9);
 			//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
 			[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
 			//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
@@ -82,11 +80,12 @@ diag_log ("Vehilce Dmg: " +str(_wound));
 	};
 } else {
 	//Did he hit?
-	//_currentAnim = animationState _unit;
-	//diag_log ("Animation state: " +(_currentAnim));
+	_currentAnim = animationState _unit;
+	diag_log ("Animation state: " +(_currentAnim));
 	//"amovpercmstpsnonwnondnon",
-	_attackanimations = ["zombiestandingattack1","zombiestandingattack2","zombiestandingattack3","zombiestandingattack4","zombiestandingattack5","zombiestandingattack6","zombiestandingattack7","zombiestandingattack8","zombiestandingattack9","zombiestandingattack10","zombiefeed1","zombiefeed2","zombiefeed3","zombiefeed4","zombiefeed5"];
-	if (((_unit distance player) <= 3) and ((animationState _unit) in _attackanimations)) then {
+	_StandingAttackAnimations = ["zombiestandingattack1","zombiestandingattack2","zombiestandingattack3","zombiestandingattack4","zombiestandingattack5","zombiestandingattack6","zombiestandingattack7","zombiestandingattack8","zombiestandingattack9","zombiestandingattack10","zombiefeed1","zombiefeed2","zombiefeed3","zombiefeed4","zombiefeed5"];
+	_CrawlingAttackAnimations = ["amovppnemstpsnonwnondnon_amovpercmstpsnonwnondnon"];
+	if (((_unit distance player) <= 4) and (((animationState _unit) in _StandingAttackAnimations) or (animationState _unit) in _CrawlingAttackAnimations)) then {
 		//check LOS
 		private[];
 		_tPos = (getPosASL _vehicle);
@@ -107,10 +106,16 @@ diag_log ("Vehilce Dmg: " +str(_wound));
 					_index = (DAYZ_woundHit_ok select 1) select _index;
 					_wound = (DAYZ_woundHit_ok select 0) select _index; 
 				};
-				_damage = 0.1 + random (1.2);
-					
-				//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
-				[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
+				_damage = 0.1 + random (0.9);
+				
+				if ((animationState _unit) in _StandingAttackAnimations) then {
+					//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
+					[player, _wound, _damage, _unit,"zombie"] call fnc_usec_damageHandler;
+				};
+				if ((animationState _unit) in _CrawlingAttackAnimations) then {
+					//diag_log ("START DAM: Player Hit on " + _wound + " for " + str(_damage));
+					[player, _wound, _damage, _unit,"zombie","legs"] call fnc_usec_damageHandler;
+				};
 				//dayzHit =	[player,_wound, _damage, _unit,"zombie"];
 				//publicVariable "dayzHit";
 				[_unit,"hit",2,false] call dayz_zombieSpeak;

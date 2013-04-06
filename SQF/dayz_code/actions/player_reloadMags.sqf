@@ -1,5 +1,4 @@
-private["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_i","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
-
+private["_item","_config","_consume","_create","_item_ammo","_mags","_consume_magsize","_create_magsize","_consume_type","_slotstart","_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots","_control","_i","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full","_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest"];
 disableSerialization;
 call gear_ui_init;
 
@@ -15,8 +14,14 @@ _create =   getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") selec
 
 _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
 
-//add check if weapon can use create (if not - show message)
+//add check if weapon can use _create (if not - show message)
+/*
+if (currentWeapon player != "") then {
+	_mags = [] + getArray (configFile >> "cfgWeapons" >> (currentWeapon player) >> "magazines");
+};
+if !(_create in _mags) exitWith {cutText [localize "str_must_have_weapon", "PLAIN DOWN"];};
 
+*/
 player playActionNow "PutDown";
 
 _consume_magsize =  getNumber(configFile >> "CfgMagazines" >> _consume >> "count");
