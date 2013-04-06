@@ -1,6 +1,63 @@
 class CfgMagazines {
 	class CA_Magazine;	// External class reference
-
+	
+	class Melee_Swing : CA_Magazine {
+		scopeWeapon = protected;
+		scopeMagazine = protected;
+		magazineType = WeaponNoSlot;
+		type = VSoft;
+		flash = "";
+		flashSize = 0;
+		initSpeed = 100;
+		maxLeadSpeed = 15; //20
+		dexterity = 2; //20
+		picture = "\dayz_weapons\textures\equip_shells_ca.paa";
+		displayName = "crt";
+		displayNameMagazine = "crt";
+		shortNameMagazine = "crt";
+		optics = false;
+		distanceZoomMin = 0;
+		distanceZoomMax = 0;
+		reloadTime = 0.1;
+		magazineReloadTime = 0.01;
+		drySound[] = {"", 0, 1};
+		reloadMagazineSound[] = {"", 0, 1};
+		modes[] = {"Single"};
+		sound[] = {"Weapons\grenade_launch", 0.0031623, 1};
+		reloadSound[] = {"", 0.0003162, 1};
+		showEmpty = 0;
+		autoReload = true;
+		count = 100000;
+		canLock = LockNo;
+		//
+		burst = 1;
+		multiplier = 1;
+		ffMagnitude = 0.1;
+		ffFrequency = 1;
+		ffCount = 1;
+		recoil = "Empty";
+		dispersion = 0.2;
+	};
+	
+	class Machete_Swing : Melee_Swing {
+		displayName = "Machete";
+		displayNameMagazine = "Machete";
+		shortNameMagazine = "Machete";
+		ammo = "Machete_Swing_Ammo";
+	};
+	class crowbar_swing : Melee_Swing {
+		displayName = "Crowbar";
+		displayNameMagazine = "Crowbar";
+		shortNameMagazine = "Crowbar";
+		ammo = "Crowbar_Swing_Ammo";
+	};
+	class Hatchet_Swing : Melee_Swing {
+		displayName = "Hatchet";
+		displayNameMagazine = "Hatchet";
+		shortNameMagazine = "Hatchet";
+		ammo = "Hatchet_Swing_Ammo";
+	};
+	
 	class ItemTent : CA_Magazine {
 		scope = public;
 		count = 1;
@@ -711,7 +768,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_UNLABELED;
-		descriptionShort = $STR_FOOD_DESC_UNLABELED;
+		descriptionShort = $STR_FOOD_DESC_CAN_UNLABELED;
 		model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
 	};
@@ -729,7 +786,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_STEW;
-		descriptionShort = $STR_FOOD_DESC_RUS_STEW;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_STEW;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_stew_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_stew_clean_full_ca.paa";
 	};
@@ -747,7 +804,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_PORK;
-		descriptionShort = $STR_FOOD_DESC_RUS_PORK;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_PORK;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_pork_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_pork_clean_full_ca.paa";
 	};
@@ -765,7 +822,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_PEAS;
-		descriptionShort = $STR_FOOD_DESC_RUS_PEAS;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_PEAS;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_peas_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_peas_clean_full_ca.paa";
 	};
@@ -783,7 +840,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 100;
 		displayName = $STR_FOOD_NAME_CAN_RUS_MILK;
-		descriptionShort = $STR_FOOD_DESC_RUS_MILK;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_MILK;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_milk_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_milk_clean_full_ca.paa";
 	};
@@ -801,7 +858,7 @@ class CfgMagazines {
 		count = 1;
 		bloodRegen = 200;
 		displayName = $STR_FOOD_NAME_CAN_RUS_CORN;
-		descriptionShort = $STR_FOOD_DESC_RUS_CORN;
+		descriptionShort = $STR_FOOD_DESC_CAN_RUS_CORN;
 		model = "z\addons\dayz_communityassets\models\can_small_rus_corn_full.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_corn_clean_full_ca.paa";
 	};
@@ -830,8 +887,8 @@ class CfgMagazines {
 		count = 1;
 		model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_opened.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_opened_ca.paa";
-		displayName = $STR_FOOD_NAME_CHIPS_SULAHOOPS_EMPTY;
-		descriptionShort = $STR_FOOD_DESC_CHIPS_SULAHOOPS_EMPTY;
+		displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
+		descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
 		ammo = "TinCan";
 	};
 	class FoodChipsMysticales : FoodEdible {
@@ -890,6 +947,7 @@ class CfgMagazines {
 		displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
 		descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	 };
+	 /*
 	 class Hatchet_Swing;
 	 class Machete_Swing : Hatchet_Swing {
 		displayName = "Machete";
@@ -897,6 +955,7 @@ class CfgMagazines {
 		shortNameMagazine = "Machete";
 		ammo = "Machete_Swing_Ammo";
 	};
+	*/
 	
 	class ItemTrashToiletpaper : CA_Magazine {
 		scope = public;
@@ -926,23 +985,38 @@ class CfgMagazines {
 		type = 256;
 	};
 	
+	class ItemJerrycan : CA_Magazine {
+		emptycan = "ItemJerrycanEmpty";
+		displayName = $STR_ITEM_NAME_JERRYCAN;
+		descriptionShort = $STR_ITEM_DESC_JERRYCAN;
+	}; 
+
+	class ItemJerrycanEmpty : ItemJerrycan {
+		fullcan = "ItemJerrycan";
+		displayName = $STR_ITEM_NAME_JERRYCAN_EMPTY;
+		descriptionShort = $STR_ITEM_DESC_JERRYCAN_EMPTY;
+	};
 	class ItemFuelcan : CA_Magazine {
 		scope = public;
 		count = 1;
+		fuelQuantity = 5;
+		emptycan = "ItemFuelcanEmpty";
+		type = 256;
 		displayName = $STR_ITEM_NAME_FUELCAN;
 		descriptionShort = $STR_ITEM_DESC_FUELCAN;
 		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_CA.paa";
-		type = 256;
 	};
-	class ItemFuelcanEmpty : CA_Magazine {
+	class ItemFuelcanEmpty :  ItemFuelcan {
 		scope = public;
 		count = 1;
+		fuelQuantity = 0;
+		fullcan = "ItemFuelcan";
+		type = 256;
 		displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
 		descriptionShort = $STR_ITEM_DESC_FUELCAN_EMPTY;
 		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_empty_CA.paa";
-		type = 256;
 	};
 	class 8Rnd_B_Beneli_Pellets: CA_Magazine {
 		class ItemActions {
@@ -1265,6 +1339,39 @@ class CfgMagazines {
 			};
 		};
 	};
+	class 200Rnd_556x45_M249: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 100Rnd_762x51_M240: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 200Rnd_762x51_M240: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+	class 75Rnd_545x39_RPK: CA_Magazine {
+		class ItemActions {
+			class CombineMag {
+				text = $STR_MAG_COMBINE;
+				script = "spawn player_combineMag;";
+			};
+		};
+	};
+
 	class HandGrenade;	// External class reference
 	class HandRoadFlare : HandGrenade {
 		class ItemActions {

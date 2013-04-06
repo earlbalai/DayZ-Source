@@ -74,9 +74,7 @@ if (_allFixed) then {
 	_vehicle setDamage 0;
 	dayzUpdateVehicle = [_vehicle,"repair"];
 	if (isServer) then {
-		if (allowConnection) then {
-			dayzUpdateVehicle call server_updateObject;
-		};
+		dayzUpdateVehicle call server_updateObject;
 	} else {
 		publicVariable "dayzUpdateVehicle";
 	};

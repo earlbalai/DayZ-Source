@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.character_data
-CREATE TABLE IF NOT EXISTS `character_data` (
+-- Dumping structure for table test.Character_DATA
+CREATE TABLE IF NOT EXISTS `Character_DATA` (
   `CharacterID` int(11) NOT NULL AUTO_INCREMENT,
   `PlayerID` int(11) NOT NULL DEFAULT '0',
   `PlayerUID` varchar(45) NOT NULL DEFAULT '0',
@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `character_data` (
   KEY `Alive_PlayerUID` (`Alive`,`LastLogin`,`PlayerUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table test.character_data: ~0 rows (approximately)
-/*!40000 ALTER TABLE `character_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `character_data` ENABLE KEYS */;
+-- Dumping data for table test.Character_DATA: ~0 rows (approximately)
+/*!40000 ALTER TABLE `Character_DATA` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Character_DATA` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

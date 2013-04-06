@@ -12,8 +12,8 @@ class CfgVehicles {
 		isMan = false;
 		weapons[] = {};
 		magazines[] = {};
-		sensitivity = 4;	// sensor sensitivity
-		sensitivityEar = 2;
+		sensitivity = 2;	// sensor sensitivity
+		sensitivityEar = 4;
 		identityTypes[] = {"zombie1", "zombie2"};
 		class TalkTopics {};
 		languages[] = {};
@@ -715,7 +715,7 @@ class CfgVehicles {
 		transportMaxMagazines = 16;
 	};
 
-	class DZ_TK_Assault_Pack_EP1 : Bag_Base_BAF
+	class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 	{
 		scope = 2;
 		displayName = "Survival ACU";
@@ -727,7 +727,7 @@ class CfgVehicles {
 		transportMaxMagazines = 16;
 	};
 
-	class DZ_British_ACU : Bag_Base_BAF
+	class DZ_British_ACU : Bag_Base_EP1
 	{
 		scope = 2;
 		displayName = "British Assault Pack";
@@ -799,6 +799,7 @@ class CfgVehicles {
 		mapSize = 15;
 		displayName = "Crashed UH-1Y";
 		vehicleClass = "Wrecks";
+		class AnimationSources {};
 	};
 	class UH60Wreck_DZ: SpawnableWreck
 	{
@@ -807,6 +808,7 @@ class CfgVehicles {
 		mapSize = 15;
 		displayName = "UH-60 Wreck";
 		vehicleClass = "Wrecks";
+		class AnimationSources {};
 	};
 	class Mi8Wreck_DZ: SpawnableWreck
 	{
@@ -816,6 +818,7 @@ class CfgVehicles {
 		displayName = "Mi-8 Wreck";
 		vehicleClass = "Wrecks";
 		heightAdjustment = 1;
+		class AnimationSources {};
 	};
 	class HouseDZ: House {
 		class MarkerLights
@@ -1732,6 +1735,24 @@ class CfgVehicles {
 		class eventHandlers
 		{
 			init="[(_this select 0),'cfgWeapons','ItemMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemFuelcanEmpty : WeaponHolderBase {
+		scope = public;
+		displayName = "5L Fuelcan Empty";
+		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','ItemFuelcanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		};
+	};
+	class WeaponHolder_ItemFuelcan : WeaponHolderBase {
+		scope = public;
+		displayName = "5L Fuelcan Full";
+		model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
+		
+		class eventHandlers {
+			init = "[(_this select 0),'cfgMagazines','ItemFuelcan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 };

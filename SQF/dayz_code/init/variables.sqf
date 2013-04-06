@@ -13,6 +13,7 @@ Rocket_DZ = 	"Rocket_DZ";
 
 AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
 AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
+MeleeWeapons = ["ItemHatchet","ItemCrowbar","ItemMachete"];
 
 //Cooking
 meatraw = [
@@ -36,7 +37,15 @@ meatcooked = [
 	"FoodgoatCooked"
 ];
 //Eating
-no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix","FoodCandyAnders","FoodCandyLegacys","FoodCandyMintception"]+meatcooked+meatraw;
+no_output_food = [
+	"FoodMRE", 
+	"FoodPistachio", 
+	"FoodNutmix",
+	"FoodCandyAnders",
+	"FoodCandyLegacys",
+	"FoodCandyMintception"
+]+meatcooked+meatraw;
+
 food_with_output=[
     "FoodCanBakedBeans",
     "FoodCanSardines",
@@ -430,12 +439,13 @@ if(!isDedicated) then {
 	dayz_playerName =		"Unknown";
 	dayz_sourceBleeding =	objNull;
 	dayz_clientPreload = 	false;
+	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
 	dayz_areaAffect =		2;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
-	dayz_spawnDelay =		120;
-	dayz_spawnWait =		-120;
+	dayz_spawnDelay =		300;
+	dayz_spawnWait =		-300;
 	dayz_lootDelay =		3;
 	dayz_lootWait =			-300;
 	dayz_spawnZombies =		0;

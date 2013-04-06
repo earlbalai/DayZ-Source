@@ -2,6 +2,7 @@
 	FUNCTION COMPILES
 */
 //Player only
+
 if (!isDedicated) then {
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
@@ -93,9 +94,10 @@ if (!isDedicated) then {
 	player_spawn_2 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_2.sqf";
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
-	
+
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
+	
 	[] spawn {
 		private["_timeOut","_display","_control1","_control2"];
 		disableSerialization;
@@ -106,7 +108,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 	// 40 sec timeout
-		while { _timeOut < 400 && !dayz_clientPreload } do {
+		while { _timeOut < 600 && !dayz_clientPreload } do {
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
@@ -123,14 +125,14 @@ if (!isDedicated) then {
 			sleep 0.1;
 		};
 		endLoadingScreen;
-		if ( !dayz_clientPreload ) then {
-
+		if ( !dayz_clientPreload && !dayz_authed ) then {
 			diag_log "DEBUG: loadscreen guard ended with timeout.";
 			disableUserInput false;
-			1 cutText ["Something went wrong! disconnect and try again!", "PLAIN"];
+			1 cutText ["Disconnected!", "PLAIN"];
 			player enableSimulation false;
 		} else { diag_log "DEBUG: loadscreen guard ended."; };
 	};
+	
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
 		_agent = 	_this select 0;
@@ -227,10 +229,12 @@ if (!isDedicated) then {
 		};
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
+		/*
 		if (_dikCode == 210) then //SCROLL LOCK
 		{
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
+		*/
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
@@ -363,22 +367,22 @@ if (!isDedicated) then {
 			dayz_heartBeat = false;
 		};
 	};
-	/*
+	
 	dayz_meleeMagazineCheck = {
 		private["_meleeNum","_magType","_wpnType"];
-		_wpnType = _this;
-		_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
-		_meleeNum = ({_x == _magType} count magazines player);
-		if (_meleeNum > 1) then {
-			if (player hasWeapon _wpnType) then {
-				_meleeNum = _meleeNum - 1;
-			};
-			for "_i" from 1 to _meleeNum do {
-				player removeMagazine _magType;
+	diag_log ("Debug: MeleeMagazineCheck");
+		_wpnType = primaryWeapon player;
+	diag_log ("Debug: wpnType: " +str(_wpnType));
+		_ismelee = 	(gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+	diag_log ("Debug: Weapon isMelee: " +str(_ismelee));	
+		if (_ismelee == "true") then {
+			_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
+			_meleeNum = ({_x == _magType} count magazines player);
+			if (_meleeNum < 1) then {
+				player addMagazine _magType;
 			};
 		};
 	};
-	*/
 	dayz_originalPlayer =		player;
 };
 

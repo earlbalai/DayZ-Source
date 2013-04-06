@@ -36,24 +36,23 @@ _yaw = 360-(getdir _obj);
 //function to rotate a 2d vector around the origin
 //----------------------------
 
-_rotate =
-{
-	private ["_v","_d","_x","_y"];
+_rotate = {
+	private ["_vec","_dir","_xpos","_ypos"];
 
 	//extract parameters
-	_v = +(_this select 0); //we don't want to modify the originally passed vector
-	_d = _this select 1;
+	_vec = +(_this select 0); //we don't want to modify the originally passed vector
+	_dir = _this select 1;
 
 	//extract old x/y values
-	_xpos = _v select 0;
-	_ypos = _v select 1;
+	_xpos = _vec select 0;
+	_ypos = _vec select 1;
 
 	//if vector is 3d, we don't want to mess up the last element
-	_v set [0, (cos _d) * _xpos - (sin _d) * _ypos];
-	_v set [1, (sin _d) * _xpos + (cos _d) * _ypos];
+	_vec set [0, (cos _dir)*_xpos - (sin _dir)*_ypos];
+	_vec set [1, (sin _dir)*_xpos + (cos _dir)*_ypos];
 
 	//return new vector
-	_v
+	_vec
 };
 
 

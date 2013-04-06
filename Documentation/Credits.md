@@ -27,6 +27,8 @@ Contributions By
 * Elvaron                                           https://github.com/Elvaron
 * JoeysLucky22                                      https://github.com/JoeysLucky22
 * Skaronator                                        https://github.com/Skaronator
+* MattzFiber										https://github.com/MattzFiber
+* Smookie (Animation Pack)							http://forums.bistudio.com/member.php?41478 [BIS Forum]
 * Sharkiller  (Spanish Tranlations)                 https://github.com/Sharkiller
 * Markolie  (Dutch Translations)                    https://github.com/Markolie
 * LordGoF (French Translations)                     https://github.com/LordGoF
@@ -53,6 +55,7 @@ Testers:
 * Gaz Green
 * DzAirmaX
 * Bodster
+* MattzFiber
 
 
 Contributing

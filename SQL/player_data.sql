@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.player_data
-CREATE TABLE IF NOT EXISTS `player_data` (
+-- Dumping structure for table test.Player_DATA
+CREATE TABLE IF NOT EXISTS `Player_DATA` (
   `playerID` int(11) NOT NULL DEFAULT '0',
   `playerUID` varchar(45) NOT NULL DEFAULT '0',
   `playerName` varchar(50) NOT NULL DEFAULT 'Null',
@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS `player_data` (
   KEY `playerUID` (`playerUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table test.player_data: ~0 rows (approximately)
-/*!40000 ALTER TABLE `player_data` DISABLE KEYS */;
-/*!40000 ALTER TABLE `player_data` ENABLE KEYS */;
+-- Dumping data for table test.Player_DATA: ~0 rows (approximately)
+/*!40000 ALTER TABLE `Player_DATA` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Player_DATA` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -4,9 +4,6 @@ _iClass = 	_this select 1;
 _iPos =	_this select 2;
 _radius =	_this select 3;
 
-_iPosZ = _iPos select 2;
-if( _iPosZ < 0 ) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
-
 switch (_iClass) do {
 	default {
 		//Item is food, add random quantity of cans along with an item (if exists)
@@ -40,7 +37,7 @@ switch (_iClass) do {
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if ((count _mags) > 0) then {
 			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
-			_item addMagazineCargoGlobal [(_mags select 0), (round(random 3))];
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 3) + 1)];
 		};
 	};
 	case "magazine": {
@@ -54,10 +51,8 @@ switch (_iClass) do {
 	};
 };
 
-// timestamp for later clearing
-_dateNow = (DateToNumber date);
-_item setVariable ["looted",_dateNow,true];
-
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };
+//Make sure loot is aboue ground
+_item setvelocity [0,0,1];

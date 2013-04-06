@@ -1,0 +1,15 @@
+
+Faces
+-----
+
+config.bin > CfgFaces > Man : Default > Zombie3 : Default, ...
+
+name = "Zombie 4";
+texture = "\dayz\textures\faces\zombie_04_co.paa";
+material = "\dayz\textures\faces\zombie_04.rvmat";
+identityTypes[] = { "Zombie4" };
+disabled = 0;
+
+...
+
+Face 06 is WIP...

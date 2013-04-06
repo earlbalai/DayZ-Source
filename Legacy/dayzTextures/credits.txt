@@ -1,0 +1,3 @@
+Textuers.
+TOPMO3 for retexturing 
+GenesisCrys for face textures and helping TOPMO3 learn this process.
