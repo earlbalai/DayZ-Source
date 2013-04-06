@@ -1,14 +1,12 @@
 class CfgLoot {
 	//0.10
 	trash[] = {
-<<<<<<< HEAD
 			{"TrashTinCan",0.02},
 			{"TrashJackDaniels",0.02},
 			{"ItemSodaEmpty",0.02},
 			{"ItemTrashToiletpaper",0.01},
 			{"ItemTrashRazor",0.01}
-		};
-		
+	};
 	civilian[] = {
 			{"TrashTinCan",0.09},
 			{"TrashJackDaniels",0.09},
@@ -25,7 +23,7 @@ class CfgLoot {
 			{"2Rnd_shotgun_74Pellets",0.05},
 			{"ItemBandage",0.06},
 			{"ItemPainkiller",0.06}
-		};	
+	};
 	food[] = {
 			{"TrashTinCan",0.13},
 			{"TrashJackDaniels",0.13},
@@ -70,8 +68,7 @@ class CfgLoot {
 			{"FoodCanRusPeas",0.13},
 			{"FoodCanRusMilk",0.07},
 			{"FoodCanRusCorn",0.13}
-		};
-
+	};
 	generic[] = {
 			{"TrashTinCan",0.06},
 			{"ItemSodaEmpty",0.06},
@@ -100,216 +97,7 @@ class CfgLoot {
 			{"HandChemBlue",0.03},
 			{"HandChemRed",0.03},
 			{"ItemHeatPack",0.04}
-		};
-
-=======
-		{
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-			"ItemTrashToiletpaper",
-			"ItemTrashRazor"
-		},
-		{
-			0.02,
-			0.02,
-			0.02,
-			0.01,
-			0.01
-		}
 	};
-	//Zed only Spawn
-	civilian[] = {
-		{
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
-			"8Rnd_9x18_Makarov",
-			"7Rnd_45ACP_1911",
-			"2Rnd_shotgun_74Slug",
-			"2Rnd_shotgun_74Pellets",
-			"ItemBandage",
-			"ItemPainkiller"
-		},
-		{
-			0.05,
-			0.05,
-			0.05,
-			0.06,
-			0.06,
-			0.05,
-			0.05,
-			0.05,
-			0.05,
-			0.04,
-			0.04,
-			0.04,
-			0.04,
-			0.03,
-			0.03
-		}
-	};
-	//0.05
-food[] = {
-		{
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"ItemSodaMtngreen",
-			"ItemSodaR4z0r",
-			"ItemSodaClays",
-			"ItemSodaSmasht", 
-			"ItemSodaDrwaste", 
-			"ItemSodaLemonade", 
-			"ItemSodaLvg", 
-			"ItemSodaMzly", 
-			"ItemSodaRabbit",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
-			"FoodCanBadguy",
-			"FoodCanBoneboy",
-			"FoodCanCorn",
-			"FoodCanCurgon",
-			"FoodCanDemon",
-			"FoodCanFraggleos",
-			"FoodCanHerpy",
-			"FoodCanDerpy",
-			"FoodCanOrlok",
-			"FoodCanPowell",
-			"FoodCanTylers",
-			"FoodCanUnlabeled",
-			"FoodPistachio",
-			"FoodNutmix",
-			"FoodChipsSulahoops",
-			"FoodChipsMysticales",
-			"FoodCandyAnders",
-			"FoodCandyLegacys",
-			"FoodCandyMintception",
-			"FoodCanRusUnlabeled",
-			"FoodCanRusStew",
-			"FoodCanRusPork",
-			"FoodCanRusPeas",
-			"FoodCanRusMilk",
-			"FoodCanRusCorn"
-		},
-		{
-			0.05, //TrashTinCan
-			0.05, //TrashJackDaniels
-			0.05, //ItemSodaEmpty
-			0.05, //ItemSodaCoke
-			0.05, //ItemSodaPepsi
-			0.01, //"ItemSodaMtngreen"
-			0.01, //"ItemSodaR4z0r"
-			0.01, //"ItemSodaClays"
-			0.01, //"ItemSodaSmasht"
-			0.01, //"ItemSodaDrwaste"
-			0.01, //"ItemSodaLemonade"
-			0.01, //"ItemSodaLvg"
-			0.01, //"ItemSodaMzly"
-			0.01, //"ItemSodaRabbit"
-			0.05, //FoodCanBakedBeans
-			0.05, //FoodCanSardines
-			0.05, //FoodCanFrankBeans
-			0.05, //FoodCanPasta
-			0.01, //"FoodCanBadguy"
-			0.01, //"FoodCanBoneboy"
-			0.01, //"FoodCanCorn"
-			0.01, //"FoodCanCurgon"
-			0.01, //"FoodCanDemon"
-			0.01, //"FoodCanFraggleos"
-			0.01, //"FoodCanHerpy"
-			0.01, //"FoodCanDerpy"
-			0.01, //"FoodCanOrlok"
-			0.01, //"FoodCanPowell"
-			0.01, //"FoodCanTylers"
-			0.04, //FoodCanUnlabeled
-			0.03, //FoodPistachio
-			0.02, //FoodNutmix
-			0.01, //FoodChipsSulahoops
-			0.01, //FoodChipsMysticales
-			0.01, //FoodCandyAnders
-			0.01, //FoodCandyLegacys
-			0.01, //FoodCandyMintception
-			0.05, //FoodCanRusUnlabeled
-			0.05, //FoodCanRusStew
-			0.05, //"FoodCanRusPork"
-			0.05, //"FoodCanRusPeas"
-			0.04, //"FoodCanRusMilk"
-			0.05 //"FoodCanRusCorn"
-		}
-	};
-	//0.08
-	generic[] = {
-		{
-			"TrashTinCan",
-			"ItemSodaEmpty",
-			"ItemSodaCoke",
-			"ItemSodaPepsi",
-			"TrashJackDaniels",
-			"FoodCanBakedBeans",
-			"FoodCanSardines",
-			"FoodCanFrankBeans",
-			"FoodCanPasta",
-			"ItemWaterbottleUnfilled",
-			"ItemWaterbottle",
-			"ItemBandage",
-			"7Rnd_45ACP_1911",
-			"5x_22_LR_17_HMR",
-			"10x_303",
-			"6Rnd_45ACP",
-			"2Rnd_shotgun_74Slug",
-			"2Rnd_shotgun_74Pellets",
-			"8Rnd_9x18_Makarov",
-			"15Rnd_W1866_Slug",
-			"WoodenArrow",
-			"HandRoadFlare",
-			"ItemPainkiller",
-			"HandChemGreen",
-			"HandChemBlue",
-			"HandChemRed",
-			"ItemHeatPack"
-		},
-		{
-			0.06,
-			0.06,
-			0.06,
-			0.04,
-			0.04,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.03,
-			0.10,
-			0.03,
-			0.01,
-			0.04,
-			0.04,
-			0.05,
-			0.05,
-			0.09,
-			0.02,
-			0.04,
-			0.07,
-			0.02,
-			0.01,
-			0.03,
-			0.03,
-			0.04
-		}
-	};
->>>>>>> Development
 	medical[] = {
 			{"ItemBandage",0.8},
 			{"ItemPainkiller",0.5},
