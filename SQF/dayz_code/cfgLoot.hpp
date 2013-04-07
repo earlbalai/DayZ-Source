@@ -8,28 +8,28 @@ class CfgLoot {
 			{"ItemTrashRazor",0.01}
 	};
 	civilian[] = {
-			{"TrashTinCan",0.09},
-			{"TrashJackDaniels",0.09},
-			{"ItemSodaEmpty",0.09},
-			{"ItemSodaCoke",0.12},
-			{"ItemSodaPepsi",0.09},
+			{"TrashTinCan",0.05},
+			{"TrashJackDaniels",0.05},
+			{"ItemSodaEmpty",0.05},
+			{"ItemSodaCoke",0.06},
+			{"ItemSodaPepsi",0.06},
 			{"FoodCanBakedBeans",0.05},
 			{"FoodCanSardines",0.05},
 			{"FoodCanFrankBeans",0.05},
 			{"FoodCanPasta",0.05},
-			{"8Rnd_9x18_Makarov",0.07},
-			{"7Rnd_45ACP_1911",0.05},
-			{"2Rnd_shotgun_74Slug",0.05},
-			{"2Rnd_shotgun_74Pellets",0.05},
-			{"ItemBandage",0.06},
-			{"ItemPainkiller",0.06}
+			{"8Rnd_9x18_Makarov",0.04},
+			{"7Rnd_45ACP_1911",0.04},
+			{"2Rnd_shotgun_74Slug",0.04},
+			{"2Rnd_shotgun_74Pellets",0.04},
+			{"ItemBandage",0.03},
+			{"ItemPainkiller",0.03}
 	};
 	food[] = {
-			{"TrashTinCan",0.13},
-			{"TrashJackDaniels",0.13},
-			{"ItemSodaEmpty",0.13},
-			{"ItemSodaCoke",0.13},
-			{"ItemSodaPepsi",0.13},
+			{"TrashTinCan",0.05},
+			{"TrashJackDaniels",0.05},
+			{"ItemSodaEmpty",0.05},
+			{"ItemSodaCoke",0.05},
+			{"ItemSodaPepsi",0.05},
 			{"ItemSodaMtngreen",0.01},
 			{"ItemSodaR4z0r",0.01},
 			{"ItemSodaClays",0.01},
@@ -39,10 +39,10 @@ class CfgLoot {
 			{"ItemSodaLvg",0.01}, 
 			{"ItemSodaMzly",0.01}, 
 			{"ItemSodaRabbit",0.01},
-			{"FoodCanBakedBeans",0.1},
-			{"FoodCanSardines",0.1},
-			{"FoodCanFrankBeans",0.1},
-			{"FoodCanPasta",0.10},
+			{"FoodCanBakedBeans",0.05},
+			{"FoodCanSardines",0.05},
+			{"FoodCanFrankBeans",0.05},
+			{"FoodCanPasta",0.05},
 			{"FoodCanBadguy",0.01},
 			{"FoodCanBoneboy",0.01},
 			{"FoodCanCorn",0.01},
@@ -63,11 +63,11 @@ class CfgLoot {
 			{"FoodCandyLegacys",0.01},
 			{"FoodCandyMintception",0.01},
 			{"FoodCanRusUnlabeled",0.05},
-			{"FoodCanRusStew",0.13},
-			{"FoodCanRusPork",0.13},
-			{"FoodCanRusPeas",0.13},
-			{"FoodCanRusMilk",0.07},
-			{"FoodCanRusCorn",0.13}
+			{"FoodCanRusStew",0.05},
+			{"FoodCanRusPork",0.05},
+			{"FoodCanRusPeas",0.05},
+			{"FoodCanRusMilk",0.04},
+			{"FoodCanRusCorn",0.05}
 	};
 	generic[] = {
 			{"TrashTinCan",0.06},
@@ -81,7 +81,7 @@ class CfgLoot {
 			{"FoodCanPasta",0.03},
 			{"ItemWaterbottleUnfilled",0.03},
 			{"ItemWaterbottle",0.03},
-			{"ItemBandage",0.11},
+			{"ItemBandage",0.10},
 			{"7Rnd_45ACP_1911",0.03},
 			{"5x_22_LR_17_HMR",0.01},
 			{"10x_303",0.04},
@@ -195,7 +195,7 @@ class CfgLoot {
 			{"SmokeShellGreen",0.02}
 	};
 	policeman[] = {
-			{"ItemBandage",0.1},
+			{"ItemBandage",0.10},
 			{"7Rnd_45ACP_1911",0.03},
 			{"6Rnd_45ACP",0.03},
 			{"15Rnd_W1866_Slug",0.03},
