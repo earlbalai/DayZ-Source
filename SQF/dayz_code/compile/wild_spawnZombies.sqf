@@ -50,7 +50,7 @@ if (_rnd > 0.3) then {
 		_array = [];
 		{
 			_array set [count _array, _x select 0];
-		} foreach getArray (configFile >> "cfgLoot" >> _lootType);
+		} foreach getArray (configFile >> "cfgLoot" >> getText(_lootType));
 		if (count _array > 0) then {
 			_loot = _array call BIS_fnc_selectRandomWeighted;
 			if(!isNil "_array") then {
