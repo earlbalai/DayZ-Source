@@ -9,7 +9,10 @@ switch (_iClass) do {
 		//Item is food, add random quantity of cans along with an item (if exists)
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
-		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
+		_itemTypes = [];
+		{
+			_itemTypes set [count _itemTypes, _x select 0]
+		} foreach getArray (configFile >> "cfgLoot" >> _iClass);
 		_index = dayz_CLBase find _iClass;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
