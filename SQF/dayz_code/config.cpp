@@ -123,11 +123,6 @@ class RscDisplayMainMap {
 	};
 };
 
-class RscObject;
-class RscCompass : RscObject {
-	scale = 0.64;
-};
-
 class CfgInGameUI
 {
     class PeripheralVision
