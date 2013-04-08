@@ -18,7 +18,7 @@ player removeMagazine _cantype;
 player addMagazine _emptycan;
 
 player playActionNow "Medic";
-_dis=10;
+_dis=5;
 _sfx = "refuel";
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
