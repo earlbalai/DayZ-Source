@@ -33,8 +33,7 @@ if (_canLoot) then {
 			//};
 		
 		//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
-			for "_i" from 1 to _num do
-			{
+			for "_i" from 1 to _num do {
 				[_position,true,_unitTypes] call zombie_generate;
 			};
 			

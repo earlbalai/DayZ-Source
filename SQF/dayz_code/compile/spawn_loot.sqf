@@ -11,7 +11,7 @@ switch (_iClass) do {
 
 		_itemTypes = [];
 		{
-			_itemTypes set [count _itemTypes, _x select 1]
+			_itemTypes set [count _itemTypes, _x select 0]
 		} foreach getArray (configFile >> "cfgLoot" >> _iClass);
 		_index = dayz_CLBase find _iClass;
 		_weights = dayz_CLChances select _index;
