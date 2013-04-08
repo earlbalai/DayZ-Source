@@ -13,15 +13,18 @@ FIX DUE : 2013
 		
 	Changes:
 
-		* [NEW]
+		* [NEW] - 1 New type Zed Older looking - slower, harder to kill, Does more dmg (WIP)
 		
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
 		* [UPDATED] - Updated zed speed to default.
-		* [UPDATED] - melee systems updated
+		* [UPDATED] - melee systems updated.
+		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 		
 		* [FIXED] - Zeds spawning underground
 		* [FIXED] - loot spawning undergroung
-		* [FIXED] - melee weapons having no ammo on login
+		* [FIXED] - melee weapons having no ammo on login.
+		* [FIXED] - Loot Spawns has now been fully resolved. Buildings are now taged and will not spawn any new loot for 10 mins.
+		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 mins (Might change)
 
 ______________________	
 FIX DUE : 2013
