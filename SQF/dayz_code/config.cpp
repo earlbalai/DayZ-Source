@@ -86,7 +86,7 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons","dayz_smk"};
+			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons"};
 		};
 	};
 };
@@ -109,23 +109,6 @@ class CfgAISkill {
 	reloadspeed[] = {0, 0, 1, 1};
 	spotdistance[] = {0, 0, 1, 0.6};
 	spottime[] = {0, 0, 1, 1};
-};
-class RscObject;
-class RscCompass : RscObject {
-	scale = 0.64;
-};
-
-class RscDisplayMainMap {
-	class objects {
-		class Compass : RscObject {
-			scale = 0.5;
-		};
-	};
-};
-
-class RscObject;
-class RscCompass : RscObject {
-	scale = 0.64;
 };
 
 class CfgInGameUI
@@ -371,6 +354,7 @@ class CfgBuildingLoot {
 		
 		};
 	};
+	
 	class Office: Residential {
 		maxRoaming = 3;
 		zombieClass[] = {"z_suit1","z_suit2"};
@@ -407,17 +391,17 @@ class CfgBuildingLoot {
 		lootChance = 0.5;
 		lootPos[] = {};
 		lootType[] =	{
-			{"WeaponHolder_ItemJerrycan","object", 0.03},
-			{"","generic", 0.10},
-			{"huntingrifle","weapon", 0.02},
-			{"LeeEnfield","weapon", 0.04},
-			{"Winchester1866", 0.03},
-			{"","trash", 0.10},
-			{"Crossbow_DZ","weapon", 0.03},
-			{"PartWoodPile","magazine", 0.8},
-			{"WeaponHolder_ItemHatchet","object", 0.5},
-			{"MR43","weapon", 0.01},
-			{"WeaponHolder_ItemMachete","object", 0.04} 
+			{"WeaponHolder_ItemJerrycan","object",0.03},
+			{"","generic",0.10},
+			{"huntingrifle","weapon",0.02},
+			{"LeeEnfield","weapon",0.04},
+			{"Winchester1866","weapon",0.03},
+			{"","trash",0.10},
+			{"Crossbow_DZ","weapon",0.03},
+			{"PartWoodPile","magazine",0.8},
+			{"WeaponHolder_ItemHatchet","object",0.5},
+			{"MR43","weapon",0.01},
+			{"WeaponHolder_ItemMachete","object",0.04} 
 		};
 	};
 	class Supermarket: Default {
@@ -452,7 +436,7 @@ class CfgBuildingLoot {
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.03},
 			{"PartWoodPile","magazine",0.04},
-			{"MR43","weapon",0.01}
+			{"MR43","weapon", 0.01}
 		};
 	};
 	class HeliCrash: Default {
@@ -461,7 +445,7 @@ class CfgBuildingLoot {
 		zombieClass[] = {"z_soldier_pilot"};
 		lootChance = 0.5;
 		lootPos[] = {};
-		itemType[] = {
+		lootType[] = {
 			{"FN_FAL","weapon",0.04},
 			{"bizon_silenced","weapon",0.05},
 			{"M14_EP1","weapon",0.05},
@@ -559,13 +543,13 @@ class CfgBuildingLoot {
 			{"M14_EP1","weapon",0.02},
 			{"bizon_silenced","weapon",0.04},
 			{"DMR","weapon",0.04},
-			{"RPK_74", "weapon",0.02}, 
+			{"RPK_74","weapon",0.02}, 
 			{"Binocular","weapon",0.01},
 			{"ItemKnife","militaryEAST",0.03},
 			{"","militaryEAST",0.10}, 
 			{"ItemCompass","militaryEAST",0.04},
 			{"AmmoBoxSmall_762","object",0.3},
-			{"WeaponHolder_PartVRotor", "object",0.02},
+			{"WeaponHolder_PartVRotor","object",0.02},
 			{"100Rnd_762x54_PK","magazine",0.01}
 		};
 	};
@@ -707,17 +691,17 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic",0.06},
 			{"Crossbow_DZ","weapon",0.03},
 			{"","military",0.06},
-			{"WeaponHolder_ItemMachete", "object",0.03},
+			{"WeaponHolder_ItemMachete","object",0.03},
 			{"huntingrifle","weapon",0.04},
 			{"M14_EP1","weapon",0.03},
 			{"M16A2","weapon",0.02},
 			{"AK_74","weapon",0.02},
 			{"M24","weapon",0.02},
 			{"M1014","weapon",0.02},
-			{"","hunter",3}
+			{"","hunter",3.00}
 		};
-	};	
-
+	};
+	
 	class Land_HouseV_1I4: Residential {
 		lootPos[] = {{-0.400146,-3.87695,-2.76879},{-3.67749,-2.52002,-2.76551},{-0.472168,3.19702,-2.72021}};
 	};
