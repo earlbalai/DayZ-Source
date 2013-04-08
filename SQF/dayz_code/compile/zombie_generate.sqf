@@ -1,4 +1,4 @@
-private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
+private ["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_isAlive","_myDest","_newDest","_rnd","_lootType","_index","_weights","_loot_count"];
 _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
@@ -64,10 +64,12 @@ if (_rnd > 0.3) then {
 	if (isText _lootType) then {
 		_array = [];
 		{
-			_array set [count _array, _x select 0];
+			_array set [count _array, _x select 0]
 		} foreach getArray (configFile >> "cfgLoot" >> getText(_lootType));
 		if (count _array > 0) then {
-			_loot = _array call BIS_fnc_selectRandomWeighted;
+			_index = dayz_CLBase find getText(_lootType);
+			_weights = dayz_CLChances select _index;
+			_loot = _array select (_weights select (floor(random (count _weights))));
 			if(!isNil "_array") then {
 				_agent addMagazine _loot;
 			};
