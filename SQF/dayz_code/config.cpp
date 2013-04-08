@@ -86,7 +86,7 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons"};
+			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons","dayz_smk"};
 		};
 	};
 };
@@ -128,13 +128,6 @@ class RscCompass : RscObject {
 	scale = 0.64;
 };
 
-class RscDisplayMainMap {
-	class objects {
-		class Compass : RscObject {
-			scale = 0.5;
-		};
-	};
-};
 class CfgInGameUI
 {
     class PeripheralVision
