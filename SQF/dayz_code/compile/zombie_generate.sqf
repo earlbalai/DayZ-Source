@@ -25,19 +25,22 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 _radius = 40;
 _method = "NONE";
 
+//Make sure position is on the ground
+_position = [_position select 0,_position select 1,0];
+
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
-_agent setvelocity [0,0,1];
 
 //_agent setPosATL _position;
 _agent setDir round(random 360);
+
+_agent setvelocity [0,0,1];
 
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
 //diag_log ("CREATE INFECTED: " + str(_this));
 
 //_position = getPosATL _agent;
-
 if (random 1 > 0.7) then {
 	_agent setUnitPos "Middle";
 };
