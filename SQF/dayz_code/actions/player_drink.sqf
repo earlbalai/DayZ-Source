@@ -20,6 +20,8 @@ _text = getText (_config >> "displayName");
 
 //getting type of sfx (now just drink od soda open and drink)
 _sfx =  getText (_config >> "sfx");
+//Get distance of sfx sound
+_sfxdis = getNumber (_config >> "sfxdis");
 
 if (!_hasdrinkitem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_drink")] , "PLAIN DOWN"]};
 
@@ -27,20 +29,13 @@ player playActionNow "PutDown";
 player removeMagazine _itemorignal;
 sleep 1;
 
-if (["ItemWaterbottle",_itemorignal] call fnc_inString) then {
-    //low alert and sound radius
-    _dis=5;
-    [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-    [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+if (_itemorignal == "ItemWaterbottle") then {
     player addMagazine "ItemWaterbottleUnfilled";
 };
-if (["ItemSoda",_itemorignal] call fnc_inString) then {
-    //higher alert and sound radius
-    _dis=10;
-    [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-    _id = [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-};  
 
+[player,_sfx,0,false,_sfxdis] call dayz_zombieSpeak;
+[player,_sfxdis,true,(getPosATL player)] spawn player_alertZombies;
+  
 if (_hasoutput) then{
     // Selecting output
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
@@ -54,10 +49,6 @@ if (_hasoutput) then{
     };
     _item addMagazineCargoGlobal [_itemtodrop,1];
 };
-
-
-
-
 
 //add infection chance for "ItemWaterbottle", 
 if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {

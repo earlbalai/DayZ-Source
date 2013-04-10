@@ -241,7 +241,7 @@ class RscStructuredTextGUI: RscStructuredText
 #include "rscTitles.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
-#include "CfgMagazines.hpp"
+#include "CfgMagazines\CfgMagazines.hpp"
 #include "cfgLoot.hpp"
 #include "CfgMarkers.hpp"
 #include "CfgAmmo.hpp"
