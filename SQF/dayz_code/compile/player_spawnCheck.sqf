@@ -142,17 +142,16 @@ if (dayz_spawnZombies == 0) then {
 		_cleared = (_x getVariable ["cleared",false]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _looted) * 525948;
-		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
+diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 		if (_age < -0.1) then {
 				_x setVariable ["looted",(DateToNumber date),true];
 		} else {
-			if ((_age > 30) and (!_cleared)) then {
+			if (!_cleared) then {
 				_x setVariable ["cleared",true,true];
-				_x setVariable ["looted",_dateNow,true];
 			};
 			_cleared = (_x getVariable ["cleared",false]);
-			if ((_cleared))  then {
-				//_x setVariable ["looted",_dateNow,true];
+			if ((_age > 10) and (_cleared))  then {
+				_x setVariable ["looted",_dateNow,true];
 				[_x] spawn building_spawnLoot;
 			};
 		};
