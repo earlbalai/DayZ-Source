@@ -320,10 +320,10 @@ class CfgBuildingLoot {
 		lootChance = 0.4;
 		lootPos[] = {};
 		lootType[] = {
-			{"ItemBookBible","magazine",0.02},
-			{"","generic",0.04},
-			{"","military",0.02},
-			{"","trash",0.03}
+			{"ItemBookBible","magazine",0.03},
+			{"","generic",0.10},
+			{"","military",0.05},
+			{"","trash",0.15}
 		};
 	};
 	class Residential: Default {
@@ -337,25 +337,23 @@ class CfgBuildingLoot {
 			{"ItemWatch","generic",0.05},
 			{"ItemCompass","generic",0.05},
 			{"ItemMap","weapon",0.03},
-			{"Makarov","weapon",0.6},
-			{"Colt1911","weapon",0.05},
-			{"ItemFlashlight","generic",0.03},
-			{"ItemKnife","generic",0.08},
+			{"Makarov","weapon",0.4},
+			{"Colt1911","weapon",0.04},
+			{"ItemFlashlight","generic",0.06},
+			{"ItemKnife","generic",0.07},
 			{"ItemMatchbox","generic",0.06},
 			{"","generic",0.10},
 			{"LeeEnfield","weapon",0.06},
 			{"revolver_EP1","weapon",0.04},
-			
 			{"DZ_Assault_Pack_EP1","object",0.05}, // 12
 			{"DZ_Czech_Vest_Puch","object",0.04}, // 12-0
 			{"DZ_ALICE_Pack_EP1","object",0.02}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"DZ_British_ACU","object",0.01}, // 18
-			
-			{"Winchester1866","weapon",0.01},
+			{"Winchester1866","weapon",0.03},
 			{"WeaponHolder_ItemTent","object",0.01},
-			{"","military",0.03},
-			{"","trash",0.10},
+			{"","military",0.05},
+			{"","trash",0.15},
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.06},
 			{"PartWoodPile","magazine",0.06},
@@ -363,8 +361,8 @@ class CfgBuildingLoot {
 			{"Skin_Sniper1_DZ","magazine",0.01},
 			{"WeaponHolder_ItemCrowbar","object",0.08},
 			{"MR43","weapon",0.03},
-			{"ItemBookBible","magazine",0.02}
-			//{"WeaponHolder_ItemFuelcan","object",0.03}
+			{"ItemBookBible","magazine",0.02},
+			{"WeaponHolder_ItemFuelcan","object",0.03}
 		
 		};
 	};
@@ -380,9 +378,9 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		lootType[] = {
-			{"","generic",0.18},
-			{"","trash",0.29},
-			{"","military",0.10},
+			{"","generic",0.10},
+			{"","trash",0.15},
+			{"","military",0.05},
 			{"WeaponHolder_PartGeneric","object",0.04},
 			{"WeaponHolder_PartWheel","object",0.05},
 			{"WeaponHolder_PartFueltank","object",0.02},
@@ -394,8 +392,8 @@ class CfgBuildingLoot {
 			{"ItemKnife","military",0.07},
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
-			{"ItemTankTrap","magazine",0.04}
-			//{"WeaponHolder_ItemFuelcan","object",0.03}
+			{"ItemTankTrap","magazine",0.04},
+			{"WeaponHolder_ItemFuelcan","object",0.03}
 		};
 	};
 	class Farm: Default {
@@ -410,7 +408,7 @@ class CfgBuildingLoot {
 			{"huntingrifle","weapon",0.02},
 			{"LeeEnfield","weapon",0.04},
 			{"Winchester1866","weapon",0.03},
-			{"","trash",0.10},
+			{"","trash",0.15},
 			{"Crossbow_DZ","weapon",0.03},
 			{"PartWoodPile","magazine",0.8},
 			{"WeaponHolder_ItemHatchet","object",0.5},
@@ -433,20 +431,18 @@ class CfgBuildingLoot {
 			{"ItemFlashlight","generic",0.05},
 			{"ItemKnife","generic",0.02},
 			{"ItemMatchbox","generic",0.05},
-			{"","generic",0.05},
+			{"","generic",0.10},
 			{"LeeEnfield","weapon",0.01},
 			{"revolver_EP1","weapon",0.01},
-					
 			{"DZ_Assault_Pack_EP1","object",0.03}, // 12
 			{"DZ_Czech_Vest_Puch","object",0.03}, // 12-0
 			{"DZ_ALICE_Pack_EP1","object",0.02}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"DZ_British_ACU","object",0.01}, // 18
-			
 			{"Winchester1866","weapon",0.01},
 			{"WeaponHolder_ItemTent","object",0.01},
-			{"","food",0.10},
-			{"","trash",0.10},
+			{"","food",0.05},
+			{"","trash",0.15},
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.03},
 			{"PartWoodPile","magazine",0.04},
@@ -575,7 +571,7 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
-			{"","trash",0.5},
+			{"","trash",0.15},
 			{"","hospital",0.10},
 			{"MedBox0","object",0.2}
 		};
@@ -613,17 +609,15 @@ class CfgBuildingLoot {
 			{"ItemKnife","military",0.06},
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.03},
-			
 			{"DZ_ALICE_Pack_EP1","object",0.03}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.03}, // 16
 			{"DZ_British_ACU","object",0.02}, // 18			
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24
-			
-			//Normal
-			{"","medical",0.10},
-			{"","generic",0.30},
-			{"","military",0.10},
+			{"","medical",0.05},
+			{"","generic",0.10},
+			{"","military",0.05},
+			{"","trash",0.15},
 			{"ItemEtool","weapon",0.03},
 			{"ItemSandbag","magazine",0.4},
 			{"Sa58P_EP1","weapon",0.5},
@@ -679,9 +673,10 @@ class CfgBuildingLoot {
 			{"DZ_British_ACU","object",0.06}, // 18
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24		
-			{"","medical",0.30},
+			{"","medical",0.05},
 			{"","generic",0.10},
-			{"","military",0.10},
+			{"","military",0.05},
+			{"","trash",0.15},
 			//{"Body","object",0.2},
 			{"PipeBomb","magazine",0.01},
 			{"Sa58V_RCO_EP1","weapon",0.01},
@@ -700,19 +695,21 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] = {
 			{"ItemMap","weapon",0.06},
-			{"ItemFlashlight","generic",0.05},
-			{"ItemKnife","generic",0.04},
-			{"ItemMatchbox","generic",0.06},
-			{"Crossbow_DZ","weapon",0.03},
-			{"","military",0.06},
-			{"WeaponHolder_ItemMachete","object",0.03},
-			{"huntingrifle","weapon",0.04},
+			{"ItemFlashlight","generic",0.06},
+			{"ItemKnife","generic",0.05},
+			{"ItemMatchbox","generic",0.07},
+			{"Crossbow_DZ","weapon",0.04},
+			{"","military",0.05},
+			{"WeaponHolder_ItemMachete","object",0.04},
+			{"huntingrifle","weapon",0.05},
 			{"M14_EP1","weapon",0.03},
-			{"M16A2","weapon",0.02},
-			{"AK_74","weapon",0.02},
-			{"M24","weapon",0.02},
-			{"M1014","weapon",0.02},
-			{"","hunter",3.00}
+			{"M16A2","weapon",0.03},
+			{"AK_74","weapon",0.03},
+			{"M24","weapon",0.03},
+			{"M1014","weapon",0.03},
+			{"","hunter",0.10},
+			{"","generic",0.10},
+			{"","trash",0.15}
 		};
 	};
 	
