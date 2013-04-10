@@ -48,12 +48,14 @@ switch (_nearbytype) do {
 
 _players = _position nearEntities ["CAManBase",_radius+200];
 
-dayz_maxGlobalZombies = 30;
+dayz_maxGlobalZombies = 60;
+/*
 {
 	if (isPlayer _x) then {
 		dayz_maxGlobalZombies = dayz_maxGlobalZombies + 10;
 	};
 } foreach _players;
+*/
 
 _spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
 dayz_spawnZombies = 0;
@@ -140,29 +142,37 @@ if (dayz_spawnZombies == 0) then {
 		_cleared = (_x getVariable ["cleared",false]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _looted) * 525948;
-		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" ); 
-		if ((_age > 10) and (!_cleared)) then {
-			_x setVariable ["cleared",true,true];
-			_x setVariable ["looted",_dateNow,true];
-		};
-		_cleared = (_x getVariable ["cleared",false]);
-		if ((_cleared))  then {
-			//_x setVariable ["looted",_dateNow,true];
-			[_x] spawn building_spawnLoot;
+		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
+		if (_age < -0.1) then {
+				_x setVariable ["looted",(DateToNumber date),true];
+		} else {
+			if ((_age > 30) and (!_cleared)) then {
+				_x setVariable ["cleared",true,true];
+				_x setVariable ["looted",_dateNow,true];
+			};
+			_cleared = (_x getVariable ["cleared",false]);
+			if ((_cleared))  then {
+				//_x setVariable ["looted",_dateNow,true];
+				[_x] spawn building_spawnLoot;
+			};
 		};
 	};
 	//Zeds
 	if ((((time - dayz_spawnWait) > dayz_spawnDelay) or _force)) then {
 		if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
 			if (dayz_spawnZombies < _maxZombies) then {
-					//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
-					_zombied = (_x getVariable ["zombieSpawn",-0.1]);
-					_dateNow = (DateToNumber date);
-					_age = (_dateNow - _zombied) * 525948;
+				//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
+				_zombied = (_x getVariable ["zombieSpawn",-0.1]);
+				_dateNow = (DateToNumber date);
+				_age = (_dateNow - _zombied) * 525948;
+				if (_age < -0.1) then {
+					_x setVariable ["zombieSpawn",(DateToNumber date),true];
+				} else {
 					if (_age > 3) then {
 						_x setVariable ["zombieSpawn",_dateNow,true];
 						[_x] spawn building_spawnZombies;
 					};
+				};	
 			} else {
 				dayz_spawnWait = time;
 			};

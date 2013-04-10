@@ -21,16 +21,16 @@ if (_canLoot) then {
 	_zombieChance =	getNumber (_config >> "zombieChance");
 	_rnd = random 1;
 
-	//if (_rnd < _zombieChance) then {
+	if (_rnd < _zombieChance) then {
 		
 		_noPlayerNear = (count ((getPosATL _obj) nearEntities ["CAManBase",30])) == 0;
 		
 		if (_noPlayerNear) then {
 		
-			//_position = _obj buildingExit 0;
-			//if ((_position select 0) == 0) then {
+			_position = _obj buildingExit 0;
+			if ((_position select 0) == 0) then {
 				_position = getPosATL _obj;
-			//};
+			};
 		
 		//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
 			for "_i" from 1 to _num do {
@@ -38,7 +38,7 @@ if (_canLoot) then {
 			};
 			
 		};
-	//};
+	};
 
 	
 	//Add Internal Zombies
@@ -48,6 +48,8 @@ if (_canLoot) then {
 		_zombieChance =	getNumber (_config >> "zombieChance");
 		//diag_log format["Building: %1 / Positions: %2 / Chance: %3",_type,_positions,_zombieChance];
 		{
+			if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
+			if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
 			_rnd = random 1;
 			if (_rnd < _zombieChance) then {
 				_iPos = _obj modelToWorld _x;

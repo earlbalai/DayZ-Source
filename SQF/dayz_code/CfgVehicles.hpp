@@ -1,19 +1,3 @@
-class CfgFaces {
-	class Default;	// External class reference
-	
-	class Man : Default {
-		class Default;	// External class reference
-		
-		class Zombie3 : Default {
-			name = "Zombie 3";
-			texture = "\z\addons\dayz_communityassets\faces\zombie_03_co.paa";
-			material = "\z\addons\dayz_communityassets\faces\zombie_03.rvmat";
-			identityTypes[] = { "Zombie3" };
-			disabled = 0;
-		};
-	};
-};
-
 class CfgVoice {
 	class NoVoice {
 		protocol = "RadioProtocolBase";
@@ -33,6 +17,22 @@ class CfgIdentities {
 	};
 };
 
+class CfgFaces {
+	class Default;	// External class reference
+	
+	class Man : Default {
+		class Default;	// External class reference
+		
+		class Zombie3 : Default {
+			name = "Zombie 3";
+			texture = "\z\addons\dayz_communityassets\faces\zombie_03_co.paa";
+			material = "\z\addons\dayz_communityassets\faces\zombie_03.rvmat";
+			identityTypes[] = { "Zombie3" };
+			disabled = 0;
+		};
+	};
+};
+
 class CfgVehicles {
 	class Citizen1;	// External class reference
 	class zZombie_Base : Citizen1 {
@@ -49,7 +49,7 @@ class CfgVehicles {
 		magazines[] = {};
 		sensitivity = 2;	// sensor sensitivity
 		sensitivityEar = 4;
-		identityTypes[] = {"zombie1", "zombie2"};
+		identityTypes[] = {"zombie1", "zombie2", "zombie3"};
 		class TalkTopics {};
 		languages[] = {};
 		
@@ -140,84 +140,6 @@ class CfgVehicles {
 				name = "RightUpLeg";
 				memoryPoint = "rfemur";
 			};
-		};
-	};
-	
-	class olderzed : zZombie_Base {
-		scope = public;
-		glassesEnabled = 0;
-		vehicleClass = "Zombie";
-		displayName = "Zombie";
-		fsmDanger = "";
-		fsmFormation = "";
-		zombieLoot = "civilian";
-		moves = "CfgMovesZombie";
-		isMan = false;
-		weapons[] = {};
-		magazines[] = {};
-		sensitivity = 2;	// sensor sensitivity
-		sensitivityEar = 4;
-		identityTypes[] = {"zombie3"};
-		class TalkTopics {};
-		languages[] = {};
-		
-		class Eventhandlers {
-			init = "_this call zombie_initialize;";
-			local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm'};";
-		};
-		
-		class HitPoints : HitPoints {
-			class HitHead {
-				armor = 0.3;
-				material = -1;
-				name = "head_hit";
-				passThrough = true;
-			};
-			
-			class HitBody {
-				armor = 5;
-				material = -1;
-				name = "body";
-				passThrough = true;
-			};
-			
-			class HitHands {
-				armor = 100;
-				material = -1;
-				name = "hands";
-				passThrough = true;
-			};
-			
-			class HitLegs {
-				armor = 100;
-				material = -1;
-				name = "legs";
-				passThrough = true;
-			};
-		};
-	};
-	
-	class z_old_policeman : olderzed {
-		model = "\ca\characters2\civil\Policeman\Policeman";
-		//texture = "\z\addons\dayz_comunityassets\zeds\policeman_co.paa";
-		//material = "\z\addons\dayz_comunityassets\zeds\policeman\policeman.rvmat";
-		zombieLoot = "policeman";
-		//hiddenSelectionsTextures[] = {"\z\addons\dayz_communityassets\zeds\policeman\policeman_co.paa"};
-		
-		class Wounds {
-			tex[] = {"\z\addons\dayz_communityassets\zeds\policeman\policeman_co.paa"};
-			mat[] = {"ca\characters2\civil\policeman\data\policeman.rvmat", "ca\characters2\civil\policeman\data\w1_policeman.rvmat", "ca\characters2\civil\policeman\data\w2_policeman.rvmat", "ca\characters\heads\male\defaulthead\data\hhl.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
-		};
-	};
-	
-	class z_soldier : olderzed {
-		displayName = "Zombie Soldier";
-		model = "\ca\characters2\Blufor\Soldier_Light";
-		zombieLoot = "military";
-		
-		class Wounds {
-			tex[] = {};
-			mat[] = {"ca\characters2\Blufor\data\Soldier.RVmat", "ca\characters2\Blufor\data\Soldier_W1.RVmat", "ca\characters2\Blufor\data\Soldier_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Light.RVmat", "ca\characters2\Blufor\data\Soldier_Light_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Light_W2.RVmat", "ca\characters2\Blufor\data\Soldier_EQUIP_Light.RVmat", "ca\characters2\Blufor\data\Soldier_Light_EQUIP_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Light_EQUIP_W1.RVmat", "ca\characters2\Blufor\data\Soldier_GL.RVmat", "ca\characters2\Blufor\data\Soldier_GL_W1.RVmat", "ca\characters2\Blufor\data\Soldier_GL_W2.RVmat", "ca\characters2\Blufor\data\Soldier_NCO.RVmat", "ca\characters2\Blufor\data\Soldier_NCO_W1.RVmat", "ca\characters2\Blufor\data\Soldier_NCO_W2.RVmat", "ca\characters2\Blufor\data\Soldier_MG.RVmat", "ca\characters2\Blufor\data\Soldier_MG_W1.RVmat", "ca\characters2\Blufor\data\Soldier_MG_W2.RVmat", "ca\characters2\Blufor\data\Soldier_AT.RVmat", "ca\characters2\Blufor\data\Soldier_AT_W1.RVmat", "ca\characters2\Blufor\data\Soldier_AT_W2.RVmat", "ca\characters2\Blufor\data\Soldier_CO.RVmat", "ca\characters2\Blufor\data\Soldier_CO_W1.RVmat", "ca\characters2\Blufor\data\Soldier_CO_W2.RVmat", "ca\characters2\Blufor\data\Soldier_CO_EQUIP.RVmat", "ca\characters2\Blufor\data\Soldier_CO_EQUIP_W1.RVmat", "ca\characters2\Blufor\data\Soldier_CO_EQUIP_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Pilot.RVmat", "ca\characters2\Blufor\data\Soldier_Pilot_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Pilot_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Pilot_EQUIP.RVmat", "ca\characters2\Blufor\data\Soldier_Pilot_EQUIP_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Pilot_EQUIP_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Guard.RVmat", "ca\characters2\Blufor\data\Soldier_Guard_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Guard_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Crew.RVmat", "ca\characters2\Blufor\data\Soldier_Crew_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Crew_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Crew_EQUIP.RVmat", "ca\characters2\Blufor\data\Soldier_Crew_EQUIP_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Crew_EQUIP_W2.RVmat", "ca\characters2\Blufor\data\Soldier_Guard_EQUIP.RVmat", "ca\characters2\Blufor\data\Soldier_Guard_EQUIP_W1.RVmat", "ca\characters2\Blufor\data\Soldier_Guard_EQUIP_W2.RVmat"};
 		};
 	};
 	
