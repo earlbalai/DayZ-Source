@@ -33,11 +33,13 @@ class FoodbaconCooked : FoodCooked {
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
 	bloodRegen = 400;
 };
+
 class FoodrabbitCooked : FoodCooked {
 	displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_3;
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
 	bloodRegen = 800;
 };
+
 class FoodbeefCooked : FoodCooked {
 	displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_6;
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
