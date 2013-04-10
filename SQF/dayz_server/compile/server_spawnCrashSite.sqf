@@ -48,8 +48,11 @@ while {true} do {
 		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4 - (%5)", _crashName, _lootTable, time, str(_position),mapGridPosition _position]);
 
 		_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
-  		_clutter = createVehicle ["ClutterCutter_EP1", _position, [], 0, "CAN_COLLIDE"];
-		_clutter setPos _position;
+		
+  		//Grass clear system uncomment for clear areas around choppers.
+		//_clutter = createVehicle ["ClutterCutter_EP1", _position, [], 0, "CAN_COLLIDE"];
+		//_clutter setPos _position;
+		
 		// Randomize the direction the wreck is facing
 		_crash setDir round(random 360);
 
