@@ -19,12 +19,14 @@ FIX DUE : 2013
 		* [UPDATED] - Updated zed speed to default.
 		* [UPDATED] - melee systems updated.
 		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
-		
+		* [UPDATED] - Clear Ground around crash sites have now been disbaled by default server admins can enable.
+ 		
 		* [FIXED] - Zeds spawning underground
 		* [FIXED] - loot spawning undergroung
 		* [FIXED] - melee weapons having no ammo on login.
 		* [FIXED] - Loot Spawns has now been fully resolved. Buildings are now taged and will not spawn any new loot for 10 mins.
 		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 mins (Might change)
+		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 mins.
 
 ______________________	
 FIX DUE : 2013
