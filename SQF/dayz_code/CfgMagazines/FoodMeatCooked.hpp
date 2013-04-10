@@ -8,6 +8,8 @@ class FoodmeatCooked : FoodCooked {
 
 class FoodgoatCooked : FoodCooked {
 	displayName = $STR_FOOD_NAME_GOAT_COOKED;
+	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOOD_EQUIP_GOAT_COOKED;
 	bloodRegen = 400;
 };
@@ -22,6 +24,8 @@ class FoodmuttonCooked : FoodCooked {
 
 class FoodchickenCooked : FoodCooked {
 	displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_2;
+	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
 	bloodRegen = 400;
 };
@@ -36,12 +40,16 @@ class FoodbaconCooked : FoodCooked {
 
 class FoodrabbitCooked : FoodCooked {
 	displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_3;
+	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
 	bloodRegen = 800;
 };
 
 class FoodbeefCooked : FoodCooked {
 	displayName = $STR_FOODCOOKED_EQUIP_CODE_NAME_6;
+	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
 	bloodRegen = 600;
 };
