@@ -16,12 +16,16 @@ class FoodmuttonRaw : FoodRaw {
 class FoodchickenRaw : FoodRaw {
 	displayName = $STR_FOOD_EQUIP_CODE_NAME_2;
 	descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_2;
+	model = "\dayz_equip\models\food_steak_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_ca.paa";	
 	bloodRegen = 100;
 };
 
 class FoodrabbitRaw : FoodRaw {
 	displayName = $STR_FOOD_EQUIP_CODE_NAME_3;
 	descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_3;
+	model = "\dayz_equip\models\food_steak_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_ca.paa";	
 	bloodRegen = 200;
 };
 
@@ -35,10 +39,14 @@ class FoodbaconRaw : FoodRaw {
 class FoodbeefRaw : FoodRaw {
 	displayName = $STR_FOOD_EQUIP_CODE_NAME_6;
 	descriptionShort = $STR_FOOD_EQUIP_CODE_DESC_6;
+	model = "\dayz_equip\models\food_steak_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_ca.paa";	
 	bloodRegen = 100;
 };
 class FoodgoatRaw : FoodRaw {
 	displayName = $STR_FOOD_NAME_GOAT_RAW;
 	descriptionShort = $STR_FOOD_EQUIP_GOAT_RAW;
+	model = "\dayz_equip\models\food_steak_gear.p3d";
+	picture = "\dayz_equip\textures\equip_steak_ca.paa";	
 	bloodRegen = 100;
 };
