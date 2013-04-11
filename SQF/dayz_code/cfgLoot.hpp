@@ -13,10 +13,16 @@ class CfgLoot {
 			{"ItemSodaEmpty",0.05},
 			{"ItemSodaCoke",0.06},
 			{"ItemSodaPepsi",0.06},
+			{"ItemSodaRocketFuel",0.04},
+			{"ItemSodaGrapeDrink",0.04},
 			{"FoodCanBakedBeans",0.05},
 			{"FoodCanSardines",0.05},
 			{"FoodCanFrankBeans",0.05},
 			{"FoodCanPasta",0.05},
+			{"FoodCanBeef",0.03},
+			{"FoodCanPotatoes",0.03},
+			{"FoodCandyChubby",0.03},
+			{"FoodChipsChocolate",0.02},
 			{"8Rnd_9x18_Makarov",0.04},
 			{"7Rnd_45ACP_1911",0.04},
 			{"2Rnd_shotgun_74Slug",0.04},
@@ -56,7 +62,7 @@ class CfgLoot {
 			{"FoodCanTylers",0.01},
 			{"FoodCanUnlabeled",0.04},
 			{"FoodPistachio",0.03},
-			{"FoodNutmix",0.02},
+			{"FoodNutmix",0.04},
 			{"FoodChipsSulahoops",0.01},
 			{"FoodChipsMysticales",0.01},
 			{"FoodCandyAnders",0.01},
@@ -68,6 +74,12 @@ class CfgLoot {
 			{"FoodCanRusPeas",0.05},
 			{"FoodCanRusMilk",0.04},
 			{"FoodCanRusCorn",0.05}
+			{"FoodCanBeef",0.05},
+			{"FoodCanPotatoes",0.04},
+			{"FoodCandyChubby",0.05},
+			{"FoodChipsChocolate",0.04},
+			{"ItemSodaRocketFuel",0.05},
+			{"ItemSodaGrapeDrink",0.04}
 	};
 	generic[] = {
 			{"TrashTinCan",0.06},
