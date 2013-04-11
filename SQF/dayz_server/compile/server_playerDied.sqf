@@ -4,10 +4,10 @@ _characterID = 	_this select 0;
 _minutes =	_this select 1;
 _newObject = 	_this select 2;
 _playerID = 	_this select 3;
-_playerName = 	_this select 4;
 
 dayz_disco = dayz_disco - [_playerID];
 _newObject setVariable["processedDeath",time];
+_newObject setVariable ["bodyName", name _playerID, true];
 
 /*
 diag_log ("DW_DEBUG: (isnil _characterID): " + str(isnil "_characterID"));
