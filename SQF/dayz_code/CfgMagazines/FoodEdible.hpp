@@ -36,6 +36,24 @@ class FoodNutmix : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_nutmix_CA.paa";
 };
 
+class FoodCanBeef : FoodEdible {
+	scope = public;
+	count = 1;
+	bloodRegen = 200;
+	displayName = $STR_FOOD_NAME_CAN_BEEF;
+	descriptionShort = $STR_FOOD_DESC_CAN_BEEF;
+	model = "z\addons\dayz_communityassets\models\can_beef_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_beef_clean_full_ca.paa";
+};
+class FoodCanPotatoes : FoodEdible {
+	scope = public;
+	count = 1;
+	bloodRegen = 200;
+	displayName = $STR_FOOD_NAME_CAN_POTATOES;
+	descriptionShort = $STR_FOOD_DESC_CAN_POTATOES;
+	model = "z\addons\dayz_communityassets\models\can_pots_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_pots_clean_full_ca.paa";
+};
 class FoodCanGriff : FoodEdible {
 	scope = public;
 	count = 1;
@@ -226,6 +244,26 @@ class FoodChipsMysticales : FoodEdible {
 	descriptionShort = $STR_FOOD_DESC_CHIPS_MYSTICALES;
 	model = "z\addons\dayz_communityassets\models\bag_chips_small_mysticales_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_mysticales_full_ca.paa";
+};
+class FoodChipsChocolate : FoodEdible {
+	scope = public;
+	count = 1;
+	sfx = "eat_chips";
+	bloodRegen = 120;
+	displayName = $STR_FOOD_NAME_CHIPS_CHOCOLATE;
+	descriptionShort = $STR_FOOD_DESC_CHIPS_CHOCOLATE;
+	model = "z\addons\dayz_communityassets\models\bag_chips_small_chocolate_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_chocolate_full_ca.paa";
+};
+class FoodCandyChubby : FoodEdible {
+	scope = public;
+	count = 1;
+	//sfx = "eat_chips";
+	bloodRegen = 80;
+	displayName = $STR_FOOD_NAME_CANDY_CHUBBY;
+	descriptionShort = $STR_FOOD_DESC_CANDY_CHUBBY;
+	model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d"
+	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa"
 };
 class FoodCandyAnders : FoodEdible {
 	scope = public;

@@ -104,3 +104,15 @@ class ItemSodaSacrite : ItemSoda {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_full_ca.paa";
 };
 */
+class ItemSodaRocketFuel : ItemSoda {
+	displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_13;
+	descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_13;
+	model = "z\addons\dayz_communityassets\models\soda_rocket_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_full_ca.paa";
+};
+class ItemSodaGrapeDrink : ItemSoda {
+	displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_14;
+	descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_14;
+	model = "z\addons\dayz_communityassets\models\soda_grape_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_grape_clean_full_ca.paa";
+};

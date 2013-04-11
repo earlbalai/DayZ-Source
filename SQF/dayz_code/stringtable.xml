@@ -1312,6 +1312,42 @@
 			<French>Une canette intacte de soda "Sacrite".</French>
 			<Czech>Čistá a ještě neotevřená plechovka Sacrite sody.</Czech>
 		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_13">
+			<English>Soda</English>
+			<German>Soda</German>
+			<Russian>Газировка</Russian>
+			<Spanish>Gaseosa</Spanish>
+			<Dutch>Frisdrank</Dutch>
+			<French>Soda</French>
+			<Czech>Soda</Czech>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_13">
+			<English>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</English>
+			<German>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</German>
+			<Russian>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</Dutch>
+			<French>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</French>
+			<Czech>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</Czech>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_14">
+			<English>Soda</English>
+			<German>Soda</German>
+			<Russian>Газировка</Russian>
+			<Spanish>Gaseosa</Spanish>
+			<Dutch>Frisdrank</Dutch>
+			<French>Soda</French>
+			<Czech>Soda</Czech>
+		</Key>
+		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_14">
+			<English>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</English>
+			<German>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</German>
+			<Russian>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</Dutch>
+			<French>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</French>
+			<Czech>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">
 			<English>MRE</English>
 			<German>Feldration</German>
@@ -1440,7 +1476,43 @@
 			<French>Un paquet intact de chips "Miss Mysticales jalapeño".</French>
 			<Czech>Čistý a ještě neotevřený balíček čipsů značky Miss Mysticales jalapeño.</Czech>
 		</Key>
+		<Key ID="STR_FOOD_NAME_CHIPS_CHOCOLATE">
+			<English>Snack (Chips)</English>
+			<German>Snack (Chips)</German>
+			<Russian>Закуска (Чипсы)</Russian>
+			<Spanish>Golosina (Papitas)</Spanish>
+			<Dutch>Snack (Chips)</Dutch>
+			<French>Snack (Chips)</French>
+			<Czech>Snack (Chips)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CHIPS_CHOCOLATE">
+			<English>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</English>
+			<German>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</German>
+			<Russian>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</Dutch>
+			<French>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</French>
+			<Czech>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</Czech>
+		</Key>
 		
+		<Key ID="STR_FOOD_NAME_CANDY_CHUBBY">
+			<English>Snack (Chocolate)</English>
+			<German>Snack (Chocolate)</German>
+			<Russian>Закуска (Шоколад)</Russian>
+			<Spanish>Golosina (Chocolate)</Spanish>
+			<Dutch>Snack (Chocolade)</Dutch>
+			<French>Snack (Chocolat)</French>
+			<Czech>Snack (Čokoláda)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CANDY_CHUBBY">
+			<English>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</English>
+			<German>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</German>
+			<Russian>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</Dutch>
+			<French>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</French>
+			<Czech>A clean, unopened Papa's 'Chocolate Chubby Bar'. Product of Chernarus.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CANDY_ANDERS">
 			<English>Snack (Chocolate)</English>
 			<German>Snack (Chocolate)</German>
@@ -1496,6 +1568,42 @@
 			<Czech>Čistý a ještě neotevřený balíček Mintception mint.</Czech>
 		</Key>
 		
+		<Key ID="STR_FOOD_NAME_CAN_BEEF">
+			<English>Can (Stroganoff)</English>
+			<German>Dose (Stroganoff)</German>
+			<Russian>Банка (Stroganoff)</Russian>
+			<Spanish>Lata (Stroganoff)</Spanish>
+			<Dutch>Blik (Stroganoff)</Dutch>
+			<French>Boîte (Stroganoff)</French>
+			<Czech>Plechovka (Stroganoff)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_BEEF">
+			<English>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</English>
+			<German>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</German>
+			<Russian>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Dutch>
+			<French>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</French>
+			<Czech>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_POTATOES">
+			<English>Can (Potatoes)</English>
+			<German>Dose (Kartoffeln)</German>
+			<Russian>Банка (Potatoes)</Russian>
+			<Spanish>Lata (Potatoes)</Spanish>
+			<Dutch>Blik (Potatoes)</Dutch>
+			<French>Boîte (Pommes de terre)</French>
+			<Czech>Plechovka (Potatoes)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_POTATOES">
+			<English>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</English>
+			<German>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</German>
+			<Russian>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Dutch>
+			<French>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</French>
+			<Czech>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
