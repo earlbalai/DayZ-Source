@@ -1875,6 +1875,24 @@
 			<French>Un recueil  de textes condidérés comme sacrés.</French>
 			<Czech>Kniha plná posvátných textů.</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_NAILS">
+			<English>Nails</English>
+			<German>Nails</German>
+			<Russian>Nails</Russian>
+			<Spanish>Nails</Spanish>
+			<Dutch>Nails</Dutch>
+			<French>Nails</French>
+			<Czech>Nails</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_NAILS">
+			<English>A small box of 4 inch nails.</English>
+			<German>A small box of 4 inch nails.</German>
+			<Russian>A small box of 4 inch nails.</Russian>
+			<Spanish>A small box of 4 inch nails.</Spanish>
+			<Dutch>A small box of 4 inch nails.</Dutch>
+			<French>A small box of 4 inch nails.</French>
+			<Czech>A small box of 4 inch nails.</Czech>
+		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan (5L)</English>
 			<German>Benzinkanister (5L)</German>
