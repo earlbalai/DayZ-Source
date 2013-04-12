@@ -77,3 +77,11 @@ class ItemSodaSacriteEmpty : ItemSodaEmpty{
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_sacrite_clean_empty_ca.paa";
 };
 */
+class ItemSodaRocketFuelEmpty : ItemSodaEmpty{
+	model = "z\addons\dayz_communityassets\models\soda_rocket_clean_empty.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_rocket_clean_empty_ca.paa";
+};
+class ItemSodaGrapeDrinkEmpty : ItemSodaEmpty{
+	model = "z\addons\dayz_communityassets\models\soda_grape_clean_empty.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_grape_clean_empty_ca.paa";
+};

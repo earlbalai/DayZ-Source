@@ -1,3 +1,21 @@
+class FoodCanBeefEmpty : TrashTinCan {
+	scope = public;
+	count = 1;
+	model = "z\addons\dayz_communityassets\models\can_beef_clean_empty.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_beef_clean_empty_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_EMPTY;
+	descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+	ammo = "TinCan";
+};
+class FoodCanPotatoesEmpty : TrashTinCan {
+	scope = public;
+	count = 1;
+	model = "z\addons\dayz_communityassets\models\can_pots_clean_empty.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_pots_clean_empty_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_EMPTY;
+	descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
+	ammo = "TinCan";
+};
 class FoodCanGriffEmpty : TrashTinCan {
 	scope = public;
 	count = 1;
@@ -187,3 +205,12 @@ class FoodChipsMysticalesEmpty : TrashTinCan {
 	descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
 	ammo = "TinCan";
 };
+class FoodChipsChocolateEmpty : TrashTinCan {
+	scope = public;
+	count = 1;
+	model = "z\addons\dayz_communityassets\models\bag_chips_small_chocolate_opened.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_chocolate_empty_ca.paa";
+	displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
+	descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
+	ammo = "TinCan";
+	};
