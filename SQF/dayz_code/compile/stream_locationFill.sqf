@@ -8,7 +8,7 @@ for "_i" from 0 to ((count _this) - 1) do
 		_dir = 		getNumber	(_config >> "direction");
 		_onFire = 	getNumber	(_config >> "onFire");
 		
-		_object =  _type createVehicle _position;
+		_object =  _type createVehicleLocal _position;
 		_object setPos _position;
 		_object setDir _dir;
 		_object allowDamage false;
