@@ -31,7 +31,7 @@ progressLoadingScreen 1.0;
 /* BIS_Effects_* fixes from Dwarden */
 BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "new_effects\killed.sqf";
 BIS_Effects_AirDestruction = compile preprocessFileLineNumbers "new_effects\AirDestruction.sqf";
-//BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers "new_effects\AirDestructionStage2.sqf";
+BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers "new_effects\AirDestructionStage2.sqf";
 
 BIS_Effects_globalEvent = {
 	BIS_effects_gepv = _this;
