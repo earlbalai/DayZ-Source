@@ -32,6 +32,7 @@ Contributions By
 * Venthos                                           https://github.com/Venthos
 * VRShiva                                           https://github.com/VRShiva
 * caleywoods                                        https://github.com/caleywoods
+* Ingasmeeg                                         https://github.com/Ingasmeeg
 * Ander                                             
 * Des                                               
 
