@@ -9,7 +9,7 @@ Community Dev Project Manager
 Contributions By
 * ziellos2k                                         https://github.com/ziellos2k
 * Skaronator                                        https://github.com/Skaronator
-* MattzFiber  								                    	https://github.com/MattzFiber
+* MattzFiber										https://github.com/MattzFiber
 * AlexAFlorov                                       https://github.com/AlexAFlorov
 * Elvaron                                           https://github.com/Elvaron
 * JoeysLucky22                                      https://github.com/JoeysLucky22
@@ -17,6 +17,8 @@ Contributions By
 * wriley                                            https://github.com/wriley
 * Alby                                              https://github.com/AlbyBDPK
 * Defwen                                            https://github.com/Defwen
+* Finest											https://github.com/Finest
+* Ingasmeeg                                         https://github.com/Ingasmeeg
 * Sharkiller  (Spanish Tranlations)                 https://github.com/Sharkiller
 * Markolie  (Dutch Translations)                    https://github.com/Markolie
 * LordGoF (French Translations)                     https://github.com/LordGoF
@@ -32,7 +34,6 @@ Contributions By
 * Venthos                                           https://github.com/Venthos
 * VRShiva                                           https://github.com/VRShiva
 * caleywoods                                        https://github.com/caleywoods
-* Ingasmeeg                                         https://github.com/Ingasmeeg
 * Ander                                             
 * Des                                               
 

@@ -7,7 +7,7 @@
 			<Spanish>Agregar al Cinturón</Spanish>
 			<Czech>Přidat do nástrojů</Czech>
 			<French>Ajouter à la Ceinture à outils</French>
-			<German>Zum Toolbelt hinzufügen</German>
+			<German>Zur Toolbar hinzufügen</German>
 			<Dutch>Aan gereedschapsriem toevoegen</Dutch>
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
@@ -25,7 +25,7 @@
 			<Spanish>Sacar del Cinturón</Spanish>
 			<Czech>Odstranit z nástrojů</Czech>
 			<French>Retirer de la Ceinture à outils</French>
-			<German>Vom Toolbelt entfernen</German>
+			<German>Von Toolbar entfernen</German>
 			<Dutch>Van gereedschapsriem afhalen</Dutch>
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">
@@ -33,7 +33,7 @@
 			<Russian>Собрать колчан</Russian>
 			<Spanish>Crear Carcaj</Spanish>
 			<French>Créer un carquois</French>
-			<German>Erstelle Köcher</German>
+			<German>Erstelle einen Kocher</German>
 			<Dutch>Pijlkoker maken</Dutch>
 			<Czech>Vytvořit toulec</Czech>
 		</Key>
@@ -122,7 +122,7 @@
 		</Key>
 		<Key ID="str_actions_self_06">
 			<English>Remove fireplace</English>
-			<German>Feuerstelle entfernen</German>
+			<German>Feuerstelle zerstören</German>
 			<Russian>Убрать костер</Russian>
 			<Spanish>Remover Fogata</Spanish>
 			<Dutch>Kampvuur verwijderen</Dutch>
@@ -131,7 +131,7 @@
 		</Key>
 		<Key ID="str_actions_self_07">
 			<English>Pack Tent</English>
-			<German>Zelt verpacken</German>
+			<German>Zelt auseinanderbauen</German>
 			<Russian>Упаковать палатку</Russian>
 			<Spanish>Embalar Carpa</Spanish>
 			<Dutch>Tent inpakken</Dutch>
@@ -149,7 +149,7 @@
 		</Key>
 		<Key ID="str_actions_self_09">
 			<English>Fill Water</English>
-			<German>Wasser einfüllen</German>
+			<German>Wasser auffüllen</German>
 			<Russian>Наполнить фляжки</Russian>
 			<Spanish>Llenar con Agua</Spanish>
 			<Dutch>Water bijvullen</Dutch>
@@ -230,7 +230,7 @@
 		</Key>
 		<Key ID="str_actions_medical_08">
 			<English>Give Blood Transfusion</English>
-			<German>Bluttransfusion legen</German>
+			<German>Bluttransfusion verabreichen</German>
 			<Russian>Сделать человеку переливание крови</Russian>
 			<Spanish>Dar Transfusión de Sangre</Spanish>
 			<Dutch>Bloedtransfusie geven</Dutch>
@@ -275,7 +275,7 @@
 		</Key>
 		<Key ID="str_actions_medical_12">
 			<English>Packup %1</English>
-			<German>%1 demontieren</German>
+			<German>%1 abbauen</German>
 			<Russian>Разобрать %1</Russian>
 			<Spanish>Empaquetar %1</Spanish>
 			<Dutch>%1 inpakken</Dutch>
@@ -468,7 +468,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_20">
 			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
-			<German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
+			<German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz zu bietet.</German>
 			<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
 			<Spanish>Una carpa que puede ser asentada permitiendo almacenar objetos.</Spanish>
 			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
@@ -486,7 +486,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
-			<German>Jutesäcke, die mit Sand oder Erde gefüllt zum Errichten von Befestigungen verwendet werden können.</German>
+			<German>Jutesäcke, die mit Sand oder Erde gefüllt sind und zum Errichten von Befestigungen verwendet werden können.</German>
 			<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Pytle naplěné pískem a solí, které mohou být použity pro postavení vojenské pevnosti.</Czech>
@@ -504,7 +504,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_22">
 			<English>Metal materials that can be used by an engineer to construct a Tank Trap.</English>
-			<German>Metallteile, die von einem Pionier zum Errichten einer Panzersperre verwendet werden können.</German>
+			<German>Metallteile, die von einem Survivor zum Errichten einer Panzersperre verwendet werden können.</German>
 			<Russian>Металлические детали, из которых собирается противотанковый ёж.</Russian>
 			<Spanish>Materiales metálicos que pueden ser usados para crear una trampa antitanque.</Spanish>
 			<Czech>Kovový materiál, který může být použit pro postavení zátarasu </Czech>
@@ -522,7 +522,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_23">
 			<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>
-			<German>Gewickelter Stacheldraht, der akkordeonartig ausgeklappt und mit Stahlpgosten befestigt zum Errichten von Stacheldrahthindernissen verwendet werden kann.</German>
+			<German>Gewickelter Stacheldraht, der akkordeonartig ausgeklappt und mit Stahlpgosten befestigt, zum Errichten eines Stacheldrahthindernissen verwendet werden kann.</German>
 			<Russian>Катушка острой колючей проволоки для сооружения заграждений.</Russian>
 			<Spanish>Una bobina de alambre de púas muy afilado que puede ser expandir como un acordeón para formar obstáculos militares.</Spanish>
 			<Czech>Ostnatý drát, který může být použit pro vojenský drátěný plot z ostnatých drátů.</Czech>
@@ -553,7 +553,7 @@
 			<Spanish>Hacha</Spanish>
 			<Czech>Sekera</Czech>
 			<French>Hache</French>
-			<German>Beil</German>
+			<German>Hacke</German>
 			<Dutch>Bijl</Dutch>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
@@ -630,7 +630,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GHILLIE">
 			<English>Ghillie Suit</English>
-			<German>Ghillie-Anzug</German>
+			<German>Tarn-Anzug</German>
 			<Russian>Маскхалат</Russian>
 			<Spanish>Traje Camuflado "Guillie"</Spanish>
 			<Czech>Hejkal</Czech>
@@ -1116,7 +1116,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">
 			<English>Soda (Iced Tea)</English>
-			<German>Soda (Iced Tea)</German>
+			<German>Soda (Ice Tea)</German>
 			<Russian>Напиток (Холодный чай)</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Dutch>Frisdrank (IJsthee)</Dutch>
@@ -1125,7 +1125,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">
 			<English>A clean, unopened can of Long's island iced tea.</English>
-			<German>Eine saubere, ungeöffnete Dose Long's Island Eistee.</German>
+			<German>Eine saubere, ungeöffnete Dose Long Island Eistee.</German>
 			<Russian>Чистая, закрытая банка холодного чая.</Russian>
 			<Spanish>Una limpia y cerrada lata de té helado Long's island.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Long's island ijsthee.</Dutch>
@@ -1188,7 +1188,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">
 			<English>Soda (Lemonade)</English>
-			<German>Soda (Lemonade)</German>
+			<German>Soda (Limonade)</German>
 			<Russian>Газировка (Лимонад)</Russian>
 			<Spanish>Gaseosa (Limonada)</Spanish>
 			<Dutch>Frisdrank (Limonade)</Dutch>
@@ -1197,7 +1197,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">
 			<English>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</English>
-			<German>Eine saubere, ungeöffnete Dose Mikhail Made Lemonade. Hergestellt bei Mikhail.</German>
+			<German>Eine saubere, ungeöffnete Dose Mikhail Made Limonade. Hergestellt bei Mikhail.</German>
 			<Russian>Чистая, закрытая банка лимонада. Производства "Mikhail".</Russian>
 			<Spanish>Una limpia y cerrada lata de limonada Mikhail.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Mikhail Made Limonade. Gemaakt door Mikhail.</Dutch>
@@ -1224,7 +1224,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">
 			<English>Soda (Root Beer)</English>
-			<German>Soda (Wurzel Beere)</German>
+			<German>Soda (Rote Beeren)</German>
 			<Russian>Пиво (Корневое пиво)</Russian>
 			<Spanish>Cerveza de Raíz</Spanish>
 			<Dutch>Frisdrank (Root beer)</Dutch>
@@ -1233,7 +1233,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_8">
 			<English>A clean, unopened can of LVG root beer.</English>
-			<German>Eine saubere, ungeöffnete Dose LVG Wurzel Beere</German>
+			<German>Eine saubere, ungeöffnete Dose LVG Rote Beeren</German>
 			<Russian>Чистая, закрытая банка пива "LVG root".</Russian>
 			<Spanish>Una limpia y cerrada lata de cerveza de raíz LVG.</Spanish>
 			<Dutch>Een schoon, ongeopend blik LVG root beer.</Dutch>
@@ -1278,7 +1278,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">
 			<English>Beer</English>
-			<German>Beer</German>
+			<German>Bier</German>
 			<Russian>Пиво</Russian>
 			<Spanish>Cerveza</Spanish>
 			<Dutch>Bier</Dutch>
@@ -1424,7 +1424,7 @@
 		
 		<Key ID="STR_FOOD_NAME_CHIPS_EMPTY">
 			<English>Empty Snack Bag</English>
-			<German>Leeres Paket von Lebensmitteln</German>
+			<German>Leeres Lebensmittel Packet</German>
 			<Russian>Пустая упаковка</Russian>
 			<Spanish>Bolsa Vacía</Spanish>
 			<Dutch>Lege Snackzak</Dutch>
@@ -1542,7 +1542,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_LEGACYS">
 			<English>A clean, unopened Legacys chocolate, caramel and peanut candy bar.</English>
-			<German>Eine saubere, ungeöffnet Vermächtnis der Schokolade, Karamell und Erdnuss-Schokoriegel.</German>
+			<German>Ein sauberer ungeöffnetes Karamell und Erdnuss-Schokoriegel.</German>
 			<Russian>Чистый, закрытый батончик карамельно-орехового "Legacys ".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate Legacys con caramelo y maní.</Spanish>
 			<Dutch>Een schoon, ongeopend Legacys chocoladeA clean, caramel en noot snoepreep.</Dutch>
@@ -1560,7 +1560,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CANDY_MINTCEPTION">
 			<English>A clean, unopened Mintception mint chocolate candy bar.</English>
-			<German>Eine saubere, ungeöffneter Mintception Minze Schokolade Schokoriegel.</German>
+			<German>Eine saubere ungeöffneter Mintception Minze Schokoriegel.</German>
 			<Russian>Чистый, закрытый батончик мятного "Mintception".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate con menta Mintception.</Spanish>
 			<Dutch>Een schoon, ongeopend Mintception muntchocolade snoepreep.</Dutch>
@@ -1579,7 +1579,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BEEF">
 			<English>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</English>
-			<German>Eine saubere, ungeöffnete Dose Papa's 'Beef Stroganoff nach Originalrezept'. Hergestellt in Chernarus.</German>
+			<German>Eine saubere, ungeöffnete Dose von Papa's Beef Stroganoff nach Originalrezept. Hergestellt in Chernarus.</German>
 			<Russian>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Russian>
 			<Spanish>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Spanish>
 			<Dutch>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Dutch>
@@ -1597,7 +1597,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POTATOES">
 			<English>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</English>
-			<German>Eine saubere, ungeöffnete Dose Papa's 'Kartoffeln in Scheiben'. Hergestellt in Chernarus.</German>
+			<German>"Eine saubere, ungeöffnete Dose von Papa's Scheibenkartoffeln. Hergestellt in Chernarus.</German>
 			<Russian>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Russian>
 			<Spanish>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Spanish>
 			<Dutch>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Dutch>
@@ -1759,7 +1759,7 @@
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DERPY">
 			<English>A clean, unopened can of Donty Hooves beef stew.</English>
-			<German>A clean, unopened can of Donty Hooves beef stew.</German>
+			<German>Eine Saubere ungeöffnete Dose Hooves.</German>
 			<Russian>Чистая, закрытая банка тушеной говядины "Donty Hooves".</Russian>
 			<Spanish>Una limpia y cerrada lata de guiso Donty Hooves.</Spanish>
 			<Dutch>Een schoon, ongeopend blik Donty Hooves rundvleesstoofpot.</Dutch>
@@ -2113,7 +2113,7 @@
 		</Key>
 		<Key ID="str_success_tent_pack">
 			<English>Your tent has been packed</English>
-			<German>Ihr Zelt wurde verpackt</German>
+			<German>Ihr Zelt wurde abgebaut</German>
 			<Russian>Ваша палатка свернута.</Russian>
 			<Spanish>Su carpa se ha embalado</Spanish>
 			<Dutch>Je tent is ingepakt</Dutch>
@@ -2122,7 +2122,7 @@
 		</Key>
 		<Key ID="str_fail_tent_pack">
 			<English>You cannot pack this tent, it is not yours</English>
-			<German>Sie können dieses Zelt nicht verpacken, da es nicht Ihnen gehört</German>
+			<German>Sie können dieses Zelt nicht abbauen, da es nicht Ihnen gehört</German>
 			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
 			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
 			<Dutch>Je kunt deze tent niet inpakken, hij is niet van jou</Dutch>
@@ -2140,7 +2140,7 @@
 		</Key>
 		<Key ID="str_fail_tent_pitch">
 			<English>You cannot place a Tent here. The area must be flat, and free of other objects</English>
-			<German>Sie können hier kein Zelt aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
+			<German>Sie können hier kein Zelt aufbauen, da der Untergrund nicht flach und frei von Hindernissen ist.</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
@@ -2455,7 +2455,7 @@
 		</Key>
 		<Key ID="str_player_27">
 			<English>You have applied a heatpack to your body successfully.</English>
-			<German>Sie haben ein Wärmpflaster an Ihrem Körper angebracht.</German>
+			<German>Sie haben ein Wärmepflaster an Ihrem Körper angebracht.</German>
 			<Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
 			<Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
 			<Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
@@ -2599,7 +2599,7 @@
 		</Key>
 		<Key ID="str_player_beingpacked">
 			<English>That tent is already being packed.</English>
-			<German>Dieses Zelt wurde bereits vergepackt.</German>
+			<German>Dieses Zelt wurde bereits abgebaut.</German>
 			<Russian>Эту палатку уже упаковывают.</Russian>
 			<Spanish>Esta carpa ya fue embalada.</Spanish>
 			<Dutch>Die tent wordt al ingepakt.</Dutch>
@@ -2680,7 +2680,7 @@
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<English>Cannot Abort near another player!</English>
-			<German>Sie können nicht nahe eines anderen Spielers ausloggen!</German>
+			<German>Sie können nicht in der nähe eines anderen Spielers ausloggen!</German>
 			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>
 			<Spanish>¡No puedes abortar cerca de otros jugadores!</Spanish>
 			<Dutch>Kan niet afbreken in de buurt van een andere speler!</Dutch>
