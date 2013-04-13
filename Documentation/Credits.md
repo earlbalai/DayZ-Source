@@ -17,8 +17,9 @@ Contributions By
 * wriley                                            https://github.com/wriley
 * Alby                                              https://github.com/AlbyBDPK
 * Defwen                                            https://github.com/Defwen
-* Finest											https://github.com/Finest
+* Finest										                      	https://github.com/Finest
 * Ingasmeeg                                         https://github.com/Ingasmeeg
+* facoptere                                         https://github.com/facoptere
 * Sharkiller  (Spanish Tranlations)                 https://github.com/Sharkiller
 * Markolie  (Dutch Translations)                    https://github.com/Markolie
 * LordGoF (French Translations)                     https://github.com/LordGoF
