@@ -1,4 +1,4 @@
-private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave"];
+private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave","_wpnType"];
 disableSerialization;
 _timeOut = 	0;
 _messTimer = 0;
@@ -333,7 +333,11 @@ while {true} do {
 	//Melee Weapons ammo fix
 	if(isNil {login_ammochecked}) then {
 		login_ammochecked = true;
-		call dayz_meleeMagazineCheck;
+		 _wpnType = primaryWeapon player;
+		_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+		if (_ismelee == "true") then {
+			call dayz_meleeMagazineCheck;
+		};
 	};
 	
 	//Crowbar ammo fix	
