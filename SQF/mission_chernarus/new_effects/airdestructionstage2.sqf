@@ -1,6 +1,3 @@
-
-<!-- saved from url=(0080)https://dl.dropboxusercontent.com/u/18463425/scripts/OA/airdestructionstage2.sqf -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII"><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">_v=_this select 0;
 _int = _this select 1;
 _t=_this select 2;
 _pos=getpos _v;
@@ -86,4 +83,3 @@ if (local _v) then
 };
 sleep 0.5;
 _v setvelocity [0,0,-0.01];
-</pre><div id="window-resizer-tooltip"><a href="https://dl.dropboxusercontent.com/u/18463425/scripts/OA/airdestructionstage2.sqf#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
