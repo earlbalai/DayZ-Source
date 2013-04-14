@@ -51,4 +51,19 @@ class CfgAmmo {
 		soundHit[] = {"", db-90, 1};
 		soundEngine[] = {"", db-80, 4};
 	};
+	class Bat_Swing_Ammo : Melee {
+		hit = 4;
+		simulation = "shotBullet";
+		minRange = 1;
+		minRangeProbab = 0.8;
+		midRange = 2;
+		midRangeProbab = 1.8;
+		maxRange = 3;
+		maxRangeProbab = 2.8;
+		explosive = "true";
+		simulationStep = 0.001;
+		timeToLive = 0.05;
+		soundHit[] = {"", db-90, 1};
+		soundEngine[] = {"", db-80, 4};
+	};
 };

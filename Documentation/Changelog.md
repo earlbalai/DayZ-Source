@@ -16,6 +16,7 @@ FIX DUE : 2013
 		* [NEW] - 1 New type Zed Older looking - slower, harder to kill, Does more dmg (WIP)
 		* [NEW] - Added new food and drink items
 		* [NEW] - Added optional watermark for servername (server admins only)
+		* [NEW] - Added Baseball bat
 		
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
 		* [UPDATED] - Updated zed speed to default.
