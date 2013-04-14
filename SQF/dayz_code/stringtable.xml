@@ -603,21 +603,21 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BASEBALLBAT">
 			<English>Baseball Bat</English>
-			<Russian>BASEBALLBAT</Russian>
-			<Spanish>BASEBALLBAT</Spanish>
-			<Czech>BASEBALLBAT</Czech>
-			<French>BASEBALLBAT</French>
-			<German>BASEBALLBAT</German>
-			<Dutch>BASEBALLBAT</Dutch>
+			<Russian>Бейсбольная Бита</Russian>
+			<Spanish>Bate de Béisbol</Spanish>
+			<Czech>Baseballovou Pálkou</Czech>
+			<French>Batte de Baseball</French>
+			<German>Baseballschläger</German>
+			<Dutch>Honkbalknuppel</Dutch>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BASEBALLBAT">
-			<English>A baseball bat is a smooth wooden club pefect for smashing heads.</English>
-			<Russian>A baseball bat is a smooth wooden club pefect for smashing heads.</Russian>
-			<Spanish>A baseball bat is a smooth wooden club pefect for smashing heads.</Spanish>
-			<Czech>A baseball bat is a smooth wooden club pefect for smashing heads.</Czech>
-			<French>A baseball bat is a smooth wooden club pefect for smashing heads.</French>
-			<German>A baseball bat is a smooth wooden club pefect for smashing heads.</German>
-			<Dutch>A baseball bat is a smooth wooden club pefect for smashing heads.</Dutch>
+			<English>Designed for the popular American game, this smooth wooden club also has more violent uses.</English>
+			<Russian>Designed for the popular American game, this smooth wooden club also has more violent uses.</Russian>
+			<Spanish>Designed for the popular American game, this smooth wooden club also has more violent uses.</Spanish>
+			<Czech>Designed for the popular American game, this smooth wooden club also has more violent uses.</Czech>
+			<French>Designed for the popular American game, this smooth wooden club also has more violent uses.</French>
+			<German>Designed for the popular American game, this smooth wooden club also has more violent uses.</German>
+			<Dutch>Designed for the popular American game, this smooth wooden club also has more violent uses.</Dutch>
 		</Key>	
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
