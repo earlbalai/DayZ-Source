@@ -8,6 +8,7 @@ _holder = _array select 2;
 _playerID = getPlayerUID player;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
+if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
 _holder setVariable["claimed",_playerID,true];
 
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
@@ -23,7 +24,7 @@ if(_classname == "WoodenArrow") then {
 };
 if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
-sleep 0.25;
+//sleep 0.25; //Why are we waiting?
 
 _claimedBy = _holder getVariable["claimed",0];
 
@@ -40,9 +41,11 @@ _config = (configFile >> _type >> _classname);
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
+  canPickup = false;
 } else {
 	_holder setVariable["claimed",0,true];
 	cutText [localize "str_player_24", "PLAIN DOWN"];
+  canPickup = false;
 };
 
 //adding melee mags back if needed
