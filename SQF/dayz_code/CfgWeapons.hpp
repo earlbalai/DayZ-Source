@@ -96,7 +96,7 @@ class CfgWeapons {
 			};
 		};
 	};
-	class MeleeCrowbar: MeleeHatchet
+	class MeleeCrowbar: MeleeWeapon
 	{
 		scope=2;
 		melee= "true";
@@ -164,7 +164,7 @@ class CfgWeapons {
 			};
 		};
 	};
-	class MeleeMachete: MeleeHatchet
+	class MeleeMachete: MeleeWeapon
 	{
 		scope=2;
 		melee= "true";
@@ -232,6 +232,39 @@ class CfgWeapons {
 			};
 		};
 	};
+	
+	class MeleeBat: MeleeWeapon
+	{
+		scope=2;
+		melee= "true";
+		autoreload=1;
+		magazineReloadTime=0;
+		model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
+		picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_ca.paa";
+		displayName="$STR_EQUIP_NAME_BASEBALLBAT";
+		magazines[]=
+		{
+			"Bat_Swing"
+		};
+		class ItemActions
+		{
+			class Drop
+			{
+				text=$STR_ACTIONS_DROP;
+				script="spawn player_dropWeapon;";
+				use[]=
+				{
+					"Bat_Swing"
+				};
+			};
+		};
+		class Library
+		{
+			libTextDesc="$STR_EQUIP_DESC_BASEBALLBAT";
+		};
+		descriptionShort="$STR_EQUIP_DESC_BASEBALLBAT";
+	};	
+	
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class MeleeFlashlight : Pistol {
