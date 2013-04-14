@@ -171,7 +171,8 @@ boil_tin_cans = [
 
 dayz_combatLog = "";
 canRoll = true;
-
+canPickup = false;
+pickupInit = false;
 
 //Hunting Variables
 dayZ_partClasses = [
