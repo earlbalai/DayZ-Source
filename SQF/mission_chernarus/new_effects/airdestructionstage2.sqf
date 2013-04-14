@@ -39,7 +39,7 @@ _dirt setDropInterval 0.05;
 
 	//creating ground craters
 	_i=0;
-	while {(speed _v) &gt; 0.1} do
+	while {(speed _v) > 0.1} do
 	{
 		_pos=getpos _v;
 		_xv=velocity _v select 0;
@@ -53,11 +53,11 @@ _dirt setDropInterval 0.05;
 		_speed = (speed _v);
 		_velz=velocity _v select 2;
 
-		if (_velz&gt;1) then {_v setvelocity [_xv/1.3,_yv/1.3,0]}
+		if (_velz>1) then {_v setvelocity [_xv/1.3,_yv/1.3,0]}
 		else {_v setvelocity [_xv/1.2,_yv/1.2,velocity _v select 2]};
 
 		_tv=abs(_xv)+abs(_yv)+abs(_zv);
-		if (_tv&gt;2) then {_dr=1/_tv} else {_dr=1};
+		if (_tv>2) then {_dr=1/_tv} else {_dr=1};
 		_smoke setDropInterval _dr*1.5;
 		_fire setDropInterval _dr*1.5;
 		_dirt setDropInterval _dr;
