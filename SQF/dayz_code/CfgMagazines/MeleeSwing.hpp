@@ -16,3 +16,9 @@ class Hatchet_Swing : Melee_Swing {
 	shortNameMagazine = Hatchet;
 	ammo = Hatchet_Swing_Ammo;
 };
+class Bat_Swing : Melee_Swing {
+	displayName = BaseBallBat;
+	displayNameMagazine = BaseBallBat;
+	shortNameMagazine = BaseBallBat;
+	ammo = Bat_Swing_Ammo;
+};

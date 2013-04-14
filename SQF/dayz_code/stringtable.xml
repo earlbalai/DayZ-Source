@@ -601,6 +601,24 @@
 			<German>Ein Werkzeug, welches in der Landwirtschaft vorkommt, aber auch als Waffe verwendet werden kann. Es ist vielseitiger als das Beil.</German>
 			<Dutch>Een agricultureel gereedschap veranderd in een wapen. Het kapmes is wellicht minder veelzijdag dan de normale bijl, maar het kan toch veel schade aanrichten.</Dutch>
 		</Key>
+			<Key ID="STR_EQUIP_NAME_BASEBALLBAT">
+			<English>Baseball Bat</English>
+			<Russian>BASEBALLBAT</Russian>
+			<Spanish>BASEBALLBAT</Spanish>
+			<Czech>BASEBALLBAT</Czech>
+			<French>BASEBALLBAT</French>
+			<German>BASEBALLBAT</German>
+			<Dutch>BASEBALLBAT</Dutch>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_BASEBALLBAT">
+			<English>A baseball bat is a smooth wooden club pefect for smashing heads.</English>
+			<Russian>A baseball bat is a smooth wooden club pefect for smashing heads.</Russian>
+			<Spanish>A baseball bat is a smooth wooden club pefect for smashing heads.</Spanish>
+			<Czech>A baseball bat is a smooth wooden club pefect for smashing heads.</Czech>
+			<French>A baseball bat is a smooth wooden club pefect for smashing heads.</French>
+			<German>A baseball bat is a smooth wooden club pefect for smashing heads.</German>
+			<Dutch>A baseball bat is a smooth wooden club pefect for smashing heads.</Dutch>
+		</Key>	
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
 			<Russian>Одежда</Russian>
