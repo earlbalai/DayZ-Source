@@ -24,7 +24,7 @@ if(_classname == "WoodenArrow") then {
 };
 if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
 
-//sleep 0.25; //Why are we waiting?
+sleep 0.25; //Why are we waiting? Animation 
 
 _claimedBy = _holder getVariable["claimed",0];
 
@@ -35,9 +35,10 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 };
 
 //Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
-{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing"];
+//{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing"];
 
 _config = (configFile >> _type >> _classname);
+
 _isOk = [player,_config] call BIS_fnc_invAdd;
 if (_isOk) then {
 	deleteVehicle _holder;
@@ -48,9 +49,18 @@ if (_isOk) then {
   canPickup = false;
 };
 
+sleep 3;
+
 //adding melee mags back if needed
+_classname = primaryWeapon player;
+_ismelee =  (gettext (configFile >> "CfgWeapons" >> _classname >> "melee"));
+if (_ismelee == "true") then {
+	call dayz_meleeMagazineCheck;
+};
+/*
 switch (primaryWeapon player) do {
 	case "MeleeHatchet": {player addMagazine 'hatchet_swing';};
 	case "MeleeCrowbar": {player addMagazine 'crowbar_swing';};
 	case "MeleeMachete": {player addMagazine 'Machete_swing';};
 };
+*/
