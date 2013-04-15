@@ -1,4 +1,39 @@
 class CfgAmmo {	
+class BulletBase;
+	class B_9x18_Ball: BulletBase {
+		airfriction = -0.002751;
+		audiblefire = 15;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 6;
+		typicalspeed = 350;
+		visiblefire = 15;
+	};
+
+	class B_9x18_SD: BulletBase {
+		airfriction = -0.001893;
+		audiblefire = 0.035;
+		cost = 5;
+		hit = 6;
+		typicalspeed = 310;
+		visiblefire = 0.035;
+		visiblefiretime = 2;
+	};
+
+	class B_45ACP_Ball: BulletBase {
+		airfriction = -0.0013522;
+		audiblefire = 16;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 9;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 260;
+		visiblefire = 16;
+	};
+
 	class Bolt;
 	class WoodenArrow : Bolt {
 		model = "\dayz_weapons\models\bolt";
