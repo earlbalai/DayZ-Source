@@ -295,3 +295,12 @@ class FoodCandyMintception : FoodEdible {
 	model = "z\addons\dayz_communityassets\models\candybar_mintception_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_mintception_ca.paa";
 };
+class FoodCanLongSprats : FoodEdible {
+	scope = public;
+	count = 1;
+	bloodRegen = 150;
+	displayName = $STR_FOOD_NAME_CAN_LONG_SPRATS;
+	descriptionShort = $STR_FOOD_DESC_CAN_LONG_SPRATS;
+	model = "z\addons\dayz_communityassets\models\can_long_sprat_clean_full_co.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_long_sprat_clean_full_ca.paa";
+};
