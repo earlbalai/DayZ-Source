@@ -1619,7 +1619,7 @@ class CfgVehicles {
 	class TK_Special_Forces_MG_EP1: Banned {};
 	class TK_Aziz_EP1: Banned {};
 	class TK_Commander_EP1: Banned {};
-	class GER_Soldier_EP1: Banned {};
+	//class GER_Soldier_EP1: Banned {};
 	class GER_Soldier_Medic_EP1: Banned {};
 	class GER_Soldier_TL_EP1: Banned {};
 	class GER_Soldier_Scout_EP1: Banned {};
@@ -2002,7 +2002,7 @@ class CfgVehicles {
 	class Soldier_PMC: Banned {};
 	class Soldier_M4A3_PMC: Banned {};
 	class Soldier_Engineer_PMC: Banned {};
-	//class Soldier_Crew_PMC: Banned {};
+	class Soldier_Crew_PMC: Banned {}; //Bandit Skin (Head)
 	class Soldier_Medic_PMC: Banned {};
 	class Soldier_TL_PMC: Banned {};
 	class Soldier_Pilot_PMC: Banned {};
