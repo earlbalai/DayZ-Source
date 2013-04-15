@@ -75,6 +75,9 @@ if (_damage > 0.1) then {
 	if (_isHeadHit) then {
 		_scale = _scale * 6;
 	};
+	if (_ammo == "zombie" and _unconscious) then {
+		_scale = 50;
+	};
 	//End body part scale
 	if ((isPlayer _source) and !(player == _source)) then {
 		_scale = _scale + 800;
@@ -87,9 +90,6 @@ if (_damage > 0.1) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unit == player) then {
-		if (_unconscious) then {
-			_scale = 50;
-		};
 		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale) + " Conscious " + str (!_unconscious));
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
