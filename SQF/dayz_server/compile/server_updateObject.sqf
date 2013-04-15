@@ -84,7 +84,7 @@ _object_inventory = {
 };
 
 _object_damage = {
-diag_log ("Damage Process object");
+
 	//Allow dmg process
 	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
 	_hitpoints = _object call vehicle_getHitpoints;

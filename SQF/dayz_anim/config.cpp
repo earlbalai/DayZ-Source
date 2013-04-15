@@ -2002,7 +2002,7 @@ class CfgVehicles {
 	class Soldier_PMC: Banned {};
 	class Soldier_M4A3_PMC: Banned {};
 	class Soldier_Engineer_PMC: Banned {};
-	class Soldier_Crew_PMC: Banned {}; //Bandit Skin (Head)
+	//class Soldier_Crew_PMC: Banned {}; //Bandit Skin (Head)
 	class Soldier_Medic_PMC: Banned {};
 	class Soldier_TL_PMC: Banned {};
 	class Soldier_Pilot_PMC: Banned {};

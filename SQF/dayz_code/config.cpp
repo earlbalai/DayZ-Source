@@ -191,6 +191,41 @@ class CfgInGameUI
 	};
 };
 
+class CfgVoice {
+	class NoVoice {
+		protocol = "RadioProtocolBase";
+		variants[] = {1};
+		directories[] = {"", ""};
+		identityTypes[] = {"Zombie3"};
+	};
+};
+
+class CfgIdentities {
+	class Zombie3 {
+		name = "Zombie";
+		face = "Zombie3";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+};
+
+class CfgFaces {
+	class Default;	// External class reference
+	
+	class Man : Default {
+		class Default;	// External class reference
+		
+		class Zombie3 : Default {
+			name = "Zombie3";
+			texture = "z\addons\dayz_communityassets\faces\zombie_03_co.paa";
+			material = "z\addons\dayz_communityassets\faces\zombie_03.rvmat";
+			identityTypes[] = { "Zombie3" };
+			disabled = 0;
+		};
+	};
+};
+
 class RscObject;
 class RscCompass : RscObject {
 	scale = 0.64;
