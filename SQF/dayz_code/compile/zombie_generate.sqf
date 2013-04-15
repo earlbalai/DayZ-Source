@@ -18,6 +18,10 @@ if (!_isNoone) exitWith {};
 if (count _unitTypes == 0) then {
 	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
+_unitTypesNew = ["z_new_villager4","z_new_villager3","z_new_villager2"];
+ 
+_unitTypes = _unitTypes + _unitTypesNew;
+ 
 _type = _unitTypes call BIS_fnc_selectRandom;
 
 //Create the Group and populate it
@@ -31,9 +35,8 @@ _position = [_position select 0,_position select 1,0];
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
 
-//_agent setPosATL _position;
+_agent setPosATL _position;
 _agent setDir round(random 360);
-
 _agent setvelocity [0,0,1];
 
 dayz_spawnZombies = dayz_spawnZombies + 1;

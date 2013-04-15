@@ -13,16 +13,18 @@ FIX DUE : 2013
 		
 	Changes:
 
-		* [NEW] - 1 New type Zed Older looking - slower, harder to kill, Does more dmg (WIP)
+		* [NEW] - 3 New decayed Zeds - slower, harder to kill, Does more dmg (WIP)
 		* [NEW] - Added new food and drink items
 		* [NEW] - Added optional watermark for servername (server admins only)
-		* [NEW] - Added Baseball bat
+		* [NEW] - Added Baseball bat (NailedBat & WireBat)
+		* [NEW] - Crafting - new bats 
 		
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
 		* [UPDATED] - Updated zed speed to default.
 		* [UPDATED] - melee systems updated.
 		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 		* [UPDATED] - Clear Ground around crash sites have now been disbaled by default server admins can enable.
+		* [UPDATED] - Vehilce damage sync's updated to reduce call extension spam.
  		
 		* [FIXED] - Zeds spawning underground
 		* [FIXED] - loot spawning undergroung

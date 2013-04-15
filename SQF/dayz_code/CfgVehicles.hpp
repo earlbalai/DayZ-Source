@@ -1,38 +1,3 @@
-class CfgVoice {
-	class NoVoice {
-		protocol = "RadioProtocolBase";
-		variants[] = {1};
-		directories[] = {"", ""};
-		identityTypes[] = {"Zombie3"};
-	};
-};
-
-class CfgIdentities {
-	class Zombie3 {
-		name = "Zombie";
-		face = "Zombie3";
-		glasses = "None";
-		speaker = "NoVoice";
-		pitch = 1;
-	};
-};
-
-class CfgFaces {
-	class Default;	// External class reference
-	
-	class Man : Default {
-		class Default;	// External class reference
-		
-		class Zombie3 : Default {
-			name = "Zombie 3";
-			texture = "\dayz_communityassets\faces\zombie_03_co.paa";
-			material = "z\addons\dayz_communityassets\faces\zombie_03.rvmat";
-			identityTypes[] = { "Zombie3" };
-			disabled = 0;
-		};
-	};
-};
-
 class CfgVehicles {
 	class Citizen1;	// External class reference
 	class zZombie_Base : Citizen1 {
@@ -1863,6 +1828,61 @@ class CfgVehicles {
 				name = "hands";
 				passThrough = true;
 			};
+			class HitLArm : HitHands {
+				name = "LeftArm";
+				memoryPoint = "lelbow";
+			};
+			
+			class HitRArm : HitHands {
+				name = "RightArm";
+				memoryPoint = "relbow";
+			};
+			
+			class HitLForeArm : HitHands {
+				name = "LeftForeArm";
+				memoryPoint = "lwrist";
+			};
+			
+			class HitRForeArm : HitHands {
+				name = "RightForeArm";
+				memoryPoint = "rwrist";
+			};
+			
+			class HitLHand : HitHands {
+				name = "LeftHand";
+				memoryPoint = "LeftHandMiddle1";
+			};
+			
+			class HitRHand : HitHands {
+				name = "RightHand";
+				memoryPoint = "RightHandMiddle1";
+			};
+			
+			class HitLegs : HitHands {
+				armor = 10;
+				name = "legs";
+				memoryPoint = "pelvis";
+			};
+			
+			class HitLLeg : HitHands {
+				name = "LeftLeg";
+				memoryPoint = "lknee";
+			};
+			
+			class HitLLegUp : HitHands {
+				name = "LeftUpLeg";
+				memoryPoint = "lfemur";
+			};
+			
+			class HitRLeg : HitHands {
+				name = "RightLeg";
+				memoryPoint = "rknee";
+			};
+			
+			class HitRLegUp : HitHands {
+				name = "RightUpLeg";
+				memoryPoint = "rfemur";
+			};
 		};
 	};
 	
@@ -1878,13 +1898,13 @@ class CfgVehicles {
 		};
 	};
 	class z_new_villager2 : z_newBase {
-		hiddenSelectionsTextures[] = {"\dayz_communityassets\zeds\villager\villager_v2_co.paa"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v2_co.paa"};
 	};
 	class z_new_villager3 : z_newBase {
-		hiddenSelectionsTextures[] = {"\dayz_communityassets\zeds\villager\villager_v3_co.paa"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v3_co.paa"};
 	};
 	class z_new_villager4 : z_newBase {
-		hiddenSelectionsTextures[] = {"\dayz_communityassets\zeds\villager\villager_v4_co.paa"};
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v4_co.paa"};
 	};
 	/*
 	class z_policeman;

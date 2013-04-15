@@ -21,7 +21,7 @@ if (_canLoot) then {
 	_zombieChance =	getNumber (_config >> "zombieChance");
 	_rnd = random 1;
 
-	if (_rnd < _zombieChance) then {
+	if (_rnd > _zombieChance) then {
 		
 		_noPlayerNear = (count ((getPosATL _obj) nearEntities ["CAManBase",30])) == 0;
 		
