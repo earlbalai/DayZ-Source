@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<<?xml version="1.0" encoding="utf-8"?>
 <Project name="DayZ">
 	<Package name="actions">
 		<Key ID="STR_ACTIONS_2TB">
@@ -1585,7 +1585,25 @@
 			<French>Un paquet intact de barres chocolatées "Mintception" à la menthe.</French>
 			<Czech>Čistý a ještě neotevřený balíček Mintception mint.</Czech>
 		</Key>
-		
+
+		<Key ID="STR_FOOD_NAME_CAN_LONG_SPRATS">
+			<English>Can (Sprats)</English>
+			<German>Dose (Sprats)</German>
+			<Russian>Банка (Sprats)</Russian>
+			<Spanish>Lata (Sprats)</Spanish>
+			<Dutch>Blik (Sprats)</Dutch>
+			<French>Boîte (Sprats)</French>
+			<Czech>Plechovka (Sprats)</Czech>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_LONG_SPRATS">
+			<English>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</English>
+			<German>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</German>
+			<Russian>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Russian>
+			<Spanish>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Spanish>
+			<Dutch>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Dutch>
+			<French>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</French>
+			<Czech>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Czech>
+		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BEEF">
 			<English>Can (Stroganoff)</English>
 			<German>Dose (Stroganoff)</German>
