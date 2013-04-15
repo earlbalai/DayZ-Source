@@ -41,6 +41,7 @@ class CfgWeapons {
 		model="\dayz_weapons\models\Hatchet_weaponized";
 		picture="\dayz_equip\textures\equip_hatchet_CA.paa";
 		displayName=$STR_EQUIP_NAME_HATCHET;
+		droppeditem= "ItemHatchet";
 		magazines[]=
 		{
 			"Hatchet_Swing"
@@ -105,9 +106,15 @@ class CfgWeapons {
 		model="\dayz_weapons\models\crowbar_weaponized";
 		picture="\dayz_weapons\textures\equip_crowbar_CA.paa";
 		displayName=$STR_EQUIP_NAME_CROWBAR;
+		droppeditem= "ItemCrowbar";
 		magazines[]=
 		{
 			"Crowbar_Swing"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
 		};
 		class ItemActions
 		{
@@ -173,25 +180,18 @@ class CfgWeapons {
 		model="\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 		displayName="$STR_EQUIP_NAME_MACHETE";
+		droppeditem= "MeleeMachete";
 		magazines[]=
 		{
 			"Machete_Swing"
 		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
+		};
 		class ItemActions
 		{
-			class Toolbelt
-			{
-				text=$STR_ACTIONS_2TB;
-				script="spawn player_addToolbelt;";
-				use[]=
-				{
-					"MeleeMachete"
-				};
-				output[]=
-				{
-					"ItemMachete"
-				};
-			};
 			class Drop
 			{
 				text=$STR_ACTIONS_DROP;
@@ -239,12 +239,18 @@ class CfgWeapons {
 		melee= "true";
 		autoreload=1;
 		magazineReloadTime=0;
-		model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
+		model="\z\addons\dayz_communityassets\models\baseball_bat_weaponized.p3d";
 		picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_ca.paa";
 		displayName="$STR_EQUIP_NAME_BASEBALLBAT";
+		droppeditem= "MeleeBat";
 		magazines[]=
 		{
 			"Bat_Swing"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
 		};
 		class ItemActions
 		{
@@ -252,10 +258,6 @@ class CfgWeapons {
 			{
 				text=$STR_ACTIONS_DROP;
 				script="spawn player_dropWeapon;";
-				use[]=
-				{
-					"Bat_Swing"
-				};
 			};
 		};
 		class Library
@@ -263,7 +265,74 @@ class CfgWeapons {
 			libTextDesc="$STR_EQUIP_DESC_BASEBALLBAT";
 		};
 		descriptionShort="$STR_EQUIP_DESC_BASEBALLBAT";
-	};	
+	};
+	class MeleeBaseBallBatBarbed: MeleeWeapon
+	{
+		scope=2;
+		melee= "true";
+		autoreload=1;
+		magazineReloadTime=0;
+		model="\z\addons\dayz_communityassets\models\baseball_bat_barbed_weaponized.p3d";
+		picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_barbed_ca.paa";
+		displayName="$STR_EQUIP_NAME_BASEBALLBATBARBED";
+		droppeditem= "MeleeBaseBallBatBarbed";
+		magazines[]=
+		{
+			"BatBarbed_Swing"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
+		};
+		class ItemActions
+		{
+			class Drop
+			{
+				text=$STR_ACTIONS_DROP;
+				script="spawn player_dropWeapon;";
+			};
+		};
+		class Library
+		{
+			libTextDesc="$STR_EQUIP_DESC_BASEBALLBATBARBED";
+		};
+		descriptionShort="$STR_EQUIP_DESC_BASEBALLBATBARBED";
+	};
+
+	class MeleeBaseBallBatNails : MeleeWeapon
+	{
+		scope=2;
+		melee= "true";
+		autoreload=1;
+		magazineReloadTime=0;
+		model="\z\addons\dayz_communityassets\models\baseball_bat_nails_weaponized.p3d";
+		picture="\z\addons\dayz_communityassets\pictures\equip_baseball_bat_nails_ca.paa";
+		displayName="$STR_EQUIP_NAME_BASEBALLBATNAILS";
+		droppeditem= "MeleeBaseBallBatNails";
+		magazines[]=
+		{
+			"BatNails_Swing"
+		};
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
+		};
+		class ItemActions
+		{
+			class Drop
+			{
+				text=$STR_ACTIONS_DROP;
+				script="spawn player_dropWeapon;";
+			};
+		};
+		class Library
+		{
+			libTextDesc="$STR_EQUIP_DESC_BASEBALLBATNAILS";
+		};
+		descriptionShort="$STR_EQUIP_DESC_BASEBALLBATNAILS";
+	};
 	
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference

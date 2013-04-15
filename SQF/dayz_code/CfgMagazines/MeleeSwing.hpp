@@ -22,3 +22,15 @@ class Bat_Swing : Melee_Swing {
 	shortNameMagazine = BaseBallBat;
 	ammo = Bat_Swing_Ammo;
 };
+class BatBarbed_Swing : Melee_Swing {
+	displayName = BaseBallBatBarbed;
+	displayNameMagazine = BaseBallBatBarbed;
+	shortNameMagazine = BaseBallBatBarbed;
+	ammo = BatBarbed_Swing_Ammo;
+};
+class BatNails_Swing : Melee_Swing {
+	displayName = BaseBallBatNails;
+	displayNameMagazine = BaseBallBatNails;
+	shortNameMagazine = BaseBallBatNails;
+	ammo = BatBarbed_Swing_Ammo;
+};

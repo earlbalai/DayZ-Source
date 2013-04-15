@@ -18,6 +18,8 @@ actionMonitor = {
 	_distance = player distance _holder;
 	_run = true;
 	_timeout = 2;
+	
+	diag_log format["Holder: %1, Type: %2 Classname: %3, Name: %4",_holder, _type, _classname, _name];
 
 	while { _run } do {
 		if (alive _holder) then {
