@@ -8,7 +8,7 @@ PixelShaderID="Skin";
 VertexShaderID="Skin";
 class Stage1
 {
-	texture="z\addons\dayz_communityassets\faces\zombie_03_nohq.paa";
+	texture="dayz_communityassets\faces\zombie_03_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="z\addons\dayz_communityassets\faces\zombie_03_co.paa";
+	texture="dayz_communityassets\faces\zombie_03_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\addons\dayz_communityassets\faces\zombie_03_smdi.paa";
+	texture="dayz_communityassets\faces\zombie_03_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
