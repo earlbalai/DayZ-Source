@@ -356,9 +356,9 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] = {
 			{"ItemBookBible","magazine",0.03},
-			{"","generic",0.10},
+			{"","generic",0.12},
 			{"","military",0.05},
-			{"","trash",0.15}
+			{"","trash",0.20}
 		};
 	};
 	class Residential: Default {
@@ -372,12 +372,11 @@ class CfgBuildingLoot {
 			{"ItemWatch","generic",0.05},
 			{"ItemCompass","generic",0.05},
 			{"ItemMap","weapon",0.03},
-			{"Makarov","weapon",0.4},
+			{"Makarov","weapon",0.04},
 			{"Colt1911","weapon",0.04},
 			{"ItemFlashlight","generic",0.06},
 			{"ItemKnife","generic",0.07},
 			{"ItemMatchbox","generic",0.06},
-			{"","generic",0.10},
 			{"LeeEnfield","weapon",0.06},
 			{"revolver_EP1","weapon",0.04},
 			{"DZ_Assault_Pack_EP1","object",0.05}, // 12
@@ -388,7 +387,8 @@ class CfgBuildingLoot {
 			{"Winchester1866","weapon",0.03},
 			{"WeaponHolder_ItemTent","object",0.01},
 			{"","military",0.05},
-			{"","trash",0.15},
+			{"","generic",0.10},
+			{"","trash",0.20},
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.06},
 			{"PartWoodPile","magazine",0.06},
@@ -414,7 +414,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] = {
 			{"","generic",0.10},
-			{"","trash",0.15},
+			{"","trash",0.20},
 			{"","military",0.05},
 			{"WeaponHolder_PartGeneric","object",0.04},
 			{"WeaponHolder_PartWheel","object",0.05},
@@ -423,12 +423,12 @@ class CfgBuildingLoot {
 			{"WeaponHolder_PartGlass","object",0.04},
 			{"WeaponHolder_PartVRotor","object",0.01},
 			{"WeaponHolder_ItemJerrycan","object",0.04},
-			{"WeaponHolder_ItemHatchet","object",0.11},
-			{"ItemKnife","military",0.07},
+			{"WeaponHolder_ItemHatchet","object",0.05},
+			{"WeaponHolder_ItemFuelcan","object",0.03},
+			{"ItemKnife","military",0.03},
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
-			{"ItemTankTrap","magazine",0.04},
-			{"WeaponHolder_ItemFuelcan","object",0.03}
+			{"ItemTankTrap","magazine",0.04}
 		};
 	};
 	class Farm: Default {
@@ -440,10 +440,10 @@ class CfgBuildingLoot {
 		lootType[] =	{
 			{"WeaponHolder_ItemJerrycan","object",0.03},
 			{"","generic",0.10},
+			{"","trash",0.20},
 			{"huntingrifle","weapon",0.02},
 			{"LeeEnfield","weapon",0.04},
 			{"Winchester1866","weapon",0.03},
-			{"","trash",0.15},
 			{"Crossbow_DZ","weapon",0.03},
 			{"PartWoodPile","magazine",0.8},
 			{"WeaponHolder_ItemHatchet","object",0.5},
@@ -466,7 +466,6 @@ class CfgBuildingLoot {
 			{"ItemFlashlight","generic",0.05},
 			{"ItemKnife","generic",0.02},
 			{"ItemMatchbox","generic",0.05},
-			{"","generic",0.10},
 			{"LeeEnfield","weapon",0.01},
 			{"revolver_EP1","weapon",0.01},
 			{"DZ_Assault_Pack_EP1","object",0.03}, // 12
@@ -474,10 +473,11 @@ class CfgBuildingLoot {
 			{"DZ_ALICE_Pack_EP1","object",0.02}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"DZ_British_ACU","object",0.01}, // 18
-			{"Winchester1866","weapon",0.01},
+			{"Winchester1866","weapon",0.03},
 			{"WeaponHolder_ItemTent","object",0.01},
 			{"","food",0.05},
-			{"","trash",0.15},
+			{"","trash",0.20},
+			{"","generic",0.10},			
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.03},
 			{"PartWoodPile","magazine",0.04},
@@ -503,10 +503,10 @@ class CfgBuildingLoot {
 			{"DMR","weapon",0.06},
 			{"","military",0.1},
 			{"","medical",0.1},
-			{"MedBox0","object",0.1},
+			{"MedBox0","object",0.05},
 			{"NVGoggles","weapon",0.01},
-			{"AmmoBoxSmall_556","object",0.10},
-			{"AmmoBoxSmall_762","object",0.10},
+			{"AmmoBoxSmall_556","object",0.05},
+			{"AmmoBoxSmall_762","object",0.05},
 			{"Skin_Camo1_DZ","magazine",0.08},
 			{"Skin_Sniper1_DZ","magazine",0.05},
 			{"G36C","weapon",0.03},
@@ -528,16 +528,18 @@ class CfgBuildingLoot {
 			{"bizon_silenced","weapon",0.05},
 			{"M14_EP1","weapon",0.05},
 			{"FN_FAL_ANPVS4","weapon",0.03},
+			{"M107_DZ","weapon",0.01},
+			{"BAF_AS50_scoped_DZ","weapon",0.01},
 			{"Mk_48_DZ","weapon",0.03},
 			{"M249_DZ","weapon",0.04},
 			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
 			{"DMR","weapon",0.06},
 			{"","military",0.1},
 			{"","medical",0.1},
-			{"MedBox0","object",0.1},
+			{"MedBox0","object",0.05},
 			{"NVGoggles","weapon",0.01},
-			{"AmmoBoxSmall_556","object",0.1},
-			{"AmmoBoxSmall_762","object",0.1},
+			{"AmmoBoxSmall_556","object",0.05},
+			{"AmmoBoxSmall_762","object",0.05},
 			{"Skin_Camo1_DZ","magazine",0.08},
 			{"Skin_Sniper1_DZ","magazine",0.05},
 			{"G36C","weapon",0.03},
@@ -564,9 +566,9 @@ class CfgBuildingLoot {
 			{"BAF_L85A2_RIS_Holo","weapon",0.03},
 			{"","military",0.10},
 			{"","medical",0.10},
-			{"MedBox0","object",0.10},
+			{"MedBox0","object",0.05},
 			{"NVGoggles","weapon",0.01},
-			{"AmmoBoxSmall_556","object",0.10},
+			{"AmmoBoxSmall_556","object",0.05},
 			{"Skin_Camo1_DZ","magazine",0.08},
 			{"Skin_Sniper1_DZ","magazine",0.05},
 			{"G36C","weapon",0.03},
@@ -607,7 +609,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] = {
 			{"","trash",0.15},
-			{"","hospital",0.10},
+			{"","hospital",0.06},
 			{"MedBox0","object",0.2}
 		};
 	};
@@ -649,15 +651,15 @@ class CfgBuildingLoot {
 			{"DZ_British_ACU","object",0.02}, // 18			
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24
-			{"","medical",0.05},
-			{"","generic",0.10},
-			{"","military",0.05},
-			{"","trash",0.15},
+			{"","medical",0.06},
+			{"","generic",0.15},
+			{"","military",0.07},
+			{"","trash",0.20},
 			{"ItemEtool","weapon",0.03},
-			{"ItemSandbag","magazine",0.4},
-			{"Sa58P_EP1","weapon",0.5},
-			{"Sa58V_EP1","weapon",0.5},
-			{"BAF_L85A2_RIS_Holo","weapon",0.4}
+			{"ItemSandbag","magazine",0.04},
+			{"Sa58P_EP1","weapon",0.05},
+			{"Sa58V_EP1","weapon",0.05},
+			{"BAF_L85A2_RIS_Holo","weapon",0.04}
 		};
 	};
 	class MilitarySpecial: Default {
@@ -668,37 +670,36 @@ class CfgBuildingLoot {
 		lootChance = 0.4;
 		lootPos[] = {};
 		lootType[] = {
-			{"M16A2","weapon",0.10},
+			{"M16A2","weapon",0.05},
 			{"M16A2GL","weapon",0.05},
 			{"M249_DZ","weapon",0.01},
 			{"M9SD","weapon",0.02},
 			{"MakarovSD","weapon",0.01},
-			{"AK_74","weapon",0.10},
+			{"AK_74","weapon",0.05},
 			{"M4A1_Aim","weapon",0.02},
-			{"AKS_74_kobra","weapon",0.10},
-			{"AKS_74_U","weapon",0.10},
-			{"AK_47_M","weapon",0.10},
+			{"AKS_74_kobra","weapon",0.05},
+			{"AKS_74_U","weapon",0.05},
+			{"AK_47_M","weapon",0.05},
 			{"M24","weapon",0.01},
 			{"SVD_CAMO","weapon",0.01},
-			{"M1014","weapon",0.20},
-			//{"M107_DZ","weapon",0.01},
+			{"M1014","weapon",0.07},
 			{"DMR","weapon",0.02},
-			{"M4A1","weapon",0.10},
+			{"M4A1","weapon",0.05},
 			{"M14_EP1","weapon",0.03},
-			{"UZI_EP1","weapon",0.20},
-			{"Remington870_lamp","weapon",0.10},
-			{"glock17_EP1","weapon",0.20},
+			{"UZI_EP1","weapon",0.08},
+			{"Remington870_lamp","weapon",0.06},
+			{"glock17_EP1","weapon",0.07},
 			{"M240_DZ","weapon",0.01},
 			{"M4A1_AIM_SD_camo","weapon",0.04},
 			{"M16A4_ACG","weapon",0.05},
 			{"M4A1_HWS_GL_camo","weapon",0.02},
 			{"Mk_48_DZ","weapon",0.01},
-			{"M4A3_CCO_EP1","weapon",0.08},
+			{"M4A3_CCO_EP1","weapon",0.03},
 			{"AmmoBoxSmall_556","object",0.04},
 			{"AmmoBoxSmall_762","object",0.02},
-			{"Binocular","weapon",0.10},
+			{"Binocular","weapon",0.03},
 			{"ItemFlashlightRed","military",0.05},
-			{"ItemKnife","military",0.15},
+			{"ItemKnife","military",0.05},
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.03},
 			{"Binocular_Vector","military",0.01},
@@ -707,14 +708,14 @@ class CfgBuildingLoot {
 			{"DZ_British_ACU","object",0.06}, // 18
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24		
-			{"","medical",0.05},
-			{"","generic",0.10},
-			{"","military",0.05},
-			{"","trash",0.15},
+			{"","medical",0.03},
+			{"","generic",0.15},
+			{"","military",0.10},
+			{"","trash",0.20},
 			//{"Body","object",0.2},
 			{"PipeBomb","magazine",0.01},
-			{"Sa58V_RCO_EP1","weapon",0.01},
-			{"Sa58V_CCO_EP1","weapon",0.01},
+			{"Sa58V_RCO_EP1","weapon",0.04},
+			{"Sa58V_CCO_EP1","weapon",0.04},
 			//{"G36_C_SD_camo","weapon",0.01},
 			{"M40A3","weapon",0.02},
 			{"100Rnd_762x54_PK","magazine",0.01}
