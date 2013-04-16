@@ -13,7 +13,7 @@ FIX DUE : 2013
 		
 	Changes:
 
-		* [NEW] - 3 New decayed Zeds - slower, harder to kill, Does more dmg (WIP)
+		* [NEW] - 3 New decayed Zeds - harder to kill(WIP)
 		* [NEW] - Added new food and drink items
 		* [NEW] - Added optional watermark for servername (server admins only)
 		* [NEW] - Added Baseball bat (NailedBat & WireBat)
@@ -25,13 +25,14 @@ FIX DUE : 2013
 		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 		* [UPDATED] - Clear Ground around crash sites have now been disbaled by default server admins can enable.
 		* [UPDATED] - Vehilce damage sync's updated to reduce call extension spam.
+		* [UPDATED] - Lowed Tansfuse infection rate.
  		
 		* [FIXED] - Zeds spawning underground
 		* [FIXED] - loot spawning undergroung
 		* [FIXED] - melee weapons having no ammo on login.
 		* [FIXED] - Loot Spawns has now been fully resolved. Buildings are now taged and will not spawn any new loot for 10 mins.
 		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 mins (Might change)
-		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 mins.
+		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 mins / zeds 3 mins.
 
 ______________________	
 FIX DUE : 2013
