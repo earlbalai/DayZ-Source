@@ -204,7 +204,7 @@ class CfgMagazines {
 	};
 	
 	class ItemSoda : FoodDrink {
-		scope = protected;
+		scope = public;
 		sfx = "soda";
 		sfxdis = 3;
 	};
