@@ -163,6 +163,10 @@ if (_script != "") then
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
 					_object call fnc_vehicleEventHandler;
+					//Updated object position if moved
+					if (!_wsDone) then {
+						[_object, "position"] call server_updateObject;
+					};
 				};
 
 				//Monitor the object
