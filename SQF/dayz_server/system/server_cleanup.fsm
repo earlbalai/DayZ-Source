@@ -7,7 +7,7 @@ item2[] = {"waiting",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,
 item3[] = {"too_many_dead",4,218,-150.000000,-25.000000,-50.000000,25.000000,3.000000,"too many" \n "dead"};
 item4[] = {"cleanup_dead",2,250,-175.000000,50.000000,-75.000000,100.000000,0.000000,"cleanup" \n "dead"};
 item5[] = {"too_many_objects",4,218,-25.000000,-25.000000,75.000000,25.000000,2.000000,"too many" \n "objects"};
-item6[] = {"cleanup_objects",2,250,25.000000,50.000000,125.000000,100.000000,0.000000,"cleanup" \n "objects"};
+item6[] = {"cleanup_objects",2,4346,25.000000,50.000000,125.000000,100.000000,0.000000,"cleanup" \n "objects"};
 item7[] = {"time_sync",4,218,-200.000000,-50.000000,-100.000000,0.000000,0.000000,"time" \n "sync"};
 item8[] = {"sync_the_time",2,250,-275.000000,50.000000,-175.000000,100.000000,0.000000,"sync" \n "the time"};
 item9[] = {"true",8,218,-75.000000,100.000000,25.000000,150.000000,0.000000,"true"};
@@ -44,7 +44,7 @@ link20[] = {16,1};
 link21[] = {17,9};
 link22[] = {18,17};
 globals[] = {25.000000,1,0,0,0,640,480,1,27,6316128,1,-396.580658,354.272186,429.218872,-298.099792,690,601,1};
-window[] = {2,-1,-1,-1,-1,846,66,1395,66,3,707};
+window[] = {2,-1,-1,-1,-1,934,154,1483,154,3,707};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -243,9 +243,7 @@ class FSM
        "_delQty = 0;" \n
        "{" \n
        "	_keep = _x getVariable [""permaLoot"",false];" \n
-       "	 _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 130]);" \n
-       "" \n
-       "	_random = random 10;" \n
+       "	 _nearby = {isPlayer _x} count (_x nearEntities [[""CAManBase""], 250]);" \n
        "" \n
        "	_created = (_x getVariable [""created"",-0.1]);" \n
        "" \n
@@ -257,7 +255,7 @@ class FSM
        "" \n
        "//diag_log format [""Pile : %1, Created: %2, Age: %3"", _x,  _created, _age];" \n
        "" \n
-       "	if ( (!_keep) && (_nearby==0) && (_age > 10) ) then {" \n
+       "	if ( (!_keep) && (_nearby==0) && (_age > 15) ) then {" \n
        "		deleteVehicle _x;" \n
        "		_delQty = _delQty + 1;" \n
        "	};" \n
