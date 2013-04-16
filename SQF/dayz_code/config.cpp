@@ -47,7 +47,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.8.Dev";
+		version = "1.7.7.DEV.4162013";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -196,11 +196,27 @@ class CfgVoice {
 		protocol = "RadioProtocolBase";
 		variants[] = {1};
 		directories[] = {"", ""};
-		identityTypes[] = {"Zombie3"};
+		identityTypes[] = {"Default", "Zombie1", "Zombie2", "Zombie3"};
 	};
 };
 
 class CfgIdentities {
+	class Zombie1 {
+		name = "Zombie";
+		face = "Zombie1";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+	
+	class Zombie2 {
+		name = "Zombie";
+		face = "Zombie2";
+		glasses = "None";
+		speaker = "NoVoice";
+		pitch = 1;
+	};
+	
 	class Zombie3 {
 		name = "Zombie";
 		face = "Zombie3";
@@ -215,12 +231,25 @@ class CfgFaces {
 	
 	class Man : Default {
 		class Default;	// External class reference
+		class Zombie1 : Default {
+			name = "Zombie 1";
+			texture = "\dayz\textures\faces\zombie_03_co.paa";
+			identityTypes[] = {"Zombie1"};
+			disabled = 0;
+		};
+		
+		class Zombie2 : Default {
+			name = "Zombie 2";
+			texture = "\dayz\textures\faces\zombie_03_co.paa";
+			identityTypes[] = {"Zombie2"};
+			disabled = 0;
+		};
 		
 		class Zombie3 : Default {
-			name = "Zombie3";
+			name = "Zombie 3";
 			texture = "z\addons\dayz_communityassets\faces\zombie_03_co.paa";
 			material = "z\addons\dayz_communityassets\faces\zombie_03.rvmat";
-			identityTypes[] = { "Zombie3" };
+			identityTypes[] = {"Zombie3"};
 			disabled = 0;
 		};
 	};
@@ -385,7 +414,9 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"DZ_British_ACU","object",0.01}, // 18
 			{"Winchester1866","weapon",0.03},
+			{"MeleeBaseBallBat","weapon",0.02},
 			{"WeaponHolder_ItemTent","object",0.01},
+			{"","craft",0.03},
 			{"","military",0.05},
 			{"","generic",0.10},
 			{"","trash",0.20},
@@ -416,6 +447,7 @@ class CfgBuildingLoot {
 			{"","generic",0.10},
 			{"","trash",0.20},
 			{"","military",0.05},
+			{"","craft",0.03},
 			{"WeaponHolder_PartGeneric","object",0.04},
 			{"WeaponHolder_PartWheel","object",0.05},
 			{"WeaponHolder_PartFueltank","object",0.02},
@@ -441,6 +473,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemJerrycan","object",0.03},
 			{"","generic",0.10},
 			{"","trash",0.20},
+			{"","craft",0.03},
 			{"huntingrifle","weapon",0.02},
 			{"LeeEnfield","weapon",0.04},
 			{"Winchester1866","weapon",0.03},
@@ -448,7 +481,7 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine",0.8},
 			{"WeaponHolder_ItemHatchet","object",0.5},
 			{"MR43","weapon",0.01},
-			{"WeaponHolder_ItemMachete","object",0.04} 
+			{"MeleeMachete","weapon",0.04} 
 		};
 	};
 	class Supermarket: Default {
@@ -477,7 +510,8 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemTent","object",0.01},
 			{"","food",0.05},
 			{"","trash",0.20},
-			{"","generic",0.10},			
+			{"","generic",0.10},
+			{"","craft",0.03},			
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.03},
 			{"PartWoodPile","magazine",0.04},
@@ -735,7 +769,7 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic",0.07},
 			{"Crossbow_DZ","weapon",0.04},
 			{"","military",0.05},
-			{"WeaponHolder_ItemMachete","object",0.04},
+			{"MeleeMachete","weapon",0.04},
 			{"huntingrifle","weapon",0.05},
 			{"M14_EP1","weapon",0.03},
 			{"M16A2","weapon",0.03},
@@ -744,6 +778,7 @@ class CfgBuildingLoot {
 			{"M1014","weapon",0.03},
 			{"","hunter",0.10},
 			{"","generic",0.10},
+			{"","craft",0.03},
 			{"","trash",0.15}
 		};
 	};
