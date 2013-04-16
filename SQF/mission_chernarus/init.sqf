@@ -32,7 +32,7 @@ progressLoadingScreen 1.0;
 /* BIS_Effects_* fixes from Dwarden */
 BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\killed.sqf";
 BIS_Effects_AirDestruction = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\AirDestruction.sqf";
-BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers ""\z\addons\dayz_code\system\BIS_Effects\AirDestructionStage2.sqf";
+BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\AirDestructionStage2.sqf";
 
 BIS_Effects_globalEvent = {
 	BIS_effects_gepv = _this;
