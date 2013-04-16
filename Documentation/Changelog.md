@@ -12,26 +12,26 @@ FIX DUE : 2013
 		
 	Changes:
 
-		* [NEW] - 3 New decayed Zeds - harder to kill(WIP)
-		* [NEW] - Added new food and drink items
-		* [NEW] - Added optional watermark for servername (server admins only)
-		* [NEW] - Added Baseball bat (NailedBat & WireBat)
-		* [NEW] - Crafting - new bats 
+		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
+		* [NEW] - Added new food and drink items.
+		* [NEW] - Added optional watermark for servername (server admins only).
+		* [NEW] - Added Baseball bat.
+		* [NEW] - Crafting - new bats (Nailed Bat & Wire Bat).
 		
-		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
+		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
 		* [UPDATED] - Updated zed speed to default.
-		* [UPDATED] - melee systems updated.
+		* [UPDATED] - Melee systems updated.
 		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
-		* [UPDATED] - Clear Ground around crash sites have now been disbaled by default server admins can enable.
-		* [UPDATED] - Vehilce damage sync's updated to reduce call extension spam.
-		* [UPDATED] - Lowed Tansfuse infection rate.
+		* [UPDATED] - Clear Ground around crash sites have now been disabled by default, server admins can enable.
+		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
+		* [UPDATED] - Lowered Transfusion infection rate.
  		
-		* [FIXED] - Zeds spawning underground
-		* [FIXED] - loot spawning undergroung
-		* [FIXED] - melee weapons having no ammo on login.
-		* [FIXED] - Loot Spawns has now been fully resolved. Buildings are now taged and will not spawn any new loot for 10 mins.
-		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 mins (Might change)
-		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 mins / zeds 3 mins.
+		* [FIXED] - Zeds spawning underground.
+		* [FIXED] - Loot spawning undergroung.
+		* [FIXED] - Melee weapons having no ammo on login.
+		* [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
+		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 minutes (might change).
+		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 minutes / zeds 3 minutes.
 
 ______________________	
 FIX DUE : 2013
