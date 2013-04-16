@@ -414,7 +414,7 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"DZ_British_ACU","object",0.01}, // 18
 			{"Winchester1866","weapon",0.03},
-			{"MeleeBaseBallBat","weapon",0.02},
+			//{"MeleeBaseBallBat","weapon",0.02},
 			{"WeaponHolder_ItemTent","object",0.01},
 			{"","craft",0.03},
 			{"","military",0.05},

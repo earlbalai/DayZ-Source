@@ -232,7 +232,7 @@ class CfgWeapons {
 			};
 		};
 	};
-	
+	/*
 	class MeleeBaseBallBat: MeleeWeapon
 	{
 		scope=2;
@@ -333,7 +333,7 @@ class CfgWeapons {
 		};
 		descriptionShort="$STR_EQUIP_DESC_BASEBALLBATNAILS";
 	};
-	
+	*/
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class MeleeFlashlight : Pistol {
