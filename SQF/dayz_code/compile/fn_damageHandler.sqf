@@ -101,13 +101,13 @@ if ((_damage > 0.5) and (_ammo == "zombie")) then {
 		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver;
 	};
 };
-*/
-
+//Crawling zeds pull players down.
 if ((_damage > 0.5) and (_ammo == "zombie") and (_forceHit == "legs")) then {
 //	_unit switchmove AcinPknlMwlkSlowWrflDb_death;
 diag_log ("falldown");
 	_unit playMove ActsPercMrunSlowWrflDf_TumbleOver;
 };
+*/
 
 //Record Damage to Minor parts (legs, arms)
 if (_hit in USEC_MinorWounds) then {
