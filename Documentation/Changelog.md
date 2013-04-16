@@ -4,7 +4,6 @@ FIX DUE : 2013
 		* dayz_anim
 		* dayz_code 
 		* dayz_communityassets
-		* dayz_sfx
 		* dayz_server (server admins only)
 		* Mission (server admins only) (Prerequisites)
 		
@@ -108,7 +107,7 @@ FIX DUE : 2013
 
 Zed knock down removed due to transition issue with animations working on this for the next patch. (Code left in just commented out) 
 ______________________		
-FIX DUE : 2013
+FIX DUE : 26 FEBRUARY 2013
 
 	Community Notes: 
 		* DayZ 1.7.6.1
@@ -144,7 +143,7 @@ FIX DUE : 2013
 			
 			
 ______________________
-FIX DUE : 2013
+FIX DUE : 25 FEBRUARY 2013
 
 	Community Notes: 
 		* DayZ 1.7.6
@@ -262,7 +261,7 @@ FIX DUE : 2013
 	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
 	
 ______________________
-FIX DUE : 2013
+FIX DUE : 04 FEBRUARY 2013
 
 	Community Notes: 
 		* DayZ 1.7.5.1
@@ -284,7 +283,8 @@ FIX DUE : 2013
 	* [FIXED] - AS50 was mistakenly banned now unbanned.
 	
 ______________________
-FIX DUE : 2013
+FIX DUE : 04 FEBRUARY 2013
+
 
 	Community Notes: 
 		* DayZ 1.7.5
