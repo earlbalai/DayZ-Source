@@ -6,9 +6,9 @@ class CfgMagazines {
 	class TrashTinCan; //External class reference
 	
 	class Melee_Swing : CA_Magazine {
-		scopeWeapon = protected;
-		scopeMagazine = protected;
-		magazineType = WeaponNoSlot;
+	//	scopeWeapon = protected;
+	//	scopeMagazine = protected;
+	//	magazineType = WeaponNoSlot;
 		type = VSoft;
 		flash = "";
 		flashSize = 0;
