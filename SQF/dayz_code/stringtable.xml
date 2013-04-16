@@ -2706,6 +2706,15 @@
 			<French>une déco en combat</French>
 			<Czech>odhlášen z boje</Czech>
 		</Key>
+		<Key ID="str_death_explosion">
+			<English>explosion</English>
+			<German>explosion</German>
+			<Russian>explosion</Russian>
+			<Spanish>explosion</Spanish>
+			<Dutch>explosion</Dutch>
+			<French>explosion</French>
+			<Czech>explosion</Czech>
+		</Key>
 		<Key ID="str_death_unknown">
 			<English>an unknown cause</English>
 			<German>ohne erkennbare Ursache</German>
