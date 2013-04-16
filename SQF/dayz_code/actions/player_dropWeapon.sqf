@@ -22,7 +22,7 @@ if (_item == "MeleeCrowbar") then {_item = "ItemCrowbar";};
 if (_item == "MeleeMachete") then {_item = "ItemMachete";};
 */
 
-//_bag = createVehicle [format["WeaponHolder_%1",_item],getPosATL player,[], 1, "CAN_COLLIDE"];
+_bag = createVehicle [format["WeaponHolder_%1",_item],getPosATL player,[], 1, "CAN_COLLIDE"];
 _bag modelToWorld getPosATL player;
 _bag setdir (getDir player);
 player reveal _bag;
