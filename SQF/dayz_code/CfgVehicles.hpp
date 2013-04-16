@@ -1728,14 +1728,14 @@ class CfgVehicles {
 			init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
-	class WeaponHolder_MeleeBat: WeaponHolderBase
+	class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 	{
 		scope=2;
 		displayName="BaseBallBat";
 		model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
 		class eventHandlers
 		{
-			init="[(_this select 0),'cfgWeapons','MeleeBat'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+			init="[(_this select 0),'cfgWeapons','MeleeBaseBallBat'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
 	class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
@@ -1786,6 +1786,7 @@ class CfgVehicles {
 			init = "[(_this select 0),'cfgMagazines','ItemFuelcan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 		};
 	};
+	
 	
 	class zZombie_new_Base : zZombie_Base {
 		scope = public;
