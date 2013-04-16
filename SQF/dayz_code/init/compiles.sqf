@@ -242,15 +242,15 @@ if (!isDedicated) then {
 		if (_dikCode in actionKeys "ForceCommandingMode") then {_handled = true};
 		if (_dikCode in actionKeys "PushToTalk" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
-			[player,50,true,(getPosATL player)] spawn player_alertZombies;
+			[player,15,true,(getPosATL player)] spawn player_alertZombies;
 		};
 		if (_dikCode in actionKeys "VoiceOverNet" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
-			[player,50,true,(getPosATL player)] spawn player_alertZombies;
+			[player,15,true,(getPosATL player)] spawn player_alertZombies;
 		};
 		if (_dikCode in actionKeys "PushToTalkDirect" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
-			[player,15,false,(getPosATL player)] spawn player_alertZombies;
+			[player,5,false,(getPosATL player)] spawn player_alertZombies;
 		};
 		if (_dikCode in actionKeys "Chat" and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
@@ -266,7 +266,14 @@ if (!isDedicated) then {
 		};
 		/*
 		if (_dikCode in actionKeys "IngamePause") then {
-			_idOnPause = [] spawn dayz_onPause;
+			waitUntil {
+				_display = findDisplay 49;
+				!isNull _display;
+			};
+			_btnRespawn = _display displayCtrl 1010;
+			_btnAbort = _display displayCtrl 104;
+			_btnRespawn ctrlEnable false;
+			_btnAbort ctrlEnable false;
 		};
 		*/
 		_handled
