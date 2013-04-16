@@ -438,13 +438,13 @@
 			<Dutch>Menselijkheid</Dutch>
 		</Key>
 		<Key ID="str_actions_self_sleep">
-			<English>Sleep</English>
-			<German>Schlafen</German>
-			<Russian>Поспать</Russian>
-			<Spanish>Dormir</Spanish>
-			<Dutch>Slapen</Dutch>
-			<French>Dormir</French>
-			<Czech>Spát</Czech>
+			<English>Rest</English>
+			<German>Rest</German>
+			<Russian>Rest</Russian>
+			<Spanish>Rest</Spanish>
+			<Dutch>Rest</Dutch>
+			<French>Rest</French>
+			<Czech>Rest</Czech>
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<English>Bandit</English>
