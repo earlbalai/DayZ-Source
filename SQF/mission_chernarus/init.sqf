@@ -97,3 +97,4 @@ if (!isNil "dayZ_serverName") then {
 	};
 };
 
+#include "\z\addons\dayz_code\system\REsec.sqf"
