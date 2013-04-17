@@ -11,32 +11,7 @@ FIX DUE : 2013
 		* DayZ 1.7.8.*
 		
 	Changes:
-
-		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
-		* [NEW] - Added new food and drink items.
-		* [NEW] - Added optional watermark for servername (server admins only).
-		* [NEW] - Sleep updated to Rest.
-		* [NEW] - Loot table added for crafting.
-		* [NEW] - Remote exec security. Should pervent all major RE exploits
-		
-		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
-		* [UPDATED] - Updated zed speed to default.
-		* [UPDATED] - Melee systems updated.
-		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
-		* [UPDATED] - Lowered Direct coms action sound.
-		* [UPDATED] - Clear Ground around crash sites have now been disabled by default, server admins can enable.
-		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
-		* [UPDATED] - Lowered Transfusion infection rate.
- 		
-		* [FIXED] - Zeds spawning underground.
-		* [FIXED] - Loot spawning undergroung.
-		* [FIXED] - Melee weapons having no ammo on login/skin change.
-		* [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
-		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 15 minutes and no players within 250 meters(WIP).
-		* [FIXED] - Gear menu Explot to force respawn.
-		* [FIXED] - Optimized some destruction effects for security and performance.
-		* [FIXED] - Unconscious Damage scale to only happen if hit by zeds.
-
+			Read 1.7.7
 
 ______________________	
 FIX DUE : 2013
