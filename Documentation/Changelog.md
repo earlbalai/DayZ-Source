@@ -49,7 +49,6 @@ FIX DUE : 2013
 		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
 		* [NEW] - Added optional watermark for servername (server admins only).
 		* [NEW] - Sleep updated to Rest. (restores food and drink) (WIP)
-		* [NEW] - Loot table added for crafting.
 		* [NEW] - Remote exec security. Should pervent all major RE exploits
 		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)		
 		
