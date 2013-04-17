@@ -2,7 +2,7 @@ private["_array","_type","_classname","_holder","_playerID","_text","_broken","_
 
 _array = _this select 3;
 _type = _array select 0;
-_classname = _array select 1;m
+_classname = _array select 1;
 _holder = _array select 2;
 
 _playerID = getPlayerUID player;
@@ -36,7 +36,7 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 
 _config = (configFile >> _type >> _classname);
 
-//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
+//Remove melee magazines (BIS_fnc_invAdd fix)
 {player removeMagazines _x} forEach MeleeMagazines;
 
 _freeSlots = [player] call BIS_fnc_invSlotsEmpty;
