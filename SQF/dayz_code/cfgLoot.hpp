@@ -206,7 +206,7 @@ class CfgLoot {
 			{"HandRoadFlare",0.05}
 	};
 	hunter[] = {
-			{"ItemBandage",0.1},
+			{"ItemBandage",0.10},
 			{"5x_22_LR_17_HMR",0.05},
 			{"7Rnd_45ACP_1911",0.02},
 			{"10x_303",0.05},

@@ -70,9 +70,11 @@ if (_damage > 0.1) then {
 	if (_ammo == "zombie" and _hit == "legs" and !_newtypezed) then {
 		_scale = _scale / 2;
 	};
+	/*
 	if (_ammo == "zombie" and _hit == "hands" and !_newtypezed) then {
 		_scale = _scale / 4;
 	};
+	*/
 	if (_isHeadHit) then {
 		_scale = _scale * 6;
 	};

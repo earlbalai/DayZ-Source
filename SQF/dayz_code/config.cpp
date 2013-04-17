@@ -313,11 +313,11 @@ class RscStructuredTextGUI: RscStructuredText
 class CfgSurvival {
 	class Inventory {
 		class Default {
-			//weapons[] = {"Makarov"};
-			magazines[] = {"ItemBandage","ItemPainkiller"};
-			weapons[] = {"ItemFlashlight"};
+			weapons[] = {"Makarov"};
+			magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemPainkiller","HandRoadFlare"};
+			//weapons[] = {"HandRoadFlare"};
 			backpackWeapon = "";
-			backpack = "DZ_Patrol_Pack_EP1";
+			//backpack = "DZ_Patrol_Pack_EP1";
 		};
 	};
 	class Meat {
@@ -644,7 +644,7 @@ class CfgBuildingLoot {
 		lootType[] = {
 			{"","trash",0.15},
 			{"","hospital",0.06},
-			{"MedBox0","object",0.2}
+			{"MedBox0","object",0.01}
 		};
 	};
 	class Military: Default {
