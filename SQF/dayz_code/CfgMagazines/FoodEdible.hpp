@@ -262,8 +262,8 @@ class FoodCandyChubby : FoodEdible {
 	bloodRegen = 80;
 	displayName = $STR_FOOD_NAME_CANDY_CHUBBY;
 	descriptionShort = $STR_FOOD_DESC_CANDY_CHUBBY;
-	model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa";
+	model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d"
+	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa"
 };
 class FoodCandyAnders : FoodEdible {
 	scope = public;
