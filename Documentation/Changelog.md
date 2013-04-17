@@ -83,7 +83,7 @@ FIX DUE : 2013
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded the "save" option to tents and vehilces. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
 		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being deleted.
-		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg = body 600, Legs 100, Hands 50, Head 1200)
+		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Old Type: Max possible dmg = body 600, Legs 100, Hands 50, Head 1200 New Type: Body 1200, Head 2400)
 		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
 		* [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multipier is above > 0.8
 		* [UPDATED] - When unconscious all dmg is lowed to 50 blood for each hit zeds do no matter the part they hit. (Should allow some surviabilty)
