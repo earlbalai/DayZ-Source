@@ -77,6 +77,7 @@ FIX DUE : 2013
 		* [UPDTAED] - ALL loot table weights have been updated.
 		* [UPDTAED] - ALL loot table weights have been rebalanced.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
+		* [UPDATED] - Mac and 1911 Pistol dmg updated.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded the "save" option to tents and vehilces. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
@@ -94,6 +95,7 @@ FIX DUE : 2013
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
 		* [UPDATED] - Updated zed speed to default.
 		* [UPDATED] - Melee systems updated.
+		* [UPDATED] - Old Bandit skin for male chars.
 		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 		* [UPDATED] - Lowered Direct coms action sound.
 		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
