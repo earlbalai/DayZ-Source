@@ -56,6 +56,3 @@ if (!isDedicated) then {
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
 	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
 };
-
-#include "\z\addons\dayz_code\system\REsec.sqf"
-
