@@ -29,7 +29,7 @@ player playActionNow "PutDown";
 player removeMagazine _itemorignal;
 sleep 1;
 
-if (_itemorignal == "ItemWaterbottle") then {
+if (_itemorignal in no_output_drink) then {
     player addMagazine "ItemWaterbottleUnfilled";
 };
 
