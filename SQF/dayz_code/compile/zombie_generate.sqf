@@ -18,9 +18,8 @@ if (!_isNoone) exitWith {};
 if (count _unitTypes == 0) then {
 	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
-_unitTypesNew = ["z_new_villager4","z_new_villager3","z_new_villager2"];
  
-_unitTypes = _unitTypes + _unitTypesNew;
+_unitTypes = _unitTypes + _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
  
 _type = _unitTypes call BIS_fnc_selectRandom;
 
