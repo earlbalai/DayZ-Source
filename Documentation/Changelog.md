@@ -50,7 +50,8 @@ FIX DUE : 2013
 		* [NEW] - Added optional watermark for servername (server admins only).
 		* [NEW] - Sleep updated to Rest. (restores food and drink) (WIP)
 		* [NEW] - Remote exec security. Should pervent all major RE exploits
-		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)		
+		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
+		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapons/others/backpacks)).
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
