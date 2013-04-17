@@ -15,23 +15,28 @@ FIX DUE : 2013
 		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
 		* [NEW] - Added new food and drink items.
 		* [NEW] - Added optional watermark for servername (server admins only).
-		* [NEW] - Added Baseball bat.
-		* [NEW] - Crafting - new bats (Nailed Bat & Wire Bat).
+		* [NEW] - Sleep updated to Rest.
+		* [NEW] - Loot table added for crafting.
+		* [NEW] - Remote exec security. Should pervent all major RE exploits
 		
 		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
 		* [UPDATED] - Updated zed speed to default.
 		* [UPDATED] - Melee systems updated.
 		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
+		* [UPDATED] - Lowered Direct coms action sound.
 		* [UPDATED] - Clear Ground around crash sites have now been disabled by default, server admins can enable.
 		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
 		* [UPDATED] - Lowered Transfusion infection rate.
  		
 		* [FIXED] - Zeds spawning underground.
 		* [FIXED] - Loot spawning undergroung.
-		* [FIXED] - Melee weapons having no ammo on login.
+		* [FIXED] - Melee weapons having no ammo on login/skin change.
 		* [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
-		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 minutes (might change).
-		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 minutes / zeds 3 minutes.
+		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 15 minutes and no players within 250 meters(WIP).
+		* [FIXED] - Gear menu Explot to force respawn.
+		* [FIXED] - Optimized some destruction effects for security and performance.
+		* [FIXED] - Unconscious Damage scale to only happen if hit by zeds.
+
 
 ______________________	
 FIX DUE : 2013
@@ -52,7 +57,6 @@ FIX DUE : 2013
 		* [Prerequisites]	Battleye filters must be updated manually by server admins.
 
 		* [NEW] - Removed annoying "re-arm" option from actions menu
-		* [NEW] - Added Clear ground to crash sites (http://i.imgur.com/uVDfGym.jpg) 
 		* [NEW] - Models and textures for mutton.
 		* [NEW] - Seperate meat for goats, same blood regen as mutton.
 		* [NEW] - Can now combine magazines.
@@ -63,11 +67,16 @@ FIX DUE : 2013
 		* [NEW] - Weapon RPK_74 (Mi8 Helicrash).
 		* [NEW] - Vehicle Damage in Percent (With a Toolbox).
 		* [NEW] - 5L Fuel can takes 1 inv slot.
-		* [NEW] - Zeds can now push players to the ground when attacked from behind.
 		* [NEW] - Bigger Compass (You can see the number of degrees).
 		* [NEW] - Added auth retry system to make sure clients are authed before they spawn (should stop seagull issue).
 		* [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timout later).
 		* [NEW] - Mi8 Crash site model.
+		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
+		* [NEW] - Added optional watermark for servername (server admins only).
+		* [NEW] - Sleep updated to Rest. (restores food and drink) (WIP)
+		* [NEW] - Loot table added for crafting.
+		* [NEW] - Remote exec security. Should pervent all major RE exploits
+		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)		
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
@@ -77,6 +86,14 @@ FIX DUE : 2013
 		* [FIXED] - Hero Skin teleport issue.
 		* [FIXED] - BAF Bags so they dont set on fire. :-) (no moaning it was a bug)
 		* [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
+		* [FIXED] - Zeds spawning underground.
+		* [FIXED] - Loot spawning undergroung.
+		* [FIXED] - Melee weapons having no ammo on login/skin change.
+		* [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
+		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 15 minutes and no players within 250 meters(WIP). (Server performance boost)
+		* [FIXED] - Gear menu Explot to force respawn.
+		* [FIXED] - Optimized some destruction effects for security and performance.
+		* [FIXED] - Unconscious Damage scale to only happen if hit by zeds.
 		
 		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -84,12 +101,11 @@ FIX DUE : 2013
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
-		* [UPDTAED] - ALL loot table weights have been reblanced.
+		* [UPDTAED] - ALL loot table weights have been rebalanced.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
 		* [UPDATED] - Readded the "save" option to tents and vehilces. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
-		* [UPDATED] - Loot tables rebalanced.
 		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being deleted.
 		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg = body 600, Legs 100, Hands 50, Head 1200)
 		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
@@ -101,6 +117,13 @@ FIX DUE : 2013
 		* [UPDATED] - Zeds will no longer spawn for air vehilces.
 		* [UPDATED] - Hunters loot table adjested with more weapons.
 		* [UPDATED] - SQL files working on linux.
+		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
+		* [UPDATED] - Updated zed speed to default.
+		* [UPDATED] - Melee systems updated.
+		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
+		* [UPDATED] - Lowered Direct coms action sound.
+		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
+		* [UPDATED] - Lowered Transfusion infection rate.
 		
 		* [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 		* [REMOVED] - Zeds can now push players to the ground when attacked from behind.
