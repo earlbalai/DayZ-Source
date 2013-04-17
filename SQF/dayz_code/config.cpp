@@ -478,8 +478,8 @@ class CfgBuildingLoot {
 			{"LeeEnfield","weapon",0.04},
 			{"Winchester1866","weapon",0.03},
 			{"Crossbow_DZ","weapon",0.03},
-			{"PartWoodPile","magazine",0.8},
-			{"WeaponHolder_ItemHatchet","object",0.5},
+			{"PartWoodPile","magazine",0.08},
+			{"WeaponHolder_ItemHatchet","object",0.05},
 			{"MR43","weapon",0.01},
 			{"MeleeMachete","weapon",0.04} 
 		};
