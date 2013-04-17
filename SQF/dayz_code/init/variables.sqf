@@ -17,6 +17,9 @@ AllPlayersVehicles = ["GER_Soldier_EP1","Soldier_Crew_PMC","Sniper1_DZ","Camo1_D
 MeleeWeapons = ["ItemHatchet","ItemCrowbar","ItemMachete"];
 MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing"];
 
+//New Zeds
+DayZ_NewZeds = ["z_new_villager2w","z_new_villager3","z_new_villager4"];
+
 //Cooking
 meatraw = [
     "FoodSteakRaw",
