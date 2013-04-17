@@ -1,7 +1,7 @@
 class CfgLoot {
 	//0.10
 	craft[] = {
-			{"ItemNails",0.01},
+			{"ItemNails",0.01}
 	};
 	trash[] = {
 			{"TrashTinCan",0.02},
