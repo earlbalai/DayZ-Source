@@ -65,6 +65,7 @@ class RscDisplayDebriefing: RscStandardDisplay
 		delete Mainback;
 	};
 };
+
 class RscDisplayMissionFail: RscStandardDisplay
 {
 	class controls
@@ -184,6 +185,7 @@ class RscDisplayMain : RscStandardDisplay
 		};
 	};
 };
+
 //Remove Diary
 class RscDisplayDiary {
 	idd = 129;
@@ -266,10 +268,12 @@ class RscDisplayGenderSelect
 		};
 	};
 };
+
 class RscDisplayMPInterrupt : RscStandardDisplay {
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "_dummy = [""Init"", _this] execVM ""\ca\ui\scripts\pauseLoadinit.sqf""";
+	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;						
+	onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';";
 	onUnload = "private ['_dummy']; _dummy = ['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
 	
 	class controlsBackground {
@@ -284,6 +288,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	};
 	
 	class controls {
+	/*
 		class Title {};
 		class B_Players {};
 		class B_Options {};
@@ -293,6 +298,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class B_Save {};
 		class B_Continue {};
 		class B_Diary {};
+	*/	
 		
 		class MissionTitle : RscText {
 			idc = 120;
@@ -337,7 +343,8 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		
 		class CA_B_Respawn : CA_B_SAVE {
 			idc = 1010;
-			onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
+			//onButtonClick = "hint str (_this select 0);";
+			//onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
 			y = 0.2537 + 0.101903 * 2;
 			text = $STR_DISP_INT_RESPAWN;
 			default = 0;
@@ -353,6 +360,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Abort : CA_B_SAVE {
 			idc = 104;
 			y = 0.2537 + 0.101903 * 4;
+			onButtonClick = "call dayz_forceSave;";
 			text = $STR_DISP_INT_ABORT;
 			default = 0;
 		};
