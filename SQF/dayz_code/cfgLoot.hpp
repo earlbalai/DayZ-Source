@@ -11,11 +11,11 @@ class CfgLoot {
 			{"ItemTrashRazor",0.01}
 	};
 	civilian[] = {
-			{"TrashTinCan",0.05},
-			{"TrashJackDaniels",0.05},
-			{"ItemSodaEmpty",0.05},
-			{"ItemSodaCoke",0.06},
-			{"ItemSodaPepsi",0.06},
+			{"TrashTinCan",0.03},
+			{"TrashJackDaniels",0.03},
+			{"ItemSodaEmpty",0.04},
+			{"ItemSodaCoke",0.05},
+			{"ItemSodaPepsi",0.05},
 			{"FoodCanBakedBeans",0.05},
 			{"FoodCanSardines",0.05},
 			{"FoodCanFrankBeans",0.05},
@@ -24,7 +24,7 @@ class CfgLoot {
 			{"7Rnd_45ACP_1911",0.04},
 			{"2Rnd_shotgun_74Slug",0.04},
 			{"2Rnd_shotgun_74Pellets",0.04},
-			{"ItemBandage",0.03},
+			{"ItemBandage",0.06},
 			{"ItemPainkiller",0.03}
 	};
 	food[] = {
@@ -102,12 +102,12 @@ class CfgLoot {
 			{"ItemHeatPack",0.04}
 	};
 	medical[] = {
-			{"ItemBandage",0.8},
-			{"ItemPainkiller",0.5},
-			{"ItemMorphine",0.5},
-			{"ItemEpinephrine",0.3},
-			{"ItemAntibiotic",0.2},
-			{"ItemHeatPack",0.3}
+			{"ItemBandage",0.08},
+			{"ItemPainkiller",0.05},
+			{"ItemMorphine",0.05},
+			{"ItemEpinephrine",0.03},
+			{"ItemAntibiotic",0.02},
+			{"ItemHeatPack",0.03}
 	};
 	hospital[] = {
 			{"ItemBandage",0.06},
@@ -211,7 +211,7 @@ class CfgLoot {
 			{"7Rnd_45ACP_1911",0.02},
 			{"10x_303",0.05},
 			{"ItemWaterbottleUnfilled",0.02},
-			{"WoodenArrow",0.1},
+			{"WoodenArrow",0.10},
 			{"ItemHeatPack",0.02},
 			{"FoodMRE",0.03},
 			{"FoodNutmix",0.03}
