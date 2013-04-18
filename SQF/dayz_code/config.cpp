@@ -33,7 +33,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"CAData", CAUI};
+		requiredAddons[] = {"CAData", "CAUI"};
 	};
 };
 
@@ -47,7 +47,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.7.DEV.17042013";
+		version = "1.7.7.DEV.18042013";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
