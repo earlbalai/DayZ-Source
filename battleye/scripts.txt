@@ -1,0 +1,157 @@
+5 "666.sqf"	
+5 Alexenderpackk
+5 Alexenderp$ck
+5 Bo_Mk82
+5 "CBA_EVENT_KEY_LOGIC setDamage 1;" 
+5 Darky
+5 EjectPlayer !"\"EjectPlayer\","
+5 Gerk
+5 "God mode"
+5 GodMode
+5 Infammo
+5 "Infinite Ammo"
+5 InfiniteAmmo
+5 "Init RE"
+5 Killplayer
+5 M1A2_TUSK_MG
+5 MrMedic
+5 OwnageMenu
+5 "Raiin"
+5 SetCamUseTi !"\"SetCamUseTi\","
+5 SetFuelCargo !"\"setFuelCargo\","
+5 TKCV1_0\TKCOWNS.sqf
+5 Troopman
+5 Troopmon
+5 U-NO-
+5 Vojtec
+5 aa12
+5 addAmmo !"\"addAmmo\","
+5 addBackpack !"\"addBackpack\"," !"addBackpackCargo" !"addBackpackCargoGlobal" !"player addBackpack _backpackType;" !"_newUnit addBackpack _newBackpackType;" !"player addBackpack _bcpk;"
+5 addBackpackCargo !"\"addBackpackCargo\"," !"addBackpackCargoGlobal"
+5 addBackpackCargoGlobal !"\"addBackpackCargoGlobal\"," !"_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];"
+5 addGroupIcon !"\"addGroupIcon\","
+5 addMPEventHandler !"\"addMPEventHandler\","
+5 addMagazine !"\"addMagazine\"," !"addMagazineCargo" !"addMagazineCargoGlobal" !"addMagazinePool" !"addMagazineTurret" !"player addMagazine 'crowbar_swing';" !"raddMagazine = 'addMagazine'" !"raddMagazinecode = compile PreprocessFile (BIS_PathMPscriptCommands + 'addMagazine.sqf')" !"if (_isOK) then {\nif (_val != -1) then {\nplayer addMagazine [_item,_val];\n} else {\nplayer addMagazine _item;\n};" !"if(!isNil \"_array\") then {\n_agent addMagazine _loot;\n};" !"sleep 8;\n{player addMagazine _x} forEach _inventory;\ndeleteVehicle _object;" !"{\nplayer addMagazine _x;\n} forEach _create;" !"if (_isOK) then {\nplayer addMagazine _x;\n};\n} forEach _mags;" !"if (_item == (configfile >> \"cfgmagazines\" >> (configName _item))) then {_unit addMagazine configName _item;};" !"if (isClass (configfile >> \"cfgmagazines\" >> (_item))) then {_unit addMagazine _item;};" !"for \"_x\" from 1 to _qty do {\nplayer removeMagazine \"ItemWaterbottleUnfilled\";\nplayer addMagazine \"ItemWaterbottle\";\n}; !"if (_item == \"ItemWaterbottle\") then {\nplayer addMagazine \"ItemWaterbottleUnfilled\";\n};" !"player playActionNow \"stop\";\nplayer addMagazine \"ItemBandage\";" !"if (local _item) then {\nfor \"_x\" from 1 to _qty do {\n_item addMagazine \"FoodSteakRaw\";\n};" !"for \"_x\" from 1 to _qty do {\nplayer removeMagazine \"FoodSteakRaw\";\nplayer addMagazine \"FoodSteakCooked\";\nsleep 1;\n};"  !"raddMagazinecode={diag_log(\"WARNING illegal RE raddMagazinecode with args"
+5 addMagazineCargo !"\"addMagazineCargo\"," !"addMagazineCargoGlobal" !"raddMagazineCargo = 'addMagazineCargo'" !"raddMagazineCargocode = compile PreprocessFile (BIS_PathMPscriptCommands + 'addMagazineCargo.sqf')"  !"raddMagazineCargocode={diag_log(\"WARNING illegal RE raddMagazineCargocode with args"
+5 addMagazineCargoGlobal !"addMagazineCargo" !"\"addMagazineCargoGlobal\"," !"holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];" !"_firePlace addMagazineCargoGlobal [\"PartWoodPile\",_qty];" !"dayz_myBackpack addmagazineCargoGlobal [_x,(_backpackmagQtys select _countr)];" !"dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" !"raddMagazineCargoGlobalcode={diag_log(\"WARNING illegal RE raddMagazineCargoGlobalcode"
+5 addMagazinePool !"\"addMagazinePool\","  !"raddMagazinePoolcode={diag_log(\"WARNING illegal RE raddMagazinePoolcode"
+5 addMagazineTurret !"\"addMagazineTurret\"," !="_vehicle removeMagazineTurret [_ammo,_turret];\n_vehicle addMagazineTurret [_ammo,_turret];\nplayer removeMagazine _ammo;" !"raddMagazineTurretcode={diag_log(\"WARNING illegal RE raddMagazineTurretcode"
+5 addVehicle !"\"addVehicle\"," 
+5 addWaypoint !"\"addWaypoint\","
+5 addWeapon !"\"addWeapon\"," !"addWeaponPool" !"addWeaponCargo" !"addWeaponCargoGlobal" !"player addWeapon \"Loot\";" !"player addWeapon \"Flare\";" !"raddWeapon = 'addWeapon'" !"raddWeaponcode = compile PreprocessFile (BIS_PathMPscriptCommands + 'addWeapon.sqf')" !"raddWeaponCargocode = compile PreprocessFile (BIS_PathMPscriptCommands + 'addWeaponCargo.sqf')" !"if (_isOK) then {\nplayer addWeapon _x;\n};\n} forEach _wpns;\n};" !"if (_item == (configfile >> \"cfgweapons\" >> (configName _item))) then {_unit addWeapon configName _item;};" !"if (isClass (configfile >> \"cfgweapons\" >> (_item))) then {_unit addWeapon _item;}" !"if (_type == \"cfgWeapons\") then { player addWeapon _classname; }" !"raddWeaponcode={diag_log(\"WARNING illegal RE raddWeaponcode with args"
+5 addWeaponCargo !"\"addWeaponCargo\"," !"addWeaponCargoGlobal" !"raddWeaponCargo = 'addWeaponCargo'" !"raddWeaponCargocode = compile PreprocessFile (BIS_PathMPscriptCommands + 'addWeaponCargo.sqf')"  !"raddWeaponCargocode={diag_log(\"WARNING illegal RE raddWeaponCargocode with args"
+5 addWeaponCargoGlobal !"\"addWeaponCargoGlobal\"," !"_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];" !"dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];" !"if (_bcpkWpn != \"\") then {\ndayz_myBackpack addWeaponCargoGlobal [_bcpkWpn,1];\n};\n};" !"if (_iItem != \"\") then {\n_item addWeaponCargoGlobal [_iItem,1];\n};"  !"raddWeaponCargoGlobalcode={diag_log(\"WARNING illegal RE raddWeaponCargoGlobalcode with args"
+5 addWeaponPool !"\"addWeaponPool\","  !"raddWeaponPoolcode={diag_log(\"WARNING illegal RE raddWeaponPoolcode with args"
+5 "attachObject player"
+5 azp85
+5 bomblauncher
+5 "callVar" !"\"callVar\"," !"rcallVar = 'callVar'" !"rcallVarcode = compile PreprocessFile (BIS_PathMPscriptCommandsCustom + 'callVar.sqf')" !"_libraryCustom = \n[\n\"callVar\"\n];" !"rcallVarcode={diag_log(\"WARNING illegal RE rcallVarcode with args"
+5 clearPlayerInit !"\"clearPlayerInit\","
+5 commandFSM !"\"commandFSM\","
+5 "copyFromClipboard" !"\"copyFromClipboard\"," 
+5 "copyToClipboard" !"\"copyToClipboard\"," 
+5 createLocation !"\"createLocation\"," 
+5 createMine !"\"createMine\","
+5 createTarget !"\"createTarget\","
+5 createVehicle !"\"createVehicle\"," !"createVehicleLocal" !"createVehicle [\"WeaponHolder\", _iPos, [], _radius, \"CAN_COLLIDE\"" !"_fire = createVehicle [_classname, _location, [], 0, \"CAN_COLLIDE\"" !"_object = createVehicle [_classname, _location, [], 0, \"CAN_COLLIDE\"" !"if (_height < 100) then {\n_bolt = createVehicle [\"BoltSteelF\", _endPos, [], 0, \"CAN_COLLIDE\"];\n_bolt setPosATL _endPos;" !"_tent = createVehicle [\"TentStorage\", _location, [], 0, \"CAN_COLLIDE\"];\n_tent setdir _dir;" !"if ((random _int)>2.2) then\n{\n_b=\"SmallSecondary\" createvehicle (getpos _v);\n};" !"exitwith {};\n_b=\"SmallSecondary\" createvehicle (_v modelToWorld _effect2pos);\n} foreach (_list);" !"_bag = createVehicle [format[\"WeaponHolder_%1\",_item],getPosATL player,[], 0, \"CAN_COLLIDE\"];\n_bag setdir (getDir player);" !"_bag = createVehicle [\"WeaponHolder_ItemTent\",_pos,[], 0, \"CAN_COLLIDE\"];\n_bag setdir _dir;\nplayer reveal _bag;" !"_object = createVehicle [_classname, _location, [], 0, \"CAN_COLLIDE\"];\n_object setDir _dir;\nplayer reveal _object;" !"_item = createVehicle [_iItem, _iPos, [], _radius, \"CAN_COLLIDE\"];" !"_item = createVehicle [\"WeaponHolder\", position player, [], 0.0, \"CAN_COLLIDE\"];" !"_holder = \"WeaponHolder\" createVehicle _pos;" !"_bolt = createVehicle [\"WoodenArrowF\", _endPos, [], 0, \"CAN_COLLIDE\"];" !"_weapon = createVehicle [_classname, _location, [], 0, \"CAN_COLLIDE\"];" !"_fire = createVehicle [_classname, _location, [], 0, \"CAN_COLLIDE\"];" !"_weapon = _classname createVehicle _location;\n_weapon setDir _dir;\n_weapon setpos _location;\nplayer reveal _weapon;" !"dayz_hasFire = createVehicle [_classname, _location, [], 0, \"CAN_COLLIDE\"];"
+5 createVehicleLocal !"\"createVehicleLocal\"," !"_point = \"Logic\" createVehicleLocal getPosATL _unit;" !"_object =  _type createVehicleLocal _position;" !"_fl = \"#particlesource\" createVehicleLocal getpos _v;" !"_lightArea = \"#lightpoint\" createVehicleLocal (getPosATL _flare);" !"_lightSpark = \"#lightpoint\" createVehicleLocal (getPosATL _flare);" !"_source = \"#particlesource\" createVehicleLocal getpos (_this select 0);" !"_source = \"#particlesource\" createVehicleLocal _pos;\n_source setParticleParams" !"_smoke = \"#particlesource\" createVehicleLocal _pos;\n_smoke attachto [_v,[0,0,0],\"destructionEffect1\"];" !"_Crater= \"CraterLong\" createvehiclelocal [_pos select 0, _pos select 1, 0];\n_Crater setdir (_dir + (180 * _i));" !"_source = \"#particlesource\" createVehicleLocal getPosATL _unit;"
+5 "deleteCollection" !"\"deleteCollection\"," 
+5 disableTIEquipment !"\"disableTIEquipment\","
+5 doFSM !"\"doFSM\","
+5 drawArrow !"\"drawArrow\"," 
+5 drawEllipse !"\"drawEllipse\"," 
+5 drawIcon !"\"drawIcon\"," 
+5 drawLine !"\"drawLine\"," 
+5 drawLink !"\"drawLink\"," 
+5 drawLocation !"\"drawLocation\"," 
+5 drawRectangle !"\"drawRectangle\"," 
+5 enableCamShake !"\"enableCamShake\","
+5 enableTeamSwitch !"\"enableTeamSwitch\","
+5 fireAtTarget !"\"fireAtTarget\","
+5 fireAtTarget !"\"fireAtTarget\"," 
+5 gau
+5 hacks
+5 "hint format [\"A %1 has been added\", gun]"
+5 loadFile  !"\"loadFile\"," 
+5 m1a1
+5 "marker2 = \"VehMarker\" + (str i);"
+5 "marker2 = createMarkerLocal [marker2,getPos veh];"
+5 "marker2 setMarkerPosLocal (getPos veh)"
+5 _markerMirador
+5 "_object = createVehicle ['%1', [%2, %3, %4], [], 0, 'CAN_COLLIDE'];"
+5 onCommandModeChanged !"\"onCommandModeChanged\","
+5 onDoubleClick !"\"onDoubleClick\"," 
+5 onMapSingleClick !"\"onMapSingleClick\","
+5 onTeamSwitch !"\"onTeamSwitch\","
+5 openDSInterface !"\"openDSinterface\"," !"if (_lbselected == \"DSInterface\") then {openDSInterface;};"
+5 openMap !"\"openMap\"," 
+5 "player addEventHandler [\"handleDamage\", { false }];"
+5 "player addweapon 'Truckhorn2';"
+5 "player selectweapon 'Truckhorn2';"
+5 "player setVariable['lastPos',0];"
+5 "player setVehicleInit _svr;"
+5 "playershield"
+5 "remoteControl" !"\"remoteControl\","
+5 "rspawn" !"rspawn = 'spawn'" !"rspawncode = compile PreprocessFile (BIS_PathMPscriptCommands + 'spawn.sqf')" !"rspawncode"
+5 setAmmoCargo !"\"setAmmoCargo\","
+5 setCaptive !"\"setCaptive\"," !"rsetCaptive = 'setCaptive'" !"rsetCaptivecode = compile PreprocessFile (BIS_PathMPscriptCommands + 'setCaptive.sqf')" !"sleep 1;\n_unit setCaptive true;\n_unit setVariable [\"NORRN_unconscious\", true, true];" !"if (local _unit) then {_unit setCaptive false};" !"rsetCaptivecode={diag_log(\"WARNING illegal RE rsetCaptivecode with args"
+5 setDamage !"\"setDamage\"," !"_vehicle setDamage 0;" !"player setdamage 0;" !"if (alive player) then { player SetDamage 1;};" !"if (_ent isKindOf \"Animal\") then {\n_ent setDamage 1;" !"player setDamage 1;\n0.1 fadeSound 0;"!"(vehicle _x) setDamage 1;\n_x setDamage 1;\n};" !"if (!_isSync) then {\n_veh allowDamage true;\n_veh setDamage 1;\nplayer setDamage 1;\n};" !"if (!_isSync) then {\n_vehicle allowDamage true;\n_vehicle setDamage 1;\n_character setVelocity [0,0,100];\n};" !"_object setdir _dir;\n_object setDamage _damage;" !"if (!(_group in _groups)) then {_groups set [count _groups,_group];};\n_x setDamage 1;\n}; 
+5 setDammage !"\"setDammage\"," 
+5 setDate !"\"setDate\"," !"rsetDate = 'setDate'" !"rsetDatecode = compile PreprocessFile (BIS_PathMPscriptCommands + 'setDate.sqf')" !"dayzSetDate" !="[\"dayzSetDate\",		{ setDate (_this select 1); }						] call registerBroadcastRpc;" !"if(isDedicated) then {\nsetDate _date;\ndayzSetDate = _date;\npublicVariable \"dayzSetDate\";\n};"  !"rsetDatecode={diag_log(\"WARNING illegal RE rsetDatecode with args"
+5 setFog !"\"setFog\"," !"0 setOvercast _currentOvercast;\n0 setFog _currentFog;" !"if (_currentWeatherChange == \"FOG\") then {\n_timeUntilCompletion setFog _targetWeatherValue;\n};" !"0 setFog _initialFog;\n\nif (_initialOvercast == -1) then {"
+5 setFuel !"\"setFuel\"," !"z\addons\dayz_code\compile\local_setFuel.sqf" !"\"dayzSetFuel\"" !"dayzSetFuel_code" !"dayzSetFuel = _val;" 
+5 setHit !"\"setHit\"," !"object_setHitServer =		compile preprocessFileLineNumbers \"\z" !"object_setHit =		compile preprocessFileLineNumbers \"\z" !"player setHit[\"legs\",1];" !"player setHit[\"hands\",1];" !"_unit setHit[\"legs\",0];" !"_unit setHit[\"hands\",0];" !"_unit setHit[_selection,_damage];" !"_total = [_unit,_hit,_damage] call object_setHitServer;" !"_ent setHit [\"legs\",1];\n_ent setVariable [\"hit_legs\",2,true];" !"z\addons\dayz_code\compile\object_setHit.sqf" !"[player,\"legs\", (_fractures select 0)] call object_setHit;" !"[player,\"hands\", (_fractures select 1)] call object_setHit;" !"z\addons\dayz_code\compile\object_setHitServer.sqf" !"_unit setHit[_selection,(_dam + _damage)];" //!"call object_setHit"
+5 setMarkerPosLocal !"\"setMarkerPosLocal\"," !"rsetMarkerPosLocal = 'setMarkerPosLocal'" !"rsetMarkerPosLocalcode = compile PreprocessFile (BIS_PathMPscriptCommands + 'setMarkerPosLocal.sqf')"  !"rsetMarkerPosLocalcode={diag_log(\"WARNING illegal RE rsetMarkerPosLocalcode with args"
+5 setObjectProxy !"\"setObjectProxy\","
+5 setOverCast !"\"setOverCast\"," !"0 setOvercast _currentOvercast;\n0 setFog _currentFog;" !"if (_currentWeatherChange == \"OVERCAST\") then {\n_timeUntilCompletion setOvercast _targetWeatherValue;" !"0 setOvercast _initialOvercast;\n\nif (_initialOvercast >= 0.75) then {"
+5 setPosASL2 !"\"setPosASL2\","
+5 setRepairCargo !"\"setRepairCargo\","
+5 setUnconscious !"\"setUnconscious\","
+5 setVehicleAmmo !"\"setVehicleAmmo\","
+5 setVehicleArmor !"\"setVehicleArmor\","
+5 setVehicleLock !"\"setVehicleLock\","
+5 setVehiclePosition !"\"setVehiclePosition\","
+5 setViewDistance !"\"setViewDistance\"," 
+5 setWPPos !"\"setWPPos\"," 
+5 setWaypointPosition !"\"setWaypointPosition\"," 
+5 setWaypointScript !"\"setWaypointScript\"," 
+5 setWeaponReloadingTime !"\"setWeaponReloadingTime\","
+5 setWeaponState !"\"setWeaponState\"," 
+5 skipTime !"\"skipTime\"," !"rskiptime = 'skiptime'" !"rskiptimecode = compile PreprocessFile (BIS_PathMPscriptCommands + 'skiptime.sqf')" !"rskiptimecode={diag_log(\"WARNING illegal RE rskiptimecode with args"
+5 "spawn{player addAction ["
+5 teamSwitch !"\"teamSwitch\"," 
+5 teled
+5 "[_this,\"players\"] execVM \"\ca\ui\scripts\dedicatedServerInterface.sqf\";"
+5 "_v addweapon \"A\"+\"A1\"+\"2_PM\"+\"C\"; _v addmagazine \"20R\"+\"nd"
+5 "(vehicle player) addEventHandler [\"handleDamage\", { false }];"
+5 waypointVisible !"\"waypointVisible\"," 
+5 "zombieshield"
+1 expression
+1 maut
+1 "foreach tent"
+1 HaxSmokeOn
+1 Smokeshellpurple
+1 Myscripts
+1 Flare1
+1 aList
+1 mapscanrad
+1 mapm
+1 mapopt
+1 "player execVM"
+1 musekeys
+1 "\"You\""
+1 "ers...\""
+1 "Entities \"Air\""
+1 action_crate1
+1 Hack-Men
+1 morphto
+1 101000
+1 _dummyveh
+1 _minimap
+1 marker_mapesp
+1 list_vec
+1 actualunit
+1 setMarkerTypeLocal !"rsetMarkerPosLocalcode"
+1 mark_player
+1 pathtoscrdir
+1 exstr
