@@ -79,9 +79,9 @@ if (_isOk) then {
 sleep 3;
 
 //adding melee mags back if needed
-//_wpn = primaryWeapon player;
+_wpn = primaryWeapon player;
 //diag_log format["Classname: %1, WPN: %2", _classname,_wpn];
-//_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpn >> "melee"));
+_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpn >> "melee"));
 if (_ismelee == "true") then {
 	call dayz_meleeMagazineCheck;
 };
