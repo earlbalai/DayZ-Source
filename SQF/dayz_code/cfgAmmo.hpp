@@ -1,6 +1,7 @@
 class CfgAmmo {	
 class BulletBase;
-	class B_9x18_Ball: BulletBase {
+//mak
+	class B_9x18_Ball : BulletBase {
 		airfriction = -0.002751;
 		audiblefire = 15;
 		caliber = 0.33;
@@ -10,8 +11,8 @@ class BulletBase;
 		typicalspeed = 350;
 		visiblefire = 15;
 	};
-
-	class B_9x18_SD: BulletBase {
+//macSD
+	class B_9x18_SD : BulletBase {
 		airfriction = -0.001893;
 		audiblefire = 0.035;
 		cost = 5;
@@ -20,11 +21,11 @@ class BulletBase;
 		visiblefire = 0.035;
 		visiblefiretime = 2;
 	};
-
-	class B_45ACP_Ball: BulletBase {
+//1911
+	class B_45ACP_Ball : BulletBase {
 		airfriction = -0.0013522;
 		audiblefire = 16;
-		caliber = 0.33;
+		caliber = 0.33; //33
 		cartridge = "FxCartridge_9mm";
 		cost = 5;
 		hit = 9;
@@ -52,7 +53,7 @@ class BulletBase;
 		maxRangeProbab = 2.8;
 		explosive = "true";
 		simulationStep = 0.001;
-		timeToLive = 0.04;
+		timeToLive = 0.05;
 		soundHit[] = {"", db-90, 1};
 		soundEngine[] = {"", db-80, 4};
 	};
@@ -82,7 +83,7 @@ class BulletBase;
 		maxRangeProbab = 2.5;
 		explosive = "true";
 		simulationStep = 0.001;
-		timeToLive = 0.03;
+		timeToLive = 0.05;
 		soundHit[] = {"", db-90, 1};
 		soundEngine[] = {"", db-80, 4};
 	};
