@@ -101,6 +101,8 @@ FIX DUE : 2013
 		* [UPDATED] - Lowered Direct coms action sound.
 		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
 		* [UPDATED] - Lowered Transfusion infection rate.
+		* [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
+		* [UPDATED] - You can now only have 1 quiver in your main inventory.
 		
 		* [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 		* [REMOVED] - Zeds can now push players to the ground when attacked from behind.

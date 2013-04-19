@@ -27,7 +27,6 @@ class CfgWeapons {
 	class Crossbow_DZ : Crossbow {
 		magazines[] =
 		{
-			"Quiver",
 			"WoodenArrow"
 		};
 	};
