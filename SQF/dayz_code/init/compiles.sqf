@@ -265,6 +265,9 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
 		};
+		if (_dikCode == 0x38 or _dikCode == 0xB8) then {
+			closeDialog 0;
+		};
 		/*
 		if (_dikCode in actionKeys "IngamePause") then {
 			waitUntil {
