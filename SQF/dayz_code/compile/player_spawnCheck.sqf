@@ -139,17 +139,12 @@ if (dayz_spawnZombies == 0) then {
 	//Loot
 	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle and _checkLoot) then {
 		_looted = (_x getVariable ["looted",-0.1]);
-		//_cleared = (_x getVariable ["cleared",false]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _looted) * 525948;
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 		if (_age < -0.1) then {
 				_x setVariable ["looted",(DateToNumber date),true];
 		} else {
-			//if (!_cleared) then {
-			//	_x setVariable ["cleared",true,true];
-			//};
-			//_cleared = (_x getVariable ["cleared",false]);
 			if (_age > 10)  then {
 				_x setVariable ["looted",_dateNow,true];
 				[_x] spawn building_spawnLoot;
