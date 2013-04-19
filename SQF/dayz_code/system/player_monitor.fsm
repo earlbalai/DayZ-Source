@@ -129,8 +129,8 @@ link64[] = {55,56};
 link65[] = {56,57};
 link66[] = {57,58};
 link67[] = {58,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,90,6316128,1,-339.146729,246.304901,1139.737549,227.010895,610,951,1};
-window[] = {2,-1,-1,-32000,-32000,880,100,1472,100,3,628};
+globals[] = {25.000000,1,0,0,0,640,480,1,90,6316128,1,-554.682739,461.840759,1272.733887,272.847534,611,601,1};
+window[] = {2,-1,-1,-1,-1,890,110,1482,110,3,628};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1003,8 +1003,9 @@ class FSM
        "} else {" \n
        "	_currentWpn	=	""Makarov"";" \n
        "	_currentAnim	=	""adthppnemstpsnonwnondnon"";" \n
-       "}" \n
+       "};" \n
        "" \n
+       "/*" \n
        "if (player hasWeapon ""MeleeCrowbar"") then {" \n
        "	player addMagazine 'crowbar_swing';" \n
        "};" \n
@@ -1014,6 +1015,7 @@ class FSM
        "if (player hasWeapon ""MeleeMachete"") then {" \n
        "	player addMagazine 'machete_swing';" \n
        "};" \n
+       "*/" \n
        "" \n
        "reload player;" \n
        "" \n
