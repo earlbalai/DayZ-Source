@@ -64,7 +64,7 @@ if (!isDedicated) then {
 	//vehicle_handleKilled    = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
 
 	//actions
-	player_countmagazines =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
+	player_countmagazines =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
 	player_addToolbelt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addToolbelt.sqf";
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_tentPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\tent_pitch.sqf";
@@ -81,7 +81,10 @@ if (!isDedicated) then {
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
-	player_combineMag =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
+	player_combineMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
+	player_createquiver =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_createQuiver.sqf";
+	player_fillquiver =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fillQuiver.sqf";
+	player_takearrow =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_takeArrow.sqf";
 	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";

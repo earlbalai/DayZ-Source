@@ -11,31 +11,6 @@ _vUp = vectorUp _projectile;
 _endPos = getPosATL _projectile;
 _dir = 0;
 
-if (_magazine == "Quiver") then {
-	_newmags = [];
-	_mags = call player_countmagazines;
-	for "_i" from 0 to (count _mags - 1) do {
-		if (typeName (_mags select _i) == "ARRAY") then {
-			if ((_mags select _i) select 0 == "Quiver") then {
-				diag_log "Quiver == ARRAY";
-				_newmags set [count _newmags, _mags select _i];
-			};
-		} else {
-			if (_mags select _i == "Quiver") then {
-				diag_log "Quiver != ARRAY";
-				_newmags set [count _newmags, _mags select _i];
-			};
-		};
-	};	
-	if (count _newmags > 0) then {
-		player removeMagazines "Quiver";
-		for "_i" from 0 to (count _newmags -1) do {
-			diag_log "Adding quiver array";
-			player addMagazine (_newmags select _i);
-		};
-	};
-};
-
 while {alive _projectile} do {
 	_endPos = getPosATL _projectile;
 	_vUp = vectorUp _projectile;
