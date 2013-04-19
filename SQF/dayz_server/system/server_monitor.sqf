@@ -66,7 +66,7 @@ if (_script != "") then
 
 			_dir = 0;
 			_pos = [0,0,0];
-			_wsDone = false;
+			_wsDone = false;			
 			if (count _worldspace >= 2) then
 			{
 				_dir = _worldspace select 0;
@@ -75,14 +75,14 @@ if (_script != "") then
 					_wsDone = true;
 				}
 			};
-/*			
+			
 			if (!_wsDone) then {
 				if (count _worldspace >= 1) then { _dir = _worldspace select 0; };
-				_pos = [getMarkerPos "center",0,50,10,0,2000,0] call BIS_fnc_findSafePos;
+				_objectPos = [_worldspace select 1 select 0,_worldspace select 1 select 1,0];		
+				_pos = [(_objectPos),0,15,1,0,2000,0,[],[_objectPos,[]]] call BIS_fnc_findSafePos;
 				if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
 				diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 			};
-*/
 			
 			if (_damage < 1) then {
 				diag_log format["OBJ: %1 - %2", _idKey,_type];
@@ -163,6 +163,10 @@ if (_script != "") then
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
 					_object call fnc_vehicleEventHandler;
+					//Updated object position if moved
+					if (!_wsDone) then {
+						[_object, "position"] call server_updateObject;
+					};
 				};
 
 				//Monitor the object

@@ -21,7 +21,7 @@ if (_canLoot) then {
 	_zombieChance =	getNumber (_config >> "zombieChance");
 	_rnd = random 1;
 
-	if (_rnd < _zombieChance) then {
+	if (_rnd > _zombieChance) then {
 		
 		_noPlayerNear = (count ((getPosATL _obj) nearEntities ["CAManBase",30])) == 0;
 		
@@ -57,7 +57,7 @@ if (_canLoot) then {
 				_nearByPlayer = ({isPlayer _x} count (_iPos nearEntities ["CAManBase",30])) > 0;
 				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				if (!_nearByPlayer and !_nearBy) then {
-					[_iPos,true,_unitTypes] call zombie_generate;
+					[_iPos,false,_unitTypes] call zombie_generate;
 				};
 			};
 		} forEach _positions;

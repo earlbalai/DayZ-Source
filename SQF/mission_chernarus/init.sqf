@@ -7,7 +7,7 @@ enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
 dayZ_instance =	1337;					//The instance
-//dayZ_serverName="CN0000"; // server name (country code + server number)
+//dayZ_serverName="UK1337"; // server name (country code + server number)
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
@@ -30,9 +30,9 @@ progressLoadingScreen 1.0;
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
 /* BIS_Effects_* fixes from Dwarden */
-BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "new_effects\killed.sqf";
-BIS_Effects_AirDestruction = compile preprocessFileLineNumbers "new_effects\AirDestruction.sqf";
-BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers "new_effects\AirDestructionStage2.sqf";
+BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\killed.sqf";
+BIS_Effects_AirDestruction = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\AirDestruction.sqf";
+BIS_Effects_AirDestructionStage2 = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\AirDestructionStage2.sqf";
 
 BIS_Effects_globalEvent = {
 	BIS_effects_gepv = _this;
@@ -97,3 +97,4 @@ if (!isNil "dayZ_serverName") then {
 	};
 };
 
+#include "\z\addons\dayz_code\system\REsec.sqf"

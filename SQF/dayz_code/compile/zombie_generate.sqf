@@ -2,7 +2,6 @@ private ["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agen
 _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
-_doLoiter = true;
 
 if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
@@ -18,27 +17,41 @@ if (!_isNoone) exitWith {};
 if (count _unitTypes == 0) then {
 	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
+ 
+_unitTypes = _unitTypes + _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
+ 
 _type = _unitTypes call BIS_fnc_selectRandom;
 
 //Create the Group and populate it
 //diag_log ("Spawned: " + _type);
-_radius = 40;
-_method = "NONE";
+_radius = 0;
+_method = "CAN_COLLIDE";
+if (_doLoiter) then {
+	_radius = 40;
+	_method = "NONE";
+};
 
 //Make sure position is on the ground
-_position = [_position select 0,_position select 1,0];
+//_position = [_position select 0,_position select 1,0];
 
 //diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
 _agent = createAgent [_type, _position, [], _radius, _method];
 
-//_agent setPosATL _position;
+_agent setPosATL _position;
 _agent setDir round(random 360);
-
 _agent setvelocity [0,0,1];
+
+if (_doLoiter) then {
+	_agent setPosATL _position;
+} else {
+	_agent setVariable ["doLoiter",false,true];
+};
 
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
 //diag_log ("CREATE INFECTED: " + str(_this));
+
+_position = getPosATL _agent;
 
 //_position = getPosATL _agent;
 if (random 1 > 0.7) then {

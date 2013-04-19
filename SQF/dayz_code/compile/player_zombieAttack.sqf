@@ -81,11 +81,11 @@ if (_vehicle != player) then {
 } else {
 	//Did he hit?
 	_currentAnim = animationState _unit;
-	diag_log ("Animation state: " +(_currentAnim));
+//diag_log ("Animation state: " +(_currentAnim));
 	//"amovpercmstpsnonwnondnon",
 	_StandingAttackAnimations = ["zombiestandingattack1","zombiestandingattack2","zombiestandingattack3","zombiestandingattack4","zombiestandingattack5","zombiestandingattack6","zombiestandingattack7","zombiestandingattack8","zombiestandingattack9","zombiestandingattack10","zombiefeed1","zombiefeed2","zombiefeed3","zombiefeed4","zombiefeed5"];
 	_CrawlingAttackAnimations = ["amovppnemstpsnonwnondnon_amovpercmstpsnonwnondnon"];
-	if (((_unit distance player) <= 4) and (((animationState _unit) in _StandingAttackAnimations) or (animationState _unit) in _CrawlingAttackAnimations)) then {
+	if (((_unit distance player) <= 2) and (((animationState _unit) in _StandingAttackAnimations) or (animationState _unit) in _CrawlingAttackAnimations)) then {
 		//check LOS
 		private[];
 		_tPos = (getPosASL _vehicle);
