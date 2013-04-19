@@ -130,7 +130,7 @@ link65[] = {56,57};
 link66[] = {57,58};
 link67[] = {58,59};
 globals[] = {25.000000,1,0,0,0,640,480,1,90,6316128,1,-554.682739,461.840759,1272.733887,272.847534,611,601,1};
-window[] = {2,-1,-1,-1,-1,890,110,1482,110,3,628};
+window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,628};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1002,7 +1002,7 @@ class FSM
        "	};" \n
        "} else {" \n
        "	_currentWpn	=	""Makarov"";" \n
-       "	_currentAnim	=	""adthppnemstpsnonwnondnon"";" \n
+       "	_currentAnim	=	""aidlpercmstpsraswpstdnon_player_idlesteady02"";" \n
        "};" \n
        "" \n
        "/*" \n
