@@ -53,7 +53,7 @@ if (_canLoot) then {
 			_rnd = random 1;
 			if (_rnd < _zombieChance) then {
 				_iPos = _obj modelToWorld _x;
-				_nearBy = {alive _x} count nearestObjects [_iPos, ["zZombie_Base"],3] > 0;
+				_nearBy = {alive _x} count nearestObjects [_iPos, ["zZombie_Base"],5] > 0;
 				_nearByPlayer = ({isPlayer _x} count (_iPos nearEntities ["CAManBase",30])) > 0;
 				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				if (!_nearByPlayer and !_nearBy) then {
