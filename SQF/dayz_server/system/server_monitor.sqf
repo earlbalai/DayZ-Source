@@ -16,11 +16,7 @@ if (_script != "") then
 {
 	diag_log "MISSION: File Updated";
 } else {
-	while {true} do
-	{
-		diag_log "MISSION: File Needs Updating";
-		sleep 1;
-	};
+	diag_log "MISSION: File Needs Updating";
 };
 
 	//Stream in objects
