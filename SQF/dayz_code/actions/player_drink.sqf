@@ -48,6 +48,7 @@ if (_hasoutput) then{
         _item = _nearByPile select 0;
     };
     _item addMagazineCargoGlobal [_itemtodrop,1];
+	_item setvelocity [0,0,1];
 };
 
 //add infection chance for "ItemWaterbottle", 
