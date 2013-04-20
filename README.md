@@ -15,6 +15,7 @@ Files updated
  - Dayz_sfx
  - Dayz_server (server admins only)
  - Mission (server admins only) (Prerequisites)
+ - SQL Files (server admins only)
 
 Requirements
 ------------
@@ -35,14 +36,12 @@ Branches
 Directories
 -----------
 
+ - **BattlEye-Filters** - Current Filters for BattlEye
  - **Binaries** - Hive dlls
  - **Documentation** - Changelog & Credits and Suggestions
  - **Legacy** - Legacy Code of DayZMod
  - **SQF** - Source Code for DayZMod
  - **SQL** - Database Layout & Vehicle SQL
- - **BattlEye-Filters** - Current Filters for BattlEye
-
-
 
 Bugs/Issues
 -----------
