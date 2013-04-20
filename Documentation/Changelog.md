@@ -54,7 +54,10 @@ FIX DUE : 29 APRIL 2013
 		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
 		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapons/others/backpacks)).
 		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapon class's/others class's/backpacks class)).
-		* [NEW] - Weapons spawns now have a chance to spawn with 0 mags upto a max of 3
+		* [NEW] - Weapons spawns now have a chance to spawn with 0 mags upto a max of 3.
+		* [NEW] - Melee weapons can now be droped picked up using the normal a2 system. (means you can now store in backpack and tents, without swaping to items)
+		* [NEW] - New start gear added. ("Makarov","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemPainkiller","HandRoadFlare").
+		* [NEW] - Servers Date have been locked to give full moon nights.
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
@@ -106,6 +109,7 @@ FIX DUE : 29 APRIL 2013
 		* [UPDATED] - Lowered Transfusion infection rate.
 		* [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
 		* [UPDATED] - You can now only have 1 quiver in your main inventory.
+		* [UPDATED] - Melee range has been updated.
 		
 		* [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 		* [REMOVED] - Zeds can now push players to the ground when attacked from behind.
