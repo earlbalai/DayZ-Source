@@ -37,7 +37,7 @@ if(_classname isKindOf "Bag_Base_EP1") then {
 _config = (configFile >> _type >> _classname);
 
 //Remove melee magazines (BIS_fnc_invAdd fix)
-{player removeMagazines _x} forEach MeleeMagazines;
+//{player removeMagazines _x} forEach MeleeMagazines;
 
 _freeSlots = [player] call BIS_fnc_invSlotsEmpty;
 _slotType = [_config] call BIS_fnc_invSlotType;
