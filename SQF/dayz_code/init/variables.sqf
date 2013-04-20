@@ -14,7 +14,7 @@ Rocket_DZ = 	"Rocket_DZ";
 AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","GER_Soldier_EP1"];
 AllPlayersVehicles = ["GER_Soldier_EP1","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
 
-MeleeWeapons = ["ItemHatchet","ItemCrowbar","ItemMachete"];
+MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete"];
 MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing"];
 
 //New Zeds
