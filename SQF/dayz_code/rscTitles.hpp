@@ -380,7 +380,7 @@ class RscDisplayGear
 {
 	idd = 106;
 	enableDisplay = 1;
-	onUnload = "call player_gearSync; call dayz_forceSave;";
+	onUnload = "call player_gearSync; call dayz_forceSave; call dayz_meleeMagazineCheck;";
 	class controls
 	{
 		class CA_Filter_Icon: RscPicture
@@ -537,7 +537,7 @@ class RscDisplayGear
 					x = -2;
 					style = 2048;
 					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM	""\ca\ui\scripts\handleGear.sqf""; _dummy;";
-					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
+					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy; {player removeMagazines _x} forEach MeleeMagazines;";
 					text = "&lt;";
 				};
 				class Available_items: RscIGUIListNBox
