@@ -36,8 +36,13 @@ switch (_iClass) do {
 		_item addWeaponCargoGlobal [_iItem,1];
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if ((count _mags) > 0) then {
-			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
-			_item addMagazineCargoGlobal [(_mags select 0), (round(random 3) + 1)];
+		//	if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
+			if (!(_item in MeleeWeapons)) then {
+				_magQty = round(random 10);
+				if (_magQty > 3) then {
+					_item addMagazineCargoGlobal [(_mags select 0), (round(random 2) + 1)];
+				};	
+			};
 		};
 	};
 	case "magazine": {

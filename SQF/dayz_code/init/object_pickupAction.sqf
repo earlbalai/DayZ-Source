@@ -5,6 +5,8 @@ _classname = _this select 2;
 
 _name = getText (configFile >> _type >> _classname >> "displayName");
 
+pickupInit = true;
+
 actionMonitor = {
 	private["_holder","_type","_classname","_name","_action","_distance","_run","_timeout"];
 	_holder = _this select 0;
@@ -16,6 +18,8 @@ actionMonitor = {
 	_distance = player distance _holder;
 	_run = true;
 	_timeout = 2;
+	
+	diag_log format["Holder: %1, Type: %2 Classname: %3, Name: %4",_holder, _type, _classname, _name];
 
 	while { _run } do {
 		if (alive _holder) then {
@@ -29,6 +33,7 @@ actionMonitor = {
 			// Remove action from player
 			if ((_distance >= 1.75) and (_action != -1)) then {
 				player removeAction _action;
+				pickupInit = true;
 				_action = -1;
 				_timeout = 2;
 			};
@@ -43,6 +48,7 @@ actionMonitor = {
 			if (_action != -1) then {
 				player removeAction _action;
 				_action = -1;
+				pickupInit = true;
 			};
 			_timeout = 0;
 			_run = false;
@@ -54,6 +60,16 @@ actionMonitor = {
 if (_classname == "WoodenArrow") then {
 	[_holder,_type,_classname,_name] spawn actionMonitor;
 } else {
+  if (canPickup) then {
 	null = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
 	player reveal _holder;
+	pickupInit = true;
+  } else {
+	 waitUntil {!pickupInit};
+	  if (canPickup) then {
+	null = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
+		player reveal _holder;
+		pickupInit = true;
+	  };
+  };
 };

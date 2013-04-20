@@ -1,5 +1,8 @@
 class CfgLoot {
 	//0.10
+	craft[] = {
+			{"ItemNails",0.01}
+	};
 	trash[] = {
 			{"TrashTinCan",0.02},
 			{"TrashJackDaniels",0.02},
@@ -8,26 +11,20 @@ class CfgLoot {
 			{"ItemTrashRazor",0.01}
 	};
 	civilian[] = {
-			{"TrashTinCan",0.05},
-			{"TrashJackDaniels",0.05},
-			{"ItemSodaEmpty",0.05},
-			{"ItemSodaCoke",0.06},
-			{"ItemSodaPepsi",0.06},
-			{"ItemSodaRocketFuel",0.04},
-			{"ItemSodaGrapeDrink",0.04},
+			{"TrashTinCan",0.03},
+			{"TrashJackDaniels",0.03},
+			{"ItemSodaEmpty",0.04},
+			{"ItemSodaCoke",0.05},
+			{"ItemSodaPepsi",0.05},
 			{"FoodCanBakedBeans",0.05},
 			{"FoodCanSardines",0.05},
 			{"FoodCanFrankBeans",0.05},
 			{"FoodCanPasta",0.05},
-			{"FoodCanBeef",0.03},
-			{"FoodCanPotatoes",0.03},
-			{"FoodCandyChubby",0.03},
-			{"FoodChipsChocolate",0.02},
 			{"8Rnd_9x18_Makarov",0.04},
 			{"7Rnd_45ACP_1911",0.04},
 			{"2Rnd_shotgun_74Slug",0.04},
 			{"2Rnd_shotgun_74Pellets",0.04},
-			{"ItemBandage",0.03},
+			{"ItemBandage",0.06},
 			{"ItemPainkiller",0.03}
 	};
 	food[] = {
@@ -74,12 +71,6 @@ class CfgLoot {
 			{"FoodCanRusPeas",0.05},
 			{"FoodCanRusMilk",0.04},
 			{"FoodCanRusCorn",0.05}
-			{"FoodCanBeef",0.05},
-			{"FoodCanPotatoes",0.04},
-			{"FoodCandyChubby",0.05},
-			{"FoodChipsChocolate",0.04},
-			{"ItemSodaRocketFuel",0.05},
-			{"ItemSodaGrapeDrink",0.04}
 	};
 	generic[] = {
 			{"TrashTinCan",0.06},
@@ -111,12 +102,12 @@ class CfgLoot {
 			{"ItemHeatPack",0.04}
 	};
 	medical[] = {
-			{"ItemBandage",0.8},
-			{"ItemPainkiller",0.5},
-			{"ItemMorphine",0.5},
-			{"ItemEpinephrine",0.3},
-			{"ItemAntibiotic",0.2},
-			{"ItemHeatPack",0.3}
+			{"ItemBandage",0.08},
+			{"ItemPainkiller",0.05},
+			{"ItemMorphine",0.05},
+			{"ItemEpinephrine",0.03},
+			{"ItemAntibiotic",0.02},
+			{"ItemHeatPack",0.03}
 	};
 	hospital[] = {
 			{"ItemBandage",0.06},
@@ -215,12 +206,12 @@ class CfgLoot {
 			{"HandRoadFlare",0.05}
 	};
 	hunter[] = {
-			{"ItemBandage",0.1},
+			{"ItemBandage",0.10},
 			{"5x_22_LR_17_HMR",0.05},
 			{"7Rnd_45ACP_1911",0.02},
 			{"10x_303",0.05},
 			{"ItemWaterbottleUnfilled",0.02},
-			{"WoodenArrow",0.1},
+			{"WoodenArrow",0.10},
 			{"ItemHeatPack",0.02},
 			{"FoodMRE",0.03},
 			{"FoodNutmix",0.03}

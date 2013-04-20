@@ -262,8 +262,8 @@ class FoodCandyChubby : FoodEdible {
 	bloodRegen = 80;
 	displayName = $STR_FOOD_NAME_CANDY_CHUBBY;
 	descriptionShort = $STR_FOOD_DESC_CANDY_CHUBBY;
-	model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d"
-	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa"
+	model = "z\addons\dayz_communityassets\models\candybar_chubby_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_chubby_full_ca.paa";
 };
 class FoodCandyAnders : FoodEdible {
 	scope = public;
@@ -294,4 +294,13 @@ class FoodCandyMintception : FoodEdible {
 	descriptionShort = $STR_FOOD_DESC_CANDY_MINTCEPTION;
 	model = "z\addons\dayz_communityassets\models\candybar_mintception_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_candybar_mintception_ca.paa";
+};
+class FoodCanLongSprats : FoodEdible {
+	scope = public;
+	count = 1;
+	bloodRegen = 150;
+	displayName = $STR_FOOD_NAME_CAN_LONG_SPRATS;
+	descriptionShort = $STR_FOOD_DESC_CAN_LONG_SPRATS;
+	model = "z\addons\dayz_communityassets\models\can_long_sprat_clean_full_co.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_long_sprat_clean_full_ca.paa";
 };

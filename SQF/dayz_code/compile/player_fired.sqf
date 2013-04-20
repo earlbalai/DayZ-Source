@@ -30,27 +30,13 @@ if (_ammo isKindOf "SmokeShell") then
 	_listTalk = (getPosATL _projectile) nearEntities ["zZombie_Base",50];
 
 	{
-	private["_target","_targets"];
-
-		if (local _x) then
+		private["_targets"];
+		_x reveal [_projectile,4];
+		_targets = _x getVariable ["targets",[]];
+		if (!(_projectile in _targets)) then
 		{
-			_x reveal [_projectile,4];
-			_target = _x getVariable ["target",[]];
-			if (!(_projectile in _target)) then
-			{
-				_target set [count _target,_projectile];
-				_x setVariable ["target",_target,true];
-			};
-		}
-		else
-		{
-			_x reveal [_projectile,4];
-			_targets = _x getVariable ["targets",[]];
-			if (!(_projectile in _targets)) then
-			{
-				_targets set [count _targets,_projectile];
-				_x setVariable ["targets",_targets,true];
-			};
+			_targets set [count _targets,_projectile];
+			_x setVariable ["targets",_targets,true];
 		};
 	} forEach _listTalk;
 }

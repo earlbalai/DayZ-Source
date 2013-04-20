@@ -4,7 +4,6 @@ FIX DUE : 2013
 		* dayz_anim
 		* dayz_code 
 		* dayz_communityassets
-		* dayz_sfx
 		* dayz_server (server admins only)
 		* Mission (server admins only) (Prerequisites)
 		
@@ -12,25 +11,10 @@ FIX DUE : 2013
 		* DayZ 1.7.8.*
 		
 	Changes:
-
-		* [NEW] - 1 New type Zed Older looking - slower, harder to kill, Does more dmg (WIP)
-		* [NEW] - Added new food and drink items
-		
-		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds
-		* [UPDATED] - Updated zed speed to default.
-		* [UPDATED] - melee systems updated.
-		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
-		* [UPDATED] - Clear Ground around crash sites have now been disbaled by default server admins can enable.
- 		
-		* [FIXED] - Zeds spawning underground
-		* [FIXED] - loot spawning undergroung
-		* [FIXED] - melee weapons having no ammo on login.
-		* [FIXED] - Loot Spawns has now been fully resolved. Buildings are now taged and will not spawn any new loot for 10 mins.
-		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 10 mins (Might change)
-		* [FIXED] - Building var has been updated and fixed to not spawn new items in a marked building for 10 mins.
+			Read 1.7.7
 
 ______________________	
-FIX DUE : 2013
+FIX DUE : 29 APRIL 2013
 
 	Affected addons:
 		* dayz_anim
@@ -39,18 +23,18 @@ FIX DUE : 2013
 		* dayz_sfx
 		* dayz_server (server admins only)
 		* Mission (server admins only) (Prerequisites)
+		* SQL Files (server admins only)
 		
 	Community Notes: 
 		* DayZ 1.7.7
 		
 	Changes:
 		* [Prerequisites]	New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
-		* [Prerequisites]	Battleye filters must be updated manually by server admins.
+		* [Prerequisites]	BattlEye filters must be updated manually by server admins.
 
 		* [NEW] - Removed annoying "re-arm" option from actions menu
-		* [NEW] - Added Clear ground to crash sites (http://i.imgur.com/uVDfGym.jpg) 
 		* [NEW] - Models and textures for mutton.
-		* [NEW] - Seperate meat for goats, same blood regen as mutton.
+		* [NEW] - Separate meat for goats, same blood regen as mutton.
 		* [NEW] - Can now combine magazines.
 		* [NEW] - Added new loot & table for church.
 		* [NEW] - Added new food and drink items (only found in supermarkets).
@@ -59,11 +43,18 @@ FIX DUE : 2013
 		* [NEW] - Weapon RPK_74 (Mi8 Helicrash).
 		* [NEW] - Vehicle Damage in Percent (With a Toolbox).
 		* [NEW] - 5L Fuel can takes 1 inv slot.
-		* [NEW] - Zeds can now push players to the ground when attacked from behind.
 		* [NEW] - Bigger Compass (You can see the number of degrees).
-		* [NEW] - Added auth retry system to make sure clients are authed before they spawn (should stop seagull issue).
-		* [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timout later).
+		* [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
+		* [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 		* [NEW] - Mi8 Crash site model.
+		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
+		* [NEW] - Added optional watermark for servername (server admins only).
+		* [NEW] - Sleep updated to Rest. (restores food and drink) (WIP)
+		* [NEW] - Remote exec security. Should prevent all major RE exploits
+		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
+		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapons/others/backpacks)).
+		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapon class's/others class's/backpacks class)).
+		* [NEW] - Weapons spawns now have a chance to spawn with 0 mags upto a max of 3
 		
 		* [FIXED] - Vehicle Repair should now always work correctly.
 		* [FIXED] - M107 & AS50 Lock on system removed.
@@ -71,8 +62,16 @@ FIX DUE : 2013
 		* [FIXED] - StudyBody should now work.
 		* [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
 		* [FIXED] - Hero Skin teleport issue.
-		* [FIXED] - BAF Bags so they dont set on fire. :-) (no moaning it was a bug)
+		* [FIXED] - BAF Bags so they don't set on fire. :-) (no moaning it was a bug)
 		* [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
+		* [FIXED] - Zeds spawning underground.
+		* [FIXED] - Loot spawning underground.
+		* [FIXED] - Melee weapons having no ammo on login/skin change.
+		* [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
+		* [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 15 minutes and no players within 250 meters(WIP). (Server performance boost)
+		* [FIXED] - Gear menu Exploit to force respawn.
+		* [FIXED] - Optimized some destruction effects for security and performance.
+		* [FIXED] - Unconscious Damage scale to only happen if hit by zeds.
 		
 		* [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 		* [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -80,30 +79,40 @@ FIX DUE : 2013
 		* [UPDATED] - M107 lowered chance in loot tables.
 		* [UPDATED] - AS50 lowered chance in loot tables.
 		* [UPDTAED] - ALL loot table weights have been updated.
-		* [UPDTAED] - ALL loot table weights have been reblanced.
+		* [UPDTAED] - ALL loot table weights have been rebalanced.
 		* [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
+		* [UPDATED] - Mac and 1911 Pistol dmg updated.
 		* [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 		* [UPDATED] - Zed spawn timer to 5 mins from 2 mins this should allow an area to be cleared of zeds before more spawn.
-		* [UPDATED] - Readded the "save" option to tents and vehilces. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehilces) 
-		* [UPDATED] - Loot tables rebalanced.
+		* [UPDATED] - Readded the "save" option to tents and vehicles. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we readded this option to save tents/vehicles) 
 		* [UPDATED] - Zed generate system. Should stop zeds spawning in veiw of players then being deleted.
-		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Max possible dmg = body 600, Legs 100, Hands 50, Head 1200)
+		* [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Old Type: Max possible dmg = body 600, Legs 100, Hands 50, Head 1200 New Type: Body 1200, Head 2400)
 		* [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
-		* [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multipier is above > 0.8
-		* [UPDATED] - When unconscious all dmg is lowed to 50 blood for each hit zeds do no matter the part they hit. (Should allow some surviabilty)
+		* [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multiplier is above > 0.8
+		* [UPDATED] - When unconscious all dmg is lowed to 50 blood for each hit zeds do no matter the part they hit. (Should allow some survivabilty)
 		* [UPDATED] - Zeds sight and sound chance has been readded so there is a chance they can ignore you.
 		* [UPDATED] - Sight and sound rebalanced to make them a little more even from movement.
-		* [UPDATED] - Call extension calls for vehilce dmg.
-		* [UPDATED] - Zeds will no longer spawn for air vehilces.
-		* [UPDATED] - Hunters loot table adjested with more weapons.
-		* [UPDATED] - SQL files working on linux.
+		* [UPDATED] - Call extension calls for vehicle dmg.
+		* [UPDATED] - Zeds will no longer spawn for air vehicles.
+		* [UPDATED] - Hunters loot table adjusted with more weapons.
+		* [UPDATED] - SQL files working on Linux.
+		* [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
+		* [UPDATED] - Updated zed speed to default.
+		* [UPDATED] - Melee systems updated.
+		* [UPDATED] - Old Bandit skin for male chars.
+		* [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
+		* [UPDATED] - Lowered Direct comms action sound.
+		* [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
+		* [UPDATED] - Lowered Transfusion infection rate.
+		* [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
+		* [UPDATED] - You can now only have 1 quiver in your main inventory.
 		
 		* [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 		* [REMOVED] - Zeds can now push players to the ground when attacked from behind.
 
 Zed knock down removed due to transition issue with animations working on this for the next patch. (Code left in just commented out) 
 ______________________		
-FIX DUE : 2013
+FIX DUE : 26 FEBRUARY 2013
 
 	Community Notes: 
 		* DayZ 1.7.6.1
@@ -139,7 +148,7 @@ FIX DUE : 2013
 			
 			
 ______________________
-FIX DUE : 2013
+FIX DUE : 25 FEBRUARY 2013
 
 	Community Notes: 
 		* DayZ 1.7.6
@@ -205,20 +214,20 @@ FIX DUE : 2013
 	* [UPDATED] - loot weighted array generation fixed.
 	* [UPDATED] - Updated logout system to check radius of zeds from 50 meters to 35 meters (30 sec count)
 	* [UPDATED] - Player range on logout to 6 meters. (30 Sec count)
-	* [UPDATED] - Max Range of targats 120 meters down from 300 meters. (this should help long range agro, This is zeds max target range).
-	* [UPDATED] - AI behavour updated to try making them zigzag less.
-	* [UPDATED] - Added push bikes to the zeds pull from vehilce list.
+	* [UPDATED] - Max Range of targets 120 meters down from 300 meters. (this should help long range agro, This is zeds max target range).
+	* [UPDATED] - AI behavior updated to try making them zigzag less.
+	* [UPDATED] - Added push bikes to the zeds pull from vehicle list.
 	* [UPDATED] - Epeen key moved to Custom Controls - Use action key 20 (No default key needs setting up)
 	* [UPDATED] - Zeds Targets array modified 
-	* [UPDATED] - Weapon fire sounds divided by 2 (This will help us settle zeds hearing a little more) (107_DZ Zed pull range 450 meters / 2 = 225 meters (capped 120 meters aboue for now))
-	* [UPDATED] - Max local zeds per client now fixed at 40 zeds, Global at 40 +10 foreach player within 400 meters and total 500 zeds max.
+	* [UPDATED] - Weapon fire sounds divided by 2 (This will help us settle zeds hearing a little more) (107_DZ Zed pull range 450 meters / 2 = 225 meters (capped 120 meters about for now))
+	* [UPDATED] - Max local zeds per client now fixed at 40 zeds, Global at 40 +10 for each player within 400 meters and total 500 zeds max.
 	* [UPDATED] - Added some czech language
 	* [UPDATED] - Updated zed attraction to dead players from 50 meters to 20 meters.
 	* [UPDATED] - Players will now drop empty cans after consumption to nearest lootpile or creates new one.
 	* [UPDATED] - Updated Infection to cough, shake camera and loose blood.
-	* [UPDATED] - Updated russian string tables.
+	* [UPDATED] - Updated Russian string tables.
 	* [UPDATED] - Backpack Spawns should now see higher grade backpacks more.
-	* [UPDATED] - Deer stands has it's own loot table (Hunting).
+	* [UPDATED] - Deer stands has its own loot table (Hunting).
 	* [UPDATED] - Reduced Zed Running Speed.
 	
 	* [FIXED] - Zeds talk, lowed to 80 meters down from 200 meters this will stop any zeds targeting for sight/noise outside of this radius
@@ -227,37 +236,37 @@ FIX DUE : 2013
 	* [FIXED] - logout timers updated from sleep 3 to sleep 1 this should now fix long logout timers.
 	* [FIXED] - Zeds should no longer walk though all objects. (Some objects can still be walked thought)
 	* [FIXED] - Updated refuel to attract zeds. (3-6 Meters)
-	* [FIXED] - EH's updated to work with bettleye filters.
+	* [FIXED] - EH's updated to work with BattlEye filters.
 	* [FIXED] - Ammo counts now fixed on dc.
-	* [FIXED] - Zeds will no longer magically hit players just becuase there within 3 meters. (	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player))
+	* [FIXED] - Zeds will no longer magically hit players just because there within 3 meters. (	Zeds can no longer dmg without running the attack animations. (running into zeds will no longer dmg the player))
 	* [FIXED] - Fixed some base class's for vehicles reporting issues with crew
-	* [FIXED] - You can now logout with a broke leg.
+	* [FIXED] - You can now logout with a broken leg.
 	* [FIXED] - Temperature icon should not disappear anymore.
 	* [FIXED] - Humanity should now work increase again.
 	* [FIXED] - Chemlights and flares now work again.
 	* [FIXED] - time is now set on startup.
 	* [FIXED] - Hatchet and crowbar don't require reload anymore.
 	* [FIXED] - Hatchet and crowbar no longer overwrite each other.
-	* [FIXED] - Explot when converting Mags into other mags (Example - DMR to M24 then back)
+	* [FIXED] - Exploit when converting Mags into other mags (Example - DMR to M24 then back)
 	* [FIXED] - Blood particles not shown for player.
 	* [FIXED] - Hide body animation not shown for player.
 	
 	Combat Roll
-	* [Fixed] - No longer posiable to combat roll with broken leg
+	* [Fixed] - No longer possible to combat roll with broken leg
 	* [Fixed] - Added 4 sec delay to multiple rolls.
 	* [Fixed] - No longer possible to combat roll over player created objects (tents, sandbags so on)
 	* [Fixed] - No longer combat roll in buildings.
 	
-	* [REMOVED] - Chase combat logging systems removed. (Removed due to ealry warning of agro)
+	* [REMOVED] - Chase combat logging systems removed. (Removed due to early warning of aggro)
 	* [REMOVED] - Debriefing window has started to be cleaned up. (blank box on dc)
 	* [REMOVED] - BearTrap Due to issues with the trap still staying active after removal.
-	* [REMOVED] - Removed DZ_Patrol_Pack_EP1 Due to us no longer planing to remove backpacks from new spawns.
-	* [REMOVED] - Rmoved all chance based systems for sight and sound from zeds they will now only agro if in view or your makeing noise. Should allow more freedom to move.
+	* [REMOVED] - Removed DZ_Patrol_Pack_EP1 Due to us no longer planning to remove backpacks from new spawns.
+	* [REMOVED] - Removed all chance based systems for sight and sound from zeds they will now only agro if in view or your making noise. Should allow more freedom to move.
 	
-	* [NOT FIXED] - Zombies attacking tho objects (This wont be anything we can fix without a massive fps cost).
+	* [NOT FIXED] - Zombies attacking through objects (This won't be anything we can fix without a massive fps cost).
 	
 ______________________
-FIX DUE : 2013
+FIX DUE : 04 FEBRUARY 2013
 
 	Community Notes: 
 		* DayZ 1.7.5.1
@@ -279,7 +288,8 @@ FIX DUE : 2013
 	* [FIXED] - AS50 was mistakenly banned now unbanned.
 	
 ______________________
-FIX DUE : 2013
+FIX DUE : 04 FEBRUARY 2013
+
 
 	Community Notes: 
 		* DayZ 1.7.5
@@ -316,7 +326,7 @@ FIX DUE : 2013
 			* [NEW] - Chopper weapons can now be reloaded.
 			* [NEW] - UH60Wreck added
 			* [NEW] - New zed & loot spawn systems rewrote Phase 1.
-			* [NEW] - Revamped GUI icons to now empty as you lose the relevent item (blood,food,water) Thanks Des
+			* [NEW] - Revamped GUI icons to now empty as you lose the relevant item (blood,food,water) Thanks Des
 			* [NEW] - Infection changes when eating food and drinking water. (tin and canned items don't count)
 			* [NEW] - Epeen monitor added to display player stats. (Zombies Killed, Headshots, Murders, Bandits Killed, Humanity) - Press Scroll Lock to use
 			* [NEW] - Toolbox is now needed to build Wire,tanktrap.
@@ -328,9 +338,9 @@ FIX DUE : 2013
 			* [NEW] - Survived Dayz added to Epeen monitor.
 			
 			* [NEW] - Cutting down trees now attracts zeds.
-			* [NEW] - After you have eatern a canned product you now get an empty tincan back.
+			* [NEW] - After you have eaten a canned product you now get an empty tincan back.
 			* [NEW] - Added definition of arrays for meatraw / meatcooked
-			* [NEW] - You can now eat raw meat (low hp add + possible infection), and Coocked meat (high hp add w/o infection)
+			* [NEW] - You can now eat raw meat (low hp add + possible infection), and Cooked meat (high hp add w/o infection)
 			
 			* [NEW] - RawMeat blood values (beef-100,rabbit-400,bacon-150,chicken-100,mutton-100).
 			* [NEW] - Cookedmeat blood values (beef-600,rabbit-1600,bacon-400,chicken-400,mutton-400).
@@ -342,14 +352,14 @@ FIX DUE : 2013
 		
 			* [UPDATED] - BAF_L85A2_RIS_CWS replaced with BAF_L85A2_RIS_Holo. (HeliCrash)
 			* [UPDATED] - Added a much faster login process. (Advantages: Login Speed up)
-			* [UPDATED] - Limted amount of ammo found with weapons.
+			* [UPDATED] - Limited amount of ammo found with weapons.
 			* [UPDATED] - Gender selection images updated thanks Des.
 			* [UPDATED] - Updated infection chance during zed attacks from 1/1000 to 1/500.
 			* [UPDATED] - Changed Loot tables to increase the supply of Antibiotic drops.
 			* [UPDATED] - Combat Mode is now affected by everything you do and everything done to you (example any kind of damage).			
 			* [UPDATED] - Updated Mi17_DZ and UH1H_DZ to max ammo Max 100 rounds per gun.
 			* [UPDATED] - UH1 Crash sites no longer all spawn on server start but throughout the game.
-			* [UPDATED] - Damage processing for zombieattacks with prebuilded weighted arrays. (Advantages: speedup and saves a lot of cpu cycles)
+			* [UPDATED] - Damage processing for zombie attacks with prebuilt weighted arrays. (Advantages: speedup and saves a lot of cpu cycles)
 			* [UPDATED] - Much faster fn_instring.
 			* [UPDATED] - Cargo space redo.
 							MI17_DZ ( transportMaxWeapons = 10;, transportMaxMagazines = 50;, transportmaxbackpacks = 10; )
@@ -365,7 +375,7 @@ FIX DUE : 2013
 			* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
 			* [UDDATED] - Massive cleanup remove all useless files.
 			* [UPDATED] - Redone all public EH's
-			* [UPDTAED] - Combat/zombie logout + anti-duping overhall - (https://github.com/R4Z0R49/DayZMod/commit/44321a6856f5fd2d5544d1293c2450f9b2df6fbd)
+			* [UPDTAED] - Combat/zombie logout + anti-duping overhaul - (https://github.com/R4Z0R49/DayZMod/commit/44321a6856f5fd2d5544d1293c2450f9b2df6fbd)
 			* [UPDATED] - String tables to include = English, German, Russian, Spanish, Dutch, French
 			* [UPDATED] - All base class's have been updated to match the dayz removal proc's (weapons)
 
@@ -378,9 +388,9 @@ FIX DUE : 2013
 			* [Fixed] - Infection is now fixed loss of blood 3 per sec (will not drop below 3k blood)
 			* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
 			* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
-			* [FIXED] - Variable spelling mistakes hsould be corrected now.
+			* [FIXED] - Variable spelling mistakes should be corrected now.
 			* [FIXED] - Moved all new foods to stringtable.
-			* [FIXED] - Fixed infection chance when giving blood.(No longer applys to player giving blood) :-(
+			* [FIXED] - Fixed infection chance when giving blood.(No longer applies to player giving blood) :-(
 			* [FIXED] - ALT F4 Sync issue now fixed
 			* [FIXED] - Pause menu can no longer be assigned to mouse keys to bypass respawn.
 
@@ -390,11 +400,11 @@ FIX DUE : 2013
 			* [REMOVED] - In Combat bot removed while we work on speed improvements.
 			* [REMOVED] - Peripheral Vision. (Peripheral Dots)
 			* [REMOVED] - MPTable Removed.
-Removed from dev branch during devlopment.
+Removed from dev branch during development.
 			* [REMOVED] - Axes now have a small chance to fail due to them being blunt (others later) 9% Chance. ** Can still be used as weapon **
 			* [REMOVED] - Matches can now run out (others later) 9% Chance. (at this time this is a random chance)
-			* [REMOVED] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Guting)
-			* [REMOVED] - You can now longer apply more then one bloodbag per 10 mins per player
+			* [REMOVED] - Knife will now have a chance to go blunt causing it to give less food from gutting animals 9% chance(Blunt), 50% less food(Gutting)
+			* [REMOVED] - You can no longer apply more than one bloodbag per 10 mins per player
 			* [REMOVED] - You can no longer regain blood from cooked food for 1 hour after eating. (ie spamming cooked meat to regain hp)
 			* [REMOVED] - No longer need tool box to place bear traps.
 			* [REMOVED] - You can no longer consume food while your not hungry (within 3 mins of eating)
@@ -406,7 +416,7 @@ Removed from dev branch during devlopment.
 			* [Prerequisites]	beta-patch 99806 - Pending updated to newest version.
 			* [Prerequisites]	Microsoft Visual C++ 2010 SP1 x86 Redistributable (http://www.microsoft.com/en-us/download/details.aspx?id=8328)
 			
-			* [NEW] - Added new constraint to block non Dayz items from being wrote to the db
+			* [NEW] - Added new constraint to block non Dayz items from being written to the db
 
 			* [UPDATED] - Publish Object will now only publish items allowed. (tents, other deployables)
 			* [UPDATED] - Updated Basic SQL Procs.
@@ -460,7 +470,7 @@ FIX : 21 NOVEMBER 2012
         * [Fixed]   Adding female skin to variables.
         * [Fixed]   Fixed Parachute so jumping out of choppers won?t kill you.
         * [Fixed]   Event Handle for wrecked choppers this should allow the smoke on wrecks to work all the time.
-        * [Fixed]   Event Handle for Vehicles this fix's problems with local vehilce damage calls..
+        * [Fixed]   Event Handle for Vehicles this fix's problems with local vehicle damage calls.
         * [Fixed]   Remove objects from DB by objectID and objectUID only. (Should fix Deployable problems)
         * [Fixed]   Debug menu options are no longer editable.
         * [Fixed]   Locked Singleplayer Menu

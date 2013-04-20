@@ -95,7 +95,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Allow player to force save
-	if((_isVehicle or _isTent) and _canDo and !_isMan) then {
+	if((_isVehicle or _isTent) and _canDo and !_isMan and (damage cursorTarget < 1)) then {
 		if (s_player_forceSave < 0) then {
 			s_player_forceSave = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",cursorTarget, 1, true, true, "", ""];
 		};

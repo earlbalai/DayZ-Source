@@ -7,7 +7,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_forceHit","_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_newtypezed","_forceHit","_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -18,6 +18,7 @@ if (count _this > 5) then {
 	_forceHit = _this select 5;
 };
 _type = [_damage,_ammo] call fnc_usec_damageType;
+_newtypezed = typeOf _source in DayZ_NewZeds;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
 _evType = "";
@@ -57,7 +58,7 @@ if (_unit == player) then {
 };
 
 //Pure blood damage
-_scale = 200;
+if (_newtypezed) then { _scale = 400; } else { _scale = 200; };
 if (_damage > 0.1) then {
 	if (_ammo != "zombie") then {
 		_scale = _scale + 50;
@@ -66,14 +67,19 @@ if (_damage > 0.1) then {
 	if (_ammo == "zombie" and _hit == "body") then {
 		_scale = _scale * 3;
 	};
-	if (_ammo == "zombie" and _hit == "legs") then {
+	if (_ammo == "zombie" and _hit == "legs" and !_newtypezed) then {
 		_scale = _scale / 2;
 	};
-	if (_ammo == "zombie" and _hit == "hands") then {
+	/*
+	if (_ammo == "zombie" and _hit == "hands" and !_newtypezed) then {
 		_scale = _scale / 4;
 	};
+	*/
 	if (_isHeadHit) then {
 		_scale = _scale * 6;
+	};
+	if (_ammo == "zombie" and _unconscious and !_newtypezed) then {
+		_scale = 50;
 	};
 	//End body part scale
 	if ((isPlayer _source) and !(player == _source)) then {
@@ -87,13 +93,11 @@ if (_damage > 0.1) then {
 		case 2: {_scale = _scale + 200};
 	};
 	if (_unit == player) then {
-		if (_unconscious) then {
-			_scale = 50;
-		};
 		diag_log ("DAMAGE: player hit by " + typeOf _source + " in " + _hit + " with " + _ammo + " for " + str(_damage) + " scaled " + str(_damage * _scale) + " Conscious " + str (!_unconscious));
 		r_player_blood = r_player_blood - (_damage * _scale);
 	};
 };
+
 /*
 //Zombie facing players back, Knock player down
 if ((_damage > 0.5) and (_ammo == "zombie")) then {
@@ -101,13 +105,13 @@ if ((_damage > 0.5) and (_ammo == "zombie")) then {
 		_unit playmove ActsPercMrunSlowWrflDf_TumbleOver;
 	};
 };
-*/
-
+//Crawling zeds pull players down.
 if ((_damage > 0.5) and (_ammo == "zombie") and (_forceHit == "legs")) then {
 //	_unit switchmove AcinPknlMwlkSlowWrflDb_death;
 diag_log ("falldown");
 	_unit playMove ActsPercMrunSlowWrflDf_TumbleOver;
 };
+*/
 
 //Record Damage to Minor parts (legs, arms)
 if (_hit in USEC_MinorWounds) then {
