@@ -49,7 +49,7 @@ FIX DUE : 29 APRIL 2013
 		* [NEW] - Mi8 Crash site model.
 		* [NEW] - 3 New decayed Zeds - harder to kill(WIP).
 		* [NEW] - Added optional watermark for servername (server admins only).
-		* [NEW] - Sleep updated to Rest. (restores food and drink) (WIP)
+		* [NEW] - Sleep updated to Rest. (WIP)
 		* [NEW] - Remote exec security. Should prevent all major RE exploits
 		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
 		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapons/others/backpacks)).
