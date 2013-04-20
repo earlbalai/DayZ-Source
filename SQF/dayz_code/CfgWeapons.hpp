@@ -30,7 +30,12 @@ class CfgWeapons {
 			"WoodenArrow"
 		};
 	};
-	class MeleeWeapon;
+	//class MeleeWeapon;
+	class Rifle;
+	class MeleeWeapon : Rifle {
+		canDrop = true;
+	};
+	
 	class MeleeHatchet: MeleeWeapon
 	{
 		scope=2;
@@ -70,6 +75,7 @@ class CfgWeapons {
 					"ItemHatchet"
 				};
 			};
+			
 			class Drop
 			{
 				text=$STR_ACTIONS_DROP;
@@ -77,8 +83,9 @@ class CfgWeapons {
 				use[]=
 				{
 					"Hatchet_Swing"
-				};
+				};	
 			};
+			
 		};
 		class Library
 		{
@@ -130,6 +137,7 @@ class CfgWeapons {
 					"ItemCrowbar"
 				};
 			};
+			
 			class Drop
 			{
 				text=$STR_ACTIONS_DROP;
@@ -191,6 +199,7 @@ class CfgWeapons {
 		};
 		class ItemActions
 		{
+		/*
 			class Drop
 			{
 				text=$STR_ACTIONS_DROP;
@@ -200,6 +209,7 @@ class CfgWeapons {
 					"Machete_Swing"
 				};
 			};
+		*/
 		};
 		class Library
 		{
@@ -251,14 +261,6 @@ class CfgWeapons {
 			"OFP2_ManSkeleton",
 			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
 		};
-		class ItemActions
-		{
-			class Drop
-			{
-				text=$STR_ACTIONS_DROP;
-				script="spawn player_dropWeapon;";
-			};
-		};
 		class Library
 		{
 			libTextDesc="$STR_EQUIP_DESC_BASEBALLBAT";
@@ -283,14 +285,6 @@ class CfgWeapons {
 		{
 			"OFP2_ManSkeleton",
 			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
-		};
-		class ItemActions
-		{
-			class Drop
-			{
-				text=$STR_ACTIONS_DROP;
-				script="spawn player_dropWeapon;";
-			};
 		};
 		class Library
 		{
@@ -317,14 +311,6 @@ class CfgWeapons {
 		{
 			"OFP2_ManSkeleton",
 			"\dayz_weapons\anim\melee_hatchet_holding.rtm"
-		};
-		class ItemActions
-		{
-			class Drop
-			{
-				text=$STR_ACTIONS_DROP;
-				script="spawn player_dropWeapon;";
-			};
 		};
 		class Library
 		{
