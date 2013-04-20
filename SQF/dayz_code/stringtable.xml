@@ -441,7 +441,7 @@
 			<English>Rest</English>
 			<German>Rest</German>
 			<Russian>Отдохнуть</Russian>
-			<Spanish>Rest</Spanish>
+			<Spanish>Descansar</Spanish>
 			<Dutch>Rest</Dutch>
 			<French>Rest</French>
 			<Czech>Rest</Czech>
@@ -613,7 +613,7 @@
 		<Key ID="STR_EQUIP_DESC_BASEBALLBAT">
 			<English>Designed for the popular American game, this smooth wooden club also has more violent uses.</English>
 			<Russian>Созданная для популярной американской игры, эта гладкая деревянная дубинка также имеет более насильственное применение.</Russian>
-			<Spanish>Designed for the popular American game, this smooth wooden club also has more violent uses.</Spanish>
+			<Spanish>Diseñado para el popular juego estadounidense, este palo de madera lisa también tiene usos más violentos.</Spanish>
 			<Czech>Designed for the popular American game, this smooth wooden club also has more violent uses.</Czech>
 			<French>Designed for the popular American game, this smooth wooden club also has more violent uses.</French>
 			<German>Designed for the popular American game, this smooth wooden club also has more violent uses.</German>
@@ -1599,7 +1599,7 @@
 			<English>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</English>
 			<German>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</German>
 			<Russian>Чистая, закрытая банка шпротов "Papa's Green Sea Sprats". Произведено в Чернаруси.</Russian>
-			<Spanish>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Spanish>
+			<Spanish>Una limpia y cerrada lata de Papa's 'Green Sea Sprats'. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Dutch>
 			<French>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</French>
 			<Czech>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Czech>
@@ -2710,7 +2710,7 @@
 			<English>explosion</English>
 			<German>explosion</German>
 			<Russian>взрыва</Russian>
-			<Spanish>explosion</Spanish>
+			<Spanish>explosión</Spanish>
 			<Dutch>explosion</Dutch>
 			<French>explosion</French>
 			<Czech>explosion</Czech>
