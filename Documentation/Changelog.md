@@ -14,7 +14,7 @@ FIX DUE : 2013
 			Read 1.7.7
 
 ______________________	
-FIX DUE : 2013
+FIX DUE : 29 APRIL 2013
 
 	Affected addons:
 		* dayz_anim
