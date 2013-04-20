@@ -31,11 +31,9 @@ if (_timesincedrink > 600) then	{
 } else {
 	dayz_thirst = 1; //If player has had something to drink over 10 minutes ago, make them thirsty
 };
-/*
 r_player_blood = r_player_blood + _bloodinc;
 player setVariable["USEC_BloodQty",r_player_blood,true];
 player setVariable["medForceUpdate",true];
-*/
 dayz_lastMeal = time;
 dayz_hunger = 0;
 */
