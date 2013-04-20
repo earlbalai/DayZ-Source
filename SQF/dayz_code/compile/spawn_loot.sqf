@@ -38,7 +38,10 @@ switch (_iClass) do {
 		if ((count _mags) > 0) then {
 		//	if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
 			if (!(_item in MeleeWeapons)) then {
-				_item addMagazineCargoGlobal [(_mags select 0), (round(random 2) + 1)];
+				_magQty = round(random 10);
+				if (_magQty > 3) then {
+					_item addMagazineCargoGlobal [(_mags select 0), (round(random 2) + 1)];
+				};	
 			};
 		};
 	};
