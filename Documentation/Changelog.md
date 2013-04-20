@@ -23,6 +23,7 @@ FIX DUE : 2013
 		* dayz_sfx
 		* dayz_server (server admins only)
 		* Mission (server admins only) (Prerequisites)
+		* SQL Files (server admins only)
 		
 	Community Notes: 
 		* DayZ 1.7.7
