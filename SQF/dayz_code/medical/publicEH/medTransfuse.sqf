@@ -5,8 +5,8 @@ _array = _this; //_this select 0;
 _unit = _array select 0;
 _medic = _array select 1;
 
-_rndInfection = (random 15);
-_TransfusionInfection = (_rndInfection < 1);
+_rndInfection = (random 10);
+_TransfusionInfection = (_rndInfection < 0.3);
 
 if (_unit == player) then {
 	r_player_blood = r_player_bloodTotal;

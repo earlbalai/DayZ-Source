@@ -1,5 +1,5 @@
 private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
-		disableSerialization;
+	disableSerialization;
 		waitUntil {
 			_display = findDisplay 49;
 			!isNull _display;
@@ -10,13 +10,14 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_btnAbort ctrlEnable false;
 		_timeOut = 0;
 		_timeMax = 30;
-		dayz_lastCheckBit = time;
+		
+		dayz_lastCheckSave = time;
 		
 		if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
 		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true;};
 		
 		//force gear save
-		if (time - dayz_lastCheckBit > 10) then {
+		if (time - dayz_lastCheckSave > 10) then {
 			call dayz_forceSave;
 		};			
 				

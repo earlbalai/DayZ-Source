@@ -29,7 +29,7 @@ player playActionNow "PutDown";
 player removeMagazine _itemorignal;
 sleep 1;
 
-if (_itemorignal == "ItemWaterbottle") then {
+if (_itemorignal in no_output_drink) then {
     player addMagazine "ItemWaterbottleUnfilled";
 };
 
@@ -48,6 +48,7 @@ if (_hasoutput) then{
         _item = _nearByPile select 0;
     };
     _item addMagazineCargoGlobal [_itemtodrop,1];
+	_item setvelocity [0,0,1];
 };
 
 //add infection chance for "ItemWaterbottle", 

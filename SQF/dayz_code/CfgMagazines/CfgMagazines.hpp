@@ -6,9 +6,9 @@ class CfgMagazines {
 	class TrashTinCan; //External class reference
 	
 	class Melee_Swing : CA_Magazine {
-		scopeWeapon = protected;
-		scopeMagazine = protected;
-		magazineType = WeaponNoSlot;
+	//	scopeWeapon = protected;
+	//	scopeMagazine = protected;
+	//	magazineType = WeaponNoSlot;
 		type = VSoft;
 		flash = "";
 		flashSize = 0;
@@ -165,8 +165,7 @@ class CfgMagazines {
 		descriptionShort = $STR_EQUIP_DESC_SOLDIER;
 	}; 
 	
-	class Quiver : CA_Magazine
-	{
+		class Quiver : CA_Magazine {
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
@@ -176,9 +175,13 @@ class CfgMagazines {
 		model = "\z\addons\dayz_communityassets\models\quiver";
 		picture = "\z\addons\dayz_communityassets\pictures\equip_quiver_ca.paa";
 		class ItemActions {
-			class CombineMag {
-				text = $STR_MAG_COMBINE;
-				script = "spawn player_combineMag;";
+			class TakeArrow {
+				text = "Take arrow from quiver";
+				script = "spawn player_takearrow;";
+			};
+			class FillQuiver {
+				text = "Fill quiver";
+				script = "spawn player_fillquiver;";
 			};
 		};
 	};
@@ -194,17 +197,15 @@ class CfgMagazines {
 		descriptionShort = $STR_ITEMWOODENARROW_CODE_DESC;
 		
 		class ItemActions {
-			class ReloadMag {
-				text = $STR_ACTION_CREATEQUIVER;
-				script = "spawn player_reloadMag;";
-				use[] = {"WoodenArrow"};
-				output[] = {"Quiver"};
+			class CreateQuiver {
+				text = "Create quiver";
+				script = "spawn player_createquiver;";
 			};
 		};
 	};
 	
 	class ItemSoda : FoodDrink {
-		scope = protected;
+		scope = public;
 		sfx = "soda";
 		sfxdis = 3;
 	};

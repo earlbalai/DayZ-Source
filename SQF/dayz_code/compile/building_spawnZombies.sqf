@@ -15,13 +15,13 @@ if (_canLoot) then {
 	_max = 			getNumber (_config >> "maxRoaming");
 //Walking Zombies
 	//_num = round(random _max) max _min;
-	_num = round(random _max) max _min;
+	_num = round(random _max) max _max;
 	_config = 		configFile >> "CfgBuildingLoot" >> _type;
 //Get zombie class
 	_zombieChance =	getNumber (_config >> "zombieChance");
 	_rnd = random 1;
 
-	if (_rnd < _zombieChance) then {
+	if (_rnd > _zombieChance) then {
 		
 		_noPlayerNear = (count ((getPosATL _obj) nearEntities ["CAManBase",30])) == 0;
 		
@@ -53,11 +53,11 @@ if (_canLoot) then {
 			_rnd = random 1;
 			if (_rnd < _zombieChance) then {
 				_iPos = _obj modelToWorld _x;
-				_nearBy = {alive _x} count nearestObjects [_iPos, ["zZombie_Base"],1] > 0;
+				_nearBy = {alive _x} count nearestObjects [_iPos, ["zZombie_Base"],5] > 0;
 				_nearByPlayer = ({isPlayer _x} count (_iPos nearEntities ["CAManBase",30])) > 0;
 				//diag_log ("BUILDING: " + _type + " / " + str(_nearBy) + " / " + str(_nearByPlayer));
 				if (!_nearByPlayer and !_nearBy) then {
-					[_iPos,true,_unitTypes] call zombie_generate;
+					[_iPos,false,_unitTypes] call zombie_generate;
 				};
 			};
 		} forEach _positions;

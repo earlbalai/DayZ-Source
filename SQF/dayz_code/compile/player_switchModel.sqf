@@ -191,3 +191,10 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	_playerObjName = format["player%1",_playerUID];
 	call compile format["%1 = player;",_playerObjName];
 	publicVariable _playerObjName;
+	
+	//melee check
+	_wpnType = primaryWeapon player;
+	_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+	if (_ismelee == "true") then {
+		call dayz_meleeMagazineCheck;
+	};

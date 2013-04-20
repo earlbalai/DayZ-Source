@@ -1,4 +1,4 @@
-private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave"];
+private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave","_wpnType","_isokay"];
 disableSerialization;
 _timeOut = 	0;
 _messTimer = 0;
@@ -268,6 +268,18 @@ while {true} do {
 		dayz_lastSave = time;
 	};
 
+	//Pause for pickup actions
+  _isokay = pickupInit AND !canPickup || !pickupInit AND canPickup; 
+ if (pickupInit AND !canPickup) then {
+  canPickup = true;
+  pickupInit = false;
+   };
+   //Reset if stuck...
+  if (!_isokay) then {
+  canPickup = false;
+  pickupInit = true;
+  };
+
 	//Attach Trigger Current Object
 	//dayz_playerTrigger attachTo [_refObj,[0,0,0]];
 	//dayz_playerTrigger setTriggerArea [_size,_size,0,false];
@@ -333,7 +345,11 @@ while {true} do {
 	//Melee Weapons ammo fix
 	if(isNil {login_ammochecked}) then {
 		login_ammochecked = true;
-		call dayz_meleeMagazineCheck;
+		 _wpnType = primaryWeapon player;
+		_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+		if (_ismelee == "true") then {
+			call dayz_meleeMagazineCheck;
+		};
 	};
 	
 	//Crowbar ammo fix	

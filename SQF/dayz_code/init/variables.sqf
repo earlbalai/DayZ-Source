@@ -11,9 +11,14 @@ Camo1_DZ = 		"Camo1_DZ";
 Soldier1_DZ = 	"Soldier1_DZ";
 Rocket_DZ = 	"Rocket_DZ";
 
-AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ"];
-AllPlayersVehicles = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
-MeleeWeapons = ["ItemHatchet","ItemCrowbar","ItemMachete"];
+AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","GER_Soldier_EP1"];
+AllPlayersVehicles = ["GER_Soldier_EP1","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
+
+MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete"];
+MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing"];
+
+//New Zeds
+DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4"];
 
 //Cooking
 meatraw = [
@@ -103,6 +108,7 @@ food_output = [
 ];
 //Drinking
 no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
+
 drink_with_output = [
     "ItemSoda",  //just to define item for ItemSodaEmpty
     "ItemSodaCoke",
@@ -171,7 +177,8 @@ boil_tin_cans = [
 
 dayz_combatLog = "";
 canRoll = true;
-
+canPickup = false;
+pickupInit = false;
 
 //Hunting Variables
 dayZ_partClasses = [
@@ -360,7 +367,7 @@ DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40;
-dayz_maxGlobalZombies = 30;
+dayz_maxGlobalZombies = 60;
 dayz_maxZeds = 500;
 //dayz_spawnPos = getPosATL player;
 
