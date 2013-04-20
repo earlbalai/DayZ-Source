@@ -52,8 +52,7 @@ FIX DUE : 22 APRIL 2013
 		* [NEW] - "Sleep" at tents changed to "Rest". (WIP)
 		* [NEW] - Remote exec security. Should prevent all major RE exploits
 		* [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
-		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapons/others/backpacks)).
-		* [NEW] - Vehicles and tents now report free gear slots (example: UAZ (weapon class's/others class's/backpacks class)).
+		* [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
 		* [NEW] - Weapons spawns now have a chance to spawn with 0 mags upto a max of 3.
 		* [NEW] - Melee weapons can now be droped picked up using the normal a2 system. (means you can now store in backpack and tents, without swaping to items)
 		* [NEW] - New start gear added. ("Makarov","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemPainkiller","HandRoadFlare").
