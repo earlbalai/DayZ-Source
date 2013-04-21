@@ -145,7 +145,7 @@ if (dayz_spawnZombies == 0) then {
 		if (_age < -0.1) then {
 				_x setVariable ["looted",(DateToNumber date),true];
 		} else {
-			if (_age > 15)  then {
+			if (_age > 60)  then {
 				_x setVariable ["looted",_dateNow,true];
 				[_x] spawn building_spawnLoot;
 			};
