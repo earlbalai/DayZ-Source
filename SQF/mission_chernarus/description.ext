@@ -105,17 +105,6 @@ class DayZ_loadingScreen
 			colorText[] = {0,0,0,0};
 			colorBackground[] = {0,0,0,1};
 		};
-		/*
-		class nicePic : RscPicture
-		{
-			style = 48 + 0x800; // ST_PICTURE + ST_KEEP_ASPECT_RATIO
-			x = safezoneX + safezoneW/2 - 0.25;
-			y = safezoneY + safezoneH/2 - 0.2;
-			w = 0.5;
-			h = 0.4;
-			text = "img\nicePic.paa";
-		};
-		*/
 	};
 	class controls
 	{

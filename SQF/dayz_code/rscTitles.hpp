@@ -537,7 +537,7 @@ class RscDisplayGear
 					x = -2;
 					style = 2048;
 					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM	""\ca\ui\scripts\handleGear.sqf""; _dummy;";
-					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy; {player removeMagazines _x} forEach MeleeMagazines;";
+					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
 					text = "&lt;";
 				};
 				class Available_items: RscIGUIListNBox
@@ -1102,7 +1102,7 @@ class RscDisplayGear
 	emptyMag2 = "\ca\ui\data\ui_gear_mag2_gs.paa";
 	emptyHGun = "\ca\ui\data\ui_gear_hgun_gs.paa";
 	emptyHGunMag = "\ca\ui\data\ui_gear_hgunmag_gs.paa";
-	onLoad = "[] spawn object_monitorGear; call gear_ui_init;if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\ca\ui\scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\ca\ui\scripts\handleGear.sqf'; _dummy;";
+	onLoad = "[] spawn object_monitorGear; {player removeMagazines _x} forEach MeleeMagazines; call gear_ui_init; if (isNil('IGUI_GEAR_activeFilter')) then { IGUI_GEAR_activeFilter = 0;}; private ['_dummy']; _dummy = [_this,'initDialog'] call compile preprocessFile	'\ca\ui\scripts\handleGear.sqf'; _dummy = [_this,'onLoad'] execVM	'\ca\ui\scripts\handleGear.sqf'; _dummy;";
 	class ControlsBackground
 	{
 		class Mainback: RscPicture
