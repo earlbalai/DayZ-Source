@@ -109,6 +109,8 @@ FIX DUE : 22 APRIL 2013
 	    * [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
 	    * [UPDATED] - You can now only have 1 quiver in your main inventory.
 	    * [UPDATED] - Melee range has been updated.
+		* [UPDATED] - Agro from smoke grenades now happens when the smoke grenade hits the ground.
+		* [UPDATED] - Zombies now investigate hand grenade explosions (agro not possible as of now).
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
