@@ -444,7 +444,7 @@
 			<Spanish>Descansar</Spanish>
 			<Dutch>Rest</Dutch>
 			<French>Rest</French>
-			<Czech>Rest</Czech>
+			<Czech>Odpočívat</Czech>
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<English>Bandit</English>
@@ -605,7 +605,7 @@
 			<English>Baseball Bat</English>
 			<Russian>Бейсбольная Бита</Russian>
 			<Spanish>Bate de Béisbol</Spanish>
-			<Czech>Baseballovou Pálkou</Czech>
+			<Czech>Baseballová pálka</Czech>
 			<French>Batte de Baseball</French>
 			<German>Baseballschläger</German>
 			<Dutch>Honkbalknuppel</Dutch>
@@ -615,7 +615,7 @@
 			<German>Entworfen für den populären amerikanischen Spiel, dieses weiche Holz wiedersteht auch den heftigsten einsatz.</German>
 			<Russian>Созданная для популярной американской игры, эта гладкая деревянная дубинка также имеет более насильственное применение.</Russian>
 			<Spanish>Diseñado para el popular juego estadounidense, este palo de madera lisa también tiene usos más violentos.</Spanish>
-			<Czech>Designed for the popular American game, this smooth wooden club also has more violent uses.</Czech>
+			<Czech>Vytvořeno pro populární americkou hru, ale tento dřevěný nástroj slouží také pro násilý.</Czech>
 			<French>Designed for the popular American game, this smooth wooden club also has more violent uses.</French>
 			<Dutch>Designed for the popular American game, this smooth wooden club also has more violent uses.</Dutch>
 		</Key>	
@@ -1510,7 +1510,7 @@
 			<Spanish>Una limpia y cerrada bolsa de Papa's 'Chocolate Yummy Snacks'. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</Dutch>
 			<French>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</French>
-			<Czech>A clean, unopened bag of Papa's 'Chocolate Yummy Snacks'. Product of Chernarus.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček čokoládových chipsů od Papa. Vyrobeno v Chernarusi.</Czech>
 		</Key>
 		
 		<Key ID="STR_FOOD_NAME_CANDY_CHUBBY">
@@ -1583,7 +1583,7 @@
 			<Spanish>Una limpia y cerrada barra de chocolate con menta Mintception.</Spanish>
 			<Dutch>Een schoon, ongeopend Mintception muntchocolade snoepreep.</Dutch>
 			<French>Un paquet intact de barres chocolatées "Mintception" à la menthe.</French>
-			<Czech>Čistý a ještě neotevřený balíček Mintception mint.</Czech>
+			<Czech>Čistý a ještě neotevřený balíček čokolády Mintception mint.</Czech>
 		</Key>
 
 		<Key ID="STR_FOOD_NAME_CAN_LONG_SPRATS">
@@ -1593,7 +1593,7 @@
 			<Spanish>Lata (Sprats)</Spanish>
 			<Dutch>Blik (Sprats)</Dutch>
 			<French>Boîte (Sprats)</French>
-			<Czech>Plechovka (Sprats)</Czech>
+			<Czech>Plechovka (Sardinky)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_LONG_SPRATS">
 			<English>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</English>
@@ -1602,7 +1602,7 @@
 			<Spanish>Una limpia y cerrada lata de Papa's 'Green Sea Sprats'. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Dutch>
 			<French>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</French>
-			<Czech>A clean, unopened tin can of Papa's 'Green Sea Sprats'. Product of Chernarus.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka 'Green Sea Sprats'. Vyrobeno v Chernarusi.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_BEEF">
 			<English>Can (Stroganoff)</English>
@@ -1621,7 +1621,7 @@
 			<Spanish>Una limpia y cerrada lata de la receta original de Bife Strógonoff de Papa's. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Dutch>
 			<French>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</French>
-			<Czech>A clean, unopened can of Papa's original recipe beef stroganoff. Product of Chernarus.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka hovězího stronganoffa od Papa. Vyrobeno v Chernarusi.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_POTATOES">
 			<English>Can (Potatoes)</English>
@@ -1630,7 +1630,7 @@
 			<Spanish>Lata (Papas Fritas)</Spanish>
 			<Dutch>Blik (Potatoes)</Dutch>
 			<French>Boîte (Pommes de terre)</French>
-			<Czech>Plechovka (Potatoes)</Czech>
+			<Czech>Plechovka (Brambory)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POTATOES">
 			<English>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</English>
@@ -1639,7 +1639,7 @@
 			<Spanish>Una limpia y cerrada bolsa de papas fritas Papa's. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Dutch>
 			<French>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</French>
-			<Czech>A clean, unopened can of Papa's sliced potatoes. Product of Chernarus.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka krajených brambor od Papa. Vyrobeno v Chernarusi.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_GRIFF">
 			<English>Can (Beans)</English>
@@ -1774,7 +1774,7 @@
 			<Spanish>Lata (Magdalenas)</Spanish>
 			<Dutch>Blik (Muffins)</Dutch>
 			<French>Boîte (Muffins)</French>
-			<Czech>Plechovka (Muffins)</Czech>
+			<Czech>Plechovka (Muffiny)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY">
 			<English>A clean, unopened can of Herpy Dooves canned muffins.</English>
@@ -2027,7 +2027,7 @@
 			<Spanish>Clavos</Spanish>
 			<Dutch>Nails</Dutch>
 			<French>Nails</French>
-			<Czech>Nails</Czech>
+			<Czech>Hřebíky</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_NAILS">
 			<English>A small box of 4 inch nails.</English>
@@ -2036,7 +2036,7 @@
 			<Spanish>Una pequeña caja de clavos de 4 pulgadas.</Spanish>
 			<Dutch>A small box of 4 inch nails.</Dutch>
 			<French>A small box of 4 inch nails.</French>
-			<Czech>A small box of 4 inch nails.</Czech>
+			<Czech>Malá krabička s hřebíky.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan (5L)</English>
@@ -2713,7 +2713,7 @@
 			<Spanish>explosión</Spanish>
 			<Dutch>explosion</Dutch>
 			<French>explosion</French>
-			<Czech>explosion</Czech>
+			<Czech>exploze</Czech>
 		</Key>
 		<Key ID="str_death_unknown">
 			<English>an unknown cause</English>
