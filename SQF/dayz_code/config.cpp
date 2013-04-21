@@ -408,11 +408,11 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic",0.06},
 			{"LeeEnfield","weapon",0.06},
 			{"revolver_EP1","weapon",0.04},
-			{"DZ_Assault_Pack_EP1","object",0.05}, // 12
-			{"DZ_Czech_Vest_Puch","object",0.04}, // 12-0
-			{"DZ_ALICE_Pack_EP1","object",0.02}, // 16
+			{"DZ_Patrol_Pack_EP1","object",0.05}, //8
+			{"DZ_Assault_Pack_EP1","object",0.04}, // 12
+			{"DZ_Czech_Vest_Puch","object",0.03}, // 12-0
+			{"DZ_ALICE_Pack_EP1","object",0.01}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
-			{"DZ_British_ACU","object",0.01}, // 18
 			{"Winchester1866","weapon",0.03},
 			//{"MeleeBaseBallBat","weapon",0.02},
 			{"WeaponHolder_ItemTent","object",0.01},
@@ -429,7 +429,6 @@ class CfgBuildingLoot {
 			{"MR43","weapon",0.03},
 			{"ItemBookBible","magazine",0.02},
 			{"WeaponHolder_ItemFuelcan","object",0.03}
-		
 		};
 	};
 	
@@ -501,11 +500,11 @@ class CfgBuildingLoot {
 			{"ItemMatchbox","generic",0.05},
 			{"LeeEnfield","weapon",0.01},
 			{"revolver_EP1","weapon",0.01},
-			{"DZ_Assault_Pack_EP1","object",0.03}, // 12
+			{"DZ_Patrol_Pack_EP1","object",0.05}, //12
+			{"DZ_Assault_Pack_EP1","object",0.04}, // 12
 			{"DZ_Czech_Vest_Puch","object",0.03}, // 12-0
 			{"DZ_ALICE_Pack_EP1","object",0.02}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
-			{"DZ_British_ACU","object",0.01}, // 18
 			{"Winchester1866","weapon",0.03},
 			{"WeaponHolder_ItemTent","object",0.01},
 			{"","food",0.05},
@@ -651,7 +650,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
-		lootChance = 0.4;
+		lootChance = 0.3;
 		lootPos[] = {};
 		lootType[] = {
 			{"M9","weapon",0.05},
@@ -674,26 +673,20 @@ class CfgBuildingLoot {
 			{"glock17_EP1","weapon",0.08},
 			{"MP5A5","weapon",0.04},
 			{"MP5SD","weapon",0.01},
-			{"M4A3_CCO_EP1","weapon",0.03},
+			{"M4A3_CCO_EP1","weapon",0.02},
 			{"Binocular","weapon",0.05},
 			{"ItemFlashlightRed","military",0.06},
 			{"ItemKnife","military",0.06},
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.03},
-			{"DZ_ALICE_Pack_EP1","object",0.03}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object",0.03}, // 16
-			{"DZ_British_ACU","object",0.02}, // 18			
-			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
-			{"DZ_Backpack_EP1","object",0.01}, // 24
+			{"DZ_British_ACU","object",0.02}, // 18
+			{"DZ_CivilBackpack_EP1","object",0.01}, // 24			
 			{"","medical",0.06},
 			{"","generic",0.15},
 			{"","military",0.07},
 			{"","trash",0.20},
 			{"ItemEtool","weapon",0.03},
-			{"ItemSandbag","magazine",0.04},
-			{"Sa58P_EP1","weapon",0.05},
-			{"Sa58V_EP1","weapon",0.05},
-			{"BAF_L85A2_RIS_Holo","weapon",0.04}
+			{"ItemSandbag","magazine",0.04}
 		};
 	};
 	class MilitarySpecial: Default {
@@ -701,7 +694,7 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier_heavy"};
-		lootChance = 0.4;
+		lootChance = 0.1;
 		lootPos[] = {};
 		lootType[] = {
 			{"M16A2","weapon",0.05},
@@ -737,9 +730,6 @@ class CfgBuildingLoot {
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.03},
 			{"Binocular_Vector","military",0.01},
-			{"DZ_ALICE_Pack_EP1","object",0.08}, // 16
-			{"DZ_TK_Assault_Pack_EP1","object",0.08}, // 16
-			{"DZ_British_ACU","object",0.06}, // 18
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24		
 			{"","medical",0.03},
@@ -752,7 +742,9 @@ class CfgBuildingLoot {
 			{"Sa58V_CCO_EP1","weapon",0.04},
 			//{"G36_C_SD_camo","weapon",0.01},
 			{"M40A3","weapon",0.02},
-			{"100Rnd_762x54_PK","magazine",0.01}
+			{"100Rnd_762x54_PK","magazine",0.01},
+			{"Sa58P_EP1","weapon",0.02},
+			{"Sa58V_EP1","weapon",0.02}
 		};
 	};
 	class Hunting: Default {
