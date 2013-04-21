@@ -69,8 +69,8 @@ FIX DUE : 22 APRIL 2013
 	    * [FIXED] - Zeds spawning underground.
 	    * [FIXED] - Loot spawning underground.
 	    * [FIXED] - Melee weapons having no ammo on login/skin change.
-	    * [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
-	    * [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 15 minutes and no players within 250 meters(WIP). (Server performance boost)
+	    * [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 30 minutes.
+	    * [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 60 minutes and no players within 250 meters(WIP). (Server performance boost)
 	    * [FIXED] - Gear menu exploit to force respawn.
 	    * [FIXED] - Optimized some destruction effects for security and performance.
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
