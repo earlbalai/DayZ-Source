@@ -9,7 +9,6 @@ _playerID = getPlayerUID player;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
 if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
-_holder setVariable["claimed",_playerID,true];
 
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
@@ -29,6 +28,7 @@ sleep 0.25; //Why are we waiting? Animation
 _claimedBy = _holder getVariable["claimed",0];
 
 if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
+_holder setVariable["claimed",_playerID,true];
 
 if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
