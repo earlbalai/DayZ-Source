@@ -1,4 +1,3 @@
-
 private["_unit","_distance","_doRun","_pos","_listTalk","_target","_targets"];
 
 _unit = 	_this select 0;
