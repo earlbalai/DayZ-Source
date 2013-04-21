@@ -47,7 +47,7 @@ FIX DUE : 22 APRIL 2013
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
-	    * [NEW] - 3 New decayed Zeds - harder to kill (WIP).
+	    * [NEW] - 3 New decayed Zeds - harder to kill (WIP). (Using new textures: http://dayzmod.com/forum/index.php?/topic/21465-new-zombie-textures/ )
 	    * [NEW] - Added optional watermark for servername (server admins only).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
