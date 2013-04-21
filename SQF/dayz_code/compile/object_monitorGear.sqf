@@ -45,7 +45,11 @@ _updateGear = {
 	_control ctrlSetText format["%1 (%2/%3/%4)", _objectName, _freeSlots select 0, _freeSlots select 1, _freeSlots select 2];
 };
 
+if (vehicle player != player) then {
+_object = vehicle player;
+} else {
 _object = cursorTarget;
+};
 _distance = player distance _object;
 _isVehicle = _object isKindOf "AllVehicles";
 _isMan = _object isKindOf "Man";
@@ -58,16 +62,17 @@ waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
 //diag_log format["object_monitorGear.sqf: _object: %1 _distance: %2 _isTent: %5 _isVehicle: %3 _isMan: %4 _display: %6", _object, _distance, _isVehicle, _isMan, _isTent, findDisplay 106];
 
 if (((_isVehicle or _isTent) and (_distance < 6)) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
-	_isOK = true;
-};
-
-//diag_log format["object_monitorGear.sqf: _isOK: %1", _isOK];
-
-if (_isOK) then {
+if (vehicle player != player) then {
+	_objectName = getText (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "displayName");
+	_weaponsMax = getNumber (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "transportMaxWeapons");
+	_magazinesMax = getNumber (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "transportMaxMagazines");
+	_backpacksMax = getNumber (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "transportMaxBackpacks");
+} else {
 	_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
 	_weaponsMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxWeapons");
 	_magazinesMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxMagazines");
 	_backpacksMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxBackpacks");
+  };
 	
 	//diag_log "object_monitorGear.sqf: start loop";
 	
@@ -80,6 +85,4 @@ if (_isOK) then {
 		[] call _updateGear;
 		sleep 0.1;
 	};
-	
-	//diag_log "object_monitorGear.sqf: stop loop";
 };
