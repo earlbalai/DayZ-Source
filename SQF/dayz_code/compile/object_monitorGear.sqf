@@ -62,17 +62,10 @@ waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
 //diag_log format["object_monitorGear.sqf: _object: %1 _distance: %2 _isTent: %5 _isVehicle: %3 _isMan: %4 _display: %6", _object, _distance, _isVehicle, _isMan, _isTent, findDisplay 106];
 
 if (((_isVehicle or _isTent) and (_distance < 6)) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
-if (vehicle player != player) then {
-	_objectName = getText (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "displayName");
-	_weaponsMax = getNumber (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "transportMaxWeapons");
-	_magazinesMax = getNumber (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "transportMaxMagazines");
-	_backpacksMax = getNumber (configFile >> "CfgVehicles" >> (typeof (vehicle player)) >> "transportMaxBackpacks");
-} else {
 	_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
 	_weaponsMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxWeapons");
 	_magazinesMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxMagazines");
 	_backpacksMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxBackpacks");
-  };
 	
 	//diag_log "object_monitorGear.sqf: start loop";
 	
