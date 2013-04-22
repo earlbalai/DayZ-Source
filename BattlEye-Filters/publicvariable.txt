@@ -1,4 +1,4 @@
-5 "" !="remExField" !="remExFP" !="atp" !="changeCharacter" !="dayz_serverObjectMonitor" !="dayzCharSave" !="dayzDeath" !="dayzDeleteObj" !="dayzDelLocal" !="dayzDiscoAdd" !="dayzDiscoRem" !="dayzFire" !="dayzGutBody" !="dayzHideBody" !="dayzHit" !="dayzHitV" !="dayzHumanity" !="dayzLogin" !="dayzLogin2" !="dayzLoginRecord" !="dayzPlayerLogin" !="dayzPlayerLogin2" !="dayzPlayerMorph" !="dayzPlayerSave" !="dayzPublishObj" !="dayzRoadFlare" !="dayzSetDate" !="dayzSetFix" !="dayzSetFuel" !="dayzSwitch" !="dayzUpdate" !="dayzUpdateVehicle" !="dayzVehicleInit" !="drn_AskServerDynamicWeatherEventArgs" !="drn_DynamicWeather_DebugTextEventArgs" !="drn_DynamicWeatherEventArgs" !="drn_var_DynamicWeather_rain" !="drn_var_DynamicWeather_ServerInitialized" !="norrinRAlie" !="norrnR180" !="norrnRACarUp" !="norrnRaDrag" !="norrnRaLW" !="norrnRAPicUp" !="norrnRDead" !="norrnRLact" !="norrnRnoAnim" !"player" !="usecBandage" !="usecBleed" !="usecEpi" !="usecInject" !="usecMorphine" !="usecPainK" !="usecTransfuse"
+5 "" !="remExField" !="remExFP" !="atp" !="changeCharacter" !="dayz_serverObjectMonitor" !="dayzCharSave" !="dayzDeath" !="dayzDeleteObj" !="dayzDelLocal" !="dayzDiscoAdd" !="dayzDiscoRem" !="dayzFire" !="dayzGutBody" !="dayzHideBody" !="dayzHit" !="dayzHitV" !="dayzHumanity" !="dayzLogin" !="dayzLogin2" !="dayzLoginRecord" !="dayzPlayerLogin" !="dayzPlayerLogin2" !="dayzPlayerMorph" !="dayzPlayerSave" !="dayzPublishObj" !="dayzRoadFlare" !="dayzSetDate" !="dayzSetFix" !="dayzSetFuel" !="dayzSwitch" !="dayzUpdate" !="dayzUpdateVehicle" !="dayzVehicleInit" !="drn_AskServerDynamicWeatherEventArgs" !="drn_DynamicWeather_DebugTextEventArgs" !="drn_DynamicWeatherEventArgs" !="drn_var_DynamicWeather_rain" !="drn_var_DynamicWeather_ServerInitialized" !="norrinRAlie" !="norrnRalie" !="norrnR180" !="norrnRACarUp" !="norrnRaDrag" !="norrnRaLW" !="norrnRAPicUp" !="norrnRDead" !="norrnRLact" !="norrnRnoAnim" !"player" !="usecBandage" !="usecBleed" !="usecEpi" !="usecInject" !="usecMorphine" !="usecPainK" !="usecTransfuse"
 
 ////////////////////////// EH but no-one push PV in it!
 5="changeCharacter"
@@ -15,7 +15,8 @@
 
 ////////////////////////// Broadcast PV without EH (no code executed on change)
 1="norrnRAPicUp"  
-1="norrinRAlie"  
+1="norrinRAlie"
+1="norrnRalie"
 1="norrnR180"  
 1="norrnRACarUp"  
 5="drn_var_DynamicWeather_rain"  
