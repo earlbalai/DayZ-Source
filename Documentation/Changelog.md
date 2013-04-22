@@ -47,7 +47,7 @@ FIX DUE : 22 APRIL 2013
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
-	    * [NEW] - 3 New decayed Zeds - harder to kill (WIP).
+	    * [NEW] - 3 New decayed Zeds - harder to kill (WIP). (Using new textures: http://dayzmod.com/forum/index.php?/topic/21465-new-zombie-textures/ )
 	    * [NEW] - Added optional watermark for servername (server admins only).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
@@ -69,8 +69,8 @@ FIX DUE : 22 APRIL 2013
 	    * [FIXED] - Zeds spawning underground.
 	    * [FIXED] - Loot spawning underground.
 	    * [FIXED] - Melee weapons having no ammo on login/skin change.
-	    * [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 10 minutes.
-	    * [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 15 minutes and no players within 250 meters(WIP). (Server performance boost)
+	    * [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 30 minutes.
+	    * [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 60 minutes and no players within 250 meters(WIP). (Server performance boost)
 	    * [FIXED] - Gear menu exploit to force respawn.
 	    * [FIXED] - Optimized some destruction effects for security and performance.
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
@@ -109,6 +109,8 @@ FIX DUE : 22 APRIL 2013
 	    * [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
 	    * [UPDATED] - You can now only have 1 quiver in your main inventory.
 	    * [UPDATED] - Melee range has been updated.
+		* [UPDATED] - Agro from smoke grenades now happens when the smoke grenade hits the ground.
+		* [UPDATED] - Zombies now investigate hand grenade explosions (agro not possible as of now).
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.

@@ -44,7 +44,7 @@ link20[] = {16,1};
 link21[] = {17,9};
 link22[] = {18,17};
 globals[] = {25.000000,1,0,0,0,640,480,1,27,6316128,1,-396.580658,354.272186,429.218872,-298.099792,690,601,1};
-window[] = {2,-1,-1,-1,-1,934,154,1483,154,3,707};
+window[] = {2,-1,-1,-1,-1,890,110,1439,110,3,707};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -255,7 +255,7 @@ class FSM
        "" \n
        "//diag_log format [""Pile : %1, Created: %2, Age: %3"", _x,  _created, _age];" \n
        "" \n
-       "	if ( (!_keep) && (_nearby==0) && (_age > 15) ) then {" \n
+       "	if ( (!_keep) && (_nearby==0) && (_age > 60) ) then {" \n
        "		deleteVehicle _x;" \n
        "		_delQty = _delQty + 1;" \n
        "	};" \n
