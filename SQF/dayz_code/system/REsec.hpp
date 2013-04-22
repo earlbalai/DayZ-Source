@@ -5,7 +5,7 @@
 "createMarkerLocal", "createSimpleTask", "createTaskSet", "debugLog", "deleteWP", "enablesimulation", "endMission", \
 "execfsm", "fadeMusic", "fadeSound", "failMission", "globalChat", "globalRadio", "groupChat", "groupRadio", \
 "hideObject", "hint", "hintC", "kbAddTopic", "kbreact", "kbRemoveTopic", "kbtell", "land", "move", "moveIn", \
-"playAction", "playActionnow", "playmove", "playmovenow", "playMusic", "playsound", "removeAction", \
+"playAction", "playActionnow", "playmovenow", "playMusic", "playsound", "removeAction", \
 "removeAllWeapons", "setCaptive", "setCurrentTask", "setCurrentTaskArrays", "setDate", "setDir", "setGroupID", \
 "setMarkerPosLocal", "setObjectTexture", "setSimpleTaskDescription", "setTaskState", "setWPdesc", "setWPtype", \
 "showCommandingMenu", "sideChat", "sideRadio", "skiptime", "spawn", "switchAction", "switchCamera", "taskHint", \
@@ -14,7 +14,7 @@
 
 // Allowed commands
 #ifndef TRACED_LIB
-#define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "switchmove" ]
+#define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove" ]
 // uncomment following line to log all incoming allowed RE
 #define RESEC_VERBOSE
 #endif
