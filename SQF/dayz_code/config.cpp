@@ -47,7 +47,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.7.DEV.20042013";
+		version = "1.7.7.Pre-Release.21042013";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -313,8 +313,10 @@ class RscStructuredTextGUI: RscStructuredText
 class CfgSurvival {
 	class Inventory {
 		class Default {
-			weapons[] = {"Makarov"};
-			magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemPainkiller","HandRoadFlare"};
+			RandomMagazines = 2;
+			//weapons[] = {"Makarov"}; //8Rnd_9x18_Makarov
+			GuaranteedMagazines[] = {"ItemBandage"};
+			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller","HandRoadFlare"};
 			//weapons[] = {"HandRoadFlare"};
 			backpackWeapon = "";
 			//backpack = "DZ_Patrol_Pack_EP1";
@@ -417,9 +419,9 @@ class CfgBuildingLoot {
 			//{"MeleeBaseBallBat","weapon",0.02},
 			{"WeaponHolder_ItemTent","object",0.01},
 			{"","craft",0.03},
-			{"","military",0.05},
-			{"","generic",0.10},
-			{"","trash",0.20},
+			{"","military",0.10},
+			{"","generic",0.80},
+			{"","trash",0.60},
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.06},
 			{"PartWoodPile","magazine",0.06},
@@ -443,9 +445,9 @@ class CfgBuildingLoot {
 		lootChance = 0.3;
 		lootPos[] = {};
 		lootType[] = {
-			{"","generic",0.10},
-			{"","trash",0.20},
-			{"","military",0.05},
+			{"","generic",0.80},
+			{"","trash",0.60},
+			{"","military",0.10},
 			{"","craft",0.03},
 			{"WeaponHolder_PartGeneric","object",0.04},
 			{"WeaponHolder_PartWheel","object",0.05},
@@ -470,8 +472,8 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 		lootType[] =	{
 			{"WeaponHolder_ItemJerrycan","object",0.03},
-			{"","generic",0.10},
-			{"","trash",0.20},
+			{"","generic",0.80},
+			{"","trash",0.60},
 			{"","craft",0.03},
 			{"huntingrifle","weapon",0.02},
 			{"LeeEnfield","weapon",0.04},
@@ -507,9 +509,9 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"Winchester1866","weapon",0.03},
 			{"WeaponHolder_ItemTent","object",0.01},
-			{"","food",0.05},
-			{"","trash",0.20},
-			{"","generic",0.10},
+			{"","food",0.02},
+			{"","trash",1.00},
+			{"","generic",0.50},
 			{"","craft",0.03},			
 			{"Crossbow_DZ","weapon",0.01},
 			{"Binocular","weapon",0.03},
@@ -534,8 +536,8 @@ class CfgBuildingLoot {
 			{"M249_DZ","weapon",0.04},
 			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
 			{"DMR","weapon",0.06},
-			{"","military",0.1},
-			{"","medical",0.1},
+			{"","military",1.00},
+			{"","medical",0.5},
 			{"MedBox0","object",0.05},
 			{"NVGoggles","weapon",0.01},
 			{"AmmoBoxSmall_556","object",0.05},
@@ -567,8 +569,8 @@ class CfgBuildingLoot {
 			{"M249_DZ","weapon",0.04},
 			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
 			{"DMR","weapon",0.06},
-			{"","military",0.1},
-			{"","medical",0.1},
+			{"","military",1.00},
+			{"","medical",0.5},
 			{"MedBox0","object",0.05},
 			{"NVGoggles","weapon",0.01},
 			{"AmmoBoxSmall_556","object",0.05},
@@ -597,8 +599,8 @@ class CfgBuildingLoot {
 			{"Mk_48_DZ","weapon",0.03},
 			{"M249_DZ","weapon",0.04},
 			{"BAF_L85A2_RIS_Holo","weapon",0.03},
-			{"","military",0.10},
-			{"","medical",0.10},
+			{"","military",1.00},
+			{"","medical",0.5},
 			{"MedBox0","object",0.05},
 			{"NVGoggles","weapon",0.01},
 			{"AmmoBoxSmall_556","object",0.05},
@@ -626,6 +628,8 @@ class CfgBuildingLoot {
 			{"RPK_74","weapon",0.02}, 
 			{"Binocular","weapon",0.01},
 			{"ItemKnife","militaryEAST",0.03},
+			{"","military",1.00},
+			{"","medical",0.5},
 			{"","militaryEAST",0.10}, 
 			{"ItemCompass","militaryEAST",0.04},
 			{"AmmoBoxSmall_762","object",0.3},
@@ -641,8 +645,8 @@ class CfgBuildingLoot {
 		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
-			{"","trash",0.15},
-			{"","hospital",0.06},
+			{"","trash",0.5},
+			{"","hospital",0.5},
 			{"MedBox0","object",0.01}
 		};
 	};
@@ -681,10 +685,10 @@ class CfgBuildingLoot {
 			{"ItemMap","military",0.03},
 			{"DZ_British_ACU","object",0.02}, // 18
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24			
-			{"","medical",0.06},
-			{"","generic",0.15},
-			{"","military",0.07},
-			{"","trash",0.20},
+			{"","medical",0.08},
+			{"","generic",0.80},
+			{"","military",1.00},
+			{"","trash",0.60},
 			{"ItemEtool","weapon",0.03},
 			{"ItemSandbag","magazine",0.04}
 		};
@@ -732,10 +736,10 @@ class CfgBuildingLoot {
 			{"Binocular_Vector","military",0.01},
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24
 			{"DZ_Backpack_EP1","object",0.01}, // 24		
-			{"","medical",0.03},
-			{"","generic",0.15},
-			{"","military",0.10},
-			{"","trash",0.20},
+			{"","medical",0.08},
+			{"","generic",0.80},
+			{"","military",1.00},
+			{"","trash",0.60},
 			//{"Body","object",0.2},
 			{"PipeBomb","magazine",0.01},
 			{"Sa58V_RCO_EP1","weapon",0.04},
