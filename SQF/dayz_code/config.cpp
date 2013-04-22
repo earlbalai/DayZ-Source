@@ -507,7 +507,7 @@ class CfgBuildingLoot {
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
 			{"Winchester1866","weapon",0.03},
 			{"WeaponHolder_ItemTent","object",0.01},
-			{"","food",0.05},
+			{"","food",0.02},
 			{"","trash",1.00},
 			{"","generic",0.50},
 			{"","craft",0.03},			
