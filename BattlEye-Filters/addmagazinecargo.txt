@@ -1,12 +1,105 @@
-1 "" !="BoltSteel" !="5x_22_LR_17_HMR" !="10x_303" !="Binocular" !"item" !"trash" !"food" !"hand" !"part" !"rnd_" !"swing" !"skin" !"smoke" !="WoodenArrow" 
-1 "Item" !="ItemSodaEmpty" !="ItemSodaPepsi" !="ItemBandage" !="ItemHeatPack" !="ItemMorphine" !="ItemWaterbottle" !="ItemWaterbottleUnfilled" !="ItemWaterbottleBoiled" !="ItemToolbox" !="ItemKnife" !="ItemWatch" !="ItemCompass" !="ItemJerrycan" !="ItemSodaCoke" !="ItemEpinephrine" !="ItemPainkiller" !="ItemBloodbag" !="ItemWire" !="ItemMatchbox" !="ItemMap" !="ItemAntibiotic" !="ItemFlashlightRed" !="ItemFlashlight" !="ItemJerrycanEmpty" !="ItemSodaMdew" !="ItemTrashToiletpaper" !="ItemTrashRazor"  !="ItemBookBible" !="ItemNails" !="ItemSandbag" !="ItemSodaDrwaste" !="ItemSodaLemonade" !="ItemSodaPepsiEmpty" !="ItemTankTrap" !="ItemTent" !="ItemTrashRazor" !="ItemTrashToiletpaper"
-1 "trash" !="TrashTinCan" !="TrashJackDaniels" !="TrashToiletpaper" !="TrashRazor"   !="ItemTrashRazor" !="ItemTrashToiletpaper"
-1 "food" !="FoodCanSardines" !="FoodSteakCooked" !="FoodCanFrankBeans" !="FoodSteakRaw" !="FoodCanPasta" !="FoodCanBakedBeans" !="FoodmeatRaw" !="FoodbeefRaw" !="FoodmuttonRaw" !="FoodchickenRaw" !="FoodrabbitRaw" !="FoodbaconRaw" !="FoodSteakCooked" !="FoodmeatCooked" !="FoodbeefCooked" !="FoodmuttonCooked" !="FoodchickenCooked" !="FoodrabbitCooked" !="FoodbaconCooked"
-1 "hand" !="HandChemBlue" !="HandChemRed" !="HandChemGreen" !="HandRoadFlare" 
-1 "part" !="PartFueltank" !="PartWoodPile" !="PartWheel" !="PartEngine" !="PartGeneric" !="PartGlass"
-1 "swing" !="Hatchet_Swing" !="Crowbar_Swing"
-1 "Skin"
-1 "smoke" !="SmokeShell" !="SmokeShellGreen" !="SmokeShellRed"
-1 "rnd" !="8Rnd_9x18_Makarov" !="30Rnd_545x39_AK" !="30Rnd_556x45_Stanag" !="30Rnd_762x39_AK47" !="7Rnd_45ACP_1911" !="6Rnd_45ACP" !="2Rnd_shotgun_74Slug" !="2Rnd_shotgun_74Pellets" !="8Rnd_B_Beneli_74Slug" !="8Rnd_B_Beneli_Pellets" !="15Rnd_9x19_M9" !="15Rnd_W1866_Slug" !="30Rnd_9x19_MP5" !="17Rnd_9x19_glock17"
-//1 "ItemSodaMdew"
-//1 "ItemBloodbag"
+// Weapon/Magazine/Backpack, common filter
+// Whitelisted item (spawned in vanilla DayZ mod)
+1 "" !Item !Part !Rnd_ !Food !DZ_ !Melee !=10x_303 !=5x_22_LR_17_HMR !=AK_47_M !=AK_74 !=AKS_74_kobra !=AKS_74_U !=AmmoBoxSmall_556 !=AmmoBoxSmall_762 !=BAF_AS50_scoped_DZ !=BAF_L85A2_RIS_Holo !=BAF_L85A2_RIS_SUSAT !=Binocular !=Binocular_Vector !=bizon_silenced !=Body !=Colt1911 !=Crossbow_DZ !=DMR !=FlareGreen_M203 !=FlareWhite_M203 !=FN_FAL !=FN_FAL_ANPVS4 !=G36A_camo !=G36C !=G36C_camo !=G36_C_SD_camo !=G36K_camo !=glock17_EP1 !=HandChemBlue !=HandChemGreen !=HandChemRed !=HandGrenade_east !=HandGrenade_west !=HandRoadFlare !=huntingrifle !=LeeEnfield !=M1014 !=M107_DZ !=M14_EP1 !=M16A2 !=M16A2GL !=M16A4_ACG !=M24 !=M240_DZ !=M249_DZ !=M40A3 !=M4A1 !=M4A1_Aim !=M4A1_AIM_SD_camo !=M4A1_HWS_GL_camo !=M4A3_CCO_EP1 !=M9 !=M9SD !=Machete_Swing !=Makarov !=MakarovSD !=MedBox0 !=Mk_48_DZ !=MP5A5 !=MP5SD !=MR43 !=NVGoggles !=PipeBomb !=Quiver !=Remington870_lamp !=revolver_EP1 !=RPK_74 !=Sa58P_EP1 !=Sa58V_CCO_EP1 !=Sa58V_EP1 !=Sa58V_RCO_EP1 !=Skin_Camo1_DZ !=Skin_Sniper1_DZ !=Skin_Soldier1_DZ !=Skin_Survivor2_DZ !=SmokeShell !=SmokeShellGreen !=SmokeShellRed !=SVD_CAMO !=TrashJackDaniels !=TrashTinCan !=UZI_EP1 !=Winchester1866 !=WoodenArrow
+1 Item !=ItemAntibiotic !=ItemBandage !=ItemBloodbag !=ItemBookBible !=ItemCompass !=ItemCrowbar !=ItemEpinephrine !=ItemEtool !=ItemFlashlight !=ItemFlashlightRed !=ItemGPS !=ItemHatchet !=ItemHeatPack !=ItemJerrycan !=ItemJerrycanEmpty !=ItemKnife !=ItemMachete !=ItemMap !=ItemMatchbox !=ItemMorphine !=ItemNails !=ItemPainkiller !=ItemSandbag !=ItemSodaClays !=ItemSodaCoke !=ItemSodaCokeEmpty !=ItemSodaDrwaste !=ItemSodaEmpty !=ItemSodaLemonade !=ItemSodaLvg !=ItemSodaMdew !=ItemSodaMdewEmpty !=ItemSodaMtngreen !=ItemSodaMzly !=ItemSodaPepsi !=ItemSodaPepsiEmpty !=ItemSodaR4z0r !=ItemSodaRabbit !=ItemSodaSmasht !=ItemTankTrap !=ItemTent !=ItemToolbox !=ItemTrashRazor !=ItemTrashToiletpaper !=ItemWatch !=ItemWaterbottle !=ItemWaterbottleUnfilled !=ItemWire !=WeaponHolder_ItemCrowbar !=WeaponHolder_ItemFuelcan !=WeaponHolder_ItemHatchet !=WeaponHolder_ItemJerrycan !=WeaponHolder_ItemTent
+1 Part !=PartEngine !=PartFueltank !=PartGeneric !=PartGlass !=PartVRotor !=PartWheel !=PartWoodPile !=WeaponHolder_PartEngine !=WeaponHolder_PartFueltank !=WeaponHolder_PartGeneric !=WeaponHolder_PartGlass !=WeaponHolder_PartVRotor !=WeaponHolder_PartWheel
+1 Rnd_ !=100Rnd_762x51_M240 !=100Rnd_762x54_PK !=10Rnd_762x54_SVD !=10Rnd_127x99_m107 !=15Rnd_9x19_M9 !=15Rnd_9x19_M9SD !=15Rnd_W1866_Slug !=17Rnd_9x19_glock17 !=1Rnd_HE_M203 !=1Rnd_Smoke_M203 !=200Rnd_556x45_M249 !=20Rnd_762x51_DMR !=2Rnd_shotgun_74Pellets !=2Rnd_shotgun_74Slug !=30Rnd_545x39_AK !=30Rnd_556x45_Stanag !=30Rnd_556x45_StanagSD !=30Rnd_762x39_AK47 !=30Rnd_9x19_MP5 !=30Rnd_9x19_MP5SD !=30Rnd_9x19_UZI !=5Rnd_762x51_M24 !=6Rnd_45ACP !=7Rnd_45ACP_1911 !=8Rnd_9x18_Makarov !=8Rnd_B_Beneli_74Slug !=8Rnd_B_Beneli_Pellets
+1 Food !=FoodbaconCooked !=FoodbaconRaw !=FoodbeefCooked !=FoodbeefRaw !=FoodCanBadguy !=FoodCanBakedBeans !=FoodCanBoneboy !=FoodCanCorn !=FoodCanCurgon !=FoodCanDemon !=FoodCanDerpy !=FoodCandyAnders !=FoodCandyLegacys !=FoodCandyMintception !=FoodCanFraggleos !=FoodCanFrankBeans !=FoodCanHerpy !=FoodCanOrlok !=FoodCanPasta !=FoodCanPowell !=FoodCanRusCorn !=FoodCanRusMilk !=FoodCanRusPeas !=FoodCanRusPork !=FoodCanRusStew !=FoodCanRusUnlabeled !=FoodCanSardines !=FoodCanTylers !=FoodCanUnlabeled !=FoodCanUnlabeledEmpty !=FoodchickenCooked !=FoodchickenRaw !=FoodChipsMysticales !=FoodChipsSulahoops !=FoodgoatCooked !=FoodgoatRaw !=FoodmeatCooked !=FoodmeatRaw !=FoodMRE !=FoodmuttonCooked !=FoodmuttonRaw !=FoodNutmix !=FoodPistachio !=FoodrabbitCooked !=FoodrabbitRaw !=FoodSteakCooked !=FoodSteakRaw
+1 DZ_ !=DZ_ALICE_Pack_EP1 !=DZ_Assault_Pack_EP1 !=DZ_Backpack_EP1 !=DZ_British_ACU !=DZ_CivilBackpack_EP1 !=DZ_Czech_Vest_Puch !=DZ_Patrol_Pack_EP1 !=DZ_TK_Assault_Pack_EP1
+1 Melee !=MeleeBaseBallBat !=MeleeCrowbar !=MeleeFlashlight !=MeleeFlashlightRed !=MeleeHatchet !=MeleeMachete
+// Blacklist of illegal weapons (not present in vanilla DayZ mod):
+1=A10
+1=AK_107_GL_kobra
+1=AK_107_GL_pso
+1=AK_107_kobra
+1=AK_107_pso
+1=AK_47_S
+1=AK_74_GL
+1=AK_74_GL_kobra
+1=AKS_74
+1=AKS_74_GOSHAWK
+1=AKS_74_NSPU
+1=AKS_74_pso
+1=AKS_74_UN_kobra
+1=AKS_GOLD
+1=BAF_AS50_scoped
+1=BAF_AS50_TWS
+1=BAF_ied_v1
+1=BAF_ied_v2
+1=BAF_ied_v3
+1=BAF_ied_v4
+1=BAF_L110A1_Aim
+1=BAF_L7A2_GPMG
+1=BAF_L85A2_RIS_ACOG
+1=BAF_L85A2_RIS_CWS
+1=BAF_L85A2_UGL_ACOG
+1=BAF_L85A2_UGL_Holo
+1=BAF_L85A2_UGL_SUSAT
+1=BAF_L86A2_ACOG
+1=BAF_LRR_scoped
+1=BAF_LRR_scoped_W
+1=Bizon
+1=G36_C_SD_eotech
+1=G36a
+1=IR_Strobe_Marker
+1=IRStrobe
+5=ItemRadio
+1=ksvk
+1=Laserbatteries
+1=Laserdesignator
+1=m107
+1=M136
+1=m16a4
+1=M16A4_ACG_GL
+1=M16A4_GL
+1=M24_des_EP1
+1=M240
+1=m240_scoped_EP1
+1=M249
+1=M249_EP1
+1=M249_m145_EP1
+1=M32_EP1
+1=M4A1_Aim_camo
+1=M4A1_HWS_GL
+1=M4A1_HWS_GL_SD_Camo
+1=M4A1_RCO_GL
+1=M4A3_RCO_GL_EP1
+1=M4SPR
+1=M60A4_EP1
+1=m8_carbineGL
+1=MetisLauncher
+1=MG36
+1=Mk_48
+1=Mk_48_DES_EP1
+1=Pecheneg
+1=PK
+1=PMC_AS50_scoped
+1=PMC_ied_v1_muzzle
+1=PMC_ied_v2_muzzle
+1=PMC_ied_v3_muzzle
+1=PMC_ied_v4_muzzle
+1=revolver_gold_EP1
+1=RPG7V
+1=Sa61_EP1
+1=Saiga12K
+1=SCAR_H_CQC_CCO
+1=SCAR_H_LNG_Sniper
+1=SCAR_H_LNG_Sniper_SD
+1=SCAR_H_STD_EGLM_Spect
+1=SCAR_L_CQC
+1=SCAR_L_CQC_EGLM_Holo
+1=UZI_SD_EP1
+1=VSS_vintorez
+// Black list of illegal Ammo:
+5="TimeBomb"
+5="Mine"
+5="MineE"
+5="HandGrenade_Stone"
+5="R_SMAW_HEAA"
+5="R_SMAW_HEDP"
+// Suspicious ammo:
+1=10Rnd_762x54_SVD
+1=20Rnd_762x51_FNFAL
+1=30Rnd_556x45_G36
+1=30Rnd_762x39_SA58
+1=5Rnd_127x99_as50
