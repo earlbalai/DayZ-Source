@@ -62,5 +62,3 @@ switch (_iClass) do {
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };
-//Make sure loot is aboue ground
-_item setvelocity [0,0,1];
