@@ -169,7 +169,7 @@ class CfgMagazines {
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
-		type = 2 * 256
+		type = 256
 		descriptionShort = $STR_ITEMQUIVER_CODE_DESC;
 		displayName = $STR_ITEMQUIVER_CODE_NAME;
 		initSpeed = 150;
