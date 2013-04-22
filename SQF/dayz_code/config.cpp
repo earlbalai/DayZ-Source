@@ -313,8 +313,10 @@ class RscStructuredTextGUI: RscStructuredText
 class CfgSurvival {
 	class Inventory {
 		class Default {
-			//weapons[] = {"Makarov"};
-			//magazines[] = {"8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemPainkiller","HandRoadFlare"};
+			RandomMagazines = 2;
+			//weapons[] = {"Makarov"}; //8Rnd_9x18_Makarov
+			GuaranteedMagazines[] = {"ItemBandage"};
+			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller","HandRoadFlare"};
 			//weapons[] = {"HandRoadFlare"};
 			backpackWeapon = "";
 			//backpack = "DZ_Patrol_Pack_EP1";
