@@ -1,5 +1,11 @@
 disableSerialization;
 
+// Enable
+// 0=False, 1=True
+dayz_Trash = 1;
+
+//
+
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
 BanditW1_DZ = 	"BanditW1_DZ";
