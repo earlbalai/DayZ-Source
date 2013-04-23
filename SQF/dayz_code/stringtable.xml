@@ -108,7 +108,7 @@
 			<Russian>Разделать животное</Russian>
 			<Spanish>Achurar Animal</Spanish>
 			<Dutch>Dier opensnijden</Dutch>
-			<French>Dépecer l'Animal</French>
+			<French>Dépecer l'animal</French>
 			<Czech>Vykuchat zvíře</Czech>
 		</Key>
 		<Key ID="str_actions_self_05">
@@ -198,7 +198,7 @@
 			<Russian>Перевязать человеку раны</Russian>
 			<Spanish>Vendar Heridas</Spanish>
 			<Dutch>Wonden verbinden</Dutch>
-			<French>Bander les Blessures</French>
+			<French>Panser les Blessures</French>
 			<Czech>Obvázat zranění</Czech>
 		</Key>
 		<Key ID="str_actions_medical_05">
@@ -207,7 +207,7 @@
 			<Russian>Сделать укол адреналина</Russian>
 			<Spanish>Dar Epinefrina</Spanish>
 			<Dutch>Adrenaline injecteren</Dutch>
-			<French>Donner de l'Epinéphrine</French>
+			<French>Donner de l'Adrénaline</French>
 			<Czech>Dát Epinefrin</Czech>
 		</Key>
 		<Key ID="str_actions_medical_06">
@@ -252,7 +252,7 @@
 			<Russian>%1 состояние: %2%</Russian>
 			<Spanish>%1 Estado: %2%</Spanish>
 			<Dutch>%1 Status: %2%</Dutch>
-			<French>%1 Status: %2%</French>
+			<French>%1 Statut: %2%</French>
 			<Czech>%1 Status: %2%</Czech>
 		</Key>
 		<Key ID="str_actions_medical_10">
@@ -327,6 +327,34 @@
 			<French>Eteindre %1</French>
 			<Czech>Uhasit %1</Czech>
 		</Key>
+        <Key
+      ID="str_action_fire_inflame">
+      <Original>Light fire</Original>
+      <German>Feuer entzünden</German>
+      <English>Light fire</English>
+      <Italian>Accendi fuoco</Italian>
+      <Spanish>Encender fuego</Spanish>
+      <French>Allumer le feu</French>
+      <Czech>Zapálit oheň</Czech>
+      <Russian>Зажечь огонь</Russian>
+      <Polish>Rozpal ogień</Polish>
+      <Hungarian>Tűz meggyújtása</Hungarian>
+    </Key>
+    <Key
+      ID="str_action_fire_put_down">
+      <Original>Put out fire</Original>
+      <German>Feuer löschen</German>
+      <English>Put out fire</English>
+      <Italian>Spegni fuoco</Italian>
+      <Spanish>Apagar fuego</Spanish>
+      <French>Éteindre le feu</French>
+      <Czech>Uhasit oheň</Czech>
+      <Russian>Потушить огонь</Russian>
+      <Polish>Zgaś ogień</Polish>
+      <Hungarian>Tűz eloltása</Hungarian>
+    </Key>
+
+
 		<Key ID="str_actions_medical_18">
 			<English>You cannot perform another blood transfusion so fast</English>
 			<German>Sie können so schnell keine weitere Bluttransfusion durchführen</German>
@@ -455,8 +483,984 @@
 			<French>Bandit</French>
 			<Czech>Bandita</Czech>
 		</Key>
+<Key ID="STR_MAG_ACTION_4">
+<Original>Flare</Original>
+<English>Flare</English>
+<German>Bengalfeuer</German>
+<Russian>Фаер</Russian>
+<French>Fusée éclairante</French>
+</Key>
+
+<Key ID="STR_MAG_ACTION2_4">
+<Original>Throw</Original>
+<English>Throw</English>
+<German>Werfen</German>
+<Russian>Бросить</Russian>
+<French>Lancer</French>
+</Key>
+
+<Key ID="STR_BANDAGE_SELF">
+<Original>Bandage Myself</Original>
+        <English>Bandage Myself</English>
+        <German>Selbst verbinden</German>
+        <Russian>Перевязать себя</Russian>
+<French>Panser mes blessures</French>
+      </Key>
+      
+<Key ID="STR_EAT_FOOD">
+<Original>Eat Food</Original>
+        <English>Eat Food</English>
+        <German>Lebensmittel essen</German>
+        <Russian>Съесть еду</Russian>
+<French>Manger</French>
+      </Key>
+<Key ID="STR_TAKE_MORPHINE">
+<Original>Take Morphine</Original>
+        <English>Take Morphine</English>
+        <German>Morphium einnehmen</German>
+        <Russian>Принять морфий</Russian>
+<French>Prendre Morphine</French>
+      </Key>
+      
+<Key ID="STR_TAKE_ANTIBIOTIC">
+<Original>Take Antibiotics</Original>
+        <English>Take Antibiotics</English>
+        <German>Antibiotikum einnehmen</German>
+        <Russian>Принять антибиотики</Russian>
+<French>Prendre Antibiotiques</French>
+      </Key>
+<Key ID="STR_ACTIONS_DRINK">
+<Original>Drink %1</Original>
+        <English>Drink %1</English>
+        <German>%1 trinken</German>
+        <Russian>Выпить %1</Russian>
+<French>Boire %1</French>
+      </Key>
+      
+<Key ID="STR_ACTIONS_FILL_W">
+<Original>Fill Water</Original>
+        <English>Fill Water</English>
+        <German>Wasser abfüllen</German>
+        <Russian>Наполнить фляжки</Russian>
+<French>Remplir</French>
+      </Key>
+      
+<Key ID="STR_ACTIONS_LIGHTFIRE">
+<Original>Make Fireplace</Original>
+        <English>Make Fireplace</English>
+        <German>Feuer machen</German>
+        <Russian>Развести костер</Russian>
+<French>Préparer un feu de camp</French>
+      </Key>
+      
+<Key ID="STR_ACTIONS_CHOPWOOD">
+<Original>Harvest Wood</Original>
+        <English>Harvest Wood</English>
+        <German>Holz sammeln</German>
+        <Russian>Нарубить дров</Russian>
+<French>Ramasser du bois</French>
+      </Key>
+      
+<Key ID="STR_ACTIONS_BUILD">
+<Original>Build %1</Original>
+        <English>Build %1</English>
+        <German>%1 bauen</German>
+        <Russian>Установить %1</Russian>
+<French>Construire %1</French>
+      </Key>
+
+<Key ID="STR_TAKE_PAINKILLER">
+<Original>Take Painkillers</Original>
+        <English>Take Painkillers</English>
+        <German>Schmerzmittel einnehmen</German>
+        <Russian>Принять болеутоляющие</Russian>
+<French>Prendre Antidouleur</French>
+      </Key>
+<Key ID="STR_ACTIONS_HEATPACK">
+<Original>Use Heatpack</Original>
+        <English>Use Heatpack</English>
+        <German>Use Heatpack</German>
+        <Russian>Использовать Грелку</Russian>
+<French>Utiliser chaufferette</French>
+      </Key>
+
 	</Package>
 	<Package name="equipment_code">
+	<Key ID="STR_EQUIP_NAME_1">
+<Original>Entrenching Tool</Original>
+<English>Entrenching Tool</English>
+<German>Schanzzeug</German>
+<Russian>Саперная лопатка</Russian>
+<French>Outil de tranchée</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_1">
+<Original>Collapsible spade used together with the engineering backpack to create field defences</Original>
+<English>Collapsible spade used together with the engineering backpack to create field defences</English>
+<German>Ein Klappspaten, der mit dem Pioniersrucksack zum Verschanzen verwendet werden kann</German>
+<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
+<French>Une pelle démontable permettant de construire des éléments de défense.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_2">
+<Original>Toolbox</Original>
+<English>Toolbox</English>
+<German>Werkzeugkoffer</German>
+<Russian>Набор инструментов</Russian>
+<French>Boîte à outils</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_2">
+<Original>Toolbox that can be used for repairing damaged vehicles and equipment.</Original>
+<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>
+<German>Ein Werkzeugkoffer, der zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden kann</German>
+<Russian>Набор инструментов используется для ремонта поврежденной техники и снаряжения а так же установки укреплений.</Russian>
+<French>Boîte à outils servant à réparer le matériel et les véhicules.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_3">
+<Original>Box of Matches</Original>
+<English>Box of Matches</English>
+<German>Schachtel Streichhölzer</German>
+<Russian>Коробок спичек</Russian>
+<French>Boîte d'allumettes</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_3">
+<Original>Box of safety matches for starting a fire under controlled conditions.</Original>
+<English>Box of safety matches for starting a fire under controlled conditions.</English>
+<German>Eine Schachtel Sicherheitsstreichhölzer, mit dem ein kontrolliertes Feuer gemacht werden kann</German>
+<Russian>Коробок спичек используется для разведения костра.</Russian>
+<French>Boîte d'allumettes suédoises permettant d'allumer un feu.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_4">
+<Original>Hunting Knife</Original>
+<English>Hunting Knife</English>
+<German>Jagdmesser</German>
+<Russian>Охотничий нож</Russian>
+<French>Couteau de chasseur</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_4">
+<Original>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</Original>
+<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
+<German>Ein Messer, das beim Jagen zum Ausnehmen des Wilds verwendet werden kann</German>
+<Russian>Нож используется для разделки туш животных в куски мяса.</Russian>
+<French>Un couteau servant à dépecer le gibier.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_5">
+<Original>Flashlight</Original>
+<English>Flashlight</English>
+<German>Taschenlampe</German>
+<Russian>Фонарик</Russian>
+<French>Lampe torche</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_5">
+<Original>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</Original>
+<English>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
+<German>Batteriebetriebene Taschenlampe&lt;br/&gt;Batterien: 2 x Typ D</German>
+<Russian>Фонарик питается двумя батарейками типа D.</Russian>
+<French>Lampe torche à piles.&lt;br/&gt;Piles: 2 x Type D</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_6">
+<Original>Flashlight (Military)</Original>
+<English>Flashlight (Military)</English>
+<German>Militärtaschenlampe</German>
+<Russian>Армейский фонарик</Russian>
+<French>Lampe torche (Mil.)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_6">
+<Original>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</Original>
+<English>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
+<German>Militärische, batteriebetriebene Rotlichtlampe&lt;br/&gt;Batterien: 2 x Typ D</German>
+<Russian>Армейский фонарик светит красным светом и питается двумя батарейками типа D.</Russian>
+<French>Lampe torche militaire à piles, lumière rouge.&lt;br/&gt;Piles: 2 x Type D</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_7">
+<Original>Bandage</Original>
+<English>Bandage</English>
+<German>Verbandszeug</German>
+<Russian>Бинты</Russian>
+<French>Pansement</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_7">
+<Original>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</Original>
+<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</English>
+<German>Verbandszeug nach NATO-Standart. Wird zum Stillen von blutenden Wunden verwendet.</German>
+<Russian>Упаковка бинтов армейская. Используется для перевязки ран.</Russian>
+<French>Pansement de premier secours, norme OTAN. Utilisé pour stopper une hémorragie.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_8">
+<Original>Fueltank Parts</Original>
+<English>Fueltank Parts</English>
+<German>Treibstofftankteile</German>
+<Russian>Бензобак</Russian>
+<French>Réservoir</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_8">
+<Original>An old fueltank that could be used to repair a vehicle with a broken one.</Original>
+<English>An old fueltank that could be used to repair a vehicle with a broken one.</English>
+<German>Ein alter Treibstofftank, mit dem eventuell der kaputte Tank eines Fahrzeugs repariert werden könnte.</German>
+<Russian>Бензобак, запчасти из которого можно использовать для ремонта техники.</Russian>
+<French>Un réservoir d'occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_9">
+<Original>Car Wheel</Original>
+<English>Car Wheel</English>
+<German>Rad</German>
+<Russian>Колесо</Russian>
+<French>Roue</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_9">
+<Original>An old Car Wheel that could be used to repair a vehicle with a broken one.</Original>
+<English>An old Car Wheel that could be used to repair a vehicle with a broken one.</English>
+<German>Ein altes Rad, mit dem eventuell ein kaputtes Rad eines Fahrzeugs repariert werden könnte.</German>
+<Russian>Колесо, которое можно использовать для починки одного колеса на автомобиле.</Russian>
+<French>Une roue d'occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_10">
+<Original>Scrap Metal</Original>
+<English>Scrap Metal</English>
+<German>Metallteile</German>
+<Russian>Запчасти</Russian>
+<French>Bouts de métal</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_10">
+<Original>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</Original>
+<English>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</English>
+<German>Metallteile und verschiedene mechanische Ersatzteile. Nützlich beim Reparieren von Fahrzeugen und Ausrüstung.</German>
+<Russian>Запчасти используются для починки снаряжения или корпуса техники.</Russian>
+<French>Divers bouts de métal pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_11">
+<Original>Engine Parts</Original>
+<English>Engine Parts</English>
+<German>Motorteile</German>
+<Russian>Двигатель</Russian>
+<French>Bloc moteur</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_11">
+<Original>Engine components with oil and lubricant. Everything you would need to repair an engine.</Original>
+<English>Engine components with oil and lubricant. Everything you would need to repair an engine.</English>
+<German>Motorteile mit Öl und Schmiere. Alles, was man zum Reparieren eines Motors braucht.</German>
+<Russian>Двигатель, запчасти из которого используются для ремонта двигателей в технике.</Russian>
+<French>Un moteur ainsi que de l'huile et du lubrifiant. Tout le nécessaire pour changer un moteur.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_30">
+<Original>Windscreen Glass</Original>
+<English>Windscreen Glass</English>
+<German>Autoglas</German>
+<Russian>Автомобильное стекло</Russian>
+<French>Vitre</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_30">
+<Original>Brand new auto glass. Could be used to repair glass on a vehicle.</Original>
+<English>Brand new auto glass. Could be used to repair glass on a vehicle.</English>
+<German>Gut erhaltenes Autoglas. Könnte zum Reparieren von Glas an einem Fahrzeug verwendet werden.</German>
+<Russian>Новое автомобильное стекло в упаковке. Его можно установить на технику.</Russian>
+<French>Vitre neuve. Permet de réparer un véhicule.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_32">
+<Original>Main Rotor Assembly</Original>
+<English>Main Rotor Assembly</English>
+<German>Hauptrotorteile</German>
+<Russian>Набор запчастей для вертолета</Russian>
+<French>Rotor d'hélico</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_32">
+<Original>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</Original>
+<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</English>
+<German>Hydrauliksysteme für einen Helikopter, die zum Reparieren kaputter Rotorwellen in anderen Helikoptern verwendet werden können.</German>
+<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолета.</Russian>
+<French>Colonne de rotor d'hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_12">
+<Original>Water Bottle</Original>
+<English>Water Bottle</English>
+<German>Wasserflasche</German>
+<Russian>Фляжка с водой</Russian>
+<French>Gourde</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_12">
+<Original>A bottle of water that has been filled and can be consumed.</Original>
+<English>A bottle of water that has been filled and can be consumed.</English>
+<German>Eine Flasche, gefüllt mit Trinkwasser.</German>
+<Russian>Фляжка с водой для питья.</Russian>
+<French>Gourde (pleine)</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_13">
+<Original>Water Bottle (Empty)</Original>
+<English>Water Bottle (Empty)</English>
+<German>Leere Wasserflasche</German>
+<Russian>Фляжка (пустая)</Russian>
+<French>Gourde (vide)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_13">
+<Original>A bottle of water that is Empty. It might be useful to fill it with water again.</Original>
+<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>
+<German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
+<Russian>Пустая фляжка, в которую можно набрать воду.</Russian>
+<French>Une gourde vide. Il serait bien de la remplir à nouveau.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_14">
+<Original>Epi-Pen</Original>
+<English>Epi-Pen</English>
+<German>Epinephrin</German>
+<Russian>Укол адреналина</Russian>
+<French>Adrénaline</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_14">
+<Original>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</Original>
+<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>
+<German>Epinephtin-Autoinjektor für intramuskuläre Injektion, um bewusstlose Verletzte wiederzubeleben.</German>
+<Russian>Укол адреналина для приведения в чувства людей без сознания.</Russian>
+<French>Adrénaline en auto-injection intra-musculaire "Epipen". Permet de se remettre d'une perte de conscience.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_15">
+<Original>Morphine Auto-Injector</Original>
+<English>Morphine Auto-Injector</English>
+<German>Morphium</German>
+<Russian>Морфий</Russian>
+<French>Morphine</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_15">
+<Original>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</Original>
+<English>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</English>
+<German>Morphium-Autoinjektor für intramuskuläre Injektion, um starke Schmerzen, etwa von Knochenbrüchen, zu stillen.</German>
+<Russian>Морфий используется для местного обезболивания при переломах.</Russian>
+<French>Morphine en auto-injection intra-musculaire. Permet de traiter les douleurs aigües, comme les fractures.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_16">
+<Original>Blood Bag</Original>
+<English>Blood Bag</English>
+<German>Blutkonserve</German>
+<Russian>Пакет крови</Russian>
+<French>Poche de sang</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_16">
+<Original>Bag of blood used for administering a Blood transfusion.</Original>
+<English>Bag of blood used for administering a Blood transfusion.</English>
+<German>Eine Blutkonserve zum Legen einer Bluttransfusion.</German>
+<Russian>Пакет крови используется для переливания при кровопотерях.</Russian>
+<French>Sang permettant de transfuser un co-équipier.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_17">
+<Original>Antibiotics</Original>
+<English>Antibiotics</English>
+<German>Antibiotikum</German>
+<Russian>Антибиотики</Russian>
+<French>Antibiotiques</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_17">
+<Original>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</Original>
+<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
+<German>Azithromycin ist ein Breitbandantibiotikum, das zum Behandeln oder Vorbeugen von verschiedenen bakteriellen Infektionen verwendet werden kann.</German>
+<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
+<French>L'azithromycine est un antiboitique à large spectre permettant le traitement des infections bactériennes.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_18">
+<Original>Painkillers</Original>
+<English>Painkillers</English>
+<German>Schmerzmittel</German>
+<Russian>Болеутоляющие</Russian>
+<French>Antalgiques</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_18">
+<Original>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</Original>
+<English>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</English>
+<German>Ein Schmerzmittel, das zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden verwendet werden kann.</German>
+<Russian>Слабое болеутоляющие отлично подходит для подавления боли от небольших ранений.</Russian>
+<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours.</French>
+</Key>
+
+    <Key ID="str_usract_watch_toggle">  <!-- was in languagecore.xml -->
+      <Original>Watch (Toggle)</Original>
+      <German>Uhr (umsch.)</German>
+      <English>Watch (Toggle)</English>
+      <Italian>Orologio (cambia)</Italian>
+      <Spanish>Reloj (cambiar)</Spanish>
+      <French>Montre (bascule)</French>
+      <Czech>Hodinky (trvale)</Czech>
+      <Russian>Часы</Russian>
+      <Polish>Zegarek (Wł./Wył.)</Polish>
+      <Hungarian>Óra (rögzít)</Hungarian>
+    </Key>
+    <Key ID="str_usract_watch">
+      <Original>Watch</Original>
+      <German>Uhr</German>
+      <English>Watch</English>
+      <Italian>Orologio</Italian>
+      <Spanish>Reloj</Spanish>
+      <French>Montre</French>
+      <Czech>Hodinky</Czech>
+      <Russian>Часы</Russian>
+      <Polish>Zegarek</Polish>
+      <Hungarian>Óra</Hungarian>
+    </Key>
+    <Key ID="str_itemwatch">
+      <Original>Watch</Original>
+      <German>Uhr</German>
+      <English>Watch</English>
+      <Italian>Orologio</Italian>
+      <Spanish>Reloj</Spanish>
+      <French>Montre</French>
+      <Czech>Hodinky</Czech>
+      <Russian>Часы</Russian>
+      <Polish>Zegarek</Polish>
+      <Hungarian>Óra</Hungarian>
+    </Key>
+
+
+<Key ID="STR_EQUIP_NAME_19">
+<Original>Jerry Can</Original>
+<English>Jerry Can</English>
+<German>Kanister</German>
+<Russian>Канистра с топливом</Russian>
+<French>Jerrican</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_19">
+<Original>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</Original>
+<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
+<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
+<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
+<French>Jerrican de 20 litres pour faire le plein des véhicules.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_24">
+<Original>Raw Meat</Original>
+<English>Raw Meat</English>
+<German>Rohes Fleisch</German>
+<Russian>Сырое мясо</Russian>
+<French>Viande crue</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_24">
+<Original>Meat Steak cut from an animal to be used for sustainment, must be cooked prior to eating.</Original>
+<English>Meat Steak cut from an animal to be used for sustainment, must be cooked prior to eating.</English>
+<German>Ein Stück Fleisch von einem Tier, das zubereitet gegessen werden kann.</German>
+<Russian>Вырезка сырого мяса, снятого с разделанного животного. Приготовление на огне обязательно.</Russian>
+<French>Viande crue pouvant servir de repas, qui cependant devrait être cuite préalablement.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_25">
+<Original>Cooked Meat</Original>
+<English>Cooked Meat</English>
+<German>Zubereitetes Fleisch</German>
+<Russian>Жаренное мясо</Russian>
+<French>Viande cuite</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_25">
+<Original>Meat Steak that has been cooked at a fireplace and can be consumed for sustainment.</Original>
+<English>Meat Steak that has been cooked at a fireplace and can be consumed for sustainment.</English>
+<German>Ein Stück Fleisch, das über einem Feuer essfertig gebraten wurde.</German>
+<Russian>Кусок жаренного на огне мяса.</Russian>
+<French>Viande cuite au feu de bois. En manger vous fera reprendre des forces.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_26">
+<Original>Can (Baked Beans)</Original>
+<English>Can (Baked Beans)</English>
+<German>Dose (Bohnen)</German>
+<Russian>Банка (Бобы)</Russian>
+<French>Conserve (Haricots)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_26">
+<Original>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</Original>
+<English>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</English>
+<German>Eine essfertige Dose Bohnen. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+<Russian>Банка вареных бобов в соусе. Срок хранения до 5 лет.</Russian>
+<French>Boîte d'haricots pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_27">
+<Original>Can (Sardines)</Original>
+<English>Can (Sardines)</English>
+<German>Dose (Sardinen)</German>
+<Russian>Банка (Сардины)</Russian>
+<French>Conserve (Sardines)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_27">
+<Original>Canned sardines used for sustainment. Lasts well over five years if stored correctly.</Original>
+<English>Canned sardines used for sustainment. Lasts well over five years if stored correctly.</English>
+<German>Eine essfertige Dose Sardinen. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+<Russian>Банка консервированных сардин. Срок хранения до 5 лет.</Russian>
+<French>Boîte de sardines, pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_28">
+<Original>Can (Frank &amp; Beans)</Original>
+<English>Can (Frank &amp; Beans)</English>
+<German>Dose (Bohnen und Würste)</German>
+<Russian>Банка (Фасоль с мясом)</Russian>
+<French>Conserve (William Saurien)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_28">
+<Original>Canned Beans and Sausages used for sustainment. Lasts well over five years if stored correctly.</Original>
+<English>Canned Beans and Sausages used for sustainment. Lasts well over five years if stored correctly.</English>
+<German>Eine essfertige Dose Bohnen und Würste. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+<Russian>Банка консервированной фасоли с мясом. Срок хранения до 5 лет.</Russian>
+<French>Une boîte d'haricots et saussisses en sauce. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_29">
+<Original>Can (Pasta)</Original>
+<English>Can (Pasta)</English>
+<German>Dose (Nudeln)</German>
+<Russian>Банка (Лапша)</Russian>
+<French>Conserve (Pâtes)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_29">
+<Original>Canned Macaroni used for sustainment. Lasts well over five years if stored correctly.</Original>
+<English>Canned Macaroni used for sustainment. Lasts well over five years if stored correctly.</English>
+<German>Eine essfertige Dose Nudeln. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
+<Russian>Банка лапши в соусе. Срок хранения до 5 лет.</Russian>
+<French>Macaroni en boîte, pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
+</Key>
+
+
+<Key ID="STR_EQUIP_NAME_33">
+<Original>Empty Tin Can</Original>
+<English>Empty Tin Can</English>
+<German>Leere Dose</German>
+<Russian>Пустая консервная банка</Russian>
+<French>Boîte vide</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_33">
+<Original>An empty tin can that no longer contains any food, or anything usable.</Original>
+<English>An empty tin can that no longer contains any food, or anything usable.</English>
+<German>Eine leere Dose, in der einmal Essen oder andere nützliche Sachen waren.</German>
+<Russian>Пустая консервная банка совершенно пуста и бесполезна.</Russian>
+<French>Boîte de conserve vide, dont la seule utilité est de faire éventuellement diversion.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_34">
+<Original>Empty Whiskey Bottle</Original>
+<English>Empty Whiskey Bottle</English>
+<German>Leere Whiskeyflasche</German>
+<Russian>Пустая бутылка виски</Russian>
+<French>Bouteille de Whisky vide</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_34">
+<Original>A cracked empty whiskey bottle that no longer contains anything.</Original>
+<English>A cracked empty whiskey bottle that no longer contains anything.</English>
+<German>Eine leere Whiskeyflasche. Sie ist leider undicht.</German>
+<Russian>Треснутая бутылка виски не содержит в себе абсолютно ничего.</Russian>
+<French>Une bouteille fêlée, sans son précieux brevage.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_35">
+<Original>Empty Soda Can</Original>
+<English>Empty Soda Can</English>
+<German>Leere Getränkedose</German>
+<Russian>Пустая банка газировки</Russian>
+<French>Canette vide</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_35">
+<Original>A aluminium can that once contained a tasty carbonated beverage, and now contains nothing.</Original>
+<English>A aluminium can that once contained a tasty carbonated beverage, and now contains nothing.</English>
+<German>Eine Aluminiumdose, in der einmal ein köstliches, kohlensäurehaltiges Getränk war.</German>
+<Russian>Алюминиевая банка, которая однажды содержала вкусный газированный напиток и теперь пуста.</Russian>
+<French>Une canette en alu, qui jadis a contenu du soda.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_36a">
+<Original>Soda Can (Coke)</Original>
+<English>Soda Can (Coke)</English>
+<German>Dose (Coke)</German>
+<Russian>Газировка (Кола)</Russian>
+<French>Canette (Coca)</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_36b">
+<Original>Soda Can (Pepsi)</Original>
+<English>Soda Can (Pepsi)</English>
+<German>Dose (Pepsi)</German>
+<Russian>Газировка (Пепси)</Russian>
+<French>Canette (Pepsi)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_36">
+<Original>An aluminium can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives.</Original>
+<English>An aluminium can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives.</English>
+<German>Eine Alumniumdose, in der ein köstliches, kohlensäurehaltiges Getränk voller Zucker, künstlicher Aromen und Konservierungsmittel</German>
+<Russian>Алюминиевая банка со вкусным газированным напитком с сахаром, искусственными ароматизаторами и консервантами.</Russian>
+<French>Une canette en alu, contenant un breuvage goutu composé de sucre, d'arômes artificiels et de conservateurs.</French>
+</Key>
+
+<Key ID="STR_EQUIP_NAME_37">
+<Original>Soda Can (Mountain Dew)</Original>
+<English>Soda Can (Mountain Dew)</English>
+<German>Dose (Mountain Dew)</German>
+<Russian>Газировка (Маунтин Дью)</Russian>
+<French>Canette (Mountain Dew)</French>
+</Key>
+
+<!--
+<Key ID="STR_EQUIP_DESC_37">
+<Original>An aluminium can containing fuel for all-night game development. Can be consumed as a regular drink as required.</Original>
+<English>An aluminium can containing fuel for all-night game development. Can be consumed as a regular drink as required.</English>
+<German>Eine Aluminiumdose, in der Energie für eine Nacht voller Spieleentwicklung steckt. Kann auch auch täglicher Basis getrunken werden.</German>
+<Russian>Алюминиевая банка содержащая газированый энергетик. Единственная на всю Черноруссию.</Russian>
+<French>(not used??)</French>
+</Key>
+-->
+
+<Key ID="STR_EQUIP_NAME_39">
+<Original>Jerry Can (Empty)</Original>
+<English>Jerry Can (Empty)</English>
+<German>Leerer Kanister</German>
+<Russian>Канистра (пустая)</Russian>
+<French>Jerrican (vide)</French>
+</Key>
+
+<Key ID="STR_EQUIP_DESC_39">
+<Original>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</Original>
+<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>
+<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
+<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
+<French>Un Jerrican de 20 litres, vide. Peut être rempli en siphonnant les cuves à fioul de stations-service.</French>
+</Key>
+    
+<Key ID="STR_EQUIP_NAME_40">
+<Original>Wood Pile</Original>
+      <English>Wood Pile</English>
+      <German>Holzstapel</German>
+      <Russian>Дрова</Russian>
+<French>Tas de bois</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_40">
+<Original>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</Original>
+      <English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
+      <German>Ein kleiner Stapel frisch geschlagenes Holz, dass neben einiger anderer Dingen dazu verwendet werden kann ein Feuer zu machen.</German>
+      <Russian>Кучка дров, идеально подойдет, чтобы развести костер.</Russian>
+<French>Un peu de bois qui permet de préparer du feu, entre autre.</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_NAME_42">
+<Original>Heatpack</Original>
+      <English>Heatpack</English>
+      <German>Heatpack</German>
+      <Russian>Heatpack</Russian>
+<French>Chaufferette</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_42">
+<Original>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</Original>
+      <English>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</English>
+      <German>Ein Heizkissen, wenn Sie die Kristallisation beginnen erwärmt. Wird verwendet, um schnell Wärme an den Körper liefern.</German>
+      <Russian>Грелка-подушка, которая греет, когда вы замерзаете. Используется для быстрого согревания вашего тела.</Russian>
+<French>Poche produisant de la chaleur via un processus de cristallisation. Permet de réchauffer rapidement votre corps.</French>
+    </Key>
+    <!--
+<Key ID="STR_EQUIP_NAME_43">
+<Original>Ghillie Suit</Original>
+      <English>Ghillie Suit</English>
+      <German>Ghillie-Anzug</German>
+      <Russian>Маскировочный костюм</Russian>
+<French>Tenue Ghillie</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_43">
+<Original>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Original>
+      <English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
+      <German>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</German>
+      <Russian>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</Russian>
+<French>Une tenue de camouflage qui imite le feuillage. Peut être porté.</French>
+    </Key>
+    -->
+    <!--
+<Key ID="STR_EQUIP_NAME_44">
+<Original>Camo Clothing</Original>
+      <English>Camo Clothing</English>
+      <German>Camo Clothing</German>
+      <Russian>Camo Clothing</Russian>
+<French>Tenu de camouflage</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_44">
+<Original>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Original>
+      <English>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
+      <German>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</German>
+      <Russian>A mixture of camoflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</Russian>
+<French>Un ensemble composé d'un pantalon de camouflage et d'un t-shirt marron. Peut être porté.</French>
+    </Key>
+    -->
+    <!--
+<Key ID="STR_EQUIP_NAME_45">
+<Original>Civilian Clothing</Original>
+      <English>Civilian Clothing</English>
+      <German>Civilian Clothing</German>
+      <Russian>Civilian Clothing</Russian>
+<French>Tenue civile</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_45">
+<Original>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Original>
+      <English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
+      <German>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</German>
+      <Russian>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</Russian>
+<French>Une tenue de ville, avec veste légère et casquette. Peut être porté.</French>
+    </Key>
+    -->
+    <!--
+<Key ID="STR_EQUIP_NAME_46">
+<Original>Soldier Clothing</Original>
+      <English>Soldier Clothing</English>
+      <German>Soldier Clothing</German>
+      <Russian>Soldier Clothing</Russian>
+<French>Tenue de soldat</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_46">
+<Original>A British Army Soldiers uniform. Can be unpacked and worn.</Original>
+      <English>A British Army Soldiers uniform. Can be unpacked and worn.</English>
+      <German>A British Army Soldiers uniform. Can be unpacked and worn.</German>
+      <Russian>A British Army Soldiers uniform. Can be unpacked and worn.</Russian>
+<French>Un uniforme de la BAF. Peut être porté.</French>
+    </Key>
+-->
+<Key ID="STR_WPN_HOLDR_2">
+<Original>Hunting Rifle</Original>
+<English>Hunting Rifle</English>
+<German>Jagdgewehr</German>
+<Russian>Охотничье ружьё</Russian>
+<French>Fusil de chasse</French>
+</Key>
+
+<Key ID="STR_DAYZ_OBJ_2">
+<Original>Cardboard Box (Medical)</Original>
+<English>Cardboard Box (Medical)</English>
+<German>Pappkarton (Medizin)</German>
+<Russian>Картонная коробка (Медикаменты)</Russian>
+<French>Carton (Médicaments)</French>
+</Key>
+
+<Key ID="STR_DAYZ_OBJ_3">
+<Original>Ammunition Box</Original>
+<English>Ammunition Box</English>
+<German>Munitionskiste</German>
+<Russian>Коробка с патронами</Russian>
+<French>Boîte de munitions</French>
+</Key>
+      
+<Key ID="STR_WPN_DESC_1">
+<Original>Shotgun 12 gauge</Original>
+<English>Shotgun 12 gauge</English>
+<German>Flinte, Kaliber 12</German>
+<Russian>Дробовик 12 калибра</Russian>
+<French>Fusil cal. 12</French>
+</Key>
+
+<Key ID="STR_WPN_DESC_2">
+<Original>The Remington Model 870 is a pump-action shotgun with a military torch attachment.</Original>
+<English>The Remington Model 870 is a pump-action shotgun with a military torch attachment.</English>
+<German>Die Remington Model 870 ist eine Pumpgun mit Halterung für eine Taschenlampe.</German>
+<Russian>Ремингтон Модель 870 это помповый дробовик с креплением для фонарика</Russian>
+<French>Le modèle Remington 870 est un fusil à pompe avec une torche militaire.</French>
+</Key>
+
+<Key ID="STR_WPN_NAME_3">
+<Original>Remington 870 (Flashlight)</Original>
+<English>Remington 870 (Flashlight)</English>
+<German>Remington 870 mit Taschenlampe</German>
+<Russian>Ремингтон 870 (с фонариком)</Russian>
+<French>Remington 870 (+Torche)</French>
+</Key>
+
+<Key ID="STR_WPN_DESC_3">
+<Original>The Remington Model 870 is a pump-action shotgun. This rifle has a torch attached.</Original>
+<English>The Remington Model 870 is a pump-action shotgun. This rifle has a torch attached.</English>
+<German>Die Remington Model 870 ist eine Pumpgun. An diese ist eine Taschenlampe angebracht.</German>
+<Russian>Ремингтон Модель 870 это помповый дробовик с армейским фонариком</Russian>
+<French>Le modèle Remington 870 est un fusil à pompe avec une lampe torche.</French>
+</Key>
+
+<Key ID="STR_WPN_NAME_4">
+<Original>Compound Crossbow</Original>
+<English>Compound Crossbow</English>
+<German>Kompositarmbrust</German>
+<Russian>Спортивный арбалет</Russian>
+<French>Arbalète composite</French>
+</Key>
+
+<Key ID="STR_WPN_DESC_4">
+<Original>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</Original>
+<English>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</English>
+<German>Die Kompositarbmbrust ist, wenn man das Zielen beherrscht, eine starke, einzelschüssige Waffe mit kurzer Reichweite und langer Nachladezeit.</German>
+<Russian>Спортивный арбалет требует сноровки для точной стрельбы, превращаясь в мощное однозарядное оружие на коротких дистанциях.</Russian>
+<French>Une fois maîtrisée, l'arbalète composite permet de tirer un coup puissant mais avec un long temps de chargement.</French>
+</Key>
+    
+<Key ID="STR_WPN_NAME_5">
+<Original>Double-barreled Shotgun</Original>
+      <English>Double-barreled Shotgun</English>
+      <German>Double-barreled Shotgun</German>
+      <Russian>Double-barreled Shotgun</Russian>
+<French>Fusil à 2 coups</French>
+    </Key>
+    
+<Key ID="STR_WPN_DESC_5">
+<Original>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</Original>
+      <English>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</English>
+      <German>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</German>
+      <Russian>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</Russian>
+<French>Fusil doté de 2 canons parallèles, permettant de tirer 2 coups rapprochés.</French>
+    </Key>
+
+<Key ID="STR_MAG_NAME_1">
+<Original>15Rnd. 1866 Pellets</Original>
+<English>15Rnd. 1866 Pellets</English>
+<German>15 Schuss 1866 Schrot</German>
+<Russian>15 Патрон 1866 дробь</Russian>
+<French>15 plombs pour 1866</French>
+</Key>
+
+<Key ID="STR_MAG_DESC_1">
+<Original>Caliber: 12 gauge</Original>
+<English>Caliber: 12 gauge</English>
+<German>Kaliber 12</German>
+<Russian>12-й калибр</Russian>
+<French>Calibre 12</French>
+</Key>
+
+<Key ID="STR_MAG_NAME_2">
+<Original>15Rnd. 1866 Slugs</Original>
+<English>15Rnd. 1866 Slugs</English>
+<German>15 Schuss 1866 Kugel</German>
+<Russian>15 Патрон 1866 пуля</Russian>
+<French>15 balles pour 1866</French>
+</Key>
+
+<Key ID="STR_MAG_DESC_2">
+<Original>Caliber: 12 gauge</Original>
+<English>Caliber: 12 gauge</English>
+<German>Kaliber 12</German>
+<Russian>12-й калибр</Russian>
+<French>Calibre 12</French>
+</Key>
+
+<Key ID="STR_MAG_NAME_4">
+<Original>Road Flare</Original>
+<English>Road Flare</English>
+<German>Bengalfeuer</German>
+<Russian>Сигнальный фаер</Russian>
+<French>Fusée éclairante</French>
+</Key>
+
+<Key ID="STR_MAG_DESC_4">
+<Original>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</Original>
+<English>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</English>
+<German>Handgeführtes Bengalfeuer, häufig in Notfallkästen in Fahrzeugen gefunden. Eine Ladung brennt etwa 5 Minuten.</German>
+<Russian>Гражданский сигнальный фаер, который обычно используют спасатели. Горит около пяти минут.</Russian>
+<French>Fusée de détresse que l'on trouve dans les trousses de secours. Eclaire pendant 5 minutes environs.</French>
+</Key>
+
+<Key ID="STR_MAG_NAME_5">
+<Original>Chemlight (Green)</Original>
+<English>Chemlight (Green)</English>
+<German>Knicklicht (Grün)</German>
+<Russian>Химсвет (Зеленый)</Russian>
+<French>Bâton lumineux (vert)</French>
+</Key>
+
+<Key ID="STR_MAG_ACTION_5">
+<Original>Chemlight</Original>
+<English>Chemlight</English>
+<German>Knicklicht</German>
+<Russian>Химсвет</Russian>
+<French>Bâton lumineux</French>
+</Key>
+
+<Key ID="STR_MAG_DESC_5">
+<Original>Chemical Lightstick providing 60 minutes illumination within a small area when activated and thrown. Available in assorted colors.</Original>
+<English>Chemical Lightstick providing 60 minutes illumination within a small area when activated and thrown. Available in assorted colors.</English>
+<German>Ein chemisches Knicklicht, das für etwa 60 Minuten Licht gibt, nachdem es geknickt und geworfen wurde. In verschiedenen Farben verfügbar.</German>
+<Russian>Химический источник света, освещающий небольшую область на период до 60 минут после броска. Бывает разных цветов.</Russian>
+<French>Un bâton produisant une lumière fluorescente pendant 60 minutes sur un périmètre restreint. Existe de plusieurs couleurs.</French>
+</Key>
+
+<Key ID="STR_MAG_NAME_6">
+<Original>Chemlight (Red)</Original>
+<English>Chemlight (Red)</English>
+<German>Knicklicht (Rot)</German>
+<Russian>Химсвет (Красный)</Russian>
+<French>Bâton lumineux (rouge)</French>
+</Key>
+
+<Key ID="STR_MAG_NAME_7">
+<Original>Chemlight (Blue)</Original>
+<English>Chemlight (Blue)</English>
+<German>Knicklicht (Blau)</German>
+<Russian>Химсвет (Синий)</Russian>
+<French>Bâton lumineux (bleu)</French>
+</Key>
+    
+<Key ID="STR_EQUIP_NAME_41">
+<Original>Hatchet</Original>
+      <English>Hatchet</English>
+      <German>Hatchet</German>
+      <Russian>Топорик</Russian>
+<French>Hâche</French>
+    </Key>
+    
+<Key ID="STR_EQUIP_DESC_41">
+<Original>A single-handed striking tool with a sharp blade used to cut and split wood.</Original>
+      <English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
+      <German>A single-handed striking tool with a sharp blade used to cut and split wood.</German>
+      <Russian>Топорик отлично подойдет для рубки дров.</Russian>
+<French>Un outil à une main doté d'une lame tranchante, utilisé pour couper et fendre du bois.</French>
+    </Key>
+<Key ID="STR_CHAR_1">
+<Original>Survivor</Original>
+<English>Survivor</English>
+<German>Überlebender</German>
+<Russian>Выживший</Russian>
+<French>Survivant</French>
+    </Key>
+
 		<Key ID="STR_EQUIP_NAME_20">
 			<English>Camping Tent</English>
 			<German>Zelt</German>
@@ -652,7 +1656,7 @@
 			<Russian>Маскхалат</Russian>
 			<Spanish>Traje Camuflado "Guillie"</Spanish>
 			<Czech>Hejkal</Czech>
-			<French>Tenue de camouflage "Ghillie"</French>
+			<French>Tenue Ghillie</French>
 			<Dutch>Ghilliepak</Dutch>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
@@ -678,7 +1682,7 @@
 			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
 			<Spanish>Una mezcla de pantalones camuflados con una camisa marrón y sin gorra. Puede ser desembalado y usado.</Spanish>
 			<Czech>Mix maskovacích kalhot a hnědého trička bez čepice. Může být rozbaleno a nošeno.</Czech>
-			<French>Assemblage d'un pantalon camo urbain avec un t-shirt brun. Peut être porté.</French>
+			<French>Ensemble composé d'un pantalon de camouflage et d'un t-shirt brun. Peut être porté.</French>
 			<German>Eine Kleidung, bestehend aus einer Camouflage Hose und einem braunen T-Shirt, aber ohne eine Kopfbedeckung. Kann ausgepackt werden und getragen werden.</German>
 			<Dutch>Een mix van camoflagebroek met een bruin t-shirt en geen hoed. Kan uitgepakt en gedragen worden.</Dutch>
 		</Key>
@@ -687,7 +1691,7 @@
 			<Russian>Гражданская одежда</Russian>
 			<Spanish>Ropa de Civil</Spanish>
 			<Czech>Civilní oblečení</Czech>
-			<French>Vêtements Civils</French>
+			<French>Vêtements civils</French>
 			<German>Zivilisten Kleidung</German>
 			<Dutch>Burgerkleding</Dutch>
 		</Key>
@@ -705,7 +1709,7 @@
 			<Russian>Солдатская форма</Russian>
 			<Spanish>Ropa Militar</Spanish>
 			<Czech>Vojenské oblečení</Czech>
-			<French>Uniforme de Soldat</French>
+			<French>Uniforme de soldat</French>
 			<German>Soldaten Kleidung</German>
 			<Dutch>Soldatenkleding</Dutch>
 		</Key>
@@ -778,7 +1782,7 @@
 			<Russian>Сырое мясо</Russian>
 			<Spanish>Carne Cruda</Spanish>
 			<Dutch>Rauw Vlees</Dutch>
-			<French>Viande Crue</French>
+			<French>Viande crue</French>
 			<Czech>Syrové maso</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_0">
@@ -814,7 +1818,7 @@
 			<Russian>Куриный окорочек</Russian>
 			<Spanish>Pata de Pollo Cruda</Spanish>
 			<Dutch>Kippenpoot</Dutch>
-			<French>Cuisse de Poulet crue</French>
+			<French>Poulet cru</French>
 			<Czech>Syrová kuřecí noha</Czech>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">
@@ -904,7 +1908,7 @@
 			<Russian>Жареное мясо</Russian>
 			<Spanish>Carne Cocinada</Spanish>
 			<Dutch>Gekookt Vlees</Dutch>
-			<French>Viande Cuite</French>
+			<French>Viande cuite</French>
 			<Czech>Upečené maso</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_0">
@@ -940,7 +1944,7 @@
 			<Russian>Жареный куриный окрочек</Russian>
 			<Spanish>Pata de Pollo</Spanish>
 			<Dutch>Kippenpoot</Dutch>
-			<French>Cuisse de Poulet</French>
+			<French>Poulet grillé</French>
 			<Czech>Kuřecí nožka</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">
@@ -958,7 +1962,7 @@
 			<Russian>Жареный кролик</Russian>
 			<Spanish>Conejo</Spanish>
 			<Dutch>Konijn</Dutch>
-			<French>Lapin</French>
+			<French>Lapin cuit</French>
 			<Czech>Králík</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">
@@ -1048,7 +2052,7 @@
 			<Russian>Фляжка кипяченой воды</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<Dutch>Waterfles (Gekookt)</Dutch>
-			<French>Bouteille d'eau (Bouillie)</French>
+			<French>Gourde (Eau bouillie)</French>
 			<Czech>Láhev vody (převařená)</Czech>
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">
@@ -1057,7 +2061,7 @@
 			<Russian>Фляжка кипяченой воды. Пригодна для питья.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<Dutch>Een fles gekookt water dat is gevuld en dat kan worden geconsumeerd.</Dutch>
-			<French>Une bouteille a été remplie d'eau bouillie qui peut être consommée.</French>
+			<French>Une gourde remplie d'eau bouillie qui peut être consommée.</French>
 			<Czech>Plná láhev převařené vody, která může být vypita.</Czech>
 		</Key>
 		<Key ID="STR_ITEMWOODENARROW_CODE_NAME">
@@ -1372,7 +2376,7 @@
 			<Russian>Cухпай</Russian>
 			<Spanish>MRE</Spanish>
 			<Dutch>MRE</Dutch>
-			<French>MRE</French>
+			<French>Ration de combat</French>
 			<Czech>MRE</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_MRE">
@@ -1381,7 +2385,7 @@
 			<Russian>Упаковка сухого пайка.</Russian>
 			<Spanish>Ración de combate. Carne lista para consumirse.</Spanish>
 			<Dutch>Kant-en-Klaar Maaltijd</Dutch>
-			<French>Repas prêt à manger</French>
+			<French>Repas prêt à manger. Redonne des forces.</French>
 			<Czech>Vojenská potravinová dávka typu MRE.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PISTACHIO">
@@ -1425,7 +2429,7 @@
 			<English>Empty Tin Can</English>
 			<Russian>Пустая жестянка</Russian>
 			<Spanish>Lata Vacía</Spanish>
-			<French>Boîte de conserve vide</French>
+			<French>Boîte vide</French>
 			<Czech>Prázdná cínová plechovka</Czech>
 			<German>Leere Blechdose</German>
 			<Dutch>Leeg Blik</Dutch>
@@ -1434,7 +2438,7 @@
 			<English>An empty can.</English>
 			<Russian>Пустая банка от чего-то.</Russian>
 			<Spanish>Una lata vacia.</Spanish>
-			<French>Une boîte vide en fer blanc.</French>
+			<French>Une boîte de conserve vide.</French>
 			<Czech>Prázdná plechovka</Czech>
 			<German>Eine leere Blechdose</German>
 			<Dutch>Een leeg blik.</Dutch>
@@ -1592,7 +2596,7 @@
 			<Russian>Банка (Шпроты)</Russian>
 			<Spanish>Lata (Sprats)</Spanish>
 			<Dutch>Blik (Sprats)</Dutch>
-			<French>Boîte (Anchois)</French>
+			<French>Conserve (Anchois)</French>
 			<Czech>Plechovka (Sardinky)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_LONG_SPRATS">
@@ -1610,7 +2614,7 @@
 			<Russian>Банка (Бефстроганы)</Russian>
 			<Spanish>Lata (Bife Stroganoff)</Spanish>
 			<Dutch>Blik (Stroganoff)</Dutch>
-			<French>Boîte (Boeuf Strogonoff)</French>
+			<French>Conserve (Boeuf Strogonoff)</French>
 			<Czech>Plechovka (Stroganoff)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BEEF">
@@ -1629,7 +2633,7 @@
 			<Russian>Банка (Potatoes)</Russian>
 			<Spanish>Lata (Papas Fritas)</Spanish>
 			<Dutch>Blik (Potatoes)</Dutch>
-			<French>Boîte (Gratin Dauphinois)</French>
+			<French>Conserve (Gratin Dauphinois)</French>
 			<Czech>Plechovka (Brambory)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POTATOES">
@@ -1647,7 +2651,7 @@
 			<Russian>Банка (Черные бобы)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
-			<French>Boîte (Haricots)</French>
+			<French>Conserve (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_GRIFF">
@@ -1665,7 +2669,7 @@
 			<Russian>Банка (Персики)</Russian>
 			<Spanish>Lata (Duraznos)</Spanish>
 			<Dutch>Blik (Perziken)</Dutch>
-			<French>Boîte (Pêches)</French>
+			<French>Conserve (Pêches)</French>
 			<Czech>Plechovka (Broskve)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BADGUY">
@@ -1683,7 +2687,7 @@
 			<Russian>Банка (Равиоли)</Russian>
 			<Spanish>Lata (Ravioles)</Spanish>
 			<Dutch>Blik (Ravioli)</Dutch>
-			<French>Boîte (Raviolis)</French>
+			<French>Conserve (Raviolis)</French>
 			<Czech>Plechovka (Ravioli)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_BONEBOY">
@@ -1701,7 +2705,7 @@
 			<Russian>Банка (Кукуруза)</Russian>
 			<Spanish>Lata (Granos de Maíz)</Spanish>
 			<Dutch>Blik (Maïs)</Dutch>
-			<French>Boîte (Maïs)</French>
+			<French>Conserve (Maïs)</French>
 			<Czech>Plechovka (Kukuřice)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CORN">
@@ -1719,7 +2723,7 @@
 			<Russian>Банка (Суп)</Russian>
 			<Spanish>Lata (Sopa)</Spanish>
 			<Dutch>Blik (Soep)</Dutch>
-			<French>Boîte (Soupe)</French>
+			<French>Conserve (Soupe)</French>
 			<Czech>Plechovka (Polévka)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_CURGON">
@@ -1737,7 +2741,7 @@
 			<Russian>Банка (Зеленый горошек)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
-			<French>Boîte (Haricots)</French>
+			<French>Conserve (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DEMON">
@@ -1755,7 +2759,7 @@
 			<Russian>Банка (Спагетти)</Russian>
 			<Spanish>Lata (Spaghetti)</Spanish>
 			<Dutch>Blik (Spaghetti)</Dutch>
-			<French>Boîte (Spaghettis)</French>
+			<French>Conserve (Spaghettis)</French>
 			<Czech>Plechovka (Špagety)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FRAGGLEOS">
@@ -1773,7 +2777,7 @@
 			<Russian>Банка (Кексики)</Russian>
 			<Spanish>Lata (Magdalenas)</Spanish>
 			<Dutch>Blik (Muffins)</Dutch>
-			<French>Boîte (Muffins)</French>
+			<French>Conserve (Muffins)</French>
 			<Czech>Plechovka (Muffiny)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_HERPY">
@@ -1791,7 +2795,7 @@
 			<Russian>Банка (Тушенка)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Blik (Rundvleesstoofpot)</Dutch>
-			<French>Boîte (Ragoût)</French>
+			<French>Conserve (Ragoût)</French>
 			<Czech>Can (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DERPY">
@@ -1809,7 +2813,7 @@
 			<Russian>Банка (Компот)</Russian>
 			<Spanish>Lata (Ensalada de Frutas)</Spanish>
 			<Dutch>Blik (Gemengd Fruit)</Dutch>
-			<French>Boîte (Fruits)</French>
+			<French>Conserve (Fruits)</French>
 			<Czech>Plechovka (Ovoce)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_ORLOK">
@@ -1827,7 +2831,7 @@
 			<Russian>Банка (Похлебка)</Russian>
 			<Spanish>Lata (Sopa de Pescado)</Spanish>
 			<Dutch>Blik (Mosselsoep)</Dutch>
-			<French>Boîte (Soupe de palourdes)</French>
+			<French>Conserve (Soupe de palourdes)</French>
 			<Czech>Plechovka (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_POWELL">
@@ -1845,7 +2849,7 @@
 			<Russian>Банка (Фасоль)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
-			<French>Boîte (Haricots)</French>
+			<French>Conserve (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_TYLERS">
@@ -1863,7 +2867,7 @@
 			<Russian>Банка с чем-то</Russian>
 			<Spanish>Lata Desconocida</Spanish>
 			<Dutch>Blik (Onbekend)</Dutch>
-			<French>Boîte (Inconnu)</French>
+			<French>Conserve sans étiquette</French>
 			<Czech>Plechovka (Neznámé)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_UNLABELED">
@@ -1881,7 +2885,7 @@
 			<Russian>Банка (Тушенка)</Russian>
 			<Spanish>Lata (Guiso)</Spanish>
 			<Dutch>Blik (Rundvleesstoofpot)</Dutch>
-			<French>Boîte (Pot-au-feu)</French>
+			<French>Conserve (Pot-au-feu)</French>
 			<Czech>Plechovka (Dušené maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_STEW">
@@ -1899,7 +2903,7 @@
 			<Russian>Банка (Свинина)</Russian>
 			<Spanish>Lata (Cerdo)</Spanish>
 			<Dutch>Blik (Varkensvlees)</Dutch>
-			<French>Boîte (Porc)</French>
+			<French>Conserve (Porc)</French>
 			<Czech>Plechovka (Vepřové maso)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PORK">
@@ -1917,7 +2921,7 @@
 			<Russian>Банка (Горошек)</Russian>
 			<Spanish>Lata (Arvejas)</Spanish>
 			<Dutch>Blik (Bonen)</Dutch>
-			<French>Boîte (Petits Pois)</French>
+			<French>Conserve (Petits Pois)</French>
 			<Czech>Plechovka (Hrášek)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_PEAS">
@@ -1935,7 +2939,7 @@
 			<Russian>Банка (Сгущенка)</Russian>
 			<Spanish>Lata (Leche)</Spanish>
 			<Dutch>Blik (Melk)</Dutch>
-			<French>Boîte (Lait)</French>
+			<French>Conserve (Lait)</French>
 			<Czech>Plechovka (Mléko)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_MILK">
@@ -1953,7 +2957,7 @@
 			<Russian>Банка (Кукуруза)</Russian>
 			<Spanish>Lata (Maíz)</Spanish>
 			<Dutch>Blik (Maïs)</Dutch>
-			<French>Boîte (Maïs)</French>
+			<French>Conserve (Maïs)</French>
 			<Czech>Plechovka (Kukuřice)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_RUS_CORN">
@@ -1999,7 +3003,7 @@
 			<Russian>Старомодная опасная бритва.</Russian>
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
 			<Dutch>Een ouderwets scheermes met een afgeronde Franse kop.</Dutch>
-			<French>Un coupe-chou démodé à bout oblique.</French>
+			<French>Un coupe-chou démodé à pointe biseautée.</French>
 			<Czech>Stará břitva na holení.</Czech>
 		</Key>
 		<Key ID="STR_BOOK_NAME_BIBLE">
@@ -2190,7 +3194,7 @@
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
-			<French>Vous avez consommé un(e) %1</French>
+			<French>&lt;br/&gt;&lt;br/&gt;Vous avez consommé une %1</French>
 			<Czech>Snědl jsi %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
@@ -2262,7 +3266,7 @@
 			<Russian>Наполнено фляжек с водой: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
-			<French>Vous avez rempli %1 bouteille(s) avec de l'eau.</French>
+			<French>Vous avez rempli %1 gourde avec de l'eau.</French>
 			<Czech>Naplnil jsi %1 lahví vodou.</Czech>
 		</Key>
 		<Key ID="str_player_02">
@@ -2271,7 +3275,7 @@
 			<Russian>У вас нет пустых фляжек.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
 			<Dutch>Je hebt geen lege waterflessen</Dutch>
-			<French>Vous n'avez aucune bouteille vide.</French>
+			<French>Vous n'avez aucune gourde vide.</French>
 			<Czech>Nemáš žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
@@ -2433,7 +3437,7 @@
 			<Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
 			<Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
 			<Dutch>Je moet in de buurt van een waterbron zijn, zoals een meer of pomp, om je waterflessen bij te vullen</Dutch>
-			<French>Vous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos bouteilles d'eau.</French>
+			<French>Vous devez être à côté d'une source d'eau comme un bassin ou un puits pour remplir vos gourdes.</French>
 			<Czech>Pro plnění láhve na vodu je nutné být poblíž studny nebo rybníka.</Czech>
 		</Key>
 		<Key ID="str_player_21">
@@ -2496,7 +3500,7 @@
 			<Russian>Вы успешно применили на вашем теле согревающий комплект.</Russian>
 			<Spanish>Aplicaste correctamente un paquete de calor a tu cuerpo.</Spanish>
 			<Dutch>Je hebt met succes een heatpack op je lichaam gebruikt.</Dutch>
-			<French>Vous avez utilisé un heatpack avec succès.</French>
+			<French>Vous avez utilisé une chaufferette avec succès.</French>
 			<Czech>Aplikace heatpacku proběhla úspěšně.</Czech>
 		</Key>
 		<Key ID="str_player_28">
