@@ -29,7 +29,7 @@ FIX DUE : 22 APRIL 2013
 	    * DayZ 1.7.7
 	
 	Changes:
-	    * [Prerequisites]   New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
+	    * [Mission Prerequisites]   New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
 	    * [Prerequisites]   BattlEye filters must be updated manually by server admins.
 	
 	    * [NEW] - Removed annoying "re-arm" option from actions menu
@@ -47,16 +47,16 @@ FIX DUE : 22 APRIL 2013
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
-	    * [NEW] - 3 New decayed Zeds - harder to kill (WIP). (Using new textures: http://dayzmod.com/forum/index.php?/topic/21465-new-zombie-textures/ )
-	    * [NEW] - Added optional watermark for servername (server admins only).
+	    * [NEW] - 3 New decayed Zeds - Harder to kill and Do more damage.
+	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
 	    * [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
 	    * [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
 	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 3.
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
-	    * [NEW] - New starting gear added. ("Makarov","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemPainkiller","HandRoadFlare").
-	    * [NEW] - Servers date have been locked to give full moon nights.
+		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller","HandRoadFlare").
+	    * [NEW] - Servers date has been locked to give full moon nights.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -107,10 +107,8 @@ FIX DUE : 22 APRIL 2013
 	    * [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
 	    * [UPDATED] - Lowered Transfusion infection rate.
 	    * [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
-	    * [UPDATED] - You can now only have 1 quiver in your main inventory.
+	    * [UPDATED] - You can now only have 1 useable quiver in your main inventory and unlimited in your backpack.
 	    * [UPDATED] - Melee range has been updated.
-		* [UPDATED] - Agro from smoke grenades now happens when the smoke grenade hits the ground.
-		* [UPDATED] - Zombies now investigate hand grenade explosions (agro not possible as of now).
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
