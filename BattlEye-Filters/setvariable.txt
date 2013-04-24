@@ -41,7 +41,7 @@
 1="lastPos"
 1="LastTransfusion"
 1="meatHarvested"
-1="myDest"
+//1="myDest"
 1="needUpdate"
 1="NORRN_LoadVcl"
 1="NORRN_unconscious"
