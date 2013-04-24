@@ -3176,7 +3176,7 @@
 			<Russian>Вы установили палатку.</Russian>
 			<Spanish>Asentaste tu carpa.</Spanish>
 			<Dutch>Je hebt je tent opgezet</Dutch>
-			<French>Vous avez installé votre tente.</French>
+			<French>\n\nVous avez installé votre tente.</French>
 			<Czech>Postavil jsi stan.</Czech>
 		</Key>
 		<Key ID="str_fail_tent_pitch">
@@ -3185,7 +3185,7 @@
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen tent plaatsen. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
-			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
+			<French>\n\nVous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Stan zde nelze postavit. Plocha musí být rovná a být dostatečně velká.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
@@ -3194,7 +3194,7 @@
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
-			<French>&lt;br/&gt;&lt;br/&gt;Vous avez consommé une %1</French>
+			<French>\n\nVous avez consommé une %1</French>
 			<Czech>Snědl jsi %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
@@ -3203,7 +3203,7 @@
 			<Russian>Вы подготовили костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
 			<Dutch>Je hebt een kampvuur gemaakt</Dutch>
-			<French>Vous avez créé un feu de camp.</French>
+			<French>\n\nVous avez créé un feu de camp.</French>
 			<Czech>Vytvořil jsi ohniště.</Czech>
 		</Key>
 		<Key ID="str_build_01">
@@ -3230,7 +3230,7 @@
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>Je kunt hier geen kampvuur maken. Het gebied moet plat en vrij van andere objecten zijn</Dutch>
-			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
+			<French>\n\nVous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně velká.</Czech>
 		</Key>
 		<Key ID="str_fireplace_removed">
@@ -3266,7 +3266,7 @@
 			<Russian>Наполнено фляжек с водой: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<Dutch>Je hebt %1 flessen gevuld met water</Dutch>
-			<French>Vous avez rempli %1 gourde avec de l'eau.</French>
+			<French>\n\nVous avez rempli %1 gourde(s) avec de l'eau.</French>
 			<Czech>Naplnil jsi %1 lahví vodou.</Czech>
 		</Key>
 		<Key ID="str_player_02">
@@ -3275,7 +3275,7 @@
 			<Russian>У вас нет пустых фляжек.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
 			<Dutch>Je hebt geen lege waterflessen</Dutch>
-			<French>Vous n'avez aucune gourde vide.</French>
+			<French>\n\nVous n'avez aucune gourde vide.</French>
 			<Czech>Nemáš žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
