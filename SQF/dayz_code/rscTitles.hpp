@@ -139,7 +139,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "1.7.7.Pre-Release.23042013";
+			text = "1.7.7.Pre-Release.24042013";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
@@ -273,7 +273,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	movingEnable = 0;
 	enableSimulation = 1;
 	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;						
-	onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';";
+	onLoad = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';";
 	onUnload = "private ['_dummy']; _dummy = ['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
 	
 	class controlsBackground {
@@ -344,7 +344,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Respawn : CA_B_SAVE {
 			idc = 1010;
 			//onButtonClick = "hint str (_this select 0);";
-			//onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
+			onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
 			y = 0.2537 + 0.101903 * 2;
 			text = $STR_DISP_INT_RESPAWN;
 			default = 0;
@@ -360,7 +360,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Abort : CA_B_SAVE {
 			idc = 104;
 			y = 0.2537 + 0.101903 * 4;
-			onButtonClick = "call dayz_forceSave;";
+			onButtonClick = "[] execVM '\z\addons\dayz_code\compile\player_onPause.sqf'; call dayz_forceSave;";
 			text = $STR_DISP_INT_ABORT;
 			default = 0;
 		};
@@ -380,7 +380,7 @@ class RscDisplayGear
 {
 	idd = 106;
 	enableDisplay = 1;
-	onUnload = "call player_gearSync; call dayz_forceSave; call dayz_meleeMagazineCheck;";
+	onUnload = "{player removeMagazines _x} forEach MeleeMagazines; call player_gearSync; call dayz_forceSave; call dayz_meleeMagazineCheck;";
 	class controls
 	{
 		class CA_Filter_Icon: RscPicture
@@ -537,7 +537,7 @@ class RscDisplayGear
 					x = -2;
 					style = 2048;
 					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM	""\ca\ui\scripts\handleGear.sqf""; _dummy;";
-					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
+					onButtonClick = "private [""_dummy""]; {player removeMagazines _x} forEach MeleeMagazines; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
 					text = "&lt;";
 				};
 				class Available_items: RscIGUIListNBox
@@ -563,7 +563,7 @@ class RscDisplayGear
 					idc = 147;
 					x = -2;
 					onSetFocus = "private [""_dummy""]; _dummy = [_this,""onFocus""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
-					onButtonClick = "private [""_dummy""]; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
+					onButtonClick = "private [""_dummy""]; {player removeMagazines _x} forEach MeleeMagazines; _dummy = [_this,""onLBListSelChanged""] execVM ""\ca\ui\scripts\handleGear.sqf""; _dummy;";
 					text = ">";
 				};
 			};
