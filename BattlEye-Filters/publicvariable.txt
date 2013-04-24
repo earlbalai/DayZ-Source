@@ -1,4 +1,4 @@
-5 "" !="remExField" !="remExFP" !="atp" !="changeCharacter" !="dayz_serverObjectMonitor" !="dayzCharSave" !="dayzDeath" !="dayzDeleteObj" !="dayzDelLocal" !="dayzDiscoAdd" !="dayzDiscoRem" !="dayzFire" !="dayzGutBody" !="dayzHideBody" !="dayzHit" !="dayzHitV" !="dayzHumanity" !="dayzLogin" !="dayzLogin2" !="dayzLoginRecord" !="dayzPlayerLogin" !="dayzPlayerLogin2" !="dayzPlayerMorph" !="dayzPlayerSave" !="dayzPublishObj" !="dayzRoadFlare" !="dayzSetDate" !="dayzSetFix" !="dayzSetFuel" !="dayzSwitch" !="dayzUpdate" !="dayzUpdateVehicle" !="dayzVehicleInit" !="drn_AskServerDynamicWeatherEventArgs" !="drn_DynamicWeather_DebugTextEventArgs" !="drn_DynamicWeatherEventArgs" !="drn_var_DynamicWeather_rain" !="drn_var_DynamicWeather_ServerInitialized" !="norrinRAlie" !="norrnRalie" !="norrnR180" !="norrnRACarUp" !="norrnRaDrag" !="norrnRaLW" !="norrnRAPicUp" !="norrnRDead" !="norrnRLact" !="norrnRnoAnim" !"player" !="usecBandage" !="usecBleed" !="usecEpi" !="usecInject" !="usecMorphine" !="usecPainK" !="usecTransfuse"
+5 "" !="remExField" !="remExFP" !="atp" !="changeCharacter" !="dayz_serverObjectMonitor" !="dayzCharSave" !="dayzDeath" !="dayzDeleteObj" !="dayzDelLocal" !="dayzDiscoAdd" !="dayzDiscoRem" !="dayzFire" !="dayzGutBody" !="dayzHideBody" !="dayzHit" !="dayzHitV" !="dayzHumanity" !="dayzLogin" !="dayzLogin2" !="dayzLoginRecord" !="dayzPlayerLogin" !="dayzPlayerLogin2" !="dayzPlayerMorph" !="dayzPlayerSave" !="dayzPublishObj" !="dayzRoadFlare" !="dayzSetDate" !="dayzSetFix" !="dayzSetFuel" !="dayzSwitch" !="dayzUpdate" !="dayzUpdateVehicle" !="dayzVehicleInit" !="drn_AskServerDynamicWeatherEventArgs" !="drn_DynamicWeather_DebugTextEventArgs" !="drn_DynamicWeatherEventArgs" !="drn_var_DynamicWeather_rain" !="drn_var_DynamicWeather_ServerInitialized" !="norrinRAlie" !="norrnRalie" !="norrnR180" !="norrnRACarUp" !="norrnRaDrag" !="norrnRaLW" !="norrnRAPicUp" !="norrnRDead" !="norrnRLact" !="norrnRnoAnim" !"player" !="usecBandage" !="usecBleed" !="usecEpi" !="usecInject" !="usecMorphine" !="usecPainK" !="usecTransfuse" !="BIS_effects_gepv"
 
 ////////////////////////// EH but no-one push PV in it!
 5="changeCharacter"
@@ -12,7 +12,6 @@
 5="norrnRDead"
 5="norrnRnoAnim"
 5="usecInject"
-
 ////////////////////////// Broadcast PV without EH (no code executed on change)
 1="norrnRAPicUp"  
 1="norrinRAlie"
@@ -55,6 +54,7 @@
 1="usecMorphine"
 1="usecPainK"
 1="usecTransfuse"
+1="BIS_effects_gepv"
 
 ////////////////////////// PV ->Server
 //1="atp"
