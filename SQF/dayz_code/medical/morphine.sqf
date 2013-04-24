@@ -1,6 +1,8 @@
 // bleed.sqf
 _unit = (_this select 3) select 0;
 
+player removeMagazine "ItemMorphine";
+
 _unit setVariable ["hit_legs",0];
 _unit setVariable ["hit_hands",0];
 
@@ -42,12 +44,11 @@ if (_finished) then {
 		[player,50] call player_humanityChange;
 	};
 
-	player removeMagazine "ItemMorphine";
-
 	//["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
 	usecMorphine = [_unit,player];
 	publicVariable "usecMorphine";
 } else {
+	player addMagazine "ItemMorphine";
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;
 	player playActionNow "stop";
