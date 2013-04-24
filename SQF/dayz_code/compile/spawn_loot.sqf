@@ -16,12 +16,12 @@ switch (_iClass) do {
 		{
 			_itemTypes set [count _itemTypes, _x select 0]
 		} foreach getArray (configFile >> "cfgLoot" >> _iClass);
-		_index = dayz_CLBase find _iClass;
-		_weights = dayz_CLChances select _index;
-		_cntWeights = count _weights;
 		_qty = 0;
 		_max = ceil(random 2) + 1;
 		while {_qty < _max} do {
+			_index = dayz_CLBase find _iClass;
+			_weights = dayz_CLChances select _index;
+			_cntWeights = count _weights;
 			_tQty = round(random 1) + 1;
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
@@ -40,7 +40,7 @@ switch (_iClass) do {
 		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if ((count _mags) > 0) then {
 		//	if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
-			if (!(_item in MeleeWeapons)) then {
+			if (!(_iItem in MeleeWeapons)) then {
 				_magQty = round(random 10);
 				if (_magQty > 3) then {
 					_item addMagazineCargoGlobal [(_mags select 0), (round(random 2) + 1)];
