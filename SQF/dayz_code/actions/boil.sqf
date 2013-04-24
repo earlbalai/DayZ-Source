@@ -1,10 +1,16 @@
 private["_hasbottleitem","_hastinitem","_bottletext","_tin1text","_tin2text","_tintext","_qty","_dis","_sfx"];
 
-player removeAction s_player_boil;
-s_player_boil = -1;
+_bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "displayName");
+_tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
+_tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
+_tintext = format["%1 / %2",_tin1text,_tin2text];
 
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hastinitem = false;
+
+player removeAction s_player_boil;
+//s_player_boil = -1;
+
 {
     if (_x in magazines player) then {
         _hastinitem = true;
@@ -12,10 +18,7 @@ _hastinitem = false;
 
 } forEach boil_tin_cans;
 
-_bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "displayName");
-_tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
-_tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
-_tintext = format["%1 / %2",_tin1text,_tin2text];
+
 if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_bottletext,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
 if (!_hastinitem) exitWith {cutText [format[(localize "str_player_31"),_tintext,(localize "str_player_31_fill")] , "PLAIN DOWN"]};
 
