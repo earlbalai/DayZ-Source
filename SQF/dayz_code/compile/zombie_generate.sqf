@@ -28,7 +28,7 @@ _radius = 0;
 _method = "CAN_COLLIDE";
 if (_doLoiter) then {
 	_radius = 40;
-	_method = "NONE";
+	_method = "FORM"; //NONE
 };
 
 //Make sure position is on the ground
@@ -39,7 +39,7 @@ _agent = createAgent [_type, _position, [], _radius, _method];
 
 _agent setPosATL _position;
 _agent setDir round(random 360);
-_agent setvelocity [0,0,1];
+_agent setvelocity [0,0,2];
 
 if (_doLoiter) then {
 	_agent setPosATL _position;
