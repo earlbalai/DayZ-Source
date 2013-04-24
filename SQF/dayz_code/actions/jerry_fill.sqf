@@ -1,7 +1,7 @@
 private["_qty","_dis","_sfx"];
 
 player removeAction s_player_fillfuel;
-s_player_fillfuel = -1;
+//s_player_fillfuel = -1;
 
 _fuelcans = ["ItemFuelcanEmpty","ItemJerrycanEmpty"];
 
