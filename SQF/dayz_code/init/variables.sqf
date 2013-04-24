@@ -2,7 +2,7 @@ disableSerialization;
 
 // Enable
 // 0=False, 1=True
-dayz_Trash = 1;
+dayz_Trash = 0;
 
 //
 
