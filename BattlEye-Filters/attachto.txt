@@ -1,6 +1,4 @@
-1 Shot !"Shot 1" !"Shot 2" !"Shot 3" !"Shot 4" !"Shot 5" !"Shot 6" !"Shot 7" !"Shot 8" !"Shot 9"
-1 WoodenArrowF !"WoodenArrowF 1" !"WoodenArrowF 2" !"WoodenArrowF 3" !"WoodenArrowF 4" !"WoodenArrowF 5" !"WoodenArrowF 6" !"WoodenArrowF 7" !"WoodenArrowF 8" !"WoodenArrowF 9"
-1 "" !"Shot" !"WoodenArrowF"
+1 "" !="Shot" !="WoodenArrowF"
 5 Parachute
 5 AH6X_DZ
 5 AN2_DZ
