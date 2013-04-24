@@ -5,16 +5,18 @@ _type = _array select 0;
 _classname = _array select 1;
 _holder = _array select 2;
 
+deleteVehicle _holder;
+	
 _playerID = getPlayerUID player;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
-if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
+//if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
 
-_claimedBy = _holder getVariable "claimed";
+//_claimedBy = _holder getVariable "claimed";
 
-if (isnil "claimed") then { 
-	_holder setVariable["claimed",_playerID,true];
-};
+//if (isnil "claimed") then { 
+//	_holder setVariable["claimed",_playerID,true];
+//};
 
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
@@ -27,13 +29,13 @@ if(_classname == "WoodenArrow") then {
 		_broken = true;
 	};
 };
-if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"] };
+if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"]; };
 
 sleep 0.25; //Why are we waiting? Animation 
 
-_claimedBy = _holder getVariable["claimed","0"];
+//_claimedBy = _holder getVariable["claimed","0"];
 
-if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]};
+//if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]; };
 
 if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
@@ -56,14 +58,19 @@ _count = 0;
 if (_freeSlots select _count >= _slotType select _count) then
 {
 	if (_type == "cfgWeapons") then { player addWeapon _classname; } else { player addMagazine _classname; };
-	deleteVehicle _holder;
 	canPickup = false;
-	
 } else {
 
-	_holder setVariable["claimed",0,true];
+	//_holder setVariable["claimed",0,true];
 	cutText [localize "str_player_24", "PLAIN DOWN"];
 	canPickup = false;
+	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
+    if (count _nearByPile ==0) then { 
+        _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
+    } else {
+        _item = _nearByPile select 0;
+    };
+	if (_type == "cfgWeapons") then { _item addWeaponCargoGlobal [_classname,1]; } else { _item addMagazineCargoGlobal [_classname,1] };
 };
 
 diag_log format["Array: %1, Type: %2, Classname: %3, Holder: %4, SlotNeeded: %5, Freeslots: %6",_array,_type,_classname,_holder,_slotType,_freeSlots];
