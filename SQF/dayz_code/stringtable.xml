@@ -3703,7 +3703,7 @@
 		</Key>
 		<Key ID="str_death_combatlog">
 			<English>combat logging</English>
-			<German>weil er im Kampf ausgeloggt ist</German>
+			<German>weil er sich im Kampf ausgeloggt hat</German>
 			<Russian>выхода из игры в режиме боя</Russian>
 			<Spanish>por huir en combate</Spanish>
 			<Dutch>uitloggen tijdens een gevechtssituatie</Dutch>
