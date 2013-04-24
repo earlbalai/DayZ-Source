@@ -44,7 +44,7 @@ link20[] = {16,1};
 link21[] = {17,9};
 link22[] = {18,17};
 globals[] = {25.000000,1,0,0,0,640,480,1,27,6316128,1,-396.580658,354.272186,429.218872,-298.099792,690,601,1};
-window[] = {2,-1,-1,-1,-1,890,110,1439,110,3,707};
+window[] = {2,-1,-1,-32000,-32000,868,88,1417,88,3,707};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -234,8 +234,8 @@ class FSM
     class cleanup_objects
     {
       name = "cleanup_objects";
-      init = /*%FSM<STATEINIT""">*/"//_missionObjs = allMissionObjects ""WeaponHolderBase"";" \n
-       "_missionObjs = allMissionObjects ""WeaponHolder"" + allMissionObjects ""WeaponHolderBase"" + allMissionObjects ""ReammoBox"";" \n
+      init = /*%FSM<STATEINIT""">*/"//_missionObjs = allMissionObjects ""WeaponHolder"" + allMissionObjects ""WeaponHolderBase"" ;" \n
+       "_missionObjs = allMissionObjects ""ReammoBox"";" \n
        "_qty = count _missionObjs;" \n
        "" \n
        "diag_log (""CLEANUP:TOTAL "" + str(_qty) + "" LOOT BAGS"");" \n
@@ -258,6 +258,10 @@ class FSM
        "	if ( (!_keep) && (_nearby==0) && (_age > 60) ) then {" \n
        "		deleteVehicle _x;" \n
        "		_delQty = _delQty + 1;" \n
+       "	};" \n
+       "" \n
+       "	if ((_delQty % 10) ==0) then {" \n
+       "		sleep 0.1;" \n
        "	};" \n
        "} forEach _missionObjs;" \n
        "" \n
