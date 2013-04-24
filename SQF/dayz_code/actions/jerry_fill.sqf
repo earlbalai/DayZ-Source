@@ -21,16 +21,15 @@ if (("ItemJerrycanEmpty" in magazines player) or ("ItemFuelcanEmpty" in magazine
 		player addMagazine "ItemFuelcan";
 	};
 	
-	player playActionNow "Medic";
-	
-	sleep 6;
-	
-	
 	_dis=5;
 	_sfx = "refuel";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-
+	
+	player playActionNow "Medic";
+	
+	sleep 6;
+	
 	cutText [format[(localize  "str_player_09"),_qty], "PLAIN DOWN"];
 } else {
 	cutText [(localize "str_player_10") , "PLAIN DOWN"];
