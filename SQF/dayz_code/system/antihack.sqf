@@ -4,7 +4,7 @@
 	Refactored By Alby
 */
 
-private["_debug","_curpos","_lastpos","_curheight","_lastheight","_terrainHeight","_curtime","_lasttime","_distance","_difftime","_speed","_topSpeed"];
+private["_debug","_curpos","_lastpos","_curheight","_lastheight","_terrainHeight","_curtime","_lasttime","_distance","_difftime","_speed","_topSpeed","_lastVehicle","_safetyVehicle"];
 
 waitUntil {vehicle player == player};
 
@@ -27,6 +27,7 @@ _debug = getMarkerPos "respawn_west";
 _lastpos = getPosATL (vehicle player);
 _lastheight = (ATLtoASL _lastpos) select 2;
 _lasttime = time;
+_lastVehicle = vehicle player;
 
 while {alive player} do
 {
@@ -59,16 +60,25 @@ while {alive player} do
 		diag_log "LASTPOS RESET";
 	};
 	*/
-
-	if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
-		(vehicle player) setpos _lastpos;
-		atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6", name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
-		publicVariableServer "atp";
-	} else {
-		_lastpos = _curpos;
-		_lastheight = _curheight;		
+	
+	_safetyVehicle = vehicle player;
+	
+	if (_lastVehicle == vehicle player) then {
+		if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
+			(vehicle player) setpos _lastpos;
+			atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6", name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
+			publicVariableServer "atp";
+		} else {
+			_lastpos = _curpos;
+			_lastheight = _curheight;	
+		};
+		
+		_lasttime = _curtime;
 	};
 	
-	_lasttime = _curtime;
+	if (_safetyVehicle == vehicle player) then {
+		_lastVehicle = vehicle player;
+	};
+	
 	sleep 0.5;
 };
