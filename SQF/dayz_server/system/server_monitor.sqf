@@ -12,12 +12,39 @@ waitUntil{initialized}; //means all the functions are now defined
 
 diag_log "HIVE: Starting";
 
-if (_script != "") then
-{
-	diag_log "MISSION: File Updated";
-} else {
-	diag_log "MISSION: File Needs Updating";
-};
+//Set the Time
+	//Send request
+	_key = "CHILD:307:";
+	_result = _key call server_hiveReadWrite;
+	_outcome = _result select 0;
+	if(_outcome == "PASS") then {
+		_date = _result select 1;
+		
+		//date setup
+		_year = _date select 0;
+		_month = _date select 1;
+		_day = _date select 2;
+		_hour = _date select 3;
+		_minute = _date select 4;
+		
+		//Force full moon nights
+		_date = [2012,6,6,_hour,_minute];
+		
+		if(isDedicated) then {
+			//["dayzSetDate",_date] call broadcastRpcCallAll;
+			setDate _date;
+			dayzSetDate = _date;
+			publicVariable "dayzSetDate";
+		};
+		diag_log ("HIVE: Local Time set to " + str(_date));
+	};
+
+	if (_script != "") then
+	{
+		diag_log "MISSION: File Updated";
+	} else {
+		diag_log "MISSION: File Needs Updating";
+	};
 
 	//Stream in objects
 	/* STREAM OBJECTS */
@@ -172,33 +199,6 @@ if (_script != "") then
 		} forEach _myArray;
 		
 	// # END OF STREAMING #
-
-//Set the Time
-	//Send request
-	_key = "CHILD:307:";
-	_result = _key call server_hiveReadWrite;
-	_outcome = _result select 0;
-	if(_outcome == "PASS") then {
-		_date = _result select 1;
-		
-		//date setup
-		_year = _date select 0;
-		_month = _date select 1;
-		_day = _date select 2;
-		_hour = _date select 3;
-		_minute = _date select 4;
-		
-		//Force full moon nights
-		_date = [2012,6,6,_hour,_minute];
-		
-		if(isDedicated) then {
-			//["dayzSetDate",_date] call broadcastRpcCallAll;
-			setDate _date;
-			dayzSetDate = _date;
-			publicVariable "dayzSetDate";
-		};
-		diag_log ("HIVE: Local Time set to " + str(_date));
-	};
 	
 	createCenter civilian;
 	if (isDedicated) then {
