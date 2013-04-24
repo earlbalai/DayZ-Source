@@ -35,7 +35,7 @@
 1 "allow"
 5 "enable"
 5 "spawn"
-1 "for"
+//1 "for"
 1 "this"
 5 "format"
 1 "skip" !"skipTime"
