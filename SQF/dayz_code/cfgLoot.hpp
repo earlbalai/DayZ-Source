@@ -1,12 +1,22 @@
 class CfgLoot {
 	//0.10
 	craft[] = {
+			{"TrashJackDaniels",0.02},
 			{"ItemNails",0.01}
 	};
 	trash[] = {
-			{"TrashTinCan",0.02},
+			{"ItemSodaCokeEmpty",0.05},
+			{"ItemSodaPepsiEmpty",0.03},
+			{"FoodCanUnlabeledEmpty",0.05},
+			{"FoodCanRusUnlabeledEmpty",0.02},
+			{"FoodCanRusPorkEmpty",0.02},
+			{"FoodCanRusPeasEmpty",0.03},
+			{"FoodCanRusMilkEmpty",0.02},
+			{"FoodCanRusCornEmpty",0.05},
+			{"FoodCanRusStewEmpty",0.03},
+			{"TrashTinCan",0.05},
 			{"TrashJackDaniels",0.02},
-			{"ItemSodaEmpty",0.02},
+			{"ItemSodaEmpty",0.03},
 			{"ItemTrashToiletpaper",0.01},
 			{"ItemTrashRazor",0.01}
 	};
@@ -83,7 +93,7 @@ class CfgLoot {
 			{"FoodCanFrankBeans",0.01},
 			{"FoodCanPasta",0.01},
 			{"ItemWaterbottleUnfilled",0.03},
-			{"ItemWaterbottle",0.04},
+			{"ItemWaterbottle",0.05},
 			{"ItemBandage",0.03},
 			{"7Rnd_45ACP_1911",0.03},
 			{"5x_22_LR_17_HMR",0.01},
