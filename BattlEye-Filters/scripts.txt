@@ -75,7 +75,7 @@
 5 onMapSingleClick !"\"onMapSingleClick\","
 5 onTeamSwitch !"\"onTeamSwitch\","
 5 openDSInterface !"\"openDSinterface\"," !"if (_lbselected == \"DSInterface\") then {openDSInterface;};"
-5 openMap !"\"openMap\","
+5 openMap !"\"openMap\","  !"openMap false;"
 5 OwnageMenu
 5 "player addEventHandler [\"handleDamage\", { false }];"
 5 "player addweapon 'Truckhorn2';"
@@ -232,9 +232,4 @@
 1 "setMarkerTextLocal"
 1 "Infinite Ammo ON!"
 1 "Vehicle Repaired.. ready to roll."
-1 "hint"
-1 "addAction"
-1 "reveal"
-1 "createunit"
 1 "TTT"
-1 "addaction"
