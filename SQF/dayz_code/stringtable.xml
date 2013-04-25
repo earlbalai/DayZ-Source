@@ -3194,7 +3194,7 @@
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
-			<French>\n\nVous avez consommé une %1</French>
+			<French>\n\nVous avez consommé un(e) %1</French>
 			<Czech>Snědl jsi %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
