@@ -1,4 +1,8 @@
 class CfgVehicles {
+	class AllVehicles;
+	
+	#include "CFGVehilces\Hitpoints.hpp"
+
 	class Citizen1;	// External class reference
 	class zZombie_Base : Citizen1 {
 		scope = public;
@@ -108,7 +112,6 @@ class CfgVehicles {
 		};
 	};
 	
-	class AllVehicles;
 	class Air : AllVehicles 
 	{
 		class NewTurret;
