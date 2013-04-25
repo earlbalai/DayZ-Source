@@ -313,10 +313,10 @@ class RscStructuredTextGUI: RscStructuredText
 class CfgSurvival {
 	class Inventory {
 		class Default {
-			RandomMagazines = 2;
+			RandomMagazines = 3;
 			//weapons[] = {"Makarov"}; //8Rnd_9x18_Makarov
-			GuaranteedMagazines[] = {"ItemBandage"};
-			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller","HandRoadFlare"};
+			GuaranteedMagazines[] = {"ItemBandage","HandRoadFlare"};
+			RandomPossibilitieMagazines[] = {"ItemBandage","ItemPainkiller"};
 			//weapons[] = {"HandRoadFlare"};
 			backpackWeapon = "";
 			//backpack = "DZ_Patrol_Pack_EP1";
@@ -660,24 +660,24 @@ class CfgBuildingLoot {
 			{"M9","weapon",0.05},
 			{"M16A2","weapon",0.05},
 			{"M16A2GL","weapon",0.02},
-			{"M9SD","weapon",0.01},
-			{"MakarovSD","weapon",0.01},
+			//{"M9SD","weapon",0.01},
+			//{"MakarovSD","weapon",0.01},
 			{"AK_74","weapon",0.06},
-			{"M4A1_Aim","weapon",0.03},
-			{"AKS_74_kobra","weapon",0.06},
-			{"AKS_74_U","weapon",0.04},
-			{"AK_47_M","weapon",0.04},
-			{"M24","weapon",0.03},
+			//{"M4A1_Aim","weapon",0.03},
+			//{"AKS_74_kobra","weapon",0.06},
+			//{"AKS_74_U","weapon",0.04},
+			//{"AK_47_M","weapon",0.04},
+			//{"M24","weapon",0.03},
 			{"M1014","weapon",0.06},
-			{"DMR","weapon",0.03},
+			//{"DMR","weapon",0.03},
 			{"M4A1","weapon",0.04},
 			{"M14_EP1","weapon",0.03},
 			{"UZI_EP1","weapon",0.05},
 			{"Remington870_lamp","weapon",0.05},
 			{"glock17_EP1","weapon",0.08},
 			{"MP5A5","weapon",0.04},
-			{"MP5SD","weapon",0.01},
-			{"M4A3_CCO_EP1","weapon",0.02},
+			//{"MP5SD","weapon",0.01},
+			//{"M4A3_CCO_EP1","weapon",0.02},
 			{"Binocular","weapon",0.05},
 			{"ItemFlashlightRed","military",0.06},
 			{"ItemKnife","military",0.06},
@@ -971,7 +971,7 @@ class CfgBuildingLoot {
 		maxRoaming = 0;
 		lootPos[] = {{-0.0170898,0.0114746,-0.66367}};
 	}; // Qty: 90
-	class Land_A_Castle_Bergfrit: Residential {
+	class Land_A_Castle_Bergfrit: Military {
 		lootPos[] = {{0.0185547,1.91602,-2.8364},{1.19141,-1.43848,-2.8364},{-2.36816,3.32275,-0.628571},{2.36133,3.86768,1.83972},{2.48438,-3.20557,3.85541},{-2.09473,-3.44873,6.31903},{-1.15918,3.13867,8.76691},{1.74707,1.26807,8.76691},{-0.540039,-2.35254,8.76691},{-1.62207,-4.27979,13.4801},{-2.23047,4.82471,16.856},{1.67578,-0.825195,16.8505}};
 	}; // Qty: 3
 	class Land_A_Castle_Stairs_A: Residential {
