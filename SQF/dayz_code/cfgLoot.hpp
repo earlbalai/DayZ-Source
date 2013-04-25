@@ -93,7 +93,7 @@ class CfgLoot {
 			{"FoodCanFrankBeans",0.01},
 			{"FoodCanPasta",0.01},
 			{"ItemWaterbottleUnfilled",0.03},
-			{"ItemWaterbottle",0.05},
+			{"ItemWaterbottle",0.03},
 			{"ItemBandage",0.03},
 			{"7Rnd_45ACP_1911",0.03},
 			{"5x_22_LR_17_HMR",0.01},
