@@ -1,8 +1,8 @@
 disableSerialization;
 
 // Enable
-// 0=False, 1=True
-dayz_Trash = 0;
+// 0=False/off, 1=True/on
+dayz_Trash = 1;
 
 //
 
