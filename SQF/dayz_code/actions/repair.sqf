@@ -7,8 +7,10 @@ _part =		_array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle;
 
+
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
 dayz_myCursorTarget = objNull;
+
 
 //
 _hasToolbox = 	"ItemToolbox" in items player;
@@ -20,13 +22,13 @@ _namePart = 		getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
 if (_section and _hasToolbox) then {
 
+	player removeMagazine _part;
+
 	_damage = [_vehicle,_hitpoint] call object_getHit;
 	_vehicle removeAction _id;
 	
 	//dont waste loot on undamaged parts
 	if (_damage > 0) then {
-		
-		player removeMagazine _part;
 
 		//Fix the part
 		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
@@ -52,7 +54,7 @@ if (_section and _hasToolbox) then {
 
 		//Success!
 		cutText [format[localize "str_player_04",_namePart,_nameType], "PLAIN DOWN"];
-	};
+	} else { player addMagazine _part; };
 			
 } else {
 	cutText [format[localize "str_player_03",_namePart], "PLAIN DOWN"];
