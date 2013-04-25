@@ -55,7 +55,7 @@ FIX DUE : 22 APRIL 2013
 	    * [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
 	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 3.
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
-		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller","HandRoadFlare").
+		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
