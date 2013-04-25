@@ -29,5 +29,6 @@ if(isNull group _unit) then {
 } else {
 	_unit domove _pos;		
 };
-if (_unit distance player > 120) then {	_unit forceSpeed 6; } else { _unit forceSpeed 2; };
+
+_unit forceSpeed 2;
 _unit setVariable ["myDest",_pos];
