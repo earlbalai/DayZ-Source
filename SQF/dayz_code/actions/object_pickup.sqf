@@ -62,6 +62,7 @@ if (_freeSlots select _count >= _slotType select _count) then
 } else {
 
 	//_holder setVariable["claimed",0,true];
+	
 	cutText [localize "str_player_24", "PLAIN DOWN"];
 	canPickup = false;
 	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
