@@ -10,27 +10,34 @@ _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameType = 	getText(_configVeh >> "displayName");
 _curFuel = 		((fuel _vehicle) * _capacity);
 _newFuel = 		(_curFuel + _canSize);
+player getVariable "fueling";
 
-if (_newFuel > _capacity) then {_newFuel = _capacity};
-_newFuel = (_newFuel / _capacity);
+if (isnil "fueling") then {
+	player setVariable ["fueling", 1];
+	if (_newFuel > _capacity) then {_newFuel = _capacity};
+	_newFuel = (_newFuel / _capacity);
 
-player removeMagazine _cantype;
-player addMagazine _emptycan;
+	player removeMagazine _cantype;
+	player addMagazine _emptycan;
 
-player playActionNow "Medic";
-_dis=5;
-_sfx = "refuel";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
-[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+	player playActionNow "Medic";
+	_dis=5;
+	_sfx = "refuel";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-sleep 6;
+	sleep 6;
 
-dayzSetFuel = [_vehicle,_newFuel];
-dayzSetFuel spawn local_setFuel;
-publicVariable "dayzSetFuel";
+	dayzSetFuel = [_vehicle,_newFuel];
+	dayzSetFuel spawn local_setFuel;
+	publicVariable "dayzSetFuel";
 
-cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
-sleep 1;
+	cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
+	sleep 1;
 
-call fnc_usec_medic_removeActions;
-r_action = false;
+	call fnc_usec_medic_removeActions;
+	r_action = false;
+	player setVariable ["fueling", nil];
+} else {
+	cutText ["Allready refueling!","PLAIN DOWN"];
+};
