@@ -350,32 +350,3 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	player removeAction s_player_followdog;
 	s_player_followdog = -1;
 };
-
-//Dog actions on player self
-_dogHandle = player getVariable ["dogID", 0];
-if (_dogHandle > 0) then {
-	_dog = _dogHandle getFSMVariable "_dog";
-	_ownerID = "0";
-	if (!isNull cursorTarget) then { _ownerID = cursorTarget getVariable ["characterID","0"]; };
-	if (_canDo and !_inVehicle and alive _dog and _ownerID != dayz_characterID) then {
-		if (s_player_movedog < 0) then {
-			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID", 0], 1, false, true, "", ""];
-		};
-		if (s_player_speeddog < 0) then {
-			_text = "Walk";
-			_speed = 0;
-			if (_dog getVariable ["currentSpeed",1] == 0) then { _speed = 1; _text = "Run"; };
-			s_player_speeddog = player addAction [format[localize "str_actions_speeddog", _text], "\z\addons\dayz_code\actions\dog\speed.sqf",[player getVariable ["dogID", 0],_speed], 0, false, true, "", ""];
-		};
-		if (s_player_calldog < 0) then {
-			s_player_calldog = player addAction [localize "str_actions_calldog", "\z\addons\dayz_code\actions\dog\follow.sqf", [player getVariable ["dogID", 0], true], 2, false, true, "", ""];
-		};
-	};
-} else {
-	player removeAction s_player_movedog;		
-	s_player_movedog =		-1;
-	player removeAction s_player_speeddog;
-	s_player_speeddog =		-1;
-	player removeAction s_player_calldog;
-	s_player_calldog = 		-1;
-};
