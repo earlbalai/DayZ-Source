@@ -887,7 +887,7 @@
 <English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
 <German>Azithromycin ist ein Breitbandantibiotikum, das zum Behandeln oder Vorbeugen von verschiedenen bakteriellen Infektionen verwendet werden kann.</German>
 <Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
-<French>L'azithromycine est un antiboitique à large spectre permettant le traitement des infections bactériennes.</French>
+<French>L'azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
 </Key>
 
 <Key ID="STR_EQUIP_NAME_18">
@@ -3194,7 +3194,7 @@
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
 			<Dutch>Je hebt %1 genuttigd</Dutch>
-			<French>\n\nVous avez consommé une %1</French>
+			<French>\n\nVous avez consommé un(e) %1</French>
 			<Czech>Snědl jsi %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
