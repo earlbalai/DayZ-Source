@@ -24,7 +24,7 @@
 5 "x" 
 5 "y" !="bodyName" !="deathType" !="humanity" !="myDest" !="updatePlayer" !="USEC_BloodQty" !="body" !="pravy predni tlumic" !="pravy zadni tlumic"  !"hit_"
 5 "z" !="zombied" !="zombieKills" !="zombieSpawn"     !="pravy zadni tlumic"  !"hit_"
-5 "hit_" !="hit_?" !="hit_elektronika" !="hit_engine" !="hit_fueltank" !="hit_glass1" !="hit_glass2" !="hit_glass3" !="hit_glass4" !="hit_glass5" !="hit_glass6" !="hit_hands" !="hit_karoserie" !="hit_legs" !="hit_l svetlo" !="hit_mala vrtule" !="hit_motor" !="hit_munice" !="hit_netrup" !="hit_palivo" !="hit_pravy predni tlumic" !="hit_pravy zadni tlumic" !="hit_p svetlo" !="hit_sklo predni l" !="hit_sklo predni p" !="hit_svetlo l" !="hit_velka vrtule" !="hit_wheel_1_1_steering" !="hit_wheel_1_2_steering" !="hit_wheel_1_3_steering" !="hit_wheel_1_4_steering" !="hit_wheel_1_damper" !="hit_wheel_2_1_steering" !="hit_wheel_2_2_steering" !="hit_wheel_2_3_steering" !="hit_wheel_2_4_steering" !="hit_wheel_2_damper"
+5 "hit_" !="hit_?" !="hit_elektronika" !="hit_engine" !="hit_fueltank" !="hit_glass1" !="hit_glass2" !="hit_glass3" !="hit_glass4" !="hit_glass5" !="hit_glass6" !="hit_hands" !="hit_karoserie" !="hit_legs" !="hit_l svetlo" !="hit_mala vrtule" !="hit_motor" !="hit_munice" !="hit_netrup" !="hit_palivo" !="hit_pravy predni tlumic" !="hit_pravy zadni tlumic" !="hit_p svetlo" !="hit_sklo predni l" !="hit_sklo predni p" !="hit_svetlo l" !="hit_velka vrtule" !="hit_wheel_1_1_steering" !="hit_wheel_1_2_steering" !="hit_wheel_1_3_steering" !="hit_wheel_1_4_steering" !="hit_wheel_1_damper" !="hit_wheel_2_1_steering" !="hit_wheel_2_2_steering" !="hit_wheel_2_3_steering" !="hit_wheel_2_4_steering" !="hit_wheel_2_damper" !="hit_telo"
 1="banditKills"
 //1="bodyName"
 1="characterID"
