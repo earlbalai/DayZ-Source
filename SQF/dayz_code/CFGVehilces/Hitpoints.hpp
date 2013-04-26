@@ -51,6 +51,12 @@ class RepairParts : AllVehicles
 	class HitGlass4 {
 		part = "PartGlass";
 	};
+	class HitGlass5 {
+		part = "PartGlass";
+	};
+	class HitGlass6 {
+		part = "PartGlass";
+	};
 	class HitVRotor {
 		part = "PartVRotor";
 	};
