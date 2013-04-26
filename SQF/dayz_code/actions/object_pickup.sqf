@@ -4,19 +4,18 @@ _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
 _holder = _array select 2;
-
-deleteVehicle _holder;
 	
 _playerID = getPlayerUID player;
+player removeAction s_player_holderPickup;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
-//if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
+if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
 
-//_claimedBy = _holder getVariable "claimed";
+_claimedBy = _holder getVariable "claimed";
 
-//if (isnil "claimed") then { 
-//	_holder setVariable["claimed",_playerID,true];
-//};
+if (isnil "claimed") then { 
+	_holder setVariable["claimed",_playerID,true];
+};
 
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
@@ -33,9 +32,9 @@ if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arr
 
 sleep 0.25; //Why are we waiting? Animation 
 
-//_claimedBy = _holder getVariable["claimed","0"];
+_claimedBy = _holder getVariable["claimed","0"];
 
-//if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]; };
+if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]; };
 
 if(_classname isKindOf "Bag_Base_EP1") then {
 	diag_log("Picked up a bag: " + _classname);
@@ -46,6 +45,7 @@ _config = (configFile >> _type >> _classname);
 //Remove melee magazines (BIS_fnc_invAdd fix)
 {player removeMagazines _x} forEach MeleeMagazines;
 
+/*
 _freeSlots = [player] call BIS_fnc_invSlotsEmpty;
 _slotType = [_config] call BIS_fnc_invSlotType;
 
@@ -75,9 +75,9 @@ if (_freeSlots select _count >= _slotType select _count) then
 };
 
 diag_log format["Array: %1, Type: %2, Classname: %3, Holder: %4, SlotNeeded: %5, Freeslots: %6",_array,_type,_classname,_holder,_slotType,_freeSlots];
+*/
 
-/*
-//_isOk = [player,_config] call BIS_fnc_invAdd;
+_isOk = [player,_config] call BIS_fnc_invAdd;
 waitUntil {_isOk};
 if (_isOk) then {
 	deleteVehicle _holder;
@@ -87,7 +87,7 @@ if (_isOk) then {
 	cutText [localize "str_player_24", "PLAIN DOWN"];
   canPickup = false;
 };
-*/
+
 
 sleep 3;
 
