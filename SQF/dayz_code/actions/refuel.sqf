@@ -12,6 +12,10 @@ _curFuel = 		((fuel _vehicle) * _capacity);
 _newFuel = 		(_curFuel + _canSize);
 _fueling = 		player getVariable "fueling";
 
+player removeAction s_player_fillfuel + _capacity; 
+
+if (fuel _vehicle == 1) exitwith {};
+
 if (isnil "_fueling") then {
 	player setVariable ["fueling", 1];
 	if (_newFuel > _capacity) then {_newFuel = _capacity};
