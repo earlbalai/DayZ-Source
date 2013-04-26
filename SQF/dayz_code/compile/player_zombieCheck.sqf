@@ -20,8 +20,11 @@ _multiplier = 1;
 			_entHeight = (getPosATL _x) select 2;
 			_delta = _pHeight - _entHeight;
 			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				zedattack = [_x, _type] spawn player_zombieAttack;
-				_x setVariable["lastAttack",time];
+				_cantSee = [_x,_refObj] call dayz_losCheck;
+				if (!_cantSee) then {
+					zedattack = [_x, _type] spawn player_zombieAttack;
+					_x setVariable["lastAttack",time];
+				};	
 			};
 			_attacked = true;
 		} else {
