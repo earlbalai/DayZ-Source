@@ -1,4 +1,4 @@
-private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx"];
+private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling"];
 
 _vehicle = 		cursorTarget;
 _array = _this select 3;
@@ -10,9 +10,9 @@ _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameType = 	getText(_configVeh >> "displayName");
 _curFuel = 		((fuel _vehicle) * _capacity);
 _newFuel = 		(_curFuel + _canSize);
-player getVariable "fueling";
+_fueling = 		player getVariable "fueling";
 
-if (isnil "fueling") then {
+if (isnil "_fueling") then {
 	player setVariable ["fueling", 1];
 	if (_newFuel > _capacity) then {_newFuel = _capacity};
 	_newFuel = (_newFuel / _capacity);
@@ -39,5 +39,5 @@ if (isnil "fueling") then {
 	r_action = false;
 	player setVariable ["fueling", nil];
 } else {
-	cutText ["Allready refueling!","PLAIN DOWN"];
+	cutText ["Already refueling!","PLAIN DOWN"];
 };
