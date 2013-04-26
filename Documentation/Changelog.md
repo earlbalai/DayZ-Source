@@ -57,6 +57,7 @@ FIX DUE : 22 APRIL 2013
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
 		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
+		* [NEW] - Zeds hitting through Walls should now be fixed/better.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
