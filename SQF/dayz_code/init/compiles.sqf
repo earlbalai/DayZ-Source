@@ -268,25 +268,14 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
 		};
-		if (_dikCode == 0xB8 or _dikCode == 0x38 or _dikCode == 0x3E) then { // or _dikCode == DIK_LMENU or _dikCode == DIK_RMENU
+		if (_dikCode == 0xB8 or _dikCode == 0x38 or _dikCode == 0x3E) then {
 			_displayg = findDisplay 106;
 			if (!isNull _displayg) then {
-			//closeDialog 106;
-			//openMap false;
+			call player_gearSync;
 			call dayz_forceSave;
 			} else {
-				/*
-				for "_i" from -1 to 999 do {
-					_displayi = findDisplay _i;
-					if (_i == 46) then {_displayi = findDisplay 0;};
-					closeDialog _i;
-					_displayi closeDisplay 0;
-					_displayi closeDisplay 1;
-					_displayi closeDisplay 2;
-					openMap false;
-				};
-				*/
 				if (dialog) then {
+					call player_gearSync;
 					call dayz_forceSave;
 				};
 			};
