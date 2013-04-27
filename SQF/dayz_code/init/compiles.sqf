@@ -268,14 +268,11 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
 		};
-		if (_dikCode == 0x38 or _dikCode == 0xB8) then {
-			closeDialog 0;
-		};
 		if (_dikCode == 0xB8 or _dikCode == 0x38 or _dikCode == 0x3E) then { // or _dikCode == DIK_LMENU or _dikCode == DIK_RMENU
 			_displayg = findDisplay 106;
 			if (!isNull _displayg) then {
-			closeDialog 106;
-			openMap false;
+			//closeDialog 106;
+			//openMap false;
 			call dayz_forceSave;
 			} else {
 				/*
