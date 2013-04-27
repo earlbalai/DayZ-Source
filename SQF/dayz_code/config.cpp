@@ -47,7 +47,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.7.Pre-Release.26042013";
+		version = "1.7.7.Pre-Release.27042013";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
