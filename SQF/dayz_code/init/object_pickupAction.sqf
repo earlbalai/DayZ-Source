@@ -62,9 +62,7 @@ actionMonitor = {
 if (_classname == "WoodenArrow") then {
 	[_holder,_type,_classname,_name] spawn actionMonitor;
 } else {
-	if (player distance _holder < 3)then {
 		s_player_holderPickup = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
 		player reveal _holder;
 		pickupInit = true;
-	};	
 };
