@@ -61,6 +61,9 @@ class RepairParts : AllVehicles
 		part = "PartVRotor";
 	};
 	class HitHRotor {
-		part = "PartVRotor";
+		part = "PartGeneric"
+	};
+	class HitAvionics {
+		part = "PartGeneric"
 	};
 };
