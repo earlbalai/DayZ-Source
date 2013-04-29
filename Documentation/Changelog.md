@@ -57,7 +57,7 @@ FIX DUE : 22 APRIL 2013
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
 		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
-		* [NEW] - Zeds hitting through Walls should now be fixed/better.
+		* [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -110,6 +110,8 @@ FIX DUE : 22 APRIL 2013
 	    * [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
 	    * [UPDATED] - You can now only have 1 useable quiver in your main inventory and unlimited in your backpack.
 	    * [UPDATED] - Melee range has been updated.
+		* [UPDATED] - HMMWV Stroage has been updated to 10 weapons 50 slots 2 backpacks.
+		* [UPDATED] - AH6 & MH6 Cargo updated. 	(AH6 = transportMaxWeapons = 3;transportMaxMagazines = 30;transportmaxbackpacks = 2;) (MH6 = transportMaxWeapons = 3;transportMaxMagazines = 20;transportmaxbackpacks = 3;)
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
