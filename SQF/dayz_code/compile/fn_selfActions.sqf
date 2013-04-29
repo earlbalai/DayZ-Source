@@ -65,10 +65,11 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isFuel = false;
+	_hasFuel20 = 	"ItemJerrycan" in magazines player;
+	_hasFuel5 = 	"ItemFuelcan" in magazines player;
 	_isAlive = alive cursorTarget;
 	_canmove = canmove cursorTarget;
-	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
-	
+	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");	
 	
 	_rawmeat = meatraw;
 	_hasRawMeat = false;
@@ -115,14 +116,34 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Allow player to fill Fuel can
-	if((_hasFuelE or _hasFuel5) and _isFuel and _canDo) then {
-		if (s_player_fillfuel < 0) then {
-			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
+	if((_hasFuel20 or _hasFuel5) and _isFuel and _canDo) then {
+		if (s_player_fillfuel5 < 0) then {
+			s_player_fillfuel5 = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_fillfuel;
-		s_player_fillfuel = -1;
+		s_player_fillfuel5 = -1;
 	};
+	//Allow player to fill vehilce 20L
+	if(_hasFuel20 and _canDo and _isVehicle and (fuel cursorTarget < 1)) then {
+		if (s_player_fillfuel20 < 0) then {
+			s_player_fillfuel20 = player addAction [format[localize "str_actions_medical_10"+" with 20L",_text], "\z\addons\dayz_code\actions\refuel.sqf",["ItemJerrycan"], 0, true, true, "", "'ItemJerrycan' in magazines player"];
+		};
+	} else {
+		player removeAction s_player_fillfuel20;
+		s_player_fillfuel20 = -1;
+	};
+	
+	//Allow player to fill vehilce 5L
+	if(_hasFuel5 and _canDo and _isVehicle and (fuel cursorTarget < 1)) then {
+		if (s_player_fillfuel5 < 0) then {
+			s_player_fillfuel5 = player addAction [format[localize "str_actions_medical_10"+" with 5L",_text], "\z\addons\dayz_code\actions\refuel.sqf",["ItemFuelcan"], 0, true, true, "", "'ItemFuelcan' in magazines player"];
+		};
+	} else {
+		player removeAction s_player_fillfuel5;
+		s_player_s_player_fillfuel5 = -1;
+	};
+	
 	//Harvested
 	if (!alive cursorTarget and _isAnimal and _hasKnife and !_isHarvested and _canDo) then {
 		if (s_player_butcher < 0) then {
@@ -311,6 +332,13 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
+	
+	//fuel
+	player removeAction s_player_fillfuel20;
+	s_player_fillfuel20 = -1;
+	player removeAction s_player_fillfuel5;
+	s_player_fillfuel5 = -1;
+
 	//Dog
 	player removeAction s_player_tamedog;
 	s_player_tamedog = -1;
