@@ -1052,11 +1052,20 @@ class CfgBuildingLoot {
 		lootPos[] = {{1.18213,-1.65039,-1.17793},{0.24707,0.799316,-1.17803}};
 	}; // Qty: 1
 	class MASH_EP1: MASH {};
+	
+	class Mi8Wreck_DZ: Military {
+		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
+		zombieChance = 1;
+		lootChance = 0.4;
+		minRoaming = 4;
+		maxRoaming = 8;
+		lootPos[] = {};
+	};
 
 	class UH1Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0.3;
-		lootChance = 0.6;
+		zombieChance = 1;
+		lootChance = 0.4;
 		minRoaming = 4;
 		maxRoaming = 8;
 		lootPos[] = {};
@@ -1064,8 +1073,8 @@ class CfgBuildingLoot {
 	
 	class UH60Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-		zombieChance = 0.3;
-		lootChance = 0.6;
+		zombieChance = 1;
+		lootChance = 0.4;
 		minRoaming = 4;
 		maxRoaming = 8;
 		lootPos[] = {};
