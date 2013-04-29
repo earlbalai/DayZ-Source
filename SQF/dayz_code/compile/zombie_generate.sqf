@@ -25,7 +25,7 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 //Create the Group and populate it
 //diag_log ("Spawned: " + _type);
 _radius = 0;
-_method = "FORM"; //CAN_COLLIDE
+_method = "CAN_COLLIDE"; //CAN_COLLIDE
 if (_doLoiter) then {
 	_radius = 40;
 	//_method = "FORM"; //NONE
@@ -55,7 +55,7 @@ _position = getPosATL _agent;
 
 //_position = getPosATL _agent;
 if (random 1 > 0.7) then {
-	_agent setUnitPos "Middle";m
+	_agent setUnitPos "Middle";
 };
 
 //diag_log ("CREATED: "  + str(_agent));
