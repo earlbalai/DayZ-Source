@@ -10,7 +10,7 @@ class RepairParts : AllVehicles
 		part = "PartGlass";
 	};
 	class HitBody {
-		part = "PartGeneric"
+		part = "PartGeneric";
 	};
 	class HitFuel {
 		part = "PartFueltank";
@@ -61,6 +61,9 @@ class RepairParts : AllVehicles
 		part = "PartVRotor";
 	};
 	class HitHRotor {
-		part = "PartVRotor";
+		part = "PartGeneric";
+	};
+	class HitAvionics {
+		part = "PartGeneric";
 	};
 };
