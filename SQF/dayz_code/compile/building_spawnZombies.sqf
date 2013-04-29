@@ -27,10 +27,10 @@ if (_canLoot) then {
 		
 		if (_noPlayerNear) then {
 		
-			_position = _obj buildingExit 0;
-			if ((_position select 0) == 0) then {
+			//_position = _obj buildingExit 0;
+			//if ((_position select 0) == 0) then {
 				_position = getPosATL _obj;
-			};
+			//};
 		
 		//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
 			for "_i" from 1 to _num do {
