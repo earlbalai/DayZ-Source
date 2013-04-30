@@ -258,6 +258,15 @@ class CfgMagazines {
 		picture = "\z\addons\dayz_communityassets\pictures\equip_nails_ca.paa";
 		type = 256;
 	};
+	class ItemCards : CA_Magazine {
+		scope = public;
+		count = 1;
+		displayName = $STR_ITEM_NAME_CARDS;
+		descriptionShort = $STR_ITEM_DESC_CARDS;
+		model = "z\addons\dayz_communityassets\models\cards.p3d";
+		picture = "\z\addons\dayz_communityassets\pictures\equip_cards_ca.paa";
+		type = 256;
+	};
 	
 	class ItemJerrycan : CA_Magazine {
 		emptycan = "ItemJerrycanEmpty";

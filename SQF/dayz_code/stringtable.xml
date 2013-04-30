@@ -3033,6 +3033,15 @@
 			<French>Clous</French>
 			<Czech>Hřebíky</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_CARDS">
+			<English>Cards</English>
+			<German>Cards</German>
+			<Russian>Cards</Russian>
+			<Spanish>Cards</Spanish>
+			<Dutch>Cards</Dutch>
+			<French>Cards</French>
+			<Czech>Cards</Czech>
+		</Key>	
 		<Key ID="STR_ITEM_DESC_NAILS">
 			<English>A small box of 4 inch nails.</English>
 			<German>A small box of 4 inch nails.</German>
