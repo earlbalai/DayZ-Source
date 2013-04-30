@@ -33,6 +33,12 @@ class CfgVehicles {
 	//Boat
 	#include "CFGVehilces\Boat\PBX.hpp"
 		
+	class Land_Fire;
+	class Land_Fire_DZ : Land_Fire {
+		transportMaxMagazines = 0;
+		transportMaxWeapons = 0;
+		transportMaxBackpacks = 0;
+		};
 
 	class TT650_Base;
 	class TT650_Ins: TT650_Base {
