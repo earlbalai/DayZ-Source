@@ -30,4 +30,4 @@ if (_object isKindOf "TentStorage") then {
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-//diag_log ("PUBLISH: Created " + (_class) + " with ID " + _uid);
+diag_log ("PUBLISH: Created " + (_class) + " with ID " + _uid);
