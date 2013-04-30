@@ -165,7 +165,7 @@ class CfgMagazines {
 		descriptionShort = $STR_EQUIP_DESC_SOLDIER;
 	}; 
 	
-		class Quiver : CA_Magazine {
+	class Quiver : CA_Magazine {
 		scope = public;
 		ammo = "WoodenArrow";
 		count = 6;
