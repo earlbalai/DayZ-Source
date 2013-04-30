@@ -261,7 +261,7 @@ class CfgVehicles {
 		driverCanSee = 2+16+32;
 		transportMaxWeapons = 3;
 		transportMaxMagazines = 20;
-        transportmaxbackpacks = 5;
+        transportmaxbackpacks = 3;
 		class Turrets {};
 	};	
 	class Animal;
