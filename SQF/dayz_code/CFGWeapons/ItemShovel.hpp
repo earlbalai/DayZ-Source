@@ -5,7 +5,9 @@ class ItemShovel: ItemCore
 	model="\z\addons\dayz_communityassets\models\shovel.p3d";
 	picture="\z\addons\dayz_communityassets\pictures\equip_shovel_ca.paa";
 	descriptionShort="Shovel";
-	stashtype = "StashSmall";
+	stashsmall = "StashSmall";
+	stashmedium = "StashMedium";
+	consume = "ItemSandbag";
 	class ItemActions
 	{
 		class Use

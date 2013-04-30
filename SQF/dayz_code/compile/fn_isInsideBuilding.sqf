@@ -3,10 +3,11 @@ private["_unit1","_building","_type","_relPos","_boundingBox","_min","_max","_my
 _unit1 = _this select 0;
 _building = nil;
 _inside = false;
+
 if (count _this > 1) then { _building = _this select 1; }
 else { 
 	{
-		if (!((typeOf _x) IN ["Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ"])) exitWith {
+		if (!((typeOf _x) IN SafeObjects)) exitWith {
 			_building = _x;
 		}; 		
 	} forEach(nearestObjects [_unit1, ["HouseBase"], 100]);
