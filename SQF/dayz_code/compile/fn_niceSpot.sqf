@@ -1,10 +1,11 @@
 // Check/find a spot before pitching "Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ" or "Hedgehog_DZ"
 // _this 0: object class 
 // _this 1: object (player) or array (ATL format)
+// _this 2: optional, empty array that will be filled by computed boolean: _testonLadder, _testSea, _testPond, _testBuilding, _testSlope, _testDistance
 // return a worldspace consisting of array [ direction, ATL position ] or empty array if no position is found
 // if 2nd argument is a player, the position returned is just in front of the player, direction is so that the object is "looking to" the player
 
-private ["_class","_isPlayer","_size","_testPond","_testBuilding", "_testSlope", "_testSea","_testDistance", 		"_noCollision","_dir","_obj","_isPLayer","_objectsPond","_ok"];
+private ["_booleans", "_class","_isPlayer","_size","_testPond","_testBuilding", "_testonLadder", "_testSlope", "_testSea","_testDistance", "_noCollision","_dir","_obj","_isPLayer","_objectsPond","_ok"];
 
 _class = _this select 0;
 _pos = _this select 1;
@@ -18,6 +19,7 @@ _isPlayer = (typeName _pos != "ARRAY");
 
 _testBuilding = true;
 _testDistance = _isPlayer;
+_testonLadder = _isPlayer;
 _testPond = false;
 _testSea = false;
 _testSlope = false;
@@ -40,7 +42,7 @@ switch _class do {
 //diag_log(format["niceSpot: will test: pond:%1 building:%2 slope:%3 sea:%4 distance:%5 collide:%6", _testPond, _testBuilding, _testSlope, _testSea, _testDistance, _noCollision]);
 
 _dir = if (_isPlayer) then {getDir(_pos)} else {0};
-_obj = _class createVehicleLocal (getMarkerpos "center");
+_obj = _class createVehicleLocal (getMarkerpos "respawn_west");
 _size = _obj call _realSize;
 if (_isPlayer) then { _size = _size + (_pos  call _realSize); };
 
@@ -62,6 +64,7 @@ if (_noCollision) then {
 	};
 }
 else {
+	_obj setDir _dir;
 	_obj setPosATL(_new);
 };
 
@@ -90,22 +93,40 @@ if (_testPond) then { // let's proceed to the "object in the pond" test (not dir
 	} forEach _objectsPond;
 };
 
-if (_testSlope or _testSea) then { // "flat, not in the sea, not on the beach" test
+if (_testSlope) then { // "flat spot" test
+	_testSlope = false,
 	_x = _new isflatempty [
 		0, // don't check collisions
 		0, // don't look around
-		if (_testSlope) then {0.1*_size} else {999}, // slope gradient
+		0.1*_size, // slope gradient
 		_size, // object size
-		if (_testSea) then {0} else {1}, // check in the sea or not 
+		1, // do not check in the sea 
 		false, // don't check far from shore
 		if (_isPlayer) then {_pos} else {objNull} // not used -- seems buggy.
 	];
-	if (count _x >= 2) then { // safepos found (gradient ok AND not in sea water)
-		_testSlope = false;
-		_testSea = false;
+	if (count _x < 2) then { // safepos found (gradient ok AND not in sea water)
+		_testSlope = true;
+	};
+};
+
+if (_testSea) then { // "not in the sea, not on the beach" test
+	_testSea = false;
+	_x = _new isflatempty [
+		0, // don't check collisions
+		0, // don't look around
+		999, // do not check slope gradient
+		_size, // object size
+		0, // check not in the sea
+		false, // don't check far from shore
+		if (_isPlayer) then {_pos} else {objNull} // not used -- seems buggy.
+	];
+	if (count _x < 2) then { // safepos found (gradient ok AND not in sea water)
+		_testSea = true;
+	}
+	else {
 		_x set [2,0];
 		_x = ATLtoASL _x;
-		if (_x select 2 < 3) then { // altitude too low (near wave foam -- sea level changes according to the date)
+		if (_x select 2 < 3) then { // in the wave foam
 			_testSea = true;
 		};
 	};
@@ -114,13 +135,33 @@ if (_testSlope or _testSea) then { // "flat, not in the sea, not on the beach" t
 if (_testDistance) then { // check effective distance from the player
 	_testDistance = false;
 	_x = _pos distance _new;
-	if (_x > 6) then {
+	if (_x > 5) then {
 		_testDistance = true;
+	};
+};
+
+if (_testonLadder) then { // forbid item install process if player is on a ladder (or in a vehicle)
+	_testonLadder = false;
+	if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState _pos) >> "onLadder")) == 1) then {
+		_testonLadder = true;
+	};
+	if ((isPlayer _pos) AND {((vehicle _pos) != _pos)}) then {
+		_testonLadder = true;
 	};
 };
 
 //diag_log(format["niceSpot: result  pond:%1 building:%2 slope:%3 sea:%4 distance:%5 collide:%6", _testPond, _testBuilding, _testSlope, _testSea, _testDistance, _noCollision]);
 
-_ok = !_testPond AND !_testBuilding AND !_testSlope AND !_testSea AND !_testDistance;
+_ok = !_testPond AND !_testBuilding AND !_testSlope AND !_testSea AND !_testDistance AND !_testonLadder;
+if (count _this > 2) then {
+	_booleans = _this select 2;
+	_booleans set [0, _testonLadder];
+	_booleans set [1, _testSea];
+	_booleans set [2, _testPond];
+	_booleans set [3, _testBuilding];
+	_booleans set [4, _testSlope];
+	_booleans set [5, _testDistance];
+	diag_log(format["niceSpot: booleans: %1", _booleans]);
+};
 
 if (_ok) then { [round(_dir), _new] } else { [] }
