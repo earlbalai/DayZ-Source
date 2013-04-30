@@ -1,18 +1,25 @@
-private ["_playerPos", "_item", "_hastentitem", "_config", "_text", "_worldspace", "_dir", "_location", "_dis", "_sfx", "_tent"];
+private ["_item", "_config", "_text", "_booleans", "_worldspace", "_dir", "_location", "_dis", "_sfx", "_tent"];
 
-//check if can pitch here
 call gear_ui_init;
-_playerPos = getPosATL player;
+
 _item = _this;
-_hastentitem = _item in magazines player;
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
-if ((!_hastentitem) OR (_item != "ItemTent")) exitWith {
+
+// item is missing or tools are missing
+if ((!(_item IN magazines player)) OR {(_item != "ItemTent")}) exitWith {
 	cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_pitch")] , "PLAIN DOWN"];
 };
 
-_worldspace = ["TentStorage", player] call fn_niceSpot;
+_booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, testDistance
+_worldspace = ["TentStorage", player, _booleans] call fn_niceSpot;
+
+// player on ladder or in a vehicle
+if (_booleans select 0) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; };
+
+// object would be in the water (pool or sea)
+if ((_booleans select 1) OR (_booleans select 2)) exitWith { cutText [localize "str_player_26", "PLAIN DOWN"]; };
 
 if ((count _worldspace) == 2) then {
 	//remove tentbag
@@ -23,25 +30,24 @@ if ((count _worldspace) == 2) then {
 	//wait a bit
 	player playActionNow "Medic";
 	sleep 1;
+	// tent location may not be in front of player
+	player setDir _dir;
+	player setPosATL (getPosATL player);
 	
 	_dis=20;
-	_sfx = "tentunpack";
+	_sfx = "repair";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
 	sleep 5;
-	//place tent (local)
-	_tent = createVehicle ["TentStorage", getMarkerpos "center", [], 0, "CAN_COLLIDE"];
-	_tent setdir _dir;
-	_tent setpos _location;
+
+	_tent = createVehicle ["TentStorage", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
+	_tent setDir _dir;
+	_tent setPos _location; // follow terrain slope (works above sea level)
 	player reveal _tent;
 	_location = getPosATL _tent;
 
 	_tent setVariable ["characterID",dayz_characterID,true];
-
-	//player setVariable ["tentUpdate",["Land_A_tent",_dir,_location,[dayz_tentWeapons,dayz_tentMagazines,dayz_tentBackpacks]],true];
-
-	//["dayzPublishObj",[dayz_characterID,_tent,[_dir,_location],"TentStorage"]] call callRpcProcedure;
 	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
 	publicVariable "dayzPublishObj";
 	
