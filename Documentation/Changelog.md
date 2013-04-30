@@ -61,6 +61,7 @@ FIX DUE : 22 APRIL 2013
 		* [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
 					Medium = 16 Objects 1 weapon , no bags
+		* [NEW] - Mi8 Crash site will now spawn Zeds			
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
