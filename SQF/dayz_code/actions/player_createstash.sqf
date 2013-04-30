@@ -9,41 +9,34 @@ _playerPos = 	getPosATL player;
 //Classname
 _item = _this;
 
-diag_log (str(_item));
-
 //Config
 _config =   configFile >> "CFGWeapons" >> _item;
 _text =     getText (_config >> "displayName");
-_stashtype =    getText (_config >> "stashtype");
+_stashtype =  "0";
+_consume =  getText (_config >> "consume");
 
-if ("ItemSandbag" in magazines player) then { _stashtype = "StashMedium"; };
+_hasitemcount = {_x == _consume} count magazines player;
+
+//if ("ItemSandbag" in magazines player) then { _stashtype = "StashMedium"; };
+
+if (_hasitemcount == 0) exitwith {};
+if (_hasitemcount == 1) then { _stashtype =   getText (_config >> "stashsmall"); };
+if (_hasitemcount == 2) then { _stashtype =   getText (_config >> "stashmedium"); };
 
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 
-//Is player in building
-_building = nearestObject [(vehicle player), "HouseBase"];
-_isinBuilding = [(vehicle player),_building] call fnc_isInsideBuilding;
-
 //blocked
 if (["concrete",dayz_surfaceType] call fnc_inString) exitwith { diag_log ("surface concrete"); };
 
-//Block Objects in pounds
-_objectsPond = 		nearestObjects [_playerPos, [], 10];
-	{
-		_isPond = ["pond",str(_x),false] call fnc_inString;
-		if (_isPond) then {
-			_pondPos = (_x worldToModel _playerPos) select 2;
-			if (_pondPos < 0) then {
-				_notinPond = true;
-			};
-		};
-	} forEach _objectsPond;
-	_isOK = true;
-	
-	diag_log ("BuildingCheck: " +str(_isinBuilding));
+_worldspace = [_stashtype, player] call fn_niceSpot;
 
-if (!_notinPond and _isOK) then {
+if ((count _worldspace) == 2) then {
+ 
+	player removeMagazine _consume;
+	if (_hasitemcount == 2) then {
+		player removeMagazine _consume;
+	};
 	_dir = round(direction player);
 	
 	//wait a bit
@@ -66,7 +59,6 @@ if (!_notinPond and _isOK) then {
 	_stash setVariable ["characterID",dayz_characterID,true];
 	dayzPublishObj = [dayz_characterID,_stash,[_dir,_location],_stashtype];
 	
-diag_log (str(dayzPublishObj));	
 	publicVariable "dayzPublishObj";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
