@@ -18,7 +18,8 @@ class CfgLoot {
 			{"TrashJackDaniels",0.02},
 			{"ItemSodaEmpty",0.03},
 			{"ItemTrashToiletpaper",0.01},
-			{"ItemTrashRazor",0.01}
+			{"ItemTrashRazor",0.01},
+			{"ItemCards",0.02}
 	};
 	civilian[] = {
 			{"TrashTinCan",0.03},
