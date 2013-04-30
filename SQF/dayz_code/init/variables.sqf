@@ -26,6 +26,8 @@ MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","B
 //New Zeds
 DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4"];
 
+SafeObjects = ["Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ", "StashSmall", "StashMedium"];
+
 //Cooking
 meatraw = [
     "FoodSteakRaw",

@@ -1533,6 +1533,24 @@
 			<French>Du fil de fer tranchant comme un rasoir et bardé de pointes métalliques, utilisé comme obstacle barbelé militaire.</French>
 			<Dutch>Scheermesdraad in grote spoelen die uitgebreid kunnen worden als een soort harmonica met stalen piketten dat gebruikt wordt om militaire draadobstacles te vormen.</Dutch>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_24">
+			<English>Camping Tent</English>
+			<German>Zelt</German>
+			<Russian>Палатка</Russian>
+			<Spanish>Carpa</Spanish>
+			<Czech>Stan</Czech>
+			<French>Tente de camping</French>
+			<Dutch>Kampeertent</Dutch>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_24">
+			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
+			<German>Ein kleines Zelt, das aufgeschlagen werden kann und sicheren Lagerplatz zu bietet.</German>
+			<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
+			<Spanish>Una carpa que puede ser asentada permitiendo almacenar objetos.</Spanish>
+			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
+			<French>Une tente de camping qui peut être montée, permettant un espace de stockage étendu à l'abri des autres.</French>
+			<Dutch>Een kampeertent die opgezet kan worden, waarin je meerdere voorwerpen kan opslaan, veilig weg van anderen.</Dutch>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_BEARTRAP">
 			<English>Bear Trap</English>
 			<Spanish>Trampa de Osos</Spanish>

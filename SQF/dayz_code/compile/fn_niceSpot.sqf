@@ -29,13 +29,25 @@ switch _class do {
 		_testPond = true;
 		_testSlope = true;
 		_testSea = true;
+		_noCollision = false;
+	};
+	case "StashSmall" : {
+		_testPond = true;
+		_testSlope = true;
+		_testSea = true;
+		_noCollision = false;
+	};
+	case "StashMedium" : {
+		_testPond = true;
+		_testSlope = true;
+		_testSea = true;
 		_noCollision = true;
-	}; 
+	};
 	case "Land_Fire_DZ" : { // no fire in the water :)
 		_testPond = true;
 		_testSea = true;
 	};
-	default { // "Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ"
+	default { // "Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ", "StashMedium", "StashSmall"
 	}
 };
 
