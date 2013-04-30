@@ -78,15 +78,30 @@ class WeaponHolder_ItemFuelcan : WeaponHolderBase {
 	};
 };
 //class House;
-class StashSmall : House {
+class Land_A_tent;
+class StashSmall : Land_A_tent {
 	armor = 5;
 	displayname = "Stash";
 	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
 	mapsize = 3;
-	model = "\dayz_communityassets\models\dirt_stash.p3d";
+	model = "\z\addons\dayz_communityassets\models\dirt_stash.p3d";
 	scope = 2;
 	vehicleClass = "Survival";
-	transportMaxMagazines = 3;
+	transportMaxMagazines = 8;
 	transportMaxWeapons = 0;
+	transportMaxBackpacks = 0;
+};
+
+//class House;
+class StashMedium : Land_A_tent {
+	armor = 50;
+	displayname = "Stash Medium";
+	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
+	mapsize = 3;
+	model = "\z\addons\dayz_communityassets\models\dirt_stash_reinforced.p3d";
+	scope = 2;
+	vehicleClass = "Survival";
+	transportMaxMagazines = 16;
+	transportMaxWeapons = 1;
 	transportMaxBackpacks = 0;
 };

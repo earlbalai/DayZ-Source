@@ -44,7 +44,7 @@ item39[] = {"Too_Long",4,218,300.000000,350.000000,400.000000,400.000000,0.00000
 item40[] = {"Too_Long",4,218,300.000000,550.000000,400.000000,600.000000,0.000000,"Too" \n "Long"};
 item41[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
-item43[] = {"Initialized",4,4314,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
+item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
 item44[] = {"New_Character",4,218,-275.000000,350.000000,-175.000000,400.000000,5.000000,"New" \n "Character"};
 item45[] = {"Gender_Selection",2,250,-400.000000,350.000000,-300.000000,400.000000,0.000000,"Gender Selection" \n "Dialog"};
 item46[] = {"Selected",4,218,-400.000000,450.000000,-300.000000,500.000000,0.000000,"Selected"};
@@ -61,6 +61,9 @@ item56[] = {"auth_failed",4,218,250.000000,250.000000,350.000000,300.000000,0.00
 item57[] = {"get_ready_to_clo",2,250,400.000000,250.000000,500.000000,300.000000,0.000000,"get ready to close"};
 item58[] = {"sleep_",4,218,550.000000,250.000000,650.000000,300.000000,0.000000,"sleep" \n ""};
 item59[] = {"Disconnect",2,250,675.000000,250.000000,775.000000,300.000000,0.000000,"Disconnect"};
+item60[] = {"No_time_date",4,218,25.000000,1000.000000,125.000000,1050.000000,0.000000,"No time/date"};
+item61[] = {"ERROR__No_Date_or",2,4346,175.000000,1000.000000,275.000000,1050.000000,0.000000,"ERROR:" \n "No Date or Time"};
+item62[] = {"Too_Long",4,218,300.000000,1000.000000,400.000000,1050.000000,0.000000,"Too" \n "Long"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -105,32 +108,36 @@ link40[] = {32,33};
 link41[] = {33,34};
 link42[] = {34,35};
 link43[] = {35,37};
-link44[] = {37,36};
-link45[] = {38,59};
-link46[] = {39,59};
-link47[] = {40,59};
-link48[] = {41,59};
-link49[] = {42,6};
-link50[] = {42,48};
-link51[] = {43,42};
-link52[] = {44,45};
-link53[] = {45,46};
-link54[] = {46,47};
-link55[] = {47,20};
-link56[] = {48,49};
-link57[] = {49,50};
-link58[] = {50,59};
-link59[] = {51,52};
-link60[] = {52,29};
-link61[] = {53,15};
-link62[] = {54,55};
-link63[] = {55,53};
-link64[] = {55,56};
-link65[] = {56,57};
-link66[] = {57,58};
-link67[] = {58,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,90,6316128,1,-583.478699,490.636414,667.360046,-882.183044,285,864,1};
-window[] = {0,-1,-1,-1,-1,1048,244,1616,268,1,303};
+link44[] = {35,60};
+link45[] = {37,36};
+link46[] = {38,59};
+link47[] = {39,59};
+link48[] = {40,59};
+link49[] = {41,59};
+link50[] = {42,6};
+link51[] = {42,48};
+link52[] = {43,42};
+link53[] = {44,45};
+link54[] = {45,46};
+link55[] = {46,47};
+link56[] = {47,20};
+link57[] = {48,49};
+link58[] = {49,50};
+link59[] = {50,59};
+link60[] = {51,52};
+link61[] = {52,29};
+link62[] = {53,15};
+link63[] = {54,55};
+link64[] = {55,53};
+link65[] = {55,56};
+link66[] = {56,57};
+link67[] = {57,58};
+link68[] = {58,59};
+link69[] = {60,61};
+link70[] = {61,62};
+link71[] = {62,59};
+globals[] = {25.000000,1,0,0,0,640,480,1,93,6316128,1,-324.788635,454.141663,1249.944214,404.931305,554,601,1};
+window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1095,6 +1102,12 @@ class FSM
       name = "Initialize";
       init = /*%FSM<STATEINIT""">*/"#define ods(arg1) ""armaperflib"" callextension arg1" \n
        "" \n
+       "if (!isNil ""dayzSetDate"") then {" \n
+       "	setDate dayzSetDate;" \n
+       "};" \n
+       "" \n
+       "diag_log (""Local Time: "" +str(dayzSetDate));" \n
+       "" \n
        "//Medical" \n
        "dayz_medicalH = 	[] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
        "[player] call fnc_usec_damageHandle;" \n
@@ -1153,12 +1166,6 @@ class FSM
        "" \n
        "if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};" \n
        "" \n
-       "if (!isNil ""dayzSetDate"") then {" \n
-       "	setDate dayzSetDate;" \n
-       "};" \n
-       "" \n
-       "diag_log (""Local Time: "" +str(dayzSetDate));" \n
-       "" \n
        "_first = [_world,_town,localize (""str_player_06"") + "" "" + str(_days)] spawn BIS_fnc_infoText;" \n
        "" \n
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
@@ -1191,6 +1198,16 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "No_time_date">*/
+        class No_time_date
+        {
+          priority = 0.000000;
+          to="ERROR__No_Date_or";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isNil ""dayzSetDate"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "True">*/
         class True
         {
@@ -1431,6 +1448,30 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "ERROR__No_Date_or">*/
+    class ERROR__No_Date_or
+    {
+      name = "ERROR__No_Date_or";
+      init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
+       "selectNoPlayer;" \n
+       "_myTime = time;" \n
+       "1 cutText [""Could not retive date and time from server disconect and retry."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Too_Long">*/
+        class Too_Long
+        {
+          priority = 0.000000;
+          to="Disconnect";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
