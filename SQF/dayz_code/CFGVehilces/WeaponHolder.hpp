@@ -77,3 +77,16 @@ class WeaponHolder_ItemFuelcan : WeaponHolderBase {
 		init = "[(_this select 0),'cfgMagazines','ItemFuelcan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
+//class House;
+class StashSmall : House {
+	armor = 5;
+	displayname = "Stash";
+	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
+	mapsize = 3;
+	model = "\dayz_communityassets\models\dirt_stash.p3d";
+	scope = 2;
+	vehicleClass = "Survival";
+	transportMaxMagazines = 3;
+	transportMaxWeapons = 0;
+	transportMaxBackpacks = 0;
+};
