@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private["_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasFuel5","_hasbottleitem","_hastinitem","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_rawmeat","_hasRawMeat","_allFixed","_hitpoints","_damage","_part","_cmpt","_damagePercent","_color","_string","_handle","_dogHandle","_lieDown","_warn","_dog","_speed"];
+private["_isStash","_vehicle","_inVehicle","_bag","_classbag","_isWater","_hasAntiB","_hasFuelE","_hasFuel5","_hasbottleitem","_hastinitem","_hasKnife","_hasToolbox","_hasTent","_onLadder","_nearLight","_canPickLight","_canDo","_text","_isHarvested","_isVehicle","_isVehicletype","_isMan","_ownerID","_isAnimal","_isDog","_isZombie","_isDestructable","_isTent","_isFuel","_isAlive","_canmove","_rawmeat","_hasRawMeat","_allFixed","_hitpoints","_damage","_part","_cmpt","_damagePercent","_color","_string","_handle","_dogHandle","_lieDown","_warn","_dog","_speed"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -64,6 +64,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
+	_isStash = cursorTarget isKindOf "StashSmall";
 	_isFuel = false;
 	_hasFuel20 = 	"ItemJerrycan" in magazines player;
 	_hasFuel5 = 	"ItemFuelcan" in magazines player;
@@ -96,7 +97,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Allow player to force save
-	if((_isVehicle or _isTent) and _canDo and !_isMan and (damage cursorTarget < 1)) then {
+	if((_isVehicle or _isTent or _isStash) and _canDo and !_isMan and (damage cursorTarget < 1)) then {
 		if (s_player_forceSave < 0) then {
 			s_player_forceSave = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",cursorTarget, 1, true, true, "", ""];
 		};
