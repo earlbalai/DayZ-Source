@@ -58,6 +58,9 @@ FIX DUE : 22 APRIL 2013
 		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
 		* [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
+		* [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
+					Small = 8 objects slots, no weapons, no bags.
+					Medium = 16 Objects 1 weapon , no bags
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -75,7 +78,8 @@ FIX DUE : 22 APRIL 2013
 	    * [FIXED] - Gear menu exploit to force respawn.
 	    * [FIXED] - Optimized some destruction effects for security and performance.
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
-	
+		* [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
+		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
@@ -112,6 +116,7 @@ FIX DUE : 22 APRIL 2013
 	    * [UPDATED] - Melee range has been updated.
 		* [UPDATED] - HMMWV Stroage has been updated to 10 weapons 50 slots 2 backpacks.
 		* [UPDATED] - AH6 & MH6 Cargo updated. 	(AH6 = transportMaxWeapons = 3;transportMaxMagazines = 30;transportmaxbackpacks = 2;) (MH6 = transportMaxWeapons = 3;transportMaxMagazines = 20;transportmaxbackpacks = 3;)
+		* [UPDATED] - Fire Places will no longer act as storage systems.
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
