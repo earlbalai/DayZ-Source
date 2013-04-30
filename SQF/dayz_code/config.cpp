@@ -694,11 +694,11 @@ class CfgBuildingLoot {
 		};
 	};
 	class MilitarySpecial: Default {
-		zombieChance = 0.4;
+		zombieChance = 0.8;
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier_heavy"};
-		lootChance = 0.1;
+		lootChance = 0.3;
 		lootPos[] = {};
 		lootType[] = {
 			{"M16A2","weapon",0.05},
