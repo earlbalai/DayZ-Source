@@ -12,8 +12,8 @@ _bag = unitBackpack player;
 _classbag = typeOf _bag;
 _isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
 _hasAntiB = 	"ItemAntibiotic" in magazines player;
-_hasFuelE = 	"ItemJerrycanEmpty" in magazines player;
-_hasFuel5 = 	"ItemFuelcanEmpty" in magazines player;
+_hasFuelE20 = 	"ItemJerrycanEmpty" in magazines player;
+_hasFuelE5 = 	"ItemFuelcanEmpty" in magazines player;
 //boiled Water
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hastinitem = false;
@@ -65,9 +65,10 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
 	_isStash = cursorTarget isKindOf "StashSmall";
+	_isMediumStash = cursorTarget isKindOf "StashMedium";
 	_isFuel = false;
-	_hasFuel20 = 	"ItemJerrycan" in magazines player;
-	_hasFuel5 = 	"ItemFuelcan" in magazines player;
+	_hasFuel20 = "ItemJerrycan" in magazines player;
+	_hasFuel5 = "ItemFuelcan" in magazines player;
 	_isAlive = alive cursorTarget;
 	_canmove = canmove cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");	
@@ -81,7 +82,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		} forEach _rawmeat; 
 	
 	
-	if (_hasFuelE or _hasFuel5) then {
+	if (_hasFuelE20 or _hasFuelE5) then {
 		_isFuel = (cursorTarget isKindOf "Land_Ind_TankSmall") or (cursorTarget isKindOf "Land_fuel_tank_big") or (cursorTarget isKindOf "Land_fuel_tank_stairs") or (cursorTarget isKindOf "Land_wagon_tanker");
 	};
 	//diag_log ("OWNERID = " + _ownerID + " CHARID = " + dayz_characterID + " " + str(_ownerID == dayz_characterID));
@@ -97,7 +98,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Allow player to force save
-	if((_isVehicle or _isTent or _isStash) and _canDo and !_isMan and (damage cursorTarget < 1)) then {
+	if((_isVehicle or _isTent or _isStash or _isMediumStash) and _canDo and !_isMan and (damage cursorTarget < 1)) then {
 		if (s_player_forceSave < 0) then {
 			s_player_forceSave = player addAction [format[localize "str_actions_save",_text], "\z\addons\dayz_code\actions\forcesave.sqf",cursorTarget, 1, true, true, "", ""];
 		};
@@ -117,14 +118,15 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Allow player to fill Fuel can
-	if((_hasFuel20 or _hasFuel5) and _isFuel and _canDo) then {
-		if (s_player_fillfuel5 < 0) then {
-			s_player_fillfuel5 = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
+	if((_hasFuelE20 or _hasFuelE5) and _isFuel and _canDo) then {
+		if (s_player_fillfuel < 0) then {
+			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
 		};
 	} else {
 		player removeAction s_player_fillfuel;
-		s_player_fillfuel5 = -1;
+		s_player_fillfuel = -1;
 	};
+	
 	//Allow player to fill vehilce 20L
 	if(_hasFuel20 and _canDo and _isVehicle and (fuel cursorTarget < 1)) then {
 		if (s_player_fillfuel20 < 0) then {
