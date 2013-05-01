@@ -1,6 +1,6 @@
 private["_firePlace","_ok","_mags","_serial","_qty","_countr"];
 _firePlace = _this;
-//while {alive _firePlace} do {
+while {alive _firePlace} do {
 	while {inflamed _firePlace and alive _fireplace} do {
 		//Use Wood
 		_ok = false;
@@ -38,4 +38,4 @@ _firePlace = _this;
 		sleep 1;
 	};
 	sleep 1;
-//};
+};
