@@ -35,5 +35,5 @@ if (!isNil "_building") then {
 		};
 	};
 };
-diag_log ("fn_isinBuilding Check: " + str(_inside)+ " building:"+str(_building));
+//diag_log ("fn_isinBuilding Check: " + str(_inside)+ " building:"+str(_building));
 _inside
