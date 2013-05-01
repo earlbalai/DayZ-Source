@@ -39,6 +39,12 @@ class RepairParts : AllVehicles
 	class HitRBWheel {
 		part = "PartWheel";
 	};
+	class HitFWheel {
+		part = "PartWheel";
+	};
+	class HitBWheel {
+		part = "PartWheel";
+	};
 	class HitGlass1 {
 		part = "PartGlass";
 	};
