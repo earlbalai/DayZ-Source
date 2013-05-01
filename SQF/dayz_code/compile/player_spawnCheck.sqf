@@ -145,7 +145,7 @@ if (dayz_spawnZombies == 0) then {
 		if (_age < -0.1) then {
 				_x setVariable ["looted",(DateToNumber date),true];
 		} else {
-			if (_age > 30)  then {
+			if (_age > 20)  then {
 				_x setVariable ["looted",_dateNow,true];
 				[_x] spawn building_spawnLoot;
 			};
@@ -162,7 +162,7 @@ if (dayz_spawnZombies == 0) then {
 				if (_age < -0.1) then {
 					_x setVariable ["zombieSpawn",(DateToNumber date),true];
 				} else {
-					if (_age > 3) then {
+					if (_age > 1) then {
 						_bPos = getPosATL _x;
 						_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
 						if (_zombiesNum == 0) then {
