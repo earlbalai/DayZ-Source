@@ -49,24 +49,24 @@ Short-term Contributions
 These contributors have made specific changes for a particular bug fix or
 feature.
 
-* [MattzFiber]  									  (https://github.com/MattzFiber)
-* [Elvaron]                                           (https://github.com/Elvaron)
-* [Tansien]                                           (https://github.com/Tansien)
-* [wriley]                                            (https://github.com/wriley)
-* [Defwen]                                            (https://github.com/Defwen)
-* [Finest]										      (https://github.com/Finest)
-* [fred41]                                            (https://github.com/fred41)
-* [Killzone_kid]                                      (https://github.com/Killzonekid)
-* [Alex Grosse (Inch)]                                (http://opendayz.net/index.php?members/inch.1011/)
-* [Sumrak]                                            (http://www.nightstalkers.cz/en_index_nc.php)
-* [f0rt]                                              (https://github.com/ashfor03)
-* [Pwnoz0r]                                           (https://github.com/Pwnoz0r)
-* [Ayan4m1]                                           (https://github.com/Ayan4m1)
-* [Rajko]                                             (https://github.com/rajkosto)
-* [Stapo]                                             (https://github.com/Stapo)
-* [Venthos]                                           (https://github.com/Venthos)
-* [VRShiva]                                           (https://github.com/VRShiva)
-* [caleywoods]                                        (https://github.com/caleywoods)
+* [MattzFiber](https://github.com/MattzFiber)
+* [Elvaron](https://github.com/Elvaron)
+* [Tansien](https://github.com/Tansien)
+* [wriley](https://github.com/wriley)
+* [Defwen](https://github.com/Defwen)
+* [Finest](https://github.com/Finest)
+* [fred41](https://github.com/fred41)
+* [Killzone_kid](https://github.com/Killzonekid)
+* [Alex Grosse (Inch)](http://opendayz.net/index.php?members/inch.1011/)
+* [Sumrak](http://www.nightstalkers.cz/en_index_nc.php)
+* [f0rt](https://github.com/ashfor03)
+* [Pwnoz0r](https://github.com/Pwnoz0r)
+* [Ayan4m1](https://github.com/Ayan4m1)
+* [Rajko](https://github.com/rajkosto)
+* [Stapo](https://github.com/Stapo)
+* [Venthos](https://github.com/Venthos)
+* [VRShiva](https://github.com/VRShiva)
+* [caleywoods](https://github.com/caleywoods)
 * Ander                                            
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
@@ -78,8 +78,8 @@ Art Work
 ------------------------
 * Alexander (G17 incombat Icon)
 * Des (Gender images & Gui icon's revamp)
-* JoeysLucky22
-* Elvaron
+* [JoeysLucky22] (https://github.com/JoeysLucky22)
+* [Elvaron](https://github.com/Elvaron)
 
 Contributing
 ------------
