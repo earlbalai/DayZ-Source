@@ -1,5 +1,3 @@
-class AH6_Base_EP1;
-//class AH6X_EP1: AH6_Base_EP1 {};
 class AH6X_DZ: AH6_Base_EP1
 {
 	displayname = "AH6X Little Bird";

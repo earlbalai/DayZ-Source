@@ -1,4 +1,3 @@
-class RubberBoat;
 class PBX: RubberBoat {
 	cargoaction[] = {"PBX_Cargo01", "PBX_Cargo02", "PBX_Cargo03"};
 	crew = "";
@@ -8,7 +7,7 @@ class PBX: RubberBoat {
 	faction = "RU";
 	icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
 	mapsize = 6;
-	maxspeed = 65;
+	maxspeed = 125;
 	model = "\ca\water\PBX";
 	picture = "\ca\water\data\ico\pbx_CA.paa";
 	scope = 2;
