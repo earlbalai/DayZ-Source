@@ -29,7 +29,7 @@ switch _class do {
 		_testPond = true;
 		_testSlope = true;
 		_testSea = true;
-		_noCollision = false;
+		_noCollision = true;
 	};
 	case "StashSmall" : {
 		_testPond = true;
@@ -82,9 +82,9 @@ else {
 
 if (_testBuilding) then { // let's proceed to the "something or its operator in a building" test
 	_testBuilding = false;
-	if (([_obj] call fnc_isInsideBuilding) // obj in a building
+	if (([_obj, true] call fnc_isInsideBuilding) // obj in a building
 		OR {(!_isPLayer // or _pos is a player who is in a building
-		OR {(_isPLayer AND ([_pos] call fnc_isInsideBuilding))}
+		OR {(_isPLayer AND ([_pos, true] call fnc_isInsideBuilding))}
 		)}) then {
 		_testBuilding = true;
 	};
