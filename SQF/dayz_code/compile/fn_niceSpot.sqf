@@ -5,7 +5,7 @@
 // return a worldspace consisting of array [ direction, ATL position ] or empty array if no position is found
 // if 2nd argument is a player, the position returned is just in front of the player, direction is so that the object is "looking to" the player
 
-private ["_booleans", "_class","_isPlayer","_size","_testPond","_testBuilding", "_testonLadder", "_testSlope", "_testSea","_testDistance", "_noCollision","_dir","_obj","_isPLayer","_objectsPond","_ok"];
+private ["_booleans", "_class","_isPlayer","_size","_testPond","_testBuilding", "_testonLadder", "_testSlope", "_testSea","_testDistance", "_noCollision","_dir","_obj","_isPLayer","_objectsPond","_ok", "_maxdistance"];
 
 _class = _this select 0;
 _pos = _this select 1;
@@ -19,6 +19,7 @@ _isPlayer = (typeName _pos != "ARRAY");
 
 _testBuilding = true;
 _testDistance = _isPlayer;
+_maxdistance = 5;
 _testonLadder = _isPlayer;
 _testPond = false;
 _testSea = false;
@@ -29,7 +30,7 @@ switch _class do {
 		_testPond = true;
 		_testSlope = true;
 		_testSea = true;
-		_noCollision = false;
+		_noCollision = true;
 	};
 	case "StashSmall" : {
 		_testPond = true;
@@ -47,8 +48,14 @@ switch _class do {
 		_testPond = true;
 		_testSea = true;
 	};
-	default { // "Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ", "StashMedium", "StashSmall"
-	}
+	case "Wire_cat1"; 
+	case "Sandbag1_DZ"; 
+	case "Hedgehog_DZ" : {};
+	default {  // = vehicles (used for hive maintenance on startup)
+		_testBuilding = false;
+		_testSlope = true;
+		_noCollision = true;
+	};
 };
 
 //diag_log(format["niceSpot: will test: pond:%1 building:%2 slope:%3 sea:%4 distance:%5 collide:%6", _testPond, _testBuilding, _testSlope, _testSea, _testDistance, _noCollision]);
@@ -82,9 +89,9 @@ else {
 
 if (_testBuilding) then { // let's proceed to the "something or its operator in a building" test
 	_testBuilding = false;
-	if (([_obj] call fnc_isInsideBuilding) // obj in a building
-		OR {(!_isPLayer // or _pos is a player who is in a building
-		OR {(_isPLayer AND ([_pos] call fnc_isInsideBuilding))}
+	if (([_obj, true] call fnc_isInsideBuilding) // obj in/close to a building (enterable or not)
+		OR {(!_isPLayer // or _pos is a player who is in a *enterable* building
+		OR {(_isPLayer AND ([_pos, false] call fnc_isInsideBuilding))}
 		)}) then {
 		_testBuilding = true;
 	};
@@ -147,7 +154,7 @@ if (_testSea) then { // "not in the sea, not on the beach" test
 if (_testDistance) then { // check effective distance from the player
 	_testDistance = false;
 	_x = _pos distance _new;
-	if (_x > 5) then {
+	if (_x > _maxdistance) then {
 		_testDistance = true;
 	};
 };
