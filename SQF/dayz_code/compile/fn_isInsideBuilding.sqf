@@ -11,11 +11,12 @@ _realSize = {
 };							 
 
 _check = {
-	private ["_inside", "_relPos", "_this", "_plr", "_boundingBox", "_min", "_max", "_myX", "_myY", "_myZ"];
+	private ["_inside", "_relPos", "_this", "_plr", "_boundingBox", "_min", "_max", "_myX", "_myY", "_myZ", "_offset"];
 
 	_building = _this select 0;
 	_plr = _this select 1;
 	_inside = false;
+	_offset = 1; // shrink building boundingbox by this length.
 
 	_relPos = _building worldToModel (getPosATL _plr);
 	_boundingBox = boundingBox _building;
@@ -26,9 +27,9 @@ _check = {
 	_myY = _relPos select 1;
 	_myZ = _relPos select 2;
 
-	if ((_myX > (_min select 0)) and {(_myX < (_max select 0))}) then {
-		if ((_myY > (_min select 1)) and {(_myY < (_max select 1))}) then {
-			if ((_myZ > (_min select 2)) and {(_myZ < (_max select 2))}) then {
+	if ((_myX > (_min select 0)+_offset) and {(_myX < (_max select 0)-_offset)}) then {
+		if ((_myY > (_min select 1)+_offset) and {(_myY < (_max select 1)-_offset)}) then {
+			if ((_myZ > (_min select 2)+_offset) and {(_myZ < (_max select 2)-_offset)}) then {
 				_inside = true;
 			};
 		};
