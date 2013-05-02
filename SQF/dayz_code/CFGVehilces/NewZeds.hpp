@@ -117,6 +117,28 @@
 	class z_new_villager4 : z_newBase {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\villager\villager_v4_co.paa"};
 	};
+	
+	class z_new_worker_base : zZombie_new_Base {
+		zombieLoot = "civilian";
+		model = "\Ca\characters_E\Overall\Overall";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_4_co.paa"};
+		
+		class Wounds {
+			tex[] = {};
+			mat[] = {"Ca\characters_E\Overall\Data\Overall.rvmat", "Ca\characters_E\Overall\Data\W1_Overall.rvmat", "Ca\characters_E\Overall\Data\W2_Overall.rvmat"};
+		};
+	};
+	
+	class z_new_worker2 : z_new_worker_base {
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\overall_2_co.paa"};
+	};
+	class z_new_worker3 : z_new_worker_base {
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_3_co.paa"};
+	};
+	class z_new_worker4 : z_new_worker_base {
+		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_4_co.paa"};
+	};
 	/*
 	class z_policeman;
 	class z_new_policeman : z_policeman {
