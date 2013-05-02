@@ -41,6 +41,7 @@ for many different parts of the code.
  * [Sharkiller](https://github.com/Sharkiller) (Spanish Tranlations) 
  * [Markolie](https://github.com/Markolie) (Dutch Translations)    
  * [LordGoF](https://github.com/LordGoF) (French Translations)    
+ * [Defwen](https://github.com/Defwen) (Czech Translations)
  
 ------------------------
 Short-term Contributions
@@ -53,7 +54,6 @@ feature.
 * [Elvaron](https://github.com/Elvaron)
 * [Tansien](https://github.com/Tansien)
 * [wriley](https://github.com/wriley)
-* [Defwen](https://github.com/Defwen)
 * [Finest](https://github.com/Finest)
 * [fred41](https://github.com/fred41)
 * [Killzone_kid](https://github.com/Killzonekid)
@@ -78,7 +78,7 @@ Art Work
 ------------------------
 * Alexander (G17 incombat Icon)
 * Des (Gender images & Gui icon's revamp)
-* [JoeysLucky22] (https://github.com/JoeysLucky22)
+* [JoeysLucky22](https://github.com/JoeysLucky22)
 * [Elvaron](https://github.com/Elvaron)
 
 Contributing
