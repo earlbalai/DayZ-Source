@@ -27,6 +27,8 @@ if ((count _worldspace) == 2) then {
 	_dir = _worldspace select 0;
 	_location = _worldspace select 1; 
 	
+	player removeMagazine _item;
+	
 	player playActionNow "Medic";
 	sleep 1;
 	// installed item location may not be in front of player (but in 99% time it should)
