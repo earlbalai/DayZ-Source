@@ -120,7 +120,7 @@ FIX DUE : 22 APRIL 2013
 		* [UPDATED] - Fire Places will no longer act as storage systems.
 		* [UPDATED] - Fireplace can now only be lit once without adding new wood inside the fireplace.
 		* [UPDATED] - Fireplace can no longer be picked up after lighting.
-		* [UPDATED] - Vehilces speeds hmmwv - Faster, pbx - Faster, UAZ - Faster, ATV's - Slower
+		* [UPDATED] - Vehilces speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
