@@ -133,8 +133,8 @@ fa_setDamagedParts = {
 	_sm_damage = 0;
 	_sm_hitpoints = _this;
 	{
-		_part_damage = 0.05;
-		if (random(2)<1) then { _part_damage =  0.85; };
+		_part_damage = 0;
+		if (random(2)<1) then { _part_damage =  0.8; };
 		_sm_damage = _sm_damage + _part_damage;
 		_part_name = getText (configFile >> "CfgVehicles" >> (typeOf _entity) >> "HitPoints" >> _x >> "name");
 		_sm_hitpoints set [count _sm_hitpoints, [ _part_name, _part_damage ]];
