@@ -29,12 +29,12 @@ _check = {
 
 	if ((_myX > (_min select 0)+_offset) and {(_myX < (_max select 0)-_offset)}) then {
 		if ((_myY > (_min select 1)+_offset) and {(_myY < (_max select 1)-_offset)}) then {
-			if ((_myZ > (_min select 2)+_offset) and {(_myZ < (_max select 2)-_offset)}) then {
+			if ((_myZ > (_min select 2)) and {(_myZ < (_max select 2))}) then {
 				_inside = true;
 			};
 		};
 	};
-//	diag_log(format["fnc_isInsideBuilding: building:%1 typeOf:%2 bbox:%3 relpos:%4 result:%5", _building, typeOf(_building), _boundingBox, _relPos, _inside ]);
+	//diag_log(format["fnc_isInsideBuilding: building:%1 typeOf:%2 bbox:%3 relpos:%4 result:%5", _building, typeOf(_building), _boundingBox, _relPos, _inside ]);
 	
 	_inside
 };

@@ -43,7 +43,7 @@
 #define VEH_MAINTENANCE_ROTTEN_AT_STARTUP 5
 
 // How the  damage is computed. Here, a 0% damaged vehicle would be respawned after 100 restarts
-#define VEH_MAINTENANCE_ROTTEN_LOGIC (_sm_damage * 1.04 + 0.03)
+#define VEH_MAINTENANCE_ROTTEN_LOGIC (_damage * 1.04 + 0.03)
 
 // How initial fuel level is set when a vehicle is created/spawned
 #define VEH_MAINTENANCE_SPAWN_FUEL_LOGIC (0.1 + floor(random 3) / 10)
