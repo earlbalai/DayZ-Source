@@ -208,10 +208,10 @@ fa_removeExtraTents = {
 					_z = _tentcur select _x;
 					if (_z < (count _y) -_allowedEmptyTents + 2 - _k) then {
 						_idx = _myArray select (_y select _z);
-						diag_log (format ["fa_removeExtraTents: will remove Tent ID=%1, owner=%2",
+						/*diag_log (format ["fa_removeExtraTents: will remove Tent ID=%1, owner=%2",
 							_idx select 1,
 							_idx select 3 
-						]);	
+						]);*/	
 						_idx set [ 8, 1 ]; // Set damage to 100%	
 						_emptytenttotal = _emptytenttotal - 1;
 						_tentcur set [_x, _z + 1];
