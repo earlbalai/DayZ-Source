@@ -96,14 +96,14 @@ fa_spawninventory = {
 
 // populateCargo: add item and quantity to the 3 cargos (magazines,weapons,backpack) of an unit
 fa_populateCargo = {
-	private["_entity","_sm_config","_magItemTypes","_magItemQtys","_i","_sm_inventory"];
+	private["_entity","_config","_magItemTypes","_magItemQtys","_i","_inventory"];
 	_entity = _this select 0;
-	_sm_inventory = _this select 1;
+	_inventory = _this select 1;
 
 	clearWeaponCargoGlobal  _entity;
 	clearMagazineCargoGlobal  _entity;
 	clearBackpackCargoGlobal  _entity;	 
-	_sm_config = ["CfgWeapons", "CfgMagazines", "CfgVehicles" ];
+	_config = ["CfgWeapons", "CfgMagazines", "CfgVehicles" ];
 	{
 		_magItemTypes = _x select 0;
 		_magItemQtys = _x select 1;
@@ -111,8 +111,8 @@ fa_populateCargo = {
 		{    
 			if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
             if (_x == "BoltSteel") then { _x = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
-			if (isClass(configFile >> (_sm_config select _i) >> _x) &&
-				getNumber(configFile >> (_sm_config select _i) >> _x >> "stopThis") != 1) then {
+			if (isClass(configFile >> (_config select _i) >> _x) &&
+				getNumber(configFile >> (_config select _i) >> _x >> "stopThis") != 1) then {
 				if (_forEachIndex < count _magItemQtys) then {
 					switch (_i) do {
 						case 0: { _entity addWeaponCargoGlobal [_x,(_magItemQtys select _forEachIndex)]; }; 
@@ -122,7 +122,7 @@ fa_populateCargo = {
 				};
 			};
 		} forEach _magItemTypes;
-	} forEach _sm_inventory;	
+	} forEach _inventory;	
 };
 
 
@@ -134,23 +134,31 @@ dayZ_damageableParts = [ "motor", "sklo predni P", "sklo predni L", "karoserie",
 
 // setDamagedParts: declare some damageable parts of a vehicle. Randomly set damage to 80% (very damaged) to some parts
 // compute global damage of the vehicle
-// return: global damage,  "_this" is modified and should be _sm_hitpoints array from server_monitor
+// return: global damage,  "_this" is modified and should be _hitpoints array from server_monitor
 fa_setDamagedParts = {
-	private ["_part_damage", "_part_name", "_sm_damage", "_sm_hitpoints"];
-	_sm_damage = 0; 
-	_sm_hitpoints = _this;
+	private ["_part_damage", "_part_name", "_damage", "_hitpoints"];
+	_damage = 0; 
+	_hitpoints = _this;
 	{
 		_part_damage = 0.05; // don't put 0, otherwise server_updateObject will think it's repaired
 		if (random(3)<1) then { _part_damage =  0.80; };
 		_part_name = getText (configFile >> "CfgVehicles" >> (typeOf _entity) >> "HitPoints" >> _x >> "name");
 		if (_part_name IN dayZ_damageableParts) then {
-			_sm_damage = _sm_damage + _part_damage;
-			_sm_hitpoints set [count _sm_hitpoints, [ _part_name, _part_damage ]];
+			_damage = _damage + _part_damage;
+			_hitpoints set [count _hitpoints, [ _part_name, _part_damage ]];
 		};
 	} forEach (_entity call vehicle_getHitpoints);
-	_sm_damage = _sm_damage / (1 + (count _sm_hitpoints)); // avoid DIV0
+	_damage = _damage / (1 + (count _hitpoints)); // avoid DIV0
 	
-	_sm_damage
+	_damage
+};
+
+fa_tentEmpty = {
+	 ( (count _this == 0) || {
+		(count ((_this select 0) select 0) == 0) &&
+		(count ((_this select 1) select 0) == 0) &&
+		(count ((_this select 2) select 0) == 0)
+	})
 };
 
 // ignore empty tents from array of objects fetched from hive
@@ -176,11 +184,7 @@ fa_removeExtraTents = {
 				_tentowner set [count _tentowner, _ownerID];
 			};
 			_intentory = (_x select 5);
-			if ( (count _intentory <3) || {
-				(count ((_intentory select 0) select 0) == 0) &&
-				(count ((_intentory select 1) select 0) == 0) &&
-				(count ((_intentory select 2) select 0) == 0)
-			}) then {
+			if (_intentory call fa_tentEmpty) then {
 				{
 					if (_x == _ownerID) then {
 						(_tentidx select _forEachIndex) set [count (_tentidx select _forEachIndex), _idx];
@@ -250,8 +254,8 @@ fa_checkVehicles = {
 					if ((_x select 8) >= 1) then { 
 						(_myArray select _forEachIndex) set [8, 0.9] ; // damage = 0.9 so this veh will me respawned
 					};
-					diag_log (format["fa_checkVehicles: keeping vehicle class=%1, oid=%2, damage=%3", 
-							_x select 2, _x select 1, _x select 8]);
+					//diag_log (format["fa_checkVehicles: keeping vehicle class=%1, oid=%2, damage=%3", 
+						//	_x select 2, _x select 1, _x select 8]);
 				}
 #ifdef VEH_MAINTENANCE_IGNORE_UNKNOWN
 				else {
@@ -282,7 +286,7 @@ fa_checkVehicles = {
 
 // move object to map boundary if it's out of map
 fa_staywithus = {
-	private["_a","_dir","_px","_py","_b","_cx","_cy","_k", "_o", "_SWcorner", "_NEcorner"];
+	private["_a","_dir","_px","_py","_b","_cx","_cy","_k", "_SWcorner", "_NEcorner"];
 	
 	_dir = _this select 0;  // current position of player / vehicle
 	_a = _this select 1;  // current position of player / vehicle
@@ -290,9 +294,7 @@ fa_staywithus = {
 	_SWcorner = getArray(CONFIGBASE_VEHMAINTENANCE >> (worldName) >> "SWcorner");
 	_NEcorner = getArray(CONFIGBASE_VEHMAINTENANCE >> (worldName) >> "NEcorner");
 
-  	_o = "Survivor2_DZ" createVehicleLocal _a;
-  	_o setPosASL _a;
-	_a = getPosATL _o;
+	_a = ASLtoATL [_a select 0, _a select 1, 0];
 	if ((((_a select 2) > 9) AND {(surfaceisWater _a)})  // entity in water and sea depth above 9 meters?
 		OR {(_a call fa_isoutofmap)}) then { // or entity is out of map?
 		// first : put object close to the map boundary, following an axis to the center of the map.
@@ -316,12 +318,11 @@ fa_staywithus = {
 			_a = [_px + _cx * _k, _py + _cy * _k, 0];
 //			if ((_k*200) mod 5 == 4) then { diag_log (format["fa_staywithus:  a:%1 water:%2 zx:%3", _a, surfaceisWater _a, (getPosATL _o) select 2]); };
 			if (surfaceisWater _a) then {
-				_o setPosASL _a;/*sleep 0.001;*/_a = getPosATL _o; _b = _a select 2;
+				_a = ASLtoATL [_a select 0, _a select 1, 0];
 				if (((_a select 2) < 9) AND{(!(_a call fa_isoutofmap))}) then { _k = 2; }
 				else { if ((_a select 2) < 30) then { _k = _k - 0.0045; };}; // slow down on the axis
 			}
 			else {
-				_o setPosATL _a;/*sleep 0.001;_a = getPosATL _o;*/
 				if (!(_a call fa_isoutofmap)) then { _k = 2; };
 			};
 		};
@@ -332,40 +333,38 @@ fa_staywithus = {
 			(if ([_a] call fa_isoutofmap == 1) then { true } else { false })
 		]);*/
 	};
-	_a = getPosATL _o;
-	deleteVehicle _o;
 	
 	// cancel the change if it is too near original pos
 	if (([(_this select 1),_a] call BIS_fnc_distance2Dsqr) <= 100) then { 
 		_dir = _this select 0; 
 		_a = _this select 1; 
 	};
-	[ _dir, _a]
+	[ _dir, [_a select 0, _a select 1, 0]]
 };
 
 // used only by fa_smartlocation
 fa_smartlocation_commonTests = { // [_type, _pos, _minAltitude, _maxAltitude, _found]
-	private ["_found", "_pos", "_worldspace"];
+	private ["_found", "_point", "_worldspace"];
 
 	_found = false;
-	_pos = _this select 1;
+	_point = _this select 1;
 		
 	//diag_log(format["fa_smartlocation %1 %2", __LINE__, _this]); 
 
-	_pos set [2, 0];
-	_pos = ATLtoASL _pos;
-	if (((_pos select 2) < _this select 3) AND {((_pos select 2) > _this select 2)}) then {
-		if (count (_pos nearEntities [["Air", "LandVehicle", "Ship"], _this select 4]) <= 0) then { 
+	_point set [2, 0];
+	_point = ATLtoASL _point;
+	if (((_point select 2) < _this select 3) AND {((_point select 2) > _this select 2)}) then {
+		if (count (_point nearEntities [["Air", "LandVehicle", "Ship"], _this select 4]) <= 0) then { 
 			if (_this select 3 < 0) then { // boats
-				_found = surfaceisWater _pos;
+				_found = surfaceisWater _point;
 			}
 			else { // not boats
-				_pos set [2, 0];
-				_worldspace = [_this select 0, _pos] call fn_niceSpot;						
+				_point set [2, 0];
+				_worldspace = [_this select 0, _point] call fn_niceSpot;						
 				if (count _worldspace == 2) then {
-					_pos = _worldspace select 1;
-					(_this select 1) set [0, _pos select 0];
-					(_this select 1) set [1, _pos select 1];
+					_point = _worldspace select 1;
+					(_this select 1) set [0, _point select 0];
+					(_this select 1) set [1, _point select 1];
 					(_this select 1) set [2, 0];
 					_found = true;
 				};
@@ -379,11 +378,8 @@ fa_smartlocation_commonTests = { // [_type, _pos, _minAltitude, _maxAltitude, _f
 
 // move vehicle to a safe position, respawn vehicle.
 fa_smartlocation = { 
-	private ["_type", "_class", "_dir", "_oldpos", "_action", "_distance", "_minAltitude", "_maxAltitude", 
-	"_tmpobject", "_width", "_found", "_wp", "_worldCenter", "_worldRadius", "_locations", "_radius",
-	 "_nearObjectTypes", "_types", "_pickedLocation", "_o", "_objects", "_counter", "_locpos", 
-	 "_loc", "_y", "_r", "_deg"];
-	 
+private ["_type","_class","_dir","_oldpos","_action","_distance","_minAltitude","_maxAltitude","_tmpobject","_width","_found","_wp","_worldCenter","_worldRadius","_locations","_radius","_nearObjectTypes","_types","_pickedLocation","_o","_objects","_counter","_locpos","_loc","_y","_r","_deg","_veh","_size","_old", "_point"];
+
 	_type = _this select 0; // vehicle "typeOf"
 	_class = _type;
 	if (_type isKindOf "Air") then { _class = "Land_Ind_TankBig"; }; // for helis we take a big circular tank as a footprint
@@ -397,41 +393,42 @@ fa_smartlocation = {
 
 	// workaround for sizeof bug -- do not remove
 	_tmpobject = _class createVehicleLocal (getMarkerPos "respawn_west");
-	sleep 0.01;
+	sleep 0.01; // wait object loading
 	_width = (((boundingBox _tmpobject) select 1) select 0);
 	//diag_log(format["fa_smartlocation _this:%1 %2", _this, (sizeOf _class)]); 
 
-	_pos = [];
+	_point = [];
 	_found = false;
 	// try to place the object in a safe position near current position
 	if ((!(_action IN [ "CREATED", "SPAWNED"])) and {(count _oldpos>=2)}) then {
 #ifdef VEH_MAINTENANCE_FIX_OUTOFMAP
 		// move object back on the map
 		_wp = [0, _oldpos] call fa_staywithus;  // use ATL format
-		_pos = (_wp select 1);
+		_point = (_wp select 1);
 #else
-		_pos = +(_oldpos);
+		_point = +(_oldpos);
 #endif
 		// find a safe position around current position for air vehicles
 		if (_type isKindOf "Air") then { 
 			deleteVehicle _tmpobject;
-			_tmpobject = _class createVehicleLocal _pos;  
-			_pos = getPos _tmpobject;
+			_tmpobject = _class createVehicleLocal _point;  
+			_point = getPos _tmpobject;
 		};
 		// check altitude		
-		if (count _pos >= 2) then {
-			_pos set [2, 0];
-			_pos = ATLtoASL _pos;
-			_found = (((_pos select 2) < _maxAltitude) AND {((_pos select 2) > _minAltitude)});
+		if (count _point >= 2) then {
+			_point set [2, 0];
+			_point = ATLtoASL _point;
+			_found = (((_point select 2) < _maxAltitude) AND {((_point select 2) > _minAltitude)});
 		};
 		/*diag_log(format["fa_smartlocation: Looking for a safe place near original position... _action:%1 _type:%2 suitable:%3 distance:%4", 
 			_action,
 			_type,
 			_found, 
-			if (_found) then { [_oldpos, _pos] call BIS_fnc_distance2D } else { "" } 
+			if (_found) then { [_oldpos, _point] call BIS_fnc_distance2D } else { "" } 
 		]);*/
 	};
 	deleteVehicle _tmpobject;
+	sleep 0.01; // wait object destroy. nearEntities may return false info if not done.
 #ifndef VEH_MAINTENANCE_DONT_BE_SMART
 	if (!_found) then { // we failed to find a suitable position around current one, so respawn vehicle
 		_worldCenter = getArray(CONFIGBASE_VEHMAINTENANCE >> (worldName) >> "center");
@@ -450,7 +447,7 @@ fa_smartlocation = {
 		_o = nil;
 		_objects = nil;
 		_counter = 0;
-		_pos = [];
+		_point = [];
 		while ({count _locations > 0 AND !_found}) do {
 			_pickedLocation = _locations call BIS_fnc_selectRandom;
 			_locpos = position _pickedLocation;
@@ -466,11 +463,11 @@ fa_smartlocation = {
 						_o = _objects call BIS_fnc_selectRandom;
 						// move spot in front of object, according to object length (its Y axis) and vehicle width (its X axis)
 						// vehicle should be located slightly in front object, twisted by a 90* angle
-						_pos = _o modelToWorld [0,-(_width+(((boundingBox _o) select 1) select 1))/2,0];
-						_pos set [2, 0];
+						_point = _o modelToWorld [0,-(_width+(((boundingBox _o) select 1) select 1))/2,0];
+						_point set [2, 0];
 						_dir = (getDir _o)+90;
-						_found = [_class, _pos, _minAltitude, _maxAltitude, _distance] call fa_smartlocation_commonTests;
-						//if (_found) then { diag_log(format["fa_smartlocation %1 %3 +--> %2", __LINE__,  _pos, _oldpos]); };
+						_found = [_class, _point, _minAltitude, _maxAltitude, _distance] call fa_smartlocation_commonTests;
+						//if (_found) then { diag_log(format["fa_smartlocation %1 %3 +--> %2", __LINE__,  _point, _oldpos]); };
 						_objects = _objects - [_o];
 						_distance = _distance * 0.995;
 					};
@@ -480,10 +477,10 @@ fa_smartlocation = {
 						_counter=_counter+0.0001;
 						_r = random(_radius*_radius)^0.5;
 						_deg = random 360;
-						_pos = [(_locpos select 0) + sin(_deg)*_r, (_locpos select 1) + cos(_deg)*_r, 0];
+						_point = [(_locpos select 0) + sin(_deg) * _r, (_locpos select 1) + cos(_deg) * _r, 0];
 						_dir = _deg;
-						_found = [_class, _pos, _minAltitude, _maxAltitude,_distance] call fa_smartlocation_commonTests;
-						//if (_found) then { diag_log(format["fa_smartlocation %1 %3 +--> %2", __LINE__,  _pos, _oldpos]); };
+						_found = [_class, _point, _minAltitude, _maxAltitude,_distance] call fa_smartlocation_commonTests;
+						//if (_found) then { diag_log(format["fa_smartlocation %1 %3 +--> %2", __LINE__,  _point, _oldpos]); };
 						_distance = _distance * 0.995;
 					};
 				};
@@ -491,17 +488,17 @@ fa_smartlocation = {
 			_counter = _counter + 1;
 			_locations = _locations - [_pickedLocation];
 		}; // while suitable location 
-		diag_log(format["fa_smartlocation: %2   _veh:%1 _size:%6   _old:%8 |--> _pos:%3    _pickedLocation:%4 _counter=%5  badly near:%7", 
+		diag_log(format["fa_smartlocation: %2   _veh:%1 _size:%6   _old:%8 |--> _point:%3    _pickedLocation:%4 _counter=%5  badly near:%7", 
 			_type, 
 			if (_found) then {"ok"} else {"** FAILED **"}, 
-			_pos, 
+			_point, 
 			if (!isNil "_pickedLocation") then {text(_pickedLocation)} else {""}, 
 			_counter, (sizeOf _class), 
-			if (count _pos >0) then { (_pos nearEntities [["Air", "LandVehicle", "Ship"],_distance]) } else { "" },
+			if (count _point >0) then { (_point nearEntities [["Air", "LandVehicle", "Ship"],_distance])-[_tmpobject] } else { "" },
 			_oldpos
 		]); 
 	};
 #endif
 
-	if (_found) then { [_dir, [_pos select 0, _pos select 1, 0]] } else { [] }
+	if (_found) then { [_dir, [_point select 0, _point select 1, 0]] } else { [] }
 };
