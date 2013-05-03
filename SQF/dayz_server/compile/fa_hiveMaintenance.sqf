@@ -125,19 +125,28 @@ fa_populateCargo = {
 	} forEach _sm_inventory;	
 };
 
-// setDamagedParts: declare all damageable parts of a vehicle. Randomly set damage to 85% (very damaged) to some parts
+
+// all damageable parts names defined in Legacy/dayz_vehicles/config.cpp, some of them commented.
+// other damageables parts, defined in other CfgVehicles, are ignored.
+dayZ_damageableParts = [ "motor", "sklo predni P", "sklo predni L", "karoserie", "palivo", "wheel_1_1_steering", "wheel_2_1_steering", "wheel_1_2_steering", "wheel_2_2_steering", "glass1", "glass2", "glass3", "glass4"
+//, "glass5", "glass6", "door_fl", "door_rl", "door_fr", "door_rr"
+];
+
+// setDamagedParts: declare some damageable parts of a vehicle. Randomly set damage to 80% (very damaged) to some parts
 // compute global damage of the vehicle
-// return: global damage,  "this" is modified and should be _sm_hitpoints from server_monitor
+// return: global damage,  "_this" is modified and should be _sm_hitpoints array from server_monitor
 fa_setDamagedParts = {
 	private ["_part_damage", "_part_name", "_sm_damage", "_sm_hitpoints"];
-	_sm_damage = 0;
+	_sm_damage = 0; 
 	_sm_hitpoints = _this;
 	{
-		_part_damage = 0;
-		if (random(2)<1) then { _part_damage =  0.8; };
-		_sm_damage = _sm_damage + _part_damage;
+		_part_damage = 0.05; // don't put 0, otherwise server_updateObject will think it's repaired
+		if (random(3)<1) then { _part_damage =  0.80; };
 		_part_name = getText (configFile >> "CfgVehicles" >> (typeOf _entity) >> "HitPoints" >> _x >> "name");
-		_sm_hitpoints set [count _sm_hitpoints, [ _part_name, _part_damage ]];
+		if (_part_name IN dayZ_damageableParts) then {
+			_sm_damage = _sm_damage + _part_damage;
+			_sm_hitpoints set [count _sm_hitpoints, [ _part_name, _part_damage ]];
+		};
 	} forEach (_entity call vehicle_getHitpoints);
 	_sm_damage = _sm_damage / (1 + (count _sm_hitpoints)); // avoid DIV0
 	
@@ -415,12 +424,12 @@ fa_smartlocation = {
 			_pos = ATLtoASL _pos;
 			_found = (((_pos select 2) < _maxAltitude) AND {((_pos select 2) > _minAltitude)});
 		};
-		diag_log(format["fa_smartlocation: Looking for a safe place near original position... _action:%1 _type:%2 suitable:%3 distance:%4", 
+		/*diag_log(format["fa_smartlocation: Looking for a safe place near original position... _action:%1 _type:%2 suitable:%3 distance:%4", 
 			_action,
 			_type,
 			_found, 
 			if (_found) then { [_oldpos, _pos] call BIS_fnc_distance2D } else { "" } 
-		]);
+		]);*/
 	};
 	deleteVehicle _tmpobject;
 #ifndef VEH_MAINTENANCE_DONT_BE_SMART
@@ -494,5 +503,5 @@ fa_smartlocation = {
 	};
 #endif
 
-	if (_found) then { [_dir, [_pos select 0, _pos select 1, 0]] } else { [_dir, _oldpos] } // we return _oldpos if nothing has been found
+	if (_found) then { [_dir, [_pos select 0, _pos select 1, 0]] } else { [] }
 };
