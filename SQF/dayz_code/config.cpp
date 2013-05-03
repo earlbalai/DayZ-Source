@@ -47,7 +47,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.7.Pre-Release.30042013";
+		version = "1.7.7.Pre-Release.02052013";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
@@ -460,8 +460,8 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemFuelcan","object",0.03},
 			{"ItemKnife","military",0.03},
 			{"ItemToolbox","weapon",0.06},
-			{"ItemWire","magazine",0.01},
-			{"ItemTankTrap","magazine",0.04}
+			{"ItemWire","magazine",0.01}
+			//{"ItemTankTrap","magazine",0.04}
 		};
 	};
 	class Farm: Default {

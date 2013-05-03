@@ -13,7 +13,7 @@ if (alive player) then {
 		<t size='1.15' font='Bitstream' align='left'>%9: </t><t size='1.15' font='Bitstream' align='right'>%10</t><br/><br/>
 		<t size='1.15' font='Bitstream' align='left'>%11: </t><t size='1.15' font='Bitstream' align='right'>%12</t><br/><br/>",
 		(name player),																// %1 Playername
-		(format [localize "str_actions_stats_sd",dayz_skilllevel]),					// %2 Survived N Days
+		(format [localize "str_actions_stats_sd",dayz_Survived]),					// %2 Survived N Days
 		(localize "str_actions_stats_zk"), (player getVariable['zombieKills', 0]),	// %3 Zombie Killed: %4
 		(localize "str_actions_stats_hs"), (player getVariable['headShots', 0]),	// %5 Headshots: %6
 		(localize "str_actions_stats_hk"), (player getVariable['humanKills', 0]),	// %7 Murders: %8
