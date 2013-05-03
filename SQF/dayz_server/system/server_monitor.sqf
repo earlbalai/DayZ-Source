@@ -283,43 +283,41 @@ if (isServer and isNil "sm_done") then {
 			if (_sm_damage > 0.85 AND (_action != "CREATED")) then { _action = "SPAWNED"; };  
 			// check for no collision with world. Find a suitable place:
 			_sm_worldspace = [_sm_class, _sm_dir, _sm_pos, _action] call fa_smartlocation;
-			if ((([_sm_worldspace select 1, _sm_pos] call BIS_fnc_distance2D) > 1) 
-				AND (_action == "OBJ")) then { _action = "MOVED"; };
-			_sm_dir = _sm_worldspace select 0;
-			_sm_pos = _sm_worldspace select 1;
-			_entity = createVehicle [_sm_class, _sm_pos, [], 0, "CAN_COLLIDE"]; 
-			_entity setVariable ["ObjectID", _sm_ObjectID, true]; // this variable must be set very early
-			_entity setVariable ["CharacterID", _sm_CharacterID, true];	
-			_entity setVariable ["lastUpdate",time]; // prevent immediate hive write when vehicle parts are set up
-			// setPos will be done again just after setDir, see below....
+			if (count _sm_worldspace < 2) then {  // safe position NOT found
+				_action = "FAILED"; // don't worry, maybe we will find a nice spot next time :)
+			}
+			else { // found a spot for respawn
+				if ((([_sm_worldspace select 1, _sm_pos] call BIS_fnc_distance2D) > 1) 
+					AND (_action == "OBJ")) then { _action = "MOVED"; };
+				_sm_dir = _sm_worldspace select 0;
+				_sm_pos = _sm_worldspace select 1;
+				_entity = createVehicle [_sm_class, _sm_pos, [], 0, "CAN_COLLIDE"]; 
+				_entity setVariable ["ObjectID", _sm_ObjectID, true]; // this variable must be set very early
+				_entity setVariable ["CharacterID", _sm_CharacterID, true];	
+				_entity setVariable ["lastUpdate",time]; // prevent immediate hive write when vehicle parts are set up
+				// setPos will be done again just after setDir, see below....
 #ifdef VEH_MAINTENANCE_ADD_MISSING		
-			if (_sm_damage > 0.85) then { 
-				_sm_fuel = VEH_MAINTENANCE_SPAWN_FUEL_LOGIC;
-				_sm_hitpoints = [];
-				_sm_damage = _sm_hitpoints call fa_setDamagedParts;
-	
-				_sm_inventory = []; // TODO: rewrite this inventory setup.
-				if (!(_sm_class isKindOf "Motorcycle" OR _sm_class isKindOf "Ship" OR _sm_class isKindOf "Bicycle")) then { //// TODO: rewrite spawn inventory
-					if (_sm_class isKindOf "Helicopter") then {  // helicopter
-						//_sm_inventory = [["PartVRotor","PartEngine","PartGeneric","PartGlass"], [1,1,4,4]] call fa_spawninventory;
-					}
-					else {  
-						//_sm_inventory = [["PartWheel","PartFueltank","PartGeneric","PartGlass","PartEngine"], [4,1,1,4,1]] call fa_spawninventory; 
-				};};
-				//diag_log (format["VEH MAINTENANCE Creating vehicle Inventory:%1  and  Damaged parts:%2", _sm_inventory, _sm_hitpoints]);
-			};
+				if (_sm_damage > 0.85) then { 
+					_sm_fuel = VEH_MAINTENANCE_SPAWN_FUEL_LOGIC;
+					_sm_hitpoints = [];
+					_sm_damage = _sm_hitpoints call fa_setDamagedParts;
+		
+					_sm_inventory = []; // TODO: rewrite this inventory setup.
+					//diag_log (format["VEH MAINTENANCE Creating vehicle Inventory:%1  and  Damaged parts:%2", _sm_inventory, _sm_hitpoints]);
+				};
 #endif
-			{
-				_selection = _x select 0;
-				_dam = _x select 1;
-				if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-				[_entity,_selection,_dam] call object_setFixServer;
-			} forEach _sm_hitpoints;
-			_entity setVectorDirAndUp [[.5,0.0001,.87],[.5,0.0001,.87]]; // I don't like these magical in equilibrium bikes
-			_sm_pos set [2, 1]; // setPos will be done below.
-			_entity setvelocity [0,0,1];
-			_entity setFuel _sm_fuel;
-			_entity call fnc_vehicleEventHandler;
+				{
+					_selection = _x select 0;
+					_dam = _x select 1;
+					if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
+					[_entity,_selection,_dam] call object_setFixServer;
+				} forEach _sm_hitpoints;
+				_entity setVectorDirAndUp [[.5,0.0001,.87],[.5,0.0001,.87]]; // I don't like these magical in equilibrium bikes
+				_sm_pos set [2, 1]; // setPos will be done below.
+				_entity setvelocity [0,0,1];
+				_entity setFuel _sm_fuel;
+				_entity call fnc_vehicleEventHandler;
+			};
 			diag_log (format["VEH MAINTENANCE %1 %2 at %3, damage=%4, fuel=%5",
 				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, _sm_damage, _sm_fuel ]); // , hitpoints:%6, inventory=%7"  , _sm_hitpoints, _sm_inventory 
 		}
