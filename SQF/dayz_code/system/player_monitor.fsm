@@ -24,7 +24,7 @@ item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,350.000000,275.000000,400.00000
 item20[] = {"Hive_Ok",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Hive" \n "Ok"};
 item21[] = {"Phase_One",2,250,-75.000000,450.000000,25.000000,500.000000,0.000000,"Phase One"};
 item22[] = {"Response",4,218,-175.000000,500.000000,-75.000000,550.000000,0.000000,"Response"};
-item23[] = {"Phase_Two",2,250,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
+item23[] = {"Phase_Two",2,4346,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
 item24[] = {"Dead_Player",4,218,50.000000,550.000000,150.000000,600.000000,0.000000,"Dead" \n "Player"};
 item25[] = {"ERROR__Player_Already",2,250,175.000000,550.000000,275.000000,600.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
 item26[] = {"Alive",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Alive"};
@@ -62,7 +62,7 @@ item57[] = {"get_ready_to_clo",2,250,400.000000,250.000000,500.000000,300.000000
 item58[] = {"sleep_",4,218,550.000000,250.000000,650.000000,300.000000,0.000000,"sleep" \n ""};
 item59[] = {"Disconnect",2,250,675.000000,250.000000,775.000000,300.000000,0.000000,"Disconnect"};
 item60[] = {"No_time_date",4,218,25.000000,1000.000000,125.000000,1050.000000,0.000000,"No time/date"};
-item61[] = {"ERROR__No_Date_or",2,4346,175.000000,1000.000000,275.000000,1050.000000,0.000000,"ERROR:" \n "No Date or Time"};
+item61[] = {"ERROR__No_Date_or",2,250,175.000000,1000.000000,275.000000,1050.000000,0.000000,"ERROR:" \n "No Date or Time"};
 item62[] = {"Too_Long",4,218,300.000000,1000.000000,400.000000,1050.000000,0.000000,"Too" \n "Long"};
 link0[] = {0,1};
 link1[] = {0,5};
@@ -815,7 +815,7 @@ class FSM
        "dayz_lastMeal =			(_lastAte * 60);" \n
        "dayz_lastDrink =		(_lastDrank * 60);" \n
        "dayz_zombiesLocal = 	0;			//Used to record how many local zombies being tracked" \n
-       "dayz_skilllevel = _days;  //total alive dayz" \n
+       "dayz_Survived = _days;  //total alive dayz" \n
        "" \n
        "//load in medical details" \n
        "r_player_dead = 		player getVariable[""USEC_isDead"",false];" \n

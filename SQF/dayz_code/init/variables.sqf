@@ -24,7 +24,7 @@ MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete"];
 MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing"];
 
 //New Zeds
-DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4"];
+DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4","z_new_worker2","z_new_worker3","z_new_worker4"];
 
 SafeObjects = ["Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ", "StashSmall", "StashMedium"];
 
@@ -281,6 +281,7 @@ r_fracture_legs =		false;
 r_fracture_arms =		false;
 r_player_vehicle =		player;
 r_player_blood = 		12000;
+r_player_bloodregen = 0;
 r_player_lowblood = 	false;
 r_player_timeout =		0;
 r_player_bloodTotal = 	r_player_blood;

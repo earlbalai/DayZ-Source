@@ -62,6 +62,7 @@ switch _class do {
 
 _dir = if (_isPlayer) then {getDir(_pos)} else {0};
 _obj = _class createVehicleLocal (getMarkerpos "respawn_west");
+sleep 0.01;
 _size = _obj call _realSize;
 if (_isPlayer) then { _size = _size + (_pos  call _realSize); };
 
@@ -73,6 +74,7 @@ _new set [2, 0];
 // place a temporary object (not colliding or can colliding)
 if (_noCollision) then {
 	deleteVehicle _obj;
+	sleep 0.01;
 	_obj = _class createVehicleLocal _new;
 	// get non colliding position
 	_new = getPosATL _obj;
@@ -88,16 +90,13 @@ else {
 };
 
 if (_testBuilding) then { // let's proceed to the "something or its operator in a building" test
-	_testBuilding = false;
-	if (([_obj, true] call fnc_isInsideBuilding) // obj in/close to a building (enterable or not)
-		OR {(!_isPLayer // or _pos is a player who is in a *enterable* building
-		OR {(_isPLayer AND ([_pos, false] call fnc_isInsideBuilding))}
-		)}) then {
-		_testBuilding = true;
-	};
+	_testBuilding = (([_obj, true] call fnc_isInsideBuilding) // obj in/close to a building (enterable or not)
+		 // or _pos is a player who is in a *enterable* building
+		OR {(_isPLayer AND {([_pos, false] call fnc_isInsideBuilding)})});
 };
 
 deleteVehicle _obj;
+sleep 0.01;
 
 if (_testPond) then { // let's proceed to the "object in the pond" test (not dirty)
 	_testPond = false;
@@ -152,21 +151,14 @@ if (_testSea) then { // "not in the sea, not on the beach" test
 };
 
 if (_testDistance) then { // check effective distance from the player
-	_testDistance = false;
-	_x = _pos distance _new;
-	if (_x > _maxdistance) then {
-		_testDistance = true;
-	};
+	_testDistance = ((_pos distance _new) > _maxdistance);
 };
 
 if (_testonLadder) then { // forbid item install process if player is on a ladder (or in a vehicle)
-	_testonLadder = false;
-	if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState _pos) >> "onLadder")) == 1) then {
-		_testonLadder = true;
-	};
-	if ((isPlayer _pos) AND {((vehicle _pos) != _pos)}) then {
-		_testonLadder = true;
-	};
+	_testonLadder = (
+		((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState _pos) >> "onLadder")) == 1) 
+	OR {((isPlayer _pos) AND {((vehicle _pos) != _pos)})}
+	);
 };
 
 //diag_log(format["niceSpot: result  pond:%1 building:%2 slope:%3 sea:%4 distance:%5 collide:%6", _testPond, _testBuilding, _testSlope, _testSea, _testDistance, _noCollision]);
@@ -180,7 +172,7 @@ if (count _this > 2) then {
 	_booleans set [3, _testBuilding];
 	_booleans set [4, _testSlope];
 	_booleans set [5, _testDistance];
-	diag_log(format["niceSpot: booleans: %1", _booleans]);
+	//diag_log(format["niceSpot: booleans: %1", _booleans]);
 };
 
 if (_ok) then { [round(_dir), _new] } else { [] }
