@@ -1,10 +1,9 @@
 
-
 //// TENTS CHECK ////
 
 // Proceed to empty tents check: extra empty tents will be ignored (tents won't be created on map)
 // comment this out if you don't want any check
-#define EMPTY_TENTS_CHECK
+//#define EMPTY_TENTS_CHECK
 
 // Max number of empty tents
 #define EMPTY_TENTS_GLOBAL_LIMIT 100
@@ -33,14 +32,14 @@
 //#define VEH_MAINTENANCE_IGNORE_UNKNOWN
 
 // Add missing vehicles, as described in Cfg file. Respawn damaged vehicles.
-#define VEH_MAINTENANCE_ADD_MISSING
+//#define VEH_MAINTENANCE_ADD_MISSING
 
 // Don't look for a suitable place anywhere on map if current place is not safe
-//#define VEH_MAINTENANCE_DONT_BE_SMART
+#define VEH_MAINTENANCE_DONT_BE_SMART
 
 // Damage the vehicle for 1 startup over 5
 // don't define if you don't want any damage
-#define VEH_MAINTENANCE_ROTTEN_AT_STARTUP 5
+//#define VEH_MAINTENANCE_ROTTEN_AT_STARTUP 5
 
 // How the  damage is computed. Here, a 0% damaged vehicle would be respawned after 100 restarts
 #define VEH_MAINTENANCE_ROTTEN_LOGIC (_damage * 1.04 + 0.03)

@@ -415,11 +415,15 @@ private ["_type","_class","_dir","_oldpos","_action","_distance","_minAltitude",
 			_point = getPos _tmpobject;
 		};
 		// check altitude		
+#ifdef VEH_MAINTENANCE_FIX_OUTOFMAP
 		if (count _point >= 2) then {
 			_point set [2, 0];
 			_point = ATLtoASL _point;
 			_found = (((_point select 2) < _maxAltitude) AND {((_point select 2) > _minAltitude)});
 		};
+#else
+		_found = true;
+#endif
 		/*diag_log(format["fa_smartlocation: Looking for a safe place near original position... _action:%1 _type:%2 suitable:%3 distance:%4", 
 			_action,
 			_type,
