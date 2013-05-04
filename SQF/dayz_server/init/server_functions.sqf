@@ -181,3 +181,5 @@ dayz_recordLogin = {
 	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
 };
+
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fa_hiveMaintenance.sqf";

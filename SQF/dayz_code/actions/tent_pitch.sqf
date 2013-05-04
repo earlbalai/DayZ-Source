@@ -35,7 +35,7 @@ if ((count _worldspace) == 2) then {
 	player setPosATL (getPosATL player);
 	
 	_dis=20;
-	_sfx = "repair";
+	_sfx = "tentunpack";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
