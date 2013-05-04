@@ -41,6 +41,7 @@ for many different parts of the code.
  * [Sharkiller](https://github.com/Sharkiller) (Spanish Tranlations) 
  * [Markolie](https://github.com/Markolie) (Dutch Translations)    
  * [LordGoF](https://github.com/LordGoF) (French Translations)    
+ * [Defwen](https://github.com/Defwen) (Czech Translations)
  
 ------------------------
 Short-term Contributions
@@ -53,7 +54,6 @@ feature.
 * [Elvaron](https://github.com/Elvaron)
 * [Tansien](https://github.com/Tansien)
 * [wriley](https://github.com/wriley)
-* [Defwen](https://github.com/Defwen)
 * [Finest](https://github.com/Finest)
 * [fred41](https://github.com/fred41)
 * [Killzone_kid](https://github.com/Killzonekid)
@@ -71,14 +71,14 @@ feature.
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
-* Special thanks to shinkicker who has listered to all the ideas and who has always been there to bounce ideas back and forth Thanks.
+* Special thanks to shinkicker who has listened to all of the ideas and who has always been there to bounce ideas back and forth Thanks.
 
 ------------------------
 Art Work
 ------------------------
 * Alexander (G17 incombat Icon)
 * Des (Gender images & Gui icon's revamp)
-* [JoeysLucky22] (https://github.com/JoeysLucky22)
+* [JoeysLucky22](https://github.com/JoeysLucky22)
 * [Elvaron](https://github.com/Elvaron)
 
 Contributing
