@@ -31,6 +31,9 @@ class CfgVehicles {
 	class V3S_Base;
 	class Bag_Base_EP1;
 	class Bag_Base_BAF;
+	class House {
+		class DestructionEffects;
+	};
 	class SpawnableWreck : House {};
 
 	#include "CfgVehicles\RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
@@ -144,10 +147,6 @@ class CfgVehicles {
 		gestures = "CfgGesturesDogDZ";
 		fsmDanger = "";
 		fsmFormation = "";
-	};
-	
-	class House {
-		class DestructionEffects;
 	};
 	
 	// This parent class is made to make referring to these objects easier later with allMissionObjects
