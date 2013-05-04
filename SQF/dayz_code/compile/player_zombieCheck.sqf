@@ -39,7 +39,7 @@ _multiplier = 1;
 		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
-				if (DAYZ_disAudial > 55) then { //65
+				if (DAYZ_disAudial > 65) then { //65
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
 				} else {
@@ -72,7 +72,7 @@ _multiplier = 1;
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,270,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//LOS check
 						_cantSee = [_x,_refObj] call dayz_losCheck;
