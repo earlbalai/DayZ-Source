@@ -55,6 +55,7 @@ Serverside affected addons:
 					Small = 8 objects slots, no weapons, no bags.
 					Medium = 16 Objects 1 weapon , no bags
 		* [NEW] - Mi8 Crash site will now spawn Zeds			
+		* [NEW] - All missing vehicles are respawned on startup.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -113,7 +114,8 @@ Serverside affected addons:
 	    * [UPDATED] - Fire Places will no longer act as storage systems.
 	    * [UPDATED] - Fireplace can now only be lit once without adding new wood inside the fireplace.
 	    * [UPDATED] - Fireplace can no longer be picked up after lighting.
-	    * [UPDATED] - Vehilces speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
+	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
+	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
