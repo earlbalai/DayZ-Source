@@ -481,6 +481,7 @@
 			<English>Flare</English>
 			<German>Bengalfeuer</German>
 			<Russian>Фаер</Russian>
+			<Spanish>Bengala</Spanish>
 			<French>Fusée éclairante</French>
 			<Czech>Světlice</Czech>
 		</Key>
@@ -488,6 +489,7 @@
 			<English>Throw</English>
 			<German>Werfen</German>
 			<Russian>Бросить</Russian>
+			<Spanish>Lanzar</Spanish>
 			<French>Lancer</French>
 			<Czech>Hodit</Czech>
 		</Key>
@@ -495,6 +497,7 @@
 			<English>Bandage Myself</English>
 			<German>Selbst verbinden</German>
 			<Russian>Перевязать себя</Russian>
+			<Spanish>Bendarme</Spanish>
 			<French>Panser mes blessures</French>
 			<Czech>Obvázat se</Czech>
 		</Key>
@@ -502,6 +505,7 @@
 			<English>Eat Food</English>
 			<German>Lebensmittel essen</German>
 			<Russian>Съесть еду</Russian>
+			<Spanish>Comer</Spanish>
 			<French>Manger</French>
 			<Czech>Sníst jídlo</Czech>
 		</Key>
@@ -509,6 +513,7 @@
 			<English>Take Morphine</English>
 			<German>Morphium einnehmen</German>
 			<Russian>Принять морфий</Russian>
+			<Spanish>Inyectarse Morfina</Spanish>
 			<French>Prendre Morphine</French>
 			<Czech>Vzít si Morfium</Czech>
 		</Key>
@@ -516,6 +521,7 @@
 			<English>Take Antibiotics</English>
 			<German>Antibiotikum einnehmen</German>
 			<Russian>Принять антибиотики</Russian>
+			<Spanish>Tomar Antibióticos</Spanish>
 			<French>Prendre Antibiotiques</French>
 			<Czech>Vzít si Antibiotika</Czech>
 		</Key>
@@ -523,6 +529,7 @@
 			<English>Drink %1</English>
 			<German>%1 trinken</German>
 			<Russian>Выпить %1</Russian>
+			<Spanish>Tomar %1</Spanish>
 			<French>Boire %1</French>
 			<Czech>Vypít %1</Czech>
 		</Key>
@@ -530,6 +537,7 @@
 			<English>Fill Water</English>
 			<German>Wasser abfüllen</German>
 			<Russian>Наполнить фляжки</Russian>
+			<Spanish>Cargar con Agua</Spanish>
 			<French>Remplir</French>
 			<Czech>Naplnit láhev</Czech>
 		</Key>
@@ -537,6 +545,7 @@
 			<English>Make Fireplace</English>
 			<German>Feuer machen</German>
 			<Russian>Развести костер</Russian>
+			<Spanish>Contruir Fogata</Spanish>
 			<French>Préparer un feu de camp</French>
 			<Czech>Vytvořit ohniště</Czech>
 		</Key>
@@ -544,6 +553,7 @@
 			<English>Harvest Wood</English>
 			<German>Holz sammeln</German>
 			<Russian>Нарубить дров</Russian>
+			<Spanish>Recoger Leña</Spanish>
 			<French>Ramasser du bois</French>
 			<Czech>Nasekat dřevo</Czech>
 		</Key>
@@ -551,6 +561,7 @@
 			<English>Build %1</English>
 			<German>%1 bauen</German>
 			<Russian>Установить %1</Russian>
+			<Spanish>Construir %1</Spanish>
 			<French>Construire %1</French>
 			<Czech>Postavit %1</Czech>
 		</Key>
@@ -558,6 +569,7 @@
 			<English>Take Painkillers</English>
 			<German>Schmerzmittel einnehmen</German>
 			<Russian>Принять болеутоляющие</Russian>
+			<Spanish>Tomar Analgésicos</Spanish>
 			<French>Prendre Antidouleur</French>
 			<Czech>Vzít si prášky na bolest</Czech>
 		</Key>
@@ -565,6 +577,7 @@
 			<English>Use Heatpack</English>
 			<German>Use Heatpack</German>
 			<Russian>Использовать Грелку</Russian>
+			<Spanish>Usar Calentador</Spanish>
 			<French>Utiliser chaufferette</French>
 			<Czech>Použít Heatpack</Czech>
 		</Key>
@@ -574,6 +587,7 @@
 			<English>Entrenching Tool</English>
 			<German>Schanzzeug</German>
 			<Russian>Саперная лопатка</Russian>
+			<Spanish>Pala Militar</Spanish>
 			<French>Outil de tranchée</French>
 			<Czech>Polní lopatka</Czech>
 		</Key>
@@ -581,6 +595,7 @@
 			<English>Collapsible spade used together with the engineering backpack to create field defences</English>
 			<German>Ein Klappspaten, der mit dem Pioniersrucksack zum Verschanzen verwendet werden kann</German>
 			<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
+			<Spanish>Una pala plegable usada para crear defensas en el campo.</Spanish>
 			<French>Une pelle démontable permettant de construire des éléments de défense.</French>
 			<Czech>Polní lopatka používá pro vytvoření obraného postavení jako jsou zákopy či střelecké okopy.</Czech>
 		</Key>
@@ -588,6 +603,7 @@
 			<English>Toolbox</English>
 			<German>Werkzeugkoffer</German>
 			<Russian>Набор инструментов</Russian>
+			<Spanish>Caja de Herramientas</Spanish>
 			<French>Boîte à outils</French>
 			<Czech>Sada nástrojů</Czech>
 		</Key>
@@ -595,6 +611,7 @@
 			<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>
 			<German>Ein Werkzeugkoffer, der zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden kann</German>
 			<Russian>Набор инструментов используется для ремонта поврежденной техники и снаряжения а так же установки укреплений.</Russian>
+			<Spanish>La caja de herramientas puede ser usada para reparar vehículos y equipamiento dañado.</Spanish>
 			<French>Boîte à outils servant à réparer le matériel et les véhicules.</French>
 			<Czech>Sada nástrojů se používá pro opravy poškozených vozidel a vybavení.</Czech>
 		</Key>
@@ -602,6 +619,7 @@
 			<English>Box of Matches</English>
 			<German>Schachtel Streichhölzer</German>
 			<Russian>Коробок спичек</Russian>
+			<Spanish>Caja de Fósforos</Spanish>
 			<French>Boîte d'allumettes</French>
 			<Czech>Krabička zápalek</Czech>
 		</Key>
@@ -609,6 +627,7 @@
 			<English>Box of safety matches for starting a fire under controlled conditions.</English>
 			<German>Eine Schachtel Sicherheitsstreichhölzer, mit dem ein kontrolliertes Feuer gemacht werden kann</German>
 			<Russian>Коробок спичек используется для разведения костра.</Russian>
+			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
 			<French>Boîte d'allumettes suédoises permettant d'allumer un feu.</French>
 			<Czech>Balíček bezpečných zápalek pro zapálení ohně.</Czech>
 		</Key>
@@ -616,6 +635,7 @@
 			<English>Hunting Knife</English>
 			<German>Jagdmesser</German>
 			<Russian>Охотничий нож</Russian>
+			<Spanish>Cuchillo de Caza</Spanish>
 			<French>Couteau de chasseur</French>
 			<Czech>Lovecký nůž</Czech>
 		</Key>
@@ -623,6 +643,7 @@
 			<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
 			<German>Ein Messer, das beim Jagen zum Ausnehmen des Wilds verwendet werden kann</German>
 			<Russian>Нож используется для разделки туш животных в куски мяса.</Russian>
+			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
 			<French>Un couteau servant à dépecer le gibier.</French>
 			<Czech>Nůž, který se používá pro kuchání masa ze zvířat.</Czech>
 		</Key>
@@ -630,6 +651,7 @@
 			<English>Flashlight</English>
 			<German>Taschenlampe</German>
 			<Russian>Фонарик</Russian>
+			<Spanish>Linterna</Spanish>
 			<French>Lampe torche</French>
 			<Czech>Baterka</Czech>
 		</Key>
@@ -637,6 +659,7 @@
 			<English>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
 			<German>Batteriebetriebene Taschenlampe&lt;br/&gt;Batterien: 2 x Typ D</German>
 			<Russian>Фонарик питается двумя батарейками типа D.</Russian>
+			<Spanish>Linterna a pilas&lt;br/&gt;Pilas: 2 x D</Spanish>
 			<French>Lampe torche à piles.&lt;br/&gt;Piles: 2 x Type D</French>
 			<Czech>Klasická baterka na baterie&lt;br/&gt;Baterie: dvě tužkové</Czech>
 		</Key>
@@ -644,6 +667,7 @@
 			<English>Flashlight (Military)</English>
 			<German>Militärtaschenlampe</German>
 			<Russian>Армейский фонарик</Russian>
+			<Spanish>Linterna Militar</Spanish>
 			<French>Lampe torche (Mil.)</French>
 			<Czech>Baterka (Vojenská)</Czech>
 		</Key>
@@ -651,6 +675,7 @@
 			<English>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
 			<German>Militärische, batteriebetriebene Rotlichtlampe&lt;br/&gt;Batterien: 2 x Typ D</German>
 			<Russian>Армейский фонарик светит красным светом и питается двумя батарейками типа D.</Russian>
+			<Spanish>Linterna Militar de luz roja a pilas&lt;br/&gt;Pilas: 2 x D</Spanish>
 			<French>Lampe torche militaire à piles, lumière rouge.&lt;br/&gt;Piles: 2 x Type D</French>
 			<Czech>Vojenská baterka s červeným světlem na baterie&lt;br/&gt;Baterie: dvě tužkové</Czech>
 		</Key>
@@ -658,6 +683,7 @@
 			<English>Bandage</English>
 			<German>Verbandszeug</German>
 			<Russian>Бинты</Russian>
+			<Spanish>Vendaje</Spanish>
 			<French>Pansement</French>
 			<Czech>Obvaz</Czech>
 		</Key>
@@ -665,6 +691,7 @@
 			<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</English>
 			<German>Verbandszeug nach NATO-Standart. Wird zum Stillen von blutenden Wunden verwendet.</German>
 			<Russian>Упаковка бинтов армейская. Используется для перевязки ран.</Russian>
+			<Spanish>Vendaje de primeros auxilios. Usado para detener el sangrado de heridas.</Spanish>
 			<French>Pansement de premier secours, norme OTAN. Utilisé pour stopper une hémorragie.</French>
 			<Czech>Obvaz podle standartů NATO. Slouží pro zastavení krvácení.</Czech>
 		</Key>
@@ -672,6 +699,7 @@
 			<English>Fueltank Parts</English>
 			<German>Treibstofftankteile</German>
 			<Russian>Бензобак</Russian>
+			<Spanish>Tanque de Combustible</Spanish>
 			<French>Réservoir</French>
 			<Czech>Palivová nádrž</Czech>
 		</Key>
@@ -679,6 +707,7 @@
 			<English>An old fueltank that could be used to repair a vehicle with a broken one.</English>
 			<German>Ein alter Treibstofftank, mit dem eventuell der kaputte Tank eines Fahrzeugs repariert werden könnte.</German>
 			<Russian>Бензобак, запчасти из которого можно использовать для ремонта техники.</Russian>
+			<Spanish>Un viejo tanque de combustible que puede ser usado para reparar un vehículo que lo tenga roto.</Spanish>
 			<French>Un réservoir d'occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Náhradní díly pro opravu palivové nádrže u vašeho vozidla.</Czech>
 		</Key>
@@ -686,6 +715,7 @@
 			<English>Car Wheel</English>
 			<German>Rad</German>
 			<Russian>Колесо</Russian>
+			<Spanish>Rueda</Spanish>
 			<French>Roue</French>
 			<Czech>Kolo auta</Czech>
 		</Key>
@@ -693,6 +723,7 @@
 			<English>An old Car Wheel that could be used to repair a vehicle with a broken one.</English>
 			<German>Ein altes Rad, mit dem eventuell ein kaputtes Rad eines Fahrzeugs repariert werden könnte.</German>
 			<Russian>Колесо, которое можно использовать для починки одного колеса на автомобиле.</Russian>
+			<Spanish>Una vieja rueda que puede ser usada para reparar un vehículo.</Spanish>
 			<French>Une roue d'occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Staré kolo, které se ale hodí, pokud máte u auta některé kolo poškozené.</Czech>
 		</Key>
@@ -700,6 +731,7 @@
 			<English>Scrap Metal</English>
 			<German>Metallteile</German>
 			<Russian>Запчасти</Russian>
+			<Spanish>Chatarra</Spanish>
 			<French>Bouts de métal</French>
 			<Czech>Kovový šrot</Czech>
 		</Key>
@@ -707,6 +739,7 @@
 			<English>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</English>
 			<German>Metallteile und verschiedene mechanische Ersatzteile. Nützlich beim Reparieren von Fahrzeugen und Ausrüstung.</German>
 			<Russian>Запчасти используются для починки снаряжения или корпуса техники.</Russian>
+			<Spanish>Chatarra y repuestos mecánicos variados. Útiles para reparar vehículos y equipamiento.</Spanish>
 			<French>Divers bouts de métal pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Různé kovové a mechanické díly. Užitečné pro opravu libovolného vozidla.</Czech>
 		</Key>
@@ -714,6 +747,7 @@
 			<English>Engine Parts</English>
 			<German>Motorteile</German>
 			<Russian>Двигатель</Russian>
+			<Spanish>Partes de Motor</Spanish>
 			<French>Bloc moteur</French>
 			<Czech>Díly motoru</Czech>
 		</Key>
@@ -721,6 +755,7 @@
 			<English>Engine components with oil and lubricant. Everything you would need to repair an engine.</English>
 			<German>Motorteile mit Öl und Schmiere. Alles, was man zum Reparieren eines Motors braucht.</German>
 			<Russian>Двигатель, запчасти из которого используются для ремонта двигателей в технике.</Russian>
+			<Spanish>Componentes de motor con lubricante. Todo lo necesario para reparar un motor.</Spanish>
 			<French>Un moteur ainsi que de l'huile et du lubrifiant. Tout le nécessaire pour changer un moteur.</French>
 			<Czech>Náhraní díly motoru s olejem. Vše, co je potřeba k opravení motoru.</Czech>
 		</Key>
@@ -728,6 +763,7 @@
 			<English>Windscreen Glass</English>
 			<German>Autoglas</German>
 			<Russian>Автомобильное стекло</Russian>
+			<Spanish>Ventana de Vidrio</Spanish>
 			<French>Vitre</French>
 			<Czech>Přední sklo</Czech>
 		</Key>
@@ -735,6 +771,7 @@
 			<English>Brand new auto glass. Could be used to repair glass on a vehicle.</English>
 			<German>Gut erhaltenes Autoglas. Könnte zum Reparieren von Glas an einem Fahrzeug verwendet werden.</German>
 			<Russian>Новое автомобильное стекло в упаковке. Его можно установить на технику.</Russian>
+			<Spanish>Vidrio nuevo para vehículo. Puede ser usado para reparar la ventana de un vehículo.</Spanish>
 			<French>Vitre neuve. Permet de réparer un véhicule.</French>
 			<Czech>Zcela nové sklo pro auta. Lze použít pro opravu skla na vozidle.</Czech>
 		</Key>
@@ -742,6 +779,7 @@
 			<English>Main Rotor Assembly</English>
 			<German>Hauptrotorteile</German>
 			<Russian>Набор запчастей для вертолета</Russian>
+			<Spanish>Rotor Principal</Spanish>
 			<French>Rotor d'hélico</French>
 			<Czech>Hlavní rotor</Czech>
 		</Key>
@@ -749,6 +787,7 @@
 			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in other helicopters.</English>
 			<German>Hydrauliksysteme für einen Helikopter, die zum Reparieren kaputter Rotorwellen in anderen Helikoptern verwendet werden können.</German>
 			<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолета.</Russian>
+			<Spanish>Eje hidráulico del rotor de un helicoptero.</Spanish>
 			<French>Colonne de rotor d'hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
 			<Czech>Hlavní rotor pro vrtulníky. Lze použít při opravě rotoru libovolného vrtulníku.</Czech>
 		</Key>
@@ -756,6 +795,7 @@
 			<English>Water Bottle</English>
 			<German>Wasserflasche</German>
 			<Russian>Фляжка с водой</Russian>
+			<Spanish>Cantimplora</Spanish>
 			<French>Gourde</French>
 			<Czech>Láhev s vodou</Czech>
 		</Key>
@@ -763,6 +803,7 @@
 			<English>A bottle of water that has been filled and can be consumed.</English>
 			<German>Eine Flasche, gefüllt mit Trinkwasser.</German>
 			<Russian>Фляжка с водой для питья.</Russian>
+			<Spanish>Una botella de agua llena que puede consumirse.</Spanish>
 			<French>Gourde (pleine)</French>
 			<Czech>Láhev, která byla naplněna vodou a může být vypita.</Czech>
 		</Key>
@@ -770,6 +811,7 @@
 			<English>Water Bottle (Empty)</English>
 			<German>Leere Wasserflasche</German>
 			<Russian>Фляжка (пустая)</Russian>
+			<Spanish>Cantimplora (Vacía)</Spanish>
 			<French>Gourde (vide)</French>
 			<Czech>Láhev na vodu (prázdná)</Czech>
 		</Key>
@@ -777,6 +819,7 @@
 			<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>
 			<German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
 			<Russian>Пустая фляжка, в которую можно набрать воду.</Russian>
+			<Spanish>Una botella de agua vacía. Puede ser útil si se la llena con agua de nuevo.</Spanish>
 			<French>Une gourde vide. Il serait bien de la remplir à nouveau.</French>
 			<Czech>Prázdná láhev na vodu. Může být znovu naplněna vodou.</Czech>
 		</Key>
@@ -784,6 +827,7 @@
 			<English>Epi-Pen</English>
 			<German>Epinephrin</German>
 			<Russian>Укол адреналина</Russian>
+			<Spanish>Epinefrina</Spanish>
 			<French>Adrénaline</French>
 			<Czech>Adrenalin</Czech>
 		</Key>
@@ -791,6 +835,7 @@
 			<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>
 			<German>Epinephtin-Autoinjektor für intramuskuläre Injektion, um bewusstlose Verletzte wiederzubeleben.</German>
 			<Russian>Укол адреналина для приведения в чувства людей без сознания.</Russian>
+			<Spanish>Epinefrina Autoinyectable. Inyección intramuscular para revivir a alguien inconciente.</Spanish>
 			<French>Adrénaline en auto-injection intra-musculaire "Epipen". Permet de se remettre d'une perte de conscience.</French>
 			<Czech>Injekce adrenalinu (epinefrinu). Používá se pro oživení osoby z bezvědomí.</Czech>
 		</Key>
@@ -798,6 +843,7 @@
 			<English>Morphine Auto-Injector</English>
 			<German>Morphium</German>
 			<Russian>Морфий</Russian>
+			<Spanish>Morfina</Spanish>
 			<French>Morphine</French>
 			<Czech>Morfium</Czech>
 		</Key>
@@ -805,6 +851,7 @@
 			<English>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</English>
 			<German>Morphium-Autoinjektor für intramuskuläre Injektion, um starke Schmerzen, etwa von Knochenbrüchen, zu stillen.</German>
 			<Russian>Морфий используется для местного обезболивания при переломах.</Russian>
+			<Spanish>Morfina Autoinyectable. Inyección instramuscular usada para controlar el dolor severo como el de una fractura.</Spanish>
 			<French>Morphine en auto-injection intra-musculaire. Permet de traiter les douleurs aigües, comme les fractures.</French>
 			<Czech>Injekce morfia, kterou lze použít proti silné bolesti jako jsou např. zlomené kosti.</Czech>
 		</Key>
@@ -812,6 +859,7 @@
 			<English>Blood Bag</English>
 			<German>Blutkonserve</German>
 			<Russian>Пакет крови</Russian>
+			<Spanish>Bolsa de Sangre</Spanish>
 			<French>Poche de sang</French>
 			<Czech>Krevní sáček</Czech>
 		</Key>
@@ -819,6 +867,7 @@
 			<English>Bag of blood used for administering a Blood transfusion.</English>
 			<German>Eine Blutkonserve zum Legen einer Bluttransfusion.</German>
 			<Russian>Пакет крови используется для переливания при кровопотерях.</Russian>
+			<Spanish>Bolsa de sangre usada para administrar transfusiones de sangre.</Spanish>
 			<French>Sang permettant de transfuser un co-équipier.</French>
 			<Czech>Krevní sáček, který se používá pro krevní transfúzi.</Czech>
 		</Key>
@@ -826,6 +875,7 @@
 			<English>Antibiotics</English>
 			<German>Antibiotikum</German>
 			<Russian>Антибиотики</Russian>
+			<Spanish>Antibióticos</Spanish>
 			<French>Antibiotiques</French>
 			<Czech>Antibiotika</Czech>
 		</Key>
@@ -833,6 +883,7 @@
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
 			<German>Azithromycin ist ein Breitbandantibiotikum, das zum Behandeln oder Vorbeugen von verschiedenen bakteriellen Infektionen verwendet werden kann.</German>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales.</Spanish>
 			<French>L'azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi.</Czech>
 		</Key>
@@ -840,6 +891,7 @@
 			<English>Painkillers</English>
 			<German>Schmerzmittel</German>
 			<Russian>Болеутоляющие</Russian>
+			<Spanish>Analgésicos</Spanish>
 			<French>Antalgiques</French>
 			<Czech>Prášky proti bolesti</Czech>
 		</Key>
@@ -847,6 +899,7 @@
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflamation caused by moderate wounds.</English>
 			<German>Ein Schmerzmittel, das zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden verwendet werden kann.</German>
 			<Russian>Слабое болеутоляющие отлично подходит для подавления боли от небольших ранений.</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas.</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours.</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti způsobené běžnými zraněními. </Czech>
 		</Key>
@@ -854,7 +907,7 @@
 			<English>Watch (Toggle)</English>
 			<German>Uhr (umsch.)</German>
 			<Italian>Orologio (cambia)</Italian>
-			<Spanish>Reloj (cambiar)</Spanish>
+			<Spanish>Reloj (Conmutar)</Spanish>
 			<French>Montre (bascule)</French>
 			<Czech>Hodinky (trvale)</Czech>
 			<Russian>Часы</Russian>
@@ -887,6 +940,7 @@
 			<English>Jerry Can</English>
 			<German>Kanister</German>
 			<Russian>Канистра с топливом</Russian>
+			<Spanish>Bidón</Spanish>
 			<French>Jerrican</French>
 			<Czech>Kanystr</Czech>
 		</Key>
@@ -894,6 +948,7 @@
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
 			<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
+			<Spanish>Bidón de 20 litros que puede ser usado para recargar combustible en los vehículos.</Spanish>
 			<French>Jerrican de 20 litres pour faire le plein des véhicules.</French>
 			<Czech>Kanystr o velikosti 20 litrů. Může být použit pro tankování vozidel a jako palivo pro generátory.</Czech>
 		</Key>
@@ -901,6 +956,7 @@
 			<English>Raw Meat</English>
 			<German>Rohes Fleisch</German>
 			<Russian>Сырое мясо</Russian>
+			<Spanish>Carne Cruda</Spanish>
 			<French>Viande crue</French>
 			<Czech>Syrové maso</Czech>
 		</Key>
@@ -908,6 +964,7 @@
 			<English>Meat Steak cut from an animal to be used for sustainment, must be cooked prior to eating.</English>
 			<German>Ein Stück Fleisch von einem Tier, das zubereitet gegessen werden kann.</German>
 			<Russian>Вырезка сырого мяса, снятого с разделанного животного. Приготовление на огне обязательно.</Russian>
+			<Spanish>Currasco de carne cortado de un animal para ser usado para sobrevivir, debería ser cocinado antes de comer.</Spanish>
 			<French>Viande crue pouvant servir de repas, qui cependant devrait être cuite préalablement.</French>
 			<Czech>Syrové maso vykuchané ze zvířete. Před konzumací by mělo být upečeno.</Czech>
 		</Key>
@@ -915,6 +972,7 @@
 			<English>Cooked Meat</English>
 			<German>Zubereitetes Fleisch</German>
 			<Russian>Жаренное мясо</Russian>
+			<Spanish>Carne Cocinada</Spanish>
 			<French>Viande cuite</French>
 			<Czech>Upečené maso</Czech>
 		</Key>
@@ -922,6 +980,7 @@
 			<English>Meat Steak that has been cooked at a fireplace and can be consumed for sustainment.</English>
 			<German>Ein Stück Fleisch, das über einem Feuer essfertig gebraten wurde.</German>
 			<Russian>Кусок жаренного на огне мяса.</Russian>
+			<Spanish>Currasco de carne que fue cocinado en una fogata y puede ser consumido.</Spanish>
 			<French>Viande cuite au feu de bois. En manger vous fera reprendre des forces.</French>
 			<Czech>Toto maso bylo upečeno a může být konzumováno.</Czech>
 		</Key>
@@ -929,6 +988,7 @@
 			<English>Can (Baked Beans)</English>
 			<German>Dose (Bohnen)</German>
 			<Russian>Банка (Бобы)</Russian>
+			<Spanish>Lata (Frijoles al Horno)</Spanish>
 			<French>Conserve (Haricots)</French>
 			<Czech>Plechovka (Upečené fazole)</Czech>
 		</Key>
@@ -936,6 +996,7 @@
 			<English>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</English>
 			<German>Eine essfertige Dose Bohnen. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
 			<Russian>Банка вареных бобов в соусе. Срок хранения до 5 лет.</Russian>
+			<Spanish>Lata de frijoles cocinados al horno.</Spanish>
 			<French>Boîte d'haricots pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Konzervované pečené fazole. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
@@ -943,6 +1004,7 @@
 			<English>Can (Sardines)</English>
 			<German>Dose (Sardinen)</German>
 			<Russian>Банка (Сардины)</Russian>
+			<Spanish>Lata (Sardinas)</Spanish>
 			<French>Conserve (Sardines)</French>
 			<Czech>Plechovka (Sardinky)</Czech>
 		</Key>
@@ -950,6 +1012,7 @@
 			<English>Canned sardines used for sustainment. Lasts well over five years if stored correctly.</English>
 			<German>Eine essfertige Dose Sardinen. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
 			<Russian>Банка консервированных сардин. Срок хранения до 5 лет.</Russian>
+			<Spanish>Lata de sardinas listas para consumir.</Spanish>
 			<French>Boîte de sardines, pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Konzervované sardinky. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
@@ -957,6 +1020,7 @@
 			<English>Can (Frank &amp; Beans)</English>
 			<German>Dose (Bohnen und Würste)</German>
 			<Russian>Банка (Фасоль с мясом)</Russian>
+			<Spanish>Lata (Frank &amp; Beans)</Spanish>
 			<French>Conserve (William Saurien)</French>
 			<Czech>Plechovka (Frankovy fazole)</Czech>
 		</Key>
@@ -964,6 +1028,7 @@
 			<English>Canned Beans and Sausages used for sustainment. Lasts well over five years if stored correctly.</English>
 			<German>Eine essfertige Dose Bohnen und Würste. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
 			<Russian>Банка консервированной фасоли с мясом. Срок хранения до 5 лет.</Russian>
+			<Spanish>Lata de frijoles y salchichas lista para consumir.</Spanish>
 			<French>Une boîte d'haricots et saussisses en sauce. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Fazole a párky v plechovce. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
@@ -971,6 +1036,7 @@
 			<English>Can (Pasta)</English>
 			<German>Dose (Nudeln)</German>
 			<Russian>Банка (Лапша)</Russian>
+			<Spanish>Lata (Pasta)</Spanish>
 			<French>Conserve (Pâtes)</French>
 			<Czech>Plechovka (Těstoviny)</Czech>
 		</Key>
@@ -978,6 +1044,7 @@
 			<English>Canned Macaroni used for sustainment. Lasts well over five years if stored correctly.</English>
 			<German>Eine essfertige Dose Nudeln. Bei richtiger Lagerung weit über fünf Jahre haltbar.</German>
 			<Russian>Банка лапши в соусе. Срок хранения до 5 лет.</Russian>
+			<Spanish>Lata de macarrones listos para consumir.</Spanish>
 			<French>Macaroni en boîte, pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Konzerva plná makarónů. Při správném skladování vydrží i pět let. </Czech>
 		</Key>
@@ -985,6 +1052,7 @@
 			<English>Empty Tin Can</English>
 			<German>Leere Dose</German>
 			<Russian>Пустая консервная банка</Russian>
+			<Spanish>Lata Vacía</Spanish>
 			<French>Boîte vide</French>
 			<Czech>Prázdná plechovka na jídlo</Czech>
 		</Key>
@@ -992,6 +1060,7 @@
 			<English>An empty tin can that no longer contains any food, or anything usable.</English>
 			<German>Eine leere Dose, in der einmal Essen oder andere nützliche Sachen waren.</German>
 			<Russian>Пустая консервная банка совершенно пуста и бесполезна.</Russian>
+			<Spanish>Una lata vacía que ya no contiene ninguna comida o algo usable.</Spanish>
 			<French>Boîte de conserve vide, dont la seule utilité est de faire éventuellement diversion.</French>
 			<Czech>Kdysi tato plechovka obsahovala jídlo, teď je prázdná.</Czech>
 		</Key>
@@ -999,6 +1068,7 @@
 			<English>Empty Whiskey Bottle</English>
 			<German>Leere Whiskeyflasche</German>
 			<Russian>Пустая бутылка виски</Russian>
+			<Spanish>Botella de Whisky Vacía</Spanish>
 			<French>Bouteille de Whisky vide</French>
 			<Czech>Prádná flaška od Whiskey</Czech>
 		</Key>
@@ -1006,6 +1076,7 @@
 			<English>A cracked empty whiskey bottle that no longer contains anything.</English>
 			<German>Eine leere Whiskeyflasche. Sie ist leider undicht.</German>
 			<Russian>Треснутая бутылка виски не содержит в себе абсолютно ничего.</Russian>
+			<Spanish>Una botella de whisky vacía.</Spanish>
 			<French>Une bouteille fêlée, sans son précieux brevage.</French>
 			<Czech>Popraskaná láhev od Whisky, která už neobsahuje ani kapku.</Czech>
 		</Key>
@@ -1013,6 +1084,7 @@
 			<English>Empty Soda Can</English>
 			<German>Leere Getränkedose</German>
 			<Russian>Пустая банка газировки</Russian>
+			<Spanish>Lata de Gaseosa Vacía</Spanish>
 			<French>Canette vide</French>
 			<Czech>Prázdná plechovka na pití</Czech>
 		</Key>
@@ -1020,6 +1092,7 @@
 			<English>A aluminium can that once contained a tasty carbonated beverage, and now contains nothing.</English>
 			<German>Eine Aluminiumdose, in der einmal ein köstliches, kohlensäurehaltiges Getränk war.</German>
 			<Russian>Алюминиевая банка, которая однажды содержала вкусный газированный напиток и теперь пуста.</Russian>
+			<Spanish>Una lata de aluminio que contenía una deliciosa bebida carbonatada y ahora no contiene nada.</Spanish>
 			<French>Une canette en alu, qui jadis a contenu du soda.</French>
 			<Czech>Kdysi tato hliníková plechovka obsahovala chutný sycený nápoj. Teď v ní nic není.</Czech>
 		</Key>
@@ -1027,6 +1100,7 @@
 			<English>Soda Can (Coke)</English>
 			<German>Dose (Coke)</German>
 			<Russian>Газировка (Кола)</Russian>
+			<Spanish>Gaseosa (CocaCola)</Spanish>
 			<French>Canette (Coca)</French>
 			<Czech>Plechovka (Kola)</Czech>
 		</Key>
@@ -1034,6 +1108,7 @@
 			<English>Soda Can (Pepsi)</English>
 			<German>Dose (Pepsi)</German>
 			<Russian>Газировка (Пепси)</Russian>
+			<Spanish>Gaseosa (Pepsi)</Spanish>
 			<French>Canette (Pepsi)</French>
 			<Czech>Plechovka (Pepsi)</Czech>
 		</Key>
@@ -1041,6 +1116,7 @@
 			<English>An aluminium can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives.</English>
 			<German>Eine Alumniumdose, in der ein köstliches, kohlensäurehaltiges Getränk voller Zucker, künstlicher Aromen und Konservierungsmittel</German>
 			<Russian>Алюминиевая банка со вкусным газированным напитком с сахаром, искусственными ароматизаторами и консервантами.</Russian>
+			<Spanish>Una lata de aluminio que contenía una deliciosa bebida carbonatada y ahora no contiene nada.</Spanish>
 			<French>Une canette en alu, contenant un breuvage goutu composé de sucre, d'arômes artificiels et de conservateurs.</French>
 			<Czech>Hliníková plechovka, která obsahuje chutný sycený nápoj plný cukru, umělých příchutí a konzervačních látek.</Czech>
 		</Key>
@@ -1048,6 +1124,7 @@
 			<English>Soda Can (Mountain Dew)</English>
 			<German>Dose (Mountain Dew)</German>
 			<Russian>Газировка (Маунтин Дью)</Russian>
+			<Spanish>Gaseosa (Mountain Dew)</Spanish>
 			<French>Canette (Mountain Dew)</French>
 			<Czech>Plechovka(Mountain Dew)</Czech>
 		</Key>
@@ -1055,6 +1132,7 @@
 			<English>Jerry Can (Empty)</English>
 			<German>Leerer Kanister</German>
 			<Russian>Канистра (пустая)</Russian>
+			<Spanish>Bidón (Vacío)</Spanish>
 			<French>Jerrican (vide)</French>
 			<Czech>Kanystr (Prázdný)</Czech>
 		</Key>
@@ -1062,6 +1140,7 @@
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>
 			<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
 			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
+			<Spanish>Un bidón de 20 litros vacío que puede ser llenado en estaciones de servicio.</Spanish>
 			<French>Un Jerrican de 20 litres, vide. Peut être rempli en siphonnant les cuves à fioul de stations-service.</French>
 			<Czech>Prázdný 20 litrový kanystr, který může být naplněn u benzínových static nebo aut.</Czech>
 		</Key>
@@ -1069,6 +1148,7 @@
 			<English>Wood Pile</English>
 			<German>Holzstapel</German>
 			<Russian>Дрова</Russian>
+			<Spanish>Pila de Leña</Spanish>
 			<French>Tas de bois</French>
 			<Czech>Hromádka dřeva</Czech>
 		</Key>
@@ -1076,6 +1156,7 @@
 			<English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
 			<German>Ein kleiner Stapel frisch geschlagenes Holz, dass neben einiger anderer Dingen dazu verwendet werden kann ein Feuer zu machen.</German>
 			<Russian>Кучка дров, идеально подойдет, чтобы развести костер.</Russian>
+			<Spanish>Una pequeña pila de leña recien cortada que puede ser usada para crear una fogata y varias otras cosas.</Spanish>
 			<French>Un peu de bois qui permet de préparer du feu, entre autre.</French>
 			<Czech>Hromádka čerstvě nasekaného dřeva, které může být použito pro vytvoření ohniště a další různé věci.</Czech>	
 		</Key>
@@ -1083,6 +1164,7 @@
 			<English>Heatpack</English>
 			<German>Heatpack</German>
 			<Russian>Heatpack</Russian>
+			<Spanish>Calentador</Spanish>
 			<French>Chaufferette</French>
 			<Czech>Heatpack</Czech>
 		</Key>
@@ -1090,6 +1172,7 @@
 			<English>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</English>
 			<German>Ein Heizkissen, wenn Sie die Kristallisation beginnen erwärmt. Wird verwendet, um schnell Wärme an den Körper liefern.</German>
 			<Russian>Грелка-подушка, которая греет, когда вы замерзаете. Используется для быстрого согревания вашего тела.</Russian>
+			<Spanish>Una almohadilla térmica que proporciona un calentamiento rápido a tu cuerpo previniendo la hipotermia.</Spanish>
 			<French>Poche produisant de la chaleur via un processus de cristallisation. Permet de réchauffer rapidement votre corps.</French>
 			<Czech>Heatpack, který se na principu krystalizace ohřeje. Používá se pro rychlé ohřátí těla.</Czech>
 		</Key>
@@ -1147,6 +1230,7 @@
 			<English>Hunting Rifle</English>
 			<German>Jagdgewehr</German>
 			<Russian>Охотничье ружьё</Russian>
+			<Spanish>Rifle de Caza</Spanish>
 			<French>Fusil de chasse</French>
 			<Czech>Lovecká puška</Czech>
 		</Key>
@@ -1154,6 +1238,7 @@
 			<English>Cardboard Box (Medical)</English>
 			<German>Pappkarton (Medizin)</German>
 			<Russian>Картонная коробка (Медикаменты)</Russian>
+			<Spanish>Caja Médica</Spanish>
 			<French>Carton (Médicaments)</French>
 			<Czech>Krabice (lékařské zásoby)</Czech>
 		</Key>
@@ -1161,6 +1246,7 @@
 			<English>Ammunition Box</English>
 			<German>Munitionskiste</German>
 			<Russian>Коробка с патронами</Russian>
+			<Spanish>Caja de Munición</Spanish>
 			<French>Boîte de munitions</French>
 			<Czech>Krabice s municí</Czech>
 		</Key>
@@ -1168,6 +1254,7 @@
 			<English>Shotgun 12 gauge</English>
 			<German>Flinte, Kaliber 12</German>
 			<Russian>Дробовик 12 калибра</Russian>
+			<Spanish>Escopeta calibre 12</Spanish>
 			<French>Fusil cal. 12</French>
 			<Czech>Brokovnice cal. 12</Czech>
 		</Key>
@@ -1175,6 +1262,7 @@
 			<English>The Remington Model 870 is a pump-action shotgun with a military torch attachment.</English>
 			<German>Die Remington Model 870 ist eine Pumpgun mit Halterung für eine Taschenlampe.</German>
 			<Russian>Ремингтон Модель 870 это помповый дробовик с креплением для фонарика</Russian>
+			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna militar como accesorio.</Spanish>
 			<French>Le modèle Remington 870 est un fusil à pompe avec une torche militaire.</French>
 			<Czech>Remington 870 je opakovací brokovnice s vojenským upevněním.</Czech>
 		</Key>
@@ -1182,6 +1270,7 @@
 			<English>Remington 870 (Flashlight)</English>
 			<German>Remington 870 mit Taschenlampe</German>
 			<Russian>Ремингтон 870 (с фонариком)</Russian>
+			<Spanish>Remington 870 (Linterna)</Spanish>
 			<French>Remington 870 (+Torche)</French>
 			<Czech>Remington 870 (s baterkou)</Czech>
 		</Key>
@@ -1189,6 +1278,7 @@
 			<English>The Remington Model 870 is a pump-action shotgun. This rifle has a torch attached.</English>
 			<German>Die Remington Model 870 ist eine Pumpgun. An diese ist eine Taschenlampe angebracht.</German>
 			<Russian>Ремингтон Модель 870 это помповый дробовик с армейским фонариком</Russian>
+			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna como accesorio.</Spanish>
 			<French>Le modèle Remington 870 est un fusil à pompe avec une lampe torche.</French>
 			<Czech>Remington 870 je opakovací brokovnice s upevněním, např. pro baterku.</Czech>
 		</Key>
@@ -1196,6 +1286,7 @@
 			<English>Compound Crossbow</English>
 			<German>Kompositarmbrust</German>
 			<Russian>Спортивный арбалет</Russian>
+			<Spanish>Ballesta Compuesta</Spanish>
 			<French>Arbalète composite</French>
 			<Czech>Kuše</Czech>
 		</Key>
@@ -1203,6 +1294,7 @@
 			<English>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</English>
 			<German>Die Kompositarbmbrust ist, wenn man das Zielen beherrscht, eine starke, einzelschüssige Waffe mit kurzer Reichweite und langer Nachladezeit.</German>
 			<Russian>Спортивный арбалет требует сноровки для точной стрельбы, превращаясь в мощное однозарядное оружие на коротких дистанциях.</Russian>
+			<Spanish>La ballesta compuesta es, una vez que se domina el apuntado, una poderasa arma de único tiro a corta distancia con largo tiempo de recarga.</Spanish>
 			<French>Une fois maîtrisée, l'arbalète composite permet de tirer un coup puissant mais avec un long temps de chargement.</French>
 			<Czech>Kuše je tichá a účiná zbraň na blízko. Nevýhodou je dlouhá nabíjecí doba.</Czech>
 		</Key>
@@ -1210,6 +1302,7 @@
 			<English>Double-barreled Shotgun</English>
 			<German>Double-barreled Shotgun</German>
 			<Russian>Double-barreled Shotgun</Russian>
+			<Spanish>Escopeta de doble cañon</Spanish>
 			<French>Fusil à 2 coups</French>
 			<Czech>Dvouhlavňová brokovnice</Czech>
 		</Key>
@@ -1217,6 +1310,7 @@
 			<English>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</English>
 			<German>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</German>
 			<Russian>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</Russian>
+			<Spanish>Una escopeta de doble barril permite disparar dos tiros en un corto periodo de tiempo.</Spanish>
 			<French>Fusil doté de 2 canons parallèles, permettant de tirer 2 coups rapprochés.</French>
 			<Czech>Dvouhlavňová brokovnice je brokovnice s dvěma hlavněmi vedle sebe, což umožnuje vystřelit dvakrát hned za sebou.</Czech>
 		</Key>
@@ -1224,6 +1318,7 @@
 			<English>15Rnd. 1866 Pellets</English>
 			<German>15 Schuss 1866 Schrot</German>
 			<Russian>15 Патрон 1866 дробь</Russian>
+			<Spanish>15 rondas. Perdigones para 1866</Spanish>
 			<French>15 plombs pour 1866</French>
 			<Czech>15 náb. 1866 Kuličkové</Czech>
 		</Key>
@@ -1231,6 +1326,7 @@
 			<English>Caliber: 12 gauge</English>
 			<German>Kaliber 12</German>
 			<Russian>12-й калибр</Russian>
+			<Spanish>Calibre 12</Spanish>
 			<French>Calibre 12</French>
 			<Czech>Ráže 12</Czech>
 		</Key>
@@ -1238,6 +1334,7 @@
 			<English>15Rnd. 1866 Slugs</English>
 			<German>15 Schuss 1866 Kugel</German>
 			<Russian>15 Патрон 1866 пуля</Russian>
+			<Spanish>15 Rondas. Balas para 1866</Spanish>
 			<French>15 balles pour 1866</French>
 			<Czech>15 náb. 1866 Slugs</Czech>
 		</Key>
@@ -1245,6 +1342,7 @@
 			<English>Caliber: 12 gauge</English>
 			<German>Kaliber 12</German>
 			<Russian>12-й калибр</Russian>
+			<Spanish>Calibre 12</Spanish>
 			<French>Calibre 12</French>
 			<Czech>Ráže 12</Czech>
 		</Key>
@@ -1252,6 +1350,7 @@
 			<English>Road Flare</English>
 			<German>Bengalfeuer</German>
 			<Russian>Сигнальный фаер</Russian>
+			<Spanish>Bengala</Spanish>
 			<French>Fusée éclairante</French>
 			<Czech>Světlice</Czech>
 		</Key>
@@ -1259,6 +1358,7 @@
 			<English>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</English>
 			<German>Handgeführtes Bengalfeuer, häufig in Notfallkästen in Fahrzeugen gefunden. Eine Ladung brennt etwa 5 Minuten.</German>
 			<Russian>Гражданский сигнальный фаер, который обычно используют спасатели. Горит около пяти минут.</Russian>
+			<Spanish>Bengala manual comúnmente encontrada en los kits de emergencia al costado del camino. Quemará por aproximadamente cinco minutos.</Spanish>
 			<French>Fusée de détresse que l'on trouve dans les trousses de secours. Eclaire pendant 5 minutes environs.</French>
 			<Czech>Ruční světlice, kterou lze často najít v pohotovostních balíčcích. Hoří přibližně pět minut.</Czech>
 		</Key>
@@ -1266,6 +1366,7 @@
 			<English>Chemlight (Green)</English>
 			<German>Knicklicht (Grün)</German>
 			<Russian>Химсвет (Зеленый)</Russian>
+			<Spanish>Chemlight (Verde)</Spanish>
 			<French>Bâton lumineux (vert)</French>
 			<Czech>Chemické světlo (Zelená)</Czech>
 		</Key>
@@ -1273,6 +1374,7 @@
 			<English>Chemlight</English>
 			<German>Knicklicht</German>
 			<Russian>Химсвет</Russian>
+			<Spanish>Chemlight</Spanish>
 			<French>Bâton lumineux</French>
 			<Czech>Chemické světlo</Czech>
 		</Key>
@@ -1280,6 +1382,7 @@
 			<English>Chemical Lightstick providing 60 minutes illumination within a small area when activated and thrown. Available in assorted colors.</English>
 			<German>Ein chemisches Knicklicht, das für etwa 60 Minuten Licht gibt, nachdem es geknickt und geworfen wurde. In verschiedenen Farben verfügbar.</German>
 			<Russian>Химический источник света, освещающий небольшую область на период до 60 минут после броска. Бывает разных цветов.</Russian>
+			<Spanish>Tubo luminoso que provee 60 minutos de iluminación de corto alcance cuando es activada y lanzada. Disponible en varios colores.</Spanish>
 			<French>Un bâton produisant une lumière fluorescente pendant 60 minutes sur un périmètre restreint. Existe de plusieurs couleurs.</French>
 			<Czech>Chemické světlo, které poskytuje po aktivaci 60 minutové osvětlení v malém prostoru. K dispozici v různých barvách.</Czech>
 		</Key>
@@ -1287,6 +1390,7 @@
 			<English>Chemlight (Red)</English>
 			<German>Knicklicht (Rot)</German>
 			<Russian>Химсвет (Красный)</Russian>
+			<Spanish>Chemlight (Roja)</Spanish>
 			<French>Bâton lumineux (rouge)</French>
 			<Czech>Chemické světlo (Červené)</Czech>
 		</Key>
@@ -1294,6 +1398,7 @@
 			<English>Chemlight (Blue)</English>
 			<German>Knicklicht (Blau)</German>
 			<Russian>Химсвет (Синий)</Russian>
+			<Spanish>Chemlight (Azul)</Spanish>
 			<French>Bâton lumineux (bleu)</French>
 			<Czech>Chemické světlo (Modré)</Czech>
 		</Key>
@@ -1301,6 +1406,7 @@
 			<English>Hatchet</English>
 			<German>Hatchet</German>
 			<Russian>Топорик</Russian>
+			<Spanish>Hacha</Spanish>
 			<French>Hâche</French>
 			<Czech>Sekera</Czech>
 		</Key>
@@ -1308,6 +1414,7 @@
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
 			<German>A single-handed striking tool with a sharp blade used to cut and split wood.</German>
 			<Russian>Топорик отлично подойдет для рубки дров.</Russian>
+			<Spanish>Una herramienta con una hoja afilada usada para cortar madera.</Spanish>
 			<French>Un outil à une main doté d'une lame tranchante, utilisé pour couper et fendre du bois.</French>
 			<Czech>Jednoruční nástroj, který se používá pro sekání dřeva.</Czech>
 		</Key>
@@ -1315,6 +1422,7 @@
 			<English>Survivor</English>
 			<German>Überlebender</German>
 			<Russian>Выживший</Russian>
+			<Spanish>Sobreviviente</Spanish>
 			<French>Survivant</French>
 			<Czech>Přeživší</Czech>
 		</Key>
