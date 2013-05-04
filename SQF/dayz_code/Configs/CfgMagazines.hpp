@@ -349,12 +349,12 @@ class CfgMagazines {
 	};
 	//add here any magazines types you want to be re-combined like shown before
 	
-	#include "CombineMag.hpp"
-	#include "FoodEdible.hpp"
-	#include "FoodMeatCooked.hpp"
-	#include "FoodMeatRaw.hpp"
-	#include "ItemSoda.hpp"
-	#include "ItemSodaEmpty.hpp"
-	#include "MeleeSwing.hpp"
-	#include "TrashTinCan.hpp"
+	#include "CfgMagazines\CombineMag.hpp"
+	#include "CfgMagazines\FoodEdible.hpp"
+	#include "CfgMagazines\FoodMeatCooked.hpp"
+	#include "CfgMagazines\FoodMeatRaw.hpp"
+	#include "CfgMagazines\ItemSoda.hpp"
+	#include "CfgMagazines\ItemSodaEmpty.hpp"
+	#include "CfgMagazines\MeleeSwing.hpp"
+	#include "CfgMagazines\TrashTinCan.hpp"
 };
