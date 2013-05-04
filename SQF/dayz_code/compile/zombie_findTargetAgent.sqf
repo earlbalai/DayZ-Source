@@ -3,7 +3,7 @@ _agent = _this;
 _target = objNull;
 _targets = [];
 _targetDis = [];
-_range = 300;
+_range = 150;
 _manDis = 0;
 
 _targets = _agent getVariable ["targets",[]];
