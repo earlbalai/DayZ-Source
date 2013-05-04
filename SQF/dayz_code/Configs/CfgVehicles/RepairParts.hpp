@@ -64,10 +64,10 @@ class RepairParts : AllVehicles
 		part = "PartGlass";
 	};
 	class HitVRotor {
-		part = "PartVRotor";
+		part = "PartGeneric";
 	};
 	class HitHRotor {
-		part = "PartGeneric";
+		part = "PartVRotor";
 	};
 	class HitAvionics {
 		part = "PartGeneric";

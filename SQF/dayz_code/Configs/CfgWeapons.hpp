@@ -1,8 +1,8 @@
 class CfgWeapons {
 	class ItemCore;
 	
-	#include "ItemEtool.hpp"
-	#include "ItemShovel.hpp"
+	#include "CfgWeapons\ItemEtool.hpp"
+	#include "CfgWeapons\ItemShovel.hpp"
 	
 	class ItemMap_Debug: ItemCore {
 		descriptionshort = "Debug Map - Admin use only";

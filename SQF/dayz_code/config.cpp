@@ -13,7 +13,7 @@
 
 #define EAST 0 // (Russian)
 
-#include "basicdefines.hpp"
+#include "Configs\basicdefines.hpp"
 
 class CfgPatches {
 	class dayz_code {
@@ -301,14 +301,14 @@ class RscStructuredTextGUI: RscStructuredText
 	};
 };
 //#include "CfgWorlds.hpp"
-#include "cfgMoves.hpp"
-#include "rscTitles.hpp"
-#include "CfgVehicles.hpp"
-#include "CFGWeapons\CfgWeapons.hpp"
-#include "CfgMagazines\CfgMagazines.hpp"
-#include "cfgLoot.hpp"
-#include "CfgMarkers.hpp"
-#include "CfgAmmo.hpp"
+#include "Configs\cfgMoves.hpp"
+#include "Configs\rscTitles.hpp"
+#include "Configs\CfgVehicles.hpp"
+#include "Configs\CfgWeapons.hpp"
+#include "Configs\CfgMagazines.hpp"
+#include "Configs\cfgLoot.hpp"
+#include "Configs\CfgMarkers.hpp"
+#include "Configs\CfgAmmo.hpp"
 
 class CfgSurvival {
 	class Inventory {

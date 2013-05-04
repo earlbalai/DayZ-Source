@@ -30,33 +30,33 @@ class CfgVehicles {
 	class Bag_Base_EP1;
 	class Bag_Base_BAF;
 
-	#include "CFGVehilces\RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
+	#include "CfgVehicles\RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
 	//ZEDS
-	#include "CFGVehilces\Zeds.hpp" //old type zeds
-	#include "CFGVehilces\NewZeds.hpp" //new type zeds
+	#include "CfgVehicles\Zeds.hpp" //old type zeds
+	#include "CfgVehicles\NewZeds.hpp" //new type zeds
 	//Survivor Skins	
-	#include "CFGVehilces\Skins.hpp"
+	#include "CfgVehicles\Skins.hpp"
 	//Bags
-	#include "CFGVehilces\Bags.hpp"
+	#include "CfgVehicles\Bags.hpp"
 	//Includes all DayZ Vehilces
 	//Car's
-	#include "CFGVehilces\Car\HMMWV.hpp"
-	#include "CFGVehilces\Car\CAR_HATCHBACK.hpp"
-	#include "CFGVehilces\Car\UAZ_CDF.hpp"
-	#include "CFGVehilces\Car\CAR_SEDAN.hpp"
+	#include "CfgVehicles\Car\HMMWV.hpp"
+	#include "CfgVehicles\Car\CAR_HATCHBACK.hpp"
+	#include "CfgVehicles\Car\UAZ_CDF.hpp"
+	#include "CfgVehicles\Car\CAR_SEDAN.hpp"
 	//Helicopter's
-	#include "CFGVehilces\Helicopter\MI17.hpp"
-	#include "CFGVehilces\Helicopter\UH1H.hpp"
-	#include "CFGVehilces\Helicopter\AH6X.hpp"
-	#include "CFGVehilces\Helicopter\MH6J_DZ.hpp"
+	#include "CfgVehicles\Helicopter\MI17.hpp"
+	#include "CfgVehicles\Helicopter\UH1H.hpp"
+	#include "CfgVehicles\Helicopter\AH6X.hpp"
+	#include "CfgVehicles\Helicopter\MH6J_DZ.hpp"
 	//Plane's
 	
 	//Bikes
-	#include "CFGVehilces\Bikes\ATV_US_EP1.hpp"
-	#include "CFGVehilces\Bikes\ATV_CZ_EP1.hpp"
-	#include "CFGVehilces\Bikes\TT650_Ins.hpp"
+	#include "CfgVehicles\Bikes\ATV_US_EP1.hpp"
+	#include "CfgVehicles\Bikes\ATV_CZ_EP1.hpp"
+	#include "CfgVehicles\Bikes\TT650_Ins.hpp"
 	//Boat
-	#include "CFGVehilces\Boat\PBX.hpp"
+	#include "CfgVehicles\Boat\PBX.hpp"
 
 		
 	class Land_Fire;
@@ -1099,8 +1099,8 @@ class CfgVehicles {
 		};
 	};
 
-	#include "CFGVehilces\WeaponHolder.hpp"	
+	#include "CfgVehicles\WeaponHolder.hpp"	
 };
 class CfgNonAIVehicles {
-	#include "CFGVehilces\StreetLamps.hpp"
+	#include "CfgVehicles\StreetLamps.hpp"
 };
