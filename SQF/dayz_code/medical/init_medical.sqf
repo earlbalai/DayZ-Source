@@ -32,8 +32,8 @@ while {true} do {
 		player setVariable["medForceUpdate",true];
 	};
 	
-	if (r_player_bloodregen < 0) then { 
-		r_player_bloodregen = 0; 
+	if (r_player_bloodregen < 1) then { 
+//		r_player_bloodregen = 0; 
 		r_player_foodstack = 0; 
 	};
 	

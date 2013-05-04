@@ -170,7 +170,7 @@ fnc_usec_playerBloodRegen = {
 		player setVariable["USEC_BloodQty",r_player_blood,true];
 		player setVariable["medForceUpdate",true];
 		
-		hintSilent format["SkillLevel: %1, Amount: %2, BloodPerSec: %3",_skilllevel,r_player_bloodregen,_bleedPerSec];
+		hintSilent format["SkillLevel: %1, BloodAmount: %2, BloodPerSec: %3",_skilllevel,r_player_bloodregen,_bleedPerSec];
 		//diag_log format["Survived/SkillLevel: %6/%5, Blood %1/%4 / Regen %2 / bleedPerSec %3",r_player_blood,r_player_bloodregen,_bleedPerSec,_bloodPercentage,_skilllevel,dayz_Survived];	
 	};
 };
