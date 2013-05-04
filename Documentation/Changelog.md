@@ -48,14 +48,13 @@ Serverside affected addons:
 	    * [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
 	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 3.
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
-		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
+	    * [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
-		* [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
-		* [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
+	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
+	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
-					Medium = 16 Objects 1 weapon , no bags
-		* [NEW] - Mi8 Crash site will now spawn Zeds			
-		* [NEW] - All missing vehicles are respawned on startup.
+					Medium = 16 Objects 1 weapon , no bags		
+	    * [NEW] - All missing vehicles are respawned on startup.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
