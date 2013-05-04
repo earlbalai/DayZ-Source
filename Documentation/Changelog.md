@@ -48,13 +48,13 @@ Serverside affected addons:
 	    * [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
 	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 3.
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
-		* [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
+	    * [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
-		* [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
-		* [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
+	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
+	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
-					Medium = 16 Objects 1 weapon , no bags
-		* [NEW] - Mi8 Crash site will now spawn Zeds			
+					Medium = 16 Objects 1 weapon , no bags		
+	    * [NEW] - All missing vehicles are respawned on startup.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -113,7 +113,8 @@ Serverside affected addons:
 	    * [UPDATED] - Fire Places will no longer act as storage systems.
 	    * [UPDATED] - Fireplace can now only be lit once without adding new wood inside the fireplace.
 	    * [UPDATED] - Fireplace can no longer be picked up after lighting.
-	    * [UPDATED] - Vehilces speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
+	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
+	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
