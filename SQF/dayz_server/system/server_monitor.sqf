@@ -280,6 +280,7 @@ if (isServer and isNil "sm_done") then {
 			};
 #endif
 #ifdef VEH_MAINTENANCE_ADD_MISSING		
+
 			// ask to create a new vehicle if damage is too high
 			if (_damage > 0.85 AND (_action != "CREATED")) then { _action = "SPAWNED"; };  
 #endif
