@@ -1,5 +1,4 @@
 
-
 //// TENTS CHECK ////
 
 // Proceed to empty tents check: extra empty tents will be ignored (tents won't be created on map)
