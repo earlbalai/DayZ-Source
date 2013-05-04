@@ -279,9 +279,11 @@ if (isServer and isNil "sm_done") then {
 				 _damage = VEH_MAINTENANCE_ROTTEN_LOGIC; _action = "DAMAGED"; 
 			};
 #endif
+#ifdef VEH_MAINTENANCE_ADD_MISSING		
 			// ask to create a new vehicle if damage is too high
 			if (_damage > 0.85 AND (_action != "CREATED")) then { _action = "SPAWNED"; };  
-			// check for no collision with world. Find a suitable place:
+#endif
+			// check for no collision with world. Find a suitable place (depending of defined parameters)
 			_worldspace = [_class, _dir, _point, _action] call fa_smartlocation;
 			if (count _worldspace < 2) then {  // safe position NOT found
 				_action = "FAILED"; // don't worry, maybe we will find a nice spot next time :)
@@ -314,18 +316,16 @@ if (isServer and isNil "sm_done") then {
 					if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
 					[_entity,_selection,_dam] call object_setFixServer;
 				} forEach _hitpoints;
-				_entity setVectorDirAndUp [[.26,0.0001,.97],[.26,0.0001,.97]]; // I don't like these magical in equilibrium bikes
-				_point set [2, 1]; // setPos will be done below. 
 				_entity setvelocity [0,0,1];
 				_entity setFuel _fuel;
 				_entity call fnc_vehicleEventHandler;
 			};
-			diag_log (format["VEH MAINTENANCE %1 %2 at %3, damage=%4, fuel=%5",
+			diag_log (format["VEHICLE %1 %2 at %3, damage=%4, fuel=%5",
 				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, _damage, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
 		}
 		else { // else for object or non legit vehicle
 			if (!(_class in SafeObjects )) then {  
-				_damage = 4; 
+				_damage = 1; 
 			};
 			if (_damage < 1) then {
 				// Rule #1: Tents will be always spawned if non empty. 
@@ -365,7 +365,7 @@ if (isServer and isNil "sm_done") then {
 				_rawData = "HiveEXT" callExtension _key;
 				_key = format["CHILD:304:%1:",_ObjectID]; // delete by ID (not UID which is handler 310)
 				_rawData = "HiveEXT" callExtension _key;*/
-				diag_log (format["VEH MAINTENANCE IGNORED %1 oid#%2 cid:%3 ",
+				diag_log (format["IGNORED %1 oid#%2 cid:%3 ",
 					_class, _ObjectID, _CharacterID ]);
 			};
 		};
