@@ -35,8 +35,15 @@ if (_sfx == "") then {_sfx = "eat"};
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-_skilllevel = (dayz_Survived / 10);
+//disminishing returns. while regen is active
+r_player_foodstack = r_player_foodstack + 1;
+_skilllevel = (dayz_Survived / 6);
+if ((r_player_bloodregen > 5) and (r_player_foodstack > 2)) then {
+	_regen = _regen / r_player_foodstack + _skilllevel;
+	diag_log ("Regen: " +str(_regen));
+};
 
+/*
 if (dayz_lastMeal < 180) then { 
 	_regen = _regen / 4 + _skilllevel;
 };
@@ -48,6 +55,7 @@ if ((dayz_lastMeal > 180) and (dayz_lastMeal < 360)) then {
 if ((dayz_lastMeal > 360) and (dayz_lastMeal < 900)) then { 
 	_regen = _regen / 2 + _skilllevel;
 };
+*/
 
 if (_hasoutput) then{
     // Selecting output

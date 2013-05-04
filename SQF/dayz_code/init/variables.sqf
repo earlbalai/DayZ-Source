@@ -281,7 +281,11 @@ r_fracture_legs =		false;
 r_fracture_arms =		false;
 r_player_vehicle =		player;
 r_player_blood = 		12000;
+//Blood Regen
 r_player_bloodregen = 0;
+//Food Stack
+r_player_foodstack = 0; 
+//player skill
 r_player_lowblood = 	false;
 r_player_timeout =		0;
 r_player_bloodTotal = 	r_player_blood;
@@ -371,8 +375,8 @@ dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
 
 //DayZ settings
-dayz_dawn = 6;
-dayz_dusk = 18;
+dayz_dawn = 4; //6
+dayz_dusk = 22; //18
 dayz_maxAnimals = 5;
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
