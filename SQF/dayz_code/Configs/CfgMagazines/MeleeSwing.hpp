@@ -1,3 +1,41 @@
+class Melee_Swing : CA_Magazine {
+	//	scopeWeapon = protected;
+	//	scopeMagazine = protected;
+	//	magazineType = WeaponNoSlot;
+	type = VSoft;
+	flash = "";
+	flashSize = 0;
+	initSpeed = 100;
+	maxLeadSpeed = 15; //20
+	dexterity = 2; //20
+	picture = "\dayz_weapons\textures\equip_shells_ca.paa";
+	displayName = "crt";
+	displayNameMagazine = "crt";
+	shortNameMagazine = "crt";
+	optics = false;
+	distanceZoomMin = 0;
+	distanceZoomMax = 0;
+	reloadTime = 0.1;
+	magazineReloadTime = 0.01;
+	drySound[] = {"", 0, 1};
+	reloadMagazineSound[] = {"", 0, 1};
+	modes[] = {"Single"};
+	sound[] = {"Weapons\grenade_launch", 0.0031623, 1};
+	reloadSound[] = {"", 0.0003162, 1};
+	showEmpty = 0;
+	autoReload = true;
+	count = 100000;
+	canLock = LockNo;
+	//
+	burst = 1;
+	multiplier = 1;
+	ffMagnitude = 0.1;
+	ffFrequency = 1;
+	ffCount = 1;
+	recoil = "Empty";
+	dispersion = 0.2;
+};
+
 class Machete_Swing : Melee_Swing {
 	displayName = Machete;
 	displayNameMagazine = Machete;
