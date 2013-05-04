@@ -472,7 +472,7 @@ class FSM
        "if (speed _agent < 0.1) then {_countr = _countr + 1} else {_countr = 0};" \n
        "_target = _agent call zombie_findTargetAgent;" \n
        "_isAlive = alive _agent;" \n
-       "_targetPos = getPosATL _target;" \n
+       "_targetPos = _target modelToWorld [0, (speed _target)/3.6, 0];" \n
        "" \n
        "" \n
        "//Move to target" \n
@@ -691,7 +691,7 @@ class FSM
     {
       name = "Reset_Targeting";
       init = /*%FSM<STATEINIT""">*/"if (!isNull _target) then {" \n
-       "	_targetPos = getPosATL _target;" \n
+       "	_targetPos = _target modelToWorld [0, (speed _target)/3.6, 0];" \n
        "	_agent setVariable [""myDest"",_targetPos];" \n
        "	_agent moveTo _targetPos;" \n
        "};" \n
