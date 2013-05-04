@@ -4,137 +4,7 @@ class CfgMagazines {
 	class ItemSodaEmpty; //External class reference
 	class FoodEdible; //External class reference
 	class TrashTinCan; //External class reference
-	
-	class Melee_Swing : CA_Magazine {
-	//	scopeWeapon = protected;
-	//	scopeMagazine = protected;
-	//	magazineType = WeaponNoSlot;
-		type = VSoft;
-		flash = "";
-		flashSize = 0;
-		initSpeed = 100;
-		maxLeadSpeed = 15; //20
-		dexterity = 2; //20
-		picture = "\dayz_weapons\textures\equip_shells_ca.paa";
-		displayName = "crt";
-		displayNameMagazine = "crt";
-		shortNameMagazine = "crt";
-		optics = false;
-		distanceZoomMin = 0;
-		distanceZoomMax = 0;
-		reloadTime = 0.1;
-		magazineReloadTime = 0.01;
-		drySound[] = {"", 0, 1};
-		reloadMagazineSound[] = {"", 0, 1};
-		modes[] = {"Single"};
-		sound[] = {"Weapons\grenade_launch", 0.0031623, 1};
-		reloadSound[] = {"", 0.0003162, 1};
-		showEmpty = 0;
-		autoReload = true;
-		count = 100000;
-		canLock = LockNo;
-		//
-		burst = 1;
-		multiplier = 1;
-		ffMagnitude = 0.1;
-		ffFrequency = 1;
-		ffCount = 1;
-		recoil = "Empty";
-		dispersion = 0.2;
-	};
-	
-	class ItemTent : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = (256 * 3);
-		displayName = $STR_EQUIP_NAME_20;
-		model = "\dayz_equip\models\tentbag_gear.p3d";
-		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_20;
-		
-		class ItemActions {
-			class Pitch {
-				text = $STR_PITCH_TENT;
-				script = "spawn player_tentPitch;";
-			};
-		};
-	};
-	
-	class ItemSandbag : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_21;
-		model = "\dayz_equip\models\sandbags.p3d";
-		picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_21;
-		
-		class ItemActions {
-			class Build {
-				text = $STR_ACTION_BUILD;
-				script = "spawn player_build;";
-				require = "ItemEtool";
-				create = "Sandbag1_DZ";
-			};
-		};
-	};
-	
-	class ItemTankTrap : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_22;
-		model = "\dayz_equip\models\tank_trap_kit.p3d";
-		picture = "\dayz_equip\textures\equip_tanktrap_kit_CA.paa";
-		descriptionShort = $STR_EQUIP_DESC_22;
-		
-		class ItemActions {
-			class Build {
-				text = $STR_ACTION_BUILD;
-				script = "spawn player_build;";
-				require = "ItemToolbox";
-				create = "Hedgehog_DZ";
-			};
-		};
-	};
-	
-	class TrapBear : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_BEARTRAP;
-		model = "\dayz_equip\models\bear_trap_gear.p3d";
-		picture = "\dayz_equip\textures\equip_bear_trap_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_BEARTRAP;
-		
-		class ItemActions {
-			class Build {
-				text = $STR_ACTION_BUILD;
-				script = "spawn player_setTrap;";
-				require = "ItemToolbox";
-				create = "BearTrap_DZ";
-			};
-		};
-	};
-	
-	class ItemWire : CA_Magazine {
-		scope = public;
-		count = 1;
-		type = 256;
-		displayName = $STR_EQUIP_NAME_23;
-		model = "\dayz_equip\models\Fence_wire_kit.p3d";
-		picture = "\dayz_equip\textures\equip_fencewire_kit_CA.paa";
-		descriptionShort = $STR_EQUIP_DESC_23;
-		
-		class ItemActions {
-			class Build {
-				text = $STR_ACTION_BUILD;
-				script = "spawn player_build;";
-				require = "ItemToolbox";
-				create = "Wire_cat1";
-			};
-		};
-	};
+
 	//skins translations
 	class SkinBase : CA_Magazine {
 		displayName = $STR_EQUIP_NAME_CLOTHES;
@@ -220,52 +90,6 @@ class CfgMagazines {
 	class FoodCooked : FoodEdible {
 		scope = public;
 		count = 1;
-	};
-
-	class ItemTrashToiletpaper : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = $STR_JUNK_NAME_TOILETPAPER;
-		descriptionShort = $STR_JUNK_DESC_TOILETPAPER;
-		model = "z\addons\dayz_communityassets\models\toiletpaper.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_toiletpaper_CA.paa";
-		type = 256;
-	};
-	class ItemTrashRazor : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = $STR_JUNK_NAME_RAZOR;
-		descriptionShort = $STR_JUNK_DESC_RAZOR;
-		model = "z\addons\dayz_communityassets\models\razor.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_razor_CA.paa";
-		type = 256;
-	};
-	class ItemBookBible : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = $STR_BOOK_NAME_BIBLE;
-		descriptionShort = $STR_BOOK_DESC_BIBLE;
-		model = "z\addons\dayz_communityassets\models\bible.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_bible_CA.paa";
-		type = 256;
-	};
-	class ItemNails : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = $STR_ITEM_NAME_NAILS;
-		descriptionShort = $STR_ITEM_DESC_NAILS;
-		model = "z\addons\dayz_communityassets\models\nails.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_nails_ca.paa";
-		type = 256;
-	};
-	class ItemCards : CA_Magazine {
-		scope = public;
-		count = 1;
-		displayName = $STR_ITEM_NAME_CARDS;
-		descriptionShort = $STR_ITEM_DESC_CARDS;
-		model = "z\addons\dayz_communityassets\models\cards.p3d";
-		picture = "\z\addons\dayz_communityassets\pictures\equip_cards_ca.paa";
-		type = 256;
 	};
 	
 	class ItemJerrycan : CA_Magazine {
@@ -357,4 +181,6 @@ class CfgMagazines {
 	#include "CfgMagazines\ItemSodaEmpty.hpp"
 	#include "CfgMagazines\MeleeSwing.hpp"
 	#include "CfgMagazines\TrashTinCan.hpp"
+	#include "CfgMagazines\Deployable.hpp"
+	#include "CfgMagazines\TrashLoot.hpp"
 };

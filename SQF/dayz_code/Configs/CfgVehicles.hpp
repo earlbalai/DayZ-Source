@@ -26,9 +26,12 @@ class CfgVehicles {
 	class UAZ_Unarmed_Base;
 	class HMMWV_Base;
 	class AH6_Base_EP1;
+	class An2_Base_EP1;
 	class TT650_Base;
+	class V3S_Base;
 	class Bag_Base_EP1;
 	class Bag_Base_BAF;
+	class SpawnableWreck : House {};
 
 	#include "CfgVehicles\RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
 	//ZEDS
@@ -44,13 +47,18 @@ class CfgVehicles {
 	#include "CfgVehicles\Car\CAR_HATCHBACK.hpp"
 	#include "CfgVehicles\Car\UAZ_CDF.hpp"
 	#include "CfgVehicles\Car\CAR_SEDAN.hpp"
+	#include "CfgVehicles\Car\V3S_Civ.hpp"
 	//Helicopter's
 	#include "CfgVehicles\Helicopter\MI17.hpp"
 	#include "CfgVehicles\Helicopter\UH1H.hpp"
 	#include "CfgVehicles\Helicopter\AH6X.hpp"
 	#include "CfgVehicles\Helicopter\MH6J_DZ.hpp"
+	//Wreck's
+	#include "CfgVehicles\Helicopter\MI8Wreck.hpp"
+	#include "CfgVehicles\Helicopter\UH1Wreck.hpp"
+	#include "CfgVehicles\Helicopter\UH60Wreck.hpp"
 	//Plane's
-	
+	#include "CfgVehicles\Plane\AN2_DZ.hpp"
 	//Bikes
 	#include "CfgVehicles\Bikes\ATV_US_EP1.hpp"
 	#include "CfgVehicles\Bikes\ATV_CZ_EP1.hpp"
@@ -65,20 +73,6 @@ class CfgVehicles {
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
 		};
-
-	class V3S_Base;
-	class V3S_Civ: V3S_Base {
-		crew = "";
-		faction = "CIV";
-		rarityurban = 0.3;
-		scope = 2;
-		side = 3;
-		typicalcargo[] = {};
-		class Library {
-			libtextdesc = "The V3S is a Czech-made military 6x6 cargo truck capable of carrying cargo up to 5 tons, or up to 3 tons in rough terrain.<br/>This one is a harmless civilian vehicle.";
-		};
-	};
-
 	class Animal;
 	class Pastor;
 	class Fin;
@@ -151,66 +145,13 @@ class CfgVehicles {
 		fsmDanger = "";
 		fsmFormation = "";
 	};
-
-
-	//An2_TK_EP1
-	class An2_Base_EP1;
-	class AN2_DZ: An2_Base_EP1
-	{
-		displayname = "AN2 Cargo Plane";
-		displaynameshort = "AN2_DZ";
-		scope = 2;
-		side = 2;
-		crew = "";
-		typicalCargo[] = {};
-		hiddenSelections[] = {};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		weapons[] = {};
-		magazines[] = {};
-		gunnerHasFlares = false;
-		commanderCanSee = 2+16+32;
-		gunnerCanSee = 2+16+32;
-		driverCanSee = 2+16+32;
-		transportMaxWeapons = 10;
-		transportMaxMagazines = 80;
-		transportmaxbackpacks = 15;
-	};
+	
 	class House {
 		class DestructionEffects;
 	};
 	
 	// This parent class is made to make referring to these objects easier later with allMissionObjects
-	class SpawnableWreck : House {};
-
-	class UH1Wreck_DZ: SpawnableWreck
-	{
-		model = "\ca\air2\UH1Y\UH1Y_Crashed.p3d";
-		icon = "\ca\air2\data\UI\icon_UH1Y_CA.paa";
-		mapSize = 15;
-		displayName = "Crashed UH-1Y";
-		vehicleClass = "Wrecks";
-		class AnimationSources {};
-	};
-	class UH60Wreck_DZ: SpawnableWreck
-	{
-		model = "\Ca\Misc_E\Wreck_UH60_EP1.p3d";
-		icon = "ca\Misc_E\data\Icons\Icon_uh60_wreck_CA";
-		mapSize = 15;
-		displayName = "UH-60 Wreck";
-		vehicleClass = "Wrecks";
-		class AnimationSources {};
-	};
-	class Mi8Wreck_DZ: SpawnableWreck
-	{
-		model = "\Ca\air\MI8Wreck.p3d";
-		icon = "ca\Misc_E\data\Icons\Icon_uh60_wreck_CA";
-		mapSize = 15;
-		displayName = "Mi-8 Wreck";
-		vehicleClass = "Wrecks";
-		heightAdjustment = 1;
-		class AnimationSources {};
-	};
+	
 	class HouseDZ: House {
 		class MarkerLights
 		{
