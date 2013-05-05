@@ -37,15 +37,24 @@ class CfgVehicles {
 	class SpawnableWreck : House {};
 	class Strategic;
 	class NonStrategic;
+	class Land_Fire;
+	class Animal;
+	class Pastor;
+	class Fin;
 
 	#include "CfgVehicles\RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
 	//ZEDS
-	#include "CfgVehicles\Zeds.hpp" //old type zeds
-	#include "CfgVehicles\NewZeds.hpp" //new type zeds
+	#include "CfgVehicles\Zeds\Zeds.hpp" //old type zeds
+	#include "CfgVehicles\Zeds\NewZeds.hpp" //new type zeds
+	#include "CfgVehicles\Zeds\Pastor.hpp" //Pastor Zed
 	//Survivor Skins	
 	#include "CfgVehicles\Skins.hpp"
 	//Bags
 	#include "CfgVehicles\Bags.hpp"
+	//DZAnimal and DZ_Fin
+	#include "CfgVehicles\Animal.hpp"
+	#include "CfgVehicles\Dog.hpp"
+	
 	//Includes all DayZ Vehilces
 	//Car's
 	#include "CfgVehicles\Car\HMMWV.hpp"
@@ -70,116 +79,12 @@ class CfgVehicles {
 	#include "CfgVehicles\Bikes\TT650_Ins.hpp"
 	//Boat
 	#include "CfgVehicles\Boat\PBX.hpp"
-		
-	class Land_Fire;
-	class Land_Fire_DZ : Land_Fire {
-		transportMaxMagazines = 1;
-		transportMaxWeapons = 0;
-		transportMaxBackpacks = 0;
-		};
-	class Animal;
-	class Pastor;
-	class Fin;
-	class DZAnimal: Animal
-	{
-		scope = 0;
-		side = 1;
-		accuracy = 0.25;
-		boneHead = "head";
-		bonePrimaryWeapon = "head";
-		triggerAnim = "";
-		picture = "";
-		icon = "\Ca\animals2\data\mapicon_animals_ca.paa";
-		mapSize = 10;
-		weaponSlots = 0;
-		fsmFormation = "";
-		fsmDanger = "";
-		agentTasks[] = {};
-		moves = "CfgMovesAnimal";
-		memoryPointHeadAxis = "head_axis";
-		woman = 0;
-		faceType = "Default";
-		boneLEye = "l_eye";
-		boneREye = "r_eye";
-		boneLEyelidUp = "eye_upl";
-		boneREyelidUp = "eye_upr";
-		boneLEyelidDown = "eye_lwl";
-		boneREyelidDown = "eye_lwr";
-		boneLPupil = "l_pupila";
-		boneRPupil = "r_pupila";
-		memoryPointAim = "aimPoint";
-		memoryPointCameraTarget = "camera";
-		extCameraPosition[] = {0,0.5,-2.5};
-		class EventHandlers{};
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {};
-		};
-		class VariablesScalar {};
-		class VariablesString {};
-	};
-	class DZ_Pastor : Pastor {
-		scope = 2;
-		side = 1;
-		model = "\ca\animals2\Dogs\Pastor\Pastor";
-		displayName = "Alsatian";
-		moves = "CfgMovesDogDZ";
-		gestures = "CfgGesturesDogDZ";
-		fsmDanger = "";
-		fsmFormation = "";
-		agentTasks[] = {};
-		woman = 0;
-		class EventHandlers{};
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {};
-		};
-		class VariablesScalar {};
-		class VariablesString {};
-	};
 	
-	class DZ_Fin : Fin {
-		scope = 2;
-		model = "\ca\animals2\Dogs\Fin\Fin";
-		displayName = "Fin";
-		moves = "CfgMovesDogDZ";
-		gestures = "CfgGesturesDogDZ";
-		fsmDanger = "";
-		fsmFormation = "";
-	};
-	
-	// This parent class is made to make referring to these objects easier later with allMissionObjects
-	
-	class HouseDZ: House {
-		class MarkerLights
-		{
-			class RedBlinking
-			{
-				name = "";
-				color[] = {0,0.0,0,0};
-				ambient[] = {0,0,0,0};
-				brightness = 0;
-				blinking = "false";
-			};
-		};
-		class Reflectors
-		{
-			class MainLight
-			{
-				color[] = {0,0.0,0,0};
-				ambient[] = {0,0,0,0};
-				brightness = 0;
-				position = "";
-				direction = "";
-				hitpoint = "";
-				selection = "";
-				size = 0;
-				period[] = {0,1};
-			};
-		};
-	};
+	//Includes all Building Stuff
+	// This parent class is made to make referring to these objects easier later with allMissionObjects	
+	#include "CfgVehicles\Buildings\HouseDZ.hpp"
+	//Fire
+	#include "CfgVehicles\Buildings\Land_Fire.hpp"
 	//Buildings
 	#include "CfgVehicles\Buildings\Land_A_Crane_02b.hpp"
 	#include "CfgVehicles\Buildings\Land_A_FuelStation_Feed.hpp"
