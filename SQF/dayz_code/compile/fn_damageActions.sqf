@@ -55,8 +55,11 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_hasMorphine = 	"ItemMorphine" in magazines player;
 	_hasBlood = 	"ItemBloodbag" in magazines player;	
 	_hasToolbox = 	"ItemToolbox" in items player;
+	/*
+	//Moved to has actions
 	_hasJerry = 	"ItemJerrycan" in magazines player;
 	_hasFuel5 = 	"ItemFuelcan" in magazines player;
+	*/
 	_hasEtool = 	"ItemEtool" in weapons player;
 	_hasWire = 		"ItemWire" in magazines player;
 	_hasPainkillers = 	"ItemPainkiller" in magazines player;
@@ -118,18 +121,28 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	if ((_unit isKindOf "AllVehicles") and !(_unit isKindOf "Man")) then {
 		_type = TypeOf(_unit);
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
-
+		_isVehicle = cursorTarget isKindOf "AllVehicles";
+		
 		//CAN WE REFUEL THE OBJECT?
-		if ((fuel _unit < 1) and (_hasJerry or _hasFuel5)) then {
-			r_action = true;
-			if (_hasJerry) then {
-				_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",["ItemJerrycan"], 0, true, true, "", "'ItemJerrycan' in magazines player"];
-			};
-			if (_hasFuel5) then {
-				_action = _unit addAction [format[localize "str_actions_medical_10",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",["ItemFuelcan"], 0, true, true, "", "'ItemFuelcan' in magazines player"];
-			};
-			r_player_actions set [count r_player_actions,_action];
+	/*
+		//Moved to has actions
+		if ((_hasJerry or _hasFuel5) and _isVehicle) then {
+			if (fuel _unit < 1) then {
+				r_action = true;
+				if (_hasJerry) then {
+					s_player_fillfuel20 = _unit addAction [format[localize "str_actions_medical_10"+" with 20L",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",["ItemJerrycan"], 0, true, true, "", "'ItemJerrycan' in magazines player"];
+				};
+				if (_hasFuel5) then {
+					s_player_fillfuel5 = _unit addAction [format[localize "str_actions_medical_10"+" with 5L",_typeVeh], "\z\addons\dayz_code\actions\refuel.sqf",["ItemFuelcan"], 0, true, true, "", "'ItemFuelcan' in magazines player"];
+				};
+				//r_player_actions set [count r_player_actions,_actionFuel5];
+			} else {
+				player removeAction s_player_fillfuel20;
+				player removeAction s_player_fillfuel5;
+			};	
 		};
+		*/
+	
 		//CAN WE ISSUE ANOTHER KIND OF AMMUNITION?
 		if (count weapons _unit > 0) then {
 			//Get mag array

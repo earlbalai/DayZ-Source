@@ -5,8 +5,9 @@
 	_distCfg = 		(_x select 2) + 200;
 	_configClass =  _x select 1;
 	_distAct = player distance position _location;
+	_rubbish = dayz_Trash;
 	
-	if ((_distAct < _distCfg) and !(_location in dayz_locationsActive)) then {
+	if ((_distAct < _distCfg) and !(_location in dayz_locationsActive) and (_rubbish == 1)) then {
 		//Record Active Location
 		//diag_log "Load!";
 		dayz_locationsActive set [count dayz_locationsActive,_location];
@@ -17,6 +18,7 @@
 		_position = []+ getArray	(_config >> "position");
 		
 		_config call stream_locationFill;
+		
 		//player sidechat (_locHdr + " " + str(count _config));
 	} else {
 		if ((_distAct > _distCfg) and (_location in dayz_locationsActive)) then {

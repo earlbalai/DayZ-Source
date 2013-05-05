@@ -1,22 +1,23 @@
-private["_agent","_target","_targets","_c","_man","_manDis","_targets","_agent","_agentheight","_nearEnts","_rnd","_assigned","_range","_objects"];
+private["_agent","_target","_targets","_targetDis","_c","_man","_manDis","_targets","_agent","_agentheight","_nearEnts","_rnd","_assigned","_range","_objects"];
 _agent = _this;
 _target = objNull;
 _targets = [];
-_range = 300;
+_targetDis = [];
+_range = 150;
 _manDis = 0;
 
 _targets = _agent getVariable ["targets",[]];
-//diag_log ("Targets Array: " +str(_targets));
 
-if (isNil "_targets") exitWith { diag_log ("Target Error"); };
-
+if (isNil "_targets") exitWith {};
 //Search for objects
 if (count _targets == 0) then {
-	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],50];
+	_objects = nearestObjects [_agent,["ThrownObjects","GrenadeHandTimedWest","SmokeShell"],_range];
 	{
+		private["_dis"];
 		if (!(_x in _targets)) then {
 			_targets set [count _targets,_x];
-		};	
+			_targetDis set [count _targetDis,_dis];
+		};
 	} forEach _objects;
 
 };
@@ -46,4 +47,4 @@ if (_manDis > _range) then {
 	_targets = _targets - [_target];
 	_target = objNull;
 };
-_target
+_target;

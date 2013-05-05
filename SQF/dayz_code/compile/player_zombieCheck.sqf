@@ -20,8 +20,11 @@ _multiplier = 1;
 			_entHeight = (getPosATL _x) select 2;
 			_delta = _pHeight - _entHeight;
 			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				zedattack = [_x, _type] spawn player_zombieAttack;
-				_x setVariable["lastAttack",time];
+				_cantSee = [_x,_refObj] call dayz_losCheck;
+				if (!_cantSee) then {
+					zedattack = [_x, _type] spawn player_zombieAttack;
+					_x setVariable["lastAttack",time];
+				};	
 			};
 			_attacked = true;
 		} else {
@@ -36,7 +39,7 @@ _multiplier = 1;
 		_targets = _group getVariable ["targets",[]];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
-				if (DAYZ_disAudial > 65) then {
+				if (DAYZ_disAudial > 65) then { //65
 					_targets set [count _targets, driver _refObj];
 					_group setVariable ["targets",_targets,true];				
 				} else {
@@ -69,7 +72,7 @@ _multiplier = 1;
 					_zPos = (getPosASL _x);
 					//_eyeDir = _x call dayz_eyeDir;
 					_eyeDir = direction _x;
-					_inAngle = [_zPos,_eyeDir,45,_tPos] call fnc_inAngleSector;
+					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
 					if (_inAngle) then {
 						//LOS check
 						_cantSee = [_x,_refObj] call dayz_losCheck;

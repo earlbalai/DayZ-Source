@@ -3,6 +3,8 @@ _holder = _this select 0;
 _type = _this select 1;
 _classname = _this select 2;
 
+_pickup = 		player getVariable "pickup";
+
 _name = getText (configFile >> _type >> _classname >> "displayName");
 
 pickupInit = true;
@@ -19,7 +21,7 @@ actionMonitor = {
 	_run = true;
 	_timeout = 2;
 	
-	diag_log format["Holder: %1, Type: %2 Classname: %3, Name: %4",_holder, _type, _classname, _name];
+	//diag_log format["Holder: %1, Type: %2 Classname: %3, Name: %4",_holder, _type, _classname, _name];
 
 	while { _run } do {
 		if (alive _holder) then {
@@ -60,16 +62,7 @@ actionMonitor = {
 if (_classname == "WoodenArrow") then {
 	[_holder,_type,_classname,_name] spawn actionMonitor;
 } else {
-  if (canPickup) then {
-	null = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
-	player reveal _holder;
-	pickupInit = true;
-  } else {
-	 waitUntil {!pickupInit};
-	  if (canPickup) then {
-	null = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
+		s_player_holderPickup = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];
 		player reveal _holder;
 		pickupInit = true;
-	  };
-  };
 };

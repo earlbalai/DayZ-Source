@@ -139,18 +139,13 @@ if (dayz_spawnZombies == 0) then {
 	//Loot
 	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle and _checkLoot) then {
 		_looted = (_x getVariable ["looted",-0.1]);
-		//_cleared = (_x getVariable ["cleared",false]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _looted) * 525948;
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 		if (_age < -0.1) then {
 				_x setVariable ["looted",(DateToNumber date),true];
 		} else {
-			//if (!_cleared) then {
-			//	_x setVariable ["cleared",true,true];
-			//};
-			//_cleared = (_x getVariable ["cleared",false]);
-			if (_age > 10)  then {
+			if (_age > 30)  then {
 				_x setVariable ["looted",_dateNow,true];
 				[_x] spawn building_spawnLoot;
 			};
@@ -167,9 +162,13 @@ if (dayz_spawnZombies == 0) then {
 				if (_age < -0.1) then {
 					_x setVariable ["zombieSpawn",(DateToNumber date),true];
 				} else {
-					if (_age > 3) then {
-						_x setVariable ["zombieSpawn",_dateNow,true];
-						[_x] spawn building_spawnZombies;
+					if (_age > 1) then {
+						_bPos = getPosATL _x;
+						_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
+						if (_zombiesNum == 0) then {
+							_x setVariable ["zombieSpawn",_dateNow,true];
+							[_x] spawn building_spawnZombies;
+						};
 					};
 				};	
 			} else {

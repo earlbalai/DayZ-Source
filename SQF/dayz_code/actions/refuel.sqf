@@ -1,4 +1,4 @@
-private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx"];
+private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling"];
 
 _vehicle = 		cursorTarget;
 _array = _this select 3;
@@ -10,27 +10,38 @@ _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameType = 	getText(_configVeh >> "displayName");
 _curFuel = 		((fuel _vehicle) * _capacity);
 _newFuel = 		(_curFuel + _canSize);
+_fueling = 		player getVariable "fueling";
 
-if (_newFuel > _capacity) then {_newFuel = _capacity};
-_newFuel = (_newFuel / _capacity);
+player removeAction s_player_fillfuel + _capacity; 
 
-player removeMagazine _cantype;
-player addMagazine _emptycan;
+if (fuel _vehicle == 1) exitwith {};
 
-player playActionNow "Medic";
-_dis=5;
-_sfx = "refuel";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
-[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+if (isnil "_fueling") then {
+	player setVariable ["fueling", 1];
+	if (_newFuel > _capacity) then {_newFuel = _capacity};
+	_newFuel = (_newFuel / _capacity);
 
-sleep 6;
+	player removeMagazine _cantype;
+	player addMagazine _emptycan;
 
-dayzSetFuel = [_vehicle,_newFuel];
-dayzSetFuel spawn local_setFuel;
-publicVariable "dayzSetFuel";
+	player playActionNow "Medic";
+	_dis=5;
+	_sfx = "refuel";
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
-sleep 1;
+	sleep 6;
 
-call fnc_usec_medic_removeActions;
-r_action = false;
+	dayzSetFuel = [_vehicle,_newFuel];
+	dayzSetFuel spawn local_setFuel;
+	publicVariable "dayzSetFuel";
+
+	cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
+	sleep 1;
+
+	call fnc_usec_medic_removeActions;
+	r_action = false;
+	player setVariable ["fueling", nil];
+} else {
+	cutText ["Already refueling!","PLAIN DOWN"];
+};

@@ -25,7 +25,7 @@ vehicle_handleInteract = {
 	if (_object in needUpdate_objects) then {
 		needUpdate_objects = needUpdate_objects - [_object];
 	};
-	[_object, "damage",true] call server_updateObject;
+	[_object, "all",true] call server_updateObject;
 };
 
 vehicle_handleServerKilled = {
@@ -47,7 +47,7 @@ check_publishobject = {
 
 	_object = _this select 0;
 	_playername = _this select 1;
-	_allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1"];
+	_allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ","TrapBear","Wire_cat1","StashSmall","StashMedium"];
 	_allowed = false;
 
 	diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
@@ -181,3 +181,5 @@ dayz_recordLogin = {
 	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
 };
+
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fa_hiveMaintenance.sqf";

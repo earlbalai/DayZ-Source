@@ -21,9 +21,5 @@ Suggestions
 
 * Humanity starting level change to '0' to further support above changes.
 
-* Completely remove the debug screen.
-
-* Remove color changes from the bloodlevel indicator, make the level known by changing the background fill of the blooddrop icon.
-
 * Add visual representation for humanity level. (normal humanity indcator will be removed together with the debug screen)
 * Can we please have street lights and other Huey skins unbanned?

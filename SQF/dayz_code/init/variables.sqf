@@ -1,5 +1,11 @@
 disableSerialization;
 
+// Enable
+// 0=False/off, 1=True/on
+dayz_Trash = 1;
+
+//
+
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";
 BanditW1_DZ = 	"BanditW1_DZ";
@@ -14,11 +20,13 @@ Rocket_DZ = 	"Rocket_DZ";
 AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","GER_Soldier_EP1"];
 AllPlayersVehicles = ["GER_Soldier_EP1","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
 
-MeleeWeapons = ["ItemHatchet","ItemCrowbar","ItemMachete"];
+MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete"];
 MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing"];
 
 //New Zeds
-DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4"];
+DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4","z_new_worker2","z_new_worker3","z_new_worker4"];
+
+SafeObjects = ["Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ", "StashSmall", "StashMedium"];
 
 //Cooking
 meatraw = [
@@ -243,6 +251,8 @@ dayz_resetSelfActions = {
 	s_player_barkdog = 		-1;
 	s_player_warndog = 		-1;
 	s_player_followdog = 	-1;
+	s_player_fillfuel20 = -1;
+	s_player_fillfuel5 = -1;
 };
 call dayz_resetSelfActions;
 
@@ -271,6 +281,11 @@ r_fracture_legs =		false;
 r_fracture_arms =		false;
 r_player_vehicle =		player;
 r_player_blood = 		12000;
+//Blood Regen
+r_player_bloodregen = 0;
+//Food Stack
+r_player_foodstack = 0; 
+//player skill
 r_player_lowblood = 	false;
 r_player_timeout =		0;
 r_player_bloodTotal = 	r_player_blood;
@@ -360,8 +375,8 @@ dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
 dayzHideBody = objNull;
 
 //DayZ settings
-dayz_dawn = 6;
-dayz_dusk = 18;
+dayz_dawn = 4; //6
+dayz_dusk = 22; //18
 dayz_maxAnimals = 5;
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;

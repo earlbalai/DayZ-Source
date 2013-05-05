@@ -35,13 +35,27 @@ if (_sfx == "") then {_sfx = "eat"};
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-
-
-if (dayz_lastMeal < 3600) then { 
-    if (_itemorignal == "FoodSteakCooked") then {
-        //_regen = _regen * (10 - (10 max ((time - _Cookedtime) / 3600)));
-    };
+//disminishing returns. while regen is active
+r_player_foodstack = r_player_foodstack + 1;
+_skilllevel = (dayz_Survived / 6);
+if ((r_player_bloodregen > 5) and (r_player_foodstack > 1)) then {
+	_regen = _regen / r_player_foodstack + _skilllevel;
+	diag_log ("Regen: " +str(_regen));
 };
+
+/*
+if (dayz_lastMeal < 180) then { 
+	_regen = _regen / 4 + _skilllevel;
+};
+
+if ((dayz_lastMeal > 180) and (dayz_lastMeal < 360)) then { 
+	_regen = _regen / 3 + _skilllevel;
+};
+
+if ((dayz_lastMeal > 360) and (dayz_lastMeal < 900)) then { 
+	_regen = _regen / 2 + _skilllevel;
+};
+*/
 
 if (_hasoutput) then{
     // Selecting output
@@ -55,6 +69,7 @@ if (_hasoutput) then{
         _item = _nearByPile select 0;
     };
     _item addMagazineCargoGlobal [_itemtodrop,1];
+	_item setvelocity [0,0,1];
 };
 
 if ( _rawfood and (random 15 < 1)) then {
@@ -62,7 +77,9 @@ if ( _rawfood and (random 15 < 1)) then {
     player setVariable["USEC_infected",true,true];
 };
 
-r_player_blood = r_player_blood + _regen;
+//r_player_blood = r_player_blood + _regen;
+r_player_bloodregen = r_player_bloodregen + _regen;
+
 if (r_player_blood > r_player_bloodTotal) then {
     r_player_blood = r_player_bloodTotal;
 };

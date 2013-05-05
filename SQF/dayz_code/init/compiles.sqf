@@ -64,10 +64,11 @@ if (!isDedicated) then {
 	//vehicle_handleKilled    = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_handleKilled.sqf";
 
 	//actions
-	player_countmagazines =	compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
+	player_countmagazines =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_countmagazines.sqf";
 	player_addToolbelt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_addToolbelt.sqf";
 	player_reloadMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_reloadMags.sqf";
 	player_tentPitch =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\tent_pitch.sqf";
+	player_createstash =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_createstash.sqf";
 	player_drink =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_drink.sqf";
 	player_eat =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_eat.sqf";
 	player_useMeds =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_useMeds.sqf";
@@ -81,7 +82,10 @@ if (!isDedicated) then {
 	object_pickup = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
 	player_flipvehicle = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_flipvehicle.sqf";
 	player_sleep = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
-	player_combineMag =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
+	player_combineMag =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
+	player_createquiver =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_createQuiver.sqf";
+	player_fillquiver =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fillQuiver.sqf";
+	player_takearrow =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_takeArrow.sqf";
 	
 	//ui
 	player_selectSlot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
@@ -215,7 +219,7 @@ if (!isDedicated) then {
 	};
 		
 	dayz_spaceInterrupt = {
-		private ["_dikCode", "_handled"];
+		private ["_dikCode", "_handled","_displayg"];
 		_dikCode = 	_this select 1;
 		_handled = false;
 		if (_dikCode in (actionKeys "GetOver")) then {
@@ -264,6 +268,18 @@ if (!isDedicated) then {
 		if ((_dikCode == 0x3E or _dikCode == 0x0F or _dikCode == 0xD3) and (time - dayz_lastCheckBit > 10)) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
+		};
+		if (_dikCode == 0xB8 or _dikCode == 0x38 or _dikCode == 0x3E) then {
+			_displayg = findDisplay 106;
+			if (!isNull _displayg) then {
+			call player_gearSync;
+			call dayz_forceSave;
+			} else {
+				if (dialog) then {
+					call player_gearSync;
+					call dayz_forceSave;
+				};
+			};
 		};
 		/*
 		if (_dikCode in actionKeys "IngamePause") then {
@@ -377,13 +393,16 @@ if (!isDedicated) then {
 	};
 	
 	dayz_meleeMagazineCheck = {
-		private["_meleeNum","_magType","_wpnType"];
+		private["_meleeNum","_magType","_wpnType","_ismelee"];
 		_wpnType = primaryWeapon player;
-		_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
-		_meleeNum = ({_x == _magType} count magazines player);
-		if (_meleeNum < 1) then {
-			player addMagazine _magType;
-		};
+		_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+		if (_ismelee == "true") then {
+			_magType = 	([] + getArray (configFile >> "CfgWeapons" >> _wpnType >> "magazines")) select 0;
+			_meleeNum = ({_x == _magType} count magazines player);
+			if (_meleeNum < 1) then {
+				player addMagazine _magType;
+			};
+		};	
 	};
 	dayz_originalPlayer =		player;
 };
@@ -459,6 +478,7 @@ if (!isDedicated) then {
 		_medical
 	};
 	
+	fn_niceSpot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_niceSpot.sqf";
 	
 	//Server Only
 	if (isServer) then {

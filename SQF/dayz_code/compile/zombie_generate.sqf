@@ -25,10 +25,10 @@ _type = _unitTypes call BIS_fnc_selectRandom;
 //Create the Group and populate it
 //diag_log ("Spawned: " + _type);
 _radius = 0;
-_method = "CAN_COLLIDE";
+_method = "CAN_COLLIDE"; //CAN_COLLIDE
 if (_doLoiter) then {
 	_radius = 40;
-	_method = "NONE";
+	//_method = "FORM"; //NONE
 };
 
 //Make sure position is on the ground
