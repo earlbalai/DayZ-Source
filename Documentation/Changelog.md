@@ -53,7 +53,7 @@ Serverside affected addons:
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
 	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
-					Medium = 16 Objects 1 weapon , no bags		
+					Medium = 16 Objects 1 weapon , no bags
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -71,7 +71,7 @@ Serverside affected addons:
 	    * [FIXED] - Gear menu exploit to force respawn.
 	    * [FIXED] - Optimized some destruction effects for security and performance.
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
-		* [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
+	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
