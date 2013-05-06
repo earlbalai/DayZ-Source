@@ -32,7 +32,7 @@ if (_canLoot) then {
 		_rangeAngle = _minSector max (2 * ((_halfBuildingSize - _spawnSize) atan2 (player distance _obj)));
 		_minAngle = ([_obj, player] call BIS_fnc_dirTo) + 180 - _rangeAngle / 2;
 		//diag_log(format["%1 _wholeAreaSize:%2 _minRadius:%3 _rangeRadius:%4 _rangeAngle:%5, _halfBuildingSize:%6", __FILE__, _wholeAreaSize, _minRadius, _rangeRadius, _rangeAngle, _halfBuildingSize]);
-		for [{_num = _num0}, {_num > _num0 / 2)}, {}] do { // random to add some fuzzy logic since _num is always few units
+		for [{_num = _num0}, {_num > _num0 / 2}, {}] do { // random to add some fuzzy logic since _num is always few units
 			_deg = _minAngle + random _rangeAngle;
 			_radius = _minRadius + random _rangeRadius;
 			_bsz_pos = getPos player;
