@@ -1,4 +1,6 @@
-private ["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_isAlive","_myDest","_newDest","_rnd","_lootType","_index","_weights","_loot_count"];
+
+private ["_position", "_doLoiter", "_unitTypes", "_isNoone", "_loot", "_array", "_agent", "_type", "_radius", "_method", "_isAlive", "_myDest", "_newDest", "_rnd", "_lootType", "_index", "_weights"];
+
 _position = 	_this select 0;
 _doLoiter = 	_this select 1;
 _unitTypes = 	_this select 2;
@@ -22,30 +24,14 @@ _unitTypes = _unitTypes + _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
  
 _type = _unitTypes call BIS_fnc_selectRandom;
 
-//Create the Group and populate it
-//diag_log ("Spawned: " + _type);
-_radius = 0;
-_method = "CAN_COLLIDE"; //CAN_COLLIDE
-if (_doLoiter) then {
-	_radius = 40;
-	//_method = "FORM"; //NONE
-};
+_radius = 4;
+_method = "NONE";
+_agent = createAgent [_type, _position, [], _radius, _method]; sleep 0.001;
+_agent setDir random 360;
+_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
+_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
+_agent setVariable ["doLoiter",_doLoiter,true];
 
-//Make sure position is on the ground
-//_position = [_position select 0,_position select 1,0];
-
-//diag_log ("Spawned: " + str([_type, _position, [], _radius, _method]));
-_agent = createAgent [_type, _position, [], _radius, _method];
-
-_agent setPosATL _position;
-_agent setDir round(random 360);
-_agent setvelocity [0,0,1];
-
-if (_doLoiter) then {
-	_agent setPosATL _position;
-} else {
-	_agent setVariable ["doLoiter",false,true];
-};
 
 dayz_spawnZombies = dayz_spawnZombies + 1;
 

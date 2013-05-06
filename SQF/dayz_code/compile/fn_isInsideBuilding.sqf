@@ -1,24 +1,22 @@
+
 // check if arg#0 is inside or on the roof of a building
 // second argument is optional:
 //  - arg#1 is an object: check whether arg#0 is inside (bounding box of) arg#1
 //  - missing arg#1: check whether arg#0 is inside (bounding box of) the nearest enterable building
 //  - arg#1 is a boolean: check also whether arg#0 is inside (bounding box of) some non-enterable buildings around. Can be used to check if a player or an installed item is on a building roof.
+//  - arg#0 is posATL, arg#1 should be a building
 
-private ["_unit", "_inside", "_building", "_check", "_realSize"];
-
-_realSize = {
-	[[0,0], (boundingBox _this) select 1] call BIS_fnc_distance2D
-};							 
+private ["_unit", "_inside", "_building", "_check", "_type"];
 
 _check = {
-	private ["_inside", "_relPos", "_this", "_plr", "_boundingBox", "_min", "_max", "_myX", "_myY", "_myZ", "_offset"];
+	private ["_inside", "_relPos", "_this", "_point", "_boundingBox", "_min", "_max", "_myX", "_myY", "_myZ", "_offset"];
 
 	_building = _this select 0;
-	_plr = _this select 1;
+	_point = _this select 1;
 	_inside = false;
 	_offset = 1; // shrink building boundingbox by this length.
 
-	_relPos = _building worldToModel (getPosATL _plr);
+	_relPos = _building worldToModel _point;
 	_boundingBox = boundingBox _building;
 	
 	_min = _boundingBox select 0;
@@ -39,7 +37,13 @@ _check = {
 	_inside
 };
 
+_size = 0;
 _unit = _this select 0;
+if (typeName _unit == "OBJECT")  then { 
+	_size = sizeOf typeOf _unit;
+	_unit = getPosATL _unit; 
+};
+
 _inside = false;
 
 if (count _this > 1 AND {(typeName (_this select 1) == "OBJECT")}) then {
@@ -49,24 +53,21 @@ if (count _this > 1 AND {(typeName (_this select 1) == "OBJECT")}) then {
 }
 else {
 	// else perform check with nearest enterable building (contains a path LOD)
-	_building = nearestBuilding _unit;
-	if ([_building,_unit] call _check) then  { 
-		_inside = true; 
-	}
-	else {
-		// if arg #1 is a boolean = true, then
-		// perform also some tests with all non-enterable buildings around _unit
-		if ((count _this > 1 AND {(typeName (_this select 1) != "OBJECT")}) AND {(_this select 1)}) then {
-			{
-				_building = _x;
-				if ((((!((typeOf _x) IN SafeObjects)) // not installable objects
-					AND {(!(_x isKindOf "ReammoBox"))}) // not lootpiles (weaponholders and ammoboxes)
-					AND {(((_unit call _realSize) + (_x call _realSize)) > ([_unit, _x] call BIS_fnc_distance2D))}) // objects might colliding
-					AND {([_x, _unit] call _check)}) exitWith { // perform the check. exitWith works only in non-nested "if"
-						_inside = true; 
-				};
-			} forEach(nearestObjects [_unit, ["Building"], 50]);
-		};
+	if (typeName _unit == "OBJECT") then {
+		_building = nearestBuilding _unit;
+		_inside = [_building,getPosATL _unit] call _check;
+	};
+	if ((!_inside) AND {(count _this > 1)}) then { // if optional argument is a boolean
+		{
+			_building = _x;
+			_type = typeOf _x;
+			if ((((!(_type IN SafeObjects)) // not installable objects
+				AND {(!(_type isKindOf "ReammoBox"))}) // not lootpiles (weaponholders and ammoboxes)
+				AND {((_size + (sizeOf _type)) > _unit distance _x)}) // objects might colliding
+				AND {([_x, _unit] call _check)}) exitWith { // perform the check. exitWith works only in non-nested "if"
+					_inside = true; 
+			};
+		} forEach(nearestObjects [_unit, ["Building"], 50]);
 	};
 };
 //diag_log ("fnc_isInsideBuilding Check: " + str(_inside)+ " last building:"+str(_building));
