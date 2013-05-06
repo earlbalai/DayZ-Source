@@ -1,6 +1,6 @@
 // _this #0: building object where zombies spawn
 
-private ["_obj", "_type", "_config", "_canLoot", "_unitTypes", "_min", "_max", "_num", "_zombieChance", "_i", "_halfBuildingSize", "_rnd", "_wholeAreaSize", "_minSector", "_spawnSize", "_minRadius", "_rangeRadius", "_rangeAngle", "_minAngle", "_deg", "_radius", "_bsz_pos", "_clean", "_posList"];
+private ["_obj", "_type", "_config", "_canLoot", "_unitTypes", "_min", "_max", "_num", "_num0", "_zombieChance", "_i", "_halfBuildingSize", "_rnd", "_wholeAreaSize", "_minSector", "_spawnSize", "_minRadius", "_rangeRadius", "_rangeAngle", "_minAngle", "_deg", "_radius", "_bsz_pos", "_clean", "_posList"];
 
 _obj = _this select 0;
 _type = 		typeOf _obj;
@@ -17,7 +17,7 @@ if (_canLoot) then {
 	_max = 			getNumber (_config >> "maxRoaming");
 
 
-	_num = _min + ceil(random(_max-_min));
+	_num0 = _min + floor(random(_max - _min + 1));
 	_zombieChance =	getNumber (_config >> "zombieChance");
 
 	_halfBuildingSize = (sizeOf _type) / 3; // I put 3 because sizeOf is very loose
@@ -25,17 +25,17 @@ if (_canLoot) then {
 	if (_rnd > _zombieChance) then {
 		// Add Walking Zombies
 		_wholeAreaSize = 40; // for external walking zombies, area size around building where zombies can spawn
-		_minSector = 15; // in degree. Only the opposite sector of the building, according to Player PoV, will be used as spawn. put 360 if you want they spawn all around the building
-		_spawnSize = (sizeOf "zZombie_Base") max _halfBuildingSize / 2;
-		_minRadius = _halfBuildingSize + _spawnSize;
+		_minSector = 5; // in degree. Only the opposite sector of the building, according to Player PoV, will be used as spawn. put 360 if you want they spawn all around the building
+		_spawnSize = (sizeOf "zZombie_Base") max (_halfBuildingSize / 2);
+		_minRadius = _halfBuildingSize + _spawnSize + (player distance _obj);
 		_rangeRadius = _spawnSize max (_wholeAreaSize - _spawnSize - _minRadius);
-		_rangeAngle = _minSector max (2 * (_halfBuildingSize atan2 (player distance _obj)));
+		_rangeAngle = _minSector max (2 * ((_halfBuildingSize - _spawnSize) atan2 (player distance _obj)));
 		_minAngle = ([_obj, player] call BIS_fnc_dirTo) + 180 - _rangeAngle / 2;
 		//diag_log(format["%1 _wholeAreaSize:%2 _minRadius:%3 _rangeRadius:%4 _rangeAngle:%5, _halfBuildingSize:%6", __FILE__, _wholeAreaSize, _minRadius, _rangeRadius, _rangeAngle, _halfBuildingSize]);
-		for [{_i = 0}, {(_i < _num * 3) AND (_num > 0)}, {_i = _i + 1}] do { // we try 3 times to find a pos for each zombie
+		for [{_num = _num0}, {_num > _num0 / 2)}, {}] do { // random to add some fuzzy logic since _num is always few units
 			_deg = _minAngle + random _rangeAngle;
 			_radius = _minRadius + random _rangeRadius;
-			_bsz_pos = getPos _obj;
+			_bsz_pos = getPos player;
 			_bsz_pos = [(_bsz_pos select 0) + _radius * sin(_deg), (_bsz_pos select 1) + _radius * cos(_deg), 0];
 			_bsz_pos = (_bsz_pos) findEmptyPosition [0, _spawnSize, "zZombie_Base"];
 			if (((count _bsz_pos >= 2)  // check that findEmptyPosition found something for us
@@ -47,7 +47,7 @@ if (_canLoot) then {
 			};
 		};
 
-		//Add Internal Zombies if we did not spawn all zombies already
+		//Add Internal Zombies according to what remains in _num
 		_clean = {alive _x} count (getPosATL _obj nearEntities ["zZombie_Base", _halfBuildingSize]) == 0;
 		if (_clean) then {
 			_posList =	getArray (_config >> "lootPos");
@@ -63,7 +63,9 @@ if (_canLoot) then {
 				};
 			};
 		};
+		if (_num > 0) then {
+			diag_log(format["%1 %2 zombies wasted",__FILE__, _num]);
+		};
 	};
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
-
