@@ -46,12 +46,11 @@ if (_unit == player) then {
 			_canHitFree = 	player getVariable ["freeTarget",false];
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
-				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
 				//Process Morality Hit
-				_humanityHit = -(_myKills * _damage);
-				
-					dayzHumanity = [_this select 0,_this select 1,30];
-					publicVariable "dayzHumanity";
+				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 18);
+				_humanityHit = -200 * _myKills * _damage;
+				dayzHumanity = [_this select 0,_this select 1,30];
+				publicVariable "dayzHumanity";
 			};
 		};
 	};
