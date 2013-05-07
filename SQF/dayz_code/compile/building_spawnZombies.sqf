@@ -35,7 +35,7 @@ if (_canLoot) then {
 		for [{_num = _num0}, {_num > _num0 / 2}, {}] do { // random to add some fuzzy logic since _num is always few units
 			_deg = _minAngle + random _rangeAngle;
 			_radius = _minRadius + random _rangeRadius;
-			_bsz_pos = getPos player;
+			_bsz_pos = getPosATL player;
 			_bsz_pos = [(_bsz_pos select 0) + _radius * sin(_deg), (_bsz_pos select 1) + _radius * cos(_deg), 0];
 			_bsz_pos = (_bsz_pos) findEmptyPosition [0, _spawnSize, "zZombie_Base"];
 			if (((count _bsz_pos >= 2)  // check that findEmptyPosition found something for us
