@@ -496,7 +496,7 @@
 		<Key ID="STR_BANDAGE_SELF">
 			<English>Bandage Myself</English>
 			<German>Selbst verbinden</German>
-			<Russian>Перевязать себя</Russian>
+			<Russian>Перевязаться</Russian>
 			<Spanish>Bendarme</Spanish>
 			<French>Panser mes blessures</French>
 			<Czech>Obvázat se</Czech>
@@ -504,7 +504,7 @@
 		<Key ID="STR_EAT_FOOD">
 			<English>Eat Food</English>
 			<German>Lebensmittel essen</German>
-			<Russian>Съесть еду</Russian>
+			<Russian>Съесть</Russian>
 			<Spanish>Comer</Spanish>
 			<French>Manger</French>
 			<Czech>Sníst jídlo</Czech>
@@ -528,7 +528,7 @@
 		<Key ID="STR_ACTIONS_DRINK">
 			<English>Drink %1</English>
 			<German>%1 trinken</German>
-			<Russian>Выпить %1</Russian>
+			<Russian>Выпить</Russian>
 			<Spanish>Tomar %1</Spanish>
 			<French>Boire %1</French>
 			<Czech>Vypít %1</Czech>
@@ -682,7 +682,7 @@
 		<Key ID="STR_EQUIP_NAME_7">
 			<English>Bandage</English>
 			<German>Verbandszeug</German>
-			<Russian>Бинты</Russian>
+			<Russian>Бинт</Russian>
 			<Spanish>Vendaje</Spanish>
 			<French>Pansement</French>
 			<Czech>Obvaz</Czech>
@@ -690,7 +690,7 @@
 		<Key ID="STR_EQUIP_DESC_7">
 			<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</English>
 			<German>Verbandszeug nach NATO-Standart. Wird zum Stillen von blutenden Wunden verwendet.</German>
-			<Russian>Упаковка бинтов армейская. Используется для перевязки ран.</Russian>
+			<Russian>Армейская упаковка бинтов. Используется для перевязки ран.</Russian>
 			<Spanish>Vendaje de primeros auxilios. Usado para detener el sangrado de heridas.</Spanish>
 			<French>Pansement de premier secours, norme OTAN. Utilisé pour stopper une hémorragie.</French>
 			<Czech>Obvaz podle standartů NATO. Slouží pro zastavení krvácení.</Czech>
@@ -730,7 +730,7 @@
 		<Key ID="STR_EQUIP_NAME_10">
 			<English>Scrap Metal</English>
 			<German>Metallteile</German>
-			<Russian>Запчасти</Russian>
+			<Russian>Металлолом</Russian>
 			<Spanish>Chatarra</Spanish>
 			<French>Bouts de métal</French>
 			<Czech>Kovový šrot</Czech>
@@ -738,7 +738,7 @@
 		<Key ID="STR_EQUIP_DESC_10">
 			<English>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</English>
 			<German>Metallteile und verschiedene mechanische Ersatzteile. Nützlich beim Reparieren von Fahrzeugen und Ausrüstung.</German>
-			<Russian>Запчасти используются для починки снаряжения или корпуса техники.</Russian>
+			<Russian>Металлолом используются для починки снаряжения или корпуса техники.</Russian>
 			<Spanish>Chatarra y repuestos mecánicos variados. Útiles para reparar vehículos y equipamiento.</Spanish>
 			<French>Divers bouts de métal pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Různé kovové a mechanické díly. Užitečné pro opravu libovolného vozidla.</Czech>
@@ -778,7 +778,7 @@
 		<Key ID="STR_EQUIP_NAME_32">
 			<English>Main Rotor Assembly</English>
 			<German>Hauptrotorteile</German>
-			<Russian>Набор запчастей для вертолета</Russian>
+			<Russian>Ротор несущего винта</Russian>
 			<Spanish>Rotor Principal</Spanish>
 			<French>Rotor d'hélico</French>
 			<Czech>Hlavní rotor</Czech>
@@ -1059,7 +1059,7 @@
 		<Key ID="STR_EQUIP_DESC_33">
 			<English>An empty tin can that no longer contains any food, or anything usable.</English>
 			<German>Eine leere Dose, in der einmal Essen oder andere nützliche Sachen waren.</German>
-			<Russian>Пустая консервная банка совершенно пуста и бесполезна.</Russian>
+			<Russian>Пустая консервная банка. Совершенно пуста и бесполезна.</Russian>
 			<Spanish>Una lata vacía que ya no contiene ninguna comida o algo usable.</Spanish>
 			<French>Boîte de conserve vide, dont la seule utilité est de faire éventuellement diversion.</French>
 			<Czech>Kdysi tato plechovka obsahovala jídlo, teď je prázdná.</Czech>
@@ -1067,7 +1067,7 @@
 		<Key ID="STR_EQUIP_NAME_34">
 			<English>Empty Whiskey Bottle</English>
 			<German>Leere Whiskeyflasche</German>
-			<Russian>Пустая бутылка виски</Russian>
+			<Russian>Пустая бутылка (Виски)</Russian>
 			<Spanish>Botella de Whisky Vacía</Spanish>
 			<French>Bouteille de Whisky vide</French>
 			<Czech>Prádná flaška od Whiskey</Czech>
@@ -1163,7 +1163,7 @@
 		<Key ID="STR_EQUIP_NAME_42">
 			<English>Heatpack</English>
 			<German>Heatpack</German>
-			<Russian>Heatpack</Russian>
+			<Russian>Хим-грелка</Russian>
 			<Spanish>Calentador</Spanish>
 			<French>Chaufferette</French>
 			<Czech>Heatpack</Czech>
@@ -1171,7 +1171,7 @@
 		<Key ID="STR_EQUIP_DESC_42">
 			<English>A heating pad that heats when you start the crystallisation process. Used to provide quick warmth to your body.</English>
 			<German>Ein Heizkissen, wenn Sie die Kristallisation beginnen erwärmt. Wird verwendet, um schnell Wärme an den Körper liefern.</German>
-			<Russian>Грелка-подушка, которая греет, когда вы замерзаете. Используется для быстрого согревания вашего тела.</Russian>
+			<Russian>Химическая грелка. Используется для быстрого согревания вашего тела.</Russian>
 			<Spanish>Una almohadilla térmica que proporciona un calentamiento rápido a tu cuerpo previniendo la hipotermia.</Spanish>
 			<French>Poche produisant de la chaleur via un processus de cristallisation. Permet de réchauffer rapidement votre corps.</French>
 			<Czech>Heatpack, který se na principu krystalizace ohřeje. Používá se pro rychlé ohřátí těla.</Czech>
@@ -2528,7 +2528,7 @@
 		<Key ID="STR_FOOD_DESC_CANDY_ANDERS">
 			<English>A clean, unopened Ander's Joy chocolate coconut and almond candy bar.</English>
 			<German>Eine saubere, ungeöffnet Ander's Joy Schokoladen-Kokosnuss und Mandel-Schokoriegel.</German>
-			<Russian>Чистый, закрытый батончик кокосово-ми��дального "Ander's Joy".</Russian>
+			<Russian>Чистый, закрытый батончик кокосово-миндального "Ander's Joy".</Russian>
 			<Spanish>Una limpia y cerrada barra de chocolate con almendras Ander's Joy.</Spanish>
 			<Dutch>Een schoon, ongeopend Ander's Joy chocolade cocosnoot en amandel snoepreep.</Dutch>
 			<French>Un paquet intact de barres chocolatées à la noix de coco "Ander's Joy".</French>
@@ -3014,7 +3014,7 @@
 		<Key ID="STR_ITEM_NAME_CARDS">
 			<English>Cards</English>
 			<German>Cards</German>
-			<Russian>Cards</Russian>
+			<Russian>Карты</Russian>
 			<Spanish>Cartas</Spanish>
 			<Dutch>Cards</Dutch>
 			<French>Cards</French>
