@@ -62,32 +62,30 @@ _multiplier = 1;
 		};
 		//Sight Activation
 		_targets = _group getVariable ["targets",[]];
-		if (_x distance player < 100) then {
-			if (!(_refObj in _targets)) then {
-				if (_dist < (DAYZ_disVisual / 2)) then {
-					_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
-					//diag_log ("Visual Detection: m" + str([_x,_dist]) + " " + str(_chance));
-					if ((random 1) < _chance) then {
-						//diag_log ("Chance Detection");
-						_tPos = (getPosASL _refObj);
-						_zPos = (getPosASL _x);
-						//_eyeDir = _x call dayz_eyeDir;
-						_eyeDir = direction _x;
-						_inAngle = [_zPos,_eyeDir,90,_tPos] call fnc_inAngleSector;
-						if (_inAngle) then {
-							//LOS check
-							_cantSee = [_x,_refObj] call dayz_losCheck;
-							//diag_log ("LOS Check: " + str(_cantSee));
-							if (!_cantSee) then {
-								//diag_log ("Within LOS! Target");
-								_targets set [count _targets, driver _refObj];
-								_group setVariable ["targets",_targets,true];
-							};
+		if (!(_refObj in _targets)) then {
+			if (_dist < (DAYZ_disVisual / 2)) then {
+				_chance = [_x,_dist,DAYZ_disVisual] call dayz_losChance;
+				//diag_log ("Visual Detection: m" + str([_x,_dist]) + " " + str(_chance));
+				if ((random 1) < _chance) then {
+					//diag_log ("Chance Detection");
+					_tPos = (getPosASL _refObj);
+					_zPos = (getPosASL _x);
+					//_eyeDir = _x call dayz_eyeDir;
+					_eyeDir = direction _x;
+					_inAngle = [_zPos,_eyeDir,30,_tPos] call fnc_inAngleSector;
+					if (_inAngle) then {
+						//LOS check
+						_cantSee = [_x,_refObj] call dayz_losCheck;
+						//diag_log ("LOS Check: " + str(_cantSee));
+						if (!_cantSee) then {
+							//diag_log ("Within LOS! Target");
+							_targets set [count _targets, driver _refObj];
+							_group setVariable ["targets",_targets,true];
 						};
 					};
 				};
 			};
-		};	
+		};
 	};
 } forEach _listTalk;
 
