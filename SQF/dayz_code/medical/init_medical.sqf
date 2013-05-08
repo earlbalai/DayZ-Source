@@ -32,7 +32,7 @@ while {true} do {
 		player setVariable["medForceUpdate",true];
 	};
 	
-	if ((r_player_bloodregen < 1) or (r_player_blood = 12000)) then { 
+	if ((r_player_bloodregen < 1) or (r_player_blood == 12000)) then { 
 		r_player_bloodregen = 0; 
 		r_player_foodstack = 0; 
 	};
