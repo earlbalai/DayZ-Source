@@ -117,7 +117,7 @@ class CfgLoot {
 			{"ItemPainkiller",0.05},
 			{"ItemMorphine",0.05},
 			{"ItemEpinephrine",0.03},
-			{"ItemAntibiotic",0.02},
+			{"ItemAntibiotic",0.01},
 			{"ItemHeatPack",0.03}
 	};
 	hospital[] = {
@@ -126,7 +126,7 @@ class CfgLoot {
 			{"ItemMorphine",0.04},
 			{"ItemEpinephrine",0.03},
 			{"ItemBloodbag",0.03},
-			{"ItemAntibiotic",0.02}
+			{"ItemAntibiotic",0.01}
 	};
 	military[] = {
 			{"TrashTinCan",0.04},
@@ -134,7 +134,7 @@ class CfgLoot {
 			{"ItemSodaCoke",0.02},
 			{"ItemSodaPepsi",0.02},
 			{"ItemBandage",0.04},
-			{"ItemAntibiotic",0.04},
+			{"ItemAntibiotic",0.01},
 			{"ItemPainkiller",0.04},
 			{"ItemMorphine",0.01},
 			{"30Rnd_556x45_Stanag",0.04},
