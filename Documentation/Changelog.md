@@ -40,6 +40,7 @@ Serverside affected addons:
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
+	    * [NEW] - 2 New background tracks.
 	    * [NEW] - 3 New decayed Zeds - Harder to kill and Do more damage.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
