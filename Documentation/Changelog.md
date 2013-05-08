@@ -114,6 +114,7 @@ Serverside affected addons:
 	    * [UPDATED] - Fireplace can no longer be picked up after lighting.
 	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
+	    * [UPDATED] - Changed humanity loss/gain for a player according to victim "humankills" counter.
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.

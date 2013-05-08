@@ -24,8 +24,6 @@ _isHeadHit = (_hit == "head_hit");
 _evType = "";
 _recordable = false;
 _isPlayer = (isPlayer _source);
-_humanityHit = 0;
-_myKills = 0;
 _currentAnim = animationState _unit;
 
 _sourceZombie = _source isKindOf "zZombie_base";
@@ -43,15 +41,16 @@ if (_unit == player) then {
 			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];	
 			};
-			_canHitFree = 	player getVariable ["freeTarget",false];
-			_isBandit = 	(typeOf player) == "Bandit1_DZ";
+			_canHitFree = player getVariable ["freeTarget",false];
+			_isBandit = (typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
-				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
-				//Process Morality Hit
-				_humanityHit = -(_myKills * _damage);
-				
-					dayzHumanity = [_this select 0,_this select 1,30];
-					publicVariable "dayzHumanity";
+				// "humanKills" from local character is used to compute attacker player "dayzHumanity" change
+				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
+				_humanityHit = -200 * _myKills * _damage;
+				if (_humanityHit != 0) then {
+				dayzHumanity = [_this select 0, _humanityHit, 30];
+				publicVariable "dayzHumanity";
+				};
 			};
 		};
 	};
@@ -122,7 +121,7 @@ if (_hit in USEC_MinorWounds) then {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
 	} else {
-diag_log(format["%1 _this:%2  _damage/2:%3",__FILE__,_this,_damage/2]);
+diag_log(format["%1 _this:%2  _damage:%3",__FILE__,_this,_damage]);
 		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then { 
 			[_unit,"arms",_damage/6] call object_processHit; // prevent broken legs due to arma bugs
 		}
@@ -148,7 +147,7 @@ if (_damage > 0.1) then {
 	};
 };
 
-if (_damage > 0.4) then {	//0.25
+if (_damage > 0.4) then { //0.25
 	//Pain and Infection
 	if (_unit == player) then {
 		_hitPain = (((_damage * _damage) min 0.75) > _bloodPercentage);
@@ -229,7 +228,7 @@ if (_damage > 0.4) then {	//0.25
 };
 if (_type == 1) then {
 	/*
-		BALISTIC DAMAGE		
+		BALISTIC DAMAGE 
 	*/		
 	if ((_damage > 0.01) and (_unit == player)) then {
 		//affect the player
