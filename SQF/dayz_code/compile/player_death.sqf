@@ -4,8 +4,8 @@ if (deathHandled) exitWith {};
 deathHandled = true;
 //Death
 
-_body =		player;
-_playerID =	getPlayerUID player;
+_body = player;
+_playerID = getPlayerUID player;
 
 //Send Death Notice
 //["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
@@ -30,35 +30,29 @@ r_player_cardiac = false;
 
 _id = player spawn spawn_flies;
 
-_humanity =		0;
-_wait = 		0;
-
 _array = _this;
 if (count _array > 0) then {
 	_source = _array select 0;
 	_method = _array select 1;
 	if (!isNull _source) then {
 		if (_source != player) then {
-			_canHitFree = 	player getVariable ["freeTarget",false];
+			_canHitFree = player getVariable ["freeTarget",false];
 			_isBandit = (["Bandit",typeOf player,false] call fnc_inString);
-			_myKills = 		((player getVariable ["humanKills",0]) / 30) * 1000;
+			_wait = 0;
+			_humanity = 0;
 			if (!_canHitFree and !_isBandit) then {
-				//Process Morality Hit
-				_humanity = -(2000 - _myKills);
-				_kills = 		_source getVariable ["humanKills",0];
+				// "humanKills" from local character is used to compute _source player "dayzHumanity" change
+				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
+				_humanity = -2000 * _myKills;
+				if (_humanity > 0) then { _wait = 300; };
+				_kills = _source getVariable ["humanKills",0];
 				_source setVariable ["humanKills",(_kills + 1),true];
-				_wait = 300;
 			} else {
-				//Process Morality Hit
-				//_humanity = _myKills * 100;
-				_killsV = 		_source getVariable ["banditKills",0];
+				_killsV = _source getVariable ["banditKills",0];
 				_source setVariable ["banditKills",(_killsV + 1),true];
 				_wait = 0;
 			};
-			if (_humanity < 0) then {
-				_wait = 0;
-			};
-			if (!_canHitFree and !_isBandit) then {
+			if (!_canHitFree and !_isBandit and (_humanity != 0)) then {
 				//["dayzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
 				dayzHumanity = [_source,_humanity,_wait];
 				publicVariable "dayzHumanity";
