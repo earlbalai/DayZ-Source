@@ -115,7 +115,7 @@ Serverside affected addons:
 	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character
-	    * [UPDATED] - Lowed Mag drop rate with weapons chance to spwan with 0 to 2 total mags
+	    * [UPDATED] - Lowered Mag drop rate with weapons chance to spawn with 0 to 2 total mags
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
