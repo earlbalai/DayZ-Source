@@ -1,4 +1,3 @@
-
 class CfgSounds {
 	class breath_1 {
 		name = "";
