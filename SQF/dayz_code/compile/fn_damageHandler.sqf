@@ -122,10 +122,13 @@ if (_hit in USEC_MinorWounds) then {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
 	} else {
-		[_unit,_hit,(_damage / 2)] call object_processHit;
-	};
-	if (_ammo == "") then {
-		[_unit,_hit,_damage] call object_processHit;
+diag_log(format["%1 _this:%2  _damage/2:%3",__FILE__,_this,_damage/2]);
+		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then { 
+			[_unit,"arms",_damage/6] call object_processHit; // prevent broken legs due to arma bugs
+		}
+		else {
+			[_unit,_hit,_damage/2] call object_processHit;
+		};
 	};
 };
 
