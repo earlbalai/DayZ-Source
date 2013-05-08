@@ -67,7 +67,8 @@ feature.
 * [Venthos](https://github.com/Venthos)
 * [VRShiva](https://github.com/VRShiva)
 * [caleywoods](https://github.com/caleywoods)
-* Ander                                            
+* [soapmak3r](https://github.com/soapmak3r) (Background Music)
+* Ander
 
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
