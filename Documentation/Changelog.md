@@ -114,8 +114,8 @@ Serverside affected addons:
 	    * [UPDATED] - Fireplace can no longer be picked up after lighting.
 	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
-		* [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character
-		* [] - Lowed Mag drop rate with weapons chance to spwan with 0 to 2 total mags
+	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character
+	    * [UPDATED] - Lowed Mag drop rate with weapons chance to spwan with 0 to 2 total mags
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
@@ -440,6 +440,16 @@ Version 1.7.4.4
 
 * Releasedate 21 November 2012
 
+
+Affected addons:
+* dayz_anim
+* dayz_code
+* dayz_sfx
+* dayz_communityassets
+
+Serverside affected addons:
+* dayz_server (server admins only)
+* Mission (server admins only)
 
 	Changes:
 	
