@@ -40,6 +40,7 @@ Serverside affected addons:
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
+	    * [NEW] - 2 New background tracks.
 	    * [NEW] - 3 New decayed Zeds - Harder to kill and Do more damage.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
@@ -115,7 +116,7 @@ Serverside affected addons:
 	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character
-	    * [UPDATED] - Lowed Mag drop rate with weapons chance to spwan with 0 to 2 total mags
+	    * [UPDATED] - Lowered Mag drop rate with weapons chance to spawn with 0 to 2 total mags
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.

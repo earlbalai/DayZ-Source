@@ -10,12 +10,6 @@ class CfgMusic
 		name = "DayZTrackDeath";
 		sound[] = {"\dayz_sfx\tracks\track_death_1.ogg", db+0, 1.0};
 	};
-	class dayz_track_intro_1
-	{
-		name = "DayZTrackIntro";
-		sound[] = {"\dayz_sfx\tracks\track_intro_1.ogg", db+0, 1.0};
-		duration = ;
-	};
 	class z_suspense_0
 	{
 		name = "";
@@ -230,6 +224,18 @@ class CfgMusic
 	{
 		name = "";
 		sound[] = {"\dayz_sfx\samples\suspense_35.ogg", db+0, 1.0};
+		duration = 20;
+	};
+	class z_suspense_36
+	{
+		name = "";
+		sound[] = {"\dayz_sfx\samples\suspense_36.ogg", db+0, 1.0};
+		duration = 20;
+	};
+	class z_suspense_37
+	{
+		name = "";
+		sound[] = {"\dayz_sfx\samples\suspense_37.ogg", db+0, 1.0};
 		duration = 20;
 	};
 };
