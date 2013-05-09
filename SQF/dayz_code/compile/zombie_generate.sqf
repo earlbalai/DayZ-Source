@@ -47,6 +47,8 @@ if (_doLoiter) then {
 	_agent setVariable ["doLoiter",false,true];
 };
 
+_agent setVariable["agentObject",_agent,true];
+
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
 //diag_log ("CREATE INFECTED: " + str(_this));
