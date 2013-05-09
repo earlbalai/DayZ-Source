@@ -78,7 +78,7 @@ class CfgAmmo {
 	class R_57mm_HE: FakeAmmo {};
 	class R_80mm_HE: FakeAmmo {};
 	class R_S8T_AT: FakeAmmo {};
-	//class R_M136_AT: FakeAmmo {};
+	class R_M136_AT: FakeAmmo {};
 	class R_RPG18_AT: FakeAmmo {};
 	class R_PG7V_AT: FakeAmmo {};
 	class R_PG7VL_AT: FakeAmmo {};

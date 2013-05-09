@@ -218,12 +218,6 @@ Dayz_GUI_R = 0.38; // 0.7
 Dayz_GUI_G = 0.63; // -0.63
 Dayz_GUI_B = 0.26; // -0.26
 
-//actions blockers
-a_player_cooking = false;
-a_player_boil = false;
-a_player_jerryfilling = false;
-a_player_repairing = false;
-
 //Player self-action handles
 dayz_resetSelfActions = {
 	s_player_fire =			-1;

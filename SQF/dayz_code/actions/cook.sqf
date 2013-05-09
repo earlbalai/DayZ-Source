@@ -6,7 +6,6 @@ s_player_cook = -1;
 
 _rawmeat = meatraw;
 _cookedmeat = meatcooked;
-a_player_cooking = true;
 
 {
 	_meat = _x;
@@ -30,5 +29,3 @@ a_player_cooking = true;
 		cutText [format[(localize  "str_success_cooked"),_qty,_text], "PLAIN DOWN"];
 	};
 } forEach _rawmeat;
-
-a_player_cooking = false;

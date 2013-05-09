@@ -161,7 +161,7 @@ fnc_usec_playerBloodRegen = {
 	
 	if ((r_player_bloodregen > _bleedPerSec) and (_bleedPerSec == 0)) then { _bleedPerSec = 1; };
 	
-	r_player_bloodregen = floor(r_player_bloodregen - _bleedPerSec);
+	r_player_bloodregen = r_player_bloodregen - _bleedPerSec;
 	
 	if ((r_player_bloodregen > 0) and (r_player_blood < 12000)) then {
 		//bleed regen

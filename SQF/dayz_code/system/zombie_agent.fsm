@@ -60,7 +60,7 @@ item55[] = {"player_check",4,218,50.000000,0.000000,150.000000,50.000000,0.00000
 item56[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
 item57[] = {"",7,210,-229.000000,621.000000,-221.000000,629.000000,0.000000,""};
 item58[] = {"",7,210,-479.000000,546.000000,-471.000000,554.000000,0.000000,""};
-item59[] = {"Nobody_Near_1",4,218,-425.000000,525.000000,-325.000000,575.000000,4.000000,"Nobody" \n "Near"};
+item59[] = {"someoneclose_Nea",4,218,-425.000000,525.000000,-325.000000,575.000000,2.000000,"someoneclose" \n "Near"};
 link0[] = {0,11};
 link1[] = {0,56};
 link2[] = {2,3};
@@ -139,8 +139,8 @@ link74[] = {57,34};
 link75[] = {57,46};
 link76[] = {58,25};
 link77[] = {59,58};
-globals[] = {25.000000,1,0,0,0,640,480,1,105,6316128,1,-636.193665,616.909973,957.377136,59.742722,839,601,1};
-window[] = {2,-1,-1,-32000,-32000,890,110,1318,110,3,856};
+globals[] = {25.000000,1,0,0,0,640,480,1,104,6316128,1,-655.372498,636.089233,752.040222,-36.748913,983,601,1};
+window[] = {2,-1,-1,-32000,-32000,912,132,1340,132,3,1000};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -239,7 +239,7 @@ class FSM
           priority = 4.000000;
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -334,7 +334,7 @@ class FSM
           priority = 4.000000;
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -472,12 +472,12 @@ class FSM
        "if (speed _agent < 0.1) then {_countr = _countr + 1} else {_countr = 0};" \n
        "_target = _agent call zombie_findTargetAgent;" \n
        "_isAlive = alive _agent;" \n
-       "_targetPos = _target modelToWorld [0, 2*(speed _target)/3.6, 0];" \n
+       "_targetPos = _target modelToWorld [0, (speed _target)/3.6, 0];" \n
        "" \n
        "" \n
        "//Move to target" \n
        "_agent moveTo _targetPos;" \n
-       "_agent forceSpeed 6;" \n
+       "_agent forceSpeed 12;" \n
        "" \n
        "if ((_agent distance _target) <= 4) then {" \n
        "	_agent forceSpeed 2;" \n
@@ -507,7 +507,7 @@ class FSM
           priority = 4.000000;
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -537,7 +537,7 @@ class FSM
           priority = 0.000000;
           to="Chase";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _timeN) > 0.5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _timeN) > 1"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_losCheck = _losCheck + 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -595,14 +595,14 @@ class FSM
           priority = 4.000000;
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "Nobody_Near_1">*/
-        class Nobody_Near_1
+        /*%FSM<LINK "someoneclose_Nea">*/
+        class someoneclose_Nea
         {
-          priority = 4.000000;
+          priority = 2.000000;
           to="Reset_Targeting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
@@ -691,7 +691,7 @@ class FSM
     {
       name = "Reset_Targeting";
       init = /*%FSM<STATEINIT""">*/"if (!isNull _target) then {" \n
-       "	_targetPos = _target modelToWorld [0, 2*(speed _target)/3.6, 0];" \n
+       "	_targetPos = _target modelToWorld [0, (speed _target)/3.6, 0];" \n
        "	_agent setVariable [""myDest"",_targetPos];" \n
        "	_agent moveTo _targetPos;" \n
        "};" \n

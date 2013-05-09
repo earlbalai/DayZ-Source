@@ -94,6 +94,7 @@ class CfgLoot {
 			{"FoodCanFrankBeans",0.01},
 			{"FoodCanPasta",0.01},
 			{"ItemWaterbottleUnfilled",0.03},
+			{"ItemWaterbottle",0.03},
 			{"ItemBandage",0.03},
 			{"7Rnd_45ACP_1911",0.03},
 			{"5x_22_LR_17_HMR",0.01},
@@ -102,7 +103,6 @@ class CfgLoot {
 			{"2Rnd_shotgun_74Slug",0.05},
 			{"2Rnd_shotgun_74Pellets",0.05},
 			{"8Rnd_9x18_Makarov",0.09},
-			{"ItemWaterbottle",0.03},
 			{"15Rnd_W1866_Slug",0.02},
 			{"WoodenArrow",0.04},
 			{"HandRoadFlare",0.07},
@@ -117,7 +117,7 @@ class CfgLoot {
 			{"ItemPainkiller",0.05},
 			{"ItemMorphine",0.05},
 			{"ItemEpinephrine",0.03},
-			{"ItemAntibiotic",0.01},
+			{"ItemAntibiotic",0.02},
 			{"ItemHeatPack",0.03}
 	};
 	hospital[] = {
@@ -126,7 +126,7 @@ class CfgLoot {
 			{"ItemMorphine",0.04},
 			{"ItemEpinephrine",0.03},
 			{"ItemBloodbag",0.03},
-			{"ItemAntibiotic",0.01}
+			{"ItemAntibiotic",0.02}
 	};
 	military[] = {
 			{"TrashTinCan",0.04},
@@ -134,7 +134,7 @@ class CfgLoot {
 			{"ItemSodaCoke",0.02},
 			{"ItemSodaPepsi",0.02},
 			{"ItemBandage",0.04},
-			{"ItemAntibiotic",0.01},
+			{"ItemAntibiotic",0.04},
 			{"ItemPainkiller",0.04},
 			{"ItemMorphine",0.01},
 			{"30Rnd_556x45_Stanag",0.04},

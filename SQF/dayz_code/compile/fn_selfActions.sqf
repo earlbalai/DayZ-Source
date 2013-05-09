@@ -118,7 +118,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Allow player to fill Fuel can
-	if((_hasFuelE20 or _hasFuelE5) and _isFuel and _canDo and !a_player_jerryfilling) then {
+	if((_hasFuelE20 or _hasFuelE5) and _isFuel and _canDo) then {
 		if (s_player_fillfuel < 0) then {
 			s_player_fillfuel = player addAction [localize "str_actions_self_10", "\z\addons\dayz_code\actions\jerry_fill.sqf",[], 1, false, true, "", ""];
 		};
@@ -158,7 +158,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	};
 	
 	//Fireplace Actions check
-	if (inflamed cursorTarget and _hasRawMeat and _canDo and !a_player_cooking) then {
+	if (inflamed cursorTarget and _hasRawMeat and _canDo) then {
 		if (s_player_cook < 0) then {
 			s_player_cook = player addAction [localize "str_actions_self_05", "\z\addons\dayz_code\actions\cook.sqf",cursorTarget, 3, true, true, "", ""];
 		};
@@ -166,7 +166,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_cook;
 		s_player_cook = -1;
 	};
-	if (inflamed cursorTarget and (_hasbottleitem and _hastinitem) and _canDo and !a_player_boil) then {
+	if (inflamed cursorTarget and (_hasbottleitem and _hastinitem) and _canDo) then {
 		if (s_player_boil < 0) then {
 			s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf",cursorTarget, 3, true, true, "", ""];
 		};

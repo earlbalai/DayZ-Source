@@ -1,6 +1,5 @@
 private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling"];
 
-a_player_jerryfilling = true;
 _vehicle = 		cursorTarget;
 _array = _this select 3;
 _cantype = _array select 0;
@@ -46,4 +45,3 @@ if (isnil "_fueling") then {
 } else {
 	cutText ["Already refueling!","PLAIN DOWN"];
 };
-a_player_jerryfilling = false;
