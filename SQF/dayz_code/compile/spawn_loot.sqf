@@ -43,7 +43,7 @@ switch (_iClass) do {
 			if (!(_iItem in MeleeWeapons)) then {
 				_magQty = round(random 10);
 				if (_magQty > 3) then {
-					_item addMagazineCargoGlobal [(_mags select 0), (round(random 2) + 1)];
+					_item addMagazineCargoGlobal [(_mags select 0), (round(random 1) + 1)];
 				};	
 			};
 		};
