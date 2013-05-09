@@ -55,7 +55,7 @@ if (_canLoot) then {
 				_bsz_pos = _posList call BIS_fnc_selectRandom;
 				_posList = _posList - [_bsz_pos];
 				_bsz_pos = _obj modelToWorld _bsz_pos;
-				if (({isPlayer _x} count (_bsz_pos nearEntities ["CAManBase",30])) == 0) then { // check position is far enough from any player
+				if (({isPlayer _x} count (_bsz_pos nearEntities ["CAManBase",10])) == 0) then { // check position is far enough from any player
 					diag_log(format["%1 zombie spawned at %2 inside %3",__FILE__, _bsz_pos, typeOf _obj]);
 					//diag_log format["Building: %1 / Positions: %2 / Chance: %3",_type,_bsz_pos,_zombieChance];
 					[_bsz_pos,false,_unitTypes] call zombie_generate;
