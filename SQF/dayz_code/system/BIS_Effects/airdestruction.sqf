@@ -109,7 +109,7 @@ else
 		//_velx = velocity _v select 0; _velx = _velx / 4;
 		//_vely = velocity _v select 1; _vely = _vely / 4;
 		_velz=velocity _v select 2;
-		if (_velz>1) then (_v setvelocity [velocity _v select 0,velocity _v select 1,0]);
+		if (_velz>1) then {_v setvelocity [velocity _v select 0,velocity _v select 1,0]};
 		_expl="HelicopterExploBig" createvehicle [_pos select 0,_pos select 1,(_pos select 2) + 1];
 		sleep 0.05;
                 /*
