@@ -483,6 +483,7 @@ if (!isDedicated) then {
 	//Server Only
 	if (isServer) then {
 		call compile preprocessFileLineNumbers "\z\addons\dayz_server\init\server_functions.sqf";
+		spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf";
 	} else {
 		eh_localCleanup = {};
 	};
