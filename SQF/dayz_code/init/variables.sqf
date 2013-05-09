@@ -5,6 +5,7 @@ disableSerialization;
 dayz_Trash = 1;
 
 //
+fps_safty_check = diag_fpsmin;
 
 //Model Variables
 Bandit1_DZ = 	"Bandit1_DZ";

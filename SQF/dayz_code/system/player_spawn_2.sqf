@@ -22,6 +22,9 @@ while {true} do {
 	_saveTime = (playersNumber west * 2) + 10;
 	_isBandit = typeOf player == "Bandit1_DZ" || typeOf player == "BanditW1_DZ"; 
 	_isHero = typeOf player == "Survivor3_DZ";
+	
+	_Survivors = playersNumber west;
+	diag_log format[ "Survivors:%1, FPS:%2, FPSMin:%3", _Survivors,diag_fps,diag_fpsmin];
 		
 	//reset position
 	_randomSpot = true;
