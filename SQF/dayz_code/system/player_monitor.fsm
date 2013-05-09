@@ -64,6 +64,8 @@ item59[] = {"Disconnect",2,250,675.000000,250.000000,775.000000,300.000000,0.000
 item60[] = {"No_time_date",4,218,25.000000,1000.000000,125.000000,1050.000000,0.000000,"No time/date"};
 item61[] = {"ERROR__No_Date_or",2,250,175.000000,1000.000000,275.000000,1050.000000,0.000000,"ERROR:" \n "No Date or Time"};
 item62[] = {"Too_Long",4,218,300.000000,1000.000000,400.000000,1050.000000,0.000000,"Too" \n "Long"};
+item63[] = {"get_ready_to_clo_1",2,250,450.000000,650.000000,550.000000,700.000000,0.000000,"get ready to close"};
+item64[] = {"sleep_",4,218,600.000000,650.000000,700.000000,700.000000,0.000000,"sleep" \n ""};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -113,7 +115,7 @@ link45[] = {37,36};
 link46[] = {38,59};
 link47[] = {39,59};
 link48[] = {40,59};
-link49[] = {41,59};
+link49[] = {41,63};
 link50[] = {42,6};
 link51[] = {42,48};
 link52[] = {43,42};
@@ -136,8 +138,10 @@ link68[] = {58,59};
 link69[] = {60,61};
 link70[] = {61,62};
 link71[] = {62,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,93,6316128,1,-324.788635,454.141663,1249.944214,404.931305,554,601,1};
-window[] = {2,-1,-1,-32000,-32000,802,22,1394,22,3,571};
+link72[] = {63,64};
+link73[] = {64,59};
+globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-151.413361,791.092285,1155.889038,133.423462,554,601,1};
+window[] = {2,-1,-1,-32000,-32000,912,132,1504,132,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -982,7 +986,12 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
        "_myTime = time;" \n
-       "1 cutText [format[localize ""str_player_18"",dayz_versionNo,_version], ""PLAIN""];"/*%FSM</STATEINIT""">*/;
+       "" \n
+       "dayz_loadScreenMsg = ""You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads."";" \n
+       "" \n
+       "1 cutText [format[localize ""str_player_18"",dayz_versionNo,_version], ""PLAIN""];" \n
+       "" \n
+       "progressLoadingScreen 0.5;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -990,9 +999,9 @@ class FSM
         class Too_Long
         {
           priority = 0.000000;
-          to="Disconnect";
+          to="get_ready_to_clo_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1170,10 +1179,11 @@ class FSM
        "" \n
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
        "" \n
-       "fps_safty_check = diag_fpsmin;" \n
+       "diag_log (""FPS: "" +str(fps_safty_check));" \n
        "" \n
        "dayz_spawnCheck = [] spawn {" \n
        "	while {true} do {" \n
+       "		fps_safty_check = diag_fpsmin;" \n
        "		if (fps_safty_check > 10) then {" \n
        "			[""both""] call player_spawnCheck;" \n
        "			sleep 8;" \n
@@ -1183,6 +1193,7 @@ class FSM
        "" \n
        "dayz_locationCheck = [] spawn {" \n
        "	while {true} do {" \n
+       "		fps_safty_check = diag_fpsmin;" \n
        "		if (fps_safty_check > 10) then {" \n
        "			call stream_locationCheck;" \n
        "			sleep 2;" \n
@@ -1475,6 +1486,32 @@ class FSM
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "get_ready_to_clo_1">*/
+    class get_ready_to_clo_1
+    {
+      name = "get_ready_to_clo_1";
+      init = /*%FSM<STATEINIT""">*/"//diag_log (""PLOGIN:Wrong DayZ Version ("" + dayz_versionNo + "")"");" \n
+       "diag_log format[localize ""str_player_18"",dayz_versionNo,_version];" \n
+       "" \n
+       "dayz_loadScreenMsg = ""You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads."";" \n
+       "" \n
+       "progressLoadingScreen 1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "sleep_">*/
+        class sleep_
+        {
+          priority = 0.000000;
+          to="Disconnect";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
