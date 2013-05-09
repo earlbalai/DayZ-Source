@@ -1,4 +1,4 @@
-private["_text","_rawmeat","_cookedmeat","_meat","_meatcooked","_qty","_dis","_sfx"];
+private ["_rawmeat","_cookedmeat","_meat","_meatcooked","_text","_qty","_dis","_sfx"];
 
 //diag_log ("Cook Enabled");
 player removeAction s_player_cook;

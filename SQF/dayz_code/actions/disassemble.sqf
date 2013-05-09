@@ -1,4 +1,4 @@
-private["_array","_object","_inventory"];
+private ["_array","_object","_inventory"];
 
 _array = _this select 3;
 _object = _array select 0;

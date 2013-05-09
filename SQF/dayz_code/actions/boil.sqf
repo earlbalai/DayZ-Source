@@ -1,4 +1,4 @@
-private["_hasbottleitem","_hastinitem","_bottletext","_tin1text","_tin2text","_tintext","_qty","_dis","_sfx"];
+private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx"];
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "displayName");
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
