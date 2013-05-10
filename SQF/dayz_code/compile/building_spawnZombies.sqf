@@ -17,7 +17,7 @@ if (_canLoot) then {
 	_max = 			getNumber (_config >> "maxRoaming");
 
 
-	_num = _min + ceil(random(_max-_min));
+	_num = _min + floor(random(_max - _min + 1));
 	_zombieChance =	getNumber (_config >> "zombieChance");
 
 	_halfBuildingSize = (sizeOf _type) / 3; // I put 3 because sizeOf is very loose
@@ -25,17 +25,17 @@ if (_canLoot) then {
 	if (_rnd > _zombieChance) then {
 		// Add Walking Zombies
 		_wholeAreaSize = 40; // for external walking zombies, area size around building where zombies can spawn
-		_minSector = 15; // in degree. Only the opposite sector of the building, according to Player PoV, will be used as spawn. put 360 if you want they spawn all around the building
-		_spawnSize = (sizeOf "zZombie_Base") max _halfBuildingSize / 2;
-		_minRadius = _halfBuildingSize + _spawnSize;
+	    _minSector = 5; // in degree. Only the opposite sector of the building, according to Player PoV, will be used as spawn. put 360 if you want they spawn all around the building
+	    _spawnSize = (sizeOf "zZombie_Base") max (_halfBuildingSize / 2); // smaller area size inside the sector where findEmptyPosition is asked to find a spot
+	    _minRadius = _halfBuildingSize + _spawnSize + (player distance _obj);
 		_rangeRadius = _spawnSize max (_wholeAreaSize - _spawnSize - _minRadius);
-		_rangeAngle = _minSector max (2 * (_halfBuildingSize atan2 (player distance _obj)));
+	    _rangeAngle = _minSector max (2 * ((_halfBuildingSize - _spawnSize) atan2 (player distance _obj)));
 		_minAngle = ([_obj, player] call BIS_fnc_dirTo) + 180 - _rangeAngle / 2;
 		//diag_log(format["%1 _wholeAreaSize:%2 _minRadius:%3 _rangeRadius:%4 _rangeAngle:%5, _halfBuildingSize:%6", __FILE__, _wholeAreaSize, _minRadius, _rangeRadius, _rangeAngle, _halfBuildingSize]);
-		for [{_i = 0}, {(_i < _num * 3) AND (_num > 0)}, {_i = _i + 1}] do { // we try 3 times to find a pos for each zombie
+	    for [{_num = _num0}, {_num > _num0 / 2}, {}] do { // random to add some fuzzy logic since _num is always few unitszombie
 			_deg = _minAngle + random _rangeAngle;
 			_radius = _minRadius + random _rangeRadius;
-			_bsz_pos = getPos _obj;
+			_bsz_pos = getPosATL player;
 			_bsz_pos = [(_bsz_pos select 0) + _radius * sin(_deg), (_bsz_pos select 1) + _radius * cos(_deg), 0];
 			_bsz_pos = (_bsz_pos) findEmptyPosition [0, _spawnSize, "zZombie_Base"];
 			if (((count _bsz_pos >= 2)  // check that findEmptyPosition found something for us
