@@ -1,6 +1,23 @@
-private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_nearbyBuildings","_radius","_locationstypes","_nearestCity","_position","_nearbytype"];
+
+private["_type","_isAir","_inVehicle","_dateNow","_maxZombies","_maxWildZombies","_age","_nearbyBuildings","_radius","_locationstypes","_nearestCity","_position","_nearbytype", "_bldcount"];
+
 _type = _this select 0;
 _Keepspawning = _this select 1;
+
+// compute building footprint just to check if it could hide a Zombie
+_fairSize = {
+	private ["_boundingBox","_cornerLow","_cornerHi", "_burried"];
+
+	_boundingBox = boundingBox _this;
+	
+	_cornerLow = _this ModeltoWorld (_boundingBox select 0);
+	_cornerHi = _this ModeltoWorld (_boundingBox select 1);
+	_burried = _cornerLow select 2;
+	_cornerLow set [2, _cornerHi select 2];
+	//diag_log(format["Model:%1  Height:%2  Cross width:%3  _burried:%4", typeOf _this, _cornerHi select 2, _cornerLow distance _cornerHi, _burried]);
+	((_burried < 0.1) AND {(((_cornerHi select 2) > 2.6) AND {((_cornerLow distance _cornerHi) > 7)})}) // container size as reference
+};
+
 _isAir = vehicle player iskindof "Air";
 _inVehicle = (vehicle player != player);
 _dateNow = (DateToNumber date);
@@ -57,16 +74,7 @@ dayz_maxGlobalZombies = 60;
 } foreach _players;
 */
 
-_spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
-dayz_spawnZombies = 0;
-{
-	if (local _x) then 
-	{
-		//diag_log ("Local");
-		dayz_spawnZombies = dayz_spawnZombies + 1;
-	};
-} foreach _spawnZombies;
-
+dayz_spawnZombies = {local _x} count (_position nearEntities ["zZombie_Base",_radius+100]);
 dayz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
 
 if ("ItemMap_Debug" in items player) then {
@@ -113,25 +121,36 @@ diag_log ("GlobalZombies: " +str(dayz_CurrentZombies) + "/" +str(dayz_maxGlobalZ
 diag_log ("Audial Noise: " +str(DAYZ_disAudial));
 diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 };
+
+diag_log (format["%1 Local-Z@300m: %2/%3. Global-Z@400m: %5/%6 (viewdistance:%7m %8fps).", __FILE__,
+	dayz_spawnZombies, _maxZombies, time - dayz_spawnWait, dayz_CurrentZombies, dayz_maxGlobalZombies, viewDistance, round diag_fps]);
+
 	
 _nearby = _position nearObjects ["building",_radius];
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
-//	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle)  then {
+//	if ((dayz_spawnZombies < _maxWildZombies) and !_inVehicle) then {
 //		[_position] call wild_spawnZombies;
 //	};
 };
 
-//Make sure zeds always spawn no matter the timeout
-if (dayz_spawnZombies == 0) then {
-	_force = true;
+// little hack so that only 1/4 of the max local spawnable zombies will be spawned in this round
+// make the spawn smoother along player's journey
+if (_maxZombies == dayz_maxLocalZombies) then {
+	dayz_spawnZombies = dayz_spawnZombies max floor(dayz_maxLocalZombies*3/4);
 };
 
+//Make sure zeds always spawn no matter the timeout
+//if (dayz_spawnZombies == 0) then {
+	_force = true;
+//};
+
+_bldcount = 0;
 {
 	_type = typeOf _x;
-	_config = 		configFile >> "CfgBuildingLoot" >> _type;
-	_canLoot = 		isClass (_config);
+	_config = configFile >> "CfgBuildingLoot" >> _type;
+	_canLoot = isClass (_config);
 	_dis = _x distance player;
 	_checkLoot = ((count (getArray (_config >> "lootPos"))) > 0);
 	_x setVariable ["cleared",false,true];
@@ -145,35 +164,37 @@ if (dayz_spawnZombies == 0) then {
 		if (_age < -0.1) then {
 				_x setVariable ["looted",(DateToNumber date),true];
 		} else {
-			if (_age > 30)  then {
+			if (_age > 30) then {
 				_x setVariable ["looted",_dateNow,true];
 				[_x] spawn building_spawnLoot;
 			};
 		};
 	};
 	//Zeds
-	if ((((time - dayz_spawnWait) > dayz_spawnDelay) or _force)) then {
-		if (dayz_CurrentZombies < dayz_maxGlobalZombies) then {
+	if (_force OR {(time - dayz_spawnWait > dayz_spawnDelay)}) then {
+		if ((dayz_CurrentZombies < dayz_maxGlobalZombies) and {(_canLoot OR {(_x call _fairSize)})}) then {
 			if (dayz_spawnZombies < _maxZombies) then {
 				//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxZombies] call player_spawnzedCheck;
 				_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 				_dateNow = (DateToNumber date);
 				_age = (_dateNow - _zombied) * 525948;
 				if (_age < -0.1) then {
-					_x setVariable ["zombieSpawn",(DateToNumber date),true];
+					_x setVariable ["zombieSpawn",(DateToNumber date),true]; // a SV for all objects on the map was a bit insane
 				} else {
 					if (_age > 1) then {
-						_bPos = getPosATL _x;
-						_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
-						if (_zombiesNum == 0) then {
-							_x setVariable ["zombieSpawn",_dateNow,true];
-							[_x] spawn building_spawnZombies;
-						};
+						//_bPos = getPosATL _x;
+						//_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
+						//if (_zombiesNum == 0) then {
+						_x call building_spawnZombies; // <-- returns the quantity of spawned zombies
+						//};
+						_x setVariable ["zombieSpawn",_dateNow,true]; // 
 					};
+//					diag_log (format["%1 building. %2", __FILE__, _x]);
 				};	
 			} else {
 				dayz_spawnWait = time;
 			};
 		};
 	};
+
 } forEach _nearby;
