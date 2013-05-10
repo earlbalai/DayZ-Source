@@ -52,6 +52,7 @@ Serverside affected addons:
 	    * [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
+	    * [NEW] - Mainmenu Intro
 	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
 					Medium = 16 Objects 1 weapon , no bags
