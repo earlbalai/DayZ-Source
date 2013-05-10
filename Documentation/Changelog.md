@@ -19,6 +19,7 @@ Serverside affected addons:
 * Mission (server admins only) (Prerequisites) Downloaded from http://www.silentspy.net/utility/dayz/mission-generator/
 * SQL Files (server admins only)
 * BattlEye-Filers (server admins only)
+
 		
 	Changes:
 
