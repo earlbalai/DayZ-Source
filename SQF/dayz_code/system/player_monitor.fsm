@@ -141,7 +141,7 @@ link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
 globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-151.413361,791.092285,1155.889038,133.423462,554,601,1};
-window[] = {2,-1,-1,-32000,-32000,912,132,1504,132,3,571};
+window[] = {2,-1,-1,-1,-1,890,110,1482,110,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1211,6 +1211,8 @@ class FSM
        "		nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
        "	};" \n
        "} forEach allMissionObjects ""SpawnableWreck"";" \n
+       "" \n
+       "call fn_bases;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
