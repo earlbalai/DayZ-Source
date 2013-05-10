@@ -57,16 +57,7 @@ dayz_maxGlobalZombies = 60;
 } foreach _players;
 */
 
-_spawnZombies = _position nearEntities ["zZombie_Base",_radius+100];
-dayz_spawnZombies = 0;
-{
-	if (local _x) then 
-	{
-		//diag_log ("Local");
-		dayz_spawnZombies = dayz_spawnZombies + 1;
-	};
-} foreach _spawnZombies;
-
+dayz_spawnZombies = {local _x} count (_position nearEntities ["zZombie_Base",_radius+100]);
 dayz_CurrentZombies = count (_position nearEntities ["zZombie_Base",_radius+200]);
 
 if ("ItemMap_Debug" in items player) then {
@@ -123,10 +114,18 @@ if (_nearbyCount < 1) exitwith
 //	};
 };
 
-//Make sure zeds always spawn no matter the timeout
-if (dayz_spawnZombies == 0) then {
-	_force = true;
+// little hack so that only 1/4 of the max local spawnable zombies will be spawned in this round
+// make the spawn smoother along player's journey
+diag_log (format["%1 Local-Z@300m: %2/%3. Global-Z@400m: %5/%6 (viewdistance:%7m %8fps). May spawn Z in %4 sec.", __FILE__,
+	dayz_spawnZombies, _maxZombies, time - dayz_spawnWait, dayz_CurrentZombies, dayz_maxGlobalZombies, viewDistance, round diag_fps]);
+if (_maxZombies == dayz_maxLocalZombies) then {
+//	dayz_spawnZombies = dayz_spawnZombies max floor(dayz_maxLocalZombies*3/4);
 };
+
+//Make sure zeds always spawn no matter the timeout
+//if (dayz_spawnZombies == 0) then {
+	_force = true;
+//};
 
 {
 	_type = typeOf _x;
