@@ -1,20 +1,21 @@
+// create a Zombie agent, or recycle an existing one.
+// returns true if agent is not null
 private ["_position", "_doLoiter", "_unitTypes", "_isNoone", "_loot", "_array", "_agent", "_type", "_radius", "_method", "_isAlive", "_myDest", "_newDest", "_rnd", "_lootType", "_index", "_weights", "_findAgt", "_list"];
 
-_position = 	_this select 0;
-_doLoiter = 	_this select 1;
-_unitTypes = 	_this select 2;
-
+_position = _this select 0;
+_doLoiter = _this select 1;
+_unitTypes = _this select 2;
 
 _findAgt = { // find agents to recycle according to relative position and type
 	private ["_plr","_types","_radius","_y", "_point"];
 
 	_plr = _this select 0;
 	_point = _plr modelToWorld [0,100,0]; // we will recycle more zombies located behind the player
-	_types =  _this select 1;
+	_types = _this select 1;
 	_radius = 200; 
 	recyclableAgt=[];
 	
-	{	
+	{ 
 		_y = _x getVariable ["agentObject",objNull];
 		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > _radius + 200)})}) then { // TODO : los check with scope check via (cameraView == "GUNNER") and viewdistance
 			if (((typeOf _y) IN _types) AND
@@ -27,19 +28,19 @@ _findAgt = { // find agents to recycle according to relative position and type
 	recyclableAgt
 };
 
-if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
-if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
+if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {false}; 
+if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {false}; 
 
-_isNoone = 	0 == {(getPosATL _x) distance _position < 30} count playableUnits;
-_loot = 	"";
-_array = 	[];
-_agent = 	objNull;
+_isNoone = 0 == {(getPosATL _x) distance _position < 30} count playableUnits;
+_loot = "";
+_array = [];
+_agent = objNull;
 
 //Exit if no one is nearby
-if (!_isNoone) exitWith {};
+if (!_isNoone) exitWith {false};
 
 if (count _unitTypes == 0) then {
-	_unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	_unitTypes = []+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
  
 _unitTypes = _unitTypes + _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
@@ -67,7 +68,7 @@ else {
 	//Add some loot
 	_rnd = random 1;
 	if (_rnd > 0.3) then {
-		_lootType = 		configFile >> "CfgVehicles" >> _type >> "zombieLoot";
+		_lootType = configFile >> "CfgVehicles" >> _type >> "zombieLoot";
 		if (isText _lootType) then {
 			_array = [];
 			{
@@ -85,31 +86,29 @@ else {
 	};
 	_agent setVariable["agentObject",_agent,true];
 };
-_agent setDir random 360;
-_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
-_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
-_agent setVariable ["doLoiter",_doLoiter,true];
 
-
-
-_position = getPosATL _agent;
-
-//_position = getPosATL _agent;
-if (random 1 > 0.7) then {
-	_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
+if (!isNull _agent) then {
+	_agent setDir random 360;
+	_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
+	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
+	_agent setVariable ["doLoiter",_doLoiter,true];
+	
+	_position = getPosATL _agent;
+	
+	//_position = getPosATL _agent;
+	if (random 1 > 0.7) then {
+		_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
+	};
+	
+	_myDest = getPosATL _agent;
+	_newDest = getPosATL _agent;
+	_agent setVariable ["myDest",_myDest];
+	_agent setVariable ["newDest",_newDest];
+	
+	if (count _list == 0) then {
+		//Start behavior only for freshly created agents
+		_id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
+	};
 };
 
-if (isNull _agent) exitWith {
-	dayz_spawnZombies = dayz_spawnZombies - 1;
-};
-
-_myDest = getPosATL _agent;
-_newDest = getPosATL _agent;
-_agent setVariable ["myDest",_myDest];
-_agent setVariable ["newDest",_newDest];
-
-if (count _list == 0) then {
-	//Start behavior only for freshly created agents
-	_id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
-};
-
+(!isNull _agent)
