@@ -24,8 +24,6 @@ _isHeadHit = (_hit == "head_hit");
 _evType = "";
 _recordable = false;
 _isPlayer = (isPlayer _source);
-_humanityHit = 0;
-_myKills = 0;
 _currentAnim = animationState _unit;
 
 _sourceZombie = _source isKindOf "zZombie_base";
@@ -46,12 +44,13 @@ if (_unit == player) then {
 			_canHitFree = 	player getVariable ["freeTarget",false];
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
-				_myKills = 		200 - (((player getVariable ["humanKills",0]) / 30) * 100);
-				//Process Morality Hit
-				_humanityHit = -(_myKills * _damage);
-				
-					dayzHumanity = [_this select 0,_this select 1,30];
+				// "humanKills" from local character is used to compute attacker player "dayzHumanity" change
+				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
+				_humanityHit = -200 * _myKills * _damage;
+				if (_humanityHit != 0) then {
+					dayzHumanity = [_this select 0, _humanityHit, 30];
 					publicVariable "dayzHumanity";
+				};
 			};
 		};
 	};
@@ -122,7 +121,7 @@ if (_hit in USEC_MinorWounds) then {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
 	} else {
-diag_log(format["%1 _this:%2  _damage/2:%3",__FILE__,_this,_damage/2]);
+diag_log(format["%1 _this:%2  _damage:%3",__FILE__,_this,_damage]);
 		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then { 
 			[_unit,"arms",_damage/6] call object_processHit; // prevent broken legs due to arma bugs
 		}

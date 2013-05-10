@@ -37,24 +37,16 @@ _agent setVariable["agentObject",_agent,true];
 
 dayz_spawnZombies = dayz_spawnZombies + 1;
 
-//diag_log ("CREATE INFECTED: " + str(_this));
-
 _position = getPosATL _agent;
 
 //_position = getPosATL _agent;
 if (random 1 > 0.7) then {
-	_agent setUnitPos "Middle";
+	_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
 };
-
-//diag_log ("CREATED: "  + str(_agent));
-
-//_agent setPosATL _position;
 
 if (isNull _agent) exitWith {
 	dayz_spawnZombies = dayz_spawnZombies - 1;
 };
-
-_isAlive = alive _agent;
 
 _myDest = getPosATL _agent;
 _newDest = getPosATL _agent;
