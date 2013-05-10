@@ -24,6 +24,7 @@
 #include "Configs\CfgBuildingLoot.hpp"
 #include "Configs\CfgMarkers.hpp"
 #include "Configs\CfgAmmo.hpp"
+#include "Configs\CfgObjectCompositions.hpp"
 
 class CfgPatches {
 	class dayz_code {

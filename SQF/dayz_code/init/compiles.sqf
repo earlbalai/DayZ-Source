@@ -448,6 +448,9 @@ if (!isDedicated) then {
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
 	player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
 	
+	spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf";
+	fn_bases = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_bases.sqf";
+	
 	player_sumMedical = {
 		private["_character","_wounds","_legs","_arms","_medical"];
 		_character = 	_this;
@@ -483,7 +486,6 @@ if (!isDedicated) then {
 	//Server Only
 	if (isServer) then {
 		call compile preprocessFileLineNumbers "\z\addons\dayz_server\init\server_functions.sqf";
-		spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf";
 	} else {
 		eh_localCleanup = {};
 	};
