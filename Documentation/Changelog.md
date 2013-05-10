@@ -22,9 +22,6 @@ Serverside affected addons:
 		
 	Changes:
 
-	    * [Mission Prerequisites]   New mission file downloaded from (http://www.silentspy.net/utility/dayz/mission-generator/)
-	    * [Prerequisites]   BattlEye filters must be updated manually by server admins.
-	
 	    * [NEW] - Removed annoying "re-arm" option from actions menu
 	    * [NEW] - Models and textures for mutton.
 	    * [NEW] - Separate meat for goats, same blood regen as mutton.
@@ -52,7 +49,7 @@ Serverside affected addons:
 	    * [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
-	    * [NEW] - Mainmenu Intro
+	    * [NEW] - Mainmenu Intro.
 	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
 					Medium = 16 Objects 1 weapon , no bags
