@@ -13,8 +13,6 @@ _config = configFile >> "CfgBuildingLoot" >> _type;
 if (!isClass (_config)) then {
 	_config = configFile >> "CfgBuildingLoot" >> _default; // spawn even on non lootable building
 };
-if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {0}; 
-if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {0}; 
 
 //Get zombie class
 _unitTypes = getArray (_config >> "zombieClass");
@@ -27,7 +25,7 @@ _zombieChance = getNumber (_config >> "zombieChance");
 
 _halfBuildingSize = (sizeOf _type) / 3; // I put 3 because sizeOf is very loose
 _rnd = random 1;
-if (_rnd > _zombieChance) then {
+if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 	//Add Internal Zombies if we did not spawn all zombies already
 	_clean = {alive _x} count (getPosATL _obj nearEntities ["zZombie_Base", _halfBuildingSize]) == 0;
 	if (_clean) then {
@@ -36,15 +34,15 @@ if (_rnd > _zombieChance) then {
 			_bsz_pos = _posList call BIS_fnc_selectRandom;
 			_posList = _posList - [_bsz_pos];
 			_bsz_pos = _obj modelToWorld _bsz_pos;
-			if (({isPlayer _x} count (_bsz_pos nearEntities ["CAManBase",10])) == 0) then { // check position is far enough from any player
+			if (({isPlayer _x} count (_bsz_pos nearEntities ["CAManBase",30])) == 0) then { // check position is far enough from any player
 				if ([_bsz_pos,false,_unitTypes] call zombie_generate) then {
-					diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5)",__FILE__, _bsz_pos, typeOf _obj, _num, _num0]);
+					diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5)",__FILE__, _bsz_pos, typeOf _obj, 1+_num0-_num, _num0]);
 					_num = _num - 1;
 				};
 			};
 		};
 	};
-	// Add Walking Zombies
+	// Add Walking Zombies (outside the building)
 	_wholeAreaSize = 40; // for external walking zombies, area size around building where zombies can spawn
 	_minSector = 5; // in degree. Only the opposite sector of the building, according to Player PoV, will be used as spawn. put 360 if you want they spawn all around the building
 	_spawnSize = (sizeOf "zZombie_Base") max (_halfBuildingSize / 2); // smaller area size inside the sector where findEmptyPosition is asked to find a spot
@@ -63,15 +61,16 @@ if (_rnd > _zombieChance) then {
 			AND {(({isPlayer _x} count (_bsz_pos nearEntities ["CAManBase",30])) == 0)}) // check position is far enough from any player
 			AND {(!([_bsz_pos, true] call fnc_isInsideBuilding))}) then { // check position is outside any buildings
 			if ([_bsz_pos,true,_unitTypes] call zombie_generate) then {
-				diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)",__FILE__, _bsz_pos, typeOf _obj, _num, _num0]);
+				diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)",__FILE__, _bsz_pos, typeOf _obj, 1+_num0-_num, _num0]);
 				_num = _num - 1;
 			};	
 		};
 	};
-
 };
 if (_num < _num0) then { 
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
-
+if (_num > 0) then {
+	diag_log(format["%1 Failed to find a nice spot for %2 Zombies at %3 %4",__FILE__, _num, typeOf _obj, getPosATL _obj]);
+};
 (_num0 - _num)

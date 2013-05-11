@@ -388,8 +388,8 @@ dayz_maxAnimals = 5;
 DAYZ_agentnumber = 0;
 dayz_animalDistance = 800;
 dayz_zSpawnDistance = 1000;
-dayz_maxLocalZombies = 40;
-dayz_maxGlobalZombies = 60;
+dayz_maxLocalZombies = 40; // max quantity of zombies controlled by local gameclient, used by player_spawnCheck
+dayz_maxMaxModels = [30, 200]; // quantity of Man models (player or zombies, dead or alive) & radius around player, used by player_spawnCheck 
 dayz_maxZeds = 500;
 //dayz_spawnPos = getPosATL player;
 
