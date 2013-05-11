@@ -1,19 +1,22 @@
 
 // create a Zombie agent, or recycle an existing one.
 // returns true if agent is not null
-private ["_position", "_doLoiter", "_unitTypes", "_isNoone", "_loot", "_array", "_agent", "_type", "_radius", "_method", "_isAlive", "_myDest", "_newDest", "_rnd", "_lootType", "_index", "_weights", "_findAgt", "_list"];
+private ["_position","_doLoiter","_unitTypes","_findAgt","_plr","_point",
+"_types","_radius","_y","_isNoone","_loot","_array","_agent","_list","_type","_method","_rnd",
+"_lootType","_index","_weights","_myDest","_newDest"];
 
 _position = _this select 0;
 _doLoiter = _this select 1;
 _unitTypes = _this select 2;
 
 _findAgt = { // find agents to recycle according to relative position and type
-	private ["_plr","_types","_radius","_y", "_point"];
+	private ["_plr","_types","_radius","_y", "_point", "_ahead"];
 
 	_plr = _this select 0;
-	_point = _plr modelToWorld [0,100,0]; // we will recycle more zombies located behind the player
+	_ahead = 100 min (0 max (dayz_canRecycle - dayz_spawnArea));
+	_radius = dayz_canRecycle max dayz_spawnArea;
+	_point = _plr modelToWorld [0, _ahead, 0]; // we will recycle more zombies located behind the player
 	_types = _this select 1;
-	_radius = 300; 
 	recyclableAgt=[];
 	
 	{ 
@@ -29,7 +32,7 @@ _findAgt = { // find agents to recycle according to relative position and type
 	recyclableAgt
 };
 
-_isNoone = 0 == {(getPosATL _x) distance _position < 30} count playableUnits;
+_isNoone = 0 == {(getPosATL _x) distance _position < dayz_safeDistPlr} count playableUnits;
 _loot = "";
 _array = [];
 _agent = objNull;
@@ -87,8 +90,8 @@ else {
 
 if (!isNull _agent) then {
 	_agent setDir random 360;
-	_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
-	_agent setPosATL _position;//[_position select 0, _position select 1, 1+(_position select 2)];
+	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
+	_agent setPosATL _position;
 	_agent setVariable ["doLoiter",_doLoiter,true];
 	
 	_position = getPosATL _agent;
