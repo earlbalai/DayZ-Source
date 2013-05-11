@@ -140,8 +140,8 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-151.413361,791.092285,1155.889038,133.423462,554,601,1};
-window[] = {2,-1,-1,-1,-1,890,110,1482,110,3,571};
+globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-450.837524,491.668091,1275.955322,253.489792,554,601,1};
+window[] = {2,-1,-1,-32000,-32000,890,110,1482,110,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1184,7 +1184,7 @@ class FSM
        "dayz_spawnCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		fps_safty_check = diag_fpsmin;" \n
-       "		if (fps_safty_check > 10) then {" \n
+       "		if (fps_safty_check > 20) then {" \n
        "			[""both""] call player_spawnCheck;" \n
        "			sleep 8;" \n
        "		};" \n
@@ -1194,7 +1194,7 @@ class FSM
        "dayz_locationCheck = [] spawn {" \n
        "	while {true} do {" \n
        "		fps_safty_check = diag_fpsmin;" \n
-       "		if (fps_safty_check > 10) then {" \n
+       "		if (fps_safty_check > 20) then {" \n
        "			call stream_locationCheck;" \n
        "			sleep 2;" \n
        "		};" \n
@@ -1212,8 +1212,10 @@ class FSM
        "	};" \n
        "} forEach allMissionObjects ""SpawnableWreck"";" \n
        "" \n
-       "call fn_bases;" \n
-       ""/*%FSM</STATEINIT""">*/;
+       "//Spawn camps" \n
+       "for ""_x"" from 1 to 2 do {" \n
+       "	call fn_bases;" \n
+       " };"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
