@@ -1,9 +1,10 @@
-private["_iPosZ","_iPos","_iItem","_iClass","_iPos","_radius","_itemTypes","_index","_item","_qty","_max","_tQty","_canType","_weights","_cntWeights","_dateNow","_iPosZ"];
+
+private ["_iItem","_iClass","_iPos","_radius","_iPosZ","_item","_itemTypes","_qty","_max","_index","_weights","_cntWeights","_tQty","_canType","_mags","_magQty"];
+
 _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =	_this select 2;
 _radius =	_this select 3;
-
 _iPosZ = _iPos select 2;
 if( _iPosZ < 0 ) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 
@@ -58,7 +59,7 @@ switch (_iClass) do {
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 	};
 };
-
+//diag_log(format["%1 %2 cargo: %3 %4 %5",time, _iPos, getWeaponCargo _item, getMagazineCargo _item, getBackpackCargo _item]);
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };

@@ -170,7 +170,7 @@ _negstampBld = 0;
 				_x setVariable ["zombieSpawn",(DateToNumber date),true]; // a SV for all objects on the map was a bit insane
 				_negstampBld = _negstampBld +1;
 			} else {
-				if (_age > 1) then {
+				if (_age > 10) then {
 					_qty = _x call building_spawnZombies;
 					if (_qty > 0) then {
 						_controlledZombies = _controlledZombies + _qty;
