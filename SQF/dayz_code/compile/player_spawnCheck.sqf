@@ -31,7 +31,7 @@ _force = false;
 _nearbyBuildings = [];
 _position = getPosATL player;
 
-_maxControlledZombies = dayz_maxLocalZombies min (10 + (0 max round(diag_fps - 20)));
+_maxControlledZombies = dayz_maxLocalZombies min (10 + (0 max round(diag_fps * 2 - 50)));
 if (_inVehicle) then {
 	_maxControlledZombies = 5;
 };
@@ -39,8 +39,8 @@ if (_isAir) then {
 	_maxControlledZombies = 0;
 };
 _controlledZombies = {local (_x getVariable ["agentObject",objNull])} count agents;
-_maxManModels = dayz_maxMaxModels select 0;
-_radius = dayz_maxMaxModels select 1;
+_maxManModels = dayz_maxMaxModels;
+_radius = dayz_spawnArea;
 _currentManModels = count (_position nearEntities ["CAManBase",_radius]);
 
 
@@ -119,8 +119,10 @@ diag_log (format["%1 Controlled: %2/%3. Models: %5/%6 (radius:%7m %8fps).", __FI
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
 // make the spawn smoother along player's journey
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);
-	
-_nearby = _position nearObjects ["building",_radius];
+
+// we start by the closest buildings. building too close from player are ditched.	
+_nearby = (nearestObjects [_position, ["building"],_radius]) - (_position nearObjects ["building", dayz_safeDistPlr]);
+
 _nearbyCount = count _nearby;
 if (_nearbyCount < 1) exitwith 
 {
@@ -142,7 +144,7 @@ _negstampBld = 0;
 	_x setVariable ["cleared",false,true];
 	
 	//Loot
-	if ((_dis < 120) and (_dis > 30) and _canLoot and !_inVehicle and _checkLoot) then {
+	if ((_dis < 120) and (_dis > dayz_safeDistPlr) and _canLoot and !_inVehicle and _checkLoot) then {
 		_looted = (_x getVariable ["looted",-0.1]);
 		_dateNow = (DateToNumber date);
 		_age = (_dateNow - _looted) * 525948;
@@ -152,7 +154,7 @@ _negstampBld = 0;
 		} else {
 			if (_age > 30) then {
 				_x setVariable ["looted",_dateNow,true];
-				[_x] spawn building_spawnLoot;
+				_x call building_spawnLoot;
 			};
 		};
 	};
@@ -170,10 +172,12 @@ _negstampBld = 0;
 			} else {
 				if (_age > 1) then {
 					_qty = _x call building_spawnZombies;
-					_controlledZombies = _controlledZombies + _qty;
-					_currentManModels = _currentManModels + _qty;
+					if (_qty > 0) then {
+						_controlledZombies = _controlledZombies + _qty;
+						_currentManModels = _currentManModels + _qty;
+						_x setVariable ["zombieSpawn",_dateNow,true];
+					};
 					_spwndoneBld = _spwndoneBld +1;
-					_x setVariable ["zombieSpawn",_dateNow,true];
 				}
 				else {
 					_zombieSpawnCtr = _zombieSpawnCtr +1;
