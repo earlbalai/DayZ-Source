@@ -1,3 +1,4 @@
+
 // create a Zombie agent, or recycle an existing one.
 // returns true if agent is not null
 private ["_position", "_doLoiter", "_unitTypes", "_isNoone", "_loot", "_array", "_agent", "_type", "_radius", "_method", "_isAlive", "_myDest", "_newDest", "_rnd", "_lootType", "_index", "_weights", "_findAgt", "_list"];
@@ -12,14 +13,14 @@ _findAgt = { // find agents to recycle according to relative position and type
 	_plr = _this select 0;
 	_point = _plr modelToWorld [0,100,0]; // we will recycle more zombies located behind the player
 	_types = _this select 1;
-	_radius = 200; 
+	_radius = 300; 
 	recyclableAgt=[];
 	
 	{ 
 		_y = _x getVariable ["agentObject",objNull];
-		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > _radius + 200)})}) then { // TODO : los check with scope check via (cameraView == "GUNNER") and viewdistance
+		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > _radius)})}) then {
 			if (((typeOf _y) IN _types) AND
-			{(0 == {(_x != _plr) AND (_x distance _y <_radius + 200)} count playableUnits)}) then { 
+			{(0 == {(_x != _plr) AND (_x distance _y <_radius)} count playableUnits)}) then { 
 				recyclableAgt set [count recyclableAgt, _y];
 			};
 		};
@@ -27,9 +28,6 @@ _findAgt = { // find agents to recycle according to relative position and type
 	
 	recyclableAgt
 };
-
-if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {false}; 
-if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {false}; 
 
 _isNoone = 0 == {(getPosATL _x) distance _position < 30} count playableUnits;
 _loot = "";
@@ -90,7 +88,7 @@ else {
 if (!isNull _agent) then {
 	_agent setDir random 360;
 	_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
-	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
+	_agent setPosATL _position;//[_position select 0, _position select 1, 1+(_position select 2)];
 	_agent setVariable ["doLoiter",_doLoiter,true];
 	
 	_position = getPosATL _agent;
