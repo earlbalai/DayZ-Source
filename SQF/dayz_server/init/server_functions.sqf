@@ -19,10 +19,8 @@ zombie_findOwner =			compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 server_spawnCrashSite  =    compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
 
-	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
-	camp_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\camp_spawnZombies.sqf";			//Server compile, used for loiter behaviour
-	spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
-	fn_bases = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_bases.sqf";
+spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
+fn_bases = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_bases.sqf";
 
 vehicle_handleInteract = {
 	private["_object"];

@@ -99,6 +99,9 @@ if (!isDedicated) then {
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
 	infectedcamps = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_infectedcamps.sqf";
+	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
+	camp_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\camp_spawnZombies.sqf";			//Server compile, used for loiter behaviour
+	
 
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
