@@ -150,10 +150,10 @@ _negstampBld = 0;
 		_age = (_dateNow - _looted) * 525948;
 		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 		if (_age < -0.1) then {
-				_x setVariable ["looted",(DateToNumber date),true];
+				//_x setVariable ["looted",(DateToNumber date),true];
 		} else {
 			if (_age > 30) then {
-				_x setVariable ["looted",_dateNow,true];
+				//_x setVariable ["looted",_dateNow,true];
 				_x call building_spawnLoot;
 			};
 		};
@@ -170,7 +170,7 @@ _negstampBld = 0;
 				_x setVariable ["zombieSpawn",(DateToNumber date),true]; // a SV for all objects on the map was a bit insane
 				_negstampBld = _negstampBld +1;
 			} else {
-				if (_age > 10) then {
+				if (_age > 1) then {
 					_qty = _x call building_spawnZombies;
 					if (_qty > 0) then {
 						_controlledZombies = _controlledZombies + _qty;
