@@ -54,9 +54,7 @@ if (!isDedicated) then {
 	zombie_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_findTargetAgent.sqf";
 	zombie_loiter = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_loiter.sqf";			//Server compile, used for loiter behaviour
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_generate.sqf";			//Server compile, used for loiter behaviour
-	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
-	camp_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\camp_spawnZombies.sqf";			//Server compile, used for loiter behaviour
-	
+		
 	//
 	dog_findTargetAgent =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
 	
@@ -100,6 +98,7 @@ if (!isDedicated) then {
 	player_spawn_2 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_2.sqf";
 	onPreloadStarted 			"dayz_preloadFinished = false;";
 	onPreloadFinished 			"dayz_preloadFinished = true;";
+	infectedcamps = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_infectedcamps.sqf";
 
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
@@ -449,8 +448,6 @@ if (!isDedicated) then {
 	spawn_loot =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\spawn_loot.sqf";
 	player_projectileNear = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
 	
-	spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
-	fn_bases = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_bases.sqf";
 	
 	player_sumMedical = {
 		private["_character","_wounds","_legs","_arms","_medical"];
@@ -490,7 +487,6 @@ if (!isDedicated) then {
 	} else {
 		eh_localCleanup = {};
 	};
-	
 	
 	//Start Dynamic Weather
 	execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";

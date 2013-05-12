@@ -404,6 +404,7 @@ if(isServer) then {
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
+	Server_InfectedCamps = [];
 };
 
 if(!isDedicated) then {

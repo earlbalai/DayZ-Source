@@ -425,3 +425,7 @@ nul = [3, 4, (40 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn serv
 	sm_done = true;
 };	
 
+	//Spawn camps
+	for "_x" from 1 to 5 do {
+		call fn_bases;
+	};

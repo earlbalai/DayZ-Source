@@ -21,6 +21,7 @@
 "dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_vehicleEventHandler};
 "dayzHumanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "dayz_serverObjectMonitor"		addPublicVariableEventHandler {dayz_serverObjectMonitor = dayz_safety};
+"dayzInfectedCamps"		addPublicVariableEventHandler {(_this select 1) spawn infectedcamps};
 
 //Both
 

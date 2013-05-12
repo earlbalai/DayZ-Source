@@ -140,8 +140,8 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-450.837524,491.668091,1275.955322,253.489792,554,601,1};
-window[] = {2,-1,-1,-32000,-32000,890,110,1482,110,3,571};
+globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-270.679962,311.510254,1515.376099,883.794250,554,601,1};
+window[] = {2,-1,-1,-32000,-32000,802,22,1394,22,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1115,6 +1115,11 @@ class FSM
        "	setDate dayzSetDate;" \n
        "};" \n
        "" \n
+       "if (!isNil ""dayzInfectedCamps"") then {" \n
+       "	diag_log (""Infected Camps: "" +str(dayzInfectedCamps));" \n
+       "	[dayzInfectedCamps] call infectedcamps;" \n
+       "};" \n
+       "" \n
        "diag_log (""Local Time: "" +str(dayzSetDate));" \n
        "" \n
        "//Medical" \n
@@ -1201,6 +1206,15 @@ class FSM
        "	};" \n
        "};" \n
        "" \n
+       "dayz_fpsmonitor = [] spawn {" \n
+       "	while {true} do {" \n
+       "		_survivors = playersNumber west;" \n
+       "	" \n
+       "		diag_log format[ ""Survivors:%1, FPS:%2, FPSMin:%3"", _survivors, round diag_fps, round diag_fpsmin];" \n
+       "		sleep 10;" \n
+       "	};" \n
+       "};" \n
+       "" \n
        "// TODO: questionably" \n
        "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n
        "" \n
@@ -1210,12 +1224,7 @@ class FSM
        "	if (!_fadeFire) then {" \n
        "		nul = [_x,2,0,false,false] spawn BIS_Effects_Burn;" \n
        "	};" \n
-       "} forEach allMissionObjects ""SpawnableWreck"";" \n
-       "" \n
-       "//Spawn camps" \n
-       "for ""_x"" from 1 to 2 do {" \n
-       "	call fn_bases;" \n
-       " };"/*%FSM</STATEINIT""">*/;
+       "} forEach allMissionObjects ""SpawnableWreck"";"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

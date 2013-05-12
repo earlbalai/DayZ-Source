@@ -53,7 +53,7 @@ while {_counter < _amount} do {
 
 	//_position = getPosATL _agent;
 	//if (random 1 > 0.7) then {
-		_stance = ["DOWN","UP","Middle"]; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
+		_stance = ["DOWN","Middle"]; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
 		_stance = _stance call BIS_fnc_selectRandom;
 		_agent setUnitPos _stance;
 	//};
