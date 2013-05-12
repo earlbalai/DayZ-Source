@@ -391,6 +391,7 @@ dayz_zSpawnDistance = 1000;
 
 dayz_maxLocalZombies = 40; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 dayz_maxMaxModels = 80; // max quantity of Man models (player or Z, dead or alive) around players. Below this limit we can spawn Z
+dayz_maxMaxWeaponHolders = 80; // max quantity of loot piles around players. Below this limit we can spawn some loot
 dayz_spawnArea =  200; // radius around player where we can spawn loot & Z 
 dayz_safeDistPlr = 30; // Any loot & Z won't be spawned closer than this distance from any player
 dayz_cantseeDist = 250; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
