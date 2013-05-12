@@ -1,10 +1,13 @@
 
-private ["_iItem","_iClass","_iPos","_radius","_iPosZ","_item","_itemTypes","_qty","_max","_index","_weights","_cntWeights","_tQty","_canType","_mags","_magQty"];
+private ["_iItem","_iClass","_iPos","_radius","_iPosZ","_item","_itemTypes","_qty","_max","_index","_weights",
+"_cntWeights","_tQty","_canType","_mags","_magQty","_uniq"];
 
 _iItem = 	_this select 0;
 _iClass = 	_this select 1;
 _iPos =	_this select 2;
 _radius =	_this select 3;
+_uniq = ["ItemWaterbottle", "ItemWaterbottleUnfilled"];
+
 _iPosZ = _iPos select 2;
 if( _iPosZ < 0 ) then { _iPos = [_iPos select 0,_iPos select 1,0]; };
 
@@ -23,12 +26,19 @@ switch (_iClass) do {
 			_index = dayz_CLBase find _iClass;
 			_weights = dayz_CLChances select _index;
 			_cntWeights = count _weights;
-			_tQty = round(random 1) + 1;
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
 			_canType = _itemTypes select _index;
-			_item addMagazineCargoGlobal [_canType,_tQty];
-			_qty = _qty + _tQty;
+			_tQty = round(random 1) + 1;
+			if (_canType in _uniq) then {
+				_tQty = if (({_x in _uniq} count magazines _item) == 0) then {1} else {0};
+				if (_tQty == 0) then {diag_log(format["%1 Prevent any duplicate member %2 from family %3",__FILE__, _canType, _uniq]);};
+				//diag_log(format["%1 %2 DUP? type:%3 mag:%4 _this:%5",__FILE__, __LINE__, _canType, magazines _item, _this]);
+			};
+			if (_tQty > 0) then {
+				_item addMagazineCargoGlobal [_canType,_tQty];
+				_qty = _qty + _tQty;
+			};
 		};
 		if (_iItem != "") then {
 			_item addWeaponCargoGlobal [_iItem,1];
@@ -59,7 +69,6 @@ switch (_iClass) do {
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 	};
 };
-//diag_log(format["%1 %2 cargo: %3 %4 %5",time, _iPos, getWeaponCargo _item, getMagazineCargo _item, getBackpackCargo _item]);
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };
