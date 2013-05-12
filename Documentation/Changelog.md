@@ -39,22 +39,23 @@ Serverside affected addons:
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
 	    * [NEW] - 2 New background tracks.
-	    * [NEW] - 3 New decayed Zeds - Harder to kill and Do more damage.
+	    * [NEW] - 6 New decayed Zeds - Harder to kill and Do more damage.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
-	    * [NEW] - Clear Ground around crash sites have now been disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
+	    * [NEW] - Clear Ground around crash sites added but disabled by default, server admins can enable. (http://i.imgur.com/uVDfGym.jpg)
 	    * [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
-	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 3.
-	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt)
+	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 2.
+	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt) No need to take itemslots.
 	    * [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
 	    * [NEW] - Servers date has been locked to give full moon nights.
-	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed/better.
+	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
 	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small 2 for medium)
 					Small = 8 objects slots, no weapons, no bags.
 					Medium = 16 Objects 1 weapon , no bags
-		* [NEW] - infected survivor camps. (WIP)	
+		* [NEW] - Infected survivor camps. (WIP) 3 - Small, 4 - Medium.
+		* [NEW] - FPS Monitor this will dynamicly change how and total amount of zeds and loot is spawning to keep the players base fps up.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -73,6 +74,8 @@ Serverside affected addons:
 	    * [FIXED] - Optimized some destruction effects for security and performance.
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
+		* [FIXED] - Can no longer brake legs by anything other then players/zeds/falling/getting out of moving vehicle.
+		* [FIXED] - Most Dupeing issues shouwl now be resolved.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -86,7 +89,7 @@ Serverside affected addons:
 	    * [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 	    * [UPDATED] - Zed spawn timer from 2 minutes to 5 minutes. This should allow an area to be cleared of zeds before more spawn.
 	    * [UPDATED] - Re-added the "save" option to tents and vehicles. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we re-added this option to save tents/vehicles) 
-	    * [UPDATED] - Zed generate system. Should stop zeds spawning in view of players then being deleted.
+	    * [UPDATED] - Zed generate system. has now been fully rewrote should stop zeds spawning in view of players then being deleted.
 	    * [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Old Type: Max possible dmg = body 600, Legs 100, Hands 50, Head 1200 New Type: Body 1200, Head 2400)
 	    * [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
 	    * [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multiplier is above > 0.8
@@ -115,8 +118,8 @@ Serverside affected addons:
 	    * [UPDATED] - Fireplace can no longer be picked up after lighting.
 	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
-	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character
-	    * [UPDATED] - Lowered Mag drop rate with weapons chance to spawn with 0 to 2 total mags
+	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
+		* [UPDATED] - Refuel now locks the player in place for the time to fill.
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.

@@ -8,7 +8,7 @@ _placeSearchRadius = 4500;
 _placeSearchExpr = "(5 * meadow) + (4 * trees) + (3 * forest) - (9 * houses) - (10 * sea)";
 _amount = 0;
 _radius = 0;
-_baseClass = ["Camp2_Small","Camp3_Small","Camp1_Small","Camp2_Medium","Camp3_Medium","Camp4_Medium","Camp5_Medium","Camp2_Small","Camp3_Small","Camp1_Small"];
+_baseClass = ["Camp2_Small","Camp3_Small","Camp1_Small"];
 
 _baseClass = _baseClass call BIS_fnc_selectRandom;
 
@@ -37,6 +37,7 @@ while { (count _basePosCheck) == 0 } do {
 	_basePosCheck = _basePos isFlatEmpty [10, 0, _placeMaxGradient, (_placePrecision / 2), 0, false, objNull];
 };
 */
+
 if (count(_basePosCheck) > 0) then {
 	_basePos = _basePosCheck;
 };
@@ -61,7 +62,7 @@ for "_x" from 1 to (round(random 5) + 1) do {
 	_index = _weights select _index;
 	_itemType = _itemTypes select _index;
 	
-	_position = [_basePos,12,_lootradius,0,0,0,0] call BIS_fnc_findSafePos;
+	_position = [_basePos,5,10,0,0,0,0] call BIS_fnc_findSafePos;
 	_position = [_position select 0,_position select 1,0];
 	
 	_clutter = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
@@ -79,10 +80,10 @@ for "_x" from 1 to (round(random 5) + 1) do {
 };
 
 for "_x" from 1 to (round(random 9) + 1) do {
-	_position = [_basePos,20,50,0,0,0,0] call BIS_fnc_findSafePos;
+	_position = [_basePos,10,30,0,0,0,0] call BIS_fnc_findSafePos;
 	_position = [_position select 0,_position select 1,0];
 	_Bodys = ["Body1","Body2"] call BIS_fnc_selectRandom;
-	_randomvehicle = ["LADAWreck","BMP2Wreck","Mi24Wreck","UralWreck","HMMWVWreck","T72Wreck"] call BIS_fnc_selectRandom;
+	_randomvehicle = ["LADAWreck","BMP2Wreck","UralWreck","HMMWVWreck","T72Wreck"] call BIS_fnc_selectRandom;
 	_chance = random 1;
 	if (_chance < 0.9) then {
 		_DeadBody = _Bodys createVehicle _position;
