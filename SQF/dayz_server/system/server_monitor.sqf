@@ -39,13 +39,6 @@ diag_log "HIVE: Starting";
 		diag_log ("HIVE: Local Time set to " + str(_date));
 	};
 
-	if (_script != "") then
-	{
-		diag_log "MISSION: File Updated";
-	} else {
-		diag_log "MISSION: File Needs Updating";
-	};
-
 	//Stream in objects
 	/* STREAM OBJECTS
 		//Send the key
