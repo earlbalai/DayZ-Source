@@ -1,11 +1,10 @@
 
-
 private ["_type",   "_fairSize", "_boundingBox", "_cornerLow", "_cornerHi", "_burried", "_isAir",
 "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_maxControlledZombies",
 "_controlledZombies", "_maxManModels", "_radius", "_currentManModels", "_locationstypes", "_nearestCity", 
 "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3",
 "_nearby", "_nearbyCount", "_maxWildZombies", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_zombied",
-"_qty", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld","_negstampBld"];
+"_qty", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld","_negstampBld", "_currentWeaponHolders", "_maxWeaponHolders", "_fpsbias"];
 
 _type = _this select 0;
  
@@ -31,7 +30,11 @@ _force = false;
 _nearbyBuildings = [];
 _position = getPosATL player;
 
-_maxControlledZombies = dayz_maxLocalZombies min (10 + (0 max round(diag_fps * 2 - 50)));
+_fpsbias = (60-(60-(diag_fps min 60))/2)/60;
+_maxControlledZombies = round(dayz_maxLocalZombies * _fpsbias);
+_maxManModels = round(dayz_maxMaxModels * _fpsbias);
+_maxWeaponHolders = round(dayz_maxMaxWeaponHolders * _fpsbias);
+
 if (_inVehicle) then {
 	_maxControlledZombies = 5;
 };
@@ -39,10 +42,9 @@ if (_isAir) then {
 	_maxControlledZombies = 0;
 };
 _controlledZombies = {local (_x getVariable ["agentObject",objNull])} count agents;
-_maxManModels = dayz_maxMaxModels;
 _radius = dayz_spawnArea;
 _currentManModels = count (_position nearEntities ["CAManBase",_radius]);
-
+_currentWeaponHolders = count (_position nearObjects ["ReammoBox",_radius]); // ReammoBox = parent of all kinds of item holders
 
 //diag_log ("Type: " +str(_type));
 
@@ -114,8 +116,9 @@ if ("ItemMap_Debug" in items player) then {
 diag_log ("Audial Noise: " +str(DAYZ_disAudial));
 diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 };
-diag_log (format["%1 Controlled: %2/%3. Models: %5/%6 (radius:%7m %8fps).", __FILE__,
-	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, _radius, round diag_fps]);
+diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).", __FILE__,
+	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, 
+	_radius, round diag_fps, _currentWeaponHolders, _maxWeaponHolders]);
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
 // make the spawn smoother along player's journey
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);
@@ -144,20 +147,24 @@ _negstampBld = 0;
 	_x setVariable ["cleared",false,true];
 	
 	//Loot
-	if ((_dis < 120) and (_dis > dayz_safeDistPlr) and _canLoot and !_inVehicle and _checkLoot) then {
-		_looted = (_x getVariable ["looted",-0.1]);
-		_dateNow = (DateToNumber date);
-		_age = (_dateNow - _looted) * 525948;
-		//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
-		if (_age < -0.1) then {
-				_x setVariable ["looted",(DateToNumber date),true];
-		} else {
-			if (_age > 30) then {
-				_x setVariable ["looted",_dateNow,true];
-				_x call building_spawnLoot;
+	if (_currentWeaponHolders < _maxWeaponHolders) then {
+		if ((_dis < 120) and (_dis > dayz_safeDistPlr) and _canLoot and !_inVehicle and _checkLoot) then {
+			_looted = (_x getVariable ["looted",-0.1]);
+			_dateNow = (DateToNumber date);
+			_age = (_dateNow - _looted) * 525948;
+			//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
+			if (_age < -0.1) then {
+					_x setVariable ["looted",(DateToNumber date),true];
+			} else {
+				if (_age > 30) then {
+					_x setVariable ["looted",_dateNow,true];
+					_qty = _x call building_spawnLoot;
+					_currentWeaponHolders = _currentWeaponHolders + _qty;
+				};
 			};
 		};
 	};
+	
 	//Zeds
 	if ((_currentManModels < _maxManModels) and {(_controlledZombies < _maxControlledZombies)}) then {
 		if (_canLoot OR {(_x call _fairSize)}) then {

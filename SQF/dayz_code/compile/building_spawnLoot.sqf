@@ -1,5 +1,6 @@
 
-private ["_obj", "_type", "_config", "_positions", "_itemTypes", "_lootChance", "_countPositions", "_bias", "_rnd", "_iPos", "_nearBy", "_index", "_weights", "_cntWeights", "_itemType"];
+private ["_obj", "_type", "_config", "_positions", "_itemTypes", "_lootChance", "_countPositions", "_bias", 
+"_rnd", "_iPos", "_nearBy", "_index", "_weights", "_cntWeights", "_itemType", "_qty"];
 
 _obj = _this;
 _type = typeOf _obj;
@@ -8,10 +9,13 @@ _positions = [] + getArray (_config >> "lootPos");
 _itemTypes = [] + getArray (_config >> "lootType");
 _lootChance = getNumber (_config >> "lootChance");
 _countPositions = count _positions;
+_qty = 0; // effective quantity of spawned weaponholder 
 
 // bias for this building. The lower it is, the lower chance some of the lootpiles will spawn
-_bias = (6.5+(random 3.5)) / 10;
-//diag_log(str(_lootChance));
+_bias = 50 max dayz_lootSpawnBias;
+_bias = 100 min _bias;
+_bias = (_bias + random(100-_bias)) / 100;
+//diag_log(format["BIAS:%1 LOOTCHANCE:%2", _bias, _lootChance]);
 {
 	if (count _x >= 2) then {
 		_rnd = (random 1) / _bias;
@@ -35,8 +39,11 @@ _bias = (6.5+(random 3.5)) / 10;
 	//diag_log ("_itemType: " +str(_itemType));				
 	//diag_log format["Item: %1, Group: %2", _itemType select 0, _itemType select 1];	
 				[_itemType select 0, _itemType select 1 , _iPos, 0.0] call spawn_loot;
+				_qty = _qty +1;
 			};
 		};	
 		sleep ((random 3) / 1000);
 	};
 } forEach _positions;
+
+_qty
