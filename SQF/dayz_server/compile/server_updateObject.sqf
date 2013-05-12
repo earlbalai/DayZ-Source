@@ -97,6 +97,8 @@ _object_damage = {
 		_object setHit ["_selection", _hit]
 	} forEach _hitpoints;
 	
+	_object setdamage _damage;
+	
 	//Mark for db update 
 	if (_forced) then {	
 		if (_object in needUpdate_objects) then {
