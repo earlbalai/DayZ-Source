@@ -10,7 +10,9 @@ _lootChance = getNumber (_config >> "lootChance");
 _countPositions = count _positions;
 
 // bias for this building. The lower it is, the lower chance some of the lootpiles will spawn
-_bias = (6.5+(random 3.5)) / 10;
+_bias = 50 max dayz_lootSpawnBias;
+_bias = 100 min _bias;
+_bias = (_bias + random(100-_bias)) / 100;
 //diag_log(str(_lootChance));
 {
 	if (count _x >= 2) then {
