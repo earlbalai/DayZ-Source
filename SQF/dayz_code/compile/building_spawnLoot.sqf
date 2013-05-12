@@ -10,8 +10,8 @@ _lootChance = getNumber (_config >> "lootChance");
 _countPositions = count _positions;
 
 // bias for this building. The lower it is, the lower chance some of the lootpiles will spawn
-_bias = (8+(random 2)) / 10;
-//_bias = (7+(random 3)) / 10;
+_bias = (6.5+(random 3.5)) / 10;
+//diag_log(str(_lootChance));
 {
 	if (count _x >= 2) then {
 		_rnd = (random 1) / _bias;
@@ -37,6 +37,6 @@ _bias = (8+(random 2)) / 10;
 				[_itemType select 0, _itemType select 1 , _iPos, 0.0] call spawn_loot;
 			};
 		};	
-		sleep ((random 3) / 100);
+		sleep ((random 3) / 1000);
 	};
 } forEach _positions;

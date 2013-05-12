@@ -54,6 +54,10 @@ _min = getNumber (_config >> "minRoaming");
 _max = getNumber (_config >> "maxRoaming");
 
 _num0 = _min + floor(random(_max - _min + 1));
+// we control the overall density, in order to prevent to many spawns on the same small area
+// since player_spawnCheck  checks the quantity of models in dayz_spawnArea radius, let's take a part of it:
+// we control the same Z density on a 16x smaller disk.
+_num0 = _num0 min (0 max ceil((dayz_maxMaxModels / 16) - (count ((getPosATL _obj) nearEntities ["CAManBase", dayz_spawnArea / 4]))));
 _num = _num0;
 _zombieChance = getNumber (_config >> "zombieChance");
 
@@ -79,7 +83,6 @@ if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 			};
 		};
 	};
-
 
 	// Add remaining Z as walking Zombies (outside the building)
 	_wholeAreaSize = 40; // for external walking zombies, area size around building where zombies can spawn
