@@ -136,8 +136,9 @@ diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:
 	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, 
 	_radius, round diag_fps, _currentWeaponHolders, _maxWeaponHolders]);
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
-// make the spawn smoother along player's journey
+// make the spawn smoother along player's journey. Same for loot
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);
+_currentWeaponHolders = _currentWeaponHolders max floor(_maxWeaponHolders*.8);
 
 // we start by the closest buildings. building too close from player are ditched.	
 _nearby = (nearestObjects [_position, ["building"],_radius]) - (_position nearObjects ["building", dayz_safeDistPlr]);
