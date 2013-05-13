@@ -1,9 +1,9 @@
 
 // create a Zombie agent, or recycle an existing one.
 // returns true if agent is not null
-private ["_position","_doLoiter","_unitTypes","_findAgt","_plr","_point",
-"_types","_radius","_y","_isNoone","_loot","_array","_agent","_list","_type","_method","_rnd",
-"_lootType","_index","_weights","_myDest","_newDest"];
+private ["_position","_doLoiter","_unitTypes","_findAgt",
+"_radius","_isNoone","_loot","_array","_agent","_list","_type","_method","_rnd",
+"_lootType","_index","_weights","_myDest","_newDest", "_agtPos"];
 
 _position = _this select 0;
 _doLoiter = _this select 1;
@@ -57,6 +57,9 @@ if (count _list > 0) then {
 	// let's pick an agent from the list
 	_agent = _list select 0;
 	diag_log(format["%1 Found 1 agent to recycle: %2", __FILE__, _agent]);
+	// sometime Z can be seen flying in very high speed while tp. Its altitude is set underground to hide that.
+	_agtPos = getPosASL _agent; _agtPos set [2, -3];
+	_agent setPosASL _agtPos; sleep 0.001;
 }
 else {
 	// let's create an agent from scratch
