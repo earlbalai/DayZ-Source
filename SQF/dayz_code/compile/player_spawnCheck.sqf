@@ -1,11 +1,5 @@
 
-private ["_type",   "_fairSize", "_boundingBox", "_cornerLow", "_cornerHi", "_burried", "_isAir",
-"_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_maxControlledZombies",
-"_controlledZombies", "_maxManModels", "_radius", "_currentManModels", "_locationstypes", "_nearestCity", 
-"_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3",
-"_nearby", "_nearbyCount", "_maxWildZombies", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_zombied",
-"_qty", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld","_negstampBld", "_currentWeaponHolders", "_maxWeaponHolders", "_fpsbias"];
-
+private ["_type","_this","_fairSize","_boundingBox","_cornerLow","_cornerHi","_burried","_findAgt","_plr","_ahead","_point","_y","_x","_isAir","_inVehicle","_dateNow","_age","_force","_nearbyBuildings","_position","_fpsbias","_maxControlledZombies","_maxManModels","_maxWeaponHolders","_controlledZombies","_radius","_currentManModels","_currentWeaponHolders","__FILE__","_nearby","_nearbyCount","_maxWildZombies","_zombieSpawnCtr","_suitableBld","_spwndoneBld","_negstampBld","_recyAgt","_maxtoCreate","_config","_canLoot","_dis","_checkLoot","_looted","_qty","_locationstypes","_nearestCity","_zombied","_tmp"];
 _type = _this select 0;
  
 // compute building footprint just to check if it could hide a Zombie
@@ -20,6 +14,27 @@ _fairSize = {
 	_cornerLow set [2, _cornerHi select 2];
 	//diag_log(format["Model:%1  Height:%2  Cross width:%3  _burried:%4", typeOf _this, _cornerHi select 2, _cornerLow distance _cornerHi, _burried]);
 	((_burried < 0.1) AND {(((_cornerHi select 2) > 2.6) AND {((_cornerLow distance _cornerHi) > 7)})}) // container size as reference
+};
+
+// find agents to recycle  
+_findAgt = { 
+	private ["_plr","_types","_y", "_point", "_ahead"];
+
+	_plr = player;
+	_ahead = 0 max (dayz_canDelete - dayz_spawnArea);
+	_point = _plr modelToWorld [0, _ahead, 0]; // we will recycle more zombies located behind the player
+	recyclableAgt=[];
+	
+	{ 
+		_y = _x getVariable ["agentObject",objNull];
+		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
+			if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then { 
+				recyclableAgt set [count recyclableAgt, _y];
+			};
+		};
+	} forEach agents;
+	
+	recyclableAgt
 };
 
 _isAir = vehicle player iskindof "Air";
@@ -45,69 +60,69 @@ _controlledZombies = {local (_x getVariable ["agentObject",objNull])} count agen
 _radius = dayz_spawnArea;
 _currentManModels = count (_position nearEntities ["CAManBase",_radius]);
 _currentWeaponHolders = count (_position nearObjects ["ReammoBox",_radius]); // ReammoBox = parent of all kinds of item holders
-
+/*
 //diag_log ("Type: " +str(_type));
 
 
 //diag_log("SPAWN CHECKING: Starting");
-	//_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
-	//_nearestCity = nearestLocations [getPos player, _locationstypes, _radius/2];
-	//_townname = text (_nearestCity select 0);	
-	//_nearbytype = type (_nearestCity select 0);
-/*
+       //_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
+       //_nearestCity = nearestLocations [getPos player, _locationstypes, _radius/2];
+       //_townname = text (_nearestCity select 0);     
+       //_nearbytype = type (_nearestCity select 0);
+
 switch (_nearbytype) do {
-	case "NameVillage": {
-		//_radius = 250; 
-		_maxControlledZombies = 30;
-	};
-	case "NameCity": {
-		//_radius = 300; 
-		_maxControlledZombies = 40;
-	};
-	case "NameCityCapital": {
-		//_radius = 400; 
-		_maxControlledZombies = 40;
-	};
+       case "NameVillage": {
+               //_radius = 250; 
+               _maxControlledZombies = 30;
+       };
+       case "NameCity": {
+               //_radius = 300; 
+               _maxControlledZombies = 40;
+       };
+       case "NameCityCapital": {
+               //_radius = 400; 
+               _maxControlledZombies = 40;
+       };
 };
-*/
+
 
 
 if ("ItemMap_Debug" in items player) then {
-	deleteMarkerLocal "MaxZeds";
-	deleteMarkerLocal "Counter";
-	deleteMarkerLocal "Loot30";
-	deleteMarkerLocal "Loot120";
-	deleteMarkerLocal "Agro80";
-	
-	_markerstr = createMarkerLocal ["MaxZeds", _position];
-	_markerstr setMarkerColorLocal "ColorYellow";
-	_markerstr setMarkerShapeLocal "ELLIPSE";
-	_markerstr setMarkerBrushLocal "Border";
-	_markerstr setMarkerSizeLocal [_radius, _radius];
+       deleteMarkerLocal "MaxZeds";
+       deleteMarkerLocal "Counter";
+       deleteMarkerLocal "Loot30";
+       deleteMarkerLocal "Loot120";
+       deleteMarkerLocal "Agro80";
+       
+       _markerstr = createMarkerLocal ["MaxZeds", _position];
+       _markerstr setMarkerColorLocal "ColorYellow";
+       _markerstr setMarkerShapeLocal "ELLIPSE";
+       _markerstr setMarkerBrushLocal "Border";
+       _markerstr setMarkerSizeLocal [_radius, _radius];
 
-	_markerstr1 = createMarkerLocal ["Counter", _position];
-	_markerstr1 setMarkerColorLocal "ColorRed";
-	_markerstr1 setMarkerShapeLocal "ELLIPSE";
-	_markerstr1 setMarkerBrushLocal "Border";
-	_markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
-	
-	_markerstr2 = createMarkerLocal ["Agro80", _position];
-	_markerstr2 setMarkerColorLocal "ColorRed";
-	_markerstr2 setMarkerShapeLocal "ELLIPSE";
-	_markerstr2 setMarkerBrushLocal "Border";
-	_markerstr2 setMarkerSizeLocal [80, 80];
+       _markerstr1 = createMarkerLocal ["Counter", _position];
+       _markerstr1 setMarkerColorLocal "ColorRed";
+       _markerstr1 setMarkerShapeLocal "ELLIPSE";
+       _markerstr1 setMarkerBrushLocal "Border";
+       _markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
+       
+       _markerstr2 = createMarkerLocal ["Agro80", _position];
+       _markerstr2 setMarkerColorLocal "ColorRed";
+       _markerstr2 setMarkerShapeLocal "ELLIPSE";
+       _markerstr2 setMarkerBrushLocal "Border";
+       _markerstr2 setMarkerSizeLocal [80, 80];
 
-	_markerstr2 = createMarkerLocal ["Loot30", _position];
-	_markerstr2 setMarkerColorLocal "ColorRed";
-	_markerstr2 setMarkerShapeLocal "ELLIPSE";
-	_markerstr2 setMarkerBrushLocal "Border";
-	_markerstr2 setMarkerSizeLocal [30, 30];
+       _markerstr2 = createMarkerLocal ["Loot30", _position];
+       _markerstr2 setMarkerColorLocal "ColorRed";
+       _markerstr2 setMarkerShapeLocal "ELLIPSE";
+       _markerstr2 setMarkerBrushLocal "Border";
+       _markerstr2 setMarkerSizeLocal [30, 30];
 
-	_markerstr3 = createMarkerLocal ["Loot120", _position];
-	_markerstr3 setMarkerColorLocal "ColorBlue";
-	_markerstr3 setMarkerShapeLocal "ELLIPSE";
-	_markerstr3 setMarkerBrushLocal "Border";
-	_markerstr3 setMarkerSizeLocal [120, 120];
+       _markerstr3 = createMarkerLocal ["Loot120", _position];
+       _markerstr3 setMarkerColorLocal "ColorBlue";
+       _markerstr3 setMarkerShapeLocal "ELLIPSE";
+       _markerstr3 setMarkerBrushLocal "Border";
+       _markerstr3 setMarkerSizeLocal [120, 120];
 
 //diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
 //diag_log ("Controled: " +str(_controlledZombies) + "/" +str(_maxControlledZombies));
@@ -116,6 +131,7 @@ if ("ItemMap_Debug" in items player) then {
 diag_log ("Audial Noise: " +str(DAYZ_disAudial));
 diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 };
+*/
 diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).", __FILE__,
 	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, 
 	_radius, round diag_fps, _currentWeaponHolders, _maxWeaponHolders]);
@@ -138,6 +154,8 @@ _zombieSpawnCtr = 0;
 _suitableBld = 0;
 _spwndoneBld = 0;
 _negstampBld = 0;
+_recyAgt = call _findAgt;
+_maxtoCreate = _maxControlledZombies - _controlledZombies;
 {
 	_type = typeOf _x;
 	_config = configFile >> "CfgBuildingLoot" >> _type;
@@ -166,8 +184,8 @@ _negstampBld = 0;
 	};
 	
 	//Zeds
-	if ((_currentManModels < _maxManModels) and {(_controlledZombies < _maxControlledZombies)}) then {
-		if (_canLoot OR {(_x call _fairSize)}) then {
+	if ((_currentManModels < _maxManModels) AND {(_canLoot OR {(_x call _fairSize)})}) then {
+		if ((count _recyAgt > 0) OR {(_maxtoCreate > 0)}) then {
 			//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxControlledZombies] call player_spawnzedCheck;
 			_suitableBld = _suitableBld +1;
 			_zombied = (_x getVariable ["zombieSpawn",-0.1]);
@@ -178,9 +196,11 @@ _negstampBld = 0;
 				_negstampBld = _negstampBld +1;
 			} else {
 				if (_age > 10) then {
-					_qty = _x call building_spawnZombies;
-					if (_qty > 0) then {
-						_controlledZombies = _controlledZombies + _qty;
+					_tmp = [_x, _recyAgt, _maxtoCreate];
+					_qty = _tmp call building_spawnZombies;
+					_recyAgt = _tmp select 1;
+					_maxtoCreate = _tmp select 2;
+					if (_qty  > 0) then {
 						_currentManModels = _currentManModels + _qty;
 						_x setVariable ["zombieSpawn",_dateNow,true];
 					};
@@ -189,10 +209,11 @@ _negstampBld = 0;
 				else {
 					_zombieSpawnCtr = _zombieSpawnCtr +1;
 				};
-//					diag_log (format["%1 building. %2", __FILE__, _x]);
-			};	
+	//			diag_log (format["%1 building. %2", __FILE__, _x]);
+			};
 		};
 	};
 } forEach _nearby;
+ 
 diag_log (format["%1 End. Buildings checked:%2, newly zombied:%3, already zombied:%4, negative timestamp:%5.", __FILE__,
 	_suitableBld, _spwndoneBld, _zombieSpawnCtr, _negstampBld ]);
