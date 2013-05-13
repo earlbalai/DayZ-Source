@@ -3,7 +3,7 @@
 // returns true if agent is not null
 // "_this select 3" and "_this select 4"  may be modified
 
-private ["_position","_this","_doLoiter","_unitTypes","_recyAgt","_maxtoCreate","_agent","_list","_x","__FILE__","_agtPos","_type","_radius","_method","_loot","_array","_rnd","_lootType","_index","_weights","_myDest","_newDest","_id"];
+private ["_position","_this","_doLoiter","_unitTypes","_recyAgt","_maxtoCreate","_agent","_list","_x","__FILE__","_agtPos","_type","_radius","_method","_loot","_array","_rnd","_lootType","_index","_weights","_myDest","_newDest","_id", "_recycled"];
 
 _position = _this select 0;
 _doLoiter = _this select 1; // wander around
@@ -29,7 +29,7 @@ _list = [_unitTypes select (floor(random(count _unitTypes))),
 		_recyAgt = _recyAgt - [_agent];
 	};
 } forEach _recyAgt;
-
+_recycled = false;
 if (!isNull _agent) then { // we have found a recyclable agent
 	//diag_log(format["%1 Found 1 agent to recycle: %2", __FILE__, _agent]);
 	// sometime Z can be seen flying in very high speed while tp. Its altitude is set underground to hide that.
@@ -37,6 +37,7 @@ if (!isNull _agent) then { // we have found a recyclable agent
 	_agent setPosASL _agtPos; sleep 0.001;
 	_agtPos = _position; _agtPos set [2, -3];
 	_agent setPosASL _agtPos; sleep 0.001;
+	_recycled = true;
 }
 else {
 	if (_maxtoCreate > 0) then {
@@ -90,7 +91,7 @@ if (!isNull _agent) then {
 	_agent setVariable ["myDest",_myDest];
 	_agent setVariable ["newDest",_newDest];
 	
-	if (count _list == 0) then {
+	if (!_recycled) then {
 		//Start behavior only for freshly created agents
 		_id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
 	};
