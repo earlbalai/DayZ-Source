@@ -35,6 +35,8 @@ if (!isNull _agent) then { // we have found a recyclable agent
 	// sometime Z can be seen flying in very high speed while tp. Its altitude is set underground to hide that.
 	_agtPos = getPosASL _agent; _agtPos set [2, -3];
 	_agent setPosASL _agtPos; sleep 0.001;
+	_agtPos = _position; _agtPos set [2, -3];
+	_agent setPosASL _agtPos; sleep 0.001;
 }
 else {
 	if (_maxtoCreate > 0) then {
