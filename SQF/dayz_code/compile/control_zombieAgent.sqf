@@ -1,4 +1,4 @@
-private["_agent","_id","_list","_isSomeone","_isAlive","_target","_targetPos","_myDest"];
+private["_agent","_id","_isSomeone","_isAlive","_target","_targetPos","_myDest"];
 
 _agent = _this select 0;
 
@@ -6,8 +6,7 @@ _agent = _this select 0;
  //_id = _agent addeventhandler ["HandleDamage",{_this call local_zombieDamage}];
 
 //Loop behaviour
-_list = (getposATL _agent) nearEntities ["Man",200];
-_isSomeone = ({isPlayer _x} count _list) > 0;
+_isSomeone = ({_x distance _agent < dayz_canDelete} count playableUnits) > 0;
 _isAlive = alive _agent;
 while {_isAlive and _isSomeone} do {
 //NO TARGET
@@ -21,8 +20,7 @@ while {_isAlive and _isSomeone} do {
 	//Loop looking for targets
 	while {isNull _target and _isAlive and _isSomeone} do {
 		_isAlive = alive _agent;
-		_list = (getposATL _agent) nearEntities ["Man",200];
-		_isSomeone = ({isPlayer _x} count _list) > 0;
+		_isSomeone = ({_x distance _agent < dayz_canDelete} count playableUnits) > 0;
 		_target = _agent call zombie_findTargetAgent;
 		if (_isAlive and (_agent distance _myDest < 5)) then {
 			[_agent,_myDest] call zombie_loiter;
