@@ -140,8 +140,8 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-270.679962,311.510254,1515.376099,883.794250,554,601,1};
-window[] = {2,-1,-1,-32000,-32000,802,22,1394,22,3,571};
+globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-270.679962,311.510254,1426.050781,794.468994,554,601,1};
+window[] = {2,-1,-1,-32000,-32000,846,66,1438,66,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1117,7 +1117,7 @@ class FSM
        "" \n
        "if (!isNil ""dayzInfectedCamps"") then {" \n
        "	diag_log (""Infected Camps: "" +str(dayzInfectedCamps));" \n
-       "	[dayzInfectedCamps] call infectedcamps;" \n
+       "	dayzInfectedCamps spawn infectedcamps;" \n
        "};" \n
        "" \n
        "diag_log (""Local Time: "" +str(dayzSetDate));" \n

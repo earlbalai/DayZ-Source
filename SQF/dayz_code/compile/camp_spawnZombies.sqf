@@ -15,7 +15,7 @@ while {_counter < _amount} do {
 	if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 	if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
 	
-	if (random 1 > 0.7) then {
+	if (random 1 < 0.7) then {
 	_doLoiter = false;
 	};
 	

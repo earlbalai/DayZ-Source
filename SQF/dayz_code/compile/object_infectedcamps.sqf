@@ -3,25 +3,27 @@
 diag_log(str(__FILE__));
 _array = _this;
 
+diag_log(str(_array));
 {
 	_camp = _x;
-//	diag_log (str(_x));
+//diag_log ("Camp: " +str(_x));
 	_campPos = _camp select 0;
-//	diag_log (str(_campPos));
+//diag_log ("CampPos: " +str(_campPos));
 	_campAmount = _camp select 1;
-//	diag_log (str(_campAmount));
+//diag_log ("CampAmont: " +str(_campAmount));
 	_campRadius = _camp select 2;
-//	diag_log (str(_campRadius));
+//diag_log ("CampRadius: " +str(_campRadius));
 	
 	_trigger = createTrigger["EmptyDetector",_campPos];
 	_trigger setTriggerArea[_campRadius,_campRadius,0,false];
 	_trigger setTriggerActivation["ANY","PRESENT",false];
 	_trgcode = format["[%1,%2] spawn camp_spawnZombies;",_campPos,_campAmount];
 	_trigger setTriggerStatements["player in thislist", _trgcode, ""];
+	_trigger setTriggerTimeout [0, 480, 240, false];
 
 	_markerstr = createMarker [format["BaseCamp_%1", random 50], _campPos];
 	_markerstr setMarkerColor "ColorRed";
-	_markerstr setMarkerShape "ICON";
+	_markerstr setMarkerShape "ELLIPSE";
 	_markerstr setMarkerBrush "Border";
 	_markerstr setMarkerSizeLocal [_campRadius, _campRadius];
 
