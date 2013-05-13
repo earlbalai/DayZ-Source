@@ -68,8 +68,8 @@ feature.
 * [VRShiva](https://github.com/VRShiva)
 * [caleywoods](https://github.com/caleywoods)
 * [soapmak3r](https://github.com/soapmak3r) (Background Music)
+* [icomrade](https://github.com/icomrade)
 * Ander
-
 * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
 * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
 * Special thanks to shinkicker who has listened to all of the ideas and who has always been there to bounce ideas back and forth Thanks.
