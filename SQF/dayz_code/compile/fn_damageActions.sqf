@@ -79,9 +79,11 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 		_vehicle = (_vehClose select _y);
 		while{((!alive _vehicle) and (_y < (count _vehClose)))} do {
 			_y = _y + 1;
-			_vehicle = (_vehClose select _y);
+    _vehicle = (_vehClose select _y);
+		_vehType = getText (configFile >> "CfgVehicles" >> typeOf cursorTarget >> "displayName");
+		//_vehType = typeOf _vehicle;
 		};
-		_vehType = typeOf _vehicle;
+		//_vehType = typeOf _vehicle;
 		_action = _unit addAction [format[localize "str_actions_medical_03",_vehType], "\z\addons\dayz_code\medical\load\load_act.sqf",[player,_vehicle,_unit], 0, true, true];
 		r_player_actions set [count r_player_actions,_action];
 	};
