@@ -10,20 +10,19 @@ _doLoiter = _this select 1;
 _unitTypes = _this select 2;
 
 _findAgt = { // find agents to recycle according to relative position and type
-	private ["_plr","_types","_radius","_y", "_point", "_ahead"];
+	private ["_plr","_types","_y", "_point", "_ahead"];
 
 	_plr = _this select 0;
-	_ahead = 100 min (0 max (dayz_canRecycle - dayz_spawnArea));
-	_radius = dayz_canRecycle max dayz_spawnArea;
+	_ahead = 50;
 	_point = _plr modelToWorld [0, _ahead, 0]; // we will recycle more zombies located behind the player
 	_types = _this select 1;
 	recyclableAgt=[];
 	
 	{ 
 		_y = _x getVariable ["agentObject",objNull];
-		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > _radius)})}) then {
+		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
 			if (((typeOf _y) IN _types) AND
-			{(0 == {(_x != _plr) AND (_x distance _y <_radius)} count playableUnits)}) then { 
+			{(0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits)}) then { 
 				recyclableAgt set [count recyclableAgt, _y];
 			};
 		};
