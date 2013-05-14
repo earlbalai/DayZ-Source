@@ -824,12 +824,36 @@
 			<Czech>Nailed BaseballBat</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_NailedBaseballBat">
-			<English>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</English>
-			<German>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</German>
-			<Russian>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</Russian>
-			<Spanish>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</Spanish>
-			<French>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</French>
-			<Czech>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</Czech>
+			<English>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</English>
+			<German>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</German>
+			<Russian>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Russian>
+			<Spanish>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Spanish>
+			<French>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</French>
+			<Czech>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Czech>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_ACG">
+			<English>ACG Scope</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_ACG">
+			<English>Blueprint to create an ACG Scope. Required - 2 2inch Metal Pipe, 2 Metal Sheet, 1 Hose Clamp. Tools - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_AIM">
+			<English>AIM Scope</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_AIM">
+			<English>Blueprint to create an AIM Scope. Required - 1 1inch Metal Pipe, 1 scrap electronics, 1 D type battery, 1 Cable Tie. Tools - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_CAMO">
+			<English>CAMO Pattern</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_CAMO">
+			<English>Blueprint to create an CAMO Pattern. Required - 1 Rag, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_KOBRA">
+			<English>KOBRA Scope</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_KOBRA">
+			<English>Blueprint to create an KOBRA Scope. Required - 1 Metal Sheet, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_BaseBallBatBarbed">
 			<English>BaseBallBat Barbed</English>
