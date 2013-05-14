@@ -680,7 +680,7 @@
 			<Czech>A silencer</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_camo">
-			<English>Camo materials</English>
+			<English>Camo materials/Pattern</English>
 			<German>Camo materials</German>
 			<Russian>Camo materials</Russian>
 			<Spanish>Camo materials</Spanish>
@@ -936,7 +936,7 @@
 			<Czech>Silencer</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_part_camo">
-			<English>Camo</English>
+			<English>Camo Pattern</English>
 			<German>Camo</German>
 			<Russian>Camo</Russian>
 			<Spanish>Camo</Spanish>
@@ -1062,7 +1062,49 @@
 			<Spanish>2 Inch Metal Pipe</Spanish>
 			<French>2 Inch Metal Pipe</French>
 			<Czech>2 Inch Metal Pipe</Czech>
-		</Key>			
+		</Key>
+		<Key ID="STR_ATTACHMENT_NAME_ACG">
+			<English>ACG ATTACHMENT</English>
+		</Key>
+		<Key ID="STR_ATTACHMENT_DESC_ACG">
+			<English>ACG ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Silencer">
+			<English>Silencer ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Silencer">
+			<English>Silencer ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Pso">
+			<English>PSO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Pso">
+			<English>PSO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Kobra">
+			<English>KOBRA ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Kobra">
+			<English>KOBRA ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_GL">
+			<English>GL ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_GL">
+			<English>GL ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_CAMO">
+			<English>CAMO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_CAMO">
+			<English>CAMO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_AIM">
+			<English>AIM ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_AIM">
+			<English>AIM ATTACHMENT</English>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
 			<German>Schanzzeug</German>
