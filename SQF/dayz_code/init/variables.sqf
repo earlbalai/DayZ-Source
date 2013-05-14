@@ -398,7 +398,7 @@ dayz_spawnArea =  200; // radius around player where we can spawn loot & Z
 dayz_safeDistPlr = 30; // Any loot & Z won't be spawned closer than this distance from any player
 dayz_cantseeDist = 250; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
 dayz_cantseefov = 45; // half player field-of-view. Visible Z won't be spawned in front of any near players 
-dayz_canRecycle = 300; // Z, further than this distance from its "owner", can be reused. must be > dayz_maxMaxModels
+dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 dayz_lootSpawnBias = 65; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
 
 //init global arrays for Loot Chances
