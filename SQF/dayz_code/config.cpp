@@ -112,10 +112,6 @@ class CfgActions {
 		show = 0;
 	};
 	
-	class Eject: None
-	{
-		show = 0; //1;
-	};
 };
 class CfgAISkill {
 	aimingaccuracy[] = {0, 0, 1, 1};
