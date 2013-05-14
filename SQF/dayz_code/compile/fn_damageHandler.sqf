@@ -121,9 +121,20 @@ if (_hit in USEC_MinorWounds) then {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
 	} else {
-diag_log(format["%1 _this:%2  _damage:%3",__FILE__,_this,_damage]);
 		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then { 
-			[_unit,"arms",_damage/6] call object_processHit; // prevent broken legs due to arma bugs
+			if ((!isNil "Dayz_freefall") AND {(abs(time - (Dayz_freefall select 0))<1)}) then {
+				_nrj = ((Dayz_freefall select 1)*20) / 100;  // h=5m => nrj=1
+//				diag_log(format["%1 Broken legs registered from freefall _hit:""%2""  _source:%3  _unit:%4  _ammo:""%5""  _damage:%6  freefall:%7  time:%8  _nrj:%9(%10)  pos:%11",__FILE__,
+//						_hit,_source,_unit,_ammo,_damage, Dayz_freefall, time, _nrj,((1+_nrj)^2)-1, getPos player]);
+				if (random(((1+_nrj)^2)-1) > 1.5) then { // freefall from 5m => 1/2 chance to get hit legs registered
+					diag_log(format["%1 Legs damage registered from freefall. _damage:%2  _nrj:%3 (odds %4:1)  freefall:%5",__FILE__,
+									_damage, _nrj,(((1+_nrj)^2)-1)/1.5, Dayz_freefall, time]);
+					[_unit,_hit,_damage] call object_processHit;
+				}
+				else {
+					[_unit,"arms",_damage/6] call object_processHit; // prevent broken legs due to arma bugs
+				};
+			};
 		}
 		else {
 			[_unit,_hit,_damage/2] call object_processHit;

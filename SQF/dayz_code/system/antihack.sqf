@@ -6,6 +6,7 @@
 
 private["_debug","_curpos","_lastpos","_curheight","_lastheight","_terrainHeight","_curtime","_lasttime","_distance","_difftime","_speed","_topSpeed","_lastVehicle","_safetyVehicle", "_topv","_toph", "_v", "_h"];
 
+diag_log(format["%1: init", __FILE__]);
 waitUntil {vehicle player == player};
 
 [] spawn {
@@ -86,21 +87,17 @@ while {alive player} do
 		_lastVehicle = vehicle player;
 	};
 
-	{ // freefall detection:
-		_v = -((velocity player) select 2);
-		_h = (getPosATL player) select 2;
-		if ((_v > 4) AND {(_h > 3)}) then { 
-			_topv = _topv max _v;
-			_toph = _toph max _h;
-		}
-		else {
-			if ((_topv > 4) AND {(_toph > 3)}) then { 
-				Dayz_freefall = [ time, _toph, _topv ];
-				diag_log(format["Free fall: %1", Dayz_freefall]);
-			};
-			_topv = 0;
-			_toph = 0;
-		};
+	// freefall detection:
+	_v = -((velocity player) select 2);
+	_h = (getPosATL player) select 2;
+	if (_v > 4 AND _h > 3) then { 
+		_topv = _topv max _v;
+		_toph = _toph max _h;
+		Dayz_freefall = [ time, _toph, _topv ];
+	}
+	else {
+		_topv = 0;
+		_toph = 0;
 	};
 	
 	sleep 0.5;
