@@ -39,21 +39,21 @@ _basePos = _nextBasePos;
 _basePosCheck = _basePos isFlatEmpty [10, 0, _placeMaxGradient, (_placePrecision / 2), 0, false, objNull];
 
 
-/*
-while { (count _basePosCheck) == 0 } do {
+
+while { (_basePos select 1) < 1 } do {
 	_nextBasePos = _basePos findEmptyPosition [10, (_placeSearchRadius / 20)];
 	_basePos = _nextBasePos;
 	_basePosCheck = _basePos isFlatEmpty [10, 0, _placeMaxGradient, (_placePrecision / 2), 0, false, objNull];
 };
-*/
+
 
 if (count(_basePosCheck) > 0) then {
 	_basePos = _basePosCheck;
 };
 
-_basePos = [_basePos select 0,_basePos select 1,0];
+//_basePos = [_basePos select 0,_basePos select 1,0];
 
-if ((_basePos select 1) < 1) exitwith {};
+//if ((_basePos select 1) < 1) exitwith {};
 
 [_basePos, (floor(random 360)), _baseClass] call spawnComposition;
 
