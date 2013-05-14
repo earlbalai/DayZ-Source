@@ -38,7 +38,7 @@ Serverside affected addons:
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
-	    * [NEW] - 1 New background tracks.
+	    * [NEW] - 2 New background tracks.
 	    * [NEW] - 6 New decayed Zeds - Harder to kill and Do more damage.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
@@ -58,13 +58,12 @@ Serverside affected addons:
 		* [NEW] - FPS Monitor this will dynamicly change how and total amount of zeds and loot is spawning to keep the players base fps up.
 		* [NEW] - Crafting is now added.
 		* [NEW] - Attachment Crafting is the only way to upgrade weapons.
-		* [NEW] - 2 New melee weapons.(Bat,Shovel).
-		* [NEW] - 2 new Bat variations used in crafting (NailedBat,WiredBat).
+		* [NEW] - 2 New Melee weapons.(Bat,Shovel)
+		* [NEW] - 2 New Bat variations used in crafting. (NailedBat,WiredBat)
 		* [NEW] - Wild Spawning of zeds has been redone and readded.
 		* [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps)
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
-	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
 	    * [FIXED] - StudyBody should now work. (Describing wounds accurately)
 	    * [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
@@ -86,8 +85,6 @@ Serverside affected addons:
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
-	    * [UPDATED] - M107 lowered chance in loot tables.
-	    * [UPDATED] - AS50 lowered chance in loot tables.
 	    * [UPDTAED] - ALL loot table weights have been updated.
 	    * [UPDTAED] - ALL loot table weights have been rebalanced.
 	    * [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
@@ -125,12 +122,12 @@ Serverside affected addons:
 	    * [UPDATED] - Vehicles speeds HMMWV, PBX and UAZ - Faster / ATV's - Slower
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
-		* [UPDATED] - Refuel now locks the player in place for the time to fill.
+	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
-		* [REMOVED] - M107 & AS50.
-		* [REMOVED] - Removed all military weapons with any attachment from loot tables.
+	    * [REMOVED] - M107 and AS50.
+	    * [REMOVED] - Removed all military weapons with any attachment from loot tables.
 
 Zed knock down removed due to transition issue with animations working on this for the next patch. (Code left in just commented out) 
 ______________________
