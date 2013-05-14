@@ -1,11 +1,6 @@
 
 
-private ["_type","_fairSize","_boundingBox","_cornerLow","_cornerHi","_burried","_findAgt",
-"_plr","_ahead","_point","_y","_isAir","_inVehicle","_dateNow","_age","_force","_nearbyBuildings",
-"_position","_fpsbias","_maxControlledZombies","_maxManModels","_maxWeaponHolders","_controlledZombies",
-"_currentManModels","_currentWeaponHolders","_nearby","_nearbyCount","_maxWildZombies",
-"_zombieSpawnCtr","_suitableBld","_spwndoneBld","_negstampBld","_recyAgt","_maxtoCreate","_config","_canLoot",
-"_dis","_checkLoot","_looted","_qty","_locationstypes","_nearestCity","_zombied","_tmp", "_radius"];
+private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point"];
 
 // compute building footprint just to check if it could hide a Zombie
 _fairSize = {
@@ -225,7 +220,7 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 	_nearby = nil;
 	{
 		_tmp = str(_x);
-		// How not being seen? hide behind a push! Great value = t_picea1s, t_picea2s, t_betula2w, b_craet2
+		// How not being seen? hide behind a bush! Great value = t_picea1s, t_picea2s, t_betula2w, b_craet2
 		if ((typeOf _x == "") AND {(
 			(((["t_picea1s", _tmp, false] call fnc_inString) OR 
 			{(["t_picea2s", _tmp, false] call fnc_inString)})) OR 
