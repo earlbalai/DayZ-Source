@@ -26,11 +26,10 @@ if (count _this > 4) then {
 	_local = ({isPlayer _x} count (_unit nearEntities ["AllVehicles",_dis]) < 2);
 } else {
 	_local = _this select 3;
+	_dis = 40;
 	
 	if (_type in ["shout","hit","attack","scream","breath","spotted"]) then {
 		_dis = 100;
-	} else {
-		_dis = 40;
 	};
 };
 
@@ -39,8 +38,9 @@ if (_isWoman and (_type in ["scream","panic"])) then {
 	_type = _type + "_w";
 };
 
-
-if ((round(random _chance) == _chance) or (_chance == 0)) then {
+	_chance =	round(random 10);
+if ((_chance % 5) == 0) then {
+//if ((round(random _chance) == _chance) or (_chance == 0)) then {
 	_rnd =(round(random _num));
 	_sound = "z_" + _type + "_" + str(_rnd);
 	if (_local) then {
