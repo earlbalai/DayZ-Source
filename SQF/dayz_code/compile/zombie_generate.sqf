@@ -69,7 +69,7 @@ else {
 				};
 			};
 		};
-		_agent setVariable["agentObject",_agent,true];
+		_agent setVariable["agentObject",_agent];
 		_maxtoCreate = _maxtoCreate -1;
 	};
 };
@@ -78,7 +78,7 @@ if (!isNull _agent) then {
 	_agent setDir random 360;
 	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
 	_agent setPosATL _position;
-	_agent setVariable ["doLoiter",_doLoiter,true];
+	_agent setVariable ["doLoiter",_doLoiter];
 	
 	_position = getPosATL _agent;
 	
