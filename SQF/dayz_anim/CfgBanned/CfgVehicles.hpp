@@ -675,6 +675,8 @@ class CfgVehicles {
 	class M1135_ATGMV_EP1: Banned {};
 	class M1128_MGS_EP1: Banned {};
 	class M1133_MEV_EP1: Banned {};
+	class SUV_Base_EP1: Banned {};
+	class VWGolf: Banned {};
 	class SUV_UN_EP1: Banned {};
 	class ArmoredSUV_PMC: Banned {};
 	class ArmoredSUV_GunNotCommanding_PMC: Banned {};
