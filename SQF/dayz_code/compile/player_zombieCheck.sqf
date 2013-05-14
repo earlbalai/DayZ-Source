@@ -27,18 +27,12 @@ _multiplier = 1;
 				};	
 			};
 			_attacked = true;
-		//} else {
-		//	if (speed _x < 4) then {
-		//		[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
-		//	} else {
-		//		[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
-		//	};
-		};
-		
-		if (speed _x < 4) then {
-			[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
 		} else {
-			[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
+			if (speed _x < 4) then {
+				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
+			} else {
+				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
+			};
 		};
 		
 		//Noise Activation
