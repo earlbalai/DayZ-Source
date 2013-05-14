@@ -1,3 +1,4 @@
+/* THIS FILE IS NOT USED ANYMORE
 private["_position","_doLoiter","_unitTypes","_isNoone","_loot","_array","_agent","_type","_radius","_method","_nearByPlayer","_attempt","_myDest","_newDest","_lootType"];
 _player = _this select 0;
 _unitTypes = 	[]+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
@@ -20,7 +21,7 @@ _agent = createAgent [_type, _position, [], _radius, _method];
 
 if (_doLoiter) then {
 	//_agent setPosATL _position;
-	//_agent setVariable ["doLoiter",true,true];
+	//_agent setVariable ["doLoiter",true];
 	_agent setDir round(random 180);
 };
 
@@ -64,3 +65,4 @@ if (_rnd > 0.3) then {
 
 //Start behavior
 _id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
+*/

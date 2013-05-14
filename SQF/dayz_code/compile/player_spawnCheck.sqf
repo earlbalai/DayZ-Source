@@ -1,7 +1,7 @@
 
-private ["_type","_this","_fairSize","_boundingBox","_cornerLow","_cornerHi","_burried","_findAgt","_plr","_ahead","_point","_y","_x","_isAir","_inVehicle","_dateNow","_age","_force","_nearbyBuildings","_position","_fpsbias","_maxControlledZombies","_maxManModels","_maxWeaponHolders","_controlledZombies","_radius","_currentManModels","_currentWeaponHolders","__FILE__","_nearby","_nearbyCount","_maxWildZombies","_zombieSpawnCtr","_suitableBld","_spwndoneBld","_negstampBld","_recyAgt","_maxtoCreate","_config","_canLoot","_dis","_checkLoot","_looted","_qty","_locationstypes","_nearestCity","_zombied","_tmp"];
-_type = _this select 0;
- 
+
+private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point"];
+
 // compute building footprint just to check if it could hide a Zombie
 _fairSize = {
 	private ["_boundingBox","_cornerLow","_cornerHi", "_burried"];
@@ -57,30 +57,30 @@ if (_isAir) then {
 	_maxControlledZombies = 0;
 };
 _controlledZombies = {local (_x getVariable ["agentObject",objNull])} count agents;
-_radius = dayz_spawnArea;
-_currentManModels = count (_position nearEntities ["CAManBase",_radius]);
-_currentWeaponHolders = count (_position nearObjects ["ReammoBox",_radius]); // ReammoBox = parent of all kinds of item holders
+
+_currentManModels = count (_position nearEntities ["CAManBase",dayz_spawnArea]);
+_currentWeaponHolders = count (_position nearObjects ["ReammoBox",dayz_spawnArea]); // ReammoBox = parent of all kinds of item holders
 /*
 //diag_log ("Type: " +str(_type));
 
 
 //diag_log("SPAWN CHECKING: Starting");
        //_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
-       //_nearestCity = nearestLocations [getPos player, _locationstypes, _radius/2];
+       //_nearestCity = nearestLocations [getPos player, _locationstypes, dayz_spawnArea/2];
        //_townname = text (_nearestCity select 0);     
        //_nearbytype = type (_nearestCity select 0);
 
 switch (_nearbytype) do {
        case "NameVillage": {
-               //_radius = 250; 
+               //dayz_spawnArea = 250; 
                _maxControlledZombies = 30;
        };
        case "NameCity": {
-               //_radius = 300; 
+               //dayz_spawnArea = 300; 
                _maxControlledZombies = 40;
        };
        case "NameCityCapital": {
-               //_radius = 400; 
+               //dayz_spawnArea = 400; 
                _maxControlledZombies = 40;
        };
 };
@@ -98,13 +98,13 @@ if ("ItemMap_Debug" in items player) then {
        _markerstr setMarkerColorLocal "ColorYellow";
        _markerstr setMarkerShapeLocal "ELLIPSE";
        _markerstr setMarkerBrushLocal "Border";
-       _markerstr setMarkerSizeLocal [_radius, _radius];
+       _markerstr setMarkerSizeLocal [dayz_spawnArea, dayz_spawnArea];
 
        _markerstr1 = createMarkerLocal ["Counter", _position];
        _markerstr1 setMarkerColorLocal "ColorRed";
        _markerstr1 setMarkerShapeLocal "ELLIPSE";
        _markerstr1 setMarkerBrushLocal "Border";
-       _markerstr1 setMarkerSizeLocal [_radius+100, _radius+100];
+       _markerstr1 setMarkerSizeLocal [dayz_spawnArea+100, dayz_spawnArea+100];
        
        _markerstr2 = createMarkerLocal ["Agro80", _position];
        _markerstr2 setMarkerColorLocal "ColorRed";
@@ -134,22 +134,14 @@ diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 */
 diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).", __FILE__,
 	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, 
-	_radius, round diag_fps, _currentWeaponHolders, _maxWeaponHolders]);
+	dayz_spawnArea, round diag_fps, _currentWeaponHolders, _maxWeaponHolders]);
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
 // make the spawn smoother along player's journey. Same for loot
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);
 _currentWeaponHolders = _currentWeaponHolders max floor(_maxWeaponHolders*.8);
 
 // we start by the closest buildings. building too close from player are ditched.	
-_nearby = (nearestObjects [_position, ["building"],_radius]) - (_position nearObjects ["building", dayz_safeDistPlr]);
-
-_nearbyCount = count _nearby;
-if (_nearbyCount < 1) exitwith 
-{
-//	if ((_controlledZombies < _maxWildZombies) and !_inVehicle) then {
-//		[_position] call wild_spawnZombies;
-//	};
-};
+_nearby = (nearestObjects [_position, ["building"],dayz_spawnArea]) - (_position nearObjects ["building", dayz_safeDistPlr]);
 
 _zombieSpawnCtr = 0;
 _suitableBld = 0;
@@ -187,7 +179,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 	//Zeds
 	if ((_currentManModels < _maxManModels) AND {(_canLoot OR {(_x call _fairSize)})}) then {
 		if ((count _recyAgt > 0) OR {(_maxtoCreate > 0)}) then {
-			//[_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxControlledZombies] call player_spawnzedCheck;
+			//[dayz_spawnArea, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _maxControlledZombies] call player_spawnzedCheck;
 			_suitableBld = _suitableBld +1;
 			_zombied = (_x getVariable ["zombieSpawn",-0.1]);
 			_dateNow = (DateToNumber date);
@@ -215,6 +207,31 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 		};
 	};
 } forEach _nearby;
- 
+
+// spawn some a wild zombie if we can afford
+if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
+	// we limit the surface because finding a typeless object is a CPU hog.
+	_radius = (0 max (dayz_canDelete - dayz_spawnArea))/2;
+	// search area is somewhere quite far, quite in the same direction as the player is facing
+	// Z will be spawned quite far, beyond the radius used for buildings
+	_tmp = (random 180) - 90;
+	_dis = dayz_spawnArea + _radius;
+	_point = player modelToWorld[sin(_tmp) * _dis, cos(_tmp) * _dis, 0];
+	_nearby = nil;
+	{
+		_tmp = str(_x);
+		// How not being seen? hide behind a bush! Great value = t_picea1s, t_picea2s, t_betula2w, b_craet2
+		if ((typeOf _x == "") AND {(
+			(((["t_picea1s", _tmp, false] call fnc_inString) OR 
+			{(["t_picea2s", _tmp, false] call fnc_inString)})) OR 
+			{((["t_betula2w", _tmp, false] call fnc_inString) OR 
+			{(["b_craet2", _tmp, false] call fnc_inString)})})
+		}) exitWith { _nearby = _x; };
+	} forEach (nearestObjects [_point, [], _radius]);	
+	if (!isNil "_nearby") then {
+		[_nearby, _recyAgt, _maxtoCreate, 20] call building_spawnZombies;
+	};
+};
+
 diag_log (format["%1 End. Buildings checked:%2, newly zombied:%3, already zombied:%4, negative timestamp:%5.", __FILE__,
 	_suitableBld, _spwndoneBld, _zombieSpawnCtr, _negstampBld ]);

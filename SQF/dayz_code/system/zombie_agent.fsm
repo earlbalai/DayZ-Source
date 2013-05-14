@@ -256,7 +256,7 @@ class FSM
            "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
            "};" \n
            "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
+           "	_agent setVariable[""doLoiter"",true];" \n
            "};" \n
            "_countr = 0;" \n
            "_losCheck = 0;" \n
@@ -272,7 +272,7 @@ class FSM
           condition=/*%FSM<CONDITION""">*/"(time - _entityTime) > 30"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_entityTime = time;" \n
            "" \n
-           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
            "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -351,7 +351,7 @@ class FSM
            "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
            "};" \n
            "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
+           "	_agent setVariable[""doLoiter"",true];" \n
            "};" \n
            "_countr = 0;" \n
            "_losCheck = 0;" \n
@@ -379,7 +379,7 @@ class FSM
           condition=/*%FSM<CONDITION""">*/"(time - _entityTime) > 30"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_entityTime = time;" \n
            "" \n
-           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
            "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -551,7 +551,7 @@ class FSM
       name = "Cleanup_";
       init = /*%FSM<STATEINIT""">*/"_waitStart = time;" \n
        "" \n
-       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
        "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -585,7 +585,7 @@ class FSM
       name = "Finish_Move";
       init = /*%FSM<STATEINIT""">*/"_timeN = time;" \n
        "" \n
-       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
        "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -627,7 +627,7 @@ class FSM
     class wait
     {
       name = "wait";
-      init = /*%FSM<STATEINIT""">*/"_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+      init = /*%FSM<STATEINIT""">*/"_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],dayz_canDelete];" \n
        "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
        "" \n
        "_timeN = time;"/*%FSM</STATEINIT""">*/;
