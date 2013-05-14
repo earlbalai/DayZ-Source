@@ -11,7 +11,7 @@ class FoodgoatCooked : FoodCooked {
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOOD_EQUIP_GOAT_COOKED;
-	bloodRegen = 400;
+	bloodRegen = 600;
 };
 
 class FoodmuttonCooked : FoodCooked {
@@ -19,7 +19,7 @@ class FoodmuttonCooked : FoodCooked {
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_1;
 	model = "z\addons\dayz_communityassets\models\mutton_cooked.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_mutton_cooked_CA.paa";
-	bloodRegen = 400;
+	bloodRegen = 800;
 };
 
 class FoodchickenCooked : FoodCooked {
@@ -27,7 +27,7 @@ class FoodchickenCooked : FoodCooked {
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
-	bloodRegen = 400;
+	bloodRegen = 800;
 };
 
 class FoodbaconCooked : FoodCooked {
@@ -35,7 +35,7 @@ class FoodbaconCooked : FoodCooked {
 	model = "z\addons\dayz_communityassets\models\bacon_fried.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_bacon_fried_CA.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_4;
-	bloodRegen = 400;
+	bloodRegen = 600;
 };
 
 class FoodrabbitCooked : FoodCooked {
@@ -43,7 +43,7 @@ class FoodrabbitCooked : FoodCooked {
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_3;
-	bloodRegen = 800;
+	bloodRegen = 1200;
 };
 
 class FoodbeefCooked : FoodCooked {
@@ -51,5 +51,5 @@ class FoodbeefCooked : FoodCooked {
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_6;
-	bloodRegen = 600;
+	bloodRegen = 800;
 };

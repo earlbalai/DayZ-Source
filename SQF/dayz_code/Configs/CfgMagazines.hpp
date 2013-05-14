@@ -85,6 +85,6 @@ class CfgMagazines {
 	
 	
 	//crafting
-	#include "CfgCrafting\ItemNails.hpp"
+	#include "CfgCrafting\Mats.hpp"
 	
 };

@@ -51,15 +51,14 @@ if (count(_basePosCheck) > 0) then {
 	_basePos = _basePosCheck;
 };
 
-//_basePos = [3798.28,13271.7,0];
+_basePos = [_basePos select 0,_basePos select 1,0];
 
 [_basePos, (floor(random 360)), _baseClass] call spawnComposition;
 
-_basePos = [_basePos select 0,_basePos select 1,0];
 
 //_systemmarker = createVehicle ["Sign_sphere10cm_EP1", _basePos, [], 0, "none"];
 
-_lootTable = ["Residential"] call BIS_fnc_selectRandom;
+_lootTable = ["InfectedCamps"] call BIS_fnc_selectRandom;
 _itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
 _index = dayz_CBLBase  find _lootTable;
 _weights =		dayz_CBLChances select _index;
