@@ -4,6 +4,8 @@ _array = _this select 3;
 _type = _array select 0;
 _classname = _array select 1;
 _holder = _array select 2;
+
+if (player distance _holder > 3) exitwith {"You need to be within 3 meters to pickup!","PLAIN DOWN"};
 	
 _playerID = getPlayerUID player;
 player removeAction s_player_holderPickup;
@@ -36,8 +38,9 @@ _claimedBy = _holder getVariable["claimed","0"];
 
 if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]; };
 
-if(_classname isKindOf "Bag_Base_EP1") then {
+if(_classname isKindOf "Bag_Base_EP1") exitwith {
 	diag_log("Picked up a bag: " + _classname);
+	player action ["TakeBag", _holder];
 };
 
 _config = (configFile >> _type >> _classname);
