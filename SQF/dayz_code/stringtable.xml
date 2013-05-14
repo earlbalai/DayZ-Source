@@ -583,34 +583,462 @@
 		</Key>
 		<Key ID="str_crafting_failed">
 			<English>You are missing %1 %2</English>
+			<German>You are missing %1 %2</German>
+			<Russian>You are missing %1 %2</Russian>
+			<Spanish>You are missing %1 %2</Spanish>
+			<French>You are missing %1 %2</French>
+			<Czech>You are missing %1 %2</Czech>
 		</Key>
 		<Key ID="str_crafting_space">
 			<English>Not enough inventory space to make items...</English>
+			<German>Not enough inventory space to make items...</German>
+			<Russian>Not enough inventory space to make items...</Russian>
+			<Spanish>Not enough inventory space to make items...</Spanish>
+			<French>Not enough inventory space to make items...</French>
+			<Czech>Not enough inventory space to make items...</Czech>
 		</Key>
 		<Key ID="str_crafting_success">
 			<English>Successfully created %1 %2</English>
+			<German>Successfully created %1 %2</German>
+			<Russian>Successfully created %1 %2</Russian>
+			<Spanish>Successfully created %1 %2</Spanish>
+			<French>Successfully created %1 %2</French>
+			<Czech>Successfully created %1 %2</Czech>
 		</Key>
 	</Package>
 	<Package name="equipment_code">	
 		<Key ID="STR_CRAFT_NAME_X">
 			<English>Craft Blueprint</English>
+			<German>Craft Blueprint</German>
+			<Russian>Craft Blueprint</Russian>
+			<Spanish>Craft Blueprint</Spanish>
+			<French>Craft Blueprint</French>
+			<Czech>Craft Blueprint</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_X">
 			<English>Blueprint used in crafting</English>
+			<German>Blueprint used in crafting</German>
+			<Russian>Blueprint used in crafting</Russian>
+			<Spanish>Blueprint used in crafting</Spanish>
+			<French>Blueprint used in crafting</French>
+			<Czech>Blueprint used in crafting</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_wood_pallet">
+			<English>A wooden pallet</English>
+			<German>A wooden pallet</German>
+			<Russian>A wooden pallet</Russian>
+			<Spanish>A wooden pallet</Spanish>
+			<French>A wooden pallet</French>
+			<Czech>A wooden pallet</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_string">
+			<English>A bit of string</English>
+			<German>A bit of string</German>
+			<Russian>A bit of string</Russian>
+			<Spanish>A bit of string</Spanish>
+			<French>A bit of string</French>
+			<Czech>A bit of string</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_scrap_electronics">
+			<English>A pile of scrap electronics</English>
+			<German>A pile of scrap electronics</German>
+			<Russian>A pile of scrap electronics</Russian>
+			<Spanish>A pile of scrap electronics</Spanish>
+			<French>A pile of scrap electronics</French>
+			<Czech>A pile of scrap electronics</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_rope">
+			<English>Some rope</English>
+			<German>Some rope</German>
+			<Russian>Some rope</Russian>
+			<Spanish>Some rope</Spanish>
+			<French>Some rope</French>
+			<Czech>Some rope</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_rag">
+			<English>Some old rags</English>
+			<German>Some old rags</German>
+			<Russian>Some old rags</Russian>
+			<Spanish>Some old rags</Spanish>
+			<French>Some old rags</French>
+			<Czech>Some old rags</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_pvc_box">
+			<English>A box made of PVC</English>
+			<German>A box made of PVC</German>
+			<Russian>A box made of PVC</Russian>
+			<Spanish>A box made of PVC</Spanish>
+			<French>A box made of PVC</French>
+			<Czech>A box made of PVC</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_part_silencer">
+			<English>A silencer</English>
+			<German>A silencer</German>
+			<Russian>A silencer</Russian>
+			<Spanish>A silencer</Spanish>
+			<French>A silencer</French>
+			<Czech>A silencer</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_part_camo">
+			<English>Camo materials</English>
+			<German>Camo materials</German>
+			<Russian>Camo materials</Russian>
+			<Spanish>Camo materials</Spanish>
+			<French>Camo materials</French>
+			<Czech>Camo materials</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_paper_sheet">
+			<English>Sheets of paper</English>
+			<German>Sheets of paper</German>
+			<Russian>Sheets of paper</Russian>
+			<Spanish>Sheets of paper</Spanish>
+			<French>Sheets of paper</French>
+			<Czech>Sheets of paper</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_paint">
+			<English>Some paint</English>
+			<German>Some paint</German>
+			<Russian>Some paint</Russian>
+			<Spanish>Some paint</Spanish>
+			<French>Some paint</French>
+			<Czech>Some paint</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_note">
+			<English>A note scribbled on some paper</English>
+			<German>A note scribbled on some paper</German>
+			<Russian>A note scribbled on some paper</Russian>
+			<Spanish>A note scribbled on some paper</Spanish>
+			<French>A note scribbled on some paper</French>
+			<Czech>A note scribbled on some paper</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_needle">
+			<English>A sharp needle</English>
+			<German>A sharp needle</German>
+			<Russian>A sharp needle</Russian>
+			<Spanish>A sharp needle</Spanish>
+			<French>A sharp needle</French>
+			<Czech>A sharp needle</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_nail">
+			<English>An old nail</English>
+			<German>An old nail</German>
+			<Russian>An old nail</Russian>
+			<Spanish>An old nail</Spanish>
+			<French>An old nail</French>
+			<Czech>An old nail</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_metal_sheet">
+			<English>A metal sheet</English>
+			<German>A metal sheet</German>
+			<Russian>A metal sheet</Russian>
+			<Spanish>A metal sheet</Spanish>
+			<French>A metal sheet</French>
+			<Czech>A metal sheet</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_laser">
+			<English>A red laser</English>
+			<German>A red laser</German>
+			<Russian>A red laser</Russian>
+			<Spanish>A red laser</Spanish>
+			<French>A red laser</French>
+			<Czech>A red laser</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_hose_clamp">
+			<English>A clamp off a hose</English>
+			<German>A clamp off a hose</German>
+			<Russian>A clamp off a hose</Russian>
+			<Spanish>A clamp off a hose</Spanish>
+			<French>A clamp off a hose</French>
+			<Czech>A clamp off a hose</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_gauze">
+			<English>A pile of gauze</English>
+			<German>A pile of gauze</German>
+			<Russian>A pile of gauze</Russian>
+			<Spanish>A pile of gauze</Spanish>
+			<French>A pile of gauze</French>
+			<Czech>A pile of gauze</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_empty_barrel">
+			<English>A barrel that has been emptied of its content</English>
+			<German>A barrel that has been emptied of its content</German>
+			<Russian>A barrel that has been emptied of its content</Russian>
+			<Spanish>A barrel that has been emptied of its content</Spanish>
+			<French>A barrel that has been emptied of its content</French>
+			<Czech>A barrel that has been emptied of its content</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_duct_tape">
+			<English>A roll of sticky duct tape</English>
+			<German>A roll of sticky duct tape</German>
+			<Russian>A roll of sticky duct tape</Russian>
+			<Spanish>A roll of sticky duct tape</Spanish>
+			<French>A roll of sticky duct tape</French>
+			<Czech>A roll of sticky duct tape</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_d_battery">
+			<English>A size D battery</English>
+			<German>A size D battery</German>
+			<Russian>A size D battery</Russian>
+			<Spanish>A size D battery</Spanish>
+			<French>A size D battery</French>
+			<Czech>A size D battery</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_cable_tie">
+			<English>A plastic cable tie</English>
+			<German>A plastic cable tie</German>
+			<Russian>A plastic cable tie</Russian>
+			<Spanish>A plastic cable tie</Spanish>
+			<French>A plastic cable tie</French>
+			<Czech>A plastic cable tie</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_aa_battery">
+			<English>A size AA battery</English>
+			<German>A size AA battery</German>
+			<Russian>A size AA battery</Russian>
+			<Spanish>A size AA battery</Spanish>
+			<French>A size AA battery</French>
+			<Czech>A size AA battery</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_2inch_metal_pipe">
+			<English>A metal pipe 2 inches in diameter</English>
+			<German>A metal pipe 2 inches in diameter</German>
+			<Russian>A metal pipe 2 inches in diameter</Russian>
+			<Spanish>A metal pipe 2 inches in diameter</Spanish>
+			<French>A metal pipe 2 inches in diameter</French>
+			<Czech>A metal pipe 2 inches in diameter</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_1inch_metal_pipe">
+			<English>A metal pipe 1 inch in diameter</English>
+			<German>A metal pipe 1 inch in diameter</German>
+			<Russian>A metal pipe 1 inch in diameter</Russian>
+			<Spanish>A metal pipe 1 inch in diameter</Spanish>
+			<French>A metal pipe 1 inch in diameter</French>
+			<Czech>A metal pipe 1 inch in diameter</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_NailedBaseballBat">
 			<English>Nailed BaseballBat</English>
+			<German>Nailed BaseballBat</German>
+			<Russian>Nailed BaseballBat</Russian>
+			<Spanish>Nailed BaseballBat</Spanish>
+			<French>Nailed BaseballBat</French>
+			<Czech>Nailed BaseballBat</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_NailedBaseballBat">
 			<English>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</English>
+			<German>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</German>
+			<Russian>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</Russian>
+			<Spanish>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</Spanish>
+			<French>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</French>
+			<Czech>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_BaseBallBatBarbed">
 			<English>BaseBallBat Barbed</English>
+			<German>BaseBallBat Barbed</German>
+			<Russian>BaseBallBat Barbed</Russian>
+			<Spanish>BaseBallBat Barbed</Spanish>
+			<French>BaseBallBat Barbed</French>
+			<Czech>BaseBallBat Barbed</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_BaseBallBatBarbed">
 			<English>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</English>
+			<German>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</German>
+			<Russian>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Russian>
+			<Spanish>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Spanish>
+			<French>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</French>
+			<Czech>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Czech>
 		</Key>
-		
+		<Key ID="STR_ITEM_NAME_equip_1inch_metal_pipe">
+			<English>1 Inch Metal Pipe</English>
+			<German>1 Inch Metal Pipe</German>
+			<Russian>1 Inch Metal Pipe</Russian>
+			<Spanish>1 Inch Metal Pipe</Spanish>
+			<French>1 Inch Metal Pipe</French>
+			<Czech>1 Inch Metal Pipe</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_wood_pallet">
+			<English>Wooden Pallet</English>
+			<German>Wooden Pallet</German>
+			<Russian>Wooden Pallet</Russian>
+			<Spanish>Wooden Pallet</Spanish>
+			<French>Wooden Pallet</French>
+			<Czech>Wooden Pallet</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_string">
+			<English>String</English>
+			<German>String</German>
+			<Russian>String</Russian>
+			<Spanish>String</Spanish>
+			<French>String</French>
+			<Czech>String</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_scrap_electronics">
+			<English>Scrap Electronics</English>
+			<German>Scrap Electronics</German>
+			<Russian>Scrap Electronics</Russian>
+			<Spanish>Scrap Electronics</Spanish>
+			<French>Scrap Electronics</French>
+			<Czech>Scrap Electronics</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_rope">
+			<English>Rope</English>
+			<German>Rope</German>
+			<Russian>Rope</Russian>
+			<Spanish>Rope</Spanish>
+			<French>Rope</French>
+			<Czech>Rope</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_rag">
+			<English>Rag</English>
+			<German>Rag</German>
+			<Russian>Rag</Russian>
+			<Spanish>Rag</Spanish>
+			<French>Rag</French>
+			<Czech>Rag</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_pvc_box">
+			<English>PVC Box</English>
+			<German>PVC Box</German>
+			<Russian>PVC Box</Russian>
+			<Spanish>PVC Box</Spanish>
+			<French>PVC Box</French>
+			<Czech>PVC Box</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_part_silencer">
+			<English>Silencer</English>
+			<German>Silencer</German>
+			<Russian>Silencer</Russian>
+			<Spanish>Silencer</Spanish>
+			<French>Silencer</French>
+			<Czech>Silencer</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_part_camo">
+			<English>Camo</English>
+			<German>Camo</German>
+			<Russian>Camo</Russian>
+			<Spanish>Camo</Spanish>
+			<French>Camo</French>
+			<Czech>Camo</Czech>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_equip_paper_sheet">
+			<English>Paper Sheet</English>
+			<German>Paper Sheet</German>
+			<Russian>Paper Sheet</Russian>
+			<Spanish>Paper Sheet</Spanish>
+			<French>Paper Sheet</French>
+			<Czech>Paper Sheet</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_paint">
+			<English>Paint</English>
+			<German>Paint</German>
+			<Russian>Paint</Russian>
+			<Spanish>Paint</Spanish>
+			<French>Paint</French>
+			<Czech>Paint</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_note">
+			<English>Note</English>
+			<German>Note</German>
+			<Russian>Note</Russian>
+			<Spanish>Note</Spanish>
+			<French>Note</French>
+			<Czech>Note</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_needle">
+			<English>Needle</English>
+			<German>Needle</German>
+			<Russian>Needle</Russian>
+			<Spanish>Needle</Spanish>
+			<French>Needle</French>
+			<Czech>Needle</Czech>
+		</Key>			
+		<Key ID="STR_ITEM_NAME_equip_nail">
+			<English>Nail</English>
+			<German>Nail</German>
+			<Russian>Nail</Russian>
+			<Spanish>Nail</Spanish>
+			<French>Nail</French>
+			<Czech>Nail</Czech>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_metal_sheet">
+			<English>Metal Sheet</English>
+			<German>Metal Sheet</German>
+			<Russian>Metal Sheet</Russian>
+			<Spanish>Metal Sheet</Spanish>
+			<French>Metal Sheet</French>
+			<Czech>Metal Sheet</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_laser">
+			<English>Laser</English>
+			<German>Laser</German>
+			<Russian>Laser</Russian>
+			<Spanish>Laser</Spanish>
+			<French>Laser</French>
+			<Czech>Laser</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_hose_clamp">
+			<English>Hose Clamp</English>
+			<German>Hose Clamp</German>
+			<Russian>Hose Clamp</Russian>
+			<Spanish>Hose Clamp</Spanish>
+			<French>Hose Clamp</French>
+			<Czech>Hose Clamp</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_gauze">
+			<English>Gauze</English>
+			<German>Gauze</German>
+			<Russian>Gauze</Russian>
+			<Spanish>Gauze</Spanish>
+			<French>Gauze</French>
+			<Czech>Gauze</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_empty_barrel">
+			<English>Empty Barrel</English>
+			<German>Empty Barrel</German>
+			<Russian>Empty Barrel</Russian>
+			<Spanish>Empty Barrel</Spanish>
+			<French>Empty Barrel</French>
+			<Czech>Empty Barrel</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_duct_tape">
+			<English>Duct Tape</English>
+			<German>Duct Tape</German>
+			<Russian>Duct Tape</Russian>
+			<Spanish>Duct Tape</Spanish>
+			<French>Duct Tape</French>
+			<Czech>Duct Tape</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_d_battery">
+			<English>D Battery</English>
+			<German>D Battery</German>
+			<Russian>D Battery</Russian>
+			<Spanish>D Battery</Spanish>
+			<French>D Battery</French>
+			<Czech>D Battery</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_cable_tie">
+			<English>Cable Tie</English>
+			<German>Cable Tie</German>
+			<Russian>Cable Tie</Russian>
+			<Spanish>Cable Tie</Spanish>
+			<French>Cable Tie</French>
+			<Czech>Cable Tie</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_aa_battery">
+			<English>AA Battery</English>
+			<German>AA Battery</German>
+			<Russian>AA Battery</Russian>
+			<Spanish>AA Battery</Spanish>
+			<French>AA Battery</French>
+			<Czech>AA Battery</Czech>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
+			<English>2 Inch Metal Pipe</English>
+			<German>2 Inch Metal Pipe</German>
+			<Russian>2 Inch Metal Pipe</Russian>
+			<Spanish>2 Inch Metal Pipe</Spanish>
+			<French>2 Inch Metal Pipe</French>
+			<Czech>2 Inch Metal Pipe</Czech>
+		</Key>			
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
 			<German>Schanzzeug</German>
