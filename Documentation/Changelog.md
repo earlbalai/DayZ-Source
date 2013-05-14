@@ -56,7 +56,12 @@ Serverside affected addons:
 					Medium = 16 Objects 1 weapon , no bags
 		* [NEW] - Infected survivor camps. (WIP) 3 - Small, 4 - Medium.
 		* [NEW] - FPS Monitor this will dynamicly change how and total amount of zeds and loot is spawning to keep the players base fps up.
-		* [NEW] - Crafting system WIP
+		* [NEW] - Crafting is now added.
+		* [NEW] - Attachment Crafting is the only way to upgrade weapons.
+		* [NEW] - 2 New melee weapons.(Bat,Shovel).
+		* [NEW] - 2 new Bat variations used in crafting (NailedBat,WiredBat).
+		* [NEW] - Wild Spawning of zeds has been redone and readded.
+		* [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps)
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)
@@ -124,6 +129,8 @@ Serverside affected addons:
 	
 	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
 	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
+		* [REMOVED] - M107 & AS50.
+		* [REMOVED] - Removed all military weapons with any attachment from loot tables.
 
 Zed knock down removed due to transition issue with animations working on this for the next patch. (Code left in just commented out) 
 ______________________
