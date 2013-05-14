@@ -581,8 +581,36 @@
 			<French>Utiliser chaufferette</French>
 			<Czech>Použít Heatpack</Czech>
 		</Key>
+		<Key ID="str_crafting_failed">
+			<English>You are missing %1 %2</English>
+		</Key>
+		<Key ID="str_crafting_space">
+			<English>Not enough inventory space to make items...</English>
+		</Key>
+		<Key ID="str_crafting_success">
+			<English>Successfully created %1 %2</English>
+		</Key>
 	</Package>
-	<Package name="equipment_code">
+	<Package name="equipment_code">	
+		<Key ID="STR_CRAFT_NAME_X">
+			<English>Craft Blueprint</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_X">
+			<English>Blueprint used in crafting</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_NailedBaseballBat">
+			<English>Nailed BaseballBat</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_NailedBaseballBat">
+			<English>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_BaseBallBatBarbed">
+			<English>BaseBallBat Barbed</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_BaseBallBatBarbed">
+			<English>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</English>
+		</Key>
+		
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
 			<German>Schanzzeug</German>

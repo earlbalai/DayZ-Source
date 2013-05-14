@@ -1,10 +1,17 @@
 class CfgLoot {
 	//0.10
+	blueprints[] = {
+			{"Blueprint_NailedBaseballBat",0.03},
+			{"Blueprint_BaseBallBatBarbed",0.03}
+	};
 	craft[] = {
 			{"TrashJackDaniels",0.02},
 			{"ItemNails",0.01}
 	};
 	trash[] = {
+			{"Baseball",0.02},
+			{"EvMoney",0.01},
+			{"FloorMop",0.03},
 			{"ItemSodaCokeEmpty",0.05},
 			{"ItemSodaPepsiEmpty",0.03},
 			{"FoodCanUnlabeledEmpty",0.05},

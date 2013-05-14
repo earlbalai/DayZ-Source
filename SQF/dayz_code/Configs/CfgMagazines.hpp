@@ -83,4 +83,8 @@ class CfgMagazines {
 	#include "CfgMagazines\Fuelcan.hpp"
 	#include "CfgMagazines\Jerrycan.hpp"
 	
+	
+	//crafting
+	#include "CfgCrafting\ItemNails.hpp"
+	
 };

@@ -102,6 +102,8 @@ if (!isDedicated) then {
 	wild_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\wild_spawnZombies.sqf";			//Server compile, used for loiter behaviour
 	camp_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\camp_spawnZombies.sqf";			//Server compile, used for loiter behaviour
 	
+	//Crafting
+	player_craftItem = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
