@@ -1,16 +1,5 @@
 class CfgLoot {
 	//0.10
-	blueprints[] = {
-			{"Blueprint_NailedBaseballBat",0.03},
-			{"Blueprint_BaseBallBatBarbed",0.03}
-			{"Attachment_ACG",0.03},
-			{"Attachment_AIM",0.03},
-			{"Attachment_Camo",0.03},
-			{"Attachment_GL",0.03},
-			{"Attachment_Kobra",0.03},
-			{"Attachment_Pso",0.03},
-			{"Attachment_Silencer",0.03},
-	};
 	craft[] = {
 			{"equip_wood_pallet",0.03},
 			{"equip_string",0.03},

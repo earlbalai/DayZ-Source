@@ -42,7 +42,7 @@ if (_hasInput) then {
 	{
 		_item = _x select 0;
 		_amount = _x select 2;
-		for "_i" from 0 to _amount do {
+		for "_i" from 1 to _amount do {
 			_selection = _x select 1;
 			switch (_selection) do {
 				case "CfgWeapons":
@@ -62,20 +62,7 @@ if (_hasInput) then {
 diag_log (str(_freeSlots));	
 	_availabeSpace = true;
 	{
-	/*
-		_classname = _x select 0;
-		_type = _x select 1;
-		_amount = _x select 2;
-		
-		_config = (configFile >> _type >> _classname);
-		_isOk = [player,_config] call BIS_fnc_invAdd;
-		waitUntil {_isOk};
-		if (!_isOk) exitwith {
-			_availabeSpace = false;
-			cutText[(localize "str_crafting_space"), "PLAIN DOWN"];
-		};
-	*/	
-	
+
 		_item = _x select 0;
 		_amount = _x select 2;
 		_slotType = [_item] call BIS_fnc_invSlotType;
@@ -84,7 +71,7 @@ diag_log (str(_freeSlots));
 			if (_x > 0) exitWith {};
 			_count = _count + 1;
 		} forEach _slotType;
-		for "_i" from 0 to _amount do {	
+		for "_i" from 1 to _amount do {	
 			for "_j" from 1 to (count _slotType) do {
 				if ((_slotType select _j) > 0) then {		
 					_freeSlots set[_j, ((_freeSlots select _j) - (_slotType select _j))];
@@ -103,7 +90,7 @@ diag_log (str(_freeSlots));
 			_item = _x select 0;
 			_selection = _x select 1;
 			_amount = _x select 2;
-			for "_i" from 0 to _amount do {
+			for "_i" from 1 to _amount do {
 				switch (_selection) do {
 					case "CfgWeapons":
 					{

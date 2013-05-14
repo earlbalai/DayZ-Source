@@ -1,4 +1,4 @@
-class Attachment_CAMO : ItemCore {
+class Attachment_CAMO : CA_Magazine {
 	scope = public;
 	displayName = $STR_ATTACHMENT_NAME_CAMO;
 	descriptionShort = $STR_ATTACHMENT_DESC_CAMO;

@@ -1,4 +1,4 @@
-class Attachment_Pso : ItemCore {
+class Attachment_Pso : CA_Magazine {
 	scope = public;
 	displayName = $STR_ATTACHMENT_NAME_Pso;
 	descriptionShort = $STR_ATTACHMENT_DESC_Pso;

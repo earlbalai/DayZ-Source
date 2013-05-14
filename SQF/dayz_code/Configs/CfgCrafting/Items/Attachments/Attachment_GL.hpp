@@ -1,4 +1,4 @@
-class Attachment_GL : ItemCore {
+class Attachment_GL : CA_Magazine {
 	scope = public;
 	displayName = $STR_ATTACHMENT_NAME_GL;
 	descriptionShort = $STR_ATTACHMENT_DESC_GL;

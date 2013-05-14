@@ -3,7 +3,7 @@ class Blueprint_NailedBaseballBat : ItemCore {
 	displayName = $STR_CRAFT_NAME_Blueprint_NailedBaseballBat;
 	descriptionShort = $STR_CRAFT_DESC_Blueprint_NailedBaseballBat;
 	model = "\Ca\misc\SmallObj_moscow_docs_WPN";
-	picture = "\CA\misc\data\icons\picture_moscow_docs_CA.paa";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_blueprint.paa";
 	
 	class ItemActions {
 		class Craft {

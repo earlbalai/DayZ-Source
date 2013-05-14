@@ -3,6 +3,9 @@
 //Done
 #include "Items\Mats\ItemNails.hpp"
 
+
+
+//No StringTables, No Models
 #include "Items\Attachments\Attachment_ACG.hpp"
 #include "Items\Attachments\Attachment_AIM.hpp"
 #include "Items\Attachments\Attachment_Camo.hpp"
@@ -11,7 +14,6 @@
 #include "Items\Attachments\Attachment_Pso.hpp"
 #include "Items\Attachments\Attachment_Silencer.hpp"
 
-//No StringTables, No Models
 #include "Items\Mats\equip_1inch_metal_pipe.hpp"
 #include "Items\Mats\equip_2inch_metal_pipe.hpp"
 #include "Items\Mats\equip_aa_battery.hpp"

@@ -13,7 +13,6 @@
 #include "Blueprints\Attachments\PSO.hpp"
 #include "Blueprints\Attachments\SILENCER.hpp"
 
-
 class CraftingItem : ItemCore {
 	scope = private;
 	displayName = $STR_CRAFT_NAME_0;

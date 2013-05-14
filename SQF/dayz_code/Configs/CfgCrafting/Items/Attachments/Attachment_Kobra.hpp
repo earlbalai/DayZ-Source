@@ -1,4 +1,4 @@
-class Attachment_Kobra : ItemCore {
+class Attachment_Kobra : CA_Magazine {
 	scope = public;
 	displayName = $STR_ATTACHMENT_NAME_Kobra;
 	descriptionShort = $STR_ATTACHMENT_DESC_Kobra;

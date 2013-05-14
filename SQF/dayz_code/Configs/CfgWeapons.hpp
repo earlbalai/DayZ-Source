@@ -22,8 +22,8 @@ class CfgWeapons {
 	#include "CfgWeapons\ItemCrowbar.hpp"
 	#include "CfgWeapons\Crossbow.hpp"
 	#include "CfgWeapons\MeleeBaseBallBat.hpp"
-	#include "CfgWeapons\MeleeBaseBallBatBarbed.hpp"
-	#include "CfgWeapons\MeleeBaseBallBatNails.hpp"
+//	#include "CfgWeapons\MeleeBaseBallBatBarbed.hpp"
+//	#include "CfgWeapons\MeleeBaseBallBatNails.hpp"
 	
 	#include "CfgWeapons\ItemWatch.hpp"
 	#include "CfgWeapons\ItemMap.hpp"

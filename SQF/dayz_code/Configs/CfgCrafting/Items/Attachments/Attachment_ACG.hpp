@@ -1,4 +1,4 @@
-class Attachment_ACG : ItemCore {
+class Attachment_ACG : CA_Magazine {
 	scope = public;
 	displayName = $STR_ATTACHMENT_NAME_ACG;
 	descriptionShort = $STR_ATTACHMENT_DESC_ACG;

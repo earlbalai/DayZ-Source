@@ -140,11 +140,21 @@ class CfgBuildingLoot {
 			{"MR43","weapon",0.03},
 			{"ItemBookBible","magazine",0.02},
 			{"WeaponHolder_ItemFuelcan","object",0.03},
+			//
+			{"Blueprint_NailedBaseballBat","weapon",0.03},
+			{"Blueprint_BaseBallBatBarbed","weapon",0.03},
+			{"Blueprint_ACG","weapon",0.03},
+			{"Blueprint_AIM","weapon",0.03},
+			{"Blueprint_Camo","weapon",0.03},
+			{"Blueprint_GL","weapon",0.03},
+			{"Blueprint_Kobra","weapon",0.03},
+			{"Blueprint_Pso","weapon",0.03},
+			{"Blueprint_Silencer","weapon",0.03},
+			//
 			{"","generic",0.8},
 			{"","trash",0.6},
 			{"","military",0.4},
-			{"","craft",0.3},
-			{"","blueprints",0.1}
+			{"","craft",0.3}
 		};
 	};
 	class Farm: Default {

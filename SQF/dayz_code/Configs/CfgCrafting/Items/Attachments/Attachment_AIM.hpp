@@ -1,4 +1,4 @@
-class Attachment_AIM : ItemCore {
+class Attachment_AIM : CA_Magazine {
 	scope = public;
 	displayName = $STR_ATTACHMENT_NAME_AIM;
 	descriptionShort = $STR_ATTACHMENT_DESC_AIM;
