@@ -53,6 +53,8 @@ if (count(_basePosCheck) > 0) then {
 
 _basePos = [_basePos select 0,_basePos select 1,0];
 
+if ((_basePos select 1) < 1) exitwith {};
+
 [_basePos, (floor(random 360)), _baseClass] call spawnComposition;
 
 
