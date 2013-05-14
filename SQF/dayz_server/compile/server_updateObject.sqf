@@ -94,10 +94,10 @@ _object_damage = {
 		_hit = [_object,_x] call object_getHit;
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
-		_object setHit ["_selection", _hit]
+		//_object setHit ["_selection", _hit]
 	} forEach _hitpoints;
 	
-	_object setdamage _damage;
+	//_object setdamage _damage;
 	
 	//Mark for db update 
 	if (_forced) then {	
