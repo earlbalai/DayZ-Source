@@ -1,3 +1,4 @@
+/* THIS FILE IS NOT USED ANYMORE
 private["_agent","_id","_isSomeone","_isAlive","_target","_targetPos","_myDest"];
 
 _agent = _this select 0;
@@ -53,3 +54,4 @@ while {_isAlive and _isSomeone} do {
 //Wait for a while then cleanup
 sleep 5;
 deleteVehicle _agent;
+*/

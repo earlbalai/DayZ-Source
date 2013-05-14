@@ -45,7 +45,7 @@ while {_counter < _amount} do {
 	_agent setDir random 360;
 	_agent setvelocity [0,1,1]; // avoid stuck zombies legs 
 	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
-	_agent setVariable ["doLoiter",_doLoiter,true];
+	_agent setVariable ["doLoiter",_doLoiter];
 
 	diag_log format["Camps Spawns: %3, unitTypes: %1, position: %2 ",_unitTypes, _position, _amount];
 
