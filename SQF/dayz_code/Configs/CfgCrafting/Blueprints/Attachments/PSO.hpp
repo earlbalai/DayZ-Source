@@ -3,7 +3,7 @@ class Blueprint_PSO : ItemCore {
 	displayName = $STR_CRAFT_NAME_PSO;
 	descriptionShort = $STR_CRAFT_DESC_PSO;
 	model = "\Ca\misc\SmallObj_moscow_docs_WPN";
-	picture = "\CA\misc\data\icons\picture_moscow_docs_CA.paa";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_blueprint.paa";
 	
 	class ItemActions {
 		class Craft {
@@ -11,12 +11,17 @@ class Blueprint_PSO : ItemCore {
 			script = "spawn player_craftItem;";
 			input[] = 
 			{
-
+				{"equip_2inch_metal_pipe","CfgMagazines",2},
+				{"Binocular_Vector","CfgMagazines",1}
 			};
 			output[] = 
 			{
+				{"Attachment_Pso","CfgMagazines",1}
 			};
-			required[] = {};
+			required[] = 
+			{
+				{"ItemToolbox","CfgWeapons",1}
+			};
 		};
 	};
 };

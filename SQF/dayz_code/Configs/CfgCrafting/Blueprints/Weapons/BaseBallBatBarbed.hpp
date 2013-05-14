@@ -13,7 +13,7 @@ class Blueprint_BaseBallBatBarbed : ItemCore {
 			{
 				{"MeleeBaseBallBat","CfgWeapons",1},
 				{"ItemNails","CfgMagazines",1},
-				{"ItemWire","CfgMagazines",1},
+				{"ItemWire","CfgMagazines",1}
 			};
 			output[] = 
 			{

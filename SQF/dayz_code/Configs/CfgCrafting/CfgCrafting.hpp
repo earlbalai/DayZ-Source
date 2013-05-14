@@ -1,10 +1,10 @@
-//class CfgCrafting {
+//class CfgWeapons
 
 //Completed
 #include "Blueprints\Weapons\NailedBaseballBat.hpp"
 #include "Blueprints\Weapons\BaseBallBatBarbed.hpp"
 
-//No Mats, No Stringtables
+//No Stringtables
 #include "Blueprints\Attachments\ACG.hpp"
 #include "Blueprints\Attachments\AIM.hpp"
 #include "Blueprints\Attachments\CAMO.hpp"
@@ -31,5 +31,3 @@ class CraftingItem : ItemCore {
 		};
 	};
 };
-
-//};
