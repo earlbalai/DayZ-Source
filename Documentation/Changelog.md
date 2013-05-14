@@ -38,7 +38,7 @@ Serverside affected addons:
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
-	    * [NEW] - 2 New background tracks.
+	    * [NEW] - 1 New background tracks.
 	    * [NEW] - 6 New decayed Zeds - Harder to kill and Do more damage.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
@@ -56,6 +56,7 @@ Serverside affected addons:
 					Medium = 16 Objects 1 weapon , no bags
 		* [NEW] - Infected survivor camps. (WIP) 3 - Small, 4 - Medium.
 		* [NEW] - FPS Monitor this will dynamicly change how and total amount of zeds and loot is spawning to keep the players base fps up.
+		* [NEW] - Crafting system WIP
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - M107 & AS50 Lock on system removed. (Removes green boxes)

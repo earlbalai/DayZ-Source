@@ -36,5 +36,8 @@ class CfgWeapons {
 	#include "CfgWeapons\AS50.hpp"
 	#include "CfgWeapons\M107.hpp"
 	
+	//crafting
+	#include "CfgCrafting\CfgCrafting.hpp"
+	
 
 };

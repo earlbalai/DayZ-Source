@@ -141,7 +141,7 @@ link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
 globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-270.679962,311.510254,1426.050781,794.468994,554,601,1};
-window[] = {2,-1,-1,-32000,-32000,846,66,1438,66,3,571};
+window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,571};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1188,21 +1188,21 @@ class FSM
        "" \n
        "dayz_spawnCheck = [] spawn {" \n
        "	while {true} do {" \n
-       "		fps_safty_check = diag_fpsmin;" \n
-       "		if (fps_safty_check > 20) then {" \n
+       "	//	fps_safty_check = diag_fpsmin;" \n
+       "	//	if (fps_safty_check > 20) then {" \n
        "			[""both""] call player_spawnCheck;" \n
        "			sleep 8;" \n
-       "		};" \n
+       "	//	};" \n
        "	};" \n
        "};" \n
        "" \n
        "dayz_locationCheck = [] spawn {" \n
        "	while {true} do {" \n
-       "		fps_safty_check = diag_fpsmin;" \n
-       "		if (fps_safty_check > 20) then {" \n
+       "	//	fps_safty_check = diag_fpsmin;" \n
+       "	//	if (fps_safty_check > 20) then {" \n
        "			call stream_locationCheck;" \n
        "			sleep 2;" \n
-       "		};" \n
+       "	//	};" \n
        "	};" \n
        "};" \n
        "" \n

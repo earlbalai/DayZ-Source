@@ -1,13 +1,12 @@
 
-// _this: building object where zombies should spawn
+// _this select 0: building object where zombies should spawn
+// (optional) _this select 1: array of recyclable agents
+// (optional) _this select 2: max quantity of agents to newly create
 // returns: quantity of zombies spawned
 // "building" should be a building lootable OR big enough to hide a zombie
 // zombies will spawn inside (1/3 chance roughly) or outside the building (in a piesize area behind the building)
 
-private ["_cantSee","_zPos","_fov","_safeDistance","_farDistance","_isok","_eye","_deg","_obj","_type","_config",
-"_default","_unitTypes","_min","_max","_num0","_num","_zombieChance","_halfBuildingSize","_rnd","_clean",
-"_posList","_bsz_pos","_wholeAreaSize","_minSector","_spawnSize","_minRadius","_rangeRadius",
-"_rangeAngle","_minAngle","_i","_radius"];
+private ["_this","_obj","_recyAgt","_maxtoCreate","_type","_config","_default","_unitTypes","_min","_max","_num0","_num","_zombieChance","_halfBuildingSize","_rnd","_clean","_x","_posList","_bsz_pos","_cantSee","_tmp","__FILE__","_wholeAreaSize","_minSector","_spawnSize","_minRadius","_rangeRadius","_rangeAngle","_minAngle","_i","_deg","_radius"];
 
 _cantSee = {
 	private ["_zPos","_fov","_safeDistance","_farDistance","_isok","_eye","_deg"];
@@ -41,7 +40,11 @@ _cantSee = {
 	_isok
 };
 
-_obj = _this;
+//diag_log(str(_this));
+_obj = _this select 0;
+_recyAgt = []; if (count _this > 1) then { _recyAgt = _this select 1; };
+_maxtoCreate = 99; if (count _this > 2) then { _maxtoCreate = _this select 2; };
+
 _type = typeOf _obj;
 _config = configFile >> "CfgBuildingLoot" >> _type;
 if (!isClass (_config)) then {
@@ -74,10 +77,13 @@ if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 			if (count _bsz_pos >= 2) then { // sometime pos from config is empty :(
 				_bsz_pos = _obj modelToWorld _bsz_pos;
 				if ([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee) then { // check that player won't see the spawning zombie
-					if ([_bsz_pos,false,_unitTypes] call zombie_generate) then {
+					_tmp = [_bsz_pos, false, _unitTypes, _recyAgt, _maxtoCreate];
+					if (_tmp call zombie_generate) then {
 						diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5)",__FILE__, 
 										_bsz_pos, typeOf _obj, 1+_num0-_num, _num0]);
 						_num = _num - 1;
+						_recyAgt = _tmp select 3;
+						_maxtoCreate = _tmp select 4;
 					};
 				};
 			};
@@ -102,10 +108,13 @@ if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 		if (((count _bsz_pos >= 2) // check that findEmptyPosition found something for us
 			AND {(!([_bsz_pos, true] call fnc_isInsideBuilding))}) // check position is outside any buildings
 			AND {([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)}) then {  // check that player won't see the spawning zombie
-			if ([_bsz_pos,true,_unitTypes] call zombie_generate) then {
+			_tmp = [_bsz_pos, true, _unitTypes, _recyAgt, _maxtoCreate];
+			if (_tmp call zombie_generate) then {
 				diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)",__FILE__, 
 								_bsz_pos, typeOf _obj, 1+_num0-_num, _num0]);
 				_num = _num - 1;
+				_recyAgt = _tmp select 3;
+				_maxtoCreate = _tmp select 4;
 			};	
 		};
 	};
@@ -113,8 +122,13 @@ if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 if (_num < _num0) then { 
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
+/*
 if (_num > 0) then {
 	diag_log(format["%1 Failed to find a nice spot for %2 Zombies at %3 %4",__FILE__, 
 					_num, typeOf _obj, getPosATL _obj]);
 };
+*/
+_this set [1, _recyAgt];
+_this set [2, _maxtoCreate];
+
 (_num0 - _num)

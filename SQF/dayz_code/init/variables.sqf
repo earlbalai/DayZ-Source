@@ -26,6 +26,8 @@ MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","B
 
 //New Zeds
 DayZ_NewZeds = ["z_new_villager2","z_new_villager3","z_new_villager4","z_new_worker2","z_new_worker3","z_new_worker4"];
+//Bags
+DayZ_Backpacks = ["DZ_Patrol_Pack_EP1","DZ_Assault_Pack_EP1","DZ_Czech_Vest_Puch","DZ_ALICE_Pack_EP1","DZ_TK_Assault_Pack_EP1","DZ_British_ACU","DZ_CivilBackpack_EP1","DZ_Backpack_EP1"];
 
 SafeObjects = ["Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ", "Hedgehog_DZ", "StashSmall", "StashMedium"];
 
@@ -396,7 +398,7 @@ dayz_spawnArea =  200; // radius around player where we can spawn loot & Z
 dayz_safeDistPlr = 30; // Any loot & Z won't be spawned closer than this distance from any player
 dayz_cantseeDist = 250; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
 dayz_cantseefov = 45; // half player field-of-view. Visible Z won't be spawned in front of any near players 
-dayz_canRecycle = 300; // Z, further than this distance from its "owner", can be reused. must be > dayz_maxMaxModels
+dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 dayz_lootSpawnBias = 65; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
 
 //init global arrays for Loot Chances

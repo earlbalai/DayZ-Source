@@ -8,7 +8,11 @@ _campPos = [_campPos select 0,_campPos select 1,0];
 
 _counter = 0;
 
-diag_log format["CampPos: %1, Amount: %2",_campPos,_amount];
+_campZeds = {local (_x getVariable ["agentObjectCamps",objNull])} count agents;
+
+diag_log format["CampPos: %1, Amount: %2, TotalAgents: %3",_campPos,_amount,_campZeds];
+
+//if (_campZeds >= _amount) exitwith { };
 
 while {_counter < _amount} do {
 
@@ -39,7 +43,7 @@ while {_counter < _amount} do {
 	_agent = createAgent [_type, _position, [], _radius, _method]; 
 	sleep 0.001;
 	_agent setDir random 360;
-	_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
+	_agent setvelocity [0,1,1]; // avoid stuck zombies legs 
 	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
 	_agent setVariable ["doLoiter",_doLoiter,true];
 
