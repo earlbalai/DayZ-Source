@@ -52,10 +52,10 @@ _maxManModels = round(dayz_maxMaxModels * _fpsbias);
 _maxWeaponHolders = round(dayz_maxMaxWeaponHolders * _fpsbias);
 
 if (_inVehicle) then {
-	_maxControlledZombies = 5;
+	_maxManModels = 10; // Z + players in vehicle
 };
 if (_isAir) then {
-	_maxControlledZombies = 0;
+	_maxManModels = 0; // won't even try to move recycled Z
 };
 _controlledZombies = {local (_x getVariable ["agentObject",objNull])} count agents;
 
