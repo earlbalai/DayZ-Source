@@ -1,22 +1,20 @@
-private ["_crashModel","_lootTable","_guaranteedLoot","_randomizedLoot","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_fadeFire","_timeAdjust","_timeToSpawn","_crashName","_position","_crash","_clutter","_config","_newHeight","_itemTypes","_index","_weights","_cntWeights","_itemType","_nearby","_nearBy"];
+private ["_guaranteedLoot", "_randomizedLoot", "_spawnOnStart", "_frequency", "_variance", "_spawnChance", "_spawnMarker", "_spawnRadius", "_spawnFire", "_fadeFire", "_timeAdjust", "_timeToSpawn", "_crashModel", "_lootTable", "_crashName", "_position", "_crash", "_clutter", "_config", "_newHeight", "_itemTypes", "_index", "_weights", "_cntWeights", "_itemType", "_nearby", "_nearBy"];
 
-//_crashModel	= _this select 0;
-//_lootTable	= _this select 1;
 _guaranteedLoot = _this select 0;
 _randomizedLoot = _this select 1;
-_frequency	= _this select 2;
-_variance	= _this select 3;
-_spawnChance	= _this select 4;
-_spawnMarker	= _this select 5;
-_spawnRadius	= _this select 6;
-_spawnFire	= _this select 7;
-_fadeFire	= _this select 8;
+_spawnOnStart =  _this select 2;
+_frequency	= _this select 3;
+_variance	= _this select 4;
+_spawnChance	= _this select 5;
+_spawnMarker	= _this select 6;
+_spawnRadius	= _this select 7;
+_spawnFire	= _this select 8;
+_fadeFire	= _this select 9;
 
 
 diag_log("CRASHSPAWNER: Starting spawn logic for Crash Spawner");
 
 while {true} do {
-	private["_timeAdjust","_timeToSpawn","_spawnRoll","_crash","_hasAdjustment","_newHeight","_adjustedPos"];
 	// Allows the variance to act as +/- from the spawn frequency timer
 	_timeAdjust = round(random(_variance * 2) - _variance);
 	_timeToSpawn = time + _frequency + _timeAdjust;
@@ -38,8 +36,8 @@ while {true} do {
 	diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);
 
 	// Apprehensive about using one giant long sleep here given server time variances over the life of the server daemon
-	while {time < _timeToSpawn} do {
-		sleep 10;
+	while {(_spawnOnStart <= 0) AND {(time < _timeToSpawn)}} do {
+		sleep (_frequency / 4);
 	};
 
 	// Percentage roll
@@ -99,7 +97,7 @@ while {true} do {
 				_x setVariable ["permaLoot",true];
 			} forEach _nearBy;
 		};
-
+		_spawnOnStart = _spawnOnStart -1;
 	} else {
 		diag_log(format["CRASHSPAWNER: %1%2 chance to spawn '%3' with loot table '%4' at %5 FAILED (chance)", round(_spawnChance * 100), '%', _crashName, _lootTable, _timeToSpawn]);	
 	};
