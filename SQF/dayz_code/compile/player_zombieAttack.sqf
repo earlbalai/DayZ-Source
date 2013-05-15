@@ -5,11 +5,11 @@ _vehicle = (vehicle player);
 
 //Do the attack
 if (r_player_unconscious && _vehicle == player && _type == "zombie") then {
-	_rnd = round(random 4) + 1;
+	_rnd = ceil(random 9);
 	_move = "ZombieFeed" + str(_rnd);
 } else {
 	if (_type == "zombie") then {
-		_rnd = round(random 9) + 1;
+		_rnd = ceil(random 10);
 		_move = "ZombieStandingAttack" + str(_rnd);
 	};
 };
