@@ -12,7 +12,8 @@ class Blueprint_SVD_CAMO : ItemCore {
 			input[] = 
 			{
 				{"SVD","CfgWeapons",1},
-				{"Attachment_CAMO","CfgMagazines",1},
+				{"Skin_Sniper1_DZ","CfgMagazines",1},
+				{"Attachment_CAMO","CfgMagazines",1}
 			};
 			output[] = 
 			{

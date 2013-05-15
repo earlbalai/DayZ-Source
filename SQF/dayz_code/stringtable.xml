@@ -843,7 +843,7 @@
 			<English>SVD_CAMO</English>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_SVD_CAMO">
-			<English>Blueprint to create a SVD_CAMO. Required - 1 SVD, 1 Attachment_CAMO. - ToolBox</English>
+			<English>Blueprint to create a SVD_CAMO. Required - 1 SVD, 1 Attachment_CAMO, 1 Skin_Camo1_DZ. - ToolBox</English>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_Aim_CAMO">
 			<English>M4A1_Aim_CAMO</English>

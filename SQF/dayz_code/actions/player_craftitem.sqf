@@ -41,7 +41,7 @@ if (_hasInput) then {
 	player playActionNow "PutDown";
 	{
 		_item = _x select 0;
-		_amount = _x select 2;
+		_amount = _x select 2;		
 		for "_i" from 1 to _amount do {
 			_selection = _x select 1;
 			switch (_selection) do {
@@ -51,15 +51,14 @@ if (_hasInput) then {
 				};
 				case "CfgMagazines":
 				{
-					player removeMagazines _item;
+					player removeMagazine _item;
 				};
 			};
 			sleep 0.1;
 		};
 	}forEach _input;
 	
-	_freeSlots = [player] call BIS_fnc_invSlotsEmpty;
-diag_log (str(_freeSlots));	
+	_freeSlots = [player] call BIS_fnc_invSlotsEmpty;	
 	_availabeSpace = true;
 	{
 

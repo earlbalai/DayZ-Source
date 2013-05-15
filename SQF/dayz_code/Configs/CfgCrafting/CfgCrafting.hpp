@@ -7,6 +7,12 @@
 #include "Blueprints\Weapons\M4A1_AIM.hpp"
 #include "Blueprints\Weapons\MAKAROVSD.hpp"
 #include "Blueprints\Weapons\bizonSD.hpp"
+#include "Blueprints\Weapons\SVD_CAMO.hpp"
+#include "Blueprints\Weapons\M4A1_Aim_CAMO.hpp"
+#include "Blueprints\Weapons\M4A1_HWS_GL_CAMO.hpp"
+#include "Blueprints\Weapons\G36C_camo.hpp"
+#include "Blueprints\Weapons\G36A_camo.hpp"
+#include "Blueprints\Weapons\G36K_camo.hpp"
 
 
 //No Stringtables
