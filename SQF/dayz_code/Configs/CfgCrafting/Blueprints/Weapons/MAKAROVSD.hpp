@@ -12,7 +12,7 @@ class Blueprint_MAKAROVSD : ItemCore {
 			input[] = 
 			{
 				{"Makarov","CfgWeapons",1},
-				{"Attachment_Silencer","CfgMagazines",1},
+				{"Attachment_Silencer","CfgMagazines",1}
 			};
 			output[] = 
 			{

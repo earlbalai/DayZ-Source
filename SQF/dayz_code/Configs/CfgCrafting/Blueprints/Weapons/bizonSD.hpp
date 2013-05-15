@@ -12,7 +12,7 @@ class Blueprint_bizonSD : ItemCore {
 			input[] = 
 			{
 				{"bizon","CfgWeapons",1},
-				{"Attachment_Silencer","CfgMagazines",1},
+				{"Attachment_Silencer","CfgMagazines",1}
 			};
 			output[] = 
 			{
