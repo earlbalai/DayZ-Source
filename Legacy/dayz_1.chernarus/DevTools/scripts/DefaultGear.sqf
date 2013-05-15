@@ -89,4 +89,4 @@ Switch (_case) do
   };
 };
 
-nil = [_plr, 11 ,_class] execVM "wuat\scripts\Dwarden.sqf";
+nil = [_plr, 11 ,_class] execVM "DevTools\scripts\Scripts.sqf";
