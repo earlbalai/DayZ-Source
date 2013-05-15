@@ -623,6 +623,48 @@
 			<French>Blueprint used in crafting</French>
 			<Czech>Blueprint used in crafting</Czech>
 		</Key>
+		<Key ID="STR_ATTACHMENT_NAME_ACG">
+			<English>ACG ATTACHMENT</English>
+		</Key>
+		<Key ID="STR_ATTACHMENT_DESC_ACG">
+			<English>ACG ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Silencer">
+			<English>Silencer ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Silencer">
+			<English>Silencer ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Pso">
+			<English>PSO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Pso">
+			<English>PSO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Kobra">
+			<English>KOBRA ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Kobra">
+			<English>KOBRA ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_GL">
+			<English>GL ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_GL">
+			<English>GL ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_CAMO">
+			<English>CAMO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_CAMO">
+			<English>CAMO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_AIM">
+			<English>AIM ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_AIM">
+			<English>AIM ATTACHMENT</English>
+		</Key>	
 		<Key ID="STR_ITEM_DESC_equip_wood_pallet">
 			<English>A wooden pallet</English>
 			<German>A wooden pallet</German>
@@ -1062,49 +1104,7 @@
 			<Spanish>2 Inch Metal Pipe</Spanish>
 			<French>2 Inch Metal Pipe</French>
 			<Czech>2 Inch Metal Pipe</Czech>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_ACG">
-			<English>ACG ATTACHMENT</English>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_ACG">
-			<English>ACG ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_Silencer">
-			<English>Silencer ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_Silencer">
-			<English>Silencer ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_Pso">
-			<English>PSO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_Pso">
-			<English>PSO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_Kobra">
-			<English>KOBRA ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_Kobra">
-			<English>KOBRA ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_GL">
-			<English>GL ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_GL">
-			<English>GL ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_CAMO">
-			<English>CAMO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_CAMO">
-			<English>CAMO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_AIM">
-			<English>AIM ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_AIM">
-			<English>AIM ATTACHMENT</English>
-		</Key>		
+		</Key>	
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
 			<German>Schanzzeug</German>
