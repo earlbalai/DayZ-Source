@@ -17,7 +17,7 @@ _bias = 100 min _bias;
 _bias = (_bias + random(100-_bias)) / 100;
 //diag_log(format["BIAS:%1 LOOTCHANCE:%2", _bias, _lootChance]);
 {
-	if (count _x >= 2) then {
+	if (count _x == 3) then {
 		_rnd = (random 1) / _bias;
 		_iPos = _obj modelToWorld _x;
 		if (_rnd <= _lootChance) then {
@@ -37,12 +37,16 @@ _bias = (_bias + random(100-_bias)) / 100;
 	//diag_log ("_index: " +str(_index));				
 				_itemType = _itemTypes select _index;
 	//diag_log ("_itemType: " +str(_itemType));				
-	//diag_log format["Item: %1, Group: %2", _itemType select 0, _itemType select 1];	
+	//diag_log format["Item: %1, Group: %2", _itemType select 0, _itemType select 1];
 				[_itemType select 0, _itemType select 1 , _iPos, 0.0] call spawn_loot;
 				_qty = _qty +1;
 			};
-		};	
+		};
 		sleep ((random 3) / 1000);
+	}
+	else {
+		diag_log(format["%1 Illegal loot position #%3 from %2 in building %4 -- skipped", __FILE__, 
+						configName _config, _forEachIndex+1, typeOf _obj]);
 	};
 } forEach _positions;
 

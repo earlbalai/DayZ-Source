@@ -575,7 +575,7 @@
 		</Key>
 		<Key ID="STR_ACTIONS_HEATPACK">
 			<English>Use Heatpack</English>
-			<German>Use Heatpack</German>
+			<German>Wärmekissen benutzen</German>
 			<Russian>Использовать Грелку</Russian>
 			<Spanish>Usar Calentador</Spanish>
 			<French>Utiliser chaufferette</French>
@@ -591,7 +591,7 @@
 		</Key>
 		<Key ID="str_crafting_space">
 			<English>Not enough inventory space to make items...</English>
-			<German>Not enough inventory space to make items...</German>
+			<German>Nicht genug Platz im Inventar um das Item zu erstellen...</German>
 			<Russian>Not enough inventory space to make items...</Russian>
 			<Spanish>Not enough inventory space to make items...</Spanish>
 			<French>Not enough inventory space to make items...</French>
@@ -599,7 +599,7 @@
 		</Key>
 		<Key ID="str_crafting_success">
 			<English>Successfully created %1 %2</English>
-			<German>Successfully created %1 %2</German>
+			<German>Erfolgreich erstellt %1 %2</German>
 			<Russian>Successfully created %1 %2</Russian>
 			<Spanish>Successfully created %1 %2</Spanish>
 			<French>Successfully created %1 %2</French>
@@ -609,7 +609,7 @@
 	<Package name="equipment_code">	
 		<Key ID="STR_CRAFT_NAME_X">
 			<English>Craft Blueprint</English>
-			<German>Craft Blueprint</German>
+			<German>Craft Blaupause</German>
 			<Russian>Craft Blueprint</Russian>
 			<Spanish>Craft Blueprint</Spanish>
 			<French>Craft Blueprint</French>
@@ -623,48 +623,6 @@
 			<French>Blueprint used in crafting</French>
 			<Czech>Blueprint used in crafting</Czech>
 		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_ACG">
-			<English>ACG ATTACHMENT</English>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_ACG">
-			<English>ACG ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_Silencer">
-			<English>Silencer ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_Silencer">
-			<English>Silencer ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_Pso">
-			<English>PSO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_Pso">
-			<English>PSO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_Kobra">
-			<English>KOBRA ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_Kobra">
-			<English>KOBRA ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_GL">
-			<English>GL ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_GL">
-			<English>GL ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_CAMO">
-			<English>CAMO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_CAMO">
-			<English>CAMO ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_NAME_AIM">
-			<English>AIM ATTACHMENT</English>
-		</Key>		
-		<Key ID="STR_ATTACHMENT_DESC_AIM">
-			<English>AIM ATTACHMENT</English>
-		</Key>	
 		<Key ID="STR_ITEM_DESC_equip_wood_pallet">
 			<English>A wooden pallet</English>
 			<German>A wooden pallet</German>
@@ -683,7 +641,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_scrap_electronics">
 			<English>A pile of scrap electronics</English>
-			<German>A pile of scrap electronics</German>
+			<German>Ein Haufen von Elektronikschrott</German>
 			<Russian>A pile of scrap electronics</Russian>
 			<Spanish>A pile of scrap electronics</Spanish>
 			<French>A pile of scrap electronics</French>
@@ -699,7 +657,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rag">
 			<English>Some old rags</English>
-			<German>Some old rags</German>
+			<German>Einige alte Klamotten</German>
 			<Russian>Some old rags</Russian>
 			<Spanish>Some old rags</Spanish>
 			<French>Some old rags</French>
@@ -715,7 +673,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_silencer">
 			<English>A silencer</English>
-			<German>A silencer</German>
+			<German>ein Schalldämpfer</German>
 			<Russian>A silencer</Russian>
 			<Spanish>A silencer</Spanish>
 			<French>A silencer</French>
@@ -723,7 +681,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_camo">
 			<English>Camo materials/Pattern</English>
-			<German>Camo materials</German>
+			<German>Camo Materialien</German>
 			<Russian>Camo materials</Russian>
 			<Spanish>Camo materials</Spanish>
 			<French>Camo materials</French>
@@ -731,7 +689,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paper_sheet">
 			<English>Sheets of paper</English>
-			<German>Sheets of paper</German>
+			<German>Blatt Papier</German>
 			<Russian>Sheets of paper</Russian>
 			<Spanish>Sheets of paper</Spanish>
 			<French>Sheets of paper</French>
@@ -739,7 +697,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paint">
 			<English>Some paint</English>
-			<German>Some paint</German>
+			<German>etwas Farbe</German>
 			<Russian>Some paint</Russian>
 			<Spanish>Some paint</Spanish>
 			<French>Some paint</French>
@@ -747,7 +705,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_note">
 			<English>A note scribbled on some paper</English>
-			<German>A note scribbled on some paper</German>
+			<German>Ein Text gekritzelte auf ein Blatt Papier</German>
 			<Russian>A note scribbled on some paper</Russian>
 			<Spanish>A note scribbled on some paper</Spanish>
 			<French>A note scribbled on some paper</French>
@@ -755,7 +713,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_needle">
 			<English>A sharp needle</English>
-			<German>A sharp needle</German>
+			<German>Eine scharfe Nadel</German>
 			<Russian>A sharp needle</Russian>
 			<Spanish>A sharp needle</Spanish>
 			<French>A sharp needle</French>
@@ -763,7 +721,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_nail">
 			<English>An old nail</English>
-			<German>An old nail</German>
+			<German>Ein alter Nagel</German>
 			<Russian>An old nail</Russian>
 			<Spanish>An old nail</Spanish>
 			<French>An old nail</French>
@@ -771,7 +729,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_metal_sheet">
 			<English>A metal sheet</English>
-			<German>A metal sheet</German>
+			<German>Eine Metallplatte</German>
 			<Russian>A metal sheet</Russian>
 			<Spanish>A metal sheet</Spanish>
 			<French>A metal sheet</French>
@@ -779,7 +737,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_laser">
 			<English>A red laser</English>
-			<German>A red laser</German>
+			<German>Ein roter Laser</German>
 			<Russian>A red laser</Russian>
 			<Spanish>A red laser</Spanish>
 			<French>A red laser</French>
@@ -819,7 +777,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_d_battery">
 			<English>A size D battery</English>
-			<German>A size D battery</German>
+			<German>Eine Batterie (Größe D)</German>
 			<Russian>A size D battery</Russian>
 			<Spanish>A size D battery</Spanish>
 			<French>A size D battery</French>
@@ -827,7 +785,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_cable_tie">
 			<English>A plastic cable tie</English>
-			<German>A plastic cable tie</German>
+			<German>Ein Plastikkabelband</German>
 			<Russian>A plastic cable tie</Russian>
 			<Spanish>A plastic cable tie</Spanish>
 			<French>A plastic cable tie</French>
@@ -835,7 +793,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_aa_battery">
 			<English>A size AA battery</English>
-			<German>A size AA battery</German>
+			<German>Eine Batterie (Größe AA)</German>
 			<Russian>A size AA battery</Russian>
 			<Spanish>A size AA battery</Spanish>
 			<French>A size AA battery</French>
@@ -843,7 +801,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_2inch_metal_pipe">
 			<English>A metal pipe 2 inches in diameter</English>
-			<German>A metal pipe 2 inches in diameter</German>
+			<German>Ein Metallrohr (2 Zoll im Durchmesser)</German>
 			<Russian>A metal pipe 2 inches in diameter</Russian>
 			<Spanish>A metal pipe 2 inches in diameter</Spanish>
 			<French>A metal pipe 2 inches in diameter</French>
@@ -851,7 +809,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_1inch_metal_pipe">
 			<English>A metal pipe 1 inch in diameter</English>
-			<German>A metal pipe 1 inch in diameter</German>
+			<German>Ein Metallrohr (1 Zoll im Durchmesser)</German>
 			<Russian>A metal pipe 1 inch in diameter</Russian>
 			<Spanish>A metal pipe 1 inch in diameter</Spanish>
 			<French>A metal pipe 1 inch in diameter</French>
@@ -931,7 +889,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_string">
 			<English>String</English>
-			<German>String</German>
+			<German>Schnur</German>
 			<Russian>String</Russian>
 			<Spanish>String</Spanish>
 			<French>String</French>
@@ -939,7 +897,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_scrap_electronics">
 			<English>Scrap Electronics</English>
-			<German>Scrap Electronics</German>
+			<German>Elektronikschrott</German>
 			<Russian>Scrap Electronics</Russian>
 			<Spanish>Scrap Electronics</Spanish>
 			<French>Scrap Electronics</French>
@@ -971,7 +929,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_part_silencer">
 			<English>Silencer</English>
-			<German>Silencer</German>
+			<German>Schalldämpfer</German>
 			<Russian>Silencer</Russian>
 			<Spanish>Silencer</Spanish>
 			<French>Silencer</French>
@@ -1027,7 +985,7 @@
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_metal_sheet">
 			<English>Metal Sheet</English>
-			<German>Metal Sheet</German>
+			<German>Metallplatte</German>
 			<Russian>Metal Sheet</Russian>
 			<Spanish>Metal Sheet</Spanish>
 			<French>Metal Sheet</French>
@@ -1075,7 +1033,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
-			<German>D Battery</German>
+			<German>D Batterie</German>
 			<Russian>D Battery</Russian>
 			<Spanish>D Battery</Spanish>
 			<French>D Battery</French>
@@ -1091,7 +1049,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_aa_battery">
 			<English>AA Battery</English>
-			<German>AA Battery</German>
+			<German>AA Batterie</German>
 			<Russian>AA Battery</Russian>
 			<Spanish>AA Battery</Spanish>
 			<French>AA Battery</French>
@@ -1099,15 +1057,57 @@
 		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
 			<English>2 Inch Metal Pipe</English>
-			<German>2 Inch Metal Pipe</German>
+			<German>2 Zoll Metallrohr</German>
 			<Russian>2 Inch Metal Pipe</Russian>
 			<Spanish>2 Inch Metal Pipe</Spanish>
 			<French>2 Inch Metal Pipe</French>
 			<Czech>2 Inch Metal Pipe</Czech>
-		</Key>	
+		</Key>
+		<Key ID="STR_ATTACHMENT_NAME_ACG">
+			<English>ACG ATTACHMENT</English>
+		</Key>
+		<Key ID="STR_ATTACHMENT_DESC_ACG">
+			<English>ACG ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Silencer">
+			<English>Silencer ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Silencer">
+			<English>Silencer ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Pso">
+			<English>PSO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Pso">
+			<English>PSO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_Kobra">
+			<English>KOBRA ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Kobra">
+			<English>KOBRA ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_GL">
+			<English>GL ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_GL">
+			<English>GL ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_CAMO">
+			<English>CAMO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_CAMO">
+			<English>CAMO ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_NAME_AIM">
+			<English>AIM ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_AIM">
+			<English>AIM ATTACHMENT</English>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
-			<German>Schanzzeug</German>
+			<German>Klappspaten</German>
 			<Russian>Саперная лопатка</Russian>
 			<Spanish>Pala Militar</Spanish>
 			<French>Outil de tranchée</French>
