@@ -44,6 +44,7 @@ _age = -1;
 _force = false;
 _nearbyBuildings = [];
 _position = getPosATL player;
+_sp4wnAroundObjects = ["building", "SpawnableWreck"];
 
 _fpsbias = (60-(60-(diag_fps min 60))/1.5)/60;
 _maxControlledZombies = round(dayz_maxLocalZombies * _fpsbias);
@@ -140,8 +141,8 @@ diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);
 _currentWeaponHolders = _currentWeaponHolders max floor(_maxWeaponHolders*.8);
 
-// we start by the closest buildings. building too close from player are ditched.	
-_nearby = (nearestObjects [_position, ["building", "SpawnableWreck"],dayz_spawnArea]) - (_position nearObjects ["building", dayz_safeDistPlr]);
+// we start by the closest buildings. buildings too close from player are ditched.	
+_nearby = (nearestObjects [_position, _sp4wnAroundObjects,dayz_spawnArea]) - (nearestObjects [_position, _sp4wnAroundObjects, dayz_safeDistPlr]);
 
 _zombieSpawnCtr = 0;
 _suitableBld = 0;
