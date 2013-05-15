@@ -19,7 +19,7 @@ _cantSee = {
 	_fov = _this select 1; // players half field of view
 	_safeDistance = _this select 2; // minimum distance. closer is wrong
 	_farDistance = _this select 3; // distance further we won't check
-	_zPos set [2, (_zPos select 2) + 1.80]; // Z head is 1.80 meters from his feet (even hunchbacked ones)
+	_zPos set [2, (_zPos select 2) + 0.5]; // 0.5 = Z height (the logic will think it could hide behind a tent)
 	_isok = true;
 	{
 		if (_x distance _zPos < _farDistance) then {
@@ -79,7 +79,7 @@ diag_log (format["%1 _unitTypes/_min/_max/_zombieChance %2 %3 %4 %5  config:%6  
 
 _halfBuildingSize = (sizeOf _type) / 3; // I put 3 because sizeOf is very loose
 _rnd = random 1;
-if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
+if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 	//Add Internal Zombies
 	_clean = {alive _x} count (getPosATL _obj nearEntities ["zZombie_Base", _halfBuildingSize]) == 0;
 	if (_clean) then {
@@ -112,7 +112,7 @@ if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 	_rangeAngle = _minSector max (2 * ((_halfBuildingSize - _spawnSize) atan2 (player distance _obj)));
 	_minAngle = ([_obj, player] call BIS_fnc_dirTo) + 180 - _rangeAngle / 2;
 	//diag_log(format["%1 _wholeAreaSize:%2 _minRadius:%3 _rangeRadius:%4 _rangeAngle:%5, _halfBuildingSize:%6", __FILE__, _wholeAreaSize, _minRadius, _rangeRadius, _rangeAngle, _halfBuildingSize]);
-	for [{_i = _num * 3}, {(_num > 0) AND (_i > 0)}, {_i = _i - 1}] do { 
+	for [{_i = _num * 10}, {(_num > 0) AND (_i > 0)}, {_i = _i - 1}] do { 
 		_deg = _minAngle + random _rangeAngle;
 		_radius = _minRadius + random _rangeRadius;
 		_bsz_pos = getPosATL player;
@@ -128,10 +128,23 @@ if ((_rnd > _zombieChance) AND {(_num0 > 0)}) then {
 				_num = _num - 1;
 				_recyAgt = _tmp select 3;
 				_maxtoCreate = _tmp select 4;
-			};	
-		};
+			}/*
+			else {
+				diag_log("??");
+			}*/;
+		}/*
+		else {
+		diag_log(format["%1 %2 %3",
+			(count _bsz_pos >= 2),
+			(!([_bsz_pos, true] call fnc_isInsideBuilding)),
+			([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)
+			]);
+		}*/;
 	};
-};
+}/*
+else {
+	diag_log(format["%1 %2 %3",_rnd,  _zombieChance, _num0]);
+}*/;
 if (_num < _num0) then { 
 	dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 };
