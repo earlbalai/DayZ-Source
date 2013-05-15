@@ -581,13 +581,21 @@
 			<French>Utiliser chaufferette</French>
 			<Czech>Použít Heatpack</Czech>
 		</Key>
-		<Key ID="str_crafting_failed">
+		<Key ID="str_crafting_missing">
 			<English>You are missing %1 %2</English>
 			<German>You are missing %1 %2</German>
 			<Russian>You are missing %1 %2</Russian>
 			<Spanish>You are missing %1 %2</Spanish>
 			<French>You are missing %1 %2</French>
 			<Czech>You are missing %1 %2</Czech>
+		</Key>
+		<Key ID="str_crafting_failed">
+			<English>Failed to create an %1</English>
+			<German>Failed to create an %1</German>
+			<Russian>Failed to create an %1</Russian>
+			<Spanish>Failed to create an %1</Spanish>
+			<French>Failed to create an %1</French>
+			<Czech>Failed to create an %1</Czech>
 		</Key>
 		<Key ID="str_crafting_space">
 			<English>Not enough inventory space to make items...</English>
@@ -598,12 +606,12 @@
 			<Czech>Not enough inventory space to make items...</Czech>
 		</Key>
 		<Key ID="str_crafting_success">
-			<English>Successfully created %1 %2</English>
-			<German>Erfolgreich erstellt %1 %2</German>
-			<Russian>Successfully created %1 %2</Russian>
-			<Spanish>Successfully created %1 %2</Spanish>
-			<French>Successfully created %1 %2</French>
-			<Czech>Successfully created %1 %2</Czech>
+			<English>Successfully created %1</English>
+			<German>Erfolgreich erstellt %1</German>
+			<Russian>Successfully created %1</Russian>
+			<Spanish>Successfully created %1</Spanish>
+			<French>Successfully created %1</French>
+			<Czech>Successfully created %1</Czech>
 		</Key>
 	</Package>
 	<Package name="equipment_code">	
