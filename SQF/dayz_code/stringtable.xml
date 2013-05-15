@@ -815,6 +815,60 @@
 			<French>A metal pipe 1 inch in diameter</French>
 			<Czech>A metal pipe 1 inch in diameter</Czech>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_AIM">
+			<English>M4A1_AIM</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_AIM">
+			<English>Blueprint to create a M4A1_AIM. Required - 1 M4A1, 1 Attachment_AIM. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_M9SD">
+			<English>M9SD</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_M9SD">
+			<English>Blueprint to create a M9SD. Required - 1 M9, 1 Attachment_Silencer. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_MAKAROVSD">
+			<English>MAKAROVSD</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_MAKAROVSD">
+			<English>Blueprint to create a MAKAROVSD. Required - 1 MAKAROV, 1 Attachment_Silencer. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_bizonSD">
+			<English>BizonSD</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_bizonSD">
+			<English>Blueprint to create a BizonSD. Required - 1 Bizon, 1 Attachment_Silencer. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_SVD_CAMO">
+			<English>SVD_CAMO</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_SVD_CAMO">
+			<English>Blueprint to create a SVD_CAMO. Required - 1 SVD, 1 Attachment_CAMO. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_Aim_CAMO">
+			<English>M4A1_Aim_CAMO</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_Aim_CAMO">
+			<English>Blueprint to create a M4A1_Aim_CAMO. Required - 1 M4A1_Aim, 1 Attachment_CAMO. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_G36C_CAMO">
+			<English>G36C_CAMO</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_G36C_CAMO">
+			<English>Blueprint to create a G36C_CAMO. Required - 1 G36C, 1 Attachment_CAMO. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_G36A_CAMO">
+			<English>G36A_CAMO</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_G36A_CAMO">
+			<English>Blueprint to create a G36A_CAMO. Required - 1 G36A, 1 Attachment_CAMO. - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_G36K_CAMO">
+			<English>G36K_CAMO</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_G36K_CAMO">
+			<English>Blueprint to create a G36K_CAMO. Required - 1 G36K, 1 Attachment_CAMO. - ToolBox</English>
+		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_NailedBaseballBat">
 			<English>Nailed BaseballBat</English>
 			<German>Nailed BaseballBat</German>
@@ -860,6 +914,18 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_KOBRA">
 			<English>Blueprint to create an KOBRA Scope. Required - 1 Metal Sheet, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_GL">
+			<English>Grenade Launcher Attachment</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_GL">
+			<English>Blueprint to create an Grenade Launcher. Required - 2 Metal Sheet, 1 2 inch metal pipe, 1 Hose Clamp. Tools - ToolBox</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_CAMO">
+			<English>Camo Pattern</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_CAMO">
+			<English>Blueprint to create an Camo Pattern. Required - 1 Rag, 1 Paint, 1 Cable Tie. Tools - ToolBox</English>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_BaseBallBatBarbed">
 			<English>BaseBallBat Barbed</English>

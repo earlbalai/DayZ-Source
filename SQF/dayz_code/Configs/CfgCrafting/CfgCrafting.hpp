@@ -3,6 +3,11 @@
 //Completed
 #include "Blueprints\Weapons\NailedBaseballBat.hpp"
 #include "Blueprints\Weapons\BaseBallBatBarbed.hpp"
+#include "Blueprints\Weapons\M9SD.hpp"
+#include "Blueprints\Weapons\M4A1_AIM.hpp"
+#include "Blueprints\Weapons\MAKAROVSD.hpp"
+#include "Blueprints\Weapons\bizonSD.hpp"
+
 
 //No Stringtables
 #include "Blueprints\Attachments\ACG.hpp"
