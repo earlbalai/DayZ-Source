@@ -12,7 +12,8 @@ class Blueprint_PSO : ItemCore {
 			input[] = 
 			{
 				{"equip_2inch_metal_pipe","CfgMagazines",2},
-				{"Binocular_Vector","CfgMagazines",1}
+				{"Binocular_Vector","CfgMagazines",1},
+				{"equip_hose_clamp","CfgMagazines",1}
 			};
 			output[] = 
 			{

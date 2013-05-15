@@ -831,6 +831,12 @@
 			<French>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</French>
 			<Czech>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Czech>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_PSO">
+			<English>PSO Scope</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_PSO">
+			<English>Blueprint to create an PSO Scope. Required - 2 2inch Metal Pipe, 1 Binocular_Vector, 1 Hose Clamp. Tools - ToolBox</English>
+		</Key>
 		<Key ID="STR_CRAFT_NAME_ACG">
 			<English>ACG Scope</English>
 		</Key>
