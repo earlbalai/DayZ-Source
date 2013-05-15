@@ -26,9 +26,9 @@ _guaranteedObjects = 0;
 _randomLoot = 0; 
 _guaranteedLoot = 0;
 
-if (_baseClass in _small) then { _amount = 10; _radius = 100; _lootMinRadius = 5; _lootMaxRadius = 10; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
-if (_baseClass in _medium) then { _amount = 25; _radius = 150; _lootMinRadius = 5; _lootMaxRadius = 10; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
-if (_baseClass in _large) then { _amount = 40; _radius = 200; _lootMinRadius = 5; _lootMaxRadius = 10; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
+if (_baseClass in _small) then { _amount = 10; _radius = 100; _lootMinRadius = 8; _lootMaxRadius = 13; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
+if (_baseClass in _medium) then { _amount = 25; _radius = 150; _lootMinRadius = 13; _lootMaxRadius = 20; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
+if (_baseClass in _large) then { _amount = 40; _radius = 200; _lootMinRadius = 20; _lootMaxRadius = 30; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
 
 _lootradius = _radius /3;
 

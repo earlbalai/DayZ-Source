@@ -19,11 +19,11 @@ while {_counter < _amount} do {
 	if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
 	if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
 	
-	if (random 1 < 0.7) then {
+	if (random 1 < 0.3) then {
 	_doLoiter = false;
 	};
 	
-	_position = [_campPos,1,50,0,0,0,0] call BIS_fnc_findSafePos;
+	_position = [_campPos,1,30,0,0,0,0] call BIS_fnc_findSafePos;
 	
 	sleep 0.001;
 	_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],10]) == 0;
@@ -43,11 +43,11 @@ while {_counter < _amount} do {
 	_agent = createAgent [_type, _position, [], _radius, _method]; 
 	sleep 0.001;
 	_agent setDir random 360;
-	_agent setvelocity [0,1,1]; // avoid stuck zombies legs 
+	_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
 	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
 	_agent setVariable ["doLoiter",_doLoiter];
 
-	diag_log format["Camps Spawns: %3, unitTypes: %1, position: %2 ",_unitTypes, _position, _amount];
+	//diag_log format["Camps Spawns: %3, unitTypes: %1, position: %2 ",_unitTypes, _position, _amount];
 
 	_agent setVariable["agentObjectCamps",_agent,true];
 
