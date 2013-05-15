@@ -12,7 +12,7 @@ class Blueprint_G36K_camo : ItemCore {
 			input[] = 
 			{
 				{"G36K","CfgWeapons",1},
-				{"Attachment_CAMO","CfgMagazines",1},
+				{"Attachment_CAMO","CfgMagazines",1}
 			};
 			output[] = 
 			{

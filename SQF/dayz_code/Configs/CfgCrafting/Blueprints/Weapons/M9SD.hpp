@@ -12,7 +12,7 @@ class Blueprint_M9SD : ItemCore {
 			input[] = 
 			{
 				{"M9","CfgWeapons",1},
-				{"Attachment_Silencer","CfgMagazines",1},
+				{"Attachment_Silencer","CfgMagazines",1}
 			};
 			output[] = 
 			{

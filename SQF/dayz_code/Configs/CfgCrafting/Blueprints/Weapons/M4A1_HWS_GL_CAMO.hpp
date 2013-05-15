@@ -12,7 +12,7 @@ class Blueprint_M4A1_HWS_GL_CAMO : ItemCore {
 			input[] = 
 			{
 				{"M4A1_HWS_GL","CfgWeapons",1},
-				{"Attachment_CAMO","CfgMagazines",1},
+				{"Attachment_CAMO","CfgMagazines",1}
 			};
 			output[] = 
 			{
