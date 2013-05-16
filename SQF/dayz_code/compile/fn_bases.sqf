@@ -1,20 +1,85 @@
-private ["_centerPos","_placePrecision","_placeMaxGradient","_placeMinDistance","_placeSearchRadius","_placeSearchExpr","_baseClass","_basePos","_basePosCheck","_nextBasePos"];
 
-_centerPos = getMarkerPos "center";
-_placePrecision = 20;
-_placeMaxGradient = 0.3;
-_placeMinDistance = 300;
-_placeSearchRadius = 4500;
-_placeSearchExpr = "(5 * forest) + (4 * trees) + (3 * meadow) - (9 * houses) - (10 * sea)";
-_baseClass = ["Camp2_Small","Camp3_Small","Camp1_Small"];
+private ["_centerPos", "_placePrecision", "_placeMaxGradient", "_placeMinDistance", "_placeSearchRadius", "_placeSearchExpr", "_baseClass", "_small", "_medium", "_large", "_amount", "_radius", "_lootMinRadius", "_lootMaxRadius", "_objectMinRadius", "_objectMaxRadius", "_randomObjects", "_guaranteedObjects", "_randomLoot", "_guaranteedLoot", "_qty", "_basePos", "_tmpobject", "_b", "_lootradius", "_addLoot", "_addWrecks", "_campList", "_nextPos"];
 
-_baseClass = _baseClass call BIS_fnc_selectRandom;
+_qty = _this select 0;
+_centerPos = getMarkerPos (_this select 1);
+_placeSearchRadius = _this select 2;
+_placeMinDistance = _this select 3;
 
+// add some loot around the camp
+_addLoot = {
+	private ["_lootTable","_itemTypes","_index","_weights","_cntWeights","_randomLoot",
+	"_guaranteedLoot","_itemType","_position","_basePos","_lootMinRadius","_lootMaxRadius",
+	"_clutter","_baseClass","_nearby"];
+
+	_basePos = _this select 0;
+	_baseClass = _this select 1;
+	_lootMinRadius = _this select 2;
+	_lootMaxRadius = _this select 3;
+	_randomLoot = _this select 4;
+	_guaranteedLoot = _this select 5;
+	
+	_lootTable = ["InfectedCamps"] call BIS_fnc_selectRandom;
+	_itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
+	_index = dayz_CBLBase  find _lootTable;
+	_weights =		dayz_CBLChances select _index;
+	_cntWeights = count _weights;
+	
+	for "_x" from 1 to (round(random _randomLoot) + _guaranteedLoot) do {
+		//create loot
+		_index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_itemType = _itemTypes select _index;
+		
+		_position = [_basePos,_lootMinRadius,_lootMaxRadius,0,0,0,0] call BIS_fnc_findSafePos;
+		_position = [_position select 0,_position select 1,0];
+		
+		_clutter = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
+		_clutter setPos _position;
+		
+		[_itemType select 0, _itemType select 1, _position, _lootMaxRadius] call spawn_loot;
+	
+		diag_log(format["Infected Camps: Loot spawn at '%1:%3' with loot table '%2'", _baseClass, str(_itemType),_position]); 
+	
+		// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
+		_nearby = _basePos nearObjects ["ReammoBox", _lootMaxRadius + 5];
+		{
+			_x setVariable ["permaLoot",true];
+		} forEach _nearby;
+	};
+};
+
+// add some dead bodies and veh wrecks all around
+_addWrecks = {
+	private ["_randomObjects","_guaranteedObjects","_position","_basePos","_objectMinRadius","_objectMaxRadius",
+	"_Bodys","_randomvehicle","_chance","_DeadBody","_wreck", "_time"];
+	_basePos = _this select 0;
+	_objectMinRadius = _this select 1;
+	_objectMaxRadius = _this select 2;
+	_randomObjects = _this select 3;
+	_guaranteedObjects = _this select 4;
+	
+	for "_x" from 1 to (round(random _randomObjects) + _guaranteedObjects) do {
+		_position = [_basePos,_objectMinRadius,_objectMaxRadius,0,0,0,0] call BIS_fnc_findSafePos;
+		_position = [_position select 0,_position select 1,0];
+		_Bodys = ["Body1","Body2"] call BIS_fnc_selectRandom;
+		_randomvehicle = ["LADAWreck","BMP2Wreck","UralWreck","HMMWVWreck","T72Wreck"] call BIS_fnc_selectRandom;
+		_chance = random 1;
+		if (_chance < 0.9) then {
+			_DeadBody = _Bodys createVehicle _position;
+		} else {
+			_wreck = _randomvehicle createVehicle _position;
+		};
+	};
+};
+
+
+_placeSearchExpr = "(5 * forest) + (4 * trees) + (3 * meadow) - (20 * houses) - (30 * sea)";
 _small = ["Camp1_Small","Camp2_Small","Camp3_Small"];
-_medium = ["Camp2_Medium","Camp3_Medium","Camp4_Medium","Camp5_Medium"];
+_medium = []; // "Camp2_Medium","Camp3_Medium","Camp4_Medium","Camp5_Medium"];
 _large = [];
 
-//declaration of local vars
+_placePrecision = 30;
 _amount = 0;
 _radius = 0;
 _lootMinRadius = 0; 
@@ -25,90 +90,57 @@ _randomObjects = 0;
 _guaranteedObjects = 0; 
 _randomLoot = 0; 
 _guaranteedLoot = 0;
+_baseClass = "";
+_campList = [];
+_basePos = [];
 
-if (_baseClass in _small) then { _amount = 10; _radius = 100; _lootMinRadius = 8; _lootMaxRadius = 13; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
-if (_baseClass in _medium) then { _amount = 25; _radius = 150; _lootMinRadius = 13; _lootMaxRadius = 20; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
-if (_baseClass in _large) then { _amount = 40; _radius = 200; _lootMinRadius = 20; _lootMaxRadius = 30; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
-
-_lootradius = _radius /3;
-
-_basePos = selectBestPlaces [_centerPos, _placeSearchRadius, _placeSearchExpr, _placePrecision, 1];
-_basePos = (_basePos select 0) select 0;
-_nextBasePos = _basePos findEmptyPosition [10, (_placeSearchRadius / 20)];
-_basePos = _nextBasePos;
-_basePosCheck = _basePos isFlatEmpty [10, 0, _placeMaxGradient, (_placePrecision / 2), 0, false, objNull];
-
-
-
-while { (_basePos select 1) < 1 } do {
-	_nextBasePos = _basePos findEmptyPosition [10, (_placeSearchRadius / 20)];
-	_basePos = _nextBasePos;
-	_basePosCheck = _basePos isFlatEmpty [10, 0, _placeMaxGradient, (_placePrecision / 2), 0, false, objNull];
-};
-
-
-if (count(_basePosCheck) > 0) then {
-	_basePos = _basePosCheck;
-};
-
-//_basePos = [_basePos select 0,_basePos select 1,0];
-
-//if ((_basePos select 1) < 1) exitwith {};
-
-[_basePos, (floor(random 360)), _baseClass] call spawnComposition;
-
-
-//_systemmarker = createVehicle ["Sign_sphere10cm_EP1", _basePos, [], 0, "none"];
-
-_lootTable = ["InfectedCamps"] call BIS_fnc_selectRandom;
-_itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
-_index = dayz_CBLBase  find _lootTable;
-_weights =		dayz_CBLChances select _index;
-_cntWeights = count _weights;
-
-for "_x" from 1 to (round(random _randomLoot) + _guaranteedLoot) do {
-	//create loot
-	_index = floor(random _cntWeights);
-	_index = _weights select _index;
-	_itemType = _itemTypes select _index;
-	
-	_position = [_basePos,_lootMinRadius,_lootMaxRadius,0,0,0,0] call BIS_fnc_findSafePos;
-	_position = [_position select 0,_position select 1,0];
-	
-	_clutter = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
-	_clutter setPos _position;
-	
-	[_itemType select 0, _itemType select 1, _position, _lootMaxRadius] call spawn_loot;
-
-	diag_log(format["Infected Camps: Loot spawn at '%1:%3' with loot table '%2'", _baseClass, str(_itemType),_position]); 
-
-	// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
-	_nearby = _basePos nearObjects ["ReammoBox", _lootMaxRadius + 5];
+_time = time;
+_tmpobject = "Land_HouseV2_05" createVehicleLocal (getMarkerPos "respawn_west"); sleep 0.001; // wait object loading
+for [ {_b = _qty * 20}, {_b > 0 AND _qty > 0 }, {_b = _b - 1} ] do {
+	_baseClass = (_small + _medium +_large) call BIS_fnc_selectRandom;
+	if (_baseClass in _small) then { _amount = 10; _radius = 100; _lootMinRadius = 8; _lootMaxRadius = 13; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
+	if (_baseClass in _medium) then { _amount = 25; _radius = 150; _lootMinRadius = 13; _lootMaxRadius = 20; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
+	if (_baseClass in _large) then { _amount = 40; _radius = 200; _lootMinRadius = 20; _lootMaxRadius = 30; _objectMinRadius = 10; _objectMaxRadius = 20; _randomObjects = 8; _guaranteedObjects = 2; _randomLoot = 5; _guaranteedLoot = 1; };
+	_lootradius = _radius / 3;
 	{
-		_x setVariable ["permaLoot",true];
-	} forEach _nearBy;
+		if (_x select 1 > 3) then {
+			_basePos = _x select 0;
+			if (count _basePos >= 2) then {
+				_basePos set [2, 0];
+				_nextPos = _basePos findEmptyPosition [0, _placePrecision, "Land_HouseV2_05"];
+				//diag_log(str(_nextPos distance _basePos));
+				_basePos = _nextPos;
+			};
+			if (count _basePos >= 2) then {
+				_basePos set [2, 0];
+				deleteVehicle _tmpobject; sleep 0.001;
+				_tmpobject = "Land_HouseV2_05" createVehicleLocal _basePos; sleep 0.001;
+				//diag_log(str(_tmpobject distance _basePos));
+				_basePos = _tmpobject modelToWorld (boundingCenter _tmpobject); 
+				_basePos set [2, 0];
+				deleteVehicle _tmpobject; sleep 0.001;
+				_tmpobject = "Land_HouseV2_05" createVehicleLocal (getMarkerPos "respawn_west"); sleep 0.001; // wait object loading
+				_basePos = _basePos isFlatEmpty [0, 0, _lootMaxRadius*.03, _lootMaxRadius, 0, false, objNull];
+			};
+			if (count _basePos >= 2) then {	
+				_basePos set [2, 0];
+				if ((0 == count (nearestObjects [_basePos, [], _lootMaxRadius])) 
+					AND {(0 == { ((_x select 0) distance _basePos) < _placeMinDistance } count _campList)}) then {
+					_campList set [count _campList, [_basePos,_amount,_radius]];
+					diag_log(format["%1 found a nice spot at %2 (%3)", __FILE__, _basePos call fa_coor2str,_x select 1]);
+					[_basePos, random 360, _baseClass] call spawnComposition;
+					[_basePos, _baseClass, _lootMinRadius, _lootMaxRadius, _randomLoot, _guaranteedLoot] call _addLoot;
+					[_basePos, _lootMinRadius, _lootMaxRadius, _randomObjects, _guaranteedObjects] call _addWrecks;
+					_qty = _qty - 1;
+					//[_basePos] spawn { sleep 10; { _x setPos (_this select 0);} forEach playableUnits; };
+				};
+			};
+			sleep 0.001;
+		};
+	} forEach selectBestPlaces [_centerPos, _placeSearchRadius, _placeSearchExpr, _placePrecision, _qty];
 };
+deleteVehicle _tmpobject;
 
-for "_x" from 1 to (round(random _randomObjects) + _guaranteedObjects) do {
-	_position = [_basePos,_objectMinRadius,_objectMaxRadius,0,0,0,0] call BIS_fnc_findSafePos;
-	_position = [_position select 0,_position select 1,0];
-	_Bodys = ["Body1","Body2"] call BIS_fnc_selectRandom;
-	_randomvehicle = ["LADAWreck","BMP2Wreck","UralWreck","HMMWVWreck","T72Wreck"] call BIS_fnc_selectRandom;
-	_chance = random 1;
-	if (_chance < 0.9) then {
-		_DeadBody = _Bodys createVehicle _position;
-	} else {
-		_wreck = _randomvehicle createVehicle _position;
-	};
-};
+diag_log(format["%1: found %2 camps spots in %3 sec.", __FILE__, count _campList, round(time - _time)]);
 
-//_basePos,_radius
-
-Server_InfectedCamps set [count Server_InfectedCamps, [_basePos,_amount,_radius]];
-
-dayzInfectedCamps = Server_InfectedCamps;
-publicVariable "dayzInfectedCamps";
-
-diag_log format ["File:%3, BaseCamp: %1, Location: %2", _basePos, _baseClass,__FILE__];
-
-_basePos
+_campList
