@@ -1,9 +1,10 @@
-private["_listTalk","_isZombie","_group","_eyeDir","_attacked","_type","_chance","_last","_audial","_distance","_refObj","_list","_scaleMvmt","_scalePose","_scaleLight","_anim","_activators","_nearFire","_nearFlare","_scaleAlert","_inAngle","_scaler","_initial","_tPos","_zPos","_cantSee"];
+
+private ["_refObj", "_listTalk", "_pHeight", "_attacked", "_multiplier", "_type", "_dist", "_chance", "_last", "_targets", "_cantSee", "_tPos", "_zPos", "_eyeDir", "_inAngle", "_lowBlood", "_y"];
 
 _refObj = vehicle player;
 _listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
 _pHeight = (getPosATL _refObj) select 2;
-_attacked = false;
+_attacked = false; // at least 1 Z attacked the player
 _multiplier = 1;
 
 {
@@ -12,22 +13,35 @@ _multiplier = 1;
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
-		_chance = 0.8;
+		_chance = 5;
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
 			//perform an attack
 			_last = _x getVariable["lastAttack",0];
-			_entHeight = (getPosATL _x) select 2;
-			_delta = _pHeight - _entHeight;
-			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				_cantSee = [_x,_refObj] call dayz_losCheck;
-				if (!_cantSee) then {
-					zedattack = [_x, _type] spawn player_zombieAttack;
+			if ((time - _last) > 1) then {
+				_y = [_x, _type] call player_zombieAttack;
+				//diag_log(format["%1 %2 %3", __FILE__, _x, _y]);
+				if (_y == "") then {
 					_x setVariable["lastAttack",time];
-				};	
+					_attacked = true;
+				}
+				else {
+				//	if (!((moveToCompleted _x) OR (moveToFailed _x))) then {
+					//	if (time - _last > 1) then { 
+					doStop _x; 
+					//};
+				//	};
+				//	if ((moveToCompleted _x) OR (moveToFailed _x)) then {
+						_x setVariable ["myDest", (player modelToWorld (velocity player))];
+						_x setVariable ["targets",[player]];
+						_x doMove (player modelToWorld (velocity player));
+						_x moveTo (player modelToWorld (velocity player));					
+						_x forceSpeed 12;
+				//	};
+				};
 			};
-			_attacked = true;
-		} else {
+		}
+		else {
 			if (speed _x < 4) then {
 				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
 			} else {
@@ -102,3 +116,6 @@ if (_attacked) then {
 		};
 	};
 };
+
+// return true if attacked. if so, player_monitor will perform its ridiculous 'while true' loop faster.
+_attacked
