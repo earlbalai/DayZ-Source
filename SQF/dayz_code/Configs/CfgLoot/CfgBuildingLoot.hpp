@@ -143,6 +143,7 @@ class CfgBuildingLoot {
 			//
 			{"Blueprint_NailedBaseballBat","weapon",0.01},
 			{"Blueprint_BaseBallBatBarbed","weapon",0.01},
+			/*
 			{"Blueprint_ACG","weapon",0.02},
 			{"Blueprint_AIM","weapon",0.03},
 			{"Blueprint_Camo","weapon",0.02},
@@ -150,6 +151,7 @@ class CfgBuildingLoot {
 			{"Blueprint_Kobra","weapon",0.02},
 			{"Blueprint_Pso","weapon",0.03},
 			{"Blueprint_Silencer","weapon",0.01},
+			*/
 			{"Blueprint_M9SD","weapon",0.01},
 			{"Blueprint_M4A1_AIM","weapon",0.01},
 			{"Blueprint_MAKAROVSD","weapon",0.01},
@@ -160,6 +162,7 @@ class CfgBuildingLoot {
 			{"Blueprint_G36C_camo","weapon",0.01},
 			{"Blueprint_G36A_camo","weapon",0.01},
 			{"Blueprint_G36K_camo","weapon",0.01},
+			{"Blueprint_Bandage","weapon",0.01},
 			//
 			{"","generic",0.8},
 			{"","trash",0.6},

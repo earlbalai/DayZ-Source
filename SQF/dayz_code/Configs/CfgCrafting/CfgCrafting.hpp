@@ -13,9 +13,12 @@
 #include "Blueprints\Weapons\G36C_camo.hpp"
 #include "Blueprints\Weapons\G36A_camo.hpp"
 #include "Blueprints\Weapons\G36K_camo.hpp"
-
+#include "Blueprints\Medical\Bandage.hpp"
 
 //No Stringtables
+
+//Removed Attachment building
+/*
 #include "Blueprints\Attachments\ACG.hpp"
 #include "Blueprints\Attachments\AIM.hpp"
 #include "Blueprints\Attachments\CAMO.hpp"
@@ -23,6 +26,7 @@
 #include "Blueprints\Attachments\Kobra.hpp"
 #include "Blueprints\Attachments\PSO.hpp"
 #include "Blueprints\Attachments\SILENCER.hpp"
+*/
 
 class CraftingItem : ItemCore {
 	scope = private;

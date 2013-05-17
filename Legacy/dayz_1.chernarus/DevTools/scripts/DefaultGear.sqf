@@ -71,17 +71,6 @@ Switch (_case) do
     player setVariable ['hit_legs',0,false];
     player setVariable['medForceUpdate',true,true];"
   };
-  Case "===CLICK TO ADVERTISE===":
-  {
-    _class = "TitleText [format['Want hacks?! MPGH.NET welcomes all!'], 'PLAIN DOWN'];"
-  };
-  Case "Disable Quit":
-  {
-    _nill = [] execVM "wuat\scripts\noquitinit.sqf";
-    _class = "false spawn sdasdadsasdsaffsdsdfrtretrwe;
-    (findDisplay 46) displayAddEventHandler ['KeyDown','_this call gfdiogfhdoigfdhiogfdoigfhd'];
-    (findDisplay 46) displayAddEventHandler ['keyDown', '_this call TAG_onKeyDown'];";
-  };
   Case "Enable Quit":
   {
     _class = "true spawn sdasdadsasdsaffsdsdfrtretrwe;

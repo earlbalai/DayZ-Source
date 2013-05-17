@@ -258,7 +258,7 @@ if (!isDedicated) then {
 		//if (_dikCode == 57) then {_handled = true}; // space
 		//if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
 		/*
-		if (_dikCode == 210) then //SCROLL LOCK
+		if (_dikCode == 210) then //insert Key
 		{
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
@@ -512,5 +512,5 @@ if (!isDedicated) then {
 	};
 	
 	//Start Dynamic Weather
-	execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 	initialized = true;

@@ -414,18 +414,20 @@ if (isServer and isNil "sm_done") then {
 		endLoadingScreen;
 	};	
 	
-if (isDedicated) then {
-	_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
-};
+	if (isDedicated) then {
+		_id = [] execFSM "\z\addons\dayz_server\system\server_cleanup.fsm";
+	};
+	
+	allowConnection = true;
 
-allowConnection = true;
+	// [_guaranteedLoot, _randomizedLoot, spawnOnStart, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
+	[3, 4, 3, (40 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
+	
+	//Spawn camps
+	// quantity, marker, radius, min distance between 2 camps
+	Server_InfectedCamps = [3, "center", 4500, 2000] call fn_bases;
+	dayzInfectedCamps = Server_InfectedCamps;
+	publicVariable "dayzInfectedCamps";
 
-// [_guaranteedLoot, _randomizedLoot, spawnOnStart, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
-nul = [3, 4, 3, (40 * 60), (15 * 60), 0.75, 'center', 4000, true, false] spawn server_spawnCrashSite;
 	sm_done = true;
 };	
-
-	//Spawn camps
-	for "_x" from 1 to 5 do {
-		call fn_bases;
-	};

@@ -1,7 +1,7 @@
-class Blueprint_M4A1_AIM : ItemCore {
+class Blueprint_Bandage : ItemCore {
 	scope = public;
-	displayName = $STR_CRAFT_NAME_Blueprint_M4A1_AIM;
-	descriptionShort = $STR_CRAFT_DESC_Blueprint_M4A1_AIM;
+	displayName = $STR_CRAFT_NAME_Bandage;
+	descriptionShort = $STR_CRAFT_DESC_Bandage;
 	model = "\Ca\misc\SmallObj_moscow_docs_WPN";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_blueprint.paa";
 	
@@ -11,14 +11,13 @@ class Blueprint_M4A1_AIM : ItemCore {
 			script = "spawn player_craftItem;";
 			input[] = 
 			{
-				{"M4A1","CfgWeapons",1},
-				{"Attachment_AIM","CfgMagazines",1},
-				{"equip_rail_screws","CfgMagazines",2},
-				{"equip_weapon_rails","CfgMagazines",1}
+				{"equip_rag","CfgMagazines",3},
+				{"equip_gauze","CfgMagazines",2},
+				{"equip_string","CfgMagazines",1}
 			};
 			output[] = 
 			{
-				{"M4A1_AIM","CfgWeapons",1}
+				{"ItemBandage","CfgMagazines",2}
 			};
 			required[] = 
 			{
