@@ -24,7 +24,7 @@ _num = switch (_type) do {
 	case "cough": 		{2};
 	case "chase": 		{14};
 	case "spotted": 	{13};
-	case "hit": 		{11}; // prev. 6
+	case "hit": 		{6};
 	case "attack": 		{13};
 	case "idle": 		{35};
 	case "scream": 		{4};

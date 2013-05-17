@@ -1,5 +1,5 @@
 
-private ["_refObj", "_listTalk", "_pHeight", "_attacked", "_multiplier", "_type", "_dist", "_chance", "_last", "_targets", "_cantSee", "_tPos", "_zPos", "_eyeDir", "_inAngle", "_lowBlood", "_y"];
+private ["_refObj", "_listTalk", "_pHeight", "_attacked", "_multiplier", "_type", "_dist", "_chance", "_last", "_targets", "_cantSee", "_tPos", "_zPos", "_eyeDir", "_inAngle", "_lowBlood", "_attackResult"];
 
 _refObj = vehicle player;
 _listTalk = (position _refObj) nearEntities ["zZombie_Base",200];
@@ -13,15 +13,15 @@ _multiplier = 1;
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
-		_chance = 5;
+		_chance = 5; // Z verbosity
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
 			//perform an attack
 			_last = _x getVariable["lastAttack",0];
 			if ((time - _last) > 1) then {
-				_y = [_x, _type] call player_zombieAttack;
-				//diag_log(format["%1 %2 %3", __FILE__, _x, _y]);
-				if (_y == "") then {
+				_attackResult = [_x, _type] call player_zombieAttack;
+				//diag_log(format["%1 %2 %3", __FILE__, _x, _attackResult]);
+				if (_attackResult == "") then {
 					_x setVariable["lastAttack",time];
 					_attacked = true;
 				}

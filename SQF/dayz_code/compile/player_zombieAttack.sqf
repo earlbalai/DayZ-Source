@@ -1,5 +1,5 @@
 
-private ["_unit","_type","_vehicle","_speed","_isVehicle","_isSameFloor","_isStairway","_isClear","_epu","_epv","_gpu_asl","_gpv_asl","_nextPlayerPos","_hu","_hv","_ob_arr","_cob","_deg","_sign","_a","_rnd","_move","__FILE__","_vel","_hpList","_hp","_wound","_damage","_strH","_dam","_total","_cnt","_index"];
+private ["_unit", "_type", "_vehicle", "_isVehicle", "_isSameFloor", "_epu", "_epv", "_gpu_asl", "_gpv_asl", "_isStairway", "_isClear", "_hu", "_hv", "_ob_arr", "_cob", "_deg", "_dir0", "_dir1", "_i", "_move", "_rnd", "_hpList", "_hp", "_wound", "_damage", "_strH", "_dam", "_total", "_cnt", "_index", "_speed"];
 
 _unit = _this select 0;
 _type = _this select 1;
@@ -18,8 +18,7 @@ _gpv_asl = getPosASL _vehicle;
 _nextPlayerPos = player modelToWorld (velocity player);
 
 if (_type != "zombie") exitWith {"not a zombie"}; // we deal only with zombies in this function
-if (_unit distance _nextPlayerPos > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here
-// +str(_unit distance _nextPlayerPos)+"/"+str(dayz_areaAffect)
+if (_unit distance _nextPlayerPos > dayz_areaAffect) exitWith {"too far:"+str(_unit distance _nextPlayerPos)+"/"+str(dayz_areaAffect)}; // distance too far according to any logic dealt here
 
 // check if fight is in stairway or not,
 // check if space between player/vehicle and Z is clear or not
@@ -79,7 +78,7 @@ if (unitPos _unit != "UP") exitWith {
 _rnd = 0;
 switch true do {
 	case (r_player_unconscious) : {
-		if (random 10 < 1) then {
+		if (random 3 < 1) then {
 			_rnd = ceil(random 9);
 			_move = "ZombieFeed" + str(_rnd);
 		};
@@ -92,7 +91,7 @@ switch true do {
 		_rnd = ceil(random 10);
 		_move = "ZombieStandingAttack" + str(_rnd);
 	};
-	case (_speed >= 3) : {
+	case (_speed >= 5) : {
 		_rnd = 8;
 		_move = "ZombieStandingAttack" + str(_rnd);
 	};
@@ -114,12 +113,10 @@ switch true do {
 			case 20 : {[ 8,10 ]};
 			case 21 : {[ 8 ]};
 			case 22 : {[ 8 ]};
-			case 23 : {[ 8 ]};
 			default { if (_rnd < 10) then {[ 1,2,4,9 ]} else {[0]} };
 		};
-		if (_nextPlayerPos distance _unit > 2.2) then { diag_log(format["%1:  dis:%2  rndlist:%3", __FILE__, (round((_nextPlayerPos distance _unit)*10)), _rnd]); };
+		//if (_nextPlayerPos distance _unit > 2.2) then { diag_log(format["%1:  dis:%2  rndlist:%3", __FILE__, (round((_nextPlayerPos distance _unit)*10)), _rnd]); };
 		_rnd = _rnd call BIS_fnc_selectRandom;		
-		//_rnd=2;
 		_move = "ZombieStandingAttack" + str(_rnd); 
 	};
 }; 
@@ -146,18 +143,18 @@ sleep 0.3;
 if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 
 // player may fall...
-if ((!_isVehicle) and (_speed >= 3) ) then { // player hit while running
+if ((!_isVehicle) and (_speed >= 5) ) then { // player hit while running
 	// stop player
 	_vel = velocity player;
 	player setVelocity [-(_vel select 0), -(_vel select 1), 0];
 	// make player dive
 	_move = switch (currentWeapon player) do {
-		case "Flare" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare
+		case "Flare"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare
 		case (primaryWeapon player) : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle/crowbar
 		default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 	};
 	player playMove _move; 
-	diag_log(format["%1 player dive. Weapons: cur:""%2"" pri:""%3"" sec:""%4"" --> move: %5", __FILE__, currentWeapon player, primaryWeapon player, secondaryWeapon player, _move]);
+	diag_log(format["%1 player tackled. Weapons: cur:""%2"" pri:""%3"" sec:""%4"" --> move: %5", __FILE__, currentWeapon player, primaryWeapon player, secondaryWeapon player, _move]);
 };
 
 
