@@ -1,5 +1,13 @@
 class CfgLoot {
 	//0.10
+	attachments[] = {
+		{"Attachment_AIM",0.03},
+		{"Attachment_GL",0.03},
+		{"Attachment_Kobra",0.03},
+		{"Attachment_CAMO",0.03},
+		{"Attachment_Pso",0.03},
+		{"Attachment_Silencer",0.01}
+	};
 	craft[] = {
 			{"equip_wood_pallet",0.03},
 			{"equip_string",0.03},
@@ -7,8 +15,6 @@ class CfgLoot {
 			{"equip_rope",0.02},
 			{"equip_rag",0.02},
 			{"equip_pvc_box",0.01},
-			//{"equip_part_silencer",0.01},
-			//{"equip_part_camo",0.01},
 			{"equip_paper_sheet",0.02},
 			{"equip_paint",0.02},
 			{"equip_note",0.01},
@@ -25,7 +31,9 @@ class CfgLoot {
 			{"equip_aa_battery",0.01},
 			{"equip_2inch_metal_pipe",0.01},
 			{"equip_1inch_metal_pipe",0.02},
-			{"ItemNails",0.01}
+			{"ItemNails",0.01},
+			{"equip_rail_screws",0.01},
+			{"equip_weapon_rails",0.01}
 	};
 	trash[] = {
 			{"ItemSodaCokeEmpty",0.05},

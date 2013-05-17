@@ -12,7 +12,9 @@ class Blueprint_M4A1_AIM : ItemCore {
 			input[] = 
 			{
 				{"M4A1","CfgWeapons",1},
-				{"Attachment_AIM","CfgMagazines",1}
+				{"Attachment_AIM","CfgMagazines",1},
+				{"equip_rail_screws","CfgMagazines",2},
+				{"equip_weapon_rails","CfgMagazines",1}
 			};
 			output[] = 
 			{

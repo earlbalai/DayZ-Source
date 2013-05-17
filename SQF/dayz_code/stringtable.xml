@@ -631,6 +631,18 @@
 			<French>Blueprint used in crafting</French>
 			<Czech>Blueprint used in crafting</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_weapon_rails">
+			<English>Weapon Rails</English>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_weapon_rails">
+			<English>Rails to attach attachments to weapons.</English>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_rail_screws">
+			<English>Rail screws</English>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_rail_screws">
+			<English>Screws used to hold weapon rails in place.</English>
+		</Key>
 		<Key ID="STR_ITEM_DESC_equip_wood_pallet">
 			<English>A wooden pallet</English>
 			<German>A wooden pallet</German>
@@ -823,6 +835,12 @@
 			<French>A metal pipe 1 inch in diameter</French>
 			<Czech>A metal pipe 1 inch in diameter</Czech>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_Bandage">
+			<English>Bandage</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Bandage">
+			<English>Blueprint to create an Banagde. Required - 2 Rags, 2 gauze, 1 string - ToolBox<</English>
+		</key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_AIM">
 			<English>M4A1_AIM</English>
 		</Key>
