@@ -21,6 +21,7 @@ class CfgLoot {
 			{"equip_needle",0.01},
 			{"equip_nail",0.02},
 			{"equip_metal_sheet",0.03},
+			{"equip_scrap_metal",0.03},
 			{"equip_laser",0.01},
 			{"equip_hose_clamp",0.01},
 			{"equip_gauze",0.01},

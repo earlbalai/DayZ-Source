@@ -38,5 +38,7 @@
 #include "Items\Mats\equip_scrap_electronics.hpp"
 #include "Items\Mats\equip_string.hpp"
 #include "Items\Mats\equip_wood_pallet.hpp"
+//100%
 #include "Items\Mats\equip_rail_screws.hpp"
 #include "Items\Mats\equip_weapon_rails.hpp"
+#include "Items\Mats\equip_scrap_metal.hpp"

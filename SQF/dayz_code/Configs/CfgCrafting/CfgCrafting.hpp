@@ -17,6 +17,8 @@
 
 //No Stringtables
 
+#include "Blueprints\Tools\Compass.hpp"
+
 //Removed Attachment building
 /*
 #include "Blueprints\Attachments\ACG.hpp"
