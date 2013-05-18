@@ -55,13 +55,14 @@ Serverside affected addons:
 					Small = 8 objects slots, no weapons, no bags.
 					Medium = 16 Objects 1 weapon , no bags
 		* [NEW] - Infected survivor camps. (WIP) 3 - Small, 4 - Medium.
-		* [NEW] - FPS Monitor this will dynamicly change how and total amount of zeds and loot is spawning to keep the players base fps up.
+		* [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 		* [NEW] - Crafting is now added.
 		* [NEW] - Attachment Crafting is the only way to upgrade weapons.
 		* [NEW] - 2 New Melee weapons.(Bat,Shovel)
 		* [NEW] - 2 New Bat variations used in crafting. (NailedBat,WiredBat)
 		* [NEW] - Wild Spawning of zeds has been redone and readded.
-		* [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps)
+		* [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps).
+		* [NEW] - Zeds can now push/tackle players to the ground when attacked.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
@@ -80,7 +81,7 @@ Serverside affected addons:
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
 		* [FIXED] - Can no longer brake legs by anything other then players/zeds/falling/getting out of moving vehicle.
-		* [FIXED] - Most Dupeing issues shouwl now be resolved.
+		* [FIXED] - Most Dupeing issues should now be resolved.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -124,8 +125,6 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	
-	    * [REMOVED] - Wild spawning zeds. (Zeds spawning in forest areas will be added next patch)
-	    * [REMOVED] - Zeds can now push players to the ground when attacked from behind.
 	    * [REMOVED] - M107 and AS50.
 	    * [REMOVED] - Removed all military weapons with any attachment from loot tables.
 
