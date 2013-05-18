@@ -16,12 +16,9 @@ if (count _this > 2) then {
 		//_playerworldPos = _playerpos modelToWorld _Offset;
 	//	_pos = [_playerpos,5,30,4,0,5,0] call BIS_fnc_findSafePos;
 	//} else {
-		_pos = [_originalPos,10,90,4,0,5,0] call BIS_fnc_findSafePos;
+		_pos = [_originalPos,10,50,0,0,0,0] call BIS_fnc_findSafePos; //10,90,4,0,5,0
 	//};
 	
-	//if (_unit distance player > 250) then {
-	//	_pos = [_playerpos,5,60,4,0,5,0] call BIS_fnc_findSafePos;
-	//};
 };
 
 if(isNull group _unit) then {
