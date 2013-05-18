@@ -256,12 +256,20 @@ class 10Rnd_762x54_SVD : CA_Magazine {
 	};
 };
 class 5Rnd_127x99_as50: CA_Magazine {
-	ammo = "";
-	count = 0;
+	class ItemActions {
+		class CombineMag {
+			text = $STR_MAG_COMBINE;
+			script = "spawn player_combineMag;";
+		};
+	};
 };
 class 10Rnd_127x99_m107 : CA_Magazine {
-	count = 0;
-	ammo = "";
+	class ItemActions {
+		class CombineMag {
+			text = $STR_MAG_COMBINE;
+			script = "spawn player_combineMag;";
+		};
+	};
 };
 class 20Rnd_762x51_DMR : CA_Magazine {
 	class ItemActions {
