@@ -69,10 +69,10 @@ class CfgBuildingLoot {
 			{"MR43","weapon",0.03},
 			{"ItemBookBible","magazine",0.02},
 			{"WeaponHolder_ItemFuelcan","object",0.03},
-			{"","craft",0.03},
+			{"","craft",0.40},
 			{"","military",0.10},
-			{"","generic",0.80},
-			{"","trash",0.60}
+			{"","generic",0.60},
+			{"","trash",0.40}
 		};
 	};
 	
@@ -101,10 +101,10 @@ class CfgBuildingLoot {
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
 			{"ItemTankTrap","magazine",0.04},
-			{"","generic",0.8},
-			{"","trash",0.6},
-			{"","military",0.4},
-			{"","craft",0.3}
+			{"","craft",0.40},
+			{"","military",0.10},
+			{"","generic",0.60},
+			{"","trash",0.40}
 		};
 	};
 	class InfectedCamps: Default { //5
@@ -165,10 +165,9 @@ class CfgBuildingLoot {
 			{"Blueprint_Bandage","weapon",0.01},
 			{"Blueprint_Compass","weapon",0.01},
 			//
-			{"","generic",0.8},
-			{"","trash",0.6},
-			{"","military",0.4},
-			{"","craft",0.3}
+			{"","craft",0.40},
+			{"","military",0.10},
+			{"","generic",0.60}
 		};
 	};
 	class Farm: Default {
@@ -187,9 +186,10 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemHatchet","object",0.05},
 			{"MR43","weapon",0.01},
 			{"MeleeMachete","weapon",0.04},
-			{"","generic",0.80},
-			{"","trash",0.60},
-			{"","craft",0.03}
+			{"","craft",0.40},
+			{"","military",0.10},
+			{"","generic",0.60},
+			{"","trash",0.40}
 		};
 	};
 	class Supermarket: Default {
@@ -220,10 +220,11 @@ class CfgBuildingLoot {
 			{"Binocular","weapon",0.03},
 			{"PartWoodPile","magazine",0.04},
 			{"MR43","weapon", 0.01},
-			{"","food",0.02},
-			{"","trash",1.00},
-			{"","generic",0.50},
-			{"","craft",0.03}
+			{"","food",0.07},
+			{"","craft",0.40},
+			{"","military",0.03},
+			{"","generic",0.60},
+			{"","trash",0.40}
 		};
 	};
 	class HeliCrash: Default {
@@ -361,10 +362,11 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24			
 			{"ItemEtool","weapon",0.03},
 			{"ItemSandbag","magazine",0.04},
-			{"","medical",0.08},
-			{"","generic",0.80},
-			{"","military",1.00},
-			{"","trash",0.60}
+			{"","craft",0.30},
+			{"","military",0.70},
+			{"","generic",0.10},
+			{"","attachments",0.10},
+			{"","trash",0.30}
 		};
 	};
 	class MilitarySpecial: Default {
@@ -419,10 +421,11 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine",0.01},
 			{"Sa58P_EP1","weapon",0.02},
 			{"Sa58V_EP1","weapon",0.02},
-			{"","medical",0.08},
-			{"","generic",0.80},
-			{"","military",1.00},
-			{"","trash",0.60}
+			{"","craft",0.30},
+			{"","military",0.70},
+			{"","generic",0.10},
+			{"","attachments",0.10},
+			{"","trash",0.30}
 		};
 	};
 	class Hunting: Default {
@@ -447,9 +450,11 @@ class CfgBuildingLoot {
 			{"M24","weapon",0.03},
 			{"M1014","weapon",0.03},
 			{"","hunter",0.10},
-			{"","generic",0.10},
-			{"","craft",0.03},
-			{"","trash",0.15}
+			{"","craft",0.30},
+			{"","military",0.15},
+			{"","attachments",0.15},
+			{"","generic",0.50},
+			{"","trash",0.30}
 		};
 	};
 #include "CfgBuildingPos.hpp"
