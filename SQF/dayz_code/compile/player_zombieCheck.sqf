@@ -19,25 +19,28 @@ _multiplier = 1;
 			//perform an attack
 			_last = _x getVariable["lastAttack",0];
 			if ((time - _last) > 1) then {
+				_cantSee = [_x,_refObj] call dayz_losCheck;
+				if (!_cantSee) then {
 				_attackResult = [_x, _type] call player_zombieAttack;
 				//diag_log(format["%1 %2 %3", __FILE__, _x, _attackResult]);
-				if (_attackResult == "") then {
-					_x setVariable["lastAttack",time];
-					_attacked = true;
-				}
-				else {
-				//	if (!((moveToCompleted _x) OR (moveToFailed _x))) then {
-					//	if (time - _last > 1) then { 
-					doStop _x; 
-					//};
-				//	};
-				//	if ((moveToCompleted _x) OR (moveToFailed _x)) then {
-						_x setVariable ["myDest", (player modelToWorld (velocity player))];
-						_x setVariable ["targets",[player]];
-						_x doMove (player modelToWorld (velocity player));
-						_x moveTo (player modelToWorld (velocity player));					
-						_x forceSpeed 12;
-				//	};
+					if (_attackResult == "") then {
+						_x setVariable["lastAttack",time];
+						_attacked = true;
+					}
+					else {
+					//	if (!((moveToCompleted _x) OR (moveToFailed _x))) then {
+						//	if (time - _last > 1) then { 
+						doStop _x; 
+						//};
+					//	};
+					//	if ((moveToCompleted _x) OR (moveToFailed _x)) then {
+							_x setVariable ["myDest", (player modelToWorld (velocity player))];
+							_x setVariable ["targets",[player]];
+							_x doMove (player modelToWorld (velocity player));
+							_x moveTo (player modelToWorld (velocity player));					
+							_x forceSpeed 12;
+					//	};
+					};
 				};
 			};
 		}
