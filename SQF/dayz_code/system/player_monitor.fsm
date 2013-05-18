@@ -1083,7 +1083,7 @@ class FSM
        "//Player control loop" \n
        "dayz_monitor1 = [] spawn {" \n
        "	while {true} do { " \n
-       "		sleep (if (call player_zombieCheck) then {0.1} else {0.5});" \n
+       "		sleep (if (call player_zombieCheck) then {dayz_monitorPeriod/3} else {dayz_monitorPeriod});" \n
        "	};" \n
        "};" \n
        "" \n

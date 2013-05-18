@@ -480,6 +480,7 @@ if(!isDedicated) then {
 	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
 	dayz_areaAffect =		5;
+	dayz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
 	dayz_spawnDelay =		300;
