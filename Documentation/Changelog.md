@@ -62,7 +62,7 @@ Serverside affected addons:
 		* [NEW] - 2 New Bat variations used in crafting. (NailedBat,WiredBat)
 		* [NEW] - Wild Spawning of zeds has been redone and readded.
 		* [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps).
-		* [NEW] - Zeds can now push/tackle players to the ground when attacked.
+		* [NEW] - Zeds can now tackle players to the ground when attacked (Zeds stuck player's leg out to trip him/her up).
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
