@@ -57,7 +57,7 @@ Serverside affected addons:
 		* [NEW] - Infected survivor camps. (WIP) 3 - Small, 4 - Medium.
 		* [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 		* [NEW] - Crafting is now added.
-		* [NEW] - Attachment Crafting is the only way to upgrade weapons.
+		* [NEW] - Attachment Crafting is the only way to upgrade weapons. (Attachments are found they need other objects to be crafted before being applyed to weapons)
 		* [NEW] - 2 New Melee weapons.(Bat,Shovel)
 		* [NEW] - 2 New Bat variations used in crafting. (NailedBat,WiredBat)
 		* [NEW] - Wild Spawning of zeds has been redone and readded.
@@ -65,7 +65,7 @@ Serverside affected addons:
 		* [NEW] - Zeds can now push/tackle players to the ground when attacked.
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
-	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die to change from hero to normal to bandit and vice versa)
+	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
 	    * [FIXED] - StudyBody should now work. (Describing wounds accurately)
 	    * [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
 	    * [FIXED] - Hero Skin teleport issue.
@@ -73,17 +73,17 @@ Serverside affected addons:
 	    * [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
 	    * [FIXED] - Zeds spawning underground.
 	    * [FIXED] - Loot spawning underground.
-	    * [FIXED] - Melee weapons having no ammo on login/skin change.
+	    * [FIXED] - Melee weapons having no ammo on login/skin change. (Open close gear menu will always reset ammo count to 10000)
 	    * [FIXED] - Loot Spawns have now been fully resolved. Buildings are now tagged and will not spawn any new loot for 30 minutes.
 	    * [FIXED] - Loot Cleanup has now been fully resolved. Old loot piles will now be cleaned every 60 minutes and no players within 250 meters(WIP). (Server performance boost)
 	    * [FIXED] - Gear menu exploit to force respawn.
 	    * [FIXED] - Optimized some destruction effects for security and performance.
-	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds.
+	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds. (reduces damage while unconscious)
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
 		* [FIXED] - Can no longer brake legs by anything other then players/zeds/falling/getting out of moving vehicle.
 		* [FIXED] - Most Dupeing issues should now be resolved.
 		
-	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - M107_DZ Zed pull range 450 meters (Max sight/hearing from movement forced to 80 meters)
+	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
 	    * [UPDTAED] - ALL loot table weights have been updated.
@@ -125,10 +125,9 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	
-	    * [REMOVED] - M107 and AS50.
-	    * [REMOVED] - Removed all military weapons with any attachment from loot tables.
+	    * [REMOVED] - M107 and AS50. (Removed from game)
+	    * [REMOVED] - Removed all military weapons with any attachment from loot tables. (Not removed from game)
 
-Zed knock down removed due to transition issue with animations working on this for the next patch. (Code left in just commented out) 
 ______________________
 Version 1.7.6.1
 ---------------
