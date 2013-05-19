@@ -21,7 +21,7 @@ _multiplier = 1;
 			//perform an attack
 			_last = _x getVariable["lastAttack", 0];
 			if ((time - _last) > 2.5) then {
-				_cantSee = [_x,_refObj] call dayz_losCheck;
+				_cantSee = [_refObj,_x] call dayz_losCheck;
 				if (!_cantSee) then {
 					_attackResult = [_x,  _type] call player_zombieAttack;
 					//diag_log(format["%1 %2 %3 / as:%4 up:%5 ur:%6 sp:%7",  __FILE__,  _x,  _attackResult,  animationState player,  unitPos player,  unitReady _x,  [0, 0, 0] distance (velocity player)]);
@@ -30,9 +30,17 @@ _multiplier = 1;
 						_attacked = true;
 					}
 					else {
-						doStop _x; 
-						_x doMove (player modelToWorld (velocity player));
-						_x moveTo (player modelToWorld (velocity player));					
+						private [ "_vehicle", "_velo", "_nextPlayerPos" ];
+						doStop _x;
+						_vehicle = (vehicle player);
+						_velo = velocity _vehicle;
+						_nextPlayerPos = getPosATL player;
+						// compute player pos the next second. This works both whether player is bare foot, or in a vehicle, whatever his place.
+						_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)];  
+						_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)];  
+						_nextPlayerPos set [2, 0];  
+						_x doMove _nextPlayerPos;
+						_x moveTo _nextPlayerPos;					
 					};
 				};
 			};
@@ -56,7 +64,7 @@ _multiplier = 1;
 					_chance = [_x, _dist, DAYZ_disAudial] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x, _dist]) + " " + str(_chance));
 					if ((random 1) < _chance) then {
-						_cantSee = [_x, _refObj] call dayz_losCheck;
+						_cantSee = [ _refObj,_x] call dayz_losCheck;
 						if (!_cantSee) then {
 							_targets set [count _targets,  driver _refObj];
 							_group setVariable ["targets", _targets, true];
@@ -72,7 +80,7 @@ _multiplier = 1;
 		};
 		//Sight Activation
 		_targets = _group getVariable ["targets", []];
-		if (_x distance player < 100) then {
+		if (_dist < 100) then {
 			if (!(_refObj in _targets)) then {
 				if (_dist < (DAYZ_disVisual / 2)) then {
 					_chance = [_x, _dist, DAYZ_disVisual] call dayz_losChance;
@@ -86,7 +94,7 @@ _multiplier = 1;
 						_inAngle = [_zPos, _eyeDir, 90, _tPos] call fnc_inAngleSector;
 						if (_inAngle) then {
 							//LOS check
-							_cantSee = [_x, _refObj] call dayz_losCheck;
+							_cantSee = [ _refObj, _x] call dayz_losCheck;
 							//diag_log ("LOS Check: " + str(_cantSee));
 							if (!_cantSee) then {
 								//diag_log ("Within LOS! Target");

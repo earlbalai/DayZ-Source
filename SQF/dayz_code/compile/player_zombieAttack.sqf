@@ -4,10 +4,19 @@ private ["_unit", "_type", "_vehicle", "_speed", "_nextPlayerPos", "_distance", 
 _unit = _this select 0;
 _type = _this select 1;
 _vehicle = (vehicle player);
-_speed = ([0, 0, 0] distance (velocity player));
-_nextPlayerPos = player modelToWorld (velocity player);
-_distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D ;
-_isVehicle = _vehicle != player;
+_velo = velocity _vehicle;
+_speed = ([0, 0, 0] distance (_velo));
+_nextPlayerPos = getPosATL player;
+// compute player pos for the next second. This works both whether player is bare foot, or in a vehicle, whatever his place.
+_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)];  
+_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)];  
+_nextPlayerPos set [2, 0];  
+_distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
+
+/*if (!isNil "toto") then { deleteVehicle toto; sleep 0.01 };
+toto = "Sign_sphere10cm_EP1" createVehicle [0,0,0]; toto setPosATL [_nextPlayerPos select 0,_nextPlayerPos select 1,3.2]; sleep 0.01;*/
+						
+_isVehicle = (_vehicle != player);
 _isSameFloor = false;
 _isStairway = false;
 _isClear = false;
@@ -18,13 +27,13 @@ _gpv_asl = getPosASL _vehicle;
 _hv = _gpv_asl select 2;
 
 if (_type != "zombie") exitWith {"not a zombie"}; // we deal only with zombies in this function
-if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here    //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
-if ((random 25 > 1) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
+if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here     //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
+if (((!_isVehicle) AND {(random 25 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
 
 // check if fight is in stairway or not, 
 if (abs(_hu - _hv) < 1.3) then {
 	_isSameFloor = true;
-	if (abs(_hu - _hv) > 0.15) then { _isStairway = true; };
+	if ((!_isVehicle) AND {(abs(_hu - _hv) > 0.15)}) then { _isStairway = true; };
 };
 
 if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
@@ -39,14 +48,15 @@ _isClear = (_cob == 0 or {!((_ob_arr select 0) isKindOf "All")});
 if (!_isClear) exitWith {"something between"}; // no attack if there is a wall between fighters.
 
 // check relative angle (where is the player/vehicle in the Z sight)
-_deg = [_unit,  player] call BIS_fnc_relativeDirTo;
+_deg = [_unit,  _nextPlayerPos] call BIS_fnc_relativeDirTo;
 if (_deg > 180) then { _deg = _deg - 360; };
 // angle check depends on player speed (very strict if player is still)
 if (abs(_deg) > (15 + 3 * _speed)) exitWith { // we cancel the attack,  but we spin smoothly the Zombie
-	[_unit] spawn { 
+	[_unit, _nextPlayerPos] spawn { 
 		_unit = _this select 0;
+		_plr = _this select 1;
 		for "_i" from 1 to 29 do {
-			_deg = [_unit,  player] call BIS_fnc_relativeDirTo;
+			_deg = [_unit,  _plr] call BIS_fnc_relativeDirTo;
 			if (_deg > 180) then { _deg = _deg - 360; };
 			if (_deg == 0) exitWith{};
 			_sign = _deg/abs(_deg);
@@ -82,8 +92,10 @@ switch true do {
 		};
 	};
 	case (_isVehicle) : {
-		_rnd = ceil(random 10);
-		_move = "ZombieStandingAttack" + str(_rnd);
+		if (_distance < 3.5) then {
+			_rnd = 8;
+			_move = "ZombieStandingAttack" + str(_rnd);
+		};
 	};
 	case (_speed >= 5) : {
 		if (_distance < 2.3) then {
@@ -140,7 +152,7 @@ sleep 0.3;
 if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 
 // player may fall...
-if ((!_isVehicle) and (_speed >= 5.62) ) then { // player hit while running
+if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
 	// stop player
 	_vel = velocity player;
 	player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
@@ -162,39 +174,41 @@ if (_isVehicle) then {
 		if (random 3 < 1) then {
 			player action ["eject",  _vehicle];
 		};
+		diag_log(format["%1: Player ejected from %2", __FILE__, _vehicle]);
 	}
 	else { // vehicle with a compartment
 		_hpList = _vehicle call vehicle_getHitpoints;
 		_hp = _hpList call BIS_fnc_selectRandom;
 		_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-		_damage = random 0.02;
-		if (_wound IN [ "Glass1",  "Glass2",  "Glass3",  "Glass4",  "Glass5",  "Glass6" ]) then {
-			_strH = "hit_" + _wound;
-			_dam = _vehicle getVariable [_strH,  0];
-			_total = _dam + _damage;
-			if (_total >= 1) then { // glass is broken,  so hurt a player in the vehicle (only the driver??)
-				if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
-					_cnt = count (DAYZ_woundHit select 1);
-					_index = floor (random _cnt);
-					_index = (DAYZ_woundHit select 1) select _index;
-					_wound = (DAYZ_woundHit select 0) select _index; 
-				} else {
-					_cnt = count (DAYZ_woundHit_ok select 1);
-					_index = floor (random _cnt);
-					_index = (DAYZ_woundHit_ok select 1) select _index;
-					_wound = (DAYZ_woundHit_ok select 0) select _index; 
-				};
-				_damage = 0.1 + random (0.9);
-				[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
-			} else { // add damage to the vehicle
-				dayzHitV = [_vehicle,  _wound,  _total,  _unit,  "zombie"];
-				publicVariable "dayzHitV";
+		_damage = random 0.1;
+		// add damage to the vehicle
+		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
+		// publish the damage:  (TODO: write a function for this, that will works for local client, remote client for which vehicle is local, and server that checks SV against hit and writes to the hive)
+		dayzHitV = [_vehicle,  _wound,  _damage,  _unit,  "zombie"];
+		publicVariable "dayzHitV";
+		sleep 0.01;
+		_total = _unit getVariable ["hit_"+_wound, 0];
+		if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
+			// glass is broken,  so hurt the player in the vehicle 
+			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
+				_cnt = count (DAYZ_woundHit select 1);
+				_index = floor (random _cnt);
+				_index = (DAYZ_woundHit select 1) select _index;
+				_wound = (DAYZ_woundHit select 0) select _index; 
+			} else {
+				_cnt = count (DAYZ_woundHit_ok select 1);
+				_index = floor (random _cnt);
+				_index = (DAYZ_woundHit_ok select 1) select _index;
+				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
-		}; // fi glass will be damaged
+			_damage = 0.2 + random (0.7);
+			diag_log(format["%1 Player wounded through %4 window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
+			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
+		};
 	}; // fi veh with compartment	
 }
 else { // player by foot
-	_damage = 0.2 + random (0.6);
+	_damage = 0.2 + random (0.7);
 
 	switch true do {
 		case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
