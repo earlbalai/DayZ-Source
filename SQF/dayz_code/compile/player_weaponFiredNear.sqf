@@ -56,7 +56,7 @@ private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","
 					};
 
 					[_unit,4] call fnc_usec_damageUnconscious;
-			} else {;
+			} else {
 				//Just Knocked out
 				[_unit,0.5] call fnc_usec_damageUnconscious;
 			};
