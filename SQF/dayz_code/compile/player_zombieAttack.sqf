@@ -167,7 +167,7 @@ if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
 };
 
 
-// compute damage for vehicle,  or its driver,  or a player
+// compute damage for vehicle, or a player
 if (_isVehicle) then {
 	// eject the player of the open vehicle. There will be no damage in this case
 	if (0 != {_vehicle isKindOf _x} count ["ATV_Base_EP1",  "Motorcycle",  "Bicycle"]) then { 
@@ -184,7 +184,7 @@ if (_isVehicle) then {
 		// add damage to the vehicle
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
 		// publish the damage:  (TODO: write a function for this, that will works for local client, remote client for which vehicle is local, and server that checks SV against hit and writes to the hive)
-		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie"] call fnc_veh_handleDam;
+		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
 		if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
 			// glass is broken,  so hurt the player in the vehicle 
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {

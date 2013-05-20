@@ -6,8 +6,9 @@ or by "PVDZ_veh_SH" PV
 or by zombie_attack
 
 - Function fnc_veh_handleDam
-- [unit, selectionName, damage, source, projectile] call fnc_veh_handleDam;
+- [unit, selectionName, damage, source, projectile, broadcast] call fnc_veh_handleDam;
 - return : updated damage for that part
+broadcast: boolean. if true, then the request will be sent to all players if the vehicle is not local.
 ************************************************************/
 private ["_unit","_selection","_dam","_SVname","_currentDam", "_globalDam"];
 
@@ -45,9 +46,11 @@ if (local _unit) then {
 	};
 }
 else {
-	// vehicle is not local to this client, ask the client which vehicle is local to set damage
-	PVDZ_veh_SH = _this;
-	publicVariable "PVDZ_veh_SH";		
+	if ( (count _this > 5) AND {(_this select 5)}) then {
+		// vehicle is not local to this client, ask the client which vehicle is local to set damage
+		PVDZ_veh_SH = _this;
+		publicVariable "PVDZ_veh_SH";
+	};
 };
 
 _currentDam
