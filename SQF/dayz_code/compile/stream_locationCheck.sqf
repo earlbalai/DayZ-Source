@@ -13,7 +13,7 @@
 		dayz_locationsActive set [count dayz_locationsActive,_location];
 		
 		//Get Town Details
-		_config = 	configFile >> "CfgTownGenerator" >> _configClass;
+		_config = 	configFile >> "CfgTownGeneratorChernarus" >> _configClass;
 		_locHdr = 	configName _config;
 		_position = []+ getArray	(_config >> "position");
 		
@@ -23,7 +23,7 @@
 	} else {
 		if ((_distAct > _distCfg) and (_location in dayz_locationsActive)) then {
 			//Delete Town Objects
-			_config = 	configFile >> "CfgTownGenerator" >> _configClass;
+			_config = 	configFile >> "CfgTownGeneratorChernarus" >> _configClass;
 			_config call stream_locationDel;
 			dayz_locationsActive = dayz_locationsActive - [_location];
 		};

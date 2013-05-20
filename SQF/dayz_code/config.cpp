@@ -25,6 +25,7 @@
 #include "Configs\CfgMarkers.hpp"
 #include "Configs\CfgAmmo.hpp"
 #include "Configs\CfgObjectCompositions.hpp"
+#include "Configs\CfgTownGenerator\CfgTownGeneratorChernarus.hpp"
 
 class CfgPatches {
 	class dayz_code {
