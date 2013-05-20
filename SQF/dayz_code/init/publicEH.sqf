@@ -10,12 +10,12 @@
 "usecMorphine"		addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
 "usecPainK"			addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 "dayzHit" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageHandler};
-"PVDZ_veh_SH" 		addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam};
+"PVDZ_veh_SH" 		addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
+"PVDZ_veh_SF"		addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
 "dayzHideBody"		addPublicVariableEventHandler {hideBody (_this select 1)};
 "dayzGutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 //Moved from isserver
 "dayzSetFuel"		addPublicVariableEventHandler {(_this select 1) spawn local_setFuel};
-"dayzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
 //
 "dayzDelLocal"		addPublicVariableEventHandler {(_this select 1) call object_delLocal};
 //"dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_vehicleEventHandler};
