@@ -33,7 +33,7 @@ if (local _unit) then {
 		_globalDam = 0.99 min (_globalDam + _dam/2/(1+(count (_unit call vehicle_getHitpoints))));
 	}
 	else {
-		_globalDam = 0.99 min (_globalDam + abs(_dam));
+		_globalDam = 0.99 min (_globalDam + _dam / 5);
 	};
 	_unit setDamage _globalDam;
 	diag_log(format["%1: %2 setDamage %3 %4", __FILE__, _unit, _globalDam]);
@@ -48,6 +48,7 @@ if (local _unit) then {
 else {
 	if ( (count _this > 5) AND {(_this select 5)}) then {
 		// vehicle is not local to this client, ask the client which vehicle is local to set damage
+		_this resize 5; // delete "broadcast" boolean 
 		PVDZ_veh_SH = _this;
 		publicVariable "PVDZ_veh_SH";
 	};

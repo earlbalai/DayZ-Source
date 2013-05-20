@@ -84,7 +84,6 @@ _object_inventory = {
 };
 
 _object_damage = {
-
 	//Allow dmg process
 	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
 	_hitpoints = _object call vehicle_getHitpoints;
@@ -96,14 +95,16 @@ _object_damage = {
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 	} forEach _hitpoints;
 	
-	//_object setdamage _damage;
-	
 	//Mark for db update 
 	if (_forced) then {	
 		if (_object in needUpdate_objects) then {
 			needUpdate_objects = needUpdate_objects - [_object];
 		};
-		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
+		if (_objectID == "0") then {
+			_key = format["CHILD:306:%1:%2:%3:",_uid,_array,_damage];
+		} else {
+			_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
+		};
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;
 	} else {		
@@ -112,72 +113,13 @@ _object_damage = {
 			needUpdate_objects set [count needUpdate_objects, _object];
 		};
 	};
-	/*
-	if ((time - _lastUpdate) > 5) then {
-		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-		diag_log ("HIVE: WRITE: "+ str(_key));
-		_key call server_hiveWrite;
-	};
-	*/
 };
 
 _object_killed = {
-	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
-	_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
-	_array = [];
-	{
-		_hit = [_object,_x] call object_getHit;
-		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
-		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
-		_hit = 1;
-		if (!local _object) then {
-			diag_log(format["%1 line %2, Error: object %3 is not local", __FILE__, __LINE__, _object]); 
-		}
-		else {
-			_object setHit ["_selection", _hit];
-		};
-	} forEach _hitpoints;
-	_damage = 1;
-	
-	if (_object in needUpdate_objects) then {
-		needUpdate_objects = needUpdate_objects - [_object];
-	};
-	if (_objectID == "0") then {
-		_key = format["CHILD:306:%1:%2:%3:",_uid,_array,_damage];
-	} else {
-		_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-	};
-	diag_log ("HIVE: WRITE: "+ str(_key));
-	_key call server_hiveWrite;
+	_object setDamage 1;
+	call _object_damage;
 };
 
-_object_repair = {
-	private["_hitpoints","_array","_hit","_selection","_key","_damage"];
-	_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
-	_array = [];
-	{
-		_hit = [_object,_x] call object_getHit;
-		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
-		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
-		if (!local _object) then {
-			diag_log(format["%1 line %2, Error: object %3 is not local", __FILE__, __LINE__, _object]); 
-		}
-		else {
-			_object setHit ["_selection", _hit];
-		};
-	} forEach _hitpoints;
-	
-	if (_object in needUpdate_objects) then {
-		needUpdate_objects = needUpdate_objects - [_object];
-	};
-	_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
-	diag_log ("HIVE: WRITE: "+ str(_key));
-	_key call server_hiveWrite;
-};
-
-// TODO ----------------------
 
 _object setVariable ["lastUpdate",time,true];
 switch (_type) do {
@@ -192,13 +134,10 @@ switch (_type) do {
 	case "gear": {
 		call _object_inventory;
 	};
-	case "damage": {
+	case "damage"; case "repair" : {
 		call _object_damage;
 	};
 	case "killed": {
 		call _object_killed;
-	};
-	case "repair": {
-		call _object_repair;
 	};
 };

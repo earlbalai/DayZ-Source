@@ -11,8 +11,8 @@ _type = typeOf _vehicle;
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
 dayz_myCursorTarget = objNull;
 
+diag_log(format["%1 %2", __FILE__, _this]);
 
-//
 _hasToolbox = 	"ItemToolbox" in items player;
 _section = _part in magazines player;
 
@@ -32,13 +32,8 @@ if (_section and _hasToolbox) then {
 
 		//Fix the part
 		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
-		//vehicle is owned by whoever is in it, so we have to have each client try and fix it
 	
-		dayzSetFix = [_vehicle,_selection,0];
-		publicVariableServer "dayzSetFix";
-		if (local _vehicle) then {
-			dayzSetFix call object_setFixServer;
-		};
+		[_vehicle, _selection, 0, true] call fnc_veh_handleRepair;
 		
 		player playActionNow "Medic";
 		sleep 1;
