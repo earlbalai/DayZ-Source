@@ -46,11 +46,7 @@ while {true} do {
 		diag_log(format["CRASHSPAWNER: Spawning '%1' with loot table '%2' NOW! (%3) at: %4 - (%5)", _crashName, _lootTable, time, str(_position),mapGridPosition _position]);
 
 		_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
-		
-  		//Grass clear system uncomment for clear areas around choppers.
-		//_clutter = createVehicle ["ClutterCutter_EP1", _position, [], 0, "CAN_COLLIDE"];
-		//_clutter setPos _position;
-		
+				
 		// Randomize the direction the wreck is facing
 		_crash setDir round(random 360);
 
@@ -87,9 +83,17 @@ while {true} do {
 			_index = floor(random _cntWeights);
 			_index = _weights select _index;
 			_itemType = _itemTypes select _index;
-			[_itemType select 0, _itemType select 1, _position, (sizeOf _crashModel)/2] call spawn_loot;
+					
+			_position = [_position,(sizeOf _crashModel)/2,(sizeOf _crashModel),0,0,0,0] call BIS_fnc_findSafePos;
+			_position = [_position select 0,_position select 1,0];
+			
+			[_itemType select 0, _itemType select 1, _position, (sizeOf _crashModel)] call spawn_loot;
+			
+			 //Grass clear system uncomment for clear areas around choppers loot.
+			_clutter = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
+			_clutter setPos _position;
 
-			diag_log(format["CRASHSPAWNER: Loot spawn at '%1' with loot table '%2 - %3'", _crashName, str(_itemType)]); 
+			diag_log(format["CRASHSPAWNER: Loot spawn at '%1 - %3' with loot table '%2'", _crashName, str(_itemType),_position]); 
 
 			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
 			_nearby = _position nearObjects ["ReammoBox", sizeOf(_crashModel)];
