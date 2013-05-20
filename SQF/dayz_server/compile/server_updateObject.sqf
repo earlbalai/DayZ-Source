@@ -94,7 +94,6 @@ _object_damage = {
 		_hit = [_object,_x] call object_getHit;
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
-		//_object setHit ["_selection", _hit]
 	} forEach _hitpoints;
 	
 	//_object setdamage _damage;
@@ -132,7 +131,12 @@ _object_killed = {
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
 		_hit = 1;
-		_object setHit ["_selection", _hit]
+		if (!local _object) then {
+			diag_log(format["%1 line %2, Error: object %3 is not local", __FILE__, __LINE__, _object]); 
+		}
+		else {
+			_object setHit ["_selection", _hit];
+		};
 	} forEach _hitpoints;
 	_damage = 1;
 	
@@ -157,7 +161,12 @@ _object_repair = {
 		_hit = [_object,_x] call object_getHit;
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 		if (_hit > 0) then {_array set [count _array,[_selection,_hit]]};
-		_object setHit ["_selection", _hit]
+		if (!local _object) then {
+			diag_log(format["%1 line %2, Error: object %3 is not local", __FILE__, __LINE__, _object]); 
+		}
+		else {
+			_object setHit ["_selection", _hit];
+		};
 	} forEach _hitpoints;
 	
 	if (_object in needUpdate_objects) then {

@@ -10,7 +10,7 @@ if (cursorTarget isKindOf "AllVehicles") then {
 	dayzUpdateVehicle = [_cursorTarget,"all"];
 };
 
-publicVariable "dayzUpdateVehicle";
+publicVariableServer "dayzUpdateVehicle";
 if (isServer) then {
 	dayzUpdateVehicle call server_updateObject;
 };

@@ -7,6 +7,8 @@ _damage =		_this select 2;
 if (_selection != "" and local _unit) then {
 	_strH = "hit_" + (_selection);
 	_unit setHit[_selection,_damage];
+	diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, _damage]);
+
 	//player sidechat str _damage;
 	_unit setVariable [_strH,_damage,true];
 	if (_damage == 0) then {
@@ -14,14 +16,14 @@ if (_selection != "" and local _unit) then {
 			[_unit,"repair"] call server_updateObject; 
 		} else { 
 			dayzUpdateVehicle = [_unit,"repair"]; 
-			publicVariable "dayzUpdateVehicle"; 
+			publicVariableServer "dayzUpdateVehicle"; 
 		};
 	} else {
 		if (isServer) then { 
 			[_unit,"damage"] call server_updateObject; 
 		} else { 
 			dayzUpdateVehicle = [_unit,"damage"]; 
-			publicVariable "dayzUpdateVehicle"; 
+			publicVariableServer "dayzUpdateVehicle"; 
 		};
 	};
 };

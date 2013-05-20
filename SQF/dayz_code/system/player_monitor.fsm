@@ -1215,7 +1215,7 @@ class FSM
        "};" \n
        "" \n
        "// TODO: questionably" \n
-       "{ _x call fnc_vehicleEventHandler; } forEach vehicles;" \n
+       "{ _x call fnc_veh_ResetEH; } forEach vehicles;" \n
        "" \n
        "private[""_fadeFire""];" \n
        "{" \n
