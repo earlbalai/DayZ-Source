@@ -8,8 +8,8 @@ _velo = velocity _vehicle;
 _speed = ([0, 0, 0] distance (_velo));
 _nextPlayerPos = getPosATL player;
 // compute player pos for the next second. This works both whether player is bare foot, or in a vehicle, whatever his place.
-_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)];  
-_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)];  
+_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)/2];  
+_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)/2];  
 _nextPlayerPos set [2, 0];  
 _distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
 
@@ -167,7 +167,7 @@ if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
 };
 
 
-// compute damage for vehicle, or a player
+// compute damage for vehicle and/or the player
 if (_isVehicle) then {
 	// eject the player of the open vehicle. There will be no damage in this case
 	if (0 != {_vehicle isKindOf _x} count ["ATV_Base_EP1",  "Motorcycle",  "Bicycle"]) then { 
@@ -181,9 +181,8 @@ if (_isVehicle) then {
 		_hp = _hpList call BIS_fnc_selectRandom;
 		_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
 		_damage = random 0.1;
-		// add damage to the vehicle
+		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
-		// publish the damage:  (TODO: write a function for this, that will works for local client, remote client for which vehicle is local, and server that checks SV against hit and writes to the hive)
 		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
 		if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
 			// glass is broken,  so hurt the player in the vehicle 
@@ -199,7 +198,7 @@ if (_isVehicle) then {
 				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
 			_damage = 0.2 + random (0.7);
-			diag_log(format["%1 Player wounded through %4 window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
+			diag_log(format["%1 Player wounded through ""%4"" vehicle window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
 			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
 		};
 	}; // fi veh with compartment	
