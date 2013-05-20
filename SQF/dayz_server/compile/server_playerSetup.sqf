@@ -18,6 +18,12 @@ if (_playerID == "") exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, no player ID: " + str(_playerObj));
 };
 
+// Cancel any login until server_monitor terminates. 
+// This is mandatory since all vehicles must be spawned before the first players spawn on the map.
+// Otherwise, all vehicle event handlers won't be created on players' client side.
+if (isNil "sm_done") exitWith { diag_log ("Login cancelled, server is not ready. " + str(_playerObj) + " Type: " + (typeOf _playerObj)); };
+
+
 private["_dummy"];
 _dummy = getPlayerUID _playerObj;
 if ( _playerID != _dummy ) then { 

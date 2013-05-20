@@ -35,7 +35,7 @@ if (_section and _hasToolbox) then {
 		//vehicle is owned by whoever is in it, so we have to have each client try and fix it
 	
 		dayzSetFix = [_vehicle,_selection,0];
-		publicVariable "dayzSetFix";
+		publicVariableServer "dayzSetFix";
 		if (local _vehicle) then {
 			dayzSetFix call object_setFixServer;
 		};
@@ -78,6 +78,6 @@ if (_allFixed) then {
 	if (isServer) then {
 		dayzUpdateVehicle call server_updateObject;
 	} else {
-		publicVariable "dayzUpdateVehicle";
+		publicVariableServer "dayzUpdateVehicle";
 	};
 };

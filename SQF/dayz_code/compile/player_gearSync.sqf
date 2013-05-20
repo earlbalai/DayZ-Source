@@ -4,7 +4,7 @@ _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle",
 {
 	//["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
 	dayzUpdateVehicle = [_x,"gear"];
-	publicVariable "dayzUpdateVehicle";
+	publicVariableServer "dayzUpdateVehicle";
 	
 } foreach _objects;
 

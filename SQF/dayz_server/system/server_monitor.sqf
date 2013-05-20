@@ -178,7 +178,7 @@ diag_log "HIVE: Starting";
 					} forEach _hitpoints;
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
-					_object call fnc_vehicleEventHandler;
+					_object call fnc_veh_ResetEH;
 					//Updated object position if moved
 					if (!_wsDone) then {
 						[_object, "position"] call server_updateObject;
@@ -199,7 +199,6 @@ waituntil{isNil "sm_done"}; // prevent server_monitor be called twice (bug durin
 
 if (isServer and isNil "sm_done") then {
 	private["_i","_hiveResponse","_key","_objectArray","_objectCount"];
-	sm_done = false;
 	
 	for "_i" from 1 to 5 do {
 		diag_log "HIVE: trying to get objects";
@@ -312,7 +311,7 @@ if (isServer and isNil "sm_done") then {
 				} forEach _hitpoints;
 				_entity setvelocity [0,0,1];
 				_entity setFuel _fuel;
-				_entity call fnc_vehicleEventHandler;
+				_entity call fnc_veh_ResetEH;
 			};
 			diag_log (format["VEHICLE %1 %2 at %3, damage=%4, fuel=%5",
 				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, _damage, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 

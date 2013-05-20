@@ -91,7 +91,7 @@ switch true do {
 			_move = "ZombieStandingAttack" + str(_rnd);
 		};
 	};
-	case (_isVehicle) : {
+	case (_isVehicle AND {(_distance > 2.2)}) : { // enable attack if Z is between 2.2 and 3.5. Other cases are handled in "default"
 		if (_distance < 3.5) then {
 			_rnd = 8;
 			_move = "ZombieStandingAttack" + str(_rnd);
@@ -184,10 +184,7 @@ if (_isVehicle) then {
 		// add damage to the vehicle
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
 		// publish the damage:  (TODO: write a function for this, that will works for local client, remote client for which vehicle is local, and server that checks SV against hit and writes to the hive)
-		dayzHitV = [_vehicle,  _wound,  _damage,  _unit,  "zombie"];
-		publicVariable "dayzHitV";
-		sleep 0.01;
-		_total = _unit getVariable ["hit_"+_wound, 0];
+		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie"] call fnc_veh_handleDam;
 		if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
 			// glass is broken,  so hurt the player in the vehicle 
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {

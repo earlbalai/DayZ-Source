@@ -10,7 +10,7 @@
 "usecMorphine"		addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
 "usecPainK"			addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 "dayzHit" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageHandler};
-"dayzHitV" 			addPublicVariableEventHandler {(_this select 1) call fnc_usec_damageVehicle};
+"PVDZ_veh_SH" 		addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam};
 "dayzHideBody"		addPublicVariableEventHandler {hideBody (_this select 1)};
 "dayzGutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
 //Moved from isserver
@@ -18,7 +18,7 @@
 "dayzSetFix"		addPublicVariableEventHandler {(_this select 1) call object_setFixServer};
 //
 "dayzDelLocal"		addPublicVariableEventHandler {(_this select 1) call object_delLocal};
-"dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_vehicleEventHandler};
+//"dayzVehicleInit"	addPublicVariableEventHandler {(_this select 1) call fnc_vehicleEventHandler};
 "dayzHumanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 "dayz_serverObjectMonitor"		addPublicVariableEventHandler {dayz_serverObjectMonitor = dayz_safety};
 "dayzInfectedCamps"		addPublicVariableEventHandler {(_this select 1) spawn infectedcamps};

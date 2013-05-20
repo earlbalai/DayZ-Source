@@ -10,6 +10,12 @@ _worldspace = [];
 
 if (_playerName == '__SERVER__' || _playerID == '' || local player) exitWith {};
 
+// Cancel any login until server_monitor terminates. 
+// This is mandatory since all vehicles must be spawned before the first players spawn on the map.
+// Otherwise, all vehicle event handlers won't be created on players' client side.
+if (isNil "sm_done") exitWith { diag_log ("Login cancelled, server is not ready. " + str(_playerObj)); };
+
+
 if (count _this > 2) then {
 	dayz_players = dayz_players - [_this select 2];
 };
