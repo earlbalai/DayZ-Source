@@ -167,6 +167,10 @@ if (_damage > 0.4) then {	//0.25
 		if (_ammo == "zombie") then {
 			_rndInfection = random (_damage - _bloodPercentage);
 			_hitInfection = ((exp _rndInfection) > 1.6);
+			if (_newtypezed) then {
+				_rndInfection = random (_damage - _bloodPercentage);
+				_hitInfection = ((exp _rndInfection * 3) > 1.6);
+			};
 			if (_hitInfection) then {
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
