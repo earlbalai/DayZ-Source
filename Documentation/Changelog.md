@@ -67,7 +67,7 @@ Serverside affected addons:
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
 	    * [FIXED] - StudyBody should now work. (Describing wounds accurately)
-	    * [FIXED] - Crashsite loot should now spawn correct for all types of Crash model.
+	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash model.
 	    * [FIXED] - Hero Skin teleport issue.
 	    * [FIXED] - BAF Bags so they don't set on fire. :-) (no moaning it was a bug)
 	    * [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
@@ -80,7 +80,7 @@ Serverside affected addons:
 	    * [FIXED] - Optimized some destruction effects for security and performance.
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds. (reduces damage while unconscious)
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
-	    * [FIXED] - Can no longer brake legs by anything other then players/zeds/falling/getting out of moving vehicle.
+	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
 	    * [FIXED] - Most Dupeing issues should now be resolved.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
