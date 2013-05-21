@@ -174,7 +174,7 @@ diag_log "HIVE: Starting";
 						_selection = _x select 0;
 						_dam = _x select 1;
 						if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-						[_object,_selection,_dam] call object_setFixServer;
+						[_object,_selection,_dam] call fnc_veh_handleRepair;
 					} forEach _hitpoints;
 					_object setvelocity [0,0,1];
 					_object setFuel _fuel;
