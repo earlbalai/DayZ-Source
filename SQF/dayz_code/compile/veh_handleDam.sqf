@@ -20,7 +20,7 @@ _SVname = "hit_" + _selection;
 
 diag_log(format["%1 this:%2", __FILE__, _this]);
 
-_currentDam = if (_selection != "") then {_unit getVariable [_SVname, 1]} else {damage _unit};
+_currentDam = if (_selection != "") then {_unit getVariable [_SVname, 0]} else {damage _unit};
 if (local _unit) then {
 	_globalDam = damage _unit;
 	if (_selection != "") then {
@@ -33,7 +33,7 @@ if (local _unit) then {
 		_globalDam = 0.99 min (_globalDam + _dam/2/(1+(count (_unit call vehicle_getHitpoints))));
 	}
 	else {
-		_globalDam = 0.99 min (_globalDam + _dam / 5);
+		_globalDam = 0.99 min (_globalDam + _dam / 20);
 	};
 	_unit setDamage _globalDam;
 	diag_log(format["%1: %2 setDamage %3 %4", __FILE__, _unit, _globalDam]);
