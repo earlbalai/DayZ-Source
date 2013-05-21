@@ -9,6 +9,7 @@ _near = false;
 _multiplier = 1;
 
 {
+
 	_type = "zombie";
 	if (alive _x) then {
 		private["_dist"];
@@ -28,24 +29,22 @@ _multiplier = 1;
 					if (_attackResult == "") then {
 						_x setVariable["lastAttack", time];
 						_attacked = true;
-					}
-					else {
-						private [ "_vehicle", "_velo", "_nextPlayerPos" ];
-						doStop _x;
-						_vehicle = (vehicle player);
-						_velo = velocity _vehicle;
-						_nextPlayerPos = getPosATL player;
+					//} else {
+						//private [ "_vehicle", "_velo", "_nextPlayerPos" ];
+						//doStop _x;
+						//_vehicle = (vehicle player);
+						//_velo = velocity _vehicle;
+						//_nextPlayerPos = getPosATL player;
 						// compute player pos the next second. This works both whether player is bare foot, or in a vehicle, whatever his place.
-						_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)];  
-						_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)];  
-						_nextPlayerPos set [2, 0];  
-						_x doMove _nextPlayerPos;
-						_x moveTo _nextPlayerPos;					
+						//_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)];  
+						//_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)];  
+						//_nextPlayerPos set [2, 0];  
+					    //_x doMove _nextPlayerPos;
+						//_x moveTo _nextPlayerPos;					
 					};
 				};
 			};
-		}
-		else {
+		} else {
 			if (speed _x < 4) then {
 				[_x, "idle", _chance * 1.4, true] call dayz_zombieSpeak;
 			} else {
@@ -109,6 +108,8 @@ _multiplier = 1;
 	};
 } forEach _listTalk;
 
+
+
 if (_attacked) then {
 	if (r_player_unconscious) then {
 		[_refObj, "scream", 3, false] call dayz_zombieSpeak;
@@ -123,3 +124,4 @@ if (_attacked) then {
 
 // return true if attacked or near. if so,  player_monitor will perform its ridiculous 'while true' loop faster.
 (_attacked OR _near)
+
