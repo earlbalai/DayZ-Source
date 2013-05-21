@@ -1,5 +1,6 @@
 
 private ["_unit", "_type", "_vehicle", "_speed", "_nextPlayerPos", "_distance", "_isVehicle", "_isSameFloor", "_isStairway", "_isClear", "_epu", "_epv", "_gpu_asl", "_gpv_asl", "_areaAffect", "_hu", "_hv", "_ob_arr", "_cob", "_deg", "_sign", "_a", "_rnd", "_move", "__FILE__", "_vel", "_hpList", "_hp", "_wound", "_damage", "_strH", "_dam", "_total", "_cnt", "_index"];
+_start = diag_tickTime;
 
 _unit = _this select 0;
 _type = _this select 1;
@@ -232,4 +233,5 @@ else { // player by foot
 	};
 }; // fi player by foot
 
-""
+_stop = diag_tickTime;
+diag_log format ["%2 Execution Time: %1",_stop - _start, __FILE__];
