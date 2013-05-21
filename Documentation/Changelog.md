@@ -39,7 +39,7 @@ Serverside affected addons:
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 Crash site model.
 	    * [NEW] - 2 New background tracks.
-	    * [NEW] - 6 New decayed Zeds - Harder to kill and Do more damage.
+	    * [NEW] - 6 New "Viral" zeds - They are harder to kill, they do more damage, and they have a higher chance of causing an infection... be afraid.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)).
 	    * [NEW] - "Sleep" at tents changed to "Rest". (WIP)
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
