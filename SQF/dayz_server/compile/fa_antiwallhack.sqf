@@ -1,4 +1,4 @@
-private ["_antiwallhack","_houseType","_houseList","_tmp","_patchList","_house","_o"];
+private ["_antiwallhack","_houseType","_houseList","_tmp","_patchList","_house","_o", "_nbhouses", "_nbpatchs"];
 
 _antiwallhack=[
 	[
@@ -22,6 +22,8 @@ _antiwallhack=[
 ];
 
 
+_nbhouses = 0;
+_nbpatchs = 0;
 {
 	_houseType = _x select 0;
 	_houseList = _x select 1;
@@ -37,6 +39,7 @@ _antiwallhack=[
 	};
 	_patchList = _x select 2;
 	{
+		_nbhouses = _nbhouses +1;
 		_house = _x;
 		{
 			_pos = +(_x);
@@ -45,7 +48,11 @@ _antiwallhack=[
 			_o = (_x select 3) createVehicle _pos;
 			_o setDir ((getDir _house)+(_x select 4));
 			_o setPosATL _pos;
+			_nbpatchs = _nbpatchs +1;
 		} forEach _patchList;
 		diag_log(format["::: %1 %2", _houseType, getPosATL _house ]);
 	} forEach _houseList;
 } forEach antiwallhack;
+
+diag_log(format["%1: %2 buildings patched with %3 objects", __FILE__, _nbhouses, _nbpatchs]);
+

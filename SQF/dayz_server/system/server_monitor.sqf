@@ -428,5 +428,8 @@ if (isServer and isNil "sm_done") then {
 	dayzInfectedCamps = Server_InfectedCamps;
 	publicVariable "dayzInfectedCamps";
 
+	// antiwallhack
+	call compile "\z\addons\dayz_server\compile\fa_antiwallhack.sqf";
+	
 	sm_done = true;
 };	
