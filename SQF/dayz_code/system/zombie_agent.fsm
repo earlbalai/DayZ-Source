@@ -5,7 +5,7 @@ item0[] = {"init",0,250,-200.000000,-250.000000,-100.000000,-200.000000,0.000000
 item1[] = {"End",1,250,175.000000,-250.000000,275.000000,-200.000000,0.000000,"End"};
 item2[] = {"wait",4,218,-75.000000,0.000000,25.000000,50.000000,0.000000,"wait"};
 item3[] = {"Looking_for_Targ",2,250,-75.000000,75.000000,25.000000,125.000000,0.000000,"Looking for" \n "Target"};
-item4[] = {"Not_Alive",4,218,50.000000,300.000000,150.000000,350.000000,5.000000,"Not" \n "Alive"};
+item4[] = {"Not_Alive",4,4314,50.000000,300.000000,150.000000,350.000000,5.000000,"Not" \n "Alive"};
 item5[] = {"Nobody_Near",4,218,50.000000,625.000000,150.000000,675.000000,4.000000,"Nobody" \n "Near"};
 item6[] = {"loiter",4,218,-325.000000,0.000000,-225.000000,50.000000,0.000000,"loiter"};
 item7[] = {"Loiter",2,250,-325.000000,75.000000,-225.000000,125.000000,0.000000,"Loiter"};
@@ -24,7 +24,7 @@ item19[] = {"",7,210,-29.000006,146.000000,-20.999996,154.000000,0.000000,""};
 item20[] = {"",7,210,-29.000006,196.000000,-20.999996,204.000000,0.000000,""};
 item21[] = {"",7,210,-104.000000,196.000000,-95.999992,204.000000,0.000000,""};
 item22[] = {"Time_Check",4,218,-450.000000,75.000000,-350.000000,125.000000,0.000000,"Time" \n "Check"};
-item23[] = {"not__Close_",4,4314,-275.000000,300.000000,-175.000000,350.000000,1.000000,"not " \n "Close" \n ""};
+item23[] = {"not__Close_",4,218,-275.000000,300.000000,-175.000000,350.000000,1.000000,"not " \n "Close" \n ""};
 item24[] = {"No_Target",4,218,-275.000000,450.000000,-175.000000,500.000000,2.000000,"No" \n "Target"};
 item25[] = {"",7,210,-479.000000,471.000031,-471.000000,479.000000,0.000000,""};
 item26[] = {"",7,210,-479.000000,146.000000,-471.000000,154.000000,0.000000,""};
@@ -155,8 +155,8 @@ link81[] = {63,64};
 link82[] = {64,61};
 link83[] = {65,63};
 link84[] = {68,27};
-globals[] = {25.000000,1,0,0,0,640,480,1,146,6316128,1,-615.708191,419.217316,549.904541,-191.442520,839,601,1};
-window[] = {2,-1,-1,-32000,-32000,802,22,1230,22,3,856};
+globals[] = {25.000000,1,0,0,0,640,480,1,146,6316128,1,-615.708191,419.217316,549.904541,-191.442520,838,911,1};
+window[] = {2,-1,-1,-1,-1,830,50,1258,50,3,856};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -241,7 +241,8 @@ class FSM
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");" \n
+           "dayz_combatSpawnZombies = dayz_combatSpawnZombies - 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "Nobody_Near">*/
@@ -329,7 +330,8 @@ class FSM
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");" \n
+           "dayz_combatSpawnZombies = dayz_combatSpawnZombies - 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "Nobody_Near">*/
@@ -520,7 +522,8 @@ class FSM
           to="Cleanup_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log (""Not Alive"");" \n
+           "dayz_combatSpawnZombies = dayz_combatSpawnZombies - 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "Nobody_Near">*/
