@@ -3,7 +3,7 @@
 // returns true if agent is not null
 // "_this select 3" and "_this select 4"  may be modified
 
-private ["_position","_this","_doLoiter","_unitTypes","_recyAgt","_maxtoCreate","_agent","_list","_x","__FILE__","_agtPos","_type","_radius","_method","_loot","_array","_rnd","_lootType","_index","_weights","_myDest","_newDest","_id", "_recycled"];
+private ["_position","_this","_doLoiter","_unitTypes","_recyAgt","_maxtoCreate","_agent","_list","_x","__FILE__","_agtPos","_type","_radius","_method","_loot","_array","_rnd","_lootType","_index","_weights","_myDest","_newDest","_id", "_recycled", "_distance"];
 
 _position = _this select 0;
 _doLoiter = _this select 1; // wander around
@@ -11,6 +11,11 @@ _unitTypes = _this select 2; // class of wanted models
 _recyAgt = []; if (count _this > 3) then { _recyAgt = _this select 3; };
 _maxtoCreate = 99; if (count _this > 4) then { _maxtoCreate = _this select 4; };
 
+_distance = [_position, player] call BIS_fnc_distance2D;
+if (_distance < dayz_safeDistPlr) exitWith {
+	diag_log("%1: won't do that, too close from player (%2m), _this:%3", __FILE__, round(_distance), _this);
+	false
+};
 _agent = objNull;
 if (count _unitTypes == 0) then {
 	_unitTypes = []+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
