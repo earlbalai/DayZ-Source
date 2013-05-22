@@ -178,10 +178,12 @@ if (_isVehicle) then {
 		diag_log(format["%1: Player ejected from %2", __FILE__, _vehicle]);
 	}
 	else { // vehicle with a compartment
-		_hpList = _vehicle call vehicle_getHitpoints;
-		_hp = _hpList call BIS_fnc_selectRandom;
-		_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-		_wound = _this select 2;
+		_wound = _this select 2; // what is this? wound linked to Z attack?
+		if (isNil "_wound") then {
+			_hpList = _vehicle call vehicle_getHitpoints;
+			_hp = _hpList call BIS_fnc_selectRandom;
+			_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
+		};
 		_damage = random 0.1;
 		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);

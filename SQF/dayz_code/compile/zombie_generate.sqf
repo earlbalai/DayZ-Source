@@ -21,12 +21,13 @@ if (count _unitTypes == 0) then {
 	_unitTypes = []+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
  
-_unitTypes = _unitTypes + _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
+_unitTypes = _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
 
-// Build _list so that it contains 3 samples of unitTypes (zombie model)
-_list = [_unitTypes select (floor(random(count _unitTypes))),
+// Build _list so that it contains 2 samples of unitTypes (zombie model)
+_list = [
 	_unitTypes select (floor(random(count _unitTypes))),
-	_unitTypes select (floor(random(count _unitTypes)))];
+	_unitTypes select (floor(random(count _unitTypes))),
+];
 // search available recyclable zombies which type is among these samples
 {
 	if (typeOf (_x getVariable ["agentObject",objNull]) IN _list) exitWith {
