@@ -27,9 +27,14 @@ _findAgt = {
 	
 	{ 
 		_y = _x getVariable ["agentObject",objNull];
-		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
-			if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then { 
-				recyclableAgt set [count recyclableAgt, _y];
+		if (isNil "_y") then {
+			diag_log (format["%1: Error, agent %2 does not have 'agentObject' defined", __FILE__, _x]);
+		}
+		else {
+			if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
+				if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then { 
+					recyclableAgt set [count recyclableAgt, _y];
+				};
 			};
 		};
 	} forEach agents;

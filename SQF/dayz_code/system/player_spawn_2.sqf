@@ -34,16 +34,19 @@ while {true} do {
 	if (_distance < 500) then {
 		_randomSpot = false;
 	};
-	_distance = _mylastPos distance _tempPos;
-	if (_distance > 400) then {
-		_randomSpot = false;
-	};
-	
+	if (!isNil "_mylastPos") then {
+		_distance = _mylastPos distance _tempPos;
+		if (_distance > 400) then {
+			_randomSpot = false;
+		};
+	};	
 	if (_randomSpot) then {
 		_mylastPos = _tempPos;
 	};
 	
-	dayz_mylastPos = _mylastPos;
+	if (!isNil "_mylastPos") then {
+		dayz_mylastPos = _mylastPos;
+	};
 	dayz_areaAffect = _size;
 	
 	//CheckVehicle
@@ -327,17 +330,19 @@ while {true} do {
 		player setVariable["lastPos",[]];
 	};
 	
-	_lastPos = getPosATL player;	
-	if (player == vehicle player) then {
-		if (_mylastPos distance _lastPos > 200) then {
-			if (alive player) then {
-				player setPosATL _mylastPos;
+	_lastPos = getPosATL player;
+	if (!isNil "_mylastPos") then {
+		if (player == vehicle player) then {
+			if (_mylastPos distance _lastPos > 200) then {
+				if (alive player) then {
+					player setPosATL _mylastPos;
+				};
 			};
-		};
-	} else {
-		if (_mylastPos distance _lastPos > 800) then {
-			if (alive player) then {
-				player setPosATL _mylastPos;
+		} else {
+			if (_mylastPos distance _lastPos > 800) then {
+				if (alive player) then {
+					player setPosATL _mylastPos;
+				};
 			};
 		};
 	};

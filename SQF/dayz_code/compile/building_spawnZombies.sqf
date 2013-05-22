@@ -84,7 +84,8 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 	_clean = {alive _x} count (getPosATL _obj nearEntities ["zZombie_Base", _halfBuildingSize]) == 0;
 	if (_clean) then {
 		_posList = getArray (_config >> "lootPos");
-		for [{_num = _num0}, {(count _posList > 0) AND (_num >= 2 * _num0 / 3) AND (_num > 0)}, {}] do {
+		if ((!isNil "_posList") AND {(count _posList > 0)}) then { 
+			for [{_num = _num0}, {(count _posList > 0) AND (_num >= 2 * _num0 / 3) AND (_num > 0)}, {}] do {
 			_bsz_pos = _posList call BIS_fnc_selectRandom;
 			_posList = _posList - [_bsz_pos];
 			if (count _bsz_pos >= 2) then { // sometime pos from config is empty :(
@@ -100,6 +101,7 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 					};
 				};
 			};
+		};
 		};
 	};
 
