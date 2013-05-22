@@ -10,7 +10,7 @@ _playerID =	getPlayerUID player;
 //Send Death Notice
 //["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
 		dayzDeath = [dayz_characterID,0,_body,_playerID];
-		publicVariable "dayzDeath";
+		publicVariableServer "dayzDeath";
 
 _id = [player,20,true,getPosATL player] spawn player_alertZombies;
 
