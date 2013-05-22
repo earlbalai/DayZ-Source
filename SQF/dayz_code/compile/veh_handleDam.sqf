@@ -20,10 +20,10 @@ _SVname = "hit_" + _selection;
 
 diag_log(format["%1 this:%2", __FILE__, _this]);
 
-_currentDam = if (_selection != "") then {_unit getVariable [_SVname, 0]} else {damage _unit};
+_currentDam = if ((!isNil "_selection") AND {(_selection != "")}) then {_unit getVariable [_SVname, 0]} else {damage _unit};
 if (local _unit) then {
 	_globalDam = damage _unit;
-	if (_selection != "") then {
+	if ((!isNil "_selection") AND {(_selection != "")}) then {
 		// only local unit can set the damage of a vehicle part
 		_currentDam = 0.99 min (_currentDam + _dam);
 		_unit setVariable [_SVname, _currentDam, true];

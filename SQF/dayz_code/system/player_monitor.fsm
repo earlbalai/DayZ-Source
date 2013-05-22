@@ -466,7 +466,7 @@ class FSM
        "_msg = [];" \n
        "" \n
        "dayzLogin = [_playerUID,player];" \n
-       "publicVariable ""dayzLogin"";" \n
+       "publicVariableServer ""dayzLogin"";" \n
        "" \n
        "if (isServer) then {" \n
        "	dayzLogin call server_playerLogin;" \n
@@ -701,7 +701,7 @@ class FSM
        "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
        "" \n
        "dayzLogin2 = [_charID,player,_playerUID];" \n
-       "publicVariable ""dayzLogin2"";" \n
+       "publicVariableServer ""dayzLogin2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.8;" \n
@@ -1260,7 +1260,7 @@ class FSM
        "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
        "" \n
        "dayzLoginRecord = [_playerUID,_charID,0];" \n
-       "publicVariable ""dayzLoginRecord"";" \n
+       "publicVariableServer ""dayzLoginRecord"";" \n
        "" \n
        "endLoadingScreen;" \n
        ""/*%FSM</STATEINIT""">*/;

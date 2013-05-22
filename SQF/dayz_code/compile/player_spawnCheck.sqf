@@ -1,5 +1,4 @@
 
-
 private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point"];
 
 // compute building footprint just to check if it could hide a Zombie
@@ -27,9 +26,11 @@ _findAgt = {
 	
 	{ 
 		_y = _x getVariable ["agentObject",objNull];
-		if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
-			if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then { 
-				recyclableAgt set [count recyclableAgt, _y];
+		if (!isNil "_y") then {
+			if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
+				if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then { 
+					recyclableAgt set [count recyclableAgt, _y];
+				};
 			};
 		};
 	} forEach agents;
@@ -203,7 +204,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 				else {
 					_zombieSpawnCtr = _zombieSpawnCtr +1;
 				};
-	//			diag_log (format["%1 building. %2", __FILE__, _x]);
+				//diag_log (format["%1 building. %2", __FILE__, _x]);
 			};
 		};
 	};

@@ -254,7 +254,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_studybody;
 		s_player_studybody = -1;
 	};
-
+/*
 	//Dog
 	if (_isDog and _isAlive and (_hasRawMeat) and _canDo and _ownerID == "0" and player getVariable ["dogID", 0] == 0) then {
 		if (s_player_tamedog < 0) then {
@@ -308,6 +308,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_followdog;
 		s_player_followdog = -1;
 	};
+	*/
 } else {
 	//Engineering
 	{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
@@ -343,8 +344,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel5 = -1;
 
 	//Dog
-	player removeAction s_player_tamedog;
-	s_player_tamedog = -1;
+	//player removeAction s_player_tamedog;
+	//s_player_tamedog = -1;
 	player removeAction s_player_feeddog;
 	s_player_feeddog = -1;
 	player removeAction s_player_waterdog;
