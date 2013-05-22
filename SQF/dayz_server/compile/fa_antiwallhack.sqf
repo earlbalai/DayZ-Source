@@ -52,7 +52,7 @@ _nbpatchs = 0;
 		} forEach _patchList;
 		diag_log(format["::: %1 %2", _houseType, getPosATL _house ]);
 	} forEach _houseList;
-} forEach antiwallhack;
+} forEach _antiwallhack;
 
 diag_log(format["%1: %2 buildings patched with %3 objects", __FILE__, _nbhouses, _nbpatchs]);
 
