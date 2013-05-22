@@ -15,12 +15,14 @@ private ["_cantSee","_zPos","_fov","_safeDistance","_farDistance","_isok","_eye"
 _cantSee = {
 	private ["_zPos","_fov","_safeDistance","_farDistance","_isok","_eye","_deg"];
 
-	_zPos = ATLtoASL +(_this select 0); 
+	_isok = true;
+	_zPos = +(_this select 0); 
+	if (count _zPos < 3) exitWith {_isok};
+	_zPos = ATLtoASL _zPos; 
 	_fov = _this select 1; // players half field of view
 	_safeDistance = _this select 2; // minimum distance. closer is wrong
 	_farDistance = _this select 3; // distance further we won't check
 	_zPos set [2, (_zPos select 2) + 0.5]; // 0.5 = Z height (the logic will think it could hide behind a tent)
-	_isok = true;
 	{
 		if (_x distance _zPos < _farDistance) then {
 			if (_x distance _zPos < _safeDistance) then {
@@ -83,7 +85,7 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 	//Add Internal Zombies
 	_clean = {alive _x} count (getPosATL _obj nearEntities ["zZombie_Base", _halfBuildingSize]) == 0;
 	if (_clean) then {
-		_posList = getArray (_config >> "lootPos");
+		_posList = [] + (getArray (_config >> "lootPos"));
 		if ((!isNil "_posList") AND {(count _posList > 0)}) then { 
 			for [{_num = _num0}, {(count _posList > 0) AND (_num >= 2 * _num0 / 3) AND (_num > 0)}, {}] do {
 			_bsz_pos = _posList call BIS_fnc_selectRandom;
@@ -93,8 +95,8 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 				if ([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee) then { // check that player won't see the spawning zombie
 					_tmp = [_bsz_pos, false, _unitTypes, _recyAgt, _maxtoCreate];
 					if (_tmp call zombie_generate) then {
-						diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
-										_bsz_pos, _type, 1+_num0-_num, _num0, count (_tmp select 3), _tmp select 4]);
+						//diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
+						//				_bsz_pos, _type, 1+_num0-_num, _num0, count (_tmp select 3), _tmp select 4]);
 						_num = _num - 1;
 						_recyAgt = _tmp select 3;
 						_maxtoCreate = _tmp select 4;
@@ -120,13 +122,13 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 		_bsz_pos = getPosATL player;
 		_bsz_pos = [(_bsz_pos select 0) + _radius * sin(_deg), (_bsz_pos select 1) + _radius * cos(_deg), 0];
 		_bsz_pos = (_bsz_pos) findEmptyPosition [0, _spawnSize, "zZombie_Base"];
-		if (((count _bsz_pos >= 2) // check that findEmptyPosition found something for us
+		if (((count _bsz_pos >= 3) // check that findEmptyPosition found something for us
 			AND {(!([_bsz_pos, true] call fnc_isInsideBuilding))}) // check position is outside any buildings
 			AND {([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)}) then {  // check that player won't see the spawning zombie
 			_tmp = [_bsz_pos, true, _unitTypes, _recyAgt, _maxtoCreate];
 			if (_tmp call zombie_generate) then {
-				diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
-								_bsz_pos, _type, 1+_num0-_num, _num0, count (_tmp select 3), _tmp select 4]);
+				//diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
+				//				_bsz_pos, _type, 1+_num0-_num, _num0, count (_tmp select 3), _tmp select 4]);
 				_num = _num - 1;
 				_recyAgt = _tmp select 3;
 				_maxtoCreate = _tmp select 4;
@@ -137,8 +139,8 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 		}/*
 		else {
 		diag_log(format["%1 %2 %3",
-			(count _bsz_pos >= 2),
-			(!([_bsz_pos, true] call fnc_isInsideBuilding)),
+			_bsz_pos,
+		//	(!([_bsz_pos, true] call fnc_isInsideBuilding)),
 			([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)
 			]);
 		}*/;
