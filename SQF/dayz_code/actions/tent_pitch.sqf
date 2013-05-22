@@ -49,7 +49,7 @@ if ((count _worldspace) == 2) then {
 
 	_tent setVariable ["characterID",dayz_characterID,true];
 	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
-	publicVariable "dayzPublishObj";
+	publicVariableServer "dayzPublishObj";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {

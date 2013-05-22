@@ -12,6 +12,7 @@ Returns: 1, 2, or 3
 ************************************************************/
 private["_ret"];
 
+_ret = nil;
 if(count _this > 0) then
 {
 	_ret = (count _this) - 1;           //number of elements in the array

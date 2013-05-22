@@ -10,7 +10,7 @@ _playerID =	getPlayerUID player;
 //Send Death Notice
 //["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
 		dayzDeath = [dayz_characterID,0,_body,_playerID];
-		publicVariable "dayzDeath";
+		publicVariableServer "dayzDeath";
 
 _id = [player,20,true,getPosATL player] spawn player_alertZombies;
 
@@ -63,13 +63,13 @@ if (count _array > 0) then {
 };
 
 terminate dayz_musicH;
-terminate dayz_lootCheck;
+//terminate dayz_lootCheck;
 terminate dayz_slowCheck;
 terminate dayz_animalCheck;
 terminate dayz_monitor1;
 terminate dayz_medicalH;
 terminate dayz_gui;
-terminate dayz_zedCheck;
+//terminate dayz_zedCheck;
 terminate dayz_locationCheck;
 terminate dayz_combatCheck;
 terminate dayz_spawnCheck;

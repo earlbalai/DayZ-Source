@@ -178,10 +178,12 @@ if (_isVehicle) then {
 		diag_log(format["%1: Player ejected from %2", __FILE__, _vehicle]);
 	}
 	else { // vehicle with a compartment
-		_hpList = _vehicle call vehicle_getHitpoints;
-		_hp = _hpList call BIS_fnc_selectRandom;
-		_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-		_wound = _this select 2;
+		_wound = _this select 2; // what is this? wound linked to Z attack?
+		if (isNil "_wound") then {
+			_hpList = _vehicle call vehicle_getHitpoints;
+			_hp = _hpList call BIS_fnc_selectRandom;
+			_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
+		};
 		_damage = random 0.1;
 		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
@@ -211,11 +213,9 @@ else { // player by foot
 	switch true do {
 		case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
 			[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
-			diag_log(format["%1 _wound:%2  _damage:%3  legs",  __FILE__, _wound, _damage]);
 		};
 		case (_isStairway AND (_hu > _hv)) : { // player is lower than Z,  so Z hurts head
 			[player,  "head_hit",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
-			diag_log(format["%1 _wound:%2  _damage:%3  heads",  __FILE__, _wound, _damage]);
 		};
 		default {
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
@@ -236,3 +236,6 @@ else { // player by foot
 
 _stop = diag_tickTime;
 diag_log format ["%2 Execution Time: %1",_stop - _start, __FILE__];
+
+// please do not remove this last line! It's the return code
+""
