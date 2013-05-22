@@ -86,6 +86,7 @@ player allowDamage true;
 player addWeapon "Loot";
 player addWeapon "Flare";
 
+sleep 0.1;
 //melee check
 _wpnType = primaryWeapon player;
 _ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));

@@ -22,7 +22,7 @@ Serverside affected addons:
 
 		
 	Changes:
-
+		* [NEW] - Combat spawning system to spawn infected around players firing.
 	    * [NEW] - Removed annoying "re-arm" option from actions menu
 	    * [NEW] - Models and textures for mutton.
 	    * [NEW] - Separate meat for goats, same blood regen as mutton.
