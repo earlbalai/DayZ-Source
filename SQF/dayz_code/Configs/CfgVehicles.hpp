@@ -107,6 +107,9 @@ class CfgVehicles {
 	#include "CfgVehicles\Buildings\Land_Vysilac_FM.hpp"
 	//WeaponHolder
 	#include "CfgVehicles\WeaponHolder.hpp"	
+	
+	//Tents,storage
+	#include "CfgVehicles\Storage.hpp"
 };
 class CfgNonAIVehicles {
 	#include "CfgVehicles\StreetLamps.hpp"
