@@ -6,17 +6,20 @@ _unit = _this select 0;
 _type = _this select 1;
 _vehicle = (vehicle player);
 _velo = velocity _vehicle;
-_speed = ([0, 0, 0] distance (_velo));
+_speed = ([0, 0, 0] distance (_velo)); // buggy: if player/veh is blocked by an object, speed is not zero
 _nextPlayerPos = getPosATL player;
-// compute player pos for the next second. This works both whether player is bare foot, or in a vehicle, whatever his place.
-_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)/2];  
-_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)/2];  
-_nextPlayerPos set [2, 0];  
+if (_speed > 0) then {
+	// try compute next player pos. This works both whether player is bare foot, or in a vehicle, whatever his place.
+	_velo = [ (_velo select 0) / _speed, (_velo select 1) / _speed, 0];  // normalize speed vector
+	_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0) * 1]; // 1  = a meter alongside the movement  
+	_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1) * 1];  
+	_nextPlayerPos set [2, 0];
+};
 _distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
 
 /*if (!isNil "toto") then { deleteVehicle toto; sleep 0.01 };
-toto = "Sign_sphere10cm_EP1" createVehicle [0,0,0]; toto setPosATL [_nextPlayerPos select 0,_nextPlayerPos select 1,3.2]; sleep 0.01;*/
-						
+toto = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0]; toto setPosATL [_nextPlayerPos select 0,_nextPlayerPos select 1,3.2]; sleep 0.01;
+	*/					
 _isVehicle = (_vehicle != player);
 _isSameFloor = false;
 _isStairway = false;
@@ -29,7 +32,7 @@ _hv = _gpv_asl select 2;
 
 if (_type != "zombie") exitWith {"not a zombie"}; // we deal only with zombies in this function
 if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here     //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
-if (((!_isVehicle) AND {(random 25 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
+if (((!_isVehicle) AND {(random 15 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
 
 // check if fight is in stairway or not, 
 if (abs(_hu - _hv) < 1.3) then {
@@ -136,6 +139,7 @@ if (_rnd == 0) exitWith {"bad move (too far)"};  // move not found -- Z too far?
 _unit setDir ((direction _unit) + _deg);
 _unit setPosATL (getPosATL _unit);
 
+
 // let's animate the Z
 if (local _unit) then {
 	_unit switchMove _move;
@@ -147,10 +151,10 @@ else {
 // Damage is done after the move
 sleep 0.05;
 
+if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
+
 // broadcast hit noise
 [_unit,  "hit",  1,  false] call dayz_zombieSpeak;
-
-if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 
 // player may fall...
 if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
