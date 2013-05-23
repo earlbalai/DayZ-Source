@@ -11,7 +11,8 @@ while {_counter < _amount} do {
 	if (dayz_swarmSpawnZombies  > dayz_localswarmSpawned) exitwith {};
 	//Create the Group and populate it
 	_unitTypes = DayZ_NewZeds;
-	_type = "swarm_newBase"; //"_unitTypes call BIS_fnc_selectRandom;
+	//_type = "swarm_newBase"; //"_unitTypes call BIS_fnc_selectRandom;
+	_type = "Pastor";
 	_method = "NONE";
 
 	_position = [_player,90,100,0,0,0,0] call BIS_fnc_findSafePos;
