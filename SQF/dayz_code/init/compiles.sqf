@@ -90,6 +90,14 @@ if (!isDedicated) then {
 	player_gearSet	=			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSet.sqf";
 	ui_changeDisplay = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_changeDisplay.sqf";
 	
+	//playerstats
+	horde_epeen_fnc_fill_page = 			compile preProcessFile "\z\addons\dayz_code\actions\playerstats\fill_page_fnc.sqf";
+	horde_epeen_determine_humanity_fnc = 	compile preProcessFile "\z\addons\dayz_code\actions\playerstats\determine_humanity_fnc.sqf";
+	horde_epeen_setText_journal_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_journal.sqf";
+	horde_epeen_setText_humanity_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_humanity.sqf";
+	horde_epeen_setText_stats_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_stats.sqf";
+	horde_epeen_show_humanity_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\show_humanity_fnc.sqf";
+	
 	//System
 	player_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_monitor.sqf";
 	player_spawn_1 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_1.sqf";
