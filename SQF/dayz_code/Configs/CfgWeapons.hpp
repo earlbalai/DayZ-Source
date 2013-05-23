@@ -8,7 +8,7 @@ class CfgWeapons {
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class GrenadeLauncher;  // External class reference
-	//class M107;	// External class reference
+	//class M107_DZ;	// External class reference
 	//class BAF_AS50_scoped;	// External class reference
 	
 	#include "CfgWeapons\ItemEtool.hpp"
