@@ -344,6 +344,8 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
+	player removeAction s_player_dragbody;
+	s_player_dragbody = -1;
 	
 	//fuel
 	player removeAction s_player_fillfuel20;
