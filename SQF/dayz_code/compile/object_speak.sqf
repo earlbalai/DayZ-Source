@@ -42,6 +42,7 @@ if (_isWoman and (_type in ["scream","panic"])) then {
 	_type = _type + "_w";
 };
 
+
 if (floor(random(_chance)) == 0) then {
 	_rnd = floor(random(_num+1));
 	_sound = "z_" + _type + "_" + str(_rnd);
@@ -49,5 +50,12 @@ if (floor(random(_chance)) == 0) then {
 		_unit say [_sound, _dis];
 	} else {
 		[nil,_unit,rSAY,[_sound, _dis]] call RE;
+	};
+	//Swarm
+	if (_type in ["spotted"]) then {
+		_chance = random 1;
+		if (_chance > 0.8) then {
+			[getPosATL player, 2] call swarm_generate;
+		};
 	};
 };
