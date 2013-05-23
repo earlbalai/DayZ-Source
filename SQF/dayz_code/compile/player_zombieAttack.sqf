@@ -82,6 +82,7 @@ if (unitPos _unit != "UP") exitWith {
 
 // compute the animation move 
 _rnd = 0;
+
 switch true do {
 	case (r_player_unconscious) : {
 		if (random 3 < 1) then {
@@ -136,20 +137,22 @@ if (_rnd == 0) exitWith {"bad move (too far)"};  // move not found -- Z too far?
 // diag_log(format["%1:  dis:%2  rndlist:%3",  __FILE__,  (round((_nextPlayerPos distance _unit)*10)),  _rnd]);
 
 // fix the direction
-_unit setDir ((direction _unit) + _deg);
+//_unit setDir ((direction _unit) + _deg);
 _unit setPosATL (getPosATL _unit);
 
 
 // let's animate the Z
+/*
 if (local _unit) then {
 	_unit switchMove _move;
 }
 else {
 	[objNull,  _unit,  rSwitchMove,  _move] call RE;
 };
+*/
 
 // Damage is done after the move
-sleep 0.05;
+sleep 0.02;
 
 if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 
