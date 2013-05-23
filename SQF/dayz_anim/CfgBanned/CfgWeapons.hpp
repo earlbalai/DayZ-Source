@@ -17,6 +17,7 @@ class CfgWeapons {
 		sound[] = {};
 		magazines[] = {"FakeMagazine"};
 	};
+	
 	//class MGun: FakeWeapon {};
 	//class Pistol: FakeWeapon {};
 	//class M9: FakeWeapon {};
@@ -139,15 +140,15 @@ class CfgWeapons {
 	class BombLauncher: FakeWeapon {};
 	class BombLauncherF35: FakeWeapon {};
 	class BombLauncherA10: FakeWeapon {};
-	/*
-	class SEARCHLIGHT: FakeWeapon {};
-	class CarHorn: FakeWeapon {};
-	class BikeHorn: FakeWeapon {};
-	class TruckHorn: FakeWeapon {};
-	class TruckHorn2: FakeWeapon {};
-	class SportCarHorn: FakeWeapon {};
-	class MiniCarHorn: FakeWeapon {};
-	*/
+	
+	//class SEARCHLIGHT: FakeWeapon {};
+	//class CarHorn: FakeWeapon {};
+	//class BikeHorn: FakeWeapon {};
+	//class TruckHorn: FakeWeapon {};
+	//class TruckHorn2: FakeWeapon {};
+	//class SportCarHorn: FakeWeapon {};
+	//class MiniCarHorn: FakeWeapon {};
+	
 	class GSh301: FakeWeapon {};
 	class R73Launcher: FakeWeapon {};
 	class R73Launcher_2: FakeWeapon {};
@@ -212,7 +213,7 @@ class CfgWeapons {
 	//class Colt1911: FakeWeapon {};
 	//class DMR: FakeWeapon {};
 	//class M1014: FakeWeapon {};
-	class m107: FakeWeapon {};
+	class m107: FakeWeapon {}; //old .50cal
 	class M252: FakeWeapon {};
 	class 2B14: FakeWeapon {};
 	class Saiga12K: FakeWeapon {};
@@ -231,22 +232,22 @@ class CfgWeapons {
 	class PKT_3: FakeWeapon {};
 	class SidewinderLaucher_AH64: FakeWeapon {};
 	class M230: FakeWeapon {};
-	/*
-	class BAF_L2A1: FakeWeapon {};
-	class BAF_M240_veh: FakeWeapon {};
-	class BAF_L7A2: FakeWeapon {};
-	class BAF_L94A1: FakeWeapon {};
-	class BAF_static_GMG: FakeWeapon {};
-	class BAF_GMG: FakeWeapon {};
-	*/
+	
+	//class BAF_L2A1: FakeWeapon {};
+	//class BAF_M240_veh: FakeWeapon {};
+	//class BAF_L7A2: FakeWeapon {};
+	//class BAF_L94A1: FakeWeapon {};
+	//class BAF_static_GMG: FakeWeapon {};
+	//class BAF_GMG: FakeWeapon {};
+	
 	class CTWS: FakeWeapon {};
 	class CRV7_PG: FakeWeapon {};
 	class CRV7_HEPD: FakeWeapon {};
 	class CRV7_FAT: FakeWeapon {};
 	class M621: FakeWeapon {};
-	//class BAF_AS50_scoped: FakeWeapon {};
+	class BAF_AS50_scoped: FakeWeapon {}; //old .50cal
 	class BAF_AS50_TWS: FakeWeapon {};
-	class BAF_LRR_scoped: FakeWeapon {};
+	class BAF_LRR_scoped: FakeWeapon {}; 
 	class BAF_LRR_scoped_W: FakeWeapon {};
 	class BAF_NLAW_Launcher: FakeWeapon {};
 	class BAF_L17_40mm: FakeWeapon {};
@@ -359,4 +360,5 @@ class CfgWeapons {
 	class m8_tws_sd: FakeWeapon {};
 	class m8_tws: FakeWeapon {};
 	class GSh23L_L39: FakeWeapon {};
+	
 };

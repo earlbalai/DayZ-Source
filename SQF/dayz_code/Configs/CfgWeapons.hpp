@@ -8,8 +8,8 @@ class CfgWeapons {
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class GrenadeLauncher;  // External class reference
-	class M107;	// External class reference
-	class BAF_AS50_scoped;	// External class reference
+	//class M107;	// External class reference
+	//class BAF_AS50_scoped;	// External class reference
 	
 	#include "CfgWeapons\ItemEtool.hpp"
 	#include "CfgWeapons\ItemShovel.hpp"
@@ -33,7 +33,7 @@ class CfgWeapons {
 	#include "CfgWeapons\Flare.hpp"
 	
 	//Sniper Rifel
-	#include "CfgWeapons\AS50.hpp"
+	//#include "CfgWeapons\AS50.hpp"
 	#include "CfgWeapons\M107.hpp"
 	
 	//crafting
