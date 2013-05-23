@@ -18,9 +18,15 @@ _antiwallhack=[
 		[
 			[-9.66602,7.66602,18.3236,"Fort_RazorWire",0], [-1.30273,7.66602,18.3236,"Fort_RazorWire",0], [-9.66602,0.814453,18.3236,"Fort_RazorWire",0], [-1.30273,0.814453,18.3236,"Fort_RazorWire",0], [-15.0029,4.18359,18.3236,"Fort_RazorWire",90], [3.62109,3.95117,18.3236,"Fort_RazorWire",270]
 		]
+	],
+	[
+		"Land_A_Office02",
+		[[6552.96,2807.47,0], [7036.05,2526.13,0], [10028.6,1832.52,0]], 
+		[
+			[2.17627, 1.98828, 5.31387,  "Land_CncBlock_D" , 0], [2.85547, 3.02246, 5.38394,  "Land_CncBlock_D" , 0], [-15.7412, 3.98145, 5.38394,  "Land_CncBlock_D" , 270], [-20.2915, 4.01563, 5.35391,  "Land_CncBlock_D" , 90], [-20.291, 1.22559, 5.36392,  "Land_CncBlock_D" , 90], [-19.0527, -0.318359, 5.38394,  "Land_CncBlock_D" , 0], [-16.6426, -0.321289, 5.38394,  "Land_CncBlock_D" , 0], [-15.4575, 1.01563, 5.35391,  "Land_CncBlock_D" , 270], [-16.7344, 5.30762, 5.38394,  "Land_CncBlock_D" , 180], [-19.0361, 5.30859, 5.38394,  "Land_CncBlock_D" , 180]
+		]
 	]
 ];
-
 
 _nbhouses = 0;
 _nbpatchs = 0;
@@ -50,7 +56,7 @@ _nbpatchs = 0;
 			_o setPosATL _pos;
 			_nbpatchs = _nbpatchs +1;
 		} forEach _patchList;
-		diag_log(format["::: %1 %2", _houseType, getPosATL _house ]);
+		//diag_log(format["Found building %1 at %2", _houseType, getPosATL _house ]);
 	} forEach _houseList;
 } forEach _antiwallhack;
 

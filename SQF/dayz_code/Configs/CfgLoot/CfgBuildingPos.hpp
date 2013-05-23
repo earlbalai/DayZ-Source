@@ -114,12 +114,9 @@
 		lootPos[] = {{0.487793,4.9541,-4.9686},{1.08203,-0.407227,-4.96802},{-0.0336914,-10.8203,-4.96686},{-5.07617,-16.4658,-4.96759},{-6.30127,2.92969,-4.96838},{-6.26709,26.7344,-4.9772},{1.64697,23.4033,-4.97098},{7.146,3.9248,-4.96973},{4.63623,-12.1621,-4.9697}};
 	};
 	class Land_A_MunicipalOffice: Residential {
-		zombieChance = 0.4;
-		minRoaming = 3;
-		maxRoaming = 9;
-		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
+		maxRoaming = 0; // several lootpos on the roof (you can climb a lightning rod), make buggy Zeds.
 		lootChance = 0.4;
-		lootPos[] = {{-4.66113,-6.27246,-18.429},{3.31641,-5.77441,-18.429},{-0.20752,-6.48633,-18.429},{-9.72412,-4.8877,-3.78903},{-9.57813,3.55566,-3.78903},{-7.16797,11.0732,-3.78903},{5.07422,11.1836,-3.78903},{9.3208,5.38574,-3.78903},{9.65283,-4.82129,-3.78903},{3.23535,-0.106445,-0.169037},{4.85205,-3.69043,-0.169037},{-0.80127,-7.8916,-0.169037},{-4.4082,-4.91797,-0.169037},{-4.90771,-2.23145,-0.169037}};
+		lootPos[] = {{-4.66113,-6.27246,-18.429},{3.31641,-5.77441,-18.429},{-0.20752,-6.48633,-18.429},{-9.72412,-4.8877,-3.759},{-9.57813,3.55566,-3.759},{-7.17285,11.083,-3.76901},{5.06934,11.1836,-3.74899},{9.3208,5.38574,-3.76901},{9.65283,-4.82129,-3.74899},{3.23535,-0.106445,-0.169037},{4.85156,-3.69043,-0.169037},{-0.80127,-7.88184,-0.169037},{-4.4082,-4.91797,-0.169037},{-4.90771,-2.23145,-0.169037}};
 	};
 	class Land_A_Office01: Office {
 		lootPos[] = {{-2.50391,-2.46875,-4.52798},{4.11279,-0.686523,-4.52798},{4.11133,6.11328,-4.52798},{0.242188,6.06348,-4.52798},{4.31641,3.74121,-4.52798},{5.08887,0.219727,-4.52798},{11.8037,-1.77832,-4.52798},{14.5811,-4.1123,-4.52798},{13.8174,-0.731445,-4.52798},{-7.76221,5.59082,-4.52798},{1.81152,0.994141,-2.02802},{4.93164,4.32031,-2.02802},{1.18945,6.07129,-2.02802},{2.23145,3.76563,-2.02802},{-4.89111,-2.54785,-1.99799},{-14.5596,-3.40625,-1.98798},{-15.2705,5.92871,-1.94794},{-10.9063,6.04199,0.451996},{-6.30762,3.30078,0.482025},{7.6416,6.3877,0.472015},{13.6729,6.59668,0.451965},{13.1924,-2.58594,0.492004},{3.09229,2.4375,6.2049},{-1.45654,-2.2832,6.19489},{-2.12988,4.5166,0.472015},{4.7666,-4.55859,-2.02487},{8.3457,-1.10645,-2.02802},{9.94727,-3.74023,-2.008},{7.13867,-2.50684,-2.02802},{12.8701,4.70996,-2.02802},{15.3721,3.42383,-2.02802}};
@@ -139,15 +136,15 @@
 		hangPos[] = {{1.72168,-8.39771,-0.172569},{2.08838,-14.4236,-0.27536},{-13.7158,-10.4808,-0.795174},{-12.9072,-16.4105,-0.895065}};
 	};
 	class Land_Church_02: Church {
-		lootPos[] = {};
+		lootPos[] = {{-11.1528,1.47168,-11.6733},{9.87158,-6.6582,-11.6733}};
 		maxRoaming = 2;
 	};
 	class Land_Church_02a: Church {
-		lootPos[] = {};
+		lootPos[] = {{10.0615,-6.90723,-11.5767},{-11.043,0.833984,-11.5767}};
 		maxRoaming = 2;
 	};
 	class Land_Church_05R: Church {
-		lootPos[] = {};
+		lootPos[] = {{-2.32617,-2.29297,-8.00223},{8.19336,-1.83301,-8.00223},{15.7007,3.20898,-8.00223},{10.3711,9.00293,-7.78201},{-4.9165,-5.66113,-7.79202}};
 		maxRoaming = 2;
 	};
 	class Land_Mil_Barracks_i: MilitarySpecial {
@@ -203,9 +200,6 @@
 	class Land_Mil_Barracks: Military {
 		lootPos[] = {};
 	}; // Qty: 8
-	class Land_Mil_Barracks_L: Military {
-		lootPos[] = {};
-	}; // Qty: 5 
 	class Land_Barn_W_02: Farm {
 		lootPos[] = {{3.16479,5.56543,-2.28406},{3.35938,-0.151367,-2.31305},{2.53711,-5.89258,-2.28949},{-2.94604,-5.01465,-2.28998},{-2.84351,0.213867,-2.31177},{-5.63306,4.83105,-2.26355}};
 	}; // Qty: 3
@@ -215,7 +209,7 @@
 	}; // Qty: 3
 	class Land_HouseV_3I4: Residential {
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {{5.58545,2.80859,-2.56293}};
 	}; // Qty: 103
 	class Land_Shed_W4: Residential {
 		maxRoaming = 3;
@@ -227,15 +221,16 @@
 	}; // Qty: 103
 	class Land_HouseV_1L2: Residential {
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {{-0.448242,5.29883,-3.02554}};
 	}; // Qty: 101
 	class Land_HouseV_1T: Residential {
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootPos[] = {{2.53027,-2.41895,-3.23672}};
 	}; // Qty: 90
 	class Land_telek1: Industrial {
 		maxRoaming = 3;
-		lootPos[] = {};
+		lootChance = 0.5;
+		lootPos[] = {{-0.114014,0.609375,13.9082},{-1.54883,-0.761719,13.9082}};
 	}; // Qty: 4
 	class Land_Rail_House_01: Industrial {
 		lootPos[] = {{2.81152,3.61426,-1.28265},{-1.82178,3.10938,-1.28265},{0.487793,3.38867,-1.28265}};
@@ -321,41 +316,65 @@
 		maxRoaming = 2;
 	};
 	class Land_Shed_W03: HouseRoaming {}; // Qty: 206
-	class Land_HouseV_1I3: HouseRoaming {}; // Qty: 117
-	class Land_HouseV_1L1: HouseRoaming {}; // Qty: 97
-	class Land_HouseV_1I2: HouseRoaming {};
-	class Land_HouseV_2L: HouseRoaming {};
+	class Land_HouseV_1I3: Residential {
+		lootPos[] = {{2.19531,-0.954102,-2.23218}};
+	}; // Qty: 117
+	class Land_HouseV_1L1: Residential {
+		lootPos[] = {{1.20654,5.86035,-1.073}};
+	}; // Qty: 97
+	class Land_HouseV_1I2: Residential {
+		lootPos[] = {{-3.60205,2.81641,-2.24005}};
+	};
+	class Land_HouseV_2L: Residential {
+		lootPos[] = {{4.32617,1.81836,-3.8432}};
+	};
 	class Land_HouseV_2T1: HouseRoaming {};
-	class Land_houseV_2T2: HouseRoaming {};
+	class Land_houseV_2T2: Residential {
+		lootPos[] = {{-4.24951,0.988281,-4.0574}};
+	};
 	class Land_HouseV_3I2: HouseRoaming {};
 	class Land_HouseV_3I3: HouseRoaming {};
-	class Land_HouseBlock_A1: HouseRoaming {};
+	class Land_HouseBlock_A1: Residential {
+		lootPos[] = {{-4.56689,-3,-8.81262},{-3.48242,2.13965,-8.81882}};
+	};
 	class Land_HouseBlock_A1_2: HouseRoaming {};
 	class Land_HouseBlock_A2: HouseRoaming {};
-	class Land_HouseBlock_A2_1: HouseRoaming {};
-	class Land_HouseBlock_A3: HouseRoaming {};
+	class Land_HouseBlock_A2_1: Residential {
+		lootPos[] = {{3.98975,4.48926,-7.41287}};
+	};
+	class Land_HouseBlock_A3: Residential {
+		lootPos[] = {{0.554688,2.70801,-5.4317}};
+	};
 	class Land_HouseBlock_B1: HouseRoaming {};
 	class Land_HouseBlock_B2: HouseRoaming {};
 	class Land_HouseBlock_B3: HouseRoaming {};
 	class Land_HouseBlock_B4: HouseRoaming {};
-	class Land_HouseBlock_B5: HouseRoaming {};
-	class Land_HouseBlock_B6: HouseRoaming {};
-	class Land_HouseBlock_C1: HouseRoaming {};
+	class Land_HouseBlock_B5: Residential {
+		lootPos[] = {{-5.10742,5.23926,-7.57431}};
+	};
+	class Land_HouseBlock_B6: Residential {
+		lootPos[] = {{-3.01172,0.820313,-7.60886}};
+	};
+	class Land_HouseBlock_C1: Residential {
+		lootPos[] = {{5.85889,4.46875,-9.59036}};
+	};
 	class Land_HouseBlock_C2: HouseRoaming {};
 	class Land_HouseBlock_C3: HouseRoaming {};
 	class Land_HouseBlock_C4: HouseRoaming {};
 	class Land_HouseBlock_C5: HouseRoaming {};
-	class Land_HouseV2_01B: HouseRoaming {}; // Qty: 20
+	class Land_HouseV2_01B: Residential {
+		lootPos[] = {{9.53711,3.39453,-6.11053}};
+	}; // Qty: 20
 	class Land_Misc_Cargo1D: HouseRoaming {}; // Qty: 29
-	class Land_HouseV2_03: HouseRoaming {}; // Qty: 8
+	class Land_HouseV2_03: Residential {
+		lootPos[] = {{0.812988,7.99805,-5.89618},{9.96143,-9.00488,-5.48578}};
+	}; // Qty: 8
 	class Land_Ind_Shed_01_end: HouseRoaming {}; // Qty: 266
 	class Land_A_statue01: HouseRoaming {
 		zombieClass[] = {"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2","z_soldier","z_soldier_heavy","z_policeman"};
 		minRoaming = 2;
 		maxRoaming = 8;
 	}; // Qty: 3
-	class Land_Shed_W02: FarmRoaming {}; // Qty: 213
-	//allow 
 	class Grave: HouseRoaming {
 		maxRoaming = 3;
 	};
@@ -368,3 +387,84 @@
 	class GraveCrossHelmet: Military {	
 		maxRoaming = 4;
 	};
+
+	class Land_BoatSmall_2b: Residential {	
+		lootPos[] = {{0.00390625,-0.250977,-0.348389}};
+		lootChance = 0.1;
+	};
+	class Land_Farm_Cowshed_c: Farm {
+		lootPos[] = {{-2.41504,2.98633,-3.12582}};	
+	};
+	class Land_Farm_Cowshed_b: Farm {
+		lootPos[] = {{4.78662,0.0458984,-3.08109},{0.0620117,0.0517578,-3.08109},{-4.8584,0.115234,-3.08109}};	
+	};
+	class Land_Barn_Metal: Farm {
+		lootPos[] = {{-2.00244,-3.19043,5.40768},{-9.37109,-22.1816,5.57785},{10.2598,22.709,5.57785},{7.79883,20.1406,-5.44214},{8.87207,-23.2041,-5.44214},{-4.52295,-18.5713,-5.44214},{-8.45898,-8.43848,-5.44214},{1.78223,7.49902,-5.44214},{-3.16846,14.9141,-5.44214}};	
+	};
+	class Land_Ind_Expedice_1: Industrial {
+		lootPos[] = {{-6.87695,-18.2285,-3.48672},{-0.315918,13.1416,-3.48672},{-0.5625,13.8926,9.71017},{5.66846,-18.3174,-5.75726},{1.67725,2.15332,-5.6839},{-11.7915,-13.8818,-3.48672},{0.120605,13.0664,-5.6839}};	
+	};
+	class Land_A_CraneCon: Industrial {
+		lootPos[] = {{-7.78271,-1.56445,10.621}};	
+	};
+	class Land_Mil_Barracks_L: Military { // Qty: 5 
+		lootPos[] = {{-0.81543,-4.71777,-2.20129}};
+	};
+	class Land_Shed_W02: Farm {	// Qty: 213
+		lootPos[] = {{0.688232,1.88281,-0.00292969}};
+	};
+	class Land_Ind_Mlyn_03: Industrial {
+		lootPos[] = {{-5.604,4.47461,-4.17218},{-3.09521,-2.06934,-4.17218},{2.34961,-5.01953,9.02472}};	
+		lootChance = 0.2;
+	};
+	class UralWreck: Industrial {
+		lootPos[] = {{0.00927734,3.08301,-0.0449524}};	
+		lootChance = 0.1;
+	};
+	class Rubbish5: Industrial {
+		lootPos[] = {{-0.369629,0.078125,-0.274689}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_Mil_Guardhouse: Military {
+		lootPos[] = {{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}};
+	};
+	class Land_komin: Industrial {
+		lootPos[] = {{0.126953,2.88086,12.4362}};	
+		lootChance = 0.5;
+		maxRoaming = 0;
+	};
+	class Land_Ind_Pec_01: Industrial {
+		lootPos[] = {{-1.73682,-10.9668,-22.3766},{3.95752,-12.5781,-17.425},{-0.951172,-0.967773,-3.83344},{-0.181641,15.7451,0.253754},{-0.237793,-13.3857,6.21796},{-6.78613,-7.21973,14.7371}};	
+		lootChance = 0.2;
+	};
+	class Land_Ind_SiloVelke_01: Industrial {
+		lootPos[] = {{2.62646,7.77051,-5.45245},{-5.62451,3.42188,11.8912},{-10.4751,0.642578,11.8912},{-1.60742,8.15918,21.9993}};	
+		lootChance = 0.2;
+	};
+	class Land_Misc_Garb_Heap_EP1: Industrial {
+		lootPos[] = {{-0.625488,-0.126953,-0.255127}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_Shed_M02: Residential {
+		lootPos[] = {{-0.0136719,-1.44629,-1.54199}};	
+		lootChance = 0.2;
+	};
+	class Fort_Barricade: Industrial {
+		lootPos[] = {{0.241211,-1.00488,-0.244537}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_Misc_Rubble_EP1: Industrial {
+		lootPos[] = {{0.622559,0.367188,-0.0337219}};
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_A_Crane_02b: Industrial {
+		lootPos[] = {{-6.10205,-0.0117188,-7.84473},{-9.77002,0.578125,-6.55347}};
+		maxRoaming = 0;
+		lootChance = 0.4;
+	};
+
+	
