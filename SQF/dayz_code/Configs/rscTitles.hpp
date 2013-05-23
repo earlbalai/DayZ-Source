@@ -16,6 +16,16 @@ class RscProgress;
 class RscProgressNotFreeze;
 class RscButtonTextOnly;
 
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\defines.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p__cover.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_journal_humanity.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_humanity_art.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_zombies_killed.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_bandits_killed.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_headshots.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_murders.hpp"
+#include "\z\addons\dayz_code\Configs\cfgPlayerStats\sound.hpp"
+
 class RscPictureGUI
 {
 	access = 0;
