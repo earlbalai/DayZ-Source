@@ -229,6 +229,7 @@ a_player_repairing = false;
 
 //Player self-action handles
 dayz_resetSelfActions = {
+	s_player_dragbody =		-1;
 	s_player_fire =			-1;
 	s_player_cook =			-1;
 	s_player_boil =			-1;
