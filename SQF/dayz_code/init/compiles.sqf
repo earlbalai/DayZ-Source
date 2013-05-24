@@ -90,6 +90,14 @@ if (!isDedicated) then {
 	player_gearSet	=			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSet.sqf";
 	ui_changeDisplay = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_changeDisplay.sqf";
 	
+	//playerstats
+	horde_epeen_fnc_fill_page = 			compile preProcessFile "\z\addons\dayz_code\actions\playerstats\fill_page_fnc.sqf";
+	horde_epeen_determine_humanity_fnc = 	compile preProcessFile "\z\addons\dayz_code\actions\playerstats\determine_humanity_fnc.sqf";
+	horde_epeen_setText_journal_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_journal.sqf";
+	horde_epeen_setText_humanity_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_humanity.sqf";
+	horde_epeen_setText_stats_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\epeen_setText_stats.sqf";
+	horde_epeen_show_humanity_fnc = 		compile preProcessFile "\z\addons\dayz_code\actions\playerstats\show_humanity_fnc.sqf";
+	
 	//System
 	player_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_monitor.sqf";
 	player_spawn_1 =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_1.sqf";
@@ -288,7 +296,8 @@ if (!isDedicated) then {
 			dayz_lastCheckBit = time;
 			call dayz_forceSave;
 		};
-		if (_dikCode == 0xB8 or _dikCode == 0x38 or _dikCode == 0x3E) then {
+		//				      R_ALT			         	L_ALT			   	        F4					    L_SHIFT			       	R_SHIFT			          ESC
+		if (_dikCode == 0xB8 or _dikCode == 0x38 or _dikCode == 0x3E or _dikCode == 0x2A or _dikCode == 0x36 or _dikCode == 0x01) then {
 			_displayg = findDisplay 106;
 			if (!isNull _displayg) then {
 			call player_gearSync;

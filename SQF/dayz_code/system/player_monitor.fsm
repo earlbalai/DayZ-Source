@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "E:\Applications\Arma Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -140,8 +140,8 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-270.679962,311.510254,1426.050781,794.468994,554,601,1};
-window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,571};
+globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-203.815994,244.646011,1615.449463,900.991943,441,635,1};
+window[] = {0,-1,-1,-1,-1,905,125,1497,125,1,459};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1175,11 +1175,14 @@ class FSM
        "" \n
        "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
        "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
-       "_town = ""Wilderness"";" \n
+       "Dayz_logonTown = ""Wilderness"";" \n
        "" \n
-       "if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};" \n
+       "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
        "" \n
-       "_first = [_world,_town,localize (""str_player_06"") + "" "" + str(_days)] spawn BIS_fnc_infoText;" \n
+       "_first = [_world,Dayz_logonTown,localize (""str_player_06"") + "" "" + str(_days)] spawn BIS_fnc_infoText;" \n
+       "" \n
+       "Dayz_logonTime = daytime;" \n
+       "Dayz_logonDate = dayz_Survived;" \n
        "" \n
        "dayz_animalCheck = 	[] spawn player_spawn_1;" \n
        "" \n

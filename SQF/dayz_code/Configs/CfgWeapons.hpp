@@ -4,11 +4,23 @@ class CfgWeapons {
 	class Rifle;
 	class MeleeWeapon : Rifle {
 		canDrop = true;
+		class HitEffects {
+			hit_blood = "ImpactBlood";
+			hit_concrete = "ImpactConcrete";
+			hit_foliage = "ImpactLeaves";
+			hit_foliage_green = "ImpactLeavesGreen";
+			hit_glass = "ImpactGlass";
+			hit_glass_thin = "ImpactGlassThin";
+			hit_metal = "ImpactMetal";
+			hit_plaster = "ImpactPlaster";
+			hit_rubber = "ImpactRubber";
+			hit_wood = "ImpactWood";
+		};
 	};
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class GrenadeLauncher;  // External class reference
-	//class M107;	// External class reference
+	//class M107_DZ;	// External class reference
 	//class BAF_AS50_scoped;	// External class reference
 	
 	#include "CfgWeapons\ItemEtool.hpp"
