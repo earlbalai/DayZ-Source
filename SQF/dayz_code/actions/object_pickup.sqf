@@ -11,13 +11,21 @@ _playerID = getPlayerUID player;
 player removeAction s_player_holderPickup;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
-if (!canPickup) exitwith { cutText ["You may only pick up one item at a time!","PLAIN DOWN"] };
+if (!canPickup) exitwith {
+	if (pickupInit) then {
+		cutText ["You must wait to pickup the next item!","PLAIN DOWN"] 
+	} else {
+		cutText ["You may only pick up one item at a time!","PLAIN DOWN"]
+	};
+};
 
 _claimedBy = _holder getVariable "claimed";
 
 if (isnil "claimed") then { 
 	_holder setVariable["claimed",_playerID,true];
 };
+
+canPickup = false;
 
 if(_classname isKindOf "TrapBear") exitwith {deleteVehicle _holder;};
 
@@ -84,11 +92,9 @@ _isOk = [player,_config] call BIS_fnc_invAdd;
 waitUntil {_isOk};
 if (_isOk) then {
 	deleteVehicle _holder;
-  canPickup = false;
 } else {
 	_holder setVariable["claimed",0,true];
 	cutText [localize "str_player_24", "PLAIN DOWN"];
-  canPickup = false;
 };
 
 
