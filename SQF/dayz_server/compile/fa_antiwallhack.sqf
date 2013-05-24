@@ -64,7 +64,7 @@ _nbpatchs = 0;
 			_o setPosATL _pos;
 			_nbpatchs = _nbpatchs +1;
 		} forEach _patchList;
-		diag_log(format["Found building %1 at %2", _houseType, getPosATL _house ]);
+		//diag_log(format["Found building %1 at %2", _houseType, getPosATL _house ]);
 	} forEach _houseList;
 } forEach _antiwallhack;
 

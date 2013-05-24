@@ -330,7 +330,7 @@
 	};
 	class Land_HouseV_2T1: HouseRoaming {};
 	class Land_houseV_2T2: Residential {
-		lootPos[] = {{-4.24951,0.988281,-4.0574},{0.193359,4.10645,-4.66714},{2.93262,4.13477,-4.64713}};
+		lootPos[] = {{-4.24951,0.988281,-4.0574}};
 	};
 	class Land_HouseV_3I2: HouseRoaming {};
 	class Land_HouseV_3I3: HouseRoaming {};
