@@ -587,7 +587,7 @@
 			<Russian>You are missing %1 %2</Russian>
 			<Spanish>You are missing %1 %2</Spanish>
 			<French>You are missing %1 %2</French>
-			<Czech>You are missing %1 %2</Czech>
+			<Czech>Chybějí vám následující věci: %1 %2</Czech>
 		</Key>
 		<Key ID="str_crafting_failed">
 			<English>Failed to create an %1</English>
@@ -595,7 +595,7 @@
 			<Russian>Failed to create an %1</Russian>
 			<Spanish>Failed to create an %1</Spanish>
 			<French>Failed to create an %1</French>
-			<Czech>Failed to create an %1</Czech>
+			<Czech>Vytvoření %1 selhalo</Czech>
 		</Key>
 		<Key ID="str_crafting_space">
 			<English>Not enough inventory space to make items...</English>
@@ -603,7 +603,7 @@
 			<Russian>Not enough inventory space to make items...</Russian>
 			<Spanish>Not enough inventory space to make items...</Spanish>
 			<French>Not enough inventory space to make items...</French>
-			<Czech>Not enough inventory space to make items...</Czech>
+			<Czech>Nemáš dostatečné místo v inventáři pro vytvoření předmětu.</Czech>
 		</Key>
 		<Key ID="str_crafting_success">
 			<English>Successfully created %1</English>
@@ -611,7 +611,7 @@
 			<Russian>Successfully created %1</Russian>
 			<Spanish>Successfully created %1</Spanish>
 			<French>Successfully created %1</French>
-			<Czech>Successfully created %1</Czech>
+			<Czech>Úspěšně jsi vytvořil %1</Czech>
 		</Key>
 	</Package>
 	<Package name="equipment_code">	
@@ -629,19 +629,23 @@
 			<Russian>Blueprint used in crafting</Russian>
 			<Spanish>Blueprint used in crafting</Spanish>
 			<French>Blueprint used in crafting</French>
-			<Czech>Blueprint used in crafting</Czech>
+			<Czech>Blueprint je používán pro crafting</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_weapon_rails">
 			<English>Weapon Rails</English>
+			<Czech>Nástavec pro zbraně</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_weapon_rails">
 			<English>Rails to attach attachments to weapons.</English>
+			<Czech>Nástavec pro upevnění příslušenství ke zbrani.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rail_screws">
 			<English>Rail screws</English>
+			<Czech>Šrouby pro nástavec</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rail_screws">
 			<English>Screws used to hold weapon rails in place.</English>
+			<Czech>Šrouby, které drží nástavec.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_wood_pallet">
 			<English>A wooden pallet</English>
@@ -649,7 +653,7 @@
 			<Russian>A wooden pallet</Russian>
 			<Spanish>A wooden pallet</Spanish>
 			<French>A wooden pallet</French>
-			<Czech>A wooden pallet</Czech>
+			<Czech>Dřevěná paleta</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_string">
 			<English>A bit of string</English>
@@ -657,7 +661,7 @@
 			<Russian>A bit of string</Russian>
 			<Spanish>A bit of string</Spanish>
 			<French>A bit of string</French>
-			<Czech>A bit of string</Czech>
+			<Czech>Kratší provázek</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_scrap_electronics">
 			<English>A pile of scrap electronics</English>
@@ -665,7 +669,7 @@
 			<Russian>A pile of scrap electronics</Russian>
 			<Spanish>A pile of scrap electronics</Spanish>
 			<French>A pile of scrap electronics</French>
-			<Czech>A pile of scrap electronics</Czech>
+			<Czech>Balík vyhozené elektroniky</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rope">
 			<English>Some rope</English>
@@ -673,7 +677,7 @@
 			<Russian>Some rope</Russian>
 			<Spanish>Some rope</Spanish>
 			<French>Some rope</French>
-			<Czech>Some rope</Czech>
+			<Czech>Nějaké lano</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rag">
 			<English>Some old rags</English>
@@ -681,7 +685,7 @@
 			<Russian>Some old rags</Russian>
 			<Spanish>Some old rags</Spanish>
 			<French>Some old rags</French>
-			<Czech>Some old rags</Czech>
+			<Czech>Nějaké staré hadry</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_pvc_box">
 			<English>A box made of PVC</English>
@@ -689,7 +693,7 @@
 			<Russian>A box made of PVC</Russian>
 			<Spanish>A box made of PVC</Spanish>
 			<French>A box made of PVC</French>
-			<Czech>A box made of PVC</Czech>
+			<Czech>Krabice z PVC materiálu</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_silencer">
 			<English>A silencer</English>
@@ -697,7 +701,7 @@
 			<Russian>A silencer</Russian>
 			<Spanish>A silencer</Spanish>
 			<French>A silencer</French>
-			<Czech>A silencer</Czech>
+			<Czech>Tlumič</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_camo">
 			<English>Camo materials/Pattern</English>
@@ -705,7 +709,7 @@
 			<Russian>Camo materials</Russian>
 			<Spanish>Camo materials</Spanish>
 			<French>Camo materials</French>
-			<Czech>Camo materials</Czech>
+			<Czech>Materiál pro kamufláž</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paper_sheet">
 			<English>Sheets of paper</English>
@@ -713,7 +717,7 @@
 			<Russian>Sheets of paper</Russian>
 			<Spanish>Sheets of paper</Spanish>
 			<French>Sheets of paper</French>
-			<Czech>Sheets of paper</Czech>
+			<Czech>Pár listů papíru</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paint">
 			<English>Some paint</English>
@@ -721,7 +725,7 @@
 			<Russian>Some paint</Russian>
 			<Spanish>Some paint</Spanish>
 			<French>Some paint</French>
-			<Czech>Some paint</Czech>
+			<Czech>Nějaké malování</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_note">
 			<English>A note scribbled on some paper</English>
@@ -729,7 +733,7 @@
 			<Russian>A note scribbled on some paper</Russian>
 			<Spanish>A note scribbled on some paper</Spanish>
 			<French>A note scribbled on some paper</French>
-			<Czech>A note scribbled on some paper</Czech>
+			<Czech>Poznámka načmáraná na nějakém papíře</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_needle">
 			<English>A sharp needle</English>
@@ -737,7 +741,7 @@
 			<Russian>A sharp needle</Russian>
 			<Spanish>A sharp needle</Spanish>
 			<French>A sharp needle</French>
-			<Czech>A sharp needle</Czech>
+			<Czech>Ostrá jehla</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_nail">
 			<English>An old nail</English>
@@ -745,7 +749,7 @@
 			<Russian>An old nail</Russian>
 			<Spanish>An old nail</Spanish>
 			<French>An old nail</French>
-			<Czech>An old nail</Czech>
+			<Czech>Starý hřebík</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_metal_sheet">
 			<English>A metal sheet</English>
@@ -753,7 +757,7 @@
 			<Russian>A metal sheet</Russian>
 			<Spanish>A metal sheet</Spanish>
 			<French>A metal sheet</French>
-			<Czech>A metal sheet</Czech>
+			<Czech>Plech</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_laser">
 			<English>A red laser</English>
@@ -761,7 +765,7 @@
 			<Russian>A red laser</Russian>
 			<Spanish>A red laser</Spanish>
 			<French>A red laser</French>
-			<Czech>A red laser</Czech>
+			<Czech>Červený laser</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_hose_clamp">
 			<English>A clamp off a hose</English>
@@ -777,7 +781,7 @@
 			<Russian>A pile of gauze</Russian>
 			<Spanish>A pile of gauze</Spanish>
 			<French>A pile of gauze</French>
-			<Czech>A pile of gauze</Czech>
+			<Czech>Hromádka gázy</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_empty_barrel">
 			<English>A barrel that has been emptied of its content</English>
@@ -785,7 +789,7 @@
 			<Russian>A barrel that has been emptied of its content</Russian>
 			<Spanish>A barrel that has been emptied of its content</Spanish>
 			<French>A barrel that has been emptied of its content</French>
-			<Czech>A barrel that has been emptied of its content</Czech>
+			<Czech>Sud, který byl vyprázdněn</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_duct_tape">
 			<English>A roll of sticky duct tape</English>
@@ -793,7 +797,7 @@
 			<Russian>A roll of sticky duct tape</Russian>
 			<Spanish>A roll of sticky duct tape</Spanish>
 			<French>A roll of sticky duct tape</French>
-			<Czech>A roll of sticky duct tape</Czech>
+			<Czech>Role lepící pásky</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_d_battery">
 			<English>A size D battery</English>
@@ -801,7 +805,7 @@
 			<Russian>A size D battery</Russian>
 			<Spanish>A size D battery</Spanish>
 			<French>A size D battery</French>
-			<Czech>A size D battery</Czech>
+			<Czech>A velikost D baterie</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_cable_tie">
 			<English>A plastic cable tie</English>
@@ -809,7 +813,7 @@
 			<Russian>A plastic cable tie</Russian>
 			<Spanish>A plastic cable tie</Spanish>
 			<French>A plastic cable tie</French>
-			<Czech>A plastic cable tie</Czech>
+			<Czech>Plastový kabelový svazek</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_aa_battery">
 			<English>A size AA battery</English>
@@ -817,7 +821,7 @@
 			<Russian>A size AA battery</Russian>
 			<Spanish>A size AA battery</Spanish>
 			<French>A size AA battery</French>
-			<Czech>A size AA battery</Czech>
+			<Czech> AA baterie</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_2inch_metal_pipe">
 			<English>A metal pipe 2 inches in diameter</English>
@@ -825,7 +829,7 @@
 			<Russian>A metal pipe 2 inches in diameter</Russian>
 			<Spanish>A metal pipe 2 inches in diameter</Spanish>
 			<French>A metal pipe 2 inches in diameter</French>
-			<Czech>A metal pipe 2 inches in diameter</Czech>
+			<Czech>Dvoupalcová kovová trubka</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_1inch_metal_pipe">
 			<English>A metal pipe 1 inch in diameter</English>
@@ -833,67 +837,87 @@
 			<Russian>A metal pipe 1 inch in diameter</Russian>
 			<Spanish>A metal pipe 1 inch in diameter</Spanish>
 			<French>A metal pipe 1 inch in diameter</French>
-			<Czech>A metal pipe 1 inch in diameter</Czech>
+			<Czech>Jednopalcová kovová trubka</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Bandage">
 			<English>Bandage</English>
+			<Czech>Bandáž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Bandage">
 			<English>Blueprint to create an Banagde. Required - 2 Rags, 2 gauze, 1 string - ToolBox<</English>
+			<Czech>Blueprint pro vytvoření Bandáže. Požadováno - 2 hadry, 2 gázy, 1 provázek a ToolBox</Czech>
 		</key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_AIM">
 			<English>M4A1_AIM</English>
+			<Czech>M4A1_Mířidlo</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_AIM">
 			<English>Blueprint to create a M4A1_AIM. Required - 1 M4A1, 1 Attachment_AIM. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření M4A1 s mířidlem. Požadováno - 1 M4A1, 1 mířidlo a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M9SD">
 			<English>M9SD</English>
+			<Czech>M9 s tlumičem</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M9SD">
 			<English>Blueprint to create a M9SD. Required - 1 M9, 1 Attachment_Silencer. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření M9 s tlumičem. Požadováno - 1 M9, 1 tlumič a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_MAKAROVSD">
 			<English>MAKAROVSD</English>
+			<Czech>Makarov s tlumičem</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_MAKAROVSD">
 			<English>Blueprint to create a MAKAROVSD. Required - 1 MAKAROV, 1 Attachment_Silencer. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření Makarov s tlumičem. Požadováno - 1 Makarov, 1 tlumič a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_bizonSD">
 			<English>BizonSD</English>
+			<Czech>Bizon s tlumičem</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_bizonSD">
 			<English>Blueprint to create a BizonSD. Required - 1 Bizon, 1 Attachment_Silencer. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření Bizon s tlumičem. Požadováno - 1 Bizon, 1 tlumič a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_SVD_CAMO">
 			<English>SVD_CAMO</English>
+			<Czech>SVD s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_SVD_CAMO">
 			<English>Blueprint to create a SVD_CAMO. Required - 1 SVD, 1 Attachment_CAMO, 1 Skin_Camo1_DZ. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření SVD s kamufláží. Požadováno - 1 SVD, 1 kamufláž, 1 Skin_Camo_DZ a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_Aim_CAMO">
 			<English>M4A1_Aim_CAMO</English>
+			<Czech>M4A1 s mířidlem a kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_Aim_CAMO">
 			<English>Blueprint to create a M4A1_Aim_CAMO. Required - 1 M4A1_Aim, 1 Attachment_CAMO. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření M4A1 s mířidlem a kamufláží. Požadováno - 1 M4A1 s mířidlem, 1 kamufláž a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36C_CAMO">
 			<English>G36C_CAMO</English>
+			<Czech>G36C s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_G36C_CAMO">
 			<English>Blueprint to create a G36C_CAMO. Required - 1 G36C, 1 Attachment_CAMO. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření G36C s kamufláží. Požadováno - 1 G69C, 1 kamufláž a ToolBox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36A_CAMO">
 			<English>G36A_CAMO</English>
+			<Czech>G36A s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_G36A_CAMO">
 			<English>Blueprint to create a G36A_CAMO. Required - 1 G36A, 1 Attachment_CAMO. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření G36A s kamufláží. Požadováno - 1 G36A, 1 kamufláž a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36K_CAMO">
 			<English>G36K_CAMO</English>
+			<Czech>G36K s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_G36K_CAMO">
 			<English>Blueprint to create a G36K_CAMO. Required - 1 G36K, 1 Attachment_CAMO. - ToolBox</English>
+			<Czech>Blueprint pro vytvoření G36K s kamufláží. Požadováno - 1 G36K, 1 kamufláž a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_NailedBaseballBat">
 			<English>Nailed BaseballBat</English>
@@ -913,45 +937,59 @@
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PSO">
 			<English>PSO Scope</English>
+			<Czech>PSO zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PSO">
 			<English>Blueprint to create an PSO Scope. Required - 2 2inch Metal Pipe, 1 Binocular_Vector, 1 Hose Clamp. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření zaměřovače PSO. Požadováno - 2 dvouplacové kovové trubky, 1 dalekohled, 1 drátek a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_ACG">
 			<English>ACG Scope</English>
+			<Czech>ACG zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_ACG">
 			<English>Blueprint to create an ACG Scope. Required - 2 2inch Metal Pipe, 2 Metal Sheet, 1 Hose Clamp. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření zaměřovače ACG. Požadováno - 2 dvoupalcové trubky, 2 plechy, 1 drátek a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_AIM">
 			<English>AIM Scope</English>
+			<Czech>AIM zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_AIM">
 			<English>Blueprint to create an AIM Scope. Required - 1 1inch Metal Pipe, 1 scrap electronics, 1 D type battery, 1 Cable Tie. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření AIM zaměřovače. Požadováno - 1 jednopalcová kovová trubka, 1 zbytek elektrotechniky, 1 D baterie, 1 drátek a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_CAMO">
 			<English>CAMO Pattern</English>
+			<Czech>Šablona pro kamufláž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_CAMO">
 			<English>Blueprint to create an CAMO Pattern. Required - 1 Rag, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření šablony pro kamufláž. Požadováno - 1 hadr, 1 barva, 1 provázek a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_KOBRA">
 			<English>KOBRA Scope</English>
+			<Czech>KOBRA zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_KOBRA">
 			<English>Blueprint to create an KOBRA Scope. Required - 1 Metal Sheet, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření zaměřovače KOBRA. Požadováno - 1 plech, 1 barva, 1 drátky a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_GL">
 			<English>Grenade Launcher Attachment</English>
+			<Czech>Granátomet</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_GL">
 			<English>Blueprint to create an Grenade Launcher. Required - 2 Metal Sheet, 1 2 inch metal pipe, 1 Hose Clamp. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření granátometu. Požadováno - 2 plechy, 1 dvoupalcová kovová trubka, 1 objímka a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_CAMO">
 			<English>Camo Pattern</English>
+			<Czech>Šablona pro kamufláž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_CAMO">
 			<English>Blueprint to create an Camo Pattern. Required - 1 Rag, 1 Paint, 1 Cable Tie. Tools - ToolBox</English>
+			<Czech>Blueprint pro vytvoření šablony pro kamufláž. Požadováno - 1 hadr, 1 barva, 1 provázek a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_BaseBallBatBarbed">
 			<English>BaseBallBat Barbed</English>
@@ -959,7 +997,7 @@
 			<Russian>BaseBallBat Barbed</Russian>
 			<Spanish>BaseBallBat Barbed</Spanish>
 			<French>BaseBallBat Barbed</French>
-			<Czech>BaseBallBat Barbed</Czech>
+			<Czech>BaseBallová pálka ozubená</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_BaseBallBatBarbed">
 			<English>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</English>
@@ -967,7 +1005,7 @@
 			<Russian>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Russian>
 			<Spanish>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Spanish>
 			<French>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</French>
-			<Czech>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Czech>
+			<Czech>Blueprint pro vytvoření baseballové pálky s ostnatým drátem. Požadováno - 1 blíček hřebíků, 1 drátený plot, 1 baseballová pálka a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_1inch_metal_pipe">
 			<English>1 Inch Metal Pipe</English>
@@ -975,7 +1013,7 @@
 			<Russian>1 Inch Metal Pipe</Russian>
 			<Spanish>1 Inch Metal Pipe</Spanish>
 			<French>1 Inch Metal Pipe</French>
-			<Czech>1 Inch Metal Pipe</Czech>
+			<Czech>Jednopalcová kovová trubka</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_wood_pallet">
 			<English>Wooden Pallet</English>
@@ -983,7 +1021,7 @@
 			<Russian>Wooden Pallet</Russian>
 			<Spanish>Wooden Pallet</Spanish>
 			<French>Wooden Pallet</French>
-			<Czech>Wooden Pallet</Czech>
+			<Czech>Dřevěná paleta</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_string">
 			<English>String</English>
@@ -991,7 +1029,7 @@
 			<Russian>String</Russian>
 			<Spanish>String</Spanish>
 			<French>String</French>
-			<Czech>String</Czech>
+			<Czech>Provázek</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_scrap_electronics">
 			<English>Scrap Electronics</English>
@@ -999,7 +1037,7 @@
 			<Russian>Scrap Electronics</Russian>
 			<Spanish>Scrap Electronics</Spanish>
 			<French>Scrap Electronics</French>
-			<Czech>Scrap Electronics</Czech>
+			<Czech>Zbytek elektroniky.</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_rope">
 			<English>Rope</English>
@@ -1007,7 +1045,7 @@
 			<Russian>Rope</Russian>
 			<Spanish>Rope</Spanish>
 			<French>Rope</French>
-			<Czech>Rope</Czech>
+			<Czech>Lano</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_rag">
 			<English>Rag</English>
@@ -1015,7 +1053,7 @@
 			<Russian>Rag</Russian>
 			<Spanish>Rag</Spanish>
 			<French>Rag</French>
-			<Czech>Rag</Czech>
+			<Czech>Hadr</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_pvc_box">
 			<English>PVC Box</English>
@@ -1031,7 +1069,7 @@
 			<Russian>Silencer</Russian>
 			<Spanish>Silencer</Spanish>
 			<French>Silencer</French>
-			<Czech>Silencer</Czech>
+			<Czech>Tlumič</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_part_camo">
 			<English>Camo Pattern</English>
@@ -1039,7 +1077,7 @@
 			<Russian>Camo</Russian>
 			<Spanish>Camo</Spanish>
 			<French>Camo</French>
-			<Czech>Camo</Czech>
+			<Czech>Kamufláž</Czech>
 		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_paper_sheet">
 			<English>Paper Sheet</English>
@@ -1047,7 +1085,7 @@
 			<Russian>Paper Sheet</Russian>
 			<Spanish>Paper Sheet</Spanish>
 			<French>Paper Sheet</French>
-			<Czech>Paper Sheet</Czech>
+			<Czech>List papíru</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_paint">
 			<English>Paint</English>
@@ -1055,7 +1093,7 @@
 			<Russian>Paint</Russian>
 			<Spanish>Paint</Spanish>
 			<French>Paint</French>
-			<Czech>Paint</Czech>
+			<Czech>Barva</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_note">
 			<English>Note</English>
@@ -1063,7 +1101,7 @@
 			<Russian>Note</Russian>
 			<Spanish>Note</Spanish>
 			<French>Note</French>
-			<Czech>Note</Czech>
+			<Czech>Poznámka</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_needle">
 			<English>Needle</English>
@@ -1071,7 +1109,7 @@
 			<Russian>Needle</Russian>
 			<Spanish>Needle</Spanish>
 			<French>Needle</French>
-			<Czech>Needle</Czech>
+			<Czech>Jehla</Czech>
 		</Key>			
 		<Key ID="STR_ITEM_NAME_equip_nail">
 			<English>Nail</English>
@@ -1079,7 +1117,7 @@
 			<Russian>Nail</Russian>
 			<Spanish>Nail</Spanish>
 			<French>Nail</French>
-			<Czech>Nail</Czech>
+			<Czech>Hřebík</Czech>
 		</Key>	
 		<Key ID="STR_ITEM_NAME_equip_metal_sheet">
 			<English>Metal Sheet</English>
@@ -1087,7 +1125,7 @@
 			<Russian>Metal Sheet</Russian>
 			<Spanish>Metal Sheet</Spanish>
 			<French>Metal Sheet</French>
-			<Czech>Metal Sheet</Czech>
+			<Czech>Plech</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_laser">
 			<English>Laser</English>
@@ -1103,7 +1141,7 @@
 			<Russian>Hose Clamp</Russian>
 			<Spanish>Hose Clamp</Spanish>
 			<French>Hose Clamp</French>
-			<Czech>Hose Clamp</Czech>
+			<Czech>Objímka</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_gauze">
 			<English>Gauze</English>
@@ -1111,7 +1149,7 @@
 			<Russian>Gauze</Russian>
 			<Spanish>Gauze</Spanish>
 			<French>Gauze</French>
-			<Czech>Gauze</Czech>
+			<Czech>Gáza</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_empty_barrel">
 			<English>Empty Barrel</English>
@@ -1119,7 +1157,7 @@
 			<Russian>Empty Barrel</Russian>
 			<Spanish>Empty Barrel</Spanish>
 			<French>Empty Barrel</French>
-			<Czech>Empty Barrel</Czech>
+			<Czech>Prázdný barel</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_duct_tape">
 			<English>Duct Tape</English>
@@ -1127,7 +1165,7 @@
 			<Russian>Duct Tape</Russian>
 			<Spanish>Duct Tape</Spanish>
 			<French>Duct Tape</French>
-			<Czech>Duct Tape</Czech>
+			<Czech>Lepící páska</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
@@ -1135,7 +1173,7 @@
 			<Russian>D Battery</Russian>
 			<Spanish>D Battery</Spanish>
 			<French>D Battery</French>
-			<Czech>D Battery</Czech>
+			<Czech>D baterie</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_cable_tie">
 			<English>Cable Tie</English>
@@ -1143,7 +1181,7 @@
 			<Russian>Cable Tie</Russian>
 			<Spanish>Cable Tie</Spanish>
 			<French>Cable Tie</French>
-			<Czech>Cable Tie</Czech>
+			<Czech>Pásky</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_aa_battery">
 			<English>AA Battery</English>
@@ -1151,7 +1189,7 @@
 			<Russian>AA Battery</Russian>
 			<Spanish>AA Battery</Spanish>
 			<French>AA Battery</French>
-			<Czech>AA Battery</Czech>
+			<Czech>AA Baterie</Czech>
 		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
 			<English>2 Inch Metal Pipe</English>
@@ -1159,49 +1197,63 @@
 			<Russian>2 Inch Metal Pipe</Russian>
 			<Spanish>2 Inch Metal Pipe</Spanish>
 			<French>2 Inch Metal Pipe</French>
-			<Czech>2 Inch Metal Pipe</Czech>
+			<Czech>Dvoupalcová kovová trubka</Czech>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_ACG">
 			<English>ACG ATTACHMENT</English>
+			<Czech>Příslušenství - ACG</Czech>
 		</Key>
 		<Key ID="STR_ATTACHMENT_DESC_ACG">
 			<English>ACG ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_Silencer">
 			<English>Silencer ATTACHMENT</English>
+			<Czech>Příslušenství - Tlumič</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_DESC_Silencer">
 			<English>Silencer ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_Pso">
 			<English>PSO ATTACHMENT</English>
+			<Czech>Příslušenství - PSO</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_DESC_Pso">
 			<English>PSO ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_Kobra">
 			<English>KOBRA ATTACHMENT</English>
+			<Czech>Příslušenství - KOBRA</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_DESC_Kobra">
 			<English>KOBRA ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_GL">
 			<English>GL ATTACHMENT</English>
+			<Czech>Příslušenství - GL</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_DESC_GL">
 			<English>GL ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_CAMO">
 			<English>CAMO ATTACHMENT</English>
+			<Czech>Příslušenství - kamufláž</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_DESC_CAMO">
 			<English>CAMO ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_AIM">
 			<English>AIM ATTACHMENT</English>
+			<Czech>Příslušenství - Mířidlo</Czech>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_DESC_AIM">
 			<English>AIM ATTACHMENT</English>
+			<Czech>Používá se pro vylepšení zbraně.</Czech>
 		</Key>		
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
@@ -2953,7 +3005,7 @@
 			<Spanish>Una limpia y cerrada lata de gaseosa Papa's 'Gagarin Rocket Fuel'. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</Dutch>
 			<French>Une canette de 'Gagarin Rocket Fuel' en bon état. Produit à Chernarus.</French>
-			<Czech>A clean, unopened can of Papa's 'Gagarin Rocket Fuel' soda. Product of Chernarus.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka Gagarin Rocket Fuel od Papa. Vyrobeno v Chernarusi.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_14">
 			<English>Soda</English>
@@ -2971,7 +3023,7 @@
 			<Spanish>Una limpia y cerrada lata de gaseosa Papa's 'Olsha Sparkling Grape'. Producto de Chernarus.</Spanish>
 			<Dutch>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</Dutch>
 			<French>Une canette de soda au raisin 'Olsha' en bon état. Produit à Chernarus.</French>
-			<Czech>A clean, unopened can of Papa's 'Olsha Sparkling Grape' soda. Product of Chernarus.</Czech>
+			<Czech>Čistá a ještě neotevřená plechovka Olsha Sparkling Grape od Papa. Vyrobeno v Chernarusi.</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">
 			<English>MRE</English>
@@ -3016,7 +3068,7 @@
 			<Spanish>CerealMix</Spanish>
 			<Dutch>Studentenhaver</Dutch>
 			<French>Assortiment de fruits secs</French>
-			<Czech>Mix</Czech>
+			<Czech>Cestovní mix</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_NUTMIX">
 			<English>A pack of Papa's Original Trail Mix, with 12 different fruits and nuts.</English>
@@ -3071,7 +3123,7 @@
 			<Spanish>Golosina (Papitas)</Spanish>
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
-			<Czech>Snack (Chips)</Czech>
+			<Czech>Snack (Chipsy)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_SULAHOOPS">
 			<English>A clean, unopened bag of crunchy Sulahoops.</English>
@@ -3089,7 +3141,7 @@
 			<Spanish>Golosina (Papitas)</Spanish>
 			<Dutch>Snack (Chips)</Dutch>
 			<French>Snack (Chips)</French>
-			<Czech>Snack (Chips)</Czech>
+			<Czech>Snack (Chipsy)</Czech>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CHIPS_MYSTICALES">
 			<English>A clean, unopened bag of Miss Mysticales jalapeño chips.</English>
