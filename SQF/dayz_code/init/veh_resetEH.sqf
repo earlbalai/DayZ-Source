@@ -16,4 +16,4 @@ if (isServer) then {
 	_this addEventHandler ["GetIn", {[(_this select 0),"all",true] call server_updateObject;}];
 };
 
-diag_log(format["%1: all EH reset for %2", __FILE__, _this]);
+//diag_log(format["%1: all EH reset for %2", __FILE__, _this]);
