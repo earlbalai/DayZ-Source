@@ -816,7 +816,7 @@
 			<German>Ein Plastikkabelband</German>
 			<Russian>A plastic cable tie</Russian>
 			<Spanish>A plastic cable tie</Spanish>
-			<French>Un collier de serrage en plastique</French>
+			<French>Un serre-câble en plastique</French>
 			<Czech>Plastový kabelový svazek</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_aa_battery">
@@ -855,12 +855,12 @@
 		</key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_AIM">
 			<English>M4A1_AIM</English>
-			<French>M4A1 à lunette</French>
+			<French>M4A1 à viseur laser</French>
 			<Czech>M4A1_Mířidlo</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_AIM">
 			<English>Blueprint to create a M4A1_AIM. Required - 1 M4A1, 1 Attachment_AIM. - ToolBox</English>
-			<French>Plan de fabrication d'une M4A1 à lunette. Requis : 1 M4A1, 1 Fixation Lunette + Boîte à outils </French>
+			<French>Plan de fabrication d'une M4A1 à viseur laser. Requis : 1 M4A1, 1 Fixation viseur laser + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M4A1 s mířidlem. Požadováno - 1 M4A1, 1 mířidlo a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M9SD">
@@ -905,12 +905,12 @@
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_Aim_CAMO">
 			<English>M4A1_Aim_CAMO</English>
-			<French>M4A1 à lunette et Camouflage</French>
+			<French>M4A1 à viseur laser et Camouflage</French>
 			<Czech>M4A1 s mířidlem a kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_Aim_CAMO">
 			<English>Blueprint to create a M4A1_Aim_CAMO. Required - 1 M4A1_Aim, 1 Attachment_CAMO. - ToolBox</English>
-			<French>Plan de fabrication d'un M4A1 à lunette et Camouflage. Requis : 1 M4A1 à lunette, 1 Fixation Camouflage + Boîte à outils </French>
+			<French>Plan de fabrication d'un M4A1 à viseur laser et Camouflage. Requis : 1 M4A1 à viseur laser, 1 Fixation Camouflage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M4A1 s mířidlem a kamufláží. Požadováno - 1 M4A1 s mířidlem, 1 kamufláž a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36C_CAMO">
@@ -961,58 +961,72 @@
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PSO">
 			<English>PSO Scope</English>
+			<French>Lunette pour PSO</French>
 			<Czech>PSO zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PSO">
 			<English>Blueprint to create an PSO Scope. Required - 2 2inch Metal Pipe, 1 Binocular_Vector, 1 Hose Clamp. Tools - ToolBox</English>
+			<French>Plan de fabrication d'une lunette pour PSO. Requis : 2 tuyaux de 5cm, 1 Jumelle, 1 collier de fixation + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření zaměřovače PSO. Požadováno - 2 dvouplacové kovové trubky, 1 dalekohled, 1 drátek a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_ACG">
 			<English>ACG Scope</English>
+			<French>Lunette pour ACG</French>
 			<Czech>ACG zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_ACG">
 			<English>Blueprint to create an ACG Scope. Required - 2 2inch Metal Pipe, 2 Metal Sheet, 1 Hose Clamp. Tools - ToolBox</English>
+			<French>Plan de fabrication d'une lunette pour ACG. Requis : 2 tuyaux de 5cm, 2 plaques de métal, 1 collier de fixation + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření zaměřovače ACG. Požadováno - 2 dvoupalcové trubky, 2 plechy, 1 drátek a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_AIM">
 			<English>AIM Scope</English>
+			<French>Lunette laser</French>
 			<Czech>AIM zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_AIM">
 			<English>Blueprint to create an AIM Scope. Required - 1 1inch Metal Pipe, 1 scrap electronics, 1 D type battery, 1 Cable Tie. Tools - ToolBox</English>
+			<French>Plan de fabrication d'une lunette laser. Requis : 1 tuyau de 2.5cm, 1 pièces électroniques, 1 pile de type D, 1 serre-câble + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření AIM zaměřovače. Požadováno - 1 jednopalcová kovová trubka, 1 zbytek elektrotechniky, 1 D baterie, 1 drátek a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_CAMO">
 			<English>CAMO Pattern</English>
+			<French>Motif camouflage</French>
 			<Czech>Šablona pro kamufláž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_CAMO">
 			<English>Blueprint to create an CAMO Pattern. Required - 1 Rag, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
+			<French>Plan de fabrication d'un motif camouflage. Requis : 1 Tissu, 1 pot de peinture, 1 serre-câble + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření šablony pro kamufláž. Požadováno - 1 hadr, 1 barva, 1 provázek a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_KOBRA">
 			<English>KOBRA Scope</English>
+			<French>Lunette pour KOBRA</French>
 			<Czech>KOBRA zaměřovač</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_KOBRA">
 			<English>Blueprint to create an KOBRA Scope. Required - 1 Metal Sheet, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
+			<French>Plan de fabrication d'une lunette pour KOBRA. Requis : 1 Plaque de métal, 1 pot de peinture, 1 serre-câble + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření zaměřovače KOBRA. Požadováno - 1 plech, 1 barva, 1 drátky a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_GL">
 			<English>Grenade Launcher Attachment</English>
+			<French>Fixation lance-grenade</French>
 			<Czech>Granátomet</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_GL">
 			<English>Blueprint to create an Grenade Launcher. Required - 2 Metal Sheet, 1 2 inch metal pipe, 1 Hose Clamp. Tools - ToolBox</English>
+			<French>Plan de fabrication d'une fixation lance-grenade. Requis : 2 Plaques de métal, 1 Tuyau de 5cm, 1 collier de serrage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření granátometu. Požadováno - 2 plechy, 1 dvoupalcová kovová trubka, 1 objímka a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_CAMO">
 			<English>Camo Pattern</English>
+			<French>Motif camouflage</French>
 			<Czech>Šablona pro kamufláž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_CAMO">
 			<English>Blueprint to create an Camo Pattern. Required - 1 Rag, 1 Paint, 1 Cable Tie. Tools - ToolBox</English>
+			<French>Plan de fabrication d'un motif camouflage. Requis : 1 Tissu, 1 pot de peinture, 1 serre-câble + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření šablony pro kamufláž. Požadováno - 1 hadr, 1 barva, 1 provázek a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_BaseBallBatBarbed">
@@ -1020,7 +1034,7 @@
 			<German>BaseBallBat Barbed</German>
 			<Russian>BaseBallBat Barbed</Russian>
 			<Spanish>BaseBallBat Barbed</Spanish>
-			<French>BaseBallBat Barbed</French>
+			<French>Batte de baseball barbelée</French>
 			<Czech>BaseBallová pálka ozubená</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_BaseBallBatBarbed">
@@ -1028,7 +1042,7 @@
 			<German>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</German>
 			<Russian>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Russian>
 			<Spanish>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</Spanish>
-			<French>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</French>
+			<French>Plan de fabrication d'une Batte de baseball barbelée. Requis : 1 boîtes de clous, 1 Barbelés, 1 batte de baseball + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření baseballové pálky s ostnatým drátem. Požadováno - 1 blíček hřebíků, 1 drátený plot, 1 baseballová pálka a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_1inch_metal_pipe">
