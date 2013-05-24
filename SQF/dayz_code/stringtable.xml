@@ -586,7 +586,7 @@
 			<German>You are missing %1 %2</German>
 			<Russian>You are missing %1 %2</Russian>
 			<Spanish>You are missing %1 %2</Spanish>
-			<French>You are missing %1 %2</French>
+			<French>%1 %2 manque(nt)</French>
 			<Czech>Chybějí vám následující věci: %1 %2</Czech>
 		</Key>
 		<Key ID="str_crafting_failed">
@@ -594,7 +594,7 @@
 			<German>Failed to create an %1</German>
 			<Russian>Failed to create an %1</Russian>
 			<Spanish>Failed to create an %1</Spanish>
-			<French>Failed to create an %1</French>
+			<French>Impossible de créer %1</French>
 			<Czech>Vytvoření %1 selhalo</Czech>
 		</Key>
 		<Key ID="str_crafting_space">
@@ -602,7 +602,7 @@
 			<German>Nicht genug Platz im Inventar um das Item zu erstellen...</German>
 			<Russian>Not enough inventory space to make items...</Russian>
 			<Spanish>Not enough inventory space to make items...</Spanish>
-			<French>Not enough inventory space to make items...</French>
+			<French>Espace insuffisant pour créer les éléments...</French>
 			<Czech>Nemáš dostatečné místo v inventáři pro vytvoření předmětu.</Czech>
 		</Key>
 		<Key ID="str_crafting_success">
@@ -610,7 +610,7 @@
 			<German>Erfolgreich erstellt %1</German>
 			<Russian>Successfully created %1</Russian>
 			<Spanish>Successfully created %1</Spanish>
-			<French>Successfully created %1</French>
+			<French>Création de %1 réussie</French>
 			<Czech>Úspěšně jsi vytvořil %1</Czech>
 		</Key>
 	</Package>
@@ -620,7 +620,7 @@
 			<German>Craft Blaupause</German>
 			<Russian>Craft Blueprint</Russian>
 			<Spanish>Craft Blueprint</Spanish>
-			<French>Craft Blueprint</French>
+			<French>Plan de fabrication</French>
 			<Czech>Craft Blueprint</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_X">
@@ -628,31 +628,35 @@
 			<German>Blueprint used in crafting</German>
 			<Russian>Blueprint used in crafting</Russian>
 			<Spanish>Blueprint used in crafting</Spanish>
-			<French>Blueprint used in crafting</French>
+			<French>Fournit le mode opératoire pour créer des objets.</French>
 			<Czech>Blueprint je používán pro crafting</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_weapon_rails">
 			<English>Weapon Rails</English>
+			<French>Rail viseur</French>
 			<Czech>Nástavec pro zbraně</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_weapon_rails">
 			<English>Rails to attach attachments to weapons.</English>
 			<Czech>Nástavec pro upevnění příslušenství ke zbrani.</Czech>
+			<French>Rail de fixation de viseur</French>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rail_screws">
 			<English>Rail screws</English>
 			<Czech>Šrouby pro nástavec</Czech>
+			<French>Vis pour rail</French>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rail_screws">
 			<English>Screws used to hold weapon rails in place.</English>
 			<Czech>Šrouby, které drží nástavec.</Czech>
+			<French>Vis utilisées pour fixer le rail viseur sur le canon.</French>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_wood_pallet">
 			<English>A wooden pallet</English>
 			<German>A wooden pallet</German>
 			<Russian>A wooden pallet</Russian>
 			<Spanish>A wooden pallet</Spanish>
-			<French>A wooden pallet</French>
+			<French>Une palette en bois</French>
 			<Czech>Dřevěná paleta</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_string">
@@ -660,7 +664,7 @@
 			<German>A bit of string</German>
 			<Russian>A bit of string</Russian>
 			<Spanish>A bit of string</Spanish>
-			<French>A bit of string</French>
+			<French>Du fil</French>
 			<Czech>Kratší provázek</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_scrap_electronics">
@@ -668,7 +672,7 @@
 			<German>Ein Haufen von Elektronikschrott</German>
 			<Russian>A pile of scrap electronics</Russian>
 			<Spanish>A pile of scrap electronics</Spanish>
-			<French>A pile of scrap electronics</French>
+			<French>Un tas de pièces électroniques</French>
 			<Czech>Balík vyhozené elektroniky</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rope">
@@ -676,7 +680,7 @@
 			<German>Some rope</German>
 			<Russian>Some rope</Russian>
 			<Spanish>Some rope</Spanish>
-			<French>Some rope</French>
+			<French>Une corde</French>
 			<Czech>Nějaké lano</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rag">
@@ -684,7 +688,7 @@
 			<German>Einige alte Klamotten</German>
 			<Russian>Some old rags</Russian>
 			<Spanish>Some old rags</Spanish>
-			<French>Some old rags</French>
+			<French>Un morceau de tissu</French>
 			<Czech>Nějaké staré hadry</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_pvc_box">
@@ -692,7 +696,7 @@
 			<German>A box made of PVC</German>
 			<Russian>A box made of PVC</Russian>
 			<Spanish>A box made of PVC</Spanish>
-			<French>A box made of PVC</French>
+			<French>Une boîte en PVC</French>
 			<Czech>Krabice z PVC materiálu</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_silencer">
@@ -700,7 +704,7 @@
 			<German>ein Schalldämpfer</German>
 			<Russian>A silencer</Russian>
 			<Spanish>A silencer</Spanish>
-			<French>A silencer</French>
+			<French>Un silencieux</French>
 			<Czech>Tlumič</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_camo">
@@ -708,7 +712,7 @@
 			<German>Camo Materialien</German>
 			<Russian>Camo materials</Russian>
 			<Spanish>Camo materials</Spanish>
-			<French>Camo materials</French>
+			<French>Du camouflage</French>
 			<Czech>Materiál pro kamufláž</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paper_sheet">
@@ -716,7 +720,7 @@
 			<German>Blatt Papier</German>
 			<Russian>Sheets of paper</Russian>
 			<Spanish>Sheets of paper</Spanish>
-			<French>Sheets of paper</French>
+			<French>Des feuilles de papier</French>
 			<Czech>Pár listů papíru</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paint">
@@ -724,7 +728,7 @@
 			<German>etwas Farbe</German>
 			<Russian>Some paint</Russian>
 			<Spanish>Some paint</Spanish>
-			<French>Some paint</French>
+			<French>De la peinture</French>
 			<Czech>Nějaké malování</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_note">
@@ -732,7 +736,7 @@
 			<German>Ein Text gekritzelte auf ein Blatt Papier</German>
 			<Russian>A note scribbled on some paper</Russian>
 			<Spanish>A note scribbled on some paper</Spanish>
-			<French>A note scribbled on some paper</French>
+			<French>Des mots écrits sur du papier</French>
 			<Czech>Poznámka načmáraná na nějakém papíře</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_needle">
@@ -740,7 +744,7 @@
 			<German>Eine scharfe Nadel</German>
 			<Russian>A sharp needle</Russian>
 			<Spanish>A sharp needle</Spanish>
-			<French>A sharp needle</French>
+			<French>Une aiguille éffilée</French>
 			<Czech>Ostrá jehla</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_nail">
@@ -748,7 +752,7 @@
 			<German>Ein alter Nagel</German>
 			<Russian>An old nail</Russian>
 			<Spanish>An old nail</Spanish>
-			<French>An old nail</French>
+			<French>Un vieux clou</French>
 			<Czech>Starý hřebík</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_metal_sheet">
@@ -756,7 +760,7 @@
 			<German>Eine Metallplatte</German>
 			<Russian>A metal sheet</Russian>
 			<Spanish>A metal sheet</Spanish>
-			<French>A metal sheet</French>
+			<French>Une plaque de métal</French>
 			<Czech>Plech</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_laser">
@@ -764,7 +768,7 @@
 			<German>Ein roter Laser</German>
 			<Russian>A red laser</Russian>
 			<Spanish>A red laser</Spanish>
-			<French>A red laser</French>
+			<French>Un laser rouge</French>
 			<Czech>Červený laser</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_hose_clamp">
@@ -772,7 +776,7 @@
 			<German>A clamp off a hose</German>
 			<Russian>A clamp off a hose</Russian>
 			<Spanish>A clamp off a hose</Spanish>
-			<French>A clamp off a hose</French>
+			<French>Un collier de fixation</French>
 			<Czech>A clamp off a hose</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_gauze">
@@ -780,7 +784,7 @@
 			<German>A pile of gauze</German>
 			<Russian>A pile of gauze</Russian>
 			<Spanish>A pile of gauze</Spanish>
-			<French>A pile of gauze</French>
+			<French>De la gaze</French>
 			<Czech>Hromádka gázy</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_empty_barrel">
@@ -788,7 +792,7 @@
 			<German>A barrel that has been emptied of its content</German>
 			<Russian>A barrel that has been emptied of its content</Russian>
 			<Spanish>A barrel that has been emptied of its content</Spanish>
-			<French>A barrel that has been emptied of its content</French>
+			<French>Un tonneau vidé de son contenu</French>
 			<Czech>Sud, který byl vyprázdněn</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_duct_tape">
@@ -796,7 +800,7 @@
 			<German>A roll of sticky duct tape</German>
 			<Russian>A roll of sticky duct tape</Russian>
 			<Spanish>A roll of sticky duct tape</Spanish>
-			<French>A roll of sticky duct tape</French>
+			<French>Un rouleau d'adhésif</French>
 			<Czech>Role lepící pásky</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_d_battery">
@@ -804,7 +808,7 @@
 			<German>Eine Batterie (Größe D)</German>
 			<Russian>A size D battery</Russian>
 			<Spanish>A size D battery</Spanish>
-			<French>A size D battery</French>
+			<French>Une pile de type D</French>
 			<Czech>A velikost D baterie</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_cable_tie">
@@ -812,7 +816,7 @@
 			<German>Ein Plastikkabelband</German>
 			<Russian>A plastic cable tie</Russian>
 			<Spanish>A plastic cable tie</Spanish>
-			<French>A plastic cable tie</French>
+			<French>Un collier de serrage en plastique</French>
 			<Czech>Plastový kabelový svazek</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_aa_battery">
@@ -820,7 +824,7 @@
 			<German>Eine Batterie (Größe AA)</German>
 			<Russian>A size AA battery</Russian>
 			<Spanish>A size AA battery</Spanish>
-			<French>A size AA battery</French>
+			<French>Une batterie de Type AA</French>
 			<Czech> AA baterie</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_2inch_metal_pipe">
@@ -828,7 +832,7 @@
 			<German>Ein Metallrohr (2 Zoll im Durchmesser)</German>
 			<Russian>A metal pipe 2 inches in diameter</Russian>
 			<Spanish>A metal pipe 2 inches in diameter</Spanish>
-			<French>A metal pipe 2 inches in diameter</French>
+			<French>Un tuyau en métal de 5 cm de diamètre</French>
 			<Czech>Dvoupalcová kovová trubka</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_1inch_metal_pipe">
@@ -836,87 +840,107 @@
 			<German>Ein Metallrohr (1 Zoll im Durchmesser)</German>
 			<Russian>A metal pipe 1 inch in diameter</Russian>
 			<Spanish>A metal pipe 1 inch in diameter</Spanish>
-			<French>A metal pipe 1 inch in diameter</French>
+			<French>Un tuyau en métal de 2.5 cm de diamètre</French>
 			<Czech>Jednopalcová kovová trubka</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Bandage">
 			<English>Bandage</English>
+			<French>Pansement</French>
 			<Czech>Bandáž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Bandage">
-			<English>Blueprint to create an Banagde. Required - 2 Rags, 2 gauze, 1 string - ToolBox<</English>
+			<English>Blueprint to create an Bandage. Required - 2 Rags, 2 gauze, 1 string - ToolBox<</English>
+			<French>Plan de fabrication d'un Pansement. Requis : 2 Tissus, 2 Gazes, 1 Fil + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření Bandáže. Požadováno - 2 hadry, 2 gázy, 1 provázek a ToolBox</Czech>
 		</key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_AIM">
 			<English>M4A1_AIM</English>
+			<French>M4A1 à lunette</French>
 			<Czech>M4A1_Mířidlo</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_AIM">
 			<English>Blueprint to create a M4A1_AIM. Required - 1 M4A1, 1 Attachment_AIM. - ToolBox</English>
+			<French>Plan de fabrication d'une M4A1 à lunette. Requis : 1 M4A1, 1 Fixation Lunette + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M4A1 s mířidlem. Požadováno - 1 M4A1, 1 mířidlo a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M9SD">
 			<English>M9SD</English>
+			<French>M9 Silencieux</French>
 			<Czech>M9 s tlumičem</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M9SD">
 			<English>Blueprint to create a M9SD. Required - 1 M9, 1 Attachment_Silencer. - ToolBox</English>
+			<French>Plan de fabrication d'un M9 silencieux. Requis : 1 M9, 1 Fixation Silencieux + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M9 s tlumičem. Požadováno - 1 M9, 1 tlumič a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_MAKAROVSD">
 			<English>MAKAROVSD</English>
+			<French>Makarov Silencieux</French>
 			<Czech>Makarov s tlumičem</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_MAKAROVSD">
 			<English>Blueprint to create a MAKAROVSD. Required - 1 MAKAROV, 1 Attachment_Silencer. - ToolBox</English>
+			<French>Plan de fabrication d'un Makarov silencieux. Requis : 1 Makarov, 1 Fixation Silencieux + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření Makarov s tlumičem. Požadováno - 1 Makarov, 1 tlumič a Toolbox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_bizonSD">
 			<English>BizonSD</English>
+			<French>Bizon Silencieux</French>
 			<Czech>Bizon s tlumičem</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_bizonSD">
 			<English>Blueprint to create a BizonSD. Required - 1 Bizon, 1 Attachment_Silencer. - ToolBox</English>
+			<French>Plan de fabrication d'un Bizon silencieux. Requis : 1 Bizon, 1 Fixation Silencieux + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření Bizon s tlumičem. Požadováno - 1 Bizon, 1 tlumič a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_SVD_CAMO">
 			<English>SVD_CAMO</English>
+			<French>SVD Camouflage</French>
 			<Czech>SVD s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_SVD_CAMO">
 			<English>Blueprint to create a SVD_CAMO. Required - 1 SVD, 1 Attachment_CAMO, 1 Skin_Camo1_DZ. - ToolBox</English>
+			<French>Plan de fabrication d'un SVD Camouflage. Requis : 1 SVD, 1 Fixation Camouflage, 1 tenue de camouflage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření SVD s kamufláží. Požadováno - 1 SVD, 1 kamufláž, 1 Skin_Camo_DZ a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M4A1_Aim_CAMO">
 			<English>M4A1_Aim_CAMO</English>
+			<French>M4A1 à lunette et Camouflage</French>
 			<Czech>M4A1 s mířidlem a kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_M4A1_Aim_CAMO">
 			<English>Blueprint to create a M4A1_Aim_CAMO. Required - 1 M4A1_Aim, 1 Attachment_CAMO. - ToolBox</English>
+			<French>Plan de fabrication d'un M4A1 à lunette et Camouflage. Requis : 1 M4A1 à lunette, 1 Fixation Camouflage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M4A1 s mířidlem a kamufláží. Požadováno - 1 M4A1 s mířidlem, 1 kamufláž a Toolbox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36C_CAMO">
 			<English>G36C_CAMO</English>
+			<French>G36C Camouflage</French>
 			<Czech>G36C s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_G36C_CAMO">
 			<English>Blueprint to create a G36C_CAMO. Required - 1 G36C, 1 Attachment_CAMO. - ToolBox</English>
+			<French>Plan de fabrication d'un G36C Camouflage. Requis : 1 G36C, 1 Fixation Camouflage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření G36C s kamufláží. Požadováno - 1 G69C, 1 kamufláž a ToolBox.</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36A_CAMO">
 			<English>G36A_CAMO</English>
+			<French>G36A Camouflage</French>
 			<Czech>G36A s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_G36A_CAMO">
 			<English>Blueprint to create a G36A_CAMO. Required - 1 G36A, 1 Attachment_CAMO. - ToolBox</English>
+			<French>Plan de fabrication d'un G36A Camouflage. Requis : 1 G36A, 1 Fixation Camouflage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření G36A s kamufláží. Požadováno - 1 G36A, 1 kamufláž a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_G36K_CAMO">
 			<English>G36K_CAMO</English>
+			<French>G36K Camouflage</French>
 			<Czech>G36K s kamufláží</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_G36K_CAMO">
 			<English>Blueprint to create a G36K_CAMO. Required - 1 G36K, 1 Attachment_CAMO. - ToolBox</English>
+			<French>Plan de fabrication d'un G36K Camouflage. Requis : 1 G36K, 1 Fixation Camouflage + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření G36K s kamufláží. Požadováno - 1 G36K, 1 kamufláž a ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_NailedBaseballBat">
@@ -924,7 +948,7 @@
 			<German>Nailed BaseballBat</German>
 			<Russian>Nailed BaseballBat</Russian>
 			<Spanish>Nailed BaseballBat</Spanish>
-			<French>Nailed BaseballBat</French>
+			<French>Batte de baseball cloutée</French>
 			<Czech>Nailed BaseballBat</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Blueprint_NailedBaseballBat">
@@ -932,7 +956,7 @@
 			<German>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</German>
 			<Russian>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Russian>
 			<Spanish>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Spanish>
-			<French>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</French>
+			<French>Plan de fabrication d'une Batte de baseball cloutée. Requis : 2 boîtes de clous, 1 batte de baseball + Boîte à outils </French>
 			<Czech>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PSO">
