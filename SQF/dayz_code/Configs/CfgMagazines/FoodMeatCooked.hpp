@@ -27,7 +27,7 @@ class FoodchickenCooked : FoodCooked {
 	model = "\dayz_equip\models\food_steak_cooked_gear.p3d";
 	picture = "\dayz_equip\textures\equip_steak_cooked_ca.paa";
 	descriptionShort = $STR_FOODCOOKED_EQUIP_CODE_DESC_2;
-	bloodRegen = 800;
+	bloodRegen = 1000;
 };
 
 class FoodbaconCooked : FoodCooked {
