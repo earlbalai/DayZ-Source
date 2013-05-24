@@ -82,6 +82,7 @@ Serverside affected addons:
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
 	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
 	    * [FIXED] - Most Dupeing issues should now be resolved.
+	    * [FIXED] - Most wallhack exploits should now be resolved.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 800 each.
@@ -124,6 +125,7 @@ Serverside affected addons:
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
+	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
 	
 	    * [REMOVED] - M107 and AS50. (Removed from game)
 	    * [REMOVED] - Removed all military weapons with any attachment from loot tables. (Not removed from game)
