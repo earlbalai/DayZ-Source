@@ -9,32 +9,32 @@ class CfgLoot {
 		{"Attachment_Silencer",0.01}
 	};
 	craft[] = {
-			{"equip_wood_pallet",0.03},
-			{"equip_string",0.03},
-			{"equip_scrap_electronics",0.01},
-			{"equip_rope",0.02},
-			{"equip_rag",0.02},
-			{"equip_pvc_box",0.01},
-			{"equip_paper_sheet",0.02},
-			{"equip_paint",0.02},
-			{"equip_note",0.01},
-			{"equip_needle",0.01},
-			{"equip_nail",0.02},
-			{"equip_metal_sheet",0.03},
-			{"equip_scrap_metal",0.03},
-			{"equip_laser",0.01},
-			{"equip_hose_clamp",0.01},
-			{"equip_gauze",0.01},
-			{"equip_empty_barrel",0.01},
-			{"equip_duct_tape",0.03},
-			{"equip_d_battery",0.01},
-			{"equip_cable_tie",0.03},
-			{"equip_aa_battery",0.01},
-			{"equip_2inch_metal_pipe",0.01},
-			{"equip_1inch_metal_pipe",0.02},
+			//{"equip_wood_pallet",0.03},
+			//{"equip_string",0.03},
+			//{"equip_scrap_electronics",0.01},
+			//{"equip_rope",0.02},
+			//{"equip_rag",0.02},
+			//{"equip_pvc_box",0.01},
+			//{"equip_paper_sheet",0.02},
+			//{"equip_paint",0.02},
+			//{"equip_note",0.01},
+			//{"equip_needle",0.01},
+			//{"equip_nail",0.02},
+			//{"equip_metal_sheet",0.03},
+			//{"equip_scrap_metal",0.03},
+			//{"equip_laser",0.01},
+			//{"equip_hose_clamp",0.01},
+			//{"equip_gauze",0.01},
+			//{"equip_empty_barrel",0.01},
+			//{"equip_duct_tape",0.03},
+			//{"equip_d_battery",0.01},
+			//{"equip_cable_tie",0.03},
+			//{"equip_aa_battery",0.01},
+			//{"equip_2inch_metal_pipe",0.01},
+			//{"equip_1inch_metal_pipe",0.02},
 			{"ItemNails",0.01},
-			{"equip_rail_screws",0.01},
-			{"equip_weapon_rails",0.01}
+			//{"equip_rail_screws",0.01},
+			//{"equip_weapon_rails",0.01}
 	};
 	trash[] = {
 			{"ItemSodaCokeEmpty",0.05},
@@ -50,8 +50,8 @@ class CfgLoot {
 			{"TrashJackDaniels",0.02},
 			{"ItemSodaEmpty",0.03},
 			{"ItemTrashToiletpaper",0.01},
-			{"ItemTrashRazor",0.01}
-			//{"ItemCards",0.02}
+			{"ItemTrashRazor",0.01},
+			{"ItemCards",0.02}
 	};
 	civilian[] = {
 			{"TrashTinCan",0.03},
