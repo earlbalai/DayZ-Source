@@ -169,7 +169,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 			if (_age < -0.1) then {
 					_x setVariable ["looted",(DateToNumber date),true];
 			} else {
-				if (_age > 30) then {
+				if (_age > 15) then {
 					_x setVariable ["looted",_dateNow,true];
 					_qty = _x call building_spawnLoot;
 					_currentWeaponHolders = _currentWeaponHolders + _qty;
