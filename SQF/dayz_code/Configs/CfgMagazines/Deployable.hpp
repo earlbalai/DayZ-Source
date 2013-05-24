@@ -6,7 +6,26 @@
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_20;
+		tentmodel = TentStorage;
 		
+		class ItemActions {
+			class Pitch {
+				text = $STR_PITCH_TENT;
+				script = "spawn player_tentPitch;";
+			};
+		};
+	};
+	
+	class ItemDomeTent : CA_Magazine {
+		scope = public;
+		count = 1;
+		type = (256 * 3);
+		displayName = $STR_EQUIP_NAME_20;
+		model = "\dayz_equip\models\tentbag_gear.p3d";
+		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
+		descriptionShort = $STR_EQUIP_DESC_20;
+		tentmodel = DomeTentStorage;
+
 		class ItemActions {
 			class Pitch {
 				text = $STR_PITCH_TENT;

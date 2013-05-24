@@ -25,3 +25,10 @@ class StashMedium : Land_A_tent {
 	transportMaxWeapons = 1;
 	transportMaxBackpacks = 0;
 };
+
+class DomeTentStorage : Land_A_tent {
+	vehicleClass = "Survival";
+	transportMaxMagazines = 50;
+	transportMaxWeapons = 10;
+	transportMaxBackpacks = 5;
+};

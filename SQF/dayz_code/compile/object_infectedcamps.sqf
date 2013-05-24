@@ -23,11 +23,11 @@ _counter = 0;
 //diag_log ("CampRadius: " +str(_campRadius));
 	
 	_trigger = createTrigger["EmptyDetector",_campPos];
-	_trigger setTriggerArea[_campRadius,_campRadius+50,0,false];
+	_trigger setTriggerArea[_campRadius,_campRadius+100,false];
 	_trigger setTriggerActivation["ANY","PRESENT",true];
 	_trgcode = format["[%1,%2] spawn camp_spawnZombies;",_campPos,_campAmount];
 	_trigger setTriggerStatements["player in thislist", _trgcode, ""];
-	_trigger setTriggerTimeout [0, 5, 3, false];
+	//_trigger setTriggerTimeout [0, 5, 3, false];
 	
 	if ("ItemMap_Debug" in items player) then {
 		_markerstr = createMarker [_campName,_campPos];
