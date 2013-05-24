@@ -141,17 +141,9 @@ class CfgBuildingLoot {
 			{"ItemBookBible","magazine",0.02},
 			{"WeaponHolder_ItemFuelcan","object",0.03},
 			//
+			/*
 			{"Blueprint_NailedBaseballBat","weapon",0.01},
 			{"Blueprint_BaseBallBatBarbed","weapon",0.01},
-			/*
-			{"Blueprint_ACG","weapon",0.02},
-			{"Blueprint_AIM","weapon",0.03},
-			{"Blueprint_Camo","weapon",0.02},
-			{"Blueprint_GL","weapon",0.03},
-			{"Blueprint_Kobra","weapon",0.02},
-			{"Blueprint_Pso","weapon",0.03},
-			{"Blueprint_Silencer","weapon",0.01},
-			*/
 			{"Blueprint_M9SD","weapon",0.01},
 			{"Blueprint_M4A1_AIM","weapon",0.01},
 			{"Blueprint_MAKAROVSD","weapon",0.01},
@@ -165,6 +157,7 @@ class CfgBuildingLoot {
 			{"Blueprint_Bandage","weapon",0.01},
 			{"Blueprint_Compass","weapon",0.01},
 			//
+			*/
 			{"","craft",0.40},
 			{"","military",0.10},
 			{"","generic",0.60}
@@ -365,7 +358,7 @@ class CfgBuildingLoot {
 			{"","craft",0.30},
 			{"","military",0.70},
 			{"","generic",0.10},
-			{"","attachments",0.10},
+			//{"","attachments",0.10},
 			{"","trash",0.30}
 		};
 	};
@@ -424,7 +417,7 @@ class CfgBuildingLoot {
 			{"","craft",0.30},
 			{"","military",0.70},
 			{"","generic",0.10},
-			{"","attachments",0.10},
+			//{"","attachments",0.10},
 			{"","trash",0.30}
 		};
 	};
@@ -452,7 +445,7 @@ class CfgBuildingLoot {
 			{"","hunter",0.10},
 			{"","craft",0.30},
 			{"","military",0.15},
-			{"","attachments",0.15},
+			//{"","attachments",0.15},
 			{"","generic",0.50},
 			{"","trash",0.30}
 		};
