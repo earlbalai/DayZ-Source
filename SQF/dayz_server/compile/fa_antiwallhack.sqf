@@ -28,12 +28,13 @@ _antiwallhack=[
 	],
 	[
 		"Land_A_Office01",
-		[], 
+		[[3804.1,8924.83,-0.149994], [10481.5,2358.45,4.76837e-007], [12742.4,9593.23,0]], 
 		[
 			[0.837891, -1.13086, 5.93463, "Land_CncBlock_D", 90], [2.30957, -2.65918, 6.02472, "Land_CncBlock_D", 0], [3.68457, -1.2168, 6.06476, "Land_CncBlock_D", 270], [2.36914, -1.09863, 6.01471, "Land_CncBlock_D", 225], [2.4043, 0.155273, 6.14484, "Land_CncBlock_D", 180], [2.18359, -1.36035, 6.01471, "Land_CncBlock_D", 135]
 		]
 	]
 ];
+
 
 _nbhouses = 0;
 _nbpatchs = 0;
@@ -63,7 +64,7 @@ _nbpatchs = 0;
 			_o setPosATL _pos;
 			_nbpatchs = _nbpatchs +1;
 		} forEach _patchList;
-		//diag_log(format["Found building %1 at %2", _houseType, getPosATL _house ]);
+		diag_log(format["Found building %1 at %2", _houseType, getPosATL _house ]);
 	} forEach _houseList;
 } forEach _antiwallhack;
 

@@ -464,7 +464,7 @@
 		lootChance = 0.4;
 	};
 	class datsun01Wreck: Residential {
-		lootPos[] = {{0.195801,-1.07813,-0.271179}};	
+		lootPos[] = {{0.0239258,1.51465,-0.141052}};	
 		maxRoaming = 0;
 		lootChance = 0.1;
 	};
@@ -474,15 +474,11 @@
 		lootChance = 0.1;
 	};
 	class SKODAWreck: Residential {
-		lootPos[] = {{-0.0419922,-0.521484,-0.0607605}}; 	
+		lootPos[] = {{-0.219238,-0.311523,-0.611298}}; 	
 		maxRoaming = 0;
 		lootChance = 0.1;
 	};
-	class hiluxWreck: Residential {
-		lootPos[] = {{-0.884766,-1.2373,-0.24765}};	
-		maxRoaming = 0;
-		lootChance = 0.1;
-	};
+
 	class Land_Misc_GContainer_Big: Industrial {
 		lootPos[] = {{2.28223,0.792969,0.0986633}}; 	
 		maxRoaming = 0;
@@ -492,4 +488,5 @@
 		lootPos[] = {{-0.00732422,0.293945,-1.06848}};	
 		lootChance = 0.1;
 	};
+
 	
