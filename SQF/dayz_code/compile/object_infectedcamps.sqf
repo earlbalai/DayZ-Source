@@ -29,6 +29,7 @@ _counter = 0;
 	_trigger setTriggerStatements["player in thislist", _trgcode, ""];
 	//_trigger setTriggerTimeout [0, 5, 3, false];
 	
+	/*
 	if ("ItemMap_Debug" in items player) then {
 		_markerstr = createMarker [_campName,_campPos];
 		_markerstr setMarkerColor "ColorRed";
@@ -36,5 +37,5 @@ _counter = 0;
 		_markerstr setMarkerBrush "Border";
 		_markerstr setMarkerSizeLocal [_campRadius, _campRadius];
 	};	
-		
+	*/
 } foreach _array;

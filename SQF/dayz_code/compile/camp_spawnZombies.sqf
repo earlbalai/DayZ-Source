@@ -23,7 +23,7 @@ while {_counter < _amount} do {
 	_doLoiter = false;
 	};
 	
-	_position = [_campPos,1,30,0,0,0,0] call BIS_fnc_findSafePos;
+	_position = [_campPos,1,130,0,0,0,0] call BIS_fnc_findSafePos;
 	
 	sleep 0.001;
 	_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],10]) == 0;
@@ -32,7 +32,7 @@ while {_counter < _amount} do {
 	_agent = 	objNull;
 
 	//Exit if no one is nearby
-	//if (!_isNoone) exitWith {};
+	if (!_isNoone) exitWith {};
 
 	_unitTypes = DayZ_NewZeds;
 	 
