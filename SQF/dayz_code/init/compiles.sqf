@@ -54,7 +54,7 @@ if (!isDedicated) then {
 	zombie_findTargetAgent = 	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_findTargetAgent.sqf";
 	zombie_loiter = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_loiter.sqf";			//Server compile, used for loiter behaviour
 	zombie_generate = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_generate.sqf";			//Server compile, used for loiter behaviour
-	swarm_generate = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\swarm_generate.sqf";			//Server compile, used for Swarms behaviour
+	//swarm_generate = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\swarm_generate.sqf";			//Server compile, used for Swarms behaviour
 		
 	//
 	dog_findTargetAgent =   compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
@@ -108,7 +108,7 @@ if (!isDedicated) then {
 	camp_spawnZombies = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\camp_spawnZombies.sqf";			//Server compile, used for loiter behaviour
 	
 	//Crafting
-	player_craftItem = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
+	//player_craftItem = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
 
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
