@@ -21,7 +21,7 @@ _hasitemcount = {_x == _consume} count magazines player;
 
 if (_hasitemcount == 0) exitwith {};
 if (_hasitemcount == 1) then { _stashtype =   getText (_config >> "stashsmall"); };
-if (_hasitemcount == 2) then { _stashtype =   getText (_config >> "stashmedium"); };
+//if (_hasitemcount == 2) then { _stashtype =   getText (_config >> "stashmedium"); };
 
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
