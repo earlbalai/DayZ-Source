@@ -57,6 +57,7 @@ Serverside affected addons:
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked (Zeds stuck player's leg out to trip him/her up).
+		* [NEW] - Epeen UI has now been updated and renamed journal. 
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
