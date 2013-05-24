@@ -89,9 +89,10 @@ while {true} do {
 			
 			[_itemType select 0, _itemType select 1, _position, (sizeOf _crashModel)] call spawn_loot;
 			
-			 //Grass clear system uncomment for clear areas around choppers loot.
-			_clutter = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
-			_clutter setPos _position;
+			 //Grass clear system uncomment for clear areas around choppers loot. Remove the // from the next two lines to enable
+			 
+			//_clutter = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
+			//_clutter setPos _position;
 
 			diag_log(format["CRASHSPAWNER: Loot spawn at '%1 - %3' with loot table '%2'", _crashName, str(_itemType),_position]); 
 
