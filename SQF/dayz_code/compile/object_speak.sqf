@@ -52,10 +52,10 @@ if (floor(random(_chance)) == 0) then {
 		[nil,_unit,rSAY,[_sound, _dis]] call RE;
 	};
 	//Swarm
-	if (_type in ["spotted"]) then {
-		_chance = random 1;
-		if (_chance > 0.8) then {
-			[getPosATL player, 2] call swarm_generate;
-		};
-	};
+	//if (_type in ["spotted"]) then {
+	//	_chance = random 1;
+	//	if (_chance > 0.8) then {
+	//		[getPosATL player, 2] call swarm_generate;
+	//	};
+	//};
 };
