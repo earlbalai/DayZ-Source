@@ -6,6 +6,7 @@ _item = _this;
 
 _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
+_model = getText (_config >> "model");
 
 // item is missing or tools are missing
 if ((!(_item IN magazines player)) OR {(_item != "ItemTent")}) exitWith {
