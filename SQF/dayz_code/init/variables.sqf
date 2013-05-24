@@ -271,6 +271,7 @@ s_player_lastTarget =	objNull;
 s_player_repairActions = [];
 
 //Initialize Medical Variables
+force_dropBody = 		false;
 r_interrupt = 			false;
 r_doLoop = 				false;
 r_self = 				false;

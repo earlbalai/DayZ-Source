@@ -267,6 +267,10 @@ if (!isDedicated) then {
 			_nill = execvm "\z\addons\dayz_code\actions\playerstats.sqf";
 		};
 		*/
+		//Prevent exploit of drag body
+		if (_dikCode in actionKeys "Prone") then { force_dropBody = true; };
+		if (_dikCode in actionKeys "Crouch") then { force_dropBody = true; };
+
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveForward") then {r_interrupt = true};
