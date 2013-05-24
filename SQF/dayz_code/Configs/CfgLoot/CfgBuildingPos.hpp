@@ -209,7 +209,7 @@
 	}; // Qty: 3
 	class Land_HouseV_3I4: Residential {
 		maxRoaming = 3;
-		lootPos[] = {{5.58545,2.80859,-2.56293}};
+		lootPos[] = {{5.46387,2.80273,-2.61298}};
 	}; // Qty: 103
 	class Land_Shed_W4: Residential {
 		maxRoaming = 3;
@@ -326,11 +326,11 @@
 		lootPos[] = {{-3.60205,2.81641,-2.24005}};
 	};
 	class Land_HouseV_2L: Residential {
-		lootPos[] = {{4.32617,1.81836,-3.8432}};
+		lootPos[] = {{4.32617,1.81836,-3.96332},{-3.98438,-3.87207,-4.02338}};
 	};
 	class Land_HouseV_2T1: HouseRoaming {};
 	class Land_houseV_2T2: Residential {
-		lootPos[] = {{-4.24951,0.988281,-4.0574}};
+		lootPos[] = {{-4.24951,0.988281,-4.0574},{0.193359,4.10645,-4.66714},{2.93262,4.13477,-4.64713}};
 	};
 	class Land_HouseV_3I2: HouseRoaming {};
 	class Land_HouseV_3I3: HouseRoaming {};
@@ -417,10 +417,6 @@
 		lootPos[] = {{-5.604,4.47461,-4.17218},{-3.09521,-2.06934,-4.17218},{2.34961,-5.01953,9.02472}};	
 		lootChance = 0.2;
 	};
-	class UralWreck: Industrial {
-		lootPos[] = {{0.00927734,3.08301,-0.0449524}};	
-		lootChance = 0.1;
-	};
 	class Rubbish5: Industrial {
 		lootPos[] = {{-0.369629,0.078125,-0.274689}};	
 		maxRoaming = 0;
@@ -449,6 +445,7 @@
 	};
 	class Land_Shed_M02: Residential {
 		lootPos[] = {{-0.0136719,-1.44629,-1.54199}};	
+		maxRoaming = 0;
 		lootChance = 0.2;
 	};
 	class Fort_Barricade: Industrial {
@@ -466,5 +463,33 @@
 		maxRoaming = 0;
 		lootChance = 0.4;
 	};
-
+	class datsun01Wreck: Residential {
+		lootPos[] = {{0.195801,-1.07813,-0.271179}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class LADAWreck: Industrial {
+		lootPos[] = {{-0.106934,-0.660156,-0.144714}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class SKODAWreck: Residential {
+		lootPos[] = {{-0.0419922,-0.521484,-0.0607605}}; 	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class hiluxWreck: Residential {
+		lootPos[] = {{-0.884766,-1.2373,-0.24765}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_Misc_GContainer_Big: Industrial {
+		lootPos[] = {{2.28223,0.792969,0.0986633}}; 	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_Toilet: Military {
+		lootPos[] = {{-0.00732422,0.293945,-1.06848}};	
+		lootChance = 0.1;
+	};
 	

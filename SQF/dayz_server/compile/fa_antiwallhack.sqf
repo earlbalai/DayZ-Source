@@ -7,7 +7,7 @@ _antiwallhack=[
 			[6414.05,2760.21,0], [6817.3,2702.03,0], [10517.9,2287.55,0], [11956.7,9120.21,0] // optional precomputed building positions
 		],
 		[
-			[17.6694,-1.9502,3.24185,"Land_CncBlock_D",0] // what to add on building (coordinates/type/angle)
+			[17.6182,-1.8418,3.23178,"Land_CncBlock_D",0],[15.7192,-1.84277,3.22177,"Land_CncBlock_D",0] // what to add on building (coordinates/type/angle)
 		]
 	],
 	[
@@ -24,6 +24,13 @@ _antiwallhack=[
 		[[6552.96,2807.47,0], [7036.05,2526.13,0], [10028.6,1832.52,0]], 
 		[
 			[2.17627, 1.98828, 5.31387,  "Land_CncBlock_D" , 0], [2.85547, 3.02246, 5.38394,  "Land_CncBlock_D" , 0], [-15.7412, 3.98145, 5.38394,  "Land_CncBlock_D" , 270], [-20.2915, 4.01563, 5.35391,  "Land_CncBlock_D" , 90], [-20.291, 1.22559, 5.36392,  "Land_CncBlock_D" , 90], [-19.0527, -0.318359, 5.38394,  "Land_CncBlock_D" , 0], [-16.6426, -0.321289, 5.38394,  "Land_CncBlock_D" , 0], [-15.4575, 1.01563, 5.35391,  "Land_CncBlock_D" , 270], [-16.7344, 5.30762, 5.38394,  "Land_CncBlock_D" , 180], [-19.0361, 5.30859, 5.38394,  "Land_CncBlock_D" , 180]
+		]
+	],
+	[
+		"Land_A_Office01",
+		[], 
+		[
+			[0.837891, -1.13086, 5.93463, "Land_CncBlock_D", 90], [2.30957, -2.65918, 6.02472, "Land_CncBlock_D", 0], [3.68457, -1.2168, 6.06476, "Land_CncBlock_D", 270], [2.36914, -1.09863, 6.01471, "Land_CncBlock_D", 225], [2.4043, 0.155273, 6.14484, "Land_CncBlock_D", 180], [2.18359, -1.36035, 6.01471, "Land_CncBlock_D", 135]
 		]
 	]
 ];
