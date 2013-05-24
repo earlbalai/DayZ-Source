@@ -6,7 +6,7 @@
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_20;
-		model = TentStorage;
+		tentmodel = TentStorage;
 		
 		class ItemActions {
 			class Pitch {
@@ -24,7 +24,7 @@
 		model = "\dayz_equip\models\tentbag_gear.p3d";
 		picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 		descriptionShort = $STR_EQUIP_DESC_20;
-		model = DomeTentStorage;
+		tentmodel = DomeTentStorage;
 
 		class ItemActions {
 			class Pitch {
