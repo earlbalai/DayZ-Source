@@ -19,10 +19,9 @@ Serverside affected addons:
 * Mission (server admins only) (Prerequisites) Downloaded from http://www.silentspy.net/utility/dayz/mission-generator/
 * SQL Files (server admins only)
 * BattlEye-Filers (server admins only)
-
 		
-	Changes:
-		* [NEW] - Combat spawning system to spawn infected around players firing.
+Changes:
+	    * [NEW] - Combat spawning system to spawn infected around players firing.
 	    * [NEW] - Removed annoying "re-arm" option from actions menu
 	    * [NEW] - Models and textures for mutton.
 	    * [NEW] - Separate meat for goats, same blood regen as mutton.
