@@ -38,6 +38,7 @@ for many different parts of the code.
  * [Ingasmeeg] (https://github.com/Ingasmeeg)
  * [AlexAFlorov] (https://github.com/AlexAFlorov)
  * [AlbyBDPK] (https://github.com/AlbyBDPK)
+ * [thevisad] (https://github.com/thevisad)
  * [Sharkiller](https://github.com/Sharkiller) (Spanish Tranlations) 
  * [Markolie](https://github.com/Markolie) (Dutch Translations)    
  * [LordGoF](https://github.com/LordGoF) (French Translations)    
