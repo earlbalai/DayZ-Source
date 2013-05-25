@@ -2,14 +2,7 @@
 DayZ Community Developers
 ============
 
-This file contains a list of every person who has contributed code to
-DayZ Mod. It was created from the git commit log, and should include
-everyone, but we may have missed a few and it is manually updated
-now. If you feel like you've been left out, feel free to tell us!
-
-Not currently included (but hopefully soon) are countless testers and bug
-reporters that helped fixed the many bugs that have popped up in the course of
-development.
+This file contains a list of every person who has contributed code to DayZ Mod. It was created from the git commit log, and should include everyone, but we may have missed a few and it is manually updated now. If you feel like you've been left out, feel free to tell us!
 
 ---------------
 Original Author
