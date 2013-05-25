@@ -1295,7 +1295,7 @@ class RscTitles
 			class RscPicture_1200: RscPictureGUI
 			{
 				idc = 1200;
-				text = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+				//text = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.86 * safezoneH + safezoneY;//2
 				w = 0.06;

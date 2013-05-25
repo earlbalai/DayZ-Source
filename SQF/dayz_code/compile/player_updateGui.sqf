@@ -13,6 +13,8 @@ if (uiNamespace getVariable ['DZ_displayUI', 0] == 1) exitWith {
 
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 
+_ctrlBloodOuter = 	_display displayCtrl 1200;
+
 _ctrlBlood = 	_display displayCtrl 1300;
 _ctrlBleed = 	_display displayCtrl 1303;
 _bloodVal =		r_player_blood / r_player_bloodTotal;
@@ -25,12 +27,16 @@ _ctrlEye = 		_display displayCtrl 1305;
 _ctrlCombat = _display displayCtrl 1307;
 _ctrlFracture = 	_display displayCtrl 1203;
 
+_bloodregen = 
+
 //Food/Water/Blood
 _ctrlBlood ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_bloodVal))),(Dayz_GUI_G * _bloodVal),(Dayz_GUI_B * _bloodVal), 0.5];
 _ctrlFood ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * (1-_foodVal))),(Dayz_GUI_G * _foodVal),(Dayz_GUI_B * _foodVal), 0.5];
 _ctrlThirst ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 0.5];
 _ctrlTemp ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * (1-_tempVal))), (Dayz_GUI_G * _tempVal), _tempVal, 0.5];	// Color ranges from iceblue (cold) to red (hot)
 _ctrlCombat ctrlSetTextColor	[(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G * _combatVal),(Dayz_GUI_B * _combatVal), 0.5];
+
+//_ctrlBloodOuter ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-r_player_bloodregen))),(Dayz_GUI_G * r_player_bloodregen),(Dayz_GUI_B * r_player_bloodregen), 0.5];
 
 /* 
 	Blood: round((r_player_blood / 2) / 1000) = _bloodLvl (6 = full, 1 = empty)
@@ -55,6 +61,18 @@ diag_log format["DEBUG: thirstlvl: %1 dayz_thirst: %2 thirstval: %3",_thirstLvl,
 diag_log format["DEBUG: foodlvl: %1 dayz_hunger: %2 foodval: %3",_foodLvl, dayz_hunger, _foodVal];
 diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, dayz_temperatur, _tempVal];
 */
+
+_regentext = "";
+_bloodregenLvl = 0;
+if ((r_player_bloodregen > 0) and (r_player_bloodregen < 999)) then { _bloodregenLvl = 1; };
+if ((r_player_bloodregen > 1000) and (r_player_bloodregen < 2999)) then { _bloodregenLvl = 2; };
+if (r_player_bloodregen > 3000) then { _bloodregenLvl = 3; };
+if (r_player_bloodregen <= 0) then {
+	_regentext = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+} else {
+	_regentext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenLvl) + "_ca.paa";
+};
+_ctrlBloodOuter ctrlSetText _regentext;
 
 if (_bloodLvl <= 0) then { 
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";

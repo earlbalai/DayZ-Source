@@ -38,9 +38,9 @@ if (_sfx == "") then {_sfx = "eat"};
 //disminishing returns. while regen is active
 r_player_foodstack = r_player_foodstack + 1;
 _skilllevel = (dayz_Survived / 6);
-if ((r_player_bloodregen > 5) and (r_player_foodstack > 1)) then {
+if ((r_player_bloodregen > 5) and (r_player_foodstack > 1) and (r_player_foodstack < 10)) then {
 	_regen = _regen / r_player_foodstack + _skilllevel;
-	diag_log ("Regen: " +str(_regen));
+//	diag_log ("Regen: " +str(_regen));
 };
 
 /*
