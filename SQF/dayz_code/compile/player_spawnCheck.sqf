@@ -516,7 +516,9 @@ switch (_this select 1) do {
 	};
 	case 30; case 31; case 32; case 17 : { if (1==1) exitWith {_ret}; };
 };
-hintSilent _h;
+if ("ItemMap_Debug" in items player) then {
+	hintSilent _h;
+};
 
 "dynamicBlur" ppEffectEnable false;
 "colorCorrections" ppEffectEnable false;
@@ -571,9 +573,14 @@ for "_i" from 1 to 14  do {
 		//if (_x isKindOf "Man") then { _x setvelocity [sin(getDir player)*8, cos(getDir player)*8, 8];}; 
 	} forEach (((nearestObjects [_z,  [],  _t]))-[player,  vehicle player]);
 	_a = _a + "\n";
+	
+if ("ItemMap_Debug" in items player) then {	
 	hintSilent _a;
+};
 	
 	sleep 0.5;
 };
 
-hintSilent "done";
+if ("ItemMap_Debug" in items player) then {
+	hintSilent "done";
+};
