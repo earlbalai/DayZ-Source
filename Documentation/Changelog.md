@@ -22,6 +22,7 @@ Serverside affected addons:
 
 		
 	Changes:
+	
 	    * [NEW] - Removed annoying "re-arm" option from actions menu
 	    * [NEW] - Models and textures for mutton.
 	    * [NEW] - Separate meat for goats, same blood regen as mutton.
@@ -57,7 +58,7 @@ Serverside affected addons:
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked (Zeds stuck player's leg out to trip him/her up).
-		* [NEW] - Epeen UI has now been updated and renamed journal. 
+	    * [NEW] - Epeen UI has now been updated and renamed journal. 
 	
 	    * [FIXED] - Vehicle repair should now always work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
@@ -81,7 +82,7 @@ Serverside affected addons:
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1200 each.
-		* [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
+	    * [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
 	    * [UPDTAED] - ALL loot table weights have been updated.
 	    * [UPDTAED] - ALL loot table weights have been rebalanced.
@@ -124,9 +125,9 @@ Serverside affected addons:
 	
 	    * [REMOVED] - M107 and AS50. (Removed from game)
 	    * [REMOVED] - Removed all military weapons with any attachment from loot tables. (Not removed from game)
-		* [REMOVED] - Crafting is now added. While we wait on the new ui the blueprint system does not feel correct.
-		* [REMOVED] - Attachment Crafting is the only way to upgrade weapons. (Attachments are found they need other objects to be crafted before being applyed to weapons) While we wait on the new ui the blueprint system does not feel correct.
-		* [REMOVED] - 2 New Bat variations used in crafting. (NailedBat,WiredBat). While we wait on the new ui the blueprint system does not feel correct.
+	    * [REMOVED] - Crafting is now added. While we wait on the new ui the blueprint system does not feel correct.
+	    * [REMOVED] - Attachment Crafting is the only way to upgrade weapons. (Attachments are found they need other objects to be crafted before being applyed to weapons) While we wait on the new ui the blueprint system does not feel correct.
+	    * [REMOVED] - 2 New Bat variations used in crafting. (NailedBat,WiredBat). While we wait on the new ui the blueprint system does not feel correct.
 		
 ______________________
 Version 1.7.6.1
