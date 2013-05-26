@@ -124,9 +124,6 @@ Serverside affected addons:
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
 	
 	    * [REMOVED] - M107 and AS50. (Removed from game)
-	    * [REMOVED] - Removed all military weapons with any attachment from loot tables. (Not removed from game)
-	    * [REMOVED] - Crafting is now added. While we wait on the new ui the blueprint system does not feel correct.
-	    * [REMOVED] - Attachment Crafting is the only way to upgrade weapons. (Attachments are found they need other objects to be crafted before being applyed to weapons) While we wait on the new ui the blueprint system does not feel correct.
 	    * [REMOVED] - 2 New Bat variations used in crafting. (NailedBat,WiredBat). While we wait on the new ui the blueprint system does not feel correct.
 		
 ______________________
