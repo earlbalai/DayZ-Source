@@ -89,7 +89,7 @@ if (count _worldspace > 0) then {
 
 //set medical values
 if (count _medical > 0) then {
-	_playerObj setVariable["USEC_isDead",(_medical select 0),true];
+	_playerObj ["USEC_isDead",(_medical select 0),true];
 	_playerObj setVariable["NORRN_unconscious", (_medical select 1), true];
 	_playerObj setVariable["USEC_infected",(_medical select 2),true];
 	_playerObj setVariable["USEC_injured",(_medical select 3),true];
@@ -107,11 +107,11 @@ if (count _medical > 0) then {
 //		_playerObj setVariable["unconsciousTime",(_medical select 10),true];
 //	};
 	
-	//Add Wounds
+	//Add bleeding Wounds
 	{
-		_playerObj setVariable[_x,true,true];
+		_playerObj setVariable["hit_"+(USEC_typeOfWounds select forEachindex),_x,true];
 		//["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
-		usecBleed = [_playerObj,_x,_hit];
+		usecBleed = [_playerObj,(USEC_typeOfWounds select forEachindex),1];
 		publicVariable "usecBleed";
 	} forEach (_medical select 8);
 	
@@ -126,6 +126,8 @@ if (count _medical > 0) then {
 	};
 	
 } else {
+	//Reset bleedings wounds
+	call fnc_usec_resetWoundPoints;
 	//Reset Fractures
 	_playerObj setVariable ["hit_legs",0,true];
 	_playerObj setVariable ["hit_hands",0,true];

@@ -47,8 +47,7 @@ if (_finished) then {
 		[player,20] call player_humanityChange;
 	};
 
-	{_unit setVariable[_x,false,true];} forEach USEC_woundHit;
-	_unit setVariable ["USEC_injured",false,true];
+	call fnc_usec_resetWoundPoints;
 } else {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;

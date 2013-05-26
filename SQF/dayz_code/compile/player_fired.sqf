@@ -45,7 +45,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				_targets = _x getVariable ["targets",[]];
 				if (!(_projectile in _targets)) then {
 					_targets set [count _targets,_projectile];
-					_x setVariable ["targets",_targets,true];
+					_x setVariable ["targets",_targets];
 				};
 			} forEach _listTalk;
 		} else {

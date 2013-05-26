@@ -669,7 +669,7 @@ class FSM
        "" \n
        "if (count _targets > 0) then" \n
        "{" \n
-       "	_agent setVariable [""targets"",[],true];" \n
+       "	_agent setVariable [""targets"",[]];" \n
        "};" \n
        "_target = objNull;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;

@@ -187,12 +187,12 @@ if (_damage > 0.4) then {	//0.25
 	
 	//Create wound and cause bleed
 	_wound = _hit call fnc_usec_damageGetWound;
-	_isHit = _unit getVariable[_wound,false];
+	_isHit = _unit getVariable["hit_"+_wound,false];
 	
 	if (_ammo == "zombie") then {
 		if(!_isHit and ((_damage > 0.7) or _isHeadHit)) then {
 			//Create Wound
-			_unit setVariable[_wound,true,true];
+			_unit setVariable["hit_"+_wound,true,true];
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
 			usecBleed = [_unit,_wound,_hit];
 			publicVariable "usecBleed";
@@ -217,7 +217,7 @@ if (_damage > 0.4) then {	//0.25
 	} else {
 		if(!_isHit) then {
 			//Create Wound
-			_unit setVariable[_wound,true,true];
+			_unit setVariable["hit_"+_wound,true,true];
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
 			usecBleed = [_unit,_wound,_hit];
 			publicVariable "usecBleed";

@@ -43,9 +43,9 @@ if (count _medical > 0) then {
 	
 	//Add Wounds
 	{
-		player setVariable[_x,true,true];
+		player setVariable["hit_"+(USEC_typeOfWounds select forEachIndex),_x,true];
 		//["usecBleed",[player,_x,_hit]] call broadcastRpcCallAll;
-		usecBleed = [player,_x,0];
+		usecBleed = [player, (USEC_typeOfWounds select forEachIndex), 1];
 		publicVariable "usecBleed";
 	} forEach (_medical select 8);
 	
@@ -71,7 +71,7 @@ player setVariable["headShots",_headShots,true];
 player setVariable["humanKills",_humanKills,true];
 player setVariable["banditKills",_banditKills,true];
 player setVariable["characterID",_charID,true];
-player setVariable["worldspace",_worldspace,true];
+player setVariable["worldspace",_worldspace];
 
 //code for this on the server is missing
 //["dayzPlayerMorph",[_charID,player,_playerUID,[_zombieKills,_headShots,_humanKills,_banditKills],_humanity]] call callRpcProcedure;

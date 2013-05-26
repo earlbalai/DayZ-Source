@@ -73,8 +73,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			usecBandage = [player,player];
 			publicVariable "usecBandage";
 			player setdamage 0;
-			{player setVariable[_x,false,true];} forEach USEC_woundHit;
-			player setVariable ["USEC_injured",false,true];
+			call fnc_usec_resetWoundPoints;
 			
 			sleep 1;
 			r_player_handler = false;

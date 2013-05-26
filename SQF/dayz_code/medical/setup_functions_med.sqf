@@ -92,6 +92,7 @@ fnc_usec_damageGetWound = {
 	private["_hit","_sPoint","_options","_rnd","_wound"];
 	_hit = format["%1",_this];
 	_sPoint = USEC_woundHit find _hit;
+	if (_sPoint < 0) then _sPoint = 0;
 	_options = USEC_woundPoint select _sPoint;
 	_rnd = floor(random(count _options));
 	_wound = _options select _rnd;
@@ -117,37 +118,43 @@ fnc_usec_self_removeActions = {
 	r_self_actions = [];
 };
 
-fnc_med_publicBlood = {
-	while {(r_player_injured or r_player_infected) and r_player_blood > 0} do {
-		player setVariable["USEC_BloodQty",r_player_blood,true];
-		player setVariable["medForceUpdate",true];
-		sleep 5;
-	};
-};
+// fnc_med_publicBlood = {
+// 	while {(r_player_injured or r_player_infected) and r_player_blood > 0} do {
+// 		player setVariable["USEC_BloodQty",r_player_blood,true];
+// 		player setVariable["medForceUpdate",true];
+// 		sleep 5;
+// 	};
+// };
+// 
+// fnc_usec_playerBleed = {
+// 	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
+// 	_bleedTime = 400;		//seconds
+// 	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
+// 	_total = r_player_bloodTotal;
+// 	r_player_injured = true;
+// 	_myBleedTime = (random 500) + 100;
+// 	_bTime = 0;
+// 	while {r_player_injured} do {
+// 		//bleed out
+// 		if (r_player_blood > 0) then {
+// 			r_player_blood = r_player_blood - _bleedPerSec;
+// 		};
+// 		_bTime = _bTime + 1;
+// 		if (_bTime > _myBleedTime) then {
+// 			r_player_injured = false;
+// 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
+// 			dayz_sourceBleeding =	objNull;
+// 			call fnc_usec_resetWoundPoints;
+// 		};
+// 		sleep 1;
+// 	};
+// };
 
-fnc_usec_playerBleed = {
-	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
-	_bleedTime = 400;		//seconds
-	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
-	_total = r_player_bloodTotal;
-	r_player_injured = true;
-	_myBleedTime = (random 500) + 100;
-	_bTime = 0;
-	while {r_player_injured} do {
-		//bleed out
-		if (r_player_blood > 0) then {
-			r_player_blood = r_player_blood - _bleedPerSec;
-		};
-		_bTime = _bTime + 1;
-		if (_bTime > _myBleedTime) then {
-			r_player_injured = false;
-			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
-			dayz_sourceBleeding =	objNull;
-			{player setVariable[_x,false,true];} forEach USEC_woundHit;
-			player setVariable ["USEC_injured",false,true];
-		};
-		sleep 1;
-	};
+fnc_usec_resetWoundPoints = {
+	{
+		player setVariable["hit_"+_x,false,true];
+	} forEach USEC_typeOfWounds;
+	player setVariable ["USEC_injured",false,true];
 };
 
 fnc_usec_playerBloodRegen = {

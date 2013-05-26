@@ -22,7 +22,7 @@ if ("ItemMap_Debug" in items player) then {
 		_targets = _zombie getVariable ["targets",[]];
 		if (!(_unit in _targets)) then {
 			_targets set [count _targets,_unit];
-			_zombie setVariable ["targets",_targets,true];
+			_zombie setVariable ["targets",_targets];
 		};
 	} else {
 		_zombie setVariable ["myDest",_pos,true];

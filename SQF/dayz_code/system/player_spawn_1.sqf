@@ -21,7 +21,7 @@ while {true} do {
 		_bPos = getPosATL _x;
 		_isNoone = {isPlayer _x} count (_bPos nearEntities ["Man",200]) == 0;
 		if (_isNoone) then {
-			_x setVariable ["zombied",objNull,true];
+			//_x setVariable ["zombied",objNull,true];
 			dayz_buildingMonitor set [_cursor,"DEL"];
 			_delMe = true;
 		};

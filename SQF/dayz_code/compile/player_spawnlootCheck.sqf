@@ -16,7 +16,7 @@ _age = (_dateNow - _looted) * 525948;
 if ((_age > 10) and (!_cleared)) then {
 	_nearByObj = nearestObjects [(getPosATL _x), ["WeaponHolder","WeaponHolderBase"],((sizeOf _type)+5)];
 	{deleteVehicle _x} forEach _nearByObj;
-	_x setVariable ["cleared",true,true];
+	_x setVariable ["cleared",true];
 	_x setVariable ["looted",_dateNow,true];
 };
 if ((_age > 10) and (_cleared)) then {
