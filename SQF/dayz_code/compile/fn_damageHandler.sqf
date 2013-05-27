@@ -193,10 +193,9 @@ if (_damage > 0.4) then {	//0.25
 		if(!_isHit and ((_damage > 0.7) or _isHeadHit)) then {
 			//Create Wound
 			_unit setVariable["hit_"+_wound,true,true];
-			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-			PVDZ_hlt_Bleed = [_unit,_wound,_hit];
-			publicVariable "PVDZ_hlt_Bleed";
-
+			PVDZ_hlt_Bleed = [_unit,_wound,_damage];
+			publicVariable "PVDZ_hlt_Bleed";   // draw blood stream on character, on all gameclients
+			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];
 			if (!_isInjured) then {
@@ -218,10 +217,9 @@ if (_damage > 0.4) then {	//0.25
 		if(!_isHit) then {
 			//Create Wound
 			_unit setVariable["hit_"+_wound,true,true];
-			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-			PVDZ_hlt_Bleed = [_unit,_wound,_hit];
-			publicVariable "PVDZ_hlt_Bleed";
-
+			PVDZ_hlt_Bleed = [_unit,_wound,_damage];
+			publicVariable "PVDZ_hlt_Bleed";  // draw blood stream on character, on all gameclients
+			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];
 			if (!_isInjured) then {
