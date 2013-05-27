@@ -57,9 +57,9 @@ if ((count _worldspace) == 2) then {
 	_location = getPosATL _stash;
 
 	_stash setVariable ["characterID",dayz_characterID,true];
-	dayzPublishObj = [dayz_characterID,_stash,[_dir,_location],_stashtype];
+	PVDZ_obj_Publish = [dayz_characterID,_stash,[_dir,_location],_stashtype];
 	
-	publicVariableServer "dayzPublishObj";
+	publicVariableServer "PVDZ_obj_Publish";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {

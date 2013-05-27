@@ -30,16 +30,16 @@ sleep 2;
 
 //unconscious unit assumes dragging posture
 //public EH 
-//norrnRaDrag = _dragee;
-norrnRaDrag = [_dragee];
-publicVariable "norrnRaDrag";
+//PVDZ_drg_RaDrag = _dragee;
+PVDZ_drg_RaDrag = [_dragee];
+publicVariable "PVDZ_drg_RaDrag";
 //_dragee switchmove "ainjppnemstpsnonwrfldb_still";
 _dragee attachto [_unit,[0.1, 1.01, 0]];
 sleep 0.02;
 
 //rotate wounded units so that it is facing the correct direction
-norrnR180 = _dragee;
-publicVariable "norrnR180";
+PVDZ_drg_R180 = _dragee;
+publicVariable "PVDZ_drg_R180";
 _dragee  setDir 180;
 
 //Uneccesary actions removed & drop body added 

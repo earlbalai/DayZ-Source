@@ -44,9 +44,9 @@ if (count _medical > 0) then {
 	//Add Wounds
 	{
 		player setVariable["hit_"+(USEC_typeOfWounds select forEachIndex),_x,true];
-		//["usecBleed",[player,_x,_hit]] call broadcastRpcCallAll;
-		usecBleed = [player, (USEC_typeOfWounds select forEachIndex), 1];
-		publicVariable "usecBleed";
+		//["PVDZ_hlt_Bleed",[player,_x,_hit]] call broadcastRpcCallAll;
+		PVDZ_hlt_Bleed = [player, (USEC_typeOfWounds select forEachIndex), 1];
+		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
 	
 	//Add fractures

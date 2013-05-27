@@ -49,8 +49,8 @@ if ((count _worldspace) == 2) then {
 	_location = getPosATL _tent;
 
 	_tent setVariable ["characterID",dayz_characterID,true];
-	dayzPublishObj = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
-	publicVariableServer "dayzPublishObj";
+	PVDZ_obj_Publish = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
+	publicVariableServer "PVDZ_obj_Publish";
 	
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {

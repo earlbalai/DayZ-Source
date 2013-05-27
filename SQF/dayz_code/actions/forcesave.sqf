@@ -1,16 +1,16 @@
-//["dayzUpdateVehicle",[_this select 3,"all"]] call callRpcProcedure;
+//["PVDZ_veh_Save",[_this select 3,"all"]] call callRpcProcedure;
 private["_object"];
 
 _cursorTarget = _this select 3;
 
 if (_cursorTarget isKindOf "TentStorage") then {
-	dayzUpdateVehicle = [_cursorTarget,"gear"];
+	PVDZ_veh_Save = [_cursorTarget,"gear"];
 };
 if (cursorTarget isKindOf "AllVehicles") then {
-	dayzUpdateVehicle = [_cursorTarget,"all"];
+	PVDZ_veh_Save = [_cursorTarget,"all"];
 };
 
-publicVariableServer "dayzUpdateVehicle";
+publicVariableServer "PVDZ_veh_Save";
 if (isServer) then {
-	dayzUpdateVehicle call server_updateObject;
+	PVDZ_veh_Save call server_updateObject;
 };

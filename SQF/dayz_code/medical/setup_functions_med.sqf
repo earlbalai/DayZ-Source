@@ -270,8 +270,8 @@ fnc_usec_recoverUncons = {
 	player setVariable ["USEC_isCardiac",false,true];
 	player setVariable["medForceUpdate",true,true];
 	sleep 1;
-	usecEpi = [player,player];
-	publicVariable "usecEpi";
+	PVDZ_hlt_Epi = [player,player];
+	publicVariable "PVDZ_hlt_Epi";
 	r_player_unconscious = false;
 	sleep 1;
 	r_player_cardiac = false;

@@ -9,12 +9,12 @@ _hitPoints = _unit call vehicle_getHitpoints;
 	_unit setVariable [_selection, 1, true];
 } forEach _hitPoints;
 
-//["dayzUpdateVehicle",[_unit, "damage"]] call callRpcProcedure;
+//["PVDZ_veh_Save",[_unit, "damage"]] call callRpcProcedure;
 if (isServer) then {
 	[_unit, "killed"] call server_updateObject;
 } else {
-	dayzUpdateVehicle = [_unit, "killed"];
-	publicVariableServer "dayzUpdateVehicle";
+	PVDZ_veh_Save = [_unit, "killed"];
+	publicVariableServer "PVDZ_veh_Save";
 };
 
 _unit removeAllEventHandlers "HandleDamage";

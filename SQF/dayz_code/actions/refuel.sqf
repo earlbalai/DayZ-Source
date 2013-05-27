@@ -54,9 +54,9 @@ if (isnil "_fueling") then {
 	
 
 	if (_finished) then {
-		dayzSetFuel = [_vehicle,_newFuel];
-		dayzSetFuel spawn local_setFuel;
-		publicVariable "dayzSetFuel";
+		PVDZ_veh_SetFuel = [_vehicle,_newFuel];
+		PVDZ_veh_SetFuel spawn local_setFuel;
+		publicVariable "PVDZ_veh_SetFuel";
 
 		cutText [format[localize "str_player_05",_nameType,_canSize], "PLAIN DOWN"];
 		sleep 1;

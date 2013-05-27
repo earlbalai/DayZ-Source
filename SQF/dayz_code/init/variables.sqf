@@ -386,8 +386,8 @@ dayz_zombieTargetList = [
 	["LandVehicle",200]
 ];
 dayzHit = [];
-dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
-dayzHideBody = objNull;
+PVDZ_obj_Publish = [];		//used for eventhandler to spawn a mirror of players tent
+PVDZ_obj_HideBody = objNull;
 
 //DayZ settings
 dayz_dawn = 4; //6

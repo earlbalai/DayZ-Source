@@ -27,8 +27,8 @@ _dragee setVariable ["NORRN_unit_dragged", false, true];
 
 //lie on back
 _dragee playMoveNow "ainjppnemstpsnonwrfldnon";
-norrnRalie = _dragee;
-publicVariable "norrnRalie";
+PVDZ_drg_Ralie = _dragee;
+publicVariable "PVDZ_drg_Ralie";
 force_dropBody = false;
 
 if (true) exitWith {};

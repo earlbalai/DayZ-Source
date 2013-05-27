@@ -67,11 +67,11 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			//Give Blood
 			r_player_blood = r_player_bloodTotal;
 			player setVariable["USEC_lowBlood",false,true];
-			usecMorphine = [player,player];
-			publicVariable "usecMorphine";
+			PVDZ_hlt_Morphine = [player,player];
+			publicVariable "PVDZ_hlt_Morphine";
 			player setVariable ["USEC_inPain", false, true];
-			usecBandage = [player,player];
-			publicVariable "usecBandage";
+			PVDZ_hlt_Bandage = [player,player];
+			publicVariable "PVDZ_hlt_Bandage";
 			player setdamage 0;
 			call fnc_usec_resetWoundPoints;
 			

@@ -42,8 +42,8 @@ if (random 15 < 1) then {
 	r_player_infected = false;
 	player setVariable["USEC_infected",true,true];
 };
-dayzPlayerSave = [player,[],true];
-publicVariableServer "dayzPlayerSave";
+PVDZ_plr_Save = [player,[],true];
+publicVariableServer "PVDZ_plr_Save";
 //End Effects
 
 

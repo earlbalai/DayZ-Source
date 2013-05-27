@@ -18,7 +18,7 @@ _sfx = "repair";
 
 sleep 5;
 	
-//["dayzDeleteObj",[_objectID,_objectUID]] call callRpcProcedure;
-dayzDeleteObj = [_objectID,_objectUID];
-publicVariableServer "dayzDeleteObj";
+//["PVDZ_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;
+PVDZ_obj_Delete = [_objectID,_objectUID];
+publicVariableServer "PVDZ_obj_Delete";
 deleteVehicle _obj;
