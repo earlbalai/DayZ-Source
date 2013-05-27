@@ -54,4 +54,5 @@ else {
 	};
 };
 
+// all "HandleDamage event" functions should return the effective damage that the engine will record for that part
 _currentDam

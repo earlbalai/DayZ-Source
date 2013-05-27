@@ -30,4 +30,6 @@ if (local _zed) then {
 		};
 	};
 };
+
+// all "HandleDamage event" functions should return the effective damage that the engine will record
 _damage

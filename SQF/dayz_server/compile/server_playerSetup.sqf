@@ -110,10 +110,7 @@ if (count _medical > 0) then {
 	
 	//Add bleeding Wounds
 	{
-		_playerObj setVariable["hit_"+_x,true];
-		PVDZ_hlt_Bleed = [_playerObj,_x,1];
-		publicVariable "PVDZ_hlt_Bleed"; // draw blood stream on character, on all gameclients
-		[_playerObj,_x,1] spawn fnc_usec_damageBleed; // draw blood stream on character, locally
+		_playerObj setVariable["hit_"+_x,true, true];
 	} forEach (_medical select 8);
 	
 	//Add fractures

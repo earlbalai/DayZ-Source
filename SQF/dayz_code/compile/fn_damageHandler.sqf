@@ -302,3 +302,6 @@ if (_ammo == "zombie") then {
 		[_unit,_damage] call fnc_usec_damageUnconscious;
 	};
 };
+
+// all "HandleDamage event" functions should return the effective damage that the engine will record
+0
