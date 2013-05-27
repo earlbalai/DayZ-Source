@@ -465,11 +465,11 @@ class FSM
        "" \n
        "_msg = [];" \n
        "" \n
-       "dayzLogin = [_playerUID,player];" \n
-       "publicVariableServer ""dayzLogin"";" \n
+       "PVDZ_plr_Login1 = [_playerUID,player];" \n
+       "publicVariableServer ""PVDZ_plr_Login1"";" \n
        "" \n
        "if (isServer) then {" \n
-       "	dayzLogin call server_playerLogin;" \n
+       "	PVDZ_plr_Login1 call server_playerLogin;" \n
        "};" \n
        "" \n
        "dayzPlayerLogin = [];" \n
@@ -698,10 +698,10 @@ class FSM
        "};" \n
        "" \n
        "dayzPlayerLogin2 = [];" \n
-       "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "//[""PVDZ_plr_Login2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
        "" \n
-       "dayzLogin2 = [_charID,player,_playerUID];" \n
-       "publicVariableServer ""dayzLogin2"";" \n
+       "PVDZ_plr_Login2 = [_charID,player,_playerUID];" \n
+       "publicVariableServer ""PVDZ_plr_Login2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.8;" \n
@@ -1022,10 +1022,10 @@ class FSM
        "" \n
        "//Select Weapon" \n
        "// Desc: select default weapon & handle multiple muzzles" \n
-       "_playerObjName = format[""player%1"",_playerUID];" \n
-       "call compile format[""player%1 = player;"",_playerUID];" \n
-       "diag_log (format[""player%1 = player"",_playerUID]);" \n
-       "publicVariable _playerObjName;" \n
+       "////_playerObjName = format[""player%1"",_playerUID];" \n
+       "////call compile format[""player%1 = player;"",_playerUID];" \n
+       "////diag_log (format[""player%1 = player"",_playerUID]);" \n
+       "////publicVariable _playerObjName;" \n
        "" \n
        "//_state = player getVariable[""state"",[]];" \n
        "_currentWpn = """";" \n

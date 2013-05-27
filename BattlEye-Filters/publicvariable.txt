@@ -1,43 +1,40 @@
-5 "" !="remExField" !="remExFP" !="PVDZ_sec_atp" !="changeCharacter" !="dayz_serverObjectMonitor" !="dayzCharSave" !="PVDZ_plr_Death" !="PVDZ_obj_Delete" !="dayzDelLocal" !="dayzDiscoAdd" !="PVDZ_plr_Discorem" !="PVDZ_obj_Fire" !="PVDZ_obj_GutBody" !="PVDZ_obj_HideBody" !="dayzHit" !="dayzHitV" !="PVDZ_plr_Humanity" !="dayzLogin" !="dayzLogin2" !="PVDZ_plr_LoginRecord" !="dayzPlayerLogin" !="dayzPlayerLogin2" !="dayzPlayerMorph" !="PVDZ_plr_Save" !="PVDZ_obj_Publish" !="PVDZ_obj_RoadFlare" !="dayzSetDate" !="dayzSetFix" !="PVDZ_veh_SetFuel" !="dayzSwitch" !="dayzUpdate" !="PVDZ_veh_Save" !="dayzVehicleInit" !="drn_AskServerDynamicWeatherEventArgs" !="drn_DynamicWeather_DebugTextEventArgs" !="drn_DynamicWeatherEventArgs" !="drn_var_DynamicWeather_rain" !="drn_var_DynamicWeather_ServerInitialized" !="PVDZ_drg_RAlie" !="PVDZ_drg_Ralie" !="PVDZ_drg_R180" !="PVDZ_drg_RACarUp" !="PVDZ_drg_RaDrag" !="PVDZ_drg_RaLW" !="PVDZ_drg_RAPicUp" !="norrnRDead" !="PVDZ_drg_RLact" !="norrnRnoAnim" !"player" !="PVDZ_hlt_Bandage" !="PVDZ_hlt_Bleed" !="PVDZ_hlt_Epi" !="usecInject" !="PVDZ_hlt_Morphine" !="PVDZ_hlt_PainK" !="PVDZ_hlt_Transfuse" !="BIS_effects_gepv"
+5 "" !="remExField" !="remExFP" !="PVDZ_sec_atp" !="changeCharacter" !="dayz_serverObjectMonitor" !="dayzCharSave" !="PVDZ_plr_Death" !="PVDZ_obj_Delete" !="dayzDelLocal" !="dayzDiscoAdd" !="PVDZ_plr_Discorem" !="PVDZ_obj_Fire" !="PVDZ_obj_GutBody" !="PVDZ_obj_HideBody" !="dayzHit" !="dayzHitV" !="PVDZ_plr_Humanity" !="PVDZ_plr_Login1" !="PVDZ_plr_Login2" !="PVDZ_plr_LoginRecord" !="dayzPlayerLogin" !="dayzPlayerLogin2" !="dayzPlayerMorph" !="PVDZ_plr_Save" !="PVDZ_obj_Publish" !="PVDZ_obj_RoadFlare" !="dayzSetDate" !="dayzSetFix" !="PVDZ_veh_SetFuel" !="dayzSwitch" !="dayzUpdate" !="PVDZ_veh_Save" !="dayzVehicleInit" !="drn_AskServerDynamicWeatherEventArgs" !="drn_DynamicWeather_DebugTextEventArgs" !="drn_DynamicWeatherEventArgs" !="drn_var_DynamicWeather_rain" !="drn_var_DynamicWeather_ServerInitialized" !="PVDZ_drg_RAlie" !="PVDZ_drg_Ralie" !="PVDZ_drg_R180" !="PVDZ_drg_RACarUp" !="PVDZ_drg_RaDrag" !="PVDZ_drg_RaLW" !="PVDZ_drg_RAPicUp" !="norrnRDead" !="PVDZ_drg_RLact" !="norrnRnoAnim" !"player" !="PVDZ_hlt_Bandage" !="PVDZ_hlt_Bleed" !="PVDZ_hlt_Epi" !="usecInject" !="PVDZ_hlt_Morphine" !="PVDZ_hlt_PainK" !="PVDZ_hlt_Transfuse" !="BIS_effects_gepv"
 
 ////////////////////////// EH but no-one push PV in it!
-// 5="changeCharacter"
-// 5="dayz_serverObjectMonitor"
-// 5="dayzCharSave"
-// 5="dayzDelLocal"
-// 5="dayzDiscoAdd"
-// 5="dayzSwitch"
-// 5="dayzUpdate"
-// 5="dayzVehicleInit"
-// 5="norrnRDead"
-// 5="norrnRnoAnim"
-// 5="usecInject"
+//// 5="changeCharacter"
+//// 5="dayz_serverObjectMonitor"
+//// 5="dayzCharSave"
+//// 5="dayzDelLocal"
+//// 5="dayzDiscoAdd"
+//// 5="dayzSwitch"
+//// 5="dayzUpdate"
+//// 5="dayzVehicleInit"
+//// 5="norrnRDead"
+//// 5="norrnRnoAnim"
+//// 5="usecInject"
 ////////////////////////// Broadcast PV without EH (no code executed on change)
-1="PVDZ_drg_RAPicUp"  
-1="PVDZ_drg_RAlie"
-1="PVDZ_drg_Ralie"
-1="PVDZ_drg_R180"  
-1="PVDZ_drg_RACarUp"  
+////1="PVDZ_drg_RAPicUp"  // commented out in code
+////1="PVDZ_drg_RAlie" // commented out in code
+////1="PVDZ_drg_Ralie" // commented out in code
+////1="PVDZ_drg_R180"   // commented out in code
+////1="PVDZ_drg_RACarUp" // commented out in code
+  
+////////////////////////// Broadcast PV without EH (no code executed on change)
 5="drn_var_DynamicWeather_rain"  
 5="drn_var_DynamicWeather_ServerInitialized"  
-1 "player" !="dayzPlayerMorph" !="PVDZ_plr_Save" !="dayzPlayerLogin2" !="dayzPlayerLogin"
+//// 1 "player" !="dayzPlayerMorph" !="dayzPlayerLogin2" !="dayzPlayerLogin"  // not used anymore
 
 ////////////////////////// Broadcast PV with EH
-//1="dayzLogin"
-//1="dayzLogin2"
 1="PVDZ_obj_Fire"
 1="PVDZ_obj_GutBody"
 1="PVDZ_obj_HideBody"
 1="PVDZ_plr_Humanity"
 1="PVDZ_obj_RoadFlare"
-5="dayzSetDate"
-//1="dayzSetFix" not used
-//1="dayzHit" not used
-//1="dayzHitV" not used
-//1="dayzPlayerMorph" not used
+////1="dayzSetFix" not used
+////1="dayzHit" not used
+////1="dayzHitV" not used
+////1="dayzPlayerMorph" not used
 //1="drn_AskServerDynamicWeatherEventArgs"
-5="drn_DynamicWeather_DebugTextEventArgs"
-5="drn_DynamicWeatherEventArgs"
 1="PVDZ_veh_SetFuel"
 1="PVDZ_drg_RaDrag"
 1="PVDZ_drg_RaLW"
@@ -51,16 +48,25 @@
 1="BIS_effects_gepv"
 1="PVDZ_veh_SH"
 1="PVDZ_veh_SF"
-1="dayzInfectedCamps"
+
+////////////////////////// From server only: Broadcast PV with EH
+5="dayzInfectedCamps"
+5="dayzSetDate"
+5="drn_DynamicWeather_DebugTextEventArgs"
+5="drn_DynamicWeatherEventArgs"
+
+
 ////////////////////////// PV ->Server
 //1="PVDZ_sec_atp"
 //1="PVDZ_plr_Save"
 //1="PVDZ_veh_Save"
-1="PVDZ_plr_Discorem"
+////1="PVDZ_plr_Discorem" // not used anymore
 1="PVDZ_obj_Delete"
 1="PVDZ_plr_Death"
 1="PVDZ_plr_LoginRecord"
 1="PVDZ_obj_Publish"
+//1="PVDZ_plr_Login1"
+//1="PVDZ_plr_Login2"
 
 ////////////////////////// PV Client<-
 5="dayzPlayerLogin2"
