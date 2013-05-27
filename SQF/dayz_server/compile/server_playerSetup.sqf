@@ -2,6 +2,7 @@ private ["_characterID","_doLoop","_playerID","_playerObj","_randomSpot","_prima
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 
+diag_log(format["%1 debug %2", __FILE__, _this]);
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
@@ -89,7 +90,7 @@ if (count _worldspace > 0) then {
 
 //set medical values
 if (count _medical > 0) then {
-	_playerObj ["USEC_isDead",(_medical select 0),true];
+	_playerObj setVariable["USEC_isDead",(_medical select 0),true];
 	_playerObj setVariable["NORRN_unconscious", (_medical select 1), true];
 	_playerObj setVariable["USEC_infected",(_medical select 2),true];
 	_playerObj setVariable["USEC_injured",(_medical select 3),true];
