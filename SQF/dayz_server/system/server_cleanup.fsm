@@ -99,7 +99,7 @@ class FSM
           to="cleanup_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeNem) > 60)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_timeNem = time;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_timeNem = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "need_update">*/
@@ -109,7 +109,7 @@ class FSM
           to="update_objects";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"( (count needUpdate_objects) > 0 && (diag_tickTime -_lastNeedUpdate>40) )"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_lastNeedUpdate = time;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "true">*/
@@ -129,7 +129,7 @@ class FSM
           to="sync_the_time";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _lastUpdate) > 300)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_lastUpdate = time;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
