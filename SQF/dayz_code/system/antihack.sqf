@@ -15,8 +15,8 @@ waitUntil {vehicle player == player};
 	_playerUID = getPlayerUID player;
 	while {true} do {
 		if (typeName player != "OBJECT") then {
-			atp = format["WARNING! TYPENAME ERROR ON %1 (%2)", _playerName, _playerUID];
-			publicVariableServer "atp";
+			PVDZ_sec_atp = format["WARNING! TYPENAME ERROR ON %1 (%2)", _playerName, _playerUID];
+			publicVariableServer "PVDZ_sec_atp";
 			//forceEnd;
 			endMission "CONTINUE";
 			sleep 10; //Bypass spam
@@ -73,8 +73,8 @@ while {alive player} do
 	if (_lastVehicle == vehicle player) then {
 		if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 			(vehicle player) setpos _lastpos;
-			atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6", name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
-			publicVariableServer "atp";
+			PVDZ_sec_atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6", name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
+			publicVariableServer "PVDZ_sec_atp";
 		} else {
 			_lastpos = _curpos;
 			_lastheight = _curheight;	

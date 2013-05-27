@@ -88,9 +88,9 @@ player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 player setVariable["USEC_BloodQty",r_player_blood,true];
 player setVariable["medForceUpdate",true];
 
-//["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
-dayzPlayerSave = [player,[],true];
-publicVariableServer "dayzPlayerSave";
+//["PVDZ_plr_Save",[player,[],true]] call callRpcProcedure;
+PVDZ_plr_Save = [player,[],true];
+publicVariableServer "PVDZ_plr_Save";
 
 dayz_lastMeal = time;
 dayz_hunger = 0;

@@ -223,27 +223,27 @@ if (!isDedicated) then {
 		_cantSee
 	};
 	
-	eh_zombieInit = 	{
-		private["_unit","_pos"];
-		//_unit = 	_this select 0;
-		//_pos =		getPosATL _unit;
-		//_id = [_pos,_unit] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
-	};
+// 	eh_zombieInit = 	{
+// 		private["_unit","_pos"];
+// 		//_unit = 	_this select 0;
+// 		//_pos =		getPosATL _unit;
+// 		//_id = [_pos,_unit] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
+// 	};
 	
-	dayz_equipCheck = {
-		private ["_empty", "_needed","_diff","_success"];
-		_config = _this;
-		_empty = [player] call BIS_fnc_invSlotsEmpty;
-		_needed = [_config] call BIS_fnc_invSlotType;
-		_diff = [_empty,_needed] call BIS_fnc_vectorDiff;
-		
-		_success = true;
-		{
-			if (_x > 0) then {_success = false};
-		} forEach _diff;
-		hint format["Config: %5\nEmpty: %1\nNeeded: %2\nDiff: %3\nSuccess: %4",_empty,_needed,_diff,_success,_config];
-		_success
-	};
+// 	dayz_equipCheck = {
+// 		private ["_empty", "_needed","_diff","_success"];
+// 		_config = _this;
+// 		_empty = [player] call BIS_fnc_invSlotsEmpty;
+// 		_needed = [_config] call BIS_fnc_invSlotType;
+// 		_diff = [_empty,_needed] call BIS_fnc_vectorDiff;
+// 		
+// 		_success = true;
+// 		{
+// 			if (_x > 0) then {_success = false};
+// 		} forEach _diff;
+// 		hint format["Config: %5\nEmpty: %1\nNeeded: %2\nDiff: %3\nSuccess: %4",_empty,_needed,_diff,_success,_config];
+// 		_success
+// 	};
 		
 	dayz_spaceInterrupt = {
 		private ["_dikCode", "_handled","_displayg"];
@@ -347,14 +347,14 @@ if (!isDedicated) then {
 		};
 	};
 	
-	player_serverModelChange = {
-		private["_object","_model"];
-		_object = _this select 0;
-		_model = _this select 1;
-		if (_object == player) then {
-			_model call player_switchModel;
-		};
-	};
+// 	player_serverModelChange = {
+// 		private["_object","_model"];
+// 		_object = _this select 0;
+// 		_model = _this select 1;
+// 		if (_object == player) then {
+// 			_model call player_switchModel;
+// 		};
+// 	};
 	
 	player_guiControlFlash = 	{
 		private["_control"];
@@ -401,13 +401,13 @@ if (!isDedicated) then {
 		_control ctrlCommit 0;
 	};
 	
-	dayz_eyeDir = {
-		private["_vval","_vdir"];
-		_vval = (eyeDirection _this);
-		_vdir = (_vval select 0) atan2 (_vval select 1);
-		if (_vdir < 0) then {_vdir = 360 + _vdir};
-		_vdir
-	};
+// 	dayz_eyeDir = {
+// 		private["_vval","_vdir"];
+// 		_vval = (eyeDirection _this);
+// 		_vdir = (_vval select 0) atan2 (_vval select 1);
+// 		if (_vdir < 0) then {_vdir = 360 + _vdir};
+// 		_vdir
+// 	};
 	
 	dayz_lowHumanity = {
 		private["_unit","_humanity","_delay"];

@@ -248,7 +248,7 @@ class FSM
        "	_created = (_x getVariable [""created"",-0.1]);" \n
        "" \n
        "	if (_created == -0.1) then {" \n
-       "		_x setVariable [""created"",(DateToNumber date),true];" \n
+       "		_x setVariable [""created"",(DateToNumber date)];" \n
        "	};" \n
        "" \n
        "	_age = ((DateToNumber date) - _created) * 525948;" \n

@@ -151,6 +151,13 @@ fnc_usec_playerBleed = {
 	};
 };
 
+fnc_usec_resetWoundPoints = {
+	{
+		player setVariable["hit_"+_x,false,true];
+	} forEach USEC_typeOfWounds;
+	player setVariable ["USEC_injured",false,true];
+};
+
 fnc_usec_playerBloodRegen = {
 	private["_bleedPerSec","_total"];
 	if (!r_player_injured) then {
@@ -263,8 +270,8 @@ fnc_usec_recoverUncons = {
 	player setVariable ["USEC_isCardiac",false,true];
 	player setVariable["medForceUpdate",true,true];
 	sleep 1;
-	usecEpi = [player,player];
-	publicVariable "usecEpi";
+	PVDZ_hlt_Epi = [player,player];
+	publicVariable "PVDZ_hlt_Epi";
 	r_player_unconscious = false;
 	sleep 1;
 	r_player_cardiac = false;

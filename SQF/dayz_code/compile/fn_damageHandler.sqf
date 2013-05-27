@@ -44,12 +44,12 @@ if (_unit == player) then {
 			_canHitFree = 	player getVariable ["freeTarget",false];
 			_isBandit = 	(typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
-				// "humanKills" from local character is used to compute attacker player "dayzHumanity" change
+				// "humanKills" from local character is used to compute attacker player "PVDZ_plr_Humanity" change
 				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
 				_humanityHit = -200 * _myKills * _damage;
 				if (_humanityHit != 0) then {
-					dayzHumanity = [_this select 0, _humanityHit, 30];
-					publicVariable "dayzHumanity";
+					PVDZ_plr_Humanity = [_this select 0, _humanityHit, 30];
+					publicVariable "PVDZ_plr_Humanity";
 				};
 			};
 		};
@@ -187,15 +187,15 @@ if (_damage > 0.4) then {	//0.25
 	
 	//Create wound and cause bleed
 	_wound = _hit call fnc_usec_damageGetWound;
-	_isHit = _unit getVariable[_wound,false];
+	_isHit = _unit getVariable["hit_"+_wound,false];
 	
 	if (_ammo == "zombie") then {
 		if(!_isHit and ((_damage > 0.7) or _isHeadHit)) then {
 			//Create Wound
-			_unit setVariable[_wound,true,true];
+			_unit setVariable["hit_"+_wound,true,true];
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-			usecBleed = [_unit,_wound,_hit];
-			publicVariable "usecBleed";
+			PVDZ_hlt_Bleed = [_unit,_wound,_hit];
+			publicVariable "PVDZ_hlt_Bleed";
 
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];
@@ -217,10 +217,10 @@ if (_damage > 0.4) then {	//0.25
 	} else {
 		if(!_isHit) then {
 			//Create Wound
-			_unit setVariable[_wound,true,true];
+			_unit setVariable["hit_"+_wound,true,true];
 			[_unit,_wound,_hit] spawn fnc_usec_damageBleed;
-			usecBleed = [_unit,_wound,_hit];
-			publicVariable "usecBleed";
+			PVDZ_hlt_Bleed = [_unit,_wound,_hit];
+			publicVariable "PVDZ_hlt_Bleed";
 
 			//Set Injured if not already
 			_isInjured = _unit getVariable["USEC_injured",false];

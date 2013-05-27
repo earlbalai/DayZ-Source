@@ -328,7 +328,7 @@ r_player_removeActions2 = {
 	};
 };
 
-USEC_woundHit 	= [
+USEC_woundHit 	= [ // limbs hit given by arma engine when fnc_usec_damageHandler is called 
 	"",
 	"body",
 	"hands",
@@ -364,14 +364,14 @@ USEC_MinorWounds 	= [
 	"hands",
 	"legs"
 ];
-USEC_woundPoint	= [
+USEC_woundPoint	= [ // translation table USEC_woundHit -> SV suffixes
 	["Pelvis","aimpoint"],
 	["aimpoint"], //,"RightShoulder","LeftShoulder"
 	["lelbow","relbow"],
 	["RightFoot","LeftFoot"],
 	["neck","pilot"]
 ];
-USEC_typeOfWounds = [
+USEC_typeOfWounds = [ // used by player_sumMedical, should contains all limbs described in USEC_woundPoint. These limbs statuses are saved by server_playerSync in HIVE in the same order (medical select 8)
 	"Pelvis",
 	"aimpoint",
 	"lelbow","relbow",
@@ -386,8 +386,8 @@ dayz_zombieTargetList = [
 	["LandVehicle",200]
 ];
 dayzHit = [];
-dayzPublishObj = [];		//used for eventhandler to spawn a mirror of players tent
-dayzHideBody = objNull;
+PVDZ_obj_Publish = [];		//used for eventhandler to spawn a mirror of players tent
+PVDZ_obj_HideBody = objNull;
 
 //DayZ settings
 dayz_dawn = 4; //6

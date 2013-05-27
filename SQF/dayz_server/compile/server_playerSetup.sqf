@@ -2,6 +2,7 @@ private ["_characterID","_doLoop","_playerID","_playerObj","_randomSpot","_prima
 //Wait for HIVE to be free
 //diag_log ("SETUP: attempted with " + str(_this));
 
+diag_log(format["%1 debug %2", __FILE__, _this]);
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
@@ -107,12 +108,12 @@ if (count _medical > 0) then {
 //		_playerObj setVariable["unconsciousTime",(_medical select 10),true];
 //	};
 	
-	//Add Wounds
+	//Add bleeding Wounds
 	{
-		_playerObj setVariable[_x,true,true];
-		//["usecBleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
-		usecBleed = [_playerObj,_x,_hit];
-		publicVariable "usecBleed";
+		_playerObj setVariable["hit_"+(USEC_typeOfWounds select forEachindex),_x,true];
+		//["PVDZ_hlt_Bleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
+		PVDZ_hlt_Bleed = [_playerObj,(USEC_typeOfWounds select forEachindex),1];
+		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
 	
 	//Add fractures
@@ -126,6 +127,8 @@ if (count _medical > 0) then {
 	};
 	
 } else {
+	//Reset bleedings wounds
+	call fnc_usec_resetWoundPoints;
 	//Reset Fractures
 	_playerObj setVariable ["hit_legs",0,true];
 	_playerObj setVariable ["hit_hands",0,true];

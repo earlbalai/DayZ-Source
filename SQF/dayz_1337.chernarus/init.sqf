@@ -72,7 +72,7 @@ if ((!isServer) && (player != player)) then
 
 if (isServer) then {
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
-	"atp"	addPublicVariableEventHandler { diag_log format["%1", _this select 1];};
+	"PVDZ_sec_atp"	addPublicVariableEventHandler { diag_log format["%1", _this select 1];};
 };
 
 if (!isDedicated) then {

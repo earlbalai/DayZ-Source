@@ -1,4 +1,4 @@
-// set180.sqf
+//set180.sqf
 
 _dragee = _this select 0;
 

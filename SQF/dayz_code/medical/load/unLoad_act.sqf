@@ -28,8 +28,8 @@ for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 		_unit switchMove "";
 		_unit switchMove "ainjppnemstpsnonwrfldnon";
 		sleep 0.2;
-		norrnRalie = _unit;
-		publicVariable "norrnRalie";
+//		PVDZ_drg_Ralie = _unit; // not used
+//		publicVariable "PVDZ_drg_Ralie"; // not used
 	};
 	sleep 0.1;
 };

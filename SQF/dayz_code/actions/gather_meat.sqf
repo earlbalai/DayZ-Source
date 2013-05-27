@@ -36,8 +36,8 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	if (local _item) then {
 		_array spawn local_gutObject;
 	} else {
-		dayzGutBody = _array;
-		publicVariable "dayzGutBody";
+		PVDZ_obj_GutBody = _array;
+		publicVariable "PVDZ_obj_GutBody";
 	};
 	
 	sleep 6;

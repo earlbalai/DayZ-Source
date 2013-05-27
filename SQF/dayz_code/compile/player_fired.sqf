@@ -45,7 +45,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				_targets = _x getVariable ["targets",[]];
 				if (!(_projectile in _targets)) then {
 					_targets set [count _targets,_projectile];
-					_x setVariable ["targets",_targets,true];
+					_x setVariable ["targets",_targets];
 				};
 			} forEach _listTalk;
 		} else {
@@ -87,15 +87,15 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 			//hint str(_ammo);
 			_projectile = nearestObject [_unit, "RoadFlare"];
 			[_projectile,0] spawn object_roadFlare;
-			dayzRoadFlare = [_projectile,0];
-			publicVariable "dayzRoadFlare";
+			PVDZ_obj_RoadFlare = [_projectile,0];
+			publicVariable "PVDZ_obj_RoadFlare";
 			[_this] spawn player_throwObject;
 		};
 		if (_ammo isKindOf "ChemLight") then {
 			_projectile = nearestObject [_unit, "ChemLight"];
 			[_projectile,1] spawn object_roadFlare;
-			dayzRoadFlare = [_projectile,1];
-			publicVariable "dayzRoadFlare";
+			PVDZ_obj_RoadFlare = [_projectile,1];
+			publicVariable "PVDZ_obj_RoadFlare";
 			[_this] spawn player_throwObject;
 		};
 	};

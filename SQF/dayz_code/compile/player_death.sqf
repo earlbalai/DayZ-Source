@@ -8,9 +8,9 @@ _body =		player;
 _playerID =	getPlayerUID player;
 
 //Send Death Notice
-//["dayzDeath",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
-		dayzDeath = [dayz_characterID,0,_body,_playerID];
-		publicVariableServer "dayzDeath";
+//["PVDZ_plr_Death",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
+		PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID];
+		publicVariableServer "PVDZ_plr_Death";
 
 _id = [player,20,true,getPosATL player] spawn player_alertZombies;
 
@@ -41,7 +41,7 @@ if (count _array > 0) then {
 			_wait = 0;
 			_humanity = 0;
 			if (!_canHitFree and !_isBandit) then {
-				// "humanKills" from local character is used to compute _source player "dayzHumanity" change
+				// "humanKills" from local character is used to compute _source player "PVDZ_plr_Humanity" change
 				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
 				_humanity = -2000 * _myKills;
 				if (_humanity > 0) then { _wait = 300; };
@@ -53,9 +53,9 @@ if (count _array > 0) then {
 				_wait = 0;
 			};
 			if (!_canHitFree and !_isBandit and (_humanity != 0)) then {
-				//["dayzHumanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
-				dayzHumanity = [_source,_humanity,_wait];
-				publicVariable "dayzHumanity";
+				//["PVDZ_plr_Humanity",[_source,_humanity,_wait]] call broadcastRpcCallAll;
+				PVDZ_plr_Humanity = [_source,_humanity,_wait];
+				publicVariable "PVDZ_plr_Humanity";
 			};
 		};
 	};

@@ -321,11 +321,11 @@ class FSM
            "	_currentState = [_currentWpn,_currentAnim,_temp];" \n
            "	" \n
            "	dayz_Magazines = _magazineArray;" \n
-           "	dayzPlayerSave = [player,dayz_Magazines,false];" \n
-           "	publicVariableServer ""dayzPlayerSave"";" \n
+           "	PVDZ_plr_Save = [player,dayz_Magazines,false];" \n
+           "	publicVariableServer ""PVDZ_plr_Save"";" \n
            "			" \n
            "	if (isServer) then {" \n
-           "		dayzPlayerSave call server_playerSync;" \n
+           "		PVDZ_plr_Save call server_playerSync;" \n
            "	};" \n
            "						" \n
            "	dayz_lastSave = time;" \n
@@ -1260,10 +1260,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"dayzGearSave = true;" \n
        "dayz_myPosition = getPosATL player;" \n
        "" \n
-       "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "//[""PVDZ_plr_LoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
        "" \n
-       "dayzLoginRecord = [_playerUID,_charID,0];" \n
-       "publicVariableServer ""dayzLoginRecord"";" \n
+       "PVDZ_plr_LoginRecord = [_playerUID,_charID,0];" \n
+       "publicVariableServer ""PVDZ_plr_LoginRecord"";" \n
        "" \n
        "endLoadingScreen;" \n
        ""/*%FSM</STATEINIT""">*/;
