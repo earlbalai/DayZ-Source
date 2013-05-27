@@ -65,6 +65,7 @@ diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, d
 /*
 	Blood Regen & BloodLoss:
 */
+
 if (r_player_infected) then {
 //Blood Loss
 	_bloodlosstext = "";
@@ -93,11 +94,12 @@ if (r_player_infected) then {
 	_ctrlBloodOuter ctrlSetText _regenuptext;
 	
 	if ((r_player_bloodregen < 1) and !r_player_injured) then {
-		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_sick_ca.paa";
 		_ctrlBloodOuter ctrlSetText _bloodouterreset;
 	};
 	
 } else {
+
 //Blood Loss
 	_bloodlosstext = "";
 	_bloodlossLvl = 0;
