@@ -129,6 +129,7 @@ fnc_usec_playerBleed = {
 	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
 	_bleedTime = 400;		//seconds
 	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
+	r_player_bloodlosspersec = _bleedPerSec;
 	_total = r_player_bloodTotal;
 	r_player_injured = true;
 	_myBleedTime = (random 500) + 100;
@@ -152,26 +153,29 @@ fnc_usec_playerBleed = {
 
 fnc_usec_playerBloodRegen = {
 	private["_bleedPerSec","_total"];
-	_bloodPercentage = (r_player_blood / r_player_bloodTotal);
-	_skilllevel = (dayz_Survived / 6);
-	
-	_bleedPerSec = floor(r_player_bloodregen / 15 + _skilllevel);
-	
-	if (_bleedPerSec > r_player_bloodregen) then { _bleedPerSec = r_player_bloodregen; };
-	
-	if ((r_player_bloodregen > _bleedPerSec) and (_bleedPerSec == 0)) then { _bleedPerSec = 1; };
-	
-	r_player_bloodregen = floor(r_player_bloodregen - _bleedPerSec);
-	
-	if ((r_player_bloodregen > 0) and (r_player_blood < 12000)) then {
-		//bleed regen
-		r_player_blood = r_player_blood + _bleedPerSec;	
+	if (!r_player_injured) then {
+		_bloodPercentage = (r_player_blood / r_player_bloodTotal);
+		_skilllevel = (dayz_Survived / 6);
 		
-		player setVariable["USEC_BloodQty",r_player_blood,true];
-		player setVariable["medForceUpdate",true];
+		_bleedPerSec = floor(r_player_bloodregen / 15 + _skilllevel);
+		r_player_bloodgainpersec = _bleedPerSec;
 		
-		//hintSilent format["SkillLevel: %1, BloodAmount: %2, BloodPerSec: %3",_skilllevel,r_player_bloodregen,_bleedPerSec];
-		//diag_log format["Survived/SkillLevel: %6/%5, Blood %1/%4 / Regen %2 / bleedPerSec %3",r_player_blood,r_player_bloodregen,_bleedPerSec,_bloodPercentage,_skilllevel,dayz_Survived];	
+		if (_bleedPerSec > r_player_bloodregen) then { _bleedPerSec = r_player_bloodregen; };
+		
+		if ((r_player_bloodregen > _bleedPerSec) and (_bleedPerSec == 0)) then { _bleedPerSec = 1; };
+		
+		r_player_bloodregen = floor(r_player_bloodregen - _bleedPerSec);
+		
+		if ((r_player_bloodregen > 0) and (r_player_blood < 12000)) then {
+			//bleed regen
+			r_player_blood = r_player_blood + _bleedPerSec;	
+			
+			player setVariable["USEC_BloodQty",r_player_blood,true];
+			player setVariable["medForceUpdate",true];
+			
+			hintSilent format["SkillLevel: %1, BloodAmount: %2, BloodPerSec: %3",_skilllevel,r_player_bloodregen,_bleedPerSec];
+			//diag_log format["Survived/SkillLevel: %6/%5, Blood %1/%4 / Regen %2 / bleedPerSec %3",r_player_blood,r_player_bloodregen,_bleedPerSec,_bloodPercentage,_skilllevel,dayz_Survived];	
+		};
 	};
 };
 
