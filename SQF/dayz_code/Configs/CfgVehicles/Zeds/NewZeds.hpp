@@ -5,7 +5,7 @@
 		class TalkTopics {};
 		languages[] = {};
 		//Armor * hitpointArmor = Total Armor
-		armor = 5; 
+		armor = 10; 
 		
 		class Eventhandlers {
 			init = "_this call zombie_initialize;";
