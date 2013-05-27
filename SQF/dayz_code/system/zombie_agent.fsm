@@ -587,6 +587,9 @@ class FSM
           action=/*%FSM<ACTION""">*/"_agent moveTo _targetPosition;" \n
            "_location = _targetPosition;" \n
            "" \n
+           "_playerDir = direction _target;" \n
+           "_agent setDir _playerDir;" \n
+           "" \n
            "" \n
            "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
         };
