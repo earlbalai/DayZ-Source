@@ -188,13 +188,17 @@ fnc_usec_playerBloodRegen = {
 fnc_usec_damageBleed = {
 	/***********************************************************
 	PROCESS DAMAGE TO A UNIT
-	- Function
+	- Function fnc_usec_damageBleed: Draw a creepy blood stream from a player limb
 	- [_unit, _wound, _injury] call fnc_usec_damageBleed;
 	************************************************************/
 		private["_unit","_wound","_injury","_modelPos","_point","_source"];
 		_unit = _this select 0;
 		_wound = _this select 1;
 		_injury = _this select 2; // not used. damage% ???
+
+		diag_log format ["%1::fnc_usec_damageBleed %2", __FILE__, _this];		
+		
+		if (isServer) exitWith{}; // no graphical effects on server!
 		
 		_modelPos = [0,0,0];
 		
