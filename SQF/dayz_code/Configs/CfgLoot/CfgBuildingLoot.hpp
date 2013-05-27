@@ -13,12 +13,7 @@ class CfgBuildingLoot {
 		vehPos[] = {};
 	};
 	class Master {
-		weapons[] = {
-			"SMAW",
-			"Javelin",
-			"G36C",
-			"Stinger"
-		};
+		weapons[] = {"SMAW","Javelin","G36C","Stinger"};
 	};
 	class Church: Default {
 		zombieChance = 0.3;
@@ -283,9 +278,7 @@ class CfgBuildingLoot {
 			{"","military",1.00},
 			{"","medical",0.5}
 		};
-	};
-		
-		
+	};	
 	class HeliCrashWEST: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
