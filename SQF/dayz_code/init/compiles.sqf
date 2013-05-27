@@ -485,7 +485,7 @@ if (!isDedicated) then {
 		_wounds =		[];
 		if (_character getVariable["USEC_injured",false]) then {
 			{
-				if (_character getVariable[_x,false]) then {
+				if (_character getVariable["hit_"+_x,false]) then {
 					_wounds set [count _wounds,_x];
 				};
 			} forEach USEC_typeOfWounds;
