@@ -1,4 +1,4 @@
-private["_countMagazines","_countWeapons","_countBackpacks","_countFreeSlots","_getControlText","_setControlText","_object","_objectName","_controlText","_magazinesMax","_weaponsMax","_backpacksMax","_distance","_isVehicle","_isMan","_isTent","_isOK","_magazines","_weapons","_backpacks","_freeSlots","_timeout"];
+private["_countMagazines","_countWeapons","_countBackpacks","_countFreeSlots","_getControlText","_setControlText","_object","_objectName","_controlText","_magazinesMax","_weaponsMax","_backpacksMax","_distance","_isVehicle","_isMan","_isStorage","_isOK","_magazines","_weapons","_backpacks","_freeSlots","_timeout"];
 
 _countWeapons = {
 	private["_weapons","_return"];	
@@ -59,14 +59,14 @@ if (vehicle player != player) then {
 
 _isVehicle = _object isKindOf "AllVehicles";
 _isMan = _object isKindOf "Man";
-_isTent = _object isKindOf "TentStorage";
+_isStorage = _object isKindOf "Land_A_tent";
 
 _timeout = time + 2;
 waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
 
-//diag_log format["object_monitorGear.sqf: _object: %1 _isTent: %4 _isVehicle: %2 _isMan: %3 _display: %5", _object, _isVehicle, _isMan, _isTent, findDisplay 106];
+//diag_log format["object_monitorGear.sqf: _object: %1 _isStorage: %4 _isVehicle: %2 _isMan: %3 _display: %5", _object, _isVehicle, _isMan, _isStorage, findDisplay 106];
 
-if ((_isVehicle or _isTent) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
+if ((_isVehicle or _isStorage) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
 	_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
 	_controlText = [] call _getControlText;
 	
