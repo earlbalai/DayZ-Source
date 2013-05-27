@@ -187,10 +187,10 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	//dayz_originalPlayer attachTo [_newUnit];
 	player disableConversation true;
 	
-	_playerUID=getPlayerUID player;
-	_playerObjName = format["player%1",_playerUID];
-	call compile format["%1 = player;",_playerObjName];
-	publicVariable _playerObjName;
+//	_playerUID=getPlayerUID player;
+//	_playerObjName = format["player%1",_playerUID];
+//	call compile format["%1 = player;",_playerObjName];
+//	publicVariable _playerObjName;
 	
 	//melee check
 	_wpnType = primaryWeapon player;

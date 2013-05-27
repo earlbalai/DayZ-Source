@@ -239,7 +239,7 @@ _playerObj setVariable ["lastTime",time];
 
 diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
-dayzLogin = null;
-dayzLogin2 = null;
+PVDZ_plr_Login1 = null;
+PVDZ_plr_Login2 = null;
 
 //Save Login
