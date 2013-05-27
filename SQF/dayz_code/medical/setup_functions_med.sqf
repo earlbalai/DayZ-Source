@@ -144,8 +144,7 @@ fnc_usec_playerBleed = {
 			r_player_injured = false;
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
-			{player setVariable[_x,false,true];} forEach USEC_woundHit;
-			player setVariable ["USEC_injured",false,true];
+			call fnc_usec_resetWoundPoints;
 		};
 		sleep 1;
 	};
@@ -195,7 +194,7 @@ fnc_usec_damageBleed = {
 		private["_unit","_wound","_injury","_modelPos","_point","_source"];
 		_unit = _this select 0;
 		_wound = _this select 1;
-		_injury = _this select 2;
+		_injury = _this select 2; // not used. damage% ???
 		
 		_modelPos = [0,0,0];
 		

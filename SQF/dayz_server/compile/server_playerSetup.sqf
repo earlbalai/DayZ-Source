@@ -109,13 +109,11 @@ if (count _medical > 0) then {
 //	};
 	
 	//Add bleeding Wounds
-	//diag_log(format["%1 debug hit: %2", __FILE__, (_medical select 8)]);
 	{
-		//diag_log(format["%1 debug hit: %2=true", __FILE__, "hit_"+_x]);
 		_playerObj setVariable["hit_"+_x,true];
-		//["PVDZ_hlt_Bleed",[_playerObj,_x,_hit]] call broadcastRpcCallAll;
 		PVDZ_hlt_Bleed = [_playerObj,_x,1];
-		publicVariable "PVDZ_hlt_Bleed";
+		publicVariable "PVDZ_hlt_Bleed"; // draw blood stream on character, on all gameclients
+		[_playerObj,_x,1] spawn fnc_usec_damageBleed; // draw blood stream on character, locally
 	} forEach (_medical select 8);
 	
 	//Add fractures
