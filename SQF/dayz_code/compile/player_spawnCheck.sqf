@@ -157,7 +157,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 	_canLoot = isClass (_config);
 	_dis = _x distance player;
 	_checkLoot = ((count (getArray (_config >> "lootPos"))) > 0);
-	_x setVariable ["cleared",false,true];
+	////_x setVariable ["cleared",false,true]; // not used anymore
 	
 	//Loot
 	if (_currentWeaponHolders < _maxWeaponHolders) then {

@@ -69,10 +69,10 @@ _allFixed = true;
 //update if repaired
 if (_allFixed) then {
 	_vehicle setDamage 0;
-	dayzUpdateVehicle = [_vehicle,"repair"];
+	PVDZ_veh_Save = [_vehicle,"repair"];
 	if (isServer) then {
-		dayzUpdateVehicle call server_updateObject;
+		PVDZ_veh_Save call server_updateObject;
 	} else {
-		publicVariableServer "dayzUpdateVehicle";
+		publicVariableServer "PVDZ_veh_Save";
 	};
 };

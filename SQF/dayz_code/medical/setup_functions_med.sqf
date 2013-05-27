@@ -144,11 +144,17 @@ fnc_usec_playerBleed = {
 			r_player_injured = false;
 			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 			dayz_sourceBleeding =	objNull;
-			{player setVariable[_x,false,true];} forEach USEC_woundHit;
-			player setVariable ["USEC_injured",false,true];
+			call fnc_usec_resetWoundPoints;
 		};
 		sleep 1;
 	};
+};
+
+fnc_usec_resetWoundPoints = {
+	{
+		player setVariable["hit_"+_x,false,true];
+	} forEach USEC_typeOfWounds;
+	player setVariable ["USEC_injured",false,true];
 };
 
 fnc_usec_playerBloodRegen = {
@@ -182,13 +188,17 @@ fnc_usec_playerBloodRegen = {
 fnc_usec_damageBleed = {
 	/***********************************************************
 	PROCESS DAMAGE TO A UNIT
-	- Function
+	- Function fnc_usec_damageBleed: Draw a creepy blood stream from a player limb
 	- [_unit, _wound, _injury] call fnc_usec_damageBleed;
 	************************************************************/
 		private["_unit","_wound","_injury","_modelPos","_point","_source"];
 		_unit = _this select 0;
 		_wound = _this select 1;
-		_injury = _this select 2;
+		_injury = _this select 2; // not used. damage% ???
+
+		diag_log format ["%1::fnc_usec_damageBleed %2", __FILE__, _this];		
+		
+		if (isServer) exitWith{}; // no graphical effects on server!
 		
 		_modelPos = [0,0,0];
 		
@@ -263,8 +273,8 @@ fnc_usec_recoverUncons = {
 	player setVariable ["USEC_isCardiac",false,true];
 	player setVariable["medForceUpdate",true,true];
 	sleep 1;
-	usecEpi = [player,player];
-	publicVariable "usecEpi";
+	PVDZ_hlt_Epi = [player,player];
+	publicVariable "PVDZ_hlt_Epi";
 	r_player_unconscious = false;
 	sleep 1;
 	r_player_cardiac = false;

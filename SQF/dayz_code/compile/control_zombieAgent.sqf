@@ -46,7 +46,7 @@ while {_isAlive and _isSomeone} do {
 		sleep 1;
 	};
 //LOOP
-	_agent setVariable ["targets",[],true];
+	_agent setVariable ["targets",[]];
 	_isAlive = alive _agent;
 	sleep 1;
 };

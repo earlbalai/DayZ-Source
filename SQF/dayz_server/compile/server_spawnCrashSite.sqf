@@ -68,9 +68,9 @@ while {true} do {
 		_crash setVariable ["ObjectID",1,true];
 
 		if (_spawnFire) then {
-			//["dayzFire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
-			dayzFire = [_crash,2,time,false,_fadeFire];
-			publicVariable "dayzFire";
+			//["PVDZ_obj_Fire",[_crash,2,time,false,_fadeFire]] call broadcastRpcCallAll;
+			PVDZ_obj_Fire = [_crash,2,time,false,_fadeFire];
+			publicVariable "PVDZ_obj_Fire";
 			_crash setvariable ["fadeFire",_fadeFire,true];
 		};
 		_itemTypes =	[] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");

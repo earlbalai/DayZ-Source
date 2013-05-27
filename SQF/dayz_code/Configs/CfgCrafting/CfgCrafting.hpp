@@ -1,6 +1,7 @@
 //class CfgWeapons
 
 //Completed
+//Weapons
 #include "Blueprints\Weapons\NailedBaseballBat.hpp"
 #include "Blueprints\Weapons\BaseBallBatBarbed.hpp"
 #include "Blueprints\Weapons\M9SD.hpp"
@@ -13,11 +14,11 @@
 #include "Blueprints\Weapons\G36C_camo.hpp"
 #include "Blueprints\Weapons\G36A_camo.hpp"
 #include "Blueprints\Weapons\G36K_camo.hpp"
+//Medical
 #include "Blueprints\Medical\Bandage.hpp"
-
-//No Stringtables
-
+//Tools
 #include "Blueprints\Tools\Compass.hpp"
+
 
 //Removed Attachment building
 /*

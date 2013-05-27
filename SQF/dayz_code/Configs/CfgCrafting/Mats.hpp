@@ -3,7 +3,7 @@
 //Done
 #include "Items\Mats\ItemNails.hpp"
 
-//No StringTables, No Models
+//No Models
 #include "Items\Attachments\Attachment_ACG.hpp"
 #include "Items\Attachments\Attachment_AIM.hpp"
 #include "Items\Attachments\Attachment_Camo.hpp"
@@ -31,6 +31,8 @@
 #include "Items\Mats\equip_rope.hpp"
 #include "Items\Mats\equip_string.hpp"
 #include "Items\Mats\equip_wood_pallet.hpp"
+
+
 //100% Mats to be added
 #include "Items\Mats\equip_scrap_electronics.hpp"
 #include "Items\Mats\equip_rag.hpp"

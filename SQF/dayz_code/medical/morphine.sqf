@@ -40,13 +40,13 @@ if (_finished) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
 	} else {
-		//dayzHumanity = [player,50];
+		//PVDZ_plr_Humanity = [player,50];
 		[player,50] call player_humanityChange;
 	};
 
-	//["usecMorphine",[_unit,player]] call broadcastRpcCallAll;
-	usecMorphine = [_unit,player];
-	publicVariable "usecMorphine";
+	//["PVDZ_hlt_Morphine",[_unit,player]] call broadcastRpcCallAll;
+	PVDZ_hlt_Morphine = [_unit,player];
+	publicVariable "PVDZ_hlt_Morphine";
 } else {
 	player addMagazine "ItemMorphine";
 	r_interrupt = false;

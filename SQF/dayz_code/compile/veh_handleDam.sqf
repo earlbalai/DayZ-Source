@@ -38,8 +38,8 @@ if (local _unit) then {
 	_unit setDamage _globalDam;
 	diag_log(format["%1: %2 setDamage %3 %4", __FILE__, _unit, _globalDam]);
 	if (!isServer) then {
-		dayzUpdateVehicle = [_unit,"damage"];
-		publicVariableServer "dayzUpdateVehicle";		
+		PVDZ_veh_Save = [_unit,"damage"];
+		publicVariableServer "PVDZ_veh_Save";		
 	}
 	else {
 		[_unit, "damage"] call server_updateObject;
@@ -54,4 +54,5 @@ else {
 	};
 };
 
+// all "HandleDamage event" functions should return the effective damage that the engine will record for that part
 _currentDam

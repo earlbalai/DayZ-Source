@@ -1,7 +1,7 @@
 class Blueprint_Compass : ItemCore {
 	scope = public;
-	displayName = "Compass";
-	descriptionShort = "Crafted Compass - Reg razor, water bottle, scrap metal. Tools Needed: ToolBox";
+	displayName = $STR_CRAFT_NAME_Compass;
+	descriptionShort = $STR_CRAFT_DESC_Compass;
 	model = "\Ca\misc\SmallObj_moscow_docs_WPN";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_blueprint.paa";
 	

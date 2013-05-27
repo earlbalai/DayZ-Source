@@ -58,7 +58,7 @@ _multiplier = 1;
 			if (_dist < DAYZ_disAudial) then {
 				if (DAYZ_disAudial > 65) then { //65
 					_targets set [count _targets,  driver _refObj];
-					_group setVariable ["targets", _targets, true];				
+					_group setVariable ["targets", _targets];				
 				} else {
 					_chance = [_x, _dist, DAYZ_disAudial] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x, _dist]) + " " + str(_chance));
@@ -66,11 +66,11 @@ _multiplier = 1;
 						_cantSee = [ _refObj,_x] call dayz_losCheck;
 						if (!_cantSee) then {
 							_targets set [count _targets,  driver _refObj];
-							_group setVariable ["targets", _targets, true];
+							_group setVariable ["targets", _targets];
 						} else {
 							if (_dist < (DAYZ_disAudial / 2)) then {
 								_targets set [count _targets,  driver _refObj];
-								_group setVariable ["targets", _targets, true];
+								_group setVariable ["targets", _targets];
 							};
 						};
 					};
@@ -98,7 +98,7 @@ _multiplier = 1;
 							if (!_cantSee) then {
 								//diag_log ("Within LOS! Target");
 								_targets set [count _targets,  driver _refObj];
-								_group setVariable ["targets", _targets, true];
+								_group setVariable ["targets", _targets];
 							};
 						};
 					};

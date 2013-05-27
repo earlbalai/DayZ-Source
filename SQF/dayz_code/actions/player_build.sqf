@@ -55,8 +55,8 @@ if ((count _worldspace) == 2) then {
 	};
 	player reveal _object;
 
-	dayzPublishObj = [dayz_characterID,_object,[_dir,_location],_classname];
-	publicVariableServer "dayzPublishObj";	
+	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_location],_classname];
+	publicVariableServer "PVDZ_obj_Publish";	
 	
 	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 } else {
