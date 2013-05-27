@@ -366,23 +366,23 @@ if (!isDedicated) then {
 		};
 	};
 	
-// 	gear_ui_offMenu = {
-// 		private["_control","_parent","_menu"];
-// 		disableSerialization;
-// 		_control = 	_this select 0;
-// 		_parent = 	findDisplay 106;
-// 		if (!(_this select 3)) then {
-// 			for "_i" from 0 to 9 do {
-// 				_menu = _parent displayCtrl (1600 + _i);
-// 				_menu ctrlShow false;
-// 			};
-// 			_grpPos = ctrlPosition _control;
-// 			_grpPos set [3,0];
-// 			_control ctrlSetPosition _grpPos;
-// 			_control ctrlShow false;
-// 			_control ctrlCommit 0;
-// 		};
-// 	}; 
+	gear_ui_offMenu = {
+		private["_control","_parent","_menu"];
+		disableSerialization;
+		_control = 	_this select 0;
+		_parent = 	findDisplay 106;
+		if (!(_this select 3)) then {
+			for "_i" from 0 to 9 do {
+				_menu = _parent displayCtrl (1600 + _i);
+				_menu ctrlShow false;
+			};
+			_grpPos = ctrlPosition _control;
+			_grpPos set [3,0];
+			_control ctrlSetPosition _grpPos;
+			_control ctrlShow false;
+			_control ctrlCommit 0;
+		};
+	}; 
 	
 
 	gear_ui_init = {

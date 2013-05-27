@@ -117,14 +117,14 @@ fnc_usec_self_removeActions = {
 	r_self_actions = [];
 };
 
-// fnc_med_publicBlood = {
-// 	while {(r_player_injured or r_player_infected) and r_player_blood > 0} do {
-// 		player setVariable["USEC_BloodQty",r_player_blood,true];
-// 		player setVariable["medForceUpdate",true];
-// 		sleep 5;
-// 	};
-// };
-// 
+fnc_med_publicBlood = {
+	while {(r_player_injured or r_player_infected) and r_player_blood > 0} do {
+		player setVariable["USEC_BloodQty",r_player_blood,true];
+		player setVariable["medForceUpdate",true];
+		sleep 5;
+	};
+};
+
 fnc_usec_playerBleed = {
 	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
 	_bleedTime = 400;		//seconds
