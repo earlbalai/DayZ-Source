@@ -15,6 +15,7 @@ _text =     getText (_config >> "displayName");
 _stashtype =  "0";
 _consume =  getText (_config >> "consume");
 
+
 _hasitemcount = {_x == _consume} count magazines player;
 
 //if ("ItemSandbag" in magazines player) then { _stashtype = "StashMedium"; };
@@ -22,6 +23,11 @@ _hasitemcount = {_x == _consume} count magazines player;
 if (_hasitemcount == 0) exitwith {};
 if (_hasitemcount == 1) then { _stashtype =   getText (_config >> "stashsmall"); };
 //if (_hasitemcount == 2) then { _stashtype =   getText (_config >> "stashmedium"); };
+
+// Items are missing
+if ((!(_consume IN magazines player))) exitWith {
+	cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_build")] , "PLAIN DOWN"];
+};
 
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];

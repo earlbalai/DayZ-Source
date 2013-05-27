@@ -7,10 +7,15 @@ _classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> 
 _require = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
 _text =  getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
-// item is missing or tools are missing
-if ((!(_require IN items player)) OR {(!(_item IN magazines player))}) exitWith {
+// item is missing
+if ((!(_item IN magazines player))) exitWith {
 	cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_build")] , "PLAIN DOWN"];
 	diag_log(format["player_build: item:%1 require:%2  Player items:%3  magazines:%4", _item, _require, (items player), (magazines player)]);
+};
+
+// tools are missing
+if ((!(_require IN items player))) exitWith {
+	cutText [format[(localize "str_player_31_missingtools"),_text,_require] , "PLAIN DOWN"];
 };
 
 _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, testDistance
