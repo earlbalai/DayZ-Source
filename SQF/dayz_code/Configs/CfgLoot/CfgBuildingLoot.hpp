@@ -69,7 +69,7 @@ class CfgBuildingLoot {
 			{"MR43","weapon",0.03},
 			{"ItemBookBible","magazine",0.02},
 			{"WeaponHolder_ItemFuelcan","object",0.03},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -101,7 +101,7 @@ class CfgBuildingLoot {
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
 			{"ItemTankTrap","magazine",0.04},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -158,7 +158,7 @@ class CfgBuildingLoot {
 			{"Blueprint_Compass","weapon",0.01},
 			//
 			*/
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60}
 		};
@@ -179,7 +179,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemHatchet","object",0.05},
 			{"MR43","weapon",0.01},
 			{"MeleeMachete","weapon",0.04},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -214,7 +214,7 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine",0.04},
 			{"MR43","weapon", 0.01},
 			{"","food",0.07},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.03},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -355,7 +355,7 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24			
 			{"ItemEtool","weapon",0.03},
 			{"ItemSandbag","magazine",0.04},
-			{"","craft",0.30},
+			//{"","craft",0.10},
 			{"","military",0.70},
 			{"","generic",0.10},
 			//{"","attachments",0.10},
@@ -414,7 +414,7 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine",0.01},
 			{"Sa58P_EP1","weapon",0.02},
 			{"Sa58V_EP1","weapon",0.02},
-			{"","craft",0.30},
+			//{"","craft",0.10},
 			{"","military",0.70},
 			{"","generic",0.10},
 			//{"","attachments",0.10},
@@ -443,7 +443,7 @@ class CfgBuildingLoot {
 			{"M24","weapon",0.03},
 			{"M1014","weapon",0.03},
 			{"","hunter",0.10},
-			{"","craft",0.30},
+			//{"","craft",0.10},
 			{"","military",0.15},
 			//{"","attachments",0.15},
 			{"","generic",0.50},
