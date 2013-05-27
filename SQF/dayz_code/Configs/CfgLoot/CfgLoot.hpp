@@ -32,7 +32,7 @@ class CfgLoot {
 			//{"equip_aa_battery",0.01},
 			//{"equip_2inch_metal_pipe",0.01},
 			//{"equip_1inch_metal_pipe",0.02},
-			{"ItemNails",0.01},
+			{"ItemNails",0.01}
 			//{"equip_rail_screws",0.01},
 			//{"equip_weapon_rails",0.01}
 	};
