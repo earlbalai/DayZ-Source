@@ -294,6 +294,10 @@ r_player_vehicle =		player;
 r_player_blood = 		12000;
 //Blood Regen
 r_player_bloodregen = 0;
+//Blood Gain Per Sec
+r_player_bloodgainpersec = 0;
+//Blood Loss Per Sec
+r_player_bloodlosspersec = 0;
 //Food Stack
 r_player_foodstack = 0; 
 //player skill

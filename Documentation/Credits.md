@@ -28,7 +28,6 @@ for many different parts of the code.
  * [Skaronator] (https://github.com/Skaronator)
  * [JoeysLucky22] (https://github.com/JoeysLucky22)
  * [facoptere] (https://github.com/facoptere)
- * [Ingasmeeg] (https://github.com/Ingasmeeg)
  * [AlexAFlorov] (https://github.com/AlexAFlorov)
  * [AlbyBDPK] (https://github.com/AlbyBDPK)
  * [thevisad] (https://github.com/thevisad)
@@ -44,37 +43,42 @@ Short-term Contributions
 These contributors have made specific changes for a particular bug fix or
 feature.
 
-* [MattzFiber](https://github.com/MattzFiber)
-* [Elvaron](https://github.com/Elvaron)
-* [Tansien](https://github.com/Tansien)
-* [wriley](https://github.com/wriley)
-* [Finest](https://github.com/Finest)
-* [fred41](https://github.com/fred41)
-* [Killzone_kid](https://github.com/Killzonekid)
-* [Alex Grosse (Inch)](http://opendayz.net/index.php?members/inch.1011/)
-* [Sumrak](http://www.nightstalkers.cz/en_index_nc.php)
-* [f0rt](https://github.com/ashfor03)
-* [Pwnoz0r](https://github.com/Pwnoz0r)
-* [Ayan4m1](https://github.com/Ayan4m1)
-* [Rajko](https://github.com/rajkosto)
-* [Stapo](https://github.com/Stapo)
-* [Venthos](https://github.com/Venthos)
-* [VRShiva](https://github.com/VRShiva)
-* [caleywoods](https://github.com/caleywoods)
-* [soapmak3r](https://github.com/soapmak3r) (Background Music)
-* [icomrade](https://github.com/icomrade)
-* Ander
-* Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
-* Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
-* Special thanks to shinkicker who has listened to all of the ideas and who has always been there to bounce ideas back and forth Thanks.
+ * [MattzFiber](https://github.com/MattzFiber)
+ * [Elvaron](https://github.com/Elvaron)
+ * [Tansien](https://github.com/Tansien)
+ * [wriley](https://github.com/wriley)
+ * [Finest](https://github.com/Finest)
+ * [fred41](https://github.com/fred41)
+ * [Killzone_kid](https://github.com/Killzonekid)
+ * [Alex Grosse (Inch)](http://opendayz.net/index.php?members/inch.1011/)
+ * [Sumrak](http://www.nightstalkers.cz/en_index_nc.php)
+ * [f0rt](https://github.com/ashfor03)
+ * [Pwnoz0r](https://github.com/Pwnoz0r)
+ * [Ayan4m1](https://github.com/Ayan4m1)
+ * [Rajko](https://github.com/rajkosto)
+ * [Stapo](https://github.com/Stapo)
+ * [Venthos](https://github.com/Venthos)
+ * [VRShiva](https://github.com/VRShiva)
+ * [DasAttorney](https://github.com/DasAttorney)
+ * [ddesmond](https://github.com/ddesmond)
+ * [dayz10k](https://github.com/dayz10k)
+ * [Taiwendo](https://github.com/Taiwendo)
+ * [Ingasmeeg] (https://github.com/Ingasmeeg)
+ * [caleywoods](https://github.com/caleywoods)
+ * [icomrade](https://github.com/icomrade)
+ * [soapmak3r](https://github.com/soapmak3r) (Background Music)
+ * Ander
+ * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
+ * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
+ * Special thanks to shinkicker who has listened to all of the ideas and who has always been there to bounce ideas back and forth Thanks.
 
 ------------------------
 Art Work
 ------------------------
-* Alexander (G17 incombat Icon)
-* Des (Gender images & Gui icon's revamp)
-* [JoeysLucky22](https://github.com/JoeysLucky22)
-* [Elvaron](https://github.com/Elvaron)
+ * Alexander (G17 incombat Icon)
+ * Des (Gender images & Gui icon's revamp)
+ * [JoeysLucky22](https://github.com/JoeysLucky22)
+ * [Elvaron](https://github.com/Elvaron)
 
 Contributing
 ------------
