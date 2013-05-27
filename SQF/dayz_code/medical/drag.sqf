@@ -37,8 +37,8 @@ _dragee attachto [_unit,[0.1, 1.01, 0]];
 sleep 0.02;
 
 //rotate wounded units so that it is facing the correct direction
-PVDZ_drg_R180 = _dragee;
-publicVariable "PVDZ_drg_R180";
+//PVDZ_drg_R180 = _dragee; // not used
+//publicVariable "PVDZ_drg_R180"; // not used
 _dragee  setDir 180;
 
 //Uneccesary actions removed & drop body added 

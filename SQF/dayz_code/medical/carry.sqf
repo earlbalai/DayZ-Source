@@ -23,11 +23,11 @@ _dragee setVariable ["NORRN_unit_dragged", true, true];
 detach _dragee;
 sleep 1.5;
 // public EH
-PVDZ_drg_RACarUp = _dragee;
-publicVariable "PVDZ_drg_RACarUp";
-_dragee switchMove "ainjpfalmstpsnonwrfldnon_carried_up";
-PVDZ_drg_RAPicUp = _unit;
-publicVariable "PVDZ_drg_RAPicUp";
+//PVDZ_drg_RACarUp = _dragee; // not used
+//publicVariable "PVDZ_drg_RACarUp"; // not used
+//_dragee switchMove "ainjpfalmstpsnonwrfldnon_carried_up";
+//PVDZ_drg_RAPicUp = _unit; // not used
+//publicVariable "PVDZ_drg_RAPicUp"; // not used
 _unit switchMove "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon";
 sleep 10;
 _dragee switchmove "ainjpfalmstpsnonwrfldnon_carried_still";

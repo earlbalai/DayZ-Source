@@ -35,8 +35,8 @@ if (local _wounded) then
 				_wounded action ["EJECT", _vcl];
 				sleep 1;
 			};
-			PVDZ_drg_RAlie = _wounded;
-			publicVariable "PVDZ_drg_RAlie";
+//			PVDZ_drg_RAlie = _wounded; // not used
+//			publicVariable "PVDZ_drg_RAlie"; // not used
 			_wounded switchMove "ainjppnemstpsnonwrfldnon";
 			_wounded setVariable ["NORRN_unit_dragged", false, true];
 			sleep 1;
