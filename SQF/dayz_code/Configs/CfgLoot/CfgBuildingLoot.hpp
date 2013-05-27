@@ -13,12 +13,7 @@ class CfgBuildingLoot {
 		vehPos[] = {};
 	};
 	class Master {
-		weapons[] = {
-			"SMAW",
-			"Javelin",
-			"G36C",
-			"Stinger"
-		};
+		weapons[] = {"SMAW","Javelin","G36C","Stinger"};
 	};
 	class Church: Default {
 		zombieChance = 0.3;
@@ -69,7 +64,7 @@ class CfgBuildingLoot {
 			{"MR43","weapon",0.03},
 			{"ItemBookBible","magazine",0.02},
 			{"WeaponHolder_ItemFuelcan","object",0.03},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -101,7 +96,7 @@ class CfgBuildingLoot {
 			{"ItemToolbox","weapon",0.06},
 			{"ItemWire","magazine",0.01},
 			{"ItemTankTrap","magazine",0.04},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -158,7 +153,7 @@ class CfgBuildingLoot {
 			{"Blueprint_Compass","weapon",0.01},
 			//
 			*/
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60}
 		};
@@ -179,7 +174,7 @@ class CfgBuildingLoot {
 			{"WeaponHolder_ItemHatchet","object",0.05},
 			{"MR43","weapon",0.01},
 			{"MeleeMachete","weapon",0.04},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.10},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -214,7 +209,7 @@ class CfgBuildingLoot {
 			{"PartWoodPile","magazine",0.04},
 			{"MR43","weapon", 0.01},
 			{"","food",0.07},
-			{"","craft",0.40},
+			//{"","craft",0.10},
 			{"","military",0.03},
 			{"","generic",0.60},
 			{"","trash",0.40}
@@ -253,6 +248,37 @@ class CfgBuildingLoot {
 			{"","medical",0.5}
 		};
 	};
+	class HeliCrash_No50s: Default {
+		zombieChance = 0.4;
+		maxRoaming = 2;
+		zombieClass[] = {"z_soldier_pilot"};
+		lootChance = 0.5;
+		lootPos[] = {};
+		lootType[] = {
+			{"FN_FAL","weapon",0.04},
+			{"bizon_silenced","weapon",0.05},
+			{"M14_EP1","weapon",0.05},
+			{"FN_FAL_ANPVS4","weapon",0.01},
+			{"Mk_48_DZ","weapon",0.03},
+			{"M249_DZ","weapon",0.04},
+			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
+			{"DMR","weapon",0.06},
+			{"MedBox0","object",0.05},
+			{"NVGoggles","weapon",0.01},
+			{"AmmoBoxSmall_556","object",0.05},
+			{"AmmoBoxSmall_762","object",0.05},
+			{"Skin_Camo1_DZ","magazine",0.08},
+			{"Skin_Sniper1_DZ","magazine",0.05},
+			{"G36C","weapon",0.03},
+			{"G36C_camo","weapon",0.03},
+			{"G36_C_SD_camo","weapon",0.01},
+			{"G36A_camo","weapon",0.03},
+			{"G36K_camo","weapon",0.03},
+			{"100Rnd_762x54_PK","magazine",0.05},
+			{"","military",1.00},
+			{"","medical",0.5}
+		};
+	};	
 	class HeliCrashWEST: Default {
 		zombieChance = 0.4;
 		maxRoaming = 2;
@@ -262,8 +288,6 @@ class CfgBuildingLoot {
 		lootType[] = {
 			{"FN_FAL","weapon",0.04},
 			{"FN_FAL_ANPVS4","weapon",0.01},
-			{"M107_DZ","weapon",0.01},
-			{"BAF_AS50_scoped_DZ","weapon",0.01},
 			{"Mk_48_DZ","weapon",0.03},
 			{"M249_DZ","weapon",0.04},
 			{"BAF_L85A2_RIS_Holo","weapon",0.03},
@@ -355,7 +379,7 @@ class CfgBuildingLoot {
 			{"DZ_CivilBackpack_EP1","object",0.01}, // 24			
 			{"ItemEtool","weapon",0.03},
 			{"ItemSandbag","magazine",0.04},
-			{"","craft",0.30},
+			//{"","craft",0.10},
 			{"","military",0.70},
 			{"","generic",0.10},
 			//{"","attachments",0.10},
@@ -414,7 +438,7 @@ class CfgBuildingLoot {
 			{"100Rnd_762x54_PK","magazine",0.01},
 			{"Sa58P_EP1","weapon",0.02},
 			{"Sa58V_EP1","weapon",0.02},
-			{"","craft",0.30},
+			//{"","craft",0.10},
 			{"","military",0.70},
 			{"","generic",0.10},
 			//{"","attachments",0.10},
@@ -443,7 +467,7 @@ class CfgBuildingLoot {
 			{"M24","weapon",0.03},
 			{"M1014","weapon",0.03},
 			{"","hunter",0.10},
-			{"","craft",0.30},
+			//{"","craft",0.10},
 			{"","military",0.15},
 			//{"","attachments",0.15},
 			{"","generic",0.50},

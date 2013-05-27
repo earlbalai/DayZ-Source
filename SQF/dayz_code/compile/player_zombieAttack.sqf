@@ -142,17 +142,15 @@ _unit setPosATL (getPosATL _unit);
 
 
 // let's animate the Z
-/*
 if (local _unit) then {
 	_unit switchMove _move;
 }
 else {
 	[objNull,  _unit,  rSwitchMove,  _move] call RE;
 };
-*/
 
 // Damage is done after the move
-sleep 0.02;
+//sleep 0.02;
 
 if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 

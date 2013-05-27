@@ -41,11 +41,11 @@ if (_finished) then {
 	_unit setVariable["LastTransfusion",time,true];
 	_unit setVariable["USEC_lowBlood",false,true];
 	player removeMagazine "ItemBloodbag";	
-	//["usecTransfuse",[_unit,player]] call broadcastRpcCallAll;
-	usecTransfuse = [_unit,player];
-	publicVariable "usecTransfuse";
+	//["PVDZ_hlt_Transfuse",[_unit,player]] call broadcastRpcCallAll;
+	PVDZ_hlt_Transfuse = [_unit,player];
+	publicVariable "PVDZ_hlt_Transfuse";
 
-	//dayzHumanity = [player,250];
+	//PVDZ_plr_Humanity = [player,250];
 	[player,250] call player_humanityChange;
 } else {
 	r_interrupt = false;

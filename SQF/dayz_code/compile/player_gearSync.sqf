@@ -2,9 +2,9 @@ private ["_objects"];
 
 _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10];
 {
-	//["dayzUpdateVehicle",[_x,"gear"]] call callRpcProcedure;
-	dayzUpdateVehicle = [_x,"gear"];
-	publicVariableServer "dayzUpdateVehicle";
+	//["PVDZ_veh_Save",[_x,"gear"]] call callRpcProcedure;
+	PVDZ_veh_Save = [_x,"gear"];
+	publicVariableServer "PVDZ_veh_Save";
 	
 } foreach _objects;
 

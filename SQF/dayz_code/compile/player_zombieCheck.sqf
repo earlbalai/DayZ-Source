@@ -17,38 +17,24 @@ _multiplier = 1;
 		_group = _x;
 		_chance = 20 / dayz_monitorPeriod; // Z verbosity
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
-			_near = true;
-			[_x, "attack", (_chance), true] call dayz_zombieSpeak;
+			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
 			//perform an attack
-			_last = _x getVariable["lastAttack", 0];
-			if ((time - _last) > 2.5) then {
-				_cantSee = [_refObj,_x] call dayz_losCheck;
-				if (!_cantSee) then {
-					_attackResult = [_x,  _type] call player_zombieAttack;
-					//diag_log(format["%1 %2 %3 / as:%4 up:%5 ur:%6 sp:%7",  __FILE__,  _x,  _attackResult,  animationState player,  unitPos player,  unitReady _x,  [0, 0, 0] distance (velocity player)]);
-					if (_attackResult == "") then {
-						_x setVariable["lastAttack", time];
-						_attacked = true;
-					//} else {
-						//private [ "_vehicle", "_velo", "_nextPlayerPos" ];
-						//doStop _x;
-						//_vehicle = (vehicle player);
-						//_velo = velocity _vehicle;
-						//_nextPlayerPos = getPosATL player;
-						// compute player pos the next second. This works both whether player is bare foot, or in a vehicle, whatever his place.
-						//_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0)];  
-						//_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1)];  
-						//_nextPlayerPos set [2, 0];  
-					    //_x doMove _nextPlayerPos;
-						//_x moveTo _nextPlayerPos;					
-					};
-				};
+			_last = _x getVariable["lastAttack",0];
+			_entHeight = (getPosATL _x) select 2;
+			_delta = _pHeight - _entHeight;
+			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
+				//_isZInside = [_x,_building] call fnc_isInsideBuilding;
+				//if ((_isPlayerInside and _isZInside) or (!_isPlayerInside and !_isZInside)) then {
+					[_x,  _type] call player_zombieAttack;
+					_x setVariable["lastAttack",time];
+				//};
 			};
+			_attacked = true;
 		} else {
 			if (speed _x < 4) then {
-				[_x, "idle", _chance * 1.4, true] call dayz_zombieSpeak;
+				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
 			} else {
-				[_x, "chase", _chance * 1.3, true] call dayz_zombieSpeak;
+				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
 			};
 		};
 		
@@ -58,7 +44,7 @@ _multiplier = 1;
 			if (_dist < DAYZ_disAudial) then {
 				if (DAYZ_disAudial > 65) then { //65
 					_targets set [count _targets,  driver _refObj];
-					_group setVariable ["targets", _targets, true];				
+					_group setVariable ["targets", _targets];				
 				} else {
 					_chance = [_x, _dist, DAYZ_disAudial] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x, _dist]) + " " + str(_chance));
@@ -66,11 +52,11 @@ _multiplier = 1;
 						_cantSee = [ _refObj,_x] call dayz_losCheck;
 						if (!_cantSee) then {
 							_targets set [count _targets,  driver _refObj];
-							_group setVariable ["targets", _targets, true];
+							_group setVariable ["targets", _targets];
 						} else {
 							if (_dist < (DAYZ_disAudial / 2)) then {
 								_targets set [count _targets,  driver _refObj];
-								_group setVariable ["targets", _targets, true];
+								_group setVariable ["targets", _targets];
 							};
 						};
 					};
@@ -98,7 +84,7 @@ _multiplier = 1;
 							if (!_cantSee) then {
 								//diag_log ("Within LOS! Target");
 								_targets set [count _targets,  driver _refObj];
-								_group setVariable ["targets", _targets, true];
+								_group setVariable ["targets", _targets];
 							};
 						};
 					};

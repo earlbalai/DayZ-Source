@@ -321,11 +321,11 @@ class FSM
            "	_currentState = [_currentWpn,_currentAnim,_temp];" \n
            "	" \n
            "	dayz_Magazines = _magazineArray;" \n
-           "	dayzPlayerSave = [player,dayz_Magazines,false];" \n
-           "	publicVariableServer ""dayzPlayerSave"";" \n
+           "	PVDZ_plr_Save = [player,dayz_Magazines,false];" \n
+           "	publicVariableServer ""PVDZ_plr_Save"";" \n
            "			" \n
            "	if (isServer) then {" \n
-           "		dayzPlayerSave call server_playerSync;" \n
+           "		PVDZ_plr_Save call server_playerSync;" \n
            "	};" \n
            "						" \n
            "	dayz_lastSave = time;" \n
@@ -465,11 +465,11 @@ class FSM
        "" \n
        "_msg = [];" \n
        "" \n
-       "dayzLogin = [_playerUID,player];" \n
-       "publicVariableServer ""dayzLogin"";" \n
+       "PVDZ_plr_Login1 = [_playerUID,player];" \n
+       "publicVariableServer ""PVDZ_plr_Login1"";" \n
        "" \n
        "if (isServer) then {" \n
-       "	dayzLogin call server_playerLogin;" \n
+       "	PVDZ_plr_Login1 call server_playerLogin;" \n
        "};" \n
        "" \n
        "dayzPlayerLogin = [];" \n
@@ -698,10 +698,10 @@ class FSM
        "};" \n
        "" \n
        "dayzPlayerLogin2 = [];" \n
-       "//[""dayzLogin2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
+       "//[""PVDZ_plr_Login2"",[_charID,player,_playerUID]] call callRpcProcedure;" \n
        "" \n
-       "dayzLogin2 = [_charID,player,_playerUID];" \n
-       "publicVariableServer ""dayzLogin2"";" \n
+       "PVDZ_plr_Login2 = [_charID,player,_playerUID];" \n
+       "publicVariableServer ""PVDZ_plr_Login2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
        "progressLoadingScreen 0.8;" \n
@@ -738,6 +738,13 @@ class FSM
        "player setPosATL _setPos;" \n
        "player setDir _setDir;" \n
        "" \n
+		"{" \n
+		"	if (player getVariable[""hit_""+_x,false]) then { " \n
+		"		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
+		"		PVDZ_hlt_Bleed = [player,_x,_x];" \n
+		"		publicVariable ""PVDZ_hlt_Bleed""; // draw blood stream on character, on all gameclients" \n
+		"	};" \n
+		"} forEach USEC_typeOfWounds;" \n
        "//Legs and Arm fractures" \n
        "_legs = player getVariable [""hit_legs"",0];" \n
        "_arms = player getVariable [""hit_hands"",0];" \n
@@ -1022,10 +1029,10 @@ class FSM
        "" \n
        "//Select Weapon" \n
        "// Desc: select default weapon & handle multiple muzzles" \n
-       "_playerObjName = format[""player%1"",_playerUID];" \n
-       "call compile format[""player%1 = player;"",_playerUID];" \n
-       "diag_log (format[""player%1 = player"",_playerUID]);" \n
-       "publicVariable _playerObjName;" \n
+       "////_playerObjName = format[""player%1"",_playerUID];" \n
+       "////call compile format[""player%1 = player;"",_playerUID];" \n
+       "////diag_log (format[""player%1 = player"",_playerUID]);" \n
+       "////publicVariable _playerObjName;" \n
        "" \n
        "//_state = player getVariable[""state"",[]];" \n
        "_currentWpn = """";" \n
@@ -1260,10 +1267,10 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"dayzGearSave = true;" \n
        "dayz_myPosition = getPosATL player;" \n
        "" \n
-       "//[""dayzLoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
+       "//[""PVDZ_plr_LoginRecord"",[_playerUID,_charID,0]] call callRpcProcedure;" \n
        "" \n
-       "dayzLoginRecord = [_playerUID,_charID,0];" \n
-       "publicVariableServer ""dayzLoginRecord"";" \n
+       "PVDZ_plr_LoginRecord = [_playerUID,_charID,0];" \n
+       "publicVariableServer ""PVDZ_plr_LoginRecord"";" \n
        "" \n
        "endLoadingScreen;" \n
        ""/*%FSM</STATEINIT""">*/;

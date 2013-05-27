@@ -38,7 +38,7 @@ if (_sfx == "") then {_sfx = "eat"};
 //disminishing returns. while regen is active
 r_player_foodstack = r_player_foodstack + 1;
 _skilllevel = (dayz_Survived / 6);
-if ((r_player_bloodregen > 5) and (r_player_foodstack > 1) and (r_player_foodstack < 10)) then {
+if ((r_player_bloodregen > 5) and (r_player_foodstack > 1) and (r_player_foodstack < 10) and !r_player_injured) then {
 	_regen = _regen / r_player_foodstack + _skilllevel;
 //	diag_log ("Regen: " +str(_regen));
 };
@@ -88,9 +88,9 @@ player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 player setVariable["USEC_BloodQty",r_player_blood,true];
 player setVariable["medForceUpdate",true];
 
-//["dayzPlayerSave",[player,[],true]] call callRpcProcedure;
-dayzPlayerSave = [player,[],true];
-publicVariableServer "dayzPlayerSave";
+//["PVDZ_plr_Save",[player,[],true]] call callRpcProcedure;
+PVDZ_plr_Save = [player,[],true];
+publicVariableServer "PVDZ_plr_Save";
 
 dayz_lastMeal = time;
 dayz_hunger = 0;

@@ -84,8 +84,8 @@ Serverside affected addons:
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1200 each.
 	    * [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
-	    * [UPDTAED] - ALL loot table weights have been updated.
-	    * [UPDTAED] - ALL loot table weights have been rebalanced.
+	    * [UPDATED] - ALL loot table weights have been updated.
+	    * [UPDATED] - ALL loot table weights have been rebalanced.
 	    * [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
 	    * [UPDATED] - Mac and 1911 Pistol dmg updated.
 	    * [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
@@ -112,7 +112,7 @@ Serverside affected addons:
 	    * [UPDATED] - Quiver acts as a quiver, you now have to take an arrow out of the quiver.
 	    * [UPDATED] - You can now only have 1 useable quiver in your main inventory and unlimited in your backpack.
 	    * [UPDATED] - Melee range has been updated.
-	    * [UPDATED] - HMMWV Stroage has been updated to 10 weapons, 50 slots and 2 backpacks.
+	    * [UPDATED] - HMMWV Cargo updated. (10 weapons, 50 slots and 2 backpack)
 	    * [UPDATED] - AH6 & MH6 Cargo updated. (AH6 3 weapons, 30 slots and 2 backpacks) (MH6J 3 weapons, 20 slots and 3 backpacks)
 	    * [UPDATED] - Fire Places will no longer act as storage systems.
 	    * [UPDATED] - Fireplace can now only be lit once without adding new wood inside the fireplace.
@@ -124,9 +124,6 @@ Serverside affected addons:
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
 	
 	    * [REMOVED] - M107 and AS50. (Removed from game)
-	    * [REMOVED] - Removed all military weapons with any attachment from loot tables. (Not removed from game)
-	    * [REMOVED] - Crafting is now added. While we wait on the new ui the blueprint system does not feel correct.
-	    * [REMOVED] - Attachment Crafting is the only way to upgrade weapons. (Attachments are found they need other objects to be crafted before being applyed to weapons) While we wait on the new ui the blueprint system does not feel correct.
 	    * [REMOVED] - 2 New Bat variations used in crafting. (NailedBat,WiredBat). While we wait on the new ui the blueprint system does not feel correct.
 		
 ______________________

@@ -18,41 +18,41 @@ item13[] = {"",7,210,-154.000015,-29.000004,-146.000000,-20.999996,0.000000,""};
 item14[] = {"",7,210,-279.000061,-29.000004,-270.999969,-20.999996,0.000000,""};
 item15[] = {"",7,210,-254.000046,146.000000,-245.999954,154.000000,0.000000,""};
 item16[] = {"Has_Target",4,218,-150.000000,225.000000,-50.000000,275.000000,1.000000,"Has" \n "Target"};
-item17[] = {"Chase",2,4346,-150.000000,300.000000,-50.000000,350.000000,0.000000,"Chase"};
+item17[] = {"Chase",2,250,-150.000000,300.000000,-50.000000,350.000000,0.000000,"Chase"};
 item18[] = {"Time_Check",4,218,50.000000,75.000000,150.000000,125.000000,0.000000,"Time" \n "Check"};
 item19[] = {"",7,210,-29.000006,146.000000,-20.999996,154.000000,0.000000,""};
 item20[] = {"",7,210,-29.000006,196.000000,-20.999996,204.000000,0.000000,""};
 item21[] = {"",7,210,-104.000000,196.000000,-95.999992,204.000000,0.000000,""};
 item22[] = {"Time_Check",4,218,-450.000000,75.000000,-350.000000,125.000000,0.000000,"Time" \n "Check"};
-item23[] = {"not__Close_",4,218,-275.000000,300.000000,-175.000000,350.000000,2.000000,"not " \n "Close" \n ""};
-item24[] = {"No_Target",4,218,-275.000000,450.000000,-175.000000,500.000000,2.000000,"No" \n "Target"};
-item25[] = {"",7,210,-479.000000,471.000031,-471.000000,479.000000,0.000000,""};
-item26[] = {"",7,210,-479.000000,146.000000,-471.000000,154.000000,0.000000,""};
-item27[] = {"Attack",4,218,-275.000000,375.000000,-175.000000,425.000000,1.000000,"" \n "Attack"};
+item23[] = {"not__Close_",4,218,-300.000000,375.000000,-200.000000,425.000000,0.000000,"not " \n "Close" \n ""};
+item24[] = {"No_Target",4,218,-650.000000,475.000000,-550.000000,525.000000,2.000000,"No" \n "Target"};
+item25[] = {"",7,210,-704.000000,546.000061,-696.000000,554.000000,0.000000,""};
+item26[] = {"",7,210,-704.000000,146.000000,-696.000000,154.000000,0.000000,""};
+item27[] = {"Approch",4,218,-600.000000,350.000000,-500.000000,400.000000,1.000000,"" \n "Approch"};
 item28[] = {"",7,210,221.000000,646.000000,229.000000,654.000000,0.000000,""};
 item29[] = {"",7,210,-104.000023,396.000000,-95.999985,404.000000,0.000000,""};
 item30[] = {"",7,210,-66.500000,396.000000,-58.500000,404.000000,0.000000,""};
-item31[] = {"",7,210,-66.500015,471.000031,-58.499985,479.000000,0.000000,""};
+item31[] = {"",7,210,-66.500015,508.500000,-58.499985,516.500000,0.000000,""};
 item32[] = {"cant_see",4,218,-275.000000,550.000000,-175.000000,600.000000,2.000000,"cant" \n "see"};
 item33[] = {"Finish_Move",2,250,-275.000000,625.000000,-175.000000,675.000000,0.000000,"Finish" \n "Move"};
 item34[] = {"finished",4,218,-425.000000,700.000000,-325.000000,750.000000,1.000000,"finished"};
-item35[] = {"",7,210,-479.000000,721.000000,-471.000000,729.000000,0.000000,""};
+item35[] = {"",7,210,-704.000000,721.000000,-696.000000,729.000000,0.000000,""};
 item36[] = {"",7,210,-304.000000,146.000000,-296.000000,154.000000,0.000000,""};
-item37[] = {"Time_Check",4,218,-275.000000,225.000000,-175.000000,275.000000,0.000000,"Time Check"};
+item37[] = {"Time_Check",4,218,-300.000000,225.000000,-200.000000,275.000000,0.000000,"Time Check"};
 item38[] = {"",7,210,221.000000,233.500000,229.000000,241.500000,0.000000,""};
 item39[] = {"",7,210,221.000000,421.000000,229.000000,429.000000,0.000000,""};
 item40[] = {"",7,210,221.000000,321.000000,229.000000,329.000000,0.000000,""};
 item41[] = {"too_long",4,218,-425.000000,775.000000,-325.000000,825.000000,0.000000,"too long"};
 item42[] = {"",7,210,-229.000000,796.000000,-221.000000,804.000000,0.000000,""};
-item43[] = {"",7,210,-479.000000,796.000000,-471.000000,804.000000,0.000000,""};
-item44[] = {"Reset_Targeting",2,250,-525.000000,325.000000,-425.000000,375.000000,0.000000,"Reset" \n "Targeting"};
-item45[] = {"true",8,218,-525.000000,250.000000,-425.000000,300.000000,0.000000,"true"};
+item43[] = {"",7,210,-704.000000,796.000000,-696.000000,804.000000,0.000000,""};
+item44[] = {"Reset_Targeting",2,250,-750.000000,350.000000,-650.000000,400.000000,0.000000,"Reset" \n "Targeting"};
+item45[] = {"true",8,218,-750.000000,250.000000,-650.000000,300.000000,0.000000,"true"};
 item46[] = {"",7,210,-66.500000,571.000000,-58.499996,579.000000,0.000000,""};
 item47[] = {"player_check",4,218,-450.000000,0.000000,-350.000000,50.000000,0.000000,"player" \n "check"};
 item48[] = {"player_check",4,218,50.000000,0.000000,150.000000,50.000000,0.000000,"player" \n "check"};
 item49[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
 item50[] = {"",7,210,-229.000000,721.000000,-221.000000,729.000000,0.000000,""};
-item51[] = {"",7,210,-479.000000,646.000000,-471.000000,654.000000,0.000000,""};
+item51[] = {"",7,210,-704.000000,646.000000,-696.000000,654.000000,0.000000,""};
 item52[] = {"",7,210,-29.000000,-29.000002,-21.000000,-21.000000,0.000000,""};
 item53[] = {"Cleanup_",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"Cleanup?"};
 item54[] = {"nobody_around",4,218,175.000000,-75.000000,275.000000,-25.000000,0.000000,"nobody" \n "around"};
@@ -67,8 +67,14 @@ item62[] = {"",7,210,221.000000,-166.500000,229.000000,-158.500000,0.000000,""};
 item63[] = {"deleted",4,218,425.000000,-75.000000,525.000000,-25.000000,0.000000,"deleted"};
 item64[] = {"",7,210,471.000000,-166.500000,479.000000,-158.500000,0.000000,""};
 item65[] = {"",7,210,471.000000,8.500000,479.000000,16.500000,0.000000,""};
-item66[] = {"Finish_Move_1",2,250,-400.000000,300.000000,-300.000000,350.000000,0.000000,"Finish" \n "Move"};
+item66[] = {"Finish_Move_1",2,250,-425.000000,300.000000,-325.000000,350.000000,0.000000,"Finish" \n "Move"};
 item67[] = {"",7,210,158.500000,483.499969,166.500000,491.500000,0.000000,""};
+item68[] = {"attack",2,250,-600.000000,300.000000,-500.000000,350.000000,0.000000,"attack"};
+item69[] = {"true",8,218,-925.000000,250.000000,-825.000000,300.000000,0.000000,"true"};
+item70[] = {"Direction_Check",2,250,-925.000000,350.000000,-825.000000,400.000000,0.000000,"Direction Check Face player"};
+item71[] = {"_",4,218,-600.000000,250.000000,-500.000000,300.000000,0.000000,""};
+item72[] = {"Chase_Reset",4,218,-300.000000,300.000000,-200.000000,350.000000,0.000000,"Chase Reset"};
+item73[] = {"____FAKE____",9,2920,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,11};
 link1[] = {0,49};
 link2[] = {2,3};
@@ -95,8 +101,8 @@ link22[] = {15,19};
 link23[] = {16,17};
 link24[] = {17,9};
 link25[] = {17,23};
-link26[] = {17,27};
-link27[] = {17,29};
+link26[] = {17,29};
+link27[] = {17,72};
 link28[] = {18,3};
 link29[] = {19,20};
 link30[] = {20,9};
@@ -107,7 +113,7 @@ link34[] = {23,66};
 link35[] = {24,25};
 link36[] = {25,44};
 link37[] = {26,36};
-link38[] = {27,66};
+link38[] = {27,68};
 link39[] = {28,39};
 link40[] = {29,30};
 link41[] = {30,31};
@@ -154,8 +160,14 @@ link81[] = {63,64};
 link82[] = {64,61};
 link83[] = {65,63};
 link84[] = {66,37};
-globals[] = {25.000000,1,0,0,0,640,480,1,146,6316128,1,-615.708191,419.217316,703.107910,-38.239201,839,601,1};
-window[] = {2,-1,-1,-32000,-32000,912,132,1340,132,3,856};
+link85[] = {68,71};
+link86[] = {72,17};
+link87[] = {73,27};
+link88[] = {69,73};
+link89[] = {73,69};
+link90[] = {71,73};
+globals[] = {25.000000,1,0,0,0,640,480,1,155,6316128,1,-964.220581,558.390564,788.965637,-301.724792,839,601,1};
+window[] = {2,-1,-1,-32000,-32000,802,22,1230,22,3,856};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -481,7 +493,7 @@ class FSM
     class Chase
     {
       name = "Chase";
-      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+      init = /*%FSM<STATEINIT""">*/"_chaseReset = diag_tickTime;" \n
        "" \n
        "//if (speed _agent < 0.1) then {_countr = _countr + 1} else {_countr = 0};" \n
        "" \n
@@ -490,8 +502,7 @@ class FSM
        "//};" \n
        "" \n
        "" \n
-       "//_isAlive = alive _agent;" \n
-       "_targetPos = _target modelToWorld [0, 2*(speed _target)/3.6, 0];" \n
+       "_isAlive = alive _agent;" \n
        "" \n
        "_cantSee = false;" \n
        "" \n
@@ -503,7 +514,8 @@ class FSM
        "};" \n
        "" \n
        "if (!_cantSee) then {" \n
-       "	_targetPosition = getPosATL _target;" \n
+       "	//_targetPosition = getPosATL _target;" \n
+       "	_targetPos = _target modelToWorld [0, 2*(speed _target)/3.6, 0];" \n
        "};" \n
        "" \n
        "	"/*%FSM</STATEINIT""">*/;
@@ -530,6 +542,17 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
+        /*%FSM<LINK "No_Target">*/
+        class No_Target
+        {
+          priority = 2.000000;
+          to="Reset_Targeting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _target)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPos;" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "cant_see">*/
         class cant_see
         {
@@ -542,68 +565,30 @@ class FSM
            ""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Target">*/
-        class No_Target
+        /*%FSM<LINK "Chase_Reset">*/
+        class Chase_Reset
         {
-          priority = 2.000000;
-          to="Reset_Targeting";
+          priority = 0.000000;
+          to="Chase";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _target)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPos;" \n
-           ""/*%FSM</ACTION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _chaseReset) > 2"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPosition;" \n
+           "_location = _targetPosition;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "not__Close_">*/
         class not__Close_
         {
-          priority = 2.000000;
+          priority = 0.000000;
           to="Finish_Move_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_location distance _targetPosition >0.5"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPosition;" \n
-           "_location = _targetPosition;" \n
+          condition=/*%FSM<CONDITION""">*/"_location distance _targetPosition > 0.5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPos;" \n
+           "_location = _targetPos;" \n
+           "" \n
+           "_agent forceSpeed 12;" \n
            "" \n
            "diag_log (""Not Close"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Attack">*/
-        class Attack
-        {
-          priority = 1.000000;
-          to="Finish_Move_1";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_location  distance _targetPosition < 1.5"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"	// attack moves depends on the distance between player and Z" \n
-           "	// we compute the distance in 10cm slots." \n
-           "_distance = [_agent, _targetPosition] call BIS_fnc_distance2D;" \n
-           "_rnd = round(_distance*10);" \n
-           "_rnd = switch _rnd do {" \n
-           "	case 10 : {[ 1, 4, 9, 3, 6 ]};	" \n
-           "	case 11 : {[ 1, 4, 9, 3, 6 ]};		" \n
-           "	case 12 : {[ 1, 9, 3, 6 ]};		" \n
-           "	case 13 : {[ 3, 6 ]};		" \n
-           "	case 14 : {[ 3, 6, 7 ]};		" \n
-           "	case 15 : {[ 7, 5 ]};		" \n
-           "	case 16 : {[ 7, 5, 10 ]};		" \n
-           "	case 17 : {[ 7, 5, 10 ]};	" \n
-           "	case 18 : {[ 7, 8, 10 ]};	" \n
-           "	case 19 : {[ 8, 10 ]};	" \n
-           "	case 20 : {[ 8, 10 ]};	" \n
-           "	case 21 : {[ 8 ]};	" \n
-           "	case 22 : {[ 8 ]};	" \n
-           "	default { if (_rnd < 10) then {[ 1, 2, 4, 9 ]} else {[0]} };" \n
-           "		" \n
-           "};" \n
-           "		" \n
-           "_rnd = _rnd call BIS_fnc_selectRandom;" \n
-           "_move = ""ZombieStandingAttack"" + str(_rnd); " \n
-           "" \n
-           "" \n
-           "if (local _agent) then {" \n
-           "	_agent switchMove _move;" \n
-           "} else {" \n
-           "	[objNull,  _agent,  rSwitchMove,  _move] call RE;" \n
-           "};"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -780,7 +765,9 @@ class FSM
     class Finish_Move_1
     {
       name = "Finish_Move_1";
-      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+       "" \n
+       "//cantSee = [_agent,_target] call dayz_losCheck;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -790,7 +777,106 @@ class FSM
           priority = 0.000000;
           to="Chase";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 2"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 4"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPos;" \n
+           "_location = _targetPos;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "attack">*/
+    class attack
+    {
+      name = "attack";
+      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+       "// attack moves depends on the distance between player and Z" \n
+       "// we compute the distance in 10cm slots." \n
+       "" \n
+       "_distance = [_agent, _targetPosition] call BIS_fnc_distance2D;" \n
+       "_rnd = round(_distance*10);" \n
+       "_rnd = switch _rnd do {" \n
+       "	case 10 : {[ 1, 4, 9, 3, 6 ]};	" \n
+       "	case 11 : {[ 1, 4, 9, 3, 6 ]};		" \n
+       "	case 12 : {[ 1, 9, 3, 6 ]};		" \n
+       "	case 13 : {[ 3, 6 ]};		" \n
+       "	case 14 : {[ 3, 6, 7 ]};		" \n
+       "	case 15 : {[ 7, 5 ]};		" \n
+       "	case 16 : {[ 7, 5, 10 ]};		" \n
+       "	case 17 : {[ 7, 5, 10 ]};	" \n
+       "	case 18 : {[ 7, 8, 10 ]};	" \n
+       "	case 19 : {[ 8, 10 ]};	" \n
+       "	case 20 : {[ 8, 10 ]};	" \n
+       "	case 21 : {[ 8 ]};	" \n
+       "	case 22 : {[ 8 ]};	" \n
+       "	default { if (_rnd < 10) then {[ 1, 2, 4, 9 ]} else {[0]} };" \n
+       "		" \n
+       "};" \n
+       "		" \n
+       "_rnd = _rnd call BIS_fnc_selectRandom;" \n
+       "_move = ""ZombieStandingAttack"" + str(_rnd); " \n
+       "" \n
+       "" \n
+       "if (local _agent) then {" \n
+       "	_agent switchMove _move;" \n
+       "} else {" \n
+       "	[objNull,  _agent,  rSwitchMove,  _move] call RE;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "_">*/
+        class _
+        {
+          priority = 0.000000;
+          to="____FAKE____";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Direction_Check">*/
+    class Direction_Check
+    {
+      name = "Direction_Check";
+      init = /*%FSM<STATEINIT""">*/"//Turn and face player"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "____FAKE____">*/
+    class ____FAKE____
+    {
+      name = "____FAKE____";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Approch">*/
+        class Approch
+        {
+          priority = 1.000000;
+          to="attack";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_location  distance _targetPosition <= 0.3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent moveTo _targetPosition;" \n
+           "_location = _targetPosition;" \n
+           "" \n
+           "_agent forceSpeed 12;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="____FAKE____";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

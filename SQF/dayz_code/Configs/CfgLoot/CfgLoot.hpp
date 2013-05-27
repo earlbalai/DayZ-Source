@@ -32,7 +32,7 @@ class CfgLoot {
 			//{"equip_aa_battery",0.01},
 			//{"equip_2inch_metal_pipe",0.01},
 			//{"equip_1inch_metal_pipe",0.02},
-			{"ItemNails",0.01},
+			{"ItemNails",0.01}
 			//{"equip_rail_screws",0.01},
 			//{"equip_weapon_rails",0.01}
 	};
@@ -51,7 +51,8 @@ class CfgLoot {
 			{"ItemSodaEmpty",0.03},
 			{"ItemTrashToiletpaper",0.01},
 			{"ItemTrashRazor",0.01},
-			{"ItemCards",0.02}
+			{"ItemCards",0.02},
+			{"ItemNails",0.01}
 	};
 	civilian[] = {
 			{"TrashTinCan",0.03},
@@ -142,7 +143,8 @@ class CfgLoot {
 			{"HandChemGreen",0.01},
 			{"HandChemBlue",0.03},
 			{"HandChemRed",0.03},
-			{"ItemHeatPack",0.04}
+			{"ItemHeatPack",0.04},
+			{"ItemNails",0.01}
 	};
 	medical[] = {
 			{"ItemBandage",0.08},

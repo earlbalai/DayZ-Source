@@ -15,7 +15,7 @@ if (_unit == player) then {
 	//Self Healing
 	_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
 } else {
-	//dayzHumanity = [player,20];
+	//PVDZ_plr_Humanity = [player,20];
 	[player,20] call player_humanityChange;
 };
 
@@ -23,6 +23,6 @@ player removeMagazine "ItemPainkiller";
 
 sleep 1;
 //clear the healed player's vision
-//["usecPainK",[_unit,player]] call broadcastRpcCallAll;
-	usecPainK = [_unit,player];
-	publicVariable "usecPainK";
+//["PVDZ_hlt_PainK",[_unit,player]] call broadcastRpcCallAll;
+	PVDZ_hlt_PainK = [_unit,player];
+	publicVariable "PVDZ_hlt_PainK";

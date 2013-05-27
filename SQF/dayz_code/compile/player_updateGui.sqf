@@ -62,17 +62,73 @@ diag_log format["DEBUG: foodlvl: %1 dayz_hunger: %2 foodval: %3",_foodLvl, dayz_
 diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, dayz_temperatur, _tempVal];
 */
 
-_regentext = "";
-_bloodregenLvl = 0;
-if ((r_player_bloodregen > 0) and (r_player_bloodregen < 999)) then { _bloodregenLvl = 1; };
-if ((r_player_bloodregen > 1000) and (r_player_bloodregen < 2999)) then { _bloodregenLvl = 2; };
-if (r_player_bloodregen > 3000) then { _bloodregenLvl = 3; };
-if (r_player_bloodregen <= 0) then {
-	_regentext = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+/*
+	Blood Regen & BloodLoss:
+*/
+if (r_player_infected) then {
+//Blood Loss
+	_bloodlosstext = "";
+	_bloodlossLvl = 0;
+	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
+	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
+	if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
+	if (r_player_injured) then {
+		if ((r_player_bloodlosspersec > 0) and (_bloodlossLvl > 0)) then {
+			_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_sick_ca.paa";
+		};
+	} else {
+		r_player_bloodlosspersec = 0;
+	};
+	_ctrlBloodOuter ctrlSetText _bloodlosstext;
+
+//Blood Gen
+	_regenuptext = "";
+	_bloodregenupLvl = 0;
+	if ((r_player_bloodregen > 0) and (r_player_bloodregen <= 499)) then { _bloodregenupLvl = 1; };
+	if ((r_player_bloodregen >= 500) and (r_player_bloodregen <= 1999)) then { _bloodregenupLvl = 2; };
+	if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
+	if (r_player_bloodregen > 0) then {
+		_regenuptext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenupLvl) + "_sick_ca.paa";
+	};
+	_ctrlBloodOuter ctrlSetText _regenuptext;
+	
+	if ((r_player_bloodregen < 1) and !r_player_injured) then {
+		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+		_ctrlBloodOuter ctrlSetText _bloodouterreset;
+	};
+	
 } else {
-	_regentext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenLvl) + "_ca.paa";
+//Blood Loss
+	_bloodlosstext = "";
+	_bloodlossLvl = 0;
+	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
+	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
+	if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
+	if (r_player_injured) then {
+		if ((r_player_bloodlosspersec > 0) and (_bloodlossLvl > 0)) then {
+			_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_ca.paa";
+		};
+	} else {
+		r_player_bloodlosspersec = 0;
+	};
+	_ctrlBloodOuter ctrlSetText _bloodlosstext;
+	
+//Blood Gen
+	_regenuptext = "";
+	_bloodregenupLvl = 0;
+	if ((r_player_bloodregen > 0) and (r_player_bloodregen <= 499)) then { _bloodregenupLvl = 1; };
+	if ((r_player_bloodregen >= 500) and (r_player_bloodregen <= 1999)) then { _bloodregenupLvl = 2; };
+	if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
+	if ((r_player_bloodregen > 0) and !r_player_injured) then {
+		_regenuptext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenupLvl) + "_ca.paa";
+		_ctrlBloodOuter ctrlSetText _regenuptext;
+	};
+	
+	if ((r_player_bloodregen < 1) and !r_player_injured) then {
+		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+		_ctrlBloodOuter ctrlSetText _bloodouterreset;
+	};
 };
-_ctrlBloodOuter ctrlSetText _regentext;
 
 if (_bloodLvl <= 0) then { 
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";
@@ -171,6 +227,5 @@ if(_humanity != dayz_lastHumanity) then {
 	_ctrlHumanity ctrlSetText _humanityText;
 };
 */
-
 _array = [_foodVal,_thirstVal];
 _array
