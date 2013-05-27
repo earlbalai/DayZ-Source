@@ -70,8 +70,8 @@ if (r_player_infected) then {
 	_bloodlosstext = "";
 	_bloodlossLvl = 0;
 	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
-	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 30)) then { _bloodlossLvl = 2; };
-	if (r_player_bloodlosspersec >= 29) then { _bloodlossLvl = 3; };
+	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
+	if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
 	if (r_player_injured) then {
 		if ((r_player_bloodlosspersec > 0) and (_bloodlossLvl > 0)) then {
 			_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_sick_ca.paa";
@@ -101,9 +101,9 @@ if (r_player_infected) then {
 //Blood Loss
 	_bloodlosstext = "";
 	_bloodlossLvl = 0;
-	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 9)) then { _bloodlossLvl = 1; };
-	if ((r_player_bloodlosspersec >= 10) and (r_player_bloodlosspersec <= 19)) then { _bloodlossLvl = 2; };
-	if (r_player_bloodlosspersec >= 30) then { _bloodlossLvl = 3; };
+	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
+	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
+	if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
 	if (r_player_injured) then {
 		if ((r_player_bloodlosspersec > 0) and (_bloodlossLvl > 0)) then {
 			_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_ca.paa";
@@ -210,7 +210,7 @@ if (r_player_injured) then {
 	_ctrlBleed call player_guiControlFlash;
 };
 
-
+/*
 _humanity = player getVariable["humanity",0];
 _guiHumanity = 0;
 if(_humanity != dayz_lastHumanity) then {
@@ -226,6 +226,6 @@ if(_humanity != dayz_lastHumanity) then {
 	_humanityText = "\z\addons\dayz_code\gui\humanity_" + str(_guiHumanity) + "_ca.paa";
 	_ctrlHumanity ctrlSetText _humanityText;
 };
-
+*/
 _array = [_foodVal,_thirstVal];
 _array
