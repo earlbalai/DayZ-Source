@@ -3736,15 +3736,6 @@
 			<French>Clous</French>
 			<Czech>Hřebíky</Czech>
 		</Key>
-		<Key ID="STR_ITEM_NAME_CARDS">
-			<English>Cards</English>
-			<German>Cards</German>
-			<Russian>Cards</Russian>
-			<Spanish>Cartas</Spanish>
-			<Dutch>Cards</Dutch>
-			<French>Cards</French>
-			<Czech>Cards</Czech>
-		</Key>	
 		<Key ID="STR_ITEM_DESC_NAILS">
 			<English>A small box of 4 inch nails.</English>
 			<German>A small box of 4 inch nails.</German>
@@ -3753,6 +3744,24 @@
 			<Dutch>A small box of 4 inch nails.</Dutch>
 			<French>Une petite boite de clous de 10cm.</French>
 			<Czech>Malá krabička s hřebíky.</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_CARDS">
+			<English>Cards</English>
+			<German>Cards</German>
+			<Russian>Cards</Russian>
+			<Spanish>Cartas</Spanish>
+			<Dutch>Cards</Dutch>
+			<French>Cards</French>
+			<Czech>Cards</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_CARDS">
+			<English>Pack of wet playing cards.</English>
+			<German>Pack of wet playing cards.</German>
+			<Russian>Pack of wet playing cards.</Russian>
+			<Spanish>Pack of wet playing cards.</Spanish>
+			<Dutch>Pack of wet playing cards.</Dutch>
+			<French>Pack of wet playing cards.</French>
+			<Czech>Pack of wet playing cards.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan (5L)</English>
