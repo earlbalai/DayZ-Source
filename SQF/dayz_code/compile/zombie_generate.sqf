@@ -11,7 +11,7 @@ _unitTypes = _this select 2; // class of wanted models
 _recyAgt = []; if (count _this > 3) then { _recyAgt = _this select 3; };
 _maxtoCreate = 99; if (count _this > 4) then { _maxtoCreate = _this select 4; };
 
-_distance = [_position, player] call BIS_fnc_distance2D;
+_distance = [_position, getPosATL player] call BIS_fnc_distance2D;
 if (_distance < dayz_safeDistPlr) exitWith {
 	diag_log(format["%1: won't do that, too close from player (%2m), _this:%3", __FILE__, round(_distance), _this]);
 	false
@@ -41,7 +41,7 @@ if (!isNull _agent) then { // we have found a recyclable agent
 	// sometime Z can be seen flying in very high speed while tp. Its altitude is set underground to hide that.
 	_agtPos = getPosASL _agent; _agtPos set [2, -3];
 	_agent setPosASL _agtPos; sleep 0.001;
-	_agtPos = _position; _agtPos set [2, -3];
+	_agtPos = +(_position); _agtPos set [2, -3];
 	_agent setPosASL _agtPos; sleep 0.001;
 	_recycled = true;
 }
@@ -83,11 +83,17 @@ else {
 if (!isNull _agent) then {
 	_agent setDir random 360;
 	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
-	_agent setPosATL _position;
+	_agent setPosATL _position; sleep 0.001;
 	_agent setVariable ["doLoiter",_doLoiter];
 	
 	_position = getPosATL _agent;
 	
+	_distance = _position distance (getPosATL player);
+	//if (_distance < dayz_safeDistPlr) exitWith {
+	//	diag_log(format["%1: zombie distance: %2m (model:%3, stance:%4, ATL:%5)", __FILE__, round(_distance), typeOf _agent, unitPos _agent, _position]);
+	//	false
+	//};
+
 	if (random 1 > 0.7) then {
 		_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
 	};
@@ -96,7 +102,7 @@ if (!isNull _agent) then {
 	_newDest = getPosATL _agent;
 	_agent setVariable ["myDest",_myDest];
 	_agent setVariable ["newDest",_newDest];
-	
+
 	if (!_recycled) then {
 		//Start behavior only for freshly created agents
 		_id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
