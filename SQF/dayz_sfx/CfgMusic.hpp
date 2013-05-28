@@ -230,12 +230,12 @@ class CfgMusic
 	{
 		name = "";
 		sound[] = {"\dayz_sfx\samples\suspense_36.ogg", db+0, 1.0};
-		duration = 20;
+		duration = 30;
 	};
 	class z_suspense_37
 	{
 		name = "";
 		sound[] = {"\dayz_sfx\samples\suspense_37.ogg", db+0, 1.0};
-		duration = 20;
+		duration = 35;
 	};
 };
