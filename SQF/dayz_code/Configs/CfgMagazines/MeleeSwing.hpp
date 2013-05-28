@@ -34,6 +34,18 @@ class Melee_Swing : CA_Magazine {
 	ffCount = 1;
 	recoil = "Empty";
 	dispersion = 0.2;
+	class HitEffects {
+		hit_blood = "ImpactBlood";
+		hit_concrete = "ImpactConcrete";
+		hit_foliage = "ImpactLeaves";
+		hit_foliage_green = "ImpactLeavesGreen";
+		hit_glass = "ImpactGlass";
+		hit_glass_thin = "ImpactGlassThin";
+		hit_metal = "ImpactMetal";
+		hit_plaster = "ImpactPlaster";
+		hit_rubber = "ImpactRubber";
+		hit_wood = "ImpactWood";
+	};
 };
 
 class Machete_Swing : Melee_Swing {

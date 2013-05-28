@@ -160,9 +160,9 @@ fnc_usec_resetWoundPoints = {
 fnc_usec_playerBloodRegen = {
 	private["_bloodPerSec","_total"];
 	_bloodPercentage = (r_player_blood / r_player_bloodTotal);
-	_skilllevel = (dayz_Survived / 6);
+	//_skilllevel = (dayz_Survived / 6);
 
-	_bloodPerSec = floor((r_player_bloodregen / 15 + _skilllevel) - r_player_bloodlosspersec);
+	_bloodPerSec = floor((r_player_bloodregen / 15) - r_player_bloodlosspersec);
 	//r_player_bloodgainpersec = _bloodPerSec;
 
 	if (_bloodPerSec > r_player_bloodregen) then { _bloodPerSec = r_player_bloodregen; };
