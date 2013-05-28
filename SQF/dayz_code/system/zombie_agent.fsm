@@ -391,6 +391,7 @@ class FSM
            "" \n
            "_position = _agent getVariable[""BaseLocation"",_positionOld];" \n
            "" \n
+           "/*" \n
            "_deg = [_agent,  _position] call BIS_fnc_relativeDirTo;" \n
            "if (_deg > 180) then { _deg = _deg - 360; }; // _deg in [-180, +180]" \n
            "_deg = _deg * ((random(2) - 1) / 10 + 1); // let's randomize the direction. +/- 10% (if player is behind Zed's back, Zed direction will be less precise)" \n
@@ -399,9 +400,9 @@ class FSM
            "_trip = _trip * ((random(2) - 1) / 5 + 1); // let's randomize the distance. +/- 20%" \n
            "" \n
            "_pos = _agent modelToWorld [ sin(_deg) * _trip, cos(_deg) * _trip, 0];" \n
+           "*/" \n
            "" \n
-           "" \n
-           "//_pos = [_position,5,100,4,0,5,0] call BIS_fnc_findSafePos; " \n
+           "_pos = [_position,5,100,4,0,5,0] call BIS_fnc_findSafePos; " \n
            "" \n
            "_agent moveTo _pos;" \n
            "_location = _pos;" \n
