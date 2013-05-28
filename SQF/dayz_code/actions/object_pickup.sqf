@@ -13,9 +13,9 @@ _text = getText (configFile >> _type >> _classname >> "displayName");
 
 if (!canPickup) exitwith {
 	if (pickupInit) then {
-		cutText ["You must wait to pickup the next item!","PLAIN DOWN"] 
+		cutText ["[ANTI-DUPE] You must wait to pickup this item!","PLAIN DOWN"] 
 	} else {
-		cutText ["You may only pick up one item at a time!","PLAIN DOWN"]
+		cutText ["[ANTI-DUPE] You may only pickup one item at a time!","PLAIN DOWN"]
 	};
 };
 
@@ -89,12 +89,14 @@ diag_log format["Array: %1, Type: %2, Classname: %3, Holder: %4, SlotNeeded: %5,
 */
 
 _isOk = [player,_config] call BIS_fnc_invAdd;
-waitUntil {_isOk};
+waitUntil {!isNil "_isOk"};
 if (_isOk) then {
 	deleteVehicle _holder;
 } else {
-	_holder setVariable["claimed",0,true];
-	cutText [localize "str_player_24", "PLAIN DOWN"];
+	if (!_isOk) exitWith {
+		_holder setVariable["claimed",0,true];
+		cutText [localize "str_player_24", "PLAIN DOWN"];
+	};
 };
 
 
