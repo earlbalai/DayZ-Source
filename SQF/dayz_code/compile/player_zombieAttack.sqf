@@ -54,8 +54,10 @@ if (!_isClear) exitWith {"something between"}; // no attack if there is a wall b
 // check relative angle (where is the player/vehicle in the Z sight)
 _deg = [_unit,  _nextPlayerPos] call BIS_fnc_relativeDirTo;
 if (_deg > 180) then { _deg = _deg - 360; };
+
+/*
 // angle check depends on player speed (very strict if player is still)
-if (abs(_deg) > (15 + 3 * _speed)) exitWith { // we cancel the attack,  but we spin smoothly the Zombie
+if (abs(_deg) > (30 + 1 * _speed)) exitWith { // we cancel the attack,  but we spin smoothly the Zombie
 	[_unit, _nextPlayerPos] spawn { 
 		_unit = _this select 0;
 		_plr = _this select 1;
@@ -66,13 +68,14 @@ if (abs(_deg) > (15 + 3 * _speed)) exitWith { // we cancel the attack,  but we s
 			_sign = _deg/abs(_deg);
 			_deg  = abs(_deg);
 			if (_deg < 10) exitWith{};
-			waituntil {_a = toArray(animationState _unit); (isNil "_a") OR {((count _a < 5) OR {((_a select 1) == 105)})}}; // 105='i' like idl
-			_unit setDir ((direction _unit) + _sign*5);
+			//waituntil {_a = toArray(animationState _unit); (isNil "_a") OR {((count _a < 5) OR {((_a select 1) == 105)})}}; // 105='i' like idl
+			_unit setDir ((getDir _unit) + _sign*5);
 			sleep 0.01;
 		};
 	};
 	("bad angle:") // +str(round(abs(_deg)))+"/"+str(round(15 + 3 * _speed))
 };
+*/
 
 // check Z stance. Stand up Z if it prones/kneels. Cancel the attack.
 if (unitPos _unit != "UP") exitWith {
@@ -137,6 +140,8 @@ if (_rnd == 0) exitWith {"bad move (too far)"};  // move not found -- Z too far?
 // diag_log(format["%1:  dis:%2  rndlist:%3",  __FILE__,  (round((_nextPlayerPos distance _unit)*10)),  _rnd]);
 
 // fix the direction
+_unit setDir ((getDir _unit) + _deg);
+
 //_unit setDir ((direction _unit) + _deg);
 _unit setPosATL (getPosATL _unit);
 

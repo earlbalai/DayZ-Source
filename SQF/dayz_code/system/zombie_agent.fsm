@@ -384,7 +384,7 @@ class FSM
           to="Loiter";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_location distance (getposATL _agent) < 3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//[_agent,_position] call zombie_loiter;" \n
+          action=/*%FSM<ACTION""">*/"[_agent,_position] call zombie_loiter;" \n
            "" \n
            "_pos = [_position,5,100,4,0,5,0] call BIS_fnc_findSafePos; " \n
            "" \n
