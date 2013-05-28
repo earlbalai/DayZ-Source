@@ -7,36 +7,40 @@
 // "building" should be a building lootable OR big enough to hide a zombie
 // zombies will spawn inside (1/3 chance roughly) or outside the building (in a piesize area behind the building)
 
-private ["_cantSee","_zPos","_fov","_safeDistance","_farDistance","_isok","_eye","_deg","_obj","_recyAgt",
-"_maxtoCreate","_spawnAreaRatio","_type","_config","_unitTypes","_min","_max","_zombieChance","_num0","_num",
-"_halfBuildingSize","_rnd","_clean","_posList","_bsz_pos","_tmp","_wholeAreaSize","_minSector","_spawnSize",
-"_minRadius","_rangeRadius","_rangeAngle","_minAngle","_i","_radius"];
+private ["_cantSee", "_obj","_this","_recyAgt","_maxtoCreate","_spawnAreaRatio","_type","_config","_unitTypes","_min","_max","_zombieChance","_num0","_num","_halfBuildingSize","_rnd","_clean","_x","_posList","_bsz_pos","_cantSee","_tmp","_wholeAreaSize","_minSector","_spawnSize","_minRadius","_rangeRadius","_rangeAngle","_minAngle","_i","_deg","_radius"];
 
 _cantSee = {
-	private ["_zPos","_fov","_safeDistance","_farDistance","_isok","_eye","_deg"];
+	private ["_isok","_zPos","_this","_fov","_safeDistance","_farDistance","_x","_eye","_ed","_deg", "_xasl"];
 
 	_isok = true;
 	_zPos = +(_this select 0); 
-	if (count _zPos < 3) exitWith {_isok};
+	if (count _zPos < 3) exitWith {
+		diag_log format["%1::_cantSee illegal pos %2", __FILE__, _zPos];
+		false
+	};
 	_zPos = ATLtoASL _zPos; 
 	_fov = _this select 1; // players half field of view
 	_safeDistance = _this select 2; // minimum distance. closer is wrong
 	_farDistance = _this select 3; // distance further we won't check
-	_zPos set [2, (_zPos select 2) + 0.5]; // 0.5 = Z height (the logic will think it could hide behind a tent)
+	_zPos set [2, (_zPos select 2) + 1.7];
 	{
-		if (_x distance _zPos < _farDistance) then {
-			if (_x distance _zPos < _safeDistance) then {
-				_isok = false
+		_xasl = getPosASL _x;
+		if (_xasl distance _zPos < _farDistance) then {
+			if (_xasl distance _zPos < _safeDistance) then {
+				_isok = false;
 			}
 			else {
 				_eye = eyePos _x; // ASL
-				_deg = [_x,_zPos] call BIS_fnc_relativeDirTo;
+				_ed = eyeDirection _x;
+				_ed = (_ed select 0) atan2 (_ed select 1);
+				_deg = [_xasl, _zPos] call BIS_fnc_dirTo;
+				_deg = (_deg - _ed + 720) % 360;
 				if (_deg > 180) then { _deg = _deg - 360; };
 				if ((abs(_deg) < _fov) AND {( // in right angle sector?
 						(!(terrainIntersectASL [_zPos, _eye])  // no terrain between?
 						AND {(!(lineIntersects [_zPos, _eye]))}) // and no object between?
 					)})  then {
-					_isok = false
+					_isok = false;
 				};
 			};
 		};
@@ -123,8 +127,10 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 		_bsz_pos = [(_bsz_pos select 0) + _radius * sin(_deg), (_bsz_pos select 1) + _radius * cos(_deg), 0];
 		_bsz_pos = (_bsz_pos) findEmptyPosition [0, _spawnSize, "zZombie_Base"];
 		if (((count _bsz_pos >= 3) // check that findEmptyPosition found something for us
-			AND {(!([_bsz_pos, true] call fnc_isInsideBuilding))}) // check position is outside any buildings
+			AND {(!([_bsz_pos, true] call fnc_isInsideBuilding) // check position is outside any buildings
+			AND {({alive _x} count (_bsz_pos nearEntities ["zZombie_Base", 1]) == 0)})}) // check position is empty
 			AND {([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)}) then {  // check that player won't see the spawning zombie
+			_bsz_pos set [2, 0]; // force on the ground
 			_tmp = [_bsz_pos, true, _unitTypes, _recyAgt, _maxtoCreate];
 			if (_tmp call zombie_generate) then {
 				//diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
@@ -162,3 +168,4 @@ _this set [1, _recyAgt];
 _this set [2, _maxtoCreate];
 
 (_num0 - _num)
+
