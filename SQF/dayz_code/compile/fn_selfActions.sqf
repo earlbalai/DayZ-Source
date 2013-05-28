@@ -245,7 +245,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			_vehicle setDamage 0;
 		};
 	};
-	
+	/*
 	if (_isMan and !_isAlive) then {
 		if (s_player_dragbody < 0) then {
 			s_player_dragbody = player addAction [localize "str_action_studybody", "\z\addons\dayz_code\actions\drag_body.sqf",cursorTarget, 0, false, true, "",""];
@@ -254,6 +254,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		player removeAction s_player_dragbody;
 		s_player_dragbody = -1;
 	};
+	*/
 	if (_isMan and !_isAlive and !_isZombie) then {
 		if (s_player_studybody < 0) then {
 			s_player_studybody = player addAction [localize "str_action_studybody", "\z\addons\dayz_code\actions\study_body.sqf",cursorTarget, 0, false, true, "",""];
@@ -344,9 +345,11 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
+	/*
+	//Drag Body
 	player removeAction s_player_dragbody;
 	s_player_dragbody = -1;
-	
+	*/
 	//fuel
 	player removeAction s_player_fillfuel20;
 	s_player_fillfuel20 = -1;
