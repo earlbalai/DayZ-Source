@@ -162,7 +162,19 @@ fnc_usec_playerBloodRegen = {
 	_bloodPercentage = (r_player_blood / r_player_bloodTotal);
 	//_skilllevel = (dayz_Survived / 6);
 
-	_bloodPerSec = floor(r_player_bloodregen / 15);
+	if ((r_player_injured) or (r_player_infected)) then {
+		r_player_bloodregen_prev = r_player_bloodregen;
+		r_player_bloodregen = 0;
+		_bloodPerSec = 0;
+	} else {
+		if (r_player_bloodregen_prev > 0) then {
+			r_player_bloodregen = r_player_bloodregen_prev;
+			r_player_bloodregen_prev = 0;
+		};
+		
+		_bloodPerSec = floor(r_player_bloodregen / 15);
+	};
+	
 	//r_player_bloodgainpersec = _bloodPerSec;
 
 	if (_bloodPerSec > r_player_bloodregen) then { _bloodPerSec = r_player_bloodregen; };
