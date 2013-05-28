@@ -114,12 +114,12 @@ _multiplier = 1;
 
 if (_attacked) then {
 	if (r_player_unconscious) then {
-		[_refObj, "scream", 3, false] call dayz_zombieSpeak;
+		[_refObj, "scream", 6, false] call dayz_zombieSpeak;
 	} else {
 		_lowBlood = (r_player_blood / r_player_bloodTotal) < 0.5;
 		if (_lowBlood) then {
 			dayz_panicCooldown = time;
-			[_refObj, "panic", 3, false] call dayz_zombieSpeak;
+			[_refObj, "panic", 6, false] call dayz_zombieSpeak;
 		};
 	};
 };
