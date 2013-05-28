@@ -161,9 +161,9 @@ fnc_usec_playerBloodRegen = {
 	private["_bleedPerSec","_total"];
 	if (!r_player_injured) then {
 		_bloodPercentage = (r_player_blood / r_player_bloodTotal);
-		_skilllevel = (dayz_Survived / 6);
+		//_skilllevel = (dayz_Survived / 6);
 		
-		_bleedPerSec = floor(r_player_bloodregen / 15 + _skilllevel);
+		_bleedPerSec = floor(r_player_bloodregen / 15);
 		r_player_bloodgainpersec = _bleedPerSec;
 		
 		if (_bleedPerSec > r_player_bloodregen) then { _bleedPerSec = r_player_bloodregen; };
