@@ -15,21 +15,37 @@ _multiplier = 1;
 		private["_dist"];
 		_dist = (_x distance _refObj);
 		_group = _x;
-		_chance = 20 / dayz_monitorPeriod; // Z verbosity
+		_chance = 10 / dayz_monitorPeriod; // Z verbosity
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
-			[_x,"attack",(_chance),true] call dayz_zombieSpeak;
 			//perform an attack
-			_last = _x getVariable["lastAttack",0];
-			_entHeight = (getPosATL _x) select 2;
-			_delta = _pHeight - _entHeight;
-			if ( ((time - _last) > 1) and ((_delta < 1.5) and (_delta > -1.5)) ) then {
-				//_isZInside = [_x,_building] call fnc_isInsideBuilding;
-				//if ((_isPlayerInside and _isZInside) or (!_isPlayerInside and !_isZInside)) then {
-					[_x,  _type] call player_zombieAttack;
-					_x setVariable["lastAttack",time];
-				//};
+			_last = _x getVariable["lastAttack", 0];
+			if ((time - _last) > 2+random(1)) then {
+				_attackResult = [_x,  _type] call player_zombieAttack;
+				//diag_log(format["%1 %2 %3 / as:%4 up:%5 ur:%6 sp:%7",  __FILE__,  _x,  _attackResult,  animationState player,  unitPos player,  unitReady _x,  [0, 0, 0] distance (velocity player)]);
+				if (_attackResult == "") then {
+					_x setVariable["lastAttack", time];
+					_attacked = true;
+				}
+ 				else {
+/*					_move = "amovpercmrunsnonwnondf";
+					if (local _x) then {
+						_x playMove _move;
+					}
+					else {
+						[objNull,  _x,  rPlayMove,  _move] call RE;
+					};
+
+ 					if(isNull group _x) then {
+ 						_x moveTo (getPosATL player);
+ 					} else {
+ 						_x domove (getPosATL player);		
+ 					};
+*/
+//					doStop _x; 
+//					_x setVariable["doLoiter", false];
+//					_x forceSpeed (if ([(getPosATL _x)] call fnc_isInsideBuilding)	then {2} else {2});		
+ 				};
 			};
-			_attacked = true;
 		} else {
 			if (speed _x < 4) then {
 				[_x,"idle",(_chance + 4),true] call dayz_zombieSpeak;
@@ -98,12 +114,12 @@ _multiplier = 1;
 
 if (_attacked) then {
 	if (r_player_unconscious) then {
-		[_refObj, "scream", 3, false] call dayz_zombieSpeak;
+		[_refObj, "scream", 6, false] call dayz_zombieSpeak;
 	} else {
 		_lowBlood = (r_player_blood / r_player_bloodTotal) < 0.5;
 		if (_lowBlood) then {
 			dayz_panicCooldown = time;
-			[_refObj, "panic", 3, false] call dayz_zombieSpeak;
+			[_refObj, "panic", 6, false] call dayz_zombieSpeak;
 		};
 	};
 };

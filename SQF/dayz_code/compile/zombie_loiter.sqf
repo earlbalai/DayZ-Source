@@ -1,25 +1,15 @@
-private["_unit","_originalPos","_pos"];
-_unit = 		_this select 0;
-_originalPos = 	_this select 1;
-_pos = 			getPosATL _unit;
-_playerpos = 	getPos player;
+private["_unit","_aimingPos","_pos", "_deg", "_trip"];
+_unit = _this select 0;
+_aimingPos = _this select 1; // Zed will wander towards player's position... 
 
-if (count _this > 2) then {
-	_pos = _this select 2;
-} else {
-	//_unit enableAI "MOVE";
-	//_unit enableAI "ANIM";
-	
-	_chance =	round(random 12);
-	//if ((_chance % 4) == 0) then {
-		//_Offset = [0,0,0];
-		//_playerworldPos = _playerpos modelToWorld _Offset;
-	//	_pos = [_playerpos,5,30,4,0,5,0] call BIS_fnc_findSafePos;
-	//} else {
-		_pos = [_originalPos,5,50,4,0,5,0] call BIS_fnc_findSafePos; //10,90,4,0,5,0
-	//};
-	
-};
+_deg = [_unit,  _aimingPos] call BIS_fnc_relativeDirTo;
+if (_deg > 180) then { _deg = _deg - 360; }; // _deg in [-180, +180]
+_deg = _deg * ((random(2) - 1) / 10 + 1); // let's randomize the direction. +/- 10% (if player is behind Zed's back, Zed direction will be less precise)
+_deg + 10 * (random(2) - 1) + ; // let's randomize the direction more again. +/- 20 degrees
+_trip = [_unit, _aimingPos] call BIS_fnc_distance2D;
+_trip = _trip * ((random(2) - 1) / 5 + 1); // let's randomize the distance. +/- 20%
+
+_pos = _unit modelToWorld [ sin(_deg) * _trip, cos(_deg) * _trip, 0];
 
 if(isNull group _unit) then {
 	_unit moveTo _pos;
