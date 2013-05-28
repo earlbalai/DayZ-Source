@@ -84,7 +84,6 @@ if (!isNull _agent) then {
 	_agent setDir random 360;
 	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
 	_agent setPosATL _position; sleep 0.001;
-	_agent setVariable ["doLoiter",_doLoiter];
 	
 	_position = getPosATL _agent;
 	
@@ -97,11 +96,11 @@ if (!isNull _agent) then {
 	if (random 1 > 0.7) then {
 		_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
 	};
-	
-	_myDest = getPosATL _agent;
-	_newDest = getPosATL _agent;
-	_agent setVariable ["myDest",_myDest];
-	_agent setVariable ["newDest",_newDest];
+
+	_agent setVariable ["myDest", _position];
+	_agent setVariable ["newDest", _position];
+	_agent setVariable ["BaseLocation", _position];
+	_agent setVariable ["doLoiter", _doLoiter]; // true: Z will be wandering, false: stay still
 
 	if (!_recycled) then {
 		//Start behavior only for freshly created agents
