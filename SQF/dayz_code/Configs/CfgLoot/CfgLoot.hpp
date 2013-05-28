@@ -175,6 +175,7 @@ class CfgLoot {
 			{"20Rnd_762x51_DMR",0.02},
 			{"17Rnd_9x19_glock17",0.05},
 			{"15Rnd_9x19_M9SD",0.01},
+			{"8Rnd_9x18_MakarovSD",0.01},
 			{"15Rnd_9x19_M9",0.03},
 			{"30Rnd_762x39_AK47",0.02},
 			{"30Rnd_545x39_AK",0.02},
