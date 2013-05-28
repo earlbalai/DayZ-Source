@@ -45,7 +45,7 @@ class CfgBuildingLoot {
 			{"ItemFlashlight","generic",0.06},
 			{"ItemKnife","generic",0.07},
 			{"ItemMatchbox","generic",0.06},
-			{"LeeEnfield","weapon",0.06},
+			{"LeeEnfield","weapon",0.03},
 			{"revolver_EP1","weapon",0.04},
 			{"DZ_Patrol_Pack_EP1","object",0.05}, //8
 			{"DZ_Assault_Pack_EP1","object",0.04}, // 12
@@ -120,7 +120,7 @@ class CfgBuildingLoot {
 			{"ItemFlashlight","generic",0.06},
 			{"ItemKnife","generic",0.07},
 			{"ItemMatchbox","generic",0.06},
-			{"LeeEnfield","weapon",0.06},
+			{"LeeEnfield","weapon",0.03},
 			{"revolver_EP1","weapon",0.04},
 			{"DZ_ALICE_Pack_EP1","object",0.01}, // 16
 			{"DZ_TK_Assault_Pack_EP1","object",0.02}, // 16
@@ -167,7 +167,7 @@ class CfgBuildingLoot {
 		lootType[] =	{
 			{"WeaponHolder_ItemJerrycan","object",0.03},
 			{"huntingrifle","weapon",0.02},
-			{"LeeEnfield","weapon",0.04},
+			{"LeeEnfield","weapon",0.03},
 			{"Winchester1866","weapon",0.03},
 			{"Crossbow_DZ","weapon",0.03},
 			{"PartWoodPile","magazine",0.08},
