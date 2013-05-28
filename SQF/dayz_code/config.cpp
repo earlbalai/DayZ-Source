@@ -40,12 +40,6 @@ class CfgPatches {
 		requiredVersion = 0.1;
 		requiredAddons[] = {"CAUI"};
 	};
-	class compass {
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 1.0;
-		requiredAddons[] = {"CAData", "CAUI"};
-	};
 };
 
 class CfgMods

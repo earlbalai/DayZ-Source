@@ -79,6 +79,7 @@ Serverside affected addons:
 	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
 	    * [FIXED] - MA lot of dupeing issues should now be resolved.
 	    * [FIXED] - Most wallhack exploits should now be resolved.
+	    * [FIXED] - M107 & AS50 Lock on system removed.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1200 each.
@@ -104,6 +105,8 @@ Serverside affected addons:
 	    * [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
 	    * [UPDATED] - Updated zed speed to default.
 	    * [UPDATED] - Melee systems updated.
+	    * [UPDATED] - M107 lowered chance in loot tables.
+	    * [UPDATED] - AS50 lowered chance in loot tables.
 	    * [UPDATED] - Old Bandit skin for male chars.
 	    * [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 	    * [UPDATED] - Lowered Direct comms action sound.
@@ -122,10 +125,8 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
-	
-	    * [REMOVED] - M107 and AS50. (Removed from game)
-	    * [REMOVED] - 2 New Bat variations used in crafting. (NailedBat,WiredBat). While we wait on the new ui the blueprint system does not feel correct.
-		
+	    
+	    
 ______________________
 Version 1.7.6.1
 ---------------

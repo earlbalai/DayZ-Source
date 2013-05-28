@@ -21,7 +21,7 @@ Rocket_DZ = 	"Rocket_DZ";
 AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","GER_Soldier_EP1"];
 AllPlayersVehicles = ["GER_Soldier_EP1","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
 
-MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball"];
+MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails"];
 MeleeMagazines = ["hatchet_swing","crowbar_swing","Machete_swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing"];
 
 //New Zeds
@@ -401,11 +401,11 @@ dayz_maxLocalZombies = 40; // max quantity of Z controlled by local gameclient, 
 dayz_maxMaxModels = 80; // max quantity of Man models (player or Z, dead or alive) around players. Below this limit we can spawn Z
 dayz_maxMaxWeaponHolders = 80; // max quantity of loot piles around players. Below this limit we can spawn some loot
 dayz_spawnArea =  200; // radius around player where we can spawn loot & Z 
-dayz_safeDistPlr = 30; // Any loot & Z won't be spawned closer than this distance from any player
+dayz_safeDistPlr = 50; // Any loot & Z won't be spawned closer than this distance from any player
 dayz_cantseeDist = 250; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
-dayz_cantseefov = 45; // half player field-of-view. Visible Z won't be spawned in front of any near players 
+dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players 
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
-dayz_lootSpawnBias = 65; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
+dayz_lootSpawnBias = 70; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
 dayz_localswarmSpawned = 10;  // how many zeds will spawn around you during a combat scenario. 
 
 //init global arrays for Loot Chances
