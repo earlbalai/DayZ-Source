@@ -7,8 +7,8 @@ class StashSmall : Land_A_tent {
 	model = "\z\addons\dayz_communityassets\models\dirt_stash.p3d";
 	scope = 2;
 	vehicleClass = "Survival";
-	transportMaxMagazines = 8;
-	transportMaxWeapons = 0;
+	transportMaxMagazines = 12;
+	transportMaxWeapons = 1;
 	transportMaxBackpacks = 0;
 };
 
@@ -21,14 +21,14 @@ class StashMedium : Land_A_tent {
 	model = "\z\addons\dayz_communityassets\models\dirt_stash_reinforced.p3d";
 	scope = 2;
 	vehicleClass = "Survival";
-	transportMaxMagazines = 16;
-	transportMaxWeapons = 1;
+	transportMaxMagazines = 25;
+	transportMaxWeapons = 3;
 	transportMaxBackpacks = 0;
 };
 
 class DomeTentStorage : Land_A_tent {
 	vehicleClass = "Survival";
-	transportMaxMagazines = 50;
-	transportMaxWeapons = 10;
-	transportMaxBackpacks = 5;
+	transportMaxMagazines = 35;
+	transportMaxWeapons = 15;
+	transportMaxBackpacks = 0;
 };
