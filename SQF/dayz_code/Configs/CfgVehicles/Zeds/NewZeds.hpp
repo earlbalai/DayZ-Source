@@ -14,7 +14,7 @@
 		
 		class HitPoints {
 			class HitHead {
-				armor = 0.3;
+				armor = 0.1;
 				material = -1;
 				name = "head_hit";
 				passThrough = true;

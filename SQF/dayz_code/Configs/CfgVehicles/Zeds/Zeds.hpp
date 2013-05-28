@@ -16,7 +16,6 @@ class zZombie_Base : Citizen1 {
 	identityTypes[] = {"zombie1", "zombie2"};
 	class TalkTopics {};
 	languages[] = {};
-	armor = 5;
 	
 	class Eventhandlers {
 		init = "_this call zombie_initialize;";
