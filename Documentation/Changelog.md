@@ -30,7 +30,7 @@ Serverside affected addons:
 	    * [NEW] - Added new loot & loot table for church.
 	    * [NEW] - Added new food and drink items (only found in supermarkets).
 	    * [NEW] - Added model for a dropped map and watch.
-	    * [NEW] - Weapon MakarovSD (Military, Military Special).
+	    * [NEW] - Weapon MakarovSD (Military and Military Special).
 	    * [NEW] - Weapon RPK_74 (Mi8 Helicrash).
 	    * [NEW] - Vehicle damage displayed in percent (With a Toolbox).
 	    * [NEW] - 5L Fuel can takes 1 inv slot.
@@ -51,8 +51,8 @@ Serverside affected addons:
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
 	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
-					Small Stash = 12 object slots, 1 Weapon, 0 bags.
-					Medium Stash = 25 object slots, 3 Weapon, 0 bags.
+					Small Stash = 12 object slots, 0 Weapon, 0 bags.
+					Medium Stash = 25 object slots, 1 Weapon, 0 bags.
 	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 	    * [NEW] - 1 New Melee weapons.(Bat)
