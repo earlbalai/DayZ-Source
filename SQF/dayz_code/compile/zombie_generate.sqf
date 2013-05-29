@@ -97,15 +97,22 @@ if (!isNull _agent) then {
 		_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
 	};
 
-	_agent setVariable ["myDest", _position];
-	_agent setVariable ["newDest", _position];
 	_agent setVariable ["BaseLocation", _position];
 	_agent setVariable ["doLoiter", _doLoiter]; // true: Z will be wandering, false: stay still
-	_agent setVariable ["targets", [], true];
+	_agent setVariable ["myDest", _position];
+	_agent setVariable ["newDest", _position];
+	if (_doLoiter) then {
+		[_agent, _position] call zombie_loiter;
+	};
 
 	if (!_recycled) then {
 		//Start behavior only for freshly created agents
 		_id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
+		_agent setVariable [ "fsmid", _id ];
+	}
+	else {
+		_id = _agent getVariable [ "fsmid", -1 ];
+		_id setFSMVariable ["_entityTime", 0];
 	};
 };
 
