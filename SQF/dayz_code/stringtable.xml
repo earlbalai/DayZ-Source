@@ -857,7 +857,7 @@
 			<Czech>Bandáž</Czech>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Bandage">
-			<English>Blueprint to create an Bandage. Required - 2 Rags, 2 gauze, 1 string - ToolBox<</English>
+			<English>Blueprint to create an Bandage. Required - 2 Rags, 2 gauze, 1 string - ToolBox</English>
 			<French>Plan de fabrication d'un Pansement. Requis : 2 Tissus, 2 Gazes, 1 Fil + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření Bandáže. Požadováno - 2 hadry, 2 gázy, 1 provázek a ToolBox</Czech>
 		</Key>
