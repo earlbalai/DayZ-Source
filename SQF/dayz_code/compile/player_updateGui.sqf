@@ -76,7 +76,7 @@ if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
 
 diag_log format [
 	"%1: r_player_infected: %2 r_player_injured: %3 _bloodlossLvl: %4 (%5) _bloodregenupLvl %6 (%7)",
-	__FILE__
+	__FILE__,
 	(r_player_infected),
 	(r_player_injured),
 	_bloodlossLvl,
