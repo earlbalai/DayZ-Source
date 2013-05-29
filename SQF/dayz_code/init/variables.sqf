@@ -403,7 +403,7 @@ dayz_maxMaxModels = 80; // max quantity of Man models (player or Z, dead or aliv
 dayz_maxMaxWeaponHolders = 80; // max quantity of loot piles around players. Below this limit we can spawn some loot
 dayz_spawnArea =  200; // radius around player where we can spawn loot & Z 
 dayz_safeDistPlr = 50; // Any loot & Z won't be spawned closer than this distance from any player
-dayz_cantseeDist = 250; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
+dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
 dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players 
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 dayz_lootSpawnBias = 70; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
@@ -487,7 +487,7 @@ if(!isDedicated) then {
 	dayz_clientPreload = 	false;
 	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
-	dayz_areaAffect =		5;
+	dayz_areaAffect =		3.5;
 	dayz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;

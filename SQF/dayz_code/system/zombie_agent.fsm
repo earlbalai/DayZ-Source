@@ -531,7 +531,7 @@ class FSM
        "" \n
        "if (!_cantSee) then {" \n
        "	//_targetPosition = getPosATL _target;" \n
-       "	_targetPos = _target modelToWorld [0, 2*(speed _target)/3.6, 0];" \n
+       "	_targetPos = _target call dayz_futurePos;" \n
        "};" \n
        "" \n
        "	"/*%FSM</STATEINIT""">*/;
@@ -659,19 +659,13 @@ class FSM
     {
       name = "Reset_Targeting";
       init = /*%FSM<STATEINIT""">*/"if (!isNull _target) then {" \n
-       "	_targetPos = _target modelToWorld [0, 2*(speed _target)/3.6, 0];" \n
+       "	_targetPos = _target call dayz_futurePos;" \n
        "	_agent moveTo _targetPos;" \n
        "};" \n
        "" \n
-       "_agent setVariable [""target"",[],false];" \n
-       "" \n
-       "_targets = [];" \n
+       "//_agent setVariable [""target"",[]]; // never used" \n
        "_targets = _agent getVariable [""targets"",[]];" \n
-       "" \n
-       "if (count _targets > 0) then" \n
-       "{" \n
-       "	_agent setVariable [""targets"",[],true];" \n
-       "};" \n
+       "_agent setVariable [""targets"",_targets,true];" \n
        "_target = objNull;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
