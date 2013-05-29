@@ -94,7 +94,7 @@ if (r_player_infected) then {
 	} else {
 		diag_log format ["%1: player is not bleeding", __FILE__];
 		if (r_player_bloodlosspersec > 0) then { r_player_bloodlosspersec = 0 };
-		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_sick_ca.paa";
+		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_down1_sick_ca.paa";
 		_ctrlBloodOuter ctrlSetText _bloodouterreset;
 	};
 } else {
