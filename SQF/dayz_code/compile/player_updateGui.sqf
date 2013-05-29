@@ -70,8 +70,8 @@ if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec < 25)) then {
 if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
 
 _bloodregenupLvl = 0;
-if ((r_player_bloodregen > 0) and (r_player_bloodregen <= 499)) then { _bloodregenupLvl = 1; };
-if ((r_player_bloodregen >= 500) and (r_player_bloodregen <= 1999)) then { _bloodregenupLvl = 2; };
+if ((r_player_bloodregen > 0) and (r_player_bloodregen < 500)) then { _bloodregenupLvl = 1; };
+if ((r_player_bloodregen >= 500) and (r_player_bloodregen < 2000)) then { _bloodregenupLvl = 2; };
 if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
 
 diag_log format [
