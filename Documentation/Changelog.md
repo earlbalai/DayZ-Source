@@ -32,6 +32,7 @@ Serverside affected addons:
 	    * [NEW] - Added model for a dropped map and watch.
 	    * [NEW] - Weapon MakarovSD (Military and Military Special).
 	    * [NEW] - Weapon RPK_74 (Mi8 Helicrash).
+	    * [NEW] - Vehicle Huey with Military Skin. (UH1H_DZ2)
 	    * [NEW] - Vehicle damage displayed in percent (With a Toolbox).
 	    * [NEW] - 5L Fuel can takes 1 inv slot.
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
