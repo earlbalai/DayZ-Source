@@ -65,6 +65,7 @@ class CfgVehicles {
 	//Helicopter's
 	#include "CfgVehicles\Helicopter\MI17.hpp"
 	#include "CfgVehicles\Helicopter\UH1H.hpp"
+	#include "CfgVehicles\Helicopter\UH1H2.hpp"
 	#include "CfgVehicles\Helicopter\AH6X.hpp"
 	#include "CfgVehicles\Helicopter\MH6J_DZ.hpp"
 	//Wreck's
