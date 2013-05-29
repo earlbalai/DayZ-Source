@@ -163,7 +163,10 @@ fnc_usec_playerBloodRegen = {
 	//_skilllevel = (dayz_Survived / 6);
 
 	if ((r_player_injured) or (r_player_infected)) then {
-		r_player_bloodregen_prev = r_player_bloodregen;
+		if (r_player_bloodregen_prev == 0) then {
+			r_player_bloodregen_prev = r_player_bloodregen;
+		};
+		
 		r_player_bloodregen = 0;
 		_bloodPerSec = 0;
 	} else {

@@ -64,66 +64,58 @@ diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, d
 	Blood Regen & BloodLoss:
 */
 
-if (r_player_infected) then {
-//Blood Loss
-	_bloodlossLvl = 0;
-	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
-	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
-	if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
-	if (r_player_injured) then {
-		diag_log ("Injured");
-		if ((r_player_bloodlosspersec > 0) and (_bloodlossLvl > 0)) then {
-			diag_log ("Blood loss");
-			_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_sick_ca.paa";
-			_ctrlBloodOuter ctrlSetText _bloodlosstext;
-		};
-	} else {
-		r_player_bloodlosspersec = 0;
-	};
+_bloodlossLvl = 0;
+if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec < 15)) then { _bloodlossLvl = 1; };
+if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec < 25)) then { _bloodlossLvl = 2; };
+if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
 
-//Blood Gen
-	_bloodregenupLvl = 0;
-	if ((r_player_bloodregen > 0) and (r_player_bloodregen <= 499)) then { _bloodregenupLvl = 1; };
-	if ((r_player_bloodregen >= 500) and (r_player_bloodregen <= 1999)) then { _bloodregenupLvl = 2; };
-	if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
-	if (r_player_bloodregen > 0) then {
-		_regenuptext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenupLvl) + "_sick_ca.paa";
-		_ctrlBloodOuter ctrlSetText _regenuptext;
-	};
-	
-	if ((r_player_bloodregen < 1) and !r_player_injured) then {
+_bloodregenupLvl = 0;
+if ((r_player_bloodregen > 0) and (r_player_bloodregen <= 499)) then { _bloodregenupLvl = 1; };
+if ((r_player_bloodregen >= 500) and (r_player_bloodregen <= 1999)) then { _bloodregenupLvl = 2; };
+if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
+
+diag_log format [
+	"%1: r_player_infected: %2 r_player_injured: %3 _bloodlossLvl: %4 (%5) _bloodregenupLvl %6 (%7)",
+	__FILE__
+	(r_player_infected),
+	(r_player_injured),
+	_bloodlossLvl,
+	r_player_bloodlosspersec,
+	_bloodregenupLvl,
+	r_player_bloodregen
+];
+
+if (r_player_infected) then {
+	diag_log format ["%1: player is infected", __FILE__];
+	if ((r_player_injured) and (_bloodlossLvl > 0)) then {
+		diag_log format ["%1: player is bleeding", __FILE__];
+		_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_sick_ca.paa";
+		_ctrlBloodOuter ctrlSetText _bloodlosstext;
+	} else {
+		diag_log format ["%1: player is not bleeding", __FILE__];
+		if (r_player_bloodlosspersec > 0) then { r_player_bloodlosspersec = 0 };
 		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_sick_ca.paa";
 		_ctrlBloodOuter ctrlSetText _bloodouterreset;
 	};
-	
 } else {
-//Blood Loss
-	_bloodlossLvl = 0;
-	if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
-	if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
-	if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
-	if (r_player_injured) then {
-		if ((r_player_bloodlosspersec > 0) and (_bloodlossLvl > 0)) then {
-			_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_ca.paa";
-			_ctrlBloodOuter ctrlSetText _bloodlosstext;
-		};
+	diag_log format ["%1: player is not infected", __FILE__];
+	if ((r_player_injured) and (_bloodlossLvl > 0)) then {
+		diag_log format ["%1: player is bleeding", __FILE__];
+		_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_ca.paa";
+		_ctrlBloodOuter ctrlSetText _bloodlosstext;
 	} else {
-		r_player_bloodlosspersec = 0;
-	};
-	
-//Blood Gen
-	_bloodregenupLvl = 0;
-	if ((r_player_bloodregen > 0) and (r_player_bloodregen <= 499)) then { _bloodregenupLvl = 1; };
-	if ((r_player_bloodregen >= 500) and (r_player_bloodregen <= 1999)) then { _bloodregenupLvl = 2; };
-	if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
-	if ((r_player_bloodregen > 0) and !r_player_injured) then {
-		_regenuptext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenupLvl) + "_ca.paa";
-		_ctrlBloodOuter ctrlSetText _regenuptext;
-	};
-	
-	if ((r_player_bloodregen < 1) and !r_player_injured) then {
-		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
-		_ctrlBloodOuter ctrlSetText _bloodouterreset;
+		diag_log format ["%1: player is not bleeding", __FILE__];
+		if (r_player_bloodlosspersec > 0) then { r_player_bloodlosspersec = 0 };
+		if (_bloodregenupLvl > 0) then {
+			diag_log format ["%1: player is regenerating blood", __FILE__];
+			_regenuptext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenupLvl) + "_ca.paa";
+			_ctrlBloodOuter ctrlSetText _regenuptext;
+		} else {
+			diag_log format ["%1: player is not regenerating blood", __FILE__];
+			if (r_player_bloodregen > 0) then { r_player_bloodregen = 0 };
+			_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
+			_ctrlBloodOuter ctrlSetText _bloodouterreset;
+		};
 	};
 };
 
