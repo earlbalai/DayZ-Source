@@ -23,20 +23,20 @@ Serverside affected addons:
 		
 	Changes:
 	
-	    * [NEW] - Removed annoying "re-arm" option from actions menu
+	    * [NEW] - Removed annoying "re-arm" option from actions menu.
 	    * [NEW] - Models and textures for mutton.
 	    * [NEW] - Separate meat for goats, same blood regen as mutton.
 	    * [NEW] - Can now combine magazines.
-	    * [NEW] - Added new loot & table for church.
+	    * [NEW] - Added new loot & loot table for church.
 	    * [NEW] - Added new food and drink items (only found in supermarkets).
 	    * [NEW] - Added model for a dropped map and watch.
 	    * [NEW] - Weapon MakarovSD (Military, Military Special).
 	    * [NEW] - Weapon RPK_74 (Mi8 Helicrash).
-	    * [NEW] - Vehicle Damage in Percent (With a Toolbox).
+	    * [NEW] - Vehicle damage displayed in percent (With a Toolbox).
 	    * [NEW] - 5L Fuel can takes 1 inv slot.
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
-	    * [NEW] - Mi8 Crash site model.
+	    * [NEW] - Mi8 crash site model.
 	    * [NEW] - 2 New background tracks.
 	    * [NEW] - 6 New "Viral" zeds - They are harder to kill, they do more damage, and they have a higher chance of causing an infection... be afraid.
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)). Shows servername in the bottom right of screen max 6 letters.
@@ -53,15 +53,15 @@ Serverside affected addons:
 	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
 					Small Stash = 12 object slots, 1 Weapon, 0 bags.
 					Medium Stash = 25 object slots, 3 Weapon, 0 bags.
-	    * [NEW] - Infected survivor camps. 3 - Small
+	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 	    * [NEW] - 1 New Melee weapons.(Bat)
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps).
-	    * [NEW] - Zeds can now tackle players to the ground when attacked (Zeds stuck player's leg out to trip him/her up).
+	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
 	
-	    * [FIXED] - Vehicle repair should now always work correctly.
+	    * [FIXED] - Vehicle repair should now work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
 	    * [FIXED] - StudyBody should now work. (Describing wounds accurately)
 	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash model.
@@ -95,11 +95,11 @@ Serverside affected addons:
 	    * [UPDATED] - Zed generate system. has now been fully rewrote should stop zeds spawning in view of players then being deleted.
 	    * [UPDATED] - Zeds overall dmg has been updated per hit/per zed (Old Type: Max possible dmg = body 600, Legs 100, Hands 50, Head 1200 New Type: Body 1200, Head 2400)
 	    * [UPDATED] - Bleed from zed attacks will now only happen if the initial dmg is above 0.7 or the zed gives a head shot. (should reduce the amount of bandages needed)
-	    * [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if dmg multiplier is above > 0.8
-	    * [UPDATED] - When unconscious all dmg is lowed to 50 blood for each hit zeds do no matter the part they hit. (Should allow some survivability)
+	    * [UPDATED] - Zeds knocking players unconscious now has a 50/50 chance if damage multiplier is above > 0.8
+	    * [UPDATED] - When unconscious all damage is reduced to 50 blood for each hit zeds do no matter the part they hit. (Should allow some survivability)
 	    * [UPDATED] - Zeds sight and sound chance has been re-added so there is a chance they can ignore you.
 	    * [UPDATED] - Sight and sound rebalanced to make them a little more even from movement.
-	    * [UPDATED] - Call extension calls for vehicle dmg.
+	    * [UPDATED] - Call extension calls for vehicle damage.
 	    * [UPDATED] - Zeds will no longer spawn for air vehicles.
 	    * [UPDATED] - Hunters loot table adjusted with more weapons.
 	    * [UPDATED] - SQL files working on Linux.
@@ -108,7 +108,7 @@ Serverside affected addons:
 	    * [UPDATED] - Melee systems updated.
 	    * [UPDATED] - M107 lowered chance in loot tables.
 	    * [UPDATED] - AS50 lowered chance in loot tables.
-	    * [UPDATED] - Old Bandit skin for male chars.
+	    * [UPDATED] - Old Bandit skin for male characters.
 	    * [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 	    * [UPDATED] - Lowered Direct comms action sound.
 	    * [UPDATED] - Vehicle damage syncs updated to reduce call extension spam.
