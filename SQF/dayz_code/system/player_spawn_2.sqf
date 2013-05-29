@@ -184,8 +184,15 @@ while {true} do {
 		if (_rnd < 3) then {
 			addCamShake [2, 1, 25];
 		};
-		if (r_player_blood > 3000) then {
-			r_player_blood = r_player_blood - 3;
+		//if (r_player_blood > 100) then {
+		//	r_player_blood = r_player_blood - 3;
+		//	player setVariable["USEC_BloodQty",r_player_blood];
+		//};
+		_result = r_player_blood - 3;
+		if (_result < 0) then {
+			_id = [player,"sick"] spawn player_death;
+		} else {
+			r_player_blood = _result;
 			player setVariable["USEC_BloodQty",r_player_blood];
 		};
 	};
