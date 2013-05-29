@@ -126,7 +126,7 @@ Serverside affected addons:
 	    * [UPDATED] - Tanktraps, sandbags and razor-wires won't spawn in buildings. Tents will always spawn in a safe place.
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
-	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
+	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several other non enterable buildings. Buildings are still non-enterable but loot will spawn outside / around these buildings)
 		* [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
 		* [UPDATED] - Sickness(Infection) can now cause death.
 	    
