@@ -37,6 +37,21 @@ fa_veh2str = {
 	_res
 };
 
+// print player player PID and name. If name unknown then print UID.
+fa_plr2str = {
+	private["_x","_res","_name"];
+	_x = _this;
+	_res = "nobody";
+	if (!isNil "_x") then {
+		_name = _x getVariable ["bodyName", nil];
+		if ((isNil "_name" OR {(_name == "")}) AND ({alive _x})) then { _name = name _x; };
+		if (isNil "_name" OR {(_name == "")}) then { _name = "UID#"+(getPlayerUID _x); };
+		_res = format["PID#%1(%2)", owner _x, _name ];
+	};
+	_res
+};
+
+
 // isoutofmap: return true if position is out of map
 fa_isoutofmap = {
 	private ["_SWcorner","_NEcorner"];
