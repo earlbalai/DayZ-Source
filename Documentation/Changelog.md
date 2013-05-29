@@ -39,7 +39,7 @@ Serverside affected addons:
 	    * [NEW] - Added force end mission for players joining with wrong version/failed auth. (Will replace timeout later).
 	    * [NEW] - Mi8 crash site model.
 	    * [NEW] - 2 New background tracks.
-	    * [NEW] - 6 New "Viral" zeds - They are harder to kill, they do more damage, and they have a higher chance of causing an infection... be afraid.
+	    * [NEW] - 6 New "Viral" zeds - They are harder to kill, they do more damage, and they have a higher chance of causing an infection... be afraid. (Headshot will kill in one shot)
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)). Shows servername in the bottom right of screen max 6 letters.
 	    * [NEW] - "Sleep" at tents changed to "Rest".
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
@@ -56,11 +56,12 @@ Serverside affected addons:
 					Medium Stash = 25 object slots, 1 Weapon, 0 bags.
 	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
-	    * [NEW] - 1 New Melee weapons.(Bat)
+	    * [NEW] - 1 New Melee weapon.(BaseBallBat)
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
-	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps).
+	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
+		* [NEW] - Blood UI updated to support blood loss and blood gain and will also show when your sick(Infected)
 	
 	    * [FIXED] - Vehicle repair should now work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
@@ -79,11 +80,11 @@ Serverside affected addons:
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds. (reduces damage while unconscious)
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
 	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
-	    * [FIXED] - MA lot of dupeing issues should now be resolved.
+	    * [FIXED] - A lot of dupeing issues should now be resolved.
 	    * [FIXED] - Most wallhack exploits should now be resolved.
 	    * [FIXED] - M107 & AS50 Lock on system removed.
 		
-	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
+		* [UPDATED] - Zed sight limited to 100 meters.
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
@@ -127,6 +128,8 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
+		* [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
+		* [UPDATED] - Sickness(Infection) can now cause death.
 	    
 	    
 ______________________
