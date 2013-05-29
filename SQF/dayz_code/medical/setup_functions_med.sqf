@@ -128,7 +128,7 @@ fnc_med_publicBlood = {
 fnc_usec_playerBleed = {
 	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
 	_bleedTime = 400;		//seconds
-	_bleedPerSec = (r_player_bloodTotal / _bleedTime) - r_player_bloodregen;
+	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
 	r_player_bloodlosspersec = _bleedPerSec;
 	_total = r_player_bloodTotal;
 	r_player_injured = true;
@@ -162,7 +162,19 @@ fnc_usec_playerBloodRegen = {
 	_bloodPercentage = (r_player_blood / r_player_bloodTotal);
 	//_skilllevel = (dayz_Survived / 6);
 
-	_bloodPerSec = floor((r_player_bloodregen / 15) - r_player_bloodlosspersec);
+	if ((r_player_injured) or (r_player_infected)) then {
+		r_player_bloodregen_prev = r_player_bloodregen;
+		r_player_bloodregen = 0;
+		_bloodPerSec = 0;
+	} else {
+		if (r_player_bloodregen_prev > 0) then {
+			r_player_bloodregen = r_player_bloodregen_prev;
+			r_player_bloodregen_prev = 0;
+		};
+		
+		_bloodPerSec = floor(r_player_bloodregen / 15);
+	};
+	
 	//r_player_bloodgainpersec = _bloodPerSec;
 
 	if (_bloodPerSec > r_player_bloodregen) then { _bloodPerSec = r_player_bloodregen; };

@@ -4,17 +4,10 @@ _start = diag_tickTime;
 
 _unit = _this select 0;
 _type = _this select 1;
+
 _vehicle = (vehicle player);
-_velo = velocity _vehicle;
-_speed = ([0, 0, 0] distance (_velo)); // buggy: if player/veh is blocked by an object, speed is not zero
-_nextPlayerPos = getPosATL player;
-if (_speed > 0) then {
-	// try compute next player pos. This works both whether player is bare foot, or in a vehicle, whatever his place.
-	_velo = [ (_velo select 0) / _speed, (_velo select 1) / _speed, 0];  // normalize speed vector
-	_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0) * 1]; // 1  = a meter alongside the movement  
-	_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1) * 1];  
-	_nextPlayerPos set [2, 0];
-};
+_speed = ([0, 0, 0] distance (_velo));
+_nextPlayerPos = player call dayz_futurePos;
 _distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
 
 /*if (!isNil "toto") then { deleteVehicle toto; sleep 0.01 };
