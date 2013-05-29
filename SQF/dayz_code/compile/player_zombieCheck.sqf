@@ -19,11 +19,11 @@ _multiplier = 1;
 		if ((_x distance player < dayz_areaAffect) and !(animationState _x == "ZombieFeed")) then {
 			//perform an attack
 			_last = _x getVariable["lastAttack", 0];
-			if ((time - _last) > 2+random(1)) then {
+			if ((time - _last) > 2) then {
 				_attackResult = [_x,  _type] call player_zombieAttack;
 				//diag_log(format["%1 %2 %3 / as:%4 up:%5 ur:%6 sp:%7",  __FILE__,  _x,  _attackResult,  animationState player,  unitPos player,  unitReady _x,  [0, 0, 0] distance (velocity player)]);
 				if (_attackResult == "") then {
-					_x setVariable["lastAttack", time];
+					_x setVariable["lastAttack", time - random(1)];
 					_attacked = true;
 				}
  				else {
