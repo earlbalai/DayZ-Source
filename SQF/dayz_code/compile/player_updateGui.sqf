@@ -65,8 +65,8 @@ diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, d
 */
 
 _bloodlossLvl = 0;
-if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec <= 14)) then { _bloodlossLvl = 1; };
-if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec <= 24)) then { _bloodlossLvl = 2; };
+if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec < 15)) then { _bloodlossLvl = 1; };
+if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec < 25)) then { _bloodlossLvl = 2; };
 if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
 
 _bloodregenupLvl = 0;
