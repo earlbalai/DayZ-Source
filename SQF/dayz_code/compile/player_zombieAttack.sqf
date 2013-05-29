@@ -6,7 +6,7 @@ _unit = _this select 0;
 _type = _this select 1;
 
 _vehicle = (vehicle player);
-_speed = ([0, 0, 0] distance (_velo));
+_speed = speed player;
 _nextPlayerPos = player call dayz_futurePos;
 _distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
 
