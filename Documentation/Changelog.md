@@ -60,7 +60,7 @@ Serverside affected addons:
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
-		* [NEW] - Blood UI updated to support blood loss and blood gain and will also show when your sick(Infected)
+		* [NEW] - Blood UI updated to indicate blood loss or gain rate over time. It will also show if you're sick (infected).
 	
 	    * [FIXED] - Vehicle repair should now work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
