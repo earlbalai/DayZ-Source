@@ -101,6 +101,7 @@ if (!isNull _agent) then {
 	_agent setVariable ["newDest", _position];
 	_agent setVariable ["BaseLocation", _position];
 	_agent setVariable ["doLoiter", _doLoiter]; // true: Z will be wandering, false: stay still
+	_agent setVariable ["targets", [], true];
 
 	if (!_recycled) then {
 		//Start behavior only for freshly created agents

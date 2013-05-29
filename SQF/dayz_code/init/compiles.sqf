@@ -436,6 +436,25 @@ if (!isDedicated) then {
 			};
 		};	
 	};
+	
+	dayz_futurePos = {	
+		private ["_vehicle","_velo","_speed","_nextPlayerPos"];
+		
+		_vehicle = (vehicle _this);
+		_velo = velocity _vehicle;
+		_speed = ([0, 0, 0] distance (_velo)); // buggy: if player/veh is blocked by an object, speed is not zero
+		_nextPlayerPos = getPosATL _this;
+		if (_speed > 0) then {
+			// try compute next player pos. This works both whether player is bare foot, or in a vehicle, whatever his place.
+			_velo = [ (_velo select 0) / _speed, (_velo select 1) / _speed, (_velo select 2) / _speed];  // normalize speed vector
+			_nextPlayerPos set [0, (_nextPlayerPos select 0) + (_velo select 0) * 1]; // 1  = a meter alongside the movement  
+			_nextPlayerPos set [1, (_nextPlayerPos select 1) + (_velo select 1) * 1];  
+			_nextPlayerPos set [2, (_nextPlayerPos select 2) + (_velo select 2) * 1];  
+		};
+		
+		_nextPlayerPos
+	};
+	
 	dayz_originalPlayer =		player;
 };
 
