@@ -53,7 +53,7 @@ Serverside affected addons:
 	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
 					Small Stash = 12 object slots, 1 Weapon, 0 bags.
 					Medium Stash = 25 object slots, 3 Weapon, 0 bags.
-	    * [NEW] - Infected survivor camps. 3 - Small
+	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 	    * [NEW] - 1 New Melee weapons.(Bat)
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
