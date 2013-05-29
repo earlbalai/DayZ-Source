@@ -4,7 +4,7 @@ private ["_ys","_ms","_ds","_b","_2","_6","_7","_8","_9","_10","_str_left_text",
 
 _str_left_text = "
 <t size = '1.4' font = 'Zeppelin33' color = '#000000' shadow = 'false' align = 'left'>
-My name is %1.  I woke up %2 somewhere in %3; an area of the zombie over-run hell hole also known as %4.
+My name is %1.  I woke up %2 somewhere in %3; an area of the infected hell hole also known as %4.
 <br />
 <br />
 The date is %5, and %6
