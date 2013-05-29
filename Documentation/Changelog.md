@@ -50,8 +50,9 @@ Serverside affected addons:
 	    ??????????????????????????* [NEW] - Servers date has been locked to give full moon nights.
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
-	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small)
-					Small = 8 objects slots, no weapons, no bags.
+	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
+					Small Stash = 12 object slots, 1 Weapon, 0 bags.
+					Medium Stash = 25 object slots, 3 Weapon, 0 bags.
 	    * [NEW] - Infected survivor camps. 3 - Small
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 	    * [NEW] - 1 New Melee weapons.(Bat)
@@ -82,7 +83,7 @@ Serverside affected addons:
 	    * [FIXED] - M107 & AS50 Lock on system removed.
 		
 	    * [UPDATED] - Reset action alert of zeds, Zeds hearing from actions is now reset back to 1.7.5.1 - (Max sight/hearing from movement forced to 80 meters)
-	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1200 each.
+	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
 	    * [UPDATED] - ALL loot table weights have been updated.
