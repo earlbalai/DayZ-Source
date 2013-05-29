@@ -178,11 +178,13 @@ while {true} do {
 			player setVariable["USEC_infected",true,true];  
 		};
 		
-		_rnd = ceil (random 8);
-		[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
-		
-		if (_rnd < 3) then {
-			addCamShake [2, 1, 25];
+		if (!r_player_unconscious) then {
+			_rnd = ceil (random 8);
+			[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
+			
+			if (_rnd < 3) then {
+				addCamShake [2, 1, 25];
+			};
 		};
 		//if (r_player_blood > 100) then {
 		//	r_player_blood = r_player_blood - 3;
