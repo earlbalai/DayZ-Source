@@ -172,6 +172,7 @@ class CfgLoot {
 			{"ItemPainkiller",0.02},
 			{"ItemMorphine",0.01},
 			{"30Rnd_556x45_Stanag",0.02},
+			{"75Rnd_545x39_RPK",0.02},
 			{"20Rnd_762x51_DMR",0.02},
 			{"17Rnd_9x19_glock17",0.05},
 			{"15Rnd_9x19_M9SD",0.01},
