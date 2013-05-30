@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "E:\Applications\Arma Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -36,7 +36,7 @@ item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000
 item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
 item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
 item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
+item35[] = {"Initialize",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
 item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
 item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
@@ -44,7 +44,7 @@ item39[] = {"Too_Long",4,218,300.000000,350.000000,400.000000,400.000000,0.00000
 item40[] = {"Too_Long",4,218,300.000000,550.000000,400.000000,600.000000,0.000000,"Too" \n "Long"};
 item41[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
-item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
+item43[] = {"Initialized",4,4314,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
 item44[] = {"New_Character",4,218,-275.000000,350.000000,-175.000000,400.000000,5.000000,"New" \n "Character"};
 item45[] = {"Gender_Selection",2,250,-400.000000,350.000000,-300.000000,400.000000,0.000000,"Gender Selection" \n "Dialog"};
 item46[] = {"Selected",4,218,-400.000000,450.000000,-300.000000,500.000000,0.000000,"Selected"};
@@ -140,8 +140,8 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-203.815994,244.646011,1615.449463,900.991943,441,635,1};
-window[] = {0,-1,-1,-1,-1,905,125,1497,125,1,459};
+globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-374.763550,380.776672,768.374756,-317.821381,441,634,1};
+window[] = {0,-1,-1,-1,-1,910,130,1502,130,1,459};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -291,6 +291,7 @@ class FSM
            "	_config = 		configFile >> ""CfgMovesMaleSdr"" >> ""States"" >> _currentAnim;" \n
            "	_onLadder =		(getNumber (_config >> ""onLadder"")) == 1;" \n
            "	_isTerminal = 	(getNumber (_config >> ""terminal"")) == 1;" \n
+           "	_isInVehicle = vehicle player != player;" \n
            "	//_wpnDisabled =	(getNumber (_config >> ""disableWeapons"")) == 1;" \n
            "	_currentModel = typeOf player;" \n
            "	_charPos = getPosATL player;" \n
@@ -738,13 +739,13 @@ class FSM
        "player setPosATL _setPos;" \n
        "player setDir _setDir;" \n
        "" \n
-		"{" \n
-		"	if (player getVariable[""hit_""+_x,false]) then { " \n
-		"		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
-		"		PVDZ_hlt_Bleed = [player,_x,_x];" \n
-		"		publicVariable ""PVDZ_hlt_Bleed""; // draw blood stream on character, on all gameclients" \n
-		"	};" \n
-		"} forEach USEC_typeOfWounds;" \n
+       "{" \n
+       "	if (player getVariable[""hit_""+_x,false]) then { " \n
+       "		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
+       "		PVDZ_hlt_Bleed = [player,_x,_x];" \n
+       "		publicVariable ""PVDZ_hlt_Bleed""; // draw blood stream on character, on all gameclients" \n
+       "	};" \n
+       "} forEach USEC_typeOfWounds;" \n
        "//Legs and Arm fractures" \n
        "_legs = player getVariable [""hit_legs"",0];" \n
        "_arms = player getVariable [""hit_hands"",0];" \n
