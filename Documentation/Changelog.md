@@ -61,7 +61,7 @@ Serverside affected addons:
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
 		* [NEW] - Blood from food and transfusions will now generate over time (no longer instant).
-		* [NEW] - All food types now have a disminihsing effect so the more you try and eat at once, the less blood you will get in return.
+		* [NEW] - All food types now have a diminishing effect so the more you try and eat at once, the less blood you will get in return.
 		* [NEW] - Blood UI updated to indicate the player's blood loss / gain rate and will also indicate when you're sick (infected).
 		* [NEW] - Bloodbags will no longer transfer 12000 blood instantly, it's now done over 12 seconds (1000 blood per second). If the medic breaks away from the transfusion animation or the recipient moves out of range, the transfer stops and the remaining amount is lost along with the bloodbag in use.
 	
