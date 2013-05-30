@@ -198,3 +198,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	if (_ismelee == "true") then {
 		call dayz_meleeMagazineCheck;
 	};
+	
+	//reveal all near objects.
+	{player reveal _x} forEach (nearestObjects [getPosATL player, ["All"], 75]);
+	//All is arbitrary and will need to be changed to ["AllVehicles","WeaponHolder","tentStorage"] ++ others (stashes etc.)
