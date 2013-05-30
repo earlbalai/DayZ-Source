@@ -1,7 +1,9 @@
 
 private["_unit","_distance","_doRun","_pos","_listTalk","_target","_targets"];
+// DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT
+_pos = _this select 0; //This is on purpose do not edit back before release day.
+//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT//DO NOT EDIT
 
-_unit = _this select 0; //This is on purpose do not edit back before release day.
 _distance = _this select 1;
 _doRun = _this select 2;
 _pos = _this select 3;
