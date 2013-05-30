@@ -16,15 +16,15 @@ class RscProgress;
 class RscProgressNotFreeze;
 class RscButtonTextOnly;
 
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\defines.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p__cover.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_journal_humanity.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_humanity_art.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_zombies_killed.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_bandits_killed.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_headshots.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\p_murders.hpp"
-#include "\z\addons\dayz_code\Configs\cfgPlayerStats\sound.hpp"
+#include "CfgPlayerStats\defines.hpp"
+#include "CfgPlayerStats\p__cover.hpp"
+#include "CfgPlayerStats\p_journal_humanity.hpp"
+#include "CfgPlayerStats\p_humanity_art.hpp"
+#include "CfgPlayerStats\p_zombies_killed.hpp"
+#include "CfgPlayerStats\p_bandits_killed.hpp"
+#include "CfgPlayerStats\p_headshots.hpp"
+#include "CfgPlayerStats\p_murders.hpp"
+#include "CfgPlayerStats\sound.hpp"
 
 class RscPictureGUI
 {

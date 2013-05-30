@@ -1,12 +1,12 @@
 class CfgLoot {
 	//0.10
 	attachments[] = {
-		{"Attachment_AIM",0.03},
-		{"Attachment_GL",0.03},
-		{"Attachment_Kobra",0.03},
-		{"Attachment_CAMO",0.03},
-		{"Attachment_Pso",0.03},
-		{"Attachment_Silencer",0.01}
+		//{"Attachment_AIM",0.03},
+		//{"Attachment_GL",0.03},
+		//{"Attachment_Kobra",0.03},
+		//{"Attachment_CAMO",0.03},
+		//{"Attachment_Pso",0.03},
+		//{"Attachment_Silencer",0.01}
 	};
 	craft[] = {
 			//{"equip_wood_pallet",0.03},
@@ -32,7 +32,7 @@ class CfgLoot {
 			//{"equip_aa_battery",0.01},
 			//{"equip_2inch_metal_pipe",0.01},
 			//{"equip_1inch_metal_pipe",0.02},
-			{"ItemNails",0.01}
+			//{"ItemNails",0.01},
 			//{"equip_rail_screws",0.01},
 			//{"equip_weapon_rails",0.01}
 	};
@@ -172,6 +172,7 @@ class CfgLoot {
 			{"ItemPainkiller",0.02},
 			{"ItemMorphine",0.01},
 			{"30Rnd_556x45_Stanag",0.02},
+			{"75Rnd_545x39_RPK",0.02},
 			{"20Rnd_762x51_DMR",0.02},
 			{"17Rnd_9x19_glock17",0.05},
 			{"15Rnd_9x19_M9SD",0.01},
@@ -234,6 +235,7 @@ class CfgLoot {
 			{"ItemPainkiller",0.06},
 			{"ItemMorphine",0.02},
 			{"HandGrenade_east",0.01},
+			{"75Rnd_545x39_RPK",0.03},
 			{"30Rnd_762x39_AK47",0.04},
 			{"30Rnd_545x39_AK",0.04},
 			{"8Rnd_B_Beneli_74Slug",0.08},

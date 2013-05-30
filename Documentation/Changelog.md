@@ -32,7 +32,6 @@ Serverside affected addons:
 	    * [NEW] - Added model for a dropped map and watch.
 	    * [NEW] - Weapon MakarovSD (Military and Military Special).
 	    * [NEW] - Weapon RPK_74 (Mi8 Helicrash).
-	    * [NEW] - Vehicle Huey with Military Skin. (UH1H_DZ2)
 	    * [NEW] - Vehicle damage displayed in percent (With a Toolbox).
 	    * [NEW] - 5L Fuel can takes 1 inv slot.
 	    * [NEW] - Added auth retry system to make sure clients are auth'ed before they spawn (should stop seagull issue).
@@ -61,7 +60,10 @@ Serverside affected addons:
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
-		* [NEW] - Blood UI updated to support blood loss and blood gain and will also show when your sick(Infected)
+		* [NEW] - Blood will now regen slower form any type of blood regen (food).
+		* [NEW] - All food types now have a disminihsing effect the more you eat the less you gain back as blood.
+		* [NEW] - Blood UI updated to support blood loss and blood gain and will also show when your sick(Infected).
+		* [NEW] - Bloodbags will no longer transfer 12000 blood instant its now done over 6 secs 4000 blod per 2 secs if the meidc or player moves out of range of the other transfer stops and remaining amount is lost along with the bloodbag in use.
 	
 	    * [FIXED] - Vehicle repair should now work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
