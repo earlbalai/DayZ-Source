@@ -3,7 +3,7 @@
 // returns true if agent is not null
 // "_this select 3" and "_this select 4"  may be modified
 
-private ["_position","_this","_doLoiter","_unitTypes","_recyAgt","_maxtoCreate","_agent","_list","_x","__FILE__","_agtPos","_type","_radius","_method","_loot","_array","_rnd","_lootType","_index","_weights","_myDest","_newDest","_id", "_recycled", "_distance"];
+private ["_position","_this","_doLoiter","_unitTypes","_recyAgt","_maxtoCreate","_agent","_list","_x","__FILE__","_agtPos","_type","_radius","_method","_loot","_array","_rnd","_lootType","_index","_weights","_myDest","_newDest","_id", "_recycled", "_distance", "_favStance"];
 
 _position = _this select 0;
 _doLoiter = _this select 1; // wander around
@@ -93,10 +93,14 @@ if (!isNull _agent) then {
 	//	false
 	//};
 
-	if (random 1 > 0.7) then {
-		_agent setUnitPos "Middle"; // "DOWN"=prone,  "UP"= stand up, "Middle" - Kneel Position.
-	};
+	_favStance = (switch ceil(random(3^0.5)^2) do {
+		case 3: {"DOWN"}; // prone
+		case 2: {"Middle"}; // Kneel
+		default {"UP"} // stand-up
+	});
+	_agent setUnitPos _favStance;
 
+	_agent setVariable ["stance", _favStance];
 	_agent setVariable ["BaseLocation", _position];
 	_agent setVariable ["doLoiter", _doLoiter]; // true: Z will be wandering, false: stay still
 	_agent setVariable ["myDest", _position];

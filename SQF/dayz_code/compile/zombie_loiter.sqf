@@ -31,7 +31,11 @@ if(isNull group _unit) then {
 	_unit domove _pos;		
 };
 
-_unit forceSpeed ceil(random(9)^0.5)*2;
+// reset stance to favorite one
+_agent setUnitPos (_unit getVariable ["stance", "UP"]);
+
+// speed is random. 2 4 or 6, 2 being most likely.
+_unit forceSpeed ceil(random(3^0.5)^2)*2;
 _unit setVariable ["myDest",_pos];
 
 _pos
