@@ -132,8 +132,9 @@ Serverside affected addons:
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
 		* [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
 		* [UPDATED] - Sickness(Infection) can now cause death.
-	    
-	    
+		
+		
+		* [REMOVED] - Removed M107 and AS50(Banned) from all loot tables and removed all damage from bullets so they do 0 damage even if spawned in.
 ______________________
 Version 1.7.6.1
 ---------------
