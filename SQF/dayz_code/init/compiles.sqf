@@ -122,8 +122,8 @@ if (!isDedicated) then {
 		_display = uiNameSpace getVariable "BIS_loadingScreen";
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
-	// 40 sec timeout
-		while { _timeOut < 600 && !dayz_clientPreload } do {
+	// 120 sec timeout
+		while { _timeOut < 1200 && !dayz_clientPreload } do {
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
