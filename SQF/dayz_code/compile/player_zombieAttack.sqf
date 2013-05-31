@@ -187,7 +187,8 @@ if (_isVehicle) then {
 			_hp = _hpList call BIS_fnc_selectRandom;
 			_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
 		};
-		_damage = random 0.1;
+		// we limit how vehicle could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
+		_damage = random (if (damage _vehicle < 0.8) then {0.1} else {0.01});
 		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
 		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;

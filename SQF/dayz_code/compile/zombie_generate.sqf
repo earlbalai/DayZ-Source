@@ -116,7 +116,9 @@ if (!isNull _agent) then {
 	}
 	else {
 		_id = _agent getVariable [ "fsmid", -1 ];
-		_id setFSMVariable ["_entityTime", 0];
+		if (!isNil "_id") then {
+			_id setFSMVariable ["_entityTime", 0];
+		};
 	};
 };
 

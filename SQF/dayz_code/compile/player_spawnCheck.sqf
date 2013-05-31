@@ -229,6 +229,7 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 			{((["t_betula2w", _tmp, false] call fnc_inString) OR 
 			{(["b_craet2", _tmp, false] call fnc_inString)})})
 		}) then { 
+			_suitableBld = _suitableBld +1;
 			_tmp = [_x, _recyAgt, _maxtoCreate, 10];
 			_qty = _tmp call building_spawnZombies;
 			_recyAgt = _tmp select 1;
@@ -238,6 +239,7 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 				_x setVariable ["zombieSpawn",_dateNow,true];
 			};
 */
+		};
 	} forEach (nearestObjects [_point, [], _radius]);	
 /*	if (!isNil "_nearby") then {
 		[_nearby, _recyAgt, _maxtoCreate, 10] call building_spawnZombies;
@@ -246,5 +248,3 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 
 diag_log (format["%1 End. Buildings checked:%2, newly zombied:%3, already zombied:%4, negative timestamp:%5.", __FILE__,
 	_suitableBld, _spwndoneBld, _zombieSpawnCtr, _negstampBld ]);
-
-};
