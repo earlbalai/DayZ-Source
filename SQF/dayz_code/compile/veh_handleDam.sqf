@@ -24,6 +24,8 @@ _currentDam = if ((!isNil "_selection") AND {(_selection != "")}) then {_unit ge
 if (local _unit) then {
 	_globalDam = damage _unit;
 	if ((!isNil "_selection") AND {(_selection != "")}) then {
+		// make bicycles a bit stronger
+		if (_unit isKindOf "Bicycle") then { _dam = _dam / 10; };
 		// only local unit can set the damage of a vehicle part
 		_currentDam = 0.99 min (_currentDam + _dam);
 		_unit setVariable [_SVname, _currentDam, true];

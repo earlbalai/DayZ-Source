@@ -1200,7 +1200,7 @@ class FSM
        "	while {true} do {" \n
        "	//	fps_safty_check = diag_fpsmin;" \n
        "	//	if (fps_safty_check > 20) then {" \n
-       "			[""both""] call player_spawnCheck;" \n
+       "			[""both""] spawn player_spawnCheck;" \n
        "			sleep 8;" \n
        "	//	};" \n
        "	};" \n
