@@ -179,7 +179,7 @@ while {true} do {
 		};
 		
 		if (!r_player_unconscious) then {
-			_rnd = ceil (random 8);
+			_rnd = 10; //_rnd = ceil (random 8);
 			[player,"cough",_rnd,false,9] call dayz_zombieSpeak;
 			
 			if (_rnd < 3) then {

@@ -24,7 +24,7 @@ _gpv_asl = getPosASL _vehicle;
 _hv = _gpv_asl select 2;
 
 if (_type != "zombie") exitWith {"not a zombie"}; // we deal only with zombies in this function
-if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here     //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
+if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
 if (((!_isVehicle) AND {(random 15 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
 
 // check if fight is in stairway or not, 
@@ -59,7 +59,7 @@ if (abs(_deg) > (30 + 1 * _speed)) exitWith { // we cancel the attack,  but we s
 			if (_deg > 180) then { _deg = _deg - 360; };
 			if (_deg == 0) exitWith{};
 			_sign = _deg/abs(_deg);
-			_deg  = abs(_deg);
+			_deg = abs(_deg);
 			if (_deg < 10) exitWith{};
 			//waituntil {_a = toArray(animationState _unit); (isNil "_a") OR {((count _a < 5) OR {((_a select 1) == 105)})}}; // 105='i' like idl
 			_unit setDir ((getDir _unit) + _sign*5);
@@ -208,7 +208,7 @@ if (_isVehicle) then {
 			diag_log(format["%1 Player wounded through ""%4"" vehicle window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
 			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
 		};
-	}; // fi veh with compartment	
+	}; // fi veh with compartment 
 }
 else { // player by foot
 	_damage = 0.2 + random (0.7);
