@@ -3954,13 +3954,13 @@
 			<Czech>Stan zde nelze postavit. Plocha musí být rovná a být dostatečně velká.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
-			<English>You have consumed a %1 giveing \n%2 blood regen \nstack %3</English>
-			<German>You have consumed a %1 giveing \n%2 blood regen \nstack %3</German>
-			<Russian>You have consumed a %1 giveing %2 blood regen, stack %3</Russian>
-			<Spanish>You have consumed a %1 giveing %2 blood regen, stack %3</Spanish>
-			<Dutch>You have consumed a %1 giveing %2 blood regen, stack %3</Dutch>
-			<French>You have consumed a %1 giveing %2 blood regen, stack %3</French>
-			<Czech>You have consumed a %1 giveing %2 blood regen, stack %3</Czech>
+			<English>You have consumed a %1 giving \n%2 blood regen \nstack %3</English>
+			<German>You have consumed a %1 giving \n%2 blood regen \nstack %3</German>
+			<Russian>You have consumed a %1 giving %2 blood regen, stack %3</Russian>
+			<Spanish>You have consumed a %1 giving %2 blood regen, stack %3</Spanish>
+			<Dutch>You have consumed a %1 giving %2 blood regen, stack %3</Dutch>
+			<French>You have consumed a %1 giving %2 blood regen, stack %3</French>
+			<Czech>You have consumed a %1 giving %2 blood regen, stack %3</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
 			<English>You have consumed a %1</English>
