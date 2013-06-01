@@ -71,7 +71,7 @@ Serverside affected addons:
 	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash model.
 	    * [FIXED] - Hero Skin teleport issue.
 	    * [FIXED] - BAF Bags so they don't set on fire. :-) (no moaning it was a bug)
-	    * [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
+	    * [FIXED] - Updated timeout timer from 40 secs to 120 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
 	    * [FIXED] - Zeds spawning underground.
 	    * [FIXED] - Loot spawning underground.
 	    * [FIXED] - Melee weapons having no ammo on login/skin change. (Open close gear menu will always reset ammo count to 10000)
@@ -84,7 +84,6 @@ Serverside affected addons:
 	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
 	    * [FIXED] - A lot of dupeing issues should now be resolved.
 	    * [FIXED] - Most wallhack exploits should now be resolved.
-	    * [FIXED] - M107 & AS50 Lock on system removed.
 	    * [FIXED] - No more 3x get up Animation loop when recovering from unconscious
 	    * [FIXED] - You can no longer get into vehicles while dragging players
 		
@@ -112,8 +111,6 @@ Serverside affected addons:
 	    * [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
 	    * [UPDATED] - Updated zed speed to default.
 	    * [UPDATED] - Melee systems updated.
-	    * [UPDATED] - M107 lowered chance in loot tables.
-	    * [UPDATED] - AS50 lowered chance in loot tables.
 	    * [UPDATED] - Old Bandit skin for male characters.
 	    * [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 	    * [UPDATED] - Lowered Direct comms action sound.
