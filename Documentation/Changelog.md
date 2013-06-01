@@ -85,8 +85,10 @@ Serverside affected addons:
 	    * [FIXED] - A lot of dupeing issues should now be resolved.
 	    * [FIXED] - Most wallhack exploits should now be resolved.
 	    * [FIXED] - M107 & AS50 Lock on system removed.
+	    * [FIXED] - No more 3x get up Animation loop when recovering from unconscious
+	    * [FIXED] - You can no longer get into vehicles while dragging players
 		
-		* [UPDATED] - Zed sight limited to 100 meters.
+	    * [UPDATED] - Zed sight limited to 100 meters.
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
@@ -130,11 +132,11 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
-		* [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
-		* [UPDATED] - Sickness(Infection) can now cause death.
+	    * [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
+	    * [UPDATED] - Sickness(Infection) can now cause death.
 		
 		
-		* [REMOVED] - Removed M107 and AS50(Banned) from all loot tables and removed all damage from bullets so they do 0 damage even if spawned in.
+	    * [REMOVED] - Removed M107 and AS50(Banned) from all loot tables and removed all damage from bullets so they do 0 damage even if spawned in.
 ______________________
 Version 1.7.6.1
 ---------------
