@@ -71,7 +71,7 @@ Serverside affected addons:
 	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash model.
 	    * [FIXED] - Hero Skin teleport issue.
 	    * [FIXED] - BAF Bags so they don't set on fire. :-) (no moaning it was a bug)
-	    * [FIXED] - Updated timeout timer from 40 secs to 120 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
+	    * [FIXED] - Updated timeout timer from 40 secs to 3000 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
 	    * [FIXED] - Zeds spawning underground.
 	    * [FIXED] - Loot spawning underground.
 	    * [FIXED] - Melee weapons having no ammo on login/skin change. (Open close gear menu will always reset ammo count to 10000)
