@@ -1,3 +1,8 @@
+/*
+        Created exclusively for ArmA2:OA - DayZMod.
+        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
+*/
+
 #include "fa_hiveMaintenance.hpp"
 
 // coor2str: convert position to a GPS coordinates

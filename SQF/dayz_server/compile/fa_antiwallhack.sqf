@@ -1,3 +1,8 @@
+/*
+        Created exclusively for ArmA2:OA - DayZMod.
+        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
+*/
+
 private ["_antiwallhack","_houseType","_houseList","_tmp","_patchList","_house","_o", "_nbhouses", "_nbpatchs"];
 
 _antiwallhack=[
