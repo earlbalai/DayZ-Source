@@ -245,37 +245,6 @@ class CfgBuildingLoot {
 			{"","military",1.00},
 			{"","medical",0.5}
 		};
-	};
-	class HeliCrash_No50s: Default {
-		zombieChance = 0.4;
-		maxRoaming = 2;
-		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 0.5;
-		lootPos[] = {};
-		lootType[] = {
-			{"FN_FAL","weapon",0.04},
-			{"bizon_silenced","weapon",0.05},
-			{"M14_EP1","weapon",0.05},
-			{"FN_FAL_ANPVS4","weapon",0.01},
-			{"Mk_48_DZ","weapon",0.03},
-			{"M249_DZ","weapon",0.04},
-			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
-			{"DMR","weapon",0.06},
-			{"MedBox0","object",0.05},
-			{"NVGoggles","weapon",0.01},
-			{"AmmoBoxSmall_556","object",0.05},
-			{"AmmoBoxSmall_762","object",0.05},
-			{"Skin_Camo1_DZ","magazine",0.08},
-			{"Skin_Sniper1_DZ","magazine",0.05},
-			{"G36C","weapon",0.03},
-			{"G36C_camo","weapon",0.03},
-			{"G36_C_SD_camo","weapon",0.01},
-			{"G36A_camo","weapon",0.03},
-			{"G36K_camo","weapon",0.03},
-			{"100Rnd_762x54_PK","magazine",0.05},
-			{"","military",1.00},
-			{"","medical",0.5}
-		};
 	};	
 	class HeliCrashWEST: Default {
 		zombieChance = 0.4;
