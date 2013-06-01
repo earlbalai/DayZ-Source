@@ -60,7 +60,7 @@ Serverside affected addons:
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
-		* [NEW] - Blood from food and transfusions will now generate over time (no longer instant).
+		* [NEW] - All blood gained from food is now added into a regenreation pool that players will regenerate over time
 		* [NEW] - All food types now have a diminishing effect so the more you try and eat at once, the less blood you will get in return.
 		* [NEW] - Blood UI updated to indicate the player's blood loss / gain rate and will also indicate when you're sick (infected).
 		* [NEW] - Bloodbags will no longer transfer 12000 blood instantly, it's now done over 12 seconds (1000 blood per second). If the medic breaks away from the transfusion animation or the recipient moves out of range, the transfer stops and the remaining amount is lost along with the bloodbag in use.
@@ -129,7 +129,7 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
-	    * [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
+	    * [UPDATED] - 3 Chopper crash sites spawn on server start + 2-3 infected Camps.
 	    * [UPDATED] - Sickness(Infection) can now cause death.
 		
 		
@@ -310,7 +310,7 @@ Affected addons:
 	Changes:
 
 		* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - German (Eine Flasche mit abgekochten Wasser)
-		* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a �t� remplie d'eau bouillie qui peut �tre consomm�e.)
+		* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a ï¿½tï¿½ remplie d'eau bouillie qui peut ï¿½tre consommï¿½e.)
 		* [UPDATED] - HMMWV Stroage has been updated to 4 weapons, 12 slots and 4 backpacks.
 		
 		* [FIXED] - HMMWV Should now be able to be repaired fully.
