@@ -123,7 +123,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 	// 120 sec timeout
-		while { _timeOut < 1200 && !dayz_clientPreload } do {
+		while { _timeOut < 3000 && !dayz_clientPreload } do {
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
@@ -268,8 +268,8 @@ if (!isDedicated) then {
 		};
 		*/
 		//Prevent exploit of drag body
-		if (_dikCode in actionKeys "Prone") then { force_dropBody = true; };
-		if (_dikCode in actionKeys "Crouch") then { force_dropBody = true; };
+		if ((_dikCode in actionKeys "Prone") and r_drag_sqf) then { force_dropBody = true; };
+		if ((_dikCode in actionKeys "Crouch") and r_drag_sqf) then { force_dropBody = true; };
 
 		if (_dikCode in actionKeys "MoveLeft") then {r_interrupt = true};
 		if (_dikCode in actionKeys "MoveRight") then {r_interrupt = true};

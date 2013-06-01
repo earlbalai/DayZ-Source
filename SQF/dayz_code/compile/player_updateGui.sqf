@@ -1,4 +1,4 @@
-private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible"];
+private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_uiNumber"];
 disableSerialization;
 
 _foodVal = 		1 - (dayz_hunger / SleepFood);
@@ -64,60 +64,34 @@ diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, d
 	Blood Regen & BloodLoss:
 */
 
-_bloodlossLvl = 0;
-if ((r_player_bloodlosspersec > 0) and (r_player_bloodlosspersec < 15)) then { _bloodlossLvl = 1; };
-if ((r_player_bloodlosspersec >= 15) and (r_player_bloodlosspersec < 25)) then { _bloodlossLvl = 2; };
-if (r_player_bloodlosspersec >= 25) then { _bloodlossLvl = 3; };
+switch true do {
+	case (r_player_bloodpersec <= -50): { _uiNumber = -3 };										// -3
+	case ((r_player_bloodpersec <= -25) and (r_player_bloodpersec > -50)): { _uiNumber = -2 };	// -2
+	case ((r_player_bloodpersec < 0) and (r_player_bloodpersec > -25)): { _uiNumber = -1 };		// -1
+	case (r_player_bloodpersec == 0): { _uiNumber = 0 };										//  0
+	case ((r_player_bloodpersec > 0) and (r_player_bloodpersec < 25)): { _uiNumber = 1 };		//  1
+	case ((r_player_bloodpersec >= 25) and (r_player_bloodpersec < 50)): { _uiNumber = 2 };		//  2
+	case (r_player_bloodpersec >= 50): { _uiNumber = 3 };										//  3
+	default { _uiNumber = 0 };
+};
 
-_bloodregenupLvl = 0;
-if ((r_player_bloodregen > 0) and (r_player_bloodregen < 500)) then { _bloodregenupLvl = 1; };
-if ((r_player_bloodregen >= 500) and (r_player_bloodregen < 2000)) then { _bloodregenupLvl = 2; };
-if (r_player_bloodregen >= 2000) then { _bloodregenupLvl = 3; };
-
-diag_log format [
-	"%1: r_player_infected: %2 r_player_injured: %3 _bloodlossLvl: %4 (%5) _bloodregenupLvl %6 (%7)",
-	__FILE__,
-	(r_player_infected),
-	(r_player_injured),
-	_bloodlossLvl,
-	r_player_bloodlosspersec,
-	_bloodregenupLvl,
-	r_player_bloodregen
-];
+_bloodText = "\z\addons\dayz_code\gui\status_blood_border";
 
 if (r_player_infected) then {
-	diag_log format ["%1: player is infected", __FILE__];
-	if ((r_player_injured) and (_bloodlossLvl > 0)) then {
-		diag_log format ["%1: player is bleeding", __FILE__];
-		_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_sick_ca.paa";
-		_ctrlBloodOuter ctrlSetText _bloodlosstext;
-	} else {
-		diag_log format ["%1: player is not bleeding", __FILE__];
-		if (r_player_bloodlosspersec > 0) then { r_player_bloodlosspersec = 0 };
-		_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_down1_sick_ca.paa";
-		_ctrlBloodOuter ctrlSetText _bloodouterreset;
+	switch true do {
+		case (_uiNumber < 0): { _bloodText = _bloodText + "_down" + str(_uiNumber * -1) + "_sick_ca.paa" };
+		case (_uiNumber > 0): { _bloodText = _bloodText + "_up" + str(_uiNumber) + "_sick_ca.paa" };
+		default { _bloodText = _bloodText + "_sick_ca.paa" };
 	};
 } else {
-	diag_log format ["%1: player is not infected", __FILE__];
-	if ((r_player_injured) and (_bloodlossLvl > 0)) then {
-		diag_log format ["%1: player is bleeding", __FILE__];
-		_bloodlosstext = "\z\addons\dayz_code\gui\status_blood_border_down" + str(_bloodlossLvl) + "_ca.paa";
-		_ctrlBloodOuter ctrlSetText _bloodlosstext;
-	} else {
-		diag_log format ["%1: player is not bleeding", __FILE__];
-		if (r_player_bloodlosspersec > 0) then { r_player_bloodlosspersec = 0 };
-		if (_bloodregenupLvl > 0) then {
-			diag_log format ["%1: player is regenerating blood", __FILE__];
-			_regenuptext = "\z\addons\dayz_code\gui\status_blood_border_up" + str(_bloodregenupLvl) + "_ca.paa";
-			_ctrlBloodOuter ctrlSetText _regenuptext;
-		} else {
-			diag_log format ["%1: player is not regenerating blood", __FILE__];
-			if (r_player_bloodregen > 0) then { r_player_bloodregen = 0 };
-			_bloodouterreset = "\z\addons\dayz_code\gui\status_blood_border_ca.paa";
-			_ctrlBloodOuter ctrlSetText _bloodouterreset;
-		};
+	switch true do {
+		case (_uiNumber < 0): { _bloodText = _bloodText + "_down" + str(_uiNumber * -1) + "_ca.paa" };
+		case (_uiNumber > 0): { _bloodText = _bloodText + "_up" + str(_uiNumber) + "_ca.paa" };
+		default { _bloodText = _bloodText + "_ca.paa" };
 	};
 };
+
+_ctrlBloodOuter ctrlSetText _bloodText;
 
 if (_bloodLvl <= 0) then { 
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";

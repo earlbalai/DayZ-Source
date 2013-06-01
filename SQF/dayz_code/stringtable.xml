@@ -29,7 +29,7 @@
 			<Dutch>Van gereedschapsriem afhalen</Dutch>
 		</Key>
 		<Key ID="STR_ACTION_CREATEQUIVER">
-			<English>Create quiver</English>
+			<English>Created quiver</English>
 			<Russian>Собрать колчан</Russian>
 			<Spanish>Crear Carcaj</Spanish>
 			<French>Créer un carquois</French>
@@ -3796,7 +3796,7 @@
 			<Spanish>Cartas</Spanish>
 			<Dutch>Cards</Dutch>
 			<French>Cards</French>
-			<Czech>Cards</Czech>
+			<Czech>Karty</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_CARDS">
 			<English>Pack of wet playing cards.</English>
@@ -3805,7 +3805,7 @@
 			<Spanish>Pack of wet playing cards.</Spanish>
 			<Dutch>Pack of wet playing cards.</Dutch>
 			<French>Pack of wet playing cards.</French>
-			<Czech>Pack of wet playing cards.</Czech>
+			<Czech>Navlhlý balíček hracích karet.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
 			<English>Fuelcan (5L)</English>
@@ -3960,7 +3960,7 @@
 			<Spanish>You have consumed a %1 giving %2 blood regen, stack %3</Spanish>
 			<Dutch>You have consumed a %1 giving %2 blood regen, stack %3</Dutch>
 			<French>You have consumed a %1 giving %2 blood regen, stack %3</French>
-			<Czech>You have consumed a %1 giving %2 blood regen, stack %3</Czech>
+			<Czech>Snědl jsi %1 což ti dalo %2 krve, stack %3</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
 			<English>You have consumed a %1</English>

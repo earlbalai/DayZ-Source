@@ -117,36 +117,78 @@ fnc_usec_self_removeActions = {
 	r_self_actions = [];
 };
 
-fnc_med_publicBlood = {
-	while {(r_player_injured or r_player_infected) and r_player_blood > 0} do {
-		player setVariable["USEC_BloodQty",r_player_blood,true];
-		player setVariable["medForceUpdate",true];
-		sleep 5;
+fnc_usec_calculateBloodPerSec = {
+	private["_bloodLossPerSec","_bloodGainPerSec","_bloodPerSec","_wounded"];
+	_bloodLossPerSec = 0;
+	_bloodGainPerSec = 0;
+	
+	if (r_player_injured) then {
+		_bloodLossPerSec = 10;
+		
+		{
+			_wounded = player getVariable["hit_"+_x,false];
+			
+			if (_wounded) then {
+				_bloodLossPerSec = _bloodLossPerSec + 10;
+			};
+		} forEach USEC_typeOfWounds;
 	};
+	
+	if (r_player_infected) then { _bloodLossPerSec = _bloodLossPerSec + 3 };
+	
+	if (r_player_bloodregen > 0) then {
+		_bloodGainPerSec = r_player_bloodregen / 12;
+		
+		if ((r_player_bloodregen / 4) < 25) then {
+			diag_log "r_player_bloodregen / 4";
+			_bloodGainPerSec = r_player_bloodregen / 4;
+		} else {
+			if ((r_player_bloodregen / 8) < 25) then {
+				diag_log "r_player_bloodregen / 8";
+				_bloodGainPerSec = r_player_bloodregen / 8;
+			};			
+		};
+		
+		r_player_bloodregen = r_player_bloodregen - _bloodGainPerSec;
+	};
+
+	r_player_bloodlosspersec = _bloodLossPerSec;
+	r_player_bloodgainpersec = _bloodGainPerSec;
+
+	_bloodPerSec = _bloodGainPerSec - _bloodLossPerSec;
+	r_player_bloodpersec = _bloodPerSec;
+	_bloodPerSec;
 };
 
-fnc_usec_playerBleed = {
-	private["_bleedTime","_bleedPerSec","_total","_bTime","_myBleedTime"];
-	_bleedTime = 400;		//seconds
-	_bleedPerSec = (r_player_bloodTotal / _bleedTime);
-	r_player_bloodlosspersec = _bleedPerSec;
-	_total = r_player_bloodTotal;
-	r_player_injured = true;
-	_myBleedTime = (random 500) + 100;
-	_bTime = 0;
-	while {r_player_injured} do {
-		//bleed out
-		if (r_player_blood > 0) then {
-			r_player_blood = r_player_blood - _bleedPerSec;
+fnc_usec_playerHandleBlood = {
+	private["_bloodPerSec","_bleedTime","_elapsedTime"];	
+	if (r_player_injured) then { // bleeding
+		_bleedTime = (random 500) + 100;
+		_elapsedTime = 0;
+		
+		while {(r_player_injured) and (r_player_blood > 0)} do {
+			_bloodPerSec = [] call fnc_usec_calculateBloodPerSec;
+			r_player_blood = r_player_blood + _bloodPerSec;
+			_elapsedTime = _elapsedTime + 1;
+			
+			if (_elapsedTime > _bleedTime) then {
+				r_player_injured = false;
+				_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
+				dayz_sourceBleeding = objNull;
+				call fnc_usec_resetWoundPoints;
+			};
+			
+			player setVariable["USEC_BloodQty",r_player_blood,true];
+			player setVariable["medForceUpdate",true];
+			
+			sleep 1;
 		};
-		_bTime = _bTime + 1;
-		if (_bTime > _myBleedTime) then {
-			r_player_injured = false;
-			_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
-			dayz_sourceBleeding =	objNull;
-			call fnc_usec_resetWoundPoints;
-		};
-		sleep 1;
+	} else { // not bleeding
+		_bloodPerSec = [] call fnc_usec_calculateBloodPerSec;
+		r_player_blood = r_player_blood + _bloodPerSec;
+		
+		player setVariable["USEC_BloodQty",r_player_blood,true];
+		player setVariable["medForceUpdate",true];
 	};
 };
 
@@ -155,47 +197,6 @@ fnc_usec_resetWoundPoints = {
 		player setVariable["hit_"+_x,false,true];
 	} forEach USEC_typeOfWounds;
 	player setVariable ["USEC_injured",false,true];
-};
-
-fnc_usec_playerBloodRegen = {
-	private["_bloodPerSec","_total"];
-	_bloodPercentage = (r_player_blood / r_player_bloodTotal);
-	//_skilllevel = (dayz_Survived / 6);
-
-	if ((r_player_injured) or (r_player_infected)) then {
-		if (r_player_bloodregen_prev == 0) then {
-			r_player_bloodregen_prev = r_player_bloodregen;
-		};
-		
-		r_player_bloodregen = 0;
-		_bloodPerSec = 0;
-	} else {
-		if (r_player_bloodregen_prev > 0) then {
-			r_player_bloodregen = r_player_bloodregen_prev;
-			r_player_bloodregen_prev = 0;
-		};
-		
-		_bloodPerSec = floor(r_player_bloodregen / 15);
-	};
-	
-	//r_player_bloodgainpersec = _bloodPerSec;
-
-	if (_bloodPerSec > r_player_bloodregen) then { _bloodPerSec = r_player_bloodregen; };
-
-	if ((r_player_bloodregen > _bloodPerSec) and (_bloodPerSec == 0)) then { _bloodPerSec = 1; };
-
-	r_player_bloodregen = floor(r_player_bloodregen - _bloodPerSec);
-
-	if ((r_player_bloodregen > 0) and (r_player_blood < 12000)) then {
-		//bleed regen
-		r_player_blood = r_player_blood + _bloodPerSec;
-		
-		player setVariable["USEC_BloodQty",r_player_blood,true];
-		player setVariable["medForceUpdate",true];
-		
-		//hintSilent format["SkillLevel: %1, BloodAmount: %2, BloodPerSec: %3",_skilllevel,r_player_bloodregen,_bloodPerSec];
-		//diag_log format["Survived/SkillLevel: %6/%5, Blood %1/%4 / Regen %2 / bleedPerSec %3",r_player_blood,r_player_bloodregen,_bloodPerSec,_bloodPercentage,_skilllevel,dayz_Survived];	
-	};
 };
 
 fnc_usec_damageBleed = {

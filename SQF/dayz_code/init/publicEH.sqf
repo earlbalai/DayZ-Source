@@ -30,15 +30,15 @@ if (isServer) then {
 	"PVDZ_plr_Death"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerDied};
 	//"dayzDiscoAdd"		addPublicVariableEventHandler {dayz_disco set [count dayz_disco,(_this select 1)];};
 	//"PVDZ_plr_Discorem"		addPublicVariableEventHandler {dayz_disco = dayz_disco - [(_this select 1)];};
-	"PVDZ_plr_Save"	addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync;};
+	"PVDZ_plr_Save"	addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync;};
 	"PVDZ_obj_Publish"	addPublicVariableEventHandler {(_this select 1) call server_publishObj};
 	"PVDZ_veh_Save" addPublicVariableEventHandler {(_this select 1) call server_updateObject};
-	"PVDZ_plr_Login1"			addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerLogin};
+	"PVDZ_plr_Login1"			addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 	//"dayzPlayerMorph"	addPublicVariableEventHandler {(_this select 1) call server_playerMorph};
 	//"dayzUpdate"		addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_processUpdate};
 	"PVDZ_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
-	//"dayzCharSave"		addPublicVariableEventHandler {_id = (_this select 1) spawn server_playerSync};
+	//"dayzCharSave"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerSync};
 	"PVDZ_obj_Delete"		addPublicVariableEventHandler {(_this select 1) spawn server_deleteObj};
 };
 
