@@ -194,8 +194,8 @@ while {true} do {
 		if (_result < 0) then {
 			_id = [player,"sick"] spawn player_death;
 		} else {
-			r_player_blood = _result;
-			player setVariable["USEC_BloodQty",r_player_blood];
+			//r_player_blood = _result;
+			//player setVariable["USEC_BloodQty",r_player_blood];
 		};
 	};
 	

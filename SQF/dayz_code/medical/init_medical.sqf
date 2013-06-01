@@ -37,11 +37,6 @@ while {true} do {
 		r_player_foodstack = 0; 
 	};
 	
-	//Call blood regen from food
-	if ((r_player_bloodregen > 0) and (r_player_blood < 12000)) then {
-		[] spawn fnc_usec_playerBloodRegen;
-	};
-	
 	if (r_player_blood <= 0) then {
 		[player,900] call fnc_usec_damageUnconscious;
 		_id = [dayz_sourceBleeding,"bled"] spawn player_death;
@@ -60,15 +55,13 @@ while {true} do {
 		[] spawn fnc_usec_unconscious;
 	};
 	
-	//Handle player bleeding
-	if ((r_player_injured or r_player_infected) and (!r_player_handler)) then {
-		r_player_handler = true;
-		sleep 1;
-		//localize "CLIENT: Start Player Bleeding";
-		if (r_player_injured) then {
-			[] spawn fnc_usec_playerBleed;	//publicizes the blood value at regular intervals
+	if (r_player_injured) then {
+		if (!r_player_handler) then {
+			r_player_handler = true;
+			[] spawn fnc_usec_playerHandleBlood;
 		};
-		[] spawn fnc_med_publicBlood;
+	} else {
+		[] spawn fnc_usec_playerHandleBlood;
 	};
 
 	//Add player actions
@@ -76,26 +69,29 @@ while {true} do {
 	[] call fnc_usec_selfActions;
 	
 	//Low Blood Effects
-	if (!r_player_unconscious) then {
-		if (((r_player_blood/r_player_bloodTotal) < 0.35)) then {
-			r_player_lowblood = true;
-			playSound "heartbeat_1";
-			addCamShake [2, 0.5, 25];
-			if (r_player_lowblood) then {
-				0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);
-				"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [4]; "dynamicBlur" ppEffectCommit 0.2;
-			};
-			sleep 0.5;
-			if (r_player_lowblood) then {
-				"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 0.5;
-			};
-			sleep 0.5;
-			_lowBlood =	player getVariable ["USEC_lowBlood", false];
-			if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
-				player setVariable["USEC_lowBlood",true,true];
+	[] spawn {
+		if (!r_player_unconscious) then {
+			if (((r_player_blood/r_player_bloodTotal) < 0.35)) then {
+				r_player_lowblood = true;
+				playSound "heartbeat_1";
+				addCamShake [2, 0.5, 25];
+				if (r_player_lowblood) then {
+					0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);
+					"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [4]; "dynamicBlur" ppEffectCommit 0.2;
+				};
+				sleep 0.5;
+				if (r_player_lowblood) then {
+					"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 0.5;
+				};
+				sleep 0.5;
+				_lowBlood =	player getVariable ["USEC_lowBlood", false];
+				if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
+					player setVariable["USEC_lowBlood",true,true];
+				};
 			};
 		};
 	};
+	
 	sleep 1;
 };
 endLoadingScreen;
