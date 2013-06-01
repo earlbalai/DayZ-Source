@@ -38,6 +38,7 @@ if (_sfx == "") then {_sfx = "eat"};
 //disminishing returns. while regen is active
 r_player_foodstack = r_player_foodstack + 1;
 //_skilllevel = (dayz_Survived / 6);
+regen = 0;
 if ((r_player_bloodregen > 5) and (r_player_foodstack > 1) and (r_player_foodstack < 10)) then {
 	_regen = _regen / r_player_foodstack;
 //	diag_log ("Regen: " +str(_regen));
@@ -104,4 +105,4 @@ _display = uiNamespace getVariable 'DAYZ_GUI_display';
 if (r_player_blood / r_player_bloodTotal >= 0.2) then {
     (_display displayCtrl 1300) ctrlShow true;
 };
-cutText [format[(localize  "str_player_consumed"),_text], "PLAIN DOWN"];
+cutText [format[(localize  "str_player_consumed_food"),_text,_regen,r_player_foodstack], "PLAIN DOWN"];

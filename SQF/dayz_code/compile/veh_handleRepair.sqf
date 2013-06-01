@@ -16,7 +16,7 @@ if (_selection == "?") then { _selection = ""; }; // bad arma triggered event (w
 _dam = 1 min (0 max (_this select 2));
 _SVname = "hit_" + _selection;
 
-diag_log(format["%1 this:%2", __FILE__, _this]);
+//diag_log(format["%1 this:%2", __FILE__, _this]);
 
 if (local _unit) then {
 	_globalDam = damage _unit;
@@ -24,7 +24,7 @@ if (local _unit) then {
 		// only local unit can set the damage of a vehicle part
 		_unit setVariable [_SVname, 0, true];
 		_unit setHit [_selection, 0];
-		diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, 0]);
+	//diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, 0]);
 		// we change also global damage, according to number of vehicle parts
 		_globalDam = 0.01 max (_globalDam - 1.3/(1+(count (_unit call vehicle_getHitpoints))));
 	}
@@ -32,7 +32,7 @@ if (local _unit) then {
 		_globalDam = 0.01; // not 0 otherwise all parts will be magically repaired
 	};
 	_unit setDamage _globalDam;
-	diag_log(format["%1: %2 setDamage %3 %4", __FILE__, _unit, _globalDam]);
+	//diag_log(format["%1: %2 setDamage %3 %4", __FILE__, _unit, _globalDam]);
 	if (!isServer) then {
 		PVDZ_veh_Save = [_unit, "repair"];
 		publicVariableServer "PVDZ_veh_Save";		

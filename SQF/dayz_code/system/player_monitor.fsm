@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "E:\Applications\Arma Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Player Monitor">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"init"};
@@ -16,56 +16,58 @@ item11[] = {"Make_PlayerID",2,250,-200.000000,175.000000,-100.000000,225.000000,
 item12[] = {"Has_PlayerID",4,218,-75.000000,175.000000,25.000000,225.000000,1.000000,"Has PlayerID"};
 item13[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000000,"no PlayerID"};
 item14[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
-item15[] = {"Request",2,250,-75.000000,250.000000,25.000000,300.000000,0.000000,"Request"};
-item16[] = {"Response",4,218,-175.000000,300.000000,-75.000000,350.000000,0.000000,"Response"};
-item17[] = {"Parse_Login",2,250,-75.000000,350.000000,25.000000,400.000000,0.000000,"Parse Login"};
-item18[] = {"Hive_Bad",4,218,50.000000,350.000000,150.000000,400.000000,10.000000,"Hive" \n "Bad"};
-item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,350.000000,275.000000,400.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
-item20[] = {"Hive_Ok",4,218,-175.000000,400.000000,-75.000000,450.000000,0.000000,"Hive" \n "Ok"};
-item21[] = {"Phase_One",2,250,-75.000000,450.000000,25.000000,500.000000,0.000000,"Phase One"};
-item22[] = {"Response",4,218,-175.000000,500.000000,-75.000000,550.000000,0.000000,"Response"};
-item23[] = {"Phase_Two",2,250,-75.000000,550.000000,25.000000,600.000000,0.000000,"Phase Two"};
-item24[] = {"Dead_Player",4,218,50.000000,550.000000,150.000000,600.000000,0.000000,"Dead" \n "Player"};
-item25[] = {"ERROR__Player_Already",2,250,175.000000,550.000000,275.000000,600.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
-item26[] = {"Alive",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Alive"};
-item27[] = {"Position",2,250,-75.000000,650.000000,25.000000,700.000000,0.000000,"Position"};
-item28[] = {"Version_Ok",4,218,-175.000000,700.000000,-75.000000,750.000000,0.000000,"Version" \n "Ok"};
-item29[] = {"Load_In",2,250,-75.000000,850.000000,25.000000,900.000000,0.000000,"Load In"};
-item30[] = {"Bad_Version",4,218,50.000000,650.000000,150.000000,700.000000,0.000000,"Bad" \n "Version"};
-item31[] = {"ERROR__Bad_Versi",2,250,175.000000,650.000000,275.000000,700.000000,0.000000,"ERROR:" \n "Bad Version"};
-item32[] = {"Display_Ready",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Display" \n "Ready"};
-item33[] = {"Preload_Display",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Preload" \n "Display"};
-item34[] = {"Preload_Done",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,4346,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Initialize"};
-item36[] = {"Finish",1,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Finish"};
-item37[] = {"True",8,218,25.000000,1100.000000,125.000000,1150.000000,0.000000,"True"};
+item15[] = {"Request",2,250,-75.000000,500.000000,25.000000,550.000000,0.000000,"Request"};
+item16[] = {"Response",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Response"};
+item17[] = {"Parse_Login",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Parse Login"};
+item18[] = {"Hive_Bad",4,218,50.000000,600.000000,150.000000,650.000000,10.000000,"Hive" \n "Bad"};
+item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,600.000000,275.000000,650.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
+item20[] = {"Hive_Ok",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Hive" \n "Ok"};
+item21[] = {"Phase_One",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase One"};
+item22[] = {"Response",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Response"};
+item23[] = {"Phase_Two",2,250,-75.000000,800.000000,25.000000,850.000000,0.000000,"Phase Two"};
+item24[] = {"Dead_Player",4,218,50.000000,800.000000,150.000000,850.000000,0.000000,"Dead" \n "Player"};
+item25[] = {"ERROR__Player_Already",2,250,175.000000,800.000000,275.000000,850.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
+item26[] = {"Alive",4,218,-175.000000,850.000000,-75.000000,900.000000,0.000000,"Alive"};
+item27[] = {"Position",2,250,-75.000000,900.000000,25.000000,950.000000,0.000000,"Position"};
+item28[] = {"Version_Ok",4,218,-175.000000,950.000000,-75.000000,1000.000000,0.000000,"Version" \n "Ok"};
+item29[] = {"Load_In",2,250,-75.000000,1100.000000,25.000000,1150.000000,0.000000,"Load In"};
+item30[] = {"Bad_Version",4,218,50.000000,900.000000,150.000000,950.000000,0.000000,"Bad" \n "Version"};
+item31[] = {"ERROR__Bad_Versi",2,250,175.000000,900.000000,275.000000,950.000000,0.000000,"ERROR:" \n "Bad Version"};
+item32[] = {"Display_Ready",4,218,-175.000000,1150.000000,-75.000000,1200.000000,0.000000,"Display" \n "Ready"};
+item33[] = {"Preload_Display",2,250,-75.000000,1200.000000,25.000000,1250.000000,0.000000,"Preload" \n "Display"};
+item34[] = {"Preload_Done",4,218,-175.000000,1250.000000,-75.000000,1300.000000,0.000000,"Preload" \n "Done"};
+item35[] = {"Initialize",2,250,-75.000000,1300.000000,25.000000,1350.000000,0.000000,"Initialize"};
+item36[] = {"Finish",1,250,-75.000000,1400.000000,25.000000,1450.000000,0.000000,"Finish"};
+item37[] = {"True",8,218,25.000000,1350.000000,125.000000,1400.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
-item39[] = {"Too_Long",4,218,300.000000,350.000000,400.000000,400.000000,0.000000,"Too" \n "Long"};
-item40[] = {"Too_Long",4,218,300.000000,550.000000,400.000000,600.000000,0.000000,"Too" \n "Long"};
-item41[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
+item39[] = {"Too_Long",4,218,300.000000,600.000000,400.000000,650.000000,0.000000,"Too" \n "Long"};
+item40[] = {"Too_Long",4,218,300.000000,800.000000,400.000000,850.000000,0.000000,"Too" \n "Long"};
+item41[] = {"Too_Long",4,218,300.000000,900.000000,400.000000,950.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
 item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
-item44[] = {"New_Character",4,218,-275.000000,350.000000,-175.000000,400.000000,5.000000,"New" \n "Character"};
-item45[] = {"Gender_Selection",2,250,-400.000000,350.000000,-300.000000,400.000000,0.000000,"Gender Selection" \n "Dialog"};
-item46[] = {"Selected",4,218,-400.000000,450.000000,-300.000000,500.000000,0.000000,"Selected"};
-item47[] = {"Process",2,250,-275.000000,450.000000,-175.000000,500.000000,0.000000,"Process"};
+item44[] = {"New_Character",4,218,-275.000000,600.000000,-175.000000,650.000000,5.000000,"New" \n "Character"};
+item45[] = {"Gender_Selection",2,250,-400.000000,600.000000,-300.000000,650.000000,0.000000,"Gender Selection" \n "Dialog"};
+item46[] = {"Selected",4,218,-400.000000,700.000000,-300.000000,750.000000,0.000000,"Selected"};
+item47[] = {"Process",2,250,-275.000000,700.000000,-175.000000,750.000000,0.000000,"Process"};
 item48[] = {"no_PlayerID",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
 item49[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item50[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
-item51[] = {"Stream",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Stream"};
-item52[] = {"Preloaded",4,218,-175.000000,800.000000,-75.000000,850.000000,0.000000,"Preloaded"};
-item53[] = {"Retry",4,218,25.000000,225.000000,125.000000,275.000000,0.000000,"Retry"};
-item54[] = {"retry_",4,218,25.000000,275.000000,125.000000,325.000000,0.000000,"retry" \n ""};
-item55[] = {"Retry",2,250,125.000000,250.000000,225.000000,300.000000,0.000000,"Retry"};
-item56[] = {"auth_failed",4,218,250.000000,250.000000,350.000000,300.000000,0.000000,"auth failed"};
-item57[] = {"get_ready_to_clo",2,250,400.000000,250.000000,500.000000,300.000000,0.000000,"get ready to close"};
-item58[] = {"sleep_",4,218,550.000000,250.000000,650.000000,300.000000,0.000000,"sleep" \n ""};
-item59[] = {"Disconnect",2,250,675.000000,250.000000,775.000000,300.000000,0.000000,"Disconnect"};
-item60[] = {"No_time_date",4,218,25.000000,1000.000000,125.000000,1050.000000,0.000000,"No time/date"};
-item61[] = {"ERROR__No_Date_or",2,250,175.000000,1000.000000,275.000000,1050.000000,0.000000,"ERROR:" \n "No Date or Time"};
-item62[] = {"Too_Long",4,218,300.000000,1000.000000,400.000000,1050.000000,0.000000,"Too" \n "Long"};
-item63[] = {"get_ready_to_clo_1",2,250,450.000000,650.000000,550.000000,700.000000,0.000000,"get ready to close"};
-item64[] = {"sleep_",4,218,600.000000,650.000000,700.000000,700.000000,0.000000,"sleep" \n ""};
+item51[] = {"Stream",2,250,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Stream"};
+item52[] = {"Preloaded",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Preloaded"};
+item53[] = {"Retry",4,218,25.000000,475.000000,125.000000,525.000000,0.000000,"Retry"};
+item54[] = {"retry_",4,218,25.000000,525.000000,125.000000,575.000000,0.000000,"retry" \n ""};
+item55[] = {"Retry",2,250,125.000000,500.000000,225.000000,550.000000,0.000000,"Retry"};
+item56[] = {"auth_failed",4,218,250.000000,500.000000,350.000000,550.000000,0.000000,"auth failed"};
+item57[] = {"get_ready_to_clo",2,250,400.000000,500.000000,500.000000,550.000000,0.000000,"get ready to close"};
+item58[] = {"sleep_",4,218,550.000000,500.000000,650.000000,550.000000,0.000000,"sleep" \n ""};
+item59[] = {"Disconnect",2,250,675.000000,500.000000,775.000000,550.000000,0.000000,"Disconnect"};
+item60[] = {"No_time_date",4,218,25.000000,1250.000000,125.000000,1300.000000,0.000000,"No time/date"};
+item61[] = {"ERROR__No_Date_or",2,250,175.000000,1250.000000,275.000000,1300.000000,0.000000,"ERROR:" \n "No Date or Time"};
+item62[] = {"Too_Long",4,218,300.000000,1250.000000,400.000000,1300.000000,0.000000,"Too" \n "Long"};
+item63[] = {"get_ready_to_clo_1",2,250,450.000000,900.000000,550.000000,950.000000,0.000000,"get ready to close"};
+item64[] = {"sleep_",4,218,600.000000,900.000000,700.000000,950.000000,0.000000,"sleep" \n ""};
+item65[] = {"_",2,250,-75.000000,300.000000,25.000000,350.000000,0.000000,""};
+item66[] = {"Retry",4,4314,-75.000000,375.000000,25.000000,425.000000,0.000000,"Retry"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -81,7 +83,7 @@ link11[] = {9,12};
 link12[] = {9,13};
 link13[] = {10,11};
 link14[] = {11,12};
-link15[] = {12,15};
+link15[] = {12,65};
 link16[] = {13,14};
 link17[] = {14,38};
 link18[] = {15,16};
@@ -140,8 +142,10 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-globals[] = {25.000000,1,0,0,0,640,480,1,95,6316128,1,-203.815994,244.646011,1615.449463,900.991943,441,635,1};
-window[] = {0,-1,-1,-1,-1,905,125,1497,125,1,459};
+link74[] = {65,66};
+link75[] = {66,15};
+globals[] = {25.000000,1,0,0,0,640,480,1,98,6316128,1,-425.529388,595.197388,872.208374,60.757549,756,601,1};
+window[] = {2,-1,-1,-32000,-32000,912,132,1504,132,3,773};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -162,7 +166,7 @@ class FSM
        "" \n
        "progressLoadingScreen 0.1;" \n
        "" \n
-       "_timeStart = time;" \n
+       "_timeStart = diag_tickTime;" \n
        "//player enableSimulation false;" \n
        "" \n
        ""/*%FSM</STATEINIT""">*/;
@@ -291,6 +295,7 @@ class FSM
            "	_config = 		configFile >> ""CfgMovesMaleSdr"" >> ""States"" >> _currentAnim;" \n
            "	_onLadder =		(getNumber (_config >> ""onLadder"")) == 1;" \n
            "	_isTerminal = 	(getNumber (_config >> ""terminal"")) == 1;" \n
+           "	_isInVehicle = vehicle player != player;" \n
            "	//_wpnDisabled =	(getNumber (_config >> ""disableWeapons"")) == 1;" \n
            "	_currentModel = typeOf player;" \n
            "	_charPos = getPosATL player;" \n
@@ -328,7 +333,7 @@ class FSM
            "		PVDZ_plr_Save call server_playerSync;" \n
            "	};" \n
            "						" \n
-           "	dayz_lastSave = time;" \n
+           "	dayz_lastSave = diag_tickTime;" \n
            "	dayz_Magazines = [];" \n
            "};"/*%FSM</ACTION""">*/;
         };
@@ -395,7 +400,7 @@ class FSM
         class Has_PlayerID
         {
           priority = 1.000000;
-          to="Request";
+          to="_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!(isNil ""_playerUID"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -419,7 +424,7 @@ class FSM
         class Has_PlayerID
         {
           priority = 1.000000;
-          to="Request";
+          to="_";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!(isNil ""_playerUID"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -434,7 +439,7 @@ class FSM
       name = "ERROR__No_Player";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        "1 cutText [localize ""str_player_14"", ""PLAIN"",15];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -445,7 +450,7 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -474,7 +479,7 @@ class FSM
        "" \n
        "dayzPlayerLogin = [];" \n
        "" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -485,7 +490,7 @@ class FSM
           priority = 0.000000;
           to="Retry";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -594,7 +599,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
        "" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        "1 cutText [""This server is running an incorrect version of the server side application. You cannot play on this server. If you are the server admin please contact DayZ staff."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -605,7 +610,7 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -738,13 +743,13 @@ class FSM
        "player setPosATL _setPos;" \n
        "player setDir _setDir;" \n
        "" \n
-		"{" \n
-		"	if (player getVariable[""hit_""+_x,false]) then { " \n
-		"		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
-		"		PVDZ_hlt_Bleed = [player,_x,_x];" \n
-		"		publicVariable ""PVDZ_hlt_Bleed""; // draw blood stream on character, on all gameclients" \n
-		"	};" \n
-		"} forEach USEC_typeOfWounds;" \n
+       "{" \n
+       "	if (player getVariable[""hit_""+_x,false]) then { " \n
+       "		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
+       "		PVDZ_hlt_Bleed = [player,_x,_x];" \n
+       "		publicVariable ""PVDZ_hlt_Bleed""; // draw blood stream on character, on all gameclients" \n
+       "	};" \n
+       "} forEach USEC_typeOfWounds;" \n
        "//Legs and Arm fractures" \n
        "_legs = player getVariable [""hit_legs"",0];" \n
        "_arms = player getVariable [""hit_hands"",0];" \n
@@ -876,7 +881,7 @@ class FSM
       name = "ERROR__Player_Already";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -887,7 +892,7 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -992,7 +997,7 @@ class FSM
       name = "ERROR__Bad_Versi";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        "" \n
        "dayz_loadScreenMsg = ""You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads."";" \n
        "" \n
@@ -1008,7 +1013,7 @@ class FSM
           priority = 0.000000;
           to="get_ready_to_clo_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1199,7 +1204,7 @@ class FSM
        "	while {true} do {" \n
        "	//	fps_safty_check = diag_fpsmin;" \n
        "	//	if (fps_safty_check > 20) then {" \n
-       "			[""both""] call player_spawnCheck;" \n
+       "			[""both""] spawn player_spawnCheck;" \n
        "			sleep 8;" \n
        "	//	};" \n
        "	};" \n
@@ -1221,6 +1226,17 @@ class FSM
        "	" \n
        "		diag_log format[ ""Survivors:%1, FPS:%2, FPSMin:%3"", _survivors, round diag_fps, round diag_fpsmin];" \n
        "		sleep 10;" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "dayz_HintMontior = [] spawn {" \n
+       "	// GUI update" \n
+       "" \n
+       "	while {true} do {" \n
+       "	" \n
+       "		hintSilent format [""Visible: %1\nAudible: %2\n"",DAYZ_disVisual,DAYZ_disAudial];" \n
+       "	sleep 0.1;" \n
+       "" \n
        "	};" \n
        "};" \n
        "" \n
@@ -1366,7 +1382,7 @@ class FSM
       name = "ERROR__No_Player_1";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        "1 cutText [""You have an outdated version of 'dayz_anim' please download the correct version"", ""PLAIN"",15];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -1377,7 +1393,7 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1420,7 +1436,7 @@ class FSM
        "" \n
        "_AuthAttempt = _AuthAttempt +1;" \n
        "" \n
-       "_myTime = time;"/*%FSM</STATEINIT""">*/;
+       "_myTime = diag_tickTime;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1440,7 +1456,7 @@ class FSM
           priority = 0.000000;
           to="Request";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1464,7 +1480,7 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 5"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1496,7 +1512,7 @@ class FSM
       name = "ERROR__No_Date_or";
       init = /*%FSM<STATEINIT""">*/"endLoadingScreen;" \n
        "selectNoPlayer;" \n
-       "_myTime = time;" \n
+       "_myTime = diag_tickTime;" \n
        "1 cutText [""Could not retive date and time from server disconect and retry."", ""PLAIN"",5];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -1507,7 +1523,7 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 10"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -1533,7 +1549,34 @@ class FSM
           priority = 0.000000;
           to="Disconnect";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _myTime) > 5"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "_">*/
+    class _
+    {
+      name = "_";
+      init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime;" \n
+       "" \n
+       "diag_log (""PLOGIN: Waiting for Server... ("" + _playerUID + "")"");" \n
+       "" \n
+       "dayz_loadScreenMsg = ""Waiting, server is not ready to accept connections."";" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Retry">*/
+        class Retry
+        {
+          priority = 0.000000;
+          to="Request";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

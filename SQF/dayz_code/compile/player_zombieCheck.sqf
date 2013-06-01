@@ -19,7 +19,10 @@ _multiplier = 1;
 			//perform an attack
 			_last = _x getVariable["lastAttack", 0];
 			if ((diag_tickTime - _last) > 2) then {
-				_attackResult = [_x,  _type] call player_zombieAttack;
+				_cantSee = [ _refObj,_x] call dayz_losCheck;
+				if (!_cantSee) then {
+					_attackResult = [_x,  _type] call player_zombieAttack;
+				};
 				//diag_log(format["%1 %2 %3 / as:%4 up:%5 ur:%6 sp:%7",  __FILE__,  _x,  _attackResult,  animationState player,  unitPos player,  unitReady _x,  [0, 0, 0] distance (velocity player)]);
 				if (_attackResult == "") then {
 					_x setVariable["lastAttack", diag_tickTime - random(1)];
