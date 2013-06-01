@@ -57,7 +57,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 			_listTalk = _pos nearEntities ["zZombie_Base",50];
 				
 			{
-				_x setVariable ["myDest",_pos,true];
+				_x setVariable ["myDest",_pos]; // removed networked var.  targets should be enough
 			} forEach _listTalk;
 		};
 	};

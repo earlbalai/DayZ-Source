@@ -148,8 +148,8 @@ if (count _stats > 0) then {
 	//record for Server JIP checks
 	_playerObj setVariable["zombieKills_CHK",(_stats select 0)];
 	_playerObj setVariable["headShots_CHK",(_stats select 1)];
-	_playerObj setVariable["humanKills_CHK",(_stats select 2)];
-	_playerObj setVariable["banditKills_CHK",(_stats select 3)];
+	//_playerObj setVariable["humanKills_CHK",(_stats select 2)]; // not used???
+	//_playerObj setVariable["banditKills_CHK",(_stats select 3)]; // not used????
 	if (count _stats > 4) then {
 		if (!(_stats select 3)) then {
 			_playerObj setVariable["selectSex",true,true];
@@ -167,8 +167,8 @@ if (count _stats > 0) then {
 	
 	//record for Server JIP checks
 	_playerObj setVariable["zombieKills_CHK",0];
-	_playerObj setVariable["humanKills_CHK",0,true];
-	_playerObj setVariable["banditKills_CHK",0,true];
+	//_playerObj setVariable["humanKills_CHK",0,true]; // not used??
+	//_playerObj setVariable["banditKills_CHK",0,true]; // not used????
 	_playerObj setVariable["headShots_CHK",0];
 };
 
