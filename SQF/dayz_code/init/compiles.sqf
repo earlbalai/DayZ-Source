@@ -123,7 +123,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 	// 120 sec timeout
-		while { _timeOut < 1200 && !dayz_clientPreload } do {
+		while { _timeOut < 3000 && !dayz_clientPreload } do {
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
