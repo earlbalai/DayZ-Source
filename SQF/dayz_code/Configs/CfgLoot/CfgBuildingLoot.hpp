@@ -226,8 +226,6 @@ class CfgBuildingLoot {
 			{"bizon_silenced","weapon",0.05},
 			{"M14_EP1","weapon",0.05},
 			{"FN_FAL_ANPVS4","weapon",0.01},
-			{"M107_DZ","weapon",0.01},
-			{"BAF_AS50_scoped_DZ","weapon",0.01},
 			{"Mk_48_DZ","weapon",0.03},
 			{"M249_DZ","weapon",0.04},
 			{"BAF_L85A2_RIS_SUSAT","weapon",0.03},
