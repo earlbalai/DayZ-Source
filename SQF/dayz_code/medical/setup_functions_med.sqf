@@ -140,11 +140,9 @@ fnc_usec_calculateBloodPerSec = {
 		_bloodGainPerSec = r_player_bloodregen / 12;
 		
 		if ((r_player_bloodregen / 4) < 25) then {
-			diag_log "r_player_bloodregen / 4";
 			_bloodGainPerSec = r_player_bloodregen / 4;
 		} else {
 			if ((r_player_bloodregen / 8) < 25) then {
-				diag_log "r_player_bloodregen / 8";
 				_bloodGainPerSec = r_player_bloodregen / 8;
 			};			
 		};
