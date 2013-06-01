@@ -60,7 +60,7 @@ Serverside affected addons:
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
-		* [NEW] - Blood from food and transfusions will now generate over time (no longer instant).
+		* [NEW] - All blood gained from food is now added into a regenreation pool that players will regenerate over time
 		* [NEW] - All food types now have a diminishing effect so the more you try and eat at once, the less blood you will get in return.
 		* [NEW] - Blood UI updated to indicate the player's blood loss / gain rate and will also indicate when you're sick (infected).
 		* [NEW] - Bloodbags will no longer transfer 12000 blood instantly, it's now done over 12 seconds (1000 blood per second). If the medic breaks away from the transfusion animation or the recipient moves out of range, the transfer stops and the remaining amount is lost along with the bloodbag in use.
@@ -71,7 +71,7 @@ Serverside affected addons:
 	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash model.
 	    * [FIXED] - Hero Skin teleport issue.
 	    * [FIXED] - BAF Bags so they don't set on fire. :-) (no moaning it was a bug)
-	    * [FIXED] - Updated timeout timer from 40 secs to 60 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
+	    * [FIXED] - Updated timeout timer from 40 secs to 120 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
 	    * [FIXED] - Zeds spawning underground.
 	    * [FIXED] - Loot spawning underground.
 	    * [FIXED] - Melee weapons having no ammo on login/skin change. (Open close gear menu will always reset ammo count to 10000)
@@ -84,9 +84,10 @@ Serverside affected addons:
 	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
 	    * [FIXED] - A lot of dupeing issues should now be resolved.
 	    * [FIXED] - Most wallhack exploits should now be resolved.
-	    * [FIXED] - M107 & AS50 Lock on system removed.
+	    * [FIXED] - No more 3x get up Animation loop when recovering from unconscious
+	    * [FIXED] - You can no longer get into vehicles while dragging players
 		
-		* [UPDATED] - Zed sight limited to 100 meters.
+	    * [UPDATED] - Zed sight limited to 100 meters.
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Updated chicken - hp gain. Raw - 200 each / Cooked - 1000 each.
 	    * [UPDATED] - Moved anti teleport system to mission. Server admins can choose to enable/disable. (See prerequisites)
@@ -110,8 +111,6 @@ Serverside affected addons:
 	    * [UPDATED] - Add crawl animation damage. Players will now take dmg from crawling zeds.
 	    * [UPDATED] - Updated zed speed to default.
 	    * [UPDATED] - Melee systems updated.
-	    * [UPDATED] - M107 lowered chance in loot tables.
-	    * [UPDATED] - AS50 lowered chance in loot tables.
 	    * [UPDATED] - Old Bandit skin for male characters.
 	    * [UPDATED] - Lowered action sound for refuel from 10 meters to 5.
 	    * [UPDATED] - Lowered Direct comms action sound.
@@ -130,10 +129,11 @@ Serverside affected addons:
 	    * [UPDATED] - Up to +/-2000 Humanity gain/loss according to "humanKills" counter from killed character.
 	    * [UPDATED] - Refuel now locks the player in place for the time to fill.
 	    * [UPDATED] - More lootable buildings (Iron barn, car wrecks, several non enterable buildings...)
-		* [UPDATED] - 2 Chopper crash sites spawn on server start + 2-3 infected Camps.
-		* [UPDATED] - Sickness(Infection) can now cause death.
-	    
-	    
+	    * [UPDATED] - 3 Chopper crash sites spawn on server start + 2-3 infected Camps.
+	    * [UPDATED] - Sickness(Infection) can now cause death.
+		
+		
+	    * [REMOVED] - Removed M107 and AS50(Banned) from all loot tables and removed all damage from bullets so they do 0 damage even if spawned in.
 ______________________
 Version 1.7.6.1
 ---------------
@@ -310,7 +310,7 @@ Affected addons:
 	Changes:
 
 		* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - German (Eine Flasche mit abgekochten Wasser)
-		* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a �t� remplie d'eau bouillie qui peut �tre consomm�e.)
+		* [UPDATED] - STR_ITEMWATERBOTTLEBOILED_CODE_DESC - French (Une bouteille a ï¿½tï¿½ remplie d'eau bouillie qui peut ï¿½tre consommï¿½e.)
 		* [UPDATED] - HMMWV Stroage has been updated to 4 weapons, 12 slots and 4 backpacks.
 		
 		* [FIXED] - HMMWV Should now be able to be repaired fully.
