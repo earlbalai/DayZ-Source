@@ -1,3 +1,8 @@
+/*
+        Created exclusively for ArmA2:OA - DayZMod.
+        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
+*/
+
 // These RE commands will be cancelled once init.sqf is exec'ed on client or server
 #ifndef REMOVED_LIB
 #define REMOVED_LIB  [ "addAction", "addEventhandler", "addMagazine", "addMagazineCargo", "addWeapon", \

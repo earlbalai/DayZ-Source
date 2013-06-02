@@ -1,3 +1,7 @@
+/*
+        Created exclusively for ArmA2:OA - DayZMod.
+        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
+*/
 
 // check if arg#0 is inside or on the roof of a building
 // second argument is optional:

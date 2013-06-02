@@ -250,7 +250,7 @@ class FSM
            "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
            "};" \n
            "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
+           "	_agent setVariable[""doLoiter"",true];" \n
            "};" \n
            "_countr = 0;" \n
            "_losCheck = 0;" \n
@@ -345,7 +345,7 @@ class FSM
            "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
            "};" \n
            "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
+           "	_agent setVariable[""doLoiter"",true];" \n
            "};" \n
            "_countr = 0;" \n
            "_losCheck = 0;" \n

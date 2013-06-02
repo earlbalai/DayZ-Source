@@ -100,5 +100,5 @@ while {alive player} do
 		_toph = 0;
 	};
 	
-	sleep 0.5;
+	sleep 0.25;
 };

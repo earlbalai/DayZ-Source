@@ -1,3 +1,8 @@
+/*
+        Created exclusively for ArmA2:OA - DayZMod.
+        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
+*/
+
 #include "REsec.hpp"
 waitUntil{!isNil "BIS_MPF_InitDone"};private["_ofn","_nfn"];{_ofn=format["r%1code",_x];_nfn=format["r%1code%2",_x,round(random(100000))];if(_x=="execVM")then{call compile format["%1=%2;%2={if((count _this>=3)AND{(!((_this select 2)IN%3))})then{diag_log(""WARNING RE %2 with illegal args:""+str(_this));}else{_this call %1}};",_nfn,_ofn,Stringify(WHITELISTED_EXECVM)];}else{
 #ifdef RESEC_VERBOSE
