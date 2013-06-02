@@ -26,7 +26,7 @@ if (_hasitemcount == 2) then { _stashtype =   getText (_config >> "stashmedium")
 
 // Items are missing
 if ((!(_consume IN magazines player))) exitWith {
-	cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_build")] , "PLAIN DOWN"];
+	cutText [format[(localize "str_player_31_stash"),_consume,(localize "str_player_31_build")] , "PLAIN DOWN"];
 };
 
 _location = player modeltoworld [0,2.5,0];
@@ -67,7 +67,8 @@ if ((count _worldspace) == 2) then {
 	
 	publicVariableServer "PVDZ_obj_Publish";
 	
-	cutText [localize "str_success_stash_pitch",_config "PLAIN DOWN"];
+	cutText [format[(localize "str_success_stash_pitch"),_stashtype], "PLAIN DOWN"];
+	//cutText [format[(localize "str_player_31_missingtools"),_config,_consume,(localize "str_player_31_build")] , "PLAIN DOWN"];
 } else {
-	cutText [localize "str_fail_stash_pitch",_config "PLAIN DOWN"];
+	cutText [format[(localize "str_fail_stash_pitch"),_stashtype], "PLAIN DOWN"];
 };
