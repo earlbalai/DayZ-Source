@@ -34,7 +34,7 @@ player playActionNow "PutDown";
 //Adding random chance of arrow is re-usable on pickup
 _broken = false;
 if(_classname == "WoodenArrow") then {
-	if (20 > random 100) then {
+	if (15 > random 100) then {
 		_broken = true;
 	};
 };
