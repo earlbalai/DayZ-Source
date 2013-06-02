@@ -1,4 +1,7 @@
-
+/*
+       Created exclusively for ArmA2:OA - DayZMod.
+       Please request permission to use/alter/distribute from project leader (R4Z0R49).
+*/
 private ["_centerPos", "_placePrecision", "_placeMaxGradient", "_placeMinDistance", "_placeSearchRadius", "_placeSearchExpr", "_baseClass", "_small", "_medium", "_large", "_amount", "_radius", "_lootMinRadius", "_lootMaxRadius", "_objectMinRadius", "_objectMaxRadius", "_randomObjects", "_guaranteedObjects", "_randomLoot", "_guaranteedLoot", "_qty", "_basePos", "_tmpobject", "_b", "_lootradius", "_addLoot", "_addWrecks", "_campList", "_nextPos"];
 
 _qty = _this select 0;
