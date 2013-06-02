@@ -67,7 +67,7 @@ if ((count _worldspace) == 2) then {
 	
 	publicVariableServer "PVDZ_obj_Publish";
 	
-	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
+	cutText [localize "str_success_stash_pitch",_config "PLAIN DOWN"];
 } else {
-	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
+	cutText [localize "str_fail_stash_pitch",_config "PLAIN DOWN"];
 };
