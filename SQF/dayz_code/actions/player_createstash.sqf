@@ -20,7 +20,7 @@ _hasitemcount = {_x == _consume} count magazines player;
 
 //if ("ItemSandbag" in magazines player) then { _stashtype = "StashMedium"; };
 
-if (_hasitemcount == 0) exitwith {};
+//if (_hasitemcount == 0) exitwith {};
 if (_hasitemcount == 1) then { _stashtype =   getText (_config >> "stashsmall"); };
 if (_hasitemcount == 2) then { _stashtype =   getText (_config >> "stashmedium"); };
 
