@@ -14,7 +14,7 @@ or by zombie_attack
 - return : updated damage for that part
 broadcast: boolean. if true, then the request will be sent to all players if the vehicle is not local.
 ************************************************************/
-private ["_unit","_selection","_dam","_SVname","_currentDam", "_globalDam"];
+private ["_unit","_selection","_dam","_SVname","_currentDam", "_globalDam", "_delta"];
 
 _unit = _this select 0;
 _selection = _this select 1;
@@ -24,19 +24,23 @@ _SVname = "hit_" + _selection;
 
 
 _currentDam = if ((!isNil "_selection") AND {(_selection != "")}) then {_unit getVariable [_SVname, 0]} else {damage _unit};
-diag_log(format["%1 this:%2 veh:%4#%5 currentDam:%3", __FILE__, _this, _currentDam, typeOf _unit, _unit getVariable ["ObjectID",""]]);
+//diag_log(format["%1 this:%2 veh:%4#%5 currentDam:%3", __FILE__, _this, _currentDam, typeOf _unit, _unit getVariable ["ObjectID",""]]);
 if (local _unit) then {
 	_globalDam = damage _unit;
 	if ((!isNil "_selection") AND {(_selection != "")}) then {
 		//// make bicycles a bit stronger
 		//if (_unit isKindOf "Bicycle") then { _dam = _dam / 10; };
 		// only local unit can set the damage of a vehicle part
+		_dam = _currentDam max _dam;
+		_delta = _dam - _currentDam; 
 		_currentDam = _dam;
 		_unit setVariable [_SVname, _currentDam, true];
 		_unit setHit [_selection, _currentDam];
 	//diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, _currentDam]);
-		// we change also global damage, according to damage of this part and number of vehicle parts
-		//_globalDam = 0.99 min (_globalDam + _dam/2/(1+(count (_unit call vehicle_getHitpoints))));
+		if (_selection IN ["palivo", "karoserie", "motor"]) then {
+			// we overwirte also global damage logic, according to damage of this part and number of vehicle parts
+			_globalDam = _globalDam max (0.80 min (_globalDam + _delta/3));
+		};
 	}
 	else {
 		_globalDam = _dam;
