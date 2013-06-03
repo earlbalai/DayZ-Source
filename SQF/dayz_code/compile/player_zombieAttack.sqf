@@ -29,7 +29,7 @@ _hv = _gpv_asl select 2;
 
 if (_type != "zombie") exitWith {"not a zombie"}; // we deal only with zombies in this function
 if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
-if (((!_isVehicle) AND {(random 15 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
+if (((!_isVehicle) AND {(random 8 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
 
 // check if fight is in stairway or not, 
 if (abs(_hu - _hv) < 1.3) then {
