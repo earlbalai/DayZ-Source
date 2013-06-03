@@ -1147,7 +1147,7 @@ class FSM
        "//Add core tools" \n
        "player addWeapon ""Loot"";" \n
        "player addWeapon ""Flare"";" \n
-       "" \n
+       "if ((currentWeapon player == """")) then { player action [""SWITCHWEAPON"", player,player,1]; };" \n
        "//load in medical details" \n
        "r_player_dead = 		player getVariable[""USEC_isDead"",false];" \n
        "r_player_unconscious = 	player getVariable[""NORRN_unconscious"", false];" \n
