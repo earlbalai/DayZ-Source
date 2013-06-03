@@ -24,7 +24,7 @@ _SVname = "hit_" + _selection;
 
 
 _currentDam = if ((!isNil "_selection") AND {(_selection != "")}) then {_unit getVariable [_SVname, 0]} else {damage _unit};
-diag_log(format["%1 this:%2 unit:%4 currentDam:%3", __FILE__, _this, _currentDam, _unit]);
+diag_log(format["%1 this:%2 veh:%4#%5 currentDam:%3", __FILE__, _this, _currentDam, typeOf _unit, _unit getVariable ["ObjectID",""]]);
 if (local _unit) then {
 	_globalDam = damage _unit;
 	if ((!isNil "_selection") AND {(_selection != "")}) then {
