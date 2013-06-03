@@ -192,7 +192,9 @@ if (_randomSpot) then {
 			AND {({alive _x} count (_position nearEntities ["Man",150]) == 0)}) then { // !too close from other players/zombies
 				_pos = +(_position);
 				_isIsland = false;		//Can be set to true during the Check
-				for [{_w=0},{_w<=300},{_w=_w+5}] do {
+				// we check over a 809-meter cross line, with an effective interlaced step of 5 meters
+				for [{_w = 0}, {_w != 809}, {_w = ((_w + 17) % 811)}] do {
+					if (_w < 17) then { diag_log format[ "%1 loop starts with _w=%2", __FILE__, _w]; };
 					_pos = [((_pos select 0) - _w),((_pos select 1) + _w),(_pos select 2)];
 					if(surfaceisWater _pos) exitWith {
 						_isIsland = true;
