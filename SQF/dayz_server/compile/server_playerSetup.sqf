@@ -192,7 +192,7 @@ if (_randomSpot) then {
 			AND {({alive _x} count (_position nearEntities ["Man",150]) == 0)}) then { // !too close from other players/zombies
 				_pos = +(_position);
 				_isIsland = false;		//Can be set to true during the Check
-				for [{_w=0},{_w<=150},{_w=_w+2}] do {
+				for [{_w=0},{_w<=300},{_w=_w+5}] do {
 					_pos = [((_pos select 0) - _w),((_pos select 1) + _w),(_pos select 2)];
 					if(surfaceisWater _pos) exitWith {
 						_isIsland = true;
