@@ -1,4 +1,5 @@
-private["_onLadder","_itemorignal","_hasfooditem","_rawfood","_cookedfood","_hasoutput","_config","_text","_regen","_dis","_sfx","_Cookedtime","_itemtodrop","_nearByPile","_item","_display"];
+private ["_onLadder","_itemorignal","_hasfooditem","_rawfood","_cookedfood","_hasoutput","_config","_text","_regen","_dis","_sfx","_skilllevel","_itemtodrop","_nearByPile","_item","_display"];
+
 disableserialization;
 call gear_ui_init;
 _onLadder =     (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -63,14 +64,15 @@ if (_hasoutput) then{
     _itemtodrop = food_output select (food_with_output find _itemorignal);
 
     sleep 3;
-    _nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
-    if (count _nearByPile ==0) then { 
-        _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
-    } else {
-        _item = _nearByPile select 0;
-    };
+    _nearByPile= nearestObjects [getPosATL player, ["WeaponHolder"], 2];
+    _item = if (count _nearByPile > 0) then {_nearByPile select 0} else {nil};
+    if ((isNil "_item") OR {(player distance _item > 2)}) then {
+    	_pos = player modeltoWorld [0,1,0];
+    	diag_log format [ "%1 itempos:%2 _nearByPile:%3", __FILE__, _pos, _nearByPile];
+        _item = createVehicle ["WeaponHolder", _pos, [], 0.0, "CAN_COLLIDE"];
+        _item setPosATL _pos;
+	};
     _item addMagazineCargoGlobal [_itemtodrop,1];
-	_item setvelocity [0,0,1];
 };
 
 if ( _rawfood and (random 15 < 1)) then {

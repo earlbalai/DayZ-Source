@@ -22,7 +22,7 @@ if (_selection == "?") then { _selection = ""; }; // bad arma triggered event (w
 _dam = 1 min (0 max (_this select 2));
 _SVname = "hit_" + _selection;
 
-//diag_log(format["%1 this:%2", __FILE__, _this]);
+diag_log(format["%1 this:%2", __FILE__, _this]);
 
 _currentDam = if ((!isNil "_selection") AND {(_selection != "")}) then {_unit getVariable [_SVname, 0]} else {damage _unit};
 if (local _unit) then {

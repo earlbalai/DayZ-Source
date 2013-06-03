@@ -1,7 +1,3 @@
-/*
-        Created exclusively for ArmA2:OA - DayZMod.
-        Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
-*/
 
 private["_unit","_aimingPos","_pos", "_deg", "_trip", "_maxlength"];
 _unit = _this select 0; // Zed object
@@ -27,7 +23,9 @@ if (count _pos < 3) then { // no lootpile nearby
 	_pos = _unit modelToWorld [ sin(_deg) * _trip, cos(_deg) * _trip, 0];
 };
 
-diag_log format ["%1 Want-me-to-go:%2  but-will-go: %3  (trip:%4m, error:%5m)",__FILE__, _aimingPos, _pos, round([_unit, _pos] call BIS_fnc_distance2D), round(_pos distance _aimingPos)];  
+diag_log format ["%1 Want-me-to-go:%2  but-will-go: %3  (trip:%4m, error:%5m). Current/next stance:%6/%7",__FILE__, _aimingPos, _pos, round([_unit, _pos] call BIS_fnc_distance2D), round(_pos distance _aimingPos),
+unitPos _agent, _unit getVariable ["stance", "unknown"]
+];  
 
 if(isNull group _unit) then {
 	_unit moveTo _pos;
@@ -37,6 +35,7 @@ if(isNull group _unit) then {
 
 // reset stance to favorite one
 _agent setUnitPos (_unit getVariable ["stance", "UP"]);
+
 
 // speed is random. 2 4 or 6, 2 being most likely.
 _unit forceSpeed ceil(random(3^0.5)^2)*2;
