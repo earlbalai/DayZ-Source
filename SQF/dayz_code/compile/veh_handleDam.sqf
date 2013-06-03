@@ -18,28 +18,28 @@ private ["_unit","_selection","_dam","_SVname","_currentDam", "_globalDam"];
 
 _unit = _this select 0;
 _selection = _this select 1;
-if (_selection == "?") then { _selection = ""; }; // bad arma triggered event (workaround)
-_dam = 1 min (0 max (_this select 2));
+if (_selection == "?") exitWith {0}; // ignore undefined parts
+_dam = 0.99 min (0 max (_this select 2));
 _SVname = "hit_" + _selection;
 
-diag_log(format["%1 this:%2", __FILE__, _this]);
 
 _currentDam = if ((!isNil "_selection") AND {(_selection != "")}) then {_unit getVariable [_SVname, 0]} else {damage _unit};
+diag_log(format["%1 this:%2 unit:%4 currentDam:%3", __FILE__, _this, _currentDam, _unit]);
 if (local _unit) then {
 	_globalDam = damage _unit;
 	if ((!isNil "_selection") AND {(_selection != "")}) then {
-		// make bicycles a bit stronger
-		if (_unit isKindOf "Bicycle") then { _dam = _dam / 10; };
+		//// make bicycles a bit stronger
+		//if (_unit isKindOf "Bicycle") then { _dam = _dam / 10; };
 		// only local unit can set the damage of a vehicle part
-		_currentDam = 0.99 min (_currentDam + _dam);
+		_currentDam = _dam;
 		_unit setVariable [_SVname, _currentDam, true];
 		_unit setHit [_selection, _currentDam];
 	//diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, _currentDam]);
 		// we change also global damage, according to damage of this part and number of vehicle parts
-		_globalDam = 0.99 min (_globalDam + _dam/2/(1+(count (_unit call vehicle_getHitpoints))));
+		//_globalDam = 0.99 min (_globalDam + _dam/2/(1+(count (_unit call vehicle_getHitpoints))));
 	}
 	else {
-		_globalDam = 0.99 min (_globalDam + _dam / 20);
+		_globalDam = _dam;
 	};
 	_unit setDamage _globalDam;
 	//diag_log(format["%1: %2 setDamage %3 %4", __FILE__, _unit, _globalDam]);
