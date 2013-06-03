@@ -68,7 +68,7 @@ if (_hasoutput) then{
     _item = if (count _nearByPile > 0) then {_nearByPile select 0} else {nil};
     if ((isNil "_item") OR {(player distance _item > 2)}) then {
     	_pos = player modeltoWorld [0,1,0];
-    	diag_log format [ "%1 itempos:%2 _nearByPile:%3", __FILE__, _pos, _nearByPile];
+    	//diag_log format [ "%1 itempos:%2 _nearByPile:%3", __FILE__, _pos, _nearByPile];
         _item = createVehicle ["WeaponHolder", _pos, [], 0.0, "CAN_COLLIDE"];
         _item setPosATL _pos;
 	};
