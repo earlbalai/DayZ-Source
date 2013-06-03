@@ -3,7 +3,7 @@
         Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
 */
 
-private ["_unit", "_type", "_vehicle", "_speed", "_nextPlayerPos", "_distance", "_isVehicle", "_isSameFloor", "_isStairway", "_isClear", "_epu", "_epv", "_gpu_asl", "_gpv_asl", "_areaAffect", "_hu", "_hv", "_ob_arr", "_cob", "_deg", "_sign", "_a", "_rnd", "_move", "__FILE__", "_vel", "_hpList", "_hp", "_wound", "_damage", "_strH", "_dam", "_total", "_cnt", "_index"];
+private ["_unit", "_type", "_vehicle", "_speed", "_nextPlayerPos", "_distance", "_isVehicle", "_isSameFloor", "_isStairway", "_isClear", "_epu", "_epv", "_gpu_asl", "_gpv_asl", "_areaAffect", "_hu", "_hv", "_ob_arr", "_cob", "_deg", "_sign", "_a", "_rnd", "_move", "__FILE__", "_vel", "_hpList", "_hp", "_wound", "_damage", "_strH", "_dam", "_total", "_cnt", "_index", "_woundDamage"];
 _start = diag_tickTime;
 
 _unit = _this select 0;
@@ -191,11 +191,12 @@ if (_isVehicle) then {
 			_hp = _hpList call BIS_fnc_selectRandom;
 			_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
 		};
+		_woundDamage = _unit getVariable ["hit_"+_wound, 0];
 		// we limit how vehicle could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
-		_damage = random (if (damage _vehicle < 0.8) then {0.1} else {0.01});
+		_damage = random (if (_woundDamage < 0.8) then {0.1} else {0.01});
 		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
-		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
+		_total = [_vehicle,  _wound,  _woundDamage + _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
 		if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
 			// glass is broken,  so hurt the player in the vehicle 
 			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
