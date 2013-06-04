@@ -166,7 +166,7 @@ if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
 	player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 	// make player dive
 	_move = switch (currentWeapon player) do {
-		case "Flare"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare
+		case "Flare"; case "Throw"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare/Grenades
 		case (primaryWeapon player) : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle/crowbar
 		default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 	};
