@@ -303,18 +303,19 @@ if (isServer and isNil "sm_done") then {
 					//diag_log (format["VEH MAINTENANCE Creating vehicle Inventory:%1  and  Damaged parts:%2", _inventory, _hitpoints]);
 				};
 #endif
+				_entity setDamage _damage;
 				{
 					_selection = _x select 0;
 					_dam = _x select 1;
 					if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-					[_entity, _selection, _dam] call fnc_veh_handleRepair;  // global damage will be overwritten, see 60 lines below.
+					[_entity, _selection, _dam] call fnc_veh_handleDam;
 				} forEach _hitpoints;
 				_entity setvelocity [0,0,1];
 				_entity setFuel _fuel;
 				_entity call fnc_veh_ResetEH;
 			};
 			diag_log (format["VEHICLE %1 %2 at %3, damage=%4, fuel=%5",
-				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, _damage, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
+				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, damage _entity, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
 		}
 		else { // else for object or non legit vehicle
 			if (!(_class in SafeObjects )) then {  
@@ -347,6 +348,7 @@ if (isServer and isNil "sm_done") then {
 				_entity setVariable ["ObjectID", _ObjectID, true];
 				_entity setVariable ["CharacterID", _CharacterID, true];	
 				_entity setVariable ["lastUpdate",time];
+				_entity setDamage _damage;
 	
 				if (_class == "TentStorage") then { 
 					_entity addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}]; 
@@ -368,7 +370,6 @@ if (isServer and isNil "sm_done") then {
 		if (_damage < 1 AND !(isNil ("_entity"))) then {
 			_entity setdir _dir;
 			_entity setPos _point;
-			_entity setDamage _damage;
 			[_entity, _inventory] call fa_populateCargo;
 			
 			dayz_serverObjectMonitor set [count dayz_serverObjectMonitor, _entity];
