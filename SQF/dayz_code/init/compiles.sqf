@@ -112,7 +112,7 @@ if (!isDedicated) then {
 
 	// TODO: need move it in player_monitor.fsm
 	// allow player disconnect from server, if loading hang, kicked by BE etc.
-	
+		
 	[] spawn {
 		private["_timeOut","_display","_control1","_control2"];
 		disableSerialization;
@@ -123,7 +123,7 @@ if (!isDedicated) then {
 		_control1 = _display displayctrl 8400;
 		_control2 = _display displayctrl 102;
 	// 120 sec timeout
-		while { _timeOut < 3000 && !dayz_clientPreload } do {
+		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
@@ -140,12 +140,14 @@ if (!isDedicated) then {
 			sleep 0.1;
 		};
 		endLoadingScreen;
+		/*
 		if ( !dayz_clientPreload && !dayz_authed ) then {
 			diag_log "DEBUG: loadscreen guard ended with timeout.";
 			disableUserInput false;
 			1 cutText ["Disconnected!", "PLAIN"];
 			player enableSimulation false;
 		} else { diag_log "DEBUG: loadscreen guard ended."; };
+		*/
 	};
 	
 	dayz_losChance = {
