@@ -315,7 +315,7 @@ if (isServer and isNil "sm_done") then {
 				_entity call fnc_veh_ResetEH;
 			};
 			diag_log (format["VEHICLE %1 %2 at %3, damage=%4, fuel=%5",
-				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, getDamage _entity, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
+				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, damage _entity, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
 		}
 		else { // else for object or non legit vehicle
 			if (!(_class in SafeObjects )) then {  
