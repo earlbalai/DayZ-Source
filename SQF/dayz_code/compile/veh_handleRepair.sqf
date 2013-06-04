@@ -34,7 +34,7 @@ if (local _unit) then {
 		_globalDam = 0.01 max (_globalDam - 1.3/(1+(count (_unit call vehicle_getHitpoints))));
 	}
 	else { // generic part for global damage
-		_globalDam = 0.01; // not 0 otherwise all parts will be magically repaired
+		_globalDam = _dam; // not 0 otherwise all parts will be magically repaired
 	};
 	_unit setDamage _globalDam;
 	//diag_log(format["%1: %2 setDamage %3 ", __FILE__, _unit, _globalDam]);
