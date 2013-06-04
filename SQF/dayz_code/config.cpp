@@ -126,6 +126,8 @@ class CfgInGameUI
     class PeripheralVision
     {
         cueColor[] = {0,0,0,0};
+        cueFriendlyColor[] = {0,0,0,0};
+        cueEnemyColor[] = {0,0,0,0};
     };
 	
 	
