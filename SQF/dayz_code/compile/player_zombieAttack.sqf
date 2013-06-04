@@ -166,7 +166,7 @@ if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
 	player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 	// make player dive
 	_move = switch (currentWeapon player) do {
-		case "Flare"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare
+		case "Flare"; case "Throw"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare/Grenades
 		case (primaryWeapon player) : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle/crowbar
 		default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 	};
@@ -210,14 +210,14 @@ if (_isVehicle) then {
 				_index = (DAYZ_woundHit_ok select 1) select _index;
 				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
-			_damage = 0.2 + random (0.6);
+			_damage = 0.2 + random (0.4);
 			diag_log(format["%1 Player wounded through ""%4"" vehicle window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
 			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
 		};
 	}; // fi veh with compartment 
 }
 else { // player by foot
-	_damage = 0.2 + random (0.6);
+	_damage = 0.2 + random (0.4);
 
 	switch true do {
 		case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
