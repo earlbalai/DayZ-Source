@@ -20,7 +20,7 @@ _selection = _this select 1;
 
 _hitpointnames = [];
 {
-	_hitpointnames set [count _hitpointnames, getText (configFile >> "CfgVehicles" >> (typeOf _unit) >> "HitPoints" >> _x >> "name"];
+	_hitpointnames set [count _hitpointnames, getText (configFile >> "CfgVehicles" >> (typeOf _unit) >> "HitPoints" >> _x >> "name")];
 } forEach (_unit call vehicle_getHitpoints);
 
 if ((isNil "_selection") OR {(!(_selection IN _hitpointnames))}) exitWith {_this select 2};
