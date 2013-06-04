@@ -51,8 +51,8 @@ Serverside affected addons:
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
 	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
-					Small Stash = 12 object slots, 0 Weapon, 0 bags.
-					Medium Stash = 25 object slots, 1 Weapon, 0 bags.
+			    Small Stash = 12 object slots, 0 Weapon, 0 bags.
+			    Medium Stash = 25 object slots, 1 Weapon, 0 bags.
 	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
 	    * [NEW] - 1 New Melee weapon.(BaseBallBat)
@@ -60,10 +60,10 @@ Serverside affected addons:
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
 	    * [NEW] - Epeen UI has now been updated and renamed journal. 
-		* [NEW] - All blood gained from food is now added into a regenreation pool that players will regenerate over time
-		* [NEW] - All food types now have a diminishing effect so the more you try and eat at once, the less blood you will get in return.
-		* [NEW] - Blood UI updated to indicate the player's blood loss / gain rate and will also indicate when you're sick (infected).
-		* [NEW] - Bloodbags will no longer transfer 12000 blood instantly, it's now done over 12 seconds (1000 blood per second). If the medic breaks away from the transfusion animation or the recipient moves out of range, the transfer stops and the remaining amount is lost along with the bloodbag in use.
+	    * [NEW] - All blood gained from food is now added into a regenreation pool that players will regenerate over time
+	    * [NEW] - All food types now have a diminishing effect so the more you try and eat at once, the less blood you will get in return.
+	    * [NEW] - Blood UI updated to indicate the player's blood loss / gain rate and will also indicate when you're sick (infected).
+	    * [NEW] - Bloodbags will no longer transfer 12000 blood instantly, it's now done over 12 seconds (1000 blood per second). If the medic breaks away from the transfusion animation or the recipient moves out of range, the transfer stops and the remaining amount is lost along with the bloodbag in use.
 	
 	    * [FIXED] - Vehicle repair should now work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
@@ -132,8 +132,8 @@ Serverside affected addons:
 	    * [UPDATED] - 3 Chopper crash sites spawn on server start + 2-3 infected Camps.
 	    * [UPDATED] - Sickness(Infection) can now cause death.
 		
-		
 	    * [REMOVED] - Removed M107 and AS50(Banned) from all loot tables and removed all damage from bullets so they do 0 damage even if spawned in.
+
 ______________________
 Version 1.7.6.1
 ---------------
