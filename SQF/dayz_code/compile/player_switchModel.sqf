@@ -200,5 +200,5 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	};
 	
 	//reveal all near objects.
-	{player reveal _x} forEach (nearestObjects [getPosATL player, ["All"], 75]);
+	{player reveal _x} forEach (nearestObjects [getPosATL player, ["AllVehicles","WeaponHolder","StashSmall","StashMedium","TentStorage","BuiltItems"], 75]);
 	//All is arbitrary and will need to be changed to ["AllVehicles","WeaponHolder","tentStorage"] ++ others (stashes etc.)
