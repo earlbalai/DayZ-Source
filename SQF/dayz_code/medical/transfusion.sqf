@@ -28,8 +28,10 @@ while {r_doLoop and (_i < 12)} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
 
-	if (_isMedic) then {
+	if (_isMedic and !_started) then {
 		player removeMagazine "ItemBloodbag";
+		cutText ["Transfusion in progress, remain still...", "PLAIN DOWN"];
+		[player,_unit,"loc",rTITLETEXT,"Transfusion in progress, remain still...","PLAIN DOWN"] call RE;
 		_started = true;
 	};
 
@@ -49,11 +51,15 @@ while {r_doLoop and (_i < 12)} do {
 
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 
-	if (_blood >= r_player_bloodTotal) then {
+	if ((_blood >= r_player_bloodTotal) or (_i == 12)) then {
+		cutText ["Transfusion successful.", "PLAIN DOWN"];
+		[player,_unit,"loc",rTITLETEXT,"Transfusion successful.","PLAIN DOWN"] call RE;
 		r_doLoop = false;
 	};
 
-	if (r_interrupt) then {
+	if (r_interrupt or ((player distance _unit) > 2)) then {
+		cutText ["The transfusion was interrupted! The blood bag has been lost.", "PLAIN DOWN"];
+		[player,_unit,"loc",rTITLETEXT,"The transfusion was interrupted! The blood bag has been lost.","PLAIN DOWN"] call RE;
 		r_doLoop = false;
 	};
 
