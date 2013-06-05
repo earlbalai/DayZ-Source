@@ -144,7 +144,7 @@ if (_hit in USEC_MinorWounds) then {
 
 if (_unit == player) then {
 //incombat
-	_unit setVariable["startcombattimer", 1, false];	
+	_unit setVariable["startcombattimer", 1];	
 };
 
 //Shake the cam, frighten them!

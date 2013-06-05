@@ -300,7 +300,7 @@ while {true} do {
 	_startcombattimer      = player getVariable["startcombattimer",0];
 	if (_startcombattimer == 1) then {
 		player setVariable["combattimeout", time + 30, true];
-		player setVariable["startcombattimer", 0, true];
+		player setVariable["startcombattimer", 0];
 		dayz_combat = 1;
 	};
 

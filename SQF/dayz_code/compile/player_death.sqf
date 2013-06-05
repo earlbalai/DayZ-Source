@@ -25,7 +25,7 @@ player setVariable ["unconsciousTime", 0, true];
 player setVariable ["USEC_isCardiac",false,true];
 player setVariable ["medForceUpdate",true,true];
 //remove combat timer on death
-player setVariable ["startcombattimer", 0, true];
+player setVariable ["startcombattimer", 0];
 r_player_unconscious = false;
 r_player_cardiac = false;
 
