@@ -14,12 +14,12 @@
 "removeAllWeapons", "setCaptive", "setCurrentTask", "setCurrentTaskArrays", "setDate", "setDir", "setGroupID", \
 "setMarkerPosLocal", "setObjectTexture", "setSimpleTaskDescription", "setTaskState", "setWPdesc", "setWPtype", \
 "showCommandingMenu", "sideChat", "sideRadio", "skiptime", "spawn", "switchAction", "switchCamera", "taskHint", \
-"titleCut", "titleText"]
+"titleCut"]
 #endif
 
 // Allowed commands
 #ifndef TRACED_LIB
-#define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove" ]
+#define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove", "titleText" ]
 // uncomment following line to log all incoming allowed RE
 #define RESEC_VERBOSE
 #endif
