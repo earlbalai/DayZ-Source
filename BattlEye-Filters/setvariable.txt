@@ -1,4 +1,4 @@
-5 !"USEC_" !"NORRN_" !"hit_" !="agentObjectCamps" !="agentObjectSwarm" !="banditKills" !="bodyName" !="characterID" !="claimed" !="combattimeout" !="deathType" !="fadeFire" !="firedDamage" !="firedHit" !="freeTarget" !="headShots" !="humanity" !="humanKills" !="lastPos" !="LastTransfusion" !="lastUpdate" !="looted" !="meatHarvested" !="medForceUpdate" !="messing" !="needUpdate" !="ObjectID" !="ObjectUID" !="owner" !="posForceUpdate" !="selectSex" !="startcombattimer" !="state" !="targets" !="temperature" !="unconsciousTime" !="updatePlayer" !="zombieKills" !="zombieSpawn"
+5 !"USEC_" !"NORRN_" !"hit_" !="agentObjectCamps" !="agentObjectSwarm" !="banditKills" !="bodyName" !="characterID" !="claimed" !="combattimeout" !="deathType" !="fadeFire" !="firedDamage" !="firedHit" !="freeTarget" !="headShots" !="humanity" !="humanKills" !="lastPos" !="LastTransfusion" !="lastUpdate" !="looted" !="meatHarvested" !="medForceUpdate" !="messing" !="needUpdate" !="ObjectID" !="ObjectUID" !="owner" !="posForceUpdate" !="selectSex"  !="state" !="targets" !="temperature" !="unconsciousTime" !="updatePlayer" !="zombieKills" !="zombieSpawn"
 
 5 "USEC_" !="USEC_BloodQty" !="USEC_infected" !="USEC_injured" !="USEC_inPain" !="USEC_isCardiac" !="USEC_isDead" !="USEC_lowBlood"
 
@@ -95,7 +95,6 @@
 1="owner"
 1="posForceUpdate"
 1="selectSex"
-//1="startcombattimer"
 1="state"
 //1="targets"
 1="temperature"

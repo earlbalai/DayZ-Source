@@ -144,7 +144,7 @@ if (_hit in USEC_MinorWounds) then {
 
 if (_unit == player) then {
 //incombat
-	_unit setVariable["startcombattimer", 1, false];	
+	_unit setVariable["startcombattimer", 1];	
 };
 
 //Shake the cam, frighten them!
@@ -175,7 +175,7 @@ if (_damage > 0.4) then {	//0.25
 				r_player_infected = true;
 				player setVariable["USEC_infected",true,true];
 			};
-			diag_log format["%1  (_damage - _bloodPercentage):%2  _rndInfection:%3  (exp _rndInfection):%4  _hitInfection:%5 ", __FILE__, (_damage - _bloodPercentage), _rndInfection, exp _rndInfection, _hitInfection];
+			//diag_log format["%1  (_damage - _bloodPercentage):%2  _rndInfection:%3  (exp _rndInfection):%4  _hitInfection:%5 ", __FILE__, (_damage - _bloodPercentage), _rndInfection, exp _rndInfection, _hitInfection];
 		};
 		if (_hitPain) then {
 			r_player_inpain = true;
