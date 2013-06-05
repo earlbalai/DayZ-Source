@@ -119,11 +119,12 @@ if (!isDedicated) then {
 		_timeOut = 0;
 		dayz_loadScreenMsg = "";
 		diag_log "DEBUG: loadscreen guard started.";
-		_display = uiNameSpace getVariable "BIS_loadingScreen";
-		_control1 = _display displayctrl 8400;
-		_control2 = _display displayctrl 102;
+		//_display = uiNameSpace getVariable "BIS_loadingScreen";
+		//_control1 = _display displayctrl 8400;
+		//_control2 = _display displayctrl 102;
 	// 120 sec timeout
 		while { _timeOut < 3000 && !dayz_clientPreload && !dayz_authed } do {
+		/*
 			if ( isNull _display ) then {
 				waitUntil { !dialog; };
 				startLoadingScreen ["","RscDisplayLoadCustom"];
@@ -131,11 +132,12 @@ if (!isDedicated) then {
 				_control1 = _display displayctrl 8400;
 				_control2 = _display displayctrl 102;
 			};
+		*/
 			if ( dayz_loadScreenMsg != "" ) then {
-				_control1 ctrlSetText dayz_loadScreenMsg;
+				//_control1 ctrlSetText dayz_loadScreenMsg;
 				dayz_loadScreenMsg = "";
 			};
-			_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
+			//_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
 			_timeOut = _timeOut + 1;
 			sleep 0.1;
 		};

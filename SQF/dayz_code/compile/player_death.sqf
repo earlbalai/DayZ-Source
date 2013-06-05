@@ -72,7 +72,7 @@ terminate dayz_medicalH;
 terminate dayz_gui;
 //terminate dayz_zedCheck;
 terminate dayz_locationCheck;
-terminate dayz_combatCheck;
+//terminate dayz_combatCheck;
 terminate dayz_spawnCheck;
 
 //Reset (just in case)
