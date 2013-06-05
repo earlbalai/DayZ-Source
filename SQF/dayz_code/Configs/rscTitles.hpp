@@ -182,7 +182,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "1.7.7.Pre-Release.01062013";
+			text = "1.7.7.Pre-Release.05062013";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
@@ -387,7 +387,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 		class CA_B_Respawn : CA_B_SAVE {
 			idc = 1010;
 			//onButtonClick = "hint str (_this select 0);";
-			//onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
+			onButtonClick = "if ((alive player) && (r_fracture_legs)) then { player SetDamage 1;};";
 			y = 0.2537 + 0.101903 * 2;
 			text = $STR_DISP_INT_RESPAWN;
 			default = 0;

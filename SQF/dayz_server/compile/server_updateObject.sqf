@@ -14,6 +14,7 @@ _isNotOk = false;
 
 _objectID = "0";
 _uid = "0";
+
 if (!((isNil "_object") OR {(isNull _object)})) then {
 	_objectID = _object getVariable ["ObjectID","0"];
 	_uid = _object getVariable ["ObjectUID","0"];
@@ -93,11 +94,13 @@ _object_damage = {
 		_hit = [_object,_x] call object_getHit;
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 		if (_hit > 0) then {
-			_array set [count _array,[_selection,_hit]]; 
+			_array set [count _array,[_selection,_hit]];
 			diag_log format ["Section Part: %1, Dmg: %2",_selection,_hit]; 
+		} else {
+			_array set [count _array,[_selection,0]]; 
 		};
 	} forEach _hitpoints;
-
+		
 	//if (_forced) then {	
 		if (_object in needUpdate_objects) then {
 			needUpdate_objects = needUpdate_objects - [_object];
