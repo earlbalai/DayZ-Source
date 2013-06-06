@@ -29,8 +29,8 @@ class CfgVehicles {
 	class An2_Base_EP1;
 	class TT650_Base;
 	class V3S_Base;
-	class Bag_Base_EP1;
-	class Bag_Base_BAF;
+	//class Bag_Base_EP1;
+	//class Bag_Base_BAF;
 	class House {
 		class DestructionEffects;
 	};

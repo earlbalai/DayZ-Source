@@ -1,3 +1,23 @@
+class ReammoBox_EP1;	// External class reference
+class Bag_Base_EP1 : ReammoBox_EP1 {
+	scope = private;
+
+	class TransportMagazines {};
+
+	class TransportWeapons {};
+	transportMaxMagazines = 0;
+	transportMaxWeapons = 0;
+	isbackpack = 1;
+	reversed = true;
+	vehicleClass = "Backpacks";
+
+	class DestructionEffects {};
+
+	class eventHandlers {
+		init = "";
+	};
+};
+
 class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 {
 	scope = 2;

@@ -47,6 +47,10 @@ _claimedBy = _holder getVariable["claimed","0"];
 if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_beinglooted"),_text] , "PLAIN DOWN"]; };
 
 if(_classname isKindOf "Bag_Base_EP1") exitwith {
+
+	_PlayerNear =	{isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
+	if (_PlayerNear) exitWith {cutText [format["Another Player Near by, Only one player must be within 5 meters of a bag to pickup"] , "PLAIN DOWN"]};
+
 	diag_log("Picked up a bag: " + _classname);
 	player action ["TakeBag", _holder];
 };
