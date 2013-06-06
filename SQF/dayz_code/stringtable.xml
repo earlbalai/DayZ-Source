@@ -3960,7 +3960,7 @@
 			<Spanish>You have created a %1.</Spanish>
 			<Dutch>You have created a %1</Dutch>
 			<French>You have created a %1.</French>
-			<Czech>You have created a %1.</Czech>
+			<Czech>Vytvořil jsi %1.</Czech>
 		</Key>
 		<Key ID="str_fail_stash_pitch">
 			<English>You cannot place a %1 here. The area must be flat, and free of other objects.</English>
@@ -3969,7 +3969,7 @@
 			<Spanish>You cannot place a %1 here. The area must be flat, and free of other objects.</Spanish>
 			<Dutch>You cannot place a %1 here. The area must be flat, and free of other objects.</Dutch>
 			<French>You cannot place a %1 here. The area must be flat, and free of other objects.</French>
-			<Czech>You cannot place a %1 here. The area must be flat, and free of other objects.</Czech>
+			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které brání postavení.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
 			<English>You have consumed a %1 giving \n%2 blood regen \nstack %3</English>
@@ -4347,7 +4347,7 @@
 			<Spanish>To build a stash site you require %1.</Spanish>
 			<Dutch>To build a stash site you require %1.</Dutch>
 			<French>To build a stash site you require %1.</French>
-			<Czech>To build a stash site you require %1.</Czech>
+			<Czech>Aby jsi postavil skrýš, je potřeba %1.</Czech>
 		</Key>
 		<Key ID="str_player_31_build">
 			<English>build</English>
