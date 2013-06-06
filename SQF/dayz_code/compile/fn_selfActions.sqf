@@ -144,7 +144,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 		};
 	} else {
 		player removeAction s_player_fillfuel5;
-		s_player_s_player_fillfuel5 = -1;
+		s_player_fillfuel5 = -1;
 	};
 	
 	//Harvested
