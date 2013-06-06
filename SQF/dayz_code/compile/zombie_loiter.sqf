@@ -23,9 +23,11 @@ if (count _pos < 3) then { // no lootpile nearby
 	_pos = _unit modelToWorld [ sin(_deg) * _trip, cos(_deg) * _trip, 0];
 };
 
+/*
 diag_log format ["%1 Want-me-to-go:%2  but-will-go: %3  (trip:%4m, error:%5m). Current/next stance:%6/%7",__FILE__, _aimingPos, _pos, round([_unit, _pos] call BIS_fnc_distance2D), round(_pos distance _aimingPos),
 unitPos _agent, _unit getVariable ["stance", "unknown"]
-];  
+];
+*/  
 
 if(isNull group _unit) then {
 	_unit moveTo _pos;

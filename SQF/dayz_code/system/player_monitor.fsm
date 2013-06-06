@@ -16,60 +16,62 @@ item11[] = {"Make_PlayerID",2,250,-200.000000,175.000000,-100.000000,225.000000,
 item12[] = {"Has_PlayerID",4,218,-75.000000,175.000000,25.000000,225.000000,1.000000,"Has PlayerID"};
 item13[] = {"no_PlayerID",4,218,50.000000,150.000000,150.000000,200.000000,2.000000,"no PlayerID"};
 item14[] = {"ERROR__No_Player",2,250,175.000000,150.000000,275.000000,200.000000,0.000000,"ERROR:" \n "No PlayerID"};
-item15[] = {"Request",2,250,-75.000000,500.000000,25.000000,550.000000,0.000000,"Request"};
-item16[] = {"Response",4,218,-175.000000,550.000000,-75.000000,600.000000,0.000000,"Response"};
-item17[] = {"Parse_Login",2,250,-75.000000,600.000000,25.000000,650.000000,0.000000,"Parse Login"};
-item18[] = {"Hive_Bad",4,218,50.000000,600.000000,150.000000,650.000000,10.000000,"Hive" \n "Bad"};
-item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,600.000000,275.000000,650.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
-item20[] = {"Hive_Ok",4,218,-175.000000,650.000000,-75.000000,700.000000,0.000000,"Hive" \n "Ok"};
-item21[] = {"Phase_One",2,250,-75.000000,700.000000,25.000000,750.000000,0.000000,"Phase One"};
-item22[] = {"Response",4,218,-175.000000,750.000000,-75.000000,800.000000,0.000000,"Response"};
-item23[] = {"Phase_Two",2,250,-75.000000,800.000000,25.000000,850.000000,0.000000,"Phase Two"};
-item24[] = {"Dead_Player",4,218,50.000000,800.000000,150.000000,850.000000,0.000000,"Dead" \n "Player"};
-item25[] = {"ERROR__Player_Already",2,250,175.000000,800.000000,275.000000,850.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
-item26[] = {"Alive",4,218,-175.000000,850.000000,-75.000000,900.000000,0.000000,"Alive"};
-item27[] = {"Position",2,250,-75.000000,900.000000,25.000000,950.000000,0.000000,"Position"};
-item28[] = {"Version_Ok",4,218,-175.000000,950.000000,-75.000000,1000.000000,0.000000,"Version" \n "Ok"};
-item29[] = {"Load_In",2,4346,-75.000000,1100.000000,25.000000,1150.000000,0.000000,"Load In"};
-item30[] = {"Bad_Version",4,218,50.000000,900.000000,150.000000,950.000000,0.000000,"Bad" \n "Version"};
-item31[] = {"ERROR__Bad_Versi",2,250,175.000000,900.000000,275.000000,950.000000,0.000000,"ERROR:" \n "Bad Version"};
-item32[] = {"Display_Ready",4,218,-175.000000,1150.000000,-75.000000,1200.000000,0.000000,"Display" \n "Ready"};
-item33[] = {"Preload_Display",2,250,-75.000000,1200.000000,25.000000,1250.000000,0.000000,"Preload" \n "Display"};
-item34[] = {"Preload_Done",4,218,-175.000000,1250.000000,-75.000000,1300.000000,0.000000,"Preload" \n "Done"};
-item35[] = {"Initialize",2,250,-75.000000,1300.000000,25.000000,1350.000000,0.000000,"Initialize"};
-item36[] = {"Finish",1,250,-75.000000,1400.000000,25.000000,1450.000000,0.000000,"Finish"};
-item37[] = {"True",8,218,25.000000,1350.000000,125.000000,1400.000000,0.000000,"True"};
+item15[] = {"Request",2,250,-75.000000,550.000000,25.000000,600.000000,0.000000,"Request"};
+item16[] = {"Response",4,218,-175.000000,600.000000,-75.000000,650.000000,0.000000,"Response"};
+item17[] = {"Parse_Login",2,250,-75.000000,650.000000,25.000000,700.000000,0.000000,"Parse Login"};
+item18[] = {"Hive_Bad",4,218,50.000000,650.000000,150.000000,700.000000,10.000000,"Hive" \n "Bad"};
+item19[] = {"ERROR__Wrong_HIVE",2,250,175.000000,650.000000,275.000000,700.000000,0.000000,"ERROR:" \n "Wrong HIVE" \n "Version"};
+item20[] = {"Hive_Ok",4,218,-175.000000,700.000000,-75.000000,750.000000,0.000000,"Hive" \n "Ok"};
+item21[] = {"Phase_One",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Phase One"};
+item22[] = {"Response",4,218,-175.000000,800.000000,-75.000000,850.000000,0.000000,"Response"};
+item23[] = {"Phase_Two",2,250,-75.000000,850.000000,25.000000,900.000000,0.000000,"Phase Two"};
+item24[] = {"Dead_Player",4,218,50.000000,850.000000,150.000000,900.000000,0.000000,"Dead" \n "Player"};
+item25[] = {"ERROR__Player_Already",2,250,175.000000,850.000000,275.000000,900.000000,0.000000,"ERROR:" \n "Player Already" \n "Dead"};
+item26[] = {"Alive",4,218,-175.000000,900.000000,-75.000000,950.000000,0.000000,"Alive"};
+item27[] = {"Position",2,250,-75.000000,950.000000,25.000000,1000.000000,0.000000,"Position"};
+item28[] = {"Version_Ok",4,218,-175.000000,1000.000000,-75.000000,1050.000000,0.000000,"Version" \n "Ok"};
+item29[] = {"Load_In",2,250,-75.000000,1150.000000,25.000000,1200.000000,0.000000,"Load In"};
+item30[] = {"Bad_Version",4,218,50.000000,950.000000,150.000000,1000.000000,0.000000,"Bad" \n "Version"};
+item31[] = {"ERROR__Bad_Versi",2,250,175.000000,950.000000,275.000000,1000.000000,0.000000,"ERROR:" \n "Bad Version"};
+item32[] = {"Display_Ready",4,218,-175.000000,1200.000000,-75.000000,1250.000000,0.000000,"Display" \n "Ready"};
+item33[] = {"Preload_Display",2,250,-75.000000,1250.000000,25.000000,1300.000000,0.000000,"Preload" \n "Display"};
+item34[] = {"Preload_Done",4,218,-175.000000,1300.000000,-75.000000,1350.000000,0.000000,"Preload" \n "Done"};
+item35[] = {"Initialize",2,250,-75.000000,1350.000000,25.000000,1400.000000,0.000000,"Initialize"};
+item36[] = {"Finish",1,250,-75.000000,1450.000000,25.000000,1500.000000,0.000000,"Finish"};
+item37[] = {"True",8,218,25.000000,1400.000000,125.000000,1450.000000,0.000000,"True"};
 item38[] = {"Too_Long",4,218,300.000000,150.000000,400.000000,200.000000,0.000000,"Too" \n "Long"};
-item39[] = {"Too_Long",4,218,300.000000,600.000000,400.000000,650.000000,0.000000,"Too" \n "Long"};
-item40[] = {"Too_Long",4,218,300.000000,800.000000,400.000000,850.000000,0.000000,"Too" \n "Long"};
-item41[] = {"Too_Long",4,218,300.000000,900.000000,400.000000,950.000000,0.000000,"Too" \n "Long"};
+item39[] = {"Too_Long",4,218,300.000000,650.000000,400.000000,700.000000,0.000000,"Too" \n "Long"};
+item40[] = {"Too_Long",4,218,300.000000,850.000000,400.000000,900.000000,0.000000,"Too" \n "Long"};
+item41[] = {"Too_Long",4,218,300.000000,950.000000,400.000000,1000.000000,0.000000,"Too" \n "Long"};
 item42[] = {"Enable_Sim",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Enable Sim"};
 item43[] = {"Initialized",4,218,-175.000000,-150.000000,-75.000000,-100.000000,0.000000,"Initialized"};
-item44[] = {"New_Character",4,218,-275.000000,600.000000,-175.000000,650.000000,5.000000,"New" \n "Character"};
-item45[] = {"Gender_Selection",2,250,-400.000000,600.000000,-300.000000,650.000000,0.000000,"Gender Selection" \n "Dialog"};
-item46[] = {"Selected",4,218,-400.000000,700.000000,-300.000000,750.000000,0.000000,"Selected"};
-item47[] = {"Process",2,250,-275.000000,700.000000,-175.000000,750.000000,0.000000,"Process"};
+item44[] = {"New_Character",4,218,-275.000000,650.000000,-175.000000,700.000000,5.000000,"New" \n "Character"};
+item45[] = {"Gender_Selection",2,250,-400.000000,650.000000,-300.000000,700.000000,0.000000,"Gender Selection" \n "Dialog"};
+item46[] = {"Selected",4,218,-400.000000,750.000000,-300.000000,800.000000,0.000000,"Selected"};
+item47[] = {"Process",2,250,-275.000000,750.000000,-175.000000,800.000000,0.000000,"Process"};
 item48[] = {"no_PlayerID",4,218,50.000000,-100.000000,150.000000,-50.000000,2.000000,"no PlayerID"};
 item49[] = {"ERROR__No_Player_1",2,250,175.000000,-100.000000,275.000000,-50.000000,0.000000,"ERROR:" \n "No PlayerID"};
 item50[] = {"Too_Long",4,218,300.000000,-100.000000,400.000000,-50.000000,0.000000,"Too" \n "Long"};
-item51[] = {"Stream",2,250,-75.000000,1000.000000,25.000000,1050.000000,0.000000,"Stream"};
-item52[] = {"Preloaded",4,218,-175.000000,1050.000000,-75.000000,1100.000000,0.000000,"Preloaded"};
-item53[] = {"Retry",4,218,25.000000,475.000000,125.000000,525.000000,0.000000,"Retry"};
-item54[] = {"retry_",4,218,25.000000,525.000000,125.000000,575.000000,0.000000,"retry" \n ""};
-item55[] = {"Retry",2,250,125.000000,500.000000,225.000000,550.000000,0.000000,"Retry"};
-item56[] = {"auth_failed",4,218,250.000000,500.000000,350.000000,550.000000,0.000000,"auth failed"};
-item57[] = {"get_ready_to_clo",2,250,400.000000,500.000000,500.000000,550.000000,0.000000,"get ready to close"};
-item58[] = {"sleep_",4,218,550.000000,500.000000,650.000000,550.000000,0.000000,"sleep" \n ""};
-item59[] = {"Disconnect",2,250,675.000000,500.000000,775.000000,550.000000,0.000000,"Disconnect"};
-item60[] = {"No_time_date",4,218,25.000000,1250.000000,125.000000,1300.000000,0.000000,"No time/date"};
-item61[] = {"ERROR__No_Date_or",2,250,175.000000,1250.000000,275.000000,1300.000000,0.000000,"ERROR:" \n "No Date or Time"};
-item62[] = {"Too_Long",4,218,300.000000,1250.000000,400.000000,1300.000000,0.000000,"Too" \n "Long"};
-item63[] = {"get_ready_to_clo_1",2,250,450.000000,900.000000,550.000000,950.000000,0.000000,"get ready to close"};
-item64[] = {"sleep_",4,218,600.000000,900.000000,700.000000,950.000000,0.000000,"sleep" \n ""};
-item65[] = {"_",2,250,-75.000000,225.000000,25.000000,275.000000,0.000000,""};
-item66[] = {"__1",2,250,-75.000000,350.000000,25.000000,400.000000,0.000000,""};
-item67[] = {"wait",4,218,-75.000000,275.000000,25.000000,325.000000,0.000000,"wait"};
-item68[] = {"dialog",4,218,-75.000000,425.000000,25.000000,475.000000,0.000000,"dialog"};
+item51[] = {"Stream",2,250,-75.000000,1050.000000,25.000000,1100.000000,0.000000,"Stream"};
+item52[] = {"Preloaded",4,218,-175.000000,1100.000000,-75.000000,1150.000000,0.000000,"Preloaded"};
+item53[] = {"Retry",4,218,25.000000,525.000000,125.000000,575.000000,0.000000,"Retry"};
+item54[] = {"retry_",4,218,25.000000,575.000000,125.000000,625.000000,0.000000,"retry" \n ""};
+item55[] = {"Retry",2,250,125.000000,550.000000,225.000000,600.000000,0.000000,"Retry"};
+item56[] = {"auth_failed",4,218,250.000000,550.000000,350.000000,600.000000,0.000000,"auth failed"};
+item57[] = {"get_ready_to_clo",2,250,400.000000,550.000000,500.000000,600.000000,0.000000,"get ready to close"};
+item58[] = {"sleep_",4,218,550.000000,550.000000,650.000000,600.000000,0.000000,"sleep" \n ""};
+item59[] = {"Disconnect",2,250,675.000000,550.000000,775.000000,600.000000,0.000000,"Disconnect"};
+item60[] = {"No_time_date",4,218,25.000000,1300.000000,125.000000,1350.000000,0.000000,"No time/date"};
+item61[] = {"ERROR__No_Date_or",2,250,175.000000,1300.000000,275.000000,1350.000000,0.000000,"ERROR:" \n "No Date or Time"};
+item62[] = {"Too_Long",4,218,300.000000,1300.000000,400.000000,1350.000000,0.000000,"Too" \n "Long"};
+item63[] = {"get_ready_to_clo_1",2,250,450.000000,950.000000,550.000000,1000.000000,0.000000,"get ready to close"};
+item64[] = {"sleep_",4,218,600.000000,950.000000,700.000000,1000.000000,0.000000,"sleep" \n ""};
+item65[] = {"Crash_Sites",2,250,-75.000000,250.000000,25.000000,300.000000,0.000000,"Crash Sites"};
+item66[] = {"Waiting_on_Auth",2,250,-75.000000,400.000000,25.000000,450.000000,0.000000,"Waiting on Auth" \n ""};
+item67[] = {"wait",4,218,100.000000,250.000000,200.000000,300.000000,0.000000,"wait"};
+item68[] = {"wait",4,218,-75.000000,475.000000,25.000000,525.000000,0.000000,"wait"};
+item69[] = {"nfected_Camps",2,250,100.000000,325.000000,200.000000,375.000000,0.000000,"nfected Camps"};
+item70[] = {"Wait",4,218,100.000000,400.000000,200.000000,450.000000,0.000000,"Wait"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -146,10 +148,12 @@ link72[] = {63,64};
 link73[] = {64,59};
 link74[] = {65,67};
 link75[] = {66,68};
-link76[] = {67,66};
+link76[] = {67,69};
 link77[] = {68,15};
-globals[] = {25.000000,1,0,0,0,640,480,1,112,6316128,1,-487.635773,612.819946,829.708679,-45.124508,755,880,1};
-window[] = {2,-1,-1,-1,-1,962,182,1554,182,3,773};
+link78[] = {69,70};
+link79[] = {70,66};
+globals[] = {25.000000,1,0,0,0,640,480,1,118,6316128,1,-367.265350,266.098816,639.879272,136.371536,756,601,1};
+window[] = {2,-1,-1,-32000,-32000,890,110,1482,110,3,773};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -405,7 +409,7 @@ class FSM
         class Has_PlayerID
         {
           priority = 1.000000;
-          to="_";
+          to="Crash_Sites";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!(isNil ""_playerUID"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -429,7 +433,7 @@ class FSM
         class Has_PlayerID
         {
           priority = 1.000000;
-          to="_";
+          to="Crash_Sites";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!(isNil ""_playerUID"")"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -471,7 +475,7 @@ class FSM
        "diag_log (""PLOGIN: Requesting Authentication... ("" + _playerUID + "")"");" \n
        "dayz_loadScreenMsg = (localize ""str_player_15"");" \n
        "" \n
-       "progressLoadingScreen 0.5;" \n
+       "progressLoadingScreen 0.7;" \n
        "" \n
        "_msg = [];" \n
        "" \n
@@ -538,7 +542,7 @@ class FSM
        "};" \n
        "" \n
        "dayz_loadScreenMsg = (localize ""str_player_17""); " \n
-       "progressLoadingScreen 0.7;" \n
+       "progressLoadingScreen 0.8;" \n
        "diag_log (""PLOGIN: authenticated with : "" + str(_msg));" \n
        "" \n
        "//Not Equal Failure" \n
@@ -714,7 +718,7 @@ class FSM
        "publicVariableServer ""PVDZ_plr_Login2"";" \n
        "" \n
        "dayz_loadScreenMsg =  ""Requesting Character data from server"";" \n
-       "progressLoadingScreen 0.8;" \n
+       "progressLoadingScreen 0.9;" \n
        "diag_log ""Attempting Phase two..."";"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -1566,11 +1570,42 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "_">*/
-    class _
+    /*%FSM<STATE "Crash_Sites">*/
+    class Crash_Sites
     {
-      name = "_";
+      name = "Crash_Sites";
       init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime; " \n
+       "" \n
+       "progressLoadingScreen 0.4;" \n
+       "" \n
+       "dayz_loadScreenMsg = (""loading Crashsites... "");"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "wait">*/
+        class wait
+        {
+          priority = 0.000000;
+          to="nfected_Camps";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 6"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"//startLoadingScreen ["""",""RscDisplayLoadCustom""];" \n
+           "" \n
+           "diag_log (""PLOGIN: passed"");" \n
+           "" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Waiting_on_Auth">*/
+    class Waiting_on_Auth
+    {
+      name = "Waiting_on_Auth";
+      init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime; " \n
+       "" \n
+       "progressLoadingScreen 0.6;" \n
        "" \n
        "diag_log (""PLOGIN: Waiting to start Authentication Process... ("" + _playerUID + "")"");" \n
        "" \n
@@ -1583,34 +1618,34 @@ class FSM
         class wait
         {
           priority = 0.000000;
-          to="__1";
+          to="Request";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 10"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//startLoadingScreen ["""",""RscDisplayLoadCustom""];" \n
-           "" \n
-           "diag_log (""PLOGIN: passed"");" \n
-           "" \n
-           ""/*%FSM</ACTION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 6"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "__1">*/
-    class __1
+    /*%FSM<STATE "nfected_Camps">*/
+    class nfected_Camps
     {
-      name = "__1";
-      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      name = "nfected_Camps";
+      init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime; " \n
+       "" \n
+       "progressLoadingScreen 0.5;" \n
+       "" \n
+       "dayz_loadScreenMsg = (""loading Infected Camps... "");"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "dialog">*/
-        class dialog
+        /*%FSM<LINK "Wait">*/
+        class Wait
         {
           priority = 0.000000;
-          to="Request";
+          to="Waiting_on_Auth";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!dialog"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 18"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
