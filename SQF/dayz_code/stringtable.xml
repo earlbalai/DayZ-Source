@@ -3802,7 +3802,7 @@
 			<English>Pack of wet playing cards.</English>
 			<German>Pack of wet playing cards.</German>
 			<Russian>Pack of wet playing cards.</Russian>
-			<Spanish>Pack of wet playing cards.</Spanish>
+			<Spanish>Paquete de cartas mojadas.</Spanish>
 			<Dutch>Pack of wet playing cards.</Dutch>
 			<French>Pack of wet playing cards.</French>
 			<Czech>Navlhlý balíček hracích karet.</Czech>
@@ -3957,7 +3957,7 @@
 			<English>You have created a %1.</English>
 			<German>You have created a %1.</German>
 			<Russian>You have created a %1.</Russian>
-			<Spanish>You have created a %1.</Spanish>
+			<Spanish>Acabaste de crear: %1.</Spanish>
 			<Dutch>You have created a %1</Dutch>
 			<French>You have created a %1.</French>
 			<Czech>Vytvořil jsi %1.</Czech>
@@ -3966,7 +3966,7 @@
 			<English>You cannot place a %1 here. The area must be flat, and free of other objects.</English>
 			<German>You cannot place a %1 here. The area must be flat, and free of other objects.</German>
 			<Russian>You cannot place a %1 here. The area must be flat, and free of other objects.</Russian>
-			<Spanish>You cannot place a %1 here. The area must be flat, and free of other objects.</Spanish>
+			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>You cannot place a %1 here. The area must be flat, and free of other objects.</Dutch>
 			<French>You cannot place a %1 here. The area must be flat, and free of other objects.</French>
 			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které brání postavení.</Czech>
@@ -3975,7 +3975,7 @@
 			<English>You have consumed a %1 giving \n%2 blood regen \nstack %3</English>
 			<German>You have consumed a %1 giving \n%2 blood regen \nstack %3</German>
 			<Russian>You have consumed a %1 giving %2 blood regen, stack %3</Russian>
-			<Spanish>You have consumed a %1 giving %2 blood regen, stack %3</Spanish>
+			<Spanish>Acabas de consumir %1 dandote una regeneración de sangre de %2, apilado por %3</Spanish>
 			<Dutch>You have consumed a %1 giving %2 blood regen, stack %3</Dutch>
 			<French>You have consumed a %1 giving %2 blood regen, stack %3</French>
 			<Czech>Snědl jsi %1 což ti dalo %2 krve, stack %3</Czech>
@@ -4335,7 +4335,7 @@
 			<English>To build %1 you require %2.</English>
 			<German>To build %1 you require %2.</German>
 			<Russian>To build %1 you require %2.</Russian>
-			<Spanish>To build %1 you require %2.</Spanish>
+			<Spanish>Para crear un %1 necesitas %2.</Spanish>
 			<Dutch>To build %1 you require %2.</Dutch>
 			<French>To build %1 you require %2.</French>
 			<Czech>To build %1 you require %2.</Czech>
@@ -4344,7 +4344,7 @@
 			<English>To build a stash site you require %1.</English>
 			<German>To build a stash site you require %1.</German>
 			<Russian>To build a stash site you require %1.</Russian>
-			<Spanish>To build a stash site you require %1.</Spanish>
+			<Spanish>Para crear un escondite necesitas %1.</Spanish>
 			<Dutch>To build a stash site you require %1.</Dutch>
 			<French>To build a stash site you require %1.</French>
 			<Czech>Aby jsi postavil skrýš, je potřeba %1.</Czech>
