@@ -91,7 +91,7 @@ class CfgAddons
 	{
 		class dayz
 		{
-			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons"};
+			list[] = {"dayz_code","dayz","dayz_equip","dayz_weapons","dayz_sfx"};
 		};
 	};
 };
