@@ -136,10 +136,10 @@ if (!isDedicated) then {
 			};
 
 			if ( dayz_loadScreenMsg != "" ) then {
-				//_control1 ctrlSetText dayz_loadScreenMsg;
+				_control1 ctrlSetText dayz_loadScreenMsg;
 				dayz_loadScreenMsg = "";
 			};
-			//_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
+			_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
 			_timeOut = _timeOut + 1;
 			sleep 0.1;
 		};

@@ -95,13 +95,13 @@ _object_damage = {
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
 		if (_hit > 0) then {
 			_array set [count _array,[_selection,_hit]];
-			diag_log format ["Section Part: %1, Dmg: %2",_selection,_hit]; 
+			//diag_log format ["Section Part: %1, Dmg: %2",_selection,_hit]; 
 		} else {
 			_array set [count _array,[_selection,0]]; 
 		};
 	} forEach _hitpoints;
 		
-	//if (_forced) then {	
+	if (_forced) then {	
 		if (_object in needUpdate_objects) then {
 			needUpdate_objects = needUpdate_objects - [_object];
 		};
@@ -115,13 +115,13 @@ _object_damage = {
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;	
 
-	//} else {		
-	//	if (_object in needUpdate_objects) then {
-	//		needUpdate_objects = needUpdate_objects - [_object];
-	//	};
-	//	diag_log format["DEBUG: Monitoring: %1",_object];
-	//	needUpdate_objects set [count needUpdate_objects, _object];
-	//};
+	} else {		
+		if (_object in needUpdate_objects) then {
+			needUpdate_objects = needUpdate_objects - [_object];
+		};
+		diag_log format["DEBUG: Monitoring: %1",_object];
+		needUpdate_objects set [count needUpdate_objects, _object];
+	};
 };
 
 _object_killed = {
