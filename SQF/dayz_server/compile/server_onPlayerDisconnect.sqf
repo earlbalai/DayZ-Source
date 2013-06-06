@@ -31,7 +31,7 @@ if (!isNull _playerObj) then {
 		_playerObj action ["eject", vehicle _playerObj];
 	};
 	{ [_x,"gear"] call server_updateObject } foreach 
-		(nearestObjects [getPosATL _playerObj, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage"], 10]);
+		(nearestObjects [getPosATL _playerObj, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "StashSmall", "StashMedium"], 10]);
 	if (alive _playerObj) then {
 		//[_playerObj,(magazines _playerObj),true,(unitBackpack _playerObj)] call server_playerSync;
 		[_playerObj,[],true] call server_playerSync;
