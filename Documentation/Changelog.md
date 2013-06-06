@@ -5,7 +5,7 @@ DayZ Mod Changelog
 Version 1.7.7
 ---------------
 
-* Releasedate XX June 2013
+* Releasedate 10 June 2013
 
 
 Affected addons:
@@ -47,7 +47,7 @@ Serverside affected addons:
 	    * [NEW] - Weapons spawns now have a chance to spawn with 0 mags up to a max of 2.
 	    * [NEW] - Melee weapons can now be dropped and picked up using the normal a2 system. (This means you can now store in backpack and tents, without swapping to toolbelt) No need to take itemslots.
 	    * [NEW] - New starting gear added. Guaranteed Start Items: ("ItemBandage","HandRoadFlare") + 1 RandomStartItem: ("ItemBandage","ItemPainkiller").
-	    ??????????????????????????* [NEW] - Servers date has been locked to give full moon nights.
+	    * [NEW] - Servers date has been locked to give full moon nights.
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
 	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
