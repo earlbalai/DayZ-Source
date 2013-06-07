@@ -161,7 +161,7 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 
 // player may fall...
 if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or low speed
-	AND {((abs(_deg) < 30) OR {(abs(_deg) >(180-30))})}) then { // no tackle if Zed is not in front or in back
+	AND {((abs(_deg) < 35) OR {(abs(_deg) >(180-35))})}) then { // no tackle if Zed is not in front or in back
 	_lastTackle = player getVariable ["lastTackle", 0];
 	if (time - _lastTackle > 15) then { // no tackle if previous tackle occured less than X seconds before
 		player setVariable ["lastTackle", time];
