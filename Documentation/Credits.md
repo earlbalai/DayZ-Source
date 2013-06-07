@@ -61,7 +61,7 @@ feature.
  * [VRShiva](https://github.com/VRShiva)
  * [DasAttorney](https://github.com/DasAttorney)
  * [ddesmond](https://github.com/ddesmond)
- * [dayz10k](https://github.com/dayz10k)
+ * [dayz10k (Harlan)](https://github.com/dayz10k)
  * [Ingasmeeg](https://github.com/Ingasmeeg)
  * [caleywoods](https://github.com/caleywoods)
  * [icomrade](https://github.com/icomrade)
