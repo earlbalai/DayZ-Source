@@ -161,8 +161,7 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 
 // player may fall...
 if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or low speed
-	AND {((abs(_deg) < 45) OR {(abs(_deg) >(180-45))})}) then { // no tackle if Zed is not in front or in back
- then {
+	AND {((abs(_deg) < 30) OR {(abs(_deg) >(180-30))})}) then { // no tackle if Zed is not in front or in back
 	_lastTackle = player getVariable ["lastTackle", 0];
 	if (time - _lastTackle > 15) then { // no tackle if previous tackle occured less than X seconds before
 		player setVariable ["lastTackle", time];
@@ -177,7 +176,10 @@ if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or 
 			default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 		};
 		player playMove _move; 
-		diag_log(format["%1 player tackled. Weapons: cur:""%2"" pri:""%3"" sec:""%4"" --> move: %5",  __FILE__,  currentWeapon player,  primaryWeapon player,  secondaryWeapon player,  _move]);
+		diag_log(format["%1 player tackled. Weapons: cur:""%2"" --> move: %3. Angle:%4 Delta-time:%5",  __FILE__,  
+		currentWeapon player, _move,
+		_deg, time - _lastTackle
+		]);
 	};
 };
 
