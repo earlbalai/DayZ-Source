@@ -50,12 +50,12 @@ Serverside affected addons:
 	    * [NEW] - Servers date has been locked to give full moon nights.
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
-	    * [NEW] - 1 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
+	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
 			    Small Stash = 12 object slots, 0 Weapon, 0 bags.
 			    Medium Stash = 25 object slots, 1 Weapon, 0 bags.
 	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
-	    * [NEW] - 1 New Melee weapon.(BaseBallBat)
+	    * [NEW] - 3 New Melee weapon.(BaseBallBat, BaseBallBatNails, BaseBallBatBarbed)
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.
@@ -68,7 +68,7 @@ Serverside affected addons:
 	    * [FIXED] - Vehicle repair should now work correctly.
 	    * [FIXED] - Humanity skin change can now change during gameplay in all directions. (No longer have to die/logout to change from hero to normal to bandit and vice versa)
 	    * [FIXED] - StudyBody should now work. (Describing wounds accurately)
-	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash model.
+	    * [FIXED] - Crashsite loot should now spawn correctly for all types of Crash models.
 	    * [FIXED] - Hero Skin teleport issue.
 	    * [FIXED] - BAF Bags so they don't set on fire. :-) (no moaning it was a bug)
 	    * [FIXED] - Updated timeout timer from 40 secs to 3000 secs, Should allow lower end systems to keep up. (Something went wrong, please disconnect and try again!)
@@ -82,7 +82,7 @@ Serverside affected addons:
 	    * [FIXED] - Unconscious damage scale to only happen if hit by zeds. (reduces damage while unconscious)
 	    * [FIXED] - Dayz Date/Time public var will now end mission on failed attempt.
 	    * [FIXED] - Can no longer break legs by anything other than players/zeds/falling/getting out of moving vehicle.
-	    * [FIXED] - A lot of dupeing issues should now be resolved.
+	    * [FIXED] - A lot of duping issues should now be resolved.
 	    * [FIXED] - Most wallhack exploits should now be resolved.
 	    * [FIXED] - No more 3x get up Animation loop when recovering from unconscious
 	    * [FIXED] - You can no longer get into vehicles while dragging players
@@ -94,7 +94,7 @@ Serverside affected addons:
 	    * [UPDATED] - ALL loot table weights have been updated.
 	    * [UPDATED] - ALL loot table weights have been rebalanced.
 	    * [UPDATED] - Updated Czech, German, Spanish, French and Russian stringtable.
-	    * [UPDATED] - Mac and 1911 Pistol dmg updated.
+	    * [UPDATED] - Makarov and 1911 Pistol dmg updated.
 	    * [UPDATED] - CrashSite Loot should now represent each type of model more. (("MilitaryWEST","HeliCrashWEST") Two new crash site loot tables)
 	    * [UPDATED] - Re-added the "save" option to tents and vehicles. This is a fail-safe option, not required. (Due to a small amount of servers reporting issues with tents saving. With no info for us to recreate we re-added this option to save tents/vehicles) 
 	    * [UPDATED] - Zed generate system. has now been fully rewrote should stop zeds spawning in view of players then being deleted.
