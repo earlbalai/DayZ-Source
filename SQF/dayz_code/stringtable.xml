@@ -4216,7 +4216,7 @@
 		</Key>
 		<Key ID="str_player_18">
 			<English>You are running an incorrect version of DAYZ_CODE, please download this file from dayzmod.com/downloads (You are running version %1 and the server is running version %2)</English>
-			<German>Sie haben eine falsche Version von DAYZ_CODE, bitte laden Sie sich neuste Version von dayzmod.com/downloads runter</German>
+			<German>Sie haben eine falsche Version von DAYZ_CODE, bitte laden Sie sich neuste Version von dayzmod.com/downloads runter. (Deine Version: %1 Server Version %2)</German>
 			<Russian>Вы используете неверную версию DAYZ_CODE. Пожалуйста, скачайте нужный файл с dayzmod.com/downloads (Ваша версия %1, версия на сервере %2)</Russian>
 			<Spanish>Estás ejecutando una versión incorrecta de DAYZ_CODE, por favor descarga este archivo desde dayzmod.com/downloads (Estas ejecutando la versión %1 y el servidor %2)</Spanish>
 			<Dutch>Je gebruikt een incorrecte versie van DAYZ_CODE, download dit bestand alsjeblieft van dayzmod.com/downloads (Je gebruikt versie %1, en de server gebruikt versie %2)</Dutch>
