@@ -1,5 +1,4 @@
 
-
 private ["_refObj",  "_listTalk",  "_pHeight",  "_attacked",  "_multiplier",  "_type",  "_dist",  "_chance",  "_last",  "_targets",  "_cantSee",  "_tPos",  "_zPos",  "_eyeDir",  "_inAngle",  "_lowBlood",  "_attackResult", "_near"];
 
 _refObj = vehicle player;
@@ -25,7 +24,7 @@ _multiplier = 1;
 					_attackResult = [_x,  _type] call player_zombieAttack;
 				};
 				//diag_log(format["%1 %2 %3 / as:%4 up:%5 ur:%6 sp:%7",  __FILE__,  _x,  _attackResult,  animationState player,  unitPos player,  unitReady _x,  [0, 0, 0] distance (velocity player)]);
-				if ((isNil "_attackResult") OR {(_attackResult == "")}) then {
+				if ((!isNil "_attackResult") AND {(_attackResult == "")}) then {
 					_x setVariable["lastAttack", diag_tickTime - random(1)];
 					_attacked = true;
 				}
@@ -129,4 +128,3 @@ if (_attacked) then {
 
 // return true if attacked or near. if so,  player_monitor will perform its ridiculous 'while true' loop faster.
 (_attacked OR _near)
-
