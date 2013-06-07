@@ -160,18 +160,25 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 [_unit,  "hit",  1,  false] call dayz_zombieSpeak;
 
 // player may fall...
-if ((!_isVehicle) and {(_speed >= 5.62)}) then { // player hit while running
-	// stop player
-	_vel = velocity player;
-	player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-	// make player dive
-	_move = switch (currentWeapon player) do {
-		case "Flare"; case "Throw"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare/Grenades
-		case (primaryWeapon player) : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle/crowbar
-		default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or low speed
+	AND {((abs(_deg) < 45) OR {(abs(_deg) >(180-45))})}) then { // no tackle if Zed is not in front or in back
+ then {
+	_lastTackle = player getVariable ["lastTackle", 0];
+	if (time - _lastTackle > 15) then { // no tackle if previous tackle occured less than X seconds before
+		player setVariable ["lastTackle", time];
+
+		// stop player
+		_vel = velocity player;
+		player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+		// make player dive
+		_move = switch (currentWeapon player) do {
+			case "Flare"; case "Throw"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare/Grenades
+			case (primaryWeapon player) : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle/crowbar
+			default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+		};
+		player playMove _move; 
+		diag_log(format["%1 player tackled. Weapons: cur:""%2"" pri:""%3"" sec:""%4"" --> move: %5",  __FILE__,  currentWeapon player,  primaryWeapon player,  secondaryWeapon player,  _move]);
 	};
-	player playMove _move; 
-	diag_log(format["%1 player tackled. Weapons: cur:""%2"" pri:""%3"" sec:""%4"" --> move: %5",  __FILE__,  currentWeapon player,  primaryWeapon player,  secondaryWeapon player,  _move]);
 };
 
 
