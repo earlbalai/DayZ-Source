@@ -3959,7 +3959,7 @@
 			<Russian>You have created a %1.</Russian>
 			<Spanish>Acabaste de crear: %1.</Spanish>
 			<Dutch>You have created a %1</Dutch>
-			<French>You have created a %1.</French>
+			<French>Vous avez créé un(e) %1.</French>
 			<Czech>Vytvořil jsi %1.</Czech>
 		</Key>
 		<Key ID="str_fail_stash_pitch">
@@ -3968,7 +3968,7 @@
 			<Russian>You cannot place a %1 here. The area must be flat, and free of other objects.</Russian>
 			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<Dutch>You cannot place a %1 here. The area must be flat, and free of other objects.</Dutch>
-			<French>You cannot place a %1 here. The area must be flat, and free of other objects.</French>
+			<French>\n\nVous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
 			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které brání postavení.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
@@ -3977,7 +3977,7 @@
 			<Russian>You have consumed a %1 giving %2 blood regen, stack %3</Russian>
 			<Spanish>Acabas de consumir %1 dandote una regeneración de sangre de %2, apilado por %3</Spanish>
 			<Dutch>You have consumed a %1 giving %2 blood regen, stack %3</Dutch>
-			<French>You have consumed a %1 giving %2 blood regen, stack %3</French>
+			<French>\n\nVous avez pris un(e) %1 vous apportant %2 points de sang.</French>
 			<Czech>Snědl jsi %1 což ti dalo %2 krve, stack %3</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
@@ -4337,7 +4337,7 @@
 			<Russian>To build %1 you require %2.</Russian>
 			<Spanish>Para crear un %1 necesitas %2.</Spanish>
 			<Dutch>To build %1 you require %2.</Dutch>
-			<French>To build %1 you require %2.</French>
+			<French>Pour construire un(e) %1, il vous faut : %2.</French>
 			<Czech>To build %1 you require %2.</Czech>
 		</Key>
 		<Key ID="str_player_31_stash">	<!-- %1=ITEM %2=build/consumed/cook/drink/fill/pitch/place/use/wear -->
@@ -4346,7 +4346,7 @@
 			<Russian>To build a stash site you require %1.</Russian>
 			<Spanish>Para crear un escondite necesitas %1.</Spanish>
 			<Dutch>To build a stash site you require %1.</Dutch>
-			<French>To build a stash site you require %1.</French>
+			<French>Pour construire une planque, il vous faut %1.</French>
 			<Czech>Aby jsi postavil skrýš, je potřeba %1.</Czech>
 		</Key>
 		<Key ID="str_player_31_build">
