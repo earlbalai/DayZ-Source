@@ -21,5 +21,5 @@ Suggestions
 
 * Humanity starting level change to '0' to further support above changes.
 
-* Add visual representation for humanity level. (normal humanity indcator will be removed together with the debug screen)
+* Add visual representation for humanity level. (normal humanity indicator will be removed together with the debug screen)
 * Can we please have street lights?
