@@ -1,3 +1,4 @@
+
 /*
         Created exclusively for ArmA2:OA - DayZMod.
         Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
@@ -13,12 +14,7 @@ _vehicle = (vehicle player);
 _speed = speed player;
 _nextPlayerPos = player call dayz_futurePos;
 _distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
-
-/*
-if (!isNil "toto") then { deleteVehicle toto; sleep 0.01 };
-toto = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0]; toto setPosATL [_nextPlayerPos select 0,_nextPlayerPos select 1,3.2]; sleep 0.01;
-*/		
-	
+			
 _isVehicle = (_vehicle != player);
 _isSameFloor = false;
 _isStairway = false;
@@ -40,7 +36,6 @@ if (abs(_hu - _hv) < 1.3) then {
 };
 
 if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
-
 /*
 // Not needed LOS is checked by the FSM
 // check if space between player/vehicle and Z is clear or not
@@ -52,7 +47,6 @@ _isClear = (_cob == 0 or {!((_ob_arr select 0) isKindOf "All")});
 
 if (!_isClear) exitWith {"something between"}; // no attack if there is a wall between fighters.
 */
-
 // check relative angle (where is the player/vehicle in the Z sight)
 _deg = [_unit,  _nextPlayerPos] call BIS_fnc_relativeDirTo;
 if (_deg > 180) then { _deg = _deg - 360; };
@@ -143,8 +137,6 @@ if (_rnd == 0) exitWith {"bad move (too far)"};  // move not found -- Z too far?
 
 // fix the direction
 _unit setDir ((getDir _unit) + _deg);
-
-//_unit setDir ((direction _unit) + _deg);
 _unit setPosATL (getPosATL _unit);
 
 
@@ -165,12 +157,13 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 [_unit,  "hit",  1,  false] call dayz_zombieSpeak;
 
 // player may fall...
+_deg = [player, _unit] call BIS_fnc_relativeDirTo;
+if (_deg > 180) then { _deg = _deg - 360; };
 if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or low speed
-	AND {((abs(_deg) < 35) OR {(abs(_deg) >(180-35))})}) then { // no tackle if Zed is not in front or in back
+	AND {((abs(_deg) < 40) OR {(abs(_deg) >(180-40))})}) then { // no tackle if Zed is not in front or in back
 	_lastTackle = player getVariable ["lastTackle", 0];
-	if (time - _lastTackle > 15) then { // no tackle if previous tackle occured less than X seconds before
+	if (time - _lastTackle > 8) then { // no tackle if previous tackle occured less than X seconds before
 		player setVariable ["lastTackle", time];
-
 		// stop player
 		_vel = velocity player;
 		player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
@@ -197,7 +190,8 @@ if (_isVehicle) then {
 			player action ["eject",  _vehicle];
 		};
 		diag_log(format["%1: Player ejected from %2", __FILE__, _vehicle]);
-	} else { // vehicle with a compartment
+	}
+	else { // vehicle with a compartment
 		_wound = _this select 2; // what is this? wound linked to Z attack?
 		if (isNil "_wound") then {
 			_hpList = _vehicle call vehicle_getHitpoints;
@@ -228,7 +222,8 @@ if (_isVehicle) then {
 			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
 		};
 	}; // fi veh with compartment 
-} else { // player by foot
+}
+else { // player by foot
 	_damage = 0.2 + random (0.4);
 
 	switch true do {
