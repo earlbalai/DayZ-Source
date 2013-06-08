@@ -3978,7 +3978,7 @@
 			<Spanish>Acabas de consumir %1 dandote una regeneración de sangre de %2, apilado por %3</Spanish>
 			<Dutch>You have consumed a %1 giving %2 blood regen, stack %3</Dutch>
 			<French>\n\nVous avez pris un(e) %1 vous apportant %2 points de sang.</French>
-			<Czech>Snědl jsi %1 což ti dalo %2 krve, v pořadí již %3./Czech>
+			<Czech>Snědl jsi %1 což ti dalo %2 krve, v pořadí již %3.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
 			<English>You have consumed a %1</English>

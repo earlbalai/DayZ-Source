@@ -42,7 +42,7 @@ if (abs(_hu - _hv) < 1.3) then {
 if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
 
 /*
-//Not needed LOS is checked by the FSM
+// Not needed LOS is checked by the FSM
 // check if space between player/vehicle and Z is clear or not
 _gpu_asl set [ 2, 0.40 + _hu ]; 
 _gpv_asl set [ 2, 0.40 + _hv ];

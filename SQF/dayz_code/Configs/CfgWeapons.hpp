@@ -1,4 +1,7 @@
 class CfgWeapons {
+	class Default {
+		canlock = 0;
+	};
 	class ItemCore;
 	class Crossbow;
 	class Rifle;
