@@ -18,8 +18,7 @@ Howto use:
    Don't forget to change maxRoaming (= max number of Zed) and lootChance
    if Zeds are prone to commit suicide while spawing, because the lootpos is high, or in the roofslope, or has to AI path, you will have to set maxRoaming=0
 */
-
-hintkbd = "looteditor.paa";
+hintkbd = 'DevTools\scripts\looteditor.paa';
 plr_initpos = [4148, 10872, 0]; // where the player (editor) should be
 plr_initdir = 92; // so that he is facing the building
 bld_initpos = [4194, 10864,0]; // where the edited building should be
@@ -311,7 +310,8 @@ if (isNil "myhouses") then {
 	settle = _settle;
 	dismantle = _dismantle;
 	myfunc = _myfunc;
-	
+	terminate dayz_HintMontior;
+
 	mystep=0.01;
 	curType = 0;
 	types = ["WeaponHolder_PartGlass","Fort_RazorWire","Land_CncBlock_D","Sign_sphere25cm_EP1","Hedgehog"];
