@@ -40,7 +40,6 @@ Serverside affected addons:
 	    * [NEW] - 2 New background tracks.
 	    * [NEW] - 6 New "Viral" zeds - They are harder to kill, they do more damage, and they have a higher chance of causing an infection... be afraid. (Headshot will kill in one shot)
 	    * [NEW] - Added optional watermark for servername (Server admins can choose to enable/disable. (See Mission prerequisites)). Shows servername in the bottom right of screen max 6 letters.
-	    * [NEW] - "Sleep" at tents changed to "Rest".
 	    * [NEW] - Remote exec security. Should prevent all major RE exploits
 	    * [NEW] - Clear Ground around loot at crash sites added but disabled by default, server admins can enable. Adds a small circle around each loot pile
 	    * [NEW] - Vehicles and tents now report free gear slots. Example: Old Camping Tent (weapons/others/backpacks). http://ziellos2k.net/images/20130417141327522.png
@@ -55,7 +54,7 @@ Serverside affected addons:
 			    Medium Stash = 25 object slots, 1 Weapon, 0 bags.
 	    * [NEW] - Infected survivor camps. Three types (small).
 	    * [NEW] - FPS Monitor this will dynamicly change how/total amount of zeds/loot/trash is spawning to keep the players base fps up.
-	    * [NEW] - 3 New Melee weapon.(BaseBallBat, BaseBallBatNails, BaseBallBatBarbed)
+	    * [NEW] - 1 New Melee weapon.(BaseBallBat)
 	    * [NEW] - Wild Spawning of zeds has been redone and readded.
 	    * [NEW] - Zed Spawning fully updated to spawn outside the players field of view. (Excludes Infected camps, due to trigger zones being tested).
 	    * [NEW] - Zeds can now tackle players to the ground when attacked.

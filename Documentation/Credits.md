@@ -11,10 +11,11 @@ Original Author
  * Dean 'Rocket' Hall
 
 
-Community Dev Project Manager
+Community Dev Project Managers
 ---------------
 
  * [R4Z0R49] (https://github.com/R4Z0R49)
+ * [AlbyBDPK] (https://github.com/AlbyBDPK)
 
  
 -------------------------
@@ -29,7 +30,6 @@ for many different parts of the code.
  * [JoeysLucky22] (https://github.com/JoeysLucky22)
  * [facoptere] (https://github.com/facoptere)
  * [AlexAFlorov] (https://github.com/AlexAFlorov)
- * [AlbyBDPK] (https://github.com/AlbyBDPK)
  * [thevisad] (https://github.com/thevisad)
  * [Sharkiller](https://github.com/Sharkiller) (Spanish Tranlations) 
  * [Markolie](https://github.com/Markolie) (Dutch Translations)    
@@ -67,9 +67,6 @@ feature.
  * [icomrade](https://github.com/icomrade)
  * [soapmak3r](https://github.com/soapmak3r) (Background Music)
  * Ander
- * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
- * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
- * Special thanks to shinkicker who has listened to all of the ideas and who has always been there to bounce ideas back and forth Thanks.
 
 ------------------------
 Art Work
@@ -78,6 +75,14 @@ Art Work
  * Des (Gender images & Gui icon's revamp)
  * [JoeysLucky22](https://github.com/JoeysLucky22)
  * [Elvaron](https://github.com/Elvaron)
+ 
+------------------------
+Special thanks.
+------------------------
+ * Special thanks to TOPMO3 and GenesisCrys for the outstanding work with retexturing the Viral infected.
+ * Special thanks to David Foltyn for the support during the community build with his constent moaning and presure to do everything different :-).
+ * Special thanks to Matt Lightfoot for his incredible logic we all love to hate :-).
+ * Special thanks to shinkicker who has listened to all of the ideas and who has always been there to bounce ideas back and forth Thanks.
 
 Contributing
 ------------
