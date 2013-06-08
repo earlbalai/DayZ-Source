@@ -3972,13 +3972,31 @@
 			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které brání postavení.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
-			<English>You have consumed a %1 giving \n%2 blood regen \nstack %3</English>
-			<German>You have consumed a %1 giving \n%2 blood regen \nstack %3</German>
-			<Russian>You have consumed a %1 giving %2 blood regen, stack %3</Russian>
-			<Spanish>Acabas de consumir %1 dandote una regeneración de sangre de %2, apilado por %3</Spanish>
-			<Dutch>You have consumed a %1 giving %2 blood regen, stack %3</Dutch>
-			<French>\n\nVous avez pris un(e) %1 vous apportant %2 points de sang.</French>
-			<Czech>Snědl jsi %1 což ti dalo %2 krve, v pořadí již %3.</Czech>
+			<English>You ate %1.</English>
+			<German>You ate %1.</German>
+			<Russian>You ate %1.</Russian>
+			<Spanish>You ate %1.</Spanish>
+			<Dutch>You ate %1.</Dutch>
+			<French>You ate %1.</French>
+			<Czech>You ate %1.</Czech>
+		</Key>
+		<Key ID="str_player_consumed_food_1">
+			<English>You ate %1 and start to feel full...</English>
+			<German>You ate %1 and start to feel full...</German>
+			<Russian>You ate %1 and start to feel full...</Russian>
+			<Spanish>You ate %1 and start to feel full...</Spanish>
+			<Dutch>You ate %1 and start to feel full...</Dutch>
+			<French>You ate %1 and start to feel full...</French>
+			<Czech>You ate %1 and start to feel full...</Czech>
+		</Key>
+		<Key ID="str_player_consumed_food_2">
+			<English>You ate %1 but spit out most of it. You're too full to eat anything.</English>
+			<German>You ate %1 but spit out most of it. You're too full to eat anything.</German>
+			<Russian>You ate %1 but spit out most of it. You're too full to eat anything.</Russian>
+			<Spanish>You ate %1 but spit out most of it. You're too full to eat anything.</Spanish>
+			<Dutch>You ate %1 but spit out most of it. You're too full to eat anything.</Dutch>
+			<French>You ate %1 but spit out most of it. You're too full to eat anything.</French>
+			<Czech>You ate %1 but spit out most of it. You're too full to eat anything.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
 			<English>You have consumed a %1</English>
