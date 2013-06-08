@@ -14,6 +14,7 @@ pic = pic + [""]; hacks = hacks + ["Enable Monitor","DevTools\scripts\monkeymoni
 
 pic = pic + [""]; hacks = hacks + ["Disable Monitor","DevTools\scripts\monkeymonitor.sqf","SQF"];
 
+pic = pic + [""]; hacks = hacks + ["Loot editor","DevTools\scripts\looteditor.sqf","SQF"];
 
 //////////////////////////////////////////////
 
