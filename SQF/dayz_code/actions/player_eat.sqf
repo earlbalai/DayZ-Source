@@ -108,12 +108,12 @@ if (r_player_blood / r_player_bloodTotal >= 0.2) then {
     (_display displayCtrl 1300) ctrlShow true;
 };
 
-if (r_player_foodstack => 1) and (r_player_foodstack < 7) then {
+if ((r_player_foodstack >= 1) and (r_player_foodstack < 7)) then {
 	cutText [format[(localize  "str_player_consumed_food"),_text], "PLAIN DOWN"];
 };
-if (r_player_foodstack => 7) and (r_player_foodstack < 10) then {
+if ((r_player_foodstack >= 7) and (r_player_foodstack < 10)) then {
 	cutText [format[(localize  "str_player_consumed_food_1"),_text], "PLAIN DOWN"];
 };
-if (r_player_foodstack => 10) then {
+if ((r_player_foodstack >= 10)) then {
 	cutText [format[(localize  "str_player_consumed_food_2"),_text], "PLAIN DOWN"];
 };
