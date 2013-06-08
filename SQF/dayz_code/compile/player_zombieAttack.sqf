@@ -14,10 +14,7 @@ _vehicle = (vehicle player);
 _speed = speed player;
 _nextPlayerPos = player call dayz_futurePos;
 _distance = [_unit, _nextPlayerPos] call BIS_fnc_distance2D;
-
-/*if (!isNil "toto") then { deleteVehicle toto; sleep 0.01 };
-toto = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0]; toto setPosATL [_nextPlayerPos select 0,_nextPlayerPos select 1,3.2]; sleep 0.01;
-	*/					
+			
 _isVehicle = (_vehicle != player);
 _isSameFloor = false;
 _isStairway = false;
@@ -39,7 +36,8 @@ if (abs(_hu - _hv) < 1.3) then {
 };
 
 if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
-
+/*
+// Not needed LOS is checked by the FSM
 // check if space between player/vehicle and Z is clear or not
 _gpu_asl set [ 2, 0.40 + _hu ]; 
 _gpv_asl set [ 2, 0.40 + _hv ];
@@ -48,7 +46,7 @@ _cob = count _ob_arr;
 _isClear = (_cob == 0 or {!((_ob_arr select 0) isKindOf "All")});
 
 if (!_isClear) exitWith {"something between"}; // no attack if there is a wall between fighters.
-
+*/
 // check relative angle (where is the player/vehicle in the Z sight)
 _deg = [_unit,  _nextPlayerPos] call BIS_fnc_relativeDirTo;
 if (_deg > 180) then { _deg = _deg - 360; };
