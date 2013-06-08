@@ -3978,7 +3978,7 @@
 			<Spanish>You ate %1.</Spanish>
 			<Dutch>You ate %1.</Dutch>
 			<French>You ate %1.</French>
-			<Czech>You ate %1.</Czech>
+			<Czech>Snědl jsi %1.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_1">
 			<English>You ate %1 and start to feel full...</English>
@@ -3987,7 +3987,7 @@
 			<Spanish>You ate %1 and start to feel full...</Spanish>
 			<Dutch>You ate %1 and start to feel full...</Dutch>
 			<French>You ate %1 and start to feel full...</French>
-			<Czech>You ate %1 and start to feel full...</Czech>
+			<Czech>Snědl jsi %1 a začínáš cítit, že jsi plný...</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_2">
 			<English>You ate %1 but spit out most of it. You're too full to eat anything.</English>
@@ -3996,7 +3996,7 @@
 			<Spanish>You ate %1 but spit out most of it. You're too full to eat anything.</Spanish>
 			<Dutch>You ate %1 but spit out most of it. You're too full to eat anything.</Dutch>
 			<French>You ate %1 but spit out most of it. You're too full to eat anything.</French>
-			<Czech>You ate %1 but spit out most of it. You're too full to eat anything.</Czech>
+			<Czech>Snědl jsi %1, ale většinu jsi vyplivnul. Seš plný a víc toto už nesníš.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
 			<English>You have consumed a %1</English>
