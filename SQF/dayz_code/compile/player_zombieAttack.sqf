@@ -149,7 +149,7 @@ else {
 };
 
 // Damage is done after the move
-//sleep 0.02;
+sleep 0.3;
 
 if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 
