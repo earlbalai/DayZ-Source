@@ -1,7 +1,7 @@
 respawn = "BASE";
 respawndelay = 5;
-onLoadMission= "DayZ Test";
-OnLoadIntro = "Thank you for helping";
+onLoadMission= "DayZ Chernarus";
+OnLoadIntro = "Welcome to Chernarus";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;

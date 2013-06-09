@@ -151,10 +151,10 @@ if (_damage > 0.4) then {	//0.25
 		//Infection from zombies
 		if (_ammo == "zombie") then {
 			_rndInfection = random (_damage - _bloodPercentage);
-			_hitInfection = ((exp _rndInfection) > 1.15);
+			_hitInfection = ((exp _rndInfection) > 1.25);
 			if (_newtypezed) then {
 				_rndInfection = random (_damage - _bloodPercentage);
-				_hitInfection = ((exp _rndInfection * 1.15) > 1.15);
+				_hitInfection = ((exp _rndInfection * 1.25*1.1) > 1.25);
 			};
 			if (_hitInfection) then {
 				r_player_infected = true;
