@@ -266,7 +266,7 @@ class CfgBuildingLoot {
 			{"G36C","weapon",0.03},
 			{"G36C_camo","weapon",0.03},
 			{"G36_C_SD_camo","weapon",0.01},
-			{"G36K_camo","weapon",0.03},
+			{"G36A_camo","weapon",0.03},
 			{"G36K_camo","weapon",0.03},
 			{"","military",1.00},
 			{"","medical",0.5}
