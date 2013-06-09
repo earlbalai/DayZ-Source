@@ -8,7 +8,7 @@ if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
 
 //Force players to wait 3 mins to eat again
-//if (dayz_lastMeal < 180) exitWith {cutText ["You may not eat, you're already full", "PLAIN DOWN"]};
+//if (dayz_lastMeal < 15) exitWith {cutText ["You may not eat, you're already full", "PLAIN DOWN"]};
 
 _itemorignal = _this;
 _hasfooditem = _itemorignal in magazines player;
@@ -36,12 +36,15 @@ if (_sfx == "") then {_sfx = "eat"};
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-regen = 0;
+if (r_player_foodstack >= 10) then {
+	_regen = 0;
+};
 
 if ((r_player_bloodregen > 5) and (r_player_foodstack > 1) and (r_player_foodstack < 10)) then {
 	_regen = _regen / r_player_foodstack;
-	diag_log ("Regen: " +str(_regen));
 };
+
+//diag_log format ["Regen: %1, Stack: %2", _regen, r_player_foodstack];
 
 //disminishing returns. while regen is active
 r_player_foodstack = r_player_foodstack + 1;

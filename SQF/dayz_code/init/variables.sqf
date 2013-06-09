@@ -301,7 +301,7 @@ r_player_bloodlosspersec = 0;
 //Blood Per Sec (gain - loss)
 r_player_bloodpersec = 0;
 //Food Stack
-r_player_foodstack = 0; 
+r_player_foodstack = 1; 
 //player skill
 r_player_lowblood = 	false;
 r_player_timeout =		0;
