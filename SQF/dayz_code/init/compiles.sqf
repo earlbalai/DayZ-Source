@@ -505,12 +505,13 @@ if (!isDedicated) then {
 	
 	
 	player_sumMedical = {
-		private["_character","_wounds","_legs","_arms","_medical"];
+		private["_character","_wounds","_legs","_arms","_medical", "_status"];
 		_character = 	_this;
 		_wounds =		[];
 		if (_character getVariable["USEC_injured",false]) then {
 			{
-				if (_character getVariable["hit_"+_x,false]) then {
+				_status = _character getVariable["hit_"+_x,false];
+				if ((typeName _status == "BOOLEAN") AND {(_status)}) then {
 					_wounds set [count _wounds,_x];
 				};
 			} forEach USEC_typeOfWounds;
