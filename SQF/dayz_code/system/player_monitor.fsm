@@ -1220,7 +1220,7 @@ class FSM
        "	while {true} do {" \n
        "	//	fps_safty_check = diag_fpsmin;" \n
        "	//	if (fps_safty_check > 20) then {" \n
-       "			[""both""] spawn player_spawnCheck;" \n
+       "			if ((isNil ""dayz_spawnCheck_round"") OR {(scriptDone dayz_spawnCheck_round)}) then { dayz_spawnCheck_round = [""both""] spawn player_spawnCheck;};" \n
        "			sleep 8;" \n
        "	//	};" \n
        "	};" \n

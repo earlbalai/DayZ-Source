@@ -47,7 +47,7 @@ _nearbyBuildings = [];
 _position = getPosATL player;
 _sp4wnAroundObjects = ["building", "SpawnableWreck"];
 
-_fpsbias = (60-(60-(diag_fps min 60))/1.5)/60;
+_fpsbias = (60-(60-(diag_fpsmin min 60))/1.5)/60;
 _maxControlledZombies = round(dayz_maxLocalZombies * _fpsbias);
 _maxManModels = round(dayz_maxMaxModels * _fpsbias);
 _maxWeaponHolders = round(dayz_maxMaxWeaponHolders * _fpsbias);
@@ -136,7 +136,7 @@ diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 */
 diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).", __FILE__,
 	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, 
-	dayz_spawnArea, round diag_fps, _currentWeaponHolders, _maxWeaponHolders]);
+	dayz_spawnArea, round diag_fpsmin, _currentWeaponHolders, _maxWeaponHolders]);
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
 // make the spawn smoother along player's journey. Same for loot
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);

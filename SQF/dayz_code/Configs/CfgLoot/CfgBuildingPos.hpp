@@ -501,5 +501,24 @@
 		lootChance = 0.4;
 		maxRoaming = 1;
 	};
-
-	
+	class Misc_TyreHeap: Industrial {
+		lootPos[] = {{0.46,-0.2,0.24}};	
+		maxRoaming = 0;
+		lootChance = 0.1;
+	};
+	class Land_GuardShed: Military {
+		lootPos[] = {{-0.02,-1,-0.61}};
+		maxRoaming = 1;
+	};
+	class Land_tent_east: Military {
+		lootPos[] = {{2.06,-0.97,-1.74},{-1.82,1.71,-1.74}};
+		lootChance = 0.4;
+		minRoaming = 2;
+		maxRoaming = 3;
+	};
+	class RU_WarfareBFieldhHospital: Military {
+		lootPos[] = lootPos[] = {{-2.66,2.41,1.25},{3.19,-2.2,1.25}};
+		lootChance = 0.4;
+		minRoaming = 2;
+		maxRoaming = 3;
+	};
