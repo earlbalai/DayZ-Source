@@ -12,7 +12,7 @@ _antiwallhack=[
 			[6414.05,2760.21,0], [6817.3,2702.03,0], [10517.9,2287.55,0], [11956.7,9120.21,0] // optional precomputed building positions
 		],
 		[
-			[17.6182,-1.8418,3.23178,"Land_CncBlock_D",0],[15.7192,-1.84277,3.22177,"Land_CncBlock_D",0] // what to add on building (coordinates/type/angle)
+			[17.6182,-1.8418,3.23178,"Land_CncBlock_D",0],[15.7192,-1.84277,3.22177,"Land_CncBlock_D",0],[-17.4,-0.38,-4.35,"Land_CncBlock_D",90],[-17.4,2.25,-4.35,"Land_CncBlock_D",90],[-17.4,4.22,-4.35,"Land_CncBlock_D",90],[-17.42,-3.55,-7.63,"Land_CncBlock_D",90]  // what to add on building (coordinates/type/angle)
 		]
 	],
 	[
