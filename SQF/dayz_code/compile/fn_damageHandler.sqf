@@ -154,7 +154,7 @@ if (_damage > 0.4) then {	//0.25
 			_hitInfection = ((exp _rndInfection) > 1.15);
 			if (_newtypezed) then {
 				_rndInfection = random (_damage - _bloodPercentage);
-				_hitInfection = ((exp _rndInfection * 1.15) > 1.15);
+				_hitInfection = ((exp _rndInfection * 1.21) > 1.15);
 			};
 			if (_hitInfection) then {
 				r_player_infected = true;

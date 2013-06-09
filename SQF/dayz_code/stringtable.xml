@@ -4031,7 +4031,7 @@
 			<Russian>Вы съели %1.</Russian>
 			<Spanish>Comiste %1.</Spanish>
 			<Dutch>You ate %1.</Dutch>
-			<French>You ate %1.</French>
+			<French>\n\nVous avez mangé un(e) %1.</French>
 			<Czech>Snědl jsi %1.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_1">
@@ -4040,7 +4040,7 @@
 			<Russian>Вы съели %1 и чувствуете себя сытым...</Russian>
 			<Spanish>Comiste %1 y te empiezas a sentir lleno...</Spanish>
 			<Dutch>You ate %1 and start to feel full...</Dutch>
-			<French>You ate %1 and start to feel full...</French>
+			<French>\n\nVous avez mangé %1 et votre ventre est plein...</French>
 			<Czech>Snědl jsi %1 a začínáš cítit, že jsi plný...</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_2">
@@ -4049,7 +4049,7 @@
 			<Russian>Вы съели %1 но выплюнули большую часть. Вы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
 			<Spanish>Comiste %1 pero escupiste la mayor parte. Estás demasiado lleno para seguir comiendo.</Spanish>
 			<Dutch>You ate %1 but spit out most of it. You're too full to eat anything.</Dutch>
-			<French>You ate %1 but spit out most of it. You're too full to eat anything.</French>
+			<French>\n\nVous n'avez pas pu terminer votre %1. Vous avez trop mangé.</French>
 			<Czech>Snědl jsi %1, ale většinu jsi vyplivnul. Seš plný a víc toto už nesníš.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
