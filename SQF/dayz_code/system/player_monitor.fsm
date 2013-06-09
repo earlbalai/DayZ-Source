@@ -1230,7 +1230,7 @@ class FSM
        "	while {true} do {" \n
        "	//	fps_safty_check = diag_fpsmin;" \n
        "	//	if (fps_safty_check > 20) then {" \n
-       "			call stream_locationCheck;" \n
+       "			if ((isNil ""dayz_locationCheck_round"") OR {(scriptDone dayz_locationCheck_round)}) then {call stream_locationCheck;};" \n
        "			sleep 2;" \n
        "	//	};" \n
        "	};" \n

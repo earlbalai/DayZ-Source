@@ -517,7 +517,7 @@
 		maxRoaming = 3;
 	};
 	class RU_WarfareBFieldhHospital: Military {
-		lootPos[] = lootPos[] = {{-2.66,2.41,1.25},{3.19,-2.2,1.25}};
+		lootPos[] = {{-2.66,2.41,1.25},{3.19,-2.2,1.25}};
 		lootChance = 0.4;
 		minRoaming = 2;
 		maxRoaming = 3;
