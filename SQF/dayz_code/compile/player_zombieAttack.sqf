@@ -160,9 +160,9 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 _deg = [player, _unit] call BIS_fnc_relativeDirTo;
 if (_deg > 180) then { _deg = _deg - 360; };
 if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or low speed
-	AND {((abs(_deg) < 40) OR {(abs(_deg) >(180-40))})}) then { // no tackle if Zed is not in front or in back
+	AND {((abs(_deg) < 50) OR {(abs(_deg) >(180-50))})}) then { // no tackle if Zed is not in front or in back
 	_lastTackle = player getVariable ["lastTackle", 0];
-	if (time - _lastTackle > 8) then { // no tackle if previous tackle occured less than X seconds before
+	if (time - _lastTackle > 5) then { // no tackle if previous tackle occured less than X seconds before
 		player setVariable ["lastTackle", time];
 		// stop player
 		_vel = velocity player;
@@ -174,9 +174,10 @@ if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or 
 			default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 		};
 		player playMove _move; 
-		diag_log(format["%1 player tackled. Weapons: cur:""%2"" --> move: %3. Angle:%4 Delta-time:%5",  __FILE__,  
+		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__,  
 		currentWeapon player, _move,
-		_deg, time - _lastTackle
+		_deg, time - _lastTackle,
+		animationState player, toArray(animationState player) select 17		
 		]);
 	};
 };
@@ -217,14 +218,14 @@ if (_isVehicle) then {
 				_index = (DAYZ_woundHit_ok select 1) select _index;
 				_wound = (DAYZ_woundHit_ok select 0) select _index; 
 			};
-			_damage = 0.2 + random (0.4);
+			_damage = 0.2 + random (0.512);
 			diag_log(format["%1 Player wounded through ""%4"" vehicle window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
 			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
 		};
 	}; // fi veh with compartment 
 }
 else { // player by foot
-	_damage = 0.2 + random (0.4);
+	_damage = 0.2 + random (0.512);
 
 	switch true do {
 		case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
