@@ -522,3 +522,9 @@
 		minRoaming = 2;
 		maxRoaming = 3;
 	};
+	class RU_WarfareBBarracks: Military {
+		lootPos[] = {{-2.81,2.49,1.3},{-0.72,-0.03,1.31},{2.06,-2.63,0.52},{-0.38,-2.29,1.87},{2.43,2.04,1.08},{-0.01,2.35,0.55}};
+		lootChance = 0.1;
+		maxRoaming = 0;
+	};
+
