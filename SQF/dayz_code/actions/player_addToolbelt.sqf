@@ -16,9 +16,6 @@ call gear_ui_init;
 _create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
 _config2 = 	configFile >> "cfgWeapons" >> _create;
 
-//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
-{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing"];
-
 //removing current melee weapon if new melee selected
 _melee2tb = "";
 if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete"]) then {
@@ -29,6 +26,9 @@ if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete"]) then {
 		case "MeleeMachete": {player removeWeapon "MeleeMachete"; _melee2tb = "ItemMachete";};
 	};
 };
+
+//Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
+{player removeMagazines _x} forEach ["hatchet_swing","crowbar_swing","Machete_swing"];
 
 _isOk = [player,_config2] call BIS_fnc_invAdd;
 if (_isOk) then {
