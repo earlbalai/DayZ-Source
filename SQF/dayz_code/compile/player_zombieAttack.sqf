@@ -168,17 +168,13 @@ if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or 
 		_vel = velocity player;
 		player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 		// make player dive
-		_move = switch (currentWeapon player) do {
-			case "Flare"; case "Throw"; case "" : {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"}; // barehands/Flare/Grenades
-			case (primaryWeapon player) : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle/crowbar
-			default {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+		_move = switch (toArray(animationState player) select 17) do {
+			case 114 : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle
+			case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+			default {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"};
 		};
 		player playMove _move; 
-		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__,  
-		currentWeapon player, _move,
-		_deg, time - _lastTackle,
-		animationState player, toArray(animationState player) select 17		
-		]);
+//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 	};
 };
 
