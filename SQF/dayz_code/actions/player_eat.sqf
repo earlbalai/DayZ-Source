@@ -36,28 +36,15 @@ if (_sfx == "") then {_sfx = "eat"};
 [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-//disminishing returns. while regen is active
-r_player_foodstack = r_player_foodstack + 1;
-//_skilllevel = (dayz_Survived / 6);
 regen = 0;
+
 if ((r_player_bloodregen > 5) and (r_player_foodstack > 1) and (r_player_foodstack < 10)) then {
 	_regen = _regen / r_player_foodstack;
-//	diag_log ("Regen: " +str(_regen));
+	diag_log ("Regen: " +str(_regen));
 };
 
-/*
-if (dayz_lastMeal < 180) then { 
-	_regen = _regen / 4 + _skilllevel;
-};
-
-if ((dayz_lastMeal > 180) and (dayz_lastMeal < 360)) then { 
-	_regen = _regen / 3 + _skilllevel;
-};
-
-if ((dayz_lastMeal > 360) and (dayz_lastMeal < 900)) then { 
-	_regen = _regen / 2 + _skilllevel;
-};
-*/
+//disminishing returns. while regen is active
+r_player_foodstack = r_player_foodstack + 1;
 
 if (_hasoutput) then{
     // Selecting output
@@ -98,8 +85,6 @@ publicVariableServer "PVDZ_plr_Save";
 dayz_lastMeal = time;
 dayz_hunger = 0;
 
-
-
 //Ensure Control is visible
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 (_display displayCtrl 1301) ctrlShow true;
@@ -108,7 +93,7 @@ if (r_player_blood / r_player_bloodTotal >= 0.2) then {
     (_display displayCtrl 1300) ctrlShow true;
 };
 
-if ((r_player_foodstack >= 1) and (r_player_foodstack < 7)) then {
+if ((r_player_foodstack >= 0) and (r_player_foodstack < 7)) then {
 	cutText [format[(localize  "str_player_consumed_food"),_text], "PLAIN DOWN"];
 };
 if ((r_player_foodstack >= 7) and (r_player_foodstack < 10)) then {
