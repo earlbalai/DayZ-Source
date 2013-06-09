@@ -373,7 +373,7 @@ USEC_woundPoint	= [ // translation table USEC_woundHit -> SV suffixes
 	["RightFoot","LeftFoot"],
 	["neck","pilot"]
 ];
-USEC_typeOfWounds = [ // used by player_sumMedical, should contains all limbs described in USEC_woundPoint. These limbs statuses are saved by server_playerSync in HIVE in the same order (medical select 8)
+USEC_typeOfWounds = [ // used by player_sumMedical, should contains all limbs described in USEC_woundPoint. These limbs statuses are saved by server_playerSync in HIVE if they are bleeding (medical select 8)
 	"Pelvis",
 	"aimpoint",
 	"lelbow","relbow",
