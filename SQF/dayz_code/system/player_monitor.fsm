@@ -1423,7 +1423,7 @@ class FSM
     {
       name = "Stream";
       init = /*%FSM<STATEINIT""">*/"//stream in location" \n
-       "call stream_locationCheck;" \n
+       "[] spawn stream_locationCheck;" \n
        "" \n
        "_zombies = (getPosATL player) nearEntities [""zZombie_Base"",30];" \n
        "{deleteVehicle _x} forEach _zombies;" \n
