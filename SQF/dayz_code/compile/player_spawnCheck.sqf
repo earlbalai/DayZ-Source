@@ -1,5 +1,5 @@
 
-private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point"];
+private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point", "_islocal"];
 
 // compute building footprint just to check if it could hide a Zombie
 _fairSize = {
@@ -157,6 +157,8 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 	_canLoot = isClass (_config);
 	_dis = _x distance player;
 	_checkLoot = ((count (getArray (_config >> "lootPos"))) > 0);
+	_islocal = _x getVariable ["", false]; // object created locally via TownGenerator. See stream_locationFill.sqf
+
 	////_x setVariable ["cleared",false,true]; // not used anymore
 	
 	//Loot
@@ -167,10 +169,10 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 			_age = (_dateNow - _looted) * 525948;
 			//diag_log ("SPAWN LOOT: " + _type + " Building is " + str(_age) + " old" );
 			if (_age < -0.1) then {
-					_x setVariable ["looted",(DateToNumber date),true];
+					_x setVariable ["looted",(DateToNumber date),!_islocal];
 			} else {
 				if (_age > 20) then {
-					_x setVariable ["looted",_dateNow,true];
+					_x setVariable ["looted",_dateNow,!_islocal];
 					_qty = _x call building_spawnLoot;
 					_currentWeaponHolders = _currentWeaponHolders + _qty;
 				};
@@ -187,7 +189,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 			_dateNow = (DateToNumber date);
 			_age = (_dateNow - _zombied) * 525948; // in minutes
 			if (_age < -0.1) then {
-				_x setVariable ["zombieSpawn",(DateToNumber date),true]; // a SV for all objects on the map was a bit insane
+				_x setVariable ["zombieSpawn",(DateToNumber date),!_islocal]; // a SV for all objects on the map was a bit insane
 				_negstampBld = _negstampBld +1;
 			} else {
 				if (_age > 20) then {
@@ -197,7 +199,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 					_maxtoCreate = _tmp select 2;
 					if (_qty  > 0) then {
 						_currentManModels = _currentManModels + _qty;
-						_x setVariable ["zombieSpawn",_dateNow,true];
+						_x setVariable ["zombieSpawn",_dateNow,!_islocal];
 					};
 					_spwndoneBld = _spwndoneBld +1;
 				}
@@ -240,6 +242,7 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 			};
 */
 		};
+		sleep 0.001;
 	} forEach (nearestObjects [_point, [], _radius]);	
 /*	if (!isNil "_nearby") then {
 		[_nearby, _recyAgt, _maxtoCreate, 10] call building_spawnZombies;
