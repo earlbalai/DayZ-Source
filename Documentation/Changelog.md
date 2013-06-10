@@ -49,6 +49,7 @@ Serverside affected addons:
 	    * [NEW] - Servers date has been locked to give full moon nights.
 	    * [NEW] - Zeds hitting through Walls/Buildings should now be fixed.
 	    * [NEW] - Mainmenu Intro.
+	    * [NEW] - Loadingscreen (Small changes).
 	    * [NEW] - 2 new stash sites. (tools required = Etool or Shovel. Items required = 1 sandbog for small, 2 sandbags for medium)
 			    Small Stash = 12 object slots, 0 Weapon, 0 bags.
 			    Medium Stash = 25 object slots, 1 Weapon, 0 bags.
