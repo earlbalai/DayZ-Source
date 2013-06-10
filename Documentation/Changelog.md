@@ -86,6 +86,7 @@ Serverside affected addons:
 	    * [FIXED] - Most wallhack exploits should now be resolved.
 	    * [FIXED] - No more 3x get up Animation loop when recovering from unconscious
 	    * [FIXED] - You can no longer get into vehicles while dragging players
+	    * [FIXED] - Peripheral Vision. (Peripheral Dots)
 		
 	    * [UPDATED] - Zed sight limited to 100 meters.
 	    * [UPDATED] - Updated rabbit to drop 2 raw food items. Lowered hp gain to Raw - 200 each / Cooked - 1000 each.
