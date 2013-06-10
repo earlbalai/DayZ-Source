@@ -1,31 +1,30 @@
+private ["_location", "_distCfg","_configClass","_distAct","_rubbish","_config","_locHdr","_position" ];
+
 //diag_log "running location check...";
+_rubbish = dayz_Trash == 1;
 {
-	private ["_location","_distCfg","_configClass","_distAct","_config","_position"];
-	_location = 	_x select 0;
-	_distCfg = 		(_x select 2) + 200;
-	_configClass =  _x select 1;
-	_distAct = player distance position _location;
-	_rubbish = dayz_Trash;
-	
-	if ((_distAct < _distCfg) and !(_location in dayz_locationsActive) and (_rubbish == 1)) then {
-		//Record Active Location
-		//diag_log "Load!";
-		dayz_locationsActive set [count dayz_locationsActive,_location];
-		
-		//Get Town Details
-		_config = 	configFile >> "CfgTownGeneratorChernarus" >> _configClass;
-		_locHdr = 	configName _config;
-		_position = []+ getArray	(_config >> "position");
-		
-		_config call stream_locationFill;
-		
-		//player sidechat (_locHdr + " " + str(count _config));
+	_location = _x select 0;
+	_distCfg = (_x select 2);
+	_configClass = _x select 1;
+	_distAct = player distance position _location;	
+
+	if (!(_location in dayz_locationsActive)) then {
+		if ((_distAct < _distCfg + dayz_spawnArea) and _rubbish) then {
+			_locHdr = configName _config;
+			if (typeName _locHdr != "STRING") then { _locHdr = str _location; };
+			dayz_locationsActive set [count dayz_locationsActive,_location];
+			_config = configFile >> "CfgTownGeneratorChernarus" >> _configClass;
+			diag_log format ["%1: creating %2 objects at '%3'", __FILE__, count _config, _locHdr];
+			_config call stream_locationFill; // create wrecks & rubbish as local objects
+		};
 	} else {
-		if ((_distAct > _distCfg) and (_location in dayz_locationsActive)) then {
-			//Delete Town Objects
-			_config = 	configFile >> "CfgTownGeneratorChernarus" >> _configClass;
-			_config call stream_locationDel;
-			dayz_locationsActive = dayz_locationsActive - [_location];
+		if (_distAct > _distCfg + dayz_canDelete) then {
+			_locHdr = configName _config;
+			if (typeName _locHdr != "STRING") then { _locHdr = str _location; };
+			_config = configFile >> "CfgTownGeneratorChernarus" >> _configClass;
+			diag_log format ["%1: removing %2 objects from '%3'", __FILE__, count _config, _locHdr];
+			_config call stream_locationDel; // delete wrecks & rubbish
+			dayz_locationsActive = dayz_locationsActive - [_location]; 
 		};
 	};
 } forEach dayz_Locations;
