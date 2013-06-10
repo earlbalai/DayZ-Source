@@ -512,17 +512,17 @@
 	};
 	class Land_tent_east: Military {
 		lootPos[] = {{2.06,-0.97,-1.74},{-1.82,1.71,-1.74}};
-		lootChance = 0.4;
+		lootChance = 0.3;
 		minRoaming = 2;
 		maxRoaming = 3;
 	};
-	class RU_WarfareBFieldhHospital: Military {
+	class RU_WarfareBFieldhHospital: MASH {
 		lootPos[] = {{-2.66,2.41,1.25},{3.19,-2.2,1.25}};
-		lootChance = 0.4;
+		lootChance = 0.3;
 		minRoaming = 2;
 		maxRoaming = 3;
 	};
-	class RU_WarfareBBarracks: Military {
+	class RU_WarfareBBarracks: Residential {
 		lootPos[] = {{-2.81,2.49,1.3},{-0.72,-0.03,1.31},{2.06,-2.63,0.52},{-0.38,-2.29,1.87},{2.43,2.04,1.08},{-0.01,2.35,0.55}};
 		lootChance = 0.1;
 		maxRoaming = 0;
