@@ -127,7 +127,7 @@
 1 markerShape !"setMarkerShape" // #161
 1 mark_player
 1 maut
-1 menu !_menu !gear_ui_offMenu !"\"showCommandingMenu\""
+1 menu !_menu !gear_ui_offMenu !"\"showCommandingMenu\"" !" 'BIS_fnc_commsMenu" !" 'BIS_fnc_createmenu' "
 1 _minimap
 1 modelToWorld  !"_pos = player modeltoWorld [0,1,0];\n\n_item = createVehicle [\"WeaponHolder\", _pos, []" !"_pos modeltoworld [0,_size/2,0]" !"_bsz_pos = _obj modelToWorld _bsz_pos;" !"_cornerLow = _this ModeltoWorld (_boundingBox select 0);" !"_pos = _unit modelToWorld [ sin(_deg) * _trip, cos(_deg) * _trip, 0];" !"_iPos = _obj modelToWorld _x;" // #46
 1 moonIntensity   !"+ moonIntensity" // #45
