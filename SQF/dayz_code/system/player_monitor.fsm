@@ -159,7 +159,7 @@ link81[] = {70,66};
 link82[] = {71,17};
 link83[] = {72,65};
 globals[] = {25.000000,1,0,0,0,640,480,1,121,6316128,1,-429.936707,328.770111,1893.756348,1290.604492,756,601,1};
-window[] = {2,-1,-1,-1,-1,846,66,1438,66,3,773};
+window[] = {2,-1,-1,-1,-1,802,22,1394,22,3,773};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1143,7 +1143,7 @@ class FSM
        "};" \n
        "" \n
        "if (!isNil ""dayzInfectedCamps"") then {" \n
-       "	diag_log (""Infected Camps: "" +str(dayzInfectedCamps));" \n
+       "	//diag_log (""Infected Camps: "" +str(dayzInfectedCamps));" \n
        "	dayzInfectedCamps spawn infectedcamps;" \n
        "};" \n
        "" \n
