@@ -2,7 +2,7 @@ private ["_onLadder","_itemorignal","_hasfooditem","_rawfood","_cookedfood","_ha
 
 disableserialization;
 call gear_ui_init;
-_onLadder =     (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not eat while in a vehicle", "PLAIN DOWN"]};
@@ -17,9 +17,9 @@ _rawfood = _itemorignal in meatraw;
 _cookedfood = _itemorignal in meatcooked;
 _hasoutput = _itemorignal in food_with_output;
 
-_config =   configFile >> "CfgMagazines" >> _itemorignal;
-_text =     getText (_config >> "displayName");
-_regen =    getNumber (_config >> "bloodRegen");
+_config = configFile >> "CfgMagazines" >> _itemorignal;
+_text = getText (_config >> "displayName");
+_regen = getNumber (_config >> "bloodRegen");
 
 if (!_hasfooditem) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_consume")] , "PLAIN DOWN"]};
 
@@ -97,11 +97,11 @@ if (r_player_blood / r_player_bloodTotal >= 0.2) then {
 };
 
 if ((r_player_foodstack >= 0) and (r_player_foodstack < 7)) then {
-	cutText [format[(localize  "str_player_consumed_food"),_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_player_consumed_food"),_text], "PLAIN DOWN"];
 };
 if ((r_player_foodstack >= 7) and (r_player_foodstack < 10)) then {
-	cutText [format[(localize  "str_player_consumed_food_1"),_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_player_consumed_food_1"),_text], "PLAIN DOWN"];
 };
 if ((r_player_foodstack >= 10)) then {
-	cutText [format[(localize  "str_player_consumed_food_2"),_text], "PLAIN DOWN"];
+	cutText [format[(localize "str_player_consumed_food_2"),_text], "PLAIN DOWN"];
 };

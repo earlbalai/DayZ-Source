@@ -2,14 +2,14 @@
 private["_unit","_magazine","_used","_quantity","_magsNet","_magsWhole","_key","_result","_evType","_recordable","_inVehicle","_isPlayer","_isRocket","_dmgDistance","_isBallistic","_handled"];
 //Init
 	//[unit, firer, distance, weapon, muzzle, mode, ammo]
-	_unit = 	_this select 0;
-	_firer = 	_this select 1;
+	_unit = _this select 0;
+	_firer = _this select 1;
 	_distance = _this select 2;
-	_weapon = 	_this select 3;
-	_ammo = 	_this select 6;
+	_weapon = _this select 3;
+	_ammo = _this select 6;
 	_killerID = _firer getVariable["MemberID",0];
 	
-	_handled = 	false;
+	_handled = false;
 	_arc = 60;
 	_isBallistic = (getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleOnFire") > 0);
 	_dmgDistance = getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleDist");

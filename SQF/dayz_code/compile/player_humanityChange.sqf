@@ -8,7 +8,7 @@ if (_object == player) then {
 	_humanity = player getVariable["humanity",0];
 	_humanity = _humanity + _change;
 	if (_change < 0) then {
-		_wait =	  _this select 2;
+		_wait = _this select 2;
 		player setVariable["humanity",_humanity,true];
 		if ((typeOf player != "Bandit1_DZ") && (typeOf player != "BanditW1_DZ")) then {
 			if (player getVariable ["freeTarget",false]) then {

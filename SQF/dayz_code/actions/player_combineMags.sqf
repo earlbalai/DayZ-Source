@@ -4,11 +4,11 @@ disableSerialization;
 call gear_ui_init;
 
 _create = _this;
-_config =	configFile >> "CfgMagazines" >> _create;
+_config = configFile >> "CfgMagazines" >> _create;
 
 player playActionNow "PutDown";
 
-_create_magsize =	getNumber(configFile >> "CfgMagazines" >> _create >> "count");
+_create_magsize = getNumber(configFile >> "CfgMagazines" >> _create >> "count");
 _type = getNumber(configFile >> "CfgMagazines" >> _create >> "type");
 
 //primary/secondary mags?
@@ -18,7 +18,7 @@ if ((_type == 256) or (_type == 256*2)) then {
 	_slotstart = 109;
 	_slotend = 120;
 }; 
-if (_type == 16) then {	
+if (_type == 16) then { 
 	_slotstart = 122;
 	_slotend = 129;
 };

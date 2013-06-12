@@ -1,10 +1,10 @@
 private["_item","_hasKnife","_hasKnifeBlunt","_type","_hasHarvested","_config","_isListed","_text","_dis","_sfx","_qty","_array","_string"];
 _item = _this select 3;
-_hasKnife = 	"ItemKnife" in items player;
-_hasKnifeBlunt = 	"ItemKnifeBlunt" in items player;
+_hasKnife = "ItemKnife" in items player;
+_hasKnifeBlunt = "ItemKnifeBlunt" in items player;
 _type = typeOf _item;
 _hasHarvested = _item getVariable["meatHarvested",false];
-_config = 		configFile >> "CfgSurvival" >> "Meat" >> _type;
+_config = configFile >> "CfgSurvival" >> "Meat" >> _type;
 
 player removeAction s_player_butcher;
 s_player_butcher = -1;
@@ -12,7 +12,7 @@ s_player_butcher = -1;
 
 if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	//Get Animal Type
-	_isListed =		isClass (_config);
+	_isListed = isClass (_config);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 	
 	player playActionNow "Medic";
@@ -26,7 +26,7 @@ if ((_hasKnife or _hasKnifeBlunt) and !_hasHarvested) then {
 	
 	_qty = 2;	
 	if (_isListed) then {
-		_qty =	getNumber (_config >> "yield");
+		_qty = getNumber (_config >> "yield");
 	};
 	
 	if (_hasKnifeBlunt) then { _qty = round(_qty / 2); };

@@ -14,10 +14,10 @@
 */
 private["_target","_caller","_id","_dog","_animalID","_fsmid"];
 
-_target = 	_this select 0;
-_caller = 	_this select 1;
-_id =		_this select 2;
-_dog =		_this select 3;
+_target = _this select 0;
+_caller = _this select 1;
+_id = _this select 2;
+_dog = _this select 3;
 
 player removeMagazine "FoodSteakRaw";
 _animalID = _dog getVariable "fsm_handle";

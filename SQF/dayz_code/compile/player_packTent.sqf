@@ -3,9 +3,9 @@
 */
 private["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_bag","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr"];
 _obj = _this;
-_ownerID 	= _obj getVariable["CharacterID","0"];
-_objectID 	= _obj getVariable["ObjectID","0"];
-_objectUID	= _obj getVariable["ObjectUID","0"];
+_ownerID = _obj getVariable["CharacterID","0"];
+_objectID = _obj getVariable["ObjectID","0"];
+_objectUID = _obj getVariable["ObjectUID","0"];
 player playActionNow "Medic";
 
 player removeAction s_player_packtent;
@@ -35,9 +35,9 @@ if(_ownerID == dayz_characterID) then {
 	
 	_holder = "WeaponHolder" createVehicle _pos; 
 	
-	_weapons = 	getWeaponCargo _obj;
-	_magazines = 	getMagazineCargo _obj;
-	_backpacks = 	getBackpackCargo _obj;
+	_weapons = getWeaponCargo _obj;
+	_magazines = getMagazineCargo _obj;
+	_backpacks = getBackpackCargo _obj;
 	
 	//["PVDZ_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;	
 	PVDZ_obj_Delete = [_objectID,_objectUID];
@@ -48,8 +48,8 @@ if(_ownerID == dayz_characterID) then {
 	deleteVehicle _obj;
 	
 	//Add weapons
-	_objWpnTypes = 	_weapons select 0;
-	_objWpnQty = 	_weapons select 1;
+	_objWpnTypes = _weapons select 0;
+	_objWpnQty = _weapons select 1;
 	_countr = 0;
 	{
 		_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];

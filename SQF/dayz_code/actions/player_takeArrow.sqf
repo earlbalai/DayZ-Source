@@ -21,7 +21,7 @@ switch (primaryWeapon player) do {
 };
 
 if (_qty_quivers > 1) exitWith { cutText ["You cannot have more quivers.", "PLAIN DOWN"];};
-if (_qty_quiverarrows == 2) then { 	//remove quiver - add 2 arrows
+if (_qty_quiverarrows == 2) then { //remove quiver - add 2 arrows
 	if (_emptymagslotcount > 0) then { 
 		player removeMagazine "Quiver";
 		player addMagazine "WoodenArrow";

@@ -3,12 +3,12 @@ _player = _this select 0;
 _amount = _this select 1;
 
 _counter = 0;
-_agent = 	objNull;
+_agent = objNull;
 
 
 while {_counter < _amount} do {
 
-	if (dayz_swarmSpawnZombies  > dayz_localswarmSpawned) exitwith {};
+	if (dayz_swarmSpawnZombies > dayz_localswarmSpawned) exitwith {};
 	//Create the Group and populate it
 	_unitTypes = DayZ_NewZeds;
 	//_type = "swarm_newBase"; //"_unitTypes call BIS_fnc_selectRandom;

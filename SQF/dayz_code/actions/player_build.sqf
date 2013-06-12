@@ -5,7 +5,7 @@ call gear_ui_init;
 _item = _this;
 _classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _require = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
-_text =  getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
+_text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
 // item is missing
 if ((!(_item IN magazines player))) exitWith {

@@ -3,7 +3,7 @@ private["_onLadder","_itemorignal","_hasdrinkitem","_hasoutput","_config","_text
 disableserialization;
 call gear_ui_init;
 
-_onLadder =     (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not drink while in a vehicle", "PLAIN DOWN"]};
@@ -19,7 +19,7 @@ _config = configFile >> "CfgMagazines" >> _itemorignal;
 _text = getText (_config >> "displayName");
 
 //getting type of sfx (now just drink od soda open and drink)
-_sfx =  getText (_config >> "sfx");
+_sfx = getText (_config >> "sfx");
 //Get distance of sfx sound
 _sfxdis = getNumber (_config >> "sfxdis");
 
@@ -66,4 +66,4 @@ dayz_thirst = 0;
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 (_display displayCtrl 1302) ctrlShow true;
 
-cutText [format[(localize  "str_player_consumed"),_text], "PLAIN DOWN"];
+cutText [format[(localize "str_player_consumed"),_text], "PLAIN DOWN"];

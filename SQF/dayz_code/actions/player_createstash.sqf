@@ -4,16 +4,16 @@ private["_playerPos","_item","_hastentitem","_location","_building","_isOk","_co
 call gear_ui_init;
 
 //Player Pos
-_playerPos = 	getPosATL player;
+_playerPos = getPosATL player;
 
 //Classname
 _item = _this;
 
 //Config
-_config =   configFile >> "CFGWeapons" >> _item;
-_text =     getText (_config >> "displayName");
-_stashtype =  "0";
-_consume =  getText (_config >> "consume");
+_config = configFile >> "CFGWeapons" >> _item;
+_text = getText (_config >> "displayName");
+_stashtype = "0";
+_consume = getText (_config >> "consume");
 
 
 _hasitemcount = {_x == _consume} count magazines player;
@@ -21,8 +21,8 @@ _hasitemcount = {_x == _consume} count magazines player;
 //if ("ItemSandbag" in magazines player) then { _stashtype = "StashMedium"; };
 
 //if (_hasitemcount == 0) exitwith {};
-if (_hasitemcount == 1) then { _stashtype =   getText (_config >> "stashsmall"); };
-if (_hasitemcount >= 2) then { _stashtype =   getText (_config >> "stashmedium"); };
+if (_hasitemcount == 1) then { _stashtype = getText (_config >> "stashsmall"); };
+if (_hasitemcount >= 2) then { _stashtype = getText (_config >> "stashmedium"); };
 
 // Items are missing
 if ((!(_consume IN magazines player))) exitWith {

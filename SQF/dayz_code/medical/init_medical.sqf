@@ -84,7 +84,7 @@ while {true} do {
 					"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 0.5;
 				};
 				sleep 0.5;
-				_lowBlood =	player getVariable ["USEC_lowBlood", false];
+				_lowBlood = player getVariable ["USEC_lowBlood", false];
 				if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
 					player setVariable["USEC_lowBlood",true,true];
 				};

@@ -12,7 +12,7 @@ a_player_cooking = true;
 	_meat = _x;
 	_meatcooked = _cookedmeat select (_rawmeat find _meat);
 	if (_meat in magazines player) then {
-		_text = 	getText (configFile >> "CfgMagazines" >> _meatcooked >> "displayName");
+		_text = getText (configFile >> "CfgMagazines" >> _meatcooked >> "displayName");
 		_qty = {_x == _meat} count magazines player;
 		player playActionNow "Medic";
 		
@@ -27,7 +27,7 @@ a_player_cooking = true;
 			player addMagazine _meatcooked;
 			if !(_meat in magazines player) exitWith {cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_cook")] , "PLAIN DOWN"]};
 		};	
-		cutText [format[(localize  "str_success_cooked"),_qty,_text], "PLAIN DOWN"];
+		cutText [format[(localize "str_success_cooked"),_qty,_text], "PLAIN DOWN"];
 	};
 } forEach _rawmeat;
 

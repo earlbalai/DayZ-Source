@@ -1,6 +1,6 @@
 private ["_position", "_doLoiter", "_unitTypes", "_isNoone", "_loot", "_array", "_agent", "_type", "_radius", "_method", "_isAlive", "_myDest", "_newDest", "_rnd", "_lootType", "_index", "_weights"];
 
-_campPos = 	_this select 0;
+_campPos = _this select 0;
 _amount = _this select 1;
 _doLoiter = true;
 
@@ -26,10 +26,10 @@ while {_counter < _amount} do {
 	_position = [_campPos,1,130,0,0,0,0] call BIS_fnc_findSafePos;
 	
 	sleep 0.001;
-	_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],10]) == 0;
-	_loot = 	"";
-	_array = 	[];
-	_agent = 	objNull;
+	_isNoone = {isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],10]) == 0;
+	_loot = "";
+	_array = [];
+	_agent = objNull;
 
 	//Exit if no one is nearby
 	if (!_isNoone) exitWith {};
@@ -74,7 +74,7 @@ while {_counter < _amount} do {
 	//Add some loot
 	_rnd = random 1;
 	if (_rnd > 0.3) then {
-		_lootType = 		configFile >> "CfgVehicles" >> _type >> "zombieLoot";
+		_lootType = configFile >> "CfgVehicles" >> _type >> "zombieLoot";
 		if (isText _lootType) then {
 			_array = [];
 			{

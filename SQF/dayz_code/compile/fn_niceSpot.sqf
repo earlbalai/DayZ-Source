@@ -56,7 +56,7 @@ switch _class do {
 	case "Wire_cat1"; 
 	case "Sandbag1_DZ"; 
 	case "Hedgehog_DZ" : {};
-	default {  // = vehicles (used for hive maintenance on startup)
+	default { // = vehicles (used for hive maintenance on startup)
 		_testBuilding = false;
 		_testSlope = true;
 		_noCollision = true;
@@ -69,7 +69,7 @@ _dir = if (_isPlayer) then {getDir(_pos)} else {0};
 _obj = _class createVehicleLocal (getMarkerpos "respawn_west");
 sleep 0.01;
 _size = _obj call _realSize;
-if (_isPlayer) then { _size = _size + (_pos  call _realSize); };
+if (_isPlayer) then { _size = _size + (_pos call _realSize); };
 
 // compute initial position. If _pos is the player, then the object will be in front of him/her
 _new = nil;
@@ -105,9 +105,9 @@ sleep 0.01;
 
 if (_testPond) then { // let's proceed to the "object in the pond" test (not dirty)
 	_testPond = false;
-	_objectsPond =  nearestObjects [_new, [], 100];
+	_objectsPond = nearestObjects [_new, [], 100];
 	{
-		if (((typeOf(_x) == "")  // unnamed class?
+		if (((typeOf(_x) == "") // unnamed class?
 			AND{(((_x worldToModel _new) select 2) < 0)}) // below water level? 
 			AND {(["pond", str(_x), false] call fnc_inString)}
 			) exitWith { // and is actually a pond?
@@ -166,7 +166,7 @@ if (_testonLadder) then { // forbid item install process if player is on a ladde
 	);
 };
 
-//diag_log(format["niceSpot: result  pond:%1 building:%2 slope:%3 sea:%4 distance:%5 collide:%6", _testPond, _testBuilding, _testSlope, _testSea, _testDistance, _noCollision]);
+//diag_log(format["niceSpot: result pond:%1 building:%2 slope:%3 sea:%4 distance:%5 collide:%6", _testPond, _testBuilding, _testSlope, _testSea, _testDistance, _noCollision]);
 
 _ok = !_testPond AND !_testBuilding AND !_testSlope AND !_testSea AND !_testDistance AND !_testonLadder;
 if (count _this > 2) then {

@@ -57,7 +57,7 @@
 // 	_c = 0;
 // 	{
 // 		private["_dis"];
-// 		_dis =  _targetDis select _c;
+// 		_dis = _targetDis select _c;
 // 		if (_dis < _manDis) then {
 // 			_man = _x;
 // 			_manDis = _dis;

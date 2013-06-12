@@ -5,10 +5,10 @@
 
 private["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace"];
 disableSerialization;
-_config =	configFile >> "CfgWeapons" >> _this;
+_config = configFile >> "CfgWeapons" >> _this;
 
-_input = 	getArray (_config >> "ItemActions" >> "Craft" >> "input");
-_output = 	getArray (_config >> "ItemActions" >> "Craft" >> "output");
+_input = getArray (_config >> "ItemActions" >> "Craft" >> "input");
+_output = getArray (_config >> "ItemActions" >> "Craft" >> "output");
 _required = getArray (_config >> "ItemActions" >> "Craft" >> "required");
 _failChance = getNumber (_config >> "ItemActions" >> "Craft" >> "failChance");
 
@@ -44,9 +44,9 @@ if (_hasInput) then {
 		_item = _x select 0;
 		_amount = _x select 2;
 		_slotType = [_item] call BIS_fnc_invSlotType;
-		for "_i" from 1 to _amount do {	
+		for "_i" from 1 to _amount do { 
 			for "_j" from 1 to (count _slotType) do {
-				if ((_slotType select _j) > 0) then {		
+				if ((_slotType select _j) > 0) then { 
 					_freeSlots set[_j, ((_freeSlots select _j) + (_slotType select _j))];
 				};
 			};
@@ -59,9 +59,9 @@ if (_hasInput) then {
 		_item = _x select 0;
 		_amount = _x select 2;
 		_slotType = [_item] call BIS_fnc_invSlotType;
-		for "_i" from 1 to _amount do {	
+		for "_i" from 1 to _amount do { 
 			for "_j" from 1 to (count _slotType) do {
-				if ((_slotType select _j) > 0) then {		
+				if ((_slotType select _j) > 0) then { 
 					_freeSlots set[_j, ((_freeSlots select _j) - (_slotType select _j))];
 					if (_freeSlots select _j < 0) exitWith {
 						_availabeSpace = false;

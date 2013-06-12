@@ -2,10 +2,10 @@
 private ["_iItem","_iClass","_iPos","_radius","_iPosZ","_item","_itemTypes","_qty","_max","_index","_weights",
 "_cntWeights","_tQty","_canType","_mags","_magQty","_uniq"];
 
-_iItem = 	_this select 0;
-_iClass = 	_this select 1;
-_iPos =	_this select 2;
-_radius =	_this select 3;
+_iItem = _this select 0;
+_iClass = _this select 1;
+_iPos = _this select 2;
+_radius = _this select 3;
 _uniq = ["ItemWaterbottle", "ItemWaterbottleUnfilled"];
 
 _iPosZ = _iPos select 2;

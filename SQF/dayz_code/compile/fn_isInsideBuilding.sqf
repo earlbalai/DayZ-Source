@@ -43,7 +43,7 @@ _check = {
 
 _size = 0;
 _unit = _this select 0;
-if (typeName _unit == "OBJECT")  then { 
+if (typeName _unit == "OBJECT") then { 
 	_size = sizeOf typeOf _unit;
 	_unit = getPosATL _unit; 
 };

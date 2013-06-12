@@ -29,7 +29,7 @@ if (count _targets > 0) then {
 	//diag_log (str(_man) + str(_manDis));
 	{
 		private["_dis"];
-		_dis =  _x distance _agent;
+		_dis = _x distance _agent;
 		if (_dis < _manDis) then {
 			_man = _x;
 			_manDis = _dis;

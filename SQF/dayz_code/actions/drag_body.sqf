@@ -11,16 +11,16 @@ Start drag.sqf
 */
 
 private ["_unit","_dragee","_pos","_dir","_addAction"];
-_dragee  			= _this select 3;
-_unit  				= player;
-// _unconscious = 		_dragee getVariable ["NORRN_unconscious", false];
+_dragee = _this select 3;
+_unit = player;
+// _unconscious = _dragee getVariable ["NORRN_unconscious", false];
 _addAction = false;
 
 if (isNull _dragee) exitWith {}; 
 // if (!_unconscious) exitWith {}; 
 
 //player assumes dragging posture
-r_drag_sqf 	= true;
+r_drag_sqf = true;
 while {r_drag_sqf} do {
 if (!_addAction) then {
 _dragee setVariable ["NORRN_unit_dragged", true, true];
@@ -40,7 +40,7 @@ sleep 0.02;
 //rotate wounded units so that it is facing the correct direction
 //PVDZ_drg_R180 = _dragee; // not used
 //publicVariable "PVDZ_drg_R180"; // not used
-_dragee  setDir 180;
+_dragee setDir 180;
 
 //Uneccesary actions removed & drop body added 
 call fnc_usec_medic_removeActions;

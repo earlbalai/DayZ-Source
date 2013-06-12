@@ -1,17 +1,17 @@
 private["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling"];
 
 a_player_jerryfilling = true;
-_vehicle = 		cursorTarget;
+_vehicle = cursorTarget;
 _array = _this select 3;
 _cantype = _array select 0;
-_canSize = 		getNumber(configFile >> "cfgMagazines" >> _cantype >> "fuelQuantity");
-_emptycan = 	getText(configFile >> "cfgMagazines" >> _cantype >> "emptycan");
-_configVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicle);
-_capacity = 	getNumber(_configVeh >> "fuelCapacity");
-_nameType = 	getText(_configVeh >> "displayName");
-_curFuel = 		((fuel _vehicle) * _capacity);
-_newFuel = 		(_curFuel + _canSize);
-_fueling = 		player getVariable "fueling";
+_canSize = getNumber(configFile >> "cfgMagazines" >> _cantype >> "fuelQuantity");
+_emptycan = getText(configFile >> "cfgMagazines" >> _cantype >> "emptycan");
+_configVeh = configFile >> "cfgVehicles" >> TypeOf(_vehicle);
+_capacity = getNumber(_configVeh >> "fuelCapacity");
+_nameType = getText(_configVeh >> "displayName");
+_curFuel = ((fuel _vehicle) * _capacity);
+_newFuel = (_curFuel + _canSize);
+_fueling = player getVariable "fueling";
 
 player removeAction s_player_fillfuel + _capacity; 
 

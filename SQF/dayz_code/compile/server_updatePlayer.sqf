@@ -1,12 +1,12 @@
 // private["_characterID","_currentModelCheck","_temp","_isSync","_currentWpn","_currentMag","_magazines","_qty","_qtyT","_val","_isNewPos","_isNewBackp","_humanity","_isNewGear","_doUpdate","_currentModel","_modelChk","_playerPos","_playerGear","_playerBackp","_backpack","_updates","_killsB","_killsH","_medical","_isNewMed","_character","_timeSince","_charPos","_isInVehicle","_justAte","_justDrank","_distanceFoot","_lastPos","_legs","_arms","_kills","_headShots","_killsCHK","_headShotsCHK","_timeGross","_timeLeft","_onLadder","_isTerminal"];
 // _character = _this;
-// _doUpdate = 	false;
-// _characterID =	_character getVariable ["characterID","0"];
-// _updates =		_character getVariable ["updatePlayer",[false,false,false,false,false]];
-// _charPos = 		getPosATL _character;
-// _isInVehicle = 	vehicle _character != _character;
-// _timeSince = 	0;
-// _humanity =		0;
+// _doUpdate = false;
+// _characterID = _character getVariable ["characterID","0"];
+// _updates = _character getVariable ["updatePlayer",[false,false,false,false,false]];
+// _charPos = getPosATL _character;
+// _isInVehicle = vehicle _character != _character;
+// _timeSince = 0;
+// _humanity = 0;
 // 
 // if (_characterID == "0") exitWith {
 // 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
@@ -25,28 +25,28 @@
 // };
 // 
 // //Check for server initiated updates
-// _isNewMed =		_character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
+// _isNewMed = _character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
 // 
 // //Check for player initiated updates
 // if ((count _updates > 0 or _isNewMed) and _characterID != "0") then {
-// 	_isNewPos = 	_updates select 0;
-// 	_isNewGear =	_updates select 1;
-// 	_isNewBackp =	_updates select 2;
-// 	_justAte =		_updates select 3;
-// 	_justDrank =	_updates select 4;
-// 	_playerPos =	[];
-// 	_playerGear =	[];
-// 	_playerBackp =	[];
-// 	_medical =		[];
-// 	_distanceFoot =	0;
+// 	_isNewPos = _updates select 0;
+// 	_isNewGear = _updates select 1;
+// 	_isNewBackp = _updates select 2;
+// 	_justAte = _updates select 3;
+// 	_justDrank = _updates select 4;
+// 	_playerPos = [];
+// 	_playerGear = [];
+// 	_playerBackp = [];
+// 	_medical = [];
+// 	_distanceFoot = 0;
 // 	
 // 	//Check if update is requested
 // 	if (_isNewPos) then {
 // 		if (((_charPos select 0) == 0) and ((_charPos select 1) == 0)) then {
 // 			//Zero Position
 // 		} else {
-// 			_playerPos = 	[round(direction _character),_charPos];
-// 			_lastPos = 		_character getVariable["lastPos",_charPos];
+// 			_playerPos = [round(direction _character),_charPos];
+// 			_lastPos = _character getVariable["lastPos",_charPos];
 // 			if (count _lastPos > 2 and count _charPos > 2) then {
 // 				if (!_isInVehicle) then {
 // 					_distanceFoot = round(_charPos distance _lastPos);
@@ -62,12 +62,12 @@
 // 	};
 // 	if (_isNewGear) then {
 // 		//player sideChat format["SERVER: %1 update backpack",_characterID];
-// 		_currentWpn = 	currentMuzzle _character;
-// 		_currentMag =	currentMagazine _character;
-// 		_magazines =	magazines _character;
+// 		_currentWpn = currentMuzzle _character;
+// 		_currentMag = currentMagazine _character;
+// 		_magazines = magazines _character;
 // 		
-// 		_qty = 			_character ammo _currentWpn;
-// 		_qtyT = 		getNumber(configFile >> "cfgMagazines" >> _currentMag >> "count");
+// 		_qty = _character ammo _currentWpn;
+// 		_qtyT = getNumber(configFile >> "cfgMagazines" >> _currentMag >> "count");
 // 		if (_qty < (_qtyT * 0.5)) then {
 // 			_val = _magazines find _currentMag;
 // 			_magazines set [_val,"DEL"];
@@ -92,39 +92,39 @@
 // 	};
 // 	
 // 	//Process update
-// 	if (_doUpdate and _characterID != "0") then {		
-// 		//Record stats while we're here		
+// 	if (_doUpdate and _characterID != "0") then { 
+// 		//Record stats while we're here 
 // 		/*
 // 			Check previous stats against what client had when they logged in
 // 			this helps prevent JIP issues, where a new player wouldn't have received
 // 			the old players updates. Only valid for stats where clients could have
-// 			be recording  results from their local objects (such as agent zombies)
+// 			be recording results from their local objects (such as agent zombies)
 // 		*/
-// 		_kills = 		["zombieKills",_character] call server_getDiff;
-// 		_killsB = 		["banditKills",_character] call server_getDiff;
-// 		_killsH = 		["humanKills",_character] call server_getDiff;
-// 		_headShots = 	["headShots",_character] call server_getDiff;
-// 		_humanity = 	["humanity",_character] call server_getDiff2;
-// 		//_humanity = 	_character getVariable ["humanity",0];
+// 		_kills = ["zombieKills",_character] call server_getDiff;
+// 		_killsB = ["banditKills",_character] call server_getDiff;
+// 		_killsH = ["humanKills",_character] call server_getDiff;
+// 		_headShots = ["headShots",_character] call server_getDiff;
+// 		_humanity = ["humanity",_character] call server_getDiff2;
+// 		//_humanity = _character getVariable ["humanity",0];
 // 		_character addScore _kills;		
 // 		/*
 // 			Assess how much time has passed, for recording total time on server
 // 		*/
-// 		_lastTime = 	_character getVariable["lastTime",time];
-// 		_timeGross = 	(time - _lastTime);
-// 		_timeSince = 	floor(_timeGross / 60);
-// 		_timeLeft =		(_timeGross - (_timeSince * 60));
+// 		_lastTime = _character getVariable["lastTime",time];
+// 		_timeGross = (time - _lastTime);
+// 		_timeSince = floor(_timeGross / 60);
+// 		_timeLeft = (_timeGross - (_timeSince * 60));
 // 		/*
 // 			Get character state details
 // 		*/
-// 		_currentWpn = 	currentMuzzle _character;
-// 		_currentAnim =	animationState _character;
-// 		_config = 		configFile >> "CfgMovesMaleSdr" >> "States" >> _currentAnim;
-// 		_onLadder =		(getNumber (_config >> "onLadder")) == 1;
-// 		_isTerminal = 	(getNumber (_config >> "terminal")) == 1;
-// 		//_wpnDisabled =	(getNumber (_config >> "disableWeapons")) == 1;
+// 		_currentWpn = currentMuzzle _character;
+// 		_currentAnim = animationState _character;
+// 		_config = configFile >> "CfgMovesMaleSdr" >> "States" >> _currentAnim;
+// 		_onLadder = (getNumber (_config >> "onLadder")) == 1;
+// 		_isTerminal = (getNumber (_config >> "terminal")) == 1;
+// 		//_wpnDisabled = (getNumber (_config >> "disableWeapons")) == 1;
 // 		_currentModel = typeOf _character;
-// 		_modelChk = 	_character getVariable ["model_CHK",""];
+// 		_modelChk = _character getVariable ["model_CHK",""];
 // 		if (_currentModel == _modelChk) then {
 // 			_currentModel = "";
 // 		} else {

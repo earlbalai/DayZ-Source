@@ -10,12 +10,12 @@ Start carry.sqf
 */
 
 private ["_unit","_dragee","_pos","_dir"];
-_dragee				= _this select 3;
-_can_be_revived 	= NORRN_revive_array select 20;
+_dragee = _this select 3;
+_can_be_revived = NORRN_revive_array select 20;
 _can_be_revived_2 	= NORRN_revive_array select 21;
-_unit  				= player;
-r_carry_sqf 		= true;
-r_drag_sqf			= false;
+_unit = player;
+r_carry_sqf = true;
+r_drag_sqf = false;
 
 _unit removeAction Norrn_carryAction;
 if (isNull _dragee) exitWith {}; 
@@ -35,7 +35,7 @@ _dragee attachto [_unit,[-0.2, 0.2, 0]];
 
 
 while {r_carry_sqf} do 
-{	
+{ 
 	_anim_name = animationstate _unit; 
 	if (!(_dragee getVariable "NORRN_unconscious")) exitWith
 	{ 
@@ -47,7 +47,7 @@ while {r_carry_sqf} do
 
 	//check that dragged unit still exists
 	if (!alive _unit || _anim_name != "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon" && _anim_name != "acinpercmstpsraswrfldnon" && _anim_name != "acinpercmrunsraswrfldf") exitWith 
-	{	
+	{ 
 		player removeAction NORRN_dropAction;
 		detach _dragee;
 		_unit switchMove "";

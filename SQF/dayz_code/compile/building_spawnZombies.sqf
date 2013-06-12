@@ -41,9 +41,9 @@ _cantSee = {
 				_deg = (_deg - _ed + 720) % 360;
 				if (_deg > 180) then { _deg = _deg - 360; };
 				if ((abs(_deg) < _fov) AND {( // in right angle sector?
-						(!(terrainIntersectASL [_zPos, _eye])  // no terrain between?
+						(!(terrainIntersectASL [_zPos, _eye]) // no terrain between?
 						AND {(!(lineIntersects [_zPos, _eye]))}) // and no object between?
-					)})  then {
+					)}) then {
 					_isok = false;
 				};
 			};
@@ -103,7 +103,7 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 				if ([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee) then { // check that player won't see the spawning zombie
 					_tmp = [_bsz_pos, false, _unitTypes, _recyAgt, _maxtoCreate];
 					if (_tmp call zombie_generate) then {
-						//diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
+						//diag_log(format["%1 Zombie spawned at %2 inside %3  (%4/%5) recy/crea:%6/%7",__FILE__, 
 						//				_bsz_pos, _type, 1+_num0-_num, _num0, count (_tmp select 3), _tmp select 4]);
 						_num = _num - 1;
 						_recyAgt = _tmp select 3;
@@ -133,11 +133,11 @@ if ((_rnd < _zombieChance) AND {(_num0 > 0)}) then {
 		if (((count _bsz_pos >= 3) // check that findEmptyPosition found something for us
 			AND {(!([_bsz_pos, true] call fnc_isInsideBuilding) // check position is outside any buildings
 			AND {({alive _x} count (_bsz_pos nearEntities ["zZombie_Base", 1]) == 0)})}) // check position is empty
-			AND {([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)}) then {  // check that player won't see the spawning zombie
+			AND {([_bsz_pos, dayz_cantseefov, dayz_safeDistPlr, dayz_cantseeDist] call _cantSee)}) then { // check that player won't see the spawning zombie
 			_bsz_pos set [2, 0]; // force on the ground
 			_tmp = [_bsz_pos, true, _unitTypes, _recyAgt, _maxtoCreate];
 			if (_tmp call zombie_generate) then {
-				//diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5)  recy/crea:%6/%7",__FILE__, 
+				//diag_log(format["%1 Zombie spawned at %2 near %3  (%4/%5) recy/crea:%6/%7",__FILE__, 
 				//				_bsz_pos, _type, 1+_num0-_num, _num0, count (_tmp select 3), _tmp select 4]);
 				_num = _num - 1;
 				_recyAgt = _tmp select 3;

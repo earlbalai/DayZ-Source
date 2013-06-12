@@ -1,10 +1,10 @@
 private["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_currentCamera"];
-_class 			= _this;
+_class = _this;
 
-_position 		= getPosATL player;
-_dir 			= getDir player;
-_currentAnim 	= animationState player;
-//_currentCamera	= cameraView;
+_position = getPosATL player;
+_dir = getDir player;
+_currentAnim = animationState player;
+//_currentCamera = cameraView;
 
 
 //Get PlayerID
@@ -22,16 +22,16 @@ private ["_playerUID"];
 
 //BackUp Weapons and Mags
 private ["_weapons","_magazines","_primweapon","_secweapon"];
-	_weapons 	= weapons player;
-	_magazines	= call player_countmagazines; //magazines player;
+	_weapons = weapons player;
+	_magazines = call player_countmagazines; //magazines player;
 
 	if ( (_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0 )) exitWith {cutText ["can't count magazines!", "PLAIN DOWN"]};
 
 
 //	if ( count _magazines == 0 ) exitWith {cutText ["can't count magazines!", "PLAIN DOWN"]};
 
-	_primweapon	= primaryWeapon player;
-	_secweapon	= secondaryWeapon player;
+	_primweapon = primaryWeapon player;
+	_secweapon = secondaryWeapon player;
 
 	//Checks
 	if(!(_primweapon in _weapons) && _primweapon != "") then {
@@ -81,13 +81,13 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 
 //Create New Character
 	//[player] joinSilent grpNull;
-	_group 		= createGroup west;
-	_newUnit 	= _group createUnit [_class,getMarkerPos "respawn_west",[],0,"NONE"];
+	_group = createGroup west;
+	_newUnit = _group createUnit [_class,getMarkerPos "respawn_west",[],0,"NONE"];
 
-	_newUnit 	setDir _dir;
+	_newUnit setDir _dir;
 
 //Clear New Character
-	{_newUnit removeMagazine _x;} forEach  magazines _newUnit;
+	{_newUnit removeMagazine _x;} forEach magazines _newUnit;
 	removeAllWeapons _newUnit;	
 
 //Equip New Charactar
@@ -115,7 +115,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 		} forEach _weapons;
 	};
 	
-	if(_primweapon !=  (primaryWeapon _newUnit)) then {
+	if(_primweapon != (primaryWeapon _newUnit)) then {
 		_newUnit addWeapon _primweapon;		
 	};
 
@@ -137,7 +137,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 			_backpackWpnQtys = [];
 			if (count _backpackWpn > 0) then {
 				_backpackWpnTypes = _backpackWpn select 0;
-				_backpackWpnQtys = 	_backpackWpn select 1;
+				_backpackWpnQtys = _backpackWpn select 1;
 			};
 			_countr = 0;
 			{
@@ -149,7 +149,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 			_backpackmagQtys = [];
 			if (count _backpackmag > 0) then {
 				_backpackmagTypes = _backpackMag select 0;
-				_backpackmagQtys = 	_backpackMag select 1;
+				_backpackmagQtys = _backpackMag select 1;
 			};
 			_countr = 0;
 			{
@@ -178,7 +178,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 
 //Clear and delete old Unit
 	removeAllWeapons _oldUnit;
-	{_oldUnit removeMagazine _x;} forEach  magazines _oldUnit;
+	{_oldUnit removeMagazine _x;} forEach magazines _oldUnit;
 	deleteVehicle _oldUnit;
 
 //	player switchCamera = _currentCamera;
@@ -194,7 +194,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	
 	//melee check
 	_wpnType = primaryWeapon player;
-	_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+	_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
 	if (_ismelee == "true") then {
 		call dayz_meleeMagazineCheck;
 	};

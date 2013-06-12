@@ -4,9 +4,9 @@ parameters: _obj
 */
 private["_obj","_objectID","_objectUID","_dis","_sfx"];
 
-_obj		= _this select 3;
-_objectID 	= _obj getVariable ["ObjectID","0"];
-_objectUID	= _obj getVariable ["ObjectUID","0"];
+_obj = _this select 3;
+_objectID = _obj getVariable ["ObjectID","0"];
+_objectUID = _obj getVariable ["ObjectUID","0"];
 
 player playActionNow "Medic";
 sleep 1;

@@ -31,7 +31,7 @@ if (!isNull _flare) then {
 		};
 		case 1: {
 			//Spark Light
-			_color =  getArray(configFile >> "cfgAmmo" >> (typeOf _flare) >> "lightColor");
+			_color = getArray(configFile >> "cfgAmmo" >> (typeOf _flare) >> "lightColor");
 			_lightSpark = "#lightpoint" createVehicleLocal (getPosATL _flare);
 			_lightSpark setLightColor _color;
 			_lightSpark setLightAmbient _color;

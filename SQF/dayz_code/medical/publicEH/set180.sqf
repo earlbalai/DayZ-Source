@@ -2,4 +2,4 @@
 
 _dragee = _this select 0;
 
-_dragee  setDir 180;
+_dragee setDir 180;

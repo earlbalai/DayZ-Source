@@ -1,6 +1,6 @@
 private["_unit","_projectile","_isInCombat"];
-_unit =         _this select 0;
-_projectile = 	_this select 6;
+_unit = _this select 0;
+_projectile = _this select 6;
 
 diag_log ("0");
 
