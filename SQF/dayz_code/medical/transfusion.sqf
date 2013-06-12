@@ -60,7 +60,7 @@ while {r_doLoop and (_i < 12)} do {
 	};
 
 	if (r_interrupt or ((player distance _unit) < ((sizeOf typeOf _unit) / 2))) then {
-		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2)", r_interrupt, player distance _unit];
+		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3))", r_interrupt, player distance _unit, ((player distance _unit) < ((sizeOf typeOf _unit) / 2))];
 		cutText ["The transfusion was interrupted! The blood bag has been lost.", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,"The transfusion was interrupted! The blood bag has been lost.","PLAIN DOWN"] call RE;
 		r_doLoop = false;
