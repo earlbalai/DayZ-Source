@@ -38,7 +38,7 @@ if (player hasWeapon "ItemWatch") then
 			case (Dayz_logonTime > 17): {_2 = "yesterday evening"};
 			case (Dayz_logonTime > 12): {_2 = "yesterday afternoon"};
 			default {_2 = "early yesterday" };
-		};		
+		};
 	};
 } else
 {
@@ -141,7 +141,7 @@ if (r_fracture_legs or r_fracture_arms) then
 _blood_in_pack = false;
 _backpack = unitBackpack player;
 
-if (!isNull _backpack) then 
+if (!isNull _backpack) then
 {
 	_mag_arr = getMagazineCargo _backpack;
 	if ("ItemBloodbag" in (_mag_arr select 0)) then
@@ -163,7 +163,7 @@ if (r_player_blood < 9000 and (_blood_in_inv or _blood_in_pack)) then
 	if (_blood_in_inv) then
 	{
 		_10 = "Good thing I've got a blood bag on me.  Now if only there was someone who could hook me up...";
-	} else 
+	} else
 	{
 		_10 = "Good thing I've got a blood bag in my backpack.  Now if only there was someone who could hook me up...";
 	};
@@ -213,7 +213,7 @@ if (_weapon != "" and _weapon != "Throw" and _weapon != "Put" and _weapon != "Fl
 					_mssv_cnt = true;
 				};
 			} forEach (magazines player);
-			
+
 			if (_mssv_cnt) then
 			{
 				if (player ammo _weapon > 0) then
@@ -226,7 +226,7 @@ if (_weapon != "" and _weapon != "Throw" and _weapon != "Put" and _weapon != "Fl
 			} else
 			{
 				_11 = format ["Good news is I've found a %1 but I haven't got any ammo for it.", getText (_config >> _weapon >> "displayName")];
-			};		
+			};
 		};
 	};
 } else

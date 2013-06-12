@@ -12,7 +12,7 @@ _humanity = player getVariable["humanity", 0];
 _hum = [_humanity] call horde_epeen_determine_humanity_fnc;
 
 _pl_pic = _hum select 0;
-_humanity_readout = _hum select 1; 
+_humanity_readout = _hum select 1;
 _top_joker = _hum select 2;
 _bot_joker = _hum select 3;
 _top_value = _hum select 4;

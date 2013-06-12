@@ -6,7 +6,7 @@ _rubbish = dayz_Trash == 1;
 	_location = _x select 0;
 	_distCfg = (_x select 2);
 	_configClass = _x select 1;
-	_distAct = player distance position _location;	
+	_distAct = player distance position _location;
 
 	if (!(_location in dayz_locationsActive)) then {
 		if ((_distAct < _distCfg + dayz_spawnArea) and _rubbish) then {
@@ -24,7 +24,7 @@ _rubbish = dayz_Trash == 1;
 			if (typeName _locHdr != "STRING") then { _locHdr = str _location; };
 			diag_log format ["%1: removing %2 objects from '%3'", __FILE__, count _config, _locHdr];
 			_config call stream_locationDel; // delete wrecks & rubbish
-			dayz_locationsActive = dayz_locationsActive - [_location]; 
+			dayz_locationsActive = dayz_locationsActive - [_location];
 		};
 	};
 } forEach dayz_Locations;

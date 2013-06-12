@@ -1,4 +1,4 @@
-private["_timesincedrink"];	
+private["_timesincedrink"];
 //_timesincedrink = time - dayz_lastDrink;
 //_bloodinc =100; Removed for now(untested) due to it not needed yet
 
@@ -37,7 +37,7 @@ player setVariable["medForceUpdate",true];
 dayz_lastMeal = time;
 dayz_hunger = 0;
 */
-//add infection chance for cure 
+//add infection chance for cure
 if (random 15 < 1) then {
 	r_player_infected = false;
 	player setVariable["USEC_infected",true,true];

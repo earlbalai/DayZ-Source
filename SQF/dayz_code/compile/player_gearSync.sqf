@@ -5,7 +5,7 @@ _objects = nearestObjects [getPosATL player, ["Car", "Helicopter", "Motorcycle",
 	//["PVDZ_veh_Save",[_x,"gear"]] call callRpcProcedure;
 	PVDZ_veh_Save = [_x,"gear"];
 	publicVariableServer "PVDZ_veh_Save";
-	
+
 } foreach _objects;
 
 private["_dialog","_magazineArray","_control","_item","_val","_max"];
@@ -15,7 +15,7 @@ _dialog = _this select 0;
 _magazineArray = [];
 
 //Primary Mags
-for "_i" from 109 to 120 do 
+for "_i" from 109 to 120 do
 {
 	_control = _dialog displayCtrl _i;
 	_item = gearSlotData _control;
@@ -32,7 +32,7 @@ for "_i" from 109 to 120 do
 };
 
 //Secondary Mags
-for "_i" from 122 to 129 do 
+for "_i" from 122 to 129 do
 {
 	_control = _dialog displayCtrl _i;
 	_item = gearSlotData _control;
@@ -47,4 +47,4 @@ for "_i" from 122 to 129 do
 	};
 };
 dayz_unsaved = true;
-dayz_Magazines = _magazineArray;	
+dayz_Magazines = _magazineArray;

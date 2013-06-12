@@ -10,17 +10,17 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 		_btnAbort ctrlEnable false;
 		_timeOut = 0;
 		_timeMax = 30;
-		
+
 		dayz_lastCheckSave = time;
-		
+
 		if(r_player_dead) exitWith {_btnAbort ctrlEnable true;};
 		if(r_fracture_legs) exitWith {_btnRespawn ctrlEnable true; _btnAbort ctrlEnable true;};
-		
+
 		//force gear save
 		if (time - dayz_lastCheckSave > 10) then {
 			call dayz_forceSave;
-		};			
-				
+		};
+
 		while {!isNull _display} do {
 			switch true do {
 				case ({isPlayer _x} count (player nearEntities ["AllVehicles", 6]) > 1) : {
@@ -33,11 +33,11 @@ private["_display","_btnRespawn","_btnAbort","_timeOut","_timeMax","_isDead"];
 				};
 				case (player getVariable["combattimeout", 0] >= time) : {
 					_btnAbort ctrlEnable false;
-					cutText [localize "str_abort_playerincombat", "PLAIN DOWN"];					
+					cutText [localize "str_abort_playerincombat", "PLAIN DOWN"];
 				};
 				default {
 					_btnAbort ctrlEnable true;
-					cutText ["", "PLAIN DOWN"];				
+					cutText ["", "PLAIN DOWN"];
 				};
 			};
 			sleep 1;

@@ -54,8 +54,8 @@ meatcooked = [
 ];
 //Eating
 no_output_food = [
-	"FoodMRE", 
-	"FoodPistachio", 
+	"FoodMRE",
+	"FoodPistachio",
 	"FoodNutmix",
 	"FoodCandyAnders",
 	"FoodCandyLegacys",
@@ -128,26 +128,26 @@ drink_with_output = [
     "ItemSodaMtngreen",
     "ItemSodaR4z0r",
     "ItemSodaClays",
-    "ItemSodaSmasht", 
-    "ItemSodaDrwaste", 
-    "ItemSodaLemonade", 
-    "ItemSodaLvg", 
-    "ItemSodaMzly", 
+    "ItemSodaSmasht",
+    "ItemSodaDrwaste",
+    "ItemSodaLemonade",
+    "ItemSodaLvg",
+    "ItemSodaMzly",
     "ItemSodaRabbit"
 ];
 drink_output = [
-    "ItemSodaEmpty", 
+    "ItemSodaEmpty",
     "ItemSodaCokeEmpty",
     "ItemSodaPepsiEmpty",
     "ItemSodaMdewEmpty",
     "ItemSodaMtngreenEmpty",
     "ItemSodaR4z0rEmpty",
     "ItemSodaClaysEmpty",
-    "ItemSodaSmashtEmpty", 
-    "ItemSodaDrwasteEmpty", 
-    "ItemSodaLemonadeEmpty", 
-    "ItemSodaLvgEmpty", 
-    "ItemSodaMzlyEmpty", 
+    "ItemSodaSmashtEmpty",
+    "ItemSodaDrwasteEmpty",
+    "ItemSodaLemonadeEmpty",
+    "ItemSodaLvgEmpty",
+    "ItemSodaMzlyEmpty",
     "ItemSodaRabbitEmpty"
 ];
 boil_tin_cans = [
@@ -171,18 +171,18 @@ boil_tin_cans = [
 	"FoodCanRusPeasEmpty",
 	"FoodCanRusMilkEmpty",
 	"FoodCanRusCornEmpty",
-    "ItemSodaEmpty", 
+    "ItemSodaEmpty",
     "ItemSodaCokeEmpty",
     "ItemSodaPepsiEmpty",
     "ItemSodaMdewEmpty",
     "ItemSodaMtngreenEmpty",
     "ItemSodaR4z0rEmpty",
     "ItemSodaClaysEmpty",
-    "ItemSodaSmashtEmpty", 
-    "ItemSodaDrwasteEmpty", 
-    "ItemSodaLemonadeEmpty", 
-    "ItemSodaLvgEmpty", 
-    "ItemSodaMzlyEmpty", 
+    "ItemSodaSmashtEmpty",
+    "ItemSodaDrwasteEmpty",
+    "ItemSodaLemonadeEmpty",
+    "ItemSodaLvgEmpty",
+    "ItemSodaMzlyEmpty",
     "ItemSodaRabbitEmpty"
 ];
 
@@ -301,7 +301,7 @@ r_player_bloodlosspersec = 0;
 //Blood Per Sec (gain - loss)
 r_player_bloodpersec = 0;
 //Food Stack
-r_player_foodstack = 1; 
+r_player_foodstack = 1;
 //player skill
 r_player_lowblood = false;
 r_player_timeout = 0;
@@ -330,7 +330,7 @@ r_player_removeActions2 = {
 	};
 };
 
-USEC_woundHit = [ // limbs hit given by arma engine when fnc_usec_damageHandler is called 
+USEC_woundHit = [ // limbs hit given by arma engine when fnc_usec_damageHandler is called
 	"",
 	"body",
 	"hands",
@@ -402,13 +402,13 @@ dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 dayz_maxMaxModels = 80; // max quantity of Man models (player or Z, dead or alive) around players. Below this limit we can spawn Z
 dayz_maxMaxWeaponHolders = 80; // max quantity of loot piles around players. Below this limit we can spawn some loot
-dayz_spawnArea = 200; // radius around player where we can spawn loot & Z 
+dayz_spawnArea = 200; // radius around player where we can spawn loot & Z
 dayz_safeDistPlr = 50; // Any loot & Z won't be spawned closer than this distance from any player
 dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
-dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players 
+dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 dayz_lootSpawnBias = 67; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
-dayz_localswarmSpawned = 10;  // how many zeds will spawn around you during a combat scenario. 
+dayz_localswarmSpawned = 10;  // how many zeds will spawn around you during a combat scenario.
 
 //init global arrays for Loot Chances
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
@@ -422,9 +422,9 @@ if(isServer) then {
 
 if(!isDedicated) then {
 	//Establish Location Streaming
-	_funcGetLocation = 
+	_funcGetLocation =
 	{
-		for "_i" from 0 to ((count _this) - 1) do 
+		for "_i" from 0 to ((count _this) - 1) do
 		{
 			private ["_location","_config","_locHdr","_position","_size","_type"];
 			//Get Location Data from config
@@ -433,29 +433,29 @@ if(!isDedicated) then {
 			_position = getArray (_config >> "position");
 			_size = getNumber (_config >> "size");
 			_type = getText (_config >> "type");
-			
+
 			//Find the Location
 			_location = nearestLocation [_position, _type];
-			
+
 			//Record details
-			dayz_Locations set [count dayz_Locations, [_location,_locHdr,_size]]; 
+			dayz_Locations set [count dayz_Locations, [_location,_locHdr,_size]];
 		};
 	};
 	_cfgLocation = configFile >> "CfgTownGeneratorChernarus";
 	_cfgLocation call _funcGetLocation;
-	
+
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];
 	dayz_flyMonitor = [];		//used for monitor flies
-	
+
 	dayz_baseTypes = getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
-	
+
 	//temperature variables
 	dayz_temperatur = 36;		//TeeChange
 	dayz_temperaturnormal = 36;		//TeeChange
 	dayz_temperaturmax = 42;		//TeeChange
 	dayz_temperaturmin = 27;		//TeeChange
-	
+
 	//player special variables
 	dayZ_lastPlayerUpdate = 0;
 	dayZ_everyonesTents = [];

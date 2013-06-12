@@ -33,11 +33,11 @@ while {r_doLoop} do {
 };
 r_doLoop = false;
 
-if (_finished) then { 
+if (_finished) then {
 	//["PVDZ_hlt_Bandage",[_unit,player]] call broadcastRpcCallAll;
 	PVDZ_hlt_Bandage = [_unit,player];
 	publicVariable "PVDZ_hlt_Bandage";
-		
+
 	if (_unit == player) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";

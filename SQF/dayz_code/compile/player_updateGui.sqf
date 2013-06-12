@@ -36,7 +36,7 @@ _ctrlCombat ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G 
 
 //_ctrlBloodOuter ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-r_player_bloodregen))),(Dayz_GUI_G * r_player_bloodregen),(Dayz_GUI_B * r_player_bloodregen), 0.5];
 
-/* 
+/*
 	Blood: round((r_player_blood / 2) / 1000) = _bloodLvl (6 = full, 1 = empty)
 	Thirst: round(_thirstVal / 0.25) = _thirstLvl (4 = full, 0 = empty)
 	Hunger: round(_foodVal / 0.25) = _foodLvl (4 = full, 0 = empty)
@@ -93,7 +93,7 @@ if (r_player_infected) then {
 
 _ctrlBloodOuter ctrlSetText _bloodText;
 
-if (_bloodLvl <= 0) then { 
+if (_bloodLvl <= 0) then {
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";
 } else {
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_" + str(_bloodLvl) + "_ca.paa";

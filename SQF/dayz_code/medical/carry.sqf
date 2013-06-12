@@ -2,7 +2,7 @@
 
  CARRY BODY SCRIPT
 
- Allows players to carry unconscious bodies 
+ Allows players to carry unconscious bodies
 
  JULY 2010 - norrin
 *****************************************************************************************************************************
@@ -18,8 +18,8 @@ r_carry_sqf = true;
 r_drag_sqf = false;
 
 _unit removeAction Norrn_carryAction;
-if (isNull _dragee) exitWith {}; 
-_dragee setVariable ["NORRN_unit_dragged", true, true]; 
+if (isNull _dragee) exitWith {};
+_dragee setVariable ["NORRN_unit_dragged", true, true];
 detach _dragee;
 sleep 1.5;
 // public EH
@@ -34,25 +34,25 @@ _dragee switchmove "ainjpfalmstpsnonwrfldnon_carried_still";
 _dragee attachto [_unit,[-0.2, 0.2, 0]];
 
 
-while {r_carry_sqf} do 
-{ 
-	_anim_name = animationstate _unit; 
+while {r_carry_sqf} do
+{
+	_anim_name = animationstate _unit;
 	if (!(_dragee getVariable "NORRN_unconscious")) exitWith
-	{ 
+	{
 		detach _dragee;
 		_unit switchMove "";
 		player removeAction Norrn_dropAction;
 		r_carry_sqf = false;
-	};	 
+	};
 
 	//check that dragged unit still exists
-	if (!alive _unit || _anim_name != "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon" && _anim_name != "acinpercmstpsraswrfldnon" && _anim_name != "acinpercmrunsraswrfldf") exitWith 
-	{ 
+	if (!alive _unit || _anim_name != "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon" && _anim_name != "acinpercmstpsraswrfldnon" && _anim_name != "acinpercmrunsraswrfldf") exitWith
+	{
 		player removeAction NORRN_dropAction;
 		detach _dragee;
 		_unit switchMove "";
 		r_carry_sqf = false;
-	};	 	
+	};
 	sleep 0.1;
 };
 if (true) exitWith {};

@@ -5,7 +5,7 @@
 	Description:
 	Allows a player to tame/domesticate a dog.
 	Script is applied to object via addAction.
-		
+
 	Variables:
 	_target = Object that action is attached too.
 	_caller = Object that activates the action.

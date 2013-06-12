@@ -13,7 +13,7 @@ _curFuel = ((fuel _vehicle) * _capacity);
 _newFuel = (_curFuel + _canSize);
 _fueling = player getVariable "fueling";
 
-player removeAction s_player_fillfuel + _capacity; 
+player removeAction s_player_fillfuel + _capacity;
 
 if (fuel _vehicle == 1) exitwith {};
 
@@ -29,12 +29,12 @@ if (isnil "_fueling") then {
 	player addMagazine _emptycan;
 
 	player playActionNow "Medic";
-	
+
 	_dis=5;
 	_sfx = "refuel";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	r_doLoop = true;
 	_started = false;
 	_finished = false;
@@ -51,7 +51,7 @@ if (isnil "_fueling") then {
 		sleep 0.1;
 	};
 	r_doLoop = false;
-	
+
 
 	if (_finished) then {
 		PVDZ_veh_SetFuel = [_vehicle,_newFuel];

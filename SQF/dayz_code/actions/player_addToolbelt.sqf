@@ -42,7 +42,7 @@ if (_isOk) then {
 } else {
 	cutText [localize "str_player_24", "PLAIN DOWN"];
 };
-	
+
 //adding melee mags back if needed
 switch (primaryWeapon player) do {
 	case "MeleeHatchet": {player addMagazine 'hatchet_swing';};

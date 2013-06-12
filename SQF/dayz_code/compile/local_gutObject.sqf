@@ -8,14 +8,14 @@ if (local _animalbody) then {
 	for "_x" from 1 to _qty do {
 		_animalbody addMagazine _rawfoodtype;
 	};
-		
-	[time, _animalbody] spawn { 
-		private ["_timer", "_body"]; 
-		_timer = _this select 0; 
-		_body = _this select 1; 
-		while {(count magazines _body >0) and (time - _timer < 300) } do { 
+
+	[time, _animalbody] spawn {
+		private ["_timer", "_body"];
+		_timer = _this select 0;
+		_body = _this select 1;
+		while {(count magazines _body >0) and (time - _timer < 300) } do {
 			sleep 5;
-		}; 
+		};
 		//["PVDZ_obj_HideBody",_body] call broadcastRpcCallAll;
 		PVDZ_obj_HideBody = _body;
 		hideBody _body; // local player
@@ -24,7 +24,7 @@ if (local _animalbody) then {
 		deleteVehicle _body;
 		true;
 	};
-	
+
 } else {
 	_ehLoc = "client";
 	if (isServer) then { _ehLoc = "server"; };

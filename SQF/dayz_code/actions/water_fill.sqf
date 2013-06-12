@@ -59,9 +59,9 @@ if (_canFill) then {
 
 		_dis=5;
 		_sfx = "fillwater";
-		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-		
+
 		player addMagazine "ItemWaterbottle";
 		};
 

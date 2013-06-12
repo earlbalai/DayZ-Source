@@ -7,11 +7,11 @@
 // _isInVehicle = vehicle _character != _character;
 // _timeSince = 0;
 // _humanity = 0;
-// 
+//
 // if (_characterID == "0") exitWith {
 // 	diag_log ("ERROR: Cannot Sync Character " + (name _character) + " as no characterID");
 // };
-// 
+//
 // //CheckVehicle
 // _character allowDamage true;
 // if (_isInVehicle) then {
@@ -23,10 +23,10 @@
 // 		_character setVelocity [0,0,100];
 // 	};
 // };
-// 
+//
 // //Check for server initiated updates
 // _isNewMed = _character getVariable["medForceUpdate",false];		//Med Update is forced when a player receives some kind of med incident
-// 
+//
 // //Check for player initiated updates
 // if ((count _updates > 0 or _isNewMed) and _characterID != "0") then {
 // 	_isNewPos = _updates select 0;
@@ -39,7 +39,7 @@
 // 	_playerBackp = [];
 // 	_medical = [];
 // 	_distanceFoot = 0;
-// 	
+//
 // 	//Check if update is requested
 // 	if (_isNewPos) then {
 // 		if (((_charPos select 0) == 0) and ((_charPos select 1) == 0)) then {
@@ -65,14 +65,14 @@
 // 		_currentWpn = currentMuzzle _character;
 // 		_currentMag = currentMagazine _character;
 // 		_magazines = magazines _character;
-// 		
+//
 // 		_qty = _character ammo _currentWpn;
 // 		_qtyT = getNumber(configFile >> "cfgMagazines" >> _currentMag >> "count");
 // 		if (_qty < (_qtyT * 0.5)) then {
 // 			_val = _magazines find _currentMag;
 // 			_magazines set [_val,"DEL"];
 // 			_magazines = _magazines - ["DEL"];
-// 		};	
+// 		};
 // 		_playerGear = [weapons _character,_magazines];
 // 		_doUpdate = true;
 // 	};
@@ -90,10 +90,10 @@
 // 			_doUpdate = true;
 // 		};
 // 	};
-// 	
+//
 // 	//Process update
-// 	if (_doUpdate and _characterID != "0") then { 
-// 		//Record stats while we're here 
+// 	if (_doUpdate and _characterID != "0") then {
+// 		//Record stats while we're here
 // 		/*
 // 			Check previous stats against what client had when they logged in
 // 			this helps prevent JIP issues, where a new player wouldn't have received
@@ -106,7 +106,7 @@
 // 		_headShots = ["headShots",_character] call server_getDiff;
 // 		_humanity = ["humanity",_character] call server_getDiff2;
 // 		//_humanity = _character getVariable ["humanity",0];
-// 		_character addScore _kills;		
+// 		_character addScore _kills;
 // 		/*
 // 			Assess how much time has passed, for recording total time on server
 // 		*/
@@ -131,13 +131,13 @@
 // 			_currentModel = str(_currentModel);
 // 			_character setVariable ["model_CHK",typeOf _character];
 // 		};
-// 		
+//
 // 		if (_onLadder or _isInVehicle or _isTerminal) then {
 // 			_currentAnim = "";
 // 			//If position to be updated, make sure it is at ground level!
 // 			if ((count _playerPos > 0) and !_isTerminal) then {
 // 				_charPos set [2,0];
-// 				_playerPos set[1,_charPos];					
+// 				_playerPos set[1,_charPos];
 // 			};
 // 		};
 // 		if (_isInVehicle) then {
@@ -146,7 +146,7 @@
 // 			_muzzles = getArray(configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
 // 			if (count _muzzles > 1) then {
 // 				_currentWpn = currentMuzzle _character;
-// 			};	
+// 			};
 // 		};
 // 		_temp = round(_character getVariable ["temperature",100]);
 // 		_currentState = [_currentWpn,_currentAnim,_temp];
@@ -173,7 +173,7 @@
 // 				_character setVariable ["medForceUpdate",false];
 // 			};
 // 		};
-// 
+//
 // 		//Reset timer
 // 		if (_timeSince > 0) then {
 // 			_character setVariable ["lastTime",(time - _timeLeft)];

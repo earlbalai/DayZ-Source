@@ -53,7 +53,7 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 	_hasBandage = "ItemBandage" in magazines player;
 	_hasEpi = "ItemEpinephrine" in magazines player;
 	_hasMorphine = "ItemMorphine" in magazines player;
-	_hasBlood = "ItemBloodbag" in magazines player;	
+	_hasBlood = "ItemBloodbag" in magazines player;
 	_hasToolbox = "ItemToolbox" in items player;
 	/*
 	//Moved to has actions
@@ -118,13 +118,13 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 		_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit], 0, true, true, "", "'ItemBloodbag' in magazines player"];
 		r_player_actions set [count r_player_actions,_action];
 	};
-	
+
 	//Repairs
 	if ((_unit isKindOf "AllVehicles") and !(_unit isKindOf "Man")) then {
 		_type = TypeOf(_unit);
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 		_isVehicle = cursorTarget isKindOf "AllVehicles";
-		
+
 		//CAN WE REFUEL THE OBJECT?
 	/*
 		//Moved to has actions
@@ -141,10 +141,10 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 			} else {
 				player removeAction s_player_fillfuel20;
 				player removeAction s_player_fillfuel5;
-			};	
+			};
 		};
 		*/
-	
+
 		//CAN WE ISSUE ANOTHER KIND OF AMMUNITION?
 		if (count weapons _unit > 0) then {
 			//Get mag array

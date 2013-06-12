@@ -55,7 +55,7 @@ switch (_iClass) do {
 				_magQty = round(random 10);
 				if (_magQty > 3) then {
 					_item addMagazineCargoGlobal [(_mags select 0), (round(random 1) + 1)];
-				};	
+				};
 			};
 		};
 	};

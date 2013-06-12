@@ -5,12 +5,12 @@
 // _targetMen = [];
 // _targetDis = [];
 // _range = 500;
-// 
+//
 // _assigned = _group getVariable ["targets",[]];
 // {
 // 	_group reveal [_x,4];
 // } forEach _assigned;
-// 
+//
 // //Find targets
 // _targets = _lead nearTargets _range;
 // {
@@ -31,7 +31,7 @@
 // //		};
 // //	};
 // } forEach _targets;
-// 
+//
 // //Search for fires
 // if (count _targetMen == 0) then {
 // 	_fires = nearestObjects [_lead,["Land_Fire","SmokeShell"],_range];
@@ -49,7 +49,7 @@
 // 		};
 // 	} forEach _fires;
 // };
-// 
+//
 // //Find best target
 // if (count _targetMen > 0) then {
 // 	_man = _targetMen select 0;
@@ -70,7 +70,7 @@
 // 	} forEach _targetMen;
 // 	_target = _man;
 // };
-// 
+//
 // //Check if too far
 // if (_manDis > _range) then {
 // 	_target = objNull;

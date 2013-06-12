@@ -26,31 +26,31 @@ if (_section and _hasToolbox) then {
 
 	_damage = [_vehicle,_hitpoint] call object_getHit;
 	_vehicle removeAction _id;
-	
+
 	//dont waste loot on undamaged parts
 	if (_damage > 0) then {
 
 		//Fix the part
 		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
-	
+
 		[_vehicle, _selection, 0, true] call fnc_veh_handleRepair;
-		
+
 		player playActionNow "Medic";
 		sleep 1;
-		
+
 		_dis=20;
 		_sfx = "repair";
-		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
-	
+
+
 		sleep 5;
 		_vehicle setvelocity [0,0,1];
 
 		//Success!
 		cutText [format[localize "str_player_04",_namePart,_nameType], "PLAIN DOWN"];
 	} else { player addMagazine _part; };
-			
+
 } else {
 	cutText [format[localize "str_player_03",_namePart], "PLAIN DOWN"];
 };

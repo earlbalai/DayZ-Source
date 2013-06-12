@@ -10,7 +10,7 @@
 	Returns:
 	Sun's rise in hours, in the same format as engine's [daytime] command (16.5 == 16:30)
 	To obtain sun's set, just subtract the result from 24.
-	
+
 	Reference:
 	http://forums.bistudio.com/showthread.php?107476-How-do-I-detect-sundown-sunrise
 */

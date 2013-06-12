@@ -13,12 +13,12 @@ _qty5 = {_x == "ItemFuelcanEmpty"} count magazines player;
 
 if (("ItemJerrycanEmpty" in magazines player) or ("ItemFuelcanEmpty" in magazines player)) then {
 	player playActionNow "Medic";
-	
+
 	_dis=5;
 	_sfx = "refuel";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	r_doLoop = true;
 	_started = false;
 	_finished = false;
@@ -34,10 +34,10 @@ if (("ItemJerrycanEmpty" in magazines player) or ("ItemFuelcanEmpty" in magazine
 		};
 		sleep 0.1;
 	};
-		
+
 	r_doLoop = false;
-	
-		
+
+
 	if (_finished) then {
 		for "_x" from 1 to _qty20 do {
 			player removeMagazine "ItemJerrycanEmpty";
@@ -48,7 +48,7 @@ if (("ItemJerrycanEmpty" in magazines player) or ("ItemFuelcanEmpty" in magazine
 			player addMagazine "ItemFuelcan";
 		};
 	};
-	
+
 	cutText [format[(localize "str_player_09"),_qty], "PLAIN DOWN"];
 } else {
 	cutText [(localize "str_player_10") , "PLAIN DOWN"];

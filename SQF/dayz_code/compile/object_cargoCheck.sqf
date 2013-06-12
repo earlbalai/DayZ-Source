@@ -28,14 +28,14 @@ _serial = 0;
 {
 	_itemVal = _x;
 	_itemQty = _currentQty select _serial;
-	
+
 	_oldSerial = _previousTypes find _itemVal;
 	_oldQty = 0;
 	if (_oldSerial >= 0) then {
 		_oldQty = _previousQty select _oldSerial;
 	};
 	if (_itemQty != _oldQty) then {_change = true};
-	
+
 	_serial = _serial + 1;
 } forEach _currentTypes;
 
@@ -44,14 +44,14 @@ _serial = 0;
 {
 	_itemVal = _x;
 	_itemQty = _previousQty select _serial;
-	
+
 	_oldSerial = _currentTypes find _itemVal;
 	_oldQty = 0;
 	if (_oldSerial >= 0) then {
 		_oldQty = _currentQty select _oldSerial;
 	};
 	if (_itemQty != _oldQty) then {_change = true};
-	
+
 	_serial = _serial + 1;
 } forEach _previousTypes;
 

@@ -1,4 +1,4 @@
-/*	
+/*
 	INITILIZATION
 */
 startLoadingScreen ["","RscDisplayLoadCustom"];
@@ -6,13 +6,13 @@ cutText ["","BLACK OUT"];
 enableSaving [false, false];
 
 //REALLY IMPORTANT VALUES
-dayZ_instance =	1337;					//The instance
+dayZ_instance = 1337;					//The instance
 //dayZ_serverName="UK1337"; // server name (country code + server number)
 dayzHiveRequest = [];
 initialized = false;
 dayz_previousID = 0;
 
-//disable greeting menu 
+//disable greeting menu
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
 enableRadio false;
@@ -71,7 +71,7 @@ if ((!isServer) && (player != player)) then
 };
 
 if (isServer) then {
-	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
+	_serverMonitor = [] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 	"PVDZ_sec_atp"	addPublicVariableEventHandler { diag_log format["%1", _this select 1];};
 };
 
@@ -80,10 +80,10 @@ if (!isDedicated) then {
 	0 fadeSound 0;
 	waitUntil {!isNil "dayz_loadScreenMsg"};
 	dayz_loadScreenMsg = (localize "STR_AUTHENTICATING");
-	
+
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
-	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
+	_playerMonitor = [] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
 	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
 };
 
