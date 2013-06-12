@@ -4,7 +4,7 @@ _int = (fuel _v)*(8+random 2);
 _t=time;
 
 if !(isDedicated) then { //dw, particle stuff don't need run on dedicated
-	
+
 _fl = "#particlesource" createVehicleLocal getpos _v;
 _fl attachto [_v,[0,0,0],"destructionEffect2"];
 _fl setParticleRandom [0.3, [1, 1, 0], [0, 0, 0], 0, 0.3, [0, 0, 0, 0], 0, 0];

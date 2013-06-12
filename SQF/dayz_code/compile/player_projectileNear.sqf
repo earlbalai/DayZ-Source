@@ -27,9 +27,9 @@ diag_log ("2");
 {
 	_nearVehicle = _x;
 	_listNear = _listNear - [_x];
-	
+
 	diag_log ("3");
-	
+
 	if (isPlayer _nearVehicle) then {
 		_isInCombat = _nearVehicle getVariable["startcombattimer",0];
 		if ((alive _nearVehicle) and _isInCombat == 0) then {
@@ -37,7 +37,7 @@ diag_log ("2");
 			diag_log("Now in Combat (Player): " + name _unit);
 		};
 	};
-	
+
 	if (_nearVehicle isKindOf "AllVehicles") then {
 		{
 			_isInCombat = _x getVariable["startcombattimer",0];

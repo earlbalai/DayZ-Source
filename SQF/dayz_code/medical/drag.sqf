@@ -2,7 +2,7 @@
 
  DRAG BODY SCRIPT
 
- Allows players to drag unconscious bodies 
+ Allows players to drag unconscious bodies
 
  JULY 2010 - norrin
 *****************************************************************************************************************************
@@ -15,8 +15,8 @@ _unit = player;
 _unconscious = _dragee getVariable ["NORRN_unconscious", false];
 _addAction = false;
 
-if (isNull _dragee) exitWith {}; 
-if (!_unconscious) exitWith {}; 
+if (isNull _dragee) exitWith {};
+if (!_unconscious) exitWith {};
 
 //player assumes dragging posture
 r_drag_sqf = true;
@@ -28,7 +28,7 @@ _unit playActionNow "grabDrag";
 sleep 2;
 
 //unconscious unit assumes dragging posture
-//public EH 
+//public EH
 //PVDZ_drg_RaDrag = _dragee;
 PVDZ_drg_RaDrag = [_dragee];
 publicVariable "PVDZ_drg_RaDrag";
@@ -41,7 +41,7 @@ sleep 0.02;
 //publicVariable "PVDZ_drg_R180"; // not used
 _dragee setDir 180;
 
-//Uneccesary actions removed & drop body added 
+//Uneccesary actions removed & drop body added
 call fnc_usec_medic_removeActions;
 
 NORRN_dropAction = player addAction ["Drop body", "\z\addons\dayz_code\medical\drop_body.sqf",_dragee, 0, false, true];

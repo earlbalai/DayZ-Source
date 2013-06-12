@@ -26,20 +26,20 @@ if ((count _worldspace) == 2) then {
 	//remove tentbag
 	player removeMagazine _item;
 	_dir = _worldspace select 0;
-	_location = _worldspace select 1; 
-	
+	_location = _worldspace select 1;
+
 	//wait a bit
 	player playActionNow "Medic";
 	sleep 1;
 	// tent location may not be in front of player
 	player setDir _dir;
 	player setPosATL (getPosATL player);
-	
+
 	_dis=20;
 	_sfx = "tentunpack";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	sleep 5;
 
 	_tent = createVehicle ["TentStorage", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
@@ -51,7 +51,7 @@ if ((count _worldspace) == 2) then {
 	_tent setVariable ["characterID",dayz_characterID,true];
 	PVDZ_obj_Publish = [dayz_characterID,_tent,[_dir,_location],"TentStorage"];
 	publicVariableServer "PVDZ_obj_Publish";
-	
+
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
 } else {
 	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];

@@ -39,7 +39,7 @@ if (_unit == player) then {
 		if ((_source != player) and _isPlayer) then {
 			//Enable aggressor Actions
 			if (_source isKindOf "CAManBase") then {
-				_source setVariable["startcombattimer",1];	
+				_source setVariable["startcombattimer",1];
 			};
 			_canHitFree = player getVariable ["freeTarget",false];
 			_isBandit = (typeOf player) == "Bandit1_DZ";
@@ -106,7 +106,7 @@ if (_hit in USEC_MinorWounds) then {
 			[_unit,_hit,(_damage / 4)] call object_processHit;
 		};
 	} else {
-		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then { 
+		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then {
 			if ((!isNil "Dayz_freefall") AND {(abs(time - (Dayz_freefall select 0))<1)}) then {
 				_nrj = ((Dayz_freefall select 1)*20) / 100;  // h=5m => nrj=1
 //				diag_log(format["%1 Broken legs registered from freefall _hit:""%2""  _source:%3  _unit:%4  _ammo:""%5""  _damage:%6  freefall:%7  time:%8  _nrj:%9(%10) pos:%11",__FILE__,
@@ -129,7 +129,7 @@ if (_hit in USEC_MinorWounds) then {
 
 if (_unit == player) then {
 //incombat
-	_unit setVariable["startcombattimer", 1];	
+	_unit setVariable["startcombattimer", 1];
 };
 
 //Shake the cam, frighten them!
@@ -147,7 +147,7 @@ if (_damage > 0.4) then { //0.25
 	//Pain and Infection
 	if (_unit == player) then {
 		_hitPain = (((_damage * _damage) min 0.75) > _bloodPercentage);
-		
+
 		//Infection from zombies
 		if (_ammo == "zombie") then {
 			_rndInfection = random (_damage - _bloodPercentage);
@@ -170,11 +170,11 @@ if (_damage > 0.4) then { //0.25
 			_id = [_source,"shothead"] spawn player_death;
 		};
 	};
-	
+
 	//Create wound and cause bleed
 	_wound = _hit call fnc_usec_damageGetWound;
 	_isHit = _unit getVariable["hit_"+_wound,false];
-	
+
 	if (_ammo == "zombie") then {
 		if(!_isHit and ((_damage > 0.7) or _isHeadHit)) then {
 			//Create Wound
@@ -227,8 +227,8 @@ if (_damage > 0.4) then { //0.25
 };
 if (_type == 1) then {
 	/*
-		BALISTIC DAMAGE 
-	*/		
+		BALISTIC DAMAGE
+	*/
 	if ((_damage > 0.01) and (_unit == player)) then {
 		//affect the player
 		[20,45] call fnc_usec_pitchWhine; //Visual , Sound
@@ -271,7 +271,7 @@ if (_type == 2) then {
 if (_ammo == "zombie") then {
 	if (!_unconscious and !_isMinor and _isHeadHit) then {
 		_chance = random 1;
-		if ((_damage > 0.8) and (_chance < 0.5)) then { 
+		if ((_damage > 0.8) and (_chance < 0.5)) then {
 			[_unit,_damage] call fnc_usec_damageUnconscious;
 		};
 		/*

@@ -7,7 +7,7 @@
 /*
 	Returns true if <position> lies within the sector defined by <center position>,
 	<center angle of sector> and <sector width>. Use this function to determine if
-	a position lies within a certain angle from another position (ie the <center position>). 
+	a position lies within a certain angle from another position (ie the <center position>).
 	Example:
 	[position player,getdir player,30,position enemy_tank] call BIS_fnc_inAngleSector
 	will return true if the vehicle named enemy_tank is within 30 degrees of where the player is pointing.

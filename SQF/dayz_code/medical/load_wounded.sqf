@@ -13,21 +13,21 @@ sleep 1;
 _vcl = _wounded getVariable "NORRN_loadVcl";
 _wounded setVariable ["NORRN_unit_dragged", true, true];
 
-_wounded assignAsCargo _vcl; 
+_wounded assignAsCargo _vcl;
 _wounded moveInCargo _vcl;
 sleep 1;
 //["PVDZ_drg_RaLW",_wounded] call broadcastRpcCallAll;
 	PVDZ_drg_RaLW = _wounded;
 	publicVariable "PVDZ_drg_RaLW";
 
-if (local _wounded) then 
-{ 
+if (local _wounded) then
+{
 	waitUntil {!(_wounded getVariable "NORRN_unconscious")|| !alive _wounded || vehicle _wounded == _wounded || (assignedVehicleRole _wounded) select 0 != "Cargo"};
-	
-	if (vehicle _wounded == _wounded || (assignedVehicleRole _wounded) select 0 != "Cargo") exitWith 
+
+	if (vehicle _wounded == _wounded || (assignedVehicleRole _wounded) select 0 != "Cargo") exitWith
 	{
 		if (_wounded getVariable "NORRN_AIunconscious") then
-		{ 
+		{
 			if (vehicle _wounded != _wounded) then
 			{
 				unassignVehicle _wounded;
@@ -42,9 +42,9 @@ if (local _wounded) then
 			sleep 1;
 		};
 	};
-	
+
 	if (vehicle _wounded != _wounded && alive _wounded) then
-	{ 
+	{
 		_wounded playMove "BasicDriver";
 	};
 };

@@ -22,7 +22,7 @@ _check = {
 
 	_relPos = _building worldToModel _point;
 	_boundingBox = boundingBox _building;
-	
+
 	_min = _boundingBox select 0;
 	_max = _boundingBox select 1;
 	_myX = _relPos select 0;
@@ -37,15 +37,15 @@ _check = {
 		};
 	};
 	//diag_log(format["fnc_isInsideBuilding: building:%1 typeOf:%2 bbox:%3 relpos:%4 result:%5", _building, typeOf(_building), _boundingBox, _relPos, _inside ]);
-	
+
 	_inside
 };
 
 _size = 0;
 _unit = _this select 0;
-if (typeName _unit == "OBJECT") then { 
+if (typeName _unit == "OBJECT") then {
 	_size = sizeOf typeOf _unit;
-	_unit = getPosATL _unit; 
+	_unit = getPosATL _unit;
 };
 
 _inside = false;
@@ -69,7 +69,7 @@ else {
 				AND {(!(_type isKindOf "ReammoBox"))}) // not lootpiles (weaponholders and ammoboxes)
 				AND {((_size + (sizeOf _type)) > _unit distance _x)}) // objects might colliding
 				AND {([_x, _unit] call _check)}) exitWith { // perform the check. exitWith works only in non-nested "if"
-					_inside = true; 
+					_inside = true;
 			};
 		} forEach(nearestObjects [_unit, ["Building"], 50]);
 	};

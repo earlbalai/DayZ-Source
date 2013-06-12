@@ -20,7 +20,7 @@ while {_counter < _amount} do {
 	_agent = createAgent [_type, _position, [], 0, _method];
 
 	_agent setVariable["agentObjectSwarm",_agent,true];
-	
+
 	dayz_swarmSpawnZombies = dayz_swarmSpawnZombies + 1;
 	dayz_spawnZombies = dayz_spawnZombies + 1;
 
@@ -30,12 +30,12 @@ while {_counter < _amount} do {
 		dayz_spawnZombies = dayz_spawnZombies - 1;
 		dayz_swarmSpawnZombies = dayz_swarmSpawnZombies - 1;
 	};
-	
+
 	_isAlive = alive _agent;
-	
+
 	//counter
 	_counter = _counter + 1;
-	
+
 	//debug
 	diag_log (format["Agent: %1, Type: %2, Count/Max: %3/%4, To spawn: %6/%5",_agent,_type,dayz_swarmSpawnZombies,dayz_localswarmSpawned,_amount,_counter]);
 

@@ -10,9 +10,9 @@ if (! dayz_isSwimming) then
 
 // if (alive player) then {
 	// hintSilent parseText format ["
-		// <t size='1.20' font='Bitstream' color='#5882FA'>%1</t><br/><br/> 
-		// <t size='1.20' font='Bitstream' color='#5882FA'>%2</t><br/><br/> 
-		// <t size='1.15' font='Bitstream' align='left'>%3: </t><t size='1.15' font='Bitstream' align='right'>%4</t><br/> 
+		// <t size='1.20' font='Bitstream' color='#5882FA'>%1</t><br/><br/>
+		// <t size='1.20' font='Bitstream' color='#5882FA'>%2</t><br/><br/>
+		// <t size='1.15' font='Bitstream' align='left'>%3: </t><t size='1.15' font='Bitstream' align='right'>%4</t><br/>
 		// <t size='1.15' font='Bitstream' align='left'>%5: </t><t size='1.15' font='Bitstream' align='right'>%6</t><br/>
 		// <t size='1.15' font='Bitstream' align='left'>%7: </t><t size='1.15' font='Bitstream' align='right'>%8</t><br/>
 		// <t size='1.15' font='Bitstream' align='left'>%9: </t><t size='1.15' font='Bitstream' align='right'>%10</t><br/><br/>

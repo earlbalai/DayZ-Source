@@ -1,10 +1,10 @@
 private["_countMagazines","_countWeapons","_countBackpacks","_countFreeSlots","_getControlText","_setControlText","_object","_objectName","_controlText","_magazinesMax","_weaponsMax","_backpacksMax","_distance","_isVehicle","_isMan","_isStorage","_isOK","_magazines","_weapons","_backpacks","_freeSlots","_timeout"];
 
 _countWeapons = {
-	private["_weapons","_return"];	
+	private["_weapons","_return"];
 	_weapons = [];
 	_return = 0;
-	
+
 	_weapons = (getWeaponCargo _object) select 1;
 	{ _return = _return + _x } foreach _weapons;
 	_return;
@@ -14,7 +14,7 @@ _countMagazines = {
 	private["_magazines","_return"];
 	_magazines = [];
 	_return = 0;
-	
+
 	_magazines = (getMagazineCargo _object) select 1;
 	{ _return = _return + _x } foreach _magazines;
 	_return;
@@ -24,7 +24,7 @@ _countBackpacks = {
 	private["_backpacks","_return"];
 	_backpacks = [];
 	_return = 0;
-	
+
 	_backpacks = (getBackpackCargo _object) select 1;
 	{ _return = _return + _x } foreach _backpacks;
 	_return;
@@ -69,12 +69,12 @@ waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
 if ((_isVehicle or _isStorage) and (!_isMan) and (!(isNull (findDisplay 106)))) then {
 	_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
 	_controlText = [] call _getControlText;
-	
+
 	if (_objectName == _controlText) then {
 		_weaponsMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxWeapons");
 		_magazinesMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxMagazines");
 		_backpacksMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxBackpacks");
-		
+
 		while {!(isNull (findDisplay 106))} do {
 			_weapons = [] call _countWeapons;
 			_magazines = [] call _countMagazines;

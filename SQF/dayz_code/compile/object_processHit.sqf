@@ -16,7 +16,7 @@ if (local _unit) then {
 	if (_selection in USEC_MinorWounds and _total >= 1 and _unit == player) then {
 		_display = uiNamespace getVariable 'DAYZ_GUI_display';
 		_ctrlFracture = _display displayCtrl 1203;
-		
+
 		if ((_selection == "legs") and !r_fracture_legs) then {
 			r_fracture_legs = true;
 			_ctrlFracture ctrlShow true;
@@ -29,7 +29,7 @@ if (local _unit) then {
 			r_fracture_arms = true;
 			_ctrlFracture ctrlShow true;
 			_id = [] spawn {
-				player setHit["hands",1];	
+				player setHit["hands",1];
 			};
 			_break = true;
 		};

@@ -12,7 +12,7 @@ _name removeAction NORRN_pullOutAction;
 
 for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 {
-	_unit = _crewVcl select _loop; 
+	_unit = _crewVcl select _loop;
 
 	if (_unit getVariable "NORRN_unconscious") then
 	{

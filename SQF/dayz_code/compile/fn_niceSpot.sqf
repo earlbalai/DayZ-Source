@@ -4,7 +4,7 @@
 */
 
 // Check/find a spot before pitching "Land_Fire_DZ", "TentStorage", "Wire_cat1", "Sandbag1_DZ" or "Hedgehog_DZ"
-// _this 0: object class 
+// _this 0: object class
 // _this 1: object (player) or array (ATL format)
 // _this 2: optional, empty array that will be filled by computed boolean: _testonLadder, _testSea, _testPond, _testBuilding, _testSlope, _testDistance
 // return a worldspace consisting of array [ direction, ATL position ] or empty array if no position is found
@@ -17,7 +17,7 @@ _pos = _this select 1;
 
 _realSize = {
 	[[0,0], (boundingBox _this) select 1] call BIS_fnc_distance2D
-};							 
+};
 
 // check if _pos a player object or some ATL coordinates array
 _isPlayer = (typeName _pos != "ARRAY");
@@ -53,8 +53,8 @@ switch _class do {
 		_testPond = true;
 		_testSea = true;
 	};
-	case "Wire_cat1"; 
-	case "Sandbag1_DZ"; 
+	case "Wire_cat1";
+	case "Sandbag1_DZ";
 	case "Hedgehog_DZ" : {};
 	default { // = vehicles (used for hive maintenance on startup)
 		_testBuilding = false;
@@ -108,7 +108,7 @@ if (_testPond) then { // let's proceed to the "object in the pond" test (not dir
 	_objectsPond = nearestObjects [_new, [], 100];
 	{
 		if (((typeOf(_x) == "") // unnamed class?
-			AND{(((_x worldToModel _new) select 2) < 0)}) // below water level? 
+			AND{(((_x worldToModel _new) select 2) < 0)}) // below water level?
 			AND {(["pond", str(_x), false] call fnc_inString)}
 			) exitWith { // and is actually a pond?
 				_testPond = true;
@@ -123,7 +123,7 @@ if (_testSlope) then { // "flat spot" test
 		0, // don't look around
 		0.1*_size, // slope gradient
 		_size, // object size
-		1, // do not check in the sea 
+		1, // do not check in the sea
 		false, // don't check far from shore
 		if (_isPlayer) then {_pos} else {objNull} // not used -- seems buggy.
 	];
@@ -161,7 +161,7 @@ if (_testDistance) then { // check effective distance from the player
 
 if (_testonLadder) then { // forbid item install process if player is on a ladder (or in a vehicle)
 	_testonLadder = (
-		((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState _pos) >> "onLadder")) == 1) 
+		((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState _pos) >> "onLadder")) == 1)
 	OR {((isPlayer _pos) AND {((vehicle _pos) != _pos)})}
 	);
 };

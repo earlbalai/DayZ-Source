@@ -20,7 +20,7 @@ _agent = objNull;
 if (count _unitTypes == 0) then {
 	_unitTypes = []+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
- 
+
 _unitTypes = _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
 
 // Build _list so that it contains 2 samples of unitTypes (zombie model)
@@ -48,7 +48,7 @@ if (!isNull _agent) then { // we have found a recyclable agent
 else {
 	if (_maxtoCreate > 0) then {
 		// let's create an agent from scratch
-		_type = _unitTypes call BIS_fnc_selectRandom;	
+		_type = _unitTypes call BIS_fnc_selectRandom;
 		_radius = 4;
 		_method = "NONE";
 		_agent = createAgent [_type, _position, [], _radius, _method]; sleep 0.001;
@@ -82,11 +82,11 @@ else {
 
 if (!isNull _agent) then {
 	_agent setDir random 360;
-	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
+	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs
 	_agent setPosATL _position; sleep 0.001;
-	
+
 	_position = getPosATL _agent;
-	
+
 	_distance = _position distance (getPosATL player);
 	//if (_distance < dayz_safeDistPlr) exitWith {
 	//	diag_log(format["%1: zombie distance: %2m (model:%3, stance:%4, ATL:%5)", __FILE__, round(_distance), typeOf _agent, unitPos _agent, _position]);

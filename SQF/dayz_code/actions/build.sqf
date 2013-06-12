@@ -25,11 +25,11 @@ sleep 1;
 
 _dis=20;
 _sfx = "repair";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 sleep 5;
-	
+
 player allowDamage false;
 _object = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _object setDir _dir;

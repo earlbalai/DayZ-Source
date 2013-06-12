@@ -41,7 +41,7 @@ private ["_weapons","_magazines","_primweapon","_secweapon"];
 	if(!(_secweapon in _weapons) && _secweapon != "") then {
 		_weapons = _weapons + [_secweapon];
 	};
-	
+
 //	if(count _magazines == 0) then {
 //		_magazines = magazines player;
 //	};
@@ -74,7 +74,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 
 //BackUp Player Object
 	_oldUnit = player;
-	
+
 /***********************************/
 //DONT USE player AFTER THIS POINT
 /***********************************/
@@ -88,14 +88,14 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 
 //Clear New Character
 	{_newUnit removeMagazine _x;} forEach magazines _newUnit;
-	removeAllWeapons _newUnit;	
+	removeAllWeapons _newUnit;
 
 //Equip New Charactar
 	{
 		if (typeName _x == "ARRAY") then {_newUnit addMagazine [_x select 0,_x select 1] } else { _newUnit addMagazine _x };
 		//sleep 0.05;
 	} forEach _magazines;
-	
+
 	{
 		_newUnit addWeapon _x;
 		//sleep 0.05;
@@ -107,20 +107,20 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 		{
 			_weapons = _weapons - [_x];
 		} forEach (weapons _newUnit);
-	
+
 		//Add the Missing
 		{
 			_newUnit addWeapon _x;
 			//sleep 0.2;
 		} forEach _weapons;
 	};
-	
+
 	if(_primweapon != (primaryWeapon _newUnit)) then {
-		_newUnit addWeapon _primweapon;		
+		_newUnit addWeapon _primweapon;
 	};
 
 	if(_secweapon != (secondaryWeapon _newUnit) && _secweapon != "") then {
-		_newUnit addWeapon _secweapon;		
+		_newUnit addWeapon _secweapon;
 	};
 
 //Add and Fill BackPack
@@ -170,7 +170,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
-	
+
 //Switch the units
 	_createSafePos = [(getMarkerPos "respawn_west"), 2, 100, 0, 1, 20, 0] call BIS_fnc_findSafePos;
 	_oldUnit setPosATL [_createSafePos select 0, _createSafePos select 1, 0];
@@ -186,19 +186,19 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	[objNull, player, rSwitchMove,_currentAnim] call RE;
 	//dayz_originalPlayer attachTo [_newUnit];
 	player disableConversation true;
-	
+
 //	_playerUID=getPlayerUID player;
 //	_playerObjName = format["player%1",_playerUID];
 //	call compile format["%1 = player;",_playerObjName];
 //	publicVariable _playerObjName;
-	
+
 	//melee check
 	_wpnType = primaryWeapon player;
 	_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
 	if (_ismelee == "true") then {
 		call dayz_meleeMagazineCheck;
 	};
-	
+
 	//reveal all near objects.
 	{player reveal _x} forEach (nearestObjects [getPosATL player, ["AllVehicles","WeaponHolder","StashSmall","StashMedium","TentStorage","BuiltItems"], 75]);
 	//All is arbitrary and will need to be changed to ["AllVehicles","WeaponHolder","tentStorage"] ++ others (stashes etc.)

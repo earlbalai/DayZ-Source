@@ -40,7 +40,7 @@ if (count _medical > 0) then {
 	player setVariable["USEC_lowBlood",(_medical select 6),true];
 	player setVariable["USEC_BloodQty",(_medical select 7),true];
 	player setVariable["unconsciousTime",(_medical select 10),true];
-	
+
 	//Add Wounds
 	{
 		diag_log format ["loop _x:1  wound:%2",_x, (USEC_typeOfWounds select _forEachIndex)];
@@ -48,7 +48,7 @@ if (count _medical > 0) then {
 		PVDZ_hlt_Bleed = [player, _x, 1];
 		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
-	
+
 	//Add fractures
 	_fractures = (_medical select 9);
 //	player setVariable ["hit_legs",(_fractures select 0),true];
@@ -60,7 +60,7 @@ if (count _medical > 0) then {
 	player setVariable ["hit_legs",0,true];
 	player setVariable ["hit_hands",0,true];
 	player setVariable ["USEC_injured",false,true];
-	player setVariable ["USEC_inPain",false,true];	
+	player setVariable ["USEC_inPain",false,true];
 };
 
 

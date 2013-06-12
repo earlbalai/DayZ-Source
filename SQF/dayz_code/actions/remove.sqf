@@ -13,11 +13,11 @@ sleep 1;
 
 _dis=20;
 _sfx = "repair";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
 sleep 5;
-	
+
 //["PVDZ_obj_Delete",[_objectID,_objectUID]] call callRpcProcedure;
 PVDZ_obj_Delete = [_objectID,_objectUID];
 publicVariableServer "PVDZ_obj_Delete";

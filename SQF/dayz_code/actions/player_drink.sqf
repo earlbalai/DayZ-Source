@@ -35,14 +35,14 @@ if (_itemorignal in no_output_drink) then {
 
 [player,_sfx,0,false,_sfxdis] call dayz_zombieSpeak;
 [player,_sfxdis,true,(getPosATL player)] spawn player_alertZombies;
-  
+
 if (_hasoutput) then{
     // Selecting output
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
     sleep 3;
     _nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
-    if (count _nearByPile ==0) then { 
+    if (count _nearByPile ==0) then {
         _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
     } else {
         _item = _nearByPile select 0;
@@ -51,7 +51,7 @@ if (_hasoutput) then{
 	_item setvelocity [0,0,1];
 };
 
-//add infection chance for "ItemWaterbottle", 
+//add infection chance for "ItemWaterbottle",
 if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
     r_player_infected = true;
     player setVariable["USEC_infected",true,true];

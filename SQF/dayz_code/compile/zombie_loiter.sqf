@@ -1,7 +1,7 @@
 
 private["_unit","_aimingPos","_pos", "_deg", "_trip", "_maxlength"];
 _unit = _this select 0; // Zed object
-_aimingPos = _this select 1; // Zed will wander towards player's position... 
+_aimingPos = _this select 1; // Zed will wander towards player's position...
 _maxlength = 100;
 
 _pos = [];
@@ -27,12 +27,12 @@ if (count _pos < 3) then { // no lootpile nearby
 diag_log format ["%1 Want-me-to-go:%2  but-will-go: %3  (trip:%4m, error:%5m). Current/next stance:%6/%7",__FILE__, _aimingPos, _pos, round([_unit, _pos] call BIS_fnc_distance2D), round(_pos distance _aimingPos),
 unitPos _agent, _unit getVariable ["stance", "unknown"]
 ];
-*/  
+*/
 
 if(isNull group _unit) then {
 	_unit moveTo _pos;
 } else {
-	_unit domove _pos;		
+	_unit domove _pos;
 };
 
 // reset stance to favorite one

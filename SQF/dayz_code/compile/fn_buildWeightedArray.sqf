@@ -32,7 +32,7 @@ if ((count _array) > (count _weights)) exitWith {debugLog "Log: [selectRandomWei
 
 //Created weighted array of indices.
 _weighted = [];
-for "_i" from 0 to ((count _weights) - 1) do 
+for "_i" from 0 to ((count _weights) - 1) do
 {
 	private ["_weight"];
 	_weight = _weights select _i;
@@ -48,7 +48,7 @@ for "_i" from 0 to ((count _weights) - 1) do
 	//Normalize the weight for a precision of hundreds.
 	_weight = round(_weight * 100);
 
-	for "_k" from 0 to (_weight - 1) do 
+	for "_k" from 0 to (_weight - 1) do
 	{
 		_weighted = _weighted + [_i];
 	};

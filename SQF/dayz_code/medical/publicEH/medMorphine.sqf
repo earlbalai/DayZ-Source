@@ -10,12 +10,12 @@ if (_unit == player) then {
 	r_fracture_arms = false;
 	_unit setHit["legs",0];
 	_unit setHit["hands",0];
-	
+
 	//Ensure Control is visible
 	_display = uiNamespace getVariable 'DAYZ_GUI_display';
 	_control = _display displayCtrl 1203;
 	_control ctrlShow false;
-	
+
 	_id = false spawn dayz_disableRespawn;
 };
 _unit setVariable ["hit_legs",0,false];

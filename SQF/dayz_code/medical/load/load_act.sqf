@@ -13,7 +13,7 @@ r_action_load = false;
 call fnc_usec_medic_removeActions;
 
 _dragger removeAction NORRN_loadWoundedAction;
-  
+
 if ((_vcl emptyPositions "cargo") > 0) then
 {
 	detach _wounded;

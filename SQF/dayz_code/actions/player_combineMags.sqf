@@ -17,8 +17,8 @@ _slotend = 0;
 if ((_type == 256) or (_type == 256*2)) then {
 	_slotstart = 109;
 	_slotend = 120;
-}; 
-if (_type == 16) then { 
+};
+if (_type == 16) then {
 	_slotstart = 122;
 	_slotend = 129;
 };
@@ -39,7 +39,7 @@ _qtynew_create_ammo_rest = 0;
 _qtynew_create_mags_full = floor(_qty_total_ammo/_create_magsize);
 _qtynew_create_ammo_rest = _qty_total_ammo - (_qtynew_create_mags_full*_create_magsize);
 
-player removeMagazines _create;	
+player removeMagazines _create;
 for "_i" from 1 to _qtynew_create_mags_full do {
 	player addMagazine _create;
 };

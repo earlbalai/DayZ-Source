@@ -11,7 +11,7 @@ _endPos = getPosATL _projectile;
 _doWait = true;
 while {_doWait} do {
 	_vel = (velocity _projectile) distance [0,0,0];
-	if (!(alive _projectile)) then {_doWait = false};	
+	if (!(alive _projectile)) then {_doWait = false};
 	if (_vel < 0.1) then {_doWait = false};
 	_endPos = getPosATL _projectile;
 	sleep 0.01;

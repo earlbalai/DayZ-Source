@@ -30,23 +30,23 @@ if (_booleans select 0) exitWith { cutText [localize "str_player_21", "PLAIN DOW
 
 if ((count _worldspace) == 2) then {
 	_dir = _worldspace select 0;
-	_location = _worldspace select 1; 
-	
+	_location = _worldspace select 1;
+
 	player removeMagazine _item;
-	
+
 	player playActionNow "Medic";
 	sleep 1;
 	// installed item location may not be in front of player (but in 99% time it should)
 	player setDir _dir;
 	player setPosATL (getPosATL player);
-	
+
 	_dis=20;
 	_sfx = "repair";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	sleep 5;
-		
+
 	_object = createVehicle [_classname, getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
 	_object setDir _dir;
 	// the following is a trick to sink the object in the bottom of the sea/pond while following the terrain slope:
@@ -61,8 +61,8 @@ if ((count _worldspace) == 2) then {
 	player reveal _object;
 
 	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_location],_classname];
-	publicVariableServer "PVDZ_obj_Publish";	
-	
+	publicVariableServer "PVDZ_obj_Publish";
+
 	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 } else {
 	cutText [format[localize "str_build_failed_01",_text], "PLAIN DOWN"];

@@ -40,7 +40,7 @@ _scaleLight = (
 	- (fog * 0.5));		//remove for fog state
 
 dayz_scaleLight = _scaleLight;
-	
+
 _scaleSound = (1
 	- (rain * 0.3) //remove for rain state
 	//+ (fog * 0.3) //add for fog state
@@ -101,7 +101,7 @@ if (_speed > 5) then {
 		_speed = _speed * 0.7;
 	} else {
 		_speed = _speed * 0.3;
-	};	
+	};
 };
 */
 
