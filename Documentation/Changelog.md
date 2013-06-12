@@ -2,6 +2,31 @@
 DayZ Mod Changelog
 ============
 
+Version 1.7.7.1
+---------------
+
+* Releasedate 27 June 2013
+
+
+Affected addons:
+* dayz_code
+
+	Changes:
+
+	    * [NEW] - 
+	    * [NEW] - 
+	    * [NEW] - 
+
+	    * [FIXED] - 
+	    * [FIXED] - 
+	    * [FIXED] - 
+		
+	    * [UPDATED] - 
+	    * [UPDATED] - 
+	    * [UPDATED] - 
+		
+	
+______________________
 Version 1.7.7
 ---------------
 
