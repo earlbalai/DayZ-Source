@@ -5,7 +5,7 @@ DayZ Mod Changelog
 Version 1.7.7.1
 ---------------
 
-* Releasedate 27 June 2013
+* Releasedate 24 June 2013
 
 
 Affected addons:
@@ -24,8 +24,7 @@ Affected addons:
 	    * [UPDATED] - 
 	    * [UPDATED] - 
 	    * [UPDATED] - 
-		
-	
+
 ______________________
 Version 1.7.7
 ---------------
@@ -426,19 +425,19 @@ Serverside affected addons:
 		* [UPDATED] - Backpacks updated. (https://github.com/R4Z0R49/DayZMod/wiki/Backpacks)
 		* [UPDATED] - Animal Meat reset. 6(cow),4(goat),4(sheep),4(boar),2(Hen),1(Rabbit)
 		* [UPDATED] - Epeen monitor moved to scroll lock key and work started on moving to diary
-		* [UDDATED] - Massive cleanup remove all useless files.
+		* [UPDATED] - Massive cleanup remove all useless files.
 		* [UPDATED] - Redone all public EH's
-		* [UPDTAED] - Combat/zombie logout + anti-duping overhaul - (https://github.com/R4Z0R49/DayZMod/commit/44321a6856f5fd2d5544d1293c2450f9b2df6fbd)
+		* [UPDATED] - Combat/zombie logout + anti-duping overhaul - (https://github.com/R4Z0R49/DayZMod/commit/44321a6856f5fd2d5544d1293c2450f9b2df6fbd)
 		* [UPDATED] - String tables to include = English, German, Russian, Spanish, Dutch, French
 		* [UPDATED] - All base class's have been updated to match the dayz removal proc's (weapons)
 
-		* [Fixed] - Zeds hearing should now be fixed.
-		* [Fixed] - Temperature icon color now ranges from iceblue (cold) to red (hot)
-		* [Fixed] - German Tranlations updated.
-		* [Fixed] - mi17 gunner seat is now fixed (you no longer stand outside)
-		* [Fixed] - Bloodbag glitch fixed.
-		* [Fixed] - UH1Y_DZ animation issues.
-		* [Fixed] - Infection is now fixed loss of blood 3 per sec (will not drop below 3k blood)
+		* [FIXED] - Zeds hearing should now be fixed.
+		* [FIXED] - Temperature icon color now ranges from iceblue (cold) to red (hot)
+		* [FIXED] - German Tranlations updated.
+		* [FIXED] - Mi17 gunner seat is now fixed. (you no longer stand outside)
+		* [FIXED] - Bloodbag glitch fixed.
+		* [FIXED] - UH1Y_DZ animation issues.
+		* [FIXED] - Infection is now fixed loss of blood 3 per sec (will not drop below 3k blood)
 		* [FIXED] - Epeen monitor animation should now work correct without the fps drop.
 		* [FIXED] - DZ_Czech_Vest_Puch backpack class config. (Warning Message: No entry 'bin\config.bin/CfgMagazines.DZ_Czech_Vest_Puch'.)
 		* [FIXED] - Variable spelling mistakes should be corrected now.
