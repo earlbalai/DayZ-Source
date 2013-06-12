@@ -10,10 +10,10 @@ _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
 _bag = unitBackpack player;
 _classbag = typeOf _bag;
-_isWater = 		(surfaceIsWater (position player)) or dayz_isSwimming;
-_hasAntiB = 	"ItemAntibiotic" in magazines player;
-_hasFuelE20 = 	"ItemJerrycanEmpty" in magazines player;
-_hasFuelE5 = 	"ItemFuelcanEmpty" in magazines player;
+_isWater = (surfaceIsWater (position player)) or dayz_isSwimming;
+_hasAntiB = "ItemAntibiotic" in magazines player;
+_hasFuelE20 = "ItemJerrycanEmpty" in magazines player;
+_hasFuelE5 = "ItemFuelcanEmpty" in magazines player;
 //boiled Water
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hastinitem = false;
@@ -25,11 +25,11 @@ _hastinitem = false;
 } forEach boil_tin_cans;
 
 
-_hasKnife = 	"ItemKnife" in items player;
-_hasToolbox = 	"ItemToolbox" in items player;
-//_hasTent = 		"ItemTent" in items player;
-_onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-_nearLight = 	nearestObject [player,"LitObject"];
+_hasKnife = "ItemKnife" in items player;
+_hasToolbox = "ItemToolbox" in items player;
+//_hasTent = "ItemTent" in items player;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_nearLight = nearestObject [player,"LitObject"];
 _canPickLight = false;
 
 if (!isNull _nearLight) then {
@@ -53,14 +53,14 @@ if (_canPickLight and !dayz_hasLight) then {
 	s_player_removeflare = -1;
 };
 
-if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4)) then {	//Has some kind of target
+if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4)) then { //Has some kind of target
 	_isHarvested = cursorTarget getVariable["meatHarvested",false];
 	_isVehicle = cursorTarget isKindOf "AllVehicles";
 	_isVehicletype = typeOf cursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
 	_isMan = cursorTarget isKindOf "Man";
 	_ownerID = cursorTarget getVariable ["characterID","0"];
 	_isAnimal = cursorTarget isKindOf "Animal";
-	_isDog =  (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
+	_isDog = (cursorTarget isKindOf "DZ_Pastor" || cursorTarget isKindOf "DZ_Fin");
 	_isZombie = cursorTarget isKindOf "zZombie_base";
 	_isDestructable = cursorTarget isKindOf "BuiltItems";
 	_isTent = cursorTarget isKindOf "TentStorage";
@@ -109,7 +109,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 
 	//flip vehicle
 	if ((_isVehicletype) and !_canmove and _isAlive and (player distance cursorTarget >= 2) and (count (crew cursorTarget))== 0 and ((vectorUp cursorTarget) select 2) < 0.5) then {
-		if (s_player_flipveh  < 0) then {
+		if (s_player_flipveh < 0) then {
 			s_player_flipveh = player addAction [format[localize "str_actions_flipveh",_text], "\z\addons\dayz_code\actions\player_flipvehicle.sqf",cursorTarget, 1, true, true, "", ""];		
 		};	
 	} else {
@@ -223,7 +223,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			_cmpt = toString _cmpt;
 			
 			_configVeh = configFile >> "cfgVehicles" >> "RepairParts" >> _x;
-			_part = 	getText(_configVeh >> "part");
+			_part = getText(_configVeh >> "part");
 			if (isnil ("_part")) then { _part = "PartGeneric"; };
 
 			// get every damaged part no matter how tiny damage is!

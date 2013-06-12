@@ -11,20 +11,20 @@ _h = (_this select 0) / 37037.037037;
 /*
 _pl_pic
 _humanity_readout
-_top_joker	
+_top_joker 
 _bot_joker
-_top_value	
+_top_value 
 _bot_value
-_top_suit	
+_top_suit 
 _bot_suit
 */
 _blank = "<img size = '4' color = '#000000' align = 'left' image = '\z\addons\dayz_communityassets\pictures\playerstats\tally\0.paa'/>";
 
 _b_human_disp = "<t size = '2' font = 'Zeppelin33' color = '#000000' shadow = 'false' align = 'center' underline = 'false'>Bandit</t";
-_b_spades_top_suit	= "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\spade.paa'/>";
-_b_spades_bot_suit	= "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\spade_u.paa'/>";
-_b_clubs_top_suit	= "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\club.paa'/>";	
-_b_clubs_bot_suit	= "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\club_u.paa'/>";
+_b_spades_top_suit = "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\spade.paa'/>";
+_b_spades_bot_suit = "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\spade_u.paa'/>";
+_b_clubs_top_suit = "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\club.paa'/>";	
+_b_clubs_bot_suit = "<img size = '3' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_black\club_u.paa'/>";
 
 _s_human_disp = "<t size = '2' font = 'Zeppelin33' color = '#000000' shadow = 'false' align = 'center' underline = 'false'>Survivor</t";
 _s_top_joker_b = "<img size = '11' color = '#000000' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\joker\joker_black.paa'/>";
@@ -32,10 +32,10 @@ _s_bot_joker_b = "<img size = '11' color = '#000000' align = 'center' image = '\
 _s_top_joker_r = "<img size = '11' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\joker\joker_red.paa'/>";
 _s_bot_joker_r = "<img size = '11' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\joker\joker_red_u.paa'/>";
 
-_h_hearts_top_suit	= "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\heart.paa'/>";
-_h_hearts_bot_suit	= "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\heart_u.paa'/>";
-_h_diamonds_top_suit	= "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\diamond.paa'/>";	
-_h_diamonds_bot_suit	= "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\diamond_u.paa'/>";
+_h_hearts_top_suit = "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\heart.paa'/>";
+_h_hearts_bot_suit = "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\heart_u.paa'/>";
+_h_diamonds_top_suit = "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\diamond.paa'/>";	
+_h_diamonds_bot_suit = "<img size = '3' align = 'center' image = '\z\addons\dayz_communityassets\pictures\playerstats\cards\typeface_red\diamond_u.paa'/>";
 
 if (getText(configFile >> "cfgVehicles" >> (typeOf player) >> "TextPlural") != "Women") then
 {

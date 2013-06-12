@@ -3,10 +3,10 @@
 
 private ["_args","_dragger","_vcl","_wounded"];
 
-_args		= _this select 3;
-_name 		= _args select 0;
-_vcl 		= _args select 1;
-_crewVcl	= crew _vcl;
+_args = _this select 3;
+_name = _args select 0;
+_vcl = _args select 1;
+_crewVcl = crew _vcl;
 
 _name removeAction NORRN_pullOutAction;
 

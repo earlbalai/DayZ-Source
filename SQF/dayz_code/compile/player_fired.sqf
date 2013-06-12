@@ -1,10 +1,10 @@
 private["_unit","_weapon","_ammo","_projectile","_audible","_caliber","_distance","_listTalk","_target","_targets"];
 
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
-_unit = 		_this select 0;
-_weapon = 		_this select 1;
-_ammo = 		_this select 4;
-_projectile = 	_this select 6;
+_unit = _this select 0;
+_weapon = _this select 1;
+_ammo = _this select 4;
+_projectile = _this select 6;
 
 //Alert Nearby
 _audible = getNumber (configFile >> "CfgAmmo" >> _ammo >> "audibleFire");

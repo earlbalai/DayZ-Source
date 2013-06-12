@@ -26,7 +26,7 @@ sleep 5;
 dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
 /*
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
-if (_timesincedrink > 600) then	{
+if (_timesincedrink > 600) then {
 	dayz_thirst = 0;
 } else {
 	dayz_thirst = 1; //If player has had something to drink over 10 minutes ago, make them thirsty

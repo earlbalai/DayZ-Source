@@ -41,8 +41,8 @@ if (_unit == player) then {
 			if (_source isKindOf "CAManBase") then {
 				_source setVariable["startcombattimer",1];	
 			};
-			_canHitFree = 	player getVariable ["freeTarget",false];
-			_isBandit = 	(typeOf player) == "Bandit1_DZ";
+			_canHitFree = player getVariable ["freeTarget",false];
+			_isBandit = (typeOf player) == "Bandit1_DZ";
 			if (!_canHitFree and !_isBandit) then {
 				// "humanKills" from local character is used to compute attacker player "PVDZ_plr_Humanity" change
 				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
@@ -109,10 +109,10 @@ if (_hit in USEC_MinorWounds) then {
 		if ((_hit == "legs") AND (_source==_unit) AND (_ammo=="")) then { 
 			if ((!isNil "Dayz_freefall") AND {(abs(time - (Dayz_freefall select 0))<1)}) then {
 				_nrj = ((Dayz_freefall select 1)*20) / 100;  // h=5m => nrj=1
-//				diag_log(format["%1 Broken legs registered from freefall _hit:""%2""  _source:%3  _unit:%4  _ammo:""%5""  _damage:%6  freefall:%7  time:%8  _nrj:%9(%10)  pos:%11",__FILE__,
+//				diag_log(format["%1 Broken legs registered from freefall _hit:""%2""  _source:%3  _unit:%4  _ammo:""%5""  _damage:%6  freefall:%7  time:%8  _nrj:%9(%10) pos:%11",__FILE__,
 //						_hit,_source,_unit,_ammo,_damage, Dayz_freefall, time, _nrj,((1+_nrj)^2)-1, getPos player]);
 				if (random(((1+_nrj)^2)-1) > 1.5) then { // freefall from 5m => 1/2 chance to get hit legs registered
-					diag_log(format["%1 Legs damage registered from freefall. _damage:%2  _nrj:%3 (odds %4:1)  freefall:%5",__FILE__,
+					diag_log(format["%1 Legs damage registered from freefall. _damage:%2  _nrj:%3 (odds %4:1) freefall:%5",__FILE__,
 									_damage, _nrj,(((1+_nrj)^2)-1)/1.5, Dayz_freefall, time]);
 					[_unit,_hit,_damage] call object_processHit;
 				}
@@ -143,7 +143,7 @@ if (_damage > 0.1) then {
 	};
 };
 
-if (_damage > 0.4) then {	//0.25
+if (_damage > 0.4) then { //0.25
 	//Pain and Infection
 	if (_unit == player) then {
 		_hitPain = (((_damage * _damage) min 0.75) > _bloodPercentage);
@@ -227,7 +227,7 @@ if (_damage > 0.4) then {	//0.25
 };
 if (_type == 1) then {
 	/*
-		BALISTIC DAMAGE		
+		BALISTIC DAMAGE 
 	*/		
 	if ((_damage > 0.01) and (_unit == player)) then {
 		//affect the player

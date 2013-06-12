@@ -30,7 +30,7 @@ if (_unit == player) then {
 
 	//Ensure Control is visible
 	_display = uiNamespace getVariable 'DAYZ_GUI_display';
-	_control = 	_display displayCtrl 1300;
+	_control = _display displayCtrl 1300;
 	_control ctrlShow true;
 };
 if (isServer) then {

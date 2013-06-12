@@ -27,7 +27,7 @@ if (! dayz_isSwimming) then
 		// (localize "str_actions_stats_bk"), (player getVariable['banditKills', 0]),	// %9 Bandits Killed: %10
 		// (localize "str_actions_stats_hm"), (player getVariable['humanity', 0]),		// %11 Humanity: %12
 		// (_Survivors), 																// %13 Survivors
-		// (floor(diag_fps)), (floor(diag_fpsmin))													// %14 FPS: %15
+		// (floor(diag_fps)), (floor(diag_fpsmin)) // %14 FPS: %15
 	// ];
 // };
 

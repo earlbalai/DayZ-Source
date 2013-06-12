@@ -59,8 +59,8 @@ dayz_ZombieBuildings = [];
 dayz_LootBuildings = [];
 for "_i" from 0 to (count (configFile >> "CfgBuildingLoot") - 1) do {
 	_type = (configFile >> "CfgBuildingLoot") select _i;
-	_canZombie = 	getNumber (_type >> "zombieChance") > 0;
-	_canLoot = 		getNumber (_type >> "lootChance") > 0;
+	_canZombie = getNumber (_type >> "zombieChance") > 0;
+	_canLoot = getNumber (_type >> "lootChance") > 0;
 	if(_canZombie) then {
 		if(!((configName _type) in dayz_ZombieBuildings)) then {
 			dayz_ZombieBuildings set [count dayz_ZombieBuildings, configName _type];

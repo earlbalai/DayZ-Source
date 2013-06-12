@@ -2,7 +2,7 @@ private["_item","_onLadder","_hasmeditem","_config","_text","_id"];
 
 _item = _this;
 call gear_ui_init;
-_onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasmeditem = _this in magazines player;

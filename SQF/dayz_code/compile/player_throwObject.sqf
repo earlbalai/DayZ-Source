@@ -1,9 +1,9 @@
 private["_obj","_unit","_ammo","_distance","_weapon","_projectile","_endPos","_doWait"];
 _obj = _this select 0;
-_unit =			_obj select 0;
-_weapon =		_obj select 1;
-_ammo =			_obj select 4;
-_projectile =	_obj select 6;
+_unit = _obj select 0;
+_weapon = _obj select 1;
+_ammo = _obj select 4;
+_projectile = _obj select 6;
 
 _projectile = nearestObject [_unit,_ammo];
 _endPos = getPosATL _projectile;

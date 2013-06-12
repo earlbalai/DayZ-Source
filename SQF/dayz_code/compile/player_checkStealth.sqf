@@ -33,17 +33,17 @@ if (_anim4 == "aswm") then {
 _initial = 20 + (sunOrMoon * 20);
 
 _scaleLight = (
-	(sunOrMoon * 2)		//add sunlight
-	+ moonIntensity		//add moonlight
-	- (overcast * 0.2)	//remove for cloud state
-	- (rain * 0.2)		//remove for rain state
+	(sunOrMoon * 2) //add sunlight
+	+ moonIntensity //add moonlight
+	- (overcast * 0.2) //remove for cloud state
+	- (rain * 0.2) //remove for rain state
 	- (fog * 0.5));		//remove for fog state
 
 dayz_scaleLight = _scaleLight;
 	
 _scaleSound = (1
-	- (rain * 0.3)		//remove for rain state
-	//+ (fog * 0.3) 		//add for fog state
+	- (rain * 0.3) //remove for rain state
+	//+ (fog * 0.3) //add for fog state
 	)
 	max 0;
 
@@ -113,8 +113,8 @@ if (_isPlayerInside) then {
 };
 
 //Work out result
-_audial = 			round(_speed * dayz_surfaceNoise * _scaleMvmt * _scaleSound);
+_audial = round(_speed * dayz_surfaceNoise * _scaleMvmt * _scaleSound);
 if ((_audial > DAYZ_disAudial) or ((time - dayz_firedCooldown) > 0.3)) then {
 	DAYZ_disAudial = _audial;
 };
-DAYZ_disVisual = 	(round((_initial + (_speed * 3)) * _scalePose * _scaleLight)) * 1.5;
+DAYZ_disVisual = (round((_initial + (_speed * 3)) * _scalePose * _scaleLight)) * 1.5;

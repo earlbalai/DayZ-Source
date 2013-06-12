@@ -15,7 +15,7 @@ _fairSize = {
 	((_burried < 0.1) AND {(((_cornerHi select 2) > 2.6) AND {((_cornerLow distance _cornerHi) > 7)})}) // container size as reference
 };
 
-// find agents to recycle  
+// find agents to recycle 
 _findAgt = { 
 	private ["_plr","_types","_y", "_point", "_ahead"];
 
@@ -197,7 +197,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 					_qty = _tmp call building_spawnZombies;
 					_recyAgt = _tmp select 1;
 					_maxtoCreate = _tmp select 2;
-					if (_qty  > 0) then {
+					if (_qty > 0) then {
 						_currentManModels = _currentManModels + _qty;
 						_x setVariable ["zombieSpawn",_dateNow,!_islocal];
 					};
@@ -236,7 +236,7 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 			_qty = _tmp call building_spawnZombies;
 			_recyAgt = _tmp select 1;
 			_maxtoCreate = _tmp select 2;
-/*			if (_qty  > 0) then {
+/*			if (_qty > 0) then {
 				_currentManModels = _currentManModels + _qty;
 				_x setVariable ["zombieSpawn",_dateNow,true];
 			};

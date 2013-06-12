@@ -45,7 +45,7 @@ _multiplier = 1;
 */
 //					doStop _x; 
 //					_x setVariable["doLoiter", false];
-//					_x forceSpeed (if ([(getPosATL _x)] call fnc_isInsideBuilding)	then {2} else {2});		
+//					_x forceSpeed (if ([(getPosATL _x)] call fnc_isInsideBuilding) then {2} else {2});		
  				};
 			};
 		} else {

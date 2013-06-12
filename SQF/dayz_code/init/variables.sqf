@@ -8,15 +8,15 @@ dayz_Trash = 1;
 fps_safty_check = diag_fpsmin;
 
 //Model Variables
-Bandit1_DZ = 	"Bandit1_DZ";
-BanditW1_DZ = 	"BanditW1_DZ";
-Survivor1_DZ = 	"Survivor2_DZ";
-Survivor2_DZ = 	"Survivor2_DZ";
+Bandit1_DZ = "Bandit1_DZ";
+BanditW1_DZ = "BanditW1_DZ";
+Survivor1_DZ = "Survivor2_DZ";
+Survivor2_DZ = "Survivor2_DZ";
 SurvivorW2_DZ = "SurvivorW2_DZ";
-Sniper1_DZ = 	"Sniper1_DZ";
-Camo1_DZ = 		"Camo1_DZ";
-Soldier1_DZ = 	"Soldier1_DZ";
-Rocket_DZ = 	"Rocket_DZ";
+Sniper1_DZ = "Sniper1_DZ";
+Camo1_DZ = "Camo1_DZ";
+Soldier1_DZ = "Soldier1_DZ";
+Rocket_DZ = "Rocket_DZ";
 
 AllPlayers = ["Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","GER_Soldier_EP1"];
 AllPlayersVehicles = ["GER_Soldier_EP1","Soldier_Crew_PMC","Sniper1_DZ","Camo1_DZ","Soldier1_DZ","Rocket_DZ","AllVehicles"];
@@ -203,13 +203,13 @@ dayZ_explosiveParts = [
 	"motor"
 ];
 //Survival Variables
-SleepFood =				2160; //minutes (48 hours)
-SleepWater =			1440; //minutes (24 hours)
-SleepTemperatur	= 		90 / 100;	//Firs Value = Minutes untill Player reaches the coldest Point at night (without other effects! night factor expected to be -1)			//TeeChange
+SleepFood = 2160; //minutes (48 hours)
+SleepWater = 1440; //minutes (24 hours)
+SleepTemperatur = 90 / 100;	//Firs Value = Minutes untill Player reaches the coldest Point at night (without other effects! night factor expected to be -1) //TeeChange
 
 //Server Variables
-allowConnection = 		false;
-isSinglePlayer =		false;
+allowConnection = false;
+isSinglePlayer = false;
 dayz_serverObjectMonitor = [];
 
 //Streaming Variables (player only)
@@ -229,69 +229,69 @@ a_player_repairing = false;
 
 //Player self-action handles
 dayz_resetSelfActions = {
-	s_player_dragbody =		-1;
-	s_player_fire =			-1;
-	s_player_cook =			-1;
-	s_player_boil =			-1;
-	s_player_fireout =		-1;
-	s_player_butcher =		-1;
-	s_player_packtent = 	-1;
-	s_player_fillwater =	-1;
-	s_player_fillwater2 = 	-1;
-	s_player_fillfuel = 	-1;
-	s_player_grabflare = 	-1;
-	s_player_removeflare = 	-1;
-	s_player_painkiller =	-1;
-	s_player_studybody = 	-1;
-	s_build_Sandbag1_DZ = 	-1;
-	s_build_Hedgehog_DZ =	-1;
-	s_build_Wire_cat1 =		-1;
-	s_player_deleteBuild =	-1;
-	s_player_forceSave = 	-1;
-	s_player_flipveh = 		-1;
-	s_player_stats =		-1;
-	s_player_sleep =		-1;
-	s_player_movedog =		-1;
-	s_player_speeddog =		-1;
-	s_player_calldog = 		-1;
-	s_player_feeddog = 		-1;
-	s_player_waterdog = 	-1;
-	s_player_staydog = 		-1;
-	s_player_trackdog = 	-1;
-	s_player_barkdog = 		-1;
-	s_player_warndog = 		-1;
-	s_player_followdog = 	-1;
+	s_player_dragbody = -1;
+	s_player_fire = -1;
+	s_player_cook = -1;
+	s_player_boil = -1;
+	s_player_fireout = -1;
+	s_player_butcher = -1;
+	s_player_packtent = -1;
+	s_player_fillwater = -1;
+	s_player_fillwater2 = -1;
+	s_player_fillfuel = -1;
+	s_player_grabflare = -1;
+	s_player_removeflare = -1;
+	s_player_painkiller = -1;
+	s_player_studybody = -1;
+	s_build_Sandbag1_DZ = -1;
+	s_build_Hedgehog_DZ = -1;
+	s_build_Wire_cat1 = -1;
+	s_player_deleteBuild = -1;
+	s_player_forceSave = -1;
+	s_player_flipveh = -1;
+	s_player_stats = -1;
+	s_player_sleep = -1;
+	s_player_movedog = -1;
+	s_player_speeddog = -1;
+	s_player_calldog = -1;
+	s_player_feeddog = -1;
+	s_player_waterdog = -1;
+	s_player_staydog = -1;
+	s_player_trackdog = -1;
+	s_player_barkdog = -1;
+	s_player_warndog = -1;
+	s_player_followdog = -1;
 	s_player_fillfuel20 = -1;
 	s_player_fillfuel5 = -1;
 };
 call dayz_resetSelfActions;
 
 //Engineering variables
-s_player_lastTarget =	objNull;
+s_player_lastTarget = objNull;
 s_player_repairActions = [];
 
 //Initialize Medical Variables
-force_dropBody = 		false;
-r_interrupt = 			false;
-r_doLoop = 				false;
-r_self = 				false;
-r_self_actions = 		[];
-r_drag_sqf = 			false;
-r_action = 				false;
-r_action_unload = 		false;
-r_player_handler = 		false;
-r_player_handler1 = 	false;
-r_player_dead = 		false;
-r_player_unconscious = 	false;
-r_player_infected =		false;
-r_player_injured = 		false;
-r_player_inpain = 		false;
-r_player_loaded = 		false;
-r_player_cardiac = 		false;
-r_fracture_legs =		false;
-r_fracture_arms =		false;
-r_player_vehicle =		player;
-r_player_blood = 		12000;
+force_dropBody = false;
+r_interrupt = false;
+r_doLoop = false;
+r_self = false;
+r_self_actions = [];
+r_drag_sqf = false;
+r_action = false;
+r_action_unload = false;
+r_player_handler = false;
+r_player_handler1 = false;
+r_player_dead = false;
+r_player_unconscious = false;
+r_player_infected = false;
+r_player_injured = false;
+r_player_inpain = false;
+r_player_loaded = false;
+r_player_cardiac = false;
+r_fracture_legs = false;
+r_fracture_arms = false;
+r_player_vehicle = player;
+r_player_blood = 12000;
 //Blood Regen
 r_player_bloodregen = 0;
 //Blood Gain Per Sec
@@ -303,17 +303,17 @@ r_player_bloodpersec = 0;
 //Food Stack
 r_player_foodstack = 1; 
 //player skill
-r_player_lowblood = 	false;
-r_player_timeout =		0;
-r_player_bloodTotal = 	r_player_blood;
-r_public_blood =		r_player_blood;
-r_player_bloodDanger =	r_player_bloodTotal * 0.2;
-r_player_actions = 		[];
-r_handlerCount = 		0;
-r_action_repair = 		false;
-r_action_targets = 		[];
-r_pitchWhine = 			false;
-r_isBandit =			false;
+r_player_lowblood = false;
+r_player_timeout = 0;
+r_player_bloodTotal = r_player_blood;
+r_public_blood = r_player_blood;
+r_player_bloodDanger = r_player_bloodTotal * 0.2;
+r_player_actions = [];
+r_handlerCount = 0;
+r_action_repair = false;
+r_action_targets = [];
+r_pitchWhine = false;
+r_isBandit = false;
 
 //ammo routine
 r_player_actions2 = [];
@@ -330,14 +330,14 @@ r_player_removeActions2 = {
 	};
 };
 
-USEC_woundHit 	= [ // limbs hit given by arma engine when fnc_usec_damageHandler is called 
+USEC_woundHit = [ // limbs hit given by arma engine when fnc_usec_damageHandler is called 
 	"",
 	"body",
 	"hands",
 	"legs",
 	"head_hit"
 ];
-DAYZ_woundHit 	= [
+DAYZ_woundHit = [
 	[
 		"body",
 		"hands",
@@ -362,11 +362,11 @@ DAYZ_woundHit_dog = [
 	],
 	[0,0,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2]
 ];
-USEC_MinorWounds 	= [
+USEC_MinorWounds = [
 	"hands",
 	"legs"
 ];
-USEC_woundPoint	= [ // translation table USEC_woundHit -> SV suffixes
+USEC_woundPoint = [ // translation table USEC_woundHit -> SV suffixes
 	["Pelvis","aimpoint"],
 	["aimpoint"], //,"RightShoulder","LeftShoulder"
 	["lelbow","relbow"],
@@ -402,7 +402,7 @@ dayz_zSpawnDistance = 1000;
 dayz_maxLocalZombies = 40; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 dayz_maxMaxModels = 80; // max quantity of Man models (player or Z, dead or alive) around players. Below this limit we can spawn Z
 dayz_maxMaxWeaponHolders = 80; // max quantity of loot piles around players. Below this limit we can spawn some loot
-dayz_spawnArea =  200; // radius around player where we can spawn loot & Z 
+dayz_spawnArea = 200; // radius around player where we can spawn loot & Z 
 dayz_safeDistPlr = 50; // Any loot & Z won't be spawned closer than this distance from any player
 dayz_cantseeDist = 150; // distance from which we can spawn a Z in front of any player without ray-tracing and angle checks
 dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned in front of any near players 
@@ -428,11 +428,11 @@ if(!isDedicated) then {
 		{
 			private ["_location","_config","_locHdr","_position","_size","_type"];
 			//Get Location Data from config
-			_config = 	(_this select _i);
-			_locHdr = 	configName _config;
-			_position = getArray	(_config >> "position");
-			_size = 	getNumber	(_config >> "size");
-			_type = 	getText		(_config >> "type");
+			_config = (_this select _i);
+			_locHdr = configName _config;
+			_position = getArray (_config >> "position");
+			_size = getNumber (_config >> "size");
+			_type = getText (_config >> "type");
 			
 			//Find the Location
 			_location = nearestLocation [_position, _type];
@@ -448,65 +448,65 @@ if(!isDedicated) then {
 	dayz_bodyMonitor = [];
 	dayz_flyMonitor = [];		//used for monitor flies
 	
-	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	dayz_baseTypes = getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 	
 	//temperature variables
-	dayz_temperatur 		= 	36;		//TeeChange
-	dayz_temperaturnormal 	= 	36;		//TeeChange
-	dayz_temperaturmax 		= 	42;		//TeeChange
-	dayz_temperaturmin 		= 	27;		//TeeChange
+	dayz_temperatur = 36;		//TeeChange
+	dayz_temperaturnormal = 36;		//TeeChange
+	dayz_temperaturmax = 42;		//TeeChange
+	dayz_temperaturmin = 27;		//TeeChange
 	
 	//player special variables
 	dayZ_lastPlayerUpdate = 0;
-	dayZ_everyonesTents =	[];
-	dayz_hunger	=			0;
-	dayz_thirst = 			0;
-	dayz_combat =			0;
-	dayz_preloadFinished = 	false;
-	dayz_statusArray =		[1,1];
-	dayz_disAudial =		0;
-	dayz_disVisual =		0;
-	dayz_firedCooldown = 	0;
-	dayz_DeathActioned =	false;
-	dayz_canDisconnect = 	true;
-	dayz_damageCounter =	time;
-	dayz_lastSave =			time;
-	dayz_isSwimming	=		true;
-	dayz_currentDay = 		0;
-	dayz_hasLight = 		false;
-	dayz_surfaceNoise =		0;
-	dayz_surfaceType =		"None";
-	dayz_noPenalty = 		[];
-	dayz_heavenCooldown =	0;
-	deathHandled = 			false;
-	dayz_lastHumanity =		0;
-	dayz_guiHumanity =		-90000;
-	dayz_firstGroup = 		group player;
-	dayz_originalPlayer = 	player;
-	dayz_playerName =		"Unknown";
-	dayz_sourceBleeding =	objNull;
-	dayz_clientPreload = 	false;
-	dayz_authed = 			false;
-	dayz_panicCooldown = 	0;
-	dayz_areaAffect =		3.5;
+	dayZ_everyonesTents = [];
+	dayz_hunger = 0;
+	dayz_thirst = 0;
+	dayz_combat = 0;
+	dayz_preloadFinished = false;
+	dayz_statusArray = [1,1];
+	dayz_disAudial = 0;
+	dayz_disVisual = 0;
+	dayz_firedCooldown = 0;
+	dayz_DeathActioned = false;
+	dayz_canDisconnect = true;
+	dayz_damageCounter = time;
+	dayz_lastSave = time;
+	dayz_isSwimming = true;
+	dayz_currentDay = 0;
+	dayz_hasLight = false;
+	dayz_surfaceNoise = 0;
+	dayz_surfaceType = "None";
+	dayz_noPenalty = [];
+	dayz_heavenCooldown = 0;
+	deathHandled = false;
+	dayz_lastHumanity = 0;
+	dayz_guiHumanity = -90000;
+	dayz_firstGroup = group player;
+	dayz_originalPlayer = player;
+	dayz_playerName = "Unknown";
+	dayz_sourceBleeding = objNull;
+	dayz_clientPreload = false;
+	dayz_authed = false;
+	dayz_panicCooldown = 0;
+	dayz_areaAffect = 3.5;
 	dayz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
-	dayz_heartBeat = 		false;
-	dayzClickTime =			0;
-	dayz_spawnDelay =		300;
-	dayz_spawnWait =		-300;
-	dayz_lootDelay =		3;
-	dayz_lootWait =			-300;
-	dayz_spawnZombies =		0;
+	dayz_heartBeat = false;
+	dayzClickTime = 0;
+	dayz_spawnDelay = 300;
+	dayz_spawnWait = -300;
+	dayz_lootDelay = 3;
+	dayz_lootWait = -300;
+	dayz_spawnZombies = 0;
 	dayz_swarmSpawnZombies = 0;
 	//used to count global zeds around players
 	dayz_CurrentZombies = 0;
 	//Used to limit overall zed counts
 	dayz_maxCurrentZeds = 0;
-	dayz_inVehicle =		false;
-	dayz_Magazines = 		[];
-	dayzGearSave = 			false;
-	dayz_unsaved =			false;
-	dayz_scaleLight = 		0;
+	dayz_inVehicle = false;
+	dayz_Magazines = [];
+	dayzGearSave = false;
+	dayz_unsaved = false;
+	dayz_scaleLight = 0;
 	dayzDebug = false;
 	dayzState = -1;
 	//uiNamespace setVariable ['DAYZ_GUI_display',displayNull];

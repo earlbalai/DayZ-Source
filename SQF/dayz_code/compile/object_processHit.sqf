@@ -1,9 +1,9 @@
 private["_unit","_selection","_damage","_strH","_dam","_total","_break","_display","_ctrlFracture","_id"];
 
 disableSerialization;
-_unit =			_this select 0;
-_selection =	_this select 1;
-_damage =		_this select 2;
+_unit = _this select 0;
+_selection = _this select 1;
+_damage = _this select 2;
 
 _strH = "hit_" + (_selection);
 
@@ -15,7 +15,7 @@ if (local _unit) then {
 
 	if (_selection in USEC_MinorWounds and _total >= 1 and _unit == player) then {
 		_display = uiNamespace getVariable 'DAYZ_GUI_display';
-		_ctrlFracture = 	_display displayCtrl 1203;
+		_ctrlFracture = _display displayCtrl 1203;
 		
 		if ((_selection == "legs") and !r_fracture_legs) then {
 			r_fracture_legs = true;

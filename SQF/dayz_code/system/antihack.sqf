@@ -39,7 +39,7 @@ _toph = 0;
 while {alive player} do
 {
 	//[-18697.58,379.53012,25815.256]
-	if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual  || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
+	if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
 		createMarkerLocal ["respawn_west", _debug];
 		"respawn_west" setMarkerType "EMPTY";
 	};

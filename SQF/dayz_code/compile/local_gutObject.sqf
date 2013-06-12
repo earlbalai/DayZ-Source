@@ -2,7 +2,7 @@ private["_animalbody","_qty","_rawfoodtype","_timer","_body","_ehLoc"];
 
 _animalbody = _this select 0;
 _qty = _this select 1;
-_rawfoodtype =   getText (configFile >> "CfgSurvival" >> "Meat" >> typeOf _animalbody >> "rawfoodtype");
+_rawfoodtype = getText (configFile >> "CfgSurvival" >> "Meat" >> typeOf _animalbody >> "rawfoodtype");
 
 if (local _animalbody) then {
 	for "_x" from 1 to _qty do {

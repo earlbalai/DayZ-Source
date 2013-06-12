@@ -3,7 +3,7 @@
 
 private ["_wounded","_vcl","_group"];
 
-  _wounded 	= _this select 0;
+  _wounded = _this select 0;
 
 if (!local _wounded) exitWith {};
 
@@ -21,13 +21,13 @@ sleep 1;
 	publicVariable "PVDZ_drg_RaLW";
 
 if (local _wounded) then 
-{	
+{ 
 	waitUntil {!(_wounded getVariable "NORRN_unconscious")|| !alive _wounded || vehicle _wounded == _wounded || (assignedVehicleRole _wounded) select 0 != "Cargo"};
 	
 	if (vehicle _wounded == _wounded || (assignedVehicleRole _wounded) select 0 != "Cargo") exitWith 
 	{
 		if (_wounded getVariable "NORRN_AIunconscious") then
-		{	
+		{ 
 			if (vehicle _wounded != _wounded) then
 			{
 				unassignVehicle _wounded;
@@ -44,8 +44,8 @@ if (local _wounded) then
 	};
 	
 	if (vehicle _wounded != _wounded && alive _wounded) then
-	{	
-		_wounded  playMove "BasicDriver";
+	{ 
+		_wounded playMove "BasicDriver";
 	};
 };
 sleep 0.01;

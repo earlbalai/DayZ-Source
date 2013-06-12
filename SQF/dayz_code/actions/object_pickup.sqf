@@ -48,7 +48,7 @@ if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_bei
 
 if(_classname isKindOf "Bag_Base_EP1") exitwith {
 
-	_PlayerNear =	{isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
+	_PlayerNear = {isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
 	if (_PlayerNear) exitWith {cutText [format["Another Player Near by, Only one player must be within 5 meters of a bag to pickup"] , "PLAIN DOWN"]};
 
 	diag_log("Picked up a bag: " + _classname);
@@ -109,7 +109,7 @@ sleep 3;
 //adding melee mags back if needed
 _wpn = primaryWeapon player;
 //diag_log format["Classname: %1, WPN: %2", _classname,_wpn];
-_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpn >> "melee"));
+_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpn >> "melee"));
 if (_ismelee == "true") then {
 	call dayz_meleeMagazineCheck;
 };

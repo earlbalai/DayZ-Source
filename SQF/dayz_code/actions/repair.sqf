@@ -1,9 +1,9 @@
 private["_id","_array","_vehicle","_part","_hitpoint","_type","_hasToolbox","_section","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed"];
 
 _id = _this select 2;
-_array = 	_this select 3;
-_vehicle = 	_array select 0;
-_part =		_array select 1;
+_array = _this select 3;
+_vehicle = _array select 0;
+_part = _array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle;
 
@@ -13,12 +13,12 @@ dayz_myCursorTarget = objNull;
 
 diag_log(format["%1 %2", __FILE__, _this]);
 
-_hasToolbox = 	"ItemToolbox" in items player;
+_hasToolbox = "ItemToolbox" in items player;
 _section = _part in magazines player;
 
 //moving this here because we need to know which part needed if we don't have it
-_nameType = 		getText(configFile >> "cfgVehicles" >> _type >> "displayName");
-_namePart = 		getText(configFile >> "cfgMagazines" >> _part >> "displayName");
+_nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
+_namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
 if (_section and _hasToolbox) then {
 
