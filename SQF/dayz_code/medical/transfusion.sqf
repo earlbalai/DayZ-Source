@@ -53,14 +53,14 @@ while {r_doLoop and (_i < 12)} do {
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 
 	if ((_blood >= r_player_bloodTotal) or (_i == 12)) then {
-		diag_log "TRANSFUSION: completed blood transfusion successfully";
+		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		cutText ["Transfusion successful.", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,"Transfusion successful.","PLAIN DOWN"] call RE;
 		r_doLoop = false;
 	};
 
 	if (r_interrupt or ((player distance _unit) < ((sizeOf typeOf _unit) / 2))) then {
-		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3))", r_interrupt, player distance _unit, ((player distance _unit) < ((sizeOf typeOf _unit) / 2))];
+		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, ((player distance _unit) < ((sizeOf typeOf _unit) / 2)), _i];
 		cutText ["The transfusion was interrupted! The blood bag has been lost.", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,"The transfusion was interrupted! The blood bag has been lost.","PLAIN DOWN"] call RE;
 		r_doLoop = false;
