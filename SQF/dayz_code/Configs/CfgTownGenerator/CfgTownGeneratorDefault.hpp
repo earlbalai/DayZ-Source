@@ -1,6 +1,6 @@
 	class SouthernAirport {
 		position[] = {4899.9, 2391.19};
-		size = 400;
+		size = 350;
 		
 		class Object0 {
 			type = "UralWreck";
@@ -4364,7 +4364,7 @@
 	
 	class GreenMountain {
 		position[] = {3758.46, 5999.58};
-		size = 500;
+		size = 320;
 		
 		class Object0 {
 			type = "Body1";
@@ -9032,7 +9032,7 @@
 	class Balota {
 		type = "NameVillage";
 		position[] = {4528, 2465};
-		size = 547;
+		size = 570;
 		buildings = 50;
 		
 		class Object0 {
@@ -9746,7 +9746,7 @@
 	class Nadezhdino {
 		type = "NameVillage";
 		position[] = {5877, 4697};
-		size = 549;
+		size = 320;
 		buildings = 50;
 		
 		class Object0 {
@@ -10103,7 +10103,7 @@
 	class Komarovo {
 		type = "NameVillage";
 		position[] = {3664, 2499};
-		size = 547;
+		size = 350;
 		buildings = 50;
 		
 		class Object0 {
@@ -10817,7 +10817,7 @@
 	class Mogilevka {
 		type = "NameVillage";
 		position[] = {7650, 5096};
-		size = 549;
+		size = 410;
 		buildings = 50;
 		
 		class Object0 {
@@ -11174,7 +11174,7 @@
 	class Pusta {
 		type = "NameVillage";
 		position[] = {9127, 3954};
-		size = 548;
+		size = 510;
 		buildings = 50;
 		
 		class Object0 {
@@ -11531,7 +11531,7 @@
 	class Bor {
 		type = "NameVillage";
 		position[] = {3327, 3887};
-		size = 549;
+		size = 430;
 		buildings = 50;
 		
 		class Object0 {
@@ -12602,7 +12602,7 @@
 	class Elektrozavodsk {
 		type = "NameCity";
 		position[] = {10314, 2159};
-		size = 960;
+		size = 920;
 		buildings = 120;
 		
 		class Object0 {
@@ -13449,7 +13449,7 @@
 	class Drozhino {
 		type = "NameVillage";
 		position[] = {3382, 4926};
-		size = 546;
+		size = 390;
 		buildings = 50;
 		
 		class Object0 {
@@ -13806,7 +13806,7 @@
 	class Pogorevka {
 		type = "NameVillage";
 		position[] = {4435, 6426};
-		size = 547;
+		size = 560;
 		buildings = 50;
 		
 		class Object0 {
@@ -14163,7 +14163,7 @@
 	class Kamenka {
 		type = "NameVillage";
 		position[] = {1853, 2250};
-		size = 547;
+		size = 300;
 		buildings = 50;
 		
 		class Object0 {
@@ -15367,7 +15367,7 @@
 	class Rogovo {
 		type = "NameVillage";
 		position[] = {4771, 6835};
-		size = 547;
+		size = 580;
 		buildings = 50;
 		
 		class Object0 {
@@ -16438,7 +16438,7 @@
 	class Pavlovo {
 		type = "NameVillage";
 		position[] = {1694, 3859};
-		size = 547;
+		size = 220;
 		buildings = 50;
 		
 		class Object0 {
@@ -16795,7 +16795,7 @@
 	class Shakhovka {
 		type = "NameVillage";
 		position[] = {9729, 6567};
-		size = 549;
+		size = 480;
 		buildings = 50;
 		
 		class Object0 {
@@ -19420,7 +19420,7 @@
 	class NovySobor {
 		type = "NameVillage";
 		position[] = {7124, 7775};
-		size = 549;
+		size = 310;
 		buildings = 50;
 		
 		class Object0 {
@@ -20134,7 +20134,7 @@
 	class Kamyshovo {
 		type = "NameVillage";
 		position[] = {12063, 3516};
-		size = 548;
+		size = 370;
 		buildings = 50;
 		
 		class Object0 {
@@ -20491,7 +20491,7 @@
 	class Msta {
 		type = "NameVillage";
 		position[] = {11334, 5421};
-		size = 550;
+		size = 500;
 		buildings = 50;
 		
 		class Object0 {
@@ -20848,7 +20848,7 @@
 	class Kabanino {
 		type = "NameVillage";
 		position[] = {5301, 8646};
-		size = 549;
+		size = 380;
 		buildings = 50;
 		
 		class Object0 {
@@ -21205,7 +21205,7 @@
 	class Pustoshka {
 		type = "NameVillage";
 		position[] = {3070, 7940};
-		size = 547;
+		size = 260;
 		buildings = 50;
 		
 		class Object0 {
@@ -21562,7 +21562,7 @@
 	class Dolina {
 		type = "NameVillage";
 		position[] = {11285, 6634};
-		size = 549;
+		size = 390;
 		buildings = 50;
 		
 		class Object0 {
@@ -21919,7 +21919,7 @@
 	class Myshkino {
 		type = "NameVillage";
 		position[] = {1998, 7355};
-		size = 547;
+		size = 210;
 		buildings = 50;
 		
 		class Object0 {
@@ -22276,7 +22276,7 @@
 	class Tulga {
 		type = "NameVillage";
 		position[] = {12802, 4369};
-		size = 550;
+		size = 320;
 		buildings = 50;
 		
 		class Object0 {
@@ -22633,7 +22633,7 @@
 	class Vybor {
 		type = "NameCity";
 		position[] = {3833, 8919};
-		size = 957;
+		size = 930;
 		buildings = 120;
 		
 		class Object0 {
@@ -23480,7 +23480,7 @@
 	class Polana {
 		type = "NameVillage";
 		position[] = {10707, 8053};
-		size = 547;
+		size = 500;
 		buildings = 50;
 		
 		class Object0 {
@@ -23837,7 +23837,7 @@
 	class Gorka {
 		type = "NameCity";
 		position[] = {9616, 8914};
-		size = 959;
+		size = 970;
 		buildings = 120;
 		
 		class Object0 {
@@ -24684,7 +24684,7 @@
 	class Orlovets {
 		type = "NameVillage";
 		position[] = {12131, 7190};
-		size = 549;
+		size = 270;
 		buildings = 50;
 		
 		class Object0 {
@@ -25041,7 +25041,7 @@
 	class Grishino {
 		type = "NameVillage";
 		position[] = {5960, 10336};
-		size = 548;
+		size = 520;
 		buildings = 50;
 		
 		class Object0 {
@@ -25398,7 +25398,7 @@
 	class Solnichniy {
 		type = "NameCity";
 		position[] = {13397, 6337};
-		size = 960;
+		size = 930;
 		buildings = 120;
 		
 		class Object0 {
@@ -26959,7 +26959,7 @@
 	class Nizhnoye {
 		type = "NameVillage";
 		position[] = {12825, 8098};
-		size = 546;
+		size = 340;
 		buildings = 50;
 		
 		class Object0 {
@@ -27316,7 +27316,7 @@
 	class Berezino {
 		type = "NameCity";
 		position[] = {12014, 9091};
-		size = 960;
+		size = 900;
 		buildings = 120;
 		
 		class Object0 {
@@ -30599,7 +30599,7 @@
 	class Petrovka {
 		type = "NameVillage";
 		position[] = {5016, 12491};
-		size = 548;
+		size = 480;
 		buildings = 50;
 		
 		class Object0 {
@@ -30956,7 +30956,7 @@
 	class Khelm {
 		type = "NameVillage";
 		position[] = {12329, 10771};
-		size = 548;
+		size = 560;
 		buildings = 50;
 		
 		class Object0 {
@@ -31313,7 +31313,7 @@
 	class Krasnostav {
 		type = "NameCity";
 		position[] = {11224, 12275};
-		size = 956;
+		size = 930;
 		buildings = 120;
 		
 		class Object0 {
@@ -32160,7 +32160,7 @@
 	class Olsha {
 		type = "NameVillage";
 		position[] = {13331, 12900};
-		size = 548;
+		size = 560;
 		buildings = 50;
 		
 		class Object0 {
