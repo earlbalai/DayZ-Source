@@ -151,10 +151,10 @@ if (_damage > 0.4) then { //0.25
 		//Infection from zombies
 		if (_ammo == "zombie") then {
 			_rndInfection = random (_damage - _bloodPercentage);
-			_hitInfection = ((exp _rndInfection) > 1.25);
+			_hitInfection = ((exp _rndInfection) > dayz_infectionTreshold);
 			if (_newtypezed) then {
 				_rndInfection = random (_damage - _bloodPercentage);
-				_hitInfection = ((exp _rndInfection * 1.25*1.1) > 1.25);
+				_hitInfection = ((exp _rndInfection * dayz_infectionTreshold*1.1) > dayz_infectionTreshold);
 			};
 			if (_hitInfection) then {
 				r_player_infected = true;

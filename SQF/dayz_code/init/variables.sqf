@@ -409,6 +409,7 @@ dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned i
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 dayz_lootSpawnBias = 67; // between 50 and 100. The lower it is, the lower chance some of the lootpiles will spawn
 dayz_localswarmSpawned = 10;  // how many zeds will spawn around you during a combat scenario.
+dayz_infectionTreshold = 1.25; // used to trigger infection, see fn_damageHandler.sqf
 
 //init global arrays for Loot Chances
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\loot_init.sqf";
