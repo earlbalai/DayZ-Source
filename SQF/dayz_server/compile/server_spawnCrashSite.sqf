@@ -48,7 +48,7 @@ while {true} do {
 		_size = (sizeOf _crashModel)*2/3;
 
 		_position = [];
-		for [{_y = 0}, {_y < 10 && ((count _position) == 0) OR {(_position distance _debugarea<1)}}, {_y = _y + 1}] do {
+		for [{_y = 0}, {(_y < 10) AND (((count _position) == 0) OR {(_position distance _debugarea<1)})}, {_y = _y + 1}] do {
 			// sizeof entity, disk center point, min radius, max radius, min altitude
 			//   max altitude, require surfaces list, require in water, vehicle distance, search the closest
 			_position = [getMarkerPos _spawnMarker,0,_spawnRadius,_size,0,_size*.2,0, [], [_debugarea,_debugarea]] call BIS_fnc_findSafePos;
