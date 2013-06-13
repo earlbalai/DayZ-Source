@@ -1,3 +1,4 @@
+private ["_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_text","_animState","_started","_finished","_timer","_i","_isMedic","_isClose"];
 // bleed.sqf
 _unit = (_this select 3) select 0;
 _blood = _unit getVariable ["USEC_BloodQty", 0];
@@ -59,8 +60,10 @@ while {r_doLoop and (_i < 12)} do {
 		r_doLoop = false;
 	};
 
-	if (r_interrupt or ((player distance _unit) < ((sizeOf typeOf _unit) / 2))) then {
-		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, ((player distance _unit) < ((sizeOf typeOf _unit) / 2)), _i];
+	_isClose = ((player distance _unit) < ((sizeOf typeOf _unit) / 2));
+
+	if (r_interrupt or !_isClose) then {
+		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
 		cutText ["The transfusion was interrupted! The blood bag has been lost.", "PLAIN DOWN"];
 		[player,_unit,"loc",rTITLETEXT,"The transfusion was interrupted! The blood bag has been lost.","PLAIN DOWN"] call RE;
 		r_doLoop = false;
