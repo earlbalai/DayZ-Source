@@ -17,8 +17,8 @@ Affected addons:
 	    * [NEW] - 
 	    * [NEW] - 
 
-	    * [FIXED] - 
-	    * [FIXED] - 
+	    * [FIXED] - Crashsite loot spawn fixed.
+	    * [FIXED] - Night time LOS should now reset correct.
 	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
 		
 	    * [UPDATED] - 
