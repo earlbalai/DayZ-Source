@@ -20,6 +20,7 @@ Affected addons:
 	    * [FIXED] - Crashsite loot spawn fixed.
 	    * [FIXED] - Night time LOS should now reset correct.
 	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
+	    * [FIXED] - Blood transfusion should now work properly.
 		
 	    * [UPDATED] - 
 	    * [UPDATED] - 
