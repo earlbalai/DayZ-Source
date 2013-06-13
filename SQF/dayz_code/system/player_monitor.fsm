@@ -1175,7 +1175,7 @@ class FSM
        "r_player_blood = 		player getVariable[""USEC_BloodQty"",r_player_bloodTotal];" \n
        "" \n
        """colorCorrections"" ppEffectEnable true;" \n
-       """colorCorrections"" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, (r_player_blood/r_player_bloodTotal)],  [1, 1, 1, 0.0]];" \n
+       """colorCorrections"" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1 min (4*r_player_blood/3/r_player_bloodTotal)],  [1, 1, 1, 0.0]];" \n
        """colorCorrections"" ppEffectCommit 0;" \n
        "" \n
        "dayz_gui = [] spawn {" \n
@@ -1423,10 +1423,11 @@ class FSM
     {
       name = "Stream";
       init = /*%FSM<STATEINIT""">*/"//stream in location" \n
-       "[] spawn stream_locationCheck;" \n
+       "dayz_locationCheck_round = [] spawn stream_locationCheck;" \n
        "" \n
        "_zombies = (getPosATL player) nearEntities [""zZombie_Base"",30];" \n
        "{deleteVehicle _x} forEach _zombies;" \n
+       "waitUntil {scriptDone dayz_locationCheck_round};" \n
        "" \n
        "endLoadingScreen;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
