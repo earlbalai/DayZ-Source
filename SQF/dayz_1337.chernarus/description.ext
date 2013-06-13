@@ -5,7 +5,7 @@ OnLoadIntro = "Welcome to Chernarus";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
-disableChannels[]={0,1,2,6};
+disableChannels[] = {0,1,2,6};
 enableItemsDropping = 0;
 onPauseScript = "";
 briefing = 0;
@@ -15,9 +15,9 @@ loadScreen = "\z\addons\dayz_code\gui\loadingscreen.paa";
 
 class Header
 {
- gameType = COOP;            //DM, Team, Coop, ...
- minPlayers = 1;             //min # of players the mission supports
- maxPlayers = 100;            //Max # of players the mission supports
+	gameType = COOP;			//DM, Team, Coop, ...
+	minPlayers = 1;				//Min # of players the mission supports
+	maxPlayers = 100;			//Max # of players the mission supports
 };
 
 aiKills = 1;
@@ -39,6 +39,7 @@ class RscText
 	colorBackground[] = {0, 0, 0, 0};
 	linespacing = 1;
 };
+
 class RscPicture
 {
 	access=0;
@@ -52,6 +53,7 @@ class RscPicture
 	lineSpacing=0;
 	text="";
 };
+
 class RscLoadingText : RscText
 {
 	style = 2;
@@ -62,6 +64,7 @@ class RscLoadingText : RscText
 	sizeEx = 0.03921;
 	colorText[] = {0.543,0.5742,0.4102,1.0};
 };
+
 class RscProgress
 {
 	x = 0.344;
@@ -72,6 +75,7 @@ class RscProgress
 	colorFrame[] = {0,0,0,0};
 	colorBar[] = {1,1,1,1};
 };
+
 class RscProgressNotFreeze
 {
 	idc = -1;
@@ -83,6 +87,7 @@ class RscProgressNotFreeze
 	h = 0.039216;
 	texture = "#(argb,8,8,3)color(0,0,0,0)";
 };
+
 //
 // the loading screen itself
 //
