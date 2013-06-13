@@ -22,7 +22,7 @@ Affected addons:
 	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
 	    * [FIXED] - Blood transfusion should now work properly.
 		
-	    * [UPDATED] - 
+	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - 
 	    * [UPDATED] - 
 
