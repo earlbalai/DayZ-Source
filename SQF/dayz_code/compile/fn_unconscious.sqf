@@ -7,9 +7,9 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 	if (_totalTimeout == 0) then { _totalTimeout = r_player_timeout +1; }; //Fix for zero divisor
 	4 cutRsc ["playerStatusWaiting", "PLAIN",0];
 	_display = uiNamespace getVariable 'DAYZ_GUI_waiting';
-	_ctrl1 = 	_display displayCtrl 1400;
+	_ctrl1 = _display displayCtrl 1400;
 	_ctrl1Pos = ctrlPosition _ctrl1;
-	
+
 	_timeout = 0;
 	r_handlerCount = r_handlerCount + 1;
 	r_player_handler1 = true;
@@ -33,7 +33,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		if ((surfaceIsWater (getPosASL player)) and !_isOnDeck and !_inVehicle) then {
 			player setpos [(getPosASL player select 0),(getPosASL player select 1),0.3];
 		};
-		
+
 		if(_timeout == 0) then {
 			if (!r_player_dead and !_bloodLow and r_player_injured) then {
 				_timeout = 10;
@@ -43,7 +43,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		} else {
 			_timeout = _timeout - 1;
 		};
-		
+
 		if (r_player_timeout > 0) then {
 			r_player_timeout = r_player_timeout - 1;
 		} else {
@@ -55,17 +55,17 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 		//Check if near field hospital
 		_isHospital = false; //(count( nearestObjects [player, ["USMC_WarfareBFieldhHospital"], 8]) > 0);
 		if (_isHospital or _isOnDeck or _isInLocation) then {
-		
+
 			waitUntil {!(player getVariable ["NORRN_unit_dragged", false])};
-		
+
 			cutText[localize "str_medical_healing", "PLAIN", 2];
 			sleep 5;
-		
+
 			r_player_inpain = false;
 			r_player_dead = false;
 			r_player_injured = false;
 			r_player_cardiac = false;
-			
+
 			//Give Blood
 			r_player_blood = r_player_bloodTotal;
 			player setVariable["USEC_lowBlood",false,true];
@@ -76,7 +76,7 @@ if ((!r_player_handler1) and (r_handlerCount == 0)) then {
 			publicVariable "PVDZ_hlt_Bandage";
 			player setdamage 0;
 			call fnc_usec_resetWoundPoints;
-			
+
 			sleep 1;
 			r_player_handler = false;
 			nul = [] spawn fnc_usec_recoverUncons;

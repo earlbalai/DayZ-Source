@@ -6,7 +6,7 @@ _fairSize = {
 	private ["_boundingBox","_cornerLow","_cornerHi", "_burried"];
 
 	_boundingBox = boundingBox _this;
-	
+
 	_cornerLow = _this ModeltoWorld (_boundingBox select 0);
 	_cornerHi = _this ModeltoWorld (_boundingBox select 1);
 	_burried = _cornerLow select 2;
@@ -15,26 +15,26 @@ _fairSize = {
 	((_burried < 0.1) AND {(((_cornerHi select 2) > 2.6) AND {((_cornerLow distance _cornerHi) > 7)})}) // container size as reference
 };
 
-// find agents to recycle  
-_findAgt = { 
+// find agents to recycle
+_findAgt = {
 	private ["_plr","_types","_y", "_point", "_ahead"];
 
 	_plr = player;
 	_ahead = 0 max (dayz_canDelete - dayz_spawnArea);
 	_point = _plr modelToWorld [0, _ahead, 0]; // we will recycle more zombies located behind the player
 	recyclableAgt=[];
-	
-	{ 
+
+	{
 		_y = _x getVariable ["agentObject",objNull];
 		if (!isNil "_y") then {
 			if (((alive _y) AND {(local _y)}) AND {((damage _y == 0) AND {(_y distance _point > dayz_spawnArea+_ahead)})}) then {
-				if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then { 
+				if (0 == {(_x != _plr) AND (_x distance _y < dayz_cantseeDist)} count playableUnits) then {
 					recyclableAgt set [count recyclableAgt, _y];
 				};
 			};
 		};
 	} forEach agents;
-	
+
 	recyclableAgt
 };
 
@@ -69,20 +69,20 @@ _currentWeaponHolders = count (_position nearObjects ["ReammoBox",dayz_spawnArea
 //diag_log("SPAWN CHECKING: Starting");
        //_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
        //_nearestCity = nearestLocations [getPos player, _locationstypes, dayz_spawnArea/2];
-       //_townname = text (_nearestCity select 0);     
+       //_townname = text (_nearestCity select 0);
        //_nearbytype = type (_nearestCity select 0);
 
 switch (_nearbytype) do {
        case "NameVillage": {
-               //dayz_spawnArea = 250; 
+               //dayz_spawnArea = 250;
                _maxControlledZombies = 30;
        };
        case "NameCity": {
-               //dayz_spawnArea = 300; 
+               //dayz_spawnArea = 300;
                _maxControlledZombies = 40;
        };
        case "NameCityCapital": {
-               //dayz_spawnArea = 400; 
+               //dayz_spawnArea = 400;
                _maxControlledZombies = 40;
        };
 };
@@ -95,7 +95,7 @@ if ("ItemMap_Debug" in items player) then {
        deleteMarkerLocal "Loot30";
        deleteMarkerLocal "Loot120";
        deleteMarkerLocal "Agro80";
-       
+
        _markerstr = createMarkerLocal ["MaxZeds", _position];
        _markerstr setMarkerColorLocal "ColorYellow";
        _markerstr setMarkerShapeLocal "ELLIPSE";
@@ -107,7 +107,7 @@ if ("ItemMap_Debug" in items player) then {
        _markerstr1 setMarkerShapeLocal "ELLIPSE";
        _markerstr1 setMarkerBrushLocal "Border";
        _markerstr1 setMarkerSizeLocal [dayz_spawnArea+100, dayz_spawnArea+100];
-       
+
        _markerstr2 = createMarkerLocal ["Agro80", _position];
        _markerstr2 setMarkerColorLocal "ColorRed";
        _markerstr2 setMarkerShapeLocal "ELLIPSE";
@@ -135,14 +135,14 @@ diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 };
 */
 diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).", __FILE__,
-	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels, 
+	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels,
 	dayz_spawnArea, round diag_fpsmin, _currentWeaponHolders, _maxWeaponHolders]);
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
 // make the spawn smoother along player's journey. Same for loot
 _controlledZombies = _controlledZombies max floor(_maxControlledZombies*.8);
 _currentWeaponHolders = _currentWeaponHolders max floor(_maxWeaponHolders*.8);
 
-// we start by the closest buildings. buildings too close from player are ditched.	
+// we start by the closest buildings. buildings too close from player are ditched.
 _nearby = (nearestObjects [_position, _sp4wnAroundObjects,dayz_spawnArea]) - (nearestObjects [_position, _sp4wnAroundObjects, dayz_safeDistPlr]);
 
 _zombieSpawnCtr = 0;
@@ -160,7 +160,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 	_islocal = _x getVariable ["", false]; // object created locally via TownGenerator. See stream_locationFill.sqf
 
 	////_x setVariable ["cleared",false,true]; // not used anymore
-	
+
 	//Loot
 	if (_currentWeaponHolders < _maxWeaponHolders) then {
 		if ((_dis < 120) and (_dis > dayz_safeDistPlr) and _canLoot and !_inVehicle and _checkLoot) then {
@@ -179,7 +179,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 			};
 		};
 	};
-	
+
 	//Zeds
 	if ((_currentManModels < _maxManModels) AND {(_canLoot OR {(_x call _fairSize)})}) then {
 		if ((count _recyAgt > 0) OR {(_maxtoCreate > 0)}) then {
@@ -197,7 +197,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 					_qty = _tmp call building_spawnZombies;
 					_recyAgt = _tmp select 1;
 					_maxtoCreate = _tmp select 2;
-					if (_qty  > 0) then {
+					if (_qty > 0) then {
 						_currentManModels = _currentManModels + _qty;
 						_x setVariable ["zombieSpawn",_dateNow,!_islocal];
 					};
@@ -226,24 +226,24 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 		_tmp = str(_x);
 		// How not being seen? hide behind a bush! Great value = t_picea1s, t_picea2s, t_betula2w, b_craet2
 		if ((typeOf _x == "") AND {(
-			(((["t_picea1s", _tmp, false] call fnc_inString) OR 
-			{(["t_picea2s", _tmp, false] call fnc_inString)})) OR 
-			{((["t_betula2w", _tmp, false] call fnc_inString) OR 
+			(((["t_picea1s", _tmp, false] call fnc_inString) OR
+			{(["t_picea2s", _tmp, false] call fnc_inString)})) OR
+			{((["t_betula2w", _tmp, false] call fnc_inString) OR
 			{(["b_craet2", _tmp, false] call fnc_inString)})})
-		}) then { 
+		}) then {
 			_suitableBld = _suitableBld +1;
 			_tmp = [_x, _recyAgt, _maxtoCreate, 10];
 			_qty = _tmp call building_spawnZombies;
 			_recyAgt = _tmp select 1;
 			_maxtoCreate = _tmp select 2;
-/*			if (_qty  > 0) then {
+/*			if (_qty > 0) then {
 				_currentManModels = _currentManModels + _qty;
 				_x setVariable ["zombieSpawn",_dateNow,true];
 			};
 */
 		};
 		sleep 0.001;
-	} forEach (nearestObjects [_point, [], _radius]);	
+	} forEach (nearestObjects [_point, [], _radius]);
 /*	if (!isNil "_nearby") then {
 		[_nearby, _recyAgt, _maxtoCreate, 10] call building_spawnZombies;
 	};*/

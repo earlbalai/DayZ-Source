@@ -1,4 +1,4 @@
-private["_timesincedrink"];	
+private["_timesincedrink"];
 //_timesincedrink = time - dayz_lastDrink;
 //_bloodinc =100; Removed for now(untested) due to it not needed yet
 
@@ -26,7 +26,7 @@ sleep 5;
 dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
 /*
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
-if (_timesincedrink > 600) then	{
+if (_timesincedrink > 600) then {
 	dayz_thirst = 0;
 } else {
 	dayz_thirst = 1; //If player has had something to drink over 10 minutes ago, make them thirsty
@@ -37,7 +37,7 @@ player setVariable["medForceUpdate",true];
 dayz_lastMeal = time;
 dayz_hunger = 0;
 */
-//add infection chance for cure 
+//add infection chance for cure
 if (random 15 < 1) then {
 	r_player_infected = false;
 	player setVariable["USEC_infected",true,true];

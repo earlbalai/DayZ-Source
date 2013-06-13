@@ -11,7 +11,7 @@ _dis = switch true do {
 	default {40};
 };
 
-_local = false; 
+_local = false;
 if (count _this > 3) then { _local = _this select 3; };
 if (!_local) then { // we override _local according to number of players inside _dis radius
 	_local = { _unit distance _x < _dis; } count playableUnits <= 1;

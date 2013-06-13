@@ -3,7 +3,7 @@ private["_onLadder","_itemorignal","_hasdrinkitem","_hasoutput","_config","_text
 disableserialization;
 call gear_ui_init;
 
-_onLadder =     (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 if (vehicle player != player) exitWith {cutText ["You may not drink while in a vehicle", "PLAIN DOWN"]};
@@ -19,7 +19,7 @@ _config = configFile >> "CfgMagazines" >> _itemorignal;
 _text = getText (_config >> "displayName");
 
 //getting type of sfx (now just drink od soda open and drink)
-_sfx =  getText (_config >> "sfx");
+_sfx = getText (_config >> "sfx");
 //Get distance of sfx sound
 _sfxdis = getNumber (_config >> "sfxdis");
 
@@ -35,14 +35,14 @@ if (_itemorignal in no_output_drink) then {
 
 [player,_sfx,0,false,_sfxdis] call dayz_zombieSpeak;
 [player,_sfxdis,true,(getPosATL player)] spawn player_alertZombies;
-  
+
 if (_hasoutput) then{
     // Selecting output
     _itemtodrop = drink_output select (drink_with_output find _itemorignal);
 
     sleep 3;
     _nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
-    if (count _nearByPile ==0) then { 
+    if (count _nearByPile ==0) then {
         _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
     } else {
         _item = _nearByPile select 0;
@@ -51,7 +51,7 @@ if (_hasoutput) then{
 	_item setvelocity [0,0,1];
 };
 
-//add infection chance for "ItemWaterbottle", 
+//add infection chance for "ItemWaterbottle",
 if ((random 15 < 1) and (_itemorignal == "ItemWaterbottle")) then {
     r_player_infected = true;
     player setVariable["USEC_infected",true,true];
@@ -66,4 +66,4 @@ dayz_thirst = 0;
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 (_display displayCtrl 1302) ctrlShow true;
 
-cutText [format[(localize  "str_player_consumed"),_text], "PLAIN DOWN"];
+cutText [format[(localize "str_player_consumed"),_text], "PLAIN DOWN"];

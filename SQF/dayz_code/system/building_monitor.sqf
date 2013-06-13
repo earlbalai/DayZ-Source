@@ -1,7 +1,7 @@
 private["_building","_GroupMarker","_list","_nearby","_run"];
-_building = 		_this select 0;
-_GroupMarker = 		_this select 1;
-_items = 			_this select 2;
+_building = _this select 0;
+_GroupMarker = _this select 1;
+_items = _this select 2;
 _run = true;
 _nearby = false;
 while {_run} do {

@@ -105,13 +105,13 @@ while {abs _bank > 360} do {_bank = _sign*(abs _bank - 360)};
 if(abs _bank > 180) then {_sign = -1*_sign; _bank = (360-_bank)*_sign};
 
 //find appropriate vup according to our bank, as if we were facing north
-_vup  = [sin _bank, 0, cos _bank];
+_vup = [sin _bank, 0, cos _bank];
 
 //rotate Y & Z elements according to pitch
 _vup = [_vup select 0] + ([[_vup select 1, _vup select 2], _pitch] call _rotate);
 
 //rotate X & Y around origin according to yaw
-_vup =  [_vup,  _yaw] call _rotate;
+_vup = [_vup,  _yaw] call _rotate;
 
 
 //----------------------------

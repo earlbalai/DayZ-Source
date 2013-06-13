@@ -12,7 +12,7 @@ while {true} do {
 		};
 	} forEach dayz_flyMonitor;
 	*/
-	
+
 	//check monitored buildings
 	_cursor = 0;
 	_delMe = false;

@@ -40,12 +40,12 @@ _multiplier = 1;
  					if(isNull group _x) then {
  						_x moveTo (getPosATL player);
  					} else {
- 						_x domove (getPosATL player);		
+ 						_x domove (getPosATL player);
  					};
 */
-//					doStop _x; 
+//					doStop _x;
 //					_x setVariable["doLoiter", false];
-//					_x forceSpeed (if ([(getPosATL _x)] call fnc_isInsideBuilding)	then {2} else {2});		
+//					_x forceSpeed (if ([(getPosATL _x)] call fnc_isInsideBuilding) then {2} else {2});
  				};
 			};
 		} else {
@@ -55,14 +55,14 @@ _multiplier = 1;
 				[_x,"chase",(_chance + 3),true] call dayz_zombieSpeak;
 			};
 		};
-		
+
 		//Noise Activation
 		_targets = _group getVariable ["targets", []];
 		if (!(_refObj in _targets)) then {
 			if (_dist < DAYZ_disAudial) then {
 				if (DAYZ_disAudial > 80) then { //65 Orignal: 80
 					_targets set [count _targets,  driver _refObj];
-					_group setVariable ["targets", _targets, true];				
+					_group setVariable ["targets", _targets, true];
 				} else {
 					_chance = [_x, _dist, DAYZ_disAudial] call dayz_losChance;
 					//diag_log ("Visual Detection: " + str([_x, _dist]) + " " + str(_chance));
@@ -108,7 +108,7 @@ _multiplier = 1;
 					};
 				};
 			};
-		};	
+		};
 	};
 } forEach _listTalk;
 

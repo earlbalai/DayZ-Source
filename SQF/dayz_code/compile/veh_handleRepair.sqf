@@ -4,7 +4,7 @@
 */
 
 /***********************************************************
-REPAIR A PART OF A UNIT. 
+REPAIR A PART OF A UNIT.
 Called by "PVDZ_veh_SF" PV
 or by action/repair.sqf
 
@@ -33,7 +33,7 @@ if (local _unit) then {
 	_unit setHit [_selection, 0];
 	if (!isServer) then {
 		PVDZ_veh_Save = [_unit, "repair"];
-		publicVariableServer "PVDZ_veh_Save";		
+		publicVariableServer "PVDZ_veh_Save";
 	}
 	else {
 		[_unit, "repair"] call server_updateObject;
@@ -42,7 +42,7 @@ if (local _unit) then {
 else {
 	if ( (count _this > 3) AND {(_this select 3)}) then {
 		// vehicle is not local to this client, ask the client which vehicle is local to set damage
-		_this resize 3; // delete "broadcast" boolean 
+		_this resize 3; // delete "broadcast" boolean
 		PVDZ_veh_SF = _this;
 		publicVariable "PVDZ_veh_SF";
 	};

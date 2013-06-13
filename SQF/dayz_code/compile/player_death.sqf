@@ -5,8 +5,8 @@ if (deathHandled) exitWith {};
 deathHandled = true;
 //Death
 
-_body =		player;
-_playerID =	getPlayerUID player;
+_body = player;
+_playerID = getPlayerUID player;
 
 //Send Death Notice
 //["PVDZ_plr_Death",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
@@ -37,7 +37,7 @@ if (count _array > 0) then {
 	_method = _array select 1;
 	if (!isNull _source) then {
 		if (_source != player) then {
-			_canHitFree = 	player getVariable ["freeTarget",false];
+			_canHitFree = player getVariable ["freeTarget",false];
 			_isBandit = (["Bandit",typeOf player,false] call fnc_inString);
 			_wait = 0;
 			_humanity = 0;
@@ -46,10 +46,10 @@ if (count _array > 0) then {
 				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
 				_humanity = -2000 * _myKills;
 				if (_humanity > 0) then { _wait = 300; };
-				_kills = 		_source getVariable ["humanKills",0];
+				_kills = _source getVariable ["humanKills",0];
 				_source setVariable ["humanKills",(_kills + 1),true];
 			} else {
-				_killsV = 		_source getVariable ["banditKills",0];
+				_killsV = _source getVariable ["banditKills",0];
 				_source setVariable ["banditKills",(_killsV + 1),true];
 				_wait = 0;
 			};

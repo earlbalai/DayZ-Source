@@ -1,6 +1,6 @@
 private ["_position", "_doLoiter", "_unitTypes", "_isNoone", "_loot", "_array", "_agent", "_type", "_radius", "_method", "_isAlive", "_myDest", "_newDest", "_rnd", "_lootType", "_index", "_weights"];
 
-_campPos = 	_this select 0;
+_campPos = _this select 0;
 _amount = _this select 1;
 _doLoiter = true;
 
@@ -16,35 +16,35 @@ diag_log format["CampPos: %1, Amount: %2, TotalAgents: %3",_campPos,_amount,_cam
 
 while {_counter < _amount} do {
 
-	if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {}; 
-	if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {}; 
-	
+	if (dayz_CurrentZombies > dayz_maxGlobalZombies) exitwith {};
+	if (dayz_spawnZombies > dayz_maxLocalZombies) exitwith {};
+
 	if (random 1 < 0.1) then {
 	_doLoiter = false;
 	};
-	
+
 	_position = [_campPos,1,130,0,0,0,0] call BIS_fnc_findSafePos;
-	
+
 	sleep 0.001;
-	_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],10]) == 0;
-	_loot = 	"";
-	_array = 	[];
-	_agent = 	objNull;
+	_isNoone = {isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],10]) == 0;
+	_loot = "";
+	_array = [];
+	_agent = objNull;
 
 	//Exit if no one is nearby
 	if (!_isNoone) exitWith {};
 
 	_unitTypes = DayZ_NewZeds;
-	 
+
 	_type = _unitTypes call BIS_fnc_selectRandom;
 
 	_radius = 4;
 	_method = "NONE";
-	_agent = createAgent [_type, _position, [], _radius, _method]; 
+	_agent = createAgent [_type, _position, [], _radius, _method];
 	sleep 0.001;
 	_agent setDir random 360;
-	_agent setvelocity [0,0,1]; // avoid stuck zombies legs 
-	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs 
+	_agent setvelocity [0,0,1]; // avoid stuck zombies legs
+	_agent setPosATL [_position select 0, _position select 1, 1+(_position select 2)]; // avoid stuck zombies legs
 	_agent setVariable ["doLoiter",_doLoiter];
 
 	//diag_log format["Camps Spawns: %3, unitTypes: %1, position: %2 ",_unitTypes, _position, _amount];
@@ -74,7 +74,7 @@ while {_counter < _amount} do {
 	//Add some loot
 	_rnd = random 1;
 	if (_rnd > 0.3) then {
-		_lootType = 		configFile >> "CfgVehicles" >> _type >> "zombieLoot";
+		_lootType = configFile >> "CfgVehicles" >> _type >> "zombieLoot";
 		if (isText _lootType) then {
 			_array = [];
 			{

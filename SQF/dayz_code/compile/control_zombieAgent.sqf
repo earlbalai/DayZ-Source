@@ -14,10 +14,10 @@ while {_isAlive and _isSomeone} do {
 	_agent disableAI "FSM";
 	_target = objNull;
 	_targetPos = [];
-	
+
 	//Spawn roaming script (individual to unit)
 	_myDest = getPosATL _agent;
-	
+
 	//Loop looking for targets
 	while {isNull _target and _isAlive and _isSomeone} do {
 		_isAlive = alive _agent;
@@ -29,12 +29,12 @@ while {_isAlive and _isSomeone} do {
 		_agent forceSpeed 2;
 		sleep 1;
 	};
-	
+
 //CHASE TARGET
-	
+
 	//Leader cries out
 	[_agent,"attack",0,false] call dayz_zombieSpeak;
-	
+
 	//Start Movement loop
 	while {!isNull _target and _isAlive and _isSomeone} do {
 		_target = _agent call zombie_findTargetAgent;

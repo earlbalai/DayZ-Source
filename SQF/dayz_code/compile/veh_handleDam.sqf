@@ -4,7 +4,7 @@
 */
 
 /***********************************************************
-ASSIGN DAMAGE TO A UNIT. 
+ASSIGN DAMAGE TO A UNIT.
 Called by "HandleDamage" vehicle Event Handler
 or by "PVDZ_veh_SH" PV
 or by zombie_attack
@@ -30,14 +30,14 @@ if ((isNil "_selection") OR {(!(_selection IN _hitpointnames))}) exitWith {_this
 
 _SVname = "hit_" + _selection;
 _currentDam = _unit getVariable [_SVname, 0];
-_log = format["%1 _this:%2 vehicle:%3#%4 part:""%5"" current_part_damage:%6", __FILE__, 
+_log = format["%1 _this:%2 vehicle:%3#%4 part:""%5"" current_part_damage:%6", __FILE__,
 _this, typeOf _unit, _unit getVariable ["ObjectID",""],
 _selection, _currentDam ];
 _ret = _currentDam;
 
 if (local _unit) then {
 	_dam = _currentDam max _dam;
-	_delta = _dam - _currentDam; 
+	_delta = _dam - _currentDam;
 	if (_delta > 0) then {
 		_unit setVariable [_SVname, _dam, true];
 		_unit setHit [_selection, _dam];
@@ -45,7 +45,7 @@ if (local _unit) then {
 		_log = format["%1. setHit[%2,%3]", _log, _selection, _dam];
 		if (!isServer) then {
 			PVDZ_veh_Save = [_unit,"damage"];
-			publicVariableServer "PVDZ_veh_Save";		
+			publicVariableServer "PVDZ_veh_Save";
 			_log = _log + ". Requesting server hive write";
 		}
 		else {
@@ -57,7 +57,7 @@ if (local _unit) then {
 else {
 	if ( (count _this > 5) AND {(_this select 5)}) then {
 		// vehicle is not local to this client, ask the client which vehicle is local to set damage
-		_this resize 5; // delete "broadcast" boolean 
+		_this resize 5; // delete "broadcast" boolean
 		_log = _log + ". Broadcasting to all";
 		PVDZ_veh_SH = _this;
 		publicVariable "PVDZ_veh_SH";

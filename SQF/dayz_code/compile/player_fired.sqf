@@ -1,10 +1,10 @@
 private["_unit","_weapon","_ammo","_projectile","_audible","_caliber","_distance","_listTalk","_target","_targets"];
 
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
-_unit = 		_this select 0;
-_weapon = 		_this select 1;
-_ammo = 		_this select 4;
-_projectile = 	_this select 6;
+_unit = _this select 0;
+_weapon = _this select 1;
+_ammo = _this select 4;
+_projectile = _this select 6;
 
 //Alert Nearby
 _audible = getNumber (configFile >> "CfgAmmo" >> _ammo >> "audibleFire");
@@ -53,9 +53,9 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				_pos = getPosATL _projectile;
 				sleep 0.01;
 			};
-			
+
 			_listTalk = _pos nearEntities ["zZombie_Base",50];
-				
+
 			{
 				_x setVariable ["myDest",_pos]; // removed networked var.  targets should be enough
 			} forEach _listTalk;
@@ -63,7 +63,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 	};
 } else {
 	[_unit,_distance/2,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	_combattimeout = player getVariable["combattimeout",0];
     if (_combattimeout > 0) then {
         _timeleft = _combattimeout - time;

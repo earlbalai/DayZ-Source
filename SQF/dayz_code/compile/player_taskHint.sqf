@@ -5,9 +5,9 @@
 
 private["_task", "_taskDescription", "_taskStatus", "_taskParams"];
 
-_task                    = _this select 0;
+_task = _this select 0;
 _taskDescription = (taskDescription _task) select 1;
-_taskStatus              = toUpper(taskState _task);
+_taskStatus = toUpper(taskState _task);
 
 
 _taskParams = switch (_taskStatus) do

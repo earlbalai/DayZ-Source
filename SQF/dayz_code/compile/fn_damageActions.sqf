@@ -40,29 +40,29 @@ if (_inVehicle) then {
 };
 
 if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unconscious and _isClose) then {
-	_unit = 		cursorTarget;
+	_unit = cursorTarget;
 	player reveal _unit;
-	_vehClose = 	(getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5]; //nearestObjects [player, ["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"], 5];
-	_hasVehicle = 	({alive _x} count _vehClose > 0);
-	_unconscious = 	_unit getVariable ["NORRN_unconscious", false];
-	_lowBlood = 	_unit getVariable ["USEC_lowBlood", false];
-	_injured = 		_unit getVariable ["USEC_injured", false];
-	_inPain = 		_unit getVariable ["USEC_inPain", false];
-	_legsBroke = 	_unit getVariable ["hit_legs", 0] >= 1;
-	_armsBroke = 	_unit getVariable ["hit_hands", 0] >= 1;
-	_hasBandage = 	"ItemBandage" in magazines player;
-	_hasEpi = 		"ItemEpinephrine" in magazines player;
-	_hasMorphine = 	"ItemMorphine" in magazines player;
-	_hasBlood = 	"ItemBloodbag" in magazines player;	
-	_hasToolbox = 	"ItemToolbox" in items player;
+	_vehClose = (getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5]; //nearestObjects [player, ["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"], 5];
+	_hasVehicle = ({alive _x} count _vehClose > 0);
+	_unconscious = _unit getVariable ["NORRN_unconscious", false];
+	_lowBlood = _unit getVariable ["USEC_lowBlood", false];
+	_injured = _unit getVariable ["USEC_injured", false];
+	_inPain = _unit getVariable ["USEC_inPain", false];
+	_legsBroke = _unit getVariable ["hit_legs", 0] >= 1;
+	_armsBroke = _unit getVariable ["hit_hands", 0] >= 1;
+	_hasBandage = "ItemBandage" in magazines player;
+	_hasEpi = "ItemEpinephrine" in magazines player;
+	_hasMorphine = "ItemMorphine" in magazines player;
+	_hasBlood = "ItemBloodbag" in magazines player;
+	_hasToolbox = "ItemToolbox" in items player;
 	/*
 	//Moved to has actions
-	_hasJerry = 	"ItemJerrycan" in magazines player;
-	_hasFuel5 = 	"ItemFuelcan" in magazines player;
+	_hasJerry = "ItemJerrycan" in magazines player;
+	_hasFuel5 = "ItemFuelcan" in magazines player;
 	*/
-	_hasEtool = 	"ItemEtool" in weapons player;
-	_hasWire = 		"ItemWire" in magazines player;
-	_hasPainkillers = 	"ItemPainkiller" in magazines player;
+	_hasEtool = "ItemEtool" in weapons player;
+	_hasWire = "ItemWire" in magazines player;
+	_hasPainkillers = "ItemPainkiller" in magazines player;
 
 	//Allow player to drag
 	if(_unconscious) then {
@@ -118,13 +118,13 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 		_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit], 0, true, true, "", "'ItemBloodbag' in magazines player"];
 		r_player_actions set [count r_player_actions,_action];
 	};
-	
+
 	//Repairs
 	if ((_unit isKindOf "AllVehicles") and !(_unit isKindOf "Man")) then {
 		_type = TypeOf(_unit);
 		_typeVeh = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 		_isVehicle = cursorTarget isKindOf "AllVehicles";
-		
+
 		//CAN WE REFUEL THE OBJECT?
 	/*
 		//Moved to has actions
@@ -141,10 +141,10 @@ if (_hasPatient and !r_drag_sqf and !r_action and !_inVehicle and !r_player_unco
 			} else {
 				player removeAction s_player_fillfuel20;
 				player removeAction s_player_fillfuel5;
-			};	
+			};
 		};
 		*/
-	
+
 		//CAN WE ISSUE ANOTHER KIND OF AMMUNITION?
 		if (count weapons _unit > 0) then {
 			//Get mag array

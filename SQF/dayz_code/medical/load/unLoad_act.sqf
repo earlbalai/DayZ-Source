@@ -3,16 +3,16 @@
 
 private ["_args","_dragger","_vcl","_wounded"];
 
-_args		= _this select 3;
-_name 		= _args select 0;
-_vcl 		= _args select 1;
-_crewVcl	= crew _vcl;
+_args = _this select 3;
+_name = _args select 0;
+_vcl = _args select 1;
+_crewVcl = crew _vcl;
 
 _name removeAction NORRN_pullOutAction;
 
 for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 {
-	_unit = _crewVcl select _loop; 
+	_unit = _crewVcl select _loop;
 
 	if (_unit getVariable "NORRN_unconscious") then
 	{

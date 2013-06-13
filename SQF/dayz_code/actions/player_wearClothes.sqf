@@ -27,7 +27,7 @@ _isHero = _humanity > 5000;
 _itemNew = "Skin_" + _myModel;
 
 if ( !(isClass(_config >> _itemNew)) ) then {
-	_itemNew = if (!_isFemale) then {"Skin_Survivor2_DZ"} else {"Skin_SurvivorW2_DZ"}; 
+	_itemNew = if (!_isFemale) then {"Skin_Survivor2_DZ"} else {"Skin_SurvivorW2_DZ"};
 };
 
 switch (_item) do {

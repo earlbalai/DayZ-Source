@@ -25,26 +25,26 @@ if ((_booleans select 1) OR (_booleans select 2)) exitWith { cutText [localize "
 if ((count _worldspace) == 2) then {
 	player removeMagazine _item;
 	_dir = _worldspace select 0;
-	_location = _worldspace select 1; 
-	
+	_location = _worldspace select 1;
+
 	player playActionNow "Medic";
 	sleep 1;
 	// fireplace location may not be in front of player (but in 99% time it should)
 	player setDir _dir;
 	player setPosATL (getPosATL player);
-	
+
 	_dis=20;
 	//_sfx = "repair";
-	//[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+	//[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	sleep 5;
 
 	_fire = createVehicle ["Land_Fire_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
 	_fire setDir _dir;
 	_fire setPos _location; // follow terrain slope
 	player reveal _fire;
-	
+
 	_fire spawn player_fireMonitor;
 
 	cutText [localize "str_fireplace_01", "PLAIN DOWN"];

@@ -5,7 +5,7 @@
 	Description:
 	Allows a player to tame/domesticate a dog.
 	Script is applied to object via addAction.
-		
+
 	Variables:
 	_target = Object that action is attached too.
 	_caller = Object that activates the action.
@@ -14,10 +14,10 @@
 */
 
 private["_target", "_caller", "_id", "_dog", "_pos", "_fsmid"];
-_target = 	_this select 0;
-_caller = 	_this select 1;
-_id =		_this select 2;
-_dog =		_this select 3;
+_target = _this select 0;
+_caller = _this select 1;
+_id = _this select 2;
+_dog = _this select 3;
 
 player removeMagazine "FoodSteakRaw";
 _animalID = _dog getVariable "fsm_handle";

@@ -1,15 +1,15 @@
 private["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_dis","_sfx"];
 
 call gear_ui_init;
-_item = 		_this;
-_playerPos = 	getPosATL player;
-_canFill = 		count nearestObjects [_playerPos, ["Land_pumpa","Land_water_tank"], 4] > 0;
-_isPond = 		false;
-_isWell = 		false;
-_pondPos = 		[];
-_objectsWell = 	[];
+_item = _this;
+_playerPos = getPosATL player;
+_canFill = count nearestObjects [_playerPos, ["Land_pumpa","Land_water_tank"], 4] > 0;
+_isPond = false;
+_isWell = false;
+_pondPos = [];
+_objectsWell = [];
 
-_onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hasbottleitem = _this in magazines player;
@@ -24,7 +24,7 @@ if (!dayz_isSwimming) then {
 };
 
 if (!_canFill) then {
-	_objectsWell = 	nearestObjects [_playerPos, [], 4];
+	_objectsWell = nearestObjects [_playerPos, [], 4];
 	{
 		//Check for Well
 		_isWell = ["_well",str(_x),false] call fnc_inString;
@@ -33,7 +33,7 @@ if (!_canFill) then {
 };
 
 if (!_canFill) then {
-	_objectsPond = 		nearestObjects [_playerPos, [], 50];
+	_objectsPond = nearestObjects [_playerPos, [], 50];
 	{
 		//Check for pond
 		_isPond = ["pond",str(_x),false] call fnc_inString;
@@ -59,13 +59,13 @@ if (_canFill) then {
 
 		_dis=5;
 		_sfx = "fillwater";
-		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
+		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 		[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-		
+
 		player addMagazine "ItemWaterbottle";
 		};
 
-		cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
+		cutText [format[(localize "str_player_01"),_qty], "PLAIN DOWN"];
 	} else {
 		cutText [(localize "str_player_02") , "PLAIN DOWN"];
 	};

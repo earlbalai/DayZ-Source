@@ -5,12 +5,12 @@ call gear_ui_init;
 //note - one slot ammo can be used!
 
 
-_item =     _this;
+_item = _this;
 
-_config =   configFile >> "CfgMagazines" >> _item;
+_config = configFile >> "CfgMagazines" >> _item;
 
-_consume =  getArray (_config >> "ItemActions" >> "ReloadMag" >> "use") select 0;
-_create =   getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
+_consume = getArray (_config >> "ItemActions" >> "ReloadMag" >> "use") select 0;
+_create = getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
 
 _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
 
@@ -24,8 +24,8 @@ if !(_create in _mags) exitWith {cutText [localize "str_must_have_weapon", "PLAI
 */
 player playActionNow "PutDown";
 
-_consume_magsize =  getNumber(configFile >> "CfgMagazines" >> _consume >> "count");
-_create_magsize =   getNumber(configFile >> "CfgMagazines" >> _create >> "count");
+_consume_magsize = getNumber(configFile >> "CfgMagazines" >> _consume >> "count");
+_create_magsize = getNumber(configFile >> "CfgMagazines" >> _create >> "count");
 
 _consume_type = getNumber(configFile >> "CfgMagazines" >> _consume >> "type");
 
@@ -35,8 +35,8 @@ _slotend = 0;
 if (_consume_type == 256) then {
     _slotstart = 109;
     _slotend = 120;
-}; 
-if (_consume_type == 16) then {    
+};
+if (_consume_type == 16) then {
     _slotstart = 122;
     _slotend = 129;
 };
@@ -57,7 +57,7 @@ for "_i" from _slotstart to _slotend do {
         _qty_consume_ammo = _qty_consume_ammo + gearSlotAmmoCount _control;
         _qty_consume_mags = _qty_consume_mags+1;
     };
-    if  (_mag == _create) then {
+    if (_mag == _create) then {
         _qty_total_ammo = _qty_total_ammo + gearSlotAmmoCount _control;
         _qty_create_ammo = _qty_create_ammo + gearSlotAmmoCount _control;
         _qty_create_mags = _qty_create_mags+1;
@@ -96,9 +96,9 @@ _qtynew_create_mags_full = floor(_qtynew_create_ammo/_create_magsize);
 _qtynew_consume_ammo_rest = _qtynew_consume_ammo - (_qtynew_consume_mags_full*_consume_magsize);
 _qtynew_create_ammo_rest = _qtynew_create_ammo - (_qtynew_create_mags_full*_create_magsize);
 
-//remove all _consume and _create mags (we already have total ammo count) 
+//remove all _consume and _create mags (we already have total ammo count)
 player removeMagazines _consume;
-player removeMagazines _create; 
+player removeMagazines _create;
 
 for "_i" from 1 to _qtynew_consume_mags_full do {
     player addMagazine _consume;

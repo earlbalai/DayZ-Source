@@ -3,11 +3,11 @@
 //record any key hits to the required selection
 private["_zed","_selection","_damage","_hitter","_projectile","_headShots","_damageOrg","_unit"];
 
-_zed = 			_this select 0;
-_selection = 	_this select 1;
-_damage = 		_this select 2;
-_hitter = 		_this select 3;
-_projectile = 	_this select 4;
+_zed = _this select 0;
+_selection = _this select 1;
+_damage = _this select 2;
+_hitter = _this select 3;
+_projectile = _this select 4;
 
 if (local _zed) then {
 	if (_damage > 1 and _projectile != "") then {

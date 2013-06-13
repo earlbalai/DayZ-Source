@@ -1,5 +1,5 @@
 // private["_radius","_position","_inVehicle","_dateNow","_age","_locationstypes","_nearestCity","_nearbyBuildings","_nearby","_type","_config","_canZombie","_canLoot","_dis","_keepAwayDist","_isNoone","_looted","_cleared"];//_radius, _position, _inVehicle, _dateNow, _age, _locationstypes, _nearestCity, _nearbyBuildings
-// 
+//
 // _radius = _this select 0;
 // _position = _this select 1;
 // _inVehicle = _this select 2;
@@ -7,7 +7,7 @@
 // _age = _this select 4;
 // _locationstypes = _this select 5;
 // _nearestCity = _this select 6;
-//   		
+//
 // _looted = (_x getVariable ["looted",-0.1]);
 // _cleared = (_x getVariable ["cleared",true]);
 // _dateNow = (DateToNumber date);
