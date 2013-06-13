@@ -1,3 +1,4 @@
+
 private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave","_wpnType","_isokay"];
 disableSerialization;
 _timeOut = 0;
@@ -329,7 +330,7 @@ while {true} do {
 	setGroupIconsVisible [false,false];
 	clearGroupIcons group player;
 	*/
-	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, (r_player_blood/r_player_bloodTotal)],  [1, 1, 1, 0.0]];
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1 min (4*r_player_blood/3/r_player_bloodTotal)],  [1, 1, 1, 0.0]];
 	"colorCorrections" ppEffectCommit 0;
 	sleep 2;
 
