@@ -19,7 +19,7 @@ Affected addons:
 
 	    * [FIXED] - 
 	    * [FIXED] - 
-	    * [FIXED] - 
+	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
 		
 	    * [UPDATED] - 
 	    * [UPDATED] - 
