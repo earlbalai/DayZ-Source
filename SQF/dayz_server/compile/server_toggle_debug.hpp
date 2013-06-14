@@ -8,8 +8,8 @@ Please request permission to use/alter/distribute from project leader (R4Z0R49)
 // comment this out if you don't want any L related debug
 #define LOGIN_DEBUG
 
-// comment this out if you don't want any VEHICLE related debug
-#define VEHICLE_DEBUG
+// comment this out if you don't want any VEHICLE/TENT/OBJECT related debug
+#define OBJECT_DEBUG
 
 // comment this out if you don't want any INVENTORY related debug
-#define VEHICLE_DEBUG
+#define PLAYER_DEBUG
