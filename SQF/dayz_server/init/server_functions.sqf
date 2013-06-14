@@ -92,7 +92,9 @@ eh_localCleanup = {
 			deleteVehicle _unit;
 			deleteGroup _myGroupUnit;
 			_unit = nil;
+			#ifdef SERVER_DEBUG
 			diag_log ("CLEANUP: DELETED A " + str(_type) );
+			#endif
 		};
 	}];
 };
