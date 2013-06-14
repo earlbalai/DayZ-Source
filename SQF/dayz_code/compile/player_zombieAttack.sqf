@@ -71,7 +71,7 @@ if (abs(_deg) > (30 + 1 * _speed)) exitWith { // we cancel the attack,  but we s
 	};
 	("bad angle:") // +str(round(abs(_deg)))+"/"+str(round(15 + 3 * _speed))
 };
-*/
+
 
 // check Z stance. Stand up Z if it prones/kneels. Cancel the attack.
 if (unitPos _unit != "UP") exitWith {
@@ -79,12 +79,14 @@ if (unitPos _unit != "UP") exitWith {
 	"bad stance"
 };
 
+*/
+
 // compute the animation move
 _rnd = 0;
 
 switch true do {
 	case ((toArray(animationState player) select 5) == 112) : {
-		if (_distance < 2) then {
+		if (_distance < 3) then {
 			_rnd = ceil(random 9);
 			diag_log (str(_rnd));
 			_move = "ZombieFeed" + str(_rnd);
@@ -165,9 +167,6 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 
 // player may fall...
 _deg = [player, _unit] call BIS_fnc_relativeDirTo;
-//if (_deg > 180) then { _deg = _deg - 360; };
-//	AND {((abs(_deg) < 50) OR {(abs(_deg) >(180-50))})}) then { // no tackle if Zed is not in front or in back
-//((!_isVehicle) and (_speed >= 5.62))
 diag_log (str(_deg));
 switch true do {
 	case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 293) and (_deg <= 360)) or ((_deg > 0) and (_deg < 68)))) : {
@@ -184,7 +183,7 @@ switch true do {
 	};
 	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 135) and (_deg < 225))) : {
 		_lastTackle = player getVariable ["lastTackle", 0];
-		if (time - _lastTackle > 5) then { // no tackle if previous tackle occured less than X seconds before
+		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
 			player setVariable ["lastTackle", time];
 			// stop player
 			//_vel = velocity player;
@@ -200,28 +199,6 @@ switch true do {
 		};
 	};
 };
-
-/*
-//Back
-if (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 90) and (_deg < 270))) then {
-	_lastTackle = player getVariable ["lastTackle", 0];
-	if (time - _lastTackle > 5) then { // no tackle if previous tackle occured less than X seconds before
-		player setVariable ["lastTackle", time];
-		// stop player
-		_vel = velocity player;
-		player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-		// make player dive
-		_move = switch (toArray(animationState player) select 17) do {
-			case 114 : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle
-			case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-			default {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"};
-		};
-		player playMove _move;
-//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
-	};
-};
-*/
-
 
 // compute damage for vehicle and/or the player
 if (_isVehicle) then {
@@ -265,7 +242,7 @@ if (_isVehicle) then {
 	}; // fi veh with compartment
 }
 else { // player by foot
-	_damage = 0.2 + random (0.512);
+	_damage = 0.2 + random (1);
 
 	switch true do {
 		case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
