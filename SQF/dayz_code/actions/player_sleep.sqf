@@ -37,11 +37,17 @@ player setVariable["medForceUpdate",true];
 dayz_lastMeal = time;
 dayz_hunger = 0;
 */
-//add infection chance for cure
-if (random 15 < 1) then {
-	r_player_infected = false;
-	player setVariable["USEC_infected",true,true];
-};
+
+//1% chance every 5 mins to remove infection
+_lastRest = player getVariable ["lastRest", 0];
+if (time - _lastRest > 300) then { 
+	player setVariable ["lastRest", time];
+	//add infection chance for cure
+	if (floor(random 100) < 1) then {
+		r_player_infected = false;
+		player setVariable["USEC_infected",true,true];
+	};
+};	
 PVDZ_plr_Save = [player,[],true];
 publicVariableServer "PVDZ_plr_Save";
 //End Effects

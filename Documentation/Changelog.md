@@ -23,7 +23,7 @@ Affected addons:
 	    * [FIXED] - Blood transfusion should now work properly.
 		
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
-	    * [UPDATED] - 
+	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
 	    * [UPDATED] - 
 
 ______________________
