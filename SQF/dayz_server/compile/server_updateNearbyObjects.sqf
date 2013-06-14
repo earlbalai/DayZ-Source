@@ -5,6 +5,6 @@ _pos = _this select 0;
 {
 	[_x, "gear"] call server_updateObject;
 #ifdef OBJECT_DEBUG
-diag_log(format["Updating nearby object: %1 at %2", _x, _pos]);
+diag_log(format["Updating nearby object at %1",_pos]);
 #endif
 } forEach nearestObjects [_pos, ["Car", "Helicopter", "Motorcycle", "Ship", "TentStorage", "StashSmall", "StashMedium"], 10];
