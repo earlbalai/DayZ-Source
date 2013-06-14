@@ -72,3 +72,5 @@ switch (_iClass) do {
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };
+
+_item   // used in server_spawnCrashSite

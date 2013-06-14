@@ -1,5 +1,5 @@
 
-private ["_guaranteedLoot","_randomizedLoot","_spawnOnStart","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_fadeFire","_timeAdjust","_timeToSpawn","_crashModel","_lootTable","_crashName","_debugarea","_crash","_size","_position","_y","_itemTypes","_index","_weights","_cntWeights","_itemType","_lootpos","_angle","_radius","_clutter","_nearby","_nearBy","_config","_newHeight"];
+private ["_guaranteedLoot","_randomizedLoot","_spawnOnStart","_frequency","_variance","_spawnChance","_spawnMarker","_spawnRadius","_spawnFire","_fadeFire","_timeAdjust","_timeToSpawn","_crashModel","_lootTable","_crashName","_debugarea","_crash","_width","_length","_position","_y","_crashAngle","_itemTypes","_index","_weights","_cntWeights","_itemType","_lootpos","_angle","_radius","_item","_clutter","_config","_newHeight"];
 
 _guaranteedLoot = _this select 0;
 _randomizedLoot = _this select 1;
@@ -43,22 +43,39 @@ while {true} do {
 	// Percentage roll
 	if (random 1 <= _spawnChance) then {
 		_debugarea = getMarkerPos "respawn_west";
-		_crash = _crashModel createVehicleLocal _debugarea; // this is to fix sizeof bug
+		_crash = _crashModel createVehicleLocal _debugarea;
 		sleep 0.01;
-		_size = (sizeOf _crashModel)*2/3;
+		_width = ((boundingBox _crash) select 0) select 0;
+		_length = ((boundingBox _crash) select 0) select 1;
 
-		_position = [];
-		for [{_y = 0}, {(_y < 10) AND (((count _position) == 0) OR {(_position distance _debugarea<1)})}, {_y = _y + 1}] do {
-			// sizeof entity, disk center point, min radius, max radius, min altitude
-			//   max altitude, require surfaces list, require in water, vehicle distance, search the closest
-			_position = [getMarkerPos _spawnMarker,0,_spawnRadius,_size,0,_size*.2,0, [], [_debugarea,_debugarea]] call BIS_fnc_findSafePos;
+		_position = _debugarea;
+		for "_y" from 1 to 10 do {
+			_position = [getMarkerPos _spawnMarker,0,_spawnRadius,_length,0,_length*.2,0, [], [_debugarea,_debugarea]] call BIS_fnc_findSafePos;
+			switch (true) do {
+				case (count _position < 3) : {};
+				case (_position distance _debugarea < 1) : { _position = []; };
+				case (count nearestObjects [_position, [],  _length*2] > 0) : { _position = []; };
+				default {	
+					deleteVehicle _crash;
+					_position set [2,0];
+					_crash = _crashModel createVehicleLocal _position;
+					sleep 0.001;
+					_position = getPosATL _crash;
+					_y = 11; //break;
+				};
+			};
 		};
-		_position set [2,0];
 
-		deleteVehicle _crash; // delete local vehicle used for "sizeof"
+		deleteVehicle _crash; // delete local vehicle used for get width and length
 
-		if ((count _position) >= 2) then {
+		if (count _position >= 2) then {
 			diag_log format["CRASHSPAWNER: Spawning '%1' with loot table '%2' at %3", _crashName, _lootTable, _position call fa_coor2str];
+
+			_position set [2,0];
+			_crash = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"]; // used to get modelToWorld
+			_crashAngle = random 360;
+			_crash setDir _crashAngle;
+			_crash setPos _position;
 
 			_itemTypes = [] + getArray (configFile >> "CfgBuildingLoot" >> _lootTable >> "lootType");
 			_index = dayz_CBLBase find _lootTable;
@@ -74,33 +91,34 @@ while {true} do {
 				_lootpos = [];
 				for [{_y = 0}, {_y < 10 && ((count _lootpos) == 0)}, {_y = _y + 1}] do {
 					_angle = random 360;
-					_radius = _size/3 + random _size*2/3;
-					_lootpos = [ (_position select 0) + _radius*sin(_angle), (_position select 1) + _radius*cos(_angle)];
-					_lootpos = _lootpos findEmptyPosition [0,_size/3, "WeaponHolder"];
+					_radius = 0.9 + random 0.6 ;//* (1 + random 0.3);
+					_lootpos = _crash modelToWorld [_radius*_width*sin(_angle), _radius*_length*cos(_angle), 0];
+					_lootpos = _lootpos findEmptyPosition [0,_length/3, "WeaponHolder"];
 				};
 				if ((count _lootpos) >= 2) then {
 					_lootpos set [2,0];
-					//"Sign_sphere100cm_EP1" createVehicle [_lootpos select 0, _lootpos select 1, 0.30];
-					[_itemType select 0, _itemType select 1, _lootpos, 1] call spawn_loot;
-
-					//Grass clear system uncomment for clear areas around choppers loot. Remove the // from the next two lines to enable
-
-					//_clutter = createVehicle ["ClutterCutter_small_2_EP1", _lootpos, [], 0, "CAN_COLLIDE"];
-					//_clutter setPos _lootpos;
-
+					_item = [_itemType select 0, _itemType select 1, _lootpos, 1] call spawn_loot;
+					_item setVariable ["permaLoot",true];
+					
+					if (dayz_spawnCrashSite_clutterCutter == 1) then { // shift loot upward to 5cm
+						_lootpos set [2,0.05];
+						_item setPosATL _lootpos;
+					}
+					else { if (dayz_spawnCrashSite_clutterCutter >= 2) then { // cutterclutter
+						_clutter = createVehicle ["ClutterCutter_small_2_EP1", _lootpos, [], 0, "CAN_COLLIDE"];
+						_clutter setPos _lootpos;
+						if (dayz_spawnCrashSite_clutterCutter == 3) then { // debug
+							createVehicle ["Sign_sphere100cm_EP1", [_lootpos select 0, _lootpos select 1, 0.30], [], 0, "CAN_COLLIDE"];					
+						};
+					};};
+					 
 					//diag_log(format["CRASHSPAWNER: Loot spawn at '%1 - %3' with loot table '%2'", _crashName, str(_itemType),_lootpos]);
+					sleep 0.001;
 				};
 			}; // loot loop
-			// ReammoBox is preferred parent class here, as WeaponHolder wouldn't match MedBox0 and other such items.
-			_nearby = _position nearObjects ["ReammoBox", _size*2];
-			{
-				_x setVariable ["permaLoot",true];
-			} forEach _nearBy;
-
+			
 			_crash = createVehicle [_crashModel,_position, [], 0, "CAN_COLLIDE"];
-
-			// Randomize the direction the wreck is facing
-			_crash setDir random 360;
+			_crash setDir _crashAngle;
 
 			// Using "custom" wrecks (using the destruction model of a vehicle vs. a prepared wreck model) will result
 			// in the model spawning halfway in the ground.  To combat this, an OPTIONAL configuration can be tied to
