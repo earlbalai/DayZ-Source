@@ -54,8 +54,8 @@ if ((count _worldspace) == 2) then {
 	_alt2 = getPosASL _object;
 	_object setPos _location;
 	_alt1 = getPosASL _object;
-	if (alt2 < alt1) then {
-		_location set [2, alt2 - alt1];
+	if (_alt2 < _alt1) then {
+		_location set [2, _alt2 - _alt1];
 		_object setPos _location;
 	};
 	player reveal _object;
