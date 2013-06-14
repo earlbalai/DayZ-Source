@@ -3,6 +3,8 @@
 */
 private ["_object","_type","_objectID","_uid","_lastUpdate","_needUpdate","_object_position","_object_inventory","_object_damage","_isNotOk"];
 
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
 _object = 	_this select 0;
 _type = 	_this select 1;
 _forced = false;
@@ -22,7 +24,9 @@ if (!((isNil "_object") OR {(isNull _object)})) then {
 
 if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 { 
+#ifdef OBJECT_DEBUG
     diag_log(format["Non-string Object: ID %1 UID %2", _objectID, _uid]);
+#endif
     //force fail
     _objectID = "0";
     _uid = "0";
@@ -32,11 +36,13 @@ if (!_parachuteWest) then {
 	if (_objectID == "0" && _uid == "0") then
 	{
 		_object_position = getPosATL _object;
+		#ifdef OBJECT_DEBUG
     		diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",
 			typeOf _object,
 			_object_position select 0,
 			_object_position select 1, 
 			_object_position select 2]);
+		#endif
 			_isNotOk = true;
 	};
 };
@@ -59,7 +65,9 @@ _object_position = {
 		_fuel = fuel _object;
 	};
 	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
+	#ifdef OBJECT_DEBUG
 	diag_log ("HIVE: WRITE: "+ str(_key));
+	#endif
 
 	_key call server_hiveWrite;
 };
@@ -79,7 +87,9 @@ _object_inventory = {
 		} else {
 			_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
 		};
+		#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: "+ str(_key));
+		#endif
 		_key call server_hiveWrite;
 	};
 };
@@ -111,15 +121,18 @@ _object_damage = {
 		} else {
 			_key = format["CHILD:306:%1:%2:%3:",_objectID,_array,_damage];
 		};
-		
+		#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: "+ str(_key));
+		#endif
 		_key call server_hiveWrite;	
 
 	} else {		
 		if (_object in needUpdate_objects) then {
 			needUpdate_objects = needUpdate_objects - [_object];
 		};
+		#ifdef OBJECT_DEBUG
 		diag_log format["DEBUG: Monitoring: %1",_object];
+		#endif
 		needUpdate_objects set [count needUpdate_objects, _object];
 	};
 };
