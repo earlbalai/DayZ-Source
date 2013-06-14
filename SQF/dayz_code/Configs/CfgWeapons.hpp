@@ -13,6 +13,7 @@ class CfgWeapons {
 	class GrenadeLauncher;  // External class reference
 	//class M107_DZ;	// External class reference
 	//class BAF_AS50_scoped;	// External class reference
+	//class DMR;	// External class reference
 		
 	#include "CfgWeapons\Melee\MeleeMachete.hpp"
 	#include "CfgWeapons\Melee\ItemMachete.hpp"
@@ -37,6 +38,7 @@ class CfgWeapons {
 	//Sniper Rifel
 	//#include "CfgWeapons\Weapon\Sniper\AS50.hpp"
 	#include "CfgWeapons\Weapon\Sniper\M107.hpp"
+	//#include "CfgWeapons\Weapon\Sniper\DMR2.hpp"
 	
 	//crafting
 	#include "CfgCrafting\CfgCrafting.hpp"

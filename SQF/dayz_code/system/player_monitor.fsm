@@ -1230,7 +1230,7 @@ class FSM
        "	while {true} do {" \n
        "	//	fps_safty_check = diag_fpsmin;" \n
        "	//	if (fps_safty_check > 20) then {" \n
-       "			if ((isNil ""dayz_locationCheck_round"") OR {(scriptDone dayz_locationCheck_round)}) then {dayz_locationCheck_round = [] spawn stream_locationCheck;};" \n
+       "			if ((isNil ""dayz_locationCheck_round"") OR {(scriptDone dayz_locationCheck_round)}) then {dayz_locationCheck_round = [true] spawn stream_locationCheck;};" \n
        "			sleep 2;" \n
        "	//	};" \n
        "	};" \n
@@ -1423,11 +1423,10 @@ class FSM
     {
       name = "Stream";
       init = /*%FSM<STATEINIT""">*/"//stream in location" \n
-       "dayz_locationCheck_round = [] spawn stream_locationCheck;" \n
+       "[false] call stream_locationCheck;" \n
        "" \n
        "_zombies = (getPosATL player) nearEntities [""zZombie_Base"",30];" \n
        "{deleteVehicle _x} forEach _zombies;" \n
-       "waitUntil {scriptDone dayz_locationCheck_round};" \n
        "" \n
        "endLoadingScreen;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
