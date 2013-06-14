@@ -419,6 +419,7 @@ if(isServer) then {
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	Server_InfectedCamps = [];
+	dayz_spawnCrashSite_clutterCutter=0; // helicrash spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 };
 
 if(!isDedicated) then {
