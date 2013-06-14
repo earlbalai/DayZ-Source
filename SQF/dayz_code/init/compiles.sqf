@@ -119,7 +119,7 @@ if (!isDedicated) then {
 		private["_timeOut","_display","_control1","_control2"];
 		disableSerialization;
 		_timeOut = 0;
-		dayz_loadScreenMsg = "";
+		dayz_loadScreenMsg = "Waiting for server to accept connection...";
 		diag_log "DEBUG: loadscreen guard started.";
 		_display = uiNameSpace getVariable "BIS_loadingScreen";
 		_control1 = _display displayctrl 8400;
