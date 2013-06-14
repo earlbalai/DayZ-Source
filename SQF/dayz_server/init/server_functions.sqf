@@ -1,3 +1,4 @@
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 waituntil {!isnil "bis_fnc_init"};
 
 BIS_MPF_remoteExecutionServer = {
@@ -53,10 +54,14 @@ check_publishobject = {
 	_allowedObjects = ["TentStorage", "Hedgehog_DZ", "Sandbag1_DZ", "TrapBear", "Wire_cat1", "StashSmall", "StashMedium"];
 	_allowed = false;
 
+#ifdef OBJECT_DEBUG
 	diag_log format ["DEBUG: Checking if Object: %1 is allowed published by %2", _object, _playername];
+#endif
 
 	if ((typeOf _object) in _allowedObjects) then {
+#ifdef OBJECT_DEBUG
 		diag_log format ["DEBUG: Object: %1 published by %2 is Safe",_object, _playername];
+#endif
 		_allowed = true;
 	};
 
@@ -87,7 +92,9 @@ eh_localCleanup = {
 			deleteVehicle _unit;
 			deleteGroup _myGroupUnit;
 			_unit = nil;
+			#ifdef SERVER_DEBUG
 			diag_log ("CLEANUP: DELETED A " + str(_type) );
+			#endif
 		};
 	}];
 };

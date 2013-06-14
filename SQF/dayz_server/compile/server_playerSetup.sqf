@@ -1,10 +1,11 @@
-
 private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_debug","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID"];//diag_log ("SETUP: attempted with " + str(_this));
 
 //diag_log(format["%1 DEBUG %2", __FILE__, _this]);
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
+
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 if (isNull _playerObj) exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, player object null: " + str(_playerObj));
@@ -231,7 +232,9 @@ _clientID publicVariableClient "dayzPlayerLogin2";
 _playerObj setVariable ["lastTime",time];
 //_playerObj setVariable ["model_CHK",typeOf _playerObj];
 
+#ifdef LOGIN_DEBUG
 diag_log format["LOGIN PUBLISHING: UID#%1 CID#%2 %3 as %4 should spawn at %5", getPlayerUID _playerObj, _characterID, _playerObj call fa_plr2str, typeOf _playerObj, (_worldspace select 1) call fa_coor2str];
+#endif
 
 PVDZ_plr_Login1 = null;
 PVDZ_plr_Login2 = null;
