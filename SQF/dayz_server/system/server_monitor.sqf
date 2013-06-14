@@ -1,4 +1,5 @@
 []execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -314,8 +315,10 @@ if (isServer and isNil "sm_done") then {
 				_entity setFuel _fuel;
 				_entity call fnc_veh_ResetEH;
 			};
+#ifdef OBJECT_DEBUG
 			diag_log (format["VEHICLE %1 %2 at %3, damage=%4, fuel=%5",
 				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, damage _entity, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
+#endif
 		}
 		else { // else for object or non legit vehicle
 			if (!(_class in SafeObjects )) then {  
@@ -331,7 +334,9 @@ if (isServer and isNil "sm_done") then {
 					if ((_class != "TentStorage") OR {(_inventory call fa_tentEmpty)}) then {
 						_action = "FAILED";
 						_damage = 5;
-						//diag_log(format["Won't spawn object #%1(%4) in/close to a building, _point:%3, inventory: %5 booleans:%2",_ObjectID, _booleans, _point, _class, _inventory]);
+#ifdef OBJECT_DEBUG
+						diag_log(format["Won't spawn object #%1(%4) in/close to a building, _point:%3, inventory: %5 booleans:%2",_ObjectID, _booleans, _point, _class, _inventory]);
+#endif
 					};
 				};
 			};
@@ -360,8 +365,10 @@ if (isServer and isNil "sm_done") then {
 				_rawData = "HiveEXT" callExtension _key;
 				_key = format["CHILD:304:%1:",_ObjectID]; // delete by ID (not UID which is handler 310)
 				_rawData = "HiveEXT" callExtension _key;*/
+#ifdef OBJECT_DEBUG
 				diag_log (format["IGNORED %1 oid#%2 cid:%3 ",
 					_class, _ObjectID, _CharacterID ]);
+#endif
 			};
 		};
 //diag_log(format["VEH MAINTENANCE DEBUG %1 %2", __FILE__, __LINE__]);
