@@ -11,5 +11,5 @@ Please request permission to use/alter/distribute from project leader (R4Z0R49)
 // comment this out if you don't want any VEHICLE/TENT/OBJECT related debug
 #define OBJECT_DEBUG
 
-// comment this out if you don't want any INVENTORY related debug
+// comment this out if you don't want any PLAYER (WORLDSPACE/INVENTORY/ETC) related debug
 #define PLAYER_DEBUG
