@@ -14,6 +14,7 @@
 #include "Blueprints\Weapons\G36C_camo.hpp"
 #include "Blueprints\Weapons\G36A_camo.hpp"
 #include "Blueprints\Weapons\G36K_camo.hpp"
+#include "Blueprints\Weapons\DMR2.hpp"
 //Medical
 #include "Blueprints\Medical\Bandage.hpp"
 //Tools
@@ -29,6 +30,7 @@
 #include "Blueprints\Attachments\Kobra.hpp"
 #include "Blueprints\Attachments\PSO.hpp"
 #include "Blueprints\Attachments\SILENCER.hpp"
+#include "Blueprints\Attachments\SNIPER_SCOPE.hpp"
 */
 
 class CraftingItem : ItemCore {
