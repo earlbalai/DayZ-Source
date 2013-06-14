@@ -21,18 +21,12 @@ Affected addons:
 	    * [FIXED] - Night time LOS should now reset correct.
 	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
 	    * [FIXED] - Blood transfusion should now work properly.
-	    * [FIXED] -
-	    * [FIXED] -
-	    * [FIXED] -
+		* [FIXED] - Zeds can knock you unconscious again.
 		
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
 	    * [UPDATED] - Updated tackle to provide knockdown from back of player but push from other directions.
-	    * [UPDATED] - Zed will now attack again while prone with animation.
-	    * [UPDATED] -
-	    * [UPDATED] -
-	    * [UPDATED] -
-	    * [UPDATED] -
+		* [UPDATED] - Zed will now attack again while prone with animation.
 
 ______________________
 Version 1.7.7
