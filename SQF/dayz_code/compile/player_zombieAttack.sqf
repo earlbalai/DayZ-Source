@@ -187,15 +187,15 @@ switch true do {
 		if (time - _lastTackle > 5) then { // no tackle if previous tackle occured less than X seconds before
 			player setVariable ["lastTackle", time];
 			// stop player
-			_vel = velocity player;
-			player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+			//_vel = velocity player;
+			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 			// make player dive
 			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle
+				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
 				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"};
+				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 			};
-			player playMove _move;
+			player switchMove _move;
 	//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 		};
 	};
