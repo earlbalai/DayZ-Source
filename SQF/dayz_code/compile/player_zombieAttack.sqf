@@ -35,7 +35,7 @@ if (abs(_hu - _hv) < 1.3) then {
 	if ((!_isVehicle) AND {(abs(_hu - _hv) > 0.15)}) then { _isStairway = true; };
 };
 
-if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
+//if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
 /*
 // Not needed LOS is checked by the FSM
 // check if space between player/vehicle and Z is clear or not
@@ -83,6 +83,13 @@ if (unitPos _unit != "UP") exitWith {
 _rnd = 0;
 
 switch true do {
+	case ((toArray(animationState player) select 5) == 112) : {
+		if (_distance < 2) then {
+			_rnd = ceil(random 9);
+			diag_log (str(_rnd));
+			_move = "ZombieFeed" + str(_rnd);
+		};
+	};
 	case (r_player_unconscious) : {
 		if (random 3 < 1) then {
 			_rnd = ceil(random 9);
@@ -137,7 +144,7 @@ if (_rnd == 0) exitWith {"bad move (too far)"};  // move not found -- Z too far?
 
 // fix the direction
 _unit setDir ((getDir _unit) + _deg);
-_unit setPosATL (getPosATL _unit);
+//_unit setPosATL (getPosATL _unit);
 
 
 // let's animate the Z
@@ -158,9 +165,45 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 
 // player may fall...
 _deg = [player, _unit] call BIS_fnc_relativeDirTo;
-if (_deg > 180) then { _deg = _deg - 360; };
-if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or low speed
-	AND {((abs(_deg) < 50) OR {(abs(_deg) >(180-50))})}) then { // no tackle if Zed is not in front or in back
+//if (_deg > 180) then { _deg = _deg - 360; };
+//	AND {((abs(_deg) < 50) OR {(abs(_deg) >(180-50))})}) then { // no tackle if Zed is not in front or in back
+//((!_isVehicle) and (_speed >= 5.62))
+diag_log (str(_deg));
+switch true do {
+	case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 293) and (_deg <= 360)) or ((_deg > 0) and (_deg < 68)))) : {
+		diag_log ("Front");
+		player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
+	};
+	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 248) and (_deg < 293))) : {
+		diag_log ("Left");
+		player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
+	};
+	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 68) and (_deg < 113))) : {
+		diag_log ("Right");
+		player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
+	};
+	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 135) and (_deg < 225))) : {
+		_lastTackle = player getVariable ["lastTackle", 0];
+		if (time - _lastTackle > 5) then { // no tackle if previous tackle occured less than X seconds before
+			player setVariable ["lastTackle", time];
+			// stop player
+			_vel = velocity player;
+			player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+			// make player dive
+			_move = switch (toArray(animationState player) select 17) do {
+				case 114 : {"AmovPercMsprSlowWrflDf_AmovPpneMstpSrasWrflDnon"}; // rifle
+				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+				default {"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon"};
+			};
+			player playMove _move;
+	//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
+		};
+	};
+};
+
+/*
+//Back
+if (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 90) and (_deg < 270))) then {
 	_lastTackle = player getVariable ["lastTackle", 0];
 	if (time - _lastTackle > 5) then { // no tackle if previous tackle occured less than X seconds before
 		player setVariable ["lastTackle", time];
@@ -177,6 +220,7 @@ if (((!_isVehicle) and {(_speed >= 5.62)}) // no tackle if player in vehicle or 
 //		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 	};
 };
+*/
 
 
 // compute damage for vehicle and/or the player
