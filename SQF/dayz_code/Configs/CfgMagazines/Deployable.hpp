@@ -11,7 +11,7 @@
 		class ItemActions {
 			class Pitch {
 				text = $STR_PITCH_TENT;
-				script = "spawn player_tentPitch;";
+				script = "spawn player_tentPitch; r_action_count = r_action_count + 1;";
 			};
 		};
 	};
@@ -29,7 +29,7 @@
 		class ItemActions {
 			class Pitch {
 				text = $STR_PITCH_TENT;
-				script = "spawn player_tentPitch;";
+				script = "spawn player_tentPitch; r_action_count = r_action_count + 1;";
 			};
 		};
 	};
@@ -46,7 +46,7 @@
 		class ItemActions {
 			class Build {
 				text = $STR_ACTION_BUILD;
-				script = "spawn player_build;";
+				script = "spawn player_build; r_action_count = r_action_count + 1;";
 				require = "ItemEtool";
 				create = "Sandbag1_DZ";
 			};
@@ -65,7 +65,7 @@
 		class ItemActions {
 			class Build {
 				text = $STR_ACTION_BUILD;
-				script = "spawn player_build;";
+				script = "spawn player_build; r_action_count = r_action_count + 1;";
 				require = "ItemToolbox";
 				create = "Hedgehog_DZ";
 			};
@@ -84,7 +84,7 @@
 		class ItemActions {
 			class Build {
 				text = $STR_ACTION_BUILD;
-				script = "spawn player_setTrap;";
+				script = "spawn player_setTrap; r_action_count = r_action_count + 1;";
 				require = "ItemToolbox";
 				create = "BearTrap_DZ";
 			};
@@ -103,7 +103,7 @@
 		class ItemActions {
 			class Build {
 				text = $STR_ACTION_BUILD;
-				script = "spawn player_build;";
+				script = "spawn player_build; r_action_count = r_action_count + 1;";
 				require = "ItemToolbox";
 				create = "Wire_cat1";
 			};

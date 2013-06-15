@@ -3,7 +3,12 @@ private["_create","_config","_create_magsize","_type","_slotstart","_slotend","_
 disableSerialization;
 call gear_ui_init;
 
+if (r_action_count != 1) exitWith { cutText ["Wait for the previous action to complete to perform another!", "PLAIN DOWN"]; };
+
 _create = _this;
+
+if (!(_create in magazines player)) exitWith {r_action_count = 0;};
+
 _config = configFile >> "CfgMagazines" >> _create;
 
 player playActionNow "PutDown";
@@ -46,3 +51,5 @@ for "_i" from 1 to _qtynew_create_mags_full do {
 if (_qtynew_create_ammo_rest != 0) then {
 	player addMagazine [_create,_qtynew_create_ammo_rest];
 };
+sleep 1;
+r_action_count = 0;

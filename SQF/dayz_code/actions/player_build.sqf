@@ -2,6 +2,8 @@ private ["_alt1", "_alt2", "_item", "_classname", "_require", "_text", "_boolean
 
 call gear_ui_init;
 
+if (r_action_count != 1) exitWith { cutText ["Wait for the previous action to complete to perform another!", "PLAIN DOWN"]; };
+
 _item = _this;
 _classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 _require = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
@@ -9,12 +11,14 @@ _text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
 // item is missing
 if ((!(_item IN magazines player))) exitWith {
+	r_action_count = 0;
 	cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_build")] , "PLAIN DOWN"];
 	diag_log(format["player_build: item:%1 require:%2  Player items:%3  magazines:%4", _item, _require, (items player), (magazines player)]);
 };
 
 // tools are missing
 if ((!(_require IN items player))) exitWith {
+	r_action_count = 0;
 	cutText [format[(localize "str_player_31_missingtools"),_text,_require] , "PLAIN DOWN"];
 };
 
@@ -23,7 +27,7 @@ _worldspace = [_classname, player, _booleans] call fn_niceSpot;
 diag_log(format["player_build: booleans: %1 worldspace:%2", _booleans, _worldspace]);
 
 // player on ladder or in a vehicle
-if (_booleans select 0) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; };
+if (_booleans select 0) exitWith { r_action_count = 0; cutText [localize "str_player_21", "PLAIN DOWN"]; };
 
 // object would be in the water (pool or sea)
 //if ((_booleans select 1) OR (_booleans select 2)) exitWith { cutText [localize "str_player_26", "PLAIN DOWN"]; };
@@ -54,16 +58,20 @@ if ((count _worldspace) == 2) then {
 	_alt2 = getPosASL _object;
 	_object setPos _location;
 	_alt1 = getPosASL _object;
+	/*
 	if (_alt2 < _alt1) then {
 		_location set [2, _alt2 - _alt1];
 		_object setPos _location;
-	};
+	};	//Not sure what this is doing, since alt1/alt2 are the same.
+	*/
 	player reveal _object;
 
 	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_location],_classname];
 	publicVariableServer "PVDZ_obj_Publish";
 
+	r_action_count = 0;
 	cutText [format[localize "str_build_01",_text], "PLAIN DOWN"];
 } else {
+	r_action_count = 0;
 	cutText [format[localize "str_build_failed_01",_text], "PLAIN DOWN"];
 };

@@ -8,8 +8,11 @@ _config = configFile >> "CfgMagazines" >> _item;
 _text = getText (_config >> "displayName");
 _model = getText (_config >> "model");
 
+if (r_action_count != 1) exitWith { cutText ["Wait for the previous action to complete to perform another!", "PLAIN DOWN"]; };
+
 // item is missing or tools are missing
 if ((!(_item IN magazines player)) OR {(_item != "ItemTent")}) exitWith {
+	r_action_count = 0;
 	cutText [format[(localize "str_player_31"),_text,(localize "str_player_31_pitch")] , "PLAIN DOWN"];
 };
 
@@ -17,10 +20,10 @@ _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, test
 _worldspace = ["TentStorage", player, _booleans] call fn_niceSpot;
 
 // player on ladder or in a vehicle
-if (_booleans select 0) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; };
+if (_booleans select 0) exitWith { cutText [localize "str_player_21", "PLAIN DOWN"]; r_action_count = 0; };
 
 // object would be in the water (pool or sea)
-if ((_booleans select 1) OR (_booleans select 2)) exitWith { cutText [localize "str_player_26", "PLAIN DOWN"]; };
+if ((_booleans select 1) OR (_booleans select 2)) exitWith { cutText [localize "str_player_26", "PLAIN DOWN"]; r_action_count = 0; };
 
 if ((count _worldspace) == 2) then {
 	//remove tentbag
@@ -53,6 +56,9 @@ if ((count _worldspace) == 2) then {
 	publicVariableServer "PVDZ_obj_Publish";
 
 	cutText [localize "str_success_tent_pitch", "PLAIN DOWN"];
+	sleep 1;
+	r_action_count = 0;
 } else {
+	r_action_count = 0;
 	cutText [localize "str_fail_tent_pitch", "PLAIN DOWN"];
 };

@@ -3,6 +3,8 @@ private["_playerPos","_item","_hastentitem","_location","_building","_isOk","_co
 //check if can pitch here
 call gear_ui_init;
 
+if (r_action_count != 1) exitWith { cutText ["Wait for the previous action to complete to perform another!", "PLAIN DOWN"]; };
+
 //Player Pos
 _playerPos = getPosATL player;
 
@@ -26,6 +28,7 @@ if (_hasitemcount >= 2) then { _stashtype = getText (_config >> "stashmedium"); 
 
 // Items are missing
 if ((!(_consume IN magazines player))) exitWith {
+	r_action_count = 0;
 	cutText [format[(localize "str_player_31_stash"),_consume,(localize "str_player_31_build")] , "PLAIN DOWN"];
 };
 
@@ -33,7 +36,10 @@ _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 
 //blocked
-if (["concrete",dayz_surfaceType] call fnc_inString) exitwith { diag_log ("surface concrete"); };
+	if (["concrete",dayz_surfaceType] call fnc_inString) exitwith {
+		r_action_count = 0;
+		diag_log ("surface concrete");
+	};
 
 _worldspace = [_stashtype, player] call fn_niceSpot;
 
@@ -67,8 +73,10 @@ if ((count _worldspace) == 2) then {
 
 	publicVariableServer "PVDZ_obj_Publish";
 
+	r_action_count = 0;
 	cutText [format[(localize "str_success_stash_pitch"),_stashtype], "PLAIN DOWN"];
 	//cutText [format[(localize "str_player_31_missingtools"),_config,_consume,(localize "str_player_31_build")] , "PLAIN DOWN"];
 } else {
+	r_action_count = 0;
 	cutText [format[(localize "str_fail_stash_pitch"),_stashtype], "PLAIN DOWN"];
 };

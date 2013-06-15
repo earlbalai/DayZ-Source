@@ -13,7 +13,7 @@ class ItemShovel: ItemCore
 		class Use
 		{
 			text="Create Stash";
-			script="spawn player_createstash;";
+			script="spawn player_createstash; r_action_count = r_action_count + 1;";
 		};
 	};
 };
