@@ -22,12 +22,15 @@ Affected addons:
 	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
 	    * [FIXED] - Blood transfusion should now work properly.
 	    * [FIXED] - Zeds can knock you unconscious again.
-		
+	    * [FIXED] - Issue with built items not display properly over the network.
+	    * [FIXED] - Changing clothes while in a gear menu of a pile/vehicle/tent will no longer crash your game.
+	    * [FIXED] - Fixed duplication of mags via combining/converting and duplication of tents/built items.
+	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
 	    * [UPDATED] - Updated tackle to provide knockdown from back of player and push from other directions.
-		* [UPDATED] - Zed will now attack again while prone with animation.
-		* [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).
+	    * [UPDATED] - Zed will now attack again while prone with animation.
+	    * [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).
 
 ______________________
 Version 1.7.7
