@@ -182,7 +182,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	deleteVehicle _oldUnit;
 
 //	player switchCamera = _currentCamera;
-	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
+	//if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 	[objNull, player, rSwitchMove,_currentAnim] call RE;
 	//dayz_originalPlayer attachTo [_newUnit];
 	player disableConversation true;

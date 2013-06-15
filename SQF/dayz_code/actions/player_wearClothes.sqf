@@ -54,5 +54,5 @@ switch (_item) do {
 if (_model != _myModel) then {
 	player removeMagazine _item;
 	player addMagazine _itemNew;
-	[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
+	[dayz_playerUID, dayz_characterID, _model] spawn player_humanityMorph;
 };
