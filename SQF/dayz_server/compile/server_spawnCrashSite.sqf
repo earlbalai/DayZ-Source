@@ -52,7 +52,7 @@ while {true} do {
 		for "_y" from 1 to 10 do {
 			_position = [getMarkerPos _spawnMarker,0,_spawnRadius,_length,0,_length*.2,0, [], [_debugarea,_debugarea]] call BIS_fnc_findSafePos;
 			switch (true) do {
-				case (count _position < 3) : {};
+				case (count _position < 2) : {};
 				case (_position distance _debugarea < 1) : { _position = []; };
 				case (count nearestObjects [_position, [],  _length*2] > 0) : { _position = []; };
 				default {	
