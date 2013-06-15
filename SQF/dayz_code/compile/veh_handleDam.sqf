@@ -1,3 +1,4 @@
+
 /*
         Created exclusively for ArmA2:OA - DayZMod.
         Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
@@ -14,7 +15,7 @@ or by zombie_attack
 - return : updated damage for that part
 broadcast: boolean. if true, then the request will be sent to all players if the vehicle is not local.
 ************************************************************/
-private ["_unit","_selection","_dam","_SVname","_currentDam", "_globalDam", "_delta", "_log", "_ret"];
+private ["_unit","_selection","_dam","_SVname","_currentDam", "_globalDam", "_delta", "_log", "_ret", "_isbicycle"];
 
 _unit = _this select 0;
 _selection = _this select 1;
@@ -34,15 +35,16 @@ _log = format["%1 _this:%2 vehicle:%3#%4 part:""%5"" current_part_damage:%6", __
 _this, typeOf _unit, _unit getVariable ["ObjectID",""],
 _selection, _currentDam ];
 _ret = _currentDam;
+_isbicycle = _unit isKindOf "Bicycle";
 
 if (local _unit) then {
 	_dam = _currentDam max _dam;
 	_delta = _dam - _currentDam;
 	if (_delta > 0) then {
-		_unit setVariable [_SVname, _dam, true];
-		_unit setHit [_selection, _dam];
-		_ret = _dam;
-		_log = format["%1. setHit[%2,%3]", _log, _selection, _dam];
+		_ret = if (_isbicycle) then {_dam - _delta*9/10} else {_dam};
+		_unit setVariable [_SVname, _ret, true];
+		_unit setHit [_selection, _ret];
+		_log = format["%1. setHit[%2,%3]%4", _log, _selection, _ret, if (_isbicycle) then {" bike special"} else {""}];
 		if (!isServer) then {
 			PVDZ_veh_Save = [_unit,"damage"];
 			publicVariableServer "PVDZ_veh_Save";
