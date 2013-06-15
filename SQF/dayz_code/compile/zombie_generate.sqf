@@ -11,11 +11,21 @@ _unitTypes = _this select 2; // class of wanted models
 _recyAgt = []; if (count _this > 3) then { _recyAgt = _this select 3; };
 _maxtoCreate = 99; if (count _this > 4) then { _maxtoCreate = _this select 4; };
 
+_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],30]) == 0;
+//Exit if no one is nearby
+if (!_isNoone) exitWith {
+	diag_log(format["%1: won't do that, too close from player (%2m), _this:%3", __FILE__, round(_distance), _this]);
+	false
+};
+
 _distance = [_position, getPosATL player] call BIS_fnc_distance2D;
+/*
 if (_distance < dayz_safeDistPlr) exitWith {
 	diag_log(format["%1: won't do that, too close from player (%2m), _this:%3", __FILE__, round(_distance), _this]);
 	false
 };
+*/
+
 _agent = objNull;
 if (count _unitTypes == 0) then {
 	_unitTypes = []+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
