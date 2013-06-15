@@ -39,7 +39,7 @@ _findAgt = {
 };
 
 _isAir = vehicle player iskindof "Air";
-_inVehicle = ((vehicle player != player) AND (speed player > 10));
+_inVehicle = ((vehicle player != player) AND ((speed player > 10) OR _isAir));
 _dateNow = (DateToNumber date);
 _age = -1;
 _force = false;
@@ -171,7 +171,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 			if (_age < -0.1) then {
 					_x setVariable ["looted",(DateToNumber date),!_islocal];
 			} else {
-				if (_age > 20) then {
+				if (_age > dayz_tagDelayWeaponHolders) then {
 					_x setVariable ["looted",_dateNow,!_islocal];
 					_qty = _x call building_spawnLoot;
 					_currentWeaponHolders = _currentWeaponHolders + _qty;
@@ -192,7 +192,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 				_x setVariable ["zombieSpawn",(DateToNumber date),!_islocal]; // a SV for all objects on the map was a bit insane
 				_negstampBld = _negstampBld +1;
 			} else {
-				if (_age > 20) then {
+				if (_age > dayz_tagDelayZombies) then {
 					_tmp = [_x, _recyAgt, _maxtoCreate];
 					_qty = _tmp call building_spawnZombies;
 					_recyAgt = _tmp select 1;
