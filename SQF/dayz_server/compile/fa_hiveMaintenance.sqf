@@ -272,7 +272,9 @@ fa_checkVehicles = {
 				if (_count > 0) then {
 					(_vehcat select _j) set [1, (_count-1)];
 					if ((_x select 8) >= 1) then { 
+#ifdef VEH_MAINTENANCE_ADD_MISSING	
 						(_myArray select _forEachIndex) set [8, 0.9] ; // damage = 0.9 so this veh will me respawned
+#endif
 					};
 					//diag_log (format["fa_checkVehicles: keeping vehicle class=%1, oid=%2, damage=%3", 
 						//	_x select 2, _x select 1, _x select 8]);
