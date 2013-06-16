@@ -19,7 +19,7 @@ Affected addons:
 
 	    * [FIXED] - Crashsite loot spawn fixed.
 	    * [FIXED] - Night time LOS should now reset correct.
-	    * [FIXED] - Updated littelbird Repair system to include hull and missiles.
+	    * [FIXED] - Updated Chopper Repair system to include hull and missiles.
 	    * [FIXED] - Blood transfusion should now work properly.
 	    * [FIXED] - Zeds can knock you unconscious again.
 	    * [FIXED] - Issue with built items not display properly over the network.
