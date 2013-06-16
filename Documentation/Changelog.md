@@ -10,6 +10,13 @@ Version 1.7.7.1
 
 Affected addons:
 * dayz_code
+* dayz_communityassets
+
+Serverside affected addons:
+* dayz_server (server admins only)
+* Mission (server admins only) (Prerequisites) Downloaded from http://www.silentspy.net/utility/dayz/mission-generator/
+* BattlEye-Filters (server admins only)
+
 
 	Changes:
 
