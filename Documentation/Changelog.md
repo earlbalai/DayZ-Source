@@ -34,6 +34,7 @@ Serverside affected addons:
 	    * [FIXED] - Fixed duplication of mags via combining/converting and duplication of tents/built items.
 	    * [FIXED] - 100% damaged vehicles do not respawn anymore.
 		* [FIXED] - Added check to make sure no one is within 30 meters of zed spawning.
+		* [FIXED] - Fixed bandit detection for kills and humanity changes.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
