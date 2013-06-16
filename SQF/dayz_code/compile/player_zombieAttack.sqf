@@ -168,6 +168,8 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 // player may fall...
 _deg = [player, _unit] call BIS_fnc_relativeDirTo;
 diag_log (str(_deg));
+_move = "";
+
 switch true do {
 	// front
 	case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 315) and (_deg <= 360)) or ((_deg > 0) and (_deg < 45)))) : {
@@ -197,8 +199,6 @@ switch true do {
 				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 			};
-			player switchMove _move;
-	//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 		};
 	};
 	// left
@@ -229,8 +229,6 @@ switch true do {
 				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 			};
-			player switchMove _move;
-	//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 		};
 	};
 	// right
@@ -261,8 +259,6 @@ switch true do {
 				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 			};
-			player switchMove _move;
-	//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 		};
 	};
 	// rear
@@ -280,10 +276,24 @@ switch true do {
 				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 			};
-			player switchMove _move;
-	//		diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 		};
 	};
+};
+
+// make player dive
+if (_move != "") then {
+	player switchMove _move;
+
+	if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
+		[] spawn {
+			private ["_move"];
+			waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
+			waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
+			player switchMove "";
+		};
+	};
+
+	//diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
 };
 
 // compute damage for vehicle and/or the player
