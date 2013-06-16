@@ -20,8 +20,13 @@ _bias = (_bias + random(100-_bias)) / 100;
 	if (count _x == 3) then {
 		_rnd = (random 1) / _bias;
 		_iPos = _obj modelToWorld _x;
+		_nearBy = nearestObjects [_iPos, ["ReammoBox"], 2];
+
+		if (count _nearBy > 0) then {
+			_lootChance = _lootChance + 0.05;
+		};
+			
 		if (_rnd <= _lootChance) then {
-			_nearBy = nearestObjects [_iPos, ["ReammoBox"], 2];
 			if (count _nearBy == 0) then {
 	//diag_log (str(dayz_CBLBase));
 	//diag_log ("_type: " +str(_type));
@@ -43,8 +48,7 @@ _bias = (_bias + random(100-_bias)) / 100;
 			};
 		};
 		sleep ((random 3) / 1000);
-	}
-	else {
+	} else {
 		diag_log(format["%1 Illegal loot position #%3 from %2 in building %4 -- skipped", __FILE__,
 						configName _config, _forEachIndex+1, typeOf _obj]);
 	};
