@@ -11,6 +11,7 @@
 #include "Items\Attachments\Attachment_Kobra.hpp"
 #include "Items\Attachments\Attachment_Pso.hpp"
 #include "Items\Attachments\Attachment_Silencer.hpp"
+#include "Item\Attachments\Attachment_Sniper_Scope.hpp"
 
 #include "Items\Mats\equip_aa_battery.hpp"
 #include "Items\Mats\equip_cable_tie.hpp"
@@ -31,6 +32,7 @@
 #include "Items\Mats\equip_rope.hpp"
 #include "Items\Mats\equip_string.hpp"
 #include "Items\Mats\equip_wood_pallet.hpp"
+#include "Items\Mats\equip_part_loupe.hpp"
 
 
 //100% Mats to be added
