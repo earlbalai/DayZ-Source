@@ -42,7 +42,8 @@ if (_unit == player) then {
 				_source setVariable["startcombattimer",1];
 			};
 			_canHitFree = player getVariable ["freeTarget",false];
-			_isBandit = (typeOf player) == "Bandit1_DZ";
+			//_isBandit = (typeOf player) == "Bandit1_DZ";
+			_isBandit = (player getVariable["humanity",0]) <= -2000;
 			if (!_canHitFree and !_isBandit) then {
 				// "humanKills" from local character is used to compute attacker player "PVDZ_plr_Humanity" change
 				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)

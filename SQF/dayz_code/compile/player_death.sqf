@@ -38,7 +38,8 @@ if (count _array > 0) then {
 	if (!isNull _source) then {
 		if (_source != player) then {
 			_canHitFree = player getVariable ["freeTarget",false];
-			_isBandit = (["Bandit",typeOf player,false] call fnc_inString);
+			//_isBandit = (["Bandit",typeOf player,false] call fnc_inString);
+			_isBandit = (player getVariable["humanity",0]) <= -2000;
 			_wait = 0;
 			_humanity = 0;
 			if (!_canHitFree and !_isBandit) then {
