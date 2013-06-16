@@ -22,9 +22,10 @@ player playMove "AidlPpneMstpSnonWnonDnon_SleepC_sleep0";
 waitUntil { animationState player != "AidlPpneMstpSnonWnonDnon_SleepC_sleep0"};
 sleep 5;
 
+/*
 //Start effects of sleep
 dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
-/*
+
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
 if (_timesincedrink > 600) then {
 	dayz_thirst = 0;
