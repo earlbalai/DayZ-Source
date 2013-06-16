@@ -11,7 +11,7 @@
 #include "Items\Attachments\Attachment_Kobra.hpp"
 #include "Items\Attachments\Attachment_Pso.hpp"
 #include "Items\Attachments\Attachment_Silencer.hpp"
-#include "Item\Attachments\Attachment_Sniper_Scope.hpp"
+#include "Items\Attachments\Attachment_Sniper_Scope.hpp"
 
 #include "Items\Mats\equip_aa_battery.hpp"
 #include "Items\Mats\equip_cable_tie.hpp"
