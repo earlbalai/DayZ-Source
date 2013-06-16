@@ -67,11 +67,8 @@ item62[] = {"Too_Long",4,218,300.000000,1150.000000,400.000000,1200.000000,0.000
 item63[] = {"get_ready_to_clo_1",2,250,450.000000,800.000000,550.000000,850.000000,0.000000,"get ready to close"};
 item64[] = {"sleep_",4,218,600.000000,800.000000,700.000000,850.000000,0.000000,"sleep" \n ""};
 item65[] = {"Server_Loading",2,4346,-75.000000,250.000000,25.000000,300.000000,0.000000,"Server Loading"};
-item66[] = {"Waiting_For_Serv",2,250,300.000000,325.000000,400.000000,375.000000,0.000000,"Waiting For Server"};
-item67[] = {"Server_Not_Ready",4,218,50.000000,250.000000,150.000000,300.000000,0.000000,"Server Not Ready"};
-item68[] = {"Server_Ready",4,218,-75.000000,325.000000,25.000000,375.000000,0.000000,"Server Ready"};
-item69[] = {"Camps___Crashes",2,250,175.000000,250.000000,275.000000,300.000000,0.000000,"Camps" \n "&" \n "Crashes"};
-item70[] = {"Server_Not_Ready",4,218,300.000000,250.000000,400.000000,300.000000,0.000000,"Server Not Ready"};
+item66[] = {"Too_Long",4,218,50.000000,250.000000,150.000000,300.000000,0.000000,"Too" \n "Long"};
+item67[] = {"Server_Ready",4,218,-75.000000,325.000000,25.000000,375.000000,0.000000,"Server Ready"};
 link0[] = {0,1};
 link1[] = {0,5};
 link2[] = {1,2};
@@ -146,16 +143,12 @@ link70[] = {61,62};
 link71[] = {62,59};
 link72[] = {63,64};
 link73[] = {64,59};
-link74[] = {65,67};
-link75[] = {65,68};
-link76[] = {66,68};
-link77[] = {67,69};
-link78[] = {68,15};
-link79[] = {69,68};
-link80[] = {69,70};
-link81[] = {70,66};
-globals[] = {25.000000,1,0,0,0,640,480,1,126,6316128,1,-307.660736,475.433289,1012.780090,-55.546791,755,1030,1};
-window[] = {2,-1,-1,-32000,-32000,858,78,1450,78,3,773};
+link74[] = {65,66};
+link75[] = {65,67};
+link76[] = {66,59};
+link77[] = {67,15};
+globals[] = {25.000000,1,0,0,0,640,480,1,129,6316128,1,-421.996246,684.716003,1308.403809,-201.415451,755,1030,1};
+window[] = {2,-1,-1,-1,-1,962,182,1554,182,3,773};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -1581,8 +1574,10 @@ class FSM
     {
       name = "Server_Loading";
       init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime;" \n
-       "progressLoadingScreen 0.4;" \n
-       "dayz_loadScreenMsg = (""Loading objects and vehicles..."");"/*%FSM</STATEINIT""">*/;
+       "dayz_loadScreenMsg = (""Waiting for server to start authentication"");" \n
+       "diag_log ""PLOGIN: Waiting for server to start authentication"";" \n
+       "" \n
+       "progressLoadingScreen 0.5;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -1591,74 +1586,18 @@ class FSM
         {
           priority = 0.000000;
           to="Request";
-          precondition = /*%FSM<CONDPRECONDITION""">*/"progressLoadingScreen 0.6;"/*%FSM</CONDPRECONDITION""">*/;
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!isNil ""sm_done"""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "Server_Not_Ready">*/
-        class Server_Not_Ready
+        /*%FSM<LINK "Too_Long">*/
+        class Too_Long
         {
           priority = 0.000000;
-          to="Camps___Crashes";
-          precondition = /*%FSM<CONDPRECONDITION""">*/"progressLoadingScreen 0.4;"/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNil ""sm_done"") AND (diag_tickTime - _myTime > 15)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Waiting_For_Serv">*/
-    class Waiting_For_Serv
-    {
-      name = "Waiting_For_Serv";
-      init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime;" \n
-       "progressLoadingScreen 0.6;" \n
-       "dayz_loadScreenMsg = (""Waiting for server to start authentication..."");"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "Server_Ready">*/
-        class Server_Ready
-        {
-          priority = 0.000000;
-          to="Request";
-          precondition = /*%FSM<CONDPRECONDITION""">*/"progressLoadingScreen 0.6;"/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!isNil ""sm_done"""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Camps___Crashes">*/
-    class Camps___Crashes
-    {
-      name = "Camps___Crashes";
-      init = /*%FSM<STATEINIT""">*/"_myTime = diag_tickTime;" \n
-       "progressLoadingScreen 0.5;" \n
-       "dayz_loadScreenMsg = (""Loading infected camps and crashsites..."");"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "Server_Not_Ready">*/
-        class Server_Not_Ready
-        {
-          priority = 0.000000;
-          to="Waiting_For_Serv";
-          precondition = /*%FSM<CONDPRECONDITION""">*/"progressLoadingScreen 0.5;"/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNil ""sm_done"") AND (diag_tickTime - _myTime > 10)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Server_Ready">*/
-        class Server_Ready
-        {
-          priority = 0.000000;
-          to="Request";
-          precondition = /*%FSM<CONDPRECONDITION""">*/"progressLoadingScreen 0.6;"/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!isNil ""sm_done"""/*%FSM</CONDITION""">*/;
+          to="Disconnect";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _myTime) > 120"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
