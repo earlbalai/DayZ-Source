@@ -25,13 +25,17 @@ Affected addons:
 	    * [FIXED] - Issue with built items not display properly over the network.
 	    * [FIXED] - Changing clothes while in a gear menu of a pile/vehicle/tent will no longer crash your game.
 	    * [FIXED] - Fixed duplication of mags via combining/converting and duplication of tents/built items.
+	    * [FIXED] - 100% damaged vehicles do not respawn anymore.
 		* [FIXED] - Added check to make sure no one is within 30 meters of zed spawning.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
 	    * [UPDATED] - Updated tackle to provide knockdown from back of player and push from other directions.
 	    * [UPDATED] - Zed will now attack again while prone with animation.
-	    * [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).
+	    * [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).	    
+	    * [UPDATED] - Reported bike damage is divided by 10.
+	    * [UPDATED] - Much quicker login/loading.
+	    * [UPDATED] - More reliable loot spawns.
 
 ______________________
 Version 1.7.7

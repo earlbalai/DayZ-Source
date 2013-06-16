@@ -440,4 +440,5 @@ if (isServer and isNil "sm_done") then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fa_antiwallhack.sqf";
 	
 	sm_done = true;
+	publicVariable "sm_done";
 };

@@ -141,7 +141,7 @@ if (!isDedicated) then {
 			};
 			_control2 ctrlSetText format["%1",round(_timeOut*0.1)];
 			_timeOut = _timeOut + 1;
-			sleep 0.1;
+			sleep 0.01;
 		};
 		endLoadingScreen;
 		/*
