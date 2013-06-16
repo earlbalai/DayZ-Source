@@ -33,6 +33,8 @@ Affected addons:
 	    * [UPDATED] - Zed will now attack again while prone with animation.
 	    * [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).	    
 	    * [UPDATED] - Reported bike damage is divided by 10.
+	    * [UPDATED] - Much quicker login/loading.
+	    * [UPDATED] - More reliable loot spawns.
 
 ______________________
 Version 1.7.7
