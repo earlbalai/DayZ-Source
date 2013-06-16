@@ -24,7 +24,7 @@ waitUntil {vehicle player == player};
 	};
 };
 
-_debug = getMarkerPos "respawn_west";
+_debug = getMarkerpos "respawn_west";
 _lastpos = getPosATL (vehicle player);
 _lastheight = (ATLtoASL _lastpos) select 2;
 _lasttime = time;
@@ -39,11 +39,12 @@ _toph = 0;
 while {alive player} do
 {
 	//[-18697.58,379.53012,25815.256]
+	/*
 	if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
 		createMarkerLocal ["respawn_west", _debug];
 		"respawn_west" setMarkerType "EMPTY";
 	};
-
+	*/
 	_curpos = getPosATL (vehicle player);
 	_curheight = (ATLtoASL _curpos) select 2;
 	_curtime = time;
