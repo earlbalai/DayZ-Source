@@ -15,8 +15,7 @@ class Mi17_base: Helicopter
 };
 
 class Mi17_base_CDF: Mi17_base {};
-class Mi17_DZ: Mi17_base_CDF	
-{
+class Mi17_DZ: Mi17_base_CDF {
 	displayname = "Mi17_DZ";
 	displaynameshort = "Mi17_DZ";
 	scope = 2;

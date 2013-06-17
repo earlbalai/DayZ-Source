@@ -18,6 +18,7 @@ class CfgVehicles {
             };
         };
 	};
+
 	
 	//External Class
 	class SkodaBase;
@@ -29,6 +30,8 @@ class CfgVehicles {
 	class An2_Base_EP1;
 	class TT650_Base;
 	class V3S_Base;
+	class SUV_Base_EP1;
+	class Ship;
 	//class Bag_Base_EP1;
 	//class Bag_Base_BAF;
 	class House {
@@ -62,6 +65,7 @@ class CfgVehicles {
 	#include "CfgVehicles\Car\UAZ_CDF.hpp"
 	#include "CfgVehicles\Car\CAR_SEDAN.hpp"
 	#include "CfgVehicles\Car\V3S_Civ.hpp"
+	#include "CfgVehicles\Car\SUV_DZ.hpp"
 	//Helicopter's
 	#include "CfgVehicles\Helicopter\MI17.hpp"
 	#include "CfgVehicles\Helicopter\UH1H.hpp"
@@ -80,6 +84,7 @@ class CfgVehicles {
 	#include "CfgVehicles\Bikes\TT650_Ins.hpp"
 	//Boat
 	#include "CfgVehicles\Boat\PBX.hpp"
+	#include "CfgVehicles\Boat\Fishing_Boat.hpp"
 	
 	//Includes all Building Stuff
 	// This parent class is made to make referring to these objects easier later with allMissionObjects	
