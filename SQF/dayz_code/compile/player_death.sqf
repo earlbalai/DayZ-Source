@@ -7,6 +7,8 @@ deathHandled = true;
 
 _body = player;
 _playerID = getPlayerUID player;
+disableUserInput true;
+
 
 //Send Death Notice
 //["PVDZ_plr_Death",[dayz_characterID,0,_body,_playerID,dayz_playerName]] call callRpcProcedure;
@@ -78,7 +80,7 @@ terminate dayz_spawnCheck;
 
 //Reset (just in case)
 //deleteVehicle dayz_playerTrigger;
-disableUserInput false;
+//disableUserInput false;
 r_player_dead = true;
 
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [4]; "dynamicBlur" ppEffectCommit 0.2;
@@ -119,3 +121,5 @@ playMusic "dayz_track_death_1";
 
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
+sleep 2;
+disableUserInput false;
