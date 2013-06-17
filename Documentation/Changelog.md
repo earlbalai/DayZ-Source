@@ -38,6 +38,7 @@ Serverside affected addons:
 	    * [FIXED] - Fixed an issue where you wouldn't be able to pick up any loot.
 	    * [FIXED] - Fixed an issue where bandaging an other player wouldn't bandage them.
 	    * [FIXED] - Added a range check to zed attacks, no more 5-10 meter hits.
+	    * [FIXED] - Fixed issue where your player's body would be deleted if aborting too quickly.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
@@ -50,8 +51,8 @@ Serverside affected addons:
 	    * [UPDATED] - Infection rates are much lower (based on #zeds attacking you) viral zeds have 4x greater infection rates
 	    * [UPDATED] - player knockdown by zeds should be less common.
 		
-		* [REMOVED] - Wild Zeds while we try to debug issues with FPS.
-		* [REMOVED] - Zeds will not longer spawn while in vehicles.
+	    * [REMOVED] - Wild Zeds while we try to debug issues with FPS.
+	    * [REMOVED] - Zeds will not longer spawn while in vehicles.
 
 ______________________
 Version 1.7.7
