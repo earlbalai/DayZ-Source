@@ -55,33 +55,6 @@ if (_unit == player) then {
 			};
 		};
 	};
-	// log hit on server side
-	if ((isPlayer _source) AND {(_unit != _source)}) then {
-		if (time-(_unit getVariable ["lastloghit",0])>2) then {
-			private ["_victimUID","_sourceUID","_sourceWeap","_sourceDist"];
-			_unit setVariable ["lastloghit",time];
-			_victimUID = getPlayerUID _unit;	
-			_sourceUID = getPlayerUID _source;
-			_wpst = weaponState _source;
-
-			_sourceWeap = switch (true) do {
-				case ((vehicle _source) != _source) : { format ["in %1",getText(configFile >> "CfgVehicles" >> (typeOf (vehicle _source)) >> "displayName")] };
-				case (_ammo == "zombie") : { _ammo };
-				case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
-				case ([_wpst select 0, "Melee"] call fnc_inString) : { format ["with %1",_wpst select 3] };
-				case (_wpst select 0 != "") : { format ["with %1/%2 <ammo left:%3>", _wpst select 0, _ammo, _wpst select 4] };
-				default { "" };
-			};			
-/*		_sourceWeap = format [ "%1:%2:%3:%4:%5", _wpst select 0, _wpst select 1, _wpst select 2, _wpst select 3, _wpst select 4 ]; */
-			_sourceDist = round(_unit distance _source);
-
-			PVDZ_sec_atp = format["Player UID#%1 hit by UID#%2 %3 from %4 meters",
-				_victimUID, _sourceUID, _sourceWeap, _sourceDist
-			];
-			publicVariableServer "PVDZ_sec_atp";
-		};
-	};
-
 };
 
 //Pure blood damage
