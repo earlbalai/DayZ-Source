@@ -39,10 +39,11 @@ Serverside affected addons:
 	    * [FIXED] - Fixed an issue where bandaging an other player wouldn't bandage them.
 	    * [FIXED] - Added a range check to zed attacks, no more 5-10 meter hits.
 	    * [FIXED] - Fixed issue where your player's body would be deleted if aborting too quickly.
+		* [FIXED] - Shadow LODs on soda cans.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
-	    * [UPDATED] - Updated tackle to provide knockdown from back of player and push from other directions.
+	    * [UPDATED] - Updated tackle to provide knockdown from back of player and stumble/trip from other directions.
 	    * [UPDATED] - Zed will now attack again while prone with animation.
 	    * [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).	    
 	    * [UPDATED] - Reported bike damage is divided by 10.
@@ -50,6 +51,10 @@ Serverside affected addons:
 	    * [UPDATED] - More reliable loot spawns.
 	    * [UPDATED] - Infection rates are much lower (based on #zeds attacking you) viral zeds have 4x greater infection rates
 	    * [UPDATED] - player knockdown by zeds should be less common.
+		* [UPDATED] - SUV has been unbanned and readded under SUV_DZ Server admins must update there database.
+		* [UPDATED] - fishing_Boat speed update from 15 to 45.
+		* [UPDATED] - SQL files for private database users Included all hitpoints and inventory systems.
+		* [UPDATED] - Updated pMain to now include extra setting --execute="call pMain(serverinstance) example.  --execute="call pMain(1) would spawn all vehicles for instance 1
 		
 	    * [REMOVED] - Wild Zeds while we try to debug issues with FPS.
 	    * [REMOVED] - Zeds will not longer spawn while in vehicles.
