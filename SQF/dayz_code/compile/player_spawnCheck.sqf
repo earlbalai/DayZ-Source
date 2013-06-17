@@ -1,6 +1,9 @@
 
 private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point", "_islocal"];
 
+_isinVehicle = (vehicle player != player);
+if (_isinVehicle) exitwith {"in Vehicle"};
+
 // compute building footprint just to check if it could hide a Zombie
 _fairSize = {
 	private ["_boundingBox","_cornerLow","_cornerHi", "_burried"];
@@ -134,7 +137,8 @@ diag_log ("Audial Noise: " +str(DAYZ_disAudial));
 diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
 };
 */
-diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).", __FILE__,
+
+diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).","SpawnCheck",
 	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels,
 	dayz_spawnArea, round diag_fpsmin, _currentWeaponHolders, _maxWeaponHolders]);
 // little hack so that only 1/5 of the max local spawnable zombies will be spawned in this round
@@ -212,6 +216,7 @@ _maxtoCreate = _maxControlledZombies - _controlledZombies;
 	};
 } forEach _nearby;
 
+/*
 // spawn some a wild zombie if we can afford
 if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 	// we limit the surface because finding a typeless object is a CPU hog.
@@ -236,18 +241,9 @@ if ((_currentManModels < _maxManModels) AND {_maxtoCreate > 0}) then {
 			_qty = _tmp call building_spawnZombies;
 			_recyAgt = _tmp select 1;
 			_maxtoCreate = _tmp select 2;
-/*			if (_qty > 0) then {
-				_currentManModels = _currentManModels + _qty;
-				_x setVariable ["zombieSpawn",_dateNow,true];
-			};
-*/
 		};
 		sleep 0.001;
 	} forEach (nearestObjects [_point, [], _radius]);
-/*	if (!isNil "_nearby") then {
-		[_nearby, _recyAgt, _maxtoCreate, 10] call building_spawnZombies;
-	};*/
 };
-
-diag_log (format["%1 End. Buildings checked:%2, newly zombied:%3, already zombied:%4, negative timestamp:%5.", __FILE__,
-	_suitableBld, _spwndoneBld, _zombieSpawnCtr, _negstampBld ]);
+*/
+//diag_log (format["%1 End. Buildings checked:%2, newly zombied:%3, already zombied:%4, negative timestamp:%5.", __FILE__,_suitableBld, _spwndoneBld, _zombieSpawnCtr, _negstampBld ]);
