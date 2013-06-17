@@ -294,62 +294,63 @@ if (_isVehicle) then {
 			player action ["eject",  _vehicle];
 		};
 		diag_log(format["%1: Player ejected from %2", __FILE__, _vehicle]);
-	}
-	else { // vehicle with a compartment
-		_wound = _this select 2; // what is this? wound linked to Z attack?
-		if (isNil "_wound") then {
-			_hpList = _vehicle call vehicle_getHitpoints;
-			_hp = _hpList call BIS_fnc_selectRandom;
-			_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-		};
-		_woundDamage = _unit getVariable ["hit_"+_wound, 0];
-		// we limit how vehicle could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
-		_damage = random (if (_woundDamage < 0.8) then {0.1} else {0.01});
-		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
-		diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
-		_total = [_vehicle,  _wound,  _woundDamage + _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
-		if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
-			// glass is broken,  so hurt the player in the vehicle
-			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
-				_cnt = count (DAYZ_woundHit select 1);
-				_index = floor (random _cnt);
-				_index = (DAYZ_woundHit select 1) select _index;
-				_wound = (DAYZ_woundHit select 0) select _index;
-			} else {
-				_cnt = count (DAYZ_woundHit_ok select 1);
-				_index = floor (random _cnt);
-				_index = (DAYZ_woundHit_ok select 1) select _index;
-				_wound = (DAYZ_woundHit_ok select 0) select _index;
+	} else { // vehicle with a compartment
+		if (player distance _unit <= 3.5) then {
+			_wound = _this select 2; // what is this? wound linked to Z attack?
+			if (isNil "_wound") then {
+				_hpList = _vehicle call vehicle_getHitpoints;
+				_hp = _hpList call BIS_fnc_selectRandom;
+				_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
 			};
-			_damage = 0.2 + random (0.512);
-			diag_log(format["%1 Player wounded through ""%4"" vehicle window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
-			[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
+			_woundDamage = _unit getVariable ["hit_"+_wound, 0];
+			// we limit how vehicle could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
+			_damage = random (if (_woundDamage < 0.8) then {0.1} else {0.01});
+			// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
+			diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
+			_total = [_vehicle,  _wound,  _woundDamage + _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
+			if ((_total >= 1) AND {(_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ])}) then {
+				// glass is broken,  so hurt the player in the vehicle
+				if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
+					_cnt = count (DAYZ_woundHit select 1);
+					_index = floor (random _cnt);
+					_index = (DAYZ_woundHit select 1) select _index;
+					_wound = (DAYZ_woundHit select 0) select _index;
+				} else {
+					_cnt = count (DAYZ_woundHit_ok select 1);
+					_index = floor (random _cnt);
+					_index = (DAYZ_woundHit_ok select 1) select _index;
+					_wound = (DAYZ_woundHit_ok select 0) select _index;
+				};
+				_damage = 0.2 + random (0.512);
+				diag_log(format["%1 Player wounded through ""%4"" vehicle window. hit:%2 damage:+%3", __FILE__, _wound, _damage, _vehicle]);
+				[player,  _wound,  _damage,  _unit,  "zombie"] call fnc_usec_damageHandler;
+			};
 		};
 	}; // fi veh with compartment
-}
-else { // player by foot
-	_damage = 0.2 + random (1);
-
-	switch true do {
-		case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
-			[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
-		};
-		case (_isStairway AND (_hu > _hv)) : { // player is lower than Z,  so Z hurts head
-			[player,  "head_hit",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
-		};
-		default {
-			if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
-				_cnt = count (DAYZ_woundHit select 1);
-				_index = floor (random _cnt);
-				_index = (DAYZ_woundHit select 1) select _index;
-				_wound = (DAYZ_woundHit select 0) select _index;
-			} else {
-				_cnt = count (DAYZ_woundHit_ok select 1);
-				_index = floor (random _cnt);
-				_index = (DAYZ_woundHit_ok select 1) select _index;
-				_wound = (DAYZ_woundHit_ok select 0) select _index;
+} else { // player by foot
+	if (player distance _unit <= 2.2) then {
+		_damage = 0.2 + random (1);
+		switch true do {
+			case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
+				[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
 			};
-			[player,  _wound,  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+			case (_isStairway AND (_hu > _hv)) : { // player is lower than Z,  so Z hurts head
+				[player,  "head_hit",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+			};
+			default {
+				if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
+					_cnt = count (DAYZ_woundHit select 1);
+					_index = floor (random _cnt);
+					_index = (DAYZ_woundHit select 1) select _index;
+					_wound = (DAYZ_woundHit select 0) select _index;
+				} else {
+					_cnt = count (DAYZ_woundHit_ok select 1);
+					_index = floor (random _cnt);
+					_index = (DAYZ_woundHit_ok select 1) select _index;
+					_wound = (DAYZ_woundHit_ok select 0) select _index;
+				};
+				[player,  _wound,  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+			};
 		};
 	};
 }; // fi player by foot
