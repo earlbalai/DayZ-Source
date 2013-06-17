@@ -7,7 +7,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
 	- Function
 	- [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private["_newtypezed","_forceHit","_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
+private["_newtypezed","_forceHit","_zClose","_bloodPercentage","_unit","_humanityHit","_myKills","_isBandit","_hit","_damage","_isPlayer","_unconscious","_wound","_isHit","_isInjured","_type","_hitPain","_inPain","_isDead","_isCardiac","_killerID","_evType","_recordable","_inVehicle","_isHeadHit","_isMinor","_scale","_canHitFree"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -42,7 +42,8 @@ if (_unit == player) then {
 				_source setVariable["startcombattimer",1];
 			};
 			_canHitFree = player getVariable ["freeTarget",false];
-			_isBandit = (typeOf player) == "Bandit1_DZ";
+			//_isBandit = (typeOf player) == "Bandit1_DZ";
+			_isBandit = (player getVariable["humanity",0]) <= -2000;
 			if (!_canHitFree and !_isBandit) then {
 				// "humanKills" from local character is used to compute attacker player "PVDZ_plr_Humanity" change
 				_myKills = -1 max (1 - (player getVariable ["humanKills",0]) / 7);  // -1 (good action) to 1 (bad action)
@@ -150,11 +151,18 @@ if (_damage > 0.4) then { //0.25
 
 		//Infection from zombies
 		if (_ammo == "zombie") then {
+			//_rndInfection = random (_damage - _bloodPercentage);
+			//_hitInfection = ((exp _rndInfection) > dayz_infectionTreshold);
+			//if (_newtypezed) then {
+				//_rndInfection = random (_damage - _bloodPercentage);
+				//_hitInfection = ((exp _rndInfection * dayz_infectionTreshold*1.1) > dayz_infectionTreshold);
+			//};
+			_zClose = count ((getposATL player) nearEntities ["zZombie_Base",5]);
 			_rndInfection = random (_damage - _bloodPercentage);
-			_hitInfection = ((exp _rndInfection) > dayz_infectionTreshold);
+			_hitInfection = ((exp _rndInfection) > (dayz_infectionTreshold / (_zClose * 0.25)));
 			if (_newtypezed) then {
 				_rndInfection = random (_damage - _bloodPercentage);
-				_hitInfection = ((exp _rndInfection * dayz_infectionTreshold*1.1) > dayz_infectionTreshold);
+				_hitInfection = ((exp _rndInfection) > (dayz_infectionTreshold / _zClose));
 			};
 			if (_hitInfection) then {
 				r_player_infected = true;

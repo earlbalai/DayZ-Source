@@ -1,5 +1,5 @@
 
-private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave","_wpnType","_isokay"];
+private["_refObj","_size","_vel","_speed","_hunger","_thirst","_array","_unsaved","_timeOut","_result","_lastSave","_wpnType","_isOK"];
 disableSerialization;
 _timeOut = 0;
 _messTimer = 0;
@@ -281,17 +281,19 @@ while {true} do {
 		dayz_lastSave = time;
 	};
 
-	//Pause for pickup actions
-  _isokay = pickupInit AND !canPickup || !pickupInit AND canPickup;
- if (pickupInit AND !canPickup) then {
-  canPickup = true;
-  pickupInit = false;
-   };
-   //Reset if stuck...
-  if (!_isokay) then {
-  canPickup = false;
-  pickupInit = true;
-  };
+	// sort out pickup actions
+	_isOK = (pickupInit and !canPickup) or (!pickupInit and canPickup);
+
+	if (_isOK) then {
+		if (pickupInit and !canPickup) then {
+			canPickup = true;
+			pickupInit = false;
+		};
+	} else {
+		// reset
+		canPickup = false;
+		pickupInit = true;
+	};
 
 	//Attach Trigger Current Object
 	//dayz_playerTrigger attachTo [_refObj,[0,0,0]];

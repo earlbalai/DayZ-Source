@@ -42,12 +42,11 @@ if (_finished) then {
 		//Self Healing
 		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
 		dayz_sourceBleeding = objNull;
+		call fnc_usec_resetWoundPoints;
 	} else {
 		//PVDZ_plr_Humanity = [player,20];
 		[player,20] call player_humanityChange;
 	};
-
-	call fnc_usec_resetWoundPoints;
 } else {
 	r_interrupt = false;
 	[objNull, player, rSwitchMove,""] call RE;

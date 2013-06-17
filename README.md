@@ -10,6 +10,10 @@ Current Version
 Files updated
 ------------
  - Dayz_code
+ - Dayz_communityassets
+ - Dayz_server (server admins only)
+ - Mission (server admins only) (Prerequisites) Downloaded from http://www.silentspy.net/utility/dayz/mission-generator/
+ - BattlEye-Filters (server admins only)
 
 Requirements
 ------------
