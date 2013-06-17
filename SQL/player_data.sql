@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.player_data
-CREATE TABLE IF NOT EXISTS `player_data` (
+-- Dumping structure for table test.Player_DATA
+CREATE TABLE IF NOT EXISTS `Player_DATA` (
   `playerID` int(11) NOT NULL DEFAULT '0',
   `playerUID` varchar(45) NOT NULL DEFAULT '0',
   `playerName` varchar(50) NOT NULL DEFAULT 'Null',
@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS `player_data` (
   KEY `playerUID` (`playerUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table test.player_data: ~418 rows (approximately)
-/*!40000 ALTER TABLE `player_data` DISABLE KEYS */;
-INSERT INTO `player_data` (`playerID`, `playerUID`, `playerName`, `playerMorality`, `playerSex`) VALUES
+-- Dumping data for table test.Player_DATA: ~418 rows (approximately)
+/*!40000 ALTER TABLE `Player_DATA` DISABLE KEYS */;
+INSERT INTO `Player_DATA` (`playerID`, `playerUID`, `playerName`, `playerMorality`, `playerSex`) VALUES
 	(0, '47728262', 'Seven', 0, 0),
 	(0, '3766534', 'R4Z0R49', 0, 0),
 	(0, '11470854', 'Powell', 0, 0),
@@ -442,6 +442,6 @@ INSERT INTO `player_data` (`playerID`, `playerUID`, `playerName`, `playerMoralit
 	(0, '31538310', 'Chameleon', 0, 0),
 	(0, '26657158', 'Jack', 0, 0),
 	(0, '27939526', 'Rawrloafs2', 0, 0);
-/*!40000 ALTER TABLE `player_data` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Player_DATA` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

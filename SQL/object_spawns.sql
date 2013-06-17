@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.object_spawns
-CREATE TABLE IF NOT EXISTS `object_spawns` (
+-- Dumping structure for table test.Object_SPAWNS
+CREATE TABLE IF NOT EXISTS `Object_SPAWNS` (
   `ObjectUID` bigint(20) NOT NULL DEFAULT '0',
   `Classname` varchar(32) DEFAULT NULL,
   `Worldspace` varchar(64) DEFAULT NULL,
@@ -22,9 +22,9 @@ CREATE TABLE IF NOT EXISTS `object_spawns` (
   PRIMARY KEY (`ObjectUID`,`MapID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
--- Dumping data for table test.object_spawns: 89 rows
-/*!40000 ALTER TABLE `object_spawns` DISABLE KEYS */;
-INSERT INTO `object_spawns` (`ObjectUID`, `Classname`, `Worldspace`, `Inventory`, `Hitpoints`, `MapID`, `Last_changed`) VALUES
+-- Dumping data for table test.Object_SPAWNS: 89 rows
+/*!40000 ALTER TABLE `Object_SPAWNS` DISABLE KEYS */;
+INSERT INTO `Object_SPAWNS` (`ObjectUID`, `Classname`, `Worldspace`, `Inventory`, `Hitpoints`, `MapID`, `Last_changed`) VALUES
 	(30728533, 'UAZ_Unarmed_TK_EP1', '[0,[12140.168, 12622.802,0]]', '[[[], []], [["20Rnd_762x51_DMR"], [5]], [[], []]]', '[["palivo",1],["motor",1],["karoserie",1],["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_1_steering",1],["wheel_2_2_steering",1]]', '', NULL),
 	(26883451, 'UAZ_Unarmed_TK_CIV_EP1', '[0,[6279.4966, 7810.3691,0]]', '[[[], []], [["10Rnd_127x99_m107"], [5]], [[], []]]', '[["palivo",1],["motor",1],["karoserie",1],["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_1_steering",1],["wheel_2_2_steering",1]]', '', NULL),
 	(42231659, 'UAZ_Unarmed_UN_EP1', '[45,[6865.2432,2481.6943,0]]', '[[[], []], [["30Rnd_556x45_StanagSD"], [5]], [[], []]]', '[["palivo",1],["motor",1],["karoserie",1],["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_1_steering",1],["wheel_2_2_steering",1]]', '', NULL),
@@ -114,6 +114,6 @@ INSERT INTO `object_spawns` (`ObjectUID`, `Classname`, `Worldspace`, `Inventory`
 	(80289092, 'BAF_Offroad_W', '[322,[7201.5181,3034.3232,0]]', '[[[],[]],[["HandGrenade_West","SmokeShell","SmokeShellRed","SmokeShellYellow","SmokeShellGreen","ItemWaterbottle","30Rnd_556x45_Stanag","20Rnd_762x51_DMR","ItemTent"],[10,1,1,1,1,1,20,10,1]],[[],[]]]', '[["glass1",1],["glass2",1],["glass3",1],["motor",0.8],["palivo",0.8],["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_1_steering",1],["wheel_2_2_steering",1],["sklo predni P",1],["sklo predni L",1],["karoserie",1],["wheel_1_4_steering",1],["wheel_2_4_steering",1],["wheel_1_3_steering",1],["wheel_2_3_steering",1],["glass4",1]]', '', NULL),
 	(53278043, 'MH6J_DZ', '[122,[10137.868,12049.376,-6.1035156e-005]]', '[[[],[]],[["1Rnd_Smoke_M203", "7Rnd_45ACP_1911", "30Rnd_556x45_StanagSD", "200Rnd_556x45_M249", "FoodCanPasta", "15Rnd_W1866_Slug", "5x_22_LR_17_HMR", "15Rnd_9x19_M9SD", "17Rnd_9x19_glock17", "100Rnd_762x51_M240", "6Rnd_45ACP", "8Rnd_9x18_Makarov"],[]],[["DZ_Backpack_EP1"],[]]]', '[["motor",1],["elektronika",1],["mala vrtule",1],["velka vrtule",1]]', '', NULL),
 	(25522943, 'HMMWV_DZ', '[0,[13441.056,12003.912,4.5776367e-005]]', '[[["AK_47_M"],[]],[["PartWoodPile", "ItemBandage", "HandGrenade_west", "6Rnd_45ACP", "ItemEpinephrine", "8Rnd_B_Beneli_74Slug", "HandChemBlue", "8Rnd_B_Beneli_Pellets", "PartEngine", "17Rnd_9x19_glock17", "ItemTent"],[]],[["DZ_CivilBackpack_EP1"],[]]]', '[["palivo",1],["motor",1],["karoserie",1],["wheel_1_1_steering",1],["wheel_1_2_steering",1],["wheel_2_1_steering",1],["wheel_2_2_steering",1]]', '', NULL);
-/*!40000 ALTER TABLE `object_spawns` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Object_SPAWNS` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

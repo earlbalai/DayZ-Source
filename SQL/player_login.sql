@@ -10,8 +10,8 @@
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test.player_login
-CREATE TABLE IF NOT EXISTS `player_login` (
+-- Dumping structure for table test.Player_LOGIN
+CREATE TABLE IF NOT EXISTS `Player_LOGIN` (
   `LoginID` int(11) NOT NULL AUTO_INCREMENT,
   `PlayerUID` varchar(45) NOT NULL,
   `CharacterID` int(11) NOT NULL DEFAULT '0',
@@ -20,9 +20,9 @@ CREATE TABLE IF NOT EXISTS `player_login` (
   PRIMARY KEY (`LoginID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2621 DEFAULT CHARSET=latin1;
 
--- Dumping data for table test.player_login: ~2,620 rows (approximately)
-/*!40000 ALTER TABLE `player_login` DISABLE KEYS */;
-INSERT INTO `player_login` (`LoginID`, `PlayerUID`, `CharacterID`, `datestamp`, `Action`) VALUES
+-- Dumping data for table test.Player_LOGIN: ~2,620 rows (approximately)
+/*!40000 ALTER TABLE `Player_LOGIN` DISABLE KEYS */;
+INSERT INTO `Player_LOGIN` (`LoginID`, `PlayerUID`, `CharacterID`, `datestamp`, `Action`) VALUES
 	(1, '47728262', 1, '2013-04-22 10:38:22', 0),
 	(2, '3766534', 2, '2013-04-22 10:56:44', 0),
 	(3, '47728262', 1, '2013-04-22 10:57:29', 0),
@@ -2643,6 +2643,6 @@ INSERT INTO `player_login` (`LoginID`, `PlayerUID`, `CharacterID`, `datestamp`, 
 	(2618, '3766534', 901, '2013-06-17 03:16:42', 0),
 	(2619, '3766534', 901, '2013-06-17 03:30:30', 2),
 	(2620, '56782214', 859, '2013-06-17 03:48:11', 2);
-/*!40000 ALTER TABLE `player_login` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Player_LOGIN` ENABLE KEYS */;
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
