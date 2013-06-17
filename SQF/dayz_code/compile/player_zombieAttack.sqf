@@ -171,32 +171,12 @@ _move = "";
 switch true do {
 	// front
 	case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 315) and (_deg <= 360)) or ((_deg > 0) and (_deg < 45)))) : {
-		//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
 		_lastTackle = player getVariable ["lastTackle", 0];
 		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
 			player setVariable ["lastTackle", time];
 			// stop player
 			_vel = velocity player;
 			player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-
-			// rotate player 'smoothly'
-			[_deg] spawn {
-				private["_step","_i"];
-				_step = 180 / 3;
-				_i = 0;
-				while { _i < 3 } do {
-					player setDir ((getDir player) + _step);
-					_i = _i + 1;
-					sleep 0.01;
-				};
-			};
-
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
 		};
 	};
 	// left
@@ -205,10 +185,7 @@ switch true do {
 		_lastTackle = player getVariable ["lastTackle", 0];
 		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
 			player setVariable ["lastTackle", time];
-			// stop player
-			//_vel = velocity player;
-			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-
+			
 			// rotate player 'smoothly'
 			[_deg] spawn {
 				private["_step","_i"];
@@ -220,13 +197,10 @@ switch true do {
 					sleep 0.01;
 				};
 			};
-
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
+			
+			// stop player
+			_vel = velocity player;
+			player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 		};
 	};
 	// right
@@ -235,9 +209,6 @@ switch true do {
 		_lastTackle = player getVariable ["lastTackle", 0];
 		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
 			player setVariable ["lastTackle", time];
-			// stop player
-			//_vel = velocity player;
-			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 
 			// rotate player 'smoothly'
 			[_deg] spawn {
@@ -251,12 +222,9 @@ switch true do {
 				};
 			};
 
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
+			// stop player
+			_vel = velocity player;
+			player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 		};
 	};
 	// rear
@@ -269,25 +237,32 @@ switch true do {
 			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
 
 			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
+			_move = "AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon";
+			//default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 		};
 	};
 };
 
 // make player dive
+DoRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
 if (_move != "") then {
-	player switchMove _move;
+	//player switchMove _move;
+	if (DoRE) then {
+		[nil, player, rSWITCHMOVE, _move] call RE;
+	} else {
+		player switchMove _move;
+	};
 
 	if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
 		[] spawn {
 			private ["_move"];
 			waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
 			waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
-			player switchMove "";
+			if (DoRE) then {
+				[nil, player, rSWITCHMOVE, _move] call RE;
+			} else {
+				player switchMove _move;
+			};
 		};
 	};
 
