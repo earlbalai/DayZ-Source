@@ -3,7 +3,7 @@
 -- Server version:               5.6.10 - MySQL Community Server (GPL)
 -- Server OS:                    Win64
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2013-03-01 22:49:12
+-- Date/time:                    2013-06-17 04:04:28
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -20,67 +20,69 @@ BEGIN
 	
 #remove dead players from data table
 	DELETE 
-		FROM Character_DATA 
+		FROM character_data 
 		WHERE Alive=0;	
 	
 #remove vehicles with 100% damage
 	DELETE
-		FROM Object_DATA 
+		FROM object_data 
 		WHERE Damage = '1';	
 
 #remove unused vehicles older then 14 days
 	DELETE
-		FROM Object_DATA
+		FROM object_data
 		WHERE DATE(last_updated) < CURDATE() - INTERVAL 14 DAY
 			AND Classname != 'dummy'
 			AND Classname != 'Hedgehog_DZ'
 			AND Classname != 'Wire_cat1'
 			AND Classname != 'Sandbag1_DZ'
-			AND Classname != 'TrapBear';
+			AND Classname != 'TrapBear'
+			AND Classname != 'StashSmall'
+			AND Classname != 'StashMedium';
 
-#remove tents whose owner has been dead for four days
+#remove tents/stash's whose owner has been dead for four days
 	DELETE
-		FROM Object_DATA
-		USING Object_DATA, Character_DATA
-		WHERE Object_DATA.Classname = 'TentStorage'
-			AND Object_DATA.CharacterID = Character_DATA.CharacterID
-			AND Character_DATA.Alive = 0
-			AND DATE(Character_DATA.last_updated) < CURDATE() - INTERVAL 4 DAY;
+		FROM object_data
+		USING object_data, character_data
+		WHERE object_data.Classname = 'TentStorage' or object_data.Classname = 'StashSmall' or object_data.Classname = 'StashMedium'
+			AND object_data.CharacterID = character_data.CharacterID
+			AND character_data.Alive = 0
+			AND DATE(character_data.last_updated) < CURDATE() - INTERVAL 4 DAY;
 
 #remove empty tents older than seven days
 	DELETE
-		FROM Object_DATA
-		WHERE Classname = 'TentStorage'
+		FROM object_data
+		WHERE Classname = 'TentStorage' or Classname = 'StashSmall' or Classname = 'StashMedium'
 			AND DATE(last_updated) < CURDATE() - INTERVAL 7 DAY
 			AND Inventory = '[[[],[]],[[],[]],[[],[]]]';
 	
 	DELETE
-		FROM Object_DATA
-		WHERE Classname = 'TentStorage'
+		FROM object_data
+		WHERE Classname = 'TentStorage' or Classname = 'StashSmall' or Classname = 'StashMedium'
 			AND DATE(last_updated) < CURDATE() - INTERVAL 7 DAY
 			AND Inventory = '[]';		
 
 #remove barbed wire older than two days
 	DELETE
-		FROM Object_DATA
+		FROM object_data
 		WHERE Classname = 'Wire_cat1'
 			AND DATE(last_updated) < CURDATE() - INTERVAL 2 DAY;
 			
 #remove Tank Traps older than fifteen days
 	DELETE
-		FROM Object_DATA
+		FROM object_data
 		WHERE Classname = 'Hedgehog_DZ'
 			AND DATE(last_updated) < CURDATE() - INTERVAL 15 DAY;
 
 #remove Sandbags older than twenty days
 	DELETE
-		FROM Object_DATA
+		FROM object_data
 		WHERE Classname = 'Sandbag1_DZ'
 			AND DATE(last_updated) < CURDATE() - INTERVAL 20 DAY;
 
 #remove Bear Traps older than five days
 	DELETE
-		FROM Object_DATA
+		FROM object_data
 		WHERE Classname = 'TrapBear'
 			AND DATE(last_updated) < CURDATE() - INTERVAL 5 DAY;
 

@@ -3,7 +3,7 @@
 -- Server version:               5.6.10 - MySQL Community Server (GPL)
 -- Server OS:                    Win64
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2013-03-01 22:49:12
+-- Date/time:                    2013-06-17 04:04:28
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -23,11 +23,11 @@ BEGIN
 
 	SELECT COUNT(*)
 		INTO intLineCount
-		FROM Object_DATA;
+		FROM object_data;
 
 	SELECT COUNT(*)
 		INTO intDummyCount
-		FROM Object_DATA
+		FROM object_data
 		WHERE Classname = 'dummy';
 
 	WHILE (intLineCount > intDummyCount) DO
@@ -36,7 +36,7 @@ BEGIN
 
 		SELECT ObjectUID, Worldspace
 			INTO @rsObjectUID, @rsWorldspace
-			FROM Object_DATA
+			FROM object_data
 			LIMIT intDoLine, 1;
 
 		SELECT REPLACE(@rsWorldspace, '[', '') INTO @rsWorldspace;
@@ -52,7 +52,7 @@ BEGIN
 		END IF;
 
 		IF (intWest > 0 OR intNorth > 15360) THEN
-			DELETE FROM Object_DATA
+			DELETE FROM object_data
 				WHERE ObjectUID = @rsObjectUID;
 		END IF;
 			
