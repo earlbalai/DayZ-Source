@@ -182,7 +182,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "1.7.7.Pre-Release.08062013";
+			text = "1.7.7.1.Hotfix.1762013";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;
