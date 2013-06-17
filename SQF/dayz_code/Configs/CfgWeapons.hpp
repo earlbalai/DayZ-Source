@@ -39,7 +39,7 @@ class CfgWeapons {
 	//#include "CfgWeapons\Weapon\Sniper\AS50.hpp"
 	#include "CfgWeapons\Weapon\Sniper\M107.hpp"
 	
-	#include "CfgWeapons\Weapon\Sniper\DMR_DZ.hpp"
+//	#include "CfgWeapons\Weapon\Sniper\DMR_DZ.hpp"
 //	#include "CfgWeapons\Weapon\Sniper\DMR_DZ2.hpp"
 //	#include "CfgWeapons\Weapon\Sniper\DMR_DZ3.hpp"
 	
