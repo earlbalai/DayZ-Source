@@ -167,7 +167,6 @@ if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if play
 
 // player may fall...
 _deg = [player, _unit] call BIS_fnc_relativeDirTo;
-diag_log (str(_deg));
 _move = "";
 
 switch true do {
@@ -366,7 +365,7 @@ if (_isVehicle) then {
 }; // fi player by foot
 
 _stop = diag_tickTime;
-diag_log format ["%2 Execution Time: %1",_stop - _start, __FILE__];
+//diag_log format ["%2 Execution Time: %1",_stop - _start, __FILE__];
 
 // please do not remove this last line! It's the return code
 ""
