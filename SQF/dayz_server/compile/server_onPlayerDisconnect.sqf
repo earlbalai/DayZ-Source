@@ -1,3 +1,4 @@
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 /*
 
 */
@@ -13,19 +14,21 @@ if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
 
-_characterID = _playerObj getVariable["characterID", "0"];
-_timeout = _playerObj getVariable["combattimeout",0];
+_characterID = _playerObj getVariable["characterID", "?"];
+_timeout = _playerObj getVariable["combattimeout",0] - time;
 
-if ((_timeout - time) > 0) then {
-	diag_log format["Player %1 logged off while in combat (ttl: %2 sec)", _playerName,_timeout];
-};
-
-diag_log format["DISCONNECT: %1 (%2) Object: %3, _characterID: %4", _playerName,_playerUID,_playerObj,_characterID];
-[_playerUID,_characterID,2] call dayz_recordLogin;
 
 //dayz_disco = dayz_disco - [_playerUID];
 
 if (!isNull _playerObj) then {
+// log disconnect
+#ifdef LOGIN_DEBUG
+	diag_log format["Player UID#%1 CID#%2 %3 as %4, logged off at %5%6", 
+		getPlayerUID _playerObj, _characterID, _playerObj call fa_plr2str, typeOf _playerObj, 
+		(getPosATL _playerObj) call fa_coor2str,
+		if (_timeout > 0) then {" while in combat"} then {""}
+	]; 
+#endif
 //Update Vehicle
 	if (vehicle _playerObj != _playerObj) then {
 		_playerObj action ["eject", vehicle _playerObj];

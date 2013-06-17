@@ -314,7 +314,7 @@ if (_isVehicle) then {
 			};
 			_woundDamage = _unit getVariable ["hit_"+_wound, 0];
 			// we limit how vehicle could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
-			_damage = random (if (_woundDamage < 0.8) then {0.1} else {0.01});
+			_damage =  (if (_woundDamage < 0.8 OR {(!(_wound IN dayZ_explosiveParts))}) then {0.1} else {0.01});
 			// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 			diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
 			_total = [_vehicle,  _wound,  _woundDamage + _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
@@ -339,7 +339,7 @@ if (_isVehicle) then {
 	}; // fi veh with compartment
 } else { // player by foot
 	if (player distance _unit <= 2.2) then {
-		_damage = 0.2 + random (1);
+		_damage = 0.2 + random (0.512);
 		switch true do {
 			case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
 				[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
