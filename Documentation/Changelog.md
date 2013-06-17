@@ -49,6 +49,9 @@ Serverside affected addons:
 	    * [UPDATED] - More reliable loot spawns.
 	    * [UPDATED] - Infection rates are much lower (based on #zeds attacking you) viral zeds have 4x greater infection rates
 	    * [UPDATED] - player knockdown by zeds should be less common.
+		
+		* [REMOVED] - Wild Zeds while we try to debug issues with FPS.
+		* [REMOVED] - Zeds will not longer spawn while in vehicles.
 
 ______________________
 Version 1.7.7
