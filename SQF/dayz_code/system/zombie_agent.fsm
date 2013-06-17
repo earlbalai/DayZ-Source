@@ -25,7 +25,7 @@ item20[] = {"",7,210,-29.000006,196.000000,-20.999996,204.000000,0.000000,""};
 item21[] = {"",7,210,-104.000008,196.000000,-95.999992,204.000000,0.000000,""};
 item22[] = {"Time_Check",4,218,-450.000000,75.000000,-350.000000,125.000000,0.000000,"Time" \n "Check"};
 item23[] = {"Time_Check",4,218,-275.000000,250.000000,-175.000000,300.000000,0.000000,"Time" \n "Check"};
-item24[] = {"No_Target",4,218,-425.000000,575.000000,-325.000000,625.000000,3.000000,"No" \n "Target"};
+item24[] = {"No_Target",4,218,-250.000000,575.000000,-150.000000,625.000000,3.000000,"No" \n "Target"};
 item25[] = {"",7,210,-479.000000,596.000000,-471.000000,604.000000,0.000000,""};
 item26[] = {"",7,210,-479.000000,146.000000,-471.000000,154.000000,0.000000,""};
 item27[] = {"",7,210,221.000000,321.000000,229.000000,329.000000,0.000000,""};
@@ -73,7 +73,10 @@ item68[] = {"",7,210,-479.000000,846.000000,-471.000000,854.000000,0.000000,""};
 item69[] = {"Time_Check",4,218,-275.000000,325.000000,-175.000000,375.000000,0.000000,"Time" \n "Check"};
 item70[] = {"Time_Check",4,218,-150.000000,800.000000,-50.000000,850.000000,0.000000,"Time" \n "Check"};
 item71[] = {"",7,210,-479.000000,671.000000,-471.000000,679.000000,0.000000,""};
-item72[] = {"____FAKE____",9,2880,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item72[] = {"",7,210,-354.000000,596.000000,-346.000000,604.000000,0.000000,""};
+item73[] = {"Target_Alive",4,218,-400.000000,475.000000,-300.000000,525.000000,0.000000,"Target" \n "Alive"};
+item74[] = {"",7,210,-104.000000,496.000000,-96.000000,504.000000,0.000000,""};
+item75[] = {"____FAKE____",9,3000,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,11};
 link1[] = {0,57};
 link2[] = {2,3};
@@ -100,9 +103,9 @@ link22[] = {14,6};
 link23[] = {15,19};
 link24[] = {16,17};
 link25[] = {17,9};
-link26[] = {17,31};
-link27[] = {17,58};
-link28[] = {17,69};
+link26[] = {17,58};
+link27[] = {17,69};
+link28[] = {17,74};
 link29[] = {18,3};
 link30[] = {19,20};
 link31[] = {20,9};
@@ -110,7 +113,7 @@ link32[] = {20,21};
 link33[] = {21,16};
 link34[] = {22,7};
 link35[] = {23,17};
-link36[] = {24,25};
+link36[] = {24,72};
 link37[] = {25,49};
 link38[] = {26,37};
 link39[] = {27,29};
@@ -154,23 +157,28 @@ link76[] = {56,3};
 link77[] = {57,1};
 link78[] = {58,59};
 link79[] = {59,23};
-link80[] = {61,7};
-link81[] = {63,67};
-link82[] = {64,47};
-link83[] = {65,63};
-link84[] = {65,66};
-link85[] = {67,35};
-link86[] = {68,67};
-link87[] = {69,17};
-link88[] = {70,33};
-link89[] = {71,25};
-link90[] = {72,46};
-link91[] = {60,72};
-link92[] = {72,60};
-link93[] = {62,72};
-link94[] = {72,62};
-globals[] = {25.000000,1,0,0,0,640,480,1,114,6316128,1,-876.539734,159.083557,772.239929,139.066391,983,601,1};
-window[] = {2,-1,-1,-1,-1,890,110,1318,110,3,1000};
+link80[] = {59,73};
+link81[] = {61,7};
+link82[] = {63,67};
+link83[] = {64,47};
+link84[] = {65,63};
+link85[] = {65,66};
+link86[] = {67,35};
+link87[] = {68,67};
+link88[] = {69,17};
+link89[] = {70,33};
+link90[] = {71,25};
+link91[] = {72,25};
+link92[] = {73,72};
+link93[] = {74,31};
+link94[] = {74,73};
+link95[] = {75,46};
+link96[] = {60,75};
+link97[] = {75,60};
+link98[] = {62,75};
+link99[] = {75,62};
+globals[] = {25.000000,1,0,0,0,640,480,1,118,6316128,1,-1001.114319,283.657684,848.403687,62.902256,983,601,1};
+window[] = {2,-1,-1,-32000,-32000,846,66,1274,66,3,1000};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -512,6 +520,8 @@ class FSM
        "if (speed _agent < 0.1) then {_countr = _countr + 1} else {_countr = 0};" \n
        "_target = _agent call zombie_findTargetAgent;" \n
        "_isAlive = alive _agent;" \n
+       "_isAliveTarget = alive _target;" \n
+       "" \n
        "_targetPos = getPosATL _target;" \n
        "" \n
        "//Move to target" \n
@@ -575,6 +585,16 @@ class FSM
            "_agent moveTo _targetPos;" \n
            "" \n
            "//diag_log (""Cant See Target"");"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Target_Alive">*/
+        class Target_Alive
+        {
+          priority = 0.000000;
+          to="Reset_Targeting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAliveTarget"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "Time_Check">*/
@@ -795,11 +815,23 @@ class FSM
        "// reset stance to favorite one" \n
        "_agent setUnitPos (_agent getVariable [""stance"", ""UP""]);" \n
        "" \n
+       "_isAliveTarget = alive _target;" \n
+       "" \n
        "//Count los checks" \n
        "_losCheck = _losCheck + 1;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "Target_Alive">*/
+        class Target_Alive
+        {
+          priority = 0.000000;
+          to="Reset_Targeting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAliveTarget"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "Time_Check">*/
         class Time_Check
         {
