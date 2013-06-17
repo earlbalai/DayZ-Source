@@ -37,7 +37,7 @@ BEGIN
 	
 		SELECT COUNT(*) 				#retrieve the amount of already spawned vehicles...
 			INTO iNumVehExisting
-			FROM object_data 
+			FROM Object_DATA 
 			WHERE Instance = sInstance
 			AND Classname != '-'						#exclude dummys
 			AND Classname != 'Hedgehog_DZ'			#exclude hedgehog
@@ -56,7 +56,7 @@ BEGIN
 			#count number of same class already spawned
 			SELECT COUNT(*) 
 				INTO iNumClassExisting 
-				FROM object_data 
+				FROM Object_DATA 
 				WHERE Instance = sInstance
 				AND Classname = @rsClassname;
 
@@ -64,17 +64,17 @@ BEGIN
 
 				IF (rndspawn(@rschance) = 1) THEN
 				
-					INSERT INTO object_data (ObjectUID, Instance, Classname, Damage, CharacterID, Worldspace, Inventory, Hitpoints, Fuel, Datestamp)
+					INSERT INTO Object_DATA (ObjectUID, Instance, Classname, Damage, CharacterID, Worldspace, Inventory, Hitpoints, Fuel, Datestamp)
 						SELECT ObjectUID, sInstance, Classname, RAND(@rsDamage), '0', Worldspace, Inventory, Hitpoints, RAND(1), SYSDATE() 
 							FROM object_spawns 
 							WHERE Classname = @rsClassname 
-								AND NOT ObjectUID IN (select objectuid from object_data where instance = sInstance)
+								AND NOT ObjectUID IN (select objectuid from Object_DATA where instance = sInstance)
 							ORDER BY RAND()
 							LIMIT 0, 1;
 							
 					SELECT COUNT(*) 
 						INTO iNumVehExisting 
-						FROM object_data 
+						FROM Object_DATA 
 						WHERE Instance = sInstance
 							AND Classname != '-'						#exclude dummys
 							AND Classname != 'Hedgehog_DZ'			#exclude hedgehog
@@ -86,7 +86,7 @@ BEGIN
 					#update number of same class already spawned
 					SELECT COUNT(*) 
 						INTO iNumClassExisting 
-						FROM object_data 
+						FROM Object_DATA 
 						WHERE Instance = sInstance
 						AND Classname = @rsClassname;
 				

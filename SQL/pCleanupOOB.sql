@@ -23,11 +23,11 @@ BEGIN
 
 	SELECT COUNT(*)
 		INTO intLineCount
-		FROM object_data;
+		FROM Object_DATA;
 
 	SELECT COUNT(*)
 		INTO intDummyCount
-		FROM object_data
+		FROM Object_DATA
 		WHERE Classname = 'dummy';
 
 	WHILE (intLineCount > intDummyCount) DO
@@ -36,7 +36,7 @@ BEGIN
 
 		SELECT ObjectUID, Worldspace
 			INTO @rsObjectUID, @rsWorldspace
-			FROM object_data
+			FROM Object_DATA
 			LIMIT intDoLine, 1;
 
 		SELECT REPLACE(@rsWorldspace, '[', '') INTO @rsWorldspace;
@@ -52,7 +52,7 @@ BEGIN
 		END IF;
 
 		IF (intWest > 0 OR intNorth > 15360) THEN
-			DELETE FROM object_data
+			DELETE FROM Object_DATA
 				WHERE ObjectUID = @rsObjectUID;
 		END IF;
 			
