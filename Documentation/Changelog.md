@@ -5,7 +5,7 @@ DayZ Mod Changelog
 Version 1.7.7.1
 ---------------
 
-* Releasedate 24 June 2013
+* Releasedate 17 June 2013
 
 
 Affected addons:
@@ -19,10 +19,6 @@ Serverside affected addons:
 
 
 	Changes:
-
-	    * [NEW] - 
-	    * [NEW] - 
-	    * [NEW] - 
 
 	    * [FIXED] - Crashsite loot spawn fixed.
 	    * [FIXED] - LOS should now reset correct.
@@ -39,6 +35,7 @@ Serverside affected addons:
 	    * [FIXED] - Fixed an issue where bandaging an other player wouldn't bandage them.
 	    * [FIXED] - Added a range check to zed attacks, no more 5-10 meter hits.
 	    * [FIXED] - Fixed issue where your player's body would be deleted if aborting too quickly.
+	    * [FIXED] - Shadow LODs on soda cans.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
