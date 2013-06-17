@@ -33,10 +33,11 @@ Serverside affected addons:
 	    * [FIXED] - Changing clothes while in a gear menu of a pile/vehicle/tent will no longer crash your game.
 	    * [FIXED] - Fixed duplication of mags via combining/converting and duplication of tents/built items.
 	    * [FIXED] - 100% damaged vehicles do not respawn anymore.
-		* [FIXED] - Added check to make sure no one is within 30 meters of zed spawning.
-		* [FIXED] - Fixed bandit detection for kills and humanity changes.
-		* [FIXED] - Fixed an issue where you wouldn't be able to pick up any loot.
-		* [FIXED] - Fixed an issue where bandaging an other player wouldn't bandage them.
+	    * [FIXED] - Added check to make sure no one is within 30 meters of zed spawning.
+	    * [FIXED] - Fixed bandit detection for kills and humanity changes.
+	    * [FIXED] - Fixed an issue where you wouldn't be able to pick up any loot.
+	    * [FIXED] - Fixed an issue where bandaging an other player wouldn't bandage them.
+	    * [FIXED] - Added a range check to zed attacks, no more 5-10 meter hits.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
@@ -46,6 +47,8 @@ Serverside affected addons:
 	    * [UPDATED] - Reported bike damage is divided by 10.
 	    * [UPDATED] - Much quicker login/loading.
 	    * [UPDATED] - More reliable loot spawns.
+	    * [UPDATED] - Infection rates are much lower (based on #zeds attacking you) viral zeds have 4x greater infection rates
+	    * [UPDATED] - player knockdown by zeds should be less common.
 
 ______________________
 Version 1.7.7
