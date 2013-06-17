@@ -37,7 +37,7 @@ Serverside affected addons:
 	    * [FIXED] - Fixed bandit detection for kills and humanity changes.
 	    * [FIXED] - Fixed an issue where you wouldn't be able to pick up any loot.
 	    * [FIXED] - Fixed an issue where bandaging an other player wouldn't bandage them.
-	    * [FIXED] - Added a range check to zed attacks, no more 5-10 meter hits.
+	    * [FIXED] - Added a range check to zed attacks, no more 5-10m hits. (We Hope)
 	    * [FIXED] - Fixed issue where your player's body would be deleted if aborting too quickly.
 		* [FIXED] - Shadow LODs on soda cans.
 	    
@@ -57,7 +57,7 @@ Serverside affected addons:
 		* [UPDATED] - Updated pMain to now include extra setting --execute="call pMain(serverinstance) example.  --execute="call pMain(1) would spawn all vehicles for instance 1
 		
 	    * [REMOVED] - Wild Zeds while we try to debug issues with FPS.
-	    * [REMOVED] - Zeds will not longer spawn while in vehicles.
+	    * [REMOVED] - Zeds will no longer spawn while in vehicles.
 
 ______________________
 Version 1.7.7
