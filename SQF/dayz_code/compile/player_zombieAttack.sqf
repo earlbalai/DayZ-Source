@@ -88,7 +88,6 @@ switch true do {
 	case ((toArray(animationState player) select 5) == 112) : {
 		if (_distance < 3) then {
 			_rnd = ceil(random 9);
-			diag_log (str(_rnd));
 			_move = "ZombieFeed" + str(_rnd);
 		};
 	};
@@ -338,7 +337,7 @@ if (_isVehicle) then {
 	}; // fi veh with compartment
 } else { // player by foot
 	if (player distance _unit <= 2.2) then {
-		_damage = 0.2 + random (0.512);
+		_damage = 0.2 + random (1);
 		switch true do {
 			case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
 				[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
