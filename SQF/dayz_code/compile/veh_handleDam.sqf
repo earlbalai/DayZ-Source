@@ -65,6 +65,6 @@ else {
 		publicVariable "PVDZ_veh_SH";
 	};
 };
-diag_log format ["%1. Returned damage:%2", _log, _ret];
+//diag_log format ["%1. Returned damage:%2", _log, _ret];
 // all "HandleDamage event" functions should return the effective damage that the engine will record for that part
 _ret
