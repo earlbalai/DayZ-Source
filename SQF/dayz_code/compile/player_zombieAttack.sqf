@@ -190,13 +190,14 @@ switch true do {
 					sleep 0.01;
 				};
 			};
-
+/*
 			// make player dive
 			_move = switch (toArray(animationState player) select 17) do {
 				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
 				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 			};
+*/			
 		};
 	};
 	// left
@@ -338,28 +339,38 @@ if (_isVehicle) then {
 } else { // player by foot
 	if (player distance _unit <= 2.2) then {
 		_damage = 0.2 + random (1);
-		switch true do {
-			case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
-				[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
-			};
-			case (_isStairway AND (_hu > _hv)) : { // player is lower than Z,  so Z hurts head
-				[player,  "head_hit",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
-			};
-			default {
-				if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
-					_cnt = count (DAYZ_woundHit select 1);
-					_index = floor (random _cnt);
-					_index = (DAYZ_woundHit select 1) select _index;
-					_wound = (DAYZ_woundHit select 0) select _index;
-				} else {
-					_cnt = count (DAYZ_woundHit_ok select 1);
-					_index = floor (random _cnt);
-					_index = (DAYZ_woundHit_ok select 1) select _index;
-					_wound = (DAYZ_woundHit_ok select 0) select _index;
+		_tPos = (getPosASL _vehicle);
+		_zPos = (getPosASL _unit);
+		_inAngle = [_zPos,(getdir _unit),50,_tPos] call fnc_inAngleSector;
+		if (_inAngle) then {
+			//LOS check
+			_cantSee = [_unit,_vehicle] call dayz_losCheck;
+			if (!_cantSee) then {
+				switch true do {
+					case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
+						[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+					};
+					case (_isStairway AND (_hu > _hv)) : { // player is lower than Z,  so Z hurts head
+						[player,  "head_hit",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+					};
+					default {
+						if (r_player_blood < (r_player_bloodTotal * 0.8)) then {
+							_cnt = count (DAYZ_woundHit select 1);
+							_index = floor (random _cnt);
+							_index = (DAYZ_woundHit select 1) select _index;
+							_wound = (DAYZ_woundHit select 0) select _index;
+						} else {
+							_cnt = count (DAYZ_woundHit_ok select 1);
+							_index = floor (random _cnt);
+							_index = (DAYZ_woundHit_ok select 1) select _index;
+							_wound = (DAYZ_woundHit_ok select 0) select _index;
+						};
+						[player,  _wound,  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+					};
 				};
-				[player,  _wound,  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
+				
 			};
-		};
+		};	
 	};
 }; // fi player by foot
 
