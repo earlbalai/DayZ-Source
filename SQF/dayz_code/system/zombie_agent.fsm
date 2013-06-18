@@ -60,7 +60,7 @@ item55[] = {"player_check",4,218,-450.000000,0.000000,-350.000000,50.000000,0.00
 item56[] = {"player_check",4,218,50.000000,0.000000,150.000000,50.000000,0.000000,"player" \n "check"};
 item57[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
 item58[] = {"Distance_Check",4,218,-250.000000,375.000000,-150.000000,425.000000,0.000000,"Distance Check"};
-item59[] = {"Stance",2,4346,-350.000000,325.000000,-250.000000,375.000000,0.000000,"Stance"};
+item59[] = {"Stance",2,250,-350.000000,325.000000,-250.000000,375.000000,0.000000,"Stance"};
 item60[] = {"true",8,218,-350.000000,175.000000,-250.000000,225.000000,0.000000,"true"};
 item61[] = {"Failed_to_move",4,218,-200.000000,0.000000,-100.000000,50.000000,2.000000,"Failed to move"};
 item62[] = {"moveToCompleted",4,218,-425.000000,825.000000,-325.000000,875.000000,1.000000,"moveToCompleted "};
@@ -86,7 +86,9 @@ item81[] = {"",7,210,-104.000000,396.000000,-96.000000,404.000000,0.000000,""};
 item82[] = {"",7,210,-104.000000,446.000000,-96.000000,454.000000,0.000000,""};
 item83[] = {"",7,210,-104.000000,496.000000,-96.000000,504.000000,0.000000,""};
 item84[] = {"",7,210,-304.000031,271.000000,-296.000000,279.000000,0.000000,""};
-item85[] = {"____FAKE____",9,3400,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item85[] = {"",7,210,-29.000044,471.000000,-20.999956,479.000000,0.000000,""};
+item86[] = {"",7,210,71.000000,471.000000,79.000000,479.000000,0.000000,""};
+item87[] = {"____FAKE____",9,3480,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,11};
 link1[] = {0,57};
 link2[] = {2,3};
@@ -103,7 +105,7 @@ link12[] = {7,55};
 link13[] = {7,61};
 link14[] = {8,7};
 link15[] = {9,4};
-link16[] = {9,10};
+link16[] = {9,85};
 link17[] = {10,5};
 link18[] = {11,12};
 link19[] = {12,13};
@@ -194,13 +196,14 @@ link103[] = {82,83};
 link104[] = {83,74};
 link105[] = {83,75};
 link106[] = {84,23};
-link107[] = {85,46};
-link108[] = {60,85};
-link109[] = {85,60};
-link110[] = {62,85};
-link111[] = {85,62};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-653.015686,581.130859,811.849060,57.299656,983,601,1};
-window[] = {2,-1,-1,-32000,-32000,934,154,1362,154,3,1000};
+link107[] = {85,10};
+link108[] = {87,46};
+link109[] = {60,87};
+link110[] = {87,60};
+link111[] = {62,87};
+link112[] = {87,62};
+globals[] = {25.000000,1,0,0,0,640,480,1,135,6316128,1,-585.576233,820.351379,1060.038452,25.812624,817,601,1};
+window[] = {2,-1,-1,-32000,-32000,934,154,1362,154,3,834};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -269,6 +272,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
        "_target = _agent call zombie_findTargetAgent;" \n
        "_timeN = diag_tickTime;" \n
+       "" \n
        "" \n
        "_newDest = _agent getVariable [""myDest"",getposATL _agent];" \n
        "if (!isNil ""_newDest"") then {" \n
@@ -356,6 +360,7 @@ class FSM
        "_target = _agent call zombie_findTargetAgent;" \n
        "" \n
        "_agent forceSpeed 2;" \n
+       "" \n
        "" \n
        "_newDest = _agent getVariable [""myDest"",getposATL _agent];" \n
        "if (!isNil ""_newDest"") then {" \n
@@ -612,18 +617,6 @@ class FSM
            "//diag_log (""Cant See Target"");"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "Attack">*/
-        class Attack
-        {
-          priority = 0.000000;
-          to="Low_Marker";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_agent distance _target <= 2.2;"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agent forceSpeed 2;" \n
-           "" \n
-           "//diag_log (""Aboue 2.2"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "Target_Alive">*/
         class Target_Alive
         {
@@ -648,6 +641,19 @@ class FSM
            "//diag_log (""Time Check"");"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
+        /*%FSM<LINK "Approch">*/
+        class Approch
+        {
+          priority = 0.000000;
+          to="Low_Marker";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_agent distance _target > 2.2 AND _agent distance _target < 10"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent forceSpeed 12;" \n
+           "" \n
+           "" \n
+           "//diag_log (""Approch"");"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "Distance_Check">*/
         class Distance_Check
         {
@@ -660,17 +666,16 @@ class FSM
            "_agent forceSpeed 6;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "Approch">*/
-        class Approch
+        /*%FSM<LINK "Attack">*/
+        class Attack
         {
           priority = 0.000000;
           to="Low_Marker";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_agent distance _target > 2.2 AND _agent distance _target < 10"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agent forceSpeed 12;" \n
+          condition=/*%FSM<CONDITION""">*/"_agent distance _target <= 2.2;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent forceSpeed 2;" \n
            "" \n
-           "" \n
-           "//diag_log (""Approch"");"/*%FSM</ACTION""">*/;
+           "//diag_log (""Aboue 2.2"");"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -720,7 +725,7 @@ class FSM
        "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
        "" \n
        "//recheck los while you move to location" \n
-       "if (_losCheck == 2) then {" \n
+       "if (_losCheck == 3) then {" \n
        "	_losCheck = 0;" \n
        "	_cantSee = [_agent,_target] call dayz_losCheck;" \n
        "};" \n
@@ -767,7 +772,7 @@ class FSM
           priority = 0.000000;
           to="Finish_Move";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 2"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"//Count los checks" \n
            "_losCheck = _losCheck + 1;" \n
            "" \n
