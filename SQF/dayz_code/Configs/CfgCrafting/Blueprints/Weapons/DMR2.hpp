@@ -1,7 +1,7 @@
-class Blueprint_DMR2 : ItemCore {
+class Blueprint_DMR_DZ2 : ItemCore {
 	scope = public;
-	displayName = $STR_CRAFT_NAME_Blueprint_DMR2;
-	descriptionShort = $STR_CRAFT_DESC_Blueprint_DMR2;
+	displayName = $STR_CRAFT_NAME_Blueprint_DMR_DZ2;
+	descriptionShort = $STR_CRAFT_DESC_Blueprint_DMR_DZ2;
 	model = "\Ca\misc\SmallObj_moscow_docs_WPN";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_blueprint.paa";
 	
@@ -16,7 +16,7 @@ class Blueprint_DMR2 : ItemCore {
 			};
 			output[] = 
 			{
-				{"DMR2","CfgWeapons",1}
+				{"DMR_DZ2","CfgWeapons",1}
 			};
 			required[] = 
 			{

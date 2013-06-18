@@ -906,10 +906,10 @@
 			<French>Plan de fabrication d'une M4A1 à viseur laser. Requis : 1 M4A1, 1 Fixation viseur laser + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M4A1 s mířidlem. Požadováno - 1 M4A1, 1 mířidlo a ToolBox</Czech>
 		</Key>
-		<Key ID="STR_CRAFT_NAME_Blueprint_DMR2">
+		<Key ID="STR_CRAFT_NAME_Blueprint_DMR_DZ2">
 			<English>DMR</English>
 		</Key>
-		<Key ID="STR_CRAFT_DESC_Blueprint_DMR2">
+		<Key ID="STR_CRAFT_DESC_Blueprint_DMR_DZ2">
 			<English>Blueprint to create a wooden DMR. Required - 1 M14 Aim, 1 Attachment_Sniper_Scope. - ToolBox</English>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M9SD">
