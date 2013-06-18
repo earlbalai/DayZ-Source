@@ -234,7 +234,7 @@ if (isServer and isNil "sm_done") then {
 	};
 
 	{
-		private["_action","_ObjectID","_class","_CharacterID","_worldspace","_inventory", "_hitpoints","_fuel","_damage","_entity","_dir","_point","_res",  "_rawData","_class","_worldspace","_uid", "_selection", "_dam", "_booleans", "_point"];
+		private["_action","_ObjectID","_class","_CharacterID","_worldspace","_inventory", "_hitpoints","_fuel","_damage","_entity","_dir","_point","_res",  "_rawData","_class","_worldspace","_uid", "_selection", "_dam", "_booleans", "_point", "_wantExplosiveParts"];
 
 		_action = _x select 0; // values : "OBJ"=object got from hive  "CREATED"=vehicle just created ...
 		_ObjectID = _x select 1;
@@ -306,18 +306,30 @@ if (isServer and isNil "sm_done") then {
 #endif
 				_entity setDamage _damage;
 				{
-					_selection = _x select 0;
-					_dam = _x select 1;
-					if (_selection in dayZ_explosiveParts and _dam > 0.8) then {_dam = 0.8};
-					[_entity, _selection, _dam] call fnc_veh_handleDam;
-				} forEach _hitpoints;
+					_wantExplosiveParts = _x;
+					{
+						_selection = _x select 0;
+						_dam = _x select 1;
+						if (_selection in dayZ_explosiveParts) then {
+							if (_wantExplosiveParts) then {
+								if (_dam > 0.8) then { _dam = 0.8; };
+								[_entity, _selection, _dam] call fnc_veh_handleDam;
+							};
+						}
+						else {
+							if (!_wantExplosiveParts) then {
+								[_entity, _selection, _dam] call fnc_veh_handleDam;
+							};
+						};
+					} forEach _hitpoints;
+				} forEach [false, true]; // we set non explosive part first, then explosive parts
 				_entity setvelocity [0,0,1];
 				_entity setFuel _fuel;
 				_entity call fnc_veh_ResetEH;
 			};
 #ifdef OBJECT_DEBUG
-			diag_log (format["VEHICLE %1 %2 at %3, damage=%4, fuel=%5",
-				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, damage _entity, _fuel ]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
+			diag_log (format["VEHICLE %1 %2 at %3, original damage=%4, effective damage=%6, fuel=%5",
+				 _action, _entity call fa_veh2str, (getPosASL _entity) call fa_coor2str, _damage, _fuel, damage _entity]); // , hitpoints:%6, inventory=%7"  , _hitpoints, _inventory 
 #endif
 		}
 		else { // else for object or non legit vehicle
