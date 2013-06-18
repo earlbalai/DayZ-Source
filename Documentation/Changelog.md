@@ -55,6 +55,7 @@ Serverside affected addons:
 		* [UPDATED] - Updated pMain to now include extra setting --execute="call pMain(serverinstance) example.  --execute="call pMain(1) would spawn all vehicles for instance 1
 		* [UPDATED] - Zed Target system updated to include movement speed changes. aboue 10m = full speed, aboue 2.2m and below 10m = Approch speed, below 2.2 = attack speed.
 		* [UPDATED] - Attack system updated to include LOS & Angle of attack checks as the animation is run to make sure player is only damaged/knockdown if they meet both conditions.
+		* [UPDATED] - RoadBlocks/Trash should now spawn quicker based on the current speed of the player.
 		
 		Both removed so we can debug fps issues.
 		
