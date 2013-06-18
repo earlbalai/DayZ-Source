@@ -5,10 +5,11 @@ DayZ Mod Changelog
 Version 1.7.7.1
 ---------------
 
-* Releasedate 24 June 2013
+* Releasedate 18 June 2013
 
 
 Affected addons:
+* dayz_anim
 * dayz_code
 * dayz_communityassets
 
@@ -16,6 +17,7 @@ Serverside affected addons:
 * dayz_server (server admins only)
 * Mission (server admins only) (Prerequisites) Downloaded from http://www.silentspy.net/utility/dayz/mission-generator/
 * BattlEye-Filters (server admins only)
+* SQL Files (server admins only)
 
 
 	Changes:
