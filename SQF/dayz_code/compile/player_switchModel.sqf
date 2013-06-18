@@ -172,8 +172,11 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	selectPlayer _newUnit;
 
 //Switch the units
-	_createSafePos = [(getMarkerPos "respawn_west"), 2, 100, 0, 1, 20, 0] call BIS_fnc_findSafePos;
-	_oldUnit setPosATL [_createSafePos select 0, _createSafePos select 1, 0];
+	//_createSafePos = [(getMarkerPos "respawn_west"), 2, 100, 0, 1, 20, 0] call BIS_fnc_findSafePos;
+	_createSafePos = getMarkerPos "respawn_west";
+	_rndx = floor(random 100);
+	_rndy = floor(random 100);
+	_oldUnit setPosATL [(_createSafePos select 0) + _rndx, (_createSafePos select 1) + _rndy, 0];
 	_newUnit setPosATL _position;
 
 //Clear and delete old Unit
