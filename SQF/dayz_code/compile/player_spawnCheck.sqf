@@ -1,8 +1,4 @@
-
 private ["_isAir", "_inVehicle", "_dateNow", "_age", "_force", "_nearbyBuildings", "_position", "_fpsbias", "_maxControlledZombies", "_maxManModels", "_maxWeaponHolders", "_controlledZombies", "_currentManModels", "_currentWeaponHolders", "_type", "_locationstypes", "_nearestCity", "_townname", "_nearbytype", "_markerstr", "_markerstr1", "_markerstr2", "_markerstr3", "_nearby", "_zombieSpawnCtr", "_suitableBld", "_spwndoneBld", "_negstampBld", "_recyAgt", "_findAgt", "_maxtoCreate", "_config", "_canLoot", "_dis", "_checkLoot", "_looted", "_qty", "_fairSize", "_zombied", "_tmp", "_radius", "_point", "_islocal"];
-
-_isinVehicle = (vehicle player != player);
-if (_isinVehicle) exitwith {"in Vehicle"};
 
 // compute building footprint just to check if it could hide a Zombie
 _fairSize = {
@@ -65,78 +61,6 @@ _controlledZombies = {local (_x getVariable ["agentObject",objNull])} count agen
 
 _currentManModels = count (_position nearEntities ["CAManBase",dayz_spawnArea]);
 _currentWeaponHolders = count (_position nearObjects ["ReammoBox",dayz_spawnArea]); // ReammoBox = parent of all kinds of item holders
-/*
-//diag_log ("Type: " +str(_type));
-
-
-//diag_log("SPAWN CHECKING: Starting");
-       //_locationstypes = ["NameCityCapital","NameCity","NameVillage"];
-       //_nearestCity = nearestLocations [getPos player, _locationstypes, dayz_spawnArea/2];
-       //_townname = text (_nearestCity select 0);
-       //_nearbytype = type (_nearestCity select 0);
-
-switch (_nearbytype) do {
-       case "NameVillage": {
-               //dayz_spawnArea = 250;
-               _maxControlledZombies = 30;
-       };
-       case "NameCity": {
-               //dayz_spawnArea = 300;
-               _maxControlledZombies = 40;
-       };
-       case "NameCityCapital": {
-               //dayz_spawnArea = 400;
-               _maxControlledZombies = 40;
-       };
-};
-
-
-
-if ("ItemMap_Debug" in items player) then {
-       deleteMarkerLocal "MaxZeds";
-       deleteMarkerLocal "Counter";
-       deleteMarkerLocal "Loot30";
-       deleteMarkerLocal "Loot120";
-       deleteMarkerLocal "Agro80";
-
-       _markerstr = createMarkerLocal ["MaxZeds", _position];
-       _markerstr setMarkerColorLocal "ColorYellow";
-       _markerstr setMarkerShapeLocal "ELLIPSE";
-       _markerstr setMarkerBrushLocal "Border";
-       _markerstr setMarkerSizeLocal [dayz_spawnArea, dayz_spawnArea];
-
-       _markerstr1 = createMarkerLocal ["Counter", _position];
-       _markerstr1 setMarkerColorLocal "ColorRed";
-       _markerstr1 setMarkerShapeLocal "ELLIPSE";
-       _markerstr1 setMarkerBrushLocal "Border";
-       _markerstr1 setMarkerSizeLocal [dayz_spawnArea+100, dayz_spawnArea+100];
-
-       _markerstr2 = createMarkerLocal ["Agro80", _position];
-       _markerstr2 setMarkerColorLocal "ColorRed";
-       _markerstr2 setMarkerShapeLocal "ELLIPSE";
-       _markerstr2 setMarkerBrushLocal "Border";
-       _markerstr2 setMarkerSizeLocal [80, 80];
-
-       _markerstr2 = createMarkerLocal ["Loot30", _position];
-       _markerstr2 setMarkerColorLocal "ColorRed";
-       _markerstr2 setMarkerShapeLocal "ELLIPSE";
-       _markerstr2 setMarkerBrushLocal "Border";
-       _markerstr2 setMarkerSizeLocal [30, 30];
-
-       _markerstr3 = createMarkerLocal ["Loot120", _position];
-       _markerstr3 setMarkerColorLocal "ColorBlue";
-       _markerstr3 setMarkerShapeLocal "ELLIPSE";
-       _markerstr3 setMarkerBrushLocal "Border";
-       _markerstr3 setMarkerSizeLocal [120, 120];
-
-//diag_log ("SpawnWait: " +str(time - dayz_spawnWait));
-//diag_log ("Controled: " +str(_controlledZombies) + "/" +str(_maxControlledZombies));
-//diag_log ("Models: " +str(_currentManModels) + "/" +str(_maxManModels));
-
-diag_log ("Audial Noise: " +str(DAYZ_disAudial));
-diag_log ("Visual Sight: " +str(DAYZ_disVisual /2));
-};
-*/
 
 diag_log (format["%1 Loc.Agents: %2/%3. Models: %5/%6 W.holders: %9/%10 (radius:%7m %8fps).","SpawnCheck",
 	_controlledZombies, _maxControlledZombies, time - dayz_spawnWait, _currentManModels, _maxManModels,
@@ -148,6 +72,9 @@ _currentWeaponHolders = _currentWeaponHolders max floor(_maxWeaponHolders*.8);
 
 // we start by the closest buildings. buildings too close from player are ditched.
 _nearby = (nearestObjects [_position, _sp4wnAroundObjects,dayz_spawnArea]) - (nearestObjects [_position, _sp4wnAroundObjects, dayz_safeDistPlr]);
+
+_nearbyCount = count _nearby;
+if ((_nearbyCount < 1) or (vehicle player != player)) exitwith {"Nothing close"};
 
 _zombieSpawnCtr = 0;
 _suitableBld = 0;
