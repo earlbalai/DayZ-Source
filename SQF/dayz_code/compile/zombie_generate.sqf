@@ -104,7 +104,7 @@ if (!isNull _agent) then {
 	//};
 
 	_favStance = (switch ceil(random(3^0.5)^2) do {
-		case 3: {"DOWN"}; // prone
+		//case 3: {"DOWN"}; // prone
 		case 2: {"Middle"}; // Kneel
 		default {"UP"} // stand-up
 	});
