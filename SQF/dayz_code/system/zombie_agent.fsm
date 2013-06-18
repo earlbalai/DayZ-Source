@@ -18,7 +18,7 @@ item13[] = {"",7,210,-29.000006,-29.000004,-20.999996,-20.999996,0.000000,""};
 item14[] = {"",7,210,-279.000061,-29.000004,-270.999969,-20.999996,0.000000,""};
 item15[] = {"",7,210,-254.000046,146.000000,-245.999954,154.000000,0.000000,""};
 item16[] = {"Has_Target",4,218,-150.000000,225.000000,-50.000000,275.000000,1.000000,"Has" \n "Target"};
-item17[] = {"Chase",2,4346,-150.000000,325.000000,-50.000000,375.000000,0.000000,"Chase"};
+item17[] = {"Chase",2,250,-150.000000,325.000000,-50.000000,375.000000,0.000000,"Chase"};
 item18[] = {"Time_Check",4,218,50.000000,75.000000,150.000000,125.000000,0.000000,"Time" \n "Check"};
 item19[] = {"",7,210,-29.000006,146.000000,-20.999996,154.000000,0.000000,""};
 item20[] = {"",7,210,-29.000006,196.000000,-20.999996,204.000000,0.000000,""};
@@ -60,7 +60,7 @@ item55[] = {"player_check",4,218,-450.000000,0.000000,-350.000000,50.000000,0.00
 item56[] = {"player_check",4,218,50.000000,0.000000,150.000000,50.000000,0.000000,"player" \n "check"};
 item57[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
 item58[] = {"Distance_Check",4,218,-250.000000,375.000000,-150.000000,425.000000,0.000000,"Distance Check"};
-item59[] = {"Stance",2,250,-350.000000,325.000000,-250.000000,375.000000,0.000000,"Stance"};
+item59[] = {"Stance",2,4346,-350.000000,325.000000,-250.000000,375.000000,0.000000,"Stance"};
 item60[] = {"true",8,218,-350.000000,175.000000,-250.000000,225.000000,0.000000,"true"};
 item61[] = {"Failed_to_move",4,218,-200.000000,0.000000,-100.000000,50.000000,2.000000,"Failed to move"};
 item62[] = {"moveToCompleted",4,218,-425.000000,825.000000,-325.000000,875.000000,1.000000,"moveToCompleted "};
@@ -199,7 +199,7 @@ link108[] = {60,85};
 link109[] = {85,60};
 link110[] = {62,85};
 link111[] = {85,62};
-globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-678.328247,606.443726,827.325195,41.823704,983,601,1};
+globals[] = {25.000000,1,0,0,0,640,480,1,131,6316128,1,-653.015686,581.130859,811.849060,57.299656,983,601,1};
 window[] = {2,-1,-1,-32000,-32000,934,154,1362,154,3,1000};
 *//*%FSM</HEAD>*/
 class FSM
@@ -655,7 +655,9 @@ class FSM
           to="Stance";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_agent distance _target > 10"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//diag_log (""Above 10"");"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"//diag_log (""Above 10"");" \n
+           "" \n
+           "_agent forceSpeed 6;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "Approch">*/
@@ -869,10 +871,6 @@ class FSM
        "// reset stance to favorite one" \n
        "_agent setUnitPos (_agent getVariable [""stance"", ""UP""]);" \n
        "" \n
-       "//Count los checks" \n
-       "_losCheck = _losCheck + 1;" \n
-       "" \n
-       "_agent forceSpeed 6;" \n
        "" \n
        "_isAliveTarget = alive _target;" \n
        ""/*%FSM</STATEINIT""">*/;
@@ -886,7 +884,8 @@ class FSM
           to="Chase";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"//Count los checks" \n
+           "_losCheck = _losCheck + 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "Target_Alive">*/
@@ -906,11 +905,7 @@ class FSM
     class Low_Marker
     {
       name = "Low_Marker";
-      init = /*%FSM<STATEINIT""">*/"//Count los checks" \n
-       "_losCheck = _losCheck + 1;" \n
-       "" \n
-       "" \n
-       "//diag_log (""Pass Tho"");"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"//diag_log (""Pass Tho"");"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -921,7 +916,8 @@ class FSM
           to="Chase";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"//Count los checks" \n
+           "_losCheck = _losCheck + 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };

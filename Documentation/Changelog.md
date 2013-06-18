@@ -38,7 +38,7 @@ Serverside affected addons:
 	    * [FIXED] - Added a range check to zed attacks, no more 5-10m hits. (We Hope)
 	    * [FIXED] - Fixed issue where your player's body would be deleted if aborting too quickly.
 		* [FIXED] - Shadow LODs on soda cans.
-		* [FIXED] - Zeds full sclase dmg has been readded.
+		* [FIXED] - Zeds full scale dmg has been readded.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
@@ -55,6 +55,8 @@ Serverside affected addons:
 		* [UPDATED] - Updated pMain to now include extra setting --execute="call pMain(serverinstance) example.  --execute="call pMain(1) would spawn all vehicles for instance 1
 		* [UPDATED] - Zed Target system updated to include movement speed changes. aboue 10m = full speed, aboue 2.2m and below 10m = Approch speed, below 2.2 = attack speed.
 		* [UPDATED] - Attack system updated to include LOS & Angle of attack checks as the animation is run to make sure player is only damaged/knockdown if they meet both conditions.
+		
+		Both removed so we can debug fps issues.
 		
 	    * [REMOVED] - Wild Zeds while we try to debug issues with FPS.
 	    * [REMOVED] - Zeds will no longer spawn while in vehicles.
