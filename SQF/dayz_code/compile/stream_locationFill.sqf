@@ -16,7 +16,7 @@ for "_i" from ((count _list) - 1) to 0 step -1 do
 		_object setPosATL _position;
 		_object allowDamage false;
 		_object setVariable ["", true]; // SV used by player_spawnCheck
-		if (_w8 AND {((_i % 10) == 0)}) then { sleep 0.01; };
+		if (_w8 AND {((_i % 25) == 0)}) then { sleep 0.01; };
 		//diag_log format["CreateObj: %1 / %2",_type,_position];
 		/*
 		if (_onFire > 0) then {
