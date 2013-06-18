@@ -44,7 +44,7 @@ if (local _unit) then {
 		_ret = if (_isbicycle) then {_dam - _delta*9/10} else {_dam};
 		_unit setVariable [_SVname, _ret, true];
 		_unit setHit [_selection, _ret];
-		_log = format["%1. setHit[%2,%3]%4", _log, _selection, _ret, if (_isbicycle) then {" bike special"} else {""}];
+		_log = format["%1. setH!t[%2,%3]%4", _log, _selection, _ret, if (_isbicycle) then {" bike special"} else {""}];
 		if (!isServer) then {
 			PVDZ_veh_Save = [_unit,"damage"];
 			publicVariableServer "PVDZ_veh_Save";
@@ -65,6 +65,6 @@ else {
 		publicVariable "PVDZ_veh_SH";
 	};
 };
-//diag_log format ["%1. Returned damage:%2", _log, _ret];
+diag_log format ["%1. Returned damage:%2", _log, _ret];
 // all "HandleDamage event" functions should return the effective damage that the engine will record for that part
 _ret

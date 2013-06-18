@@ -188,19 +188,18 @@ if (_isVehicle) then {
 			if (!_cantSee) then {
 				// player may fall if hit...
 				_deg = [player, _unit] call BIS_fnc_relativeDirTo;
+				_lastTackle = player getVariable ["lastTackle", 0];
 				_move = "";
-				
-				switch true do {
-					// front
-					case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 315) and (_deg <= 360)) or ((_deg > 0) and (_deg < 45)))) : {
-						//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
-						_lastTackle = player getVariable ["lastTackle", 0];
-						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-							player setVariable ["lastTackle", time];
+
+				if ((diag_tickTime - _lastTackle) > 7) then {
+					switch true do {
+						// front
+						case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 315) and (_deg <= 360)) or ((_deg > 0) and (_deg < 45)))) : {
+							//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
 							// stop player
 							_vel = velocity player;
 							player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-				/*
+							/*
 							// rotate player 'smoothly'
 							[_deg] spawn {
 								private["_step","_i"];
@@ -212,22 +211,18 @@ if (_isVehicle) then {
 									sleep 0.01;
 								};
 							};
-			
+
 							// make player divem
 							_move = switch (toArray(animationState player) select 17) do {
 								case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
 								case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
 								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 							};
-				*/			
+							*/
 						};
-					};
-					// left
-					case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 225) and (_deg < 315))) : {
-						//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
-						_lastTackle = player getVariable ["lastTackle", 0];
-						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-							player setVariable ["lastTackle", time];
+						// left
+						case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 225) and (_deg < 315))) : {
+							//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
 							// stop player
 							//_vel = velocity player;
 							//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
@@ -251,13 +246,9 @@ if (_isVehicle) then {
 								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 							};
 						};
-					};
-					// right
-					case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 45) and (_deg < 135))) : {
-						//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
-						_lastTackle = player getVariable ["lastTackle", 0];
-						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-							player setVariable ["lastTackle", time];
+						// right
+						case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 45) and (_deg < 135))) : {
+							//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
 							// stop player
 							//_vel = velocity player;
 							//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
@@ -281,12 +272,8 @@ if (_isVehicle) then {
 								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
 							};
 						};
-					};
-					// rear
-					case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 135) and (_deg < 225))) : {
-						_lastTackle = player getVariable ["lastTackle", 0];
-						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-							player setVariable ["lastTackle", time];
+						// rear
+						case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 135) and (_deg < 225))) : {
 							// stop player
 							//_vel = velocity player;
 							//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
@@ -299,24 +286,38 @@ if (_isVehicle) then {
 							};
 						};
 					};
-				};
-			
-				// make player dive After making sure the zed can see you.
-				if (_move != "") then {
-					player switchMove _move;
 
-					if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
-						[] spawn {
-							private ["_move"];
-							waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
-							waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
-							player switchMove "";
+					// make player dive After making sure the zed can see you.
+					if (_move != "") then {
+						player setVariable ["lastTackle", time];
+						_doRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
+
+						if (_doRE) then {
+							[nil, player, rSWITCHMOVE, _move] call RE;
+						} else {
+							player switchMove _move;
 						};
-					};
 
-					//diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
+						if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
+							[_doRE] spawn {
+								private ["_doRE"];
+								_doRE = _this select 0;
+
+								waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
+								waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
+
+								if (_doRE) then {
+									[nil, player, rSWITCHMOVE, ""] call RE;
+								} else {
+									player switchMove "";
+								};
+							};
+						};
+
+						//diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
+					};
 				};
-				
+
 				switch true do {
 					case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
 						[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
@@ -339,9 +340,9 @@ if (_isVehicle) then {
 						[player,  _wound,  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
 					};
 				};
-				
+
 			};
-		};	
+		};
 	};
 }; // fi player by foot
 

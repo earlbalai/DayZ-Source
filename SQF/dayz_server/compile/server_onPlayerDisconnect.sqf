@@ -14,15 +14,11 @@ if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
 
-_characterID = _playerObj getVariable["characterID", "?"];
-_timeout = _playerObj getVariable["combattimeout",0] - time;
-
-
-//dayz_disco = dayz_disco - [_playerUID];
-
 if (!isNull _playerObj) then {
 // log disconnect
 #ifdef LOGIN_DEBUG
+	_characterID = _playerObj getVariable["characterID", "?"];
+	_timeout = _playerObj getVariable["combattimeout",0] - time;
 	diag_log format["Player UID#%1 CID#%2 %3 as %4, logged off at %5%6", 
 		getPlayerUID _playerObj, _characterID, _playerObj call fa_plr2str, typeOf _playerObj, 
 		(getPosATL _playerObj) call fa_coor2str,
