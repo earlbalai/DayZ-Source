@@ -26,8 +26,10 @@ _gpv_asl = getPosASL _vehicle;
 _hv = _gpv_asl select 2;
 
 if (_type != "zombie") exitWith {"not a zombie"}; // we deal only with zombies in this function
-if (_distance > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
-if (((!_isVehicle) AND {(random 8 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
+if (_unit distance player > dayz_areaAffect) exitWith {"too far:"}; // distance too far according to any logic dealt here //+str(_unit distance _nextPlayerPos)+"/"+str(_areaAffect)
+
+//This is handled within a new case we wont zeds to always attack
+//if (((!_isVehicle) AND {(random 8 > 1)}) AND {((toArray(animationState player) select 5) == 112)}) exitWith {"player down"}; // less attack if player prones
 
 // check if fight is in stairway or not,
 if (abs(_hu - _hv) < 1.3) then {
@@ -35,50 +37,18 @@ if (abs(_hu - _hv) < 1.3) then {
 	if ((!_isVehicle) AND {(abs(_hu - _hv) > 0.15)}) then { _isStairway = true; };
 };
 
-//if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
-/*
-// Not needed LOS is checked by the FSM
-// check if space between player/vehicle and Z is clear or not
-_gpu_asl set [ 2, 0.40 + _hu ];
-_gpv_asl set [ 2, 0.40 + _hv ];
-_ob_arr = lineIntersectsWith [_gpu_asl,  _gpv_asl,  _unit,  _vehicle];
-_cob = count _ob_arr;
-_isClear = (_cob == 0 or {!((_ob_arr select 0) isKindOf "All")});
+if (!_isSameFloor) exitWith {"not on same floor"}; // no attack if the 2 fighters are not on the same level
 
-if (!_isClear) exitWith {"something between"}; // no attack if there is a wall between fighters.
-*/
 // check relative angle (where is the player/vehicle in the Z sight)
 _deg = [_unit,  _nextPlayerPos] call BIS_fnc_relativeDirTo;
 if (_deg > 180) then { _deg = _deg - 360; };
 
 /*
-// angle check depends on player speed (very strict if player is still)
-if (abs(_deg) > (30 + 1 * _speed)) exitWith { // we cancel the attack,  but we spin smoothly the Zombie
-	[_unit, _nextPlayerPos] spawn {
-		_unit = _this select 0;
-		_plr = _this select 1;
-		for "_i" from 1 to 29 do {
-			_deg = [_unit,  _plr] call BIS_fnc_relativeDirTo;
-			if (_deg > 180) then { _deg = _deg - 360; };
-			if (_deg == 0) exitWith{};
-			_sign = _deg/abs(_deg);
-			_deg = abs(_deg);
-			if (_deg < 10) exitWith{};
-			//waituntil {_a = toArray(animationState _unit); (isNil "_a") OR {((count _a < 5) OR {((_a select 1) == 105)})}}; // 105='i' like idl
-			_unit setDir ((getDir _unit) + _sign*5);
-			sleep 0.01;
-		};
-	};
-	("bad angle:") // +str(round(abs(_deg)))+"/"+str(round(15 + 3 * _speed))
-};
-
-
 // check Z stance. Stand up Z if it prones/kneels. Cancel the attack.
 if (unitPos _unit != "UP") exitWith {
 	_unit setUnitPos "UP";
 	"bad stance"
 };
-
 */
 
 // compute the animation move
@@ -159,141 +129,10 @@ else {
 // Damage is done after the move
 sleep 0.3;
 
-if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
+//if (r_player_unconscious) exitWith {"player unconscious"};  // no damage if player still unconscious.
 
 // broadcast hit noise
 [_unit,  "hit",  1,  false] call dayz_zombieSpeak;
-
-// player may fall...
-_deg = [player, _unit] call BIS_fnc_relativeDirTo;
-_move = "";
-
-switch true do {
-	// front
-	case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 315) and (_deg <= 360)) or ((_deg > 0) and (_deg < 45)))) : {
-		//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
-		_lastTackle = player getVariable ["lastTackle", 0];
-		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-			player setVariable ["lastTackle", time];
-			// stop player
-			_vel = velocity player;
-			player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-
-			// rotate player 'smoothly'
-			[_deg] spawn {
-				private["_step","_i"];
-				_step = 180 / 3;
-				_i = 0;
-				while { _i < 3 } do {
-					player setDir ((getDir player) + _step);
-					_i = _i + 1;
-					sleep 0.01;
-				};
-			};
-/*
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
-*/			
-		};
-	};
-	// left
-	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 225) and (_deg < 315))) : {
-		//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
-		_lastTackle = player getVariable ["lastTackle", 0];
-		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-			player setVariable ["lastTackle", time];
-			// stop player
-			//_vel = velocity player;
-			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-
-			// rotate player 'smoothly'
-			[_deg] spawn {
-				private["_step","_i"];
-				_step = 90 / 5;
-				_i = 0;
-				while { _i < 5 } do {
-					player setDir ((getDir player) + _step);
-					_i = _i + 1;
-					sleep 0.01;
-				};
-			};
-
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
-		};
-	};
-	// right
-	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 45) and (_deg < 135))) : {
-		//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
-		_lastTackle = player getVariable ["lastTackle", 0];
-		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-			player setVariable ["lastTackle", time];
-			// stop player
-			//_vel = velocity player;
-			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-
-			// rotate player 'smoothly'
-			[_deg] spawn {
-				private["_step","_i"];
-				_step = 90 / 5;
-				_i = 0;
-				while { _i < 5 } do {
-					player setDir ((getDir player) - _step);
-					_i = _i + 1;
-					sleep 0.01;
-				};
-			};
-
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
-		};
-	};
-	// rear
-	case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 135) and (_deg < 225))) : {
-		_lastTackle = player getVariable ["lastTackle", 0];
-		if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
-			player setVariable ["lastTackle", time];
-			// stop player
-			//_vel = velocity player;
-			//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
-
-			// make player dive
-			_move = switch (toArray(animationState player) select 17) do {
-				case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
-				case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
-				default {"ActsPercMrunSlowWrflDf_TumbleOver"};
-			};
-		};
-	};
-};
-
-// make player dive
-if (_move != "") then {
-	player switchMove _move;
-
-	if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
-		[] spawn {
-			private ["_move"];
-			waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
-			waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
-			player switchMove "";
-		};
-	};
-
-	//diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
-};
 
 // compute damage for vehicle and/or the player
 if (_isVehicle) then {
@@ -337,6 +176,7 @@ if (_isVehicle) then {
 		};
 	}; // fi veh with compartment
 } else { // player by foot
+//Make sure sure evrything is processed as we attack.
 	if (player distance _unit <= 2.2) then {
 		_damage = 0.2 + random (1);
 		_tPos = (getPosASL _vehicle);
@@ -346,6 +186,137 @@ if (_isVehicle) then {
 			//LOS check
 			_cantSee = [_unit,_vehicle] call dayz_losCheck;
 			if (!_cantSee) then {
+				// player may fall if hit...
+				_deg = [player, _unit] call BIS_fnc_relativeDirTo;
+				_move = "";
+				
+				switch true do {
+					// front
+					case (((!_isVehicle) and (_speed >= 5.62)) and (((_deg > 315) and (_deg <= 360)) or ((_deg > 0) and (_deg < 45)))) : {
+						//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
+						_lastTackle = player getVariable ["lastTackle", 0];
+						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
+							player setVariable ["lastTackle", time];
+							// stop player
+							_vel = velocity player;
+							player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+				/*
+							// rotate player 'smoothly'
+							[_deg] spawn {
+								private["_step","_i"];
+								_step = 180 / 3;
+								_i = 0;
+								while { _i < 3 } do {
+									player setDir ((getDir player) + _step);
+									_i = _i + 1;
+									sleep 0.01;
+								};
+							};
+			
+							// make player divem
+							_move = switch (toArray(animationState player) select 17) do {
+								case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
+								case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
+							};
+				*/			
+						};
+					};
+					// left
+					case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 225) and (_deg < 315))) : {
+						//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
+						_lastTackle = player getVariable ["lastTackle", 0];
+						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
+							player setVariable ["lastTackle", time];
+							// stop player
+							//_vel = velocity player;
+							//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+
+							// rotate player 'smoothly'
+							[_deg] spawn {
+								private["_step","_i"];
+								_step = 90 / 5;
+								_i = 0;
+								while { _i < 5 } do {
+									player setDir ((getDir player) + _step);
+									_i = _i + 1;
+									sleep 0.01;
+								};
+							};
+
+							// make player dive
+							_move = switch (toArray(animationState player) select 17) do {
+								case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
+								case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
+							};
+						};
+					};
+					// right
+					case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 45) and (_deg < 135))) : {
+						//player setVelocity [(velocity player select 0) + 5 * sin direction _unit, (velocity player select 1) + 5 * cos direction _unit, (velocity player select 2) + 1];
+						_lastTackle = player getVariable ["lastTackle", 0];
+						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
+							player setVariable ["lastTackle", time];
+							// stop player
+							//_vel = velocity player;
+							//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+
+							// rotate player 'smoothly'
+							[_deg] spawn {
+								private["_step","_i"];
+								_step = 90 / 5;
+								_i = 0;
+								while { _i < 5 } do {
+									player setDir ((getDir player) - _step);
+									_i = _i + 1;
+									sleep 0.01;
+								};
+							};
+
+							// make player dive
+							_move = switch (toArray(animationState player) select 17) do {
+								case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
+								case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
+							};
+						};
+					};
+					// rear
+					case (((!_isVehicle) and (_speed >= 5.62)) and ((_deg > 135) and (_deg < 225))) : {
+						_lastTackle = player getVariable ["lastTackle", 0];
+						if (time - _lastTackle > 7) then { // no tackle if previous tackle occured less than X seconds before
+							player setVariable ["lastTackle", time];
+							// stop player
+							//_vel = velocity player;
+							//player setVelocity [-(_vel select 0),  -(_vel select 1),  0];
+
+							// make player dive
+							_move = switch (toArray(animationState player) select 17) do {
+								case 114 : {"ActsPercMrunSlowWrflDf_TumbleOver"}; // rifle
+								case 112 : {"AmovPercMsprSlowWpstDf_AmovPpneMstpSrasWpstDnon"}; // pistol
+								default {"ActsPercMrunSlowWrflDf_TumbleOver"};
+							};
+						};
+					};
+				};
+			
+				// make player dive After making sure the zed can see you.
+				if (_move != "") then {
+					player switchMove _move;
+
+					if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
+						[] spawn {
+							private ["_move"];
+							waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
+							waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
+							player switchMove "";
+						};
+					};
+
+					//diag_log(format["%1 player tackled. Weapons: cur:""%2"" anim.state:%6 (%7)--> move: %3. Angle:%4 Delta-time:%5",  __FILE__, currentWeapon player, _move, _deg, time - _lastTackle, animationState player, toArray(animationState player) select 17 ]);
+				};
+				
 				switch true do {
 					case (_isStairway AND (_hv > _hu)) : { // player is higher than Z,  so Z hurts legs
 						[player,  "legs",  _damage,  _unit, "zombie"] call fnc_usec_damageHandler;
