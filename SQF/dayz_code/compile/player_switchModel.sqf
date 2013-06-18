@@ -1,14 +1,13 @@
-private["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_currentCamera"];
+private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_oldBackpack","_display","_createSafePos","_wpnType","_ismelee"];
 _class = _this;
 
+disableSerialization;
 _position = getPosATL player;
 _dir = getDir player;
 _currentAnim = animationState player;
 //_currentCamera = cameraView;
 
-
 //Get PlayerID
-private ["_playerUID"];
 	_playerUID = "";
 	if (count playableUnits == 0 and isServer) then {
 		//In Single Player
@@ -21,7 +20,6 @@ private ["_playerUID"];
 	};
 
 //BackUp Weapons and Mags
-private ["_weapons","_magazines","_primweapon","_secweapon"];
 	_weapons = weapons player;
 	_magazines = call player_countmagazines; //magazines player;
 
@@ -47,7 +45,6 @@ private ["_weapons","_magazines","_primweapon","_secweapon"];
 //	};
 
 //BackUp Backpack
-private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	dayz_myBackpack = unitBackpack player;
 	_newBackpackType = (typeOf dayz_myBackpack);
 	if(_newBackpackType != "") then {
@@ -71,6 +68,10 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 
 //Secure Player for Transformation
 	//player setPosATL dayz_spawnPos;
+
+//Prevent client crash...
+	_display = findDisplay 106;
+	_display closeDisplay 0;
 
 //BackUp Player Object
 	_oldUnit = player;
@@ -165,7 +166,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	diag_log str(getWeaponCargo unitBackpack _newUnit);
 	diag_log str(getMagazineCargo unitBackpack _newUnit);
 
-//Make New Unit Playable
+//Make New Unit Playable (1 of these 3 commands causes crashes with gear dialog open)
 	//_oldUnit setPosATL [_position select 0 + cos(_dir) * 2, _position select 1 + sin(_dir) * 2, _position select 2];
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;
@@ -185,7 +186,7 @@ private ["_newBackpackType","_backpackWpn","_backpackMag"];
 	deleteVehicle _oldUnit;
 
 //	player switchCamera = _currentCamera;
-	//if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
+	if(_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 	[objNull, player, rSwitchMove,_currentAnim] call RE;
 	//dayz_originalPlayer attachTo [_newUnit];
 	player disableConversation true;

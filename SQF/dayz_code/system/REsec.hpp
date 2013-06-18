@@ -14,7 +14,7 @@
 "removeAllWeapons", "setCaptive", "setCurrentTask", "setCurrentTaskArrays", "setDate", "setDir", "setGroupID", \
 "setMarkerPosLocal", "setObjectTexture", "setSimpleTaskDescription", "setTaskState", "setWPdesc", "setWPtype", \
 "showCommandingMenu", "sideChat", "sideRadio", "skiptime", "spawn", "switchAction", "switchCamera", "taskHint", \
-"titleCut"]
+"titleCut", "Hangender"]
 #endif
 
 // Allowed commands
