@@ -290,14 +290,27 @@ if (_isVehicle) then {
 					// make player dive After making sure the zed can see you.
 					if (_move != "") then {
 						player setVariable ["lastTackle", time];
-						player switchMove _move;
+						_doRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
+
+						if (_doRE) then {
+							[nil, player, rSWITCHMOVE, _move] call RE;
+						} else {
+							player switchMove _move;
+						};
 
 						if (_move == "ActsPercMrunSlowWrflDf_TumbleOver") then {
-							[] spawn {
-								private ["_move"];
+							[_doRE] spawn {
+								private ["_doRE"];
+								_doRE = _this select 0;
+
 								waitUntil { animationState player == "ActsPercMrunSlowWrflDf_TumbleOver" }; // just in case
 								waitUntil { animationState player != "ActsPercMrunSlowWrflDf_TumbleOver" };
-								player switchMove "";
+
+								if (_doRE) then {
+									[nil, player, rSWITCHMOVE, ""] call RE;
+								} else {
+									player switchMove "";
+								};
 							};
 						};
 
