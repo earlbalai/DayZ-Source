@@ -20,10 +20,6 @@ Serverside affected addons:
 
 	Changes:
 
-	    * [NEW] - 
-	    * [NEW] - 
-	    * [NEW] - 
-
 	    * [FIXED] - Crashsite loot spawn fixed.
 	    * [FIXED] - LOS should now reset correct.
 	    * [FIXED] - Updated Chopper Repair system to include hull and missiles.
@@ -40,13 +36,13 @@ Serverside affected addons:
 	    * [FIXED] - Added a range check to zed attacks, no more 5-10m hits. (We Hope)
 	    * [FIXED] - Fixed issue where your player's body would be deleted if aborting too quickly.
 		* [FIXED] - Shadow LODs on soda cans.
+		* [FIXED] - Zeds full sclase dmg has been readded.
 	    
 	    * [UPDATED] - Color saturation starts to fade out at blood level 9000
 	    * [UPDATED] - Rest to provide a 1% chance to cure infection (Can only be done once every 5 mins)
-	    * [UPDATED] - Updated tackle to provide knockdown from back of player and stumble/trip from other directions.
 	    * [UPDATED] - Zed will now attack again while prone with animation.
-	    * [UPDATED] - Updated tackle animations to an actual stumble/trip animation (holding a pistol remains unchanged).	    
-	    * [UPDATED] - Reported bike damage is divided by 10.
+		* [UPDATED] - Updated tackle animations to an actual stumble/trip animation for back, left and right of player (holding a pistol remains unchanged). Players hit from the front will be stopped in their tracks.
+		* [UPDATED] - Reported bike damage is divided by 10.
 	    * [UPDATED] - Much quicker login/loading.
 	    * [UPDATED] - More reliable loot spawns.
 	    * [UPDATED] - Infection rates are much lower (based on #zeds attacking you) viral zeds have 4x greater infection rates
@@ -55,6 +51,8 @@ Serverside affected addons:
 		* [UPDATED] - fishing_Boat speed update from 15 to 45.
 		* [UPDATED] - SQL files for private database users Included all hitpoints and inventory systems.
 		* [UPDATED] - Updated pMain to now include extra setting --execute="call pMain(serverinstance) example.  --execute="call pMain(1) would spawn all vehicles for instance 1
+		* [UPDATED] - Zed Target system updated to include movement speed changes. aboue 10m = full speed, aboue 2.2m and below 10m = Approch speed, below 2.2 = attack speed.
+		* [UPDATED] - Attack system updated to include LOS & Angle of attack checks as the animation is run to make sure player is only damaged/knockdown if they meet both conditions.
 		
 	    * [REMOVED] - Wild Zeds while we try to debug issues with FPS.
 	    * [REMOVED] - Zeds will no longer spawn while in vehicles.
