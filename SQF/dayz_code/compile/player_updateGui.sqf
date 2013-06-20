@@ -1,10 +1,10 @@
 private["_display","_ctrlBlood","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye"/*,"_ctrlHumanity"*/,"_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_uiNumber"];
 disableSerialization;
 
-_foodVal = 		1 - (dayz_hunger / SleepFood);
-_thirstVal = 	1 - (dayz_thirst / SleepWater);
-_tempVal 	= 	1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
-_combatVal =	1 - dayz_combat; // May change later to be a range of red/green to loosely indicate 'time left in combat'
+_foodVal = 1 - (dayz_hunger / SleepFood);
+_thirstVal = 1 - (dayz_thirst / SleepWater);
+_tempVal = 1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
+_combatVal = 1 - dayz_combat; // May change later to be a range of red/green to loosely indicate 'time left in combat'
 
 if (uiNamespace getVariable ['DZ_displayUI', 0] == 1) exitWith {
 	_array = [_foodVal,_thirstVal];
@@ -13,30 +13,30 @@ if (uiNamespace getVariable ['DZ_displayUI', 0] == 1) exitWith {
 
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 
-_ctrlBloodOuter = 	_display displayCtrl 1200;
+_ctrlBloodOuter = _display displayCtrl 1200;
 
-_ctrlBlood = 	_display displayCtrl 1300;
-_ctrlBleed = 	_display displayCtrl 1303;
-_bloodVal =		r_player_blood / r_player_bloodTotal;
-_ctrlFood = 	_display displayCtrl 1301;
-_ctrlThirst = 	_display displayCtrl 1302;
-_ctrlTemp 	= 	_display displayCtrl 1306;					//TeeChange
-_ctrlEar = 		_display displayCtrl 1304;
-_ctrlEye = 		_display displayCtrl 1305;
+_ctrlBlood = _display displayCtrl 1300;
+_ctrlBleed = _display displayCtrl 1303;
+_bloodVal = r_player_blood / r_player_bloodTotal;
+_ctrlFood = _display displayCtrl 1301;
+_ctrlThirst = _display displayCtrl 1302;
+_ctrlTemp = _display displayCtrl 1306;					//TeeChange
+_ctrlEar = _display displayCtrl 1304;
+_ctrlEye = _display displayCtrl 1305;
 //_ctrlHumanity = _display displayCtrl 1207;
 _ctrlCombat = _display displayCtrl 1307;
-_ctrlFracture = 	_display displayCtrl 1203;
+_ctrlFracture = _display displayCtrl 1203;
 
 //Food/Water/Blood
-_ctrlBlood ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_bloodVal))),(Dayz_GUI_G * _bloodVal),(Dayz_GUI_B * _bloodVal), 0.5];
-_ctrlFood ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * (1-_foodVal))),(Dayz_GUI_G * _foodVal),(Dayz_GUI_B * _foodVal), 0.5];
-_ctrlThirst ctrlSetTextColor 	[(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 0.5];
-_ctrlTemp ctrlSetTextColor 		[(Dayz_GUI_R + (0.3 * (1-_tempVal))), (Dayz_GUI_G * _tempVal), _tempVal, 0.5];	// Color ranges from iceblue (cold) to red (hot)
-_ctrlCombat ctrlSetTextColor	[(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G * _combatVal),(Dayz_GUI_B * _combatVal), 0.5];
+_ctrlBlood ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_bloodVal))),(Dayz_GUI_G * _bloodVal),(Dayz_GUI_B * _bloodVal), 0.5];
+_ctrlFood ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_foodVal))),(Dayz_GUI_G * _foodVal),(Dayz_GUI_B * _foodVal), 0.5];
+_ctrlThirst ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 0.5];
+_ctrlTemp ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_tempVal))), (Dayz_GUI_G * _tempVal), _tempVal, 0.5];	// Color ranges from iceblue (cold) to red (hot)
+_ctrlCombat ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_combatVal))),(Dayz_GUI_G * _combatVal),(Dayz_GUI_B * _combatVal), 0.5];
 
 //_ctrlBloodOuter ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-r_player_bloodregen))),(Dayz_GUI_G * r_player_bloodregen),(Dayz_GUI_B * r_player_bloodregen), 0.5];
 
-/* 
+/*
 	Blood: round((r_player_blood / 2) / 1000) = _bloodLvl (6 = full, 1 = empty)
 	Thirst: round(_thirstVal / 0.25) = _thirstLvl (4 = full, 0 = empty)
 	Hunger: round(_foodVal / 0.25) = _foodLvl (4 = full, 0 = empty)
@@ -93,7 +93,7 @@ if (r_player_infected) then {
 
 _ctrlBloodOuter ctrlSetText _bloodText;
 
-if (_bloodLvl <= 0) then { 
+if (_bloodLvl <= 0) then {
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_1_ca.paa";
 } else {
 	_blood = "\z\addons\dayz_code\gui\status_blood_inside_" + str(_bloodLvl) + "_ca.paa";
@@ -105,11 +105,11 @@ _thirst = "\z\addons\dayz_code\gui\status_thirst_inside_" + str(_thirstLvl) + "_
 if (_foodLvl < 0) then { _foodLvl = 0 };
 _food = "\z\addons\dayz_code\gui\status_food_inside_" + str(_foodLvl) + "_ca.paa";
 
-if ( _tempLvl >= 36 )							then { _tempImg = 4 };
-if ( _tempLvl > 33 and _tempLvl < 36 )			then { _tempImg = 3 };
-if ( _tempLvl >= 30 and _tempLvl <= 33 )		then { _tempImg = 2 };
-if ( _tempLvl > 28 and _tempLvl < 30 )			then { _tempImg = 1 };
-if ( _tempLvl <= 28 )							then { _tempImg = 0 };
+if ( _tempLvl >= 36 ) then { _tempImg = 4 };
+if ( _tempLvl > 33 and _tempLvl < 36 ) then { _tempImg = 3 };
+if ( _tempLvl >= 30 and _tempLvl <= 33 ) then { _tempImg = 2 };
+if ( _tempLvl > 28 and _tempLvl < 30 ) then { _tempImg = 1 };
+if ( _tempLvl <= 28 ) then { _tempImg = 0 };
 
 _temp = "\z\addons\dayz_code\gui\status_temp_" + str(_tempImg) + "_ca.paa";
 
@@ -163,7 +163,7 @@ if (_foodVal < 0.2) then {
 	_ctrlFood call player_guiControlFlash;
 };
 
-if (_tempVal > 0.8) then {	//TeeChange
+if (_tempVal > 0.8) then { //TeeChange
 	_ctrlTemp call player_guiControlFlash;
 } else {
 	_ctrlTemp ctrlShow true;

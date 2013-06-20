@@ -727,6 +727,10 @@
 			<French>Un silencieux</French>
 			<Czech>Tlumič</Czech>
 		</Key>
+		<Key ID="STR_ITEM_DESC_equip_part_loupe">
+			<English>A loupe</English>
+			<German>Eine Lupe</German>
+		</Key>
 		<Key ID="STR_ITEM_DESC_equip_part_camo">
 			<English>Camo materials/Pattern</English>
 			<German>Camo Materialien</German>
@@ -901,6 +905,12 @@
 			<Spanish>Plano para crear M4A1 AIM. Requerido: 1 M4A1, 1 AIM y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d'une M4A1 à viseur laser. Requis : 1 M4A1, 1 Fixation viseur laser + Boîte à outils </French>
 			<Czech>Blueprint pro vytvoření M4A1 s mířidlem. Požadováno - 1 M4A1, 1 mířidlo a ToolBox</Czech>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_Blueprint_DMR_DZ2">
+			<English>DMR</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_Blueprint_DMR_DZ2">
+			<English>Blueprint to create a wooden DMR. Required - 1 M14 Aim, 1 Attachment_Sniper_Scope. - ToolBox</English>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Blueprint_M9SD">
 			<English>M9SD</English>
@@ -1193,7 +1203,15 @@
 			<Spanish>Silenciador</Spanish>
 			<French>Silencer</French>
 			<Czech>Tlumič</Czech>
-		</Key>	
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_part_loupe">
+			<English>loupe</English>
+			<German>Lupe</German>
+			<Russian>loupe</Russian>
+			<Spanish>loupe</Spanish>
+			<French>loupe</French>
+			<Czech>loupe</Czech>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_part_camo">
 			<English>Camo Pattern</English>
 			<German>Camo</German>
@@ -1345,6 +1363,12 @@
 			<Russian>Приспособление для бесшумной стрельбы.</Russian>
 			<Spanish>Silenciador (Accesorio)</Spanish>
 			<Czech>Používá se pro vylepšení zbraně.</Czech>
+		</Key>	
+		<Key ID="STR_ATTACHMENT_NAME_Sniper_Scope">
+			<English>Sniper Scope ATTACHMENT</English>
+		</Key>		
+		<Key ID="STR_ATTACHMENT_DESC_Sniper_Scope">
+			<English>Sniper Scope ATTACHMENT</English>
 		</Key>		
 		<Key ID="STR_ATTACHMENT_NAME_Pso">
 			<English>PSO ATTACHMENT</English>

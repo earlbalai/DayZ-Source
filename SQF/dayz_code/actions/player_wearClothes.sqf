@@ -27,7 +27,7 @@ _isHero = _humanity > 5000;
 _itemNew = "Skin_" + _myModel;
 
 if ( !(isClass(_config >> _itemNew)) ) then {
-	_itemNew = if (!_isFemale) then {"Skin_Survivor2_DZ"} else {"Skin_SurvivorW2_DZ"}; 
+	_itemNew = if (!_isFemale) then {"Skin_Survivor2_DZ"} else {"Skin_SurvivorW2_DZ"};
 };
 
 switch (_item) do {
@@ -54,5 +54,5 @@ switch (_item) do {
 if (_model != _myModel) then {
 	player removeMagazine _item;
 	player addMagazine _itemNew;
-	[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
+	[dayz_playerUID, dayz_characterID, _model] spawn player_humanityMorph;
 };

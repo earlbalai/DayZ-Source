@@ -15,7 +15,7 @@ waitUntil {vehicle player == player};
 	_playerUID = getPlayerUID player;
 	while {true} do {
 		if (typeName player != "OBJECT") then {
-			PVDZ_sec_atp = format["WARNING! TYPENAME ERROR ON %1 (%2)", _playerName, _playerUID];
+			PVDZ_sec_atp = format["WARNING typename error for player UID#%1", _playerUID];
 			publicVariableServer "PVDZ_sec_atp";
 			//forceEnd;
 			endMission "CONTINUE";
@@ -24,7 +24,7 @@ waitUntil {vehicle player == player};
 	};
 };
 
-_debug = getMarkerPos "respawn_west";
+_debug = getMarkerpos "respawn_west";
 _lastpos = getPosATL (vehicle player);
 _lastheight = (ATLtoASL _lastpos) select 2;
 _lasttime = time;
@@ -39,11 +39,12 @@ _toph = 0;
 while {alive player} do
 {
 	//[-18697.58,379.53012,25815.256]
-	if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual  || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
+	/*
+	if ([getMarkerPos "respawn_west", [0,0,0]] call BIS_fnc_areEqual || !([getMarkerPos "respawn_west", _debug] call BIS_fnc_areEqual)) then {
 		createMarkerLocal ["respawn_west", _debug];
 		"respawn_west" setMarkerType "EMPTY";
 	};
-	
+	*/
 	_curpos = getPosATL (vehicle player);
 	_curheight = (ATLtoASL _curpos) select 2;
 	_curtime = time;
@@ -51,13 +52,13 @@ while {alive player} do
 	_difftime = (_curtime - _lasttime) max 0.001;
 	_speed = _distance / _difftime;
 	_topSpeed = 10;
-	
+
 	if (vehicle player != player) then {
 		_topSpeed = (getNumber (configFile >> "CfgVehicles" >> typeOf (vehicle player) >> "maxSpeed")) min 500;
 	};
-	
+
 	_terrainHeight = getTerrainHeightASL [_curpos select 0, _curpos select 1];
-	
+
 	/*
 	_differenceCheck = false;
 	_lastPosVar = player getVariable ["lastPos", []];
@@ -67,22 +68,22 @@ while {alive player} do
 		diag_log "LASTPOS RESET";
 	};
 	*/
-	
+
 	_safetyVehicle = vehicle player;
-	
+
 	if (_lastVehicle == vehicle player) then {
 		if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 			(vehicle player) setpos _lastpos;
-			PVDZ_sec_atp = format["TELEPORT REVERT: %1 (%2) from %3 to %4 (%5 meters) now at %6", name player, dayz_characterID, _lastpos, _curPos, _lastpos distance _curpos, getPosATL player];
+			PVDZ_sec_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", getPlayerUID player, dayz_characterID, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
 			publicVariableServer "PVDZ_sec_atp";
 		} else {
 			_lastpos = _curpos;
-			_lastheight = _curheight;	
+			_lastheight = _curheight;
 		};
-		
+
 		_lasttime = _curtime;
 	};
-	
+
 	if (_safetyVehicle == vehicle player) then {
 		_lastVehicle = vehicle player;
 	};
@@ -90,7 +91,7 @@ while {alive player} do
 	// freefall detection:
 	_v = -((velocity player) select 2);
 	_h = (getPosATL player) select 2;
-	if (_v > 4 AND _h > 3) then { 
+	if (_v > 4 AND _h > 3) then {
 		_topv = _topv max _v;
 		_toph = _toph max _h;
 		Dayz_freefall = [ time, _toph, _topv ];
@@ -99,6 +100,6 @@ while {alive player} do
 		_topv = 0;
 		_toph = 0;
 	};
-	
+
 	sleep 0.25;
 };

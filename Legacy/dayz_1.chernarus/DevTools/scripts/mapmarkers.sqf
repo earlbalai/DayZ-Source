@@ -118,7 +118,7 @@ if (isnil "mapm") then
 	
 	//titleText ["Loading tents and helicrashes...","PLAIN DOWN"];titleFadeOut 2;
 	hint "Loading tents and helicrashes...";
-	helicrashes = nearestObjects [[maphalf,maphalf],["UH1Wreck_DZ"],mapscanrad];
+	helicrashes = nearestObjects [[maphalf,maphalf],["UH60Wreck_DZ","UH1Wreck_DZ","Mi8Wreck_DZ"],mapscanrad];
 	tents = nearestObjects [[maphalf,maphalf],["TentStorage"],mapscanrad];
 
 	if mgpsm then
@@ -337,8 +337,8 @@ waituntil
 					private ["_u", "_m"]; 
 					_u = _this select 0; 
 					_m = _this select 1; 
-					_nc = this select 2;
-					while {mapm} do 
+					_nc = _this select 2;
+					while {(!isNil "mapm") AND {(mapm)}} do 
 					{ 
 						_m setMarkerPosLocal ([(getPos _u select 0) + 20, getPos _u select 1, 0]); 
 						sleep 0.01; 

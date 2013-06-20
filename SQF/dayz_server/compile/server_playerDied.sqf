@@ -1,3 +1,5 @@
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
 private ["_characterID","_minutes","_newObject","_playerID","_key"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
@@ -34,7 +36,14 @@ else
 	deleteVehicle _newObject;
 };
 
-diag_log ("PDEATH: Player Died " + _playerID);
+#ifdef PLAYER_DEBUG
+format ["Player UID#%3 CID#%4 %1 as %5 died at %2", 
+	_newObject call fa_plr2str, (getPosATL _newObject) call fa_coor2str,
+	getPlayerUID _newObject,_characterID,
+	typeOf _newObject
+];
+#endif
+
 /*
 _eh = [_newObject] spawn {
 	_body = _this select 0;

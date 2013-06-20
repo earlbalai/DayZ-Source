@@ -1,7 +1,7 @@
 private["_updates","_playerUID","_charID","_humanity","_worldspace","_model"];
-_playerUID 	= _this select 0;
-_charID 	= _this select 1;
-_model 		= _this select 2;
+_playerUID = _this select 0;
+_charID = _this select 1;
+_model = _this select 2;
 
 _old = player;
 player allowDamage false;
@@ -11,18 +11,18 @@ player removeEventHandler ["HandleDamage",mydamage_eh1];
 player removeEventHandler ["Killed",mydamage_eh3];
 player removeEventHandler ["Fired",mydamage_eh2];
 
-_updates = 		player getVariable["updatePlayer",[false,false,false,false,false]];
+_updates = player getVariable["updatePlayer",[false,false,false,false,false]];
 _updates set [0,true];
 player setVariable["updatePlayer",_updates,true];
 dayz_unsaved = true;
 //Logout
-_humanity		= player getVariable["humanity",0];
-_medical 		= player call player_sumMedical;
-_worldspace 	= [round(direction player),getPosATL player];
-_zombieKills 	= player getVariable ["zombieKills",0];
-_headShots 		= player getVariable ["headShots",0];
-_humanKills 	= player getVariable ["humanKills",0];
-_banditKills 	= player getVariable ["banditKills",0];
+_humanity = player getVariable["humanity",0];
+_medical = player call player_sumMedical;
+_worldspace = [round(direction player),getPosATL player];
+_zombieKills = player getVariable ["zombieKills",0];
+_headShots = player getVariable ["headShots",0];
+_humanKills = player getVariable ["humanKills",0];
+_banditKills = player getVariable ["banditKills",0];
 
 //Switch
 	_model call player_switchModel;
@@ -40,15 +40,15 @@ if (count _medical > 0) then {
 	player setVariable["USEC_lowBlood",(_medical select 6),true];
 	player setVariable["USEC_BloodQty",(_medical select 7),true];
 	player setVariable["unconsciousTime",(_medical select 10),true];
-	
+
 	//Add Wounds
 	{
-		diag_log format ["loop  _x:1  wound:%2",_x, (USEC_typeOfWounds select _forEachIndex)];
+		diag_log format ["loop _x:1  wound:%2",_x, (USEC_typeOfWounds select _forEachIndex)];
 		player setVariable["hit_"+_x,true,true];
 		PVDZ_hlt_Bleed = [player, _x, 1];
 		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
-	
+
 	//Add fractures
 	_fractures = (_medical select 9);
 //	player setVariable ["hit_legs",(_fractures select 0),true];
@@ -60,7 +60,7 @@ if (count _medical > 0) then {
 	player setVariable ["hit_legs",0,true];
 	player setVariable ["hit_hands",0,true];
 	player setVariable ["USEC_injured",false,true];
-	player setVariable ["USEC_inPain",false,true];	
+	player setVariable ["USEC_inPain",false,true];
 };
 
 
@@ -89,7 +89,7 @@ player addWeapon "Flare";
 sleep 0.1;
 //melee check
 _wpnType = primaryWeapon player;
-_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
+_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpnType >> "melee"));
 if (_ismelee == "true") then {
 	call dayz_meleeMagazineCheck;
 };

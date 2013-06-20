@@ -172,7 +172,7 @@ class RscDisplayMain : RscStandardDisplay
 		};
 		class CA_ARMA2 : RscPicture
 		{
-			text = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+			text = "z\addons\dayz_code\gui\mod.paa";
 		};
 	};
 	
@@ -182,7 +182,7 @@ class RscDisplayMain : RscStandardDisplay
 		class DAYZ_Version : CA_Version
 		{
 			idc = -1;
-			text = "1.7.7";
+			text = "1.7.7.1";
 			y = "(SafeZoneH + SafeZoneY) - (1 - 0.95)";
 		};
 		delete CA_TitleMainMenu;

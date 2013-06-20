@@ -2,10 +2,10 @@
 private ["_iItem","_iClass","_iPos","_radius","_iPosZ","_item","_itemTypes","_qty","_max","_index","_weights",
 "_cntWeights","_tQty","_canType","_mags","_magQty","_uniq"];
 
-_iItem = 	_this select 0;
-_iClass = 	_this select 1;
-_iPos =	_this select 2;
-_radius =	_this select 3;
+_iItem = _this select 0;
+_iClass = _this select 1;
+_iPos = _this select 2;
+_radius = _this select 3;
 _uniq = ["ItemWaterbottle", "ItemWaterbottleUnfilled"];
 
 _iPosZ = _iPos select 2;
@@ -55,7 +55,7 @@ switch (_iClass) do {
 				_magQty = round(random 10);
 				if (_magQty > 3) then {
 					_item addMagazineCargoGlobal [(_mags select 0), (round(random 1) + 1)];
-				};	
+				};
 			};
 		};
 	};
@@ -72,3 +72,5 @@ switch (_iClass) do {
 if ((count _iPos) > 2) then {
 	_item setPosATL _iPos;
 };
+
+_item   // used in server_spawnCrashSite

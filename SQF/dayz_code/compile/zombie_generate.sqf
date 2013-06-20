@@ -11,16 +11,26 @@ _unitTypes = _this select 2; // class of wanted models
 _recyAgt = []; if (count _this > 3) then { _recyAgt = _this select 3; };
 _maxtoCreate = 99; if (count _this > 4) then { _maxtoCreate = _this select 4; };
 
+_isNoone = 	{isPlayer _x} count (_position nearEntities [["AllVehicles","CAManBase"],30]) == 0;
+//Exit if no one is nearby
+if (!_isNoone) exitWith {
+	diag_log(format["%1: won't do that, too close from player (%2m), _this:%3", __FILE__, round(_distance), _this]);
+	false
+};
+
 _distance = [_position, getPosATL player] call BIS_fnc_distance2D;
+/*
 if (_distance < dayz_safeDistPlr) exitWith {
 	diag_log(format["%1: won't do that, too close from player (%2m), _this:%3", __FILE__, round(_distance), _this]);
 	false
 };
+*/
+
 _agent = objNull;
 if (count _unitTypes == 0) then {
 	_unitTypes = []+ getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 };
- 
+
 _unitTypes = _unitTypes + _unitTypes + _unitTypes + DayZ_NewZeds;
 
 // Build _list so that it contains 2 samples of unitTypes (zombie model)
@@ -48,7 +58,7 @@ if (!isNull _agent) then { // we have found a recyclable agent
 else {
 	if (_maxtoCreate > 0) then {
 		// let's create an agent from scratch
-		_type = _unitTypes call BIS_fnc_selectRandom;	
+		_type = _unitTypes call BIS_fnc_selectRandom;
 		_radius = 4;
 		_method = "NONE";
 		_agent = createAgent [_type, _position, [], _radius, _method]; sleep 0.001;
@@ -82,11 +92,11 @@ else {
 
 if (!isNull _agent) then {
 	_agent setDir random 360;
-	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs 
+	_agent setvelocity [0, 0, 1]; // avoid stuck zombies legs
 	_agent setPosATL _position; sleep 0.001;
-	
+
 	_position = getPosATL _agent;
-	
+
 	_distance = _position distance (getPosATL player);
 	//if (_distance < dayz_safeDistPlr) exitWith {
 	//	diag_log(format["%1: zombie distance: %2m (model:%3, stance:%4, ATL:%5)", __FILE__, round(_distance), typeOf _agent, unitPos _agent, _position]);
@@ -94,7 +104,7 @@ if (!isNull _agent) then {
 	//};
 
 	_favStance = (switch ceil(random(3^0.5)^2) do {
-		case 3: {"DOWN"}; // prone
+		//case 3: {"DOWN"}; // prone
 		case 2: {"Middle"}; // Kneel
 		default {"UP"} // stand-up
 	});

@@ -11,7 +11,7 @@ if (count _inventory > 0) then {
 		_idc = 109;
 		if (typeName _x == "ARRAY") then {
 			_item = _x select 0;
-			_val = 	_x select 1;
+			_val = _x select 1;
 		} else {
 			_item = _x;
 			_val = -1;
@@ -20,7 +20,7 @@ if (count _inventory > 0) then {
 		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
 
 		//Is item legal?
-		_isOK = 	isClass(configFile >> "CfgMagazines" >> _item);
+		_isOK = isClass(configFile >> "CfgMagazines" >> _item);
 		if (_isOK) then {
 			if (_val != -1) then {
 				player addMagazine [_item,_val];
@@ -36,7 +36,7 @@ if (count _inventory > 0) then {
 		if (_x == "Crossbow") then { _x = "Crossbow_DZ" }; // Convert Crossbow to Crossbow_DZ
 
 		//Is item legal?
-		_isOK = 	isClass(configFile >> "CfgWeapons" >> _x);
+		_isOK = isClass(configFile >> "CfgWeapons" >> _x);
 		if (_isOK) then {
 			player addWeapon _x;
 		};

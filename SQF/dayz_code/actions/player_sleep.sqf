@@ -1,4 +1,4 @@
-private["_timesincedrink"];	
+private["_timesincedrink"];
 //_timesincedrink = time - dayz_lastDrink;
 //_bloodinc =100; Removed for now(untested) due to it not needed yet
 
@@ -22,11 +22,12 @@ player playMove "AidlPpneMstpSnonWnonDnon_SleepC_sleep0";
 waitUntil { animationState player != "AidlPpneMstpSnonWnonDnon_SleepC_sleep0"};
 sleep 5;
 
+/*
 //Start effects of sleep
 dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
-/*
+
 player setVariable ["messing",[dayz_hunger,dayz_thirst],true];
-if (_timesincedrink > 600) then	{
+if (_timesincedrink > 600) then {
 	dayz_thirst = 0;
 } else {
 	dayz_thirst = 1; //If player has had something to drink over 10 minutes ago, make them thirsty
@@ -37,11 +38,17 @@ player setVariable["medForceUpdate",true];
 dayz_lastMeal = time;
 dayz_hunger = 0;
 */
-//add infection chance for cure 
-if (random 15 < 1) then {
-	r_player_infected = false;
-	player setVariable["USEC_infected",true,true];
-};
+
+//1% chance every 5 mins to remove infection
+_lastRest = player getVariable ["lastRest", 0];
+if (time - _lastRest > 300) then { 
+	player setVariable ["lastRest", time];
+	//add infection chance for cure
+	if (floor(random 100) < 1) then {
+		r_player_infected = false;
+		player setVariable["USEC_infected",true,true];
+	};
+};	
 PVDZ_plr_Save = [player,[],true];
 publicVariableServer "PVDZ_plr_Save";
 //End Effects

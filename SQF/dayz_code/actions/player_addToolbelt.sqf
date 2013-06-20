@@ -1,9 +1,9 @@
 private["_item","_config","_onLadder","_hastoolweapon","_text","_create","_config2","_melee2tb","_isOk"];
 
-_item = 	_this;
-_config =	configFile >> "cfgWeapons" >> _item;
+_item = _this;
+_config = configFile >> "cfgWeapons" >> _item;
 
-_onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
+_onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {cutText [(localize "str_player_21") , "PLAIN DOWN"]};
 
 _hastoolweapon = _item in weapons player;
@@ -13,8 +13,8 @@ if (!_hastoolweapon) exitWith {cutText [format[(localize "str_player_30"),_text]
 call gear_ui_init;
 
 //Add new item
-_create = 	getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
-_config2 = 	configFile >> "cfgWeapons" >> _create;
+_create = getArray (_config >> "ItemActions" >> "Toolbelt" >> "output") select 0;
+_config2 = configFile >> "cfgWeapons" >> _create;
 
 //removing current melee weapon if new melee selected
 _melee2tb = "";
@@ -42,7 +42,7 @@ if (_isOk) then {
 } else {
 	cutText [localize "str_player_24", "PLAIN DOWN"];
 };
-	
+
 //adding melee mags back if needed
 switch (primaryWeapon player) do {
 	case "MeleeHatchet": {player addMagazine 'hatchet_swing';};

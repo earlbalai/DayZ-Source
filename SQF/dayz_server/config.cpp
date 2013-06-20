@@ -76,5 +76,6 @@ class CfgPatches {
 		class BAF_Offroad_W : Car { quantity = 1; };
 		class S1203_TK_CIV_EP1 : Car { quantity = 1; };
 		class HMMWV_DZ : Car { quantity = 2; };
+		class SUV_DZ : Car { quantity = 1; };
 	};
 };

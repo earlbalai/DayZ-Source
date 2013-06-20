@@ -72,4 +72,10 @@ class RepairParts : AllVehicles
 	class HitAvionics {
 		part = "PartGeneric";
 	};
+	class HitMissiles {
+		part = "PartGeneric";
+	};
+	class HitHull {
+		part = "PartGeneric";
+	};
 };

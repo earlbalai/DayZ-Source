@@ -6,14 +6,14 @@ _classname = _array select 1;
 _holder = _array select 2;
 
 if (player distance _holder > 3) exitwith {"You need to be within 3 meters to pickup!","PLAIN DOWN"};
-	
+
 _playerID = getPlayerUID player;
 player removeAction s_player_holderPickup;
 _text = getText (configFile >> _type >> _classname >> "displayName");
 
 if (!canPickup) exitwith {
 	if (pickupInit) then {
-		cutText ["[ANTI-DUPE] You must wait to pickup this item!","PLAIN DOWN"] 
+		cutText ["[ANTI-DUPE] You must wait to pickup this item!","PLAIN DOWN"]
 	} else {
 		cutText ["[ANTI-DUPE] You may only pickup one item at a time!","PLAIN DOWN"]
 	};
@@ -21,7 +21,7 @@ if (!canPickup) exitwith {
 
 _claimedBy = _holder getVariable "claimed";
 
-if (isnil "claimed") then { 
+if (isnil "claimed") then {
 	_holder setVariable["claimed",_playerID,true];
 };
 
@@ -40,7 +40,7 @@ if(_classname == "WoodenArrow") then {
 };
 if (_broken) exitWith { deleteVehicle _holder; cutText [localize "str_broken_arrow", "PLAIN DOWN"]; };
 
-sleep 0.25; //Why are we waiting? Animation 
+sleep 0.25; //Why are we waiting? Animation
 
 _claimedBy = _holder getVariable["claimed","0"];
 
@@ -48,7 +48,7 @@ if (_claimedBy != _playerID) exitWith {cutText [format[(localize "str_player_bei
 
 if(_classname isKindOf "Bag_Base_EP1") exitwith {
 
-	_PlayerNear =	{isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
+	_PlayerNear = {isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
 	if (_PlayerNear) exitWith {cutText [format["Another Player Near by, Only one player must be within 5 meters of a bag to pickup"] , "PLAIN DOWN"]};
 
 	diag_log("Picked up a bag: " + _classname);
@@ -77,11 +77,11 @@ if (_freeSlots select _count >= _slotType select _count) then
 } else {
 
 	//_holder setVariable["claimed",0,true];
-	
+
 	cutText [localize "str_player_24", "PLAIN DOWN"];
 	canPickup = false;
 	_nearByPile= nearestObjects [(position player), ["WeaponHolder","WeaponHolderBase"],2];
-    if (count _nearByPile ==0) then { 
+    if (count _nearByPile ==0) then {
         _item = createVehicle ["WeaponHolder", position player, [], 0.0, "CAN_COLLIDE"];
     } else {
         _item = _nearByPile select 0;
@@ -109,7 +109,7 @@ sleep 3;
 //adding melee mags back if needed
 _wpn = primaryWeapon player;
 //diag_log format["Classname: %1, WPN: %2", _classname,_wpn];
-_ismelee =  (gettext (configFile >> "CfgWeapons" >> _wpn >> "melee"));
+_ismelee = (gettext (configFile >> "CfgWeapons" >> _wpn >> "melee"));
 if (_ismelee == "true") then {
 	call dayz_meleeMagazineCheck;
 };

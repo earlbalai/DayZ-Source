@@ -39,7 +39,7 @@ if (_hasbottleitem and _hastinitem) then {
 		player addMagazine "ItemWaterbottleBoiled";
 
 	};
-    cutText [format[(localize  "str_player_01"),_qty], "PLAIN DOWN"];
+    cutText [format[(localize "str_player_01"),_qty], "PLAIN DOWN"];
 } else {
     cutText [(localize "str_player_02") , "PLAIN DOWN"];
 };

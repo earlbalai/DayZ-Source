@@ -48,11 +48,11 @@ class CfgMods
 	{
 		dir = "DayZ";
 		name = "DayZ";
-		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
+		picture = "z\addons\dayz_code\gui\mod.paa";
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzmod.com";
-		version = "1.7.7";
+		version = "1.7.7.1";
 		hiveVersion = 0.96; //0.93
 	};
 	class DZ_InitWorld
