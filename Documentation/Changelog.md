@@ -21,6 +21,8 @@ Serverside affected addons:
 
 
 	Changes:
+	
+	    * [NEW] - Server owners can now toggle server side debugging (Server RPT) for many options by editting /compile/server_toggle_debug.hpp)
 
 	    * [FIXED] - Crashsite loot spawn fixed.
 	    * [FIXED] - LOS should now reset correct.

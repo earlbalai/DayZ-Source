@@ -27,9 +27,9 @@ Requirements
 Branches
 --------
 
-- **Release_1.7.7.1** Released: 18/June/13 **Latest Version** (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.7.1)
-- **Release_1.7.7**   Released: 10/June/13 **Latest Version** (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.7)
-- **Release_1.7.6.1** Released: 26/Feb/13 (https://github.com/R4Z0R49/DayZMod/tree/Release_1.7.6)
+- **Release_1.7.7.1** Released: 18/June/13 **Latest Version** (https://github.com/DayZMod/DayZ-Source/tree/Release_1.7.7.1)
+- **Release_1.7.7**   Released: 10/June/13 **Latest Version** (https://github.com/DayZMod/DayZ-Source/tree/Release_1.7.7)
+- **Release_1.7.6.1** Released: 26/Feb/13 (https://github.com/DayZMod/DayZ-Source/tree/Release_1.7.6)
 
 Directories
 -----------
